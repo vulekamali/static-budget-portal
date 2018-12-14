@@ -40,6 +40,9 @@ budget_actual:
       phase: Main appropriation
     - amount: 5943297000
       financial_year: 2015-16
+      phase: Adjusted appropriation
+    - amount: 5943297000
+      financial_year: 2015-16
       phase: Final Appropriation
     - amount: 5937920000
       financial_year: 2015-16
@@ -80,13 +83,13 @@ budget_actual:
     - amount: null
       financial_year: 2014-15
       phase: Audit Outcome
-    - amount: null
-      financial_year: 2015-16
-      phase: Adjusted appropriation
     real:
     - amount: 6631450638
       financial_year: 2015-16
       phase: Main appropriation
+    - amount: 6626219497
+      financial_year: 2015-16
+      phase: Adjusted appropriation
     - amount: 6626219497
       financial_year: 2015-16
       phase: Final Appropriation
@@ -129,9 +132,6 @@ budget_actual:
     - amount: null
       financial_year: 2014-15
       phase: Audit Outcome
-    - amount: null
-      financial_year: 2015-16
-      phase: Adjusted appropriation
 budget_actual_programmes:
   dataset_detail_page: /datasets/expenditure-time-series/expenditure-time-series
   programmes:
@@ -139,6 +139,9 @@ budget_actual_programmes:
     - amount: 3646864000.0
       financial_year: 2015-16
       phase: Main appropriation
+    - amount: 3489633000
+      financial_year: 2015-16
+      phase: Adjusted appropriation
     - amount: 3580570000
       financial_year: 2015-16
       phase: Final Appropriation
@@ -181,14 +184,14 @@ budget_actual_programmes:
     - amount: null
       financial_year: 2014-15
       phase: Audit Outcome
-    - amount: null
-      financial_year: 2015-16
-      phase: Adjusted appropriation
     name: Environmental Programmes
   - items:
     - amount: 714049000.0
       financial_year: 2015-16
       phase: Main appropriation
+    - amount: 870184000
+      financial_year: 2015-16
+      phase: Adjusted appropriation
     - amount: 832487000
       financial_year: 2015-16
       phase: Final Appropriation
@@ -231,14 +234,14 @@ budget_actual_programmes:
     - amount: null
       financial_year: 2014-15
       phase: Audit Outcome
-    - amount: null
-      financial_year: 2015-16
-      phase: Adjusted appropriation
     name: Administration
   - items:
     - amount: 79281000.0
       financial_year: 2015-16
       phase: Main appropriation
+    - amount: 79281000
+      financial_year: 2015-16
+      phase: Adjusted appropriation
     - amount: 79740000
       financial_year: 2015-16
       phase: Final Appropriation
@@ -281,14 +284,14 @@ budget_actual_programmes:
     - amount: null
       financial_year: 2014-15
       phase: Audit Outcome
-    - amount: null
-      financial_year: 2015-16
-      phase: Adjusted appropriation
     name: Chemicals and Waste Management
   - items:
     - amount: 484529000.0
       financial_year: 2015-16
       phase: Main appropriation
+    - amount: 399529000
+      financial_year: 2015-16
+      phase: Adjusted appropriation
     - amount: 372021000
       financial_year: 2015-16
       phase: Final Appropriation
@@ -331,14 +334,14 @@ budget_actual_programmes:
     - amount: null
       financial_year: 2014-15
       phase: Audit Outcome
-    - amount: null
-      financial_year: 2015-16
-      phase: Adjusted appropriation
     name: Oceans and Coasts
   - items:
     - amount: 127517000.0
       financial_year: 2015-16
       phase: Main appropriation
+    - amount: 133921000
+      financial_year: 2015-16
+      phase: Adjusted appropriation
     - amount: 131717000
       financial_year: 2015-16
       phase: Final Appropriation
@@ -381,14 +384,14 @@ budget_actual_programmes:
     - amount: null
       financial_year: 2014-15
       phase: Audit Outcome
-    - amount: null
-      financial_year: 2015-16
-      phase: Adjusted appropriation
     name: Legal, Authorisations and Compliance
   - items:
     - amount: 655600000.0
       financial_year: 2015-16
       phase: Main appropriation
+    - amount: 730600000
+      financial_year: 2015-16
+      phase: Adjusted appropriation
     - amount: 700648000
       financial_year: 2015-16
       phase: Final Appropriation
@@ -431,14 +434,14 @@ budget_actual_programmes:
     - amount: null
       financial_year: 2014-15
       phase: Audit Outcome
-    - amount: null
-      financial_year: 2015-16
-      phase: Adjusted appropriation
     name: Biodiversity and Conservation
   - items:
     - amount: 240149000.0
       financial_year: 2015-16
       phase: Main appropriation
+    - amount: 240149000
+      financial_year: 2015-16
+      phase: Adjusted appropriation
     - amount: 246114000
       financial_year: 2015-16
       phase: Final Appropriation
@@ -481,9 +484,6 @@ budget_actual_programmes:
     - amount: null
       financial_year: 2014-15
       phase: Audit Outcome
-    - amount: null
-      financial_year: 2015-16
-      phase: Adjusted appropriation
     name: Climate Change and Air Quality
 contributed_datasets:
 - contributor: Public Service Accountability Monitor

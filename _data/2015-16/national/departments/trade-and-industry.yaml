@@ -13,6 +13,9 @@ budget_actual:
       phase: Main appropriation
     - amount: 9497844000
       financial_year: 2015-16
+      phase: Adjusted appropriation
+    - amount: 9497844000
+      financial_year: 2015-16
       phase: Final Appropriation
     - amount: 9471659000
       financial_year: 2015-16
@@ -53,13 +56,13 @@ budget_actual:
     - amount: null
       financial_year: 2014-15
       phase: Audit Outcome
-    - amount: null
-      financial_year: 2015-16
-      phase: Adjusted appropriation
     real:
     - amount: 10696093664
       financial_year: 2015-16
       phase: Main appropriation
+    - amount: 10589206478
+      financial_year: 2015-16
+      phase: Adjusted appropriation
     - amount: 10589206478
       financial_year: 2015-16
       phase: Final Appropriation
@@ -102,9 +105,6 @@ budget_actual:
     - amount: null
       financial_year: 2014-15
       phase: Audit Outcome
-    - amount: null
-      financial_year: 2015-16
-      phase: Adjusted appropriation
 budget_actual_programmes:
   dataset_detail_page: /datasets/expenditure-time-series/expenditure-time-series
   programmes:
@@ -112,6 +112,9 @@ budget_actual_programmes:
     - amount: 263224000.0
       financial_year: 2015-16
       phase: Main appropriation
+    - amount: 89704000
+      financial_year: 2015-16
+      phase: Adjusted appropriation
     - amount: 92609000
       financial_year: 2015-16
       phase: Final Appropriation
@@ -154,14 +157,14 @@ budget_actual_programmes:
     - amount: null
       financial_year: 2014-15
       phase: Audit Outcome
-    - amount: null
-      financial_year: 2015-16
-      phase: Adjusted appropriation
     name: Special Economic Zones and Economic Transformation
   - items:
     - amount: 5795639000.0
       financial_year: 2015-16
       phase: Main appropriation
+    - amount: 5827591000
+      financial_year: 2015-16
+      phase: Adjusted appropriation
     - amount: 5821653000
       financial_year: 2015-16
       phase: Final Appropriation
@@ -204,14 +207,14 @@ budget_actual_programmes:
     - amount: null
       financial_year: 2014-15
       phase: Audit Outcome
-    - amount: null
-      financial_year: 2015-16
-      phase: Adjusted appropriation
     name: Incentive Development and Administration
   - items:
     - amount: 294496000.0
       financial_year: 2015-16
       phase: Main appropriation
+    - amount: 296385000
+      financial_year: 2015-16
+      phase: Adjusted appropriation
     - amount: 287625000
       financial_year: 2015-16
       phase: Final Appropriation
@@ -254,14 +257,14 @@ budget_actual_programmes:
     - amount: null
       financial_year: 2014-15
       phase: Audit Outcome
-    - amount: null
-      financial_year: 2015-16
-      phase: Adjusted appropriation
     name: Consumer and Corporate Regulation
   - items:
     - amount: 412328000.0
       financial_year: 2015-16
       phase: Main appropriation
+    - amount: 435016000
+      financial_year: 2015-16
+      phase: Adjusted appropriation
     - amount: 501197000
       financial_year: 2015-16
       phase: Final Appropriation
@@ -304,14 +307,14 @@ budget_actual_programmes:
     - amount: null
       financial_year: 2014-15
       phase: Audit Outcome
-    - amount: null
-      financial_year: 2015-16
-      phase: Adjusted appropriation
     name: Trade and Investment South Africa
   - items:
     - amount: 689740000.0
       financial_year: 2015-16
       phase: Main appropriation
+    - amount: 768304000
+      financial_year: 2015-16
+      phase: Adjusted appropriation
     - amount: 727578000
       financial_year: 2015-16
       phase: Final Appropriation
@@ -354,14 +357,14 @@ budget_actual_programmes:
     - amount: null
       financial_year: 2014-15
       phase: Audit Outcome
-    - amount: null
-      financial_year: 2015-16
-      phase: Adjusted appropriation
     name: Administration
   - items:
     - amount: 164754000.0
       financial_year: 2015-16
       phase: Main appropriation
+    - amount: 116576000
+      financial_year: 2015-16
+      phase: Adjusted appropriation
     - amount: 113560000
       financial_year: 2015-16
       phase: Final Appropriation
@@ -404,14 +407,14 @@ budget_actual_programmes:
     - amount: null
       financial_year: 2014-15
       phase: Audit Outcome
-    - amount: null
-      financial_year: 2015-16
-      phase: Adjusted appropriation
     name: International Trade and Economic Development
   - items:
     - amount: 1973534000.0
       financial_year: 2015-16
       phase: Main appropriation
+    - amount: 1964268000
+      financial_year: 2015-16
+      phase: Adjusted appropriation
     - amount: 1953622000
       financial_year: 2015-16
       phase: Final Appropriation
@@ -454,9 +457,6 @@ budget_actual_programmes:
     - amount: null
       financial_year: 2014-15
       phase: Audit Outcome
-    - amount: null
-      financial_year: 2015-16
-      phase: Adjusted appropriation
     name: Industrial Development
 contributed_datasets:
 - contributor: International Budget Partnership

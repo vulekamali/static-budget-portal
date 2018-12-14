@@ -84,6 +84,9 @@ budget_actual:
       phase: Main appropriation
     - amount: 70815477000
       financial_year: 2015-16
+      phase: Adjusted appropriation
+    - amount: 70815477000
+      financial_year: 2015-16
       phase: Final Appropriation
     - amount: 68097537000
       financial_year: 2015-16
@@ -124,13 +127,13 @@ budget_actual:
     - amount: null
       financial_year: 2014-15
       phase: Audit Outcome
-    - amount: null
-      financial_year: 2015-16
-      phase: Adjusted appropriation
     real:
     - amount: 77278795224
       financial_year: 2015-16
       phase: Main appropriation
+    - amount: 78952624178
+      financial_year: 2015-16
+      phase: Adjusted appropriation
     - amount: 78952624178
       financial_year: 2015-16
       phase: Final Appropriation
@@ -173,9 +176,6 @@ budget_actual:
     - amount: null
       financial_year: 2014-15
       phase: Audit Outcome
-    - amount: null
-      financial_year: 2015-16
-      phase: Adjusted appropriation
 budget_actual_programmes:
   dataset_detail_page: /datasets/expenditure-time-series/expenditure-time-series
   programmes:
@@ -283,6 +283,9 @@ budget_actual_programmes:
     - amount: 50321345000.0
       financial_year: 2015-16
       phase: Main appropriation
+    - amount: 51825863000
+      financial_year: 2015-16
+      phase: Adjusted appropriation
     - amount: 51809326000
       financial_year: 2015-16
       phase: Final Appropriation
@@ -301,9 +304,6 @@ budget_actual_programmes:
     - amount: null
       financial_year: 2014-15
       phase: Audit Outcome
-    - amount: null
-      financial_year: 2015-16
-      phase: Adjusted appropriation
     - amount: null
       financial_year: 2016-17
       phase: Main appropriation
@@ -333,6 +333,9 @@ budget_actual_programmes:
     - amount: 247969000.0
       financial_year: 2015-16
       phase: Main appropriation
+    - amount: 240088000
+      financial_year: 2015-16
+      phase: Adjusted appropriation
     - amount: 271125000
       financial_year: 2015-16
       phase: Final Appropriation
@@ -375,14 +378,14 @@ budget_actual_programmes:
     - amount: null
       financial_year: 2014-15
       phase: Audit Outcome
-    - amount: null
-      financial_year: 2015-16
-      phase: Adjusted appropriation
     name: Administration
   - items:
     - amount: 22081000.0
       financial_year: 2015-16
       phase: Main appropriation
+    - amount: 20281000
+      financial_year: 2015-16
+      phase: Adjusted appropriation
     - amount: 19281000
       financial_year: 2015-16
       phase: Final Appropriation
@@ -401,9 +404,6 @@ budget_actual_programmes:
     - amount: null
       financial_year: 2014-15
       phase: Audit Outcome
-    - amount: null
-      financial_year: 2015-16
-      phase: Adjusted appropriation
     - amount: null
       financial_year: 2016-17
       phase: Main appropriation
@@ -483,6 +483,9 @@ budget_actual_programmes:
     - amount: 328092000.0
       financial_year: 2015-16
       phase: Main appropriation
+    - amount: 328092000
+      financial_year: 2015-16
+      phase: Adjusted appropriation
     - amount: 329092000
       financial_year: 2015-16
       phase: Final Appropriation
@@ -501,9 +504,6 @@ budget_actual_programmes:
     - amount: null
       financial_year: 2014-15
       phase: Audit Outcome
-    - amount: null
-      financial_year: 2015-16
-      phase: Adjusted appropriation
     - amount: null
       financial_year: 2016-17
       phase: Main appropriation
@@ -533,6 +533,9 @@ budget_actual_programmes:
     - amount: 17668420000.0
       financial_year: 2015-16
       phase: Main appropriation
+    - amount: 17668420000
+      financial_year: 2015-16
+      phase: Adjusted appropriation
     - amount: 17669370000
       financial_year: 2015-16
       phase: Final Appropriation
@@ -551,9 +554,6 @@ budget_actual_programmes:
     - amount: null
       financial_year: 2014-15
       phase: Audit Outcome
-    - amount: null
-      financial_year: 2015-16
-      phase: Adjusted appropriation
     - amount: null
       financial_year: 2016-17
       phase: Main appropriation
@@ -635,6 +635,9 @@ budget_actual_programmes:
       phase: Main appropriation
     - amount: 125928000
       financial_year: 2015-16
+      phase: Adjusted appropriation
+    - amount: 125928000
+      financial_year: 2015-16
       phase: Final Appropriation
     - amount: 125928000
       financial_year: 2015-16
@@ -651,9 +654,6 @@ budget_actual_programmes:
     - amount: null
       financial_year: 2014-15
       phase: Audit Outcome
-    - amount: null
-      financial_year: 2015-16
-      phase: Adjusted appropriation
     - amount: null
       financial_year: 2016-17
       phase: Main appropriation
@@ -683,6 +683,9 @@ budget_actual_programmes:
     - amount: 606805000.0
       financial_year: 2015-16
       phase: Main appropriation
+    - amount: 606805000
+      financial_year: 2015-16
+      phase: Adjusted appropriation
     - amount: 591355000
       financial_year: 2015-16
       phase: Final Appropriation
@@ -725,9 +728,6 @@ budget_actual_programmes:
     - amount: null
       financial_year: 2014-15
       phase: Audit Outcome
-    - amount: null
-      financial_year: 2015-16
-      phase: Adjusted appropriation
     name: National Disaster Management Centre
 contributed_datasets:
 - contributor: Public Service Accountability Monitor

@@ -52,6 +52,9 @@ budget_actual:
       phase: Main appropriation
     - amount: 475929000
       financial_year: 2015-16
+      phase: Adjusted appropriation
+    - amount: 475929000
+      financial_year: 2015-16
       phase: Final Appropriation
     - amount: 466737000
       financial_year: 2015-16
@@ -92,13 +95,13 @@ budget_actual:
     - amount: null
       financial_year: 2014-15
       phase: Audit Outcome
-    - amount: null
-      financial_year: 2015-16
-      phase: Adjusted appropriation
     real:
     - amount: 568970151
       financial_year: 2015-16
       phase: Main appropriation
+    - amount: 530616258
+      financial_year: 2015-16
+      phase: Adjusted appropriation
     - amount: 530616258
       financial_year: 2015-16
       phase: Final Appropriation
@@ -141,9 +144,6 @@ budget_actual:
     - amount: null
       financial_year: 2014-15
       phase: Audit Outcome
-    - amount: null
-      financial_year: 2015-16
-      phase: Adjusted appropriation
 budget_actual_programmes:
   dataset_detail_page: /datasets/expenditure-time-series/expenditure-time-series
   programmes:
@@ -151,6 +151,9 @@ budget_actual_programmes:
     - amount: 483940000.0
       financial_year: 2015-16
       phase: Main appropriation
+    - amount: 443661000
+      financial_year: 2015-16
+      phase: Adjusted appropriation
     - amount: 446242000
       financial_year: 2015-16
       phase: Final Appropriation
@@ -193,14 +196,14 @@ budget_actual_programmes:
     - amount: null
       financial_year: 2014-15
       phase: Audit Outcome
-    - amount: null
-      financial_year: 2015-16
-      phase: Adjusted appropriation
     name: Administration
   - items:
     - amount: 5726000.0
       financial_year: 2015-16
       phase: Main appropriation
+    - amount: 5726000
+      financial_year: 2015-16
+      phase: Adjusted appropriation
     - amount: 5726000
       financial_year: 2015-16
       phase: Final Appropriation
@@ -243,14 +246,14 @@ budget_actual_programmes:
     - amount: null
       financial_year: 2014-15
       phase: Audit Outcome
-    - amount: null
-      financial_year: 2015-16
-      phase: Adjusted appropriation
     name: Direct charge against the National Revenue Fund
   - items:
     - amount: 26390000.0
       financial_year: 2015-16
       phase: Main appropriation
+    - amount: 32268000
+      financial_year: 2015-16
+      phase: Adjusted appropriation
     - amount: 29687000
       financial_year: 2015-16
       phase: Final Appropriation
@@ -293,9 +296,6 @@ budget_actual_programmes:
     - amount: null
       financial_year: 2014-15
       phase: Audit Outcome
-    - amount: null
-      financial_year: 2015-16
-      phase: Adjusted appropriation
     name: Executive Support
 contributed_datasets:
 - contributor: International Budget Partnership

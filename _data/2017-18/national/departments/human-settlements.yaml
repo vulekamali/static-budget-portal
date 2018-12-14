@@ -63,6 +63,9 @@ budget_actual:
       phase: Main appropriation
     - amount: 30543381000
       financial_year: 2015-16
+      phase: Adjusted appropriation
+    - amount: 30543381000
+      financial_year: 2015-16
       phase: Final Appropriation
     - amount: 30034544000
       financial_year: 2015-16
@@ -103,13 +106,13 @@ budget_actual:
     - amount: null
       financial_year: 2014-15
       phase: Audit Outcome
-    - amount: null
-      financial_year: 2015-16
-      phase: Adjusted appropriation
     real:
     - amount: 34498971614
       financial_year: 2015-16
       phase: Main appropriation
+    - amount: 34053009079
+      financial_year: 2015-16
+      phase: Adjusted appropriation
     - amount: 34053009079
       financial_year: 2015-16
       phase: Final Appropriation
@@ -152,9 +155,6 @@ budget_actual:
     - amount: null
       financial_year: 2014-15
       phase: Audit Outcome
-    - amount: null
-      financial_year: 2015-16
-      phase: Adjusted appropriation
 budget_actual_programmes:
   dataset_detail_page: /datasets/expenditure-time-series/expenditure-time-series
   programmes:
@@ -162,6 +162,9 @@ budget_actual_programmes:
     - amount: 74338000.0
       financial_year: 2015-16
       phase: Main appropriation
+    - amount: 73538000
+      financial_year: 2015-16
+      phase: Adjusted appropriation
     - amount: 77493000
       financial_year: 2015-16
       phase: Final Appropriation
@@ -204,14 +207,14 @@ budget_actual_programmes:
     - amount: null
       financial_year: 2014-15
       phase: Audit Outcome
-    - amount: null
-      financial_year: 2015-16
-      phase: Adjusted appropriation
     name: Human Settlements Policy, Strategy and Planning
   - items:
     - amount: 169800000.0
       financial_year: 2015-16
       phase: Main appropriation
+    - amount: 165600000
+      financial_year: 2015-16
+      phase: Adjusted appropriation
     - amount: 166690000
       financial_year: 2015-16
       phase: Final Appropriation
@@ -254,14 +257,14 @@ budget_actual_programmes:
     - amount: null
       financial_year: 2014-15
       phase: Audit Outcome
-    - amount: null
-      financial_year: 2015-16
-      phase: Adjusted appropriation
     name: Human Settlements Delivery Support
   - items:
     - amount: 30264127000.0
       financial_year: 2015-16
       phase: Main appropriation
+    - amount: 29863627000
+      financial_year: 2015-16
+      phase: Adjusted appropriation
     - amount: 29863947000
       financial_year: 2015-16
       phase: Final Appropriation
@@ -304,14 +307,14 @@ budget_actual_programmes:
     - amount: null
       financial_year: 2014-15
       phase: Audit Outcome
-    - amount: null
-      financial_year: 2015-16
-      phase: Adjusted appropriation
     name: Housing Development Finance
   - items:
     - amount: 435116000.0
       financial_year: 2015-16
       phase: Main appropriation
+    - amount: 440616000
+      financial_year: 2015-16
+      phase: Adjusted appropriation
     - amount: 435251000
       financial_year: 2015-16
       phase: Final Appropriation
@@ -354,9 +357,6 @@ budget_actual_programmes:
     - amount: null
       financial_year: 2014-15
       phase: Audit Outcome
-    - amount: null
-      financial_year: 2015-16
-      phase: Adjusted appropriation
     name: Administration
 contributed_datasets:
 - contributor: Public Service Accountability Monitor

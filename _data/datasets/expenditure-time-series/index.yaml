@@ -5,18 +5,19 @@ datasets:
   category:
     description: "Expenditure data sourced from the Main Budget, Adjusted Budget and\
       \ Annual Report events. Use this data to compare budgeted and actual expenditure.\r\
-      \n\r\nNote that this data is not aligned with the current MTEF like the [ENE](https://vulekamali.gov.za/datasets/estimates-of-national-expenditure)\
+      \n\r\nNote that historical data in this dataset is not aligned with the current\
+      \ MTEF like the [ENE](https://vulekamali.gov.za/datasets/estimates-of-national-expenditure)\
       \ and [EPRE](https://vulekamali.gov.za/datasets/estimates-of-provincial-expenditure)\
       \ data is."
     name: Expenditure Time Series
     slug: expenditure-time-series
     url_path: /datasets/expenditure-time-series
   created: '2018-12-11T06:30:26.964157'
-  description: "Combined and normalised dataset consisting of ENE, AENE and AR expenditure\
+  description: "Combined dataset consisting of ENE, AENE and Annual Report expenditure\
     \ data.\r\nIncludes data from multiple fiscal years."
-  intro_short: "Combined and normalised dataset consisting of ENE, AENE and AR expenditure\
+  intro_short: "Combined dataset consisting of ENE, AENE and Annual Report expenditure\
     \ data.\r\nIncludes data from multiple fiscal years."
-  last_updated: '2018-12-12T07:25:58.675825'
+  last_updated: '2018-12-14T09:01:32.598235'
   license:
     name: License not specified
     url: null
@@ -34,16 +35,17 @@ datasets:
   - description: ''
     format: CSV
     name: 'Expenditure Time Series '
-    url: https://data.vulekamali.gov.za/dataset/9eb118ed-a55e-4227-a13f-52e3379b8df6/resource/78066aee-944e-4ff4-b6fa-40abfd5f8154/download/expenditure-time-series.csv
+    url: http://datastore.openspending.org/b9d2af843f3a7ca223eea07fb608e62a/expenditure-time-series-v2/final/data/expenditure-time-series.csv
   - description: ''
     format: OpenSpending API
     name: Expenditure Time Series
-    url: https://openspending.org/api/3/cubes/b9d2af843f3a7ca223eea07fb608e62a:expenditure-time-series/model/
+    url: https://openspending.org/api/3/cubes/b9d2af843f3a7ca223eea07fb608e62a:expenditure-time-series-v2/model/
   slug: expenditure-time-series
   url_path: /datasets/expenditure-time-series/expenditure-time-series
 description: "Expenditure data sourced from the Main Budget, Adjusted Budget and Annual\
   \ Report events. Use this data to compare budgeted and actual expenditure.\r\n\r\
-  \nNote that this data is not aligned with the current MTEF like the [ENE](https://vulekamali.gov.za/datasets/estimates-of-national-expenditure)\
+  \nNote that historical data in this dataset is not aligned with the current MTEF\
+  \ like the [ENE](https://vulekamali.gov.za/datasets/estimates-of-national-expenditure)\
   \ and [EPRE](https://vulekamali.gov.za/datasets/estimates-of-provincial-expenditure)\
   \ data is."
 name: Expenditure Time Series

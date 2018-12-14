@@ -13,6 +13,9 @@ budget_actual:
       phase: Main appropriation
     - amount: 36253925000
       financial_year: 2015-16
+      phase: Adjusted appropriation
+    - amount: 36253925000
+      financial_year: 2015-16
       phase: Final Appropriation
     - amount: 36038825000
       financial_year: 2015-16
@@ -53,13 +56,13 @@ budget_actual:
     - amount: null
       financial_year: 2014-15
       phase: Audit Outcome
-    - amount: null
-      financial_year: 2015-16
-      phase: Adjusted appropriation
     real:
     - amount: 40658424424
       financial_year: 2015-16
       phase: Main appropriation
+    - amount: 40419730781
+      financial_year: 2015-16
+      phase: Adjusted appropriation
     - amount: 40419730781
       financial_year: 2015-16
       phase: Final Appropriation
@@ -102,9 +105,6 @@ budget_actual:
     - amount: null
       financial_year: 2014-15
       phase: Audit Outcome
-    - amount: null
-      financial_year: 2015-16
-      phase: Adjusted appropriation
 budget_actual_programmes:
   dataset_detail_page: /datasets/expenditure-time-series/expenditure-time-series
   programmes:
@@ -112,6 +112,9 @@ budget_actual_programmes:
     - amount: 587807000.0
       financial_year: 2015-16
       phase: Main appropriation
+    - amount: 596646000
+      financial_year: 2015-16
+      phase: Adjusted appropriation
     - amount: 611213000
       financial_year: 2015-16
       phase: Final Appropriation
@@ -154,14 +157,14 @@ budget_actual_programmes:
     - amount: null
       financial_year: 2014-15
       phase: Audit Outcome
-    - amount: null
-      financial_year: 2015-16
-      phase: Adjusted appropriation
     name: National Health Insurance, Health Planning and Systems Enablement
   - items:
     - amount: 19159065000.0
       financial_year: 2015-16
       phase: Main appropriation
+    - amount: 18993031000
+      financial_year: 2015-16
+      phase: Adjusted appropriation
     - amount: 19057465000
       financial_year: 2015-16
       phase: Final Appropriation
@@ -204,14 +207,14 @@ budget_actual_programmes:
     - amount: null
       financial_year: 2014-15
       phase: Audit Outcome
-    - amount: null
-      financial_year: 2015-16
-      phase: Adjusted appropriation
     name: Hospitals, Tertiary Health Services and Human Resource Development
   - items:
     - amount: 14442144000.0
       financial_year: 2015-16
       phase: Main appropriation
+    - amount: 14378878000
+      financial_year: 2015-16
+      phase: Adjusted appropriation
     - amount: 14324860000
       financial_year: 2015-16
       phase: Final Appropriation
@@ -254,14 +257,14 @@ budget_actual_programmes:
     - amount: null
       financial_year: 2014-15
       phase: Audit Outcome
-    - amount: null
-      financial_year: 2015-16
-      phase: Adjusted appropriation
     name: HIV and AIDS, Tuberculosis, and Maternal and Child Health
   - items:
     - amount: 225005000.0
       financial_year: 2015-16
       phase: Main appropriation
+    - amount: 224917000
+      financial_year: 2015-16
+      phase: Adjusted appropriation
     - amount: 215239000
       financial_year: 2015-16
       phase: Final Appropriation
@@ -304,14 +307,14 @@ budget_actual_programmes:
     - amount: null
       financial_year: 2014-15
       phase: Audit Outcome
-    - amount: null
-      financial_year: 2015-16
-      phase: Adjusted appropriation
     name: Primary Health Care Services
   - items:
     - amount: 457078000.0
       financial_year: 2015-16
       phase: Main appropriation
+    - amount: 456578000
+      financial_year: 2015-16
+      phase: Adjusted appropriation
     - amount: 443416000
       financial_year: 2015-16
       phase: Final Appropriation
@@ -354,14 +357,14 @@ budget_actual_programmes:
     - amount: null
       financial_year: 2014-15
       phase: Audit Outcome
-    - amount: null
-      financial_year: 2015-16
-      phase: Adjusted appropriation
     name: Administration
   - items:
     - amount: 1596919000.0
       financial_year: 2015-16
       phase: Main appropriation
+    - amount: 1603875000
+      financial_year: 2015-16
+      phase: Adjusted appropriation
     - amount: 1601732000
       financial_year: 2015-16
       phase: Final Appropriation
@@ -404,9 +407,6 @@ budget_actual_programmes:
     - amount: null
       financial_year: 2014-15
       phase: Audit Outcome
-    - amount: null
-      financial_year: 2015-16
-      phase: Adjusted appropriation
     name: Health Regulation and Compliance Management
 contributed_datasets:
 - contributor: International Budget Partnership

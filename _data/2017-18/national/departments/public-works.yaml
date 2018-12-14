@@ -73,6 +73,9 @@ budget_actual:
       phase: Main appropriation
     - amount: 6312222000
       financial_year: 2015-16
+      phase: Adjusted appropriation
+    - amount: 6312222000
+      financial_year: 2015-16
       phase: Final Appropriation
     - amount: 6281147000
       financial_year: 2015-16
@@ -113,13 +116,13 @@ budget_actual:
     - amount: null
       financial_year: 2014-15
       phase: Audit Outcome
-    - amount: null
-      financial_year: 2015-16
-      phase: Adjusted appropriation
     real:
     - amount: 7147761533
       financial_year: 2015-16
       phase: Main appropriation
+    - amount: 7037536318
+      financial_year: 2015-16
+      phase: Adjusted appropriation
     - amount: 7037536318
       financial_year: 2015-16
       phase: Final Appropriation
@@ -162,9 +165,6 @@ budget_actual:
     - amount: null
       financial_year: 2014-15
       phase: Audit Outcome
-    - amount: null
-      financial_year: 2015-16
-      phase: Adjusted appropriation
 budget_actual_programmes:
   dataset_detail_page: /datasets/expenditure-time-series/expenditure-time-series
   programmes:
@@ -172,6 +172,9 @@ budget_actual_programmes:
     - amount: 1992234000.0
       financial_year: 2015-16
       phase: Main appropriation
+    - amount: 1953369000
+      financial_year: 2015-16
+      phase: Adjusted appropriation
     - amount: 1953369000
       financial_year: 2015-16
       phase: Final Appropriation
@@ -214,14 +217,14 @@ budget_actual_programmes:
     - amount: null
       financial_year: 2014-15
       phase: Audit Outcome
-    - amount: null
-      financial_year: 2015-16
-      phase: Adjusted appropriation
     name: Expanded Public Works Programme
   - items:
     - amount: 47223000.0
       financial_year: 2015-16
       phase: Main appropriation
+    - amount: 45723000
+      financial_year: 2015-16
+      phase: Adjusted appropriation
     - amount: 46015000
       financial_year: 2015-16
       phase: Final Appropriation
@@ -264,14 +267,14 @@ budget_actual_programmes:
     - amount: null
       financial_year: 2014-15
       phase: Audit Outcome
-    - amount: null
-      financial_year: 2015-16
-      phase: Adjusted appropriation
     name: Intergovernmental Coordination
   - items:
     - amount: 92672000.0
       financial_year: 2015-16
       phase: Main appropriation
+    - amount: 92822000
+      financial_year: 2015-16
+      phase: Adjusted appropriation
     - amount: 89519000
       financial_year: 2015-16
       phase: Final Appropriation
@@ -314,14 +317,14 @@ budget_actual_programmes:
     - amount: null
       financial_year: 2014-15
       phase: Audit Outcome
-    - amount: null
-      financial_year: 2015-16
-      phase: Adjusted appropriation
     name: Prestige Policy
   - items:
     - amount: 3802962000.0
       financial_year: 2015-16
       phase: Main appropriation
+    - amount: 3742962000
+      financial_year: 2015-16
+      phase: Adjusted appropriation
     - amount: 3742985000
       financial_year: 2015-16
       phase: Final Appropriation
@@ -364,14 +367,14 @@ budget_actual_programmes:
     - amount: null
       financial_year: 2014-15
       phase: Audit Outcome
-    - amount: null
-      financial_year: 2015-16
-      phase: Adjusted appropriation
     name: Property and Construction Industry Policy and Research
   - items:
     - amount: 475996000.0
       financial_year: 2015-16
       phase: Main appropriation
+    - amount: 477346000
+      financial_year: 2015-16
+      phase: Adjusted appropriation
     - amount: 480334000
       financial_year: 2015-16
       phase: Final Appropriation
@@ -414,9 +417,6 @@ budget_actual_programmes:
     - amount: null
       financial_year: 2014-15
       phase: Audit Outcome
-    - amount: null
-      financial_year: 2015-16
-      phase: Adjusted appropriation
     name: Administration
 contributed_datasets:
 - contributor: Public Service Accountability Monitor

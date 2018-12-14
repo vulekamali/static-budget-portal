@@ -65,6 +65,9 @@ budget_actual:
       phase: Main appropriation
     - amount: 1127520000
       financial_year: 2015-16
+      phase: Adjusted appropriation
+    - amount: 1127520000
+      financial_year: 2015-16
       phase: Final Appropriation
     - amount: 1098890551
       financial_year: 2015-16
@@ -100,9 +103,6 @@ budget_actual:
       financial_year: 2018-19
       phase: Adjusted appropriation
     - amount: null
-      financial_year: 2015-16
-      phase: Adjusted appropriation
-    - amount: null
       financial_year: 2018-19
       phase: Final Appropriation
     - amount: null
@@ -112,6 +112,9 @@ budget_actual:
     - amount: 1229951293
       financial_year: 2015-16
       phase: Main appropriation
+    - amount: 1257079194
+      financial_year: 2015-16
+      phase: Adjusted appropriation
     - amount: 1257079194
       financial_year: 2015-16
       phase: Final Appropriation
@@ -147,9 +150,6 @@ budget_actual:
       phase: Main appropriation
     - amount: 1410968074
       financial_year: 2018-19
-      phase: Adjusted appropriation
-    - amount: null
-      financial_year: 2015-16
       phase: Adjusted appropriation
     - amount: null
       financial_year: 2018-19
@@ -265,15 +265,15 @@ budget_actual_programmes:
     - amount: 15188000.0
       financial_year: 2015-16
       phase: Main appropriation
+    - amount: 11711000
+      financial_year: 2015-16
+      phase: Adjusted appropriation
     - amount: 12241000
       financial_year: 2015-16
       phase: Final Appropriation
     - amount: 11692229
       financial_year: 2015-16
       phase: Audit Outcome
-    - amount: null
-      financial_year: 2015-16
-      phase: Adjusted appropriation
     - amount: null
       financial_year: 2016-17
       phase: Main appropriation
@@ -418,6 +418,9 @@ budget_actual_programmes:
       phase: Main appropriation
     - amount: 1034422000
       financial_year: 2015-16
+      phase: Adjusted appropriation
+    - amount: 1034422000
+      financial_year: 2015-16
       phase: Final Appropriation
     - amount: 1020751645
       financial_year: 2015-16
@@ -427,9 +430,6 @@ budget_actual_programmes:
       phase: Main appropriation
     - amount: 1223868000
       financial_year: 2018-19
-      phase: Adjusted appropriation
-    - amount: null
-      financial_year: 2015-16
       phase: Adjusted appropriation
     - amount: null
       financial_year: 2016-17
@@ -566,6 +566,9 @@ budget_actual_programmes:
     - amount: 64025000.0
       financial_year: 2015-16
       phase: Main appropriation
+    - amount: 81387000
+      financial_year: 2015-16
+      phase: Adjusted appropriation
     - amount: 80857000
       financial_year: 2015-16
       phase: Final Appropriation
@@ -601,9 +604,6 @@ budget_actual_programmes:
       phase: Main appropriation
     - amount: 127121000
       financial_year: 2018-19
-      phase: Adjusted appropriation
-    - amount: null
-      financial_year: 2015-16
       phase: Adjusted appropriation
     - amount: null
       financial_year: 2018-19

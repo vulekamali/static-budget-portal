@@ -13,6 +13,9 @@ budget_actual:
       phase: Main appropriation
     - amount: 6408750000
       financial_year: 2015-16
+      phase: Adjusted appropriation
+    - amount: 6408750000
+      financial_year: 2015-16
       phase: Final Appropriation
     - amount: 6400542160
       financial_year: 2015-16
@@ -53,13 +56,13 @@ budget_actual:
     - amount: null
       financial_year: 2014-15
       phase: Audit Outcome
-    - amount: null
-      financial_year: 2015-16
-      phase: Adjusted appropriation
     real:
     - amount: 7116454963
       financial_year: 2015-16
       phase: Main appropriation
+    - amount: 7145155997
+      financial_year: 2015-16
+      phase: Adjusted appropriation
     - amount: 7145155997
       financial_year: 2015-16
       phase: Final Appropriation
@@ -102,9 +105,6 @@ budget_actual:
     - amount: null
       financial_year: 2014-15
       phase: Audit Outcome
-    - amount: null
-      financial_year: 2015-16
-      phase: Adjusted appropriation
 budget_actual_programmes:
   dataset_detail_page: /datasets/expenditure-time-series/expenditure-time-series
   programmes:
@@ -112,6 +112,9 @@ budget_actual_programmes:
     - amount: 906564000.0
       financial_year: 2015-16
       phase: Main appropriation
+    - amount: 906216000
+      financial_year: 2015-16
+      phase: Adjusted appropriation
     - amount: 862844000
       financial_year: 2015-16
       phase: Final Appropriation
@@ -154,14 +157,14 @@ budget_actual_programmes:
     - amount: null
       financial_year: 2014-15
       phase: Audit Outcome
-    - amount: null
-      financial_year: 2015-16
-      phase: Adjusted appropriation
     name: Forestry and Natural Resources Management
   - items:
     - amount: 238162000.0
       financial_year: 2015-16
       phase: Main appropriation
+    - amount: 233907000
+      financial_year: 2015-16
+      phase: Adjusted appropriation
     - amount: 237327000
       financial_year: 2015-16
       phase: Final Appropriation
@@ -204,14 +207,14 @@ budget_actual_programmes:
     - amount: null
       financial_year: 2014-15
       phase: Audit Outcome
-    - amount: null
-      financial_year: 2015-16
-      phase: Adjusted appropriation
     name: Trade Promotion and Market Access
   - items:
     - amount: 729947000.0
       financial_year: 2015-16
       phase: Main appropriation
+    - amount: 739418000
+      financial_year: 2015-16
+      phase: Adjusted appropriation
     - amount: 788853000
       financial_year: 2015-16
       phase: Final Appropriation
@@ -254,14 +257,14 @@ budget_actual_programmes:
     - amount: null
       financial_year: 2014-15
       phase: Audit Outcome
-    - amount: null
-      financial_year: 2015-16
-      phase: Adjusted appropriation
     name: Administration
   - items:
     - amount: 1930297000.0
       financial_year: 2015-16
       phase: Main appropriation
+    - amount: 1919401000
+      financial_year: 2015-16
+      phase: Adjusted appropriation
     - amount: 1910535000
       financial_year: 2015-16
       phase: Final Appropriation
@@ -304,14 +307,14 @@ budget_actual_programmes:
     - amount: null
       financial_year: 2014-15
       phase: Audit Outcome
-    - amount: null
-      financial_year: 2015-16
-      phase: Adjusted appropriation
     name: Food Security and Agrarian Reform
   - items:
     - amount: 2134770000.0
       financial_year: 2015-16
       phase: Main appropriation
+    - amount: 2144541000
+      financial_year: 2015-16
+      phase: Adjusted appropriation
     - amount: 2143284000
       financial_year: 2015-16
       phase: Final Appropriation
@@ -354,14 +357,14 @@ budget_actual_programmes:
     - amount: null
       financial_year: 2014-15
       phase: Audit Outcome
-    - amount: null
-      financial_year: 2015-16
-      phase: Adjusted appropriation
     name: Agricultural Production, Health and Food Safety
   - items:
     - amount: 443267000.0
       financial_year: 2015-16
       phase: Main appropriation
+    - amount: 465267000
+      financial_year: 2015-16
+      phase: Adjusted appropriation
     - amount: 465907000
       financial_year: 2015-16
       phase: Final Appropriation
@@ -404,9 +407,6 @@ budget_actual_programmes:
     - amount: null
       financial_year: 2014-15
       phase: Audit Outcome
-    - amount: null
-      financial_year: 2015-16
-      phase: Adjusted appropriation
     name: Fisheries
 contributed_datasets:
 - contributor: International Budget Partnership
