@@ -1,11 +1,12 @@
 categories:
-- description: In the middle of each year, the adjustments budget process provides
-    an opportunity to make permissible revisions to the main Budget, as contained
-    in ENE publications, in response to changes that have affected the planned government
-    spending for that year. These adjustments for the current year are contained in
-    an adjustments appropriation bill. The Adjusted Estimates of National Expenditure
-    (AENE) publication contains detailed data on these mid-year adjustments as well
-    as the revised current year revenue and expenditure estimates.
+- description: "Adjustments to the expenditure plans.\r\n\r\nIn the middle of each\
+    \ year, the adjustments budget process provides an opportunity to make permissible\
+    \ revisions to the main Budget, as contained in ENE publications, in response\
+    \ to changes that have affected the planned government spending for that year.\
+    \ These adjustments for the current year are contained in an adjustments appropriation\
+    \ bill. The Adjusted Estimates of National Expenditure (AENE) publication contains\
+    \ detailed data on these mid-year adjustments as well as the revised current year\
+    \ revenue and expenditure estimates."
   name: Adjusted Estimates of National Expenditure
   slug: adjusted-estimates-of-national-expenditure
   url_path: /datasets/adjusted-estimates-of-national-expenditure
@@ -14,7 +15,17 @@ categories:
   name: Annual Report Expenditure Data
   slug: annual-reports
   url_path: /datasets/annual-reports
-- description: ''
+- description: "Expenditure data sourced from the Main Budget, Adjusted Budget and\
+    \ Annual Report events. Use this data to compare budgeted and actual expenditure.\r\
+    \n\r\nNote that historical data in this dataset is not aligned with the current\
+    \ MTEF like the [ENE](https://vulekamali.gov.za/datasets/estimates-of-national-expenditure)\
+    \ and [EPRE](https://vulekamali.gov.za/datasets/estimates-of-provincial-expenditure)\
+    \ data is."
+  name: Budgeted and Actual Expenditure
+  slug: expenditure-time-series
+  url_path: /datasets/expenditure-time-series
+- description: Consumer Price Index (CPI) Inflation data to calculate expenditure
+    in real terms from amounts in nominal terms
   name: CPI Inflation
   slug: cpi-inflation
   url_path: /datasets/cpi-inflation
@@ -23,22 +34,24 @@ categories:
   name: Contributed data and analysis
   slug: contributed
   url_path: /datasets/contributed
-- description: "The Division of Revenue Bill provides for the equitable division of\
-    \ revenue raised nationally among the national, provincial and local spheres of\
-    \ government.\r\n\r\nIt determines each province's share of the provincial share\
-    \ of that revenue.\r\n\r\nIt further determines the other allocations to provinces\
-    \ and municipalities from the national government's share of that revenue, including\
-    \ the conditions of those allocations.\r\n"
+- description: "How money is allocated to provinces and municipalities for a given\
+    \ financial year.\r\n\r\nThe Division of Revenue Bill provides for the equitable\
+    \ division of revenue raised nationally among the national, provincial and local\
+    \ spheres of government.\r\n\r\nIt determines each province's share of the provincial\
+    \ share of that revenue.\r\n\r\nIt further determines the other allocations to\
+    \ provinces and municipalities from the national government's share of that revenue,\
+    \ including the conditions of those allocations.\r\n"
   name: Division of Revenue Bills
   slug: division-of-revenue-bills
   url_path: /datasets/division-of-revenue-bills
-- description: "Expenditure data used to prepare the ENE publications provide detailed\
-    \ data on government\u2019s expenditure allocations contained in the annual appropriation\
-    \ bill (for the upcoming year) as well as for the two outer years, that is for\
-    \ the three years of the medium term expenditure framework. Information is presented\
-    \ by vote (generally a national government department) and by main economic classification.\
-    \ The ENE publications also provide detailed data on how government institutions\
-    \ have spent their budgets in previous years."
+- description: "Budgeted expenditure for a given financial year.\r\n\r\nExpenditure\
+    \ data used to prepare the ENE publications provide detailed data on government\u2019\
+    s expenditure allocations contained in the annual appropriation bill (for the\
+    \ upcoming year) as well as for the two outer years, that is for the three years\
+    \ of the medium term expenditure framework. Information is presented by vote (generally\
+    \ a national government department) and by main economic classification. The ENE\
+    \ publications also provide detailed data on how government institutions have\
+    \ spent their budgets in previous years."
   name: Estimates of National Expenditure
   slug: estimates-of-national-expenditure
   url_path: /datasets/estimates-of-national-expenditure
@@ -57,15 +70,6 @@ categories:
   name: Estimates of Provincial Expenditure
   slug: estimates-of-provincial-expenditure
   url_path: /datasets/estimates-of-provincial-expenditure
-- description: "Expenditure data sourced from the Main Budget, Adjusted Budget and\
-    \ Annual Report events. Use this data to compare budgeted and actual expenditure.\r\
-    \n\r\nNote that historical data in this dataset is not aligned with the current\
-    \ MTEF like the [ENE](https://vulekamali.gov.za/datasets/estimates-of-national-expenditure)\
-    \ and [EPRE](https://vulekamali.gov.za/datasets/estimates-of-provincial-expenditure)\
-    \ data is."
-  name: Expenditure Time Series
-  slug: expenditure-time-series
-  url_path: /datasets/expenditure-time-series
 - description: "This annexure provides a brief description for each grant in schedules\
     \ of the Division of Revenue Bill. The\r\nfollowing are key areas considered for\
     \ each grant:\r\n\r\n- Strategic goal and purpose of the grant\r\n- Outcome statements\

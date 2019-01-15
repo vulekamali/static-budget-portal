@@ -8,23 +8,22 @@ category:
     \ MTEF like the [ENE](https://vulekamali.gov.za/datasets/estimates-of-national-expenditure)\
     \ and [EPRE](https://vulekamali.gov.za/datasets/estimates-of-provincial-expenditure)\
     \ data is."
-  name: Expenditure Time Series
+  name: Budgeted and Actual Expenditure
   slug: expenditure-time-series
   url_path: /datasets/expenditure-time-series
 created: '2018-12-11T06:30:26.964157'
 description: "Combined dataset consisting of ENE, AENE and Annual Report expenditure\
-  \ data.\r\nIncludes data from multiple fiscal years."
+  \ data.\r\n\r\nIncludes data from multiple fiscal years."
 intro: "Combined dataset consisting of ENE, AENE and Annual Report expenditure data.\r\
-  \nIncludes data from multiple fiscal years."
-intro_short: "Combined dataset consisting of ENE, AENE and Annual Report expenditure\
-  \ data.\r\nIncludes data from multiple fiscal years."
+  \n\r\nIncludes data from multiple fiscal years."
+intro_short: null
 key_points: null
-last_updated: '2018-12-14T09:01:32.598235'
+last_updated: '2019-01-15T10:22:15.286458'
 license:
   name: License not specified
   url: null
 methodology: null
-name: Expenditure Time Series
+name: Budgeted and Actual Expenditure
 organization:
   email: null
   facebook: null
@@ -37,15 +36,15 @@ organization:
 resources:
 - description: ''
   format: CSV
-  name: 'Expenditure Time Series '
+  name: Budgeted and Actual Expenditure
   url: http://datastore.openspending.org/b9d2af843f3a7ca223eea07fb608e62a/expenditure-time-series-v2/final/data/expenditure-time-series.csv
 - description: ''
   format: OpenSpending API
-  name: Expenditure Time Series
+  name: Budgeted and Actual Expenditure
   url: https://openspending.org/api/3/cubes/b9d2af843f3a7ca223eea07fb608e62a:expenditure-time-series-v2/model/
 selected_tab: datasets
 slug: expenditure-time-series
-title: Expenditure Time Series - vulekamali
+title: Budgeted and Actual Expenditure - vulekamali
 url_path: /datasets/expenditure-time-series/expenditure-time-series
 usage: null
 use_for: null
