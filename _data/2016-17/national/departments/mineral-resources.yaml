@@ -146,78 +146,28 @@ budget_actual_programmes:
   dataset_detail_page: /datasets/budgeted-and-actual-national-expenditure/budgeted-and-actual-national-expenditure
   programmes:
   - items:
-    - amount: 175840000.0
+    - amount: 889036000.0
       financial_year: 2015-16
       phase: Main appropriation
-    - amount: 184431000
+    - amount: 881526000
       financial_year: 2015-16
       phase: Adjusted appropriation
-    - amount: 171509000
+    - amount: 861730000
       financial_year: 2015-16
       phase: Final Appropriation
-    - amount: 171506000
+    - amount: 861672000
       financial_year: 2015-16
       phase: Audit Outcome
-    - amount: 184934000.0
+    - amount: 902489000.0
       financial_year: 2016-17
       phase: Main appropriation
-    - amount: 189873000
+    - amount: 868263000
       financial_year: 2016-17
       phase: Adjusted appropriation
-    - amount: 190440000
+    - amount: 855664000
       financial_year: 2016-17
       phase: Final Appropriation
-    - amount: 189557000
-      financial_year: 2016-17
-      phase: Audit Outcome
-    - amount: null
-      financial_year: 2013-14
-      phase: Main appropriation
-    - amount: null
-      financial_year: 2013-14
-      phase: Adjusted appropriation
-    - amount: null
-      financial_year: 2013-14
-      phase: Final Appropriation
-    - amount: null
-      financial_year: 2013-14
-      phase: Audit Outcome
-    - amount: null
-      financial_year: 2014-15
-      phase: Main appropriation
-    - amount: null
-      financial_year: 2014-15
-      phase: Adjusted appropriation
-    - amount: null
-      financial_year: 2014-15
-      phase: Final Appropriation
-    - amount: null
-      financial_year: 2014-15
-      phase: Audit Outcome
-    name: Mine Health and Safety
-  - items:
-    - amount: 293223000.0
-      financial_year: 2015-16
-      phase: Main appropriation
-    - amount: 308870000
-      financial_year: 2015-16
-      phase: Adjusted appropriation
-    - amount: 359067000
-      financial_year: 2015-16
-      phase: Final Appropriation
-    - amount: 359067000
-      financial_year: 2015-16
-      phase: Audit Outcome
-    - amount: 310868000.0
-      financial_year: 2016-17
-      phase: Main appropriation
-    - amount: 345814000
-      financial_year: 2016-17
-      phase: Adjusted appropriation
-    - amount: 362796000
-      financial_year: 2016-17
-      phase: Final Appropriation
-    - amount: 361050000
+    - amount: 851736000
       financial_year: 2016-17
       phase: Audit Outcome
     - amount: null
@@ -244,7 +194,7 @@ budget_actual_programmes:
     - amount: null
       financial_year: 2014-15
       phase: Audit Outcome
-    name: Administration
+    name: Mineral Policy and Promotion
   - items:
     - amount: 260443000.0
       financial_year: 2015-16
@@ -296,28 +246,28 @@ budget_actual_programmes:
       phase: Audit Outcome
     name: Mineral Regulation
   - items:
-    - amount: 889036000.0
+    - amount: 293223000.0
       financial_year: 2015-16
       phase: Main appropriation
-    - amount: 881526000
+    - amount: 308870000
       financial_year: 2015-16
       phase: Adjusted appropriation
-    - amount: 861730000
+    - amount: 359067000
       financial_year: 2015-16
       phase: Final Appropriation
-    - amount: 861672000
+    - amount: 359067000
       financial_year: 2015-16
       phase: Audit Outcome
-    - amount: 902489000.0
+    - amount: 310868000.0
       financial_year: 2016-17
       phase: Main appropriation
-    - amount: 868263000
+    - amount: 345814000
       financial_year: 2016-17
       phase: Adjusted appropriation
-    - amount: 855664000
+    - amount: 362796000
       financial_year: 2016-17
       phase: Final Appropriation
-    - amount: 851736000
+    - amount: 361050000
       financial_year: 2016-17
       phase: Audit Outcome
     - amount: null
@@ -344,7 +294,57 @@ budget_actual_programmes:
     - amount: null
       financial_year: 2014-15
       phase: Audit Outcome
-    name: Mineral Policy and Promotion
+    name: Administration
+  - items:
+    - amount: 175840000.0
+      financial_year: 2015-16
+      phase: Main appropriation
+    - amount: 184431000
+      financial_year: 2015-16
+      phase: Adjusted appropriation
+    - amount: 171509000
+      financial_year: 2015-16
+      phase: Final Appropriation
+    - amount: 171506000
+      financial_year: 2015-16
+      phase: Audit Outcome
+    - amount: 184934000.0
+      financial_year: 2016-17
+      phase: Main appropriation
+    - amount: 189873000
+      financial_year: 2016-17
+      phase: Adjusted appropriation
+    - amount: 190440000
+      financial_year: 2016-17
+      phase: Final Appropriation
+    - amount: 189557000
+      financial_year: 2016-17
+      phase: Audit Outcome
+    - amount: null
+      financial_year: 2013-14
+      phase: Main appropriation
+    - amount: null
+      financial_year: 2013-14
+      phase: Adjusted appropriation
+    - amount: null
+      financial_year: 2013-14
+      phase: Final Appropriation
+    - amount: null
+      financial_year: 2013-14
+      phase: Audit Outcome
+    - amount: null
+      financial_year: 2014-15
+      phase: Main appropriation
+    - amount: null
+      financial_year: 2014-15
+      phase: Adjusted appropriation
+    - amount: null
+      financial_year: 2014-15
+      phase: Final Appropriation
+    - amount: null
+      financial_year: 2014-15
+      phase: Audit Outcome
+    name: Mine Health and Safety
 contributed_datasets:
 - contributor: International Budget Partnership
   name: How Does Civil Society Use Budget Information?

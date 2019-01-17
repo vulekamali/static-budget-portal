@@ -170,6 +170,56 @@ budget_actual_programmes:
   dataset_detail_page: /datasets/budgeted-and-actual-national-expenditure/budgeted-and-actual-national-expenditure
   programmes:
   - items:
+    - amount: 130093278000.0
+      financial_year: 2015-16
+      phase: Main appropriation
+    - amount: 129818278000
+      financial_year: 2015-16
+      phase: Adjusted appropriation
+    - amount: 129818278000
+      financial_year: 2015-16
+      phase: Final Appropriation
+    - amount: 128333376000
+      financial_year: 2015-16
+      phase: Audit Outcome
+    - amount: 140498691000.0
+      financial_year: 2016-17
+      phase: Main appropriation
+    - amount: 139498691000
+      financial_year: 2016-17
+      phase: Adjusted appropriation
+    - amount: 139498691000
+      financial_year: 2016-17
+      phase: Final Appropriation
+    - amount: 138915638000
+      financial_year: 2016-17
+      phase: Audit Outcome
+    - amount: 151580232000.0
+      financial_year: 2017-18
+      phase: Main appropriation
+    - amount: 151230232000
+      financial_year: 2017-18
+      phase: Adjusted appropriation
+    - amount: 151230232000
+      financial_year: 2017-18
+      phase: Final Appropriation
+    - amount: 150336771000
+      financial_year: 2017-18
+      phase: Audit Outcome
+    - amount: 162960723000.0
+      financial_year: 2018-19
+      phase: Main appropriation
+    - amount: 162860723000
+      financial_year: 2018-19
+      phase: Adjusted appropriation
+    - amount: null
+      financial_year: 2018-19
+      phase: Final Appropriation
+    - amount: null
+      financial_year: 2018-19
+      phase: Audit Outcome
+    name: Social Assistance
+  - items:
     - amount: 359820000.0
       financial_year: 2015-16
       phase: Main appropriation
@@ -219,56 +269,6 @@ budget_actual_programmes:
       financial_year: 2018-19
       phase: Audit Outcome
     name: Social Policy and Integrated Service Delivery
-  - items:
-    - amount: 662362000.0
-      financial_year: 2015-16
-      phase: Main appropriation
-    - amount: 677362000
-      financial_year: 2015-16
-      phase: Adjusted appropriation
-    - amount: 678287000
-      financial_year: 2015-16
-      phase: Final Appropriation
-    - amount: 676403000
-      financial_year: 2015-16
-      phase: Audit Outcome
-    - amount: 723322000.0
-      financial_year: 2016-17
-      phase: Main appropriation
-    - amount: 721322000
-      financial_year: 2016-17
-      phase: Adjusted appropriation
-    - amount: 718563000
-      financial_year: 2016-17
-      phase: Final Appropriation
-    - amount: 713088000
-      financial_year: 2016-17
-      phase: Audit Outcome
-    - amount: 1055255000.0
-      financial_year: 2017-18
-      phase: Main appropriation
-    - amount: 1050255000
-      financial_year: 2017-18
-      phase: Adjusted appropriation
-    - amount: 1056155000
-      financial_year: 2017-18
-      phase: Final Appropriation
-    - amount: 1011354000
-      financial_year: 2017-18
-      phase: Audit Outcome
-    - amount: 1284493000.0
-      financial_year: 2018-19
-      phase: Main appropriation
-    - amount: 1300440000
-      financial_year: 2018-19
-      phase: Adjusted appropriation
-    - amount: null
-      financial_year: 2018-19
-      phase: Final Appropriation
-    - amount: null
-      financial_year: 2018-19
-      phase: Audit Outcome
-    name: Welfare Services Policy Development and Implementation Support
   - items:
     - amount: 297015000.0
       financial_year: 2015-16
@@ -370,46 +370,46 @@ budget_actual_programmes:
       phase: Audit Outcome
     name: Social Security Policy and Administration
   - items:
-    - amount: 130093278000.0
+    - amount: 662362000.0
       financial_year: 2015-16
       phase: Main appropriation
-    - amount: 129818278000
+    - amount: 677362000
       financial_year: 2015-16
       phase: Adjusted appropriation
-    - amount: 129818278000
+    - amount: 678287000
       financial_year: 2015-16
       phase: Final Appropriation
-    - amount: 128333376000
+    - amount: 676403000
       financial_year: 2015-16
       phase: Audit Outcome
-    - amount: 140498691000.0
+    - amount: 723322000.0
       financial_year: 2016-17
       phase: Main appropriation
-    - amount: 139498691000
+    - amount: 721322000
       financial_year: 2016-17
       phase: Adjusted appropriation
-    - amount: 139498691000
+    - amount: 718563000
       financial_year: 2016-17
       phase: Final Appropriation
-    - amount: 138915638000
+    - amount: 713088000
       financial_year: 2016-17
       phase: Audit Outcome
-    - amount: 151580232000.0
+    - amount: 1055255000.0
       financial_year: 2017-18
       phase: Main appropriation
-    - amount: 151230232000
+    - amount: 1050255000
       financial_year: 2017-18
       phase: Adjusted appropriation
-    - amount: 151230232000
+    - amount: 1056155000
       financial_year: 2017-18
       phase: Final Appropriation
-    - amount: 150336771000
+    - amount: 1011354000
       financial_year: 2017-18
       phase: Audit Outcome
-    - amount: 162960723000.0
+    - amount: 1284493000.0
       financial_year: 2018-19
       phase: Main appropriation
-    - amount: 162860723000
+    - amount: 1300440000
       financial_year: 2018-19
       phase: Adjusted appropriation
     - amount: null
@@ -418,7 +418,7 @@ budget_actual_programmes:
     - amount: null
       financial_year: 2018-19
       phase: Audit Outcome
-    name: Social Assistance
+    name: Welfare Services Policy Development and Implementation Support
 contributed_datasets:
 - contributor: International Budget Partnership
   name: How Does Civil Society Use Budget Information?

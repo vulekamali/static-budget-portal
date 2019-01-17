@@ -253,56 +253,6 @@ budget_actual_programmes:
       phase: Audit Outcome
     name: International Cooperation and Resources
   - items:
-    - amount: 1008817000.0
-      financial_year: 2015-16
-      phase: Main appropriation
-    - amount: 1008514000
-      financial_year: 2015-16
-      phase: Adjusted appropriation
-    - amount: 1070645000
-      financial_year: 2015-16
-      phase: Final Appropriation
-    - amount: 1063297000
-      financial_year: 2015-16
-      phase: Audit Outcome
-    - amount: 1007073000.0
-      financial_year: 2016-17
-      phase: Main appropriation
-    - amount: 1005418000
-      financial_year: 2016-17
-      phase: Adjusted appropriation
-    - amount: 1027588000
-      financial_year: 2016-17
-      phase: Final Appropriation
-    - amount: 1015860000
-      financial_year: 2016-17
-      phase: Audit Outcome
-    - amount: 1073621000.0
-      financial_year: 2017-18
-      phase: Main appropriation
-    - amount: 1075116000
-      financial_year: 2017-18
-      phase: Adjusted appropriation
-    - amount: 1133783000
-      financial_year: 2017-18
-      phase: Final Appropriation
-    - amount: 1116180669
-      financial_year: 2017-18
-      phase: Audit Outcome
-    - amount: 1131723000.0
-      financial_year: 2018-19
-      phase: Main appropriation
-    - amount: 1131723000
-      financial_year: 2018-19
-      phase: Adjusted appropriation
-    - amount: null
-      financial_year: 2018-19
-      phase: Final Appropriation
-    - amount: null
-      financial_year: 2018-19
-      phase: Audit Outcome
-    name: Technology Innovation
-  - items:
     - amount: 299776000.0
       financial_year: 2015-16
       phase: Main appropriation
@@ -352,6 +302,56 @@ budget_actual_programmes:
       financial_year: 2018-19
       phase: Audit Outcome
     name: Administration
+  - items:
+    - amount: 4247066000.0
+      financial_year: 2015-16
+      phase: Main appropriation
+    - amount: 4238825000
+      financial_year: 2015-16
+      phase: Adjusted appropriation
+    - amount: 4226922000
+      financial_year: 2015-16
+      phase: Final Appropriation
+    - amount: 4218854000
+      financial_year: 2015-16
+      phase: Audit Outcome
+    - amount: 4200596000.0
+      financial_year: 2016-17
+      phase: Main appropriation
+    - amount: 4170997000
+      financial_year: 2016-17
+      phase: Adjusted appropriation
+    - amount: 4157604000
+      financial_year: 2016-17
+      phase: Final Appropriation
+    - amount: 4152630000
+      financial_year: 2016-17
+      phase: Audit Outcome
+    - amount: 4348859000.0
+      financial_year: 2017-18
+      phase: Main appropriation
+    - amount: 4350136000
+      financial_year: 2017-18
+      phase: Adjusted appropriation
+    - amount: 4300795298
+      financial_year: 2017-18
+      phase: Final Appropriation
+    - amount: 4291923893
+      financial_year: 2017-18
+      phase: Audit Outcome
+    - amount: 4360304000.0
+      financial_year: 2018-19
+      phase: Main appropriation
+    - amount: 4530992000
+      financial_year: 2018-19
+      phase: Adjusted appropriation
+    - amount: null
+      financial_year: 2018-19
+      phase: Final Appropriation
+    - amount: null
+      financial_year: 2018-19
+      phase: Audit Outcome
+    name: Research, Development and Support
   - items:
     - amount: 1804464000.0
       financial_year: 2015-16
@@ -403,46 +403,46 @@ budget_actual_programmes:
       phase: Audit Outcome
     name: Socio-Economic Innovation Partnerships
   - items:
-    - amount: 4247066000.0
+    - amount: 1008817000.0
       financial_year: 2015-16
       phase: Main appropriation
-    - amount: 4238825000
+    - amount: 1008514000
       financial_year: 2015-16
       phase: Adjusted appropriation
-    - amount: 4226922000
+    - amount: 1070645000
       financial_year: 2015-16
       phase: Final Appropriation
-    - amount: 4218854000
+    - amount: 1063297000
       financial_year: 2015-16
       phase: Audit Outcome
-    - amount: 4200596000.0
+    - amount: 1007073000.0
       financial_year: 2016-17
       phase: Main appropriation
-    - amount: 4170997000
+    - amount: 1005418000
       financial_year: 2016-17
       phase: Adjusted appropriation
-    - amount: 4157604000
+    - amount: 1027588000
       financial_year: 2016-17
       phase: Final Appropriation
-    - amount: 4152630000
+    - amount: 1015860000
       financial_year: 2016-17
       phase: Audit Outcome
-    - amount: 4348859000.0
+    - amount: 1073621000.0
       financial_year: 2017-18
       phase: Main appropriation
-    - amount: 4350136000
+    - amount: 1075116000
       financial_year: 2017-18
       phase: Adjusted appropriation
-    - amount: 4300795298
+    - amount: 1133783000
       financial_year: 2017-18
       phase: Final Appropriation
-    - amount: 4291923893
+    - amount: 1116180669
       financial_year: 2017-18
       phase: Audit Outcome
-    - amount: 4360304000.0
+    - amount: 1131723000.0
       financial_year: 2018-19
       phase: Main appropriation
-    - amount: 4530992000
+    - amount: 1131723000
       financial_year: 2018-19
       phase: Adjusted appropriation
     - amount: null
@@ -451,7 +451,7 @@ budget_actual_programmes:
     - amount: null
       financial_year: 2018-19
       phase: Audit Outcome
-    name: Research, Development and Support
+    name: Technology Innovation
 contributed_datasets:
 - contributor: International Budget Partnership
   name: How Does Civil Society Use Budget Information?

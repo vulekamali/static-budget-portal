@@ -146,28 +146,28 @@ budget_actual_programmes:
   dataset_detail_page: /datasets/budgeted-and-actual-national-expenditure/budgeted-and-actual-national-expenditure
   programmes:
   - items:
-    - amount: 79281000.0
+    - amount: 240149000.0
       financial_year: 2015-16
       phase: Main appropriation
-    - amount: 79281000
+    - amount: 240149000
       financial_year: 2015-16
       phase: Adjusted appropriation
-    - amount: 79740000
+    - amount: 246114000
       financial_year: 2015-16
       phase: Final Appropriation
-    - amount: 79740000
+    - amount: 246114000
       financial_year: 2015-16
       phase: Audit Outcome
-    - amount: 109273000.0
+    - amount: 289582000.0
       financial_year: 2016-17
       phase: Main appropriation
-    - amount: 109273000
+    - amount: 289582000
       financial_year: 2016-17
       phase: Adjusted appropriation
-    - amount: 98393000
+    - amount: 296403000
       financial_year: 2016-17
       phase: Final Appropriation
-    - amount: 94968000
+    - amount: 295484000
       financial_year: 2016-17
       phase: Audit Outcome
     - amount: null
@@ -194,7 +194,7 @@ budget_actual_programmes:
     - amount: null
       financial_year: 2014-15
       phase: Audit Outcome
-    name: Chemicals and Waste Management
+    name: Climate Change and Air Quality
   - items:
     - amount: 127517000.0
       financial_year: 2015-16
@@ -246,78 +246,28 @@ budget_actual_programmes:
       phase: Audit Outcome
     name: Legal, Authorisations and Compliance
   - items:
-    - amount: 240149000.0
+    - amount: 714049000.0
       financial_year: 2015-16
       phase: Main appropriation
-    - amount: 240149000
+    - amount: 870184000
       financial_year: 2015-16
       phase: Adjusted appropriation
-    - amount: 246114000
+    - amount: 832487000
       financial_year: 2015-16
       phase: Final Appropriation
-    - amount: 246114000
+    - amount: 832487000
       financial_year: 2015-16
       phase: Audit Outcome
-    - amount: 289582000.0
+    - amount: 808226000.0
       financial_year: 2016-17
       phase: Main appropriation
-    - amount: 289582000
+    - amount: 803226000
       financial_year: 2016-17
       phase: Adjusted appropriation
-    - amount: 296403000
+    - amount: 828874000
       financial_year: 2016-17
       phase: Final Appropriation
-    - amount: 295484000
-      financial_year: 2016-17
-      phase: Audit Outcome
-    - amount: null
-      financial_year: 2013-14
-      phase: Main appropriation
-    - amount: null
-      financial_year: 2013-14
-      phase: Adjusted appropriation
-    - amount: null
-      financial_year: 2013-14
-      phase: Final Appropriation
-    - amount: null
-      financial_year: 2013-14
-      phase: Audit Outcome
-    - amount: null
-      financial_year: 2014-15
-      phase: Main appropriation
-    - amount: null
-      financial_year: 2014-15
-      phase: Adjusted appropriation
-    - amount: null
-      financial_year: 2014-15
-      phase: Final Appropriation
-    - amount: null
-      financial_year: 2014-15
-      phase: Audit Outcome
-    name: Climate Change and Air Quality
-  - items:
-    - amount: 484529000.0
-      financial_year: 2015-16
-      phase: Main appropriation
-    - amount: 399529000
-      financial_year: 2015-16
-      phase: Adjusted appropriation
-    - amount: 372021000
-      financial_year: 2015-16
-      phase: Final Appropriation
-    - amount: 368659000
-      financial_year: 2015-16
-      phase: Audit Outcome
-    - amount: 475041000.0
-      financial_year: 2016-17
-      phase: Main appropriation
-    - amount: 475041000
-      financial_year: 2016-17
-      phase: Adjusted appropriation
-    - amount: 502681000
-      financial_year: 2016-17
-      phase: Final Appropriation
-    - amount: 502681000
+    - amount: 827902000
       financial_year: 2016-17
       phase: Audit Outcome
     - amount: null
@@ -344,7 +294,7 @@ budget_actual_programmes:
     - amount: null
       financial_year: 2014-15
       phase: Audit Outcome
-    name: Oceans and Coasts
+    name: Administration
   - items:
     - amount: 655600000.0
       financial_year: 2015-16
@@ -396,28 +346,28 @@ budget_actual_programmes:
       phase: Audit Outcome
     name: Biodiversity and Conservation
   - items:
-    - amount: 714049000.0
+    - amount: 484529000.0
       financial_year: 2015-16
       phase: Main appropriation
-    - amount: 870184000
+    - amount: 399529000
       financial_year: 2015-16
       phase: Adjusted appropriation
-    - amount: 832487000
+    - amount: 372021000
       financial_year: 2015-16
       phase: Final Appropriation
-    - amount: 832487000
+    - amount: 368659000
       financial_year: 2015-16
       phase: Audit Outcome
-    - amount: 808226000.0
+    - amount: 475041000.0
       financial_year: 2016-17
       phase: Main appropriation
-    - amount: 803226000
+    - amount: 475041000
       financial_year: 2016-17
       phase: Adjusted appropriation
-    - amount: 828874000
+    - amount: 502681000
       financial_year: 2016-17
       phase: Final Appropriation
-    - amount: 827902000
+    - amount: 502681000
       financial_year: 2016-17
       phase: Audit Outcome
     - amount: null
@@ -444,7 +394,7 @@ budget_actual_programmes:
     - amount: null
       financial_year: 2014-15
       phase: Audit Outcome
-    name: Administration
+    name: Oceans and Coasts
   - items:
     - amount: 3646864000.0
       financial_year: 2015-16
@@ -495,6 +445,56 @@ budget_actual_programmes:
       financial_year: 2014-15
       phase: Audit Outcome
     name: Environmental Programmes
+  - items:
+    - amount: 79281000.0
+      financial_year: 2015-16
+      phase: Main appropriation
+    - amount: 79281000
+      financial_year: 2015-16
+      phase: Adjusted appropriation
+    - amount: 79740000
+      financial_year: 2015-16
+      phase: Final Appropriation
+    - amount: 79740000
+      financial_year: 2015-16
+      phase: Audit Outcome
+    - amount: 109273000.0
+      financial_year: 2016-17
+      phase: Main appropriation
+    - amount: 109273000
+      financial_year: 2016-17
+      phase: Adjusted appropriation
+    - amount: 98393000
+      financial_year: 2016-17
+      phase: Final Appropriation
+    - amount: 94968000
+      financial_year: 2016-17
+      phase: Audit Outcome
+    - amount: null
+      financial_year: 2013-14
+      phase: Main appropriation
+    - amount: null
+      financial_year: 2013-14
+      phase: Adjusted appropriation
+    - amount: null
+      financial_year: 2013-14
+      phase: Final Appropriation
+    - amount: null
+      financial_year: 2013-14
+      phase: Audit Outcome
+    - amount: null
+      financial_year: 2014-15
+      phase: Main appropriation
+    - amount: null
+      financial_year: 2014-15
+      phase: Adjusted appropriation
+    - amount: null
+      financial_year: 2014-15
+      phase: Final Appropriation
+    - amount: null
+      financial_year: 2014-15
+      phase: Audit Outcome
+    name: Chemicals and Waste Management
 contributed_datasets:
 - contributor: International Budget Partnership
   name: How Does Civil Society Use Budget Information?

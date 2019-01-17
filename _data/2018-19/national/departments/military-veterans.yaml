@@ -109,6 +109,56 @@ budget_actual_programmes:
   dataset_detail_page: /datasets/budgeted-and-actual-national-expenditure/budgeted-and-actual-national-expenditure
   programmes:
   - items:
+    - amount: 336772000.0
+      financial_year: 2018-19
+      phase: Main appropriation
+    - amount: null
+      financial_year: 2015-16
+      phase: Main appropriation
+    - amount: null
+      financial_year: 2015-16
+      phase: Adjusted appropriation
+    - amount: null
+      financial_year: 2015-16
+      phase: Final Appropriation
+    - amount: null
+      financial_year: 2015-16
+      phase: Audit Outcome
+    - amount: null
+      financial_year: 2016-17
+      phase: Main appropriation
+    - amount: null
+      financial_year: 2016-17
+      phase: Adjusted appropriation
+    - amount: null
+      financial_year: 2016-17
+      phase: Final Appropriation
+    - amount: null
+      financial_year: 2016-17
+      phase: Audit Outcome
+    - amount: null
+      financial_year: 2017-18
+      phase: Main appropriation
+    - amount: null
+      financial_year: 2017-18
+      phase: Adjusted appropriation
+    - amount: null
+      financial_year: 2017-18
+      phase: Final Appropriation
+    - amount: null
+      financial_year: 2017-18
+      phase: Audit Outcome
+    - amount: null
+      financial_year: 2018-19
+      phase: Adjusted appropriation
+    - amount: null
+      financial_year: 2018-19
+      phase: Final Appropriation
+    - amount: null
+      financial_year: 2018-19
+      phase: Audit Outcome
+    name: Socioeconomic Support
+  - items:
     - amount: 164912000.0
       financial_year: 2017-18
       phase: Main appropriation
@@ -158,56 +208,6 @@ budget_actual_programmes:
       financial_year: 2018-19
       phase: Audit Outcome
     name: Empowerment and Stakeholder Management
-  - items:
-    - amount: 149818000.0
-      financial_year: 2017-18
-      phase: Main appropriation
-    - amount: 127565000.0
-      financial_year: 2018-19
-      phase: Main appropriation
-    - amount: null
-      financial_year: 2015-16
-      phase: Main appropriation
-    - amount: null
-      financial_year: 2015-16
-      phase: Adjusted appropriation
-    - amount: null
-      financial_year: 2015-16
-      phase: Final Appropriation
-    - amount: null
-      financial_year: 2015-16
-      phase: Audit Outcome
-    - amount: null
-      financial_year: 2016-17
-      phase: Main appropriation
-    - amount: null
-      financial_year: 2016-17
-      phase: Adjusted appropriation
-    - amount: null
-      financial_year: 2016-17
-      phase: Final Appropriation
-    - amount: null
-      financial_year: 2016-17
-      phase: Audit Outcome
-    - amount: null
-      financial_year: 2017-18
-      phase: Adjusted appropriation
-    - amount: null
-      financial_year: 2017-18
-      phase: Final Appropriation
-    - amount: null
-      financial_year: 2017-18
-      phase: Audit Outcome
-    - amount: null
-      financial_year: 2018-19
-      phase: Adjusted appropriation
-    - amount: null
-      financial_year: 2018-19
-      phase: Final Appropriation
-    - amount: null
-      financial_year: 2018-19
-      phase: Audit Outcome
-    name: Administration
   - items:
     - amount: 307381000.0
       financial_year: 2017-18
@@ -259,7 +259,10 @@ budget_actual_programmes:
       phase: Audit Outcome
     name: Socio Economic Support
   - items:
-    - amount: 336772000.0
+    - amount: 149818000.0
+      financial_year: 2017-18
+      phase: Main appropriation
+    - amount: 127565000.0
       financial_year: 2018-19
       phase: Main appropriation
     - amount: null
@@ -288,9 +291,6 @@ budget_actual_programmes:
       phase: Audit Outcome
     - amount: null
       financial_year: 2017-18
-      phase: Main appropriation
-    - amount: null
-      financial_year: 2017-18
       phase: Adjusted appropriation
     - amount: null
       financial_year: 2017-18
@@ -307,7 +307,7 @@ budget_actual_programmes:
     - amount: null
       financial_year: 2018-19
       phase: Audit Outcome
-    name: Socioeconomic Support
+    name: Administration
 contributed_datasets:
 - contributor: International Budget Partnership
   name: How Does Civil Society Use Budget Information?
