@@ -58,7 +58,7 @@ adjusted_budget_summary:
     label: Value of virements
     percentage: 0.0008550998057668032
 budget_actual:
-  dataset_detail_page: /datasets/expenditure-time-series/expenditure-time-series
+  dataset_detail_page: /datasets/budgeted-and-actual-national-expenditure/budgeted-and-actual-national-expenditure
   expenditure:
     base_financial_year: 2017-18
     nominal:
@@ -160,7 +160,7 @@ budget_actual:
       financial_year: 2015-16
       phase: Main appropriation
 budget_actual_programmes:
-  dataset_detail_page: /datasets/expenditure-time-series/expenditure-time-series
+  dataset_detail_page: /datasets/budgeted-and-actual-national-expenditure/budgeted-and-actual-national-expenditure
   programmes:
   - items:
     - amount: 60431000
@@ -263,13 +263,13 @@ budget_actual_programmes:
       phase: Main appropriation
     name: National Planning
   - items:
-    - amount: 92324000
+    - amount: 104185000
       financial_year: 2015-16
       phase: Adjusted appropriation
-    - amount: 90087000
+    - amount: 111872000
       financial_year: 2015-16
       phase: Final Appropriation
-    - amount: 89560000
+    - amount: 111872000
       financial_year: 2015-16
       phase: Audit Outcome
     - amount: null
@@ -311,7 +311,7 @@ budget_actual_programmes:
     - amount: null
       financial_year: 2015-16
       phase: Main appropriation
-    name: Outcomes Monitoring and Evaluation
+    name: Administration
   - items:
     - amount: 415063000
       financial_year: 2015-16
@@ -363,13 +363,13 @@ budget_actual_programmes:
       phase: Main appropriation
     name: National Youth Development
   - items:
-    - amount: 104185000
+    - amount: 92324000
       financial_year: 2015-16
       phase: Adjusted appropriation
-    - amount: 111872000
+    - amount: 90087000
       financial_year: 2015-16
       phase: Final Appropriation
-    - amount: 111872000
+    - amount: 89560000
       financial_year: 2015-16
       phase: Audit Outcome
     - amount: null
@@ -411,7 +411,7 @@ budget_actual_programmes:
     - amount: null
       financial_year: 2015-16
       phase: Main appropriation
-    name: Administration
+    name: Outcomes Monitoring and Evaluation
 contributed_datasets:
 - contributor: International Budget Partnership
   name: How Does Civil Society Use Budget Information?

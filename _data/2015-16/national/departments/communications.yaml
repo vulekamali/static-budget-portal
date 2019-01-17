@@ -29,7 +29,7 @@ adjusted_budget_summary:
     label: Value of virements
     percentage: 0.0
 budget_actual:
-  dataset_detail_page: /datasets/expenditure-time-series/expenditure-time-series
+  dataset_detail_page: /datasets/budgeted-and-actual-national-expenditure/budgeted-and-actual-national-expenditure
   expenditure:
     base_financial_year: 2017-18
     nominal:
@@ -131,19 +131,19 @@ budget_actual:
       financial_year: 2014-15
       phase: Audit Outcome
 budget_actual_programmes:
-  dataset_detail_page: /datasets/expenditure-time-series/expenditure-time-series
+  dataset_detail_page: /datasets/budgeted-and-actual-national-expenditure/budgeted-and-actual-national-expenditure
   programmes:
   - items:
-    - amount: 1220380000.0
+    - amount: 42414000.0
       financial_year: 2015-16
       phase: Main appropriation
-    - amount: 1220380000
+    - amount: 42414000
       financial_year: 2015-16
       phase: Adjusted appropriation
-    - amount: 1214572000
+    - amount: 48207000
       financial_year: 2015-16
       phase: Final Appropriation
-    - amount: 1214555000
+    - amount: 48206000
       financial_year: 2015-16
       phase: Audit Outcome
     - amount: null
@@ -182,7 +182,7 @@ budget_actual_programmes:
     - amount: null
       financial_year: 2014-15
       phase: Audit Outcome
-    name: Entity Oversight
+    name: Administration
   - items:
     - amount: 10197000.0
       financial_year: 2015-16
@@ -284,16 +284,16 @@ budget_actual_programmes:
       phase: Audit Outcome
     name: Communications Policy, Research and Development
   - items:
-    - amount: 42414000.0
+    - amount: 1220380000.0
       financial_year: 2015-16
       phase: Main appropriation
-    - amount: 42414000
+    - amount: 1220380000
       financial_year: 2015-16
       phase: Adjusted appropriation
-    - amount: 48207000
+    - amount: 1214572000
       financial_year: 2015-16
       phase: Final Appropriation
-    - amount: 48206000
+    - amount: 1214555000
       financial_year: 2015-16
       phase: Audit Outcome
     - amount: null
@@ -332,7 +332,7 @@ budget_actual_programmes:
     - amount: null
       financial_year: 2014-15
       phase: Audit Outcome
-    name: Administration
+    name: Entity Oversight
 contributed_datasets:
 - contributor: International Budget Partnership
   name: How Does Civil Society Use Budget Information?

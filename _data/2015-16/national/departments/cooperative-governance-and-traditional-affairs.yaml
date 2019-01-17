@@ -65,7 +65,7 @@ adjusted_budget_summary:
     label: Value of virements
     percentage: 3.341452934601717e-05
 budget_actual:
-  dataset_detail_page: /datasets/expenditure-time-series/expenditure-time-series
+  dataset_detail_page: /datasets/budgeted-and-actual-national-expenditure/budgeted-and-actual-national-expenditure
   expenditure:
     base_financial_year: 2017-18
     nominal:
@@ -167,69 +167,19 @@ budget_actual:
       financial_year: 2014-15
       phase: Audit Outcome
 budget_actual_programmes:
-  dataset_detail_page: /datasets/expenditure-time-series/expenditure-time-series
+  dataset_detail_page: /datasets/budgeted-and-actual-national-expenditure/budgeted-and-actual-national-expenditure
   programmes:
   - items:
-    - amount: 50321345000.0
+    - amount: 606805000.0
       financial_year: 2015-16
       phase: Main appropriation
-    - amount: 51825863000
+    - amount: 606805000
       financial_year: 2015-16
       phase: Adjusted appropriation
-    - amount: 51809326000
+    - amount: 591355000
       financial_year: 2015-16
       phase: Final Appropriation
-    - amount: 49466922000
-      financial_year: 2015-16
-      phase: Audit Outcome
-    - amount: null
-      financial_year: 2012-13
-      phase: Main appropriation
-    - amount: null
-      financial_year: 2012-13
-      phase: Adjusted appropriation
-    - amount: null
-      financial_year: 2012-13
-      phase: Final Appropriation
-    - amount: null
-      financial_year: 2012-13
-      phase: Audit Outcome
-    - amount: null
-      financial_year: 2013-14
-      phase: Main appropriation
-    - amount: null
-      financial_year: 2013-14
-      phase: Adjusted appropriation
-    - amount: null
-      financial_year: 2013-14
-      phase: Final Appropriation
-    - amount: null
-      financial_year: 2013-14
-      phase: Audit Outcome
-    - amount: null
-      financial_year: 2014-15
-      phase: Main appropriation
-    - amount: null
-      financial_year: 2014-15
-      phase: Adjusted appropriation
-    - amount: null
-      financial_year: 2014-15
-      phase: Final Appropriation
-    - amount: null
-      financial_year: 2014-15
-      phase: Audit Outcome
-    name: Governance and Intergovernmental Relations
-  - items:
-    - amount: 247969000.0
-      financial_year: 2015-16
-      phase: Main appropriation
-    - amount: 240088000
-      financial_year: 2015-16
-      phase: Adjusted appropriation
-    - amount: 271125000
-      financial_year: 2015-16
-      phase: Final Appropriation
-    - amount: 269422000
+    - amount: 258158000
       financial_year: 2015-16
       phase: Audit Outcome
     - amount: null
@@ -268,57 +218,7 @@ budget_actual_programmes:
     - amount: null
       financial_year: 2014-15
       phase: Audit Outcome
-    name: Administration
-  - items:
-    - amount: 22081000.0
-      financial_year: 2015-16
-      phase: Main appropriation
-    - amount: 20281000
-      financial_year: 2015-16
-      phase: Adjusted appropriation
-    - amount: 19281000
-      financial_year: 2015-16
-      phase: Final Appropriation
-    - amount: 17914000
-      financial_year: 2015-16
-      phase: Audit Outcome
-    - amount: null
-      financial_year: 2012-13
-      phase: Main appropriation
-    - amount: null
-      financial_year: 2012-13
-      phase: Adjusted appropriation
-    - amount: null
-      financial_year: 2012-13
-      phase: Final Appropriation
-    - amount: null
-      financial_year: 2012-13
-      phase: Audit Outcome
-    - amount: null
-      financial_year: 2013-14
-      phase: Main appropriation
-    - amount: null
-      financial_year: 2013-14
-      phase: Adjusted appropriation
-    - amount: null
-      financial_year: 2013-14
-      phase: Final Appropriation
-    - amount: null
-      financial_year: 2013-14
-      phase: Audit Outcome
-    - amount: null
-      financial_year: 2014-15
-      phase: Main appropriation
-    - amount: null
-      financial_year: 2014-15
-      phase: Adjusted appropriation
-    - amount: null
-      financial_year: 2014-15
-      phase: Final Appropriation
-    - amount: null
-      financial_year: 2014-15
-      phase: Audit Outcome
-    name: Policy, Research and Knowledge Management
+    name: National Disaster Management Centre
   - items:
     - amount: 328092000.0
       financial_year: 2015-16
@@ -370,6 +270,56 @@ budget_actual_programmes:
       phase: Audit Outcome
     name: Provincial and Municipal Government Systems
   - items:
+    - amount: 22081000.0
+      financial_year: 2015-16
+      phase: Main appropriation
+    - amount: 20281000
+      financial_year: 2015-16
+      phase: Adjusted appropriation
+    - amount: 19281000
+      financial_year: 2015-16
+      phase: Final Appropriation
+    - amount: 17914000
+      financial_year: 2015-16
+      phase: Audit Outcome
+    - amount: null
+      financial_year: 2012-13
+      phase: Main appropriation
+    - amount: null
+      financial_year: 2012-13
+      phase: Adjusted appropriation
+    - amount: null
+      financial_year: 2012-13
+      phase: Final Appropriation
+    - amount: null
+      financial_year: 2012-13
+      phase: Audit Outcome
+    - amount: null
+      financial_year: 2013-14
+      phase: Main appropriation
+    - amount: null
+      financial_year: 2013-14
+      phase: Adjusted appropriation
+    - amount: null
+      financial_year: 2013-14
+      phase: Final Appropriation
+    - amount: null
+      financial_year: 2013-14
+      phase: Audit Outcome
+    - amount: null
+      financial_year: 2014-15
+      phase: Main appropriation
+    - amount: null
+      financial_year: 2014-15
+      phase: Adjusted appropriation
+    - amount: null
+      financial_year: 2014-15
+      phase: Final Appropriation
+    - amount: null
+      financial_year: 2014-15
+      phase: Audit Outcome
+    name: Policy, Research and Knowledge Management
+  - items:
     - amount: 17668420000.0
       financial_year: 2015-16
       phase: Main appropriation
@@ -419,6 +369,56 @@ budget_actual_programmes:
       financial_year: 2014-15
       phase: Audit Outcome
     name: Infrastructure and Economic Development
+  - items:
+    - amount: 247969000.0
+      financial_year: 2015-16
+      phase: Main appropriation
+    - amount: 240088000
+      financial_year: 2015-16
+      phase: Adjusted appropriation
+    - amount: 271125000
+      financial_year: 2015-16
+      phase: Final Appropriation
+    - amount: 269422000
+      financial_year: 2015-16
+      phase: Audit Outcome
+    - amount: null
+      financial_year: 2012-13
+      phase: Main appropriation
+    - amount: null
+      financial_year: 2012-13
+      phase: Adjusted appropriation
+    - amount: null
+      financial_year: 2012-13
+      phase: Final Appropriation
+    - amount: null
+      financial_year: 2012-13
+      phase: Audit Outcome
+    - amount: null
+      financial_year: 2013-14
+      phase: Main appropriation
+    - amount: null
+      financial_year: 2013-14
+      phase: Adjusted appropriation
+    - amount: null
+      financial_year: 2013-14
+      phase: Final Appropriation
+    - amount: null
+      financial_year: 2013-14
+      phase: Audit Outcome
+    - amount: null
+      financial_year: 2014-15
+      phase: Main appropriation
+    - amount: null
+      financial_year: 2014-15
+      phase: Adjusted appropriation
+    - amount: null
+      financial_year: 2014-15
+      phase: Final Appropriation
+    - amount: null
+      financial_year: 2014-15
+      phase: Audit Outcome
+    name: Administration
   - items:
     - amount: 119447000.0
       financial_year: 2015-16
@@ -470,16 +470,16 @@ budget_actual_programmes:
       phase: Audit Outcome
     name: Traditional Affairs
   - items:
-    - amount: 606805000.0
+    - amount: 50321345000.0
       financial_year: 2015-16
       phase: Main appropriation
-    - amount: 606805000
+    - amount: 51825863000
       financial_year: 2015-16
       phase: Adjusted appropriation
-    - amount: 591355000
+    - amount: 51809326000
       financial_year: 2015-16
       phase: Final Appropriation
-    - amount: 258158000
+    - amount: 49466922000
       financial_year: 2015-16
       phase: Audit Outcome
     - amount: null
@@ -518,7 +518,7 @@ budget_actual_programmes:
     - amount: null
       financial_year: 2014-15
       phase: Audit Outcome
-    name: National Disaster Management Centre
+    name: Governance and Intergovernmental Relations
 contributed_datasets:
 - contributor: International Budget Partnership
   name: How Does Civil Society Use Budget Information?

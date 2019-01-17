@@ -64,7 +64,7 @@ adjusted_budget_summary:
     label: Value of virements
     percentage: 1.0421115443011704
 budget_actual:
-  dataset_detail_page: /datasets/expenditure-time-series/expenditure-time-series
+  dataset_detail_page: /datasets/budgeted-and-actual-national-expenditure/budgeted-and-actual-national-expenditure
   expenditure:
     base_financial_year: 2017-18
     nominal:
@@ -166,7 +166,7 @@ budget_actual:
       financial_year: 2014-15
       phase: Audit Outcome
 budget_actual_programmes:
-  dataset_detail_page: /datasets/expenditure-time-series/expenditure-time-series
+  dataset_detail_page: /datasets/budgeted-and-actual-national-expenditure/budgeted-and-actual-national-expenditure
   programmes:
   - items:
     - amount: 231339000.0
@@ -269,28 +269,28 @@ budget_actual_programmes:
       phase: Audit Outcome
     name: Water and Sanitation Services
   - items:
-    - amount: 12435787000.0
+    - amount: 1526167000.0
       financial_year: 2015-16
       phase: Main appropriation
-    - amount: 11815750000
+    - amount: 1487534000
       financial_year: 2015-16
       phase: Adjusted appropriation
-    - amount: 11856540000
+    - amount: 1519753000
       financial_year: 2015-16
       phase: Final Appropriation
-    - amount: 11748847000
+    - amount: 1517867000
       financial_year: 2015-16
       phase: Audit Outcome
-    - amount: 11696415000.0
+    - amount: 1659488000.0
       financial_year: 2016-17
       phase: Main appropriation
-    - amount: 12012696000
+    - amount: 1612951000
       financial_year: 2016-17
       phase: Adjusted appropriation
-    - amount: 12130318000
+    - amount: 1547743000
       financial_year: 2016-17
       phase: Final Appropriation
-    - amount: 12082462000
+    - amount: 1504930000
       financial_year: 2016-17
       phase: Audit Outcome
     - amount: null
@@ -317,7 +317,7 @@ budget_actual_programmes:
     - amount: null
       financial_year: 2014-15
       phase: Audit Outcome
-    name: Water Infrastructure Development
+    name: Administration
   - items:
     - amount: 808655000.0
       financial_year: 2015-16
@@ -369,28 +369,28 @@ budget_actual_programmes:
       phase: Audit Outcome
     name: Water Planning and Information Management
   - items:
-    - amount: 1526167000.0
+    - amount: 12435787000.0
       financial_year: 2015-16
       phase: Main appropriation
-    - amount: 1487534000
+    - amount: 11815750000
       financial_year: 2015-16
       phase: Adjusted appropriation
-    - amount: 1519753000
+    - amount: 11856540000
       financial_year: 2015-16
       phase: Final Appropriation
-    - amount: 1517867000
+    - amount: 11748847000
       financial_year: 2015-16
       phase: Audit Outcome
-    - amount: 1659488000.0
+    - amount: 11696415000.0
       financial_year: 2016-17
       phase: Main appropriation
-    - amount: 1612951000
+    - amount: 12012696000
       financial_year: 2016-17
       phase: Adjusted appropriation
-    - amount: 1547743000
+    - amount: 12130318000
       financial_year: 2016-17
       phase: Final Appropriation
-    - amount: 1504930000
+    - amount: 12082462000
       financial_year: 2016-17
       phase: Audit Outcome
     - amount: null
@@ -417,7 +417,7 @@ budget_actual_programmes:
     - amount: null
       financial_year: 2014-15
       phase: Audit Outcome
-    name: Administration
+    name: Water Infrastructure Development
 contributed_datasets:
 - contributor: International Budget Partnership
   name: How Does Civil Society Use Budget Information?

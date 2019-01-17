@@ -3,7 +3,8 @@ datasets:
     email: ''
     name: ''
   category:
-    description: ''
+    description: Consumer Price Index (CPI) Inflation data to calculate expenditure
+      in real terms from amounts in nominal terms
     name: CPI Inflation
     slug: cpi-inflation
     url_path: /datasets/cpi-inflation

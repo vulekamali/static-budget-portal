@@ -36,7 +36,7 @@ adjusted_budget_summary:
     label: Value of virements
     percentage: 0.02051096544182018
 budget_actual:
-  dataset_detail_page: /datasets/expenditure-time-series/expenditure-time-series
+  dataset_detail_page: /datasets/budgeted-and-actual-national-expenditure/budgeted-and-actual-national-expenditure
   expenditure:
     base_financial_year: 2017-18
     nominal:
@@ -138,58 +138,8 @@ budget_actual:
       financial_year: 2018-19
       phase: Audit Outcome
 budget_actual_programmes:
-  dataset_detail_page: /datasets/expenditure-time-series/expenditure-time-series
+  dataset_detail_page: /datasets/budgeted-and-actual-national-expenditure/budgeted-and-actual-national-expenditure
   programmes:
-  - items:
-    - amount: 27889000.0
-      financial_year: 2015-16
-      phase: Main appropriation
-    - amount: 27889000
-      financial_year: 2015-16
-      phase: Adjusted appropriation
-    - amount: 27889000
-      financial_year: 2015-16
-      phase: Final Appropriation
-    - amount: 26705000
-      financial_year: 2015-16
-      phase: Audit Outcome
-    - amount: 36008000.0
-      financial_year: 2016-17
-      phase: Main appropriation
-    - amount: 33075000
-      financial_year: 2016-17
-      phase: Adjusted appropriation
-    - amount: 29887000
-      financial_year: 2016-17
-      phase: Final Appropriation
-    - amount: 27797244
-      financial_year: 2016-17
-      phase: Audit Outcome
-    - amount: 35609000.0
-      financial_year: 2017-18
-      phase: Main appropriation
-    - amount: 32822000
-      financial_year: 2017-18
-      phase: Adjusted appropriation
-    - amount: 31736000
-      financial_year: 2017-18
-      phase: Final Appropriation
-    - amount: 31126000
-      financial_year: 2017-18
-      phase: Audit Outcome
-    - amount: 34425000.0
-      financial_year: 2018-19
-      phase: Main appropriation
-    - amount: 34495000
-      financial_year: 2018-19
-      phase: Adjusted appropriation
-    - amount: null
-      financial_year: 2018-19
-      phase: Final Appropriation
-    - amount: null
-      financial_year: 2018-19
-      phase: Audit Outcome
-    name: Growth Path and Social Dialogue
   - items:
     - amount: 774666000.0
       financial_year: 2015-16
@@ -290,6 +240,56 @@ budget_actual_programmes:
       financial_year: 2018-19
       phase: Audit Outcome
     name: Administration
+  - items:
+    - amount: 27889000.0
+      financial_year: 2015-16
+      phase: Main appropriation
+    - amount: 27889000
+      financial_year: 2015-16
+      phase: Adjusted appropriation
+    - amount: 27889000
+      financial_year: 2015-16
+      phase: Final Appropriation
+    - amount: 26705000
+      financial_year: 2015-16
+      phase: Audit Outcome
+    - amount: 36008000.0
+      financial_year: 2016-17
+      phase: Main appropriation
+    - amount: 33075000
+      financial_year: 2016-17
+      phase: Adjusted appropriation
+    - amount: 29887000
+      financial_year: 2016-17
+      phase: Final Appropriation
+    - amount: 27797244
+      financial_year: 2016-17
+      phase: Audit Outcome
+    - amount: 35609000.0
+      financial_year: 2017-18
+      phase: Main appropriation
+    - amount: 32822000
+      financial_year: 2017-18
+      phase: Adjusted appropriation
+    - amount: 31736000
+      financial_year: 2017-18
+      phase: Final Appropriation
+    - amount: 31126000
+      financial_year: 2017-18
+      phase: Audit Outcome
+    - amount: 34425000.0
+      financial_year: 2018-19
+      phase: Main appropriation
+    - amount: 34495000
+      financial_year: 2018-19
+      phase: Adjusted appropriation
+    - amount: null
+      financial_year: 2018-19
+      phase: Final Appropriation
+    - amount: null
+      financial_year: 2018-19
+      phase: Audit Outcome
+    name: Growth Path and Social Dialogue
 contributed_datasets:
 - contributor: International Budget Partnership
   name: How Does Civil Society Use Budget Information?

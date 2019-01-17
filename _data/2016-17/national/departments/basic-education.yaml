@@ -67,7 +67,7 @@ adjusted_budget_summary:
     label: Value of virements
     percentage: 1.2412304759022335
 budget_actual:
-  dataset_detail_page: /datasets/expenditure-time-series/expenditure-time-series
+  dataset_detail_page: /datasets/budgeted-and-actual-national-expenditure/budgeted-and-actual-national-expenditure
   expenditure:
     base_financial_year: 2017-18
     nominal:
@@ -169,7 +169,7 @@ budget_actual:
       financial_year: 2014-15
       phase: Audit Outcome
 budget_actual_programmes:
-  dataset_detail_page: /datasets/expenditure-time-series/expenditure-time-series
+  dataset_detail_page: /datasets/budgeted-and-actual-national-expenditure/budgeted-and-actual-national-expenditure
   programmes:
   - items:
     - amount: 1171484000.0
@@ -221,106 +221,6 @@ budget_actual_programmes:
       financial_year: 2014-15
       phase: Audit Outcome
     name: Teachers, Education Human Resources and Institutional Development
-  - items:
-    - amount: 12129738000.0
-      financial_year: 2015-16
-      phase: Main appropriation
-    - amount: 11974032000
-      financial_year: 2015-16
-      phase: Adjusted appropriation
-    - amount: 11959764000
-      financial_year: 2015-16
-      phase: Final Appropriation
-    - amount: 11511906000
-      financial_year: 2015-16
-      phase: Audit Outcome
-    - amount: 12500176000.0
-      financial_year: 2016-17
-      phase: Main appropriation
-    - amount: 12621392000
-      financial_year: 2016-17
-      phase: Adjusted appropriation
-    - amount: 12594706000
-      financial_year: 2016-17
-      phase: Final Appropriation
-    - amount: 11719953000
-      financial_year: 2016-17
-      phase: Audit Outcome
-    - amount: null
-      financial_year: 2013-14
-      phase: Main appropriation
-    - amount: null
-      financial_year: 2013-14
-      phase: Adjusted appropriation
-    - amount: null
-      financial_year: 2013-14
-      phase: Final Appropriation
-    - amount: null
-      financial_year: 2013-14
-      phase: Audit Outcome
-    - amount: null
-      financial_year: 2014-15
-      phase: Main appropriation
-    - amount: null
-      financial_year: 2014-15
-      phase: Adjusted appropriation
-    - amount: null
-      financial_year: 2014-15
-      phase: Final Appropriation
-    - amount: null
-      financial_year: 2014-15
-      phase: Audit Outcome
-    name: Planning, Information and Assessment
-  - items:
-    - amount: 5974456000.0
-      financial_year: 2015-16
-      phase: Main appropriation
-    - amount: 5943822000
-      financial_year: 2015-16
-      phase: Adjusted appropriation
-    - amount: 5938035000
-      financial_year: 2015-16
-      phase: Final Appropriation
-    - amount: 5936456000
-      financial_year: 2015-16
-      phase: Audit Outcome
-    - amount: 6291684000.0
-      financial_year: 2016-17
-      phase: Main appropriation
-    - amount: 6341427000
-      financial_year: 2016-17
-      phase: Adjusted appropriation
-    - amount: 6342761000
-      financial_year: 2016-17
-      phase: Final Appropriation
-    - amount: 6333722000
-      financial_year: 2016-17
-      phase: Audit Outcome
-    - amount: null
-      financial_year: 2013-14
-      phase: Main appropriation
-    - amount: null
-      financial_year: 2013-14
-      phase: Adjusted appropriation
-    - amount: null
-      financial_year: 2013-14
-      phase: Final Appropriation
-    - amount: null
-      financial_year: 2013-14
-      phase: Audit Outcome
-    - amount: null
-      financial_year: 2014-15
-      phase: Main appropriation
-    - amount: null
-      financial_year: 2014-15
-      phase: Adjusted appropriation
-    - amount: null
-      financial_year: 2014-15
-      phase: Final Appropriation
-    - amount: null
-      financial_year: 2014-15
-      phase: Audit Outcome
-    name: Educational Enrichment Services
   - items:
     - amount: 1877765000.0
       financial_year: 2015-16
@@ -421,6 +321,106 @@ budget_actual_programmes:
       financial_year: 2014-15
       phase: Audit Outcome
     name: Administration
+  - items:
+    - amount: 5974456000.0
+      financial_year: 2015-16
+      phase: Main appropriation
+    - amount: 5943822000
+      financial_year: 2015-16
+      phase: Adjusted appropriation
+    - amount: 5938035000
+      financial_year: 2015-16
+      phase: Final Appropriation
+    - amount: 5936456000
+      financial_year: 2015-16
+      phase: Audit Outcome
+    - amount: 6291684000.0
+      financial_year: 2016-17
+      phase: Main appropriation
+    - amount: 6341427000
+      financial_year: 2016-17
+      phase: Adjusted appropriation
+    - amount: 6342761000
+      financial_year: 2016-17
+      phase: Final Appropriation
+    - amount: 6333722000
+      financial_year: 2016-17
+      phase: Audit Outcome
+    - amount: null
+      financial_year: 2013-14
+      phase: Main appropriation
+    - amount: null
+      financial_year: 2013-14
+      phase: Adjusted appropriation
+    - amount: null
+      financial_year: 2013-14
+      phase: Final Appropriation
+    - amount: null
+      financial_year: 2013-14
+      phase: Audit Outcome
+    - amount: null
+      financial_year: 2014-15
+      phase: Main appropriation
+    - amount: null
+      financial_year: 2014-15
+      phase: Adjusted appropriation
+    - amount: null
+      financial_year: 2014-15
+      phase: Final Appropriation
+    - amount: null
+      financial_year: 2014-15
+      phase: Audit Outcome
+    name: Educational Enrichment Services
+  - items:
+    - amount: 12129738000.0
+      financial_year: 2015-16
+      phase: Main appropriation
+    - amount: 11974032000
+      financial_year: 2015-16
+      phase: Adjusted appropriation
+    - amount: 11959764000
+      financial_year: 2015-16
+      phase: Final Appropriation
+    - amount: 11511906000
+      financial_year: 2015-16
+      phase: Audit Outcome
+    - amount: 12500176000.0
+      financial_year: 2016-17
+      phase: Main appropriation
+    - amount: 12621392000
+      financial_year: 2016-17
+      phase: Adjusted appropriation
+    - amount: 12594706000
+      financial_year: 2016-17
+      phase: Final Appropriation
+    - amount: 11719953000
+      financial_year: 2016-17
+      phase: Audit Outcome
+    - amount: null
+      financial_year: 2013-14
+      phase: Main appropriation
+    - amount: null
+      financial_year: 2013-14
+      phase: Adjusted appropriation
+    - amount: null
+      financial_year: 2013-14
+      phase: Final Appropriation
+    - amount: null
+      financial_year: 2013-14
+      phase: Audit Outcome
+    - amount: null
+      financial_year: 2014-15
+      phase: Main appropriation
+    - amount: null
+      financial_year: 2014-15
+      phase: Adjusted appropriation
+    - amount: null
+      financial_year: 2014-15
+      phase: Final Appropriation
+    - amount: null
+      financial_year: 2014-15
+      phase: Audit Outcome
+    name: Planning, Information and Assessment
 contributed_datasets:
 - contributor: International Budget Partnership
   name: How Does Civil Society Use Budget Information?

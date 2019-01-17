@@ -37,7 +37,7 @@ adjusted_budget_summary:
     label: Value of virements
     percentage: 0.0003377842935256359
 budget_actual:
-  dataset_detail_page: /datasets/expenditure-time-series/expenditure-time-series
+  dataset_detail_page: /datasets/budgeted-and-actual-national-expenditure/budgeted-and-actual-national-expenditure
   expenditure:
     base_financial_year: 2017-18
     nominal:
@@ -139,7 +139,7 @@ budget_actual:
       financial_year: 2014-15
       phase: Audit Outcome
 budget_actual_programmes:
-  dataset_detail_page: /datasets/expenditure-time-series/expenditure-time-series
+  dataset_detail_page: /datasets/budgeted-and-actual-national-expenditure/budgeted-and-actual-national-expenditure
   programmes:
   - items:
     - amount: 642764000.0
@@ -192,16 +192,16 @@ budget_actual_programmes:
       phase: Audit Outcome
     name: ICT Infrastructure Support
   - items:
-    - amount: 43447000.0
+    - amount: 173650000.0
       financial_year: 2015-16
       phase: Main appropriation
-    - amount: 43447000
+    - amount: 180349000
       financial_year: 2015-16
       phase: Adjusted appropriation
-    - amount: 43310000
+    - amount: 223030000
       financial_year: 2015-16
       phase: Final Appropriation
-    - amount: 41542000
+    - amount: 221864000
       financial_year: 2015-16
       phase: Audit Outcome
     - amount: null
@@ -240,7 +240,7 @@ budget_actual_programmes:
     - amount: null
       financial_year: 2014-15
       phase: Audit Outcome
-    name: International Affairs and Trade
+    name: Administration
   - items:
     - amount: 447889000.0
       financial_year: 2015-16
@@ -342,16 +342,16 @@ budget_actual_programmes:
       phase: Audit Outcome
     name: Policy, Research and Capacity Development
   - items:
-    - amount: 173650000.0
+    - amount: 43447000.0
       financial_year: 2015-16
       phase: Main appropriation
-    - amount: 180349000
+    - amount: 43447000
       financial_year: 2015-16
       phase: Adjusted appropriation
-    - amount: 223030000
+    - amount: 43310000
       financial_year: 2015-16
       phase: Final Appropriation
-    - amount: 221864000
+    - amount: 41542000
       financial_year: 2015-16
       phase: Audit Outcome
     - amount: null
@@ -390,7 +390,7 @@ budget_actual_programmes:
     - amount: null
       financial_year: 2014-15
       phase: Audit Outcome
-    name: Administration
+    name: International Affairs and Trade
 contributed_datasets:
 - contributor: International Budget Partnership
   name: How Does Civil Society Use Budget Information?

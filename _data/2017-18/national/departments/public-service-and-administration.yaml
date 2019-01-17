@@ -66,7 +66,7 @@ adjusted_budget_summary:
     label: Value of virements
     percentage: 1.6188036703137958
 budget_actual:
-  dataset_detail_page: /datasets/expenditure-time-series/expenditure-time-series
+  dataset_detail_page: /datasets/budgeted-and-actual-national-expenditure/budgeted-and-actual-national-expenditure
   expenditure:
     base_financial_year: 2017-18
     nominal:
@@ -168,7 +168,7 @@ budget_actual:
       financial_year: 2014-15
       phase: Audit Outcome
 budget_actual_programmes:
-  dataset_detail_page: /datasets/expenditure-time-series/expenditure-time-series
+  dataset_detail_page: /datasets/budgeted-and-actual-national-expenditure/budgeted-and-actual-national-expenditure
   programmes:
   - items:
     - amount: 314574000.0
@@ -221,56 +221,6 @@ budget_actual_programmes:
       phase: Audit Outcome
     name: Service Delivery Support
   - items:
-    - amount: 37465000.0
-      financial_year: 2015-16
-      phase: Main appropriation
-    - amount: 38606000
-      financial_year: 2015-16
-      phase: Adjusted appropriation
-    - amount: 35518000
-      financial_year: 2015-16
-      phase: Final Appropriation
-    - amount: 32325000
-      financial_year: 2015-16
-      phase: Audit Outcome
-    - amount: 32126000.0
-      financial_year: 2016-17
-      phase: Main appropriation
-    - amount: 28303000
-      financial_year: 2016-17
-      phase: Adjusted appropriation
-    - amount: 30417000
-      financial_year: 2016-17
-      phase: Final Appropriation
-    - amount: 29145000
-      financial_year: 2016-17
-      phase: Audit Outcome
-    - amount: 34446000.0
-      financial_year: 2017-18
-      phase: Main appropriation
-    - amount: 32396000
-      financial_year: 2017-18
-      phase: Adjusted appropriation
-    - amount: 29964000
-      financial_year: 2017-18
-      phase: Final Appropriation
-    - amount: 26275000
-      financial_year: 2017-18
-      phase: Audit Outcome
-    - amount: null
-      financial_year: 2014-15
-      phase: Main appropriation
-    - amount: null
-      financial_year: 2014-15
-      phase: Adjusted appropriation
-    - amount: null
-      financial_year: 2014-15
-      phase: Final Appropriation
-    - amount: null
-      financial_year: 2014-15
-      phase: Audit Outcome
-    name: Policy Development, Research and Analysis
-  - items:
     - amount: 68607000.0
       financial_year: 2015-16
       phase: Main appropriation
@@ -320,6 +270,56 @@ budget_actual_programmes:
       financial_year: 2014-15
       phase: Audit Outcome
     name: Labour Relations and Human Resource Management
+  - items:
+    - amount: 269027000.0
+      financial_year: 2015-16
+      phase: Main appropriation
+    - amount: 272871000
+      financial_year: 2015-16
+      phase: Adjusted appropriation
+    - amount: 274027000
+      financial_year: 2015-16
+      phase: Final Appropriation
+    - amount: 273938000
+      financial_year: 2015-16
+      phase: Audit Outcome
+    - amount: 282281000.0
+      financial_year: 2016-17
+      phase: Main appropriation
+    - amount: 275707000
+      financial_year: 2016-17
+      phase: Adjusted appropriation
+    - amount: 273928000
+      financial_year: 2016-17
+      phase: Final Appropriation
+    - amount: 271861000
+      financial_year: 2016-17
+      phase: Audit Outcome
+    - amount: 292503000.0
+      financial_year: 2017-18
+      phase: Main appropriation
+    - amount: 288195000
+      financial_year: 2017-18
+      phase: Adjusted appropriation
+    - amount: 292643000
+      financial_year: 2017-18
+      phase: Final Appropriation
+    - amount: 290644000
+      financial_year: 2017-18
+      phase: Audit Outcome
+    - amount: null
+      financial_year: 2014-15
+      phase: Main appropriation
+    - amount: null
+      financial_year: 2014-15
+      phase: Adjusted appropriation
+    - amount: null
+      financial_year: 2014-15
+      phase: Final Appropriation
+    - amount: null
+      financial_year: 2014-15
+      phase: Audit Outcome
+    name: Governance of Public Administration
   - items:
     - amount: 219702000.0
       financial_year: 2015-16
@@ -371,6 +371,56 @@ budget_actual_programmes:
       phase: Audit Outcome
     name: Administration
   - items:
+    - amount: 37465000.0
+      financial_year: 2015-16
+      phase: Main appropriation
+    - amount: 38606000
+      financial_year: 2015-16
+      phase: Adjusted appropriation
+    - amount: 35518000
+      financial_year: 2015-16
+      phase: Final Appropriation
+    - amount: 32325000
+      financial_year: 2015-16
+      phase: Audit Outcome
+    - amount: 32126000.0
+      financial_year: 2016-17
+      phase: Main appropriation
+    - amount: 28303000
+      financial_year: 2016-17
+      phase: Adjusted appropriation
+    - amount: 30417000
+      financial_year: 2016-17
+      phase: Final Appropriation
+    - amount: 29145000
+      financial_year: 2016-17
+      phase: Audit Outcome
+    - amount: 34446000.0
+      financial_year: 2017-18
+      phase: Main appropriation
+    - amount: 32396000
+      financial_year: 2017-18
+      phase: Adjusted appropriation
+    - amount: 29964000
+      financial_year: 2017-18
+      phase: Final Appropriation
+    - amount: 26275000
+      financial_year: 2017-18
+      phase: Audit Outcome
+    - amount: null
+      financial_year: 2014-15
+      phase: Main appropriation
+    - amount: null
+      financial_year: 2014-15
+      phase: Adjusted appropriation
+    - amount: null
+      financial_year: 2014-15
+      phase: Final Appropriation
+    - amount: null
+      financial_year: 2014-15
+      phase: Audit Outcome
+    name: Policy Development, Research and Analysis
+  - items:
     - amount: 21493000.0
       financial_year: 2015-16
       phase: Main appropriation
@@ -420,56 +470,6 @@ budget_actual_programmes:
       financial_year: 2014-15
       phase: Audit Outcome
     name: Government Chief Information Officer
-  - items:
-    - amount: 269027000.0
-      financial_year: 2015-16
-      phase: Main appropriation
-    - amount: 272871000
-      financial_year: 2015-16
-      phase: Adjusted appropriation
-    - amount: 274027000
-      financial_year: 2015-16
-      phase: Final Appropriation
-    - amount: 273938000
-      financial_year: 2015-16
-      phase: Audit Outcome
-    - amount: 282281000.0
-      financial_year: 2016-17
-      phase: Main appropriation
-    - amount: 275707000
-      financial_year: 2016-17
-      phase: Adjusted appropriation
-    - amount: 273928000
-      financial_year: 2016-17
-      phase: Final Appropriation
-    - amount: 271861000
-      financial_year: 2016-17
-      phase: Audit Outcome
-    - amount: 292503000.0
-      financial_year: 2017-18
-      phase: Main appropriation
-    - amount: 288195000
-      financial_year: 2017-18
-      phase: Adjusted appropriation
-    - amount: 292643000
-      financial_year: 2017-18
-      phase: Final Appropriation
-    - amount: 290644000
-      financial_year: 2017-18
-      phase: Audit Outcome
-    - amount: null
-      financial_year: 2014-15
-      phase: Main appropriation
-    - amount: null
-      financial_year: 2014-15
-      phase: Adjusted appropriation
-    - amount: null
-      financial_year: 2014-15
-      phase: Final Appropriation
-    - amount: null
-      financial_year: 2014-15
-      phase: Audit Outcome
-    name: Governance of Public Administration
 contributed_datasets:
 - contributor: International Budget Partnership
   name: How Does Civil Society Use Budget Information?

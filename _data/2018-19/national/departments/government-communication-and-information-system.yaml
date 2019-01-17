@@ -4,7 +4,7 @@
 
 adjusted_budget_summary: null
 budget_actual:
-  dataset_detail_page: /datasets/expenditure-time-series/expenditure-time-series
+  dataset_detail_page: /datasets/budgeted-and-actual-national-expenditure/budgeted-and-actual-national-expenditure
   expenditure:
     base_financial_year: 2017-18
     nominal:
@@ -106,13 +106,13 @@ budget_actual:
       financial_year: 2018-19
       phase: Audit Outcome
 budget_actual_programmes:
-  dataset_detail_page: /datasets/expenditure-time-series/expenditure-time-series
+  dataset_detail_page: /datasets/budgeted-and-actual-national-expenditure/budgeted-and-actual-national-expenditure
   programmes:
   - items:
-    - amount: 110067000.0
+    - amount: 154316000.0
       financial_year: 2017-18
       phase: Main appropriation
-    - amount: 111322000.0
+    - amount: 164157000.0
       financial_year: 2018-19
       phase: Main appropriation
     - amount: null
@@ -157,7 +157,7 @@ budget_actual_programmes:
     - amount: null
       financial_year: 2018-19
       phase: Audit Outcome
-    name: Intergovernmental Coordination and Stakeholder Management
+    name: Administration
   - items:
     - amount: 140367000.0
       financial_year: 2017-18
@@ -209,10 +209,10 @@ budget_actual_programmes:
       phase: Audit Outcome
     name: Content Processing and Dissemination
   - items:
-    - amount: 154316000.0
+    - amount: 110067000.0
       financial_year: 2017-18
       phase: Main appropriation
-    - amount: 164157000.0
+    - amount: 111322000.0
       financial_year: 2018-19
       phase: Main appropriation
     - amount: null
@@ -257,7 +257,7 @@ budget_actual_programmes:
     - amount: null
       financial_year: 2018-19
       phase: Audit Outcome
-    name: Administration
+    name: Intergovernmental Coordination and Stakeholder Management
 contributed_datasets:
 - contributor: International Budget Partnership
   name: How Does Civil Society Use Budget Information?
