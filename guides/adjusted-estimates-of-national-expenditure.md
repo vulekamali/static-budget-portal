@@ -10,310 +10,233 @@ data_key: adjusted-estimates-of-nationa-expenditure
 <div class="BasicContent u-marginBottom15">
   <div class="BasicContent-title">Overview</div>
   <p>
-    This guide relates to
-<br/>
+    This guide relates to:
+  </p>
+
 <ul>
 <li>the structured adjusted estimates of expenditure data in CSV form</li>
 <li>the AENE PDF documents on each department page, and the accompanying Excel file with the document’s tables</li>
 </ul>
-  </p>
-
-  <p>
-    The ENE abridged  publication is tabled in Parliament by the Minister of Finance alongside the main budget. The publication is the explanatory memorandum to the Appropriation Bill. The executive tables the bill and accompanying publication seeking Parliament’s approval and adoption of government’s spending plans for the first year of the MTEF period. 
-  </p>
-
-  <p>
-    Generally, a vote specifies the total amount of money appropriated to a national government department.  A national government vote is generally synonymous with a national government department. However, in certain instances, a vote may contain more than one national government department. For instance, the Cooperative Governance and Traditional Affairs vote contains two departments, the Department of Cooperative Governance and the Department of Traditional Affairs.
-  </p>
-
-  <p>
-    The ENE publications include information on how government institutions have spent their budgets in previous years, and how they intend to use their allocations over the medium term to achieve their goals, including the outputs and outcomes spending is expected to lead to. 
-  </p>
-
-  <p>
-    The publications include tables depicting non-financial performance indicators and targets, departmental receipts, and detailed expenditure trends and estimates.
-  </p>
-
-  <p>
-    A more in-depth narrative analyses the institution’s expected expenditure over the MTEF period. A summary table is included at the end of the chapter for votes in which there is significant spending on infrastructure. In addition, the e-publications contain programme personnel data tables, a brief summary for all entities, as well as additional summary data tables on provincial and municipal conditional grants, public-private partnerships, donor funding, and expenditure at the level of service delivery, where applicable.
-  </p>
 </div>
 
 <div class="BasicContent u-marginBottom15">
-  <div class="BasicContent-title">Where does the data come from?</div>
+  <div class="BasicContent-title">What is the adjustments budget?
+</div>
 
-  <p>
-    The dataset emanates from the yearly national government budget process. At the beginning of each budget process, the National Treasury publishes guidelines depicting the information that governmental institutions are expected to submit to the National Treasury in their budget submissions. A vital part of this process involves the large number of public institutions planning, negotiating and deciding collectively how to spend public resources.
-  </p>
+<p>
+In the middle of each financial year, the adjustments process provides an opportunity to make permissible revisions to the budget, in response to changes that have affected the planned government spending for that year. The adjusted budget may allocate unused funds, mainly from the contingency reserve, and additional amounts that have been approved for particular types of spending, if that be the case. 
+</p>
 
-  <p>
-    As the budget process is focused on institutional performance in relation to government outcomes, it is organised by function of government. The trade-offs of financing different policy objectives within the constraints of the expenditure ceiling are examined, culminating in recommendations on how institutional policies and practices, and arrangements, can be adapted to best achieve the function’s outcomes. 
-  </p>
+<p>
+The adjusted budget estimates are tabled in the National Assembly by the Minister of Finance, accompanied by an Adjustments Appropriation Bill. The permissible adjustments are reflected as part of the adjusted budget, which also includes the amounts initially allocated in the Appropriation Act and in any subsequent special appropriations. A Division of Revenue Amendment Bill that sets out how the adjustments affect the Division of Revenue Act is also tabled.
+</p>
 
-  <p>
-    These function group discussions shape the allocations to specific government institutions. The recommendations from each function group are then presented to the ministers’ committee on the budget technical committee (MTEC), a committee comprising the directors-general of central national government departments. Once this part of the process has been finalised, the recommendations endorsed by MTEC are taken to the ministers’ committee on the budget. This committee then reviews the recommendations put forward in respect of the different function groups and ultimately considers the trade-offs and priorities for government as a whole. The recommendations of the ministers’ committee on the budget are then tabled in Cabinet.
-  </p>
+<p>
+The Adjusted Estimates of National Expenditure (AENE) describes in detail the revisions to spending plans for the first year of the MTEF period: the current financial year. It also includes revised spending and departmental revenue projections for the current financial year, and any revisions to performance projections emanating from the technical financial amendments tabled in the AENE, if that be the case. 
+</p>
 
-  <p>
-    Once Cabinet has approved the recommendations, all institutions are informed of their budget allocations. Institutions then finalise their budgets accordingly and prepare and submit their data and narrative inputs for the ENE publications to the National Treasury.  National Treasury then verifies and edits these inputs to produce the ENE publications. The ENE is published in a number of formats (including in print and as an Excel pivot table). The ENE is tabled in Parliament annually as part of the national budget.
-  </p>
+<p>
+The aim of the AENE publication is to provide: detailed information on technical adjustments; and actual receipts, expenditure and performance achievements for the first six months of the current financial year. 
+</p>
+</div>
+
+<div class="BasicContent u-marginBottom15">
+  <div class="BasicContent-title">Where does the data come from?
+</div>
+
+<p>
+The datasets for each of these adjustments emanates from yearly national government adjustment budget processes. At the beginning of each adjustment budget process, the National Treasury sends guidance to departments depicting the information that they are expected to submit to the National Treasury should they be applying for an adjustment to their budget. The National Treasury’s Senior Management Committee examines the requests in line with the criteria for each type of adjustment, set out in legislation and the Treasury Regulations, and then forms recommendations to the Minister of Finance, and to the Ministers Committee on the Budget in the case of requests for unforeseeable and unavoidable expenditure.
+</p>
+
+<p>
+Departments are then sent letters informing them of any approved adjustments to budget allocations. Institutions then prepare and submit their data and narrative inputs in line with the Adjusted Estimates of National Expenditure Guidelines to the National Treasury for the AENE publication.  National Treasury then verifies and edits these inputs to produce the AENE publication. The AENE is published in a number of formats (including in print and as an Excel pivot table). The AENE is tabled in Parliament annually as part of the national adjustments budget. 
+</p>
+
+<p>
+Section 30(2) of the Public Finance Management Act (1999) (PFMA) specifies the type of spending permissible as an adjustment that the adjusted budget may provide for. Section 76 of the Treasury Regulations, issued by National Treasury in terms of the PFMA provide instructions on how to comply with the Act.
+</p>
+
+<p>The adjustments appropriation makes provision for:
+</p>
+
+<ul>
+<li>
+<b>Adjustments due to significant and unforeseeable economic and financial events</b>: When unforeseeable economic and financial events affect the fiscal targets set by the budget, adjustments might need to be made. An example of such an event is inflation that is significantly higher than anticipated in the budget estimates projected for the MTEF period. 
+</li>
+<b>Unforeseeable and unavoidable expenditure</b>: This is expenditure that could not be anticipated at the time of the budget. Section 6.6 of the Treasury Regulations specify that the following may not be regarded as unforeseeable and unavoidable expenditure: spending that was known when the budget was being finalised but could not be accommodated in the allocations at the time; spending increases due to tariff adjustments and price increases; and spending to extend existing services or create new services that are not unforeseeable and unavoidable. An example of unforeseeable and unavoidable expenditure is spending made necessary to deal with the effects of adverse weather conditions. 
+<li>
+<b>Section 16 of the PFMA</b>: The Minister of Finance may approve the use of unappropriated funds if it is for spending of an exceptional nature. This happens if postponing the spending to a future parliamentary appropriation would seriously prejudice the public interest. The Minister of Finance must subsequently provide a report to Parliament and to the Auditor-General.
+</li>
+
+<li>
+<b>Appropriation of expenditure earmarked in the budget speech for future allocation</b>: In certain instances, an amount to be allocated for a specific purpose will be announced by the Minister of Finance when the budget is tabled, with the details of the annual allocations to be decided later. This is usually when plans have not been finalised in time to decide on the specific allocation amounts for the budget.
+
+</li>
+
+<li>
+<b>Virements</b>: The use of unspent funds from amounts appropriated under one main division (programme) to defray excess expenditure under another main division (programme) within the same vote/department. Legislation (Section 43 of the PFMA, section 5 of the Appropriation Act (2018) and section 5 of the Adjustments Appropriation Bill (2018) and Section 6.3 of the Treasury Regulations set the parameters within which virements may take place.
+</li>
+
+<li>
+<b>Shifts within votes/departments</b>: The use of unspent funds to defray increased expenditure within a main division (programme) of a vote/department by shifting funds between different segments (sub programmes and economic classification) of the main division (programme). Shifts may include the reallocation of funds incorrectly allocated in the ENE process or to follow the transfer of functions across programmes. 
+</li>
+
+<li>
+<b>Shifts between votes/departments</b>: Sections 42 and 33 of the PFMA describe the use of unspent funds in a vote to defray increased expenditure in another vote/department. Such shifts include functions being shifted to another vote or institution in terms of legislation and/or following the reassignment of responsibility for the functions. The associated assets, including personnel, and the liabilities also need to be shifted.
+</li>
+
+<li>
+<b>Roll-overs</b>: Unspent funds from the previous financial year may be rolled over into the current financial year, when activities planned to be completed by the end of the previous year have not been completed but are close to completion. Section 6.4 of the Treasury Regulations restrict roll-overs as follows: compensation of employees funding may not be rolled over; a maximum of 5 per cent of a department’s budget for goods and services may be rolled over; funding for transfers and subsidies may not be rolled over for any purpose other than what the funds were originally allocated for; and unspent funds on payments for capital assets may be rolled over only to finalise projects or the acquisition of assets already in progress.
+</li>
+
+<li>
+<b>Self-financing expenditure</b>: Spending financed from revenue derived from a vote’s/department’s specific activities. This revenue is paid into the National Revenue Fund. If self-financing expenditure is approved, these funds are allocated to the vote/department.
+</li>
+
+<li>
+<b>Declared unspent funds</b>: Unspent amounts that will not be spent in the current financial year, explicitly indicated as a reduction to the vote allocation.
+</li>
+
+<li>
+<b>Direct charges against the National Revenue Fund</b>: An amount spent in terms of a statute and that is not budgeted for in any programme in a particular vote. These amounts are shown as separate items, such as expenditure on debt-service costs.
+</li>
+
+<li>
+<b>Gifts, donations and sponsorships (Treasury Regulation 21)</b>: Cash amounts exceeding R100 000 per beneficiary are included in the Adjustments Appropriation Bill.
+</li>
+</ul>
 </div>
 
 <div class="BasicContent u-marginBottom15">
   <div class="BasicContent-title">What can I do with the data?</div>
-  <p>
-    The ENE is released as part of the national budget information releases, at the end of February, before the start of the national/provincial budget cycle. The data and supporting documents are useful for:
-  </p>
 
-  <ul>
-    <li>
-      tracking how national government plans to spend its money over the medium- to long-term;
-    </li>
+<p>
+The AENE is released as part of the national adjustments budget information release, at the end of October. It sets out the adjustments to the budget for the current financial year and also reviews departmental performance, receipt and expenditure information for the first half of the year (April to September).
+</p>
 
-    <li>
-      tracking institutional measures of achievement of main goals;
-    </li>
+<p>The structured data supports</p>
 
-    <li>
-      tracking whether historical performance has been in line with the achievement of main goals;
-    </li>
-
-    <li>
-      comparing spending across different departments (votes);
-    </li>
-
-    <li>
-      comparing past expenditure to planned expenditure; and
-    </li>
-
-    <li>
-      analysing the breakdown of spending across a department / vote (by current payments versus payments for capital assets, transfers to other spheres and departments, etc).
-    </li>
-
-  </ul>
+<ul>
+<li>analysing the changes in departmental budgets</li>
+<p>The supporting AENE PDF documents are useful for:</p>
+<li>analysing the changes in departmental budgets; </li>
+<li>tracking how national departments have spent money in the first half of the year ;</li>
+<li>tracking an institution’s (department’s) measures of achievement of its main goals (performance information);</li>
+<li>tracking an institution’s historical performance with respect to achieving its main goals;</li>
+<li>comparing actual receipts and expenditure in the first half of the year to budgeted receipts and expenditure;</li>
+<li>comparing actual performance achievements in the first six months to budgeted achievements; and </li>
+<li>tracking any adjustments to receipts and expenditure estimates as well as performance indicators for the year.</li>
+</ul>
 </div>
 
 <div class="BasicContent u-marginBottom15">
   <div class="BasicContent-title">What data is available from vulekamali.gov.za?</div>
 
-  <p>
-    Vulekamali has annual ENE information for all national departments. The following are available for each department:
-  </p>
+  <p>Vulekamali has annual AENE information for all national departments. The following are available for each department:</p>
 
-  <ul>
-    <li>
-      The department’s chapter in the ENE, in PDF format. This contains programme personnel data tables and detailed information for all entities, as well as additional summary data tables on provincial and municipal conditional grants, public-private partnerships, donor funding, and expenditure at the level of site service delivery, where applicable.
-    </li>
-
-    <li>
-      The formatted expenditure tables included in the ENE document, in Excel format.
-    </li>
-
-    <li>
-      The raw data used to produce the expenditure tables in the ENE and Appropriation Bill, in CSV format and through the OpenSpending API (application programme interface).
-    </li>
-
-  </ul>
-
-  <p>
-    The detail pages for a department can be found under the Department Budgets link at the top of the website. You can also search vulekamali to find a department.
-  </p>
+  <li>The department’s chapter in the AENE, in PDF format;</li>
+    <li>Excel spreadsheets with the tables in the AENE chapters</li>
+  <li>The raw data used to produce the expenditure tables in the AENE and Adjustments Appropriation Bill, in CSV format and through the OpenSpending API (application programing interface).The detail pages for a department can be found under the Department Budgets link at the top of the website. You can also search Vulekamali to find a department based on a topic of interest.</li>
 </div>
 
 <div class="BasicContent u-marginBottom15">
-  <div class="BasicContent-title">What data is available from vulekamali.gov.za?</div>
+  <div class="BasicContent-title">What is in the data?</div>
+
+  <p><b>Note</b>: The 2018 Adjusted Estimates of National Expenditure vote for Basic Education (Vote 14) is used as an illustrative example for this section. It can be found <a href="http://www.treasury.gov.za/documents/mtbps/2018/aene/Vote%2014%20Basic%20Education.pdf" target="_blank">here.</a>
+</p>
+
+<p>All the AENE documents (PDF, Excel, and CSV) include expenditure adjustments data using the following classifications:</p>
 
   <p>
-    <strong>Note</strong>: The 2018 Budget vote for Basic Education (Vote 14) is used as an illustrative example for this section. It can be found by visiting the <a href="https://vulekamali.gov.za/2018-19/national/departments/basic-education">Basic Education budget page for 2018</a>.
+  <b>Adjustments by vote (department)</b>: This refers to the national government department. This classification is implicit in the individual PDF files which by their nature refer to just one vote.
+
   </p>
 
   <p>
-    All the ENE documents (PDF, Excel, and CSV) include expenditure data using the following classifications:
+  <b>Adjustments by economic classification</b>: This refers to the economic characteristics of the adjustment. There are up to five levels of economic classification for each adjustment item (i.e. Levels 1 to 5), with higher levels representing greater degrees of granularity. The CSV document include all five levels while the PDF documents display the first two levels.
+  </p>
+
+  <p>The level 1 economic classification divides all expenditure into four main economic sections: current payments (payments made for operational requirements such as those for compensation of employees and goods and services); transfers and subsidies; payments for capital assets (assets that can be used for more than one year); and payments for financial assets (loans or equity investments in public corporations). </p>
+
+  <p>
+  <b> Adjustments by programme and sub-programme</b>: This refers to adjustments by department programmes, which align spending to activities. Adjustments can be tracked to the programme and sub-programme level. 
   </p>
 
   <p>
-    <strong>Expenditure over time</strong>: The budget data is presented over a seven-year period: three years of past expenditure, the current financial year and three years of projected expenditure. The three-year future budget refers to the next three years and is known as the medium-term expenditure framework (MTEF).
+  <b>Adjustments by type of appropriation</b>: This refers to whether the expenditure was the original budgeted amount (main appropriation), whether it is part of a special appropriation, an adjustments appropriation, or whether it is the final adjusted budget (adjusted appropriation). The adjustments appropriations are subdivided into roll-overs, unforeseeable / unavoidable expenditure, virements and shifts, declared unspent funds, or other adjustments.
   </p>
 
   <p>
-    For example, the 2018 ENE documents include the audited budget outcomes for the 2014/15, 2015/16, and 2016/17 financial years, the revised estimates for the 2017/18 financial year, and initial estimates for the 2018/19, 2019/20, and 2020/21 financial years.
+  <b>
+  Adjusted Estimates of National Expenditure PDF Documents
+Each department’s PDF chapter can be found on Vulekamali on the department detail page. The PDF contains a detailed narrative of departmental spending and achievements in the first six months of the year, and adjustments to the budget for the rest of the year. The chapters contain the following sections:</b>
   </p>
 
-  <p>
-    <strong>Expenditure by economic classification</strong>: This refers to the economic characteristics of the expenditure, including whether the expenditure happens directly in a national department, transferred to another sphere of government or to another party.
-  </p>
+<ul>
+<li>An adjusted budget summary, by economic classification (Level 1)</li>
+<li>Vote purpose</li>
+<li>A mid-year performance status, summarising the progress on the achievement of performance targets set in that year’s ENE. This section includes a table of relevant performance indicators with initial ENE targets, actual outcomes for the first six months, and any changes to the initial targets. There is also a summary narrative that provides explanations and context for the outcomes and changes to performance targets.</li>
+<li>A set of summary tables of adjustments, by programme and economic classification (to Level 2/3), and type of adjustment.</li>
+<li>A summary narrative on the different adjustment categories (roll-overs, unforeseeable and unavoidable expenditure, virements and shifts, declared unspent funds, other adjustments). The section on virements and shifts provides extensive detail on how expenditure is reallocated within a programme (a shift) or moved to another programme (a virement).</li>
+<li>A table comparing the expenditure outcome of the previous year with the actual expenditure for the first half of the budget year, and a summary of expenditure trends year on year, comparing expenditure in the first six months of each year.</li>
+<li>A table comparing the departmental receipts outcome of the previous year with the actual receipts for the first half of the budget year, and a summary of revenue trends year on year, comparing revenue in the first six months of each year.</li>
+<li>A table summarising the changes to transfers and subsidies by type of adjustment, programme and economic classification.</li>
+<li>A table summarising the changes to conditional grants to provinces by programme and type of adjustment.</li>
+<li>A table summarising the changes to conditions grants to local government by programme and type of adjustment.</li>
+</ul>
 
-  <p>
-    There are up to four levels of economic classification for each expenditure item (i.e. Levels 1 to 4), with higher levels representing greater degrees of granularity. The Excel and CSV documents include all four levels while the PDF documents display the first two levels.
-  </p>
+<b>Adjusted Estimates of National Expenditure CSV Data File
+</b>
 
-  <p>
-    The level 1 economic classification divides all expenditure into four main economic sections: current payments (payments made for operational requirements such as those for compensation of employees and goods and services); transfers and subsidies; payments for capital assets (assets that can be used for more than one year); and payments for financial assets (loans or equity investments in public corporations). 
-  </p>
+<p>The CSV data file contains the raw data used to produce the AENE adjustment tables. This file can imported into Excel or other analysis programmes for further analysis. The file contains the following fields:</p>
 
-  <p>
-    <strong>Expenditure by programme and sub-programme</strong>: This refers to expenditure by department programmes, which align spending to activities, performance indicators and outcomes. Each programme has a particular purpose and spending objectives. Spending can be tracked to the programme and sub-programme level.
-  </p>
+<ul>
+<li>
+<b>Department</b>: This refers to which department is affected by the adjustment.
+</li>
 
-  <p>
-    <strong>Expenditure by government function</strong>: This aligns expenditure to one of seven government function groups. These groups can include spending across many government institutions, departments, and spheres. The function groups are also allocated to sections of the National Development Plan and medium-term strategic framework (MTSF) outcomes.
-  </p>
+<li>
+<b>Programme</b> (and <b>Programme Number</b>): This refers to adjustments by government programme. Each department will have programmes and sub-programmes that align the department’s objectives and performance indicators. The number of programmes varies by department but most have between four and eight programmes. <b>Note</b>: the <b>Programme Number</b> field refers to the order of the programme in a specific department. Programme orders are arbitrary (i.e. not ranked by expenditure or alphabetically) and are not consistent across departments. 
+</li>
 
-  <p>
-    For example, expenditure on Basic Education falls within the Learning and Culture function group, Chapters 3 and 9 of the NDP, and Outcome 5 of the MTSF. The Learning and Culture function group includes the Departments of Higher Education and Training, Sport and Recreation, and Art and Culture. It also includes the SETAs, NSFAS, and the National Skills Fund.
-  </p>
+<li>
+<b>Sub-programme</b> (and <b>Sub-programme Number</b>): This refers to adjustments by sub-programme. The <b>Sub-programme Number</b> field is similar to the <b>Programme Number</b> field as the sub-programme ordering is also arbitrary.
+</li>
 
-  <div class="Title Title--interSection">Estimates of National Expenditure PDF Documents</div>
+<li>
+<b>Economic Classification Levels 1 to 5</b>: These four fields refer to the economic classification of the adjustment, with higher levels indicating a greater degree of disaggregation and granularity. The four main economic sections (Level 1) are current spending, transfers and subsidies, payments for financial assets, and payments for capital assets.
+</li>
 
-  <p>Each department’s PDF chapter can be found on Vulekamali on the department detail page. The PDF contains narrative information and summary tables of key expenditure items over the MTEF in the following sections:</p>
+<li>
+<b>Financial Year</b>: This refers to the current budget year. This field only has one value
+</li>
 
-  <ul>
-    <li>A top-level summary of estimated expenditure over the MTEF by programme.</li>
-    <li>Selected Performance indicators linked to outcomes.</li>
+<li>
+<b>Budget phase</b>: This refers to which part of the budget cycle is referenced, whether it is an historical budget year or an estimate of future expenditure. It is closely related to the Financial Year field.
+</li>
 
-    <li>
-      A narrative discussion outlining what an institution aims to achieve over the medium term and how it plans to spend its budget in support of this. For example, one performance indicator in the Education Enrichment Services programme is the number of schools provided with nutritious meals each school day. The expenditure analysis section confirms that the medium-term target is 19 800 schools and 9 million learners at a cost of R21.7-billion over the MTEF.
-    </li>
+<li>
+<b>Description</b>: This refers to the type of adjustment (e.g. roll-overs, virements and shifts) and includes totals, special appropriations and initial ENE budget figures
+</li>
 
-    <li>
-      A section on expenditure trends which measures the historical and projected increases in spending by programme and by economic classification (Levels 1 and 2) over the seven-year period. The average annual increase in expenditure is measured over the historical period (financial years 2014 to 2017) and the MTEF (2017 to 2020).
-    </li>
-
-    <li>
-      This section also measures expenditure on significant spending items, goods and services (Economic Classification Level 2) and on transfers and subsidies (Economic Classification Level 3).
-    </li>
-
-    <li>
-      A section on departmental receipts, showing how the department generates its own income through interest, sales of capital assets, financial transactions, and other activities.
-    </li>
-
-    <li>
-      A description of each programme, including the programme’s purpose, objectives, and sub-programmes. There is an analysis of each programme’s expenditure trends in a series of tables, by economic classification (Levels 1 and 2), and by transfers and subsidies.
-    </li>
-
-  </ul>
-
-  <div class="Title Title--interSection">
-    Estimates of National Expenditure Excel Tables Document
+<li>
+<b>Value</b>: This refers to the rand value of the adjustment
+</li>
+</ul>
   </div>
-
-  <p>
-    Excel versions of the tables included in the ENE PDF document can be found in Vulekamali’s department page for each department.
-  </p>
-
-  <p>
-    The Excel spreadsheets are not machine-readable as the columns have not been formatted for building pivot tables. They do however allow the user to further edit the data and to perform simple calculations. They also provide some additional detailed information that is not included in either the PDF documents or the CSV data file.
-  </p>
-
-  <p>The spreadsheets include the following tables from the PDF documents:</p>
-
-  <ul>
-    <li>
-      A budget summary for the MTEF by programme
-    </li>
-
-    <li>
-      Historical expenditure trends by programme and economic classification (Level 2)
-    </li>
-
-    <li>
-      Projected expenditure estimates by programme and economic classification (Level 2)
-    </li>
-
-    <li>
-      Expenditure trends and estimates for significant spending items
-    </li>
-
-    <li>
-      Expenditure trends and estimates for goods and services (economic classification Level 2)
-    </li>
-
-    <li>
-      Expenditure trends and estimates for transfers and subsidies  (economic classification Level 3)
-    </li>
-
-    <li>
-      Personnel numbers and their costs by salary level and programme
-    </li>
-
-    <li>
-      Departmental receipts (economic classification Level 3)
-    </li>
-
-    <li>
-      Expenditure trends and estimates for each programme, by sub-programme and economic classification (Level 2), and by transfers and subsidies (Level 3)
-    </li>
-
-  </ul>
-
-  <p>In addition, they include tables for the following:</p>
-
-  <ul>
-    <li>
-      Expenditure trends and estimates for conditional grants to provinces and municipalities, by grant.
-    </li>
-
-    <li>
-      Expenditure trends and estimates for infrastructure spending, by project name and by transfer to other spheres, agencies, public-private partnerships, donor funding, and expenditure at the level of service delivery.
-    </li>
-
-  </ul>
-
-  <div class="Title Title--interSection">
-    Estimates of National Expenditure CSV Data File
-  </div>
-
-  <p>
-    The CSV data file contains the raw data used to produce the ENE and expenditure tables and the Appropriation Bill. This file can imported into Excel or other analysis programmes for further analysis. The file contains the following fields
-  </p>
-
-  <ul>
-    <li>
-      <strong>Budget phase</strong>: This refers to which part of the budget cycle is referenced, whether it is an historical budget year or an estimate of future expenditure. It is closely related to the <strong>Financial Year</strong> field.
-    </li>
-
-    <li>
-      <strong>Department</strong>: This refers to the government department where the expenditure occurs. It has a one-to-one (direct) relationship with the <strong>Vote Number</strong> field. There are 47 departments in the 2018 ENE.
-    </li>
-
-    <li>
-      <strong>Economic Classification Levels 1 to 4</strong>: These four fields refer to the economic classification of the expenditure, with higher levels indicating a greater degree of disaggregation and granularity. The four main economic sections (Level 1) are current spending, transfers and subsidies, payments for financial assets, and payments for capital assets.
-    </li>
-
-    <li>
-      <strong>Financial Year</strong>: This refers to the national / provincial financial year which begins on April 1 and ends on March 31 of the following calendar year. For example, the 2014 financial year began on 1 April 2014 and ended on 31 March 2015.  This field is closely related to the <strong>Budget Phase</strong> field.
-    </li>
-
-    <li>
-      <strong>Government Function</strong>: This refers to one of the seven government function groups. It includes an eighth category for debt-service costs, which are an aggregate cost in the Department of National Treasury.
-    </li>
-
-    <li>
-      <strong>Programme</strong> (and <strong>Programme Number</strong>): This refers to spending by government programme. Each department will have a number of programmes and sub-programmes that align the department’s objectives and performance indicators. The number of programmes varies by department but most have between four and eight programmes. <strong>Note</strong>: the <strong>Programme Number</strong> field refers to the order of the programme in a specific department. Programme orders are arbitrary (i.e. not ranked by expenditure or alphabetically) and are not consistent across departments.
-    </li>
-
-    <li>
-      <strong>Sub-programme</strong> (and <strong>Sub-programme Number</strong>): This refers to spending by sub-programme. The <strong>Sub-programme Number</strong> field is similar to the <strong>Programme Number</strong> field as the sub-programme ordering is also arbitrary.
-    </li>
-
-    <li>
-      <strong>Vote Number</strong>: This field refers to the ordering of Votes in the full ENE document. There is a one-to-one relationship with the <strong>Department</strong> field.
-    </li>
-
-  </ul>
-</div>
 
 <div class="BasicContent u-marginBottom15">
   <div class="BasicContent-title">Further reading and resources</div>
 
   <ul>
-    <li>
-      Estimates of National Expenditure Overview guide - The introductory chapter of the abridged ENE is a useful guide to understanding that year’s Budget and ENE process: <a target="_blank" rel="noopener noreferrer"  href="http://www.treasury.gov.za/documents/national%20budget/2018/enebooklets/Overview.pdf">http://www.treasury.gov.za/documents/national%20budget/2018/enebooklets/Overview.pdf</a>
-    </li>
+  <li>
+  Adjusted Estimates of National Expenditure - full PDF document for 2018 MTBPS votes - 
+  <a href="http://www.treasury.gov.za/documents/mtbps/2018/aene/FullAENE.pdf " target="_blank">http://www.treasury.gov.za/documents/mtbps/2018/aene/FullAENE.pdf</a>
+  </li>
 
-    <li>
-      National Treasury’s main page for national budget information: <a target="_blank" rel="noopener noreferrer" href="http://www.treasury.gov.za/documents/national%20budget/default.aspx">http://www.treasury.gov.za/documents/national%20budget/default.aspx</a>
-    </li>
-
+  <li>
+  National Treasury’s main page for national budget information: <a href="http://www.treasury.gov.za/documents/national%20budget/default.aspx" target="_blank">http://www.treasury.gov.za/documents/national%20budget/default.aspx</a>
+  </li>
   </ul>
+
 </div>
