@@ -14,7 +14,7 @@ adjusted_budget_summary:
     name: Unforeseeable/unavoidable
     type: kind
   dataset_detail_page: /datasets/adjusted-estimates-of-national-expenditure/adjusted-estimates-of-national-expenditure-2017-18
-  department_data_csv: https://datamanager.vulekamali.gov.za/csv/?api_url=https%3A//openspending.org/api/3/cubes/b9d2af843f3a7ca223eea07fb608e62a%3Aaene-2017-18-v3/aggregate/%3Fcut%3Dfinyear.finyear%253A2017%257Cvoteno.department%253ACooperative%2BGovernance%2Band%2BTraditional%2BAffairs%26drilldown%3Dbudget_phase.budget_phase%257Cecon1.econ1%257Cecon2.econ2%257Cecon3.econ3%257Cecon4.econ4%257Cecon5.econ5%257Cfinyear.finyear%257Cfy_descript.fy_descript%257Cprogno.progno%257Cprogno.programme%257Csprogno.sprogno%257Csprogno.subprogramme%257Cvoteno.department%257Cvoteno.voteno%26pagesize%3D10000
+  department_data_csv: https://datamanager-staging.vulekamali.gov.za/csv/?api_url=https%3A//openspending.org/api/3/cubes/b9d2af843f3a7ca223eea07fb608e62a%3Aaene-2017-18-v3/aggregate/%3Fcut%3Dfinyear.finyear%253A2017%257Cvoteno.department%253ACooperative%2BGovernance%2Band%2BTraditional%2BAffairs%26drilldown%3Dbudget_phase.budget_phase%257Cecon1.econ1%257Cecon2.econ2%257Cecon3.econ3%257Cecon4.econ4%257Cecon5.econ5%257Cfinyear.finyear%257Cfy_descript.fy_descript%257Cprogno.progno%257Cprogno.programme%257Csprogno.sprogno%257Csprogno.subprogramme%257Cvoteno.department%257Cvoteno.voteno%26pagesize%3D10000
   direct_charges: null
   econ_classes:
   - items:
@@ -176,159 +176,13 @@ budget_actual:
     - amount: null
       financial_year: 2014-15
       phase: Audit Outcome
+  notices:
+  - Please note that the data for 2014 has not been published on vulekamali.
 budget_actual_programmes:
   dataset_detail_page: /datasets/budgeted-and-actual-national-expenditure/budgeted-and-actual-national-expenditure
+  notices:
+  - One or more programmes did not exist for some years displayed.
   programmes:
-  - items:
-    - amount: 332176000.0
-      financial_year: 2016-17
-      phase: Main appropriation
-    - amount: 357794000
-      financial_year: 2016-17
-      phase: Adjusted appropriation
-    - amount: 357390000
-      financial_year: 2016-17
-      phase: Final Appropriation
-    - amount: 320969000
-      financial_year: 2016-17
-      phase: Audit Outcome
-    - amount: 210261000.0
-      financial_year: 2017-18
-      phase: Main appropriation
-    - amount: 248553000
-      financial_year: 2017-18
-      phase: Adjusted appropriation
-    - amount: 248553000
-      financial_year: 2017-18
-      phase: Final Appropriation
-    - amount: 232397001
-      financial_year: 2017-18
-      phase: Audit Outcome
-    - amount: null
-      financial_year: 2014-15
-      phase: Main appropriation
-    - amount: null
-      financial_year: 2014-15
-      phase: Adjusted appropriation
-    - amount: null
-      financial_year: 2014-15
-      phase: Final Appropriation
-    - amount: null
-      financial_year: 2014-15
-      phase: Audit Outcome
-    - amount: null
-      financial_year: 2015-16
-      phase: Main appropriation
-    - amount: null
-      financial_year: 2015-16
-      phase: Adjusted appropriation
-    - amount: null
-      financial_year: 2015-16
-      phase: Final Appropriation
-    - amount: null
-      financial_year: 2015-16
-      phase: Audit Outcome
-    name: Regional and Urban Development and Legislative Support
-  - items:
-    - amount: 17668420000.0
-      financial_year: 2015-16
-      phase: Main appropriation
-    - amount: 17668420000
-      financial_year: 2015-16
-      phase: Adjusted appropriation
-    - amount: 17669370000
-      financial_year: 2015-16
-      phase: Final Appropriation
-    - amount: 17665858000
-      financial_year: 2015-16
-      phase: Audit Outcome
-    - amount: null
-      financial_year: 2014-15
-      phase: Main appropriation
-    - amount: null
-      financial_year: 2014-15
-      phase: Adjusted appropriation
-    - amount: null
-      financial_year: 2014-15
-      phase: Final Appropriation
-    - amount: null
-      financial_year: 2014-15
-      phase: Audit Outcome
-    - amount: null
-      financial_year: 2016-17
-      phase: Main appropriation
-    - amount: null
-      financial_year: 2016-17
-      phase: Adjusted appropriation
-    - amount: null
-      financial_year: 2016-17
-      phase: Final Appropriation
-    - amount: null
-      financial_year: 2016-17
-      phase: Audit Outcome
-    - amount: null
-      financial_year: 2017-18
-      phase: Main appropriation
-    - amount: null
-      financial_year: 2017-18
-      phase: Adjusted appropriation
-    - amount: null
-      financial_year: 2017-18
-      phase: Final Appropriation
-    - amount: null
-      financial_year: 2017-18
-      phase: Audit Outcome
-    name: Infrastructure and Economic Development
-  - items:
-    - amount: 606805000.0
-      financial_year: 2015-16
-      phase: Main appropriation
-    - amount: 606805000
-      financial_year: 2015-16
-      phase: Adjusted appropriation
-    - amount: 591355000
-      financial_year: 2015-16
-      phase: Final Appropriation
-    - amount: 258158000
-      financial_year: 2015-16
-      phase: Audit Outcome
-    - amount: 598887000.0
-      financial_year: 2016-17
-      phase: Main appropriation
-    - amount: 588887000
-      financial_year: 2016-17
-      phase: Adjusted appropriation
-    - amount: 591492000
-      financial_year: 2016-17
-      phase: Final Appropriation
-    - amount: 295282000
-      financial_year: 2016-17
-      phase: Audit Outcome
-    - amount: 521904000.0
-      financial_year: 2017-18
-      phase: Main appropriation
-    - amount: 548051000
-      financial_year: 2017-18
-      phase: Adjusted appropriation
-    - amount: 544051000
-      financial_year: 2017-18
-      phase: Final Appropriation
-    - amount: 492439098
-      financial_year: 2017-18
-      phase: Audit Outcome
-    - amount: null
-      financial_year: 2014-15
-      phase: Main appropriation
-    - amount: null
-      financial_year: 2014-15
-      phase: Adjusted appropriation
-    - amount: null
-      financial_year: 2014-15
-      phase: Final Appropriation
-    - amount: null
-      financial_year: 2014-15
-      phase: Audit Outcome
-    name: National Disaster Management Centre
   - items:
     - amount: 22081000.0
       financial_year: 2015-16
@@ -380,28 +234,28 @@ budget_actual_programmes:
       phase: Audit Outcome
     name: Policy, Research and Knowledge Management
   - items:
-    - amount: 483174000.0
+    - amount: 68122162000.0
       financial_year: 2016-17
       phase: Main appropriation
-    - amount: 499968000
+    - amount: 68120381000
       financial_year: 2016-17
       phase: Adjusted appropriation
-    - amount: 497363000
+    - amount: 68113231000
       financial_year: 2016-17
       phase: Final Appropriation
-    - amount: 434166000
+    - amount: 66163451000
       financial_year: 2016-17
       phase: Audit Outcome
-    - amount: 16366403000.0
+    - amount: 57372755000.0
       financial_year: 2017-18
       phase: Main appropriation
-    - amount: 16409803000
+    - amount: 57373121000
       financial_year: 2017-18
       phase: Adjusted appropriation
-    - amount: 16408608000
+    - amount: 57358921000
       financial_year: 2017-18
       phase: Final Appropriation
-    - amount: 16361922455
+    - amount: 55899113021
       financial_year: 2017-18
       phase: Audit Outcome
     - amount: null
@@ -428,7 +282,7 @@ budget_actual_programmes:
     - amount: null
       financial_year: 2015-16
       phase: Audit Outcome
-    name: Local Government Support and Intervention Management
+    name: Institutional Development
   - items:
     - amount: 247969000.0
       financial_year: 2015-16
@@ -480,16 +334,16 @@ budget_actual_programmes:
       phase: Audit Outcome
     name: Administration
   - items:
-    - amount: 50321345000.0
+    - amount: 17668420000.0
       financial_year: 2015-16
       phase: Main appropriation
-    - amount: 51825863000
+    - amount: 17668420000
       financial_year: 2015-16
       phase: Adjusted appropriation
-    - amount: 51809326000
+    - amount: 17669370000
       financial_year: 2015-16
       phase: Final Appropriation
-    - amount: 49466922000
+    - amount: 17665858000
       financial_year: 2015-16
       phase: Audit Outcome
     - amount: null
@@ -528,30 +382,30 @@ budget_actual_programmes:
     - amount: null
       financial_year: 2017-18
       phase: Audit Outcome
-    name: Governance and Intergovernmental Relations
+    name: Infrastructure and Economic Development
   - items:
-    - amount: 68122162000.0
+    - amount: 483174000.0
       financial_year: 2016-17
       phase: Main appropriation
-    - amount: 68120381000
+    - amount: 499968000
       financial_year: 2016-17
       phase: Adjusted appropriation
-    - amount: 68113231000
+    - amount: 497363000
       financial_year: 2016-17
       phase: Final Appropriation
-    - amount: 66163451000
+    - amount: 434166000
       financial_year: 2016-17
       phase: Audit Outcome
-    - amount: 57372755000.0
+    - amount: 16366403000.0
       financial_year: 2017-18
       phase: Main appropriation
-    - amount: 57373121000
+    - amount: 16409803000
       financial_year: 2017-18
       phase: Adjusted appropriation
-    - amount: 57358921000
+    - amount: 16408608000
       financial_year: 2017-18
       phase: Final Appropriation
-    - amount: 55899113021
+    - amount: 16361922455
       financial_year: 2017-18
       phase: Audit Outcome
     - amount: null
@@ -578,30 +432,42 @@ budget_actual_programmes:
     - amount: null
       financial_year: 2015-16
       phase: Audit Outcome
-    name: Institutional Development
+    name: Local Government Support and Intervention Management
   - items:
-    - amount: 3191185000.0
+    - amount: 606805000.0
+      financial_year: 2015-16
+      phase: Main appropriation
+    - amount: 606805000
+      financial_year: 2015-16
+      phase: Adjusted appropriation
+    - amount: 591355000
+      financial_year: 2015-16
+      phase: Final Appropriation
+    - amount: 258158000
+      financial_year: 2015-16
+      phase: Audit Outcome
+    - amount: 598887000.0
       financial_year: 2016-17
       phase: Main appropriation
-    - amount: 3191185000
+    - amount: 588887000
       financial_year: 2016-17
       phase: Adjusted appropriation
-    - amount: 3191185000
+    - amount: 591492000
       financial_year: 2016-17
       phase: Final Appropriation
-    - amount: 2371096000
+    - amount: 295282000
       financial_year: 2016-17
       phase: Audit Outcome
-    - amount: 3695866000.0
+    - amount: 521904000.0
       financial_year: 2017-18
       phase: Main appropriation
-    - amount: 3640066000
+    - amount: 548051000
       financial_year: 2017-18
       phase: Adjusted appropriation
-    - amount: 3641261000
+    - amount: 544051000
       financial_year: 2017-18
       phase: Final Appropriation
-    - amount: 3115766349
+    - amount: 492439098
       financial_year: 2017-18
       phase: Audit Outcome
     - amount: null
@@ -616,19 +482,7 @@ budget_actual_programmes:
     - amount: null
       financial_year: 2014-15
       phase: Audit Outcome
-    - amount: null
-      financial_year: 2015-16
-      phase: Main appropriation
-    - amount: null
-      financial_year: 2015-16
-      phase: Adjusted appropriation
-    - amount: null
-      financial_year: 2015-16
-      phase: Final Appropriation
-    - amount: null
-      financial_year: 2015-16
-      phase: Audit Outcome
-    name: Community Work Programme
+    name: National Disaster Management Centre
   - items:
     - amount: 119447000.0
       financial_year: 2015-16
@@ -680,6 +534,56 @@ budget_actual_programmes:
       phase: Audit Outcome
     name: Traditional Affairs
   - items:
+    - amount: 50321345000.0
+      financial_year: 2015-16
+      phase: Main appropriation
+    - amount: 51825863000
+      financial_year: 2015-16
+      phase: Adjusted appropriation
+    - amount: 51809326000
+      financial_year: 2015-16
+      phase: Final Appropriation
+    - amount: 49466922000
+      financial_year: 2015-16
+      phase: Audit Outcome
+    - amount: null
+      financial_year: 2014-15
+      phase: Main appropriation
+    - amount: null
+      financial_year: 2014-15
+      phase: Adjusted appropriation
+    - amount: null
+      financial_year: 2014-15
+      phase: Final Appropriation
+    - amount: null
+      financial_year: 2014-15
+      phase: Audit Outcome
+    - amount: null
+      financial_year: 2016-17
+      phase: Main appropriation
+    - amount: null
+      financial_year: 2016-17
+      phase: Adjusted appropriation
+    - amount: null
+      financial_year: 2016-17
+      phase: Final Appropriation
+    - amount: null
+      financial_year: 2016-17
+      phase: Audit Outcome
+    - amount: null
+      financial_year: 2017-18
+      phase: Main appropriation
+    - amount: null
+      financial_year: 2017-18
+      phase: Adjusted appropriation
+    - amount: null
+      financial_year: 2017-18
+      phase: Final Appropriation
+    - amount: null
+      financial_year: 2017-18
+      phase: Audit Outcome
+    name: Governance and Intergovernmental Relations
+  - items:
     - amount: 328092000.0
       financial_year: 2015-16
       phase: Main appropriation
@@ -729,6 +633,106 @@ budget_actual_programmes:
       financial_year: 2017-18
       phase: Audit Outcome
     name: Provincial and Municipal Government Systems
+  - items:
+    - amount: 332176000.0
+      financial_year: 2016-17
+      phase: Main appropriation
+    - amount: 357794000
+      financial_year: 2016-17
+      phase: Adjusted appropriation
+    - amount: 357390000
+      financial_year: 2016-17
+      phase: Final Appropriation
+    - amount: 320969000
+      financial_year: 2016-17
+      phase: Audit Outcome
+    - amount: 210261000.0
+      financial_year: 2017-18
+      phase: Main appropriation
+    - amount: 248553000
+      financial_year: 2017-18
+      phase: Adjusted appropriation
+    - amount: 248553000
+      financial_year: 2017-18
+      phase: Final Appropriation
+    - amount: 232397001
+      financial_year: 2017-18
+      phase: Audit Outcome
+    - amount: null
+      financial_year: 2014-15
+      phase: Main appropriation
+    - amount: null
+      financial_year: 2014-15
+      phase: Adjusted appropriation
+    - amount: null
+      financial_year: 2014-15
+      phase: Final Appropriation
+    - amount: null
+      financial_year: 2014-15
+      phase: Audit Outcome
+    - amount: null
+      financial_year: 2015-16
+      phase: Main appropriation
+    - amount: null
+      financial_year: 2015-16
+      phase: Adjusted appropriation
+    - amount: null
+      financial_year: 2015-16
+      phase: Final Appropriation
+    - amount: null
+      financial_year: 2015-16
+      phase: Audit Outcome
+    name: Regional and Urban Development and Legislative Support
+  - items:
+    - amount: 3191185000.0
+      financial_year: 2016-17
+      phase: Main appropriation
+    - amount: 3191185000
+      financial_year: 2016-17
+      phase: Adjusted appropriation
+    - amount: 3191185000
+      financial_year: 2016-17
+      phase: Final Appropriation
+    - amount: 2371096000
+      financial_year: 2016-17
+      phase: Audit Outcome
+    - amount: 3695866000.0
+      financial_year: 2017-18
+      phase: Main appropriation
+    - amount: 3640066000
+      financial_year: 2017-18
+      phase: Adjusted appropriation
+    - amount: 3641261000
+      financial_year: 2017-18
+      phase: Final Appropriation
+    - amount: 3115766349
+      financial_year: 2017-18
+      phase: Audit Outcome
+    - amount: null
+      financial_year: 2014-15
+      phase: Main appropriation
+    - amount: null
+      financial_year: 2014-15
+      phase: Adjusted appropriation
+    - amount: null
+      financial_year: 2014-15
+      phase: Final Appropriation
+    - amount: null
+      financial_year: 2014-15
+      phase: Audit Outcome
+    - amount: null
+      financial_year: 2015-16
+      phase: Main appropriation
+    - amount: null
+      financial_year: 2015-16
+      phase: Adjusted appropriation
+    - amount: null
+      financial_year: 2015-16
+      phase: Final Appropriation
+    - amount: null
+      financial_year: 2015-16
+      phase: Audit Outcome
+    name: Community Work Programme
 contributed_datasets:
 - contributor: Public Service Accountability Monitor
   name: 'Budget Brief: Department of Human Settlements, 2016/17 and 2017/18'
@@ -787,7 +791,7 @@ description: 'National department: Cooperative Governance and Traditional Affair
   with IMALI YETHU.'
 economic_classification_by_programme:
   dataset_detail_page: /datasets/estimates-of-national-expenditure/estimates-of-national-expenditure-2017-18
-  department_data_csv: https://datamanager.vulekamali.gov.za/csv/?api_url=https%3A//openspending.org/api/3/cubes/b9d2af843f3a7ca223eea07fb608e62a%3Aestimates-of-national-expenditure-south-africa-2017-18/aggregate/%3Fcut%3Dfinancial_year.financial_year%253A2017%257Cvote_number.department%253A%2522Cooperative%2BGovernance%2Band%2BTraditional%2BAffairs%2522%26drilldown%3Dbudget_phase.budget_phase%257Ceconomic_classification_1.economic_classification_1%257Ceconomic_classification_2.economic_classification_2%257Ceconomic_classification_3.economic_classification_3%257Ceconomic_classification_4.economic_classification_4%257Cfinancial_year.financial_year%257Cgovernment_function.government_function%257Cprogramme_number.programme%257Cprogramme_number.programme_number%257Csubprogramme_number.subprogramme%257Csubprogramme_number.subprogramme_number%257Cvote_number.department%257Cvote_number.vote_number%26pagesize%3D10000
+  department_data_csv: https://datamanager-staging.vulekamali.gov.za/csv/?api_url=https%3A//openspending.org/api/3/cubes/b9d2af843f3a7ca223eea07fb608e62a%3Aestimates-of-national-expenditure-south-africa-2017-18/aggregate/%3Fcut%3Dfinancial_year.financial_year%253A2017%257Cvote_number.department%253A%2522Cooperative%2BGovernance%2Band%2BTraditional%2BAffairs%2522%26drilldown%3Dbudget_phase.budget_phase%257Ceconomic_classification_1.economic_classification_1%257Ceconomic_classification_2.economic_classification_2%257Ceconomic_classification_3.economic_classification_3%257Ceconomic_classification_4.economic_classification_4%257Cfinancial_year.financial_year%257Cgovernment_function.government_function%257Cprogramme_number.programme%257Cprogramme_number.programme_number%257Csubprogramme_number.subprogramme%257Csubprogramme_number.subprogramme_number%257Cvote_number.department%257Cvote_number.vote_number%26pagesize%3D10000
   programmes:
   - items:
     - items:
@@ -1015,7 +1019,7 @@ is_vote_primary: true
 name: Cooperative Governance and Traditional Affairs
 programme_by_economic_classification:
   dataset_detail_page: /datasets/estimates-of-national-expenditure/estimates-of-national-expenditure-2017-18
-  department_data_csv: https://datamanager.vulekamali.gov.za/csv/?api_url=https%3A//openspending.org/api/3/cubes/b9d2af843f3a7ca223eea07fb608e62a%3Aestimates-of-national-expenditure-south-africa-2017-18/aggregate/%3Fcut%3Dfinancial_year.financial_year%253A2017%257Cvote_number.department%253A%2522Cooperative%2BGovernance%2Band%2BTraditional%2BAffairs%2522%26drilldown%3Dbudget_phase.budget_phase%257Ceconomic_classification_1.economic_classification_1%257Ceconomic_classification_2.economic_classification_2%257Ceconomic_classification_3.economic_classification_3%257Ceconomic_classification_4.economic_classification_4%257Cfinancial_year.financial_year%257Cgovernment_function.government_function%257Cprogramme_number.programme%257Cprogramme_number.programme_number%257Csubprogramme_number.subprogramme%257Csubprogramme_number.subprogramme_number%257Cvote_number.department%257Cvote_number.vote_number%26pagesize%3D10000
+  department_data_csv: https://datamanager-staging.vulekamali.gov.za/csv/?api_url=https%3A//openspending.org/api/3/cubes/b9d2af843f3a7ca223eea07fb608e62a%3Aestimates-of-national-expenditure-south-africa-2017-18/aggregate/%3Fcut%3Dfinancial_year.financial_year%253A2017%257Cvote_number.department%253A%2522Cooperative%2BGovernance%2Band%2BTraditional%2BAffairs%2522%26drilldown%3Dbudget_phase.budget_phase%257Ceconomic_classification_1.economic_classification_1%257Ceconomic_classification_2.economic_classification_2%257Ceconomic_classification_3.economic_classification_3%257Ceconomic_classification_4.economic_classification_4%257Cfinancial_year.financial_year%257Cgovernment_function.government_function%257Cprogramme_number.programme%257Cprogramme_number.programme_number%257Csubprogramme_number.subprogramme%257Csubprogramme_number.subprogramme_number%257Cvote_number.department%257Cvote_number.vote_number%26pagesize%3D10000
   econ_classes:
   - items:
     - name: Administration
@@ -1115,7 +1119,7 @@ programme_by_economic_classification:
     type: economic_classification_1_and_2
 programmes:
   dataset_detail_page: /datasets/estimates-of-national-expenditure/estimates-of-national-expenditure-2017-18
-  department_data_csv: https://datamanager.vulekamali.gov.za/csv/?api_url=https%3A//openspending.org/api/3/cubes/b9d2af843f3a7ca223eea07fb608e62a%3Aestimates-of-national-expenditure-south-africa-2017-18/aggregate/%3Fcut%3Dfinancial_year.financial_year%253A2017%257Cvote_number.department%253A%2522Cooperative%2BGovernance%2Band%2BTraditional%2BAffairs%2522%26drilldown%3Dbudget_phase.budget_phase%257Ceconomic_classification_1.economic_classification_1%257Ceconomic_classification_2.economic_classification_2%257Ceconomic_classification_3.economic_classification_3%257Ceconomic_classification_4.economic_classification_4%257Cfinancial_year.financial_year%257Cgovernment_function.government_function%257Cprogramme_number.programme%257Cprogramme_number.programme_number%257Csubprogramme_number.subprogramme%257Csubprogramme_number.subprogramme_number%257Cvote_number.department%257Cvote_number.vote_number%26pagesize%3D10000
+  department_data_csv: https://datamanager-staging.vulekamali.gov.za/csv/?api_url=https%3A//openspending.org/api/3/cubes/b9d2af843f3a7ca223eea07fb608e62a%3Aestimates-of-national-expenditure-south-africa-2017-18/aggregate/%3Fcut%3Dfinancial_year.financial_year%253A2017%257Cvote_number.department%253A%2522Cooperative%2BGovernance%2Band%2BTraditional%2BAffairs%2522%26drilldown%3Dbudget_phase.budget_phase%257Ceconomic_classification_1.economic_classification_1%257Ceconomic_classification_2.economic_classification_2%257Ceconomic_classification_3.economic_classification_3%257Ceconomic_classification_4.economic_classification_4%257Cfinancial_year.financial_year%257Cgovernment_function.government_function%257Cprogramme_number.programme%257Cprogramme_number.programme_number%257Csubprogramme_number.subprogramme%257Csubprogramme_number.subprogramme_number%257Cvote_number.department%257Cvote_number.vote_number%26pagesize%3D10000
   programme_budgets:
   - name: Administration
     total_budget: 247296000.0
@@ -1137,7 +1141,7 @@ sphere:
   slug: national
 subprogramme_by_programme:
   dataset_detail_page: /datasets/estimates-of-national-expenditure/estimates-of-national-expenditure-2017-18
-  department_data_csv: https://datamanager.vulekamali.gov.za/csv/?api_url=https%3A//openspending.org/api/3/cubes/b9d2af843f3a7ca223eea07fb608e62a%3Aestimates-of-national-expenditure-south-africa-2017-18/aggregate/%3Fcut%3Dfinancial_year.financial_year%253A2017%257Cvote_number.department%253A%2522Cooperative%2BGovernance%2Band%2BTraditional%2BAffairs%2522%26drilldown%3Dbudget_phase.budget_phase%257Ceconomic_classification_1.economic_classification_1%257Ceconomic_classification_2.economic_classification_2%257Ceconomic_classification_3.economic_classification_3%257Ceconomic_classification_4.economic_classification_4%257Cfinancial_year.financial_year%257Cgovernment_function.government_function%257Cprogramme_number.programme%257Cprogramme_number.programme_number%257Csubprogramme_number.subprogramme%257Csubprogramme_number.subprogramme_number%257Cvote_number.department%257Cvote_number.vote_number%26pagesize%3D10000
+  department_data_csv: https://datamanager-staging.vulekamali.gov.za/csv/?api_url=https%3A//openspending.org/api/3/cubes/b9d2af843f3a7ca223eea07fb608e62a%3Aestimates-of-national-expenditure-south-africa-2017-18/aggregate/%3Fcut%3Dfinancial_year.financial_year%253A2017%257Cvote_number.department%253A%2522Cooperative%2BGovernance%2Band%2BTraditional%2BAffairs%2522%26drilldown%3Dbudget_phase.budget_phase%257Ceconomic_classification_1.economic_classification_1%257Ceconomic_classification_2.economic_classification_2%257Ceconomic_classification_3.economic_classification_3%257Ceconomic_classification_4.economic_classification_4%257Cfinancial_year.financial_year%257Cgovernment_function.government_function%257Cprogramme_number.programme%257Cprogramme_number.programme_number%257Csubprogramme_number.subprogramme%257Csubprogramme_number.subprogramme_number%257Cvote_number.department%257Cvote_number.vote_number%26pagesize%3D10000
   programmes:
   - items:
     - name: Corporate Services
