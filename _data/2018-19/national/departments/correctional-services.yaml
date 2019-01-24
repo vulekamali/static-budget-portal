@@ -157,6 +157,56 @@ budget_actual_programmes:
   dataset_detail_page: /datasets/budgeted-and-actual-national-expenditure/budgeted-and-actual-national-expenditure
   programmes:
   - items:
+    - amount: 1796262000.0
+      financial_year: 2015-16
+      phase: Main appropriation
+    - amount: 1796262000
+      financial_year: 2015-16
+      phase: Adjusted appropriation
+    - amount: 2088481000
+      financial_year: 2015-16
+      phase: Final Appropriation
+    - amount: 2088481000
+      financial_year: 2015-16
+      phase: Audit Outcome
+    - amount: 1975116000.0
+      financial_year: 2016-17
+      phase: Main appropriation
+    - amount: 1975116000
+      financial_year: 2016-17
+      phase: Adjusted appropriation
+    - amount: 2235094000
+      financial_year: 2016-17
+      phase: Final Appropriation
+    - amount: 2235094000
+      financial_year: 2016-17
+      phase: Audit Outcome
+    - amount: 1998674000.0
+      financial_year: 2017-18
+      phase: Main appropriation
+    - amount: 1998674000
+      financial_year: 2017-18
+      phase: Adjusted appropriation
+    - amount: 2322675000
+      financial_year: 2017-18
+      phase: Final Appropriation
+    - amount: 2322675000
+      financial_year: 2017-18
+      phase: Audit Outcome
+    - amount: 2275301000.0
+      financial_year: 2018-19
+      phase: Main appropriation
+    - amount: 2332629000
+      financial_year: 2018-19
+      phase: Adjusted appropriation
+    - amount: null
+      financial_year: 2018-19
+      phase: Final Appropriation
+    - amount: null
+      financial_year: 2018-19
+      phase: Audit Outcome
+    name: Care
+  - items:
     - amount: 1151993000.0
       financial_year: 2015-16
       phase: Main appropriation
@@ -257,56 +307,6 @@ budget_actual_programmes:
       phase: Audit Outcome
     name: Social Reintegration
   - items:
-    - amount: 13080858000.0
-      financial_year: 2015-16
-      phase: Main appropriation
-    - amount: 13051518000
-      financial_year: 2015-16
-      phase: Adjusted appropriation
-    - amount: 12464955000
-      financial_year: 2015-16
-      phase: Final Appropriation
-    - amount: 12465076000
-      financial_year: 2015-16
-      phase: Audit Outcome
-    - amount: 13700861000.0
-      financial_year: 2016-17
-      phase: Main appropriation
-    - amount: 13701515000
-      financial_year: 2016-17
-      phase: Adjusted appropriation
-    - amount: 13423945000
-      financial_year: 2016-17
-      phase: Final Appropriation
-    - amount: 13388093000
-      financial_year: 2016-17
-      phase: Audit Outcome
-    - amount: 13986910000.0
-      financial_year: 2017-18
-      phase: Main appropriation
-    - amount: 13987379000
-      financial_year: 2017-18
-      phase: Adjusted appropriation
-    - amount: 13949901000
-      financial_year: 2017-18
-      phase: Final Appropriation
-    - amount: 13949901000
-      financial_year: 2017-18
-      phase: Audit Outcome
-    - amount: 14529263000.0
-      financial_year: 2018-19
-      phase: Main appropriation
-    - amount: 14350403000
-      financial_year: 2018-19
-      phase: Adjusted appropriation
-    - amount: null
-      financial_year: 2018-19
-      phase: Final Appropriation
-    - amount: null
-      financial_year: 2018-19
-      phase: Audit Outcome
-    name: Incarceration
-  - items:
     - amount: 3697275000.0
       financial_year: 2015-16
       phase: Main appropriation
@@ -357,46 +357,46 @@ budget_actual_programmes:
       phase: Audit Outcome
     name: Administration
   - items:
-    - amount: 1796262000.0
+    - amount: 13080858000.0
       financial_year: 2015-16
       phase: Main appropriation
-    - amount: 1796262000
+    - amount: 13051518000
       financial_year: 2015-16
       phase: Adjusted appropriation
-    - amount: 2088481000
+    - amount: 12464955000
       financial_year: 2015-16
       phase: Final Appropriation
-    - amount: 2088481000
+    - amount: 12465076000
       financial_year: 2015-16
       phase: Audit Outcome
-    - amount: 1975116000.0
+    - amount: 13700861000.0
       financial_year: 2016-17
       phase: Main appropriation
-    - amount: 1975116000
+    - amount: 13701515000
       financial_year: 2016-17
       phase: Adjusted appropriation
-    - amount: 2235094000
+    - amount: 13423945000
       financial_year: 2016-17
       phase: Final Appropriation
-    - amount: 2235094000
+    - amount: 13388093000
       financial_year: 2016-17
       phase: Audit Outcome
-    - amount: 1998674000.0
+    - amount: 13986910000.0
       financial_year: 2017-18
       phase: Main appropriation
-    - amount: 1998674000
+    - amount: 13987379000
       financial_year: 2017-18
       phase: Adjusted appropriation
-    - amount: 2322675000
+    - amount: 13949901000
       financial_year: 2017-18
       phase: Final Appropriation
-    - amount: 2322675000
+    - amount: 13949901000
       financial_year: 2017-18
       phase: Audit Outcome
-    - amount: 2275301000.0
+    - amount: 14529263000.0
       financial_year: 2018-19
       phase: Main appropriation
-    - amount: 2332629000
+    - amount: 14350403000
       financial_year: 2018-19
       phase: Adjusted appropriation
     - amount: null
@@ -405,7 +405,7 @@ budget_actual_programmes:
     - amount: null
       financial_year: 2018-19
       phase: Audit Outcome
-    name: Care
+    name: Incarceration
 contributed_datasets:
 - contributor: International Budget Partnership
   name: How Does Civil Society Use Budget Information?

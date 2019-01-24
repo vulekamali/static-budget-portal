@@ -149,56 +149,6 @@ budget_actual_programmes:
   dataset_detail_page: /datasets/budgeted-and-actual-national-expenditure/budgeted-and-actual-national-expenditure
   programmes:
   - items:
-    - amount: 246280000.0
-      financial_year: 2015-16
-      phase: Main appropriation
-    - amount: 363557000
-      financial_year: 2015-16
-      phase: Adjusted appropriation
-    - amount: 363557000
-      financial_year: 2015-16
-      phase: Final Appropriation
-    - amount: 333222000
-      financial_year: 2015-16
-      phase: Audit Outcome
-    - amount: 252080000.0
-      financial_year: 2016-17
-      phase: Main appropriation
-    - amount: 252080000
-      financial_year: 2016-17
-      phase: Adjusted appropriation
-    - amount: 272860000
-      financial_year: 2016-17
-      phase: Final Appropriation
-    - amount: 271913000
-      financial_year: 2016-17
-      phase: Audit Outcome
-    - amount: 266085000.0
-      financial_year: 2017-18
-      phase: Main appropriation
-    - amount: 282660000
-      financial_year: 2017-18
-      phase: Adjusted appropriation
-    - amount: 286177000
-      financial_year: 2017-18
-      phase: Final Appropriation
-    - amount: 270443000
-      financial_year: 2017-18
-      phase: Audit Outcome
-    - amount: 302147000.0
-      financial_year: 2018-19
-      phase: Main appropriation
-    - amount: 342928000
-      financial_year: 2018-19
-      phase: Adjusted appropriation
-    - amount: null
-      financial_year: 2018-19
-      phase: Final Appropriation
-    - amount: null
-      financial_year: 2018-19
-      phase: Audit Outcome
-    name: Public Diplomacy and Protocol Services
-  - items:
     - amount: 635231000.0
       financial_year: 2015-16
       phase: Main appropriation
@@ -248,56 +198,6 @@ budget_actual_programmes:
       financial_year: 2018-19
       phase: Audit Outcome
     name: International Transfers
-  - items:
-    - amount: 1418521000.0
-      financial_year: 2015-16
-      phase: Main appropriation
-    - amount: 1381600000
-      financial_year: 2015-16
-      phase: Adjusted appropriation
-    - amount: 1381600000
-      financial_year: 2015-16
-      phase: Final Appropriation
-    - amount: 1381471000
-      financial_year: 2015-16
-      phase: Audit Outcome
-    - amount: 1458674000.0
-      financial_year: 2016-17
-      phase: Main appropriation
-    - amount: 1458674000
-      financial_year: 2016-17
-      phase: Adjusted appropriation
-    - amount: 1551563000
-      financial_year: 2016-17
-      phase: Final Appropriation
-    - amount: 1544797000
-      financial_year: 2016-17
-      phase: Audit Outcome
-    - amount: 1556613000.0
-      financial_year: 2017-18
-      phase: Main appropriation
-    - amount: 1556613000
-      financial_year: 2017-18
-      phase: Adjusted appropriation
-    - amount: 1560313000
-      financial_year: 2017-18
-      phase: Final Appropriation
-    - amount: 1229354000
-      financial_year: 2017-18
-      phase: Audit Outcome
-    - amount: 1665571000.0
-      financial_year: 2018-19
-      phase: Main appropriation
-    - amount: 1649446000
-      financial_year: 2018-19
-      phase: Adjusted appropriation
-    - amount: null
-      financial_year: 2018-19
-      phase: Final Appropriation
-    - amount: null
-      financial_year: 2018-19
-      phase: Audit Outcome
-    name: Administration
   - items:
     - amount: 466945000.0
       financial_year: 2015-16
@@ -398,6 +298,106 @@ budget_actual_programmes:
       financial_year: 2018-19
       phase: Audit Outcome
     name: International Relations
+  - items:
+    - amount: 1418521000.0
+      financial_year: 2015-16
+      phase: Main appropriation
+    - amount: 1381600000
+      financial_year: 2015-16
+      phase: Adjusted appropriation
+    - amount: 1381600000
+      financial_year: 2015-16
+      phase: Final Appropriation
+    - amount: 1381471000
+      financial_year: 2015-16
+      phase: Audit Outcome
+    - amount: 1458674000.0
+      financial_year: 2016-17
+      phase: Main appropriation
+    - amount: 1458674000
+      financial_year: 2016-17
+      phase: Adjusted appropriation
+    - amount: 1551563000
+      financial_year: 2016-17
+      phase: Final Appropriation
+    - amount: 1544797000
+      financial_year: 2016-17
+      phase: Audit Outcome
+    - amount: 1556613000.0
+      financial_year: 2017-18
+      phase: Main appropriation
+    - amount: 1556613000
+      financial_year: 2017-18
+      phase: Adjusted appropriation
+    - amount: 1560313000
+      financial_year: 2017-18
+      phase: Final Appropriation
+    - amount: 1229354000
+      financial_year: 2017-18
+      phase: Audit Outcome
+    - amount: 1665571000.0
+      financial_year: 2018-19
+      phase: Main appropriation
+    - amount: 1649446000
+      financial_year: 2018-19
+      phase: Adjusted appropriation
+    - amount: null
+      financial_year: 2018-19
+      phase: Final Appropriation
+    - amount: null
+      financial_year: 2018-19
+      phase: Audit Outcome
+    name: Administration
+  - items:
+    - amount: 246280000.0
+      financial_year: 2015-16
+      phase: Main appropriation
+    - amount: 363557000
+      financial_year: 2015-16
+      phase: Adjusted appropriation
+    - amount: 363557000
+      financial_year: 2015-16
+      phase: Final Appropriation
+    - amount: 333222000
+      financial_year: 2015-16
+      phase: Audit Outcome
+    - amount: 252080000.0
+      financial_year: 2016-17
+      phase: Main appropriation
+    - amount: 252080000
+      financial_year: 2016-17
+      phase: Adjusted appropriation
+    - amount: 272860000
+      financial_year: 2016-17
+      phase: Final Appropriation
+    - amount: 271913000
+      financial_year: 2016-17
+      phase: Audit Outcome
+    - amount: 266085000.0
+      financial_year: 2017-18
+      phase: Main appropriation
+    - amount: 282660000
+      financial_year: 2017-18
+      phase: Adjusted appropriation
+    - amount: 286177000
+      financial_year: 2017-18
+      phase: Final Appropriation
+    - amount: 270443000
+      financial_year: 2017-18
+      phase: Audit Outcome
+    - amount: 302147000.0
+      financial_year: 2018-19
+      phase: Main appropriation
+    - amount: 342928000
+      financial_year: 2018-19
+      phase: Adjusted appropriation
+    - amount: null
+      financial_year: 2018-19
+      phase: Final Appropriation
+    - amount: null
+      financial_year: 2018-19
+      phase: Audit Outcome
+    name: Public Diplomacy and Protocol Services
 contributed_datasets:
 - contributor: International Budget Partnership
   name: How Does Civil Society Use Budget Information?

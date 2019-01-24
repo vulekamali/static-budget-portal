@@ -162,6 +162,56 @@ budget_actual_programmes:
   dataset_detail_page: /datasets/budgeted-and-actual-national-expenditure/budgeted-and-actual-national-expenditure
   programmes:
   - items:
+    - amount: 873748000.0
+      financial_year: 2015-16
+      phase: Main appropriation
+    - amount: 873748000
+      financial_year: 2015-16
+      phase: Adjusted appropriation
+    - amount: 873748000
+      financial_year: 2015-16
+      phase: Final Appropriation
+    - amount: 887682000
+      financial_year: 2015-16
+      phase: Audit Outcome
+    - amount: null
+      financial_year: 2012-13
+      phase: Main appropriation
+    - amount: null
+      financial_year: 2012-13
+      phase: Adjusted appropriation
+    - amount: null
+      financial_year: 2012-13
+      phase: Final Appropriation
+    - amount: null
+      financial_year: 2012-13
+      phase: Audit Outcome
+    - amount: null
+      financial_year: 2013-14
+      phase: Main appropriation
+    - amount: null
+      financial_year: 2013-14
+      phase: Adjusted appropriation
+    - amount: null
+      financial_year: 2013-14
+      phase: Final Appropriation
+    - amount: null
+      financial_year: 2013-14
+      phase: Audit Outcome
+    - amount: null
+      financial_year: 2014-15
+      phase: Main appropriation
+    - amount: null
+      financial_year: 2014-15
+      phase: Adjusted appropriation
+    - amount: null
+      financial_year: 2014-15
+      phase: Final Appropriation
+    - amount: null
+      financial_year: 2014-15
+      phase: Audit Outcome
+    name: Direct charge against the National Revenue Fund
+  - items:
     - amount: 32643000.0
       financial_year: 2015-16
       phase: Main appropriation
@@ -211,56 +261,6 @@ budget_actual_programmes:
       financial_year: 2014-15
       phase: Audit Outcome
     name: Judicial Education and Research
-  - items:
-    - amount: 640363000.0
-      financial_year: 2015-16
-      phase: Main appropriation
-    - amount: 649541000
-      financial_year: 2015-16
-      phase: Adjusted appropriation
-    - amount: 651566000
-      financial_year: 2015-16
-      phase: Final Appropriation
-    - amount: 648208000
-      financial_year: 2015-16
-      phase: Audit Outcome
-    - amount: null
-      financial_year: 2012-13
-      phase: Main appropriation
-    - amount: null
-      financial_year: 2012-13
-      phase: Adjusted appropriation
-    - amount: null
-      financial_year: 2012-13
-      phase: Final Appropriation
-    - amount: null
-      financial_year: 2012-13
-      phase: Audit Outcome
-    - amount: null
-      financial_year: 2013-14
-      phase: Main appropriation
-    - amount: null
-      financial_year: 2013-14
-      phase: Adjusted appropriation
-    - amount: null
-      financial_year: 2013-14
-      phase: Final Appropriation
-    - amount: null
-      financial_year: 2013-14
-      phase: Audit Outcome
-    - amount: null
-      financial_year: 2014-15
-      phase: Main appropriation
-    - amount: null
-      financial_year: 2014-15
-      phase: Adjusted appropriation
-    - amount: null
-      financial_year: 2014-15
-      phase: Final Appropriation
-    - amount: null
-      financial_year: 2014-15
-      phase: Audit Outcome
-    name: Judicial Support and Court Administration
   - items:
     - amount: 69411000.0
       financial_year: 2015-16
@@ -312,16 +312,16 @@ budget_actual_programmes:
       phase: Audit Outcome
     name: Administration
   - items:
-    - amount: 873748000.0
+    - amount: 640363000.0
       financial_year: 2015-16
       phase: Main appropriation
-    - amount: 873748000
+    - amount: 649541000
       financial_year: 2015-16
       phase: Adjusted appropriation
-    - amount: 873748000
+    - amount: 651566000
       financial_year: 2015-16
       phase: Final Appropriation
-    - amount: 887682000
+    - amount: 648208000
       financial_year: 2015-16
       phase: Audit Outcome
     - amount: null
@@ -360,7 +360,7 @@ budget_actual_programmes:
     - amount: null
       financial_year: 2014-15
       phase: Audit Outcome
-    name: Direct charge against the National Revenue Fund
+    name: Judicial Support and Court Administration
 contributed_datasets:
 - contributor: International Budget Partnership
   name: How Does Civil Society Use Budget Information?

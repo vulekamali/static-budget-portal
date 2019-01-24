@@ -156,6 +156,56 @@ budget_actual_programmes:
   dataset_detail_page: /datasets/budgeted-and-actual-national-expenditure/budgeted-and-actual-national-expenditure
   programmes:
   - items:
+    - amount: 242598000.0
+      financial_year: 2015-16
+      phase: Main appropriation
+    - amount: 246598000
+      financial_year: 2015-16
+      phase: Adjusted appropriation
+    - amount: 277898000
+      financial_year: 2015-16
+      phase: Final Appropriation
+    - amount: 277766895
+      financial_year: 2015-16
+      phase: Audit Outcome
+    - amount: 240137000.0
+      financial_year: 2016-17
+      phase: Main appropriation
+    - amount: 244822000
+      financial_year: 2016-17
+      phase: Adjusted appropriation
+    - amount: 247018000
+      financial_year: 2016-17
+      phase: Final Appropriation
+    - amount: 282761955
+      financial_year: 2016-17
+      phase: Audit Outcome
+    - amount: 239541000.0
+      financial_year: 2017-18
+      phase: Main appropriation
+    - amount: 263561000
+      financial_year: 2017-18
+      phase: Adjusted appropriation
+    - amount: 278060000
+      financial_year: 2017-18
+      phase: Final Appropriation
+    - amount: 272382201
+      financial_year: 2017-18
+      phase: Audit Outcome
+    - amount: 282638000.0
+      financial_year: 2018-19
+      phase: Main appropriation
+    - amount: 283388000
+      financial_year: 2018-19
+      phase: Adjusted appropriation
+    - amount: null
+      financial_year: 2018-19
+      phase: Final Appropriation
+    - amount: null
+      financial_year: 2018-19
+      phase: Audit Outcome
+    name: Administration
+  - items:
     - amount: 654398000.0
       financial_year: 2015-16
       phase: Main appropriation
@@ -256,96 +306,46 @@ budget_actual_programmes:
       phase: Audit Outcome
     name: Petroleum and Petroleum Products Regulation
   - items:
-    - amount: 5778297000.0
+    - amount: 687327000.0
       financial_year: 2015-16
       phase: Main appropriation
-    - amount: 5813822000
+    - amount: 435827000
       financial_year: 2015-16
       phase: Adjusted appropriation
-    - amount: 5824050000
+    - amount: 400961000
       financial_year: 2015-16
       phase: Final Appropriation
-    - amount: 5820485355
+    - amount: 281783365
       financial_year: 2015-16
       phase: Audit Outcome
-    - amount: 5699907000.0
+    - amount: 616933000.0
       financial_year: 2016-17
       phase: Main appropriation
-    - amount: 5705155000
+    - amount: 599392000
       financial_year: 2016-17
       phase: Adjusted appropriation
-    - amount: 5714645000
+    - amount: 589894000
       financial_year: 2016-17
       phase: Final Appropriation
-    - amount: 5678658473
+    - amount: 560100615
       financial_year: 2016-17
       phase: Audit Outcome
-    - amount: 6184028000.0
+    - amount: 774510000.0
       financial_year: 2017-18
       phase: Main appropriation
-    - amount: 6219980000
+    - amount: 742510000
       financial_year: 2017-18
       phase: Adjusted appropriation
-    - amount: 6219580000
+    - amount: 730490000
       financial_year: 2017-18
       phase: Final Appropriation
-    - amount: 6152172997
+    - amount: 609554933
       financial_year: 2017-18
       phase: Audit Outcome
-    - amount: 5435400000.0
+    - amount: 370183000.0
       financial_year: 2018-19
       phase: Main appropriation
-    - amount: 5383641000
-      financial_year: 2018-19
-      phase: Adjusted appropriation
-    - amount: null
-      financial_year: 2018-19
-      phase: Final Appropriation
-    - amount: null
-      financial_year: 2018-19
-      phase: Audit Outcome
-    name: Electrification and Energy Programme and Project Management
-  - items:
-    - amount: 242598000.0
-      financial_year: 2015-16
-      phase: Main appropriation
-    - amount: 246598000
-      financial_year: 2015-16
-      phase: Adjusted appropriation
-    - amount: 277898000
-      financial_year: 2015-16
-      phase: Final Appropriation
-    - amount: 277766895
-      financial_year: 2015-16
-      phase: Audit Outcome
-    - amount: 240137000.0
-      financial_year: 2016-17
-      phase: Main appropriation
-    - amount: 244822000
-      financial_year: 2016-17
-      phase: Adjusted appropriation
-    - amount: 247018000
-      financial_year: 2016-17
-      phase: Final Appropriation
-    - amount: 282761955
-      financial_year: 2016-17
-      phase: Audit Outcome
-    - amount: 239541000.0
-      financial_year: 2017-18
-      phase: Main appropriation
-    - amount: 263561000
-      financial_year: 2017-18
-      phase: Adjusted appropriation
-    - amount: 278060000
-      financial_year: 2017-18
-      phase: Final Appropriation
-    - amount: 272382201
-      financial_year: 2017-18
-      phase: Audit Outcome
-    - amount: 282638000.0
-      financial_year: 2018-19
-      phase: Main appropriation
-    - amount: 283388000
+    - amount: 484707000
       financial_year: 2018-19
       phase: Adjusted appropriation
     - amount: null
@@ -354,7 +354,7 @@ budget_actual_programmes:
     - amount: null
       financial_year: 2018-19
       phase: Audit Outcome
-    name: Administration
+    name: Clean Energy
   - items:
     - amount: 45096000.0
       financial_year: 2015-16
@@ -406,46 +406,46 @@ budget_actual_programmes:
       phase: Audit Outcome
     name: Energy Policy and Planning
   - items:
-    - amount: 687327000.0
+    - amount: 5778297000.0
       financial_year: 2015-16
       phase: Main appropriation
-    - amount: 435827000
+    - amount: 5813822000
       financial_year: 2015-16
       phase: Adjusted appropriation
-    - amount: 400961000
+    - amount: 5824050000
       financial_year: 2015-16
       phase: Final Appropriation
-    - amount: 281783365
+    - amount: 5820485355
       financial_year: 2015-16
       phase: Audit Outcome
-    - amount: 616933000.0
+    - amount: 5699907000.0
       financial_year: 2016-17
       phase: Main appropriation
-    - amount: 599392000
+    - amount: 5705155000
       financial_year: 2016-17
       phase: Adjusted appropriation
-    - amount: 589894000
+    - amount: 5714645000
       financial_year: 2016-17
       phase: Final Appropriation
-    - amount: 560100615
+    - amount: 5678658473
       financial_year: 2016-17
       phase: Audit Outcome
-    - amount: 774510000.0
+    - amount: 6184028000.0
       financial_year: 2017-18
       phase: Main appropriation
-    - amount: 742510000
+    - amount: 6219980000
       financial_year: 2017-18
       phase: Adjusted appropriation
-    - amount: 730490000
+    - amount: 6219580000
       financial_year: 2017-18
       phase: Final Appropriation
-    - amount: 609554933
+    - amount: 6152172997
       financial_year: 2017-18
       phase: Audit Outcome
-    - amount: 370183000.0
+    - amount: 5435400000.0
       financial_year: 2018-19
       phase: Main appropriation
-    - amount: 484707000
+    - amount: 5383641000
       financial_year: 2018-19
       phase: Adjusted appropriation
     - amount: null
@@ -454,7 +454,7 @@ budget_actual_programmes:
     - amount: null
       financial_year: 2018-19
       phase: Audit Outcome
-    name: Clean Energy
+    name: Electrification and Energy Programme and Project Management
 contributed_datasets:
 - contributor: International Budget Partnership
   name: How Does Civil Society Use Budget Information?

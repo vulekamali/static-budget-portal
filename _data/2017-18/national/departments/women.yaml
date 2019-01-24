@@ -141,90 +141,28 @@ budget_actual_programmes:
   dataset_detail_page: /datasets/budgeted-and-actual-national-expenditure/budgeted-and-actual-national-expenditure
   programmes:
   - items:
-    - amount: 6170000.0
-      financial_year: 2015-16
-      phase: Main appropriation
-    - amount: 6328000
-      financial_year: 2015-16
-      phase: Adjusted appropriation
-    - amount: 7159000
-      financial_year: 2015-16
-      phase: Final Appropriation
-    - amount: 7415000
-      financial_year: 2015-16
-      phase: Audit Outcome
-    - amount: null
-      financial_year: 2014-15
-      phase: Main appropriation
-    - amount: null
-      financial_year: 2014-15
-      phase: Adjusted appropriation
-    - amount: null
-      financial_year: 2014-15
-      phase: Final Appropriation
-    - amount: null
-      financial_year: 2014-15
-      phase: Audit Outcome
-    - amount: null
+    - amount: 23128000.0
       financial_year: 2016-17
       phase: Main appropriation
-    - amount: null
+    - amount: 24198000
       financial_year: 2016-17
       phase: Adjusted appropriation
-    - amount: null
+    - amount: 27739000
       financial_year: 2016-17
       phase: Final Appropriation
-    - amount: null
+    - amount: 26732000
       financial_year: 2016-17
       phase: Audit Outcome
-    - amount: null
+    - amount: 28198000.0
       financial_year: 2017-18
       phase: Main appropriation
-    - amount: null
+    - amount: 21655000
       financial_year: 2017-18
       phase: Adjusted appropriation
-    - amount: null
+    - amount: 28613000
       financial_year: 2017-18
       phase: Final Appropriation
-    - amount: null
-      financial_year: 2017-18
-      phase: Audit Outcome
-    name: Research, Policy Coordination and Knowledge Management
-  - items:
-    - amount: 80451000.0
-      financial_year: 2015-16
-      phase: Main appropriation
-    - amount: 78876000
-      financial_year: 2015-16
-      phase: Adjusted appropriation
-    - amount: 82910000
-      financial_year: 2015-16
-      phase: Final Appropriation
-    - amount: 84902000
-      financial_year: 2015-16
-      phase: Audit Outcome
-    - amount: 89357000.0
-      financial_year: 2016-17
-      phase: Main appropriation
-    - amount: 88287000
-      financial_year: 2016-17
-      phase: Adjusted appropriation
-    - amount: 88680000
-      financial_year: 2016-17
-      phase: Final Appropriation
-    - amount: 88459000
-      financial_year: 2016-17
-      phase: Audit Outcome
-    - amount: 83029000.0
-      financial_year: 2017-18
-      phase: Main appropriation
-    - amount: 84665000
-      financial_year: 2017-18
-      phase: Adjusted appropriation
-    - amount: 83332000
-      financial_year: 2017-18
-      phase: Final Appropriation
-    - amount: 82559000
+    - amount: 27933000
       financial_year: 2017-18
       phase: Audit Outcome
     - amount: null
@@ -239,7 +177,19 @@ budget_actual_programmes:
     - amount: null
       financial_year: 2014-15
       phase: Audit Outcome
-    name: Administration
+    - amount: null
+      financial_year: 2015-16
+      phase: Main appropriation
+    - amount: null
+      financial_year: 2015-16
+      phase: Adjusted appropriation
+    - amount: null
+      financial_year: 2015-16
+      phase: Final Appropriation
+    - amount: null
+      financial_year: 2015-16
+      phase: Audit Outcome
+    name: Policy, Stakeholder Coordination and Knowledge Management
   - items:
     - amount: 84402000.0
       financial_year: 2016-17
@@ -291,17 +241,41 @@ budget_actual_programmes:
       phase: Audit Outcome
     name: Social Transformation and Economic Empowerment
   - items:
-    - amount: 87230000.0
+    - amount: 80451000.0
       financial_year: 2015-16
       phase: Main appropriation
-    - amount: 86931000
+    - amount: 78876000
       financial_year: 2015-16
       phase: Adjusted appropriation
-    - amount: 83423000
+    - amount: 82910000
       financial_year: 2015-16
       phase: Final Appropriation
-    - amount: 83152000
+    - amount: 84902000
       financial_year: 2015-16
+      phase: Audit Outcome
+    - amount: 89357000.0
+      financial_year: 2016-17
+      phase: Main appropriation
+    - amount: 88287000
+      financial_year: 2016-17
+      phase: Adjusted appropriation
+    - amount: 88680000
+      financial_year: 2016-17
+      phase: Final Appropriation
+    - amount: 88459000
+      financial_year: 2016-17
+      phase: Audit Outcome
+    - amount: 83029000.0
+      financial_year: 2017-18
+      phase: Main appropriation
+    - amount: 84665000
+      financial_year: 2017-18
+      phase: Adjusted appropriation
+    - amount: 83332000
+      financial_year: 2017-18
+      phase: Final Appropriation
+    - amount: 82559000
+      financial_year: 2017-18
       phase: Audit Outcome
     - amount: null
       financial_year: 2014-15
@@ -315,31 +289,7 @@ budget_actual_programmes:
     - amount: null
       financial_year: 2014-15
       phase: Audit Outcome
-    - amount: null
-      financial_year: 2016-17
-      phase: Main appropriation
-    - amount: null
-      financial_year: 2016-17
-      phase: Adjusted appropriation
-    - amount: null
-      financial_year: 2016-17
-      phase: Final Appropriation
-    - amount: null
-      financial_year: 2016-17
-      phase: Audit Outcome
-    - amount: null
-      financial_year: 2017-18
-      phase: Main appropriation
-    - amount: null
-      financial_year: 2017-18
-      phase: Adjusted appropriation
-    - amount: null
-      financial_year: 2017-18
-      phase: Final Appropriation
-    - amount: null
-      financial_year: 2017-18
-      phase: Audit Outcome
-    name: Social, Political and Economic Participation and Empowerment
+    name: Administration
   - items:
     - amount: 13151000.0
       financial_year: 2015-16
@@ -391,29 +341,17 @@ budget_actual_programmes:
       phase: Audit Outcome
     name: Monitoring, Evaluation and Outreach
   - items:
-    - amount: 23128000.0
-      financial_year: 2016-17
+    - amount: 6170000.0
+      financial_year: 2015-16
       phase: Main appropriation
-    - amount: 24198000
-      financial_year: 2016-17
+    - amount: 6328000
+      financial_year: 2015-16
       phase: Adjusted appropriation
-    - amount: 27739000
-      financial_year: 2016-17
+    - amount: 7159000
+      financial_year: 2015-16
       phase: Final Appropriation
-    - amount: 26732000
-      financial_year: 2016-17
-      phase: Audit Outcome
-    - amount: 28198000.0
-      financial_year: 2017-18
-      phase: Main appropriation
-    - amount: 21655000
-      financial_year: 2017-18
-      phase: Adjusted appropriation
-    - amount: 28613000
-      financial_year: 2017-18
-      phase: Final Appropriation
-    - amount: 27933000
-      financial_year: 2017-18
+    - amount: 7415000
+      financial_year: 2015-16
       phase: Audit Outcome
     - amount: null
       financial_year: 2014-15
@@ -428,18 +366,80 @@ budget_actual_programmes:
       financial_year: 2014-15
       phase: Audit Outcome
     - amount: null
-      financial_year: 2015-16
+      financial_year: 2016-17
       phase: Main appropriation
     - amount: null
-      financial_year: 2015-16
+      financial_year: 2016-17
       phase: Adjusted appropriation
     - amount: null
-      financial_year: 2015-16
+      financial_year: 2016-17
       phase: Final Appropriation
     - amount: null
+      financial_year: 2016-17
+      phase: Audit Outcome
+    - amount: null
+      financial_year: 2017-18
+      phase: Main appropriation
+    - amount: null
+      financial_year: 2017-18
+      phase: Adjusted appropriation
+    - amount: null
+      financial_year: 2017-18
+      phase: Final Appropriation
+    - amount: null
+      financial_year: 2017-18
+      phase: Audit Outcome
+    name: Research, Policy Coordination and Knowledge Management
+  - items:
+    - amount: 87230000.0
+      financial_year: 2015-16
+      phase: Main appropriation
+    - amount: 86931000
+      financial_year: 2015-16
+      phase: Adjusted appropriation
+    - amount: 83423000
+      financial_year: 2015-16
+      phase: Final Appropriation
+    - amount: 83152000
       financial_year: 2015-16
       phase: Audit Outcome
-    name: Policy, Stakeholder Coordination and Knowledge Management
+    - amount: null
+      financial_year: 2014-15
+      phase: Main appropriation
+    - amount: null
+      financial_year: 2014-15
+      phase: Adjusted appropriation
+    - amount: null
+      financial_year: 2014-15
+      phase: Final Appropriation
+    - amount: null
+      financial_year: 2014-15
+      phase: Audit Outcome
+    - amount: null
+      financial_year: 2016-17
+      phase: Main appropriation
+    - amount: null
+      financial_year: 2016-17
+      phase: Adjusted appropriation
+    - amount: null
+      financial_year: 2016-17
+      phase: Final Appropriation
+    - amount: null
+      financial_year: 2016-17
+      phase: Audit Outcome
+    - amount: null
+      financial_year: 2017-18
+      phase: Main appropriation
+    - amount: null
+      financial_year: 2017-18
+      phase: Adjusted appropriation
+    - amount: null
+      financial_year: 2017-18
+      phase: Final Appropriation
+    - amount: null
+      financial_year: 2017-18
+      phase: Audit Outcome
+    name: Social, Political and Economic Participation and Empowerment
 contributed_datasets:
 - contributor: International Budget Partnership
   name: How Does Civil Society Use Budget Information?

@@ -143,6 +143,56 @@ budget_actual_programmes:
   dataset_detail_page: /datasets/budgeted-and-actual-national-expenditure/budgeted-and-actual-national-expenditure
   programmes:
   - items:
+    - amount: 133244000.0
+      financial_year: 2015-16
+      phase: Main appropriation
+    - amount: 154017000
+      financial_year: 2015-16
+      phase: Adjusted appropriation
+    - amount: 154017000
+      financial_year: 2015-16
+      phase: Final Appropriation
+    - amount: 153928000
+      financial_year: 2015-16
+      phase: Audit Outcome
+    - amount: 137572000.0
+      financial_year: 2016-17
+      phase: Main appropriation
+    - amount: 148966000
+      financial_year: 2016-17
+      phase: Adjusted appropriation
+    - amount: 147256000
+      financial_year: 2016-17
+      phase: Final Appropriation
+    - amount: 147124000
+      financial_year: 2016-17
+      phase: Audit Outcome
+    - amount: 150661000.0
+      financial_year: 2017-18
+      phase: Main appropriation
+    - amount: 150661000
+      financial_year: 2017-18
+      phase: Adjusted appropriation
+    - amount: 152071000
+      financial_year: 2017-18
+      phase: Final Appropriation
+    - amount: 151990000
+      financial_year: 2017-18
+      phase: Audit Outcome
+    - amount: null
+      financial_year: 2014-15
+      phase: Main appropriation
+    - amount: null
+      financial_year: 2014-15
+      phase: Adjusted appropriation
+    - amount: null
+      financial_year: 2014-15
+      phase: Final Appropriation
+    - amount: null
+      financial_year: 2014-15
+      phase: Audit Outcome
+    name: Sport Support
+  - items:
     - amount: 628646000.0
       financial_year: 2015-16
       phase: Main appropriation
@@ -342,56 +392,6 @@ budget_actual_programmes:
       financial_year: 2014-15
       phase: Audit Outcome
     name: Administration
-  - items:
-    - amount: 133244000.0
-      financial_year: 2015-16
-      phase: Main appropriation
-    - amount: 154017000
-      financial_year: 2015-16
-      phase: Adjusted appropriation
-    - amount: 154017000
-      financial_year: 2015-16
-      phase: Final Appropriation
-    - amount: 153928000
-      financial_year: 2015-16
-      phase: Audit Outcome
-    - amount: 137572000.0
-      financial_year: 2016-17
-      phase: Main appropriation
-    - amount: 148966000
-      financial_year: 2016-17
-      phase: Adjusted appropriation
-    - amount: 147256000
-      financial_year: 2016-17
-      phase: Final Appropriation
-    - amount: 147124000
-      financial_year: 2016-17
-      phase: Audit Outcome
-    - amount: 150661000.0
-      financial_year: 2017-18
-      phase: Main appropriation
-    - amount: 150661000
-      financial_year: 2017-18
-      phase: Adjusted appropriation
-    - amount: 152071000
-      financial_year: 2017-18
-      phase: Final Appropriation
-    - amount: 151990000
-      financial_year: 2017-18
-      phase: Audit Outcome
-    - amount: null
-      financial_year: 2014-15
-      phase: Main appropriation
-    - amount: null
-      financial_year: 2014-15
-      phase: Adjusted appropriation
-    - amount: null
-      financial_year: 2014-15
-      phase: Final Appropriation
-    - amount: null
-      financial_year: 2014-15
-      phase: Audit Outcome
-    name: Sport Support
 contributed_datasets:
 - contributor: Public Service Accountability Monitor
   name: A People's Guide to the Adjusted Budget 2018/19

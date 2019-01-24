@@ -154,16 +154,16 @@ budget_actual_programmes:
   dataset_detail_page: /datasets/budgeted-and-actual-national-expenditure/budgeted-and-actual-national-expenditure
   programmes:
   - items:
-    - amount: 483940000.0
+    - amount: 5726000.0
       financial_year: 2015-16
       phase: Main appropriation
-    - amount: 443661000
+    - amount: 5726000
       financial_year: 2015-16
       phase: Adjusted appropriation
-    - amount: 446242000
+    - amount: 5726000
       financial_year: 2015-16
       phase: Final Appropriation
-    - amount: 446212000
+    - amount: 5620000
       financial_year: 2015-16
       phase: Audit Outcome
     - amount: null
@@ -202,7 +202,7 @@ budget_actual_programmes:
     - amount: null
       financial_year: 2014-15
       phase: Audit Outcome
-    name: Administration
+    name: Direct charge against the National Revenue Fund
   - items:
     - amount: 26390000.0
       financial_year: 2015-16
@@ -254,16 +254,16 @@ budget_actual_programmes:
       phase: Audit Outcome
     name: Executive Support
   - items:
-    - amount: 5726000.0
+    - amount: 483940000.0
       financial_year: 2015-16
       phase: Main appropriation
-    - amount: 5726000
+    - amount: 443661000
       financial_year: 2015-16
       phase: Adjusted appropriation
-    - amount: 5726000
+    - amount: 446242000
       financial_year: 2015-16
       phase: Final Appropriation
-    - amount: 5620000
+    - amount: 446212000
       financial_year: 2015-16
       phase: Audit Outcome
     - amount: null
@@ -302,7 +302,7 @@ budget_actual_programmes:
     - amount: null
       financial_year: 2014-15
       phase: Audit Outcome
-    name: Direct charge against the National Revenue Fund
+    name: Administration
 contributed_datasets:
 - contributor: International Budget Partnership
   name: How Does Civil Society Use Budget Information?

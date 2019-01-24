@@ -171,6 +171,56 @@ budget_actual_programmes:
   dataset_detail_page: /datasets/budgeted-and-actual-national-expenditure/budgeted-and-actual-national-expenditure
   programmes:
   - items:
+    - amount: 457078000.0
+      financial_year: 2015-16
+      phase: Main appropriation
+    - amount: 456578000
+      financial_year: 2015-16
+      phase: Adjusted appropriation
+    - amount: 443416000
+      financial_year: 2015-16
+      phase: Final Appropriation
+    - amount: 438501000
+      financial_year: 2015-16
+      phase: Audit Outcome
+    - amount: null
+      financial_year: 2012-13
+      phase: Main appropriation
+    - amount: null
+      financial_year: 2012-13
+      phase: Adjusted appropriation
+    - amount: null
+      financial_year: 2012-13
+      phase: Final Appropriation
+    - amount: null
+      financial_year: 2012-13
+      phase: Audit Outcome
+    - amount: null
+      financial_year: 2013-14
+      phase: Main appropriation
+    - amount: null
+      financial_year: 2013-14
+      phase: Adjusted appropriation
+    - amount: null
+      financial_year: 2013-14
+      phase: Final Appropriation
+    - amount: null
+      financial_year: 2013-14
+      phase: Audit Outcome
+    - amount: null
+      financial_year: 2014-15
+      phase: Main appropriation
+    - amount: null
+      financial_year: 2014-15
+      phase: Adjusted appropriation
+    - amount: null
+      financial_year: 2014-15
+      phase: Final Appropriation
+    - amount: null
+      financial_year: 2014-15
+      phase: Audit Outcome
+    name: Administration
+  - items:
     - amount: 1596919000.0
       financial_year: 2015-16
       phase: Main appropriation
@@ -271,66 +321,16 @@ budget_actual_programmes:
       phase: Audit Outcome
     name: Primary Health Care Services
   - items:
-    - amount: 14442144000.0
+    - amount: 587807000.0
       financial_year: 2015-16
       phase: Main appropriation
-    - amount: 14378878000
+    - amount: 596646000
       financial_year: 2015-16
       phase: Adjusted appropriation
-    - amount: 14324860000
+    - amount: 611213000
       financial_year: 2015-16
       phase: Final Appropriation
-    - amount: 14179001000
-      financial_year: 2015-16
-      phase: Audit Outcome
-    - amount: null
-      financial_year: 2012-13
-      phase: Main appropriation
-    - amount: null
-      financial_year: 2012-13
-      phase: Adjusted appropriation
-    - amount: null
-      financial_year: 2012-13
-      phase: Final Appropriation
-    - amount: null
-      financial_year: 2012-13
-      phase: Audit Outcome
-    - amount: null
-      financial_year: 2013-14
-      phase: Main appropriation
-    - amount: null
-      financial_year: 2013-14
-      phase: Adjusted appropriation
-    - amount: null
-      financial_year: 2013-14
-      phase: Final Appropriation
-    - amount: null
-      financial_year: 2013-14
-      phase: Audit Outcome
-    - amount: null
-      financial_year: 2014-15
-      phase: Main appropriation
-    - amount: null
-      financial_year: 2014-15
-      phase: Adjusted appropriation
-    - amount: null
-      financial_year: 2014-15
-      phase: Final Appropriation
-    - amount: null
-      financial_year: 2014-15
-      phase: Audit Outcome
-    name: HIV and AIDS, Tuberculosis, and Maternal and Child Health
-  - items:
-    - amount: 457078000.0
-      financial_year: 2015-16
-      phase: Main appropriation
-    - amount: 456578000
-      financial_year: 2015-16
-      phase: Adjusted appropriation
-    - amount: 443416000
-      financial_year: 2015-16
-      phase: Final Appropriation
-    - amount: 438501000
+    - amount: 553053000
       financial_year: 2015-16
       phase: Audit Outcome
     - amount: null
@@ -369,7 +369,7 @@ budget_actual_programmes:
     - amount: null
       financial_year: 2014-15
       phase: Audit Outcome
-    name: Administration
+    name: National Health Insurance, Health Planning and Systems Enablement
   - items:
     - amount: 19159065000.0
       financial_year: 2015-16
@@ -421,16 +421,16 @@ budget_actual_programmes:
       phase: Audit Outcome
     name: Hospitals, Tertiary Health Services and Human Resource Development
   - items:
-    - amount: 587807000.0
+    - amount: 14442144000.0
       financial_year: 2015-16
       phase: Main appropriation
-    - amount: 596646000
+    - amount: 14378878000
       financial_year: 2015-16
       phase: Adjusted appropriation
-    - amount: 611213000
+    - amount: 14324860000
       financial_year: 2015-16
       phase: Final Appropriation
-    - amount: 553053000
+    - amount: 14179001000
       financial_year: 2015-16
       phase: Audit Outcome
     - amount: null
@@ -469,7 +469,7 @@ budget_actual_programmes:
     - amount: null
       financial_year: 2014-15
       phase: Audit Outcome
-    name: National Health Insurance, Health Planning and Systems Enablement
+    name: HIV and AIDS, Tuberculosis, and Maternal and Child Health
 contributed_datasets:
 - contributor: International Budget Partnership
   name: How Does Civil Society Use Budget Information?
