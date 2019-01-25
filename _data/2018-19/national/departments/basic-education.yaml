@@ -171,100 +171,52 @@ budget_actual:
     - amount: null
       financial_year: 2018-19
       phase: Audit Outcome
+  notices: []
 budget_actual_programmes:
   dataset_detail_page: /datasets/budgeted-and-actual-national-expenditure/budgeted-and-actual-national-expenditure
+  notices: []
   programmes:
   - items:
-    - amount: 5974456000.0
+    - amount: 357697000.0
       financial_year: 2015-16
       phase: Main appropriation
-    - amount: 5943822000
+    - amount: 360297000
       financial_year: 2015-16
       phase: Adjusted appropriation
-    - amount: 5938035000
+    - amount: 386645000
       financial_year: 2015-16
       phase: Final Appropriation
-    - amount: 5936456000
+    - amount: 386475000
       financial_year: 2015-16
       phase: Audit Outcome
-    - amount: 6291684000.0
+    - amount: 377893000.0
       financial_year: 2016-17
       phase: Main appropriation
-    - amount: 6341427000
+    - amount: 388393000
       financial_year: 2016-17
       phase: Adjusted appropriation
-    - amount: 6342761000
+    - amount: 419000000
       financial_year: 2016-17
       phase: Final Appropriation
-    - amount: 6333722000
+    - amount: 418301000
       financial_year: 2016-17
       phase: Audit Outcome
-    - amount: 6726977000.0
+    - amount: 416283000.0
       financial_year: 2017-18
       phase: Main appropriation
-    - amount: 6729977000
+    - amount: 426583000
       financial_year: 2017-18
       phase: Adjusted appropriation
-    - amount: 6740565000
+    - amount: 435072000
       financial_year: 2017-18
       phase: Final Appropriation
-    - amount: 6736153000
+    - amount: 435072000
       financial_year: 2017-18
       phase: Audit Outcome
-    - amount: 7105128000.0
+    - amount: 450476000.0
       financial_year: 2018-19
       phase: Main appropriation
-    - amount: 7108968000
-      financial_year: 2018-19
-      phase: Adjusted appropriation
-    - amount: null
-      financial_year: 2018-19
-      phase: Final Appropriation
-    - amount: null
-      financial_year: 2018-19
-      phase: Audit Outcome
-    name: Educational Enrichment Services
-  - items:
-    - amount: 1877765000.0
-      financial_year: 2015-16
-      phase: Main appropriation
-    - amount: 1844922000
-      financial_year: 2015-16
-      phase: Adjusted appropriation
-    - amount: 1837965000
-      financial_year: 2015-16
-      phase: Final Appropriation
-    - amount: 1797740000
-      financial_year: 2015-16
-      phase: Audit Outcome
-    - amount: 1936100000.0
-      financial_year: 2016-17
-      phase: Main appropriation
-    - amount: 1902207000
-      financial_year: 2016-17
-      phase: Adjusted appropriation
-    - amount: 1877954000
-      financial_year: 2016-17
-      phase: Final Appropriation
-    - amount: 1826691000
-      financial_year: 2016-17
-      phase: Audit Outcome
-    - amount: 1801953000.0
-      financial_year: 2017-18
-      phase: Main appropriation
-    - amount: 1783016000
-      financial_year: 2017-18
-      phase: Adjusted appropriation
-    - amount: 1766338000
-      financial_year: 2017-18
-      phase: Final Appropriation
-    - amount: 1731097000
-      financial_year: 2017-18
-      phase: Audit Outcome
-    - amount: 1905011000.0
-      financial_year: 2018-19
-      phase: Main appropriation
-    - amount: 1867116000
+    - amount: 472145000
       financial_year: 2018-19
       phase: Adjusted appropriation
     - amount: null
@@ -273,7 +225,7 @@ budget_actual_programmes:
     - amount: null
       financial_year: 2018-19
       phase: Audit Outcome
-    name: Curriculum Policy, Support and Monitoring
+    name: Administration
   - items:
     - amount: 1171484000.0
       financial_year: 2015-16
@@ -325,6 +277,106 @@ budget_actual_programmes:
       phase: Audit Outcome
     name: Teachers, Education Human Resources and Institutional Development
   - items:
+    - amount: 1877765000.0
+      financial_year: 2015-16
+      phase: Main appropriation
+    - amount: 1844922000
+      financial_year: 2015-16
+      phase: Adjusted appropriation
+    - amount: 1837965000
+      financial_year: 2015-16
+      phase: Final Appropriation
+    - amount: 1797740000
+      financial_year: 2015-16
+      phase: Audit Outcome
+    - amount: 1936100000.0
+      financial_year: 2016-17
+      phase: Main appropriation
+    - amount: 1902207000
+      financial_year: 2016-17
+      phase: Adjusted appropriation
+    - amount: 1877954000
+      financial_year: 2016-17
+      phase: Final Appropriation
+    - amount: 1826691000
+      financial_year: 2016-17
+      phase: Audit Outcome
+    - amount: 1801953000.0
+      financial_year: 2017-18
+      phase: Main appropriation
+    - amount: 1783016000
+      financial_year: 2017-18
+      phase: Adjusted appropriation
+    - amount: 1766338000
+      financial_year: 2017-18
+      phase: Final Appropriation
+    - amount: 1731097000
+      financial_year: 2017-18
+      phase: Audit Outcome
+    - amount: 1905011000.0
+      financial_year: 2018-19
+      phase: Main appropriation
+    - amount: 1867116000
+      financial_year: 2018-19
+      phase: Adjusted appropriation
+    - amount: null
+      financial_year: 2018-19
+      phase: Final Appropriation
+    - amount: null
+      financial_year: 2018-19
+      phase: Audit Outcome
+    name: Curriculum Policy, Support and Monitoring
+  - items:
+    - amount: 5974456000.0
+      financial_year: 2015-16
+      phase: Main appropriation
+    - amount: 5943822000
+      financial_year: 2015-16
+      phase: Adjusted appropriation
+    - amount: 5938035000
+      financial_year: 2015-16
+      phase: Final Appropriation
+    - amount: 5936456000
+      financial_year: 2015-16
+      phase: Audit Outcome
+    - amount: 6291684000.0
+      financial_year: 2016-17
+      phase: Main appropriation
+    - amount: 6341427000
+      financial_year: 2016-17
+      phase: Adjusted appropriation
+    - amount: 6342761000
+      financial_year: 2016-17
+      phase: Final Appropriation
+    - amount: 6333722000
+      financial_year: 2016-17
+      phase: Audit Outcome
+    - amount: 6726977000.0
+      financial_year: 2017-18
+      phase: Main appropriation
+    - amount: 6729977000
+      financial_year: 2017-18
+      phase: Adjusted appropriation
+    - amount: 6740565000
+      financial_year: 2017-18
+      phase: Final Appropriation
+    - amount: 6736153000
+      financial_year: 2017-18
+      phase: Audit Outcome
+    - amount: 7105128000.0
+      financial_year: 2018-19
+      phase: Main appropriation
+    - amount: 7108968000
+      financial_year: 2018-19
+      phase: Adjusted appropriation
+    - amount: null
+      financial_year: 2018-19
+      phase: Final Appropriation
+    - amount: null
+      financial_year: 2018-19
+      phase: Audit Outcome
+    name: Educational Enrichment Services
+  - items:
     - amount: 12129738000.0
       financial_year: 2015-16
       phase: Main appropriation
@@ -374,56 +426,6 @@ budget_actual_programmes:
       financial_year: 2018-19
       phase: Audit Outcome
     name: Planning, Information and Assessment
-  - items:
-    - amount: 357697000.0
-      financial_year: 2015-16
-      phase: Main appropriation
-    - amount: 360297000
-      financial_year: 2015-16
-      phase: Adjusted appropriation
-    - amount: 386645000
-      financial_year: 2015-16
-      phase: Final Appropriation
-    - amount: 386475000
-      financial_year: 2015-16
-      phase: Audit Outcome
-    - amount: 377893000.0
-      financial_year: 2016-17
-      phase: Main appropriation
-    - amount: 388393000
-      financial_year: 2016-17
-      phase: Adjusted appropriation
-    - amount: 419000000
-      financial_year: 2016-17
-      phase: Final Appropriation
-    - amount: 418301000
-      financial_year: 2016-17
-      phase: Audit Outcome
-    - amount: 416283000.0
-      financial_year: 2017-18
-      phase: Main appropriation
-    - amount: 426583000
-      financial_year: 2017-18
-      phase: Adjusted appropriation
-    - amount: 435072000
-      financial_year: 2017-18
-      phase: Final Appropriation
-    - amount: 435072000
-      financial_year: 2017-18
-      phase: Audit Outcome
-    - amount: 450476000.0
-      financial_year: 2018-19
-      phase: Main appropriation
-    - amount: 472145000
-      financial_year: 2018-19
-      phase: Adjusted appropriation
-    - amount: null
-      financial_year: 2018-19
-      phase: Final Appropriation
-    - amount: null
-      financial_year: 2018-19
-      phase: Audit Outcome
-    name: Administration
 contributed_datasets:
 - contributor: International Budget Partnership
   name: How Does Civil Society Use Budget Information?

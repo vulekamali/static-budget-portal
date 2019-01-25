@@ -159,44 +159,48 @@ budget_actual:
     - amount: null
       financial_year: 2014-15
       phase: Audit Outcome
+  notices:
+  - Please note that the data for 2014 has not been published on vulekamali.
 budget_actual_programmes:
   dataset_detail_page: /datasets/budgeted-and-actual-national-expenditure/budgeted-and-actual-national-expenditure
+  notices:
+  - One or more programmes did not exist for some years displayed.
   programmes:
   - items:
-    - amount: 642764000.0
+    - amount: 43447000.0
       financial_year: 2015-16
       phase: Main appropriation
-    - amount: 627990000
+    - amount: 43447000
       financial_year: 2015-16
       phase: Adjusted appropriation
-    - amount: 551550000
+    - amount: 43310000
       financial_year: 2015-16
       phase: Final Appropriation
-    - amount: 473753000
+    - amount: 41542000
       financial_year: 2015-16
       phase: Audit Outcome
-    - amount: 1191946000.0
+    - amount: 44710000.0
       financial_year: 2016-17
       phase: Main appropriation
-    - amount: 1188468000
+    - amount: 45651000
       financial_year: 2016-17
       phase: Adjusted appropriation
-    - amount: 1176277000
+    - amount: 48430000
       financial_year: 2016-17
       phase: Final Appropriation
-    - amount: 856319000
+    - amount: 46944000
       financial_year: 2016-17
       phase: Audit Outcome
-    - amount: 1030691000.0
+    - amount: 47793000.0
       financial_year: 2017-18
       phase: Main appropriation
-    - amount: 888113000
+    - amount: 50920000
       financial_year: 2017-18
       phase: Adjusted appropriation
-    - amount: 878245000
+    - amount: 51748000
       financial_year: 2017-18
       phase: Final Appropriation
-    - amount: 604411000
+    - amount: 50612000
       financial_year: 2017-18
       phase: Audit Outcome
     - amount: null
@@ -211,7 +215,7 @@ budget_actual_programmes:
     - amount: null
       financial_year: 2014-15
       phase: Audit Outcome
-    name: ICT Infrastructure Support
+    name: International Affairs and Trade
   - items:
     - amount: 105578000.0
       financial_year: 2015-16
@@ -313,40 +317,90 @@ budget_actual_programmes:
       phase: Audit Outcome
     name: Administration
   - items:
-    - amount: 43447000.0
+    - amount: 447889000.0
       financial_year: 2015-16
       phase: Main appropriation
-    - amount: 43447000
+    - amount: 447889000
       financial_year: 2015-16
       phase: Adjusted appropriation
-    - amount: 43310000
+    - amount: 490231000
       financial_year: 2015-16
       phase: Final Appropriation
-    - amount: 41542000
+    - amount: 488959000
       financial_year: 2015-16
       phase: Audit Outcome
-    - amount: 44710000.0
+    - amount: null
+      financial_year: 2014-15
+      phase: Main appropriation
+    - amount: null
+      financial_year: 2014-15
+      phase: Adjusted appropriation
+    - amount: null
+      financial_year: 2014-15
+      phase: Final Appropriation
+    - amount: null
+      financial_year: 2014-15
+      phase: Audit Outcome
+    - amount: null
       financial_year: 2016-17
       phase: Main appropriation
-    - amount: 45651000
+    - amount: null
       financial_year: 2016-17
       phase: Adjusted appropriation
-    - amount: 48430000
+    - amount: null
       financial_year: 2016-17
       phase: Final Appropriation
-    - amount: 46944000
+    - amount: null
       financial_year: 2016-17
       phase: Audit Outcome
-    - amount: 47793000.0
+    - amount: null
       financial_year: 2017-18
       phase: Main appropriation
-    - amount: 50920000
+    - amount: null
       financial_year: 2017-18
       phase: Adjusted appropriation
-    - amount: 51748000
+    - amount: null
       financial_year: 2017-18
       phase: Final Appropriation
-    - amount: 50612000
+    - amount: null
+      financial_year: 2017-18
+      phase: Audit Outcome
+    name: ICT Enterprise Development and SOE Oversight
+  - items:
+    - amount: 642764000.0
+      financial_year: 2015-16
+      phase: Main appropriation
+    - amount: 627990000
+      financial_year: 2015-16
+      phase: Adjusted appropriation
+    - amount: 551550000
+      financial_year: 2015-16
+      phase: Final Appropriation
+    - amount: 473753000
+      financial_year: 2015-16
+      phase: Audit Outcome
+    - amount: 1191946000.0
+      financial_year: 2016-17
+      phase: Main appropriation
+    - amount: 1188468000
+      financial_year: 2016-17
+      phase: Adjusted appropriation
+    - amount: 1176277000
+      financial_year: 2016-17
+      phase: Final Appropriation
+    - amount: 856319000
+      financial_year: 2016-17
+      phase: Audit Outcome
+    - amount: 1030691000.0
+      financial_year: 2017-18
+      phase: Main appropriation
+    - amount: 888113000
+      financial_year: 2017-18
+      phase: Adjusted appropriation
+    - amount: 878245000
+      financial_year: 2017-18
+      phase: Final Appropriation
+    - amount: 604411000
       financial_year: 2017-18
       phase: Audit Outcome
     - amount: null
@@ -361,7 +415,7 @@ budget_actual_programmes:
     - amount: null
       financial_year: 2014-15
       phase: Audit Outcome
-    name: International Affairs and Trade
+    name: ICT Infrastructure Support
   - items:
     - amount: 891801000.0
       financial_year: 2016-17
@@ -412,56 +466,6 @@ budget_actual_programmes:
       financial_year: 2015-16
       phase: Audit Outcome
     name: ICT Enterprise Development and Oversight
-  - items:
-    - amount: 447889000.0
-      financial_year: 2015-16
-      phase: Main appropriation
-    - amount: 447889000
-      financial_year: 2015-16
-      phase: Adjusted appropriation
-    - amount: 490231000
-      financial_year: 2015-16
-      phase: Final Appropriation
-    - amount: 488959000
-      financial_year: 2015-16
-      phase: Audit Outcome
-    - amount: null
-      financial_year: 2014-15
-      phase: Main appropriation
-    - amount: null
-      financial_year: 2014-15
-      phase: Adjusted appropriation
-    - amount: null
-      financial_year: 2014-15
-      phase: Final Appropriation
-    - amount: null
-      financial_year: 2014-15
-      phase: Audit Outcome
-    - amount: null
-      financial_year: 2016-17
-      phase: Main appropriation
-    - amount: null
-      financial_year: 2016-17
-      phase: Adjusted appropriation
-    - amount: null
-      financial_year: 2016-17
-      phase: Final Appropriation
-    - amount: null
-      financial_year: 2016-17
-      phase: Audit Outcome
-    - amount: null
-      financial_year: 2017-18
-      phase: Main appropriation
-    - amount: null
-      financial_year: 2017-18
-      phase: Adjusted appropriation
-    - amount: null
-      financial_year: 2017-18
-      phase: Final Appropriation
-    - amount: null
-      financial_year: 2017-18
-      phase: Audit Outcome
-    name: ICT Enterprise Development and SOE Oversight
 contributed_datasets:
 - contributor: Public Service Accountability Monitor
   name: A People's Guide to the Adjusted Budget 2018/19

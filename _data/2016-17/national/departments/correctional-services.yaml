@@ -138,32 +138,35 @@ budget_actual:
     - amount: null
       financial_year: 2014-15
       phase: Audit Outcome
+  notices:
+  - Please note that the data for 2014 and 2013 has not been published on vulekamali.
 budget_actual_programmes:
   dataset_detail_page: /datasets/budgeted-and-actual-national-expenditure/budgeted-and-actual-national-expenditure
+  notices: []
   programmes:
   - items:
-    - amount: 1796262000.0
+    - amount: 891196000.0
       financial_year: 2015-16
       phase: Main appropriation
-    - amount: 1796262000
+    - amount: 890966000
       financial_year: 2015-16
       phase: Adjusted appropriation
-    - amount: 2088481000
+    - amount: 890964000
       financial_year: 2015-16
       phase: Final Appropriation
-    - amount: 2088481000
+    - amount: 890964000
       financial_year: 2015-16
       phase: Audit Outcome
-    - amount: 1975116000.0
+    - amount: 807777000.0
       financial_year: 2016-17
       phase: Main appropriation
-    - amount: 1975116000
+    - amount: 807777000
       financial_year: 2016-17
       phase: Adjusted appropriation
-    - amount: 2235094000
+    - amount: 853727000
       financial_year: 2016-17
       phase: Final Appropriation
-    - amount: 2235094000
+    - amount: 853727000
       financial_year: 2016-17
       phase: Audit Outcome
     - amount: null
@@ -190,7 +193,7 @@ budget_actual_programmes:
     - amount: null
       financial_year: 2014-15
       phase: Audit Outcome
-    name: Care
+    name: Social Reintegration
   - items:
     - amount: 1151993000.0
       financial_year: 2015-16
@@ -242,28 +245,28 @@ budget_actual_programmes:
       phase: Audit Outcome
     name: Rehabilitation
   - items:
-    - amount: 891196000.0
+    - amount: 1796262000.0
       financial_year: 2015-16
       phase: Main appropriation
-    - amount: 890966000
+    - amount: 1796262000
       financial_year: 2015-16
       phase: Adjusted appropriation
-    - amount: 890964000
+    - amount: 2088481000
       financial_year: 2015-16
       phase: Final Appropriation
-    - amount: 890964000
+    - amount: 2088481000
       financial_year: 2015-16
       phase: Audit Outcome
-    - amount: 807777000.0
+    - amount: 1975116000.0
       financial_year: 2016-17
       phase: Main appropriation
-    - amount: 807777000
+    - amount: 1975116000
       financial_year: 2016-17
       phase: Adjusted appropriation
-    - amount: 853727000
+    - amount: 2235094000
       financial_year: 2016-17
       phase: Final Appropriation
-    - amount: 853727000
+    - amount: 2235094000
       financial_year: 2016-17
       phase: Audit Outcome
     - amount: null
@@ -290,7 +293,7 @@ budget_actual_programmes:
     - amount: null
       financial_year: 2014-15
       phase: Audit Outcome
-    name: Social Reintegration
+    name: Care
   - items:
     - amount: 3697275000.0
       financial_year: 2015-16

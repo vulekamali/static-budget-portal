@@ -150,8 +150,11 @@ budget_actual:
     - amount: null
       financial_year: 2014-15
       phase: Audit Outcome
+  notices:
+  - Please note that the data for 2014, 2012 and 2013 has not been published on vulekamali.
 budget_actual_programmes:
   dataset_detail_page: /datasets/budgeted-and-actual-national-expenditure/budgeted-and-actual-national-expenditure
+  notices: []
   programmes:
   - items:
     - amount: 5726000.0
@@ -345,21 +348,21 @@ description: 'National department: The Presidency budget data for the 2015-16 fi
   year from National Treasury in partnership with IMALI YETHU.'
 economic_classification_by_programme:
   dataset_detail_page: /datasets/estimates-of-national-expenditure/estimates-of-national-expenditure-2015-16
-  department_data_csv: https://datamanager.vulekamali.gov.za/csv/?api_url=https%3A//openspending.org/api/3/cubes/b9d2af843f3a7ca223eea07fb608e62a%3Aestimates-of-national-expenditure-south-africa-2015-16/aggregate/%3Fcut%3Dfinancial_year.financial_year%253A2015%257Cvote_number.department%253A%2522The%2BPresidency%2522%26drilldown%3Dbudget_phase.budget_phase%257Ceconomic_classification_1.economic_classification_1%257Ceconomic_classification_2.economic_classification_2%257Ceconomic_classification_3.economic_classification_3%257Ceconomic_classification_4.economic_classification_4%257Cfinancial_year.financial_year%257Cprogramme_number.programme%257Cprogramme_number.programme_number%257Csubprogramme_number.subprogramme%257Csubprogramme_number.subprogramme_number%257Cvote_number.department%257Cvote_number.vote_number%26pagesize%3D10000
+  department_data_csv: https://datamanager.vulekamali.gov.za/csv/?api_url=https%3A//openspending.org/api/3/cubes/b9d2af843f3a7ca223eea07fb608e62a%3Aestimates-of-national-expenditure-2015-16-uploaded-2019-01-25t0215/aggregate/%3Fcut%3Dfinyear.finyear%253A2015%257Cvoteno.department%253A%2522The%2BPresidency%2522%26drilldown%3Dbudget_phase.budget_phase%257Cecon1.econ1%257Cecon2.econ2%257Cecon3.econ3%257Cecon4.econ4%257Cecon5.econ5%257Cfg1.fg1%257Cfg2.fg2%257Cfinyear.finyear%257Cprogno.progno%257Cprogno.programme%257Csprogno.sprogno%257Csprogno.subprogramme%257Cvoteno.department%257Cvoteno.voteno%26pagesize%3D10000
   programmes:
   - items:
     - items:
       - name: Payments for capital assets
-        total_budget: 11386000.0
+        total_budget: 11386000
         type: economic_classification_2
       name: Capital
       type: economic_classification_1
     - items:
       - name: Current payments
-        total_budget: 472504000.0
+        total_budget: 472504000
         type: economic_classification_2
       - name: Transfers and subsidies
-        total_budget: 50000.0
+        total_budget: 50000
         type: economic_classification_2
       name: Current
       type: economic_classification_1
@@ -368,7 +371,7 @@ economic_classification_by_programme:
   - items:
     - items:
       - name: Current payments
-        total_budget: 5726000.0
+        total_budget: 5726000
         type: economic_classification_2
       name: Current
       type: economic_classification_1
@@ -377,13 +380,13 @@ economic_classification_by_programme:
   - items:
     - items:
       - name: Payments for capital assets
-        total_budget: 1116000.0
+        total_budget: 1116000
         type: economic_classification_2
       name: Capital
       type: economic_classification_1
     - items:
       - name: Current payments
-        total_budget: 25274000.0
+        total_budget: 25274000
         type: economic_classification_2
       name: Current
       type: economic_classification_1
@@ -394,25 +397,25 @@ expenditure_over_time:
   expenditure:
     base_financial_year: 2017-18
     nominal:
-    - amount: 391348000.0
+    - amount: 391348000
       financial_year: 2011-12
       phase: Audited Outcome
-    - amount: 367950000.0
+    - amount: 367950000
       financial_year: 2012-13
       phase: Audited Outcome
-    - amount: 417804000.0
+    - amount: 417804000
       financial_year: 2013-14
       phase: Audited Outcome
-    - amount: 489934000.0
+    - amount: 489934000
       financial_year: 2014-15
       phase: Adjusted appropriation
-    - amount: 516056000.0
+    - amount: 516056000
       financial_year: 2015-16
       phase: Main appropriation
-    - amount: 530736000.0
+    - amount: 530736000
       financial_year: 2016-17
       phase: Medium Term Estimates
-    - amount: 558770000.0
+    - amount: 558770000
       financial_year: 2017-18
       phase: Medium Term Estimates
     real:
@@ -491,45 +494,45 @@ is_vote_primary: true
 name: The Presidency
 programme_by_economic_classification:
   dataset_detail_page: /datasets/estimates-of-national-expenditure/estimates-of-national-expenditure-2015-16
-  department_data_csv: https://datamanager.vulekamali.gov.za/csv/?api_url=https%3A//openspending.org/api/3/cubes/b9d2af843f3a7ca223eea07fb608e62a%3Aestimates-of-national-expenditure-south-africa-2015-16/aggregate/%3Fcut%3Dfinancial_year.financial_year%253A2015%257Cvote_number.department%253A%2522The%2BPresidency%2522%26drilldown%3Dbudget_phase.budget_phase%257Ceconomic_classification_1.economic_classification_1%257Ceconomic_classification_2.economic_classification_2%257Ceconomic_classification_3.economic_classification_3%257Ceconomic_classification_4.economic_classification_4%257Cfinancial_year.financial_year%257Cprogramme_number.programme%257Cprogramme_number.programme_number%257Csubprogramme_number.subprogramme%257Csubprogramme_number.subprogramme_number%257Cvote_number.department%257Cvote_number.vote_number%26pagesize%3D10000
+  department_data_csv: https://datamanager.vulekamali.gov.za/csv/?api_url=https%3A//openspending.org/api/3/cubes/b9d2af843f3a7ca223eea07fb608e62a%3Aestimates-of-national-expenditure-2015-16-uploaded-2019-01-25t0215/aggregate/%3Fcut%3Dfinyear.finyear%253A2015%257Cvoteno.department%253A%2522The%2BPresidency%2522%26drilldown%3Dbudget_phase.budget_phase%257Cecon1.econ1%257Cecon2.econ2%257Cecon3.econ3%257Cecon4.econ4%257Cecon5.econ5%257Cfg1.fg1%257Cfg2.fg2%257Cfinyear.finyear%257Cprogno.progno%257Cprogno.programme%257Csprogno.sprogno%257Csprogno.subprogramme%257Cvoteno.department%257Cvoteno.voteno%26pagesize%3D10000
   econ_classes:
   - items:
     - name: Administration
-      total_budget: 11386000.0
+      total_budget: 11386000
       type: programme
     - name: Executive Support
-      total_budget: 1116000.0
+      total_budget: 1116000
       type: programme
     name: Capital - Payments for capital assets
     type: economic_classification_1_and_2
   - items:
     - name: Administration
-      total_budget: 472504000.0
+      total_budget: 472504000
       type: programme
     - name: Executive Support
-      total_budget: 25274000.0
+      total_budget: 25274000
       type: programme
     - name: Direct charge against the National Revenue Fund
-      total_budget: 5726000.0
+      total_budget: 5726000
       type: programme
     name: Current - Current payments
     type: economic_classification_1_and_2
   - items:
     - name: Administration
-      total_budget: 50000.0
+      total_budget: 50000
       type: programme
     name: Current - Transfers and subsidies
     type: economic_classification_1_and_2
 programmes:
   dataset_detail_page: /datasets/estimates-of-national-expenditure/estimates-of-national-expenditure-2015-16
-  department_data_csv: https://datamanager.vulekamali.gov.za/csv/?api_url=https%3A//openspending.org/api/3/cubes/b9d2af843f3a7ca223eea07fb608e62a%3Aestimates-of-national-expenditure-south-africa-2015-16/aggregate/%3Fcut%3Dfinancial_year.financial_year%253A2015%257Cvote_number.department%253A%2522The%2BPresidency%2522%26drilldown%3Dbudget_phase.budget_phase%257Ceconomic_classification_1.economic_classification_1%257Ceconomic_classification_2.economic_classification_2%257Ceconomic_classification_3.economic_classification_3%257Ceconomic_classification_4.economic_classification_4%257Cfinancial_year.financial_year%257Cprogramme_number.programme%257Cprogramme_number.programme_number%257Csubprogramme_number.subprogramme%257Csubprogramme_number.subprogramme_number%257Cvote_number.department%257Cvote_number.vote_number%26pagesize%3D10000
+  department_data_csv: https://datamanager.vulekamali.gov.za/csv/?api_url=https%3A//openspending.org/api/3/cubes/b9d2af843f3a7ca223eea07fb608e62a%3Aestimates-of-national-expenditure-2015-16-uploaded-2019-01-25t0215/aggregate/%3Fcut%3Dfinyear.finyear%253A2015%257Cvoteno.department%253A%2522The%2BPresidency%2522%26drilldown%3Dbudget_phase.budget_phase%257Cecon1.econ1%257Cecon2.econ2%257Cecon3.econ3%257Cecon4.econ4%257Cecon5.econ5%257Cfg1.fg1%257Cfg2.fg2%257Cfinyear.finyear%257Cprogno.progno%257Cprogno.programme%257Csprogno.sprogno%257Csprogno.subprogramme%257Cvoteno.department%257Cvoteno.voteno%26pagesize%3D10000
   programme_budgets:
   - name: Administration
-    total_budget: 483940000.0
+    total_budget: 483940000
   - name: Direct charge against the National Revenue Fund
-    total_budget: 5726000.0
+    total_budget: 5726000
   - name: Executive Support
-    total_budget: 26390000.0
+    total_budget: 26390000
 selected_financial_year: 2015-16
 selected_tab: departments
 slug: the-presidency
@@ -538,35 +541,35 @@ sphere:
   slug: national
 subprogramme_by_programme:
   dataset_detail_page: /datasets/estimates-of-national-expenditure/estimates-of-national-expenditure-2015-16
-  department_data_csv: https://datamanager.vulekamali.gov.za/csv/?api_url=https%3A//openspending.org/api/3/cubes/b9d2af843f3a7ca223eea07fb608e62a%3Aestimates-of-national-expenditure-south-africa-2015-16/aggregate/%3Fcut%3Dfinancial_year.financial_year%253A2015%257Cvote_number.department%253A%2522The%2BPresidency%2522%26drilldown%3Dbudget_phase.budget_phase%257Ceconomic_classification_1.economic_classification_1%257Ceconomic_classification_2.economic_classification_2%257Ceconomic_classification_3.economic_classification_3%257Ceconomic_classification_4.economic_classification_4%257Cfinancial_year.financial_year%257Cprogramme_number.programme%257Cprogramme_number.programme_number%257Csubprogramme_number.subprogramme%257Csubprogramme_number.subprogramme_number%257Cvote_number.department%257Cvote_number.vote_number%26pagesize%3D10000
+  department_data_csv: https://datamanager.vulekamali.gov.za/csv/?api_url=https%3A//openspending.org/api/3/cubes/b9d2af843f3a7ca223eea07fb608e62a%3Aestimates-of-national-expenditure-2015-16-uploaded-2019-01-25t0215/aggregate/%3Fcut%3Dfinyear.finyear%253A2015%257Cvoteno.department%253A%2522The%2BPresidency%2522%26drilldown%3Dbudget_phase.budget_phase%257Cecon1.econ1%257Cecon2.econ2%257Cecon3.econ3%257Cecon4.econ4%257Cecon5.econ5%257Cfg1.fg1%257Cfg2.fg2%257Cfinyear.finyear%257Cprogno.progno%257Cprogno.programme%257Csprogno.sprogno%257Csprogno.subprogramme%257Cvoteno.department%257Cvoteno.voteno%26pagesize%3D10000
   programmes:
   - items:
     - name: Management
-      total_budget: 325483000.0
+      total_budget: 325483000
       type: subprogramme
     - name: Support Services to President
-      total_budget: 67357000.0
+      total_budget: 67357000
       type: subprogramme
     - name: Support Services to Deputy President
-      total_budget: 57786000.0
+      total_budget: 57786000
       type: subprogramme
     - name: Ministry
-      total_budget: 33314000.0
+      total_budget: 33314000
       type: subprogramme
     name: Administration
     type: programme
   - items:
     - name: Salary of the President
-      total_budget: 3109000.0
+      total_budget: 3109000
       type: subprogramme
     - name: Salary of the Deputy President
-      total_budget: 2617000.0
+      total_budget: 2617000
       type: subprogramme
     name: Direct charge against the National Revenue Fund
     type: programme
   - items:
     - name: Cabinet Services
-      total_budget: 26390000.0
+      total_budget: 26390000
       type: subprogramme
     name: Executive Support
     type: programme

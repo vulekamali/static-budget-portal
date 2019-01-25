@@ -139,8 +139,12 @@ budget_actual:
     - amount: null
       financial_year: 2014-15
       phase: Audit Outcome
+  notices:
+  - Please note that the data for 2014 has not been published on vulekamali.
 budget_actual_programmes:
   dataset_detail_page: /datasets/budgeted-and-actual-national-expenditure/budgeted-and-actual-national-expenditure
+  notices:
+  - One or more programmes did not exist for some years displayed.
   programmes:
   - items:
     - amount: 46726000.0
@@ -243,56 +247,6 @@ budget_actual_programmes:
       phase: Audit Outcome
     name: Administration
   - items:
-    - amount: 443953000.0
-      financial_year: 2017-18
-      phase: Main appropriation
-    - amount: 431853000
-      financial_year: 2017-18
-      phase: Adjusted appropriation
-    - amount: 434437000
-      financial_year: 2017-18
-      phase: Final Appropriation
-    - amount: 433529000
-      financial_year: 2017-18
-      phase: Audit Outcome
-    - amount: null
-      financial_year: 2014-15
-      phase: Main appropriation
-    - amount: null
-      financial_year: 2014-15
-      phase: Adjusted appropriation
-    - amount: null
-      financial_year: 2014-15
-      phase: Final Appropriation
-    - amount: null
-      financial_year: 2014-15
-      phase: Audit Outcome
-    - amount: null
-      financial_year: 2015-16
-      phase: Main appropriation
-    - amount: null
-      financial_year: 2015-16
-      phase: Adjusted appropriation
-    - amount: null
-      financial_year: 2015-16
-      phase: Final Appropriation
-    - amount: null
-      financial_year: 2015-16
-      phase: Audit Outcome
-    - amount: null
-      financial_year: 2016-17
-      phase: Main appropriation
-    - amount: null
-      financial_year: 2016-17
-      phase: Adjusted appropriation
-    - amount: null
-      financial_year: 2016-17
-      phase: Final Appropriation
-    - amount: null
-      financial_year: 2016-17
-      phase: Audit Outcome
-    name: Destination Development
-  - items:
     - amount: 268401000.0
       financial_year: 2017-18
       phase: Main appropriation
@@ -342,56 +296,6 @@ budget_actual_programmes:
       financial_year: 2016-17
       phase: Audit Outcome
     name: Enterprise and Visitor Support Services
-  - items:
-    - amount: 1215571000.0
-      financial_year: 2015-16
-      phase: Main appropriation
-    - amount: 1206214000
-      financial_year: 2015-16
-      phase: Adjusted appropriation
-    - amount: 1205699000
-      financial_year: 2015-16
-      phase: Final Appropriation
-    - amount: 1195525000
-      financial_year: 2015-16
-      phase: Audit Outcome
-    - amount: 1272613000.0
-      financial_year: 2016-17
-      phase: Main appropriation
-    - amount: 1269753000
-      financial_year: 2016-17
-      phase: Adjusted appropriation
-    - amount: 1270159000
-      financial_year: 2016-17
-      phase: Final Appropriation
-    - amount: 1214938000
-      financial_year: 2016-17
-      phase: Audit Outcome
-    - amount: null
-      financial_year: 2014-15
-      phase: Main appropriation
-    - amount: null
-      financial_year: 2014-15
-      phase: Adjusted appropriation
-    - amount: null
-      financial_year: 2014-15
-      phase: Final Appropriation
-    - amount: null
-      financial_year: 2014-15
-      phase: Audit Outcome
-    - amount: null
-      financial_year: 2017-18
-      phase: Main appropriation
-    - amount: null
-      financial_year: 2017-18
-      phase: Adjusted appropriation
-    - amount: null
-      financial_year: 2017-18
-      phase: Final Appropriation
-    - amount: null
-      financial_year: 2017-18
-      phase: Audit Outcome
-    name: Policy and Knowledge Services
   - items:
     - amount: 306163000.0
       financial_year: 2015-16
@@ -443,6 +347,56 @@ budget_actual_programmes:
       phase: Audit Outcome
     name: Domestic Tourism
   - items:
+    - amount: 443953000.0
+      financial_year: 2017-18
+      phase: Main appropriation
+    - amount: 431853000
+      financial_year: 2017-18
+      phase: Adjusted appropriation
+    - amount: 434437000
+      financial_year: 2017-18
+      phase: Final Appropriation
+    - amount: 433529000
+      financial_year: 2017-18
+      phase: Audit Outcome
+    - amount: null
+      financial_year: 2014-15
+      phase: Main appropriation
+    - amount: null
+      financial_year: 2014-15
+      phase: Adjusted appropriation
+    - amount: null
+      financial_year: 2014-15
+      phase: Final Appropriation
+    - amount: null
+      financial_year: 2014-15
+      phase: Audit Outcome
+    - amount: null
+      financial_year: 2015-16
+      phase: Main appropriation
+    - amount: null
+      financial_year: 2015-16
+      phase: Adjusted appropriation
+    - amount: null
+      financial_year: 2015-16
+      phase: Final Appropriation
+    - amount: null
+      financial_year: 2015-16
+      phase: Audit Outcome
+    - amount: null
+      financial_year: 2016-17
+      phase: Main appropriation
+    - amount: null
+      financial_year: 2016-17
+      phase: Adjusted appropriation
+    - amount: null
+      financial_year: 2016-17
+      phase: Final Appropriation
+    - amount: null
+      financial_year: 2016-17
+      phase: Audit Outcome
+    name: Destination Development
+  - items:
     - amount: 1208708000.0
       financial_year: 2017-18
       phase: Main appropriation
@@ -492,6 +446,56 @@ budget_actual_programmes:
       financial_year: 2016-17
       phase: Audit Outcome
     name: Tourism Policy and Planning
+  - items:
+    - amount: 1215571000.0
+      financial_year: 2015-16
+      phase: Main appropriation
+    - amount: 1206214000
+      financial_year: 2015-16
+      phase: Adjusted appropriation
+    - amount: 1205699000
+      financial_year: 2015-16
+      phase: Final Appropriation
+    - amount: 1195525000
+      financial_year: 2015-16
+      phase: Audit Outcome
+    - amount: 1272613000.0
+      financial_year: 2016-17
+      phase: Main appropriation
+    - amount: 1269753000
+      financial_year: 2016-17
+      phase: Adjusted appropriation
+    - amount: 1270159000
+      financial_year: 2016-17
+      phase: Final Appropriation
+    - amount: 1214938000
+      financial_year: 2016-17
+      phase: Audit Outcome
+    - amount: null
+      financial_year: 2014-15
+      phase: Main appropriation
+    - amount: null
+      financial_year: 2014-15
+      phase: Adjusted appropriation
+    - amount: null
+      financial_year: 2014-15
+      phase: Final Appropriation
+    - amount: null
+      financial_year: 2014-15
+      phase: Audit Outcome
+    - amount: null
+      financial_year: 2017-18
+      phase: Main appropriation
+    - amount: null
+      financial_year: 2017-18
+      phase: Adjusted appropriation
+    - amount: null
+      financial_year: 2017-18
+      phase: Final Appropriation
+    - amount: null
+      financial_year: 2017-18
+      phase: Audit Outcome
+    name: Policy and Knowledge Services
 contributed_datasets:
 - contributor: Public Service Accountability Monitor
   name: A People's Guide to the Adjusted Budget 2018/19

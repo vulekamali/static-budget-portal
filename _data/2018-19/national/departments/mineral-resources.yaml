@@ -138,8 +138,10 @@ budget_actual:
     - amount: null
       financial_year: 2018-19
       phase: Audit Outcome
+  notices: []
 budget_actual_programmes:
   dataset_detail_page: /datasets/budgeted-and-actual-national-expenditure/budgeted-and-actual-national-expenditure
+  notices: []
   programmes:
   - items:
     - amount: 175840000.0
@@ -191,56 +193,6 @@ budget_actual_programmes:
       financial_year: 2018-19
       phase: Audit Outcome
     name: Mine Health and Safety
-  - items:
-    - amount: 889036000.0
-      financial_year: 2015-16
-      phase: Main appropriation
-    - amount: 881526000
-      financial_year: 2015-16
-      phase: Adjusted appropriation
-    - amount: 861730000
-      financial_year: 2015-16
-      phase: Final Appropriation
-    - amount: 861672000
-      financial_year: 2015-16
-      phase: Audit Outcome
-    - amount: 902489000.0
-      financial_year: 2016-17
-      phase: Main appropriation
-    - amount: 868263000
-      financial_year: 2016-17
-      phase: Adjusted appropriation
-    - amount: 855664000
-      financial_year: 2016-17
-      phase: Final Appropriation
-    - amount: 851736000
-      financial_year: 2016-17
-      phase: Audit Outcome
-    - amount: 907749000.0
-      financial_year: 2017-18
-      phase: Main appropriation
-    - amount: 866112000
-      financial_year: 2017-18
-      phase: Adjusted appropriation
-    - amount: 842464000
-      financial_year: 2017-18
-      phase: Final Appropriation
-    - amount: 840454000
-      financial_year: 2017-18
-      phase: Audit Outcome
-    - amount: 965018000.0
-      financial_year: 2018-19
-      phase: Main appropriation
-    - amount: 957018000
-      financial_year: 2018-19
-      phase: Adjusted appropriation
-    - amount: null
-      financial_year: 2018-19
-      phase: Final Appropriation
-    - amount: null
-      financial_year: 2018-19
-      phase: Audit Outcome
-    name: Mineral Policy and Promotion
   - items:
     - amount: 260443000.0
       financial_year: 2015-16
@@ -341,6 +293,56 @@ budget_actual_programmes:
       financial_year: 2018-19
       phase: Audit Outcome
     name: Administration
+  - items:
+    - amount: 889036000.0
+      financial_year: 2015-16
+      phase: Main appropriation
+    - amount: 881526000
+      financial_year: 2015-16
+      phase: Adjusted appropriation
+    - amount: 861730000
+      financial_year: 2015-16
+      phase: Final Appropriation
+    - amount: 861672000
+      financial_year: 2015-16
+      phase: Audit Outcome
+    - amount: 902489000.0
+      financial_year: 2016-17
+      phase: Main appropriation
+    - amount: 868263000
+      financial_year: 2016-17
+      phase: Adjusted appropriation
+    - amount: 855664000
+      financial_year: 2016-17
+      phase: Final Appropriation
+    - amount: 851736000
+      financial_year: 2016-17
+      phase: Audit Outcome
+    - amount: 907749000.0
+      financial_year: 2017-18
+      phase: Main appropriation
+    - amount: 866112000
+      financial_year: 2017-18
+      phase: Adjusted appropriation
+    - amount: 842464000
+      financial_year: 2017-18
+      phase: Final Appropriation
+    - amount: 840454000
+      financial_year: 2017-18
+      phase: Audit Outcome
+    - amount: 965018000.0
+      financial_year: 2018-19
+      phase: Main appropriation
+    - amount: 957018000
+      financial_year: 2018-19
+      phase: Adjusted appropriation
+    - amount: null
+      financial_year: 2018-19
+      phase: Final Appropriation
+    - amount: null
+      financial_year: 2018-19
+      phase: Audit Outcome
+    name: Mineral Policy and Promotion
 contributed_datasets:
 - contributor: International Budget Partnership
   name: How Does Civil Society Use Budget Information?

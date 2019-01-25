@@ -159,20 +159,23 @@ budget_actual:
     - amount: null
       financial_year: 2014-15
       phase: Audit Outcome
+  notices:
+  - Please note that the data for 2014, 2012 and 2013 has not been published on vulekamali.
 budget_actual_programmes:
   dataset_detail_page: /datasets/budgeted-and-actual-national-expenditure/budgeted-and-actual-national-expenditure
+  notices: []
   programmes:
   - items:
-    - amount: 4827173000.0
+    - amount: 827451000.0
       financial_year: 2015-16
       phase: Main appropriation
-    - amount: 4862401000
+    - amount: 831459000
       financial_year: 2015-16
       phase: Adjusted appropriation
-    - amount: 4984514000
+    - amount: 830060000
       financial_year: 2015-16
       phase: Final Appropriation
-    - amount: 4981493000
+    - amount: 830060000
       financial_year: 2015-16
       phase: Audit Outcome
     - amount: null
@@ -211,7 +214,7 @@ budget_actual_programmes:
     - amount: null
       financial_year: 2014-15
       phase: Audit Outcome
-    name: Administration
+    name: Defence Intelligence
   - items:
     - amount: 3603153000.0
       financial_year: 2015-16
@@ -313,16 +316,16 @@ budget_actual_programmes:
       phase: Audit Outcome
     name: Maritime Defence
   - items:
-    - amount: 827451000.0
+    - amount: 3932914000.0
       financial_year: 2015-16
       phase: Main appropriation
-    - amount: 831459000
+    - amount: 4069261000
       financial_year: 2015-16
       phase: Adjusted appropriation
-    - amount: 830060000
+    - amount: 4243150000
       financial_year: 2015-16
       phase: Final Appropriation
-    - amount: 830060000
+    - amount: 4243150000
       financial_year: 2015-16
       phase: Audit Outcome
     - amount: null
@@ -361,7 +364,57 @@ budget_actual_programmes:
     - amount: null
       financial_year: 2014-15
       phase: Audit Outcome
-    name: Defence Intelligence
+    name: Military Health Support
+  - items:
+    - amount: 4827173000.0
+      financial_year: 2015-16
+      phase: Main appropriation
+    - amount: 4862401000
+      financial_year: 2015-16
+      phase: Adjusted appropriation
+    - amount: 4984514000
+      financial_year: 2015-16
+      phase: Final Appropriation
+    - amount: 4981493000
+      financial_year: 2015-16
+      phase: Audit Outcome
+    - amount: null
+      financial_year: 2012-13
+      phase: Main appropriation
+    - amount: null
+      financial_year: 2012-13
+      phase: Adjusted appropriation
+    - amount: null
+      financial_year: 2012-13
+      phase: Final Appropriation
+    - amount: null
+      financial_year: 2012-13
+      phase: Audit Outcome
+    - amount: null
+      financial_year: 2013-14
+      phase: Main appropriation
+    - amount: null
+      financial_year: 2013-14
+      phase: Adjusted appropriation
+    - amount: null
+      financial_year: 2013-14
+      phase: Final Appropriation
+    - amount: null
+      financial_year: 2013-14
+      phase: Audit Outcome
+    - amount: null
+      financial_year: 2014-15
+      phase: Main appropriation
+    - amount: null
+      financial_year: 2014-15
+      phase: Adjusted appropriation
+    - amount: null
+      financial_year: 2014-15
+      phase: Final Appropriation
+    - amount: null
+      financial_year: 2014-15
+      phase: Audit Outcome
+    name: Administration
   - items:
     - amount: 5816992000.0
       financial_year: 2015-16
@@ -463,56 +516,6 @@ budget_actual_programmes:
       phase: Audit Outcome
     name: Air Defence
   - items:
-    - amount: 3932914000.0
-      financial_year: 2015-16
-      phase: Main appropriation
-    - amount: 4069261000
-      financial_year: 2015-16
-      phase: Adjusted appropriation
-    - amount: 4243150000
-      financial_year: 2015-16
-      phase: Final Appropriation
-    - amount: 4243150000
-      financial_year: 2015-16
-      phase: Audit Outcome
-    - amount: null
-      financial_year: 2012-13
-      phase: Main appropriation
-    - amount: null
-      financial_year: 2012-13
-      phase: Adjusted appropriation
-    - amount: null
-      financial_year: 2012-13
-      phase: Final Appropriation
-    - amount: null
-      financial_year: 2012-13
-      phase: Audit Outcome
-    - amount: null
-      financial_year: 2013-14
-      phase: Main appropriation
-    - amount: null
-      financial_year: 2013-14
-      phase: Adjusted appropriation
-    - amount: null
-      financial_year: 2013-14
-      phase: Final Appropriation
-    - amount: null
-      financial_year: 2013-14
-      phase: Audit Outcome
-    - amount: null
-      financial_year: 2014-15
-      phase: Main appropriation
-    - amount: null
-      financial_year: 2014-15
-      phase: Adjusted appropriation
-    - amount: null
-      financial_year: 2014-15
-      phase: Final Appropriation
-    - amount: null
-      financial_year: 2014-15
-      phase: Audit Outcome
-    name: Military Health Support
-  - items:
     - amount: 14805303000.0
       financial_year: 2015-16
       phase: Main appropriation
@@ -604,21 +607,21 @@ description: 'National department: Defence and Military Veterans budget data for
   2015-16 financial year from National Treasury in partnership with IMALI YETHU.'
 economic_classification_by_programme:
   dataset_detail_page: /datasets/estimates-of-national-expenditure/estimates-of-national-expenditure-2015-16
-  department_data_csv: https://datamanager.vulekamali.gov.za/csv/?api_url=https%3A//openspending.org/api/3/cubes/b9d2af843f3a7ca223eea07fb608e62a%3Aestimates-of-national-expenditure-south-africa-2015-16/aggregate/%3Fcut%3Dfinancial_year.financial_year%253A2015%257Cvote_number.department%253A%2522Defence%2Band%2BMilitary%2BVeterans%2522%26drilldown%3Dbudget_phase.budget_phase%257Ceconomic_classification_1.economic_classification_1%257Ceconomic_classification_2.economic_classification_2%257Ceconomic_classification_3.economic_classification_3%257Ceconomic_classification_4.economic_classification_4%257Cfinancial_year.financial_year%257Cprogramme_number.programme%257Cprogramme_number.programme_number%257Csubprogramme_number.subprogramme%257Csubprogramme_number.subprogramme_number%257Cvote_number.department%257Cvote_number.vote_number%26pagesize%3D10000
+  department_data_csv: https://datamanager.vulekamali.gov.za/csv/?api_url=https%3A//openspending.org/api/3/cubes/b9d2af843f3a7ca223eea07fb608e62a%3Aestimates-of-national-expenditure-2015-16-uploaded-2019-01-25t0215/aggregate/%3Fcut%3Dfinyear.finyear%253A2015%257Cvoteno.department%253A%2522Defence%2Band%2BMilitary%2BVeterans%2522%26drilldown%3Dbudget_phase.budget_phase%257Cecon1.econ1%257Cecon2.econ2%257Cecon3.econ3%257Cecon4.econ4%257Cecon5.econ5%257Cfg1.fg1%257Cfg2.fg2%257Cfinyear.finyear%257Cprogno.progno%257Cprogno.programme%257Csprogno.sprogno%257Csprogno.subprogramme%257Cvoteno.department%257Cvoteno.voteno%26pagesize%3D10000
   programmes:
   - items:
     - items:
       - name: Payments for capital assets
-        total_budget: 15918000.0
+        total_budget: 15918000
         type: economic_classification_2
       name: Capital
       type: economic_classification_1
     - items:
       - name: Current payments
-        total_budget: 4187418000.0
+        total_budget: 4187418000
         type: economic_classification_2
       - name: Transfers and subsidies
-        total_budget: 623837000.0
+        total_budget: 623837000
         type: economic_classification_2
       name: Current
       type: economic_classification_1
@@ -627,16 +630,16 @@ economic_classification_by_programme:
   - items:
     - items:
       - name: Payments for capital assets
-        total_budget: 49598000.0
+        total_budget: 49598000
         type: economic_classification_2
       name: Capital
       type: economic_classification_1
     - items:
       - name: Current payments
-        total_budget: 5144503000.0
+        total_budget: 5144503000
         type: economic_classification_2
       - name: Transfers and subsidies
-        total_budget: 1855054000.0
+        total_budget: 1855054000
         type: economic_classification_2
       name: Current
       type: economic_classification_1
@@ -645,16 +648,16 @@ economic_classification_by_programme:
   - items:
     - items:
       - name: Payments for capital assets
-        total_budget: 4392000.0
+        total_budget: 4392000
         type: economic_classification_2
       name: Capital
       type: economic_classification_1
     - items:
       - name: Transfers and subsidies
-        total_budget: 445799000.0
+        total_budget: 445799000
         type: economic_classification_2
       - name: Current payments
-        total_budget: 377260000.0
+        total_budget: 377260000
         type: economic_classification_2
       name: Current
       type: economic_classification_1
@@ -663,16 +666,16 @@ economic_classification_by_programme:
   - items:
     - items:
       - name: Payments for capital assets
-        total_budget: 267949000.0
+        total_budget: 267949000
         type: economic_classification_2
       name: Capital
       type: economic_classification_1
     - items:
       - name: Current payments
-        total_budget: 3089385000.0
+        total_budget: 3089385000
         type: economic_classification_2
       - name: Transfers and subsidies
-        total_budget: 245819000.0
+        total_budget: 245819000
         type: economic_classification_2
       name: Current
       type: economic_classification_1
@@ -681,16 +684,16 @@ economic_classification_by_programme:
   - items:
     - items:
       - name: Payments for capital assets
-        total_budget: 161907000.0
+        total_budget: 161907000
         type: economic_classification_2
       name: Capital
       type: economic_classification_1
     - items:
       - name: Current payments
-        total_budget: 4398744000.0
+        total_budget: 4398744000
         type: economic_classification_2
       - name: Transfers and subsidies
-        total_budget: 1256341000.0
+        total_budget: 1256341000
         type: economic_classification_2
       name: Current
       type: economic_classification_1
@@ -699,16 +702,16 @@ economic_classification_by_programme:
   - items:
     - items:
       - name: Payments for capital assets
-        total_budget: 38487000.0
+        total_budget: 38487000
         type: economic_classification_2
       name: Capital
       type: economic_classification_1
     - items:
       - name: Current payments
-        total_budget: 12248947000.0
+        total_budget: 12248947000
         type: economic_classification_2
       - name: Transfers and subsidies
-        total_budget: 2517869000.0
+        total_budget: 2517869000
         type: economic_classification_2
       name: Current
       type: economic_classification_1
@@ -717,16 +720,16 @@ economic_classification_by_programme:
   - items:
     - items:
       - name: Payments for capital assets
-        total_budget: 22534000.0
+        total_budget: 22534000
         type: economic_classification_2
       name: Capital
       type: economic_classification_1
     - items:
       - name: Current payments
-        total_budget: 2816643000.0
+        total_budget: 2816643000
         type: economic_classification_2
       - name: Transfers and subsidies
-        total_budget: 878072000.0
+        total_budget: 878072000
         type: economic_classification_2
       name: Current
       type: economic_classification_1
@@ -735,16 +738,16 @@ economic_classification_by_programme:
   - items:
     - items:
       - name: Payments for capital assets
-        total_budget: 26116000.0
+        total_budget: 26116000
         type: economic_classification_2
       name: Capital
       type: economic_classification_1
     - items:
       - name: Current payments
-        total_budget: 3899089000.0
+        total_budget: 3899089000
         type: economic_classification_2
       - name: Transfers and subsidies
-        total_budget: 7709000.0
+        total_budget: 7709000
         type: economic_classification_2
       name: Current
       type: economic_classification_1
@@ -755,25 +758,25 @@ expenditure_over_time:
   expenditure:
     base_financial_year: 2017-18
     nominal:
-    - amount: 34331437000.0
+    - amount: 34331437000
       financial_year: 2011-12
       phase: Audited Outcome
-    - amount: 37702218000.0
+    - amount: 37702218000
       financial_year: 2012-13
       phase: Audited Outcome
-    - amount: 40447521000.0
+    - amount: 40447521000
       financial_year: 2013-14
       phase: Audited Outcome
-    - amount: 42856879000.0
+    - amount: 42856879000
       financial_year: 2014-15
       phase: Adjusted appropriation
-    - amount: 44579390000.0
+    - amount: 44579390000
       financial_year: 2015-16
       phase: Main appropriation
-    - amount: 47118698000.0
+    - amount: 47118698000
       financial_year: 2016-17
       phase: Medium Term Estimates
-    - amount: 50113522000.0
+    - amount: 50113522000
       financial_year: 2017-18
       phase: Medium Term Estimates
     real:
@@ -835,109 +838,109 @@ is_vote_primary: true
 name: Defence and Military Veterans
 programme_by_economic_classification:
   dataset_detail_page: /datasets/estimates-of-national-expenditure/estimates-of-national-expenditure-2015-16
-  department_data_csv: https://datamanager.vulekamali.gov.za/csv/?api_url=https%3A//openspending.org/api/3/cubes/b9d2af843f3a7ca223eea07fb608e62a%3Aestimates-of-national-expenditure-south-africa-2015-16/aggregate/%3Fcut%3Dfinancial_year.financial_year%253A2015%257Cvote_number.department%253A%2522Defence%2Band%2BMilitary%2BVeterans%2522%26drilldown%3Dbudget_phase.budget_phase%257Ceconomic_classification_1.economic_classification_1%257Ceconomic_classification_2.economic_classification_2%257Ceconomic_classification_3.economic_classification_3%257Ceconomic_classification_4.economic_classification_4%257Cfinancial_year.financial_year%257Cprogramme_number.programme%257Cprogramme_number.programme_number%257Csubprogramme_number.subprogramme%257Csubprogramme_number.subprogramme_number%257Cvote_number.department%257Cvote_number.vote_number%26pagesize%3D10000
+  department_data_csv: https://datamanager.vulekamali.gov.za/csv/?api_url=https%3A//openspending.org/api/3/cubes/b9d2af843f3a7ca223eea07fb608e62a%3Aestimates-of-national-expenditure-2015-16-uploaded-2019-01-25t0215/aggregate/%3Fcut%3Dfinyear.finyear%253A2015%257Cvoteno.department%253A%2522Defence%2Band%2BMilitary%2BVeterans%2522%26drilldown%3Dbudget_phase.budget_phase%257Cecon1.econ1%257Cecon2.econ2%257Cecon3.econ3%257Cecon4.econ4%257Cecon5.econ5%257Cfg1.fg1%257Cfg2.fg2%257Cfinyear.finyear%257Cprogno.progno%257Cprogno.programme%257Csprogno.sprogno%257Csprogno.subprogramme%257Cvoteno.department%257Cvoteno.voteno%26pagesize%3D10000
   econ_classes:
   - items:
     - name: Force Employment
-      total_budget: 267949000.0
+      total_budget: 267949000
       type: programme
     - name: General Support
-      total_budget: 161907000.0
+      total_budget: 161907000
       type: programme
     - name: Air Defence
-      total_budget: 49598000.0
+      total_budget: 49598000
       type: programme
     - name: Landward Defence
-      total_budget: 38487000.0
+      total_budget: 38487000
       type: programme
     - name: Military Health Support
-      total_budget: 26116000.0
+      total_budget: 26116000
       type: programme
     - name: Maritime Defence
-      total_budget: 22534000.0
+      total_budget: 22534000
       type: programme
     - name: Administration
-      total_budget: 15918000.0
+      total_budget: 15918000
       type: programme
     - name: Defence Intelligence
-      total_budget: 4392000.0
+      total_budget: 4392000
       type: programme
     name: Capital - Payments for capital assets
     type: economic_classification_1_and_2
   - items:
     - name: Landward Defence
-      total_budget: 12248947000.0
+      total_budget: 12248947000
       type: programme
     - name: Air Defence
-      total_budget: 5144503000.0
+      total_budget: 5144503000
       type: programme
     - name: General Support
-      total_budget: 4398744000.0
+      total_budget: 4398744000
       type: programme
     - name: Administration
-      total_budget: 4187418000.0
+      total_budget: 4187418000
       type: programme
     - name: Military Health Support
-      total_budget: 3899089000.0
+      total_budget: 3899089000
       type: programme
     - name: Force Employment
-      total_budget: 3089385000.0
+      total_budget: 3089385000
       type: programme
     - name: Maritime Defence
-      total_budget: 2816643000.0
+      total_budget: 2816643000
       type: programme
     - name: Defence Intelligence
-      total_budget: 377260000.0
+      total_budget: 377260000
       type: programme
     name: Current - Current payments
     type: economic_classification_1_and_2
   - items:
     - name: Landward Defence
-      total_budget: 2517869000.0
+      total_budget: 2517869000
       type: programme
     - name: Air Defence
-      total_budget: 1855054000.0
+      total_budget: 1855054000
       type: programme
     - name: General Support
-      total_budget: 1256341000.0
+      total_budget: 1256341000
       type: programme
     - name: Maritime Defence
-      total_budget: 878072000.0
+      total_budget: 878072000
       type: programme
     - name: Administration
-      total_budget: 623837000.0
+      total_budget: 623837000
       type: programme
     - name: Defence Intelligence
-      total_budget: 445799000.0
+      total_budget: 445799000
       type: programme
     - name: Force Employment
-      total_budget: 245819000.0
+      total_budget: 245819000
       type: programme
     - name: Military Health Support
-      total_budget: 7709000.0
+      total_budget: 7709000
       type: programme
     name: Current - Transfers and subsidies
     type: economic_classification_1_and_2
 programmes:
   dataset_detail_page: /datasets/estimates-of-national-expenditure/estimates-of-national-expenditure-2015-16
-  department_data_csv: https://datamanager.vulekamali.gov.za/csv/?api_url=https%3A//openspending.org/api/3/cubes/b9d2af843f3a7ca223eea07fb608e62a%3Aestimates-of-national-expenditure-south-africa-2015-16/aggregate/%3Fcut%3Dfinancial_year.financial_year%253A2015%257Cvote_number.department%253A%2522Defence%2Band%2BMilitary%2BVeterans%2522%26drilldown%3Dbudget_phase.budget_phase%257Ceconomic_classification_1.economic_classification_1%257Ceconomic_classification_2.economic_classification_2%257Ceconomic_classification_3.economic_classification_3%257Ceconomic_classification_4.economic_classification_4%257Cfinancial_year.financial_year%257Cprogramme_number.programme%257Cprogramme_number.programme_number%257Csubprogramme_number.subprogramme%257Csubprogramme_number.subprogramme_number%257Cvote_number.department%257Cvote_number.vote_number%26pagesize%3D10000
+  department_data_csv: https://datamanager.vulekamali.gov.za/csv/?api_url=https%3A//openspending.org/api/3/cubes/b9d2af843f3a7ca223eea07fb608e62a%3Aestimates-of-national-expenditure-2015-16-uploaded-2019-01-25t0215/aggregate/%3Fcut%3Dfinyear.finyear%253A2015%257Cvoteno.department%253A%2522Defence%2Band%2BMilitary%2BVeterans%2522%26drilldown%3Dbudget_phase.budget_phase%257Cecon1.econ1%257Cecon2.econ2%257Cecon3.econ3%257Cecon4.econ4%257Cecon5.econ5%257Cfg1.fg1%257Cfg2.fg2%257Cfinyear.finyear%257Cprogno.progno%257Cprogno.programme%257Csprogno.sprogno%257Csprogno.subprogramme%257Cvoteno.department%257Cvoteno.voteno%26pagesize%3D10000
   programme_budgets:
   - name: Administration
-    total_budget: 4827173000.0
+    total_budget: 4827173000
   - name: Force Employment
-    total_budget: 3603153000.0
+    total_budget: 3603153000
   - name: Landward Defence
-    total_budget: 14805303000.0
+    total_budget: 14805303000
   - name: Air Defence
-    total_budget: 7049155000.0
+    total_budget: 7049155000
   - name: Maritime Defence
-    total_budget: 3717249000.0
+    total_budget: 3717249000
   - name: Military Health Support
-    total_budget: 3932914000.0
+    total_budget: 3932914000
   - name: Defence Intelligence
-    total_budget: 827451000.0
+    total_budget: 827451000
   - name: General Support
-    total_budget: 5816992000.0
+    total_budget: 5816992000
 selected_financial_year: 2015-16
 selected_tab: departments
 slug: defence-and-military-veterans
@@ -946,218 +949,218 @@ sphere:
   slug: national
 subprogramme_by_programme:
   dataset_detail_page: /datasets/estimates-of-national-expenditure/estimates-of-national-expenditure-2015-16
-  department_data_csv: https://datamanager.vulekamali.gov.za/csv/?api_url=https%3A//openspending.org/api/3/cubes/b9d2af843f3a7ca223eea07fb608e62a%3Aestimates-of-national-expenditure-south-africa-2015-16/aggregate/%3Fcut%3Dfinancial_year.financial_year%253A2015%257Cvote_number.department%253A%2522Defence%2Band%2BMilitary%2BVeterans%2522%26drilldown%3Dbudget_phase.budget_phase%257Ceconomic_classification_1.economic_classification_1%257Ceconomic_classification_2.economic_classification_2%257Ceconomic_classification_3.economic_classification_3%257Ceconomic_classification_4.economic_classification_4%257Cfinancial_year.financial_year%257Cprogramme_number.programme%257Cprogramme_number.programme_number%257Csubprogramme_number.subprogramme%257Csubprogramme_number.subprogramme_number%257Cvote_number.department%257Cvote_number.vote_number%26pagesize%3D10000
+  department_data_csv: https://datamanager.vulekamali.gov.za/csv/?api_url=https%3A//openspending.org/api/3/cubes/b9d2af843f3a7ca223eea07fb608e62a%3Aestimates-of-national-expenditure-2015-16-uploaded-2019-01-25t0215/aggregate/%3Fcut%3Dfinyear.finyear%253A2015%257Cvoteno.department%253A%2522Defence%2Band%2BMilitary%2BVeterans%2522%26drilldown%3Dbudget_phase.budget_phase%257Cecon1.econ1%257Cecon2.econ2%257Cecon3.econ3%257Cecon4.econ4%257Cecon5.econ5%257Cfg1.fg1%257Cfg2.fg2%257Cfinyear.finyear%257Cprogno.progno%257Cprogno.programme%257Csprogno.sprogno%257Csprogno.subprogramme%257Cvoteno.department%257Cvoteno.voteno%26pagesize%3D10000
   programmes:
   - items:
     - name: Office Accommodation
-      total_budget: 2042236000.0
+      total_budget: 2042236000
       type: subprogramme
     - name: Human Resources Support Services
-      total_budget: 706896000.0
+      total_budget: 706896000
       type: subprogramme
     - name: Military Veterans Management
-      total_budget: 582201000.0
+      total_budget: 582201000
       type: subprogramme
     - name: Financial Services
-      total_budget: 322998000.0
+      total_budget: 322998000
       type: subprogramme
     - name: Legal Services
-      total_budget: 287291000.0
+      total_budget: 287291000
       type: subprogramme
     - name: Defence Foreign Relations
-      total_budget: 216489000.0
+      total_budget: 216489000
       type: subprogramme
     - name: South African National Defence Force Command and Control
-      total_budget: 147821000.0
+      total_budget: 147821000
       type: subprogramme
     - name: Inspection Services
-      total_budget: 139834000.0
+      total_budget: 139834000
       type: subprogramme
     - name: Policy and Planning
-      total_budget: 113586000.0
+      total_budget: 113586000
       type: subprogramme
     - name: Ministry
-      total_budget: 69734000.0
+      total_budget: 69734000
       type: subprogramme
     - name: Acquisition Services
-      total_budget: 64137000.0
+      total_budget: 64137000
       type: subprogramme
     - name: Departmental Direction
-      total_budget: 53596000.0
+      total_budget: 53596000
       type: subprogramme
     - name: Communication Services
-      total_budget: 40975000.0
+      total_budget: 40975000
       type: subprogramme
     - name: Defence Reserve Direction
-      total_budget: 26204000.0
+      total_budget: 26204000
       type: subprogramme
     - name: Religious Services
-      total_budget: 13175000.0
+      total_budget: 13175000
       type: subprogramme
     name: Administration
     type: programme
   - items:
     - name: Base Support Capability
-      total_budget: 1735323000.0
+      total_budget: 1735323000
       type: subprogramme
     - name: Air Combat Capability
-      total_budget: 1437203000.0
+      total_budget: 1437203000
       type: subprogramme
     - name: Command and Control Capability
-      total_budget: 901454000.0
+      total_budget: 901454000
       type: subprogramme
     - name: Helicopter Capability
-      total_budget: 801494000.0
+      total_budget: 801494000
       type: subprogramme
     - name: Transport and Maritime Capability
-      total_budget: 794867000.0
+      total_budget: 794867000
       type: subprogramme
     - name: Technical Support Services
-      total_budget: 660424000.0
+      total_budget: 660424000
       type: subprogramme
     - name: Operational Support and Intelligence Capability
-      total_budget: 284700000.0
+      total_budget: 284700000
       type: subprogramme
     - name: Training Capability
-      total_budget: 184394000.0
+      total_budget: 184394000
       type: subprogramme
     - name: Operational Direction
-      total_budget: 177686000.0
+      total_budget: 177686000
       type: subprogramme
     - name: Command Post
-      total_budget: 54827000.0
+      total_budget: 54827000
       type: subprogramme
     - name: Strategic Direction
-      total_budget: 16783000.0
+      total_budget: 16783000
       type: subprogramme
     name: Air Defence
     type: programme
   - items:
     - name: Operations
-      total_budget: 459692000.0
+      total_budget: 459692000
       type: subprogramme
     - name: Defence Intelligence Support Services
-      total_budget: 367688000.0
+      total_budget: 367688000
       type: subprogramme
     - name: Strategic Direction
-      total_budget: 71000.0
+      total_budget: 71000
       type: subprogramme
     name: Defence Intelligence
     type: programme
   - items:
     - name: Regional Security
-      total_budget: 1405793000.0
+      total_budget: 1405793000
       type: subprogramme
     - name: Support to the People
-      total_budget: 982319000.0
+      total_budget: 982319000
       type: subprogramme
     - name: Special Operations
-      total_budget: 750199000.0
+      total_budget: 750199000
       type: subprogramme
     - name: Operational Direction
-      total_budget: 299887000.0
+      total_budget: 299887000
       type: subprogramme
     - name: Strategic Direction
-      total_budget: 143298000.0
+      total_budget: 143298000
       type: subprogramme
     - name: Defence Capability Management
-      total_budget: 21657000.0
+      total_budget: 21657000
       type: subprogramme
     name: Force Employment
     type: programme
   - items:
     - name: Joint Logistic Services
-      total_budget: 3082816000.0
+      total_budget: 3082816000
       type: subprogramme
     - name: Command and Management Information Systems
-      total_budget: 954813000.0
+      total_budget: 954813000
       type: subprogramme
     - name: Departmental Support
-      total_budget: 844934000.0
+      total_budget: 844934000
       type: subprogramme
     - name: Military Police
-      total_budget: 510084000.0
+      total_budget: 510084000
       type: subprogramme
     - name: Technology Development
-      total_budget: 424345000.0
+      total_budget: 424345000
       type: subprogramme
     name: General Support
     type: programme
   - items:
     - name: Infantry Capability
-      total_budget: 5816367000.0
+      total_budget: 5816367000
       type: subprogramme
     - name: Support Capability
-      total_budget: 4414588000.0
+      total_budget: 4414588000
       type: subprogramme
     - name: Signal Capability
-      total_budget: 1136731000.0
+      total_budget: 1136731000
       type: subprogramme
     - name: Engineering Capability
-      total_budget: 642861000.0
+      total_budget: 642861000
       type: subprogramme
     - name: Air Defence Artillery Capability
-      total_budget: 580453000.0
+      total_budget: 580453000
       type: subprogramme
     - name: Artillery Capability
-      total_budget: 527491000.0
+      total_budget: 527491000
       type: subprogramme
     - name: General Training Capability
-      total_budget: 504674000.0
+      total_budget: 504674000
       type: subprogramme
     - name: Armour Capability
-      total_budget: 398611000.0
+      total_budget: 398611000
       type: subprogramme
     - name: Strategic Direction
-      total_budget: 366808000.0
+      total_budget: 366808000
       type: subprogramme
     - name: Operational Intelligence
-      total_budget: 218656000.0
+      total_budget: 218656000
       type: subprogramme
     - name: Command and Control Capability
-      total_budget: 198063000.0
+      total_budget: 198063000
       type: subprogramme
     name: Landward Defence
     type: programme
   - items:
     - name: Maritime Combat Capability
-      total_budget: 1252500000.0
+      total_budget: 1252500000
       type: subprogramme
     - name: Maritime Logistic Support Capability
-      total_budget: 851779000.0
+      total_budget: 851779000
       type: subprogramme
     - name: Base Support Capability
-      total_budget: 614579000.0
+      total_budget: 614579000
       type: subprogramme
     - name: Maritime Direction
-      total_budget: 537666000.0
+      total_budget: 537666000
       type: subprogramme
     - name: Maritime Human Resources and Training Capability
-      total_budget: 460725000.0
+      total_budget: 460725000
       type: subprogramme
     name: Maritime Defence
     type: programme
   - items:
     - name: Specialist/Tertiary Health Service
-      total_budget: 1399288000.0
+      total_budget: 1399288000
       type: subprogramme
     - name: Area Military Health Service
-      total_budget: 1383167000.0
+      total_budget: 1383167000
       type: subprogramme
     - name: Military Health Training Capability
-      total_budget: 416974000.0
+      total_budget: 416974000
       type: subprogramme
     - name: Military Health Maintenance Capability
-      total_budget: 256623000.0
+      total_budget: 256623000
       type: subprogramme
     - name: Military Health Product Support Capability
-      total_budget: 186668000.0
+      total_budget: 186668000
       type: subprogramme
     - name: Strategic Direction
-      total_budget: 172553000.0
+      total_budget: 172553000
       type: subprogramme
     - name: Mobile Military Health Support
-      total_budget: 117641000.0
+      total_budget: 117641000
       type: subprogramme
     name: Military Health Support
     type: programme

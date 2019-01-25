@@ -154,32 +154,21 @@ budget_actual:
     - amount: null
       financial_year: 2014-15
       phase: Audit Outcome
+  notices:
+  - Please note that the data for 2014 and 2013 has not been published on vulekamali.
 budget_actual_programmes:
   dataset_detail_page: /datasets/budgeted-and-actual-national-expenditure/budgeted-and-actual-national-expenditure
+  notices:
+  - One or more programmes did not exist for some years displayed.
   programmes:
   - items:
-    - amount: 383457000.0
-      financial_year: 2015-16
-      phase: Main appropriation
-    - amount: 383457000
-      financial_year: 2015-16
-      phase: Adjusted appropriation
-    - amount: 422169000
-      financial_year: 2015-16
-      phase: Final Appropriation
-    - amount: 420824000
-      financial_year: 2015-16
-      phase: Audit Outcome
-    - amount: 394763000.0
-      financial_year: 2016-17
-      phase: Main appropriation
-    - amount: 392793000
+    - amount: 1700000
       financial_year: 2016-17
       phase: Adjusted appropriation
-    - amount: 365182000
+    - amount: 1700000
       financial_year: 2016-17
       phase: Final Appropriation
-    - amount: 365136000
+    - amount: 3821000
       financial_year: 2016-17
       phase: Audit Outcome
     - amount: null
@@ -206,207 +195,22 @@ budget_actual_programmes:
     - amount: null
       financial_year: 2014-15
       phase: Audit Outcome
-    name: Administration
-  - items:
-    - amount: 149526000.0
+    - amount: null
       financial_year: 2015-16
       phase: Main appropriation
-    - amount: 149526000
+    - amount: null
       financial_year: 2015-16
       phase: Adjusted appropriation
-    - amount: 150383000
+    - amount: null
       financial_year: 2015-16
       phase: Final Appropriation
-    - amount: 145284000
+    - amount: null
       financial_year: 2015-16
       phase: Audit Outcome
-    - amount: 253223000.0
+    - amount: null
       financial_year: 2016-17
       phase: Main appropriation
-    - amount: 253223000
-      financial_year: 2016-17
-      phase: Adjusted appropriation
-    - amount: 258267000
-      financial_year: 2016-17
-      phase: Final Appropriation
-    - amount: 210427000
-      financial_year: 2016-17
-      phase: Audit Outcome
-    - amount: null
-      financial_year: 2013-14
-      phase: Main appropriation
-    - amount: null
-      financial_year: 2013-14
-      phase: Adjusted appropriation
-    - amount: null
-      financial_year: 2013-14
-      phase: Final Appropriation
-    - amount: null
-      financial_year: 2013-14
-      phase: Audit Outcome
-    - amount: null
-      financial_year: 2014-15
-      phase: Main appropriation
-    - amount: null
-      financial_year: 2014-15
-      phase: Adjusted appropriation
-    - amount: null
-      financial_year: 2014-15
-      phase: Final Appropriation
-    - amount: null
-      financial_year: 2014-15
-      phase: Audit Outcome
-    name: Civil Aviation
-  - items:
-    - amount: 22784917000.0
-      financial_year: 2015-16
-      phase: Main appropriation
-    - amount: 23042697000
-      financial_year: 2015-16
-      phase: Adjusted appropriation
-    - amount: 23164889000
-      financial_year: 2015-16
-      phase: Final Appropriation
-    - amount: 22889198000
-      financial_year: 2015-16
-      phase: Audit Outcome
-    - amount: 24525567000.0
-      financial_year: 2016-17
-      phase: Main appropriation
-    - amount: 24799126000
-      financial_year: 2016-17
-      phase: Adjusted appropriation
-    - amount: 24878466000
-      financial_year: 2016-17
-      phase: Final Appropriation
-    - amount: 25055434000
-      financial_year: 2016-17
-      phase: Audit Outcome
-    - amount: null
-      financial_year: 2013-14
-      phase: Main appropriation
-    - amount: null
-      financial_year: 2013-14
-      phase: Adjusted appropriation
-    - amount: null
-      financial_year: 2013-14
-      phase: Final Appropriation
-    - amount: null
-      financial_year: 2013-14
-      phase: Audit Outcome
-    - amount: null
-      financial_year: 2014-15
-      phase: Main appropriation
-    - amount: null
-      financial_year: 2014-15
-      phase: Adjusted appropriation
-    - amount: null
-      financial_year: 2014-15
-      phase: Final Appropriation
-    - amount: null
-      financial_year: 2014-15
-      phase: Audit Outcome
-    name: Road Transport
-  - items:
-    - amount: 11536361000.0
-      financial_year: 2015-16
-      phase: Main appropriation
-    - amount: 11518861000
-      financial_year: 2015-16
-      phase: Adjusted appropriation
-    - amount: 11334588000
-      financial_year: 2015-16
-      phase: Final Appropriation
-    - amount: 11328571000
-      financial_year: 2015-16
-      phase: Audit Outcome
-    - amount: 11655390000.0
-      financial_year: 2016-17
-      phase: Main appropriation
-    - amount: 11655390000
-      financial_year: 2016-17
-      phase: Adjusted appropriation
-    - amount: 11557042000
-      financial_year: 2016-17
-      phase: Final Appropriation
-    - amount: 11550042000
-      financial_year: 2016-17
-      phase: Audit Outcome
-    - amount: null
-      financial_year: 2013-14
-      phase: Main appropriation
-    - amount: null
-      financial_year: 2013-14
-      phase: Adjusted appropriation
-    - amount: null
-      financial_year: 2013-14
-      phase: Final Appropriation
-    - amount: null
-      financial_year: 2013-14
-      phase: Audit Outcome
-    - amount: null
-      financial_year: 2014-15
-      phase: Main appropriation
-    - amount: null
-      financial_year: 2014-15
-      phase: Adjusted appropriation
-    - amount: null
-      financial_year: 2014-15
-      phase: Final Appropriation
-    - amount: null
-      financial_year: 2014-15
-      phase: Audit Outcome
-    name: Public Transport
-  - items:
-    - amount: 18311364000.0
-      financial_year: 2015-16
-      phase: Main appropriation
-    - amount: 18311364000
-      financial_year: 2015-16
-      phase: Adjusted appropriation
-    - amount: 18310610000
-      financial_year: 2015-16
-      phase: Final Appropriation
-    - amount: 18305274000
-      financial_year: 2015-16
-      phase: Audit Outcome
-    - amount: 18985533000.0
-      financial_year: 2016-17
-      phase: Main appropriation
-    - amount: 18985533000
-      financial_year: 2016-17
-      phase: Adjusted appropriation
-    - amount: 18993457000
-      financial_year: 2016-17
-      phase: Final Appropriation
-    - amount: 18992005000
-      financial_year: 2016-17
-      phase: Audit Outcome
-    - amount: null
-      financial_year: 2013-14
-      phase: Main appropriation
-    - amount: null
-      financial_year: 2013-14
-      phase: Adjusted appropriation
-    - amount: null
-      financial_year: 2013-14
-      phase: Final Appropriation
-    - amount: null
-      financial_year: 2013-14
-      phase: Audit Outcome
-    - amount: null
-      financial_year: 2014-15
-      phase: Main appropriation
-    - amount: null
-      financial_year: 2014-15
-      phase: Adjusted appropriation
-    - amount: null
-      financial_year: 2014-15
-      phase: Final Appropriation
-    - amount: null
-      financial_year: 2014-15
-      phase: Audit Outcome
-    name: Rail Transport
+    name: Direct charge against the National Revenue Fund
   - items:
     - amount: 80583000.0
       financial_year: 2015-16
@@ -508,13 +312,28 @@ budget_actual_programmes:
       phase: Audit Outcome
     name: Maritime Transport
   - items:
-    - amount: 1700000
+    - amount: 149526000.0
+      financial_year: 2015-16
+      phase: Main appropriation
+    - amount: 149526000
+      financial_year: 2015-16
+      phase: Adjusted appropriation
+    - amount: 150383000
+      financial_year: 2015-16
+      phase: Final Appropriation
+    - amount: 145284000
+      financial_year: 2015-16
+      phase: Audit Outcome
+    - amount: 253223000.0
+      financial_year: 2016-17
+      phase: Main appropriation
+    - amount: 253223000
       financial_year: 2016-17
       phase: Adjusted appropriation
-    - amount: 1700000
+    - amount: 258267000
       financial_year: 2016-17
       phase: Final Appropriation
-    - amount: 3821000
+    - amount: 210427000
       financial_year: 2016-17
       phase: Audit Outcome
     - amount: null
@@ -541,22 +360,207 @@ budget_actual_programmes:
     - amount: null
       financial_year: 2014-15
       phase: Audit Outcome
-    - amount: null
+    name: Civil Aviation
+  - items:
+    - amount: 383457000.0
       financial_year: 2015-16
       phase: Main appropriation
-    - amount: null
+    - amount: 383457000
       financial_year: 2015-16
       phase: Adjusted appropriation
-    - amount: null
+    - amount: 422169000
       financial_year: 2015-16
       phase: Final Appropriation
-    - amount: null
+    - amount: 420824000
       financial_year: 2015-16
       phase: Audit Outcome
-    - amount: null
+    - amount: 394763000.0
       financial_year: 2016-17
       phase: Main appropriation
-    name: Direct charge against the National Revenue Fund
+    - amount: 392793000
+      financial_year: 2016-17
+      phase: Adjusted appropriation
+    - amount: 365182000
+      financial_year: 2016-17
+      phase: Final Appropriation
+    - amount: 365136000
+      financial_year: 2016-17
+      phase: Audit Outcome
+    - amount: null
+      financial_year: 2013-14
+      phase: Main appropriation
+    - amount: null
+      financial_year: 2013-14
+      phase: Adjusted appropriation
+    - amount: null
+      financial_year: 2013-14
+      phase: Final Appropriation
+    - amount: null
+      financial_year: 2013-14
+      phase: Audit Outcome
+    - amount: null
+      financial_year: 2014-15
+      phase: Main appropriation
+    - amount: null
+      financial_year: 2014-15
+      phase: Adjusted appropriation
+    - amount: null
+      financial_year: 2014-15
+      phase: Final Appropriation
+    - amount: null
+      financial_year: 2014-15
+      phase: Audit Outcome
+    name: Administration
+  - items:
+    - amount: 11536361000.0
+      financial_year: 2015-16
+      phase: Main appropriation
+    - amount: 11518861000
+      financial_year: 2015-16
+      phase: Adjusted appropriation
+    - amount: 11334588000
+      financial_year: 2015-16
+      phase: Final Appropriation
+    - amount: 11328571000
+      financial_year: 2015-16
+      phase: Audit Outcome
+    - amount: 11655390000.0
+      financial_year: 2016-17
+      phase: Main appropriation
+    - amount: 11655390000
+      financial_year: 2016-17
+      phase: Adjusted appropriation
+    - amount: 11557042000
+      financial_year: 2016-17
+      phase: Final Appropriation
+    - amount: 11550042000
+      financial_year: 2016-17
+      phase: Audit Outcome
+    - amount: null
+      financial_year: 2013-14
+      phase: Main appropriation
+    - amount: null
+      financial_year: 2013-14
+      phase: Adjusted appropriation
+    - amount: null
+      financial_year: 2013-14
+      phase: Final Appropriation
+    - amount: null
+      financial_year: 2013-14
+      phase: Audit Outcome
+    - amount: null
+      financial_year: 2014-15
+      phase: Main appropriation
+    - amount: null
+      financial_year: 2014-15
+      phase: Adjusted appropriation
+    - amount: null
+      financial_year: 2014-15
+      phase: Final Appropriation
+    - amount: null
+      financial_year: 2014-15
+      phase: Audit Outcome
+    name: Public Transport
+  - items:
+    - amount: 18311364000.0
+      financial_year: 2015-16
+      phase: Main appropriation
+    - amount: 18311364000
+      financial_year: 2015-16
+      phase: Adjusted appropriation
+    - amount: 18310610000
+      financial_year: 2015-16
+      phase: Final Appropriation
+    - amount: 18305274000
+      financial_year: 2015-16
+      phase: Audit Outcome
+    - amount: 18985533000.0
+      financial_year: 2016-17
+      phase: Main appropriation
+    - amount: 18985533000
+      financial_year: 2016-17
+      phase: Adjusted appropriation
+    - amount: 18993457000
+      financial_year: 2016-17
+      phase: Final Appropriation
+    - amount: 18992005000
+      financial_year: 2016-17
+      phase: Audit Outcome
+    - amount: null
+      financial_year: 2013-14
+      phase: Main appropriation
+    - amount: null
+      financial_year: 2013-14
+      phase: Adjusted appropriation
+    - amount: null
+      financial_year: 2013-14
+      phase: Final Appropriation
+    - amount: null
+      financial_year: 2013-14
+      phase: Audit Outcome
+    - amount: null
+      financial_year: 2014-15
+      phase: Main appropriation
+    - amount: null
+      financial_year: 2014-15
+      phase: Adjusted appropriation
+    - amount: null
+      financial_year: 2014-15
+      phase: Final Appropriation
+    - amount: null
+      financial_year: 2014-15
+      phase: Audit Outcome
+    name: Rail Transport
+  - items:
+    - amount: 22784917000.0
+      financial_year: 2015-16
+      phase: Main appropriation
+    - amount: 23042697000
+      financial_year: 2015-16
+      phase: Adjusted appropriation
+    - amount: 23164889000
+      financial_year: 2015-16
+      phase: Final Appropriation
+    - amount: 22889198000
+      financial_year: 2015-16
+      phase: Audit Outcome
+    - amount: 24525567000.0
+      financial_year: 2016-17
+      phase: Main appropriation
+    - amount: 24799126000
+      financial_year: 2016-17
+      phase: Adjusted appropriation
+    - amount: 24878466000
+      financial_year: 2016-17
+      phase: Final Appropriation
+    - amount: 25055434000
+      financial_year: 2016-17
+      phase: Audit Outcome
+    - amount: null
+      financial_year: 2013-14
+      phase: Main appropriation
+    - amount: null
+      financial_year: 2013-14
+      phase: Adjusted appropriation
+    - amount: null
+      financial_year: 2013-14
+      phase: Final Appropriation
+    - amount: null
+      financial_year: 2013-14
+      phase: Audit Outcome
+    - amount: null
+      financial_year: 2014-15
+      phase: Main appropriation
+    - amount: null
+      financial_year: 2014-15
+      phase: Adjusted appropriation
+    - amount: null
+      financial_year: 2014-15
+      phase: Final Appropriation
+    - amount: null
+      financial_year: 2014-15
+      phase: Audit Outcome
+    name: Road Transport
 contributed_datasets:
 - contributor: International Budget Partnership
   name: How Does Civil Society Use Budget Information?

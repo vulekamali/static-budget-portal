@@ -171,70 +171,23 @@ budget_actual:
     - amount: null
       financial_year: 2014-15
       phase: Audit Outcome
+  notices:
+  - Please note that the data for 2014, 2012 and 2013 has not been published on vulekamali.
 budget_actual_programmes:
   dataset_detail_page: /datasets/budgeted-and-actual-national-expenditure/budgeted-and-actual-national-expenditure
+  notices: []
   programmes:
   - items:
-    - amount: 314574000.0
+    - amount: 21493000.0
       financial_year: 2015-16
       phase: Main appropriation
-    - amount: 313464000
+    - amount: 21493000
       financial_year: 2015-16
       phase: Adjusted appropriation
-    - amount: 325094000
+    - amount: 20308000
       financial_year: 2015-16
       phase: Final Appropriation
-    - amount: 325004000
-      financial_year: 2015-16
-      phase: Audit Outcome
-    - amount: null
-      financial_year: 2012-13
-      phase: Main appropriation
-    - amount: null
-      financial_year: 2012-13
-      phase: Adjusted appropriation
-    - amount: null
-      financial_year: 2012-13
-      phase: Final Appropriation
-    - amount: null
-      financial_year: 2012-13
-      phase: Audit Outcome
-    - amount: null
-      financial_year: 2013-14
-      phase: Main appropriation
-    - amount: null
-      financial_year: 2013-14
-      phase: Adjusted appropriation
-    - amount: null
-      financial_year: 2013-14
-      phase: Final Appropriation
-    - amount: null
-      financial_year: 2013-14
-      phase: Audit Outcome
-    - amount: null
-      financial_year: 2014-15
-      phase: Main appropriation
-    - amount: null
-      financial_year: 2014-15
-      phase: Adjusted appropriation
-    - amount: null
-      financial_year: 2014-15
-      phase: Final Appropriation
-    - amount: null
-      financial_year: 2014-15
-      phase: Audit Outcome
-    name: Service Delivery Support
-  - items:
-    - amount: 219702000.0
-      financial_year: 2015-16
-      phase: Main appropriation
-    - amount: 221441000
-      financial_year: 2015-16
-      phase: Adjusted appropriation
-    - amount: 216125000
-      financial_year: 2015-16
-      phase: Final Appropriation
-    - amount: 215765000
+    - amount: 20208000
       financial_year: 2015-16
       phase: Audit Outcome
     - amount: null
@@ -273,57 +226,7 @@ budget_actual_programmes:
     - amount: null
       financial_year: 2014-15
       phase: Audit Outcome
-    name: Administration
-  - items:
-    - amount: 269027000.0
-      financial_year: 2015-16
-      phase: Main appropriation
-    - amount: 272871000
-      financial_year: 2015-16
-      phase: Adjusted appropriation
-    - amount: 274027000
-      financial_year: 2015-16
-      phase: Final Appropriation
-    - amount: 273938000
-      financial_year: 2015-16
-      phase: Audit Outcome
-    - amount: null
-      financial_year: 2012-13
-      phase: Main appropriation
-    - amount: null
-      financial_year: 2012-13
-      phase: Adjusted appropriation
-    - amount: null
-      financial_year: 2012-13
-      phase: Final Appropriation
-    - amount: null
-      financial_year: 2012-13
-      phase: Audit Outcome
-    - amount: null
-      financial_year: 2013-14
-      phase: Main appropriation
-    - amount: null
-      financial_year: 2013-14
-      phase: Adjusted appropriation
-    - amount: null
-      financial_year: 2013-14
-      phase: Final Appropriation
-    - amount: null
-      financial_year: 2013-14
-      phase: Audit Outcome
-    - amount: null
-      financial_year: 2014-15
-      phase: Main appropriation
-    - amount: null
-      financial_year: 2014-15
-      phase: Adjusted appropriation
-    - amount: null
-      financial_year: 2014-15
-      phase: Final Appropriation
-    - amount: null
-      financial_year: 2014-15
-      phase: Audit Outcome
-    name: Governance of Public Administration
+    name: Government Chief Information Officer
   - items:
     - amount: 37465000.0
       financial_year: 2015-16
@@ -425,16 +328,16 @@ budget_actual_programmes:
       phase: Audit Outcome
     name: Labour Relations and Human Resource Management
   - items:
-    - amount: 21493000.0
+    - amount: 219702000.0
       financial_year: 2015-16
       phase: Main appropriation
-    - amount: 21493000
+    - amount: 221441000
       financial_year: 2015-16
       phase: Adjusted appropriation
-    - amount: 20308000
+    - amount: 216125000
       financial_year: 2015-16
       phase: Final Appropriation
-    - amount: 20208000
+    - amount: 215765000
       financial_year: 2015-16
       phase: Audit Outcome
     - amount: null
@@ -473,7 +376,107 @@ budget_actual_programmes:
     - amount: null
       financial_year: 2014-15
       phase: Audit Outcome
-    name: Government Chief Information Officer
+    name: Administration
+  - items:
+    - amount: 269027000.0
+      financial_year: 2015-16
+      phase: Main appropriation
+    - amount: 272871000
+      financial_year: 2015-16
+      phase: Adjusted appropriation
+    - amount: 274027000
+      financial_year: 2015-16
+      phase: Final Appropriation
+    - amount: 273938000
+      financial_year: 2015-16
+      phase: Audit Outcome
+    - amount: null
+      financial_year: 2012-13
+      phase: Main appropriation
+    - amount: null
+      financial_year: 2012-13
+      phase: Adjusted appropriation
+    - amount: null
+      financial_year: 2012-13
+      phase: Final Appropriation
+    - amount: null
+      financial_year: 2012-13
+      phase: Audit Outcome
+    - amount: null
+      financial_year: 2013-14
+      phase: Main appropriation
+    - amount: null
+      financial_year: 2013-14
+      phase: Adjusted appropriation
+    - amount: null
+      financial_year: 2013-14
+      phase: Final Appropriation
+    - amount: null
+      financial_year: 2013-14
+      phase: Audit Outcome
+    - amount: null
+      financial_year: 2014-15
+      phase: Main appropriation
+    - amount: null
+      financial_year: 2014-15
+      phase: Adjusted appropriation
+    - amount: null
+      financial_year: 2014-15
+      phase: Final Appropriation
+    - amount: null
+      financial_year: 2014-15
+      phase: Audit Outcome
+    name: Governance of Public Administration
+  - items:
+    - amount: 314574000.0
+      financial_year: 2015-16
+      phase: Main appropriation
+    - amount: 313464000
+      financial_year: 2015-16
+      phase: Adjusted appropriation
+    - amount: 325094000
+      financial_year: 2015-16
+      phase: Final Appropriation
+    - amount: 325004000
+      financial_year: 2015-16
+      phase: Audit Outcome
+    - amount: null
+      financial_year: 2012-13
+      phase: Main appropriation
+    - amount: null
+      financial_year: 2012-13
+      phase: Adjusted appropriation
+    - amount: null
+      financial_year: 2012-13
+      phase: Final Appropriation
+    - amount: null
+      financial_year: 2012-13
+      phase: Audit Outcome
+    - amount: null
+      financial_year: 2013-14
+      phase: Main appropriation
+    - amount: null
+      financial_year: 2013-14
+      phase: Adjusted appropriation
+    - amount: null
+      financial_year: 2013-14
+      phase: Final Appropriation
+    - amount: null
+      financial_year: 2013-14
+      phase: Audit Outcome
+    - amount: null
+      financial_year: 2014-15
+      phase: Main appropriation
+    - amount: null
+      financial_year: 2014-15
+      phase: Adjusted appropriation
+    - amount: null
+      financial_year: 2014-15
+      phase: Final Appropriation
+    - amount: null
+      financial_year: 2014-15
+      phase: Audit Outcome
+    name: Service Delivery Support
 contributed_datasets:
 - contributor: International Budget Partnership
   name: How Does Civil Society Use Budget Information?
@@ -516,21 +519,21 @@ description: 'National department: Public Service and Administration budget data
   the 2015-16 financial year from National Treasury in partnership with IMALI YETHU.'
 economic_classification_by_programme:
   dataset_detail_page: /datasets/estimates-of-national-expenditure/estimates-of-national-expenditure-2015-16
-  department_data_csv: https://datamanager.vulekamali.gov.za/csv/?api_url=https%3A//openspending.org/api/3/cubes/b9d2af843f3a7ca223eea07fb608e62a%3Aestimates-of-national-expenditure-south-africa-2015-16/aggregate/%3Fcut%3Dfinancial_year.financial_year%253A2015%257Cvote_number.department%253A%2522Public%2BService%2Band%2BAdministration%2522%26drilldown%3Dbudget_phase.budget_phase%257Ceconomic_classification_1.economic_classification_1%257Ceconomic_classification_2.economic_classification_2%257Ceconomic_classification_3.economic_classification_3%257Ceconomic_classification_4.economic_classification_4%257Cfinancial_year.financial_year%257Cprogramme_number.programme%257Cprogramme_number.programme_number%257Csubprogramme_number.subprogramme%257Csubprogramme_number.subprogramme_number%257Cvote_number.department%257Cvote_number.vote_number%26pagesize%3D10000
+  department_data_csv: https://datamanager.vulekamali.gov.za/csv/?api_url=https%3A//openspending.org/api/3/cubes/b9d2af843f3a7ca223eea07fb608e62a%3Aestimates-of-national-expenditure-2015-16-uploaded-2019-01-25t0215/aggregate/%3Fcut%3Dfinyear.finyear%253A2015%257Cvoteno.department%253A%2522Public%2BService%2Band%2BAdministration%2522%26drilldown%3Dbudget_phase.budget_phase%257Cecon1.econ1%257Cecon2.econ2%257Cecon3.econ3%257Cecon4.econ4%257Cecon5.econ5%257Cfg1.fg1%257Cfg2.fg2%257Cfinyear.finyear%257Cprogno.progno%257Cprogno.programme%257Csprogno.sprogno%257Csprogno.subprogramme%257Cvoteno.department%257Cvoteno.voteno%26pagesize%3D10000
   programmes:
   - items:
     - items:
       - name: Payments for capital assets
-        total_budget: 1570000.0
+        total_budget: 1570000
         type: economic_classification_2
       name: Capital
       type: economic_classification_1
     - items:
       - name: Current payments
-        total_budget: 217523000.0
+        total_budget: 217523000
         type: economic_classification_2
       - name: Transfers and subsidies
-        total_budget: 609000.0
+        total_budget: 609000
         type: economic_classification_2
       name: Current
       type: economic_classification_1
@@ -539,16 +542,16 @@ economic_classification_by_programme:
   - items:
     - items:
       - name: Payments for capital assets
-        total_budget: 179000.0
+        total_budget: 179000
         type: economic_classification_2
       name: Capital
       type: economic_classification_1
     - items:
       - name: Transfers and subsidies
-        total_budget: 222300000.0
+        total_budget: 222300000
         type: economic_classification_2
       - name: Current payments
-        total_budget: 46548000.0
+        total_budget: 46548000
         type: economic_classification_2
       name: Current
       type: economic_classification_1
@@ -557,13 +560,13 @@ economic_classification_by_programme:
   - items:
     - items:
       - name: Payments for capital assets
-        total_budget: 87000.0
+        total_budget: 87000
         type: economic_classification_2
       name: Capital
       type: economic_classification_1
     - items:
       - name: Current payments
-        total_budget: 21406000.0
+        total_budget: 21406000
         type: economic_classification_2
       name: Current
       type: economic_classification_1
@@ -572,13 +575,13 @@ economic_classification_by_programme:
   - items:
     - items:
       - name: Payments for capital assets
-        total_budget: 250000.0
+        total_budget: 250000
         type: economic_classification_2
       name: Capital
       type: economic_classification_1
     - items:
       - name: Current payments
-        total_budget: 68357000.0
+        total_budget: 68357000
         type: economic_classification_2
       name: Current
       type: economic_classification_1
@@ -587,16 +590,16 @@ economic_classification_by_programme:
   - items:
     - items:
       - name: Payments for capital assets
-        total_budget: 128000.0
+        total_budget: 128000
         type: economic_classification_2
       name: Capital
       type: economic_classification_1
     - items:
       - name: Current payments
-        total_budget: 37329000.0
+        total_budget: 37329000
         type: economic_classification_2
       - name: Transfers and subsidies
-        total_budget: 8000.0
+        total_budget: 8000
         type: economic_classification_2
       name: Current
       type: economic_classification_1
@@ -605,16 +608,16 @@ economic_classification_by_programme:
   - items:
     - items:
       - name: Payments for capital assets
-        total_budget: 115000.0
+        total_budget: 115000
         type: economic_classification_2
       name: Capital
       type: economic_classification_1
     - items:
       - name: Transfers and subsidies
-        total_budget: 262390000.0
+        total_budget: 262390000
         type: economic_classification_2
       - name: Current payments
-        total_budget: 52069000.0
+        total_budget: 52069000
         type: economic_classification_2
       name: Current
       type: economic_classification_1
@@ -625,25 +628,25 @@ expenditure_over_time:
   expenditure:
     base_financial_year: 2017-18
     nominal:
-    - amount: 645469000.0
+    - amount: 645469000
       financial_year: 2011-12
       phase: Audited Outcome
-    - amount: 703712000.0
+    - amount: 703712000
       financial_year: 2012-13
       phase: Audited Outcome
-    - amount: 809103000.0
+    - amount: 809103000
       financial_year: 2013-14
       phase: Audited Outcome
-    - amount: 875074000.0
+    - amount: 875074000
       financial_year: 2014-15
       phase: Adjusted appropriation
-    - amount: 930868000.0
+    - amount: 930868000
       financial_year: 2015-16
       phase: Main appropriation
-    - amount: 978363000.0
+    - amount: 978363000
       financial_year: 2016-17
       phase: Medium Term Estimates
-    - amount: 1040234000.0
+    - amount: 1040234000
       financial_year: 2017-18
       phase: Medium Term Estimates
     real:
@@ -709,81 +712,81 @@ is_vote_primary: true
 name: Public Service and Administration
 programme_by_economic_classification:
   dataset_detail_page: /datasets/estimates-of-national-expenditure/estimates-of-national-expenditure-2015-16
-  department_data_csv: https://datamanager.vulekamali.gov.za/csv/?api_url=https%3A//openspending.org/api/3/cubes/b9d2af843f3a7ca223eea07fb608e62a%3Aestimates-of-national-expenditure-south-africa-2015-16/aggregate/%3Fcut%3Dfinancial_year.financial_year%253A2015%257Cvote_number.department%253A%2522Public%2BService%2Band%2BAdministration%2522%26drilldown%3Dbudget_phase.budget_phase%257Ceconomic_classification_1.economic_classification_1%257Ceconomic_classification_2.economic_classification_2%257Ceconomic_classification_3.economic_classification_3%257Ceconomic_classification_4.economic_classification_4%257Cfinancial_year.financial_year%257Cprogramme_number.programme%257Cprogramme_number.programme_number%257Csubprogramme_number.subprogramme%257Csubprogramme_number.subprogramme_number%257Cvote_number.department%257Cvote_number.vote_number%26pagesize%3D10000
+  department_data_csv: https://datamanager.vulekamali.gov.za/csv/?api_url=https%3A//openspending.org/api/3/cubes/b9d2af843f3a7ca223eea07fb608e62a%3Aestimates-of-national-expenditure-2015-16-uploaded-2019-01-25t0215/aggregate/%3Fcut%3Dfinyear.finyear%253A2015%257Cvoteno.department%253A%2522Public%2BService%2Band%2BAdministration%2522%26drilldown%3Dbudget_phase.budget_phase%257Cecon1.econ1%257Cecon2.econ2%257Cecon3.econ3%257Cecon4.econ4%257Cecon5.econ5%257Cfg1.fg1%257Cfg2.fg2%257Cfinyear.finyear%257Cprogno.progno%257Cprogno.programme%257Csprogno.sprogno%257Csprogno.subprogramme%257Cvoteno.department%257Cvoteno.voteno%26pagesize%3D10000
   econ_classes:
   - items:
     - name: Administration
-      total_budget: 1570000.0
+      total_budget: 1570000
       type: programme
     - name: Labour Relations and Human Resource Management
-      total_budget: 250000.0
+      total_budget: 250000
       type: programme
     - name: Governance of Public Administration
-      total_budget: 179000.0
+      total_budget: 179000
       type: programme
     - name: Policy Development, Research and Analysis
-      total_budget: 128000.0
+      total_budget: 128000
       type: programme
     - name: Service Delivery Support
-      total_budget: 115000.0
+      total_budget: 115000
       type: programme
     - name: Government Chief Information Officer
-      total_budget: 87000.0
+      total_budget: 87000
       type: programme
     name: Capital - Payments for capital assets
     type: economic_classification_1_and_2
   - items:
     - name: Administration
-      total_budget: 217523000.0
+      total_budget: 217523000
       type: programme
     - name: Labour Relations and Human Resource Management
-      total_budget: 68357000.0
+      total_budget: 68357000
       type: programme
     - name: Service Delivery Support
-      total_budget: 52069000.0
+      total_budget: 52069000
       type: programme
     - name: Governance of Public Administration
-      total_budget: 46548000.0
+      total_budget: 46548000
       type: programme
     - name: Policy Development, Research and Analysis
-      total_budget: 37329000.0
+      total_budget: 37329000
       type: programme
     - name: Government Chief Information Officer
-      total_budget: 21406000.0
+      total_budget: 21406000
       type: programme
     name: Current - Current payments
     type: economic_classification_1_and_2
   - items:
     - name: Service Delivery Support
-      total_budget: 262390000.0
+      total_budget: 262390000
       type: programme
     - name: Governance of Public Administration
-      total_budget: 222300000.0
+      total_budget: 222300000
       type: programme
     - name: Administration
-      total_budget: 609000.0
+      total_budget: 609000
       type: programme
     - name: Policy Development, Research and Analysis
-      total_budget: 8000.0
+      total_budget: 8000
       type: programme
     name: Current - Transfers and subsidies
     type: economic_classification_1_and_2
 programmes:
   dataset_detail_page: /datasets/estimates-of-national-expenditure/estimates-of-national-expenditure-2015-16
-  department_data_csv: https://datamanager.vulekamali.gov.za/csv/?api_url=https%3A//openspending.org/api/3/cubes/b9d2af843f3a7ca223eea07fb608e62a%3Aestimates-of-national-expenditure-south-africa-2015-16/aggregate/%3Fcut%3Dfinancial_year.financial_year%253A2015%257Cvote_number.department%253A%2522Public%2BService%2Band%2BAdministration%2522%26drilldown%3Dbudget_phase.budget_phase%257Ceconomic_classification_1.economic_classification_1%257Ceconomic_classification_2.economic_classification_2%257Ceconomic_classification_3.economic_classification_3%257Ceconomic_classification_4.economic_classification_4%257Cfinancial_year.financial_year%257Cprogramme_number.programme%257Cprogramme_number.programme_number%257Csubprogramme_number.subprogramme%257Csubprogramme_number.subprogramme_number%257Cvote_number.department%257Cvote_number.vote_number%26pagesize%3D10000
+  department_data_csv: https://datamanager.vulekamali.gov.za/csv/?api_url=https%3A//openspending.org/api/3/cubes/b9d2af843f3a7ca223eea07fb608e62a%3Aestimates-of-national-expenditure-2015-16-uploaded-2019-01-25t0215/aggregate/%3Fcut%3Dfinyear.finyear%253A2015%257Cvoteno.department%253A%2522Public%2BService%2Band%2BAdministration%2522%26drilldown%3Dbudget_phase.budget_phase%257Cecon1.econ1%257Cecon2.econ2%257Cecon3.econ3%257Cecon4.econ4%257Cecon5.econ5%257Cfg1.fg1%257Cfg2.fg2%257Cfinyear.finyear%257Cprogno.progno%257Cprogno.programme%257Csprogno.sprogno%257Csprogno.subprogramme%257Cvoteno.department%257Cvoteno.voteno%26pagesize%3D10000
   programme_budgets:
   - name: Administration
-    total_budget: 219702000.0
+    total_budget: 219702000
   - name: Policy Development, Research and Analysis
-    total_budget: 37465000.0
+    total_budget: 37465000
   - name: Labour Relations and Human Resource Management
-    total_budget: 68607000.0
+    total_budget: 68607000
   - name: Government Chief Information Officer
-    total_budget: 21493000.0
+    total_budget: 21493000
   - name: Service Delivery Support
-    total_budget: 314574000.0
+    total_budget: 314574000
   - name: Governance of Public Administration
-    total_budget: 269027000.0
+    total_budget: 269027000
 selected_financial_year: 2015-16
 selected_tab: departments
 slug: public-service-and-administration
@@ -792,158 +795,158 @@ sphere:
   slug: national
 subprogramme_by_programme:
   dataset_detail_page: /datasets/estimates-of-national-expenditure/estimates-of-national-expenditure-2015-16
-  department_data_csv: https://datamanager.vulekamali.gov.za/csv/?api_url=https%3A//openspending.org/api/3/cubes/b9d2af843f3a7ca223eea07fb608e62a%3Aestimates-of-national-expenditure-south-africa-2015-16/aggregate/%3Fcut%3Dfinancial_year.financial_year%253A2015%257Cvote_number.department%253A%2522Public%2BService%2Band%2BAdministration%2522%26drilldown%3Dbudget_phase.budget_phase%257Ceconomic_classification_1.economic_classification_1%257Ceconomic_classification_2.economic_classification_2%257Ceconomic_classification_3.economic_classification_3%257Ceconomic_classification_4.economic_classification_4%257Cfinancial_year.financial_year%257Cprogramme_number.programme%257Cprogramme_number.programme_number%257Csubprogramme_number.subprogramme%257Csubprogramme_number.subprogramme_number%257Cvote_number.department%257Cvote_number.vote_number%26pagesize%3D10000
+  department_data_csv: https://datamanager.vulekamali.gov.za/csv/?api_url=https%3A//openspending.org/api/3/cubes/b9d2af843f3a7ca223eea07fb608e62a%3Aestimates-of-national-expenditure-2015-16-uploaded-2019-01-25t0215/aggregate/%3Fcut%3Dfinyear.finyear%253A2015%257Cvoteno.department%253A%2522Public%2BService%2Band%2BAdministration%2522%26drilldown%3Dbudget_phase.budget_phase%257Cecon1.econ1%257Cecon2.econ2%257Cecon3.econ3%257Cecon4.econ4%257Cecon5.econ5%257Cfg1.fg1%257Cfg2.fg2%257Cfinyear.finyear%257Cprogno.progno%257Cprogno.programme%257Csprogno.sprogno%257Csprogno.subprogramme%257Cvoteno.department%257Cvoteno.voteno%26pagesize%3D10000
   programmes:
   - items:
     - name: Corporate Services
-      total_budget: 74208000.0
+      total_budget: 74208000
       type: subprogramme
     - name: Office Accommodation
-      total_budget: 48977000.0
+      total_budget: 48977000
       type: subprogramme
     - name: Ministry
-      total_budget: 42885000.0
+      total_budget: 42885000
       type: subprogramme
     - name: Finance Administration
-      total_budget: 22903000.0
+      total_budget: 22903000
       type: subprogramme
     - name: International Relations
-      total_budget: 11401000.0
+      total_budget: 11401000
       type: subprogramme
     - name: Legal Services
-      total_budget: 11158000.0
+      total_budget: 11158000
       type: subprogramme
     - name: Internal Audit
-      total_budget: 5296000.0
+      total_budget: 5296000
       type: subprogramme
     - name: Departmental Management
-      total_budget: 2874000.0
+      total_budget: 2874000
       type: subprogramme
     name: Administration
     type: programme
   - items:
     - name: Public Service Commission
-      total_budget: 222100000.0
+      total_budget: 222100000
       type: subprogramme
     - name: Ethics and Integrity Management
-      total_budget: 12954000.0
+      total_budget: 12954000
       type: subprogramme
     - name: Organisational Design and Macro Organisation of the Public Service
-      total_budget: 7952000.0
+      total_budget: 7952000
       type: subprogramme
     - name: Office of Standards, Compliance and Monitoring
-      total_budget: 6050000.0
+      total_budget: 6050000
       type: subprogramme
     - name: Human Resource Management Information Systems
-      total_budget: 5732000.0
+      total_budget: 5732000
       type: subprogramme
     - name: Leadership Management
-      total_budget: 5700000.0
+      total_budget: 5700000
       type: subprogramme
     - name: Intergovernmental Relations and Government Interventions
-      total_budget: 4857000.0
+      total_budget: 4857000
       type: subprogramme
     - name: 'Management: Governance of Public Administration'
-      total_budget: 3682000.0
+      total_budget: 3682000
       type: subprogramme
     name: Governance of Public Administration
     type: programme
   - items:
     - name: Public Service ICT Stakeholder Management
-      total_budget: 6304000.0
+      total_budget: 6304000
       type: subprogramme
     - name: Public Service ICT E-enablement
-      total_budget: 5566000.0
+      total_budget: 5566000
       type: subprogramme
     - name: Public Service ICT Risk Management
-      total_budget: 5272000.0
+      total_budget: 5272000
       type: subprogramme
     - name: 'Management: Government Chief Information Officer'
-      total_budget: 3137000.0
+      total_budget: 3137000
       type: subprogramme
     - name: Public Service ICT Service Management
-      total_budget: 1214000.0
+      total_budget: 1214000
       type: subprogramme
     name: Government Chief Information Officer
     type: programme
   - items:
     - name: Remuneration and Job Grading
-      total_budget: 18504000.0
+      total_budget: 18504000
       type: subprogramme
     - name: Employee Benefits
-      total_budget: 11286000.0
+      total_budget: 11286000
       type: subprogramme
     - name: Human Resource Planning, Employment Practices and Performance Management
-      total_budget: 10991000.0
+      total_budget: 10991000
       type: subprogramme
     - name: Labour Relations, Negotiations and Discipline Management
-      total_budget: 10724000.0
+      total_budget: 10724000
       type: subprogramme
     - name: Human Resource Development
-      total_budget: 7847000.0
+      total_budget: 7847000
       type: subprogramme
     - name: Workplace Environment Management
-      total_budget: 5859000.0
+      total_budget: 5859000
       type: subprogramme
     - name: 'Management: Labour Relations and Human Resource Management'
-      total_budget: 3396000.0
+      total_budget: 3396000
       type: subprogramme
     name: Labour Relations and Human Resource Management
     type: programme
   - items:
     - name: 'Management: Policy Development, Research and Analysis'
-      total_budget: 6135000.0
+      total_budget: 6135000
       type: subprogramme
     - name: Transformation Policies and Programmes
-      total_budget: 5969000.0
+      total_budget: 5969000
       type: subprogramme
     - name: Policy Oversight, Development and Knowledge Management
-      total_budget: 5594000.0
+      total_budget: 5594000
       type: subprogramme
     - name: Productivity and Efficiency Studies
-      total_budget: 5495000.0
+      total_budget: 5495000
       type: subprogramme
     - name: Integrated Public Sector Reform
-      total_budget: 5390000.0
+      total_budget: 5390000
       type: subprogramme
     - name: Public Service Access Norms and Mechanisms
-      total_budget: 4287000.0
+      total_budget: 4287000
       type: subprogramme
     - name: Research and Analysis
-      total_budget: 3958000.0
+      total_budget: 3958000
       type: subprogramme
     - name: Macro Policy Modelling and Costing
-      total_budget: 637000.0
+      total_budget: 637000
       type: subprogramme
     name: Policy Development, Research and Analysis
     type: programme
   - items:
     - name: National School of Government
-      total_budget: 139536000.0
+      total_budget: 139536000
       type: subprogramme
     - name: Public Sector Education and Training Authority
-      total_budget: 93843000.0
+      total_budget: 93843000
       type: subprogramme
     - name: Centre for Public Service Innovation
-      total_budget: 29003000.0
+      total_budget: 29003000
       type: subprogramme
     - name: Service Delivery Improvement Initiatives
-      total_budget: 15939000.0
+      total_budget: 15939000
       type: subprogramme
     - name: Batho Pele Support Initiatives
-      total_budget: 12233000.0
+      total_budget: 12233000
       type: subprogramme
     - name: Public Participation and Social Dialogue
-      total_budget: 9700000.0
+      total_budget: 9700000
       type: subprogramme
     - name: Community Development and Citizen Relations
-      total_budget: 7890000.0
+      total_budget: 7890000
       type: subprogramme
     - name: 'Management: Service Delivery Support'
-      total_budget: 3364000.0
+      total_budget: 3364000
       type: subprogramme
     - name: Service Delivery Planning and Operations Management
-      total_budget: 3066000.0
+      total_budget: 3066000
       type: subprogramme
     name: Service Delivery Support
     type: programme

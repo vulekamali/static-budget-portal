@@ -161,59 +161,13 @@ budget_actual:
     - amount: null
       financial_year: 2014-15
       phase: Audit Outcome
+  notices:
+  - Please note that the data for 2014 and 2013 has not been published on vulekamali.
 budget_actual_programmes:
   dataset_detail_page: /datasets/budgeted-and-actual-national-expenditure/budgeted-and-actual-national-expenditure
+  notices:
+  - One or more programmes did not exist for some years displayed.
   programmes:
-  - items:
-    - amount: 318318000.0
-      financial_year: 2015-16
-      phase: Main appropriation
-    - amount: 359519000
-      financial_year: 2015-16
-      phase: Adjusted appropriation
-    - amount: 354958000
-      financial_year: 2015-16
-      phase: Final Appropriation
-    - amount: 346819000
-      financial_year: 2015-16
-      phase: Audit Outcome
-    - amount: 373667000.0
-      financial_year: 2016-17
-      phase: Main appropriation
-    - amount: 372738000
-      financial_year: 2016-17
-      phase: Adjusted appropriation
-    - amount: 379624000
-      financial_year: 2016-17
-      phase: Final Appropriation
-    - amount: 372713000
-      financial_year: 2016-17
-      phase: Audit Outcome
-    - amount: null
-      financial_year: 2013-14
-      phase: Main appropriation
-    - amount: null
-      financial_year: 2013-14
-      phase: Adjusted appropriation
-    - amount: null
-      financial_year: 2013-14
-      phase: Final Appropriation
-    - amount: null
-      financial_year: 2013-14
-      phase: Audit Outcome
-    - amount: null
-      financial_year: 2014-15
-      phase: Main appropriation
-    - amount: null
-      financial_year: 2014-15
-      phase: Adjusted appropriation
-    - amount: null
-      financial_year: 2014-15
-      phase: Final Appropriation
-    - amount: null
-      financial_year: 2014-15
-      phase: Audit Outcome
-    name: Administration
   - items:
     - amount: 54843000.0
       financial_year: 2015-16
@@ -264,106 +218,6 @@ budget_actual_programmes:
       financial_year: 2016-17
       phase: Audit Outcome
     name: Human Resource Development, Planning and Monitoring Coordination
-  - items:
-    - amount: 6917191000.0
-      financial_year: 2016-17
-      phase: Main appropriation
-    - amount: 6960244000
-      financial_year: 2016-17
-      phase: Adjusted appropriation
-    - amount: 7031622000
-      financial_year: 2016-17
-      phase: Final Appropriation
-    - amount: 7029987000
-      financial_year: 2016-17
-      phase: Audit Outcome
-    - amount: null
-      financial_year: 2013-14
-      phase: Main appropriation
-    - amount: null
-      financial_year: 2013-14
-      phase: Adjusted appropriation
-    - amount: null
-      financial_year: 2013-14
-      phase: Final Appropriation
-    - amount: null
-      financial_year: 2013-14
-      phase: Audit Outcome
-    - amount: null
-      financial_year: 2014-15
-      phase: Main appropriation
-    - amount: null
-      financial_year: 2014-15
-      phase: Adjusted appropriation
-    - amount: null
-      financial_year: 2014-15
-      phase: Final Appropriation
-    - amount: null
-      financial_year: 2014-15
-      phase: Audit Outcome
-    - amount: null
-      financial_year: 2015-16
-      phase: Main appropriation
-    - amount: null
-      financial_year: 2015-16
-      phase: Adjusted appropriation
-    - amount: null
-      financial_year: 2015-16
-      phase: Final Appropriation
-    - amount: null
-      financial_year: 2015-16
-      phase: Audit Outcome
-    name: Technical and Vocational Education and Training
-  - items:
-    - amount: 2069739000.0
-      financial_year: 2016-17
-      phase: Main appropriation
-    - amount: 2069777000
-      financial_year: 2016-17
-      phase: Adjusted appropriation
-    - amount: 1992319000
-      financial_year: 2016-17
-      phase: Final Appropriation
-    - amount: 1981693000
-      financial_year: 2016-17
-      phase: Audit Outcome
-    - amount: null
-      financial_year: 2013-14
-      phase: Main appropriation
-    - amount: null
-      financial_year: 2013-14
-      phase: Adjusted appropriation
-    - amount: null
-      financial_year: 2013-14
-      phase: Final Appropriation
-    - amount: null
-      financial_year: 2013-14
-      phase: Audit Outcome
-    - amount: null
-      financial_year: 2014-15
-      phase: Main appropriation
-    - amount: null
-      financial_year: 2014-15
-      phase: Adjusted appropriation
-    - amount: null
-      financial_year: 2014-15
-      phase: Final Appropriation
-    - amount: null
-      financial_year: 2014-15
-      phase: Audit Outcome
-    - amount: null
-      financial_year: 2015-16
-      phase: Main appropriation
-    - amount: null
-      financial_year: 2015-16
-      phase: Adjusted appropriation
-    - amount: null
-      financial_year: 2015-16
-      phase: Final Appropriation
-    - amount: null
-      financial_year: 2015-16
-      phase: Audit Outcome
-    name: Community Education and Training
   - items:
     - amount: 71545000.0
       financial_year: 2016-17
@@ -465,6 +319,206 @@ budget_actual_programmes:
       phase: Audit Outcome
     name: Skills Development
   - items:
+    - amount: 318318000.0
+      financial_year: 2015-16
+      phase: Main appropriation
+    - amount: 359519000
+      financial_year: 2015-16
+      phase: Adjusted appropriation
+    - amount: 354958000
+      financial_year: 2015-16
+      phase: Final Appropriation
+    - amount: 346819000
+      financial_year: 2015-16
+      phase: Audit Outcome
+    - amount: 373667000.0
+      financial_year: 2016-17
+      phase: Main appropriation
+    - amount: 372738000
+      financial_year: 2016-17
+      phase: Adjusted appropriation
+    - amount: 379624000
+      financial_year: 2016-17
+      phase: Final Appropriation
+    - amount: 372713000
+      financial_year: 2016-17
+      phase: Audit Outcome
+    - amount: null
+      financial_year: 2013-14
+      phase: Main appropriation
+    - amount: null
+      financial_year: 2013-14
+      phase: Adjusted appropriation
+    - amount: null
+      financial_year: 2013-14
+      phase: Final Appropriation
+    - amount: null
+      financial_year: 2013-14
+      phase: Audit Outcome
+    - amount: null
+      financial_year: 2014-15
+      phase: Main appropriation
+    - amount: null
+      financial_year: 2014-15
+      phase: Adjusted appropriation
+    - amount: null
+      financial_year: 2014-15
+      phase: Final Appropriation
+    - amount: null
+      financial_year: 2014-15
+      phase: Audit Outcome
+    name: Administration
+  - items:
+    - amount: 2069739000.0
+      financial_year: 2016-17
+      phase: Main appropriation
+    - amount: 2069777000
+      financial_year: 2016-17
+      phase: Adjusted appropriation
+    - amount: 1992319000
+      financial_year: 2016-17
+      phase: Final Appropriation
+    - amount: 1981693000
+      financial_year: 2016-17
+      phase: Audit Outcome
+    - amount: null
+      financial_year: 2013-14
+      phase: Main appropriation
+    - amount: null
+      financial_year: 2013-14
+      phase: Adjusted appropriation
+    - amount: null
+      financial_year: 2013-14
+      phase: Final Appropriation
+    - amount: null
+      financial_year: 2013-14
+      phase: Audit Outcome
+    - amount: null
+      financial_year: 2014-15
+      phase: Main appropriation
+    - amount: null
+      financial_year: 2014-15
+      phase: Adjusted appropriation
+    - amount: null
+      financial_year: 2014-15
+      phase: Final Appropriation
+    - amount: null
+      financial_year: 2014-15
+      phase: Audit Outcome
+    - amount: null
+      financial_year: 2015-16
+      phase: Main appropriation
+    - amount: null
+      financial_year: 2015-16
+      phase: Adjusted appropriation
+    - amount: null
+      financial_year: 2015-16
+      phase: Final Appropriation
+    - amount: null
+      financial_year: 2015-16
+      phase: Audit Outcome
+    name: Community Education and Training
+  - items:
+    - amount: 6917191000.0
+      financial_year: 2016-17
+      phase: Main appropriation
+    - amount: 6960244000
+      financial_year: 2016-17
+      phase: Adjusted appropriation
+    - amount: 7031622000
+      financial_year: 2016-17
+      phase: Final Appropriation
+    - amount: 7029987000
+      financial_year: 2016-17
+      phase: Audit Outcome
+    - amount: null
+      financial_year: 2013-14
+      phase: Main appropriation
+    - amount: null
+      financial_year: 2013-14
+      phase: Adjusted appropriation
+    - amount: null
+      financial_year: 2013-14
+      phase: Final Appropriation
+    - amount: null
+      financial_year: 2013-14
+      phase: Audit Outcome
+    - amount: null
+      financial_year: 2014-15
+      phase: Main appropriation
+    - amount: null
+      financial_year: 2014-15
+      phase: Adjusted appropriation
+    - amount: null
+      financial_year: 2014-15
+      phase: Final Appropriation
+    - amount: null
+      financial_year: 2014-15
+      phase: Audit Outcome
+    - amount: null
+      financial_year: 2015-16
+      phase: Main appropriation
+    - amount: null
+      financial_year: 2015-16
+      phase: Adjusted appropriation
+    - amount: null
+      financial_year: 2015-16
+      phase: Final Appropriation
+    - amount: null
+      financial_year: 2015-16
+      phase: Audit Outcome
+    name: Technical and Vocational Education and Training
+  - items:
+    - amount: 8515770000.0
+      financial_year: 2015-16
+      phase: Main appropriation
+    - amount: 8502290000
+      financial_year: 2015-16
+      phase: Adjusted appropriation
+    - amount: 8498939000
+      financial_year: 2015-16
+      phase: Final Appropriation
+    - amount: 8429189000
+      financial_year: 2015-16
+      phase: Audit Outcome
+    - amount: null
+      financial_year: 2013-14
+      phase: Main appropriation
+    - amount: null
+      financial_year: 2013-14
+      phase: Adjusted appropriation
+    - amount: null
+      financial_year: 2013-14
+      phase: Final Appropriation
+    - amount: null
+      financial_year: 2013-14
+      phase: Audit Outcome
+    - amount: null
+      financial_year: 2014-15
+      phase: Main appropriation
+    - amount: null
+      financial_year: 2014-15
+      phase: Adjusted appropriation
+    - amount: null
+      financial_year: 2014-15
+      phase: Final Appropriation
+    - amount: null
+      financial_year: 2014-15
+      phase: Audit Outcome
+    - amount: null
+      financial_year: 2016-17
+      phase: Main appropriation
+    - amount: null
+      financial_year: 2016-17
+      phase: Adjusted appropriation
+    - amount: null
+      financial_year: 2016-17
+      phase: Final Appropriation
+    - amount: null
+      financial_year: 2016-17
+      phase: Audit Outcome
+    name: Vocational and Continuing Education and Training
+  - items:
     - amount: 14690000000.0
       financial_year: 2015-16
       phase: Main appropriation
@@ -564,56 +618,6 @@ budget_actual_programmes:
       financial_year: 2014-15
       phase: Audit Outcome
     name: University Education
-  - items:
-    - amount: 8515770000.0
-      financial_year: 2015-16
-      phase: Main appropriation
-    - amount: 8502290000
-      financial_year: 2015-16
-      phase: Adjusted appropriation
-    - amount: 8498939000
-      financial_year: 2015-16
-      phase: Final Appropriation
-    - amount: 8429189000
-      financial_year: 2015-16
-      phase: Audit Outcome
-    - amount: null
-      financial_year: 2013-14
-      phase: Main appropriation
-    - amount: null
-      financial_year: 2013-14
-      phase: Adjusted appropriation
-    - amount: null
-      financial_year: 2013-14
-      phase: Final Appropriation
-    - amount: null
-      financial_year: 2013-14
-      phase: Audit Outcome
-    - amount: null
-      financial_year: 2014-15
-      phase: Main appropriation
-    - amount: null
-      financial_year: 2014-15
-      phase: Adjusted appropriation
-    - amount: null
-      financial_year: 2014-15
-      phase: Final Appropriation
-    - amount: null
-      financial_year: 2014-15
-      phase: Audit Outcome
-    - amount: null
-      financial_year: 2016-17
-      phase: Main appropriation
-    - amount: null
-      financial_year: 2016-17
-      phase: Adjusted appropriation
-    - amount: null
-      financial_year: 2016-17
-      phase: Final Appropriation
-    - amount: null
-      financial_year: 2016-17
-      phase: Audit Outcome
-    name: Vocational and Continuing Education and Training
 contributed_datasets:
 - contributor: International Budget Partnership
   name: How Does Civil Society Use Budget Information?

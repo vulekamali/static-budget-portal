@@ -151,59 +151,12 @@ budget_actual:
     - amount: null
       financial_year: 2014-15
       phase: Audit Outcome
+  notices:
+  - Please note that the data for 2014, 2012 and 2013 has not been published on vulekamali.
 budget_actual_programmes:
   dataset_detail_page: /datasets/budgeted-and-actual-national-expenditure/budgeted-and-actual-national-expenditure
+  notices: []
   programmes:
-  - items:
-    - amount: 1215571000.0
-      financial_year: 2015-16
-      phase: Main appropriation
-    - amount: 1206214000
-      financial_year: 2015-16
-      phase: Adjusted appropriation
-    - amount: 1205699000
-      financial_year: 2015-16
-      phase: Final Appropriation
-    - amount: 1195525000
-      financial_year: 2015-16
-      phase: Audit Outcome
-    - amount: null
-      financial_year: 2012-13
-      phase: Main appropriation
-    - amount: null
-      financial_year: 2012-13
-      phase: Adjusted appropriation
-    - amount: null
-      financial_year: 2012-13
-      phase: Final Appropriation
-    - amount: null
-      financial_year: 2012-13
-      phase: Audit Outcome
-    - amount: null
-      financial_year: 2013-14
-      phase: Main appropriation
-    - amount: null
-      financial_year: 2013-14
-      phase: Adjusted appropriation
-    - amount: null
-      financial_year: 2013-14
-      phase: Final Appropriation
-    - amount: null
-      financial_year: 2013-14
-      phase: Audit Outcome
-    - amount: null
-      financial_year: 2014-15
-      phase: Main appropriation
-    - amount: null
-      financial_year: 2014-15
-      phase: Adjusted appropriation
-    - amount: null
-      financial_year: 2014-15
-      phase: Final Appropriation
-    - amount: null
-      financial_year: 2014-15
-      phase: Audit Outcome
-    name: Policy and Knowledge Services
   - items:
     - amount: 46726000.0
       financial_year: 2015-16
@@ -354,6 +307,56 @@ budget_actual_programmes:
       financial_year: 2014-15
       phase: Audit Outcome
     name: Domestic Tourism
+  - items:
+    - amount: 1215571000.0
+      financial_year: 2015-16
+      phase: Main appropriation
+    - amount: 1206214000
+      financial_year: 2015-16
+      phase: Adjusted appropriation
+    - amount: 1205699000
+      financial_year: 2015-16
+      phase: Final Appropriation
+    - amount: 1195525000
+      financial_year: 2015-16
+      phase: Audit Outcome
+    - amount: null
+      financial_year: 2012-13
+      phase: Main appropriation
+    - amount: null
+      financial_year: 2012-13
+      phase: Adjusted appropriation
+    - amount: null
+      financial_year: 2012-13
+      phase: Final Appropriation
+    - amount: null
+      financial_year: 2012-13
+      phase: Audit Outcome
+    - amount: null
+      financial_year: 2013-14
+      phase: Main appropriation
+    - amount: null
+      financial_year: 2013-14
+      phase: Adjusted appropriation
+    - amount: null
+      financial_year: 2013-14
+      phase: Final Appropriation
+    - amount: null
+      financial_year: 2013-14
+      phase: Audit Outcome
+    - amount: null
+      financial_year: 2014-15
+      phase: Main appropriation
+    - amount: null
+      financial_year: 2014-15
+      phase: Adjusted appropriation
+    - amount: null
+      financial_year: 2014-15
+      phase: Final Appropriation
+    - amount: null
+      financial_year: 2014-15
+      phase: Audit Outcome
+    name: Policy and Knowledge Services
 contributed_datasets:
 - contributor: International Budget Partnership
   name: How Does Civil Society Use Budget Information?
@@ -396,21 +399,21 @@ description: 'National department: Tourism budget data for the 2015-16 financial
   from National Treasury in partnership with IMALI YETHU.'
 economic_classification_by_programme:
   dataset_detail_page: /datasets/estimates-of-national-expenditure/estimates-of-national-expenditure-2015-16
-  department_data_csv: https://datamanager.vulekamali.gov.za/csv/?api_url=https%3A//openspending.org/api/3/cubes/b9d2af843f3a7ca223eea07fb608e62a%3Aestimates-of-national-expenditure-south-africa-2015-16/aggregate/%3Fcut%3Dfinancial_year.financial_year%253A2015%257Cvote_number.department%253A%2522Tourism%2522%26drilldown%3Dbudget_phase.budget_phase%257Ceconomic_classification_1.economic_classification_1%257Ceconomic_classification_2.economic_classification_2%257Ceconomic_classification_3.economic_classification_3%257Ceconomic_classification_4.economic_classification_4%257Cfinancial_year.financial_year%257Cprogramme_number.programme%257Cprogramme_number.programme_number%257Csubprogramme_number.subprogramme%257Csubprogramme_number.subprogramme_number%257Cvote_number.department%257Cvote_number.vote_number%26pagesize%3D10000
+  department_data_csv: https://datamanager.vulekamali.gov.za/csv/?api_url=https%3A//openspending.org/api/3/cubes/b9d2af843f3a7ca223eea07fb608e62a%3Aestimates-of-national-expenditure-2015-16-uploaded-2019-01-25t0215/aggregate/%3Fcut%3Dfinyear.finyear%253A2015%257Cvoteno.department%253A%2522Tourism%2522%26drilldown%3Dbudget_phase.budget_phase%257Cecon1.econ1%257Cecon2.econ2%257Cecon3.econ3%257Cecon4.econ4%257Cecon5.econ5%257Cfg1.fg1%257Cfg2.fg2%257Cfinyear.finyear%257Cprogno.progno%257Cprogno.programme%257Csprogno.sprogno%257Csprogno.subprogramme%257Cvoteno.department%257Cvoteno.voteno%26pagesize%3D10000
   programmes:
   - items:
     - items:
       - name: Payments for capital assets
-        total_budget: 3214000.0
+        total_budget: 3214000
         type: economic_classification_2
       name: Capital
       type: economic_classification_1
     - items:
       - name: Current payments
-        total_budget: 228383000.0
+        total_budget: 228383000
         type: economic_classification_2
       - name: Transfers and subsidies
-        total_budget: 176000.0
+        total_budget: 176000
         type: economic_classification_2
       name: Current
       type: economic_classification_1
@@ -419,16 +422,16 @@ economic_classification_by_programme:
   - items:
     - items:
       - name: Payments for capital assets
-        total_budget: 776000.0
+        total_budget: 776000
         type: economic_classification_2
       name: Capital
       type: economic_classification_1
     - items:
       - name: Transfers and subsidies
-        total_budget: 229843000.0
+        total_budget: 229843000
         type: economic_classification_2
       - name: Current payments
-        total_budget: 75544000.0
+        total_budget: 75544000
         type: economic_classification_2
       name: Current
       type: economic_classification_1
@@ -437,16 +440,16 @@ economic_classification_by_programme:
   - items:
     - items:
       - name: Payments for capital assets
-        total_budget: 944000.0
+        total_budget: 944000
         type: economic_classification_2
       name: Capital
       type: economic_classification_1
     - items:
       - name: Current payments
-        total_budget: 39778000.0
+        total_budget: 39778000
         type: economic_classification_2
       - name: Transfers and subsidies
-        total_budget: 6004000.0
+        total_budget: 6004000
         type: economic_classification_2
       name: Current
       type: economic_classification_1
@@ -455,16 +458,16 @@ economic_classification_by_programme:
   - items:
     - items:
       - name: Payments for capital assets
-        total_budget: 1159000.0
+        total_budget: 1159000
         type: economic_classification_2
       name: Capital
       type: economic_classification_1
     - items:
       - name: Transfers and subsidies
-        total_budget: 1155118000.0
+        total_budget: 1155118000
         type: economic_classification_2
       - name: Current payments
-        total_budget: 59294000.0
+        total_budget: 59294000
         type: economic_classification_2
       name: Current
       type: economic_classification_1
@@ -475,25 +478,25 @@ expenditure_over_time:
   expenditure:
     base_financial_year: 2017-18
     nominal:
-    - amount: 1250246000.0
+    - amount: 1250246000
       financial_year: 2011-12
       phase: Audited Outcome
-    - amount: 1371959000.0
+    - amount: 1371959000
       financial_year: 2012-13
       phase: Audited Outcome
-    - amount: 1512667000.0
+    - amount: 1512667000
       financial_year: 2013-14
       phase: Audited Outcome
-    - amount: 1583260000.0
+    - amount: 1583260000
       financial_year: 2014-15
       phase: Adjusted appropriation
-    - amount: 1800233000.0
+    - amount: 1800233000
       financial_year: 2015-16
       phase: Main appropriation
-    - amount: 2053303000.0
+    - amount: 2053303000
       financial_year: 2016-17
       phase: Medium Term Estimates
-    - amount: 2127591000.0000002
+    - amount: 2127590999
       financial_year: 2017-18
       phase: Medium Term Estimates
     real:
@@ -515,7 +518,7 @@ expenditure_over_time:
     - amount: 2153664335
       financial_year: 2016-17
       phase: Medium Term Estimates
-    - amount: 2127591000
+    - amount: 2127590999
       financial_year: 2017-18
       phase: Medium Term Estimates
 financial_years:
@@ -593,65 +596,65 @@ is_vote_primary: true
 name: Tourism
 programme_by_economic_classification:
   dataset_detail_page: /datasets/estimates-of-national-expenditure/estimates-of-national-expenditure-2015-16
-  department_data_csv: https://datamanager.vulekamali.gov.za/csv/?api_url=https%3A//openspending.org/api/3/cubes/b9d2af843f3a7ca223eea07fb608e62a%3Aestimates-of-national-expenditure-south-africa-2015-16/aggregate/%3Fcut%3Dfinancial_year.financial_year%253A2015%257Cvote_number.department%253A%2522Tourism%2522%26drilldown%3Dbudget_phase.budget_phase%257Ceconomic_classification_1.economic_classification_1%257Ceconomic_classification_2.economic_classification_2%257Ceconomic_classification_3.economic_classification_3%257Ceconomic_classification_4.economic_classification_4%257Cfinancial_year.financial_year%257Cprogramme_number.programme%257Cprogramme_number.programme_number%257Csubprogramme_number.subprogramme%257Csubprogramme_number.subprogramme_number%257Cvote_number.department%257Cvote_number.vote_number%26pagesize%3D10000
+  department_data_csv: https://datamanager.vulekamali.gov.za/csv/?api_url=https%3A//openspending.org/api/3/cubes/b9d2af843f3a7ca223eea07fb608e62a%3Aestimates-of-national-expenditure-2015-16-uploaded-2019-01-25t0215/aggregate/%3Fcut%3Dfinyear.finyear%253A2015%257Cvoteno.department%253A%2522Tourism%2522%26drilldown%3Dbudget_phase.budget_phase%257Cecon1.econ1%257Cecon2.econ2%257Cecon3.econ3%257Cecon4.econ4%257Cecon5.econ5%257Cfg1.fg1%257Cfg2.fg2%257Cfinyear.finyear%257Cprogno.progno%257Cprogno.programme%257Csprogno.sprogno%257Csprogno.subprogramme%257Cvoteno.department%257Cvoteno.voteno%26pagesize%3D10000
   econ_classes:
   - items:
     - name: Administration
-      total_budget: 3214000.0
+      total_budget: 3214000
       type: programme
     - name: Policy and Knowledge Services
-      total_budget: 1159000.0
+      total_budget: 1159000
       type: programme
     - name: International Tourism
-      total_budget: 944000.0
+      total_budget: 944000
       type: programme
     - name: Domestic Tourism
-      total_budget: 776000.0
+      total_budget: 776000
       type: programme
     name: Capital - Payments for capital assets
     type: economic_classification_1_and_2
   - items:
     - name: Administration
-      total_budget: 228383000.0
+      total_budget: 228383000
       type: programme
     - name: Domestic Tourism
-      total_budget: 75544000.0
+      total_budget: 75544000
       type: programme
     - name: Policy and Knowledge Services
-      total_budget: 59294000.0
+      total_budget: 59294000
       type: programme
     - name: International Tourism
-      total_budget: 39778000.0
+      total_budget: 39778000
       type: programme
     name: Current - Current payments
     type: economic_classification_1_and_2
   - items:
     - name: Policy and Knowledge Services
-      total_budget: 1155118000.0
+      total_budget: 1155118000
       type: programme
     - name: Domestic Tourism
-      total_budget: 229843000.0
+      total_budget: 229843000
       type: programme
     - name: International Tourism
-      total_budget: 6004000.0
+      total_budget: 6004000
       type: programme
     - name: Administration
-      total_budget: 176000.0
+      total_budget: 176000
       type: programme
     name: Current - Transfers and subsidies
     type: economic_classification_1_and_2
 programmes:
   dataset_detail_page: /datasets/estimates-of-national-expenditure/estimates-of-national-expenditure-2015-16
-  department_data_csv: https://datamanager.vulekamali.gov.za/csv/?api_url=https%3A//openspending.org/api/3/cubes/b9d2af843f3a7ca223eea07fb608e62a%3Aestimates-of-national-expenditure-south-africa-2015-16/aggregate/%3Fcut%3Dfinancial_year.financial_year%253A2015%257Cvote_number.department%253A%2522Tourism%2522%26drilldown%3Dbudget_phase.budget_phase%257Ceconomic_classification_1.economic_classification_1%257Ceconomic_classification_2.economic_classification_2%257Ceconomic_classification_3.economic_classification_3%257Ceconomic_classification_4.economic_classification_4%257Cfinancial_year.financial_year%257Cprogramme_number.programme%257Cprogramme_number.programme_number%257Csubprogramme_number.subprogramme%257Csubprogramme_number.subprogramme_number%257Cvote_number.department%257Cvote_number.vote_number%26pagesize%3D10000
+  department_data_csv: https://datamanager.vulekamali.gov.za/csv/?api_url=https%3A//openspending.org/api/3/cubes/b9d2af843f3a7ca223eea07fb608e62a%3Aestimates-of-national-expenditure-2015-16-uploaded-2019-01-25t0215/aggregate/%3Fcut%3Dfinyear.finyear%253A2015%257Cvoteno.department%253A%2522Tourism%2522%26drilldown%3Dbudget_phase.budget_phase%257Cecon1.econ1%257Cecon2.econ2%257Cecon3.econ3%257Cecon4.econ4%257Cecon5.econ5%257Cfg1.fg1%257Cfg2.fg2%257Cfinyear.finyear%257Cprogno.progno%257Cprogno.programme%257Csprogno.sprogno%257Csprogno.subprogramme%257Cvoteno.department%257Cvoteno.voteno%26pagesize%3D10000
   programme_budgets:
   - name: Administration
-    total_budget: 231773000.0
+    total_budget: 231773000
   - name: Policy and Knowledge Services
-    total_budget: 1215571000.0
+    total_budget: 1215571000
   - name: International Tourism
-    total_budget: 46726000.0
+    total_budget: 46726000
   - name: Domestic Tourism
-    total_budget: 306163000.0
+    total_budget: 306163000
 selected_financial_year: 2015-16
 selected_tab: departments
 slug: tourism
@@ -660,71 +663,71 @@ sphere:
   slug: national
 subprogramme_by_programme:
   dataset_detail_page: /datasets/estimates-of-national-expenditure/estimates-of-national-expenditure-2015-16
-  department_data_csv: https://datamanager.vulekamali.gov.za/csv/?api_url=https%3A//openspending.org/api/3/cubes/b9d2af843f3a7ca223eea07fb608e62a%3Aestimates-of-national-expenditure-south-africa-2015-16/aggregate/%3Fcut%3Dfinancial_year.financial_year%253A2015%257Cvote_number.department%253A%2522Tourism%2522%26drilldown%3Dbudget_phase.budget_phase%257Ceconomic_classification_1.economic_classification_1%257Ceconomic_classification_2.economic_classification_2%257Ceconomic_classification_3.economic_classification_3%257Ceconomic_classification_4.economic_classification_4%257Cfinancial_year.financial_year%257Cprogramme_number.programme%257Cprogramme_number.programme_number%257Csubprogramme_number.subprogramme%257Csubprogramme_number.subprogramme_number%257Cvote_number.department%257Cvote_number.vote_number%26pagesize%3D10000
+  department_data_csv: https://datamanager.vulekamali.gov.za/csv/?api_url=https%3A//openspending.org/api/3/cubes/b9d2af843f3a7ca223eea07fb608e62a%3Aestimates-of-national-expenditure-2015-16-uploaded-2019-01-25t0215/aggregate/%3Fcut%3Dfinyear.finyear%253A2015%257Cvoteno.department%253A%2522Tourism%2522%26drilldown%3Dbudget_phase.budget_phase%257Cecon1.econ1%257Cecon2.econ2%257Cecon3.econ3%257Cecon4.econ4%257Cecon5.econ5%257Cfg1.fg1%257Cfg2.fg2%257Cfinyear.finyear%257Cprogno.progno%257Cprogno.programme%257Csprogno.sprogno%257Csprogno.subprogramme%257Cvoteno.department%257Cvoteno.voteno%26pagesize%3D10000
   programmes:
   - items:
     - name: Corporate Affairs
-      total_budget: 148663000.0
+      total_budget: 148663000
       type: subprogramme
     - name: Ministry
-      total_budget: 35917000.0
+      total_budget: 35917000
       type: subprogramme
     - name: Office Accommodation
-      total_budget: 28494000.0
+      total_budget: 28494000
       type: subprogramme
     - name: Management
-      total_budget: 18699000.0
+      total_budget: 18699000
       type: subprogramme
     name: Administration
     type: programme
   - items:
     - name: Social Responsibility Implementation
-      total_budget: 253136000.0
+      total_budget: 253136000
       type: subprogramme
     - name: 'Domestic Tourism Management: Northern Region'
-      total_budget: 17094000.0
+      total_budget: 17094000
       type: subprogramme
     - name: Strategic Partners in Tourism
-      total_budget: 13500000.0
+      total_budget: 13500000
       type: subprogramme
     - name: 'Domestic Tourism Management: Southern Region'
-      total_budget: 11932000.0
+      total_budget: 11932000
       type: subprogramme
     - name: Domestic Tourism Management
-      total_budget: 10501000.0
+      total_budget: 10501000
       type: subprogramme
     name: Domestic Tourism
     type: programme
   - items:
     - name: Americas and Western Europe
-      total_budget: 17135000.0
+      total_budget: 17135000
       type: subprogramme
     - name: Africa and Middle East
-      total_budget: 14220000.0
+      total_budget: 14220000
       type: subprogramme
     - name: Asia, Australasia and Eastern Europe
-      total_budget: 11935000.0
+      total_budget: 11935000
       type: subprogramme
     - name: International Tourism Management
-      total_budget: 3436000.0
+      total_budget: 3436000
       type: subprogramme
     name: International Tourism
     type: programme
   - items:
     - name: South African Tourism
-      total_budget: 977712000.0
+      total_budget: 977712000
       type: subprogramme
     - name: Tourism Incentive Programme
-      total_budget: 180397000.0
+      total_budget: 180397000
       type: subprogramme
     - name: Policy Development and Evaluation
-      total_budget: 26026000.0
+      total_budget: 26026000
       type: subprogramme
     - name: Research and Knowledge Management
-      total_budget: 24635000.0
+      total_budget: 24635000
       type: subprogramme
     - name: Policy and Knowledge Services Management
-      total_budget: 6801000.0
+      total_budget: 6801000
       type: subprogramme
     name: Policy and Knowledge Services
     type: programme

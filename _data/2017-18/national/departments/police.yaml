@@ -130,8 +130,11 @@ budget_actual:
     - amount: null
       financial_year: 2014-15
       phase: Audit Outcome
+  notices:
+  - Please note that the data for 2014 has not been published on vulekamali.
 budget_actual_programmes:
   dataset_detail_page: /datasets/budgeted-and-actual-national-expenditure/budgeted-and-actual-national-expenditure
+  notices: []
   programmes:
   - items:
     - amount: 2331523000.0
@@ -184,56 +187,6 @@ budget_actual_programmes:
       phase: Audit Outcome
     name: Protection and Security Services
   - items:
-    - amount: 15815983000.0
-      financial_year: 2015-16
-      phase: Main appropriation
-    - amount: 16092427000
-      financial_year: 2015-16
-      phase: Adjusted appropriation
-    - amount: 15947270000
-      financial_year: 2015-16
-      phase: Final Appropriation
-    - amount: 15947270000
-      financial_year: 2015-16
-      phase: Audit Outcome
-    - amount: 16789609000.0
-      financial_year: 2016-17
-      phase: Main appropriation
-    - amount: 16772488000
-      financial_year: 2016-17
-      phase: Adjusted appropriation
-    - amount: 16723126000
-      financial_year: 2016-17
-      phase: Final Appropriation
-    - amount: 16723126000
-      financial_year: 2016-17
-      phase: Audit Outcome
-    - amount: 17934597000.0
-      financial_year: 2017-18
-      phase: Main appropriation
-    - amount: 17670597000
-      financial_year: 2017-18
-      phase: Adjusted appropriation
-    - amount: 17771032000
-      financial_year: 2017-18
-      phase: Final Appropriation
-    - amount: 17686682000
-      financial_year: 2017-18
-      phase: Audit Outcome
-    - amount: null
-      financial_year: 2014-15
-      phase: Main appropriation
-    - amount: null
-      financial_year: 2014-15
-      phase: Adjusted appropriation
-    - amount: null
-      financial_year: 2014-15
-      phase: Final Appropriation
-    - amount: null
-      financial_year: 2014-15
-      phase: Audit Outcome
-    name: Detective Services
-  - items:
     - amount: 3110379000.0
       financial_year: 2015-16
       phase: Main appropriation
@@ -283,6 +236,56 @@ budget_actual_programmes:
       financial_year: 2014-15
       phase: Audit Outcome
     name: Crime Intelligence
+  - items:
+    - amount: 15815983000.0
+      financial_year: 2015-16
+      phase: Main appropriation
+    - amount: 16092427000
+      financial_year: 2015-16
+      phase: Adjusted appropriation
+    - amount: 15947270000
+      financial_year: 2015-16
+      phase: Final Appropriation
+    - amount: 15947270000
+      financial_year: 2015-16
+      phase: Audit Outcome
+    - amount: 16789609000.0
+      financial_year: 2016-17
+      phase: Main appropriation
+    - amount: 16772488000
+      financial_year: 2016-17
+      phase: Adjusted appropriation
+    - amount: 16723126000
+      financial_year: 2016-17
+      phase: Final Appropriation
+    - amount: 16723126000
+      financial_year: 2016-17
+      phase: Audit Outcome
+    - amount: 17934597000.0
+      financial_year: 2017-18
+      phase: Main appropriation
+    - amount: 17670597000
+      financial_year: 2017-18
+      phase: Adjusted appropriation
+    - amount: 17771032000
+      financial_year: 2017-18
+      phase: Final Appropriation
+    - amount: 17686682000
+      financial_year: 2017-18
+      phase: Audit Outcome
+    - amount: null
+      financial_year: 2014-15
+      phase: Main appropriation
+    - amount: null
+      financial_year: 2014-15
+      phase: Adjusted appropriation
+    - amount: null
+      financial_year: 2014-15
+      phase: Final Appropriation
+    - amount: null
+      financial_year: 2014-15
+      phase: Audit Outcome
+    name: Detective Services
   - items:
     - amount: 16264210000.0
       financial_year: 2015-16

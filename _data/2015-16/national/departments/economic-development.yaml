@@ -152,8 +152,11 @@ budget_actual:
     - amount: null
       financial_year: 2014-15
       phase: Audit Outcome
+  notices:
+  - Please note that the data for 2014, 2012 and 2013 has not been published on vulekamali.
 budget_actual_programmes:
   dataset_detail_page: /datasets/budgeted-and-actual-national-expenditure/budgeted-and-actual-national-expenditure
+  notices: []
   programmes:
   - items:
     - amount: 27889000.0
@@ -347,18 +350,18 @@ description: 'National department: Economic Development budget data for the 2015
   financial year from National Treasury in partnership with IMALI YETHU.'
 economic_classification_by_programme:
   dataset_detail_page: /datasets/estimates-of-national-expenditure/estimates-of-national-expenditure-2015-16
-  department_data_csv: https://datamanager.vulekamali.gov.za/csv/?api_url=https%3A//openspending.org/api/3/cubes/b9d2af843f3a7ca223eea07fb608e62a%3Aestimates-of-national-expenditure-south-africa-2015-16/aggregate/%3Fcut%3Dfinancial_year.financial_year%253A2015%257Cvote_number.department%253A%2522Economic%2BDevelopment%2522%26drilldown%3Dbudget_phase.budget_phase%257Ceconomic_classification_1.economic_classification_1%257Ceconomic_classification_2.economic_classification_2%257Ceconomic_classification_3.economic_classification_3%257Ceconomic_classification_4.economic_classification_4%257Cfinancial_year.financial_year%257Cprogramme_number.programme%257Cprogramme_number.programme_number%257Csubprogramme_number.subprogramme%257Csubprogramme_number.subprogramme_number%257Cvote_number.department%257Cvote_number.vote_number%26pagesize%3D10000
+  department_data_csv: https://datamanager.vulekamali.gov.za/csv/?api_url=https%3A//openspending.org/api/3/cubes/b9d2af843f3a7ca223eea07fb608e62a%3Aestimates-of-national-expenditure-2015-16-uploaded-2019-01-25t0215/aggregate/%3Fcut%3Dfinyear.finyear%253A2015%257Cvoteno.department%253A%2522Economic%2BDevelopment%2522%26drilldown%3Dbudget_phase.budget_phase%257Cecon1.econ1%257Cecon2.econ2%257Cecon3.econ3%257Cecon4.econ4%257Cecon5.econ5%257Cfg1.fg1%257Cfg2.fg2%257Cfinyear.finyear%257Cprogno.progno%257Cprogno.programme%257Csprogno.sprogno%257Csprogno.subprogramme%257Cvoteno.department%257Cvoteno.voteno%26pagesize%3D10000
   programmes:
   - items:
     - items:
       - name: Payments for capital assets
-        total_budget: 2244000.0
+        total_budget: 2244000
         type: economic_classification_2
       name: Capital
       type: economic_classification_1
     - items:
       - name: Current payments
-        total_budget: 80979000.0
+        total_budget: 80979000
         type: economic_classification_2
       name: Current
       type: economic_classification_1
@@ -367,7 +370,7 @@ economic_classification_by_programme:
   - items:
     - items:
       - name: Current payments
-        total_budget: 27889000.0
+        total_budget: 27889000
         type: economic_classification_2
       name: Current
       type: economic_classification_1
@@ -376,10 +379,10 @@ economic_classification_by_programme:
   - items:
     - items:
       - name: Transfers and subsidies
-        total_budget: 733245000.0
+        total_budget: 733245000
         type: economic_classification_2
       - name: Current payments
-        total_budget: 41421000.0
+        total_budget: 41421000
         type: economic_classification_2
       name: Current
       type: economic_classification_1
@@ -390,25 +393,25 @@ expenditure_over_time:
   expenditure:
     base_financial_year: 2017-18
     nominal:
-    - amount: 577602000.0
+    - amount: 577602000
       financial_year: 2011-12
       phase: Audited Outcome
-    - amount: 673473000.0
+    - amount: 673473000
       financial_year: 2012-13
       phase: Audited Outcome
-    - amount: 771395000.0
+    - amount: 771395000
       financial_year: 2013-14
       phase: Audited Outcome
-    - amount: 696860000.0
+    - amount: 696860000
       financial_year: 2014-15
       phase: Adjusted appropriation
-    - amount: 885778000.0
+    - amount: 885778000
       financial_year: 2015-16
       phase: Main appropriation
-    - amount: 685661000.0
+    - amount: 685661000
       financial_year: 2016-17
       phase: Medium Term Estimates
-    - amount: 727852000.0
+    - amount: 727852000
       financial_year: 2017-18
       phase: Medium Term Estimates
     real:
@@ -477,42 +480,42 @@ is_vote_primary: true
 name: Economic Development
 programme_by_economic_classification:
   dataset_detail_page: /datasets/estimates-of-national-expenditure/estimates-of-national-expenditure-2015-16
-  department_data_csv: https://datamanager.vulekamali.gov.za/csv/?api_url=https%3A//openspending.org/api/3/cubes/b9d2af843f3a7ca223eea07fb608e62a%3Aestimates-of-national-expenditure-south-africa-2015-16/aggregate/%3Fcut%3Dfinancial_year.financial_year%253A2015%257Cvote_number.department%253A%2522Economic%2BDevelopment%2522%26drilldown%3Dbudget_phase.budget_phase%257Ceconomic_classification_1.economic_classification_1%257Ceconomic_classification_2.economic_classification_2%257Ceconomic_classification_3.economic_classification_3%257Ceconomic_classification_4.economic_classification_4%257Cfinancial_year.financial_year%257Cprogramme_number.programme%257Cprogramme_number.programme_number%257Csubprogramme_number.subprogramme%257Csubprogramme_number.subprogramme_number%257Cvote_number.department%257Cvote_number.vote_number%26pagesize%3D10000
+  department_data_csv: https://datamanager.vulekamali.gov.za/csv/?api_url=https%3A//openspending.org/api/3/cubes/b9d2af843f3a7ca223eea07fb608e62a%3Aestimates-of-national-expenditure-2015-16-uploaded-2019-01-25t0215/aggregate/%3Fcut%3Dfinyear.finyear%253A2015%257Cvoteno.department%253A%2522Economic%2BDevelopment%2522%26drilldown%3Dbudget_phase.budget_phase%257Cecon1.econ1%257Cecon2.econ2%257Cecon3.econ3%257Cecon4.econ4%257Cecon5.econ5%257Cfg1.fg1%257Cfg2.fg2%257Cfinyear.finyear%257Cprogno.progno%257Cprogno.programme%257Csprogno.sprogno%257Csprogno.subprogramme%257Cvoteno.department%257Cvoteno.voteno%26pagesize%3D10000
   econ_classes:
   - items:
     - name: Administration
-      total_budget: 2244000.0
+      total_budget: 2244000
       type: programme
     name: Capital - Payments for capital assets
     type: economic_classification_1_and_2
   - items:
     - name: Administration
-      total_budget: 80979000.0
+      total_budget: 80979000
       type: programme
     - name: Investment, Competition and Trade
-      total_budget: 41421000.0
+      total_budget: 41421000
       type: programme
     - name: Growth Path and Social Dialogue
-      total_budget: 27889000.0
+      total_budget: 27889000
       type: programme
     name: Current - Current payments
     type: economic_classification_1_and_2
   - items:
     - name: Investment, Competition and Trade
-      total_budget: 733245000.0
+      total_budget: 733245000
       type: programme
     name: Current - Transfers and subsidies
     type: economic_classification_1_and_2
 programmes:
   dataset_detail_page: /datasets/estimates-of-national-expenditure/estimates-of-national-expenditure-2015-16
-  department_data_csv: https://datamanager.vulekamali.gov.za/csv/?api_url=https%3A//openspending.org/api/3/cubes/b9d2af843f3a7ca223eea07fb608e62a%3Aestimates-of-national-expenditure-south-africa-2015-16/aggregate/%3Fcut%3Dfinancial_year.financial_year%253A2015%257Cvote_number.department%253A%2522Economic%2BDevelopment%2522%26drilldown%3Dbudget_phase.budget_phase%257Ceconomic_classification_1.economic_classification_1%257Ceconomic_classification_2.economic_classification_2%257Ceconomic_classification_3.economic_classification_3%257Ceconomic_classification_4.economic_classification_4%257Cfinancial_year.financial_year%257Cprogramme_number.programme%257Cprogramme_number.programme_number%257Csubprogramme_number.subprogramme%257Csubprogramme_number.subprogramme_number%257Cvote_number.department%257Cvote_number.vote_number%26pagesize%3D10000
+  department_data_csv: https://datamanager.vulekamali.gov.za/csv/?api_url=https%3A//openspending.org/api/3/cubes/b9d2af843f3a7ca223eea07fb608e62a%3Aestimates-of-national-expenditure-2015-16-uploaded-2019-01-25t0215/aggregate/%3Fcut%3Dfinyear.finyear%253A2015%257Cvoteno.department%253A%2522Economic%2BDevelopment%2522%26drilldown%3Dbudget_phase.budget_phase%257Cecon1.econ1%257Cecon2.econ2%257Cecon3.econ3%257Cecon4.econ4%257Cecon5.econ5%257Cfg1.fg1%257Cfg2.fg2%257Cfinyear.finyear%257Cprogno.progno%257Cprogno.programme%257Csprogno.sprogno%257Csprogno.subprogramme%257Cvoteno.department%257Cvoteno.voteno%26pagesize%3D10000
   programme_budgets:
   - name: Administration
-    total_budget: 83223000.0
+    total_budget: 83223000
   - name: Growth Path and Social Dialogue
-    total_budget: 27889000.0
+    total_budget: 27889000
   - name: Investment, Competition and Trade
-    total_budget: 774666000.0
+    total_budget: 774666000
 selected_financial_year: 2015-16
 selected_tab: departments
 slug: economic-development
@@ -521,41 +524,41 @@ sphere:
   slug: national
 subprogramme_by_programme:
   dataset_detail_page: /datasets/estimates-of-national-expenditure/estimates-of-national-expenditure-2015-16
-  department_data_csv: https://datamanager.vulekamali.gov.za/csv/?api_url=https%3A//openspending.org/api/3/cubes/b9d2af843f3a7ca223eea07fb608e62a%3Aestimates-of-national-expenditure-south-africa-2015-16/aggregate/%3Fcut%3Dfinancial_year.financial_year%253A2015%257Cvote_number.department%253A%2522Economic%2BDevelopment%2522%26drilldown%3Dbudget_phase.budget_phase%257Ceconomic_classification_1.economic_classification_1%257Ceconomic_classification_2.economic_classification_2%257Ceconomic_classification_3.economic_classification_3%257Ceconomic_classification_4.economic_classification_4%257Cfinancial_year.financial_year%257Cprogramme_number.programme%257Cprogramme_number.programme_number%257Csubprogramme_number.subprogramme%257Csubprogramme_number.subprogramme_number%257Cvote_number.department%257Cvote_number.vote_number%26pagesize%3D10000
+  department_data_csv: https://datamanager.vulekamali.gov.za/csv/?api_url=https%3A//openspending.org/api/3/cubes/b9d2af843f3a7ca223eea07fb608e62a%3Aestimates-of-national-expenditure-2015-16-uploaded-2019-01-25t0215/aggregate/%3Fcut%3Dfinyear.finyear%253A2015%257Cvoteno.department%253A%2522Economic%2BDevelopment%2522%26drilldown%3Dbudget_phase.budget_phase%257Cecon1.econ1%257Cecon2.econ2%257Cecon3.econ3%257Cecon4.econ4%257Cecon5.econ5%257Cfg1.fg1%257Cfg2.fg2%257Cfinyear.finyear%257Cprogno.progno%257Cprogno.programme%257Csprogno.sprogno%257Csprogno.subprogramme%257Cvoteno.department%257Cvoteno.voteno%26pagesize%3D10000
   programmes:
   - items:
     - name: Corporate Management Services
-      total_budget: 37623000.0
+      total_budget: 37623000
       type: subprogramme
     - name: Ministry
-      total_budget: 20197000.0
+      total_budget: 20197000
       type: subprogramme
-    - name: Office of the Director General
-      total_budget: 13888000.0
+    - name: Office of the Director-General
+      total_budget: 13888000
       type: subprogramme
     - name: Financial Management
-      total_budget: 11515000.0
+      total_budget: 11515000
       type: subprogramme
     name: Administration
     type: programme
   - items:
-    - name: Growth Path and Job Drivers
-      total_budget: 15996000.0
+    - name: Growth Path and Jobs Drivers
+      total_budget: 15996000
       type: subprogramme
     - name: Social Dialogue, Productivity and Innovation
-      total_budget: 11893000.0
+      total_budget: 11893000
       type: subprogramme
     name: Growth Path and Social Dialogue
     type: programme
   - items:
     - name: Development Investment, Industrial Funding and Entrepreneurship
-      total_budget: 418233000.0
+      total_budget: 418233000
       type: subprogramme
     - name: Competition, Trade and other Economic Regulation
-      total_budget: 336922000.0
+      total_budget: 336922000
       type: subprogramme
     - name: Infrastructure Development Coordination
-      total_budget: 19511000.0
+      total_budget: 19511000
       type: subprogramme
     name: Investment, Competition and Trade
     type: programme

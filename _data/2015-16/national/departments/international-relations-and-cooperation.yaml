@@ -162,20 +162,23 @@ budget_actual:
     - amount: null
       financial_year: 2014-15
       phase: Audit Outcome
+  notices:
+  - Please note that the data for 2014, 2012 and 2013 has not been published on vulekamali.
 budget_actual_programmes:
   dataset_detail_page: /datasets/budgeted-and-actual-national-expenditure/budgeted-and-actual-national-expenditure
+  notices: []
   programmes:
   - items:
-    - amount: 635231000.0
+    - amount: 246280000.0
       financial_year: 2015-16
       phase: Main appropriation
-    - amount: 734321000
+    - amount: 363557000
       financial_year: 2015-16
       phase: Adjusted appropriation
-    - amount: 734321000
+    - amount: 363557000
       financial_year: 2015-16
       phase: Final Appropriation
-    - amount: 766641000
+    - amount: 333222000
       financial_year: 2015-16
       phase: Audit Outcome
     - amount: null
@@ -214,7 +217,7 @@ budget_actual_programmes:
     - amount: null
       financial_year: 2014-15
       phase: Audit Outcome
-    name: International Transfers
+    name: Public Diplomacy and Protocol Services
   - items:
     - amount: 466945000.0
       financial_year: 2015-16
@@ -266,16 +269,16 @@ budget_actual_programmes:
       phase: Audit Outcome
     name: International Cooperation
   - items:
-    - amount: 2931657000.0
+    - amount: 635231000.0
       financial_year: 2015-16
       phase: Main appropriation
-    - amount: 3506175000
+    - amount: 734321000
       financial_year: 2015-16
       phase: Adjusted appropriation
-    - amount: 3506175000
+    - amount: 734321000
       financial_year: 2015-16
       phase: Final Appropriation
-    - amount: 3640379000
+    - amount: 766641000
       financial_year: 2015-16
       phase: Audit Outcome
     - amount: null
@@ -314,7 +317,7 @@ budget_actual_programmes:
     - amount: null
       financial_year: 2014-15
       phase: Audit Outcome
-    name: International Relations
+    name: International Transfers
   - items:
     - amount: 1418521000.0
       financial_year: 2015-16
@@ -366,16 +369,16 @@ budget_actual_programmes:
       phase: Audit Outcome
     name: Administration
   - items:
-    - amount: 246280000.0
+    - amount: 2931657000.0
       financial_year: 2015-16
       phase: Main appropriation
-    - amount: 363557000
+    - amount: 3506175000
       financial_year: 2015-16
       phase: Adjusted appropriation
-    - amount: 363557000
+    - amount: 3506175000
       financial_year: 2015-16
       phase: Final Appropriation
-    - amount: 333222000
+    - amount: 3640379000
       financial_year: 2015-16
       phase: Audit Outcome
     - amount: null
@@ -414,7 +417,7 @@ budget_actual_programmes:
     - amount: null
       financial_year: 2014-15
       phase: Audit Outcome
-    name: Public Diplomacy and Protocol Services
+    name: International Relations
 contributed_datasets:
 - contributor: International Budget Partnership
   name: How Does Civil Society Use Budget Information?
@@ -458,21 +461,21 @@ description: 'National department: International Relations and Cooperation budge
   YETHU.'
 economic_classification_by_programme:
   dataset_detail_page: /datasets/estimates-of-national-expenditure/estimates-of-national-expenditure-2015-16
-  department_data_csv: https://datamanager.vulekamali.gov.za/csv/?api_url=https%3A//openspending.org/api/3/cubes/b9d2af843f3a7ca223eea07fb608e62a%3Aestimates-of-national-expenditure-south-africa-2015-16/aggregate/%3Fcut%3Dfinancial_year.financial_year%253A2015%257Cvote_number.department%253A%2522International%2BRelations%2Band%2BCooperation%2522%26drilldown%3Dbudget_phase.budget_phase%257Ceconomic_classification_1.economic_classification_1%257Ceconomic_classification_2.economic_classification_2%257Ceconomic_classification_3.economic_classification_3%257Ceconomic_classification_4.economic_classification_4%257Cfinancial_year.financial_year%257Cprogramme_number.programme%257Cprogramme_number.programme_number%257Csubprogramme_number.subprogramme%257Csubprogramme_number.subprogramme_number%257Cvote_number.department%257Cvote_number.vote_number%26pagesize%3D10000
+  department_data_csv: https://datamanager.vulekamali.gov.za/csv/?api_url=https%3A//openspending.org/api/3/cubes/b9d2af843f3a7ca223eea07fb608e62a%3Aestimates-of-national-expenditure-2015-16-uploaded-2019-01-25t0215/aggregate/%3Fcut%3Dfinyear.finyear%253A2015%257Cvoteno.department%253A%2522International%2BRelations%2Band%2BCooperation%2522%26drilldown%3Dbudget_phase.budget_phase%257Cecon1.econ1%257Cecon2.econ2%257Cecon3.econ3%257Cecon4.econ4%257Cecon5.econ5%257Cfg1.fg1%257Cfg2.fg2%257Cfinyear.finyear%257Cprogno.progno%257Cprogno.programme%257Csprogno.sprogno%257Csprogno.subprogramme%257Cvoteno.department%257Cvoteno.voteno%26pagesize%3D10000
   programmes:
   - items:
     - items:
       - name: Payments for capital assets
-        total_budget: 250261000.0
+        total_budget: 250261000
         type: economic_classification_2
       name: Capital
       type: economic_classification_1
     - items:
       - name: Current payments
-        total_budget: 1167033000.0
+        total_budget: 1167033000
         type: economic_classification_2
       - name: Transfers and subsidies
-        total_budget: 1227000.0
+        total_budget: 1227000
         type: economic_classification_2
       name: Current
       type: economic_classification_1
@@ -481,16 +484,16 @@ economic_classification_by_programme:
   - items:
     - items:
       - name: Payments for capital assets
-        total_budget: 2069000.0
+        total_budget: 2069000
         type: economic_classification_2
       name: Capital
       type: economic_classification_1
     - items:
       - name: Current payments
-        total_budget: 464850000.0
+        total_budget: 464850000
         type: economic_classification_2
       - name: Transfers and subsidies
-        total_budget: 26000.0
+        total_budget: 26000
         type: economic_classification_2
       name: Current
       type: economic_classification_1
@@ -499,16 +502,16 @@ economic_classification_by_programme:
   - items:
     - items:
       - name: Payments for capital assets
-        total_budget: 30020000.0
+        total_budget: 30020000
         type: economic_classification_2
       name: Capital
       type: economic_classification_1
     - items:
       - name: Current payments
-        total_budget: 2897197000.0
+        total_budget: 2897197000
         type: economic_classification_2
       - name: Transfers and subsidies
-        total_budget: 4440000.0
+        total_budget: 4440000
         type: economic_classification_2
       name: Current
       type: economic_classification_1
@@ -517,7 +520,7 @@ economic_classification_by_programme:
   - items:
     - items:
       - name: Transfers and subsidies
-        total_budget: 635231000.0
+        total_budget: 635231000
         type: economic_classification_2
       name: Current
       type: economic_classification_1
@@ -526,16 +529,16 @@ economic_classification_by_programme:
   - items:
     - items:
       - name: Payments for capital assets
-        total_budget: 1613000.0
+        total_budget: 1613000
         type: economic_classification_2
       name: Capital
       type: economic_classification_1
     - items:
       - name: Current payments
-        total_budget: 244404000.0
+        total_budget: 244404000
         type: economic_classification_2
       - name: Transfers and subsidies
-        total_budget: 263000.0
+        total_budget: 263000
         type: economic_classification_2
       name: Current
       type: economic_classification_1
@@ -546,25 +549,25 @@ expenditure_over_time:
   expenditure:
     base_financial_year: 2017-18
     nominal:
-    - amount: 5021826000.0
+    - amount: 5021826000
       financial_year: 2011-12
       phase: Audited Outcome
-    - amount: 5185076000.0
+    - amount: 5185076000
       financial_year: 2012-13
       phase: Audited Outcome
-    - amount: 5871296000.0
+    - amount: 5871296000
       financial_year: 2013-14
       phase: Audited Outcome
-    - amount: 6104324000.0
+    - amount: 6104324000
       financial_year: 2014-15
       phase: Adjusted appropriation
-    - amount: 5698634000.0
+    - amount: 5698634000
       financial_year: 2015-16
       phase: Main appropriation
-    - amount: 5943556000.0
+    - amount: 5943556000
       financial_year: 2016-17
       phase: Medium Term Estimates
-    - amount: 6543251000.0
+    - amount: 6543251000
       financial_year: 2017-18
       phase: Medium Term Estimates
     real:
@@ -639,70 +642,70 @@ is_vote_primary: true
 name: International Relations and Cooperation
 programme_by_economic_classification:
   dataset_detail_page: /datasets/estimates-of-national-expenditure/estimates-of-national-expenditure-2015-16
-  department_data_csv: https://datamanager.vulekamali.gov.za/csv/?api_url=https%3A//openspending.org/api/3/cubes/b9d2af843f3a7ca223eea07fb608e62a%3Aestimates-of-national-expenditure-south-africa-2015-16/aggregate/%3Fcut%3Dfinancial_year.financial_year%253A2015%257Cvote_number.department%253A%2522International%2BRelations%2Band%2BCooperation%2522%26drilldown%3Dbudget_phase.budget_phase%257Ceconomic_classification_1.economic_classification_1%257Ceconomic_classification_2.economic_classification_2%257Ceconomic_classification_3.economic_classification_3%257Ceconomic_classification_4.economic_classification_4%257Cfinancial_year.financial_year%257Cprogramme_number.programme%257Cprogramme_number.programme_number%257Csubprogramme_number.subprogramme%257Csubprogramme_number.subprogramme_number%257Cvote_number.department%257Cvote_number.vote_number%26pagesize%3D10000
+  department_data_csv: https://datamanager.vulekamali.gov.za/csv/?api_url=https%3A//openspending.org/api/3/cubes/b9d2af843f3a7ca223eea07fb608e62a%3Aestimates-of-national-expenditure-2015-16-uploaded-2019-01-25t0215/aggregate/%3Fcut%3Dfinyear.finyear%253A2015%257Cvoteno.department%253A%2522International%2BRelations%2Band%2BCooperation%2522%26drilldown%3Dbudget_phase.budget_phase%257Cecon1.econ1%257Cecon2.econ2%257Cecon3.econ3%257Cecon4.econ4%257Cecon5.econ5%257Cfg1.fg1%257Cfg2.fg2%257Cfinyear.finyear%257Cprogno.progno%257Cprogno.programme%257Csprogno.sprogno%257Csprogno.subprogramme%257Cvoteno.department%257Cvoteno.voteno%26pagesize%3D10000
   econ_classes:
   - items:
     - name: Administration
-      total_budget: 250261000.0
+      total_budget: 250261000
       type: programme
     - name: International Relations
-      total_budget: 30020000.0
+      total_budget: 30020000
       type: programme
     - name: International Cooperation
-      total_budget: 2069000.0
+      total_budget: 2069000
       type: programme
     - name: Public Diplomacy and Protocol Services
-      total_budget: 1613000.0
+      total_budget: 1613000
       type: programme
     name: Capital - Payments for capital assets
     type: economic_classification_1_and_2
   - items:
     - name: International Relations
-      total_budget: 2897197000.0
+      total_budget: 2897197000
       type: programme
     - name: Administration
-      total_budget: 1167033000.0
+      total_budget: 1167033000
       type: programme
     - name: International Cooperation
-      total_budget: 464850000.0
+      total_budget: 464850000
       type: programme
     - name: Public Diplomacy and Protocol Services
-      total_budget: 244404000.0
+      total_budget: 244404000
       type: programme
     name: Current - Current payments
     type: economic_classification_1_and_2
   - items:
     - name: International Transfers
-      total_budget: 635231000.0
+      total_budget: 635231000
       type: programme
     - name: International Relations
-      total_budget: 4440000.0
+      total_budget: 4440000
       type: programme
     - name: Administration
-      total_budget: 1227000.0
+      total_budget: 1227000
       type: programme
     - name: Public Diplomacy and Protocol Services
-      total_budget: 263000.0
+      total_budget: 263000
       type: programme
     - name: International Cooperation
-      total_budget: 26000.0
+      total_budget: 26000
       type: programme
     name: Current - Transfers and subsidies
     type: economic_classification_1_and_2
 programmes:
   dataset_detail_page: /datasets/estimates-of-national-expenditure/estimates-of-national-expenditure-2015-16
-  department_data_csv: https://datamanager.vulekamali.gov.za/csv/?api_url=https%3A//openspending.org/api/3/cubes/b9d2af843f3a7ca223eea07fb608e62a%3Aestimates-of-national-expenditure-south-africa-2015-16/aggregate/%3Fcut%3Dfinancial_year.financial_year%253A2015%257Cvote_number.department%253A%2522International%2BRelations%2Band%2BCooperation%2522%26drilldown%3Dbudget_phase.budget_phase%257Ceconomic_classification_1.economic_classification_1%257Ceconomic_classification_2.economic_classification_2%257Ceconomic_classification_3.economic_classification_3%257Ceconomic_classification_4.economic_classification_4%257Cfinancial_year.financial_year%257Cprogramme_number.programme%257Cprogramme_number.programme_number%257Csubprogramme_number.subprogramme%257Csubprogramme_number.subprogramme_number%257Cvote_number.department%257Cvote_number.vote_number%26pagesize%3D10000
+  department_data_csv: https://datamanager.vulekamali.gov.za/csv/?api_url=https%3A//openspending.org/api/3/cubes/b9d2af843f3a7ca223eea07fb608e62a%3Aestimates-of-national-expenditure-2015-16-uploaded-2019-01-25t0215/aggregate/%3Fcut%3Dfinyear.finyear%253A2015%257Cvoteno.department%253A%2522International%2BRelations%2Band%2BCooperation%2522%26drilldown%3Dbudget_phase.budget_phase%257Cecon1.econ1%257Cecon2.econ2%257Cecon3.econ3%257Cecon4.econ4%257Cecon5.econ5%257Cfg1.fg1%257Cfg2.fg2%257Cfinyear.finyear%257Cprogno.progno%257Cprogno.programme%257Csprogno.sprogno%257Csprogno.subprogramme%257Cvoteno.department%257Cvoteno.voteno%26pagesize%3D10000
   programme_budgets:
   - name: Administration
-    total_budget: 1418521000.0
+    total_budget: 1418521000
   - name: International Relations
-    total_budget: 2931657000.0
+    total_budget: 2931657000
   - name: International Cooperation
-    total_budget: 466945000.0
+    total_budget: 466945000
   - name: Public Diplomacy and Protocol Services
-    total_budget: 246280000.0
+    total_budget: 246280000
   - name: International Transfers
-    total_budget: 635231000.0
+    total_budget: 635231000
 selected_financial_year: 2015-16
 selected_tab: departments
 slug: international-relations-and-cooperation
@@ -711,80 +714,80 @@ sphere:
   slug: national
 subprogramme_by_programme:
   dataset_detail_page: /datasets/estimates-of-national-expenditure/estimates-of-national-expenditure-2015-16
-  department_data_csv: https://datamanager.vulekamali.gov.za/csv/?api_url=https%3A//openspending.org/api/3/cubes/b9d2af843f3a7ca223eea07fb608e62a%3Aestimates-of-national-expenditure-south-africa-2015-16/aggregate/%3Fcut%3Dfinancial_year.financial_year%253A2015%257Cvote_number.department%253A%2522International%2BRelations%2Band%2BCooperation%2522%26drilldown%3Dbudget_phase.budget_phase%257Ceconomic_classification_1.economic_classification_1%257Ceconomic_classification_2.economic_classification_2%257Ceconomic_classification_3.economic_classification_3%257Ceconomic_classification_4.economic_classification_4%257Cfinancial_year.financial_year%257Cprogramme_number.programme%257Cprogramme_number.programme_number%257Csubprogramme_number.subprogramme%257Csubprogramme_number.subprogramme_number%257Cvote_number.department%257Cvote_number.vote_number%26pagesize%3D10000
+  department_data_csv: https://datamanager.vulekamali.gov.za/csv/?api_url=https%3A//openspending.org/api/3/cubes/b9d2af843f3a7ca223eea07fb608e62a%3Aestimates-of-national-expenditure-2015-16-uploaded-2019-01-25t0215/aggregate/%3Fcut%3Dfinyear.finyear%253A2015%257Cvoteno.department%253A%2522International%2BRelations%2Band%2BCooperation%2522%26drilldown%3Dbudget_phase.budget_phase%257Cecon1.econ1%257Cecon2.econ2%257Cecon3.econ3%257Cecon4.econ4%257Cecon5.econ5%257Cfg1.fg1%257Cfg2.fg2%257Cfinyear.finyear%257Cprogno.progno%257Cprogno.programme%257Csprogno.sprogno%257Csprogno.subprogramme%257Cvoteno.department%257Cvoteno.voteno%26pagesize%3D10000
   programmes:
   - items:
     - name: Corporate Services
-      total_budget: 642618000.0
+      total_budget: 642618000
       type: subprogramme
     - name: Office Accommodation
-      total_budget: 312169000.0
+      total_budget: 312169000
       type: subprogramme
     - name: Foreign Fixed Assets Management
-      total_budget: 223838000.0
+      total_budget: 223838000
       type: subprogramme
     - name: Financial Management
-      total_budget: 130953000.0
+      total_budget: 130953000
       type: subprogramme
     - name: Diplomatic Training, Research and Development
-      total_budget: 66493000.0
+      total_budget: 66493000
       type: subprogramme
     - name: Audit Services
-      total_budget: 19832000.0
+      total_budget: 19832000
       type: subprogramme
     - name: Departmental Management
-      total_budget: 16388000.0
+      total_budget: 16388000
       type: subprogramme
     - name: Ministry
-      total_budget: 6230000.0
+      total_budget: 6230000
       type: subprogramme
     name: Administration
     type: programme
   - items:
     - name: Global System of Governance
-      total_budget: 253330000.0
+      total_budget: 253330000
       type: subprogramme
     - name: Continental Cooperation
-      total_budget: 133604000.0
+      total_budget: 133604000
       type: subprogramme
     - name: North-South Dialogue
-      total_budget: 76325000.0
+      total_budget: 76325000
       type: subprogramme
     - name: South-South Cooperation
-      total_budget: 3686000.0
+      total_budget: 3686000
       type: subprogramme
     name: International Cooperation
     type: programme
   - items:
     - name: Africa
-      total_budget: 885923000.0
+      total_budget: 885923000
       type: subprogramme
     - name: Europe
-      total_budget: 809757000.0
+      total_budget: 809757000
       type: subprogramme
     - name: Asia and Middle East
-      total_budget: 734839000.0
+      total_budget: 734839000
       type: subprogramme
     - name: Americas and Caribbean
-      total_budget: 501138000.0
+      total_budget: 501138000
       type: subprogramme
     name: International Relations
     type: programme
   - items:
     - name: Membership contribution
-      total_budget: 481194000.0
+      total_budget: 481194000
       type: subprogramme
     - name: Departmental agencies
-      total_budget: 154037000.0
+      total_budget: 154037000
       type: subprogramme
     name: International Transfers
     type: programme
   - items:
     - name: Protocol Services
-      total_budget: 183935000.0
+      total_budget: 183935000
       type: subprogramme
     - name: Public Diplomacy
-      total_budget: 62345000.0
+      total_budget: 62345000
       type: subprogramme
     name: Public Diplomacy and Protocol Services
     type: programme
