@@ -11,7 +11,7 @@ adjusted_budget_summary:
     name: Significant and unforeseeable economic and financial events
     type: kind
   dataset_detail_page: /datasets/adjusted-estimates-of-national-expenditure/adjusted-estimates-of-national-expenditure-2015-16
-  department_data_csv: https://datamanager-staging.vulekamali.gov.za/csv/?api_url=https%3A//openspending.org/api/3/cubes/b9d2af843f3a7ca223eea07fb608e62a%3Aadjusted-estimates-of-national-expenditure-2015-16-uploaded-2018-12-14t1118/aggregate/%3Fcut%3Dfinyear.finyear%253A2015%257Cvoteno.department%253AHigher%2BEducation%2Band%2BTraining%26drilldown%3Dbudget_phase.budget_phase%257Cecon1.econ1%257Cecon2.econ2%257Cecon3.econ3%257Cecon4.econ4%257Cecon5.econ5%257Cfinyear.finyear%257Cfy_descript.fy_descript%257Cprogno.progno%257Cprogno.programme%257Csprogno.sprogno%257Csprogno.subprogramme%257Cvoteno.department%257Cvoteno.voteno%26pagesize%3D10000
+  department_data_csv: https://datamanager.vulekamali.gov.za/csv/?api_url=https%3A//openspending.org/api/3/cubes/b9d2af843f3a7ca223eea07fb608e62a%3Aadjusted-estimates-of-national-expenditure-2015-16-uploaded-2018-12-14t1118/aggregate/%3Fcut%3Dfinyear.finyear%253A2015%257Cvoteno.department%253AHigher%2BEducation%2Band%2BTraining%26drilldown%3Dbudget_phase.budget_phase%257Cecon1.econ1%257Cecon2.econ2%257Cecon3.econ3%257Cecon4.econ4%257Cecon5.econ5%257Cfinyear.finyear%257Cfy_descript.fy_descript%257Cprogno.progno%257Cprogno.programme%257Csprogno.sprogno%257Csprogno.subprogramme%257Cvoteno.department%257Cvoteno.voteno%26pagesize%3D10000
   direct_charges:
   - amount: 222000000
     label: National Skills Fund
@@ -169,11 +169,61 @@ budget_actual:
       financial_year: 2014-15
       phase: Audit Outcome
   notices:
-  - Please note that the data for 2012, 2013 and 2014 has not been published on vulekamali.
+  - Please note that the data for 2014, 2012 and 2013 has not been published on vulekamali.
 budget_actual_programmes:
   dataset_detail_page: /datasets/budgeted-and-actual-national-expenditure/budgeted-and-actual-national-expenditure
   notices: []
   programmes:
+  - items:
+    - amount: 54843000.0
+      financial_year: 2015-16
+      phase: Main appropriation
+    - amount: 58253000
+      financial_year: 2015-16
+      phase: Adjusted appropriation
+    - amount: 55249000
+      financial_year: 2015-16
+      phase: Final Appropriation
+    - amount: 52019000
+      financial_year: 2015-16
+      phase: Audit Outcome
+    - amount: null
+      financial_year: 2012-13
+      phase: Main appropriation
+    - amount: null
+      financial_year: 2012-13
+      phase: Adjusted appropriation
+    - amount: null
+      financial_year: 2012-13
+      phase: Final Appropriation
+    - amount: null
+      financial_year: 2012-13
+      phase: Audit Outcome
+    - amount: null
+      financial_year: 2013-14
+      phase: Main appropriation
+    - amount: null
+      financial_year: 2013-14
+      phase: Adjusted appropriation
+    - amount: null
+      financial_year: 2013-14
+      phase: Final Appropriation
+    - amount: null
+      financial_year: 2013-14
+      phase: Audit Outcome
+    - amount: null
+      financial_year: 2014-15
+      phase: Main appropriation
+    - amount: null
+      financial_year: 2014-15
+      phase: Adjusted appropriation
+    - amount: null
+      financial_year: 2014-15
+      phase: Final Appropriation
+    - amount: null
+      financial_year: 2014-15
+      phase: Audit Outcome
+    name: Human Resource Development, Planning and Monitoring Coordination
   - items:
     - amount: 110699000.0
       financial_year: 2015-16
@@ -224,56 +274,6 @@ budget_actual_programmes:
       financial_year: 2014-15
       phase: Audit Outcome
     name: Skills Development
-  - items:
-    - amount: 14690000000.0
-      financial_year: 2015-16
-      phase: Main appropriation
-    - amount: 15800000000
-      financial_year: 2015-16
-      phase: Adjusted appropriation
-    - amount: 15156433000
-      financial_year: 2015-16
-      phase: Final Appropriation
-    - amount: 15156433000
-      financial_year: 2015-16
-      phase: Audit Outcome
-    - amount: null
-      financial_year: 2012-13
-      phase: Main appropriation
-    - amount: null
-      financial_year: 2012-13
-      phase: Adjusted appropriation
-    - amount: null
-      financial_year: 2012-13
-      phase: Final Appropriation
-    - amount: null
-      financial_year: 2012-13
-      phase: Audit Outcome
-    - amount: null
-      financial_year: 2013-14
-      phase: Main appropriation
-    - amount: null
-      financial_year: 2013-14
-      phase: Adjusted appropriation
-    - amount: null
-      financial_year: 2013-14
-      phase: Final Appropriation
-    - amount: null
-      financial_year: 2013-14
-      phase: Audit Outcome
-    - amount: null
-      financial_year: 2014-15
-      phase: Main appropriation
-    - amount: null
-      financial_year: 2014-15
-      phase: Adjusted appropriation
-    - amount: null
-      financial_year: 2014-15
-      phase: Final Appropriation
-    - amount: null
-      financial_year: 2014-15
-      phase: Audit Outcome
-    name: Direct charge against the National Revenue Fund
   - items:
     - amount: 318318000.0
       financial_year: 2015-16
@@ -375,16 +375,16 @@ budget_actual_programmes:
       phase: Audit Outcome
     name: Vocational and Continuing Education and Training
   - items:
-    - amount: 54843000.0
+    - amount: 14690000000.0
       financial_year: 2015-16
       phase: Main appropriation
-    - amount: 58253000
+    - amount: 15800000000
       financial_year: 2015-16
       phase: Adjusted appropriation
-    - amount: 55249000
+    - amount: 15156433000
       financial_year: 2015-16
       phase: Final Appropriation
-    - amount: 52019000
+    - amount: 15156433000
       financial_year: 2015-16
       phase: Audit Outcome
     - amount: null
@@ -423,7 +423,7 @@ budget_actual_programmes:
     - amount: null
       financial_year: 2014-15
       phase: Audit Outcome
-    name: Human Resource Development, Planning and Monitoring Coordination
+    name: Direct charge against the National Revenue Fund
   - items:
     - amount: 32844325000.0
       financial_year: 2015-16
@@ -516,21 +516,21 @@ description: 'National department: Higher Education and Training budget data for
   2015-16 financial year from National Treasury in partnership with IMALI YETHU.'
 economic_classification_by_programme:
   dataset_detail_page: /datasets/estimates-of-national-expenditure/estimates-of-national-expenditure-2015-16
-  department_data_csv: https://datamanager-staging.vulekamali.gov.za/csv/?api_url=https%3A//openspending.org/api/3/cubes/b9d2af843f3a7ca223eea07fb608e62a%3Aestimates-of-national-expenditure-south-africa-2015-16/aggregate/%3Fcut%3Dfinancial_year.financial_year%253A2015%257Cvote_number.department%253A%2522Higher%2BEducation%2Band%2BTraining%2522%26drilldown%3Dbudget_phase.budget_phase%257Ceconomic_classification_1.economic_classification_1%257Ceconomic_classification_2.economic_classification_2%257Ceconomic_classification_3.economic_classification_3%257Ceconomic_classification_4.economic_classification_4%257Cfinancial_year.financial_year%257Cprogramme_number.programme%257Cprogramme_number.programme_number%257Csubprogramme_number.subprogramme%257Csubprogramme_number.subprogramme_number%257Cvote_number.department%257Cvote_number.vote_number%26pagesize%3D10000
+  department_data_csv: https://datamanager.vulekamali.gov.za/csv/?api_url=https%3A//openspending.org/api/3/cubes/b9d2af843f3a7ca223eea07fb608e62a%3Aestimates-of-national-expenditure-2015-16-uploaded-2019-01-25t0215/aggregate/%3Fcut%3Dfinyear.finyear%253A2015%257Cvoteno.department%253A%2522Higher%2BEducation%2Band%2BTraining%2522%26drilldown%3Dbudget_phase.budget_phase%257Cecon1.econ1%257Cecon2.econ2%257Cecon3.econ3%257Cecon4.econ4%257Cecon5.econ5%257Cfg1.fg1%257Cfg2.fg2%257Cfinyear.finyear%257Cprogno.progno%257Cprogno.programme%257Csprogno.sprogno%257Csprogno.subprogramme%257Cvoteno.department%257Cvoteno.voteno%26pagesize%3D10000
   programmes:
   - items:
     - items:
       - name: Payments for capital assets
-        total_budget: 6658000.0
+        total_budget: 6658000
         type: economic_classification_2
       name: Capital
       type: economic_classification_1
     - items:
       - name: Current payments
-        total_budget: 311347000.0
+        total_budget: 311347000
         type: economic_classification_2
       - name: Transfers and subsidies
-        total_budget: 313000.0
+        total_budget: 313000
         type: economic_classification_2
       name: Current
       type: economic_classification_1
@@ -539,7 +539,7 @@ economic_classification_by_programme:
   - items:
     - items:
       - name: Transfers and subsidies
-        total_budget: 14690000000.0
+        total_budget: 14690000000
         type: economic_classification_2
       name: Current
       type: economic_classification_1
@@ -548,16 +548,16 @@ economic_classification_by_programme:
   - items:
     - items:
       - name: Payments for capital assets
-        total_budget: 628000.0
+        total_budget: 628000
         type: economic_classification_2
       name: Capital
       type: economic_classification_1
     - items:
       - name: Current payments
-        total_budget: 51059000.0
+        total_budget: 51059000
         type: economic_classification_2
       - name: Transfers and subsidies
-        total_budget: 3156000.0
+        total_budget: 3156000
         type: economic_classification_2
       name: Current
       type: economic_classification_1
@@ -566,16 +566,16 @@ economic_classification_by_programme:
   - items:
     - items:
       - name: Payments for capital assets
-        total_budget: 1168000.0
+        total_budget: 1168000
         type: economic_classification_2
       name: Capital
       type: economic_classification_1
     - items:
       - name: Current payments
-        total_budget: 87683000.0
+        total_budget: 87683000
         type: economic_classification_2
       - name: Transfers and subsidies
-        total_budget: 21848000.0
+        total_budget: 21848000
         type: economic_classification_2
       name: Current
       type: economic_classification_1
@@ -584,19 +584,19 @@ economic_classification_by_programme:
   - items:
     - items:
       - name: Transfers and subsidies
-        total_budget: 3314798000.0
+        total_budget: 3314798000
         type: economic_classification_2
       - name: Payments for capital assets
-        total_budget: 304000.0
+        total_budget: 304000
         type: economic_classification_2
       name: Capital
       type: economic_classification_1
     - items:
       - name: Transfers and subsidies
-        total_budget: 29480317000.0
+        total_budget: 29480317000
         type: economic_classification_2
       - name: Current payments
-        total_budget: 48906000.0
+        total_budget: 48906000
         type: economic_classification_2
       name: Current
       type: economic_classification_1
@@ -605,16 +605,16 @@ economic_classification_by_programme:
   - items:
     - items:
       - name: Payments for capital assets
-        total_budget: 3568000.0
+        total_budget: 3568000
         type: economic_classification_2
       name: Capital
       type: economic_classification_1
     - items:
       - name: Current payments
-        total_budget: 7302181000.0
+        total_budget: 7302181000
         type: economic_classification_2
       - name: Transfers and subsidies
-        total_budget: 1210021000.0
+        total_budget: 1210021000
         type: economic_classification_2
       name: Current
       type: economic_classification_1
@@ -625,25 +625,25 @@ expenditure_over_time:
   expenditure:
     base_financial_year: 2017-18
     nominal:
-    - amount: 40050115000.0
+    - amount: 40050115000
       financial_year: 2011-12
       phase: Audited Outcome
-    - amount: 45168370000.0
+    - amount: 45168370000
       financial_year: 2012-13
       phase: Audited Outcome
-    - amount: 48460204000.0
+    - amount: 48460204000
       financial_year: 2013-14
       phase: Audited Outcome
-    - amount: 52188456000.0
+    - amount: 52188456000
       financial_year: 2014-15
       phase: Adjusted appropriation
-    - amount: 56533955000.0
+    - amount: 56533955000
       financial_year: 2015-16
       phase: Main appropriation
-    - amount: 60234246000.0
+    - amount: 60234246000
       financial_year: 2016-17
       phase: Medium Term Estimates
-    - amount: 63717020000.0
+    - amount: 63717020000
       financial_year: 2017-18
       phase: Medium Term Estimates
     real:
@@ -718,87 +718,87 @@ is_vote_primary: true
 name: Higher Education and Training
 programme_by_economic_classification:
   dataset_detail_page: /datasets/estimates-of-national-expenditure/estimates-of-national-expenditure-2015-16
-  department_data_csv: https://datamanager-staging.vulekamali.gov.za/csv/?api_url=https%3A//openspending.org/api/3/cubes/b9d2af843f3a7ca223eea07fb608e62a%3Aestimates-of-national-expenditure-south-africa-2015-16/aggregate/%3Fcut%3Dfinancial_year.financial_year%253A2015%257Cvote_number.department%253A%2522Higher%2BEducation%2Band%2BTraining%2522%26drilldown%3Dbudget_phase.budget_phase%257Ceconomic_classification_1.economic_classification_1%257Ceconomic_classification_2.economic_classification_2%257Ceconomic_classification_3.economic_classification_3%257Ceconomic_classification_4.economic_classification_4%257Cfinancial_year.financial_year%257Cprogramme_number.programme%257Cprogramme_number.programme_number%257Csubprogramme_number.subprogramme%257Csubprogramme_number.subprogramme_number%257Cvote_number.department%257Cvote_number.vote_number%26pagesize%3D10000
+  department_data_csv: https://datamanager.vulekamali.gov.za/csv/?api_url=https%3A//openspending.org/api/3/cubes/b9d2af843f3a7ca223eea07fb608e62a%3Aestimates-of-national-expenditure-2015-16-uploaded-2019-01-25t0215/aggregate/%3Fcut%3Dfinyear.finyear%253A2015%257Cvoteno.department%253A%2522Higher%2BEducation%2Band%2BTraining%2522%26drilldown%3Dbudget_phase.budget_phase%257Cecon1.econ1%257Cecon2.econ2%257Cecon3.econ3%257Cecon4.econ4%257Cecon5.econ5%257Cfg1.fg1%257Cfg2.fg2%257Cfinyear.finyear%257Cprogno.progno%257Cprogno.programme%257Csprogno.sprogno%257Csprogno.subprogramme%257Cvoteno.department%257Cvoteno.voteno%26pagesize%3D10000
   econ_classes:
   - items:
     - name: Administration
-      total_budget: 6658000.0
+      total_budget: 6658000
       type: programme
     - name: Vocational and Continuing Education and Training
-      total_budget: 3568000.0
+      total_budget: 3568000
       type: programme
     - name: Skills Development
-      total_budget: 1168000.0
+      total_budget: 1168000
       type: programme
     - name: Human Resource Development, Planning and Monitoring Coordination
-      total_budget: 628000.0
+      total_budget: 628000
       type: programme
     - name: University Education
-      total_budget: 304000.0
+      total_budget: 304000
       type: programme
     name: Capital - Payments for capital assets
     type: economic_classification_1_and_2
   - items:
     - name: University Education
-      total_budget: 3314798000.0
+      total_budget: 3314798000
       type: programme
     name: Capital - Transfers and subsidies
     type: economic_classification_1_and_2
   - items:
     - name: Vocational and Continuing Education and Training
-      total_budget: 7302181000.0
+      total_budget: 7302181000
       type: programme
     - name: Administration
-      total_budget: 311347000.0
+      total_budget: 311347000
       type: programme
     - name: Skills Development
-      total_budget: 87683000.0
+      total_budget: 87683000
       type: programme
     - name: Human Resource Development, Planning and Monitoring Coordination
-      total_budget: 51059000.0
+      total_budget: 51059000
       type: programme
     - name: University Education
-      total_budget: 48906000.0
+      total_budget: 48906000
       type: programme
     name: Current - Current payments
     type: economic_classification_1_and_2
   - items:
     - name: University Education
-      total_budget: 29480317000.0
+      total_budget: 29480317000
       type: programme
     - name: Direct charge against the National Revenue Fund
-      total_budget: 14690000000.0
+      total_budget: 14690000000
       type: programme
     - name: Vocational and Continuing Education and Training
-      total_budget: 1210021000.0
+      total_budget: 1210021000
       type: programme
     - name: Skills Development
-      total_budget: 21848000.0
+      total_budget: 21848000
       type: programme
     - name: Human Resource Development, Planning and Monitoring Coordination
-      total_budget: 3156000.0
+      total_budget: 3156000
       type: programme
     - name: Administration
-      total_budget: 313000.0
+      total_budget: 313000
       type: programme
     name: Current - Transfers and subsidies
     type: economic_classification_1_and_2
 programmes:
   dataset_detail_page: /datasets/estimates-of-national-expenditure/estimates-of-national-expenditure-2015-16
-  department_data_csv: https://datamanager-staging.vulekamali.gov.za/csv/?api_url=https%3A//openspending.org/api/3/cubes/b9d2af843f3a7ca223eea07fb608e62a%3Aestimates-of-national-expenditure-south-africa-2015-16/aggregate/%3Fcut%3Dfinancial_year.financial_year%253A2015%257Cvote_number.department%253A%2522Higher%2BEducation%2Band%2BTraining%2522%26drilldown%3Dbudget_phase.budget_phase%257Ceconomic_classification_1.economic_classification_1%257Ceconomic_classification_2.economic_classification_2%257Ceconomic_classification_3.economic_classification_3%257Ceconomic_classification_4.economic_classification_4%257Cfinancial_year.financial_year%257Cprogramme_number.programme%257Cprogramme_number.programme_number%257Csubprogramme_number.subprogramme%257Csubprogramme_number.subprogramme_number%257Cvote_number.department%257Cvote_number.vote_number%26pagesize%3D10000
+  department_data_csv: https://datamanager.vulekamali.gov.za/csv/?api_url=https%3A//openspending.org/api/3/cubes/b9d2af843f3a7ca223eea07fb608e62a%3Aestimates-of-national-expenditure-2015-16-uploaded-2019-01-25t0215/aggregate/%3Fcut%3Dfinyear.finyear%253A2015%257Cvoteno.department%253A%2522Higher%2BEducation%2Band%2BTraining%2522%26drilldown%3Dbudget_phase.budget_phase%257Cecon1.econ1%257Cecon2.econ2%257Cecon3.econ3%257Cecon4.econ4%257Cecon5.econ5%257Cfg1.fg1%257Cfg2.fg2%257Cfinyear.finyear%257Cprogno.progno%257Cprogno.programme%257Csprogno.sprogno%257Csprogno.subprogramme%257Cvoteno.department%257Cvoteno.voteno%26pagesize%3D10000
   programme_budgets:
   - name: Administration
-    total_budget: 318318000.0
+    total_budget: 318318000
   - name: Direct charge against the National Revenue Fund
-    total_budget: 14690000000.0
+    total_budget: 14690000000
   - name: Human Resource Development, Planning and Monitoring Coordination
-    total_budget: 54843000.0
+    total_budget: 54843000
   - name: University Education
-    total_budget: 32844325000.0
+    total_budget: 32844325000
   - name: Vocational and Continuing Education and Training
-    total_budget: 8515770000.0
+    total_budget: 8515770000
   - name: Skills Development
-    total_budget: 110699000.0
+    total_budget: 110699000
 selected_financial_year: 2015-16
 selected_tab: departments
 slug: higher-education-and-training
@@ -807,108 +807,108 @@ sphere:
   slug: national
 subprogramme_by_programme:
   dataset_detail_page: /datasets/estimates-of-national-expenditure/estimates-of-national-expenditure-2015-16
-  department_data_csv: https://datamanager-staging.vulekamali.gov.za/csv/?api_url=https%3A//openspending.org/api/3/cubes/b9d2af843f3a7ca223eea07fb608e62a%3Aestimates-of-national-expenditure-south-africa-2015-16/aggregate/%3Fcut%3Dfinancial_year.financial_year%253A2015%257Cvote_number.department%253A%2522Higher%2BEducation%2Band%2BTraining%2522%26drilldown%3Dbudget_phase.budget_phase%257Ceconomic_classification_1.economic_classification_1%257Ceconomic_classification_2.economic_classification_2%257Ceconomic_classification_3.economic_classification_3%257Ceconomic_classification_4.economic_classification_4%257Cfinancial_year.financial_year%257Cprogramme_number.programme%257Cprogramme_number.programme_number%257Csubprogramme_number.subprogramme%257Csubprogramme_number.subprogramme_number%257Cvote_number.department%257Cvote_number.vote_number%26pagesize%3D10000
+  department_data_csv: https://datamanager.vulekamali.gov.za/csv/?api_url=https%3A//openspending.org/api/3/cubes/b9d2af843f3a7ca223eea07fb608e62a%3Aestimates-of-national-expenditure-2015-16-uploaded-2019-01-25t0215/aggregate/%3Fcut%3Dfinyear.finyear%253A2015%257Cvoteno.department%253A%2522Higher%2BEducation%2Band%2BTraining%2522%26drilldown%3Dbudget_phase.budget_phase%257Cecon1.econ1%257Cecon2.econ2%257Cecon3.econ3%257Cecon4.econ4%257Cecon5.econ5%257Cfg1.fg1%257Cfg2.fg2%257Cfinyear.finyear%257Cprogno.progno%257Cprogno.programme%257Csprogno.sprogno%257Csprogno.subprogramme%257Cvoteno.department%257Cvoteno.voteno%26pagesize%3D10000
   programmes:
   - items:
     - name: Corporate Services
-      total_budget: 105095000.0
+      total_budget: 105095000
       type: subprogramme
     - name: Office of the Chief Financial Officer
-      total_budget: 86150000.0
+      total_budget: 86150000
       type: subprogramme
     - name: Office Accommodation
-      total_budget: 52445000.0
+      total_budget: 52445000
       type: subprogramme
     - name: Department Management
-      total_budget: 35797000.0
+      total_budget: 35797000
       type: subprogramme
     - name: Ministry
-      total_budget: 28899000.0
+      total_budget: 28899000
       type: subprogramme
     - name: Internal Audit
-      total_budget: 9932000.0
+      total_budget: 9932000
       type: subprogramme
     name: Administration
     type: programme
   - items:
     - name: Sector education and training authorities
-      total_budget: 11752707000.0
+      total_budget: 11752707000
       type: subprogramme
     - name: National Skills Fund
-      total_budget: 2937293000.0
+      total_budget: 2937293000
       type: subprogramme
     name: Direct charge against the National Revenue Fund
     type: programme
   - items:
     - name: Legal and Legislative Services
-      total_budget: 15623000.0
+      total_budget: 15623000
       type: subprogramme
     - name: Human Resource Development, Strategic Planning and Coordination
-      total_budget: 11483000.0
+      total_budget: 11483000
       type: subprogramme
     - name: International Relations
-      total_budget: 11212000.0
+      total_budget: 11212000
       type: subprogramme
     - name: Planning, Information, Monitoring and Evaluation Coordination
-      total_budget: 8576000.0
+      total_budget: 8576000
       type: subprogramme
     - name: Social Inclusion in Education
-      total_budget: 4903000.0
+      total_budget: 4903000
       type: subprogramme
     - name: 'Programme Management: Human Resource Development, Planning and Monitoring
         Coordination'
-      total_budget: 3046000.0
+      total_budget: 3046000
       type: subprogramme
     name: Human Resource Development, Planning and Monitoring Coordination
     type: programme
   - items:
     - name: SETA Coordination
-      total_budget: 79045000.0
+      total_budget: 79045000
       type: subprogramme
     - name: Quality Development and Promotion
-      total_budget: 21848000.0
+      total_budget: 21848000
       type: subprogramme
     - name: National Skills Development Services
-      total_budget: 9056000.0
+      total_budget: 9056000
       type: subprogramme
     - name: 'Programme Management: Skills Development'
-      total_budget: 750000.0
+      total_budget: 750000
       type: subprogramme
     name: Skills Development
     type: programme
   - items:
     - name: University Subsidies
-      total_budget: 26243227000.0
+      total_budget: 26243227000
       type: subprogramme
     - name: University - Academic Planning and Management
-      total_budget: 6557974000.0
+      total_budget: 6557974000
       type: subprogramme
     - name: University - Policy and Development
-      total_budget: 21346000.0
+      total_budget: 21346000
       type: subprogramme
     - name: Teacher Education
-      total_budget: 11120000.0
+      total_budget: 11120000
       type: subprogramme
     - name: University - Financial Planning and Information Systems
-      total_budget: 9065000.0
+      total_budget: 9065000
       type: subprogramme
     - name: 'Programme Management: University Education'
-      total_budget: 1593000.0
+      total_budget: 1593000
       type: subprogramme
     name: University Education
     type: programme
   - items:
     - name: Planning and Institutional Support
-      total_budget: 6326714000.0
+      total_budget: 6326714000
       type: subprogramme
     - name: Programmes and Qualifications
-      total_budget: 2001223000.0
+      total_budget: 2001223000
       type: subprogramme
     - name: National Examination and Assessment
-      total_budget: 177634000.0
+      total_budget: 177634000
       type: subprogramme
     - name: 'Programme Management: Vocational and Continuing Education and Training'
-      total_budget: 10199000.0
+      total_budget: 10199000
       type: subprogramme
     name: Vocational and Continuing Education and Training
     type: programme

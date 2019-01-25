@@ -14,7 +14,7 @@ adjusted_budget_summary:
     name: Significant and unforeseeable economic and financial events
     type: kind
   dataset_detail_page: /datasets/adjusted-estimates-of-national-expenditure/adjusted-estimates-of-national-expenditure-2015-16
-  department_data_csv: https://datamanager-staging.vulekamali.gov.za/csv/?api_url=https%3A//openspending.org/api/3/cubes/b9d2af843f3a7ca223eea07fb608e62a%3Aadjusted-estimates-of-national-expenditure-2015-16-uploaded-2018-12-14t1118/aggregate/%3Fcut%3Dfinyear.finyear%253A2015%257Cvoteno.department%253APolice%26drilldown%3Dbudget_phase.budget_phase%257Cecon1.econ1%257Cecon2.econ2%257Cecon3.econ3%257Cecon4.econ4%257Cecon5.econ5%257Cfinyear.finyear%257Cfy_descript.fy_descript%257Cprogno.progno%257Cprogno.programme%257Csprogno.sprogno%257Csprogno.subprogramme%257Cvoteno.department%257Cvoteno.voteno%26pagesize%3D10000
+  department_data_csv: https://datamanager.vulekamali.gov.za/csv/?api_url=https%3A//openspending.org/api/3/cubes/b9d2af843f3a7ca223eea07fb608e62a%3Aadjusted-estimates-of-national-expenditure-2015-16-uploaded-2018-12-14t1118/aggregate/%3Fcut%3Dfinyear.finyear%253A2015%257Cvoteno.department%253APolice%26drilldown%3Dbudget_phase.budget_phase%257Cecon1.econ1%257Cecon2.econ2%257Cecon3.econ3%257Cecon4.econ4%257Cecon5.econ5%257Cfinyear.finyear%257Cfy_descript.fy_descript%257Cprogno.progno%257Cprogno.programme%257Csprogno.sprogno%257Csprogno.subprogramme%257Cvoteno.department%257Cvoteno.voteno%26pagesize%3D10000
   direct_charges: null
   econ_classes:
   - items:
@@ -166,11 +166,61 @@ budget_actual:
       financial_year: 2014-15
       phase: Audit Outcome
   notices:
-  - Please note that the data for 2012, 2013 and 2014 has not been published on vulekamali.
+  - Please note that the data for 2014, 2012 and 2013 has not been published on vulekamali.
 budget_actual_programmes:
   dataset_detail_page: /datasets/budgeted-and-actual-national-expenditure/budgeted-and-actual-national-expenditure
   notices: []
   programmes:
+  - items:
+    - amount: 2331523000.0
+      financial_year: 2015-16
+      phase: Main appropriation
+    - amount: 2427731000
+      financial_year: 2015-16
+      phase: Adjusted appropriation
+    - amount: 2414098000
+      financial_year: 2015-16
+      phase: Final Appropriation
+    - amount: 2414098000
+      financial_year: 2015-16
+      phase: Audit Outcome
+    - amount: null
+      financial_year: 2012-13
+      phase: Main appropriation
+    - amount: null
+      financial_year: 2012-13
+      phase: Adjusted appropriation
+    - amount: null
+      financial_year: 2012-13
+      phase: Final Appropriation
+    - amount: null
+      financial_year: 2012-13
+      phase: Audit Outcome
+    - amount: null
+      financial_year: 2013-14
+      phase: Main appropriation
+    - amount: null
+      financial_year: 2013-14
+      phase: Adjusted appropriation
+    - amount: null
+      financial_year: 2013-14
+      phase: Final Appropriation
+    - amount: null
+      financial_year: 2013-14
+      phase: Audit Outcome
+    - amount: null
+      financial_year: 2014-15
+      phase: Main appropriation
+    - amount: null
+      financial_year: 2014-15
+      phase: Adjusted appropriation
+    - amount: null
+      financial_year: 2014-15
+      phase: Final Appropriation
+    - amount: null
+      financial_year: 2014-15
+      phase: Audit Outcome
+    name: Protection and Security Services
   - items:
     - amount: 3110379000.0
       financial_year: 2015-16
@@ -221,6 +271,56 @@ budget_actual_programmes:
       financial_year: 2014-15
       phase: Audit Outcome
     name: Crime Intelligence
+  - items:
+    - amount: 15815983000.0
+      financial_year: 2015-16
+      phase: Main appropriation
+    - amount: 16092427000
+      financial_year: 2015-16
+      phase: Adjusted appropriation
+    - amount: 15947270000
+      financial_year: 2015-16
+      phase: Final Appropriation
+    - amount: 15947270000
+      financial_year: 2015-16
+      phase: Audit Outcome
+    - amount: null
+      financial_year: 2012-13
+      phase: Main appropriation
+    - amount: null
+      financial_year: 2012-13
+      phase: Adjusted appropriation
+    - amount: null
+      financial_year: 2012-13
+      phase: Final Appropriation
+    - amount: null
+      financial_year: 2012-13
+      phase: Audit Outcome
+    - amount: null
+      financial_year: 2013-14
+      phase: Main appropriation
+    - amount: null
+      financial_year: 2013-14
+      phase: Adjusted appropriation
+    - amount: null
+      financial_year: 2013-14
+      phase: Final Appropriation
+    - amount: null
+      financial_year: 2013-14
+      phase: Audit Outcome
+    - amount: null
+      financial_year: 2014-15
+      phase: Main appropriation
+    - amount: null
+      financial_year: 2014-15
+      phase: Adjusted appropriation
+    - amount: null
+      financial_year: 2014-15
+      phase: Final Appropriation
+    - amount: null
+      financial_year: 2014-15
+      phase: Audit Outcome
+    name: Detective Services
   - items:
     - amount: 16264210000.0
       financial_year: 2015-16
@@ -321,106 +421,6 @@ budget_actual_programmes:
       financial_year: 2014-15
       phase: Audit Outcome
     name: Visible Policing
-  - items:
-    - amount: 15815983000.0
-      financial_year: 2015-16
-      phase: Main appropriation
-    - amount: 16092427000
-      financial_year: 2015-16
-      phase: Adjusted appropriation
-    - amount: 15947270000
-      financial_year: 2015-16
-      phase: Final Appropriation
-    - amount: 15947270000
-      financial_year: 2015-16
-      phase: Audit Outcome
-    - amount: null
-      financial_year: 2012-13
-      phase: Main appropriation
-    - amount: null
-      financial_year: 2012-13
-      phase: Adjusted appropriation
-    - amount: null
-      financial_year: 2012-13
-      phase: Final Appropriation
-    - amount: null
-      financial_year: 2012-13
-      phase: Audit Outcome
-    - amount: null
-      financial_year: 2013-14
-      phase: Main appropriation
-    - amount: null
-      financial_year: 2013-14
-      phase: Adjusted appropriation
-    - amount: null
-      financial_year: 2013-14
-      phase: Final Appropriation
-    - amount: null
-      financial_year: 2013-14
-      phase: Audit Outcome
-    - amount: null
-      financial_year: 2014-15
-      phase: Main appropriation
-    - amount: null
-      financial_year: 2014-15
-      phase: Adjusted appropriation
-    - amount: null
-      financial_year: 2014-15
-      phase: Final Appropriation
-    - amount: null
-      financial_year: 2014-15
-      phase: Audit Outcome
-    name: Detective Services
-  - items:
-    - amount: 2331523000.0
-      financial_year: 2015-16
-      phase: Main appropriation
-    - amount: 2427731000
-      financial_year: 2015-16
-      phase: Adjusted appropriation
-    - amount: 2414098000
-      financial_year: 2015-16
-      phase: Final Appropriation
-    - amount: 2414098000
-      financial_year: 2015-16
-      phase: Audit Outcome
-    - amount: null
-      financial_year: 2012-13
-      phase: Main appropriation
-    - amount: null
-      financial_year: 2012-13
-      phase: Adjusted appropriation
-    - amount: null
-      financial_year: 2012-13
-      phase: Final Appropriation
-    - amount: null
-      financial_year: 2012-13
-      phase: Audit Outcome
-    - amount: null
-      financial_year: 2013-14
-      phase: Main appropriation
-    - amount: null
-      financial_year: 2013-14
-      phase: Adjusted appropriation
-    - amount: null
-      financial_year: 2013-14
-      phase: Final Appropriation
-    - amount: null
-      financial_year: 2013-14
-      phase: Audit Outcome
-    - amount: null
-      financial_year: 2014-15
-      phase: Main appropriation
-    - amount: null
-      financial_year: 2014-15
-      phase: Adjusted appropriation
-    - amount: null
-      financial_year: 2014-15
-      phase: Final Appropriation
-    - amount: null
-      financial_year: 2014-15
-      phase: Audit Outcome
-    name: Protection and Security Services
 contributed_datasets:
 - contributor: International Budget Partnership
   name: How Does Civil Society Use Budget Information?
@@ -463,21 +463,21 @@ description: 'National department: Police budget data for the 2015-16 financial 
   from National Treasury in partnership with IMALI YETHU.'
 economic_classification_by_programme:
   dataset_detail_page: /datasets/estimates-of-national-expenditure/estimates-of-national-expenditure-2015-16
-  department_data_csv: https://datamanager-staging.vulekamali.gov.za/csv/?api_url=https%3A//openspending.org/api/3/cubes/b9d2af843f3a7ca223eea07fb608e62a%3Aestimates-of-national-expenditure-south-africa-2015-16/aggregate/%3Fcut%3Dfinancial_year.financial_year%253A2015%257Cvote_number.department%253A%2522Police%2522%26drilldown%3Dbudget_phase.budget_phase%257Ceconomic_classification_1.economic_classification_1%257Ceconomic_classification_2.economic_classification_2%257Ceconomic_classification_3.economic_classification_3%257Ceconomic_classification_4.economic_classification_4%257Cfinancial_year.financial_year%257Cprogramme_number.programme%257Cprogramme_number.programme_number%257Csubprogramme_number.subprogramme%257Csubprogramme_number.subprogramme_number%257Cvote_number.department%257Cvote_number.vote_number%26pagesize%3D10000
+  department_data_csv: https://datamanager.vulekamali.gov.za/csv/?api_url=https%3A//openspending.org/api/3/cubes/b9d2af843f3a7ca223eea07fb608e62a%3Aestimates-of-national-expenditure-2015-16-uploaded-2019-01-25t0215/aggregate/%3Fcut%3Dfinyear.finyear%253A2015%257Cvoteno.department%253A%2522Police%2522%26drilldown%3Dbudget_phase.budget_phase%257Cecon1.econ1%257Cecon2.econ2%257Cecon3.econ3%257Cecon4.econ4%257Cecon5.econ5%257Cfg1.fg1%257Cfg2.fg2%257Cfinyear.finyear%257Cprogno.progno%257Cprogno.programme%257Csprogno.sprogno%257Csprogno.subprogramme%257Cvoteno.department%257Cvoteno.voteno%26pagesize%3D10000
   programmes:
   - items:
     - items:
       - name: Payments for capital assets
-        total_budget: 1265836000.0
+        total_budget: 1265836000
         type: economic_classification_2
       name: Capital
       type: economic_classification_1
     - items:
       - name: Current payments
-        total_budget: 14386575000.0
+        total_budget: 14386575000
         type: economic_classification_2
       - name: Transfers and subsidies
-        total_budget: 611799000.0
+        total_budget: 611799000
         type: economic_classification_2
       name: Current
       type: economic_classification_1
@@ -486,16 +486,16 @@ economic_classification_by_programme:
   - items:
     - items:
       - name: Payments for capital assets
-        total_budget: 36184000.0
+        total_budget: 36184000
         type: economic_classification_2
       name: Capital
       type: economic_classification_1
     - items:
       - name: Current payments
-        total_budget: 3062732000.0
+        total_budget: 3062732000
         type: economic_classification_2
       - name: Transfers and subsidies
-        total_budget: 11463000.0
+        total_budget: 11463000
         type: economic_classification_2
       name: Current
       type: economic_classification_1
@@ -504,16 +504,16 @@ economic_classification_by_programme:
   - items:
     - items:
       - name: Payments for capital assets
-        total_budget: 621346000.0
+        total_budget: 621346000
         type: economic_classification_2
       name: Capital
       type: economic_classification_1
     - items:
       - name: Current payments
-        total_budget: 15112819000.0
+        total_budget: 15112819000
         type: economic_classification_2
       - name: Transfers and subsidies
-        total_budget: 81818000.0
+        total_budget: 81818000
         type: economic_classification_2
       name: Current
       type: economic_classification_1
@@ -522,16 +522,16 @@ economic_classification_by_programme:
   - items:
     - items:
       - name: Payments for capital assets
-        total_budget: 30870000.0
+        total_budget: 30870000
         type: economic_classification_2
       name: Capital
       type: economic_classification_1
     - items:
       - name: Current payments
-        total_budget: 2295809000.0
+        total_budget: 2295809000
         type: economic_classification_2
       - name: Transfers and subsidies
-        total_budget: 4844000.0
+        total_budget: 4844000
         type: economic_classification_2
       name: Current
       type: economic_classification_1
@@ -540,16 +540,16 @@ economic_classification_by_programme:
   - items:
     - items:
       - name: Payments for capital assets
-        total_budget: 906515000.0
+        total_budget: 906515000
         type: economic_classification_2
       name: Capital
       type: economic_classification_1
     - items:
       - name: Current payments
-        total_budget: 37746512000.0
+        total_budget: 37746512000
         type: economic_classification_2
       - name: Transfers and subsidies
-        total_budget: 201937000.0
+        total_budget: 201937000
         type: economic_classification_2
       name: Current
       type: economic_classification_1
@@ -560,25 +560,25 @@ expenditure_over_time:
   expenditure:
     base_financial_year: 2017-18
     nominal:
-    - amount: 57933121000.0
+    - amount: 57933121000
       financial_year: 2011-12
       phase: Audited Outcome
-    - amount: 63156593000.0
+    - amount: 63156593000
       financial_year: 2012-13
       phase: Audited Outcome
-    - amount: 68791398000.0
+    - amount: 68791398000
       financial_year: 2013-14
       phase: Audited Outcome
-    - amount: 72507243000.0
+    - amount: 72507243000
       financial_year: 2014-15
       phase: Adjusted appropriation
-    - amount: 76377059000.0
+    - amount: 76377059000
       financial_year: 2015-16
       phase: Main appropriation
-    - amount: 80815647000.0
+    - amount: 80815647000
       financial_year: 2016-17
       phase: Medium Term Estimates
-    - amount: 86372700000.0
+    - amount: 86372700000
       financial_year: 2017-18
       phase: Medium Term Estimates
     real:
@@ -639,76 +639,76 @@ is_vote_primary: true
 name: Police
 programme_by_economic_classification:
   dataset_detail_page: /datasets/estimates-of-national-expenditure/estimates-of-national-expenditure-2015-16
-  department_data_csv: https://datamanager-staging.vulekamali.gov.za/csv/?api_url=https%3A//openspending.org/api/3/cubes/b9d2af843f3a7ca223eea07fb608e62a%3Aestimates-of-national-expenditure-south-africa-2015-16/aggregate/%3Fcut%3Dfinancial_year.financial_year%253A2015%257Cvote_number.department%253A%2522Police%2522%26drilldown%3Dbudget_phase.budget_phase%257Ceconomic_classification_1.economic_classification_1%257Ceconomic_classification_2.economic_classification_2%257Ceconomic_classification_3.economic_classification_3%257Ceconomic_classification_4.economic_classification_4%257Cfinancial_year.financial_year%257Cprogramme_number.programme%257Cprogramme_number.programme_number%257Csubprogramme_number.subprogramme%257Csubprogramme_number.subprogramme_number%257Cvote_number.department%257Cvote_number.vote_number%26pagesize%3D10000
+  department_data_csv: https://datamanager.vulekamali.gov.za/csv/?api_url=https%3A//openspending.org/api/3/cubes/b9d2af843f3a7ca223eea07fb608e62a%3Aestimates-of-national-expenditure-2015-16-uploaded-2019-01-25t0215/aggregate/%3Fcut%3Dfinyear.finyear%253A2015%257Cvoteno.department%253A%2522Police%2522%26drilldown%3Dbudget_phase.budget_phase%257Cecon1.econ1%257Cecon2.econ2%257Cecon3.econ3%257Cecon4.econ4%257Cecon5.econ5%257Cfg1.fg1%257Cfg2.fg2%257Cfinyear.finyear%257Cprogno.progno%257Cprogno.programme%257Csprogno.sprogno%257Csprogno.subprogramme%257Cvoteno.department%257Cvoteno.voteno%26pagesize%3D10000
   econ_classes:
   - items:
     - name: Administration
-      total_budget: 1265836000.0
+      total_budget: 1265836000
       type: programme
     - name: Visible Policing
-      total_budget: 906515000.0
+      total_budget: 906515000
       type: programme
     - name: Detective Services
-      total_budget: 621346000.0
+      total_budget: 621346000
       type: programme
     - name: Crime Intelligence
-      total_budget: 36184000.0
+      total_budget: 36184000
       type: programme
     - name: Protection and Security Services
-      total_budget: 30870000.0
+      total_budget: 30870000
       type: programme
     name: Capital - Payments for capital assets
     type: economic_classification_1_and_2
   - items:
     - name: Visible Policing
-      total_budget: 37746512000.0
+      total_budget: 37746512000
       type: programme
     - name: Detective Services
-      total_budget: 15112819000.0
+      total_budget: 15112819000
       type: programme
     - name: Administration
-      total_budget: 14386575000.0
+      total_budget: 14386575000
       type: programme
     - name: Crime Intelligence
-      total_budget: 3062732000.0
+      total_budget: 3062732000
       type: programme
     - name: Protection and Security Services
-      total_budget: 2295809000.0
+      total_budget: 2295809000
       type: programme
     name: Current - Current payments
     type: economic_classification_1_and_2
   - items:
     - name: Administration
-      total_budget: 611799000.0
+      total_budget: 611799000
       type: programme
     - name: Visible Policing
-      total_budget: 201937000.0
+      total_budget: 201937000
       type: programme
     - name: Detective Services
-      total_budget: 81818000.0
+      total_budget: 81818000
       type: programme
     - name: Crime Intelligence
-      total_budget: 11463000.0
+      total_budget: 11463000
       type: programme
     - name: Protection and Security Services
-      total_budget: 4844000.0
+      total_budget: 4844000
       type: programme
     name: Current - Transfers and subsidies
     type: economic_classification_1_and_2
 programmes:
   dataset_detail_page: /datasets/estimates-of-national-expenditure/estimates-of-national-expenditure-2015-16
-  department_data_csv: https://datamanager-staging.vulekamali.gov.za/csv/?api_url=https%3A//openspending.org/api/3/cubes/b9d2af843f3a7ca223eea07fb608e62a%3Aestimates-of-national-expenditure-south-africa-2015-16/aggregate/%3Fcut%3Dfinancial_year.financial_year%253A2015%257Cvote_number.department%253A%2522Police%2522%26drilldown%3Dbudget_phase.budget_phase%257Ceconomic_classification_1.economic_classification_1%257Ceconomic_classification_2.economic_classification_2%257Ceconomic_classification_3.economic_classification_3%257Ceconomic_classification_4.economic_classification_4%257Cfinancial_year.financial_year%257Cprogramme_number.programme%257Cprogramme_number.programme_number%257Csubprogramme_number.subprogramme%257Csubprogramme_number.subprogramme_number%257Cvote_number.department%257Cvote_number.vote_number%26pagesize%3D10000
+  department_data_csv: https://datamanager.vulekamali.gov.za/csv/?api_url=https%3A//openspending.org/api/3/cubes/b9d2af843f3a7ca223eea07fb608e62a%3Aestimates-of-national-expenditure-2015-16-uploaded-2019-01-25t0215/aggregate/%3Fcut%3Dfinyear.finyear%253A2015%257Cvoteno.department%253A%2522Police%2522%26drilldown%3Dbudget_phase.budget_phase%257Cecon1.econ1%257Cecon2.econ2%257Cecon3.econ3%257Cecon4.econ4%257Cecon5.econ5%257Cfg1.fg1%257Cfg2.fg2%257Cfinyear.finyear%257Cprogno.progno%257Cprogno.programme%257Csprogno.sprogno%257Csprogno.subprogramme%257Cvoteno.department%257Cvoteno.voteno%26pagesize%3D10000
   programme_budgets:
   - name: Administration
-    total_budget: 16264210000.0
+    total_budget: 16264210000
   - name: Visible Policing
-    total_budget: 38854964000.0
+    total_budget: 38854964000
   - name: Detective Services
-    total_budget: 15815983000.0
+    total_budget: 15815983000
   - name: Crime Intelligence
-    total_budget: 3110379000.0
+    total_budget: 3110379000
   - name: Protection and Security Services
-    total_budget: 2331523000.0
+    total_budget: 2331523000
 selected_financial_year: 2015-16
 selected_tab: departments
 slug: police
@@ -717,74 +717,74 @@ sphere:
   slug: national
 subprogramme_by_programme:
   dataset_detail_page: /datasets/estimates-of-national-expenditure/estimates-of-national-expenditure-2015-16
-  department_data_csv: https://datamanager-staging.vulekamali.gov.za/csv/?api_url=https%3A//openspending.org/api/3/cubes/b9d2af843f3a7ca223eea07fb608e62a%3Aestimates-of-national-expenditure-south-africa-2015-16/aggregate/%3Fcut%3Dfinancial_year.financial_year%253A2015%257Cvote_number.department%253A%2522Police%2522%26drilldown%3Dbudget_phase.budget_phase%257Ceconomic_classification_1.economic_classification_1%257Ceconomic_classification_2.economic_classification_2%257Ceconomic_classification_3.economic_classification_3%257Ceconomic_classification_4.economic_classification_4%257Cfinancial_year.financial_year%257Cprogramme_number.programme%257Cprogramme_number.programme_number%257Csubprogramme_number.subprogramme%257Csubprogramme_number.subprogramme_number%257Cvote_number.department%257Cvote_number.vote_number%26pagesize%3D10000
+  department_data_csv: https://datamanager.vulekamali.gov.za/csv/?api_url=https%3A//openspending.org/api/3/cubes/b9d2af843f3a7ca223eea07fb608e62a%3Aestimates-of-national-expenditure-2015-16-uploaded-2019-01-25t0215/aggregate/%3Fcut%3Dfinyear.finyear%253A2015%257Cvoteno.department%253A%2522Police%2522%26drilldown%3Dbudget_phase.budget_phase%257Cecon1.econ1%257Cecon2.econ2%257Cecon3.econ3%257Cecon4.econ4%257Cecon5.econ5%257Cfg1.fg1%257Cfg2.fg2%257Cfinyear.finyear%257Cprogno.progno%257Cprogno.programme%257Csprogno.sprogno%257Csprogno.subprogramme%257Cvoteno.department%257Cvoteno.voteno%26pagesize%3D10000
   programmes:
   - items:
     - name: Corporate Services
-      total_budget: 16059507000.0
+      total_budget: 16059507000
       type: subprogramme
     - name: Civilian Secretariat
-      total_budget: 105094000.0
+      total_budget: 105094000
       type: subprogramme
     - name: Management
-      total_budget: 67165000.0
+      total_budget: 67165000
       type: subprogramme
     - name: Ministry
-      total_budget: 32444000.0
+      total_budget: 32444000
       type: subprogramme
     name: Administration
     type: programme
   - items:
     - name: Intelligence and Information Management
-      total_budget: 1799197000.0
+      total_budget: 1799197000
       type: subprogramme
     - name: Crime Intelligence Operations
-      total_budget: 1311182000.0
+      total_budget: 1311182000
       type: subprogramme
     name: Crime Intelligence
     type: programme
   - items:
     - name: Crime Investigations
-      total_budget: 10580070000.0
+      total_budget: 10580070000
       type: subprogramme
     - name: Criminal Record Centre
-      total_budget: 2114916000.0
+      total_budget: 2114916000
       type: subprogramme
     - name: Forensic Science Laboratory
-      total_budget: 1761136000.0
+      total_budget: 1761136000
       type: subprogramme
     - name: Specialised Investigations
-      total_budget: 1359861000.0
+      total_budget: 1359861000
       type: subprogramme
     name: Detective Services
     type: programme
   - items:
     - name: VIP Protection Services
-      total_budget: 1004409000.0
+      total_budget: 1004409000
       type: subprogramme
     - name: Static and Mobile Security
-      total_budget: 998726000.0
+      total_budget: 998726000
       type: subprogramme
     - name: Operational Support
-      total_budget: 217139000.0
+      total_budget: 217139000
       type: subprogramme
     - name: Government Security Regulator
-      total_budget: 111249000.0
+      total_budget: 111249000
       type: subprogramme
     name: Protection and Security Services
     type: programme
   - items:
     - name: Crime Prevention
-      total_budget: 30711053000.0
+      total_budget: 30711053000
       type: subprogramme
     - name: Facilities
-      total_budget: 3360042000.0
+      total_budget: 3360042000
       type: subprogramme
     - name: Specialised Interventions
-      total_budget: 3030505000.0
+      total_budget: 3030505000
       type: subprogramme
     - name: Border Security
-      total_budget: 1753364000.0
+      total_budget: 1753364000
       type: subprogramme
     name: Visible Policing
     type: programme

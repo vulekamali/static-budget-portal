@@ -14,7 +14,7 @@ adjusted_budget_summary:
     name: Significant and unforeseeable economic and financial events
     type: kind
   dataset_detail_page: /datasets/adjusted-estimates-of-national-expenditure/adjusted-estimates-of-national-expenditure-2015-16
-  department_data_csv: https://datamanager-staging.vulekamali.gov.za/csv/?api_url=https%3A//openspending.org/api/3/cubes/b9d2af843f3a7ca223eea07fb608e62a%3Aadjusted-estimates-of-national-expenditure-2015-16-uploaded-2018-12-14t1118/aggregate/%3Fcut%3Dfinyear.finyear%253A2015%257Cvoteno.department%253AHome%2BAffairs%26drilldown%3Dbudget_phase.budget_phase%257Cecon1.econ1%257Cecon2.econ2%257Cecon3.econ3%257Cecon4.econ4%257Cecon5.econ5%257Cfinyear.finyear%257Cfy_descript.fy_descript%257Cprogno.progno%257Cprogno.programme%257Csprogno.sprogno%257Csprogno.subprogramme%257Cvoteno.department%257Cvoteno.voteno%26pagesize%3D10000
+  department_data_csv: https://datamanager.vulekamali.gov.za/csv/?api_url=https%3A//openspending.org/api/3/cubes/b9d2af843f3a7ca223eea07fb608e62a%3Aadjusted-estimates-of-national-expenditure-2015-16-uploaded-2018-12-14t1118/aggregate/%3Fcut%3Dfinyear.finyear%253A2015%257Cvoteno.department%253AHome%2BAffairs%26drilldown%3Dbudget_phase.budget_phase%257Cecon1.econ1%257Cecon2.econ2%257Cecon3.econ3%257Cecon4.econ4%257Cecon5.econ5%257Cfinyear.finyear%257Cfy_descript.fy_descript%257Cprogno.progno%257Cprogno.programme%257Csprogno.sprogno%257Csprogno.subprogramme%257Cvoteno.department%257Cvoteno.voteno%26pagesize%3D10000
   direct_charges: null
   econ_classes:
   - items:
@@ -144,61 +144,11 @@ budget_actual:
       financial_year: 2014-15
       phase: Audit Outcome
   notices:
-  - Please note that the data for 2012, 2013 and 2014 has not been published on vulekamali.
+  - Please note that the data for 2014, 2012 and 2013 has not been published on vulekamali.
 budget_actual_programmes:
   dataset_detail_page: /datasets/budgeted-and-actual-national-expenditure/budgeted-and-actual-national-expenditure
   notices: []
   programmes:
-  - items:
-    - amount: 4131701000.0
-      financial_year: 2015-16
-      phase: Main appropriation
-    - amount: 4941560000
-      financial_year: 2015-16
-      phase: Adjusted appropriation
-    - amount: 4858580000
-      financial_year: 2015-16
-      phase: Final Appropriation
-    - amount: 4856418000
-      financial_year: 2015-16
-      phase: Audit Outcome
-    - amount: null
-      financial_year: 2012-13
-      phase: Main appropriation
-    - amount: null
-      financial_year: 2012-13
-      phase: Adjusted appropriation
-    - amount: null
-      financial_year: 2012-13
-      phase: Final Appropriation
-    - amount: null
-      financial_year: 2012-13
-      phase: Audit Outcome
-    - amount: null
-      financial_year: 2013-14
-      phase: Main appropriation
-    - amount: null
-      financial_year: 2013-14
-      phase: Adjusted appropriation
-    - amount: null
-      financial_year: 2013-14
-      phase: Final Appropriation
-    - amount: null
-      financial_year: 2013-14
-      phase: Audit Outcome
-    - amount: null
-      financial_year: 2014-15
-      phase: Main appropriation
-    - amount: null
-      financial_year: 2014-15
-      phase: Adjusted appropriation
-    - amount: null
-      financial_year: 2014-15
-      phase: Final Appropriation
-    - amount: null
-      financial_year: 2014-15
-      phase: Audit Outcome
-    name: Citizen Affairs
   - items:
     - amount: 720919000.0
       financial_year: 2015-16
@@ -299,6 +249,56 @@ budget_actual_programmes:
       financial_year: 2014-15
       phase: Audit Outcome
     name: Administration
+  - items:
+    - amount: 4131701000.0
+      financial_year: 2015-16
+      phase: Main appropriation
+    - amount: 4941560000
+      financial_year: 2015-16
+      phase: Adjusted appropriation
+    - amount: 4858580000
+      financial_year: 2015-16
+      phase: Final Appropriation
+    - amount: 4856418000
+      financial_year: 2015-16
+      phase: Audit Outcome
+    - amount: null
+      financial_year: 2012-13
+      phase: Main appropriation
+    - amount: null
+      financial_year: 2012-13
+      phase: Adjusted appropriation
+    - amount: null
+      financial_year: 2012-13
+      phase: Final Appropriation
+    - amount: null
+      financial_year: 2012-13
+      phase: Audit Outcome
+    - amount: null
+      financial_year: 2013-14
+      phase: Main appropriation
+    - amount: null
+      financial_year: 2013-14
+      phase: Adjusted appropriation
+    - amount: null
+      financial_year: 2013-14
+      phase: Final Appropriation
+    - amount: null
+      financial_year: 2013-14
+      phase: Audit Outcome
+    - amount: null
+      financial_year: 2014-15
+      phase: Main appropriation
+    - amount: null
+      financial_year: 2014-15
+      phase: Adjusted appropriation
+    - amount: null
+      financial_year: 2014-15
+      phase: Final Appropriation
+    - amount: null
+      financial_year: 2014-15
+      phase: Audit Outcome
+    name: Citizen Affairs
 contributed_datasets:
 - contributor: International Budget Partnership
   name: How Does Civil Society Use Budget Information?
@@ -341,21 +341,21 @@ description: 'National department: Home Affairs budget data for the 2015-16 fina
   year from National Treasury in partnership with IMALI YETHU.'
 economic_classification_by_programme:
   dataset_detail_page: /datasets/estimates-of-national-expenditure/estimates-of-national-expenditure-2015-16
-  department_data_csv: https://datamanager-staging.vulekamali.gov.za/csv/?api_url=https%3A//openspending.org/api/3/cubes/b9d2af843f3a7ca223eea07fb608e62a%3Aestimates-of-national-expenditure-south-africa-2015-16/aggregate/%3Fcut%3Dfinancial_year.financial_year%253A2015%257Cvote_number.department%253A%2522Home%2BAffairs%2522%26drilldown%3Dbudget_phase.budget_phase%257Ceconomic_classification_1.economic_classification_1%257Ceconomic_classification_2.economic_classification_2%257Ceconomic_classification_3.economic_classification_3%257Ceconomic_classification_4.economic_classification_4%257Cfinancial_year.financial_year%257Cprogramme_number.programme%257Cprogramme_number.programme_number%257Csubprogramme_number.subprogramme%257Csubprogramme_number.subprogramme_number%257Cvote_number.department%257Cvote_number.vote_number%26pagesize%3D10000
+  department_data_csv: https://datamanager.vulekamali.gov.za/csv/?api_url=https%3A//openspending.org/api/3/cubes/b9d2af843f3a7ca223eea07fb608e62a%3Aestimates-of-national-expenditure-2015-16-uploaded-2019-01-25t0215/aggregate/%3Fcut%3Dfinyear.finyear%253A2015%257Cvoteno.department%253A%2522Home%2BAffairs%2522%26drilldown%3Dbudget_phase.budget_phase%257Cecon1.econ1%257Cecon2.econ2%257Cecon3.econ3%257Cecon4.econ4%257Cecon5.econ5%257Cfg1.fg1%257Cfg2.fg2%257Cfinyear.finyear%257Cprogno.progno%257Cprogno.programme%257Csprogno.sprogno%257Csprogno.subprogramme%257Cvoteno.department%257Cvoteno.voteno%26pagesize%3D10000
   programmes:
   - items:
     - items:
       - name: Payments for capital assets
-        total_budget: 10893000.0
+        total_budget: 10893000
         type: economic_classification_2
       name: Capital
       type: economic_classification_1
     - items:
       - name: Current payments
-        total_budget: 1585250000.0
+        total_budget: 1585250000
         type: economic_classification_2
       - name: Transfers and subsidies
-        total_budget: 2059000.0
+        total_budget: 2059000
         type: economic_classification_2
       name: Current
       type: economic_classification_1
@@ -364,10 +364,10 @@ economic_classification_by_programme:
   - items:
     - items:
       - name: Current payments
-        total_budget: 2484689000.0
+        total_budget: 2484689000
         type: economic_classification_2
       - name: Transfers and subsidies
-        total_budget: 1647012000.0
+        total_budget: 1647012000
         type: economic_classification_2
       name: Current
       type: economic_classification_1
@@ -376,10 +376,10 @@ economic_classification_by_programme:
   - items:
     - items:
       - name: Current payments
-        total_budget: 720570000.0
+        total_budget: 720570000
         type: economic_classification_2
       - name: Transfers and subsidies
-        total_budget: 349000.0
+        total_budget: 349000
         type: economic_classification_2
       name: Current
       type: economic_classification_1
@@ -390,25 +390,25 @@ expenditure_over_time:
   expenditure:
     base_financial_year: 2017-18
     nominal:
-    - amount: 5687014000.0
+    - amount: 5687014000
       financial_year: 2011-12
       phase: Audited Outcome
-    - amount: 5443627000.0
+    - amount: 5443627000
       financial_year: 2012-13
       phase: Audited Outcome
-    - amount: 6909877000.0
+    - amount: 6909877000
       financial_year: 2013-14
       phase: Audited Outcome
-    - amount: 7144801000.0
+    - amount: 7144801000
       financial_year: 2014-15
       phase: Adjusted appropriation
-    - amount: 6450822000.0
+    - amount: 6450822000
       financial_year: 2015-16
       phase: Main appropriation
-    - amount: 7196188000.0
+    - amount: 7196188000
       financial_year: 2016-17
       phase: Medium Term Estimates
-    - amount: 7049602000.0
+    - amount: 7049602000
       financial_year: 2017-18
       phase: Medium Term Estimates
     real:
@@ -472,48 +472,48 @@ is_vote_primary: true
 name: Home Affairs
 programme_by_economic_classification:
   dataset_detail_page: /datasets/estimates-of-national-expenditure/estimates-of-national-expenditure-2015-16
-  department_data_csv: https://datamanager-staging.vulekamali.gov.za/csv/?api_url=https%3A//openspending.org/api/3/cubes/b9d2af843f3a7ca223eea07fb608e62a%3Aestimates-of-national-expenditure-south-africa-2015-16/aggregate/%3Fcut%3Dfinancial_year.financial_year%253A2015%257Cvote_number.department%253A%2522Home%2BAffairs%2522%26drilldown%3Dbudget_phase.budget_phase%257Ceconomic_classification_1.economic_classification_1%257Ceconomic_classification_2.economic_classification_2%257Ceconomic_classification_3.economic_classification_3%257Ceconomic_classification_4.economic_classification_4%257Cfinancial_year.financial_year%257Cprogramme_number.programme%257Cprogramme_number.programme_number%257Csubprogramme_number.subprogramme%257Csubprogramme_number.subprogramme_number%257Cvote_number.department%257Cvote_number.vote_number%26pagesize%3D10000
+  department_data_csv: https://datamanager.vulekamali.gov.za/csv/?api_url=https%3A//openspending.org/api/3/cubes/b9d2af843f3a7ca223eea07fb608e62a%3Aestimates-of-national-expenditure-2015-16-uploaded-2019-01-25t0215/aggregate/%3Fcut%3Dfinyear.finyear%253A2015%257Cvoteno.department%253A%2522Home%2BAffairs%2522%26drilldown%3Dbudget_phase.budget_phase%257Cecon1.econ1%257Cecon2.econ2%257Cecon3.econ3%257Cecon4.econ4%257Cecon5.econ5%257Cfg1.fg1%257Cfg2.fg2%257Cfinyear.finyear%257Cprogno.progno%257Cprogno.programme%257Csprogno.sprogno%257Csprogno.subprogramme%257Cvoteno.department%257Cvoteno.voteno%26pagesize%3D10000
   econ_classes:
   - items:
     - name: Administration
-      total_budget: 10893000.0
+      total_budget: 10893000
       type: programme
     name: Capital - Payments for capital assets
     type: economic_classification_1_and_2
   - items:
     - name: Citizen Affairs
-      total_budget: 2484689000.0
+      total_budget: 2484689000
       type: programme
     - name: Administration
-      total_budget: 1585250000.0
+      total_budget: 1585250000
       type: programme
     - name: Immigration Affairs
-      total_budget: 720570000.0
+      total_budget: 720570000
       type: programme
     name: Current - Current payments
     type: economic_classification_1_and_2
   - items:
     - name: Citizen Affairs
-      total_budget: 1647012000.0
+      total_budget: 1647012000
       type: programme
     - name: Administration
-      total_budget: 2059000.0
+      total_budget: 2059000
       type: programme
     - name: Immigration Affairs
-      total_budget: 349000.0
+      total_budget: 349000
       type: programme
     name: Current - Transfers and subsidies
     type: economic_classification_1_and_2
 programmes:
   dataset_detail_page: /datasets/estimates-of-national-expenditure/estimates-of-national-expenditure-2015-16
-  department_data_csv: https://datamanager-staging.vulekamali.gov.za/csv/?api_url=https%3A//openspending.org/api/3/cubes/b9d2af843f3a7ca223eea07fb608e62a%3Aestimates-of-national-expenditure-south-africa-2015-16/aggregate/%3Fcut%3Dfinancial_year.financial_year%253A2015%257Cvote_number.department%253A%2522Home%2BAffairs%2522%26drilldown%3Dbudget_phase.budget_phase%257Ceconomic_classification_1.economic_classification_1%257Ceconomic_classification_2.economic_classification_2%257Ceconomic_classification_3.economic_classification_3%257Ceconomic_classification_4.economic_classification_4%257Cfinancial_year.financial_year%257Cprogramme_number.programme%257Cprogramme_number.programme_number%257Csubprogramme_number.subprogramme%257Csubprogramme_number.subprogramme_number%257Cvote_number.department%257Cvote_number.vote_number%26pagesize%3D10000
+  department_data_csv: https://datamanager.vulekamali.gov.za/csv/?api_url=https%3A//openspending.org/api/3/cubes/b9d2af843f3a7ca223eea07fb608e62a%3Aestimates-of-national-expenditure-2015-16-uploaded-2019-01-25t0215/aggregate/%3Fcut%3Dfinyear.finyear%253A2015%257Cvoteno.department%253A%2522Home%2BAffairs%2522%26drilldown%3Dbudget_phase.budget_phase%257Cecon1.econ1%257Cecon2.econ2%257Cecon3.econ3%257Cecon4.econ4%257Cecon5.econ5%257Cfg1.fg1%257Cfg2.fg2%257Cfinyear.finyear%257Cprogno.progno%257Cprogno.programme%257Csprogno.sprogno%257Csprogno.subprogramme%257Cvoteno.department%257Cvoteno.voteno%26pagesize%3D10000
   programme_budgets:
   - name: Administration
-    total_budget: 1598202000.0
+    total_budget: 1598202000
   - name: Citizen Affairs
-    total_budget: 4131701000.0
+    total_budget: 4131701000
   - name: Immigration Affairs
-    total_budget: 720919000.0
+    total_budget: 720919000
 selected_financial_year: 2015-16
 selected_tab: departments
 slug: home-affairs
@@ -522,62 +522,62 @@ sphere:
   slug: national
 subprogramme_by_programme:
   dataset_detail_page: /datasets/estimates-of-national-expenditure/estimates-of-national-expenditure-2015-16
-  department_data_csv: https://datamanager-staging.vulekamali.gov.za/csv/?api_url=https%3A//openspending.org/api/3/cubes/b9d2af843f3a7ca223eea07fb608e62a%3Aestimates-of-national-expenditure-south-africa-2015-16/aggregate/%3Fcut%3Dfinancial_year.financial_year%253A2015%257Cvote_number.department%253A%2522Home%2BAffairs%2522%26drilldown%3Dbudget_phase.budget_phase%257Ceconomic_classification_1.economic_classification_1%257Ceconomic_classification_2.economic_classification_2%257Ceconomic_classification_3.economic_classification_3%257Ceconomic_classification_4.economic_classification_4%257Cfinancial_year.financial_year%257Cprogramme_number.programme%257Cprogramme_number.programme_number%257Csubprogramme_number.subprogramme%257Csubprogramme_number.subprogramme_number%257Cvote_number.department%257Cvote_number.vote_number%26pagesize%3D10000
+  department_data_csv: https://datamanager.vulekamali.gov.za/csv/?api_url=https%3A//openspending.org/api/3/cubes/b9d2af843f3a7ca223eea07fb608e62a%3Aestimates-of-national-expenditure-2015-16-uploaded-2019-01-25t0215/aggregate/%3Fcut%3Dfinyear.finyear%253A2015%257Cvoteno.department%253A%2522Home%2BAffairs%2522%26drilldown%3Dbudget_phase.budget_phase%257Cecon1.econ1%257Cecon2.econ2%257Cecon3.econ3%257Cecon4.econ4%257Cecon5.econ5%257Cfg1.fg1%257Cfg2.fg2%257Cfinyear.finyear%257Cprogno.progno%257Cprogno.programme%257Csprogno.sprogno%257Csprogno.subprogramme%257Cvoteno.department%257Cvoteno.voteno%26pagesize%3D10000
   programmes:
   - items:
     - name: Corporate Services
-      total_budget: 589111000.0
+      total_budget: 589111000
       type: subprogramme
     - name: Transversal Information Technology Management
-      total_budget: 476245000.0
+      total_budget: 476245000
       type: subprogramme
     - name: Office Accommodation
-      total_budget: 379487000.0
+      total_budget: 379487000
       type: subprogramme
     - name: Management Support Services
-      total_budget: 109588000.0
+      total_budget: 109588000
       type: subprogramme
     - name: Ministry
-      total_budget: 43771000.0
+      total_budget: 43771000
       type: subprogramme
     name: Administration
     type: programme
   - items:
     - name: Service Delivery to Provinces
-      total_budget: 1973426000.0
+      total_budget: 1973426000
       type: subprogramme
     - name: Electoral Commission
-      total_budget: 1517104000.0
+      total_budget: 1517104000
       type: subprogramme
     - name: Identification Services
-      total_budget: 275158000.0
+      total_budget: 275158000
       type: subprogramme
-    - name: "Represented Political Parties\u2019 Fund"
-      total_budget: 127712000.0
+    - name: Representative Political parties Fund
+      total_budget: 127712000
       type: subprogramme
     - name: Status Services
-      total_budget: 107901000.0
+      total_budget: 107901000
       type: subprogramme
     - name: Access to Services
-      total_budget: 106000000.0
+      total_budget: 106000000
       type: subprogramme
     - name: Citizen Affairs Management
-      total_budget: 24400000.0
+      total_budget: 24400000
       type: subprogramme
     name: Citizen Affairs
     type: programme
   - items:
     - name: Immigration Services
-      total_budget: 365137000.0
+      total_budget: 365137000
       type: subprogramme
     - name: Admission Services
-      total_budget: 259577000.0
+      total_budget: 259577000
       type: subprogramme
     - name: Asylum Seekers
-      total_budget: 65518000.0
+      total_budget: 65518000
       type: subprogramme
     - name: Immigration Affairs Management
-      total_budget: 30687000.0
+      total_budget: 30687000
       type: subprogramme
     name: Immigration Affairs
     type: programme

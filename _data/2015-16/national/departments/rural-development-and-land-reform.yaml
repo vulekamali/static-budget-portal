@@ -11,7 +11,7 @@ adjusted_budget_summary:
     name: Significant and unforeseeable economic and financial events
     type: kind
   dataset_detail_page: /datasets/adjusted-estimates-of-national-expenditure/adjusted-estimates-of-national-expenditure-2015-16
-  department_data_csv: https://datamanager-staging.vulekamali.gov.za/csv/?api_url=https%3A//openspending.org/api/3/cubes/b9d2af843f3a7ca223eea07fb608e62a%3Aadjusted-estimates-of-national-expenditure-2015-16-uploaded-2018-12-14t1118/aggregate/%3Fcut%3Dfinyear.finyear%253A2015%257Cvoteno.department%253ARural%2BDevelopment%2Band%2BLand%2BReform%26drilldown%3Dbudget_phase.budget_phase%257Cecon1.econ1%257Cecon2.econ2%257Cecon3.econ3%257Cecon4.econ4%257Cecon5.econ5%257Cfinyear.finyear%257Cfy_descript.fy_descript%257Cprogno.progno%257Cprogno.programme%257Csprogno.sprogno%257Csprogno.subprogramme%257Cvoteno.department%257Cvoteno.voteno%26pagesize%3D10000
+  department_data_csv: https://datamanager.vulekamali.gov.za/csv/?api_url=https%3A//openspending.org/api/3/cubes/b9d2af843f3a7ca223eea07fb608e62a%3Aadjusted-estimates-of-national-expenditure-2015-16-uploaded-2018-12-14t1118/aggregate/%3Fcut%3Dfinyear.finyear%253A2015%257Cvoteno.department%253ARural%2BDevelopment%2Band%2BLand%2BReform%26drilldown%3Dbudget_phase.budget_phase%257Cecon1.econ1%257Cecon2.econ2%257Cecon3.econ3%257Cecon4.econ4%257Cecon5.econ5%257Cfinyear.finyear%257Cfy_descript.fy_descript%257Cprogno.progno%257Cprogno.programme%257Csprogno.sprogno%257Csprogno.subprogramme%257Cvoteno.department%257Cvoteno.voteno%26pagesize%3D10000
   direct_charges: null
   econ_classes:
   - items:
@@ -167,7 +167,7 @@ budget_actual:
       financial_year: 2014-15
       phase: Audit Outcome
   notices:
-  - Please note that the data for 2012, 2013 and 2014 has not been published on vulekamali.
+  - Please note that the data for 2014, 2012 and 2013 has not been published on vulekamali.
 budget_actual_programmes:
   dataset_detail_page: /datasets/budgeted-and-actual-national-expenditure/budgeted-and-actual-national-expenditure
   notices: []
@@ -223,56 +223,6 @@ budget_actual_programmes:
       phase: Audit Outcome
     name: National Geomatics Management Services
   - items:
-    - amount: 2737108000.0
-      financial_year: 2015-16
-      phase: Main appropriation
-    - amount: 2537108000
-      financial_year: 2015-16
-      phase: Adjusted appropriation
-    - amount: 2547469000
-      financial_year: 2015-16
-      phase: Final Appropriation
-    - amount: 2547063000
-      financial_year: 2015-16
-      phase: Audit Outcome
-    - amount: null
-      financial_year: 2012-13
-      phase: Main appropriation
-    - amount: null
-      financial_year: 2012-13
-      phase: Adjusted appropriation
-    - amount: null
-      financial_year: 2012-13
-      phase: Final Appropriation
-    - amount: null
-      financial_year: 2012-13
-      phase: Audit Outcome
-    - amount: null
-      financial_year: 2013-14
-      phase: Main appropriation
-    - amount: null
-      financial_year: 2013-14
-      phase: Adjusted appropriation
-    - amount: null
-      financial_year: 2013-14
-      phase: Final Appropriation
-    - amount: null
-      financial_year: 2013-14
-      phase: Audit Outcome
-    - amount: null
-      financial_year: 2014-15
-      phase: Main appropriation
-    - amount: null
-      financial_year: 2014-15
-      phase: Adjusted appropriation
-    - amount: null
-      financial_year: 2014-15
-      phase: Final Appropriation
-    - amount: null
-      financial_year: 2014-15
-      phase: Audit Outcome
-    name: Land Reform
-  - items:
     - amount: 1264265000.0
       financial_year: 2015-16
       phase: Main appropriation
@@ -322,6 +272,56 @@ budget_actual_programmes:
       financial_year: 2014-15
       phase: Audit Outcome
     name: Administration
+  - items:
+    - amount: 1975739000.0
+      financial_year: 2015-16
+      phase: Main appropriation
+    - amount: 1984577000
+      financial_year: 2015-16
+      phase: Adjusted appropriation
+    - amount: 1931669000
+      financial_year: 2015-16
+      phase: Final Appropriation
+    - amount: 1921994798
+      financial_year: 2015-16
+      phase: Audit Outcome
+    - amount: null
+      financial_year: 2012-13
+      phase: Main appropriation
+    - amount: null
+      financial_year: 2012-13
+      phase: Adjusted appropriation
+    - amount: null
+      financial_year: 2012-13
+      phase: Final Appropriation
+    - amount: null
+      financial_year: 2012-13
+      phase: Audit Outcome
+    - amount: null
+      financial_year: 2013-14
+      phase: Main appropriation
+    - amount: null
+      financial_year: 2013-14
+      phase: Adjusted appropriation
+    - amount: null
+      financial_year: 2013-14
+      phase: Final Appropriation
+    - amount: null
+      financial_year: 2013-14
+      phase: Audit Outcome
+    - amount: null
+      financial_year: 2014-15
+      phase: Main appropriation
+    - amount: null
+      financial_year: 2014-15
+      phase: Adjusted appropriation
+    - amount: null
+      financial_year: 2014-15
+      phase: Final Appropriation
+    - amount: null
+      financial_year: 2014-15
+      phase: Audit Outcome
+    name: Rural Development
   - items:
     - amount: 2602669000.0
       financial_year: 2015-16
@@ -373,16 +373,16 @@ budget_actual_programmes:
       phase: Audit Outcome
     name: Restitution
   - items:
-    - amount: 1975739000.0
+    - amount: 2737108000.0
       financial_year: 2015-16
       phase: Main appropriation
-    - amount: 1984577000
+    - amount: 2537108000
       financial_year: 2015-16
       phase: Adjusted appropriation
-    - amount: 1931669000
+    - amount: 2547469000
       financial_year: 2015-16
       phase: Final Appropriation
-    - amount: 1921994798
+    - amount: 2547063000
       financial_year: 2015-16
       phase: Audit Outcome
     - amount: null
@@ -421,7 +421,7 @@ budget_actual_programmes:
     - amount: null
       financial_year: 2014-15
       phase: Audit Outcome
-    name: Rural Development
+    name: Land Reform
 contributed_datasets:
 - contributor: International Budget Partnership
   name: How Does Civil Society Use Budget Information?
@@ -464,21 +464,21 @@ description: 'National department: Rural Development and Land Reform budget data
   the 2015-16 financial year from National Treasury in partnership with IMALI YETHU.'
 economic_classification_by_programme:
   dataset_detail_page: /datasets/estimates-of-national-expenditure/estimates-of-national-expenditure-2015-16
-  department_data_csv: https://datamanager-staging.vulekamali.gov.za/csv/?api_url=https%3A//openspending.org/api/3/cubes/b9d2af843f3a7ca223eea07fb608e62a%3Aestimates-of-national-expenditure-south-africa-2015-16/aggregate/%3Fcut%3Dfinancial_year.financial_year%253A2015%257Cvote_number.department%253A%2522Rural%2BDevelopment%2Band%2BLand%2BReform%2522%26drilldown%3Dbudget_phase.budget_phase%257Ceconomic_classification_1.economic_classification_1%257Ceconomic_classification_2.economic_classification_2%257Ceconomic_classification_3.economic_classification_3%257Ceconomic_classification_4.economic_classification_4%257Cfinancial_year.financial_year%257Cprogramme_number.programme%257Cprogramme_number.programme_number%257Csubprogramme_number.subprogramme%257Csubprogramme_number.subprogramme_number%257Cvote_number.department%257Cvote_number.vote_number%26pagesize%3D10000
+  department_data_csv: https://datamanager.vulekamali.gov.za/csv/?api_url=https%3A//openspending.org/api/3/cubes/b9d2af843f3a7ca223eea07fb608e62a%3Aestimates-of-national-expenditure-2015-16-uploaded-2019-01-25t0215/aggregate/%3Fcut%3Dfinyear.finyear%253A2015%257Cvoteno.department%253A%2522Rural%2BDevelopment%2Band%2BLand%2BReform%2522%26drilldown%3Dbudget_phase.budget_phase%257Cecon1.econ1%257Cecon2.econ2%257Cecon3.econ3%257Cecon4.econ4%257Cecon5.econ5%257Cfg1.fg1%257Cfg2.fg2%257Cfinyear.finyear%257Cprogno.progno%257Cprogno.programme%257Csprogno.sprogno%257Csprogno.subprogramme%257Cvoteno.department%257Cvoteno.voteno%26pagesize%3D10000
   programmes:
   - items:
     - items:
       - name: Payments for capital assets
-        total_budget: 10324000.0
+        total_budget: 10324000
         type: economic_classification_2
       name: Capital
       type: economic_classification_1
     - items:
       - name: Current payments
-        total_budget: 1253804000.0
+        total_budget: 1253804000
         type: economic_classification_2
       - name: Transfers and subsidies
-        total_budget: 137000.0
+        total_budget: 137000
         type: economic_classification_2
       name: Current
       type: economic_classification_1
@@ -487,19 +487,19 @@ economic_classification_by_programme:
   - items:
     - items:
       - name: Transfers and subsidies
-        total_budget: 560869000.0
+        total_budget: 560869000
         type: economic_classification_2
       - name: Payments for capital assets
-        total_budget: 1108000.0
+        total_budget: 1108000
         type: economic_classification_2
       name: Capital
       type: economic_classification_1
     - items:
       - name: Transfers and subsidies
-        total_budget: 1563108000.0
+        total_budget: 1563108000
         type: economic_classification_2
       - name: Current payments
-        total_budget: 612023000.0
+        total_budget: 612023000
         type: economic_classification_2
       name: Current
       type: economic_classification_1
@@ -508,16 +508,16 @@ economic_classification_by_programme:
   - items:
     - items:
       - name: Payments for capital assets
-        total_budget: 8352000.0
+        total_budget: 8352000
         type: economic_classification_2
       name: Capital
       type: economic_classification_1
     - items:
       - name: Current payments
-        total_budget: 644367000.0
+        total_budget: 644367000
         type: economic_classification_2
       - name: Transfers and subsidies
-        total_budget: 147184000.0
+        total_budget: 147184000
         type: economic_classification_2
       name: Current
       type: economic_classification_1
@@ -526,19 +526,19 @@ economic_classification_by_programme:
   - items:
     - items:
       - name: Transfers and subsidies
-        total_budget: 2116000000.0
+        total_budget: 2116000000
         type: economic_classification_2
       - name: Payments for capital assets
-        total_budget: 2067000.0
+        total_budget: 2067000
         type: economic_classification_2
       name: Capital
       type: economic_classification_1
     - items:
       - name: Current payments
-        total_budget: 480740000.0
+        total_budget: 480740000
         type: economic_classification_2
       - name: Transfers and subsidies
-        total_budget: 3862000.0
+        total_budget: 3862000
         type: economic_classification_2
       name: Current
       type: economic_classification_1
@@ -547,16 +547,16 @@ economic_classification_by_programme:
   - items:
     - items:
       - name: Payments for capital assets
-        total_budget: 3268000.0
+        total_budget: 3268000
         type: economic_classification_2
       name: Capital
       type: economic_classification_1
     - items:
       - name: Transfers and subsidies
-        total_budget: 1345679000.0
+        total_budget: 1345679000
         type: economic_classification_2
       - name: Current payments
-        total_budget: 626792000.0
+        total_budget: 626792000
         type: economic_classification_2
       name: Current
       type: economic_classification_1
@@ -567,25 +567,25 @@ expenditure_over_time:
   expenditure:
     base_financial_year: 2017-18
     nominal:
-    - amount: 7997725000.0
+    - amount: 7997725000
       financial_year: 2011-12
       phase: Audited Outcome
-    - amount: 8919567000.0
+    - amount: 8919567000
       financial_year: 2012-13
       phase: Audited Outcome
-    - amount: 9454056000.0
+    - amount: 9454056000
       financial_year: 2013-14
       phase: Audited Outcome
-    - amount: 9455305000.0
+    - amount: 9455305000
       financial_year: 2014-15
       phase: Adjusted appropriation
-    - amount: 9379684000.0
+    - amount: 9379684000
       financial_year: 2015-16
       phase: Main appropriation
-    - amount: 10392008000.0
+    - amount: 10392008000
       financial_year: 2016-17
       phase: Medium Term Estimates
-    - amount: 10888698000.0
+    - amount: 10888698000
       financial_year: 2017-18
       phase: Medium Term Estimates
     real:
@@ -683,85 +683,85 @@ is_vote_primary: true
 name: Rural Development and Land Reform
 programme_by_economic_classification:
   dataset_detail_page: /datasets/estimates-of-national-expenditure/estimates-of-national-expenditure-2015-16
-  department_data_csv: https://datamanager-staging.vulekamali.gov.za/csv/?api_url=https%3A//openspending.org/api/3/cubes/b9d2af843f3a7ca223eea07fb608e62a%3Aestimates-of-national-expenditure-south-africa-2015-16/aggregate/%3Fcut%3Dfinancial_year.financial_year%253A2015%257Cvote_number.department%253A%2522Rural%2BDevelopment%2Band%2BLand%2BReform%2522%26drilldown%3Dbudget_phase.budget_phase%257Ceconomic_classification_1.economic_classification_1%257Ceconomic_classification_2.economic_classification_2%257Ceconomic_classification_3.economic_classification_3%257Ceconomic_classification_4.economic_classification_4%257Cfinancial_year.financial_year%257Cprogramme_number.programme%257Cprogramme_number.programme_number%257Csubprogramme_number.subprogramme%257Csubprogramme_number.subprogramme_number%257Cvote_number.department%257Cvote_number.vote_number%26pagesize%3D10000
+  department_data_csv: https://datamanager.vulekamali.gov.za/csv/?api_url=https%3A//openspending.org/api/3/cubes/b9d2af843f3a7ca223eea07fb608e62a%3Aestimates-of-national-expenditure-2015-16-uploaded-2019-01-25t0215/aggregate/%3Fcut%3Dfinyear.finyear%253A2015%257Cvoteno.department%253A%2522Rural%2BDevelopment%2Band%2BLand%2BReform%2522%26drilldown%3Dbudget_phase.budget_phase%257Cecon1.econ1%257Cecon2.econ2%257Cecon3.econ3%257Cecon4.econ4%257Cecon5.econ5%257Cfg1.fg1%257Cfg2.fg2%257Cfinyear.finyear%257Cprogno.progno%257Cprogno.programme%257Csprogno.sprogno%257Csprogno.subprogramme%257Cvoteno.department%257Cvoteno.voteno%26pagesize%3D10000
   econ_classes:
   - items:
     - name: Administration
-      total_budget: 10324000.0
+      total_budget: 10324000
       type: programme
     - name: National Geomatics Management Services
-      total_budget: 8352000.0
+      total_budget: 8352000
       type: programme
     - name: Rural Development
-      total_budget: 3268000.0
+      total_budget: 3268000
       type: programme
     - name: Restitution
-      total_budget: 2067000.0
+      total_budget: 2067000
       type: programme
     - name: Land Reform
-      total_budget: 1108000.0
+      total_budget: 1108000
       type: programme
     name: Capital - Payments for capital assets
     type: economic_classification_1_and_2
   - items:
     - name: Restitution
-      total_budget: 2116000000.0
+      total_budget: 2116000000
       type: programme
     - name: Land Reform
-      total_budget: 560869000.0
+      total_budget: 560869000
       type: programme
     name: Capital - Transfers and subsidies
     type: economic_classification_1_and_2
   - items:
     - name: Administration
-      total_budget: 1253804000.0
+      total_budget: 1253804000
       type: programme
     - name: National Geomatics Management Services
-      total_budget: 644367000.0
+      total_budget: 644367000
       type: programme
     - name: Rural Development
-      total_budget: 626792000.0
+      total_budget: 626792000
       type: programme
     - name: Land Reform
-      total_budget: 612023000.0
+      total_budget: 612023000
       type: programme
     - name: Restitution
-      total_budget: 480740000.0
+      total_budget: 480740000
       type: programme
     name: Current - Current payments
     type: economic_classification_1_and_2
   - items:
     - name: Land Reform
-      total_budget: 1563108000.0
+      total_budget: 1563108000
       type: programme
     - name: Rural Development
-      total_budget: 1345679000.0
+      total_budget: 1345679000
       type: programme
     - name: National Geomatics Management Services
-      total_budget: 147184000.0
+      total_budget: 147184000
       type: programme
     - name: Restitution
-      total_budget: 3862000.0
+      total_budget: 3862000
       type: programme
     - name: Administration
-      total_budget: 137000.0
+      total_budget: 137000
       type: programme
     name: Current - Transfers and subsidies
     type: economic_classification_1_and_2
 programmes:
   dataset_detail_page: /datasets/estimates-of-national-expenditure/estimates-of-national-expenditure-2015-16
-  department_data_csv: https://datamanager-staging.vulekamali.gov.za/csv/?api_url=https%3A//openspending.org/api/3/cubes/b9d2af843f3a7ca223eea07fb608e62a%3Aestimates-of-national-expenditure-south-africa-2015-16/aggregate/%3Fcut%3Dfinancial_year.financial_year%253A2015%257Cvote_number.department%253A%2522Rural%2BDevelopment%2Band%2BLand%2BReform%2522%26drilldown%3Dbudget_phase.budget_phase%257Ceconomic_classification_1.economic_classification_1%257Ceconomic_classification_2.economic_classification_2%257Ceconomic_classification_3.economic_classification_3%257Ceconomic_classification_4.economic_classification_4%257Cfinancial_year.financial_year%257Cprogramme_number.programme%257Cprogramme_number.programme_number%257Csubprogramme_number.subprogramme%257Csubprogramme_number.subprogramme_number%257Cvote_number.department%257Cvote_number.vote_number%26pagesize%3D10000
+  department_data_csv: https://datamanager.vulekamali.gov.za/csv/?api_url=https%3A//openspending.org/api/3/cubes/b9d2af843f3a7ca223eea07fb608e62a%3Aestimates-of-national-expenditure-2015-16-uploaded-2019-01-25t0215/aggregate/%3Fcut%3Dfinyear.finyear%253A2015%257Cvoteno.department%253A%2522Rural%2BDevelopment%2Band%2BLand%2BReform%2522%26drilldown%3Dbudget_phase.budget_phase%257Cecon1.econ1%257Cecon2.econ2%257Cecon3.econ3%257Cecon4.econ4%257Cecon5.econ5%257Cfg1.fg1%257Cfg2.fg2%257Cfinyear.finyear%257Cprogno.progno%257Cprogno.programme%257Csprogno.sprogno%257Csprogno.subprogramme%257Cvoteno.department%257Cvoteno.voteno%26pagesize%3D10000
   programme_budgets:
   - name: Administration
-    total_budget: 1264265000.0
+    total_budget: 1264265000
   - name: National Geomatics Management Services
-    total_budget: 799903000.0
+    total_budget: 799903000
   - name: Rural Development
-    total_budget: 1975739000.0
+    total_budget: 1975739000
   - name: Restitution
-    total_budget: 2602669000.0
+    total_budget: 2602669000
   - name: Land Reform
-    total_budget: 2737108000.0
+    total_budget: 2737108000
 selected_financial_year: 2015-16
 selected_tab: departments
 slug: rural-development-and-land-reform
@@ -770,89 +770,89 @@ sphere:
   slug: national
 subprogramme_by_programme:
   dataset_detail_page: /datasets/estimates-of-national-expenditure/estimates-of-national-expenditure-2015-16
-  department_data_csv: https://datamanager-staging.vulekamali.gov.za/csv/?api_url=https%3A//openspending.org/api/3/cubes/b9d2af843f3a7ca223eea07fb608e62a%3Aestimates-of-national-expenditure-south-africa-2015-16/aggregate/%3Fcut%3Dfinancial_year.financial_year%253A2015%257Cvote_number.department%253A%2522Rural%2BDevelopment%2Band%2BLand%2BReform%2522%26drilldown%3Dbudget_phase.budget_phase%257Ceconomic_classification_1.economic_classification_1%257Ceconomic_classification_2.economic_classification_2%257Ceconomic_classification_3.economic_classification_3%257Ceconomic_classification_4.economic_classification_4%257Cfinancial_year.financial_year%257Cprogramme_number.programme%257Cprogramme_number.programme_number%257Csubprogramme_number.subprogramme%257Csubprogramme_number.subprogramme_number%257Cvote_number.department%257Cvote_number.vote_number%26pagesize%3D10000
+  department_data_csv: https://datamanager.vulekamali.gov.za/csv/?api_url=https%3A//openspending.org/api/3/cubes/b9d2af843f3a7ca223eea07fb608e62a%3Aestimates-of-national-expenditure-2015-16-uploaded-2019-01-25t0215/aggregate/%3Fcut%3Dfinyear.finyear%253A2015%257Cvoteno.department%253A%2522Rural%2BDevelopment%2Band%2BLand%2BReform%2522%26drilldown%3Dbudget_phase.budget_phase%257Cecon1.econ1%257Cecon2.econ2%257Cecon3.econ3%257Cecon4.econ4%257Cecon5.econ5%257Cfg1.fg1%257Cfg2.fg2%257Cfinyear.finyear%257Cprogno.progno%257Cprogno.programme%257Csprogno.sprogno%257Csprogno.subprogramme%257Cvoteno.department%257Cvoteno.voteno%26pagesize%3D10000
   programmes:
   - items:
     - name: Corporate Services
-      total_budget: 364341000.0
+      total_budget: 364341000
       type: subprogramme
     - name: Provincial Coordination
-      total_budget: 308112000.0
+      total_budget: 308112000
       type: subprogramme
     - name: Financial Services
-      total_budget: 185980000.0
+      total_budget: 185980000
       type: subprogramme
     - name: Office Accommodation
-      total_budget: 166657000.0
+      total_budget: 166657000
       type: subprogramme
     - name: Management
-      total_budget: 140050000.0
+      total_budget: 140050000
       type: subprogramme
     - name: Internal Audit
-      total_budget: 58107000.0
+      total_budget: 58107000
       type: subprogramme
     - name: Ministry
-      total_budget: 41018000.0
+      total_budget: 41018000
       type: subprogramme
     name: Administration
     type: programme
   - items:
     - name: Agricultural Land Holding Account
-      total_budget: 1542027000.0
+      total_budget: 1542027000
       type: subprogramme
     - name: Land Reform Grants
-      total_budget: 560869000.0
+      total_budget: 560869000
       type: subprogramme
     - name: Land Reform Provincial Offices
-      total_budget: 445825000.0
+      total_budget: 445825000
       type: subprogramme
     - name: Land Reform National Office
-      total_budget: 158991000.0
+      total_budget: 158991000
       type: subprogramme
     - name: KwaZulu-Natal Ingonyama Trust Board
-      total_budget: 18069000.0
+      total_budget: 18069000
       type: subprogramme
     - name: Office of Valuer-General
-      total_budget: 11327000.0
+      total_budget: 11327000
       type: subprogramme
     name: Land Reform
     type: programme
   - items:
     - name: National Geomatics Management Services
-      total_budget: 490317000.0
+      total_budget: 490317000
       type: subprogramme
     - name: Spatial Planning and Land Use Management
-      total_budget: 186890000.0
+      total_budget: 186890000
       type: subprogramme
     - name: Registration of Deeds Trading account
-      total_budget: 119537000.0
+      total_budget: 119537000
       type: subprogramme
     - name: South African Council for Planners
-      total_budget: 3159000.0
+      total_budget: 3159000
       type: subprogramme
     name: National Geomatics Management Services
     type: programme
   - items:
     - name: Restitution Grants
-      total_budget: 2116000000.0
+      total_budget: 2116000000
       type: subprogramme
     - name: Restitution Regional Offices
-      total_budget: 427366000.0
+      total_budget: 427366000
       type: subprogramme
     - name: Restitution National Office
-      total_budget: 59303000.0
+      total_budget: 59303000
       type: subprogramme
     name: Restitution
     type: programme
   - items:
     - name: Rural Infrastructure Development
-      total_budget: 917862000.0
+      total_budget: 917862000
       type: subprogramme
     - name: Rural Enterprise and Industrial Development
-      total_budget: 725936000.0
+      total_budget: 725936000
       type: subprogramme
     - name: National Rural Youth Services Corps
-      total_budget: 331941000.0
+      total_budget: 331941000
       type: subprogramme
     name: Rural Development
     type: programme

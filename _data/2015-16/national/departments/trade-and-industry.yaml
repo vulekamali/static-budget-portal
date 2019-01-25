@@ -14,7 +14,7 @@ adjusted_budget_summary:
     name: Shifting of functions between votes
     type: kind
   dataset_detail_page: /datasets/adjusted-estimates-of-national-expenditure/adjusted-estimates-of-national-expenditure-2015-16
-  department_data_csv: https://datamanager-staging.vulekamali.gov.za/csv/?api_url=https%3A//openspending.org/api/3/cubes/b9d2af843f3a7ca223eea07fb608e62a%3Aadjusted-estimates-of-national-expenditure-2015-16-uploaded-2018-12-14t1118/aggregate/%3Fcut%3Dfinyear.finyear%253A2015%257Cvoteno.department%253ATrade%2Band%2BIndustry%26drilldown%3Dbudget_phase.budget_phase%257Cecon1.econ1%257Cecon2.econ2%257Cecon3.econ3%257Cecon4.econ4%257Cecon5.econ5%257Cfinyear.finyear%257Cfy_descript.fy_descript%257Cprogno.progno%257Cprogno.programme%257Csprogno.sprogno%257Csprogno.subprogramme%257Cvoteno.department%257Cvoteno.voteno%26pagesize%3D10000
+  department_data_csv: https://datamanager.vulekamali.gov.za/csv/?api_url=https%3A//openspending.org/api/3/cubes/b9d2af843f3a7ca223eea07fb608e62a%3Aadjusted-estimates-of-national-expenditure-2015-16-uploaded-2018-12-14t1118/aggregate/%3Fcut%3Dfinyear.finyear%253A2015%257Cvoteno.department%253ATrade%2Band%2BIndustry%26drilldown%3Dbudget_phase.budget_phase%257Cecon1.econ1%257Cecon2.econ2%257Cecon3.econ3%257Cecon4.econ4%257Cecon5.econ5%257Cfinyear.finyear%257Cfy_descript.fy_descript%257Cprogno.progno%257Cprogno.programme%257Csprogno.sprogno%257Csprogno.subprogramme%257Cvoteno.department%257Cvoteno.voteno%26pagesize%3D10000
   direct_charges: null
   econ_classes:
   - items:
@@ -176,61 +176,11 @@ budget_actual:
       financial_year: 2014-15
       phase: Audit Outcome
   notices:
-  - Please note that the data for 2012, 2013 and 2014 has not been published on vulekamali.
+  - Please note that the data for 2014, 2012 and 2013 has not been published on vulekamali.
 budget_actual_programmes:
   dataset_detail_page: /datasets/budgeted-and-actual-national-expenditure/budgeted-and-actual-national-expenditure
   notices: []
   programmes:
-  - items:
-    - amount: 689740000.0
-      financial_year: 2015-16
-      phase: Main appropriation
-    - amount: 768304000
-      financial_year: 2015-16
-      phase: Adjusted appropriation
-    - amount: 727578000
-      financial_year: 2015-16
-      phase: Final Appropriation
-    - amount: 727561000
-      financial_year: 2015-16
-      phase: Audit Outcome
-    - amount: null
-      financial_year: 2012-13
-      phase: Main appropriation
-    - amount: null
-      financial_year: 2012-13
-      phase: Adjusted appropriation
-    - amount: null
-      financial_year: 2012-13
-      phase: Final Appropriation
-    - amount: null
-      financial_year: 2012-13
-      phase: Audit Outcome
-    - amount: null
-      financial_year: 2013-14
-      phase: Main appropriation
-    - amount: null
-      financial_year: 2013-14
-      phase: Adjusted appropriation
-    - amount: null
-      financial_year: 2013-14
-      phase: Final Appropriation
-    - amount: null
-      financial_year: 2013-14
-      phase: Audit Outcome
-    - amount: null
-      financial_year: 2014-15
-      phase: Main appropriation
-    - amount: null
-      financial_year: 2014-15
-      phase: Adjusted appropriation
-    - amount: null
-      financial_year: 2014-15
-      phase: Final Appropriation
-    - amount: null
-      financial_year: 2014-15
-      phase: Audit Outcome
-    name: Administration
   - items:
     - amount: 164754000.0
       financial_year: 2015-16
@@ -282,56 +232,6 @@ budget_actual_programmes:
       phase: Audit Outcome
     name: International Trade and Economic Development
   - items:
-    - amount: 1973534000.0
-      financial_year: 2015-16
-      phase: Main appropriation
-    - amount: 1964268000
-      financial_year: 2015-16
-      phase: Adjusted appropriation
-    - amount: 1953622000
-      financial_year: 2015-16
-      phase: Final Appropriation
-    - amount: 1953616000
-      financial_year: 2015-16
-      phase: Audit Outcome
-    - amount: null
-      financial_year: 2012-13
-      phase: Main appropriation
-    - amount: null
-      financial_year: 2012-13
-      phase: Adjusted appropriation
-    - amount: null
-      financial_year: 2012-13
-      phase: Final Appropriation
-    - amount: null
-      financial_year: 2012-13
-      phase: Audit Outcome
-    - amount: null
-      financial_year: 2013-14
-      phase: Main appropriation
-    - amount: null
-      financial_year: 2013-14
-      phase: Adjusted appropriation
-    - amount: null
-      financial_year: 2013-14
-      phase: Final Appropriation
-    - amount: null
-      financial_year: 2013-14
-      phase: Audit Outcome
-    - amount: null
-      financial_year: 2014-15
-      phase: Main appropriation
-    - amount: null
-      financial_year: 2014-15
-      phase: Adjusted appropriation
-    - amount: null
-      financial_year: 2014-15
-      phase: Final Appropriation
-    - amount: null
-      financial_year: 2014-15
-      phase: Audit Outcome
-    name: Industrial Development
-  - items:
     - amount: 263224000.0
       financial_year: 2015-16
       phase: Main appropriation
@@ -381,56 +281,6 @@ budget_actual_programmes:
       financial_year: 2014-15
       phase: Audit Outcome
     name: Special Economic Zones and Economic Transformation
-  - items:
-    - amount: 5795639000.0
-      financial_year: 2015-16
-      phase: Main appropriation
-    - amount: 5827591000
-      financial_year: 2015-16
-      phase: Adjusted appropriation
-    - amount: 5821653000
-      financial_year: 2015-16
-      phase: Final Appropriation
-    - amount: 5795785000
-      financial_year: 2015-16
-      phase: Audit Outcome
-    - amount: null
-      financial_year: 2012-13
-      phase: Main appropriation
-    - amount: null
-      financial_year: 2012-13
-      phase: Adjusted appropriation
-    - amount: null
-      financial_year: 2012-13
-      phase: Final Appropriation
-    - amount: null
-      financial_year: 2012-13
-      phase: Audit Outcome
-    - amount: null
-      financial_year: 2013-14
-      phase: Main appropriation
-    - amount: null
-      financial_year: 2013-14
-      phase: Adjusted appropriation
-    - amount: null
-      financial_year: 2013-14
-      phase: Final Appropriation
-    - amount: null
-      financial_year: 2013-14
-      phase: Audit Outcome
-    - amount: null
-      financial_year: 2014-15
-      phase: Main appropriation
-    - amount: null
-      financial_year: 2014-15
-      phase: Adjusted appropriation
-    - amount: null
-      financial_year: 2014-15
-      phase: Final Appropriation
-    - amount: null
-      financial_year: 2014-15
-      phase: Audit Outcome
-    name: Incentive Development and Administration
   - items:
     - amount: 294496000.0
       financial_year: 2015-16
@@ -531,6 +381,156 @@ budget_actual_programmes:
       financial_year: 2014-15
       phase: Audit Outcome
     name: Trade and Investment South Africa
+  - items:
+    - amount: 689740000.0
+      financial_year: 2015-16
+      phase: Main appropriation
+    - amount: 768304000
+      financial_year: 2015-16
+      phase: Adjusted appropriation
+    - amount: 727578000
+      financial_year: 2015-16
+      phase: Final Appropriation
+    - amount: 727561000
+      financial_year: 2015-16
+      phase: Audit Outcome
+    - amount: null
+      financial_year: 2012-13
+      phase: Main appropriation
+    - amount: null
+      financial_year: 2012-13
+      phase: Adjusted appropriation
+    - amount: null
+      financial_year: 2012-13
+      phase: Final Appropriation
+    - amount: null
+      financial_year: 2012-13
+      phase: Audit Outcome
+    - amount: null
+      financial_year: 2013-14
+      phase: Main appropriation
+    - amount: null
+      financial_year: 2013-14
+      phase: Adjusted appropriation
+    - amount: null
+      financial_year: 2013-14
+      phase: Final Appropriation
+    - amount: null
+      financial_year: 2013-14
+      phase: Audit Outcome
+    - amount: null
+      financial_year: 2014-15
+      phase: Main appropriation
+    - amount: null
+      financial_year: 2014-15
+      phase: Adjusted appropriation
+    - amount: null
+      financial_year: 2014-15
+      phase: Final Appropriation
+    - amount: null
+      financial_year: 2014-15
+      phase: Audit Outcome
+    name: Administration
+  - items:
+    - amount: 1973534000.0
+      financial_year: 2015-16
+      phase: Main appropriation
+    - amount: 1964268000
+      financial_year: 2015-16
+      phase: Adjusted appropriation
+    - amount: 1953622000
+      financial_year: 2015-16
+      phase: Final Appropriation
+    - amount: 1953616000
+      financial_year: 2015-16
+      phase: Audit Outcome
+    - amount: null
+      financial_year: 2012-13
+      phase: Main appropriation
+    - amount: null
+      financial_year: 2012-13
+      phase: Adjusted appropriation
+    - amount: null
+      financial_year: 2012-13
+      phase: Final Appropriation
+    - amount: null
+      financial_year: 2012-13
+      phase: Audit Outcome
+    - amount: null
+      financial_year: 2013-14
+      phase: Main appropriation
+    - amount: null
+      financial_year: 2013-14
+      phase: Adjusted appropriation
+    - amount: null
+      financial_year: 2013-14
+      phase: Final Appropriation
+    - amount: null
+      financial_year: 2013-14
+      phase: Audit Outcome
+    - amount: null
+      financial_year: 2014-15
+      phase: Main appropriation
+    - amount: null
+      financial_year: 2014-15
+      phase: Adjusted appropriation
+    - amount: null
+      financial_year: 2014-15
+      phase: Final Appropriation
+    - amount: null
+      financial_year: 2014-15
+      phase: Audit Outcome
+    name: Industrial Development
+  - items:
+    - amount: 5795639000.0
+      financial_year: 2015-16
+      phase: Main appropriation
+    - amount: 5827591000
+      financial_year: 2015-16
+      phase: Adjusted appropriation
+    - amount: 5821653000
+      financial_year: 2015-16
+      phase: Final Appropriation
+    - amount: 5795785000
+      financial_year: 2015-16
+      phase: Audit Outcome
+    - amount: null
+      financial_year: 2012-13
+      phase: Main appropriation
+    - amount: null
+      financial_year: 2012-13
+      phase: Adjusted appropriation
+    - amount: null
+      financial_year: 2012-13
+      phase: Final Appropriation
+    - amount: null
+      financial_year: 2012-13
+      phase: Audit Outcome
+    - amount: null
+      financial_year: 2013-14
+      phase: Main appropriation
+    - amount: null
+      financial_year: 2013-14
+      phase: Adjusted appropriation
+    - amount: null
+      financial_year: 2013-14
+      phase: Final Appropriation
+    - amount: null
+      financial_year: 2013-14
+      phase: Audit Outcome
+    - amount: null
+      financial_year: 2014-15
+      phase: Main appropriation
+    - amount: null
+      financial_year: 2014-15
+      phase: Adjusted appropriation
+    - amount: null
+      financial_year: 2014-15
+      phase: Final Appropriation
+    - amount: null
+      financial_year: 2014-15
+      phase: Audit Outcome
+    name: Incentive Development and Administration
 contributed_datasets:
 - contributor: International Budget Partnership
   name: How Does Civil Society Use Budget Information?
@@ -573,21 +573,21 @@ description: 'National department: Trade and Industry budget data for the 2015-1
   financial year from National Treasury in partnership with IMALI YETHU.'
 economic_classification_by_programme:
   dataset_detail_page: /datasets/estimates-of-national-expenditure/estimates-of-national-expenditure-2015-16
-  department_data_csv: https://datamanager-staging.vulekamali.gov.za/csv/?api_url=https%3A//openspending.org/api/3/cubes/b9d2af843f3a7ca223eea07fb608e62a%3Aestimates-of-national-expenditure-south-africa-2015-16/aggregate/%3Fcut%3Dfinancial_year.financial_year%253A2015%257Cvote_number.department%253A%2522Trade%2Band%2BIndustry%2522%26drilldown%3Dbudget_phase.budget_phase%257Ceconomic_classification_1.economic_classification_1%257Ceconomic_classification_2.economic_classification_2%257Ceconomic_classification_3.economic_classification_3%257Ceconomic_classification_4.economic_classification_4%257Cfinancial_year.financial_year%257Cprogramme_number.programme%257Cprogramme_number.programme_number%257Csubprogramme_number.subprogramme%257Csubprogramme_number.subprogramme_number%257Cvote_number.department%257Cvote_number.vote_number%26pagesize%3D10000
+  department_data_csv: https://datamanager.vulekamali.gov.za/csv/?api_url=https%3A//openspending.org/api/3/cubes/b9d2af843f3a7ca223eea07fb608e62a%3Aestimates-of-national-expenditure-2015-16-uploaded-2019-01-25t0215/aggregate/%3Fcut%3Dfinyear.finyear%253A2015%257Cvoteno.department%253A%2522Trade%2Band%2BIndustry%2522%26drilldown%3Dbudget_phase.budget_phase%257Cecon1.econ1%257Cecon2.econ2%257Cecon3.econ3%257Cecon4.econ4%257Cecon5.econ5%257Cfg1.fg1%257Cfg2.fg2%257Cfinyear.finyear%257Cprogno.progno%257Cprogno.programme%257Csprogno.sprogno%257Csprogno.subprogramme%257Cvoteno.department%257Cvoteno.voteno%26pagesize%3D10000
   programmes:
   - items:
     - items:
       - name: Payments for capital assets
-        total_budget: 15469000.0
+        total_budget: 15469000
         type: economic_classification_2
       name: Capital
       type: economic_classification_1
     - items:
       - name: Current payments
-        total_budget: 671848000.0
+        total_budget: 671848000
         type: economic_classification_2
       - name: Transfers and subsidies
-        total_budget: 2423000.0
+        total_budget: 2423000
         type: economic_classification_2
       name: Current
       type: economic_classification_1
@@ -596,16 +596,16 @@ economic_classification_by_programme:
   - items:
     - items:
       - name: Payments for capital assets
-        total_budget: 150000.0
+        total_budget: 150000
         type: economic_classification_2
       name: Capital
       type: economic_classification_1
     - items:
       - name: Transfers and subsidies
-        total_budget: 213735000.0
+        total_budget: 213735000
         type: economic_classification_2
       - name: Current payments
-        total_budget: 80611000.0
+        total_budget: 80611000
         type: economic_classification_2
       name: Current
       type: economic_classification_1
@@ -614,19 +614,19 @@ economic_classification_by_programme:
   - items:
     - items:
       - name: Transfers and subsidies
-        total_budget: 1317827000.0
+        total_budget: 1317827000
         type: economic_classification_2
       - name: Payments for capital assets
-        total_budget: 11980000.0
+        total_budget: 11980000
         type: economic_classification_2
       name: Capital
       type: economic_classification_1
     - items:
       - name: Transfers and subsidies
-        total_budget: 4293200000.0
+        total_budget: 4293200000
         type: economic_classification_2
       - name: Current payments
-        total_budget: 172632000.0
+        total_budget: 172632000
         type: economic_classification_2
       name: Current
       type: economic_classification_1
@@ -635,19 +635,19 @@ economic_classification_by_programme:
   - items:
     - items:
       - name: Transfers and subsidies
-        total_budget: 176133000.0
+        total_budget: 176133000
         type: economic_classification_2
       - name: Payments for capital assets
-        total_budget: 771000.0
+        total_budget: 771000
         type: economic_classification_2
       name: Capital
       type: economic_classification_1
     - items:
       - name: Transfers and subsidies
-        total_budget: 1670822000.0
+        total_budget: 1670822000
         type: economic_classification_2
       - name: Current payments
-        total_budget: 125808000.0
+        total_budget: 125808000
         type: economic_classification_2
       name: Current
       type: economic_classification_1
@@ -656,19 +656,19 @@ economic_classification_by_programme:
   - items:
     - items:
       - name: Transfers and subsidies
-        total_budget: 1158000.0
+        total_budget: 1158000
         type: economic_classification_2
       - name: Payments for capital assets
-        total_budget: 759000.0
+        total_budget: 759000
         type: economic_classification_2
       name: Capital
       type: economic_classification_1
     - items:
       - name: Current payments
-        total_budget: 119122000.0
+        total_budget: 119122000
         type: economic_classification_2
       - name: Transfers and subsidies
-        total_budget: 43715000.0
+        total_budget: 43715000
         type: economic_classification_2
       name: Current
       type: economic_classification_1
@@ -677,16 +677,16 @@ economic_classification_by_programme:
   - items:
     - items:
       - name: Payments for capital assets
-        total_budget: 819000.0
+        total_budget: 819000
         type: economic_classification_2
       name: Capital
       type: economic_classification_1
     - items:
       - name: Transfers and subsidies
-        total_budget: 196786000.0
+        total_budget: 196786000
         type: economic_classification_2
       - name: Current payments
-        total_budget: 65619000.0
+        total_budget: 65619000
         type: economic_classification_2
       name: Current
       type: economic_classification_1
@@ -695,16 +695,16 @@ economic_classification_by_programme:
   - items:
     - items:
       - name: Payments for capital assets
-        total_budget: 4214000.0
+        total_budget: 4214000
         type: economic_classification_2
       name: Capital
       type: economic_classification_1
     - items:
       - name: Current payments
-        total_budget: 240035000.0
+        total_budget: 240035000
         type: economic_classification_2
       - name: Transfers and subsidies
-        total_budget: 168079000.0
+        total_budget: 168079000
         type: economic_classification_2
       name: Current
       type: economic_classification_1
@@ -715,25 +715,25 @@ expenditure_over_time:
   expenditure:
     base_financial_year: 2017-18
     nominal:
-    - amount: 6065501000.0
+    - amount: 6065501000
       financial_year: 2011-12
       phase: Audited Outcome
-    - amount: 7444843000.0
+    - amount: 7444843000
       financial_year: 2012-13
       phase: Audited Outcome
-    - amount: 8340748000.0
+    - amount: 8340748000
       financial_year: 2013-14
       phase: Audited Outcome
-    - amount: 8834161000.0
+    - amount: 8834161000
       financial_year: 2014-15
       phase: Adjusted appropriation
-    - amount: 9593715000.0
+    - amount: 9593715000
       financial_year: 2015-16
       phase: Main appropriation
-    - amount: 10505314000.0
+    - amount: 10505314000
       financial_year: 2016-17
       phase: Medium Term Estimates
-    - amount: 9509186000.0
+    - amount: 9509186000
       financial_year: 2017-18
       phase: Medium Term Estimates
     real:
@@ -800,110 +800,110 @@ is_vote_primary: true
 name: Trade and Industry
 programme_by_economic_classification:
   dataset_detail_page: /datasets/estimates-of-national-expenditure/estimates-of-national-expenditure-2015-16
-  department_data_csv: https://datamanager-staging.vulekamali.gov.za/csv/?api_url=https%3A//openspending.org/api/3/cubes/b9d2af843f3a7ca223eea07fb608e62a%3Aestimates-of-national-expenditure-south-africa-2015-16/aggregate/%3Fcut%3Dfinancial_year.financial_year%253A2015%257Cvote_number.department%253A%2522Trade%2Band%2BIndustry%2522%26drilldown%3Dbudget_phase.budget_phase%257Ceconomic_classification_1.economic_classification_1%257Ceconomic_classification_2.economic_classification_2%257Ceconomic_classification_3.economic_classification_3%257Ceconomic_classification_4.economic_classification_4%257Cfinancial_year.financial_year%257Cprogramme_number.programme%257Cprogramme_number.programme_number%257Csubprogramme_number.subprogramme%257Csubprogramme_number.subprogramme_number%257Cvote_number.department%257Cvote_number.vote_number%26pagesize%3D10000
+  department_data_csv: https://datamanager.vulekamali.gov.za/csv/?api_url=https%3A//openspending.org/api/3/cubes/b9d2af843f3a7ca223eea07fb608e62a%3Aestimates-of-national-expenditure-2015-16-uploaded-2019-01-25t0215/aggregate/%3Fcut%3Dfinyear.finyear%253A2015%257Cvoteno.department%253A%2522Trade%2Band%2BIndustry%2522%26drilldown%3Dbudget_phase.budget_phase%257Cecon1.econ1%257Cecon2.econ2%257Cecon3.econ3%257Cecon4.econ4%257Cecon5.econ5%257Cfg1.fg1%257Cfg2.fg2%257Cfinyear.finyear%257Cprogno.progno%257Cprogno.programme%257Csprogno.sprogno%257Csprogno.subprogramme%257Cvoteno.department%257Cvoteno.voteno%26pagesize%3D10000
   econ_classes:
   - items:
     - name: Administration
-      total_budget: 15469000.0
+      total_budget: 15469000
       type: programme
     - name: Incentive Development and Administration
-      total_budget: 11980000.0
+      total_budget: 11980000
       type: programme
     - name: Trade and Investment South Africa
-      total_budget: 4214000.0
+      total_budget: 4214000
       type: programme
     - name: Special Economic Zones and Economic Transformation
-      total_budget: 819000.0
+      total_budget: 819000
       type: programme
     - name: Industrial Development
-      total_budget: 771000.0
+      total_budget: 771000
       type: programme
     - name: International Trade and Economic Development
-      total_budget: 759000.0
+      total_budget: 759000
       type: programme
     - name: Consumer and Corporate Regulation
-      total_budget: 150000.0
+      total_budget: 150000
       type: programme
     name: Capital - Payments for capital assets
     type: economic_classification_1_and_2
   - items:
     - name: Incentive Development and Administration
-      total_budget: 1317827000.0
+      total_budget: 1317827000
       type: programme
     - name: Industrial Development
-      total_budget: 176133000.0
+      total_budget: 176133000
       type: programme
     - name: International Trade and Economic Development
-      total_budget: 1158000.0
+      total_budget: 1158000
       type: programme
     name: Capital - Transfers and subsidies
     type: economic_classification_1_and_2
   - items:
     - name: Administration
-      total_budget: 671848000.0
+      total_budget: 671848000
       type: programme
     - name: Trade and Investment South Africa
-      total_budget: 240035000.0
+      total_budget: 240035000
       type: programme
     - name: Incentive Development and Administration
-      total_budget: 172632000.0
+      total_budget: 172632000
       type: programme
     - name: Industrial Development
-      total_budget: 125808000.0
+      total_budget: 125808000
       type: programme
     - name: International Trade and Economic Development
-      total_budget: 119122000.0
+      total_budget: 119122000
       type: programme
     - name: Consumer and Corporate Regulation
-      total_budget: 80611000.0
+      total_budget: 80611000
       type: programme
     - name: Special Economic Zones and Economic Transformation
-      total_budget: 65619000.0
+      total_budget: 65619000
       type: programme
     name: Current - Current payments
     type: economic_classification_1_and_2
   - items:
     - name: Incentive Development and Administration
-      total_budget: 4293200000.0
+      total_budget: 4293200000
       type: programme
     - name: Industrial Development
-      total_budget: 1670822000.0
+      total_budget: 1670822000
       type: programme
     - name: Consumer and Corporate Regulation
-      total_budget: 213735000.0
+      total_budget: 213735000
       type: programme
     - name: Special Economic Zones and Economic Transformation
-      total_budget: 196786000.0
+      total_budget: 196786000
       type: programme
     - name: Trade and Investment South Africa
-      total_budget: 168079000.0
+      total_budget: 168079000
       type: programme
     - name: International Trade and Economic Development
-      total_budget: 43715000.0
+      total_budget: 43715000
       type: programme
     - name: Administration
-      total_budget: 2423000.0
+      total_budget: 2423000
       type: programme
     name: Current - Transfers and subsidies
     type: economic_classification_1_and_2
 programmes:
   dataset_detail_page: /datasets/estimates-of-national-expenditure/estimates-of-national-expenditure-2015-16
-  department_data_csv: https://datamanager-staging.vulekamali.gov.za/csv/?api_url=https%3A//openspending.org/api/3/cubes/b9d2af843f3a7ca223eea07fb608e62a%3Aestimates-of-national-expenditure-south-africa-2015-16/aggregate/%3Fcut%3Dfinancial_year.financial_year%253A2015%257Cvote_number.department%253A%2522Trade%2Band%2BIndustry%2522%26drilldown%3Dbudget_phase.budget_phase%257Ceconomic_classification_1.economic_classification_1%257Ceconomic_classification_2.economic_classification_2%257Ceconomic_classification_3.economic_classification_3%257Ceconomic_classification_4.economic_classification_4%257Cfinancial_year.financial_year%257Cprogramme_number.programme%257Cprogramme_number.programme_number%257Csubprogramme_number.subprogramme%257Csubprogramme_number.subprogramme_number%257Cvote_number.department%257Cvote_number.vote_number%26pagesize%3D10000
+  department_data_csv: https://datamanager.vulekamali.gov.za/csv/?api_url=https%3A//openspending.org/api/3/cubes/b9d2af843f3a7ca223eea07fb608e62a%3Aestimates-of-national-expenditure-2015-16-uploaded-2019-01-25t0215/aggregate/%3Fcut%3Dfinyear.finyear%253A2015%257Cvoteno.department%253A%2522Trade%2Band%2BIndustry%2522%26drilldown%3Dbudget_phase.budget_phase%257Cecon1.econ1%257Cecon2.econ2%257Cecon3.econ3%257Cecon4.econ4%257Cecon5.econ5%257Cfg1.fg1%257Cfg2.fg2%257Cfinyear.finyear%257Cprogno.progno%257Cprogno.programme%257Csprogno.sprogno%257Csprogno.subprogramme%257Cvoteno.department%257Cvoteno.voteno%26pagesize%3D10000
   programme_budgets:
   - name: Administration
-    total_budget: 689740000.0
+    total_budget: 689740000
   - name: International Trade and Economic Development
-    total_budget: 164754000.0
+    total_budget: 164754000
   - name: Special Economic Zones and Economic Transformation
-    total_budget: 263224000.0
+    total_budget: 263224000
   - name: Industrial Development
-    total_budget: 1973534000.0
+    total_budget: 1973534000
   - name: Consumer and Corporate Regulation
-    total_budget: 294496000.0
+    total_budget: 294496000
   - name: Incentive Development and Administration
-    total_budget: 5795639000.0
+    total_budget: 5795639000
   - name: Trade and Investment South Africa
-    total_budget: 412328000.0
+    total_budget: 412328000
 selected_financial_year: 2015-16
 selected_tab: departments
 slug: trade-and-industry
@@ -912,107 +912,107 @@ sphere:
   slug: national
 subprogramme_by_programme:
   dataset_detail_page: /datasets/estimates-of-national-expenditure/estimates-of-national-expenditure-2015-16
-  department_data_csv: https://datamanager-staging.vulekamali.gov.za/csv/?api_url=https%3A//openspending.org/api/3/cubes/b9d2af843f3a7ca223eea07fb608e62a%3Aestimates-of-national-expenditure-south-africa-2015-16/aggregate/%3Fcut%3Dfinancial_year.financial_year%253A2015%257Cvote_number.department%253A%2522Trade%2Band%2BIndustry%2522%26drilldown%3Dbudget_phase.budget_phase%257Ceconomic_classification_1.economic_classification_1%257Ceconomic_classification_2.economic_classification_2%257Ceconomic_classification_3.economic_classification_3%257Ceconomic_classification_4.economic_classification_4%257Cfinancial_year.financial_year%257Cprogramme_number.programme%257Cprogramme_number.programme_number%257Csubprogramme_number.subprogramme%257Csubprogramme_number.subprogramme_number%257Cvote_number.department%257Cvote_number.vote_number%26pagesize%3D10000
+  department_data_csv: https://datamanager.vulekamali.gov.za/csv/?api_url=https%3A//openspending.org/api/3/cubes/b9d2af843f3a7ca223eea07fb608e62a%3Aestimates-of-national-expenditure-2015-16-uploaded-2019-01-25t0215/aggregate/%3Fcut%3Dfinyear.finyear%253A2015%257Cvoteno.department%253A%2522Trade%2Band%2BIndustry%2522%26drilldown%3Dbudget_phase.budget_phase%257Cecon1.econ1%257Cecon2.econ2%257Cecon3.econ3%257Cecon4.econ4%257Cecon5.econ5%257Cfg1.fg1%257Cfg2.fg2%257Cfinyear.finyear%257Cprogno.progno%257Cprogno.programme%257Csprogno.sprogno%257Csprogno.subprogramme%257Cvoteno.department%257Cvoteno.voteno%26pagesize%3D10000
   programmes:
   - items:
     - name: Corporate Services
-      total_budget: 393088000.0
+      total_budget: 393088000
       type: subprogramme
     - name: Office of the Director General
-      total_budget: 93437000.0
+      total_budget: 93437000
       type: subprogramme
     - name: Financial Management
-      total_budget: 73004000.0
+      total_budget: 73004000
       type: subprogramme
     - name: Marketing Communication and Stakeholder Relations
-      total_budget: 70946000.0
+      total_budget: 70946000
       type: subprogramme
     - name: Ministry
-      total_budget: 31531000.0
+      total_budget: 31531000
       type: subprogramme
     - name: Media and Public Relations
-      total_budget: 17854000.0
+      total_budget: 17854000
       type: subprogramme
     - name: Office Accommodation
-      total_budget: 9880000.0
+      total_budget: 9880000
       type: subprogramme
     name: Administration
     type: programme
   - items:
     - name: Regulatory Services
-      total_budget: 224655000.0
+      total_budget: 224655000
       type: subprogramme
     - name: Enforcement and Compliance
-      total_budget: 43906000.0
+      total_budget: 43906000
       type: subprogramme
     - name: Policy and Legislative Development
-      total_budget: 25935000.0
+      total_budget: 25935000
       type: subprogramme
     name: Consumer and Corporate Regulation
     type: programme
   - items:
     - name: Manufacturing Incentives
-      total_budget: 3781822000.0
+      total_budget: 3781822000
       type: subprogramme
     - name: Infrastructure Investment Support
-      total_budget: 1341533000.0
+      total_budget: 1341533000
       type: subprogramme
     - name: Services Investment Incentives
-      total_budget: 569866000.0
+      total_budget: 569866000
       type: subprogramme
     - name: Broadening Participation Incentives
-      total_budget: 63793000.0
+      total_budget: 63793000
       type: subprogramme
     - name: Strategic Partnership and Customer Care
-      total_budget: 21146000.0
+      total_budget: 21146000
       type: subprogramme
     - name: Product and Systems Development
-      total_budget: 17479000.0
+      total_budget: 17479000
       type: subprogramme
     name: Incentive Development and Administration
     type: programme
   - items:
     - name: Customised Sector Programmes
-      total_budget: 1295546000.0
+      total_budget: 1295546000
       type: subprogramme
     - name: Industrial Competitiveness
-      total_budget: 677988000.0
+      total_budget: 677988000
       type: subprogramme
     name: Industrial Development
     type: programme
   - items:
     - name: International Trade Development
-      total_budget: 100501000.0
+      total_budget: 100501000
       type: subprogramme
     - name: African Economic Development
-      total_budget: 64253000.0
+      total_budget: 64253000
       type: subprogramme
     name: International Trade and Economic Development
     type: programme
   - items:
     - name: Enterprise Competitiveness
-      total_budget: 200033000.0
+      total_budget: 200033000
       type: subprogramme
     - name: Spatial Industrial Economic Development (Special Economic Zones)
-      total_budget: 49142000.0
+      total_budget: 49142000
       type: subprogramme
     - name: Equity and Empowerment
-      total_budget: 14049000.0
+      total_budget: 14049000
       type: subprogramme
     name: Special Economic Zones and Economic Transformation
     type: programme
   - items:
-    - name: Trade and Investment In South Africa Executive Management Unit
-      total_budget: 316286000.0
+    - name: Trade and Investment In South Africa Executive  Management Unit
+      total_budget: 316286000
       type: subprogramme
     - name: Investment Promotion and Facilitation
-      total_budget: 48254000.0
+      total_budget: 48254000
       type: subprogramme
     - name: Export Promotion and Marketing
-      total_budget: 36950000.0
+      total_budget: 36950000
       type: subprogramme
     - name: Export Development and Support
-      total_budget: 10838000.0
+      total_budget: 10838000
       type: subprogramme
     name: Trade and Investment South Africa
     type: programme

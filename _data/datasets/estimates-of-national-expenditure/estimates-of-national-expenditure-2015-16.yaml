@@ -40,7 +40,7 @@ intro: "This dataset includes expenditure data as published in the\r\nEstimates 
   \ public services and\r\nperformance by the department as a whole."
 intro_short: null
 key_points: null
-last_updated: '2018-10-11T08:09:26.916948'
+last_updated: '2019-01-25T05:18:54.845328'
 license:
   name: Other (Public Domain)
   url: null
@@ -59,15 +59,15 @@ resources:
 - description: ''
   format: OpenSpending API
   name: Estimates of National Expenditure 2015-16
-  url: https://openspending.org/api/3/cubes/b9d2af843f3a7ca223eea07fb608e62a:estimates-of-national-expenditure-south-africa-2015-16/model/
+  url: https://openspending.org/api/3/cubes/b9d2af843f3a7ca223eea07fb608e62a:estimates-of-national-expenditure-2015-16-uploaded-2019-01-25t0215/model/
 - description: ''
   format: XLSX
   name: Estimates of National Expenditure Pivot Data 2015
   url: https://data.vulekamali.gov.za/dataset/ce3e6738-a5eb-422d-85ef-346bb6b09fc5/resource/78cf356c-1363-48d4-99fb-2552f13cc660/download/ene-2015-expend-data-set.zip
 - description: ''
   format: CSV
-  name: estimates-of-national-expenditure-south-africa-2015-16.csv
-  url: https://data.vulekamali.gov.za/dataset/ce3e6738-a5eb-422d-85ef-346bb6b09fc5/resource/f956616e-f773-4ba7-984a-56595c732bc9/download/estimates-of-national-expenditure-south-africa-2015-16.csv
+  name: Estimates of National Expenditure 2015-16
+  url: http://datastore.openspending.org/b9d2af843f3a7ca223eea07fb608e62a/estimates-of-national-expenditure-2015-16-uploaded-2019-01-25t0215/final/data/ene-2015-16.csv
 selected_tab: datasets
 slug: estimates-of-national-expenditure-2015-16
 title: Estimates of National Expenditure 2015-16 - vulekamali

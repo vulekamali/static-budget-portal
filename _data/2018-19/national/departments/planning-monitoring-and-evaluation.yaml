@@ -8,7 +8,7 @@ adjusted_budget_summary:
     name: Shifting of functions between votes
     type: kind
   dataset_detail_page: /datasets/adjusted-estimates-of-national-expenditure/adjusted-estimates-of-national-expenditure-2018-19
-  department_data_csv: https://datamanager-staging.vulekamali.gov.za/csv/?api_url=https%3A//openspending.org/api/3/cubes/b9d2af843f3a7ca223eea07fb608e62a%3Aaene-2018-19-v2/aggregate/%3Fcut%3Dfinyear.finyear%253A2018%257Cdepartment.department%253APlanning%252C%2BMonitoring%2Band%2BEvaluation%26drilldown%3Dbudget_phase.budget_phase%257Cdepartment.department%257Cecon1.econ1%257Cecon2.econ2%257Cecon3.econ3%257Cecon4.econ4%257Cecon5.econ5%257Cfinyear.finyear%257Cfy_descript.fy_descript%257Cprogno.progno%257Cprogno.programme%257Csprogno.sprogno%257Csprogno.subprogramme%26pagesize%3D10000
+  department_data_csv: https://datamanager.vulekamali.gov.za/csv/?api_url=https%3A//openspending.org/api/3/cubes/b9d2af843f3a7ca223eea07fb608e62a%3Aaene-2018-19-v2/aggregate/%3Fcut%3Dfinyear.finyear%253A2018%257Cdepartment.department%253APlanning%252C%2BMonitoring%2Band%2BEvaluation%26drilldown%3Dbudget_phase.budget_phase%257Cdepartment.department%257Cecon1.econ1%257Cecon2.econ2%257Cecon3.econ3%257Cecon4.econ4%257Cecon5.econ5%257Cfinyear.finyear%257Cfy_descript.fy_descript%257Cprogno.progno%257Cprogno.programme%257Csprogno.sprogno%257Csprogno.subprogramme%26pagesize%3D10000
   direct_charges: null
   econ_classes:
   - items:
@@ -173,6 +173,256 @@ budget_actual_programmes:
   - One or more programmes did not exist for some years displayed.
   programmes:
   - items:
+    - amount: 40111000.0
+      financial_year: 2017-18
+      phase: Main appropriation
+    - amount: 32410000
+      financial_year: 2017-18
+      phase: Adjusted appropriation
+    - amount: 34618000
+      financial_year: 2017-18
+      phase: Final Appropriation
+    - amount: 34343000
+      financial_year: 2017-18
+      phase: Audit Outcome
+    - amount: 35123000.0
+      financial_year: 2018-19
+      phase: Main appropriation
+    - amount: 44786000
+      financial_year: 2018-19
+      phase: Adjusted appropriation
+    - amount: null
+      financial_year: 2015-16
+      phase: Main appropriation
+    - amount: null
+      financial_year: 2015-16
+      phase: Adjusted appropriation
+    - amount: null
+      financial_year: 2015-16
+      phase: Final Appropriation
+    - amount: null
+      financial_year: 2015-16
+      phase: Audit Outcome
+    - amount: null
+      financial_year: 2016-17
+      phase: Main appropriation
+    - amount: null
+      financial_year: 2016-17
+      phase: Adjusted appropriation
+    - amount: null
+      financial_year: 2016-17
+      phase: Final Appropriation
+    - amount: null
+      financial_year: 2016-17
+      phase: Audit Outcome
+    - amount: null
+      financial_year: 2018-19
+      phase: Final Appropriation
+    - amount: null
+      financial_year: 2018-19
+      phase: Audit Outcome
+    name: Public Sector Monitoring and Capacity Development
+  - items:
+    - amount: 52153000.0
+      financial_year: 2017-18
+      phase: Main appropriation
+    - amount: 47422000
+      financial_year: 2017-18
+      phase: Adjusted appropriation
+    - amount: 44093000
+      financial_year: 2017-18
+      phase: Final Appropriation
+    - amount: 40902000
+      financial_year: 2017-18
+      phase: Audit Outcome
+    - amount: 55893000.0
+      financial_year: 2018-19
+      phase: Main appropriation
+    - amount: 62235000
+      financial_year: 2018-19
+      phase: Adjusted appropriation
+    - amount: null
+      financial_year: 2015-16
+      phase: Main appropriation
+    - amount: null
+      financial_year: 2015-16
+      phase: Adjusted appropriation
+    - amount: null
+      financial_year: 2015-16
+      phase: Final Appropriation
+    - amount: null
+      financial_year: 2015-16
+      phase: Audit Outcome
+    - amount: null
+      financial_year: 2016-17
+      phase: Main appropriation
+    - amount: null
+      financial_year: 2016-17
+      phase: Adjusted appropriation
+    - amount: null
+      financial_year: 2016-17
+      phase: Final Appropriation
+    - amount: null
+      financial_year: 2016-17
+      phase: Audit Outcome
+    - amount: null
+      financial_year: 2018-19
+      phase: Final Appropriation
+    - amount: null
+      financial_year: 2018-19
+      phase: Audit Outcome
+    name: Sector Planning and Monitoring
+  - items:
+    - amount: 54547000.0
+      financial_year: 2017-18
+      phase: Main appropriation
+    - amount: 44703000
+      financial_year: 2017-18
+      phase: Adjusted appropriation
+    - amount: 47639000
+      financial_year: 2017-18
+      phase: Final Appropriation
+    - amount: 46139000
+      financial_year: 2017-18
+      phase: Audit Outcome
+    - amount: 77392000.0
+      financial_year: 2018-19
+      phase: Main appropriation
+    - amount: 81470000
+      financial_year: 2018-19
+      phase: Adjusted appropriation
+    - amount: null
+      financial_year: 2015-16
+      phase: Main appropriation
+    - amount: null
+      financial_year: 2015-16
+      phase: Adjusted appropriation
+    - amount: null
+      financial_year: 2015-16
+      phase: Final Appropriation
+    - amount: null
+      financial_year: 2015-16
+      phase: Audit Outcome
+    - amount: null
+      financial_year: 2016-17
+      phase: Main appropriation
+    - amount: null
+      financial_year: 2016-17
+      phase: Adjusted appropriation
+    - amount: null
+      financial_year: 2016-17
+      phase: Final Appropriation
+    - amount: null
+      financial_year: 2016-17
+      phase: Audit Outcome
+    - amount: null
+      financial_year: 2018-19
+      phase: Final Appropriation
+    - amount: null
+      financial_year: 2018-19
+      phase: Audit Outcome
+    name: National Planning Coordination
+  - items:
+    - amount: 56963000.0
+      financial_year: 2017-18
+      phase: Main appropriation
+    - amount: 53398000
+      financial_year: 2017-18
+      phase: Adjusted appropriation
+    - amount: 53421000
+      financial_year: 2017-18
+      phase: Final Appropriation
+    - amount: 51786000
+      financial_year: 2017-18
+      phase: Audit Outcome
+    - amount: 59263000.0
+      financial_year: 2018-19
+      phase: Main appropriation
+    - amount: 63317000
+      financial_year: 2018-19
+      phase: Adjusted appropriation
+    - amount: null
+      financial_year: 2015-16
+      phase: Main appropriation
+    - amount: null
+      financial_year: 2015-16
+      phase: Adjusted appropriation
+    - amount: null
+      financial_year: 2015-16
+      phase: Final Appropriation
+    - amount: null
+      financial_year: 2015-16
+      phase: Audit Outcome
+    - amount: null
+      financial_year: 2016-17
+      phase: Main appropriation
+    - amount: null
+      financial_year: 2016-17
+      phase: Adjusted appropriation
+    - amount: null
+      financial_year: 2016-17
+      phase: Final Appropriation
+    - amount: null
+      financial_year: 2016-17
+      phase: Audit Outcome
+    - amount: null
+      financial_year: 2018-19
+      phase: Final Appropriation
+    - amount: null
+      financial_year: 2018-19
+      phase: Audit Outcome
+    name: Frontline and Citizen-Based Service Delivery and Monitoring
+  - items:
+    - amount: 60431000
+      financial_year: 2015-16
+      phase: Adjusted appropriation
+    - amount: 60626000
+      financial_year: 2015-16
+      phase: Final Appropriation
+    - amount: 60626000
+      financial_year: 2015-16
+      phase: Audit Outcome
+    - amount: 67839000.0
+      financial_year: 2016-17
+      phase: Main appropriation
+    - amount: 61955000
+      financial_year: 2016-17
+      phase: Adjusted appropriation
+    - amount: 62412000
+      financial_year: 2016-17
+      phase: Final Appropriation
+    - amount: 61897000
+      financial_year: 2016-17
+      phase: Audit Outcome
+    - amount: null
+      financial_year: 2015-16
+      phase: Main appropriation
+    - amount: null
+      financial_year: 2017-18
+      phase: Main appropriation
+    - amount: null
+      financial_year: 2017-18
+      phase: Adjusted appropriation
+    - amount: null
+      financial_year: 2017-18
+      phase: Final Appropriation
+    - amount: null
+      financial_year: 2017-18
+      phase: Audit Outcome
+    - amount: null
+      financial_year: 2018-19
+      phase: Main appropriation
+    - amount: null
+      financial_year: 2018-19
+      phase: Adjusted appropriation
+    - amount: null
+      financial_year: 2018-19
+      phase: Final Appropriation
+    - amount: null
+      financial_year: 2018-19
+      phase: Audit Outcome
+    name: Institutional Performance Monitoring and Evaluation
+  - items:
     - amount: 82197000
       financial_year: 2015-16
       phase: Adjusted appropriation
@@ -323,156 +573,6 @@ budget_actual_programmes:
       phase: Audit Outcome
     name: Administration
   - items:
-    - amount: 60431000
-      financial_year: 2015-16
-      phase: Adjusted appropriation
-    - amount: 60626000
-      financial_year: 2015-16
-      phase: Final Appropriation
-    - amount: 60626000
-      financial_year: 2015-16
-      phase: Audit Outcome
-    - amount: 67839000.0
-      financial_year: 2016-17
-      phase: Main appropriation
-    - amount: 61955000
-      financial_year: 2016-17
-      phase: Adjusted appropriation
-    - amount: 62412000
-      financial_year: 2016-17
-      phase: Final Appropriation
-    - amount: 61897000
-      financial_year: 2016-17
-      phase: Audit Outcome
-    - amount: null
-      financial_year: 2015-16
-      phase: Main appropriation
-    - amount: null
-      financial_year: 2017-18
-      phase: Main appropriation
-    - amount: null
-      financial_year: 2017-18
-      phase: Adjusted appropriation
-    - amount: null
-      financial_year: 2017-18
-      phase: Final Appropriation
-    - amount: null
-      financial_year: 2017-18
-      phase: Audit Outcome
-    - amount: null
-      financial_year: 2018-19
-      phase: Main appropriation
-    - amount: null
-      financial_year: 2018-19
-      phase: Adjusted appropriation
-    - amount: null
-      financial_year: 2018-19
-      phase: Final Appropriation
-    - amount: null
-      financial_year: 2018-19
-      phase: Audit Outcome
-    name: Institutional Performance Monitoring and Evaluation
-  - items:
-    - amount: 52153000.0
-      financial_year: 2017-18
-      phase: Main appropriation
-    - amount: 47422000
-      financial_year: 2017-18
-      phase: Adjusted appropriation
-    - amount: 44093000
-      financial_year: 2017-18
-      phase: Final Appropriation
-    - amount: 40902000
-      financial_year: 2017-18
-      phase: Audit Outcome
-    - amount: 55893000.0
-      financial_year: 2018-19
-      phase: Main appropriation
-    - amount: 62235000
-      financial_year: 2018-19
-      phase: Adjusted appropriation
-    - amount: null
-      financial_year: 2015-16
-      phase: Main appropriation
-    - amount: null
-      financial_year: 2015-16
-      phase: Adjusted appropriation
-    - amount: null
-      financial_year: 2015-16
-      phase: Final Appropriation
-    - amount: null
-      financial_year: 2015-16
-      phase: Audit Outcome
-    - amount: null
-      financial_year: 2016-17
-      phase: Main appropriation
-    - amount: null
-      financial_year: 2016-17
-      phase: Adjusted appropriation
-    - amount: null
-      financial_year: 2016-17
-      phase: Final Appropriation
-    - amount: null
-      financial_year: 2016-17
-      phase: Audit Outcome
-    - amount: null
-      financial_year: 2018-19
-      phase: Final Appropriation
-    - amount: null
-      financial_year: 2018-19
-      phase: Audit Outcome
-    name: Sector Planning and Monitoring
-  - items:
-    - amount: 415063000
-      financial_year: 2015-16
-      phase: Adjusted appropriation
-    - amount: 415983000
-      financial_year: 2015-16
-      phase: Final Appropriation
-    - amount: 415983000
-      financial_year: 2015-16
-      phase: Audit Outcome
-    - amount: 413417000.0
-      financial_year: 2016-17
-      phase: Main appropriation
-    - amount: 411396000
-      financial_year: 2016-17
-      phase: Adjusted appropriation
-    - amount: 411402000
-      financial_year: 2016-17
-      phase: Final Appropriation
-    - amount: 411085000
-      financial_year: 2016-17
-      phase: Audit Outcome
-    - amount: 441996000.0
-      financial_year: 2017-18
-      phase: Main appropriation
-    - amount: 440164000
-      financial_year: 2017-18
-      phase: Adjusted appropriation
-    - amount: 440164000
-      financial_year: 2017-18
-      phase: Final Appropriation
-    - amount: 437565000
-      financial_year: 2017-18
-      phase: Audit Outcome
-    - amount: 455866000.0
-      financial_year: 2018-19
-      phase: Main appropriation
-    - amount: 488624000
-      financial_year: 2018-19
-      phase: Adjusted appropriation
-    - amount: null
-      financial_year: 2015-16
-      phase: Main appropriation
-    - amount: null
-      financial_year: 2018-19
-      phase: Final Appropriation
-    - amount: null
-      financial_year: 2018-19
-      phase: Audit Outcome
-    name: National Youth Development
-  - items:
     - amount: 109421000.0
       financial_year: 2017-18
       phase: Main appropriation
@@ -523,155 +623,55 @@ budget_actual_programmes:
       phase: Audit Outcome
     name: Evidence and Knowledge Systems
   - items:
-    - amount: 56963000.0
-      financial_year: 2017-18
-      phase: Main appropriation
-    - amount: 53398000
-      financial_year: 2017-18
-      phase: Adjusted appropriation
-    - amount: 53421000
-      financial_year: 2017-18
-      phase: Final Appropriation
-    - amount: 51786000
-      financial_year: 2017-18
-      phase: Audit Outcome
-    - amount: 59263000.0
-      financial_year: 2018-19
-      phase: Main appropriation
-    - amount: 63317000
-      financial_year: 2018-19
-      phase: Adjusted appropriation
-    - amount: null
-      financial_year: 2015-16
-      phase: Main appropriation
-    - amount: null
+    - amount: 415063000
       financial_year: 2015-16
       phase: Adjusted appropriation
-    - amount: null
+    - amount: 415983000
       financial_year: 2015-16
       phase: Final Appropriation
-    - amount: null
+    - amount: 415983000
       financial_year: 2015-16
       phase: Audit Outcome
-    - amount: null
+    - amount: 413417000.0
       financial_year: 2016-17
       phase: Main appropriation
-    - amount: null
+    - amount: 411396000
       financial_year: 2016-17
       phase: Adjusted appropriation
-    - amount: null
+    - amount: 411402000
       financial_year: 2016-17
       phase: Final Appropriation
-    - amount: null
+    - amount: 411085000
       financial_year: 2016-17
       phase: Audit Outcome
-    - amount: null
-      financial_year: 2018-19
-      phase: Final Appropriation
-    - amount: null
-      financial_year: 2018-19
-      phase: Audit Outcome
-    name: Frontline and Citizen-Based Service Delivery and Monitoring
-  - items:
-    - amount: 40111000.0
+    - amount: 441996000.0
       financial_year: 2017-18
       phase: Main appropriation
-    - amount: 32410000
+    - amount: 440164000
       financial_year: 2017-18
       phase: Adjusted appropriation
-    - amount: 34618000
+    - amount: 440164000
       financial_year: 2017-18
       phase: Final Appropriation
-    - amount: 34343000
+    - amount: 437565000
       financial_year: 2017-18
       phase: Audit Outcome
-    - amount: 35123000.0
+    - amount: 455866000.0
       financial_year: 2018-19
       phase: Main appropriation
-    - amount: 44786000
+    - amount: 488624000
       financial_year: 2018-19
       phase: Adjusted appropriation
     - amount: null
       financial_year: 2015-16
       phase: Main appropriation
     - amount: null
-      financial_year: 2015-16
-      phase: Adjusted appropriation
-    - amount: null
-      financial_year: 2015-16
-      phase: Final Appropriation
-    - amount: null
-      financial_year: 2015-16
-      phase: Audit Outcome
-    - amount: null
-      financial_year: 2016-17
-      phase: Main appropriation
-    - amount: null
-      financial_year: 2016-17
-      phase: Adjusted appropriation
-    - amount: null
-      financial_year: 2016-17
-      phase: Final Appropriation
-    - amount: null
-      financial_year: 2016-17
-      phase: Audit Outcome
-    - amount: null
       financial_year: 2018-19
       phase: Final Appropriation
     - amount: null
       financial_year: 2018-19
       phase: Audit Outcome
-    name: Public Sector Monitoring and Capacity Development
-  - items:
-    - amount: 54547000.0
-      financial_year: 2017-18
-      phase: Main appropriation
-    - amount: 44703000
-      financial_year: 2017-18
-      phase: Adjusted appropriation
-    - amount: 47639000
-      financial_year: 2017-18
-      phase: Final Appropriation
-    - amount: 46139000
-      financial_year: 2017-18
-      phase: Audit Outcome
-    - amount: 77392000.0
-      financial_year: 2018-19
-      phase: Main appropriation
-    - amount: 81470000
-      financial_year: 2018-19
-      phase: Adjusted appropriation
-    - amount: null
-      financial_year: 2015-16
-      phase: Main appropriation
-    - amount: null
-      financial_year: 2015-16
-      phase: Adjusted appropriation
-    - amount: null
-      financial_year: 2015-16
-      phase: Final Appropriation
-    - amount: null
-      financial_year: 2015-16
-      phase: Audit Outcome
-    - amount: null
-      financial_year: 2016-17
-      phase: Main appropriation
-    - amount: null
-      financial_year: 2016-17
-      phase: Adjusted appropriation
-    - amount: null
-      financial_year: 2016-17
-      phase: Final Appropriation
-    - amount: null
-      financial_year: 2016-17
-      phase: Audit Outcome
-    - amount: null
-      financial_year: 2018-19
-      phase: Final Appropriation
-    - amount: null
-      financial_year: 2018-19
-      phase: Audit Outcome
-    name: National Planning Coordination
+    name: National Youth Development
 contributed_datasets:
 - contributor: International Budget Partnership
   name: How Does Civil Society Use Budget Information?
@@ -715,7 +715,7 @@ description: 'National department: Planning, Monitoring and Evaluation budget da
   YETHU.'
 economic_classification_by_programme:
   dataset_detail_page: /datasets/estimates-of-national-expenditure/estimates-of-national-expenditure-2018-19
-  department_data_csv: https://datamanager-staging.vulekamali.gov.za/csv/?api_url=https%3A//openspending.org/api/3/cubes/b9d2af843f3a7ca223eea07fb608e62a%3Aestimates-of-national-expenditure-south-africa-2018-19/aggregate/%3Fcut%3Dfinancial_year.financial_year%253A2018%257Cvote_number.department%253A%2522Planning%252C%2BMonitoring%2Band%2BEvaluation%2522%26drilldown%3Dbudget_phase.budget_phase%257Ceconomic_classification_1.economic_classification_1%257Ceconomic_classification_2.economic_classification_2%257Ceconomic_classification_3.economic_classification_3%257Ceconomic_classification_4.economic_classification_4%257Cfinancial_year.financial_year%257Cgovernment_function.government_function%257Cprogramme_number.programme%257Cprogramme_number.programme_number%257Csubprogramme_number.subprogramme%257Csubprogramme_number.subprogramme_number%257Cvote_number.department%257Cvote_number.vote_number%26pagesize%3D10000
+  department_data_csv: https://datamanager.vulekamali.gov.za/csv/?api_url=https%3A//openspending.org/api/3/cubes/b9d2af843f3a7ca223eea07fb608e62a%3Aestimates-of-national-expenditure-south-africa-2018-19/aggregate/%3Fcut%3Dfinancial_year.financial_year%253A2018%257Cvote_number.department%253A%2522Planning%252C%2BMonitoring%2Band%2BEvaluation%2522%26drilldown%3Dbudget_phase.budget_phase%257Ceconomic_classification_1.economic_classification_1%257Ceconomic_classification_2.economic_classification_2%257Ceconomic_classification_3.economic_classification_3%257Ceconomic_classification_4.economic_classification_4%257Cfinancial_year.financial_year%257Cgovernment_function.government_function%257Cprogramme_number.programme%257Cprogramme_number.programme_number%257Csubprogramme_number.subprogramme%257Csubprogramme_number.subprogramme_number%257Cvote_number.department%257Cvote_number.vote_number%26pagesize%3D10000
   programmes:
   - items:
     - items:
@@ -950,7 +950,7 @@ is_vote_primary: true
 name: Planning, Monitoring and Evaluation
 programme_by_economic_classification:
   dataset_detail_page: /datasets/estimates-of-national-expenditure/estimates-of-national-expenditure-2018-19
-  department_data_csv: https://datamanager-staging.vulekamali.gov.za/csv/?api_url=https%3A//openspending.org/api/3/cubes/b9d2af843f3a7ca223eea07fb608e62a%3Aestimates-of-national-expenditure-south-africa-2018-19/aggregate/%3Fcut%3Dfinancial_year.financial_year%253A2018%257Cvote_number.department%253A%2522Planning%252C%2BMonitoring%2Band%2BEvaluation%2522%26drilldown%3Dbudget_phase.budget_phase%257Ceconomic_classification_1.economic_classification_1%257Ceconomic_classification_2.economic_classification_2%257Ceconomic_classification_3.economic_classification_3%257Ceconomic_classification_4.economic_classification_4%257Cfinancial_year.financial_year%257Cgovernment_function.government_function%257Cprogramme_number.programme%257Cprogramme_number.programme_number%257Csubprogramme_number.subprogramme%257Csubprogramme_number.subprogramme_number%257Cvote_number.department%257Cvote_number.vote_number%26pagesize%3D10000
+  department_data_csv: https://datamanager.vulekamali.gov.za/csv/?api_url=https%3A//openspending.org/api/3/cubes/b9d2af843f3a7ca223eea07fb608e62a%3Aestimates-of-national-expenditure-south-africa-2018-19/aggregate/%3Fcut%3Dfinancial_year.financial_year%253A2018%257Cvote_number.department%253A%2522Planning%252C%2BMonitoring%2Band%2BEvaluation%2522%26drilldown%3Dbudget_phase.budget_phase%257Ceconomic_classification_1.economic_classification_1%257Ceconomic_classification_2.economic_classification_2%257Ceconomic_classification_3.economic_classification_3%257Ceconomic_classification_4.economic_classification_4%257Cfinancial_year.financial_year%257Cgovernment_function.government_function%257Cprogramme_number.programme%257Cprogramme_number.programme_number%257Csubprogramme_number.subprogramme%257Csubprogramme_number.subprogramme_number%257Cvote_number.department%257Cvote_number.vote_number%26pagesize%3D10000
   econ_classes:
   - items:
     - name: Administration
@@ -1047,7 +1047,7 @@ programme_by_economic_classification:
     type: economic_classification_1_and_2
 programmes:
   dataset_detail_page: /datasets/estimates-of-national-expenditure/estimates-of-national-expenditure-2018-19
-  department_data_csv: https://datamanager-staging.vulekamali.gov.za/csv/?api_url=https%3A//openspending.org/api/3/cubes/b9d2af843f3a7ca223eea07fb608e62a%3Aestimates-of-national-expenditure-south-africa-2018-19/aggregate/%3Fcut%3Dfinancial_year.financial_year%253A2018%257Cvote_number.department%253A%2522Planning%252C%2BMonitoring%2Band%2BEvaluation%2522%26drilldown%3Dbudget_phase.budget_phase%257Ceconomic_classification_1.economic_classification_1%257Ceconomic_classification_2.economic_classification_2%257Ceconomic_classification_3.economic_classification_3%257Ceconomic_classification_4.economic_classification_4%257Cfinancial_year.financial_year%257Cgovernment_function.government_function%257Cprogramme_number.programme%257Cprogramme_number.programme_number%257Csubprogramme_number.subprogramme%257Csubprogramme_number.subprogramme_number%257Cvote_number.department%257Cvote_number.vote_number%26pagesize%3D10000
+  department_data_csv: https://datamanager.vulekamali.gov.za/csv/?api_url=https%3A//openspending.org/api/3/cubes/b9d2af843f3a7ca223eea07fb608e62a%3Aestimates-of-national-expenditure-south-africa-2018-19/aggregate/%3Fcut%3Dfinancial_year.financial_year%253A2018%257Cvote_number.department%253A%2522Planning%252C%2BMonitoring%2Band%2BEvaluation%2522%26drilldown%3Dbudget_phase.budget_phase%257Ceconomic_classification_1.economic_classification_1%257Ceconomic_classification_2.economic_classification_2%257Ceconomic_classification_3.economic_classification_3%257Ceconomic_classification_4.economic_classification_4%257Cfinancial_year.financial_year%257Cgovernment_function.government_function%257Cprogramme_number.programme%257Cprogramme_number.programme_number%257Csubprogramme_number.subprogramme%257Csubprogramme_number.subprogramme_number%257Cvote_number.department%257Cvote_number.vote_number%26pagesize%3D10000
   programme_budgets:
   - name: Administration
     total_budget: 186630000.0
@@ -1071,7 +1071,7 @@ sphere:
   slug: national
 subprogramme_by_programme:
   dataset_detail_page: /datasets/estimates-of-national-expenditure/estimates-of-national-expenditure-2018-19
-  department_data_csv: https://datamanager-staging.vulekamali.gov.za/csv/?api_url=https%3A//openspending.org/api/3/cubes/b9d2af843f3a7ca223eea07fb608e62a%3Aestimates-of-national-expenditure-south-africa-2018-19/aggregate/%3Fcut%3Dfinancial_year.financial_year%253A2018%257Cvote_number.department%253A%2522Planning%252C%2BMonitoring%2Band%2BEvaluation%2522%26drilldown%3Dbudget_phase.budget_phase%257Ceconomic_classification_1.economic_classification_1%257Ceconomic_classification_2.economic_classification_2%257Ceconomic_classification_3.economic_classification_3%257Ceconomic_classification_4.economic_classification_4%257Cfinancial_year.financial_year%257Cgovernment_function.government_function%257Cprogramme_number.programme%257Cprogramme_number.programme_number%257Csubprogramme_number.subprogramme%257Csubprogramme_number.subprogramme_number%257Cvote_number.department%257Cvote_number.vote_number%26pagesize%3D10000
+  department_data_csv: https://datamanager.vulekamali.gov.za/csv/?api_url=https%3A//openspending.org/api/3/cubes/b9d2af843f3a7ca223eea07fb608e62a%3Aestimates-of-national-expenditure-south-africa-2018-19/aggregate/%3Fcut%3Dfinancial_year.financial_year%253A2018%257Cvote_number.department%253A%2522Planning%252C%2BMonitoring%2Band%2BEvaluation%2522%26drilldown%3Dbudget_phase.budget_phase%257Ceconomic_classification_1.economic_classification_1%257Ceconomic_classification_2.economic_classification_2%257Ceconomic_classification_3.economic_classification_3%257Ceconomic_classification_4.economic_classification_4%257Cfinancial_year.financial_year%257Cgovernment_function.government_function%257Cprogramme_number.programme%257Cprogramme_number.programme_number%257Csubprogramme_number.subprogramme%257Csubprogramme_number.subprogramme_number%257Cvote_number.department%257Cvote_number.vote_number%26pagesize%3D10000
   programmes:
   - items:
     - name: Corporate Services and Financial Administration

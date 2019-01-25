@@ -11,7 +11,7 @@ adjusted_budget_summary:
     name: Declared unspent funds
     type: kind
   dataset_detail_page: /datasets/adjusted-estimates-of-national-expenditure/adjusted-estimates-of-national-expenditure-2016-17
-  department_data_csv: https://datamanager-staging.vulekamali.gov.za/csv/?api_url=https%3A//openspending.org/api/3/cubes/b9d2af843f3a7ca223eea07fb608e62a%3Aadjusted-estimates-of-national-expenditure-2016-17/aggregate/%3Fcut%3Dfinyear.finyear%253A2016%257Cvoteno.department%253AAgriculture%252C%2BForestry%2Band%2BFisheries%26drilldown%3Dbudget_phase.budget_phase%257Cecon1.econ1%257Cecon2.econ2%257Cecon3.econ3%257Cecon4.econ4%257Cecon5.econ5%257Cfinyear.finyear%257Cfy_descript.fy_descript%257Cprogno.progno%257Cprogno.programme%257Csprogno.sprogno%257Csprogno.subprogramme%257Cvoteno.department%257Cvoteno.voteno%26pagesize%3D10000
+  department_data_csv: https://datamanager.vulekamali.gov.za/csv/?api_url=https%3A//openspending.org/api/3/cubes/b9d2af843f3a7ca223eea07fb608e62a%3Aadjusted-estimates-of-national-expenditure-2016-17/aggregate/%3Fcut%3Dfinyear.finyear%253A2016%257Cvoteno.department%253AAgriculture%252C%2BForestry%2Band%2BFisheries%26drilldown%3Dbudget_phase.budget_phase%257Cecon1.econ1%257Cecon2.econ2%257Cecon3.econ3%257Cecon4.econ4%257Cecon5.econ5%257Cfinyear.finyear%257Cfy_descript.fy_descript%257Cprogno.progno%257Cprogno.programme%257Csprogno.sprogno%257Csprogno.subprogramme%257Cvoteno.department%257Cvoteno.voteno%26pagesize%3D10000
   direct_charges: null
   econ_classes:
   - items:
@@ -181,211 +181,11 @@ budget_actual:
       financial_year: 2014-15
       phase: Audit Outcome
   notices:
-  - Please note that the data for 2013 and 2014 has not been published on vulekamali.
+  - Please note that the data for 2014 and 2013 has not been published on vulekamali.
 budget_actual_programmes:
   dataset_detail_page: /datasets/budgeted-and-actual-national-expenditure/budgeted-and-actual-national-expenditure
   notices: []
   programmes:
-  - items:
-    - amount: 729947000.0
-      financial_year: 2015-16
-      phase: Main appropriation
-    - amount: 739418000
-      financial_year: 2015-16
-      phase: Adjusted appropriation
-    - amount: 788853000
-      financial_year: 2015-16
-      phase: Final Appropriation
-    - amount: 785802000
-      financial_year: 2015-16
-      phase: Audit Outcome
-    - amount: 788053000.0
-      financial_year: 2016-17
-      phase: Main appropriation
-    - amount: 781358000
-      financial_year: 2016-17
-      phase: Adjusted appropriation
-    - amount: 843571000
-      financial_year: 2016-17
-      phase: Final Appropriation
-    - amount: 828485000
-      financial_year: 2016-17
-      phase: Audit Outcome
-    - amount: null
-      financial_year: 2013-14
-      phase: Main appropriation
-    - amount: null
-      financial_year: 2013-14
-      phase: Adjusted appropriation
-    - amount: null
-      financial_year: 2013-14
-      phase: Final Appropriation
-    - amount: null
-      financial_year: 2013-14
-      phase: Audit Outcome
-    - amount: null
-      financial_year: 2014-15
-      phase: Main appropriation
-    - amount: null
-      financial_year: 2014-15
-      phase: Adjusted appropriation
-    - amount: null
-      financial_year: 2014-15
-      phase: Final Appropriation
-    - amount: null
-      financial_year: 2014-15
-      phase: Audit Outcome
-    name: Administration
-  - items:
-    - amount: 2134770000.0
-      financial_year: 2015-16
-      phase: Main appropriation
-    - amount: 2144541000
-      financial_year: 2015-16
-      phase: Adjusted appropriation
-    - amount: 2143284000
-      financial_year: 2015-16
-      phase: Final Appropriation
-    - amount: 2143017000
-      financial_year: 2015-16
-      phase: Audit Outcome
-    - amount: 1953418000.0
-      financial_year: 2016-17
-      phase: Main appropriation
-    - amount: 1944610000
-      financial_year: 2016-17
-      phase: Adjusted appropriation
-    - amount: 1927266000
-      financial_year: 2016-17
-      phase: Final Appropriation
-    - amount: 1927031000
-      financial_year: 2016-17
-      phase: Audit Outcome
-    - amount: null
-      financial_year: 2013-14
-      phase: Main appropriation
-    - amount: null
-      financial_year: 2013-14
-      phase: Adjusted appropriation
-    - amount: null
-      financial_year: 2013-14
-      phase: Final Appropriation
-    - amount: null
-      financial_year: 2013-14
-      phase: Audit Outcome
-    - amount: null
-      financial_year: 2014-15
-      phase: Main appropriation
-    - amount: null
-      financial_year: 2014-15
-      phase: Adjusted appropriation
-    - amount: null
-      financial_year: 2014-15
-      phase: Final Appropriation
-    - amount: null
-      financial_year: 2014-15
-      phase: Audit Outcome
-    name: Agricultural Production, Health and Food Safety
-  - items:
-    - amount: 443267000.0
-      financial_year: 2015-16
-      phase: Main appropriation
-    - amount: 465267000
-      financial_year: 2015-16
-      phase: Adjusted appropriation
-    - amount: 465907000
-      financial_year: 2015-16
-      phase: Final Appropriation
-    - amount: 465890000
-      financial_year: 2015-16
-      phase: Audit Outcome
-    - amount: 458598000.0
-      financial_year: 2016-17
-      phase: Main appropriation
-    - amount: 458598000
-      financial_year: 2016-17
-      phase: Adjusted appropriation
-    - amount: 468108000
-      financial_year: 2016-17
-      phase: Final Appropriation
-    - amount: 468090000
-      financial_year: 2016-17
-      phase: Audit Outcome
-    - amount: null
-      financial_year: 2013-14
-      phase: Main appropriation
-    - amount: null
-      financial_year: 2013-14
-      phase: Adjusted appropriation
-    - amount: null
-      financial_year: 2013-14
-      phase: Final Appropriation
-    - amount: null
-      financial_year: 2013-14
-      phase: Audit Outcome
-    - amount: null
-      financial_year: 2014-15
-      phase: Main appropriation
-    - amount: null
-      financial_year: 2014-15
-      phase: Adjusted appropriation
-    - amount: null
-      financial_year: 2014-15
-      phase: Final Appropriation
-    - amount: null
-      financial_year: 2014-15
-      phase: Audit Outcome
-    name: Fisheries
-  - items:
-    - amount: 906564000.0
-      financial_year: 2015-16
-      phase: Main appropriation
-    - amount: 906216000
-      financial_year: 2015-16
-      phase: Adjusted appropriation
-    - amount: 862844000
-      financial_year: 2015-16
-      phase: Final Appropriation
-    - amount: 862280000
-      financial_year: 2015-16
-      phase: Audit Outcome
-    - amount: 945562000.0
-      financial_year: 2016-17
-      phase: Main appropriation
-    - amount: 1137706000
-      financial_year: 2016-17
-      phase: Adjusted appropriation
-    - amount: 1084122000
-      financial_year: 2016-17
-      phase: Final Appropriation
-    - amount: 1077741000
-      financial_year: 2016-17
-      phase: Audit Outcome
-    - amount: null
-      financial_year: 2013-14
-      phase: Main appropriation
-    - amount: null
-      financial_year: 2013-14
-      phase: Adjusted appropriation
-    - amount: null
-      financial_year: 2013-14
-      phase: Final Appropriation
-    - amount: null
-      financial_year: 2013-14
-      phase: Audit Outcome
-    - amount: null
-      financial_year: 2014-15
-      phase: Main appropriation
-    - amount: null
-      financial_year: 2014-15
-      phase: Adjusted appropriation
-    - amount: null
-      financial_year: 2014-15
-      phase: Final Appropriation
-    - amount: null
-      financial_year: 2014-15
-      phase: Audit Outcome
-    name: Forestry and Natural Resources Management
   - items:
     - amount: 238162000.0
       financial_year: 2015-16
@@ -437,6 +237,156 @@ budget_actual_programmes:
       phase: Audit Outcome
     name: Trade Promotion and Market Access
   - items:
+    - amount: 443267000.0
+      financial_year: 2015-16
+      phase: Main appropriation
+    - amount: 465267000
+      financial_year: 2015-16
+      phase: Adjusted appropriation
+    - amount: 465907000
+      financial_year: 2015-16
+      phase: Final Appropriation
+    - amount: 465890000
+      financial_year: 2015-16
+      phase: Audit Outcome
+    - amount: 458598000.0
+      financial_year: 2016-17
+      phase: Main appropriation
+    - amount: 458598000
+      financial_year: 2016-17
+      phase: Adjusted appropriation
+    - amount: 468108000
+      financial_year: 2016-17
+      phase: Final Appropriation
+    - amount: 468090000
+      financial_year: 2016-17
+      phase: Audit Outcome
+    - amount: null
+      financial_year: 2013-14
+      phase: Main appropriation
+    - amount: null
+      financial_year: 2013-14
+      phase: Adjusted appropriation
+    - amount: null
+      financial_year: 2013-14
+      phase: Final Appropriation
+    - amount: null
+      financial_year: 2013-14
+      phase: Audit Outcome
+    - amount: null
+      financial_year: 2014-15
+      phase: Main appropriation
+    - amount: null
+      financial_year: 2014-15
+      phase: Adjusted appropriation
+    - amount: null
+      financial_year: 2014-15
+      phase: Final Appropriation
+    - amount: null
+      financial_year: 2014-15
+      phase: Audit Outcome
+    name: Fisheries
+  - items:
+    - amount: 729947000.0
+      financial_year: 2015-16
+      phase: Main appropriation
+    - amount: 739418000
+      financial_year: 2015-16
+      phase: Adjusted appropriation
+    - amount: 788853000
+      financial_year: 2015-16
+      phase: Final Appropriation
+    - amount: 785802000
+      financial_year: 2015-16
+      phase: Audit Outcome
+    - amount: 788053000.0
+      financial_year: 2016-17
+      phase: Main appropriation
+    - amount: 781358000
+      financial_year: 2016-17
+      phase: Adjusted appropriation
+    - amount: 843571000
+      financial_year: 2016-17
+      phase: Final Appropriation
+    - amount: 828485000
+      financial_year: 2016-17
+      phase: Audit Outcome
+    - amount: null
+      financial_year: 2013-14
+      phase: Main appropriation
+    - amount: null
+      financial_year: 2013-14
+      phase: Adjusted appropriation
+    - amount: null
+      financial_year: 2013-14
+      phase: Final Appropriation
+    - amount: null
+      financial_year: 2013-14
+      phase: Audit Outcome
+    - amount: null
+      financial_year: 2014-15
+      phase: Main appropriation
+    - amount: null
+      financial_year: 2014-15
+      phase: Adjusted appropriation
+    - amount: null
+      financial_year: 2014-15
+      phase: Final Appropriation
+    - amount: null
+      financial_year: 2014-15
+      phase: Audit Outcome
+    name: Administration
+  - items:
+    - amount: 906564000.0
+      financial_year: 2015-16
+      phase: Main appropriation
+    - amount: 906216000
+      financial_year: 2015-16
+      phase: Adjusted appropriation
+    - amount: 862844000
+      financial_year: 2015-16
+      phase: Final Appropriation
+    - amount: 862280000
+      financial_year: 2015-16
+      phase: Audit Outcome
+    - amount: 945562000.0
+      financial_year: 2016-17
+      phase: Main appropriation
+    - amount: 1137706000
+      financial_year: 2016-17
+      phase: Adjusted appropriation
+    - amount: 1084122000
+      financial_year: 2016-17
+      phase: Final Appropriation
+    - amount: 1077741000
+      financial_year: 2016-17
+      phase: Audit Outcome
+    - amount: null
+      financial_year: 2013-14
+      phase: Main appropriation
+    - amount: null
+      financial_year: 2013-14
+      phase: Adjusted appropriation
+    - amount: null
+      financial_year: 2013-14
+      phase: Final Appropriation
+    - amount: null
+      financial_year: 2013-14
+      phase: Audit Outcome
+    - amount: null
+      financial_year: 2014-15
+      phase: Main appropriation
+    - amount: null
+      financial_year: 2014-15
+      phase: Adjusted appropriation
+    - amount: null
+      financial_year: 2014-15
+      phase: Final Appropriation
+    - amount: null
+      financial_year: 2014-15
+      phase: Audit Outcome
+    name: Forestry and Natural Resources Management
+  - items:
     - amount: 1930297000.0
       financial_year: 2015-16
       phase: Main appropriation
@@ -486,6 +436,56 @@ budget_actual_programmes:
       financial_year: 2014-15
       phase: Audit Outcome
     name: Food Security and Agrarian Reform
+  - items:
+    - amount: 2134770000.0
+      financial_year: 2015-16
+      phase: Main appropriation
+    - amount: 2144541000
+      financial_year: 2015-16
+      phase: Adjusted appropriation
+    - amount: 2143284000
+      financial_year: 2015-16
+      phase: Final Appropriation
+    - amount: 2143017000
+      financial_year: 2015-16
+      phase: Audit Outcome
+    - amount: 1953418000.0
+      financial_year: 2016-17
+      phase: Main appropriation
+    - amount: 1944610000
+      financial_year: 2016-17
+      phase: Adjusted appropriation
+    - amount: 1927266000
+      financial_year: 2016-17
+      phase: Final Appropriation
+    - amount: 1927031000
+      financial_year: 2016-17
+      phase: Audit Outcome
+    - amount: null
+      financial_year: 2013-14
+      phase: Main appropriation
+    - amount: null
+      financial_year: 2013-14
+      phase: Adjusted appropriation
+    - amount: null
+      financial_year: 2013-14
+      phase: Final Appropriation
+    - amount: null
+      financial_year: 2013-14
+      phase: Audit Outcome
+    - amount: null
+      financial_year: 2014-15
+      phase: Main appropriation
+    - amount: null
+      financial_year: 2014-15
+      phase: Adjusted appropriation
+    - amount: null
+      financial_year: 2014-15
+      phase: Final Appropriation
+    - amount: null
+      financial_year: 2014-15
+      phase: Audit Outcome
+    name: Agricultural Production, Health and Food Safety
 contributed_datasets:
 - contributor: International Budget Partnership
   name: How Does Civil Society Use Budget Information?
@@ -529,7 +529,7 @@ description: 'National department: Agriculture, Forestry and Fisheries budget da
   YETHU.'
 economic_classification_by_programme:
   dataset_detail_page: /datasets/estimates-of-national-expenditure/estimates-of-national-expenditure-2016-17
-  department_data_csv: https://datamanager-staging.vulekamali.gov.za/csv/?api_url=https%3A//openspending.org/api/3/cubes/b9d2af843f3a7ca223eea07fb608e62a%3Aestimates-of-national-expenditure-south-africa-2016-17/aggregate/%3Fcut%3Dfinancial_year.financial_year%253A2016%257Cvote_number.department%253A%2522Agriculture%252C%2BForestry%2Band%2BFisheries%2522%26drilldown%3Dbudget_phase.budget_phase%257Ceconomic_classification_1.economic_classification_1%257Ceconomic_classification_2.economic_classification_2%257Ceconomic_classification_3.economic_classification_3%257Ceconomic_classification_4.economic_classification_4%257Cfinancial_year.financial_year%257Cprogramme_number.programme%257Cprogramme_number.programme_number%257Csubprogramme_number.subprogramme%257Csubprogramme_number.subprogramme_number%257Cvote_number.department%257Cvote_number.vote_number%26pagesize%3D10000
+  department_data_csv: https://datamanager.vulekamali.gov.za/csv/?api_url=https%3A//openspending.org/api/3/cubes/b9d2af843f3a7ca223eea07fb608e62a%3Aestimates-of-national-expenditure-south-africa-2016-17/aggregate/%3Fcut%3Dfinancial_year.financial_year%253A2016%257Cvote_number.department%253A%2522Agriculture%252C%2BForestry%2Band%2BFisheries%2522%26drilldown%3Dbudget_phase.budget_phase%257Ceconomic_classification_1.economic_classification_1%257Ceconomic_classification_2.economic_classification_2%257Ceconomic_classification_3.economic_classification_3%257Ceconomic_classification_4.economic_classification_4%257Cfinancial_year.financial_year%257Cprogramme_number.programme%257Cprogramme_number.programme_number%257Csubprogramme_number.subprogramme%257Csubprogramme_number.subprogramme_number%257Cvote_number.department%257Cvote_number.vote_number%26pagesize%3D10000
   programmes:
   - items:
     - items:
@@ -818,7 +818,7 @@ is_vote_primary: true
 name: Agriculture, Forestry and Fisheries
 programme_by_economic_classification:
   dataset_detail_page: /datasets/estimates-of-national-expenditure/estimates-of-national-expenditure-2016-17
-  department_data_csv: https://datamanager-staging.vulekamali.gov.za/csv/?api_url=https%3A//openspending.org/api/3/cubes/b9d2af843f3a7ca223eea07fb608e62a%3Aestimates-of-national-expenditure-south-africa-2016-17/aggregate/%3Fcut%3Dfinancial_year.financial_year%253A2016%257Cvote_number.department%253A%2522Agriculture%252C%2BForestry%2Band%2BFisheries%2522%26drilldown%3Dbudget_phase.budget_phase%257Ceconomic_classification_1.economic_classification_1%257Ceconomic_classification_2.economic_classification_2%257Ceconomic_classification_3.economic_classification_3%257Ceconomic_classification_4.economic_classification_4%257Cfinancial_year.financial_year%257Cprogramme_number.programme%257Cprogramme_number.programme_number%257Csubprogramme_number.subprogramme%257Csubprogramme_number.subprogramme_number%257Cvote_number.department%257Cvote_number.vote_number%26pagesize%3D10000
+  department_data_csv: https://datamanager.vulekamali.gov.za/csv/?api_url=https%3A//openspending.org/api/3/cubes/b9d2af843f3a7ca223eea07fb608e62a%3Aestimates-of-national-expenditure-south-africa-2016-17/aggregate/%3Fcut%3Dfinancial_year.financial_year%253A2016%257Cvote_number.department%253A%2522Agriculture%252C%2BForestry%2Band%2BFisheries%2522%26drilldown%3Dbudget_phase.budget_phase%257Ceconomic_classification_1.economic_classification_1%257Ceconomic_classification_2.economic_classification_2%257Ceconomic_classification_3.economic_classification_3%257Ceconomic_classification_4.economic_classification_4%257Cfinancial_year.financial_year%257Cprogramme_number.programme%257Cprogramme_number.programme_number%257Csubprogramme_number.subprogramme%257Csubprogramme_number.subprogramme_number%257Cvote_number.department%257Cvote_number.vote_number%26pagesize%3D10000
   econ_classes:
   - items:
     - name: Agricultural Production, Health and Food Safety
@@ -996,7 +996,7 @@ programme_by_economic_classification:
     type: economic_classification_1_and_2
 programmes:
   dataset_detail_page: /datasets/estimates-of-national-expenditure/estimates-of-national-expenditure-2016-17
-  department_data_csv: https://datamanager-staging.vulekamali.gov.za/csv/?api_url=https%3A//openspending.org/api/3/cubes/b9d2af843f3a7ca223eea07fb608e62a%3Aestimates-of-national-expenditure-south-africa-2016-17/aggregate/%3Fcut%3Dfinancial_year.financial_year%253A2016%257Cvote_number.department%253A%2522Agriculture%252C%2BForestry%2Band%2BFisheries%2522%26drilldown%3Dbudget_phase.budget_phase%257Ceconomic_classification_1.economic_classification_1%257Ceconomic_classification_2.economic_classification_2%257Ceconomic_classification_3.economic_classification_3%257Ceconomic_classification_4.economic_classification_4%257Cfinancial_year.financial_year%257Cprogramme_number.programme%257Cprogramme_number.programme_number%257Csubprogramme_number.subprogramme%257Csubprogramme_number.subprogramme_number%257Cvote_number.department%257Cvote_number.vote_number%26pagesize%3D10000
+  department_data_csv: https://datamanager.vulekamali.gov.za/csv/?api_url=https%3A//openspending.org/api/3/cubes/b9d2af843f3a7ca223eea07fb608e62a%3Aestimates-of-national-expenditure-south-africa-2016-17/aggregate/%3Fcut%3Dfinancial_year.financial_year%253A2016%257Cvote_number.department%253A%2522Agriculture%252C%2BForestry%2Band%2BFisheries%2522%26drilldown%3Dbudget_phase.budget_phase%257Ceconomic_classification_1.economic_classification_1%257Ceconomic_classification_2.economic_classification_2%257Ceconomic_classification_3.economic_classification_3%257Ceconomic_classification_4.economic_classification_4%257Cfinancial_year.financial_year%257Cprogramme_number.programme%257Cprogramme_number.programme_number%257Csubprogramme_number.subprogramme%257Csubprogramme_number.subprogramme_number%257Cvote_number.department%257Cvote_number.vote_number%26pagesize%3D10000
   programme_budgets:
   - name: Administration
     total_budget: 788053000.0
@@ -1018,7 +1018,7 @@ sphere:
   slug: national
 subprogramme_by_programme:
   dataset_detail_page: /datasets/estimates-of-national-expenditure/estimates-of-national-expenditure-2016-17
-  department_data_csv: https://datamanager-staging.vulekamali.gov.za/csv/?api_url=https%3A//openspending.org/api/3/cubes/b9d2af843f3a7ca223eea07fb608e62a%3Aestimates-of-national-expenditure-south-africa-2016-17/aggregate/%3Fcut%3Dfinancial_year.financial_year%253A2016%257Cvote_number.department%253A%2522Agriculture%252C%2BForestry%2Band%2BFisheries%2522%26drilldown%3Dbudget_phase.budget_phase%257Ceconomic_classification_1.economic_classification_1%257Ceconomic_classification_2.economic_classification_2%257Ceconomic_classification_3.economic_classification_3%257Ceconomic_classification_4.economic_classification_4%257Cfinancial_year.financial_year%257Cprogramme_number.programme%257Cprogramme_number.programme_number%257Csubprogramme_number.subprogramme%257Csubprogramme_number.subprogramme_number%257Cvote_number.department%257Cvote_number.vote_number%26pagesize%3D10000
+  department_data_csv: https://datamanager.vulekamali.gov.za/csv/?api_url=https%3A//openspending.org/api/3/cubes/b9d2af843f3a7ca223eea07fb608e62a%3Aestimates-of-national-expenditure-south-africa-2016-17/aggregate/%3Fcut%3Dfinancial_year.financial_year%253A2016%257Cvote_number.department%253A%2522Agriculture%252C%2BForestry%2Band%2BFisheries%2522%26drilldown%3Dbudget_phase.budget_phase%257Ceconomic_classification_1.economic_classification_1%257Ceconomic_classification_2.economic_classification_2%257Ceconomic_classification_3.economic_classification_3%257Ceconomic_classification_4.economic_classification_4%257Cfinancial_year.financial_year%257Cprogramme_number.programme%257Cprogramme_number.programme_number%257Csubprogramme_number.subprogramme%257Csubprogramme_number.subprogramme_number%257Cvote_number.department%257Cvote_number.vote_number%26pagesize%3D10000
   programmes:
   - items:
     - name: Financial Administration

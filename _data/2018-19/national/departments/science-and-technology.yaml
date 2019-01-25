@@ -8,7 +8,7 @@ adjusted_budget_summary:
     name: Announced in the budget speech
     type: kind
   dataset_detail_page: /datasets/adjusted-estimates-of-national-expenditure/adjusted-estimates-of-national-expenditure-2018-19
-  department_data_csv: https://datamanager-staging.vulekamali.gov.za/csv/?api_url=https%3A//openspending.org/api/3/cubes/b9d2af843f3a7ca223eea07fb608e62a%3Aaene-2018-19-v2/aggregate/%3Fcut%3Dfinyear.finyear%253A2018%257Cdepartment.department%253AScience%2Band%2BTechnology%26drilldown%3Dbudget_phase.budget_phase%257Cdepartment.department%257Cecon1.econ1%257Cecon2.econ2%257Cecon3.econ3%257Cecon4.econ4%257Cecon5.econ5%257Cfinyear.finyear%257Cfy_descript.fy_descript%257Cprogno.progno%257Cprogno.programme%257Csprogno.sprogno%257Csprogno.subprogramme%26pagesize%3D10000
+  department_data_csv: https://datamanager.vulekamali.gov.za/csv/?api_url=https%3A//openspending.org/api/3/cubes/b9d2af843f3a7ca223eea07fb608e62a%3Aaene-2018-19-v2/aggregate/%3Fcut%3Dfinyear.finyear%253A2018%257Cdepartment.department%253AScience%2Band%2BTechnology%26drilldown%3Dbudget_phase.budget_phase%257Cdepartment.department%257Cecon1.econ1%257Cecon2.econ2%257Cecon3.econ3%257Cecon4.econ4%257Cecon5.econ5%257Cfinyear.finyear%257Cfy_descript.fy_descript%257Cprogno.progno%257Cprogno.programme%257Csprogno.sprogno%257Csprogno.subprogramme%26pagesize%3D10000
   direct_charges: null
   econ_classes:
   - items:
@@ -156,46 +156,46 @@ budget_actual_programmes:
   - One or more programmes did not exist for some years displayed.
   programmes:
   - items:
-    - amount: 4247066000.0
+    - amount: 121997000.0
       financial_year: 2015-16
       phase: Main appropriation
-    - amount: 4238825000
+    - amount: 121359000
       financial_year: 2015-16
       phase: Adjusted appropriation
-    - amount: 4226922000
+    - amount: 116921000
       financial_year: 2015-16
       phase: Final Appropriation
-    - amount: 4218854000
+    - amount: 114968000
       financial_year: 2015-16
       phase: Audit Outcome
-    - amount: 4200596000.0
+    - amount: 124463000.0
       financial_year: 2016-17
       phase: Main appropriation
-    - amount: 4170997000
+    - amount: 124463000
       financial_year: 2016-17
       phase: Adjusted appropriation
-    - amount: 4157604000
+    - amount: 121316000
       financial_year: 2016-17
       phase: Final Appropriation
-    - amount: 4152630000
+    - amount: 118466000
       financial_year: 2016-17
       phase: Audit Outcome
-    - amount: 4348859000.0
+    - amount: 128705000.0
       financial_year: 2017-18
       phase: Main appropriation
-    - amount: 4350136000
+    - amount: 132380000
       financial_year: 2017-18
       phase: Adjusted appropriation
-    - amount: 4300795298
+    - amount: 168211000
       financial_year: 2017-18
       phase: Final Appropriation
-    - amount: 4291923893
+    - amount: 130598000
       financial_year: 2017-18
       phase: Audit Outcome
-    - amount: 4360304000.0
+    - amount: 136399000.0
       financial_year: 2018-19
       phase: Main appropriation
-    - amount: 4530992000
+    - amount: 137899000
       financial_year: 2018-19
       phase: Adjusted appropriation
     - amount: null
@@ -204,7 +204,7 @@ budget_actual_programmes:
     - amount: null
       financial_year: 2018-19
       phase: Audit Outcome
-    name: Research, Development and Support
+    name: International Cooperation and Resources
   - items:
     - amount: 299776000.0
       financial_year: 2015-16
@@ -256,6 +256,56 @@ budget_actual_programmes:
       phase: Audit Outcome
     name: Administration
   - items:
+    - amount: 1008817000.0
+      financial_year: 2015-16
+      phase: Main appropriation
+    - amount: 1008514000
+      financial_year: 2015-16
+      phase: Adjusted appropriation
+    - amount: 1070645000
+      financial_year: 2015-16
+      phase: Final Appropriation
+    - amount: 1063297000
+      financial_year: 2015-16
+      phase: Audit Outcome
+    - amount: 1007073000.0
+      financial_year: 2016-17
+      phase: Main appropriation
+    - amount: 1005418000
+      financial_year: 2016-17
+      phase: Adjusted appropriation
+    - amount: 1027588000
+      financial_year: 2016-17
+      phase: Final Appropriation
+    - amount: 1015860000
+      financial_year: 2016-17
+      phase: Audit Outcome
+    - amount: 1073621000.0
+      financial_year: 2017-18
+      phase: Main appropriation
+    - amount: 1075116000
+      financial_year: 2017-18
+      phase: Adjusted appropriation
+    - amount: 1133783000
+      financial_year: 2017-18
+      phase: Final Appropriation
+    - amount: 1116180669
+      financial_year: 2017-18
+      phase: Audit Outcome
+    - amount: 1131723000.0
+      financial_year: 2018-19
+      phase: Main appropriation
+    - amount: 1131723000
+      financial_year: 2018-19
+      phase: Adjusted appropriation
+    - amount: null
+      financial_year: 2018-19
+      phase: Final Appropriation
+    - amount: null
+      financial_year: 2018-19
+      phase: Audit Outcome
+    name: Technology Innovation
+  - items:
     - amount: 1622324000.0
       financial_year: 2017-18
       phase: Main appropriation
@@ -305,56 +355,6 @@ budget_actual_programmes:
       financial_year: 2018-19
       phase: Audit Outcome
     name: Socioeconomic Innovation Partnerships
-  - items:
-    - amount: 121997000.0
-      financial_year: 2015-16
-      phase: Main appropriation
-    - amount: 121359000
-      financial_year: 2015-16
-      phase: Adjusted appropriation
-    - amount: 116921000
-      financial_year: 2015-16
-      phase: Final Appropriation
-    - amount: 114968000
-      financial_year: 2015-16
-      phase: Audit Outcome
-    - amount: 124463000.0
-      financial_year: 2016-17
-      phase: Main appropriation
-    - amount: 124463000
-      financial_year: 2016-17
-      phase: Adjusted appropriation
-    - amount: 121316000
-      financial_year: 2016-17
-      phase: Final Appropriation
-    - amount: 118466000
-      financial_year: 2016-17
-      phase: Audit Outcome
-    - amount: 128705000.0
-      financial_year: 2017-18
-      phase: Main appropriation
-    - amount: 132380000
-      financial_year: 2017-18
-      phase: Adjusted appropriation
-    - amount: 168211000
-      financial_year: 2017-18
-      phase: Final Appropriation
-    - amount: 130598000
-      financial_year: 2017-18
-      phase: Audit Outcome
-    - amount: 136399000.0
-      financial_year: 2018-19
-      phase: Main appropriation
-    - amount: 137899000
-      financial_year: 2018-19
-      phase: Adjusted appropriation
-    - amount: null
-      financial_year: 2018-19
-      phase: Final Appropriation
-    - amount: null
-      financial_year: 2018-19
-      phase: Audit Outcome
-    name: International Cooperation and Resources
   - items:
     - amount: 1804464000.0
       financial_year: 2015-16
@@ -406,46 +406,46 @@ budget_actual_programmes:
       phase: Audit Outcome
     name: Socio-Economic Innovation Partnerships
   - items:
-    - amount: 1008817000.0
+    - amount: 4247066000.0
       financial_year: 2015-16
       phase: Main appropriation
-    - amount: 1008514000
+    - amount: 4238825000
       financial_year: 2015-16
       phase: Adjusted appropriation
-    - amount: 1070645000
+    - amount: 4226922000
       financial_year: 2015-16
       phase: Final Appropriation
-    - amount: 1063297000
+    - amount: 4218854000
       financial_year: 2015-16
       phase: Audit Outcome
-    - amount: 1007073000.0
+    - amount: 4200596000.0
       financial_year: 2016-17
       phase: Main appropriation
-    - amount: 1005418000
+    - amount: 4170997000
       financial_year: 2016-17
       phase: Adjusted appropriation
-    - amount: 1027588000
+    - amount: 4157604000
       financial_year: 2016-17
       phase: Final Appropriation
-    - amount: 1015860000
+    - amount: 4152630000
       financial_year: 2016-17
       phase: Audit Outcome
-    - amount: 1073621000.0
+    - amount: 4348859000.0
       financial_year: 2017-18
       phase: Main appropriation
-    - amount: 1075116000
+    - amount: 4350136000
       financial_year: 2017-18
       phase: Adjusted appropriation
-    - amount: 1133783000
+    - amount: 4300795298
       financial_year: 2017-18
       phase: Final Appropriation
-    - amount: 1116180669
+    - amount: 4291923893
       financial_year: 2017-18
       phase: Audit Outcome
-    - amount: 1131723000.0
+    - amount: 4360304000.0
       financial_year: 2018-19
       phase: Main appropriation
-    - amount: 1131723000
+    - amount: 4530992000
       financial_year: 2018-19
       phase: Adjusted appropriation
     - amount: null
@@ -454,7 +454,7 @@ budget_actual_programmes:
     - amount: null
       financial_year: 2018-19
       phase: Audit Outcome
-    name: Technology Innovation
+    name: Research, Development and Support
 contributed_datasets:
 - contributor: International Budget Partnership
   name: How Does Civil Society Use Budget Information?
@@ -497,7 +497,7 @@ description: 'National department: Science and Technology budget data for the 20
   financial year from National Treasury in partnership with IMALI YETHU.'
 economic_classification_by_programme:
   dataset_detail_page: /datasets/estimates-of-national-expenditure/estimates-of-national-expenditure-2018-19
-  department_data_csv: https://datamanager-staging.vulekamali.gov.za/csv/?api_url=https%3A//openspending.org/api/3/cubes/b9d2af843f3a7ca223eea07fb608e62a%3Aestimates-of-national-expenditure-south-africa-2018-19/aggregate/%3Fcut%3Dfinancial_year.financial_year%253A2018%257Cvote_number.department%253A%2522Science%2Band%2BTechnology%2522%26drilldown%3Dbudget_phase.budget_phase%257Ceconomic_classification_1.economic_classification_1%257Ceconomic_classification_2.economic_classification_2%257Ceconomic_classification_3.economic_classification_3%257Ceconomic_classification_4.economic_classification_4%257Cfinancial_year.financial_year%257Cgovernment_function.government_function%257Cprogramme_number.programme%257Cprogramme_number.programme_number%257Csubprogramme_number.subprogramme%257Csubprogramme_number.subprogramme_number%257Cvote_number.department%257Cvote_number.vote_number%26pagesize%3D10000
+  department_data_csv: https://datamanager.vulekamali.gov.za/csv/?api_url=https%3A//openspending.org/api/3/cubes/b9d2af843f3a7ca223eea07fb608e62a%3Aestimates-of-national-expenditure-south-africa-2018-19/aggregate/%3Fcut%3Dfinancial_year.financial_year%253A2018%257Cvote_number.department%253A%2522Science%2Band%2BTechnology%2522%26drilldown%3Dbudget_phase.budget_phase%257Ceconomic_classification_1.economic_classification_1%257Ceconomic_classification_2.economic_classification_2%257Ceconomic_classification_3.economic_classification_3%257Ceconomic_classification_4.economic_classification_4%257Cfinancial_year.financial_year%257Cgovernment_function.government_function%257Cprogramme_number.programme%257Cprogramme_number.programme_number%257Csubprogramme_number.subprogramme%257Csubprogramme_number.subprogramme_number%257Cvote_number.department%257Cvote_number.vote_number%26pagesize%3D10000
   programmes:
   - items:
     - items:
@@ -698,7 +698,7 @@ is_vote_primary: true
 name: Science and Technology
 programme_by_economic_classification:
   dataset_detail_page: /datasets/estimates-of-national-expenditure/estimates-of-national-expenditure-2018-19
-  department_data_csv: https://datamanager-staging.vulekamali.gov.za/csv/?api_url=https%3A//openspending.org/api/3/cubes/b9d2af843f3a7ca223eea07fb608e62a%3Aestimates-of-national-expenditure-south-africa-2018-19/aggregate/%3Fcut%3Dfinancial_year.financial_year%253A2018%257Cvote_number.department%253A%2522Science%2Band%2BTechnology%2522%26drilldown%3Dbudget_phase.budget_phase%257Ceconomic_classification_1.economic_classification_1%257Ceconomic_classification_2.economic_classification_2%257Ceconomic_classification_3.economic_classification_3%257Ceconomic_classification_4.economic_classification_4%257Cfinancial_year.financial_year%257Cgovernment_function.government_function%257Cprogramme_number.programme%257Cprogramme_number.programme_number%257Csubprogramme_number.subprogramme%257Csubprogramme_number.subprogramme_number%257Cvote_number.department%257Cvote_number.vote_number%26pagesize%3D10000
+  department_data_csv: https://datamanager.vulekamali.gov.za/csv/?api_url=https%3A//openspending.org/api/3/cubes/b9d2af843f3a7ca223eea07fb608e62a%3Aestimates-of-national-expenditure-south-africa-2018-19/aggregate/%3Fcut%3Dfinancial_year.financial_year%253A2018%257Cvote_number.department%253A%2522Science%2Band%2BTechnology%2522%26drilldown%3Dbudget_phase.budget_phase%257Ceconomic_classification_1.economic_classification_1%257Ceconomic_classification_2.economic_classification_2%257Ceconomic_classification_3.economic_classification_3%257Ceconomic_classification_4.economic_classification_4%257Cfinancial_year.financial_year%257Cgovernment_function.government_function%257Cprogramme_number.programme%257Cprogramme_number.programme_number%257Csubprogramme_number.subprogramme%257Csubprogramme_number.subprogramme_number%257Cvote_number.department%257Cvote_number.vote_number%26pagesize%3D10000
   econ_classes:
   - items:
     - name: Administration
@@ -783,7 +783,7 @@ programme_by_economic_classification:
     type: economic_classification_1_and_2
 programmes:
   dataset_detail_page: /datasets/estimates-of-national-expenditure/estimates-of-national-expenditure-2018-19
-  department_data_csv: https://datamanager-staging.vulekamali.gov.za/csv/?api_url=https%3A//openspending.org/api/3/cubes/b9d2af843f3a7ca223eea07fb608e62a%3Aestimates-of-national-expenditure-south-africa-2018-19/aggregate/%3Fcut%3Dfinancial_year.financial_year%253A2018%257Cvote_number.department%253A%2522Science%2Band%2BTechnology%2522%26drilldown%3Dbudget_phase.budget_phase%257Ceconomic_classification_1.economic_classification_1%257Ceconomic_classification_2.economic_classification_2%257Ceconomic_classification_3.economic_classification_3%257Ceconomic_classification_4.economic_classification_4%257Cfinancial_year.financial_year%257Cgovernment_function.government_function%257Cprogramme_number.programme%257Cprogramme_number.programme_number%257Csubprogramme_number.subprogramme%257Csubprogramme_number.subprogramme_number%257Cvote_number.department%257Cvote_number.vote_number%26pagesize%3D10000
+  department_data_csv: https://datamanager.vulekamali.gov.za/csv/?api_url=https%3A//openspending.org/api/3/cubes/b9d2af843f3a7ca223eea07fb608e62a%3Aestimates-of-national-expenditure-south-africa-2018-19/aggregate/%3Fcut%3Dfinancial_year.financial_year%253A2018%257Cvote_number.department%253A%2522Science%2Band%2BTechnology%2522%26drilldown%3Dbudget_phase.budget_phase%257Ceconomic_classification_1.economic_classification_1%257Ceconomic_classification_2.economic_classification_2%257Ceconomic_classification_3.economic_classification_3%257Ceconomic_classification_4.economic_classification_4%257Cfinancial_year.financial_year%257Cgovernment_function.government_function%257Cprogramme_number.programme%257Cprogramme_number.programme_number%257Csubprogramme_number.subprogramme%257Csubprogramme_number.subprogramme_number%257Cvote_number.department%257Cvote_number.vote_number%26pagesize%3D10000
   programme_budgets:
   - name: Administration
     total_budget: 383802000.0
@@ -803,7 +803,7 @@ sphere:
   slug: national
 subprogramme_by_programme:
   dataset_detail_page: /datasets/estimates-of-national-expenditure/estimates-of-national-expenditure-2018-19
-  department_data_csv: https://datamanager-staging.vulekamali.gov.za/csv/?api_url=https%3A//openspending.org/api/3/cubes/b9d2af843f3a7ca223eea07fb608e62a%3Aestimates-of-national-expenditure-south-africa-2018-19/aggregate/%3Fcut%3Dfinancial_year.financial_year%253A2018%257Cvote_number.department%253A%2522Science%2Band%2BTechnology%2522%26drilldown%3Dbudget_phase.budget_phase%257Ceconomic_classification_1.economic_classification_1%257Ceconomic_classification_2.economic_classification_2%257Ceconomic_classification_3.economic_classification_3%257Ceconomic_classification_4.economic_classification_4%257Cfinancial_year.financial_year%257Cgovernment_function.government_function%257Cprogramme_number.programme%257Cprogramme_number.programme_number%257Csubprogramme_number.subprogramme%257Csubprogramme_number.subprogramme_number%257Cvote_number.department%257Cvote_number.vote_number%26pagesize%3D10000
+  department_data_csv: https://datamanager.vulekamali.gov.za/csv/?api_url=https%3A//openspending.org/api/3/cubes/b9d2af843f3a7ca223eea07fb608e62a%3Aestimates-of-national-expenditure-south-africa-2018-19/aggregate/%3Fcut%3Dfinancial_year.financial_year%253A2018%257Cvote_number.department%253A%2522Science%2Band%2BTechnology%2522%26drilldown%3Dbudget_phase.budget_phase%257Ceconomic_classification_1.economic_classification_1%257Ceconomic_classification_2.economic_classification_2%257Ceconomic_classification_3.economic_classification_3%257Ceconomic_classification_4.economic_classification_4%257Cfinancial_year.financial_year%257Cgovernment_function.government_function%257Cprogramme_number.programme%257Cprogramme_number.programme_number%257Csubprogramme_number.subprogramme%257Csubprogramme_number.subprogramme_number%257Cvote_number.department%257Cvote_number.vote_number%26pagesize%3D10000
   programmes:
   - items:
     - name: Corporate Services

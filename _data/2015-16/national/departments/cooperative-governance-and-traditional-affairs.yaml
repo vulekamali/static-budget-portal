@@ -11,7 +11,7 @@ adjusted_budget_summary:
     name: Significant and unforeseeable economic and financial events
     type: kind
   dataset_detail_page: /datasets/adjusted-estimates-of-national-expenditure/adjusted-estimates-of-national-expenditure-2015-16
-  department_data_csv: https://datamanager-staging.vulekamali.gov.za/csv/?api_url=https%3A//openspending.org/api/3/cubes/b9d2af843f3a7ca223eea07fb608e62a%3Aadjusted-estimates-of-national-expenditure-2015-16-uploaded-2018-12-14t1118/aggregate/%3Fcut%3Dfinyear.finyear%253A2015%257Cvoteno.department%253ACooperative%2BGovernance%2Band%2BTraditional%2BAffairs%26drilldown%3Dbudget_phase.budget_phase%257Cecon1.econ1%257Cecon2.econ2%257Cecon3.econ3%257Cecon4.econ4%257Cecon5.econ5%257Cfinyear.finyear%257Cfy_descript.fy_descript%257Cprogno.progno%257Cprogno.programme%257Csprogno.sprogno%257Csprogno.subprogramme%257Cvoteno.department%257Cvoteno.voteno%26pagesize%3D10000
+  department_data_csv: https://datamanager.vulekamali.gov.za/csv/?api_url=https%3A//openspending.org/api/3/cubes/b9d2af843f3a7ca223eea07fb608e62a%3Aadjusted-estimates-of-national-expenditure-2015-16-uploaded-2018-12-14t1118/aggregate/%3Fcut%3Dfinyear.finyear%253A2015%257Cvoteno.department%253ACooperative%2BGovernance%2Band%2BTraditional%2BAffairs%26drilldown%3Dbudget_phase.budget_phase%257Cecon1.econ1%257Cecon2.econ2%257Cecon3.econ3%257Cecon4.econ4%257Cecon5.econ5%257Cfinyear.finyear%257Cfy_descript.fy_descript%257Cprogno.progno%257Cprogno.programme%257Csprogno.sprogno%257Csprogno.subprogramme%257Cvoteno.department%257Cvoteno.voteno%26pagesize%3D10000
   direct_charges: null
   econ_classes:
   - items:
@@ -167,7 +167,7 @@ budget_actual:
       financial_year: 2014-15
       phase: Audit Outcome
   notices:
-  - Please note that the data for 2012, 2013 and 2014 has not been published on vulekamali.
+  - Please note that the data for 2014, 2012 and 2013 has not been published on vulekamali.
 budget_actual_programmes:
   dataset_detail_page: /datasets/budgeted-and-actual-national-expenditure/budgeted-and-actual-national-expenditure
   notices: []
@@ -223,6 +223,56 @@ budget_actual_programmes:
       phase: Audit Outcome
     name: Policy, Research and Knowledge Management
   - items:
+    - amount: 119447000.0
+      financial_year: 2015-16
+      phase: Main appropriation
+    - amount: 125928000
+      financial_year: 2015-16
+      phase: Adjusted appropriation
+    - amount: 125928000
+      financial_year: 2015-16
+      phase: Final Appropriation
+    - amount: 125928000
+      financial_year: 2015-16
+      phase: Audit Outcome
+    - amount: null
+      financial_year: 2012-13
+      phase: Main appropriation
+    - amount: null
+      financial_year: 2012-13
+      phase: Adjusted appropriation
+    - amount: null
+      financial_year: 2012-13
+      phase: Final Appropriation
+    - amount: null
+      financial_year: 2012-13
+      phase: Audit Outcome
+    - amount: null
+      financial_year: 2013-14
+      phase: Main appropriation
+    - amount: null
+      financial_year: 2013-14
+      phase: Adjusted appropriation
+    - amount: null
+      financial_year: 2013-14
+      phase: Final Appropriation
+    - amount: null
+      financial_year: 2013-14
+      phase: Audit Outcome
+    - amount: null
+      financial_year: 2014-15
+      phase: Main appropriation
+    - amount: null
+      financial_year: 2014-15
+      phase: Adjusted appropriation
+    - amount: null
+      financial_year: 2014-15
+      phase: Final Appropriation
+    - amount: null
+      financial_year: 2014-15
+      phase: Audit Outcome
+    name: Traditional Affairs
+  - items:
     - amount: 247969000.0
       financial_year: 2015-16
       phase: Main appropriation
@@ -273,16 +323,16 @@ budget_actual_programmes:
       phase: Audit Outcome
     name: Administration
   - items:
-    - amount: 17668420000.0
+    - amount: 328092000.0
       financial_year: 2015-16
       phase: Main appropriation
-    - amount: 17668420000
+    - amount: 328092000
       financial_year: 2015-16
       phase: Adjusted appropriation
-    - amount: 17669370000
+    - amount: 329092000
       financial_year: 2015-16
       phase: Final Appropriation
-    - amount: 17665858000
+    - amount: 293335000
       financial_year: 2015-16
       phase: Audit Outcome
     - amount: null
@@ -321,7 +371,7 @@ budget_actual_programmes:
     - amount: null
       financial_year: 2014-15
       phase: Audit Outcome
-    name: Infrastructure and Economic Development
+    name: Provincial and Municipal Government Systems
   - items:
     - amount: 606805000.0
       financial_year: 2015-16
@@ -373,16 +423,16 @@ budget_actual_programmes:
       phase: Audit Outcome
     name: National Disaster Management Centre
   - items:
-    - amount: 119447000.0
+    - amount: 17668420000.0
       financial_year: 2015-16
       phase: Main appropriation
-    - amount: 125928000
+    - amount: 17668420000
       financial_year: 2015-16
       phase: Adjusted appropriation
-    - amount: 125928000
+    - amount: 17669370000
       financial_year: 2015-16
       phase: Final Appropriation
-    - amount: 125928000
+    - amount: 17665858000
       financial_year: 2015-16
       phase: Audit Outcome
     - amount: null
@@ -421,7 +471,7 @@ budget_actual_programmes:
     - amount: null
       financial_year: 2014-15
       phase: Audit Outcome
-    name: Traditional Affairs
+    name: Infrastructure and Economic Development
   - items:
     - amount: 50321345000.0
       financial_year: 2015-16
@@ -472,56 +522,6 @@ budget_actual_programmes:
       financial_year: 2014-15
       phase: Audit Outcome
     name: Governance and Intergovernmental Relations
-  - items:
-    - amount: 328092000.0
-      financial_year: 2015-16
-      phase: Main appropriation
-    - amount: 328092000
-      financial_year: 2015-16
-      phase: Adjusted appropriation
-    - amount: 329092000
-      financial_year: 2015-16
-      phase: Final Appropriation
-    - amount: 293335000
-      financial_year: 2015-16
-      phase: Audit Outcome
-    - amount: null
-      financial_year: 2012-13
-      phase: Main appropriation
-    - amount: null
-      financial_year: 2012-13
-      phase: Adjusted appropriation
-    - amount: null
-      financial_year: 2012-13
-      phase: Final Appropriation
-    - amount: null
-      financial_year: 2012-13
-      phase: Audit Outcome
-    - amount: null
-      financial_year: 2013-14
-      phase: Main appropriation
-    - amount: null
-      financial_year: 2013-14
-      phase: Adjusted appropriation
-    - amount: null
-      financial_year: 2013-14
-      phase: Final Appropriation
-    - amount: null
-      financial_year: 2013-14
-      phase: Audit Outcome
-    - amount: null
-      financial_year: 2014-15
-      phase: Main appropriation
-    - amount: null
-      financial_year: 2014-15
-      phase: Adjusted appropriation
-    - amount: null
-      financial_year: 2014-15
-      phase: Final Appropriation
-    - amount: null
-      financial_year: 2014-15
-      phase: Audit Outcome
-    name: Provincial and Municipal Government Systems
 contributed_datasets:
 - contributor: International Budget Partnership
   name: How Does Civil Society Use Budget Information?
@@ -565,21 +565,21 @@ description: 'National department: Cooperative Governance and Traditional Affair
   with IMALI YETHU.'
 economic_classification_by_programme:
   dataset_detail_page: /datasets/estimates-of-national-expenditure/estimates-of-national-expenditure-2015-16
-  department_data_csv: https://datamanager-staging.vulekamali.gov.za/csv/?api_url=https%3A//openspending.org/api/3/cubes/b9d2af843f3a7ca223eea07fb608e62a%3Aestimates-of-national-expenditure-south-africa-2015-16/aggregate/%3Fcut%3Dfinancial_year.financial_year%253A2015%257Cvote_number.department%253A%2522Cooperative%2BGovernance%2Band%2BTraditional%2BAffairs%2522%26drilldown%3Dbudget_phase.budget_phase%257Ceconomic_classification_1.economic_classification_1%257Ceconomic_classification_2.economic_classification_2%257Ceconomic_classification_3.economic_classification_3%257Ceconomic_classification_4.economic_classification_4%257Cfinancial_year.financial_year%257Cprogramme_number.programme%257Cprogramme_number.programme_number%257Csubprogramme_number.subprogramme%257Csubprogramme_number.subprogramme_number%257Cvote_number.department%257Cvote_number.vote_number%26pagesize%3D10000
+  department_data_csv: https://datamanager.vulekamali.gov.za/csv/?api_url=https%3A//openspending.org/api/3/cubes/b9d2af843f3a7ca223eea07fb608e62a%3Aestimates-of-national-expenditure-2015-16-uploaded-2019-01-25t0215/aggregate/%3Fcut%3Dfinyear.finyear%253A2015%257Cvoteno.department%253A%2522Cooperative%2BGovernance%2Band%2BTraditional%2BAffairs%2522%26drilldown%3Dbudget_phase.budget_phase%257Cecon1.econ1%257Cecon2.econ2%257Cecon3.econ3%257Cecon4.econ4%257Cecon5.econ5%257Cfg1.fg1%257Cfg2.fg2%257Cfinyear.finyear%257Cprogno.progno%257Cprogno.programme%257Csprogno.sprogno%257Csprogno.subprogramme%257Cvoteno.department%257Cvoteno.voteno%26pagesize%3D10000
   programmes:
   - items:
     - items:
       - name: Payments for capital assets
-        total_budget: 5080000.0
+        total_budget: 5080000
         type: economic_classification_2
       name: Capital
       type: economic_classification_1
     - items:
       - name: Current payments
-        total_budget: 242789000.0
+        total_budget: 242789000
         type: economic_classification_2
       - name: Transfers and subsidies
-        total_budget: 100000.0
+        total_budget: 100000
         type: economic_classification_2
       name: Current
       type: economic_classification_1
@@ -588,16 +588,16 @@ economic_classification_by_programme:
   - items:
     - items:
       - name: Payments for capital assets
-        total_budget: 20000.0
+        total_budget: 20000
         type: economic_classification_2
       name: Capital
       type: economic_classification_1
     - items:
       - name: Transfers and subsidies
-        total_budget: 50274784000.0
+        total_budget: 50274784000
         type: economic_classification_2
       - name: Current payments
-        total_budget: 46541000.0
+        total_budget: 46541000
         type: economic_classification_2
       name: Current
       type: economic_classification_1
@@ -606,19 +606,19 @@ economic_classification_by_programme:
   - items:
     - items:
       - name: Transfers and subsidies
-        total_budget: 14955762000.0
+        total_budget: 14955762000
         type: economic_classification_2
       - name: Payments for capital assets
-        total_budget: 150000.0
+        total_budget: 150000
         type: economic_classification_2
       name: Capital
       type: economic_classification_1
     - items:
       - name: Current payments
-        total_budget: 2408495000.0
+        total_budget: 2408495000
         type: economic_classification_2
       - name: Transfers and subsidies
-        total_budget: 304013000.0
+        total_budget: 304013000
         type: economic_classification_2
       name: Current
       type: economic_classification_1
@@ -627,19 +627,19 @@ economic_classification_by_programme:
   - items:
     - items:
       - name: Transfers and subsidies
-        total_budget: 188900000.0
+        total_budget: 188900000
         type: economic_classification_2
       - name: Payments for capital assets
-        total_budget: 2449000.0
+        total_budget: 2449000
         type: economic_classification_2
       name: Capital
       type: economic_classification_1
     - items:
       - name: Transfers and subsidies
-        total_budget: 364343000.0
+        total_budget: 364343000
         type: economic_classification_2
       - name: Current payments
-        total_budget: 51113000.0
+        total_budget: 51113000
         type: economic_classification_2
       name: Current
       type: economic_classification_1
@@ -648,7 +648,7 @@ economic_classification_by_programme:
   - items:
     - items:
       - name: Current payments
-        total_budget: 22081000.0
+        total_budget: 22081000
         type: economic_classification_2
       name: Current
       type: economic_classification_1
@@ -657,16 +657,16 @@ economic_classification_by_programme:
   - items:
     - items:
       - name: Payments for capital assets
-        total_budget: 100000.0
+        total_budget: 100000
         type: economic_classification_2
       name: Capital
       type: economic_classification_1
     - items:
       - name: Transfers and subsidies
-        total_budget: 290442000.0
+        total_budget: 290442000
         type: economic_classification_2
       - name: Current payments
-        total_budget: 37550000.0
+        total_budget: 37550000
         type: economic_classification_2
       name: Current
       type: economic_classification_1
@@ -675,7 +675,7 @@ economic_classification_by_programme:
   - items:
     - items:
       - name: Transfers and subsidies
-        total_budget: 119447000.0
+        total_budget: 119447000
         type: economic_classification_2
       name: Current
       type: economic_classification_1
@@ -686,25 +686,25 @@ expenditure_over_time:
   expenditure:
     base_financial_year: 2017-18
     nominal:
-    - amount: 46221564000.0
+    - amount: 46221564000
       financial_year: 2011-12
       phase: Audited Outcome
-    - amount: 53434365000.0
+    - amount: 53434365000
       financial_year: 2012-13
       phase: Audited Outcome
-    - amount: 56401572000.0
+    - amount: 56401572000
       financial_year: 2013-14
       phase: Audited Outcome
-    - amount: 63453885000.0
+    - amount: 63453885000
       financial_year: 2014-15
       phase: Adjusted appropriation
-    - amount: 69314159000.0
+    - amount: 69314159000
       financial_year: 2015-16
       phase: Main appropriation
-    - amount: 73460667000.0
+    - amount: 73460667000
       financial_year: 2016-17
       phase: Medium Term Estimates
-    - amount: 77758671000.0
+    - amount: 77758671000
       financial_year: 2017-18
       phase: Medium Term Estimates
     real:
@@ -772,95 +772,95 @@ is_vote_primary: true
 name: Cooperative Governance and Traditional Affairs
 programme_by_economic_classification:
   dataset_detail_page: /datasets/estimates-of-national-expenditure/estimates-of-national-expenditure-2015-16
-  department_data_csv: https://datamanager-staging.vulekamali.gov.za/csv/?api_url=https%3A//openspending.org/api/3/cubes/b9d2af843f3a7ca223eea07fb608e62a%3Aestimates-of-national-expenditure-south-africa-2015-16/aggregate/%3Fcut%3Dfinancial_year.financial_year%253A2015%257Cvote_number.department%253A%2522Cooperative%2BGovernance%2Band%2BTraditional%2BAffairs%2522%26drilldown%3Dbudget_phase.budget_phase%257Ceconomic_classification_1.economic_classification_1%257Ceconomic_classification_2.economic_classification_2%257Ceconomic_classification_3.economic_classification_3%257Ceconomic_classification_4.economic_classification_4%257Cfinancial_year.financial_year%257Cprogramme_number.programme%257Cprogramme_number.programme_number%257Csubprogramme_number.subprogramme%257Csubprogramme_number.subprogramme_number%257Cvote_number.department%257Cvote_number.vote_number%26pagesize%3D10000
+  department_data_csv: https://datamanager.vulekamali.gov.za/csv/?api_url=https%3A//openspending.org/api/3/cubes/b9d2af843f3a7ca223eea07fb608e62a%3Aestimates-of-national-expenditure-2015-16-uploaded-2019-01-25t0215/aggregate/%3Fcut%3Dfinyear.finyear%253A2015%257Cvoteno.department%253A%2522Cooperative%2BGovernance%2Band%2BTraditional%2BAffairs%2522%26drilldown%3Dbudget_phase.budget_phase%257Cecon1.econ1%257Cecon2.econ2%257Cecon3.econ3%257Cecon4.econ4%257Cecon5.econ5%257Cfg1.fg1%257Cfg2.fg2%257Cfinyear.finyear%257Cprogno.progno%257Cprogno.programme%257Csprogno.sprogno%257Csprogno.subprogramme%257Cvoteno.department%257Cvoteno.voteno%26pagesize%3D10000
   econ_classes:
   - items:
     - name: Administration
-      total_budget: 5080000.0
+      total_budget: 5080000
       type: programme
     - name: National Disaster Management Centre
-      total_budget: 2449000.0
+      total_budget: 2449000
       type: programme
     - name: Infrastructure and Economic Development
-      total_budget: 150000.0
+      total_budget: 150000
       type: programme
     - name: Provincial and Municipal Government Systems
-      total_budget: 100000.0
+      total_budget: 100000
       type: programme
     - name: Governance and Intergovernmental Relations
-      total_budget: 20000.0
+      total_budget: 20000
       type: programme
     name: Capital - Payments for capital assets
     type: economic_classification_1_and_2
   - items:
     - name: Infrastructure and Economic Development
-      total_budget: 14955762000.0
+      total_budget: 14955762000
       type: programme
     - name: National Disaster Management Centre
-      total_budget: 188900000.0
+      total_budget: 188900000
       type: programme
     name: Capital - Transfers and subsidies
     type: economic_classification_1_and_2
   - items:
     - name: Infrastructure and Economic Development
-      total_budget: 2408495000.0
+      total_budget: 2408495000
       type: programme
     - name: Administration
-      total_budget: 242789000.0
+      total_budget: 242789000
       type: programme
     - name: National Disaster Management Centre
-      total_budget: 51113000.0
+      total_budget: 51113000
       type: programme
     - name: Governance and Intergovernmental Relations
-      total_budget: 46541000.0
+      total_budget: 46541000
       type: programme
     - name: Provincial and Municipal Government Systems
-      total_budget: 37550000.0
+      total_budget: 37550000
       type: programme
     - name: Policy, Research and Knowledge Management
-      total_budget: 22081000.0
+      total_budget: 22081000
       type: programme
     name: Current - Current payments
     type: economic_classification_1_and_2
   - items:
     - name: Governance and Intergovernmental Relations
-      total_budget: 50274784000.0
+      total_budget: 50274784000
       type: programme
     - name: National Disaster Management Centre
-      total_budget: 364343000.0
+      total_budget: 364343000
       type: programme
     - name: Infrastructure and Economic Development
-      total_budget: 304013000.0
+      total_budget: 304013000
       type: programme
     - name: Provincial and Municipal Government Systems
-      total_budget: 290442000.0
+      total_budget: 290442000
       type: programme
     - name: Traditional Affairs
-      total_budget: 119447000.0
+      total_budget: 119447000
       type: programme
     - name: Administration
-      total_budget: 100000.0
+      total_budget: 100000
       type: programme
     name: Current - Transfers and subsidies
     type: economic_classification_1_and_2
 programmes:
   dataset_detail_page: /datasets/estimates-of-national-expenditure/estimates-of-national-expenditure-2015-16
-  department_data_csv: https://datamanager-staging.vulekamali.gov.za/csv/?api_url=https%3A//openspending.org/api/3/cubes/b9d2af843f3a7ca223eea07fb608e62a%3Aestimates-of-national-expenditure-south-africa-2015-16/aggregate/%3Fcut%3Dfinancial_year.financial_year%253A2015%257Cvote_number.department%253A%2522Cooperative%2BGovernance%2Band%2BTraditional%2BAffairs%2522%26drilldown%3Dbudget_phase.budget_phase%257Ceconomic_classification_1.economic_classification_1%257Ceconomic_classification_2.economic_classification_2%257Ceconomic_classification_3.economic_classification_3%257Ceconomic_classification_4.economic_classification_4%257Cfinancial_year.financial_year%257Cprogramme_number.programme%257Cprogramme_number.programme_number%257Csubprogramme_number.subprogramme%257Csubprogramme_number.subprogramme_number%257Cvote_number.department%257Cvote_number.vote_number%26pagesize%3D10000
+  department_data_csv: https://datamanager.vulekamali.gov.za/csv/?api_url=https%3A//openspending.org/api/3/cubes/b9d2af843f3a7ca223eea07fb608e62a%3Aestimates-of-national-expenditure-2015-16-uploaded-2019-01-25t0215/aggregate/%3Fcut%3Dfinyear.finyear%253A2015%257Cvoteno.department%253A%2522Cooperative%2BGovernance%2Band%2BTraditional%2BAffairs%2522%26drilldown%3Dbudget_phase.budget_phase%257Cecon1.econ1%257Cecon2.econ2%257Cecon3.econ3%257Cecon4.econ4%257Cecon5.econ5%257Cfg1.fg1%257Cfg2.fg2%257Cfinyear.finyear%257Cprogno.progno%257Cprogno.programme%257Csprogno.sprogno%257Csprogno.subprogramme%257Cvoteno.department%257Cvoteno.voteno%26pagesize%3D10000
   programme_budgets:
   - name: Administration
-    total_budget: 247969000.0
+    total_budget: 247969000
   - name: Policy, Research and Knowledge Management
-    total_budget: 22081000.0
+    total_budget: 22081000
   - name: Governance and Intergovernmental Relations
-    total_budget: 50321345000.0
+    total_budget: 50321345000
   - name: National Disaster Management Centre
-    total_budget: 606805000.0
+    total_budget: 606805000
   - name: Provincial and Municipal Government Systems
-    total_budget: 328092000.0
+    total_budget: 328092000
   - name: Infrastructure and Economic Development
-    total_budget: 17668420000.0
+    total_budget: 17668420000
   - name: Traditional Affairs
-    total_budget: 119447000.0
+    total_budget: 119447000
 selected_financial_year: 2015-16
 selected_tab: departments
 slug: cooperative-governance-and-traditional-affairs
@@ -869,149 +869,149 @@ sphere:
   slug: national
 subprogramme_by_programme:
   dataset_detail_page: /datasets/estimates-of-national-expenditure/estimates-of-national-expenditure-2015-16
-  department_data_csv: https://datamanager-staging.vulekamali.gov.za/csv/?api_url=https%3A//openspending.org/api/3/cubes/b9d2af843f3a7ca223eea07fb608e62a%3Aestimates-of-national-expenditure-south-africa-2015-16/aggregate/%3Fcut%3Dfinancial_year.financial_year%253A2015%257Cvote_number.department%253A%2522Cooperative%2BGovernance%2Band%2BTraditional%2BAffairs%2522%26drilldown%3Dbudget_phase.budget_phase%257Ceconomic_classification_1.economic_classification_1%257Ceconomic_classification_2.economic_classification_2%257Ceconomic_classification_3.economic_classification_3%257Ceconomic_classification_4.economic_classification_4%257Cfinancial_year.financial_year%257Cprogramme_number.programme%257Cprogramme_number.programme_number%257Csubprogramme_number.subprogramme%257Csubprogramme_number.subprogramme_number%257Cvote_number.department%257Cvote_number.vote_number%26pagesize%3D10000
+  department_data_csv: https://datamanager.vulekamali.gov.za/csv/?api_url=https%3A//openspending.org/api/3/cubes/b9d2af843f3a7ca223eea07fb608e62a%3Aestimates-of-national-expenditure-2015-16-uploaded-2019-01-25t0215/aggregate/%3Fcut%3Dfinyear.finyear%253A2015%257Cvoteno.department%253A%2522Cooperative%2BGovernance%2Band%2BTraditional%2BAffairs%2522%26drilldown%3Dbudget_phase.budget_phase%257Cecon1.econ1%257Cecon2.econ2%257Cecon3.econ3%257Cecon4.econ4%257Cecon5.econ5%257Cfg1.fg1%257Cfg2.fg2%257Cfinyear.finyear%257Cprogno.progno%257Cprogno.programme%257Csprogno.sprogno%257Csprogno.subprogramme%257Cvoteno.department%257Cvoteno.voteno%26pagesize%3D10000
   programmes:
   - items:
     - name: Corporate Services
-      total_budget: 84792000.0
+      total_budget: 84792000
       type: subprogramme
     - name: Office Accommodation
-      total_budget: 35598000.0
+      total_budget: 35598000
       type: subprogramme
     - name: Financial Services
-      total_budget: 30269000.0
+      total_budget: 30269000
       type: subprogramme
     - name: Ministry
-      total_budget: 27752000.0
+      total_budget: 27752000
       type: subprogramme
     - name: Management
-      total_budget: 21062000.0
+      total_budget: 21062000
       type: subprogramme
     - name: Chief Operating Officer
-      total_budget: 15465000.0
+      total_budget: 15465000
       type: subprogramme
     - name: Communication and Liaison
-      total_budget: 11704000.0
+      total_budget: 11704000
       type: subprogramme
     - name: Legislation Review and Drafting
-      total_budget: 11470000.0
+      total_budget: 11470000
       type: subprogramme
     - name: Internal Audit and Risk Management
-      total_budget: 9857000.0
+      total_budget: 9857000
       type: subprogramme
     name: Administration
     type: programme
   - items:
     - name: Local Government Equitable Share
-      total_budget: 50207698000.0
+      total_budget: 50207698000
       type: subprogramme
     - name: Municipal Demarcation Board
-      total_budget: 45793000.0
+      total_budget: 45793000
       type: subprogramme
     - name: 'Management: Governance'
-      total_budget: 20828000.0
+      total_budget: 20828000
       type: subprogramme
     - name: Intergovernmental Fiscal Relations
-      total_budget: 10821000.0
+      total_budget: 10821000
       type: subprogramme
     - name: Intergovernmental Relations Coordination
-      total_budget: 9637000.0
+      total_budget: 9637000
       type: subprogramme
     - name: South African Local Government Association
-      total_budget: 9215000.0
+      total_budget: 9215000
       type: subprogramme
     - name: South African Cities Network
-      total_budget: 6286000.0
+      total_budget: 6286000
       type: subprogramme
     - name: United Cities and Local Government of Africa
-      total_budget: 5792000.0
+      total_budget: 5792000
       type: subprogramme
     - name: Governance and Public Participation
-      total_budget: 5275000.0
+      total_budget: 5275000
       type: subprogramme
     name: Governance and Intergovernmental Relations
     type: programme
   - items:
     - name: Municipal Infrastructure Grant
-      total_budget: 14955762000.0
+      total_budget: 14955762000
       type: subprogramme
     - name: Community Work Programme
-      total_budget: 2375939000.0
+      total_budget: 2375939000
       type: subprogramme
     - name: Municipal Infrastructure Support Agency
-      total_budget: 304013000.0
+      total_budget: 304013000
       type: subprogramme
     - name: 'Management: Infrastructure'
-      total_budget: 13765000.0
+      total_budget: 13765000
       type: subprogramme
     - name: Infrastructure Development
-      total_budget: 10444000.0
+      total_budget: 10444000
       type: subprogramme
     - name: Local Economic Development Planning
-      total_budget: 8497000.0
+      total_budget: 8497000
       type: subprogramme
     name: Infrastructure and Economic Development
     type: programme
   - items:
     - name: Disaster Relief Transfers
-      total_budget: 364343000.0
+      total_budget: 364343000
       type: subprogramme
     - name: Municipal Disaster Recovery Grant
-      total_budget: 188900000.0
+      total_budget: 188900000
       type: subprogramme
     - name: Intelligence and Information Systems Management
-      total_budget: 25949000.0
+      total_budget: 25949000
       type: subprogramme
     - name: Planning Coordination and Support
-      total_budget: 12862000.0
+      total_budget: 12862000
       type: subprogramme
     - name: 'Management: Head of Disaster'
-      total_budget: 6810000.0
+      total_budget: 6810000
       type: subprogramme
     - name: Legislation, Policy and Compliance Management
-      total_budget: 5603000.0
+      total_budget: 5603000
       type: subprogramme
     - name: Integrated Disaster Management Monitoring and Evaluation Systems
-      total_budget: 2338000.0
+      total_budget: 2338000
       type: subprogramme
     name: National Disaster Management Centre
     type: programme
   - items:
     - name: Knowledge and Information Management
-      total_budget: 10329000.0
+      total_budget: 10329000
       type: subprogramme
     - name: 'Management: Research and Policy'
-      total_budget: 6122000.0
+      total_budget: 6122000
       type: subprogramme
     - name: Policy and Research Methods
-      total_budget: 5630000.0
+      total_budget: 5630000
       type: subprogramme
     name: Policy, Research and Knowledge Management
     type: programme
   - items:
     - name: Municipal Systems Improvement Grant
-      total_budget: 251442000.0
+      total_budget: 251442000
       type: subprogramme
     - name: Municipal Demarcation Transition Grant
-      total_budget: 39000000.0
+      total_budget: 39000000
       type: subprogramme
     - name: Local Government Support and Intervention
-      total_budget: 16168000.0
+      total_budget: 16168000
       type: subprogramme
     - name: Development Planning
-      total_budget: 8501000.0
+      total_budget: 8501000
       type: subprogramme
     - name: 'Management: Provincial and Local Government Support'
-      total_budget: 7963000.0
+      total_budget: 7963000
       type: subprogramme
     - name: Provincial Government Support and Intervention
-      total_budget: 5018000.0
+      total_budget: 5018000
       type: subprogramme
     name: Provincial and Municipal Government Systems
     type: programme
   - items:
     - name: Department of Traditional Affairs
-      total_budget: 119447000.0
+      total_budget: 119447000
       type: subprogramme
     name: Traditional Affairs
     type: programme

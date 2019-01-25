@@ -11,7 +11,7 @@ adjusted_budget_summary:
     name: Significant and unforeseeable economic and financial events
     type: kind
   dataset_detail_page: /datasets/adjusted-estimates-of-national-expenditure/adjusted-estimates-of-national-expenditure-2015-16
-  department_data_csv: https://datamanager-staging.vulekamali.gov.za/csv/?api_url=https%3A//openspending.org/api/3/cubes/b9d2af843f3a7ca223eea07fb608e62a%3Aadjusted-estimates-of-national-expenditure-2015-16-uploaded-2018-12-14t1118/aggregate/%3Fcut%3Dfinyear.finyear%253A2015%257Cvoteno.department%253APlanning%252C%2BMonitoring%2Band%2BEvaluation%26drilldown%3Dbudget_phase.budget_phase%257Cecon1.econ1%257Cecon2.econ2%257Cecon3.econ3%257Cecon4.econ4%257Cecon5.econ5%257Cfinyear.finyear%257Cfy_descript.fy_descript%257Cprogno.progno%257Cprogno.programme%257Csprogno.sprogno%257Csprogno.subprogramme%257Cvoteno.department%257Cvoteno.voteno%26pagesize%3D10000
+  department_data_csv: https://datamanager.vulekamali.gov.za/csv/?api_url=https%3A//openspending.org/api/3/cubes/b9d2af843f3a7ca223eea07fb608e62a%3Aadjusted-estimates-of-national-expenditure-2015-16-uploaded-2018-12-14t1118/aggregate/%3Fcut%3Dfinyear.finyear%253A2015%257Cvoteno.department%253APlanning%252C%2BMonitoring%2Band%2BEvaluation%26drilldown%3Dbudget_phase.budget_phase%257Cecon1.econ1%257Cecon2.econ2%257Cecon3.econ3%257Cecon4.econ4%257Cecon5.econ5%257Cfinyear.finyear%257Cfy_descript.fy_descript%257Cprogno.progno%257Cprogno.programme%257Csprogno.sprogno%257Csprogno.subprogramme%257Cvoteno.department%257Cvoteno.voteno%26pagesize%3D10000
   direct_charges: null
   econ_classes:
   - items:
@@ -160,7 +160,7 @@ budget_actual:
       financial_year: 2015-16
       phase: Main appropriation
   notices:
-  - Please note that the data for 2012, 2013 and 2014 has not been published on vulekamali.
+  - Please note that the data for 2014, 2012 and 2013 has not been published on vulekamali.
 budget_actual_programmes:
   dataset_detail_page: /datasets/budgeted-and-actual-national-expenditure/budgeted-and-actual-national-expenditure
   notices: []
@@ -316,56 +316,6 @@ budget_actual_programmes:
       phase: Main appropriation
     name: Outcomes Monitoring and Evaluation
   - items:
-    - amount: 415063000
-      financial_year: 2015-16
-      phase: Adjusted appropriation
-    - amount: 415983000
-      financial_year: 2015-16
-      phase: Final Appropriation
-    - amount: 415983000
-      financial_year: 2015-16
-      phase: Audit Outcome
-    - amount: null
-      financial_year: 2012-13
-      phase: Main appropriation
-    - amount: null
-      financial_year: 2012-13
-      phase: Adjusted appropriation
-    - amount: null
-      financial_year: 2012-13
-      phase: Final Appropriation
-    - amount: null
-      financial_year: 2012-13
-      phase: Audit Outcome
-    - amount: null
-      financial_year: 2013-14
-      phase: Main appropriation
-    - amount: null
-      financial_year: 2013-14
-      phase: Adjusted appropriation
-    - amount: null
-      financial_year: 2013-14
-      phase: Final Appropriation
-    - amount: null
-      financial_year: 2013-14
-      phase: Audit Outcome
-    - amount: null
-      financial_year: 2014-15
-      phase: Main appropriation
-    - amount: null
-      financial_year: 2014-15
-      phase: Adjusted appropriation
-    - amount: null
-      financial_year: 2014-15
-      phase: Final Appropriation
-    - amount: null
-      financial_year: 2014-15
-      phase: Audit Outcome
-    - amount: null
-      financial_year: 2015-16
-      phase: Main appropriation
-    name: National Youth Development
-  - items:
     - amount: 104185000
       financial_year: 2015-16
       phase: Adjusted appropriation
@@ -415,6 +365,56 @@ budget_actual_programmes:
       financial_year: 2015-16
       phase: Main appropriation
     name: Administration
+  - items:
+    - amount: 415063000
+      financial_year: 2015-16
+      phase: Adjusted appropriation
+    - amount: 415983000
+      financial_year: 2015-16
+      phase: Final Appropriation
+    - amount: 415983000
+      financial_year: 2015-16
+      phase: Audit Outcome
+    - amount: null
+      financial_year: 2012-13
+      phase: Main appropriation
+    - amount: null
+      financial_year: 2012-13
+      phase: Adjusted appropriation
+    - amount: null
+      financial_year: 2012-13
+      phase: Final Appropriation
+    - amount: null
+      financial_year: 2012-13
+      phase: Audit Outcome
+    - amount: null
+      financial_year: 2013-14
+      phase: Main appropriation
+    - amount: null
+      financial_year: 2013-14
+      phase: Adjusted appropriation
+    - amount: null
+      financial_year: 2013-14
+      phase: Final Appropriation
+    - amount: null
+      financial_year: 2013-14
+      phase: Audit Outcome
+    - amount: null
+      financial_year: 2014-15
+      phase: Main appropriation
+    - amount: null
+      financial_year: 2014-15
+      phase: Adjusted appropriation
+    - amount: null
+      financial_year: 2014-15
+      phase: Final Appropriation
+    - amount: null
+      financial_year: 2014-15
+      phase: Audit Outcome
+    - amount: null
+      financial_year: 2015-16
+      phase: Main appropriation
+    name: National Youth Development
 contributed_datasets:
 - contributor: International Budget Partnership
   name: How Does Civil Society Use Budget Information?
@@ -458,9 +458,128 @@ description: 'National department: Planning, Monitoring and Evaluation budget da
   YETHU.'
 economic_classification_by_programme:
   dataset_detail_page: /datasets/estimates-of-national-expenditure/estimates-of-national-expenditure-2015-16
-  department_data_csv: https://datamanager-staging.vulekamali.gov.za/csv/?api_url=https%3A//openspending.org/api/3/cubes/b9d2af843f3a7ca223eea07fb608e62a%3Aestimates-of-national-expenditure-south-africa-2015-16/aggregate/%3Fcut%3Dfinancial_year.financial_year%253A2015%257Cvote_number.department%253A%2522Planning%252C%2BMonitoring%2Band%2BEvaluation%2522%26drilldown%3Dbudget_phase.budget_phase%257Ceconomic_classification_1.economic_classification_1%257Ceconomic_classification_2.economic_classification_2%257Ceconomic_classification_3.economic_classification_3%257Ceconomic_classification_4.economic_classification_4%257Cfinancial_year.financial_year%257Cprogramme_number.programme%257Cprogramme_number.programme_number%257Csubprogramme_number.subprogramme%257Csubprogramme_number.subprogramme_number%257Cvote_number.department%257Cvote_number.vote_number%26pagesize%3D10000
-  programmes: []
-expenditure_over_time: null
+  department_data_csv: https://datamanager.vulekamali.gov.za/csv/?api_url=https%3A//openspending.org/api/3/cubes/b9d2af843f3a7ca223eea07fb608e62a%3Aestimates-of-national-expenditure-2015-16-uploaded-2019-01-25t0215/aggregate/%3Fcut%3Dfinyear.finyear%253A2015%257Cvoteno.department%253A%2522Planning%252C%2BMonitoring%2Band%2BEvaluation%2522%26drilldown%3Dbudget_phase.budget_phase%257Cecon1.econ1%257Cecon2.econ2%257Cecon3.econ3%257Cecon4.econ4%257Cecon5.econ5%257Cfg1.fg1%257Cfg2.fg2%257Cfinyear.finyear%257Cprogno.progno%257Cprogno.programme%257Csprogno.sprogno%257Csprogno.subprogramme%257Cvoteno.department%257Cvoteno.voteno%26pagesize%3D10000
+  programmes:
+  - items:
+    - items:
+      - name: Payments for capital assets
+        total_budget: 2020000
+        type: economic_classification_2
+      name: Capital
+      type: economic_classification_1
+    - items:
+      - name: Current payments
+        total_budget: 67764000
+        type: economic_classification_2
+      name: Current
+      type: economic_classification_1
+    name: Administration
+    type: programme
+  - items:
+    - items:
+      - name: Payments for capital assets
+        total_budget: 473000
+        type: economic_classification_2
+      name: Capital
+      type: economic_classification_1
+    - items:
+      - name: Current payments
+        total_budget: 59094000
+        type: economic_classification_2
+      name: Current
+      type: economic_classification_1
+    name: Institutional Performance Monitoring and Evaluation
+    type: programme
+  - items:
+    - items:
+      - name: Current payments
+        total_budget: 88197000
+        type: economic_classification_2
+      name: Current
+      type: economic_classification_1
+    name: National Planning
+    type: programme
+  - items:
+    - items:
+      - name: Payments for capital assets
+        total_budget: 50000
+        type: economic_classification_2
+      name: Capital
+      type: economic_classification_1
+    - items:
+      - name: Transfers and subsidies
+        total_budget: 409789000
+        type: economic_classification_2
+      - name: Current payments
+        total_budget: 4703000
+        type: economic_classification_2
+      name: Current
+      type: economic_classification_1
+    name: National Youth Development
+    type: programme
+  - items:
+    - items:
+      - name: Payments for capital assets
+        total_budget: 375000
+        type: economic_classification_2
+      name: Capital
+      type: economic_classification_1
+    - items:
+      - name: Current payments
+        total_budget: 85229000
+        type: economic_classification_2
+      name: Current
+      type: economic_classification_1
+    name: Outcomes Monitoring and Evaluation
+    type: programme
+expenditure_over_time:
+  dataset_detail_page: /datasets/estimates-of-national-expenditure/estimates-of-national-expenditure-2015-16
+  expenditure:
+    base_financial_year: 2017-18
+    nominal:
+    - amount: 547257000
+      financial_year: 2011-12
+      phase: Audited Outcome
+    - amount: 622196000
+      financial_year: 2012-13
+      phase: Audited Outcome
+    - amount: 646595000
+      financial_year: 2013-14
+      phase: Audited Outcome
+    - amount: 733842000
+      financial_year: 2014-15
+      phase: Adjusted appropriation
+    - amount: 717694000
+      financial_year: 2015-16
+      phase: Main appropriation
+    - amount: 738572000
+      financial_year: 2016-17
+      phase: Medium Term Estimates
+    - amount: 784550000
+      financial_year: 2017-18
+      phase: Medium Term Estimates
+    real:
+    - amount: 756938434
+      financial_year: 2011-12
+      phase: Audited Outcome
+    - amount: 815400515
+      financial_year: 2012-13
+      phase: Audited Outcome
+    - amount: 800793727
+      financial_year: 2013-14
+      phase: Audited Outcome
+    - amount: 860439006
+      financial_year: 2014-15
+      phase: Adjusted appropriation
+    - amount: 800161589
+      financial_year: 2015-16
+      phase: Main appropriation
+    - amount: 774671919
+      financial_year: 2016-17
+      phase: Medium Term Estimates
+    - amount: 784550000
+      financial_year: 2017-18
+      phase: Medium Term Estimates
 financial_years:
 - closest_match:
     is_exact_match: true
@@ -499,22 +618,61 @@ is_vote_primary: true
 name: Planning, Monitoring and Evaluation
 programme_by_economic_classification:
   dataset_detail_page: /datasets/estimates-of-national-expenditure/estimates-of-national-expenditure-2015-16
-  department_data_csv: https://datamanager-staging.vulekamali.gov.za/csv/?api_url=https%3A//openspending.org/api/3/cubes/b9d2af843f3a7ca223eea07fb608e62a%3Aestimates-of-national-expenditure-south-africa-2015-16/aggregate/%3Fcut%3Dfinancial_year.financial_year%253A2015%257Cvote_number.department%253A%2522Planning%252C%2BMonitoring%2Band%2BEvaluation%2522%26drilldown%3Dbudget_phase.budget_phase%257Ceconomic_classification_1.economic_classification_1%257Ceconomic_classification_2.economic_classification_2%257Ceconomic_classification_3.economic_classification_3%257Ceconomic_classification_4.economic_classification_4%257Cfinancial_year.financial_year%257Cprogramme_number.programme%257Cprogramme_number.programme_number%257Csubprogramme_number.subprogramme%257Csubprogramme_number.subprogramme_number%257Cvote_number.department%257Cvote_number.vote_number%26pagesize%3D10000
-  econ_classes: []
+  department_data_csv: https://datamanager.vulekamali.gov.za/csv/?api_url=https%3A//openspending.org/api/3/cubes/b9d2af843f3a7ca223eea07fb608e62a%3Aestimates-of-national-expenditure-2015-16-uploaded-2019-01-25t0215/aggregate/%3Fcut%3Dfinyear.finyear%253A2015%257Cvoteno.department%253A%2522Planning%252C%2BMonitoring%2Band%2BEvaluation%2522%26drilldown%3Dbudget_phase.budget_phase%257Cecon1.econ1%257Cecon2.econ2%257Cecon3.econ3%257Cecon4.econ4%257Cecon5.econ5%257Cfg1.fg1%257Cfg2.fg2%257Cfinyear.finyear%257Cprogno.progno%257Cprogno.programme%257Csprogno.sprogno%257Csprogno.subprogramme%257Cvoteno.department%257Cvoteno.voteno%26pagesize%3D10000
+  econ_classes:
+  - items:
+    - name: Administration
+      total_budget: 2020000
+      type: programme
+    - name: Institutional Performance Monitoring and Evaluation
+      total_budget: 473000
+      type: programme
+    - name: Outcomes Monitoring and Evaluation
+      total_budget: 375000
+      type: programme
+    - name: National Youth Development
+      total_budget: 50000
+      type: programme
+    name: Capital - Payments for capital assets
+    type: economic_classification_1_and_2
+  - items:
+    - name: National Planning
+      total_budget: 88197000
+      type: programme
+    - name: Outcomes Monitoring and Evaluation
+      total_budget: 85229000
+      type: programme
+    - name: Administration
+      total_budget: 67764000
+      type: programme
+    - name: Institutional Performance Monitoring and Evaluation
+      total_budget: 59094000
+      type: programme
+    - name: National Youth Development
+      total_budget: 4703000
+      type: programme
+    name: Current - Current payments
+    type: economic_classification_1_and_2
+  - items:
+    - name: National Youth Development
+      total_budget: 409789000
+      type: programme
+    name: Current - Transfers and subsidies
+    type: economic_classification_1_and_2
 programmes:
   dataset_detail_page: /datasets/estimates-of-national-expenditure/estimates-of-national-expenditure-2015-16
-  department_data_csv: https://datamanager-staging.vulekamali.gov.za/csv/?api_url=https%3A//openspending.org/api/3/cubes/b9d2af843f3a7ca223eea07fb608e62a%3Aestimates-of-national-expenditure-south-africa-2015-16/aggregate/%3Fcut%3Dfinancial_year.financial_year%253A2015%257Cvote_number.department%253A%2522Planning%252C%2BMonitoring%2Band%2BEvaluation%2522%26drilldown%3Dbudget_phase.budget_phase%257Ceconomic_classification_1.economic_classification_1%257Ceconomic_classification_2.economic_classification_2%257Ceconomic_classification_3.economic_classification_3%257Ceconomic_classification_4.economic_classification_4%257Cfinancial_year.financial_year%257Cprogramme_number.programme%257Cprogramme_number.programme_number%257Csubprogramme_number.subprogramme%257Csubprogramme_number.subprogramme_number%257Cvote_number.department%257Cvote_number.vote_number%26pagesize%3D10000
+  department_data_csv: https://datamanager.vulekamali.gov.za/csv/?api_url=https%3A//openspending.org/api/3/cubes/b9d2af843f3a7ca223eea07fb608e62a%3Aestimates-of-national-expenditure-2015-16-uploaded-2019-01-25t0215/aggregate/%3Fcut%3Dfinyear.finyear%253A2015%257Cvoteno.department%253A%2522Planning%252C%2BMonitoring%2Band%2BEvaluation%2522%26drilldown%3Dbudget_phase.budget_phase%257Cecon1.econ1%257Cecon2.econ2%257Cecon3.econ3%257Cecon4.econ4%257Cecon5.econ5%257Cfg1.fg1%257Cfg2.fg2%257Cfinyear.finyear%257Cprogno.progno%257Cprogno.programme%257Csprogno.sprogno%257Csprogno.subprogramme%257Cvoteno.department%257Cvoteno.voteno%26pagesize%3D10000
   programme_budgets:
   - name: Administration
-    total_budget: null
+    total_budget: 69784000
   - name: Outcomes Monitoring and Evaluation
-    total_budget: null
+    total_budget: 85604000
   - name: Institutional Performance Monitoring and Evaluation
-    total_budget: null
+    total_budget: 59567000
   - name: National Planning
-    total_budget: null
+    total_budget: 88197000
   - name: National Youth Development
-    total_budget: null
+    total_budget: 414542000
 selected_financial_year: 2015-16
 selected_tab: departments
 slug: planning-monitoring-and-evaluation
@@ -523,8 +681,71 @@ sphere:
   slug: national
 subprogramme_by_programme:
   dataset_detail_page: /datasets/estimates-of-national-expenditure/estimates-of-national-expenditure-2015-16
-  department_data_csv: https://datamanager-staging.vulekamali.gov.za/csv/?api_url=https%3A//openspending.org/api/3/cubes/b9d2af843f3a7ca223eea07fb608e62a%3Aestimates-of-national-expenditure-south-africa-2015-16/aggregate/%3Fcut%3Dfinancial_year.financial_year%253A2015%257Cvote_number.department%253A%2522Planning%252C%2BMonitoring%2Band%2BEvaluation%2522%26drilldown%3Dbudget_phase.budget_phase%257Ceconomic_classification_1.economic_classification_1%257Ceconomic_classification_2.economic_classification_2%257Ceconomic_classification_3.economic_classification_3%257Ceconomic_classification_4.economic_classification_4%257Cfinancial_year.financial_year%257Cprogramme_number.programme%257Cprogramme_number.programme_number%257Csubprogramme_number.subprogramme%257Csubprogramme_number.subprogramme_number%257Cvote_number.department%257Cvote_number.vote_number%26pagesize%3D10000
-  programmes: []
+  department_data_csv: https://datamanager.vulekamali.gov.za/csv/?api_url=https%3A//openspending.org/api/3/cubes/b9d2af843f3a7ca223eea07fb608e62a%3Aestimates-of-national-expenditure-2015-16-uploaded-2019-01-25t0215/aggregate/%3Fcut%3Dfinyear.finyear%253A2015%257Cvoteno.department%253A%2522Planning%252C%2BMonitoring%2Band%2BEvaluation%2522%26drilldown%3Dbudget_phase.budget_phase%257Cecon1.econ1%257Cecon2.econ2%257Cecon3.econ3%257Cecon4.econ4%257Cecon5.econ5%257Cfg1.fg1%257Cfg2.fg2%257Cfinyear.finyear%257Cprogno.progno%257Cprogno.programme%257Csprogno.sprogno%257Csprogno.subprogramme%257Cvoteno.department%257Cvoteno.voteno%26pagesize%3D10000
+  programmes:
+  - items:
+    - name: Corporate and Financial Services
+      total_budget: 36386000
+      type: subprogramme
+    - name: Information Technology Support
+      total_budget: 20197000
+      type: subprogramme
+    - name: Departmental Management
+      total_budget: 9822000
+      type: subprogramme
+    - name: Internal Audit and Enterprise Risk Management
+      total_budget: 3379000
+      type: subprogramme
+    name: Administration
+    type: programme
+  - items:
+    - name: Presidential Frontline Service Delivery Performance Monitoring and Support
+      total_budget: 39942000
+      type: subprogramme
+    - name: Management Performance Monitoring and Support
+      total_budget: 10374000
+      type: subprogramme
+    - name: Macro Monitoring and Evaluation Policy and Capacity Building
+      total_budget: 6371000
+      type: subprogramme
+    - name: Programme Management for Institutional Performance Monitoring and Evaluation
+      total_budget: 2880000
+      type: subprogramme
+    name: Institutional Performance Monitoring and Evaluation
+    type: programme
+  - items:
+    - name: Research and Policy Services
+      total_budget: 51421000
+      type: subprogramme
+    - name: Programme Management for National Planning
+      total_budget: 29490000
+      type: subprogramme
+    - name: Government Performance Information
+      total_budget: 7286000
+      type: subprogramme
+    name: National Planning
+    type: programme
+  - items:
+    - name: National Youth Development Agency
+      total_budget: 409789000
+      type: subprogramme
+    - name: Youth Development
+      total_budget: 4753000
+      type: subprogramme
+    name: National Youth Development
+    type: programme
+  - items:
+    - name: Outcomes Support
+      total_budget: 60910000
+      type: subprogramme
+    - name: Evaluation and Research
+      total_budget: 22066000
+      type: subprogramme
+    - name: Programme Management for Outcomes Monitoring and Evaluation
+      total_budget: 2628000
+      type: subprogramme
+    name: Outcomes Monitoring and Evaluation
+    type: programme
 title: Planning, Monitoring and Evaluation budget 2015-16  - vulekamali
 vote_number: 8
 vote_primary:

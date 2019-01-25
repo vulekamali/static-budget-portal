@@ -11,7 +11,7 @@ adjusted_budget_summary:
     name: Significant and unforeseeable economic and financial events
     type: kind
   dataset_detail_page: /datasets/adjusted-estimates-of-national-expenditure/adjusted-estimates-of-national-expenditure-2015-16
-  department_data_csv: https://datamanager-staging.vulekamali.gov.za/csv/?api_url=https%3A//openspending.org/api/3/cubes/b9d2af843f3a7ca223eea07fb608e62a%3Aadjusted-estimates-of-national-expenditure-2015-16-uploaded-2018-12-14t1118/aggregate/%3Fcut%3Dfinyear.finyear%253A2015%257Cvoteno.department%253AOffice%2Bof%2Bthe%2BChief%2BJustice%2Band%2BJudicial%2BAdministration%26drilldown%3Dbudget_phase.budget_phase%257Cecon1.econ1%257Cecon2.econ2%257Cecon3.econ3%257Cecon4.econ4%257Cecon5.econ5%257Cfinyear.finyear%257Cfy_descript.fy_descript%257Cprogno.progno%257Cprogno.programme%257Csprogno.sprogno%257Csprogno.subprogramme%257Cvoteno.department%257Cvoteno.voteno%26pagesize%3D10000
+  department_data_csv: https://datamanager.vulekamali.gov.za/csv/?api_url=https%3A//openspending.org/api/3/cubes/b9d2af843f3a7ca223eea07fb608e62a%3Aadjusted-estimates-of-national-expenditure-2015-16-uploaded-2018-12-14t1118/aggregate/%3Fcut%3Dfinyear.finyear%253A2015%257Cvoteno.department%253AOffice%2Bof%2Bthe%2BChief%2BJustice%2Band%2BJudicial%2BAdministration%26drilldown%3Dbudget_phase.budget_phase%257Cecon1.econ1%257Cecon2.econ2%257Cecon3.econ3%257Cecon4.econ4%257Cecon5.econ5%257Cfinyear.finyear%257Cfy_descript.fy_descript%257Cprogno.progno%257Cprogno.programme%257Csprogno.sprogno%257Csprogno.subprogramme%257Cvoteno.department%257Cvoteno.voteno%26pagesize%3D10000
   direct_charges: null
   econ_classes:
   - items:
@@ -159,7 +159,7 @@ budget_actual:
       financial_year: 2014-15
       phase: Audit Outcome
   notices:
-  - Please note that the data for 2012, 2013 and 2014 has not been published on vulekamali.
+  - Please note that the data for 2014, 2012 and 2013 has not been published on vulekamali.
 budget_actual_programmes:
   dataset_detail_page: /datasets/budgeted-and-actual-national-expenditure/budgeted-and-actual-national-expenditure
   notices: []
@@ -214,6 +214,56 @@ budget_actual_programmes:
       financial_year: 2014-15
       phase: Audit Outcome
     name: Judicial Education and Research
+  - items:
+    - amount: 69411000.0
+      financial_year: 2015-16
+      phase: Main appropriation
+    - amount: 99479000
+      financial_year: 2015-16
+      phase: Adjusted appropriation
+    - amount: 97787000
+      financial_year: 2015-16
+      phase: Final Appropriation
+    - amount: 88836000
+      financial_year: 2015-16
+      phase: Audit Outcome
+    - amount: null
+      financial_year: 2012-13
+      phase: Main appropriation
+    - amount: null
+      financial_year: 2012-13
+      phase: Adjusted appropriation
+    - amount: null
+      financial_year: 2012-13
+      phase: Final Appropriation
+    - amount: null
+      financial_year: 2012-13
+      phase: Audit Outcome
+    - amount: null
+      financial_year: 2013-14
+      phase: Main appropriation
+    - amount: null
+      financial_year: 2013-14
+      phase: Adjusted appropriation
+    - amount: null
+      financial_year: 2013-14
+      phase: Final Appropriation
+    - amount: null
+      financial_year: 2013-14
+      phase: Audit Outcome
+    - amount: null
+      financial_year: 2014-15
+      phase: Main appropriation
+    - amount: null
+      financial_year: 2014-15
+      phase: Adjusted appropriation
+    - amount: null
+      financial_year: 2014-15
+      phase: Final Appropriation
+    - amount: null
+      financial_year: 2014-15
+      phase: Audit Outcome
+    name: Administration
   - items:
     - amount: 640363000.0
       financial_year: 2015-16
@@ -314,56 +364,6 @@ budget_actual_programmes:
       financial_year: 2014-15
       phase: Audit Outcome
     name: Direct charge against the National Revenue Fund
-  - items:
-    - amount: 69411000.0
-      financial_year: 2015-16
-      phase: Main appropriation
-    - amount: 99479000
-      financial_year: 2015-16
-      phase: Adjusted appropriation
-    - amount: 97787000
-      financial_year: 2015-16
-      phase: Final Appropriation
-    - amount: 88836000
-      financial_year: 2015-16
-      phase: Audit Outcome
-    - amount: null
-      financial_year: 2012-13
-      phase: Main appropriation
-    - amount: null
-      financial_year: 2012-13
-      phase: Adjusted appropriation
-    - amount: null
-      financial_year: 2012-13
-      phase: Final Appropriation
-    - amount: null
-      financial_year: 2012-13
-      phase: Audit Outcome
-    - amount: null
-      financial_year: 2013-14
-      phase: Main appropriation
-    - amount: null
-      financial_year: 2013-14
-      phase: Adjusted appropriation
-    - amount: null
-      financial_year: 2013-14
-      phase: Final Appropriation
-    - amount: null
-      financial_year: 2013-14
-      phase: Audit Outcome
-    - amount: null
-      financial_year: 2014-15
-      phase: Main appropriation
-    - amount: null
-      financial_year: 2014-15
-      phase: Adjusted appropriation
-    - amount: null
-      financial_year: 2014-15
-      phase: Final Appropriation
-    - amount: null
-      financial_year: 2014-15
-      phase: Audit Outcome
-    name: Administration
 contributed_datasets:
 - contributor: International Budget Partnership
   name: How Does Civil Society Use Budget Information?
@@ -408,21 +408,21 @@ description: 'National department: Office of the Chief Justice and Judicial Admi
   with IMALI YETHU.'
 economic_classification_by_programme:
   dataset_detail_page: /datasets/estimates-of-national-expenditure/estimates-of-national-expenditure-2015-16
-  department_data_csv: https://datamanager-staging.vulekamali.gov.za/csv/?api_url=https%3A//openspending.org/api/3/cubes/b9d2af843f3a7ca223eea07fb608e62a%3Aestimates-of-national-expenditure-south-africa-2015-16/aggregate/%3Fcut%3Dfinancial_year.financial_year%253A2015%257Cvote_number.department%253A%2522Office%2Bof%2Bthe%2BChief%2BJustice%2Band%2BJudicial%2BAdministration%2522%26drilldown%3Dbudget_phase.budget_phase%257Ceconomic_classification_1.economic_classification_1%257Ceconomic_classification_2.economic_classification_2%257Ceconomic_classification_3.economic_classification_3%257Ceconomic_classification_4.economic_classification_4%257Cfinancial_year.financial_year%257Cprogramme_number.programme%257Cprogramme_number.programme_number%257Csubprogramme_number.subprogramme%257Csubprogramme_number.subprogramme_number%257Cvote_number.department%257Cvote_number.vote_number%26pagesize%3D10000
+  department_data_csv: https://datamanager.vulekamali.gov.za/csv/?api_url=https%3A//openspending.org/api/3/cubes/b9d2af843f3a7ca223eea07fb608e62a%3Aestimates-of-national-expenditure-2015-16-uploaded-2019-01-25t0215/aggregate/%3Fcut%3Dfinyear.finyear%253A2015%257Cvoteno.department%253A%2522Office%2Bof%2Bthe%2BChief%2BJustice%2Band%2BJudicial%2BAdministration%2522%26drilldown%3Dbudget_phase.budget_phase%257Cecon1.econ1%257Cecon2.econ2%257Cecon3.econ3%257Cecon4.econ4%257Cecon5.econ5%257Cfg1.fg1%257Cfg2.fg2%257Cfinyear.finyear%257Cprogno.progno%257Cprogno.programme%257Csprogno.sprogno%257Csprogno.subprogramme%257Cvoteno.department%257Cvoteno.voteno%26pagesize%3D10000
   programmes:
   - items:
     - items:
       - name: Payments for capital assets
-        total_budget: 9584000.0
+        total_budget: 9584000
         type: economic_classification_2
       name: Capital
       type: economic_classification_1
     - items:
       - name: Current payments
-        total_budget: 59824000.0
+        total_budget: 59824000
         type: economic_classification_2
       - name: Transfers and subsidies
-        total_budget: 3000.0
+        total_budget: 3000
         type: economic_classification_2
       name: Current
       type: economic_classification_1
@@ -431,10 +431,10 @@ economic_classification_by_programme:
   - items:
     - items:
       - name: Current payments
-        total_budget: 821454000.0
+        total_budget: 821454000
         type: economic_classification_2
       - name: Transfers and subsidies
-        total_budget: 52294000.0
+        total_budget: 52294000
         type: economic_classification_2
       name: Current
       type: economic_classification_1
@@ -443,16 +443,16 @@ economic_classification_by_programme:
   - items:
     - items:
       - name: Payments for capital assets
-        total_budget: 380000.0
+        total_budget: 380000
         type: economic_classification_2
       name: Capital
       type: economic_classification_1
     - items:
       - name: Current payments
-        total_budget: 32260000.0
+        total_budget: 32260000
         type: economic_classification_2
       - name: Transfers and subsidies
-        total_budget: 3000.0
+        total_budget: 3000
         type: economic_classification_2
       name: Current
       type: economic_classification_1
@@ -461,16 +461,16 @@ economic_classification_by_programme:
   - items:
     - items:
       - name: Payments for capital assets
-        total_budget: 3805000.0
+        total_budget: 3805000
         type: economic_classification_2
       name: Capital
       type: economic_classification_1
     - items:
       - name: Current payments
-        total_budget: 633558000.0
+        total_budget: 633558000
         type: economic_classification_2
       - name: Transfers and subsidies
-        total_budget: 3000000.0
+        total_budget: 3000000
         type: economic_classification_2
       name: Current
       type: economic_classification_1
@@ -481,25 +481,25 @@ expenditure_over_time:
   expenditure:
     base_financial_year: 2017-18
     nominal:
-    - amount: 1218155000.0
+    - amount: 1218155000
       financial_year: 2011-12
       phase: Audited Outcome
-    - amount: 1332661000.0
+    - amount: 1332661000
       financial_year: 2012-13
       phase: Audited Outcome
-    - amount: 1457943000.0
+    - amount: 1457943000
       financial_year: 2013-14
       phase: Audited Outcome
-    - amount: 1430017000.0
+    - amount: 1430017000
       financial_year: 2014-15
       phase: Adjusted appropriation
-    - amount: 1616165000.0
+    - amount: 1616165000
       financial_year: 2015-16
       phase: Main appropriation
-    - amount: 1724375000.0
+    - amount: 1724375000
       financial_year: 2016-17
       phase: Medium Term Estimates
-    - amount: 1815983000.0
+    - amount: 1815983000
       financial_year: 2017-18
       phase: Medium Term Estimates
     real:
@@ -566,62 +566,62 @@ is_vote_primary: true
 name: Office of the Chief Justice and Judicial Administration
 programme_by_economic_classification:
   dataset_detail_page: /datasets/estimates-of-national-expenditure/estimates-of-national-expenditure-2015-16
-  department_data_csv: https://datamanager-staging.vulekamali.gov.za/csv/?api_url=https%3A//openspending.org/api/3/cubes/b9d2af843f3a7ca223eea07fb608e62a%3Aestimates-of-national-expenditure-south-africa-2015-16/aggregate/%3Fcut%3Dfinancial_year.financial_year%253A2015%257Cvote_number.department%253A%2522Office%2Bof%2Bthe%2BChief%2BJustice%2Band%2BJudicial%2BAdministration%2522%26drilldown%3Dbudget_phase.budget_phase%257Ceconomic_classification_1.economic_classification_1%257Ceconomic_classification_2.economic_classification_2%257Ceconomic_classification_3.economic_classification_3%257Ceconomic_classification_4.economic_classification_4%257Cfinancial_year.financial_year%257Cprogramme_number.programme%257Cprogramme_number.programme_number%257Csubprogramme_number.subprogramme%257Csubprogramme_number.subprogramme_number%257Cvote_number.department%257Cvote_number.vote_number%26pagesize%3D10000
+  department_data_csv: https://datamanager.vulekamali.gov.za/csv/?api_url=https%3A//openspending.org/api/3/cubes/b9d2af843f3a7ca223eea07fb608e62a%3Aestimates-of-national-expenditure-2015-16-uploaded-2019-01-25t0215/aggregate/%3Fcut%3Dfinyear.finyear%253A2015%257Cvoteno.department%253A%2522Office%2Bof%2Bthe%2BChief%2BJustice%2Band%2BJudicial%2BAdministration%2522%26drilldown%3Dbudget_phase.budget_phase%257Cecon1.econ1%257Cecon2.econ2%257Cecon3.econ3%257Cecon4.econ4%257Cecon5.econ5%257Cfg1.fg1%257Cfg2.fg2%257Cfinyear.finyear%257Cprogno.progno%257Cprogno.programme%257Csprogno.sprogno%257Csprogno.subprogramme%257Cvoteno.department%257Cvoteno.voteno%26pagesize%3D10000
   econ_classes:
   - items:
     - name: Administration
-      total_budget: 9584000.0
+      total_budget: 9584000
       type: programme
     - name: Judicial Support and Court Administration
-      total_budget: 3805000.0
+      total_budget: 3805000
       type: programme
     - name: Judicial Education and Research
-      total_budget: 380000.0
+      total_budget: 380000
       type: programme
     name: Capital - Payments for capital assets
     type: economic_classification_1_and_2
   - items:
     - name: Direct charge against the National Revenue Fund
-      total_budget: 821454000.0
+      total_budget: 821454000
       type: programme
     - name: Judicial Support and Court Administration
-      total_budget: 633558000.0
+      total_budget: 633558000
       type: programme
     - name: Administration
-      total_budget: 59824000.0
+      total_budget: 59824000
       type: programme
     - name: Judicial Education and Research
-      total_budget: 32260000.0
+      total_budget: 32260000
       type: programme
     name: Current - Current payments
     type: economic_classification_1_and_2
   - items:
     - name: Direct charge against the National Revenue Fund
-      total_budget: 52294000.0
+      total_budget: 52294000
       type: programme
     - name: Judicial Support and Court Administration
-      total_budget: 3000000.0
+      total_budget: 3000000
       type: programme
     - name: Administration
-      total_budget: 3000.0
+      total_budget: 3000
       type: programme
     - name: Judicial Education and Research
-      total_budget: 3000.0
+      total_budget: 3000
       type: programme
     name: Current - Transfers and subsidies
     type: economic_classification_1_and_2
 programmes:
   dataset_detail_page: /datasets/estimates-of-national-expenditure/estimates-of-national-expenditure-2015-16
-  department_data_csv: https://datamanager-staging.vulekamali.gov.za/csv/?api_url=https%3A//openspending.org/api/3/cubes/b9d2af843f3a7ca223eea07fb608e62a%3Aestimates-of-national-expenditure-south-africa-2015-16/aggregate/%3Fcut%3Dfinancial_year.financial_year%253A2015%257Cvote_number.department%253A%2522Office%2Bof%2Bthe%2BChief%2BJustice%2Band%2BJudicial%2BAdministration%2522%26drilldown%3Dbudget_phase.budget_phase%257Ceconomic_classification_1.economic_classification_1%257Ceconomic_classification_2.economic_classification_2%257Ceconomic_classification_3.economic_classification_3%257Ceconomic_classification_4.economic_classification_4%257Cfinancial_year.financial_year%257Cprogramme_number.programme%257Cprogramme_number.programme_number%257Csubprogramme_number.subprogramme%257Csubprogramme_number.subprogramme_number%257Cvote_number.department%257Cvote_number.vote_number%26pagesize%3D10000
+  department_data_csv: https://datamanager.vulekamali.gov.za/csv/?api_url=https%3A//openspending.org/api/3/cubes/b9d2af843f3a7ca223eea07fb608e62a%3Aestimates-of-national-expenditure-2015-16-uploaded-2019-01-25t0215/aggregate/%3Fcut%3Dfinyear.finyear%253A2015%257Cvoteno.department%253A%2522Office%2Bof%2Bthe%2BChief%2BJustice%2Band%2BJudicial%2BAdministration%2522%26drilldown%3Dbudget_phase.budget_phase%257Cecon1.econ1%257Cecon2.econ2%257Cecon3.econ3%257Cecon4.econ4%257Cecon5.econ5%257Cfg1.fg1%257Cfg2.fg2%257Cfinyear.finyear%257Cprogno.progno%257Cprogno.programme%257Csprogno.sprogno%257Csprogno.subprogramme%257Cvoteno.department%257Cvoteno.voteno%26pagesize%3D10000
   programme_budgets:
   - name: Administration
-    total_budget: 69411000.0
+    total_budget: 69411000
   - name: Direct charge against the National Revenue Fund
-    total_budget: 873748000.0
+    total_budget: 873748000
   - name: Judicial Support and Court Administration
-    total_budget: 640363000.0
+    total_budget: 640363000
   - name: Judicial Education and Research
-    total_budget: 32643000.0
+    total_budget: 32643000
 selected_financial_year: 2015-16
 selected_tab: departments
 slug: office-of-the-chief-justice-and-judicial-administration
@@ -630,59 +630,59 @@ sphere:
   slug: national
 subprogramme_by_programme:
   dataset_detail_page: /datasets/estimates-of-national-expenditure/estimates-of-national-expenditure-2015-16
-  department_data_csv: https://datamanager-staging.vulekamali.gov.za/csv/?api_url=https%3A//openspending.org/api/3/cubes/b9d2af843f3a7ca223eea07fb608e62a%3Aestimates-of-national-expenditure-south-africa-2015-16/aggregate/%3Fcut%3Dfinancial_year.financial_year%253A2015%257Cvote_number.department%253A%2522Office%2Bof%2Bthe%2BChief%2BJustice%2Band%2BJudicial%2BAdministration%2522%26drilldown%3Dbudget_phase.budget_phase%257Ceconomic_classification_1.economic_classification_1%257Ceconomic_classification_2.economic_classification_2%257Ceconomic_classification_3.economic_classification_3%257Ceconomic_classification_4.economic_classification_4%257Cfinancial_year.financial_year%257Cprogramme_number.programme%257Cprogramme_number.programme_number%257Csubprogramme_number.subprogramme%257Csubprogramme_number.subprogramme_number%257Cvote_number.department%257Cvote_number.vote_number%26pagesize%3D10000
+  department_data_csv: https://datamanager.vulekamali.gov.za/csv/?api_url=https%3A//openspending.org/api/3/cubes/b9d2af843f3a7ca223eea07fb608e62a%3Aestimates-of-national-expenditure-2015-16-uploaded-2019-01-25t0215/aggregate/%3Fcut%3Dfinyear.finyear%253A2015%257Cvoteno.department%253A%2522Office%2Bof%2Bthe%2BChief%2BJustice%2Band%2BJudicial%2BAdministration%2522%26drilldown%3Dbudget_phase.budget_phase%257Cecon1.econ1%257Cecon2.econ2%257Cecon3.econ3%257Cecon4.econ4%257Cecon5.econ5%257Cfg1.fg1%257Cfg2.fg2%257Cfinyear.finyear%257Cprogno.progno%257Cprogno.programme%257Csprogno.sprogno%257Csprogno.subprogramme%257Cvoteno.department%257Cvoteno.voteno%26pagesize%3D10000
   programmes:
   - items:
     - name: Management
-      total_budget: 31888000.0
+      total_budget: 31888000
       type: subprogramme
     - name: Financial Administration
-      total_budget: 14121000.0
+      total_budget: 14121000
       type: subprogramme
     - name: Corporate Services
-      total_budget: 11574000.0
+      total_budget: 11574000
       type: subprogramme
     - name: Office Accommodation
-      total_budget: 9411000.0
+      total_budget: 9411000
       type: subprogramme
     - name: Internal Audit and Risk Management
-      total_budget: 2417000.0
+      total_budget: 2417000
       type: subprogramme
     name: Administration
     type: programme
   - items:
-    - name: Judges' salaries
-      total_budget: 873748000.0
+    - name: Judges' Salaries
+      total_budget: 873748000
       type: subprogramme
     name: Direct charge against the National Revenue Fund
     type: programme
   - items:
     - name: South African Judicial Education Institute
-      total_budget: 28576000.0
+      total_budget: 28576000
       type: subprogramme
     - name: Judicial Policy and Research
-      total_budget: 4067000.0
+      total_budget: 4067000
       type: subprogramme
     name: Judicial Education and Research
     type: programme
   - items:
     - name: High Courts
-      total_budget: 473436000.0
+      total_budget: 473436000
       type: subprogramme
     - name: Constitutional Court
-      total_budget: 68439000.0
+      total_budget: 68439000
       type: subprogramme
     - name: Specialised Courts
-      total_budget: 41968000.0
+      total_budget: 41968000
       type: subprogramme
     - name: Supreme Court of Appeal
-      total_budget: 25246000.0
+      total_budget: 25246000
       type: subprogramme
     - name: Administration of Superior Courts
-      total_budget: 21293000.0
+      total_budget: 21293000
       type: subprogramme
     - name: Judicial Service Commission
-      total_budget: 9981000.0
+      total_budget: 9981000
       type: subprogramme
     name: Judicial Support and Court Administration
     type: programme

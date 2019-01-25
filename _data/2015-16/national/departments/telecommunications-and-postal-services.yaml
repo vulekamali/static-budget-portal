@@ -11,7 +11,7 @@ adjusted_budget_summary:
     name: Significant and unforeseeable economic and financial events
     type: kind
   dataset_detail_page: /datasets/adjusted-estimates-of-national-expenditure/adjusted-estimates-of-national-expenditure-2015-16
-  department_data_csv: https://datamanager-staging.vulekamali.gov.za/csv/?api_url=https%3A//openspending.org/api/3/cubes/b9d2af843f3a7ca223eea07fb608e62a%3Aadjusted-estimates-of-national-expenditure-2015-16-uploaded-2018-12-14t1118/aggregate/%3Fcut%3Dfinyear.finyear%253A2015%257Cvoteno.department%253ATelecommunications%2Band%2BPostal%2BServices%26drilldown%3Dbudget_phase.budget_phase%257Cecon1.econ1%257Cecon2.econ2%257Cecon3.econ3%257Cecon4.econ4%257Cecon5.econ5%257Cfinyear.finyear%257Cfy_descript.fy_descript%257Cprogno.progno%257Cprogno.programme%257Csprogno.sprogno%257Csprogno.subprogramme%257Cvoteno.department%257Cvoteno.voteno%26pagesize%3D10000
+  department_data_csv: https://datamanager.vulekamali.gov.za/csv/?api_url=https%3A//openspending.org/api/3/cubes/b9d2af843f3a7ca223eea07fb608e62a%3Aadjusted-estimates-of-national-expenditure-2015-16-uploaded-2018-12-14t1118/aggregate/%3Fcut%3Dfinyear.finyear%253A2015%257Cvoteno.department%253ATelecommunications%2Band%2BPostal%2BServices%26drilldown%3Dbudget_phase.budget_phase%257Cecon1.econ1%257Cecon2.econ2%257Cecon3.econ3%257Cecon4.econ4%257Cecon5.econ5%257Cfinyear.finyear%257Cfy_descript.fy_descript%257Cprogno.progno%257Cprogno.programme%257Csprogno.sprogno%257Csprogno.subprogramme%257Cvoteno.department%257Cvoteno.voteno%26pagesize%3D10000
   direct_charges: null
   econ_classes:
   - items:
@@ -139,161 +139,11 @@ budget_actual:
       financial_year: 2014-15
       phase: Audit Outcome
   notices:
-  - Please note that the data for 2012, 2013 and 2014 has not been published on vulekamali.
+  - Please note that the data for 2014, 2012 and 2013 has not been published on vulekamali.
 budget_actual_programmes:
   dataset_detail_page: /datasets/budgeted-and-actual-national-expenditure/budgeted-and-actual-national-expenditure
   notices: []
   programmes:
-  - items:
-    - amount: 642764000.0
-      financial_year: 2015-16
-      phase: Main appropriation
-    - amount: 627990000
-      financial_year: 2015-16
-      phase: Adjusted appropriation
-    - amount: 551550000
-      financial_year: 2015-16
-      phase: Final Appropriation
-    - amount: 473753000
-      financial_year: 2015-16
-      phase: Audit Outcome
-    - amount: null
-      financial_year: 2012-13
-      phase: Main appropriation
-    - amount: null
-      financial_year: 2012-13
-      phase: Adjusted appropriation
-    - amount: null
-      financial_year: 2012-13
-      phase: Final Appropriation
-    - amount: null
-      financial_year: 2012-13
-      phase: Audit Outcome
-    - amount: null
-      financial_year: 2013-14
-      phase: Main appropriation
-    - amount: null
-      financial_year: 2013-14
-      phase: Adjusted appropriation
-    - amount: null
-      financial_year: 2013-14
-      phase: Final Appropriation
-    - amount: null
-      financial_year: 2013-14
-      phase: Audit Outcome
-    - amount: null
-      financial_year: 2014-15
-      phase: Main appropriation
-    - amount: null
-      financial_year: 2014-15
-      phase: Adjusted appropriation
-    - amount: null
-      financial_year: 2014-15
-      phase: Final Appropriation
-    - amount: null
-      financial_year: 2014-15
-      phase: Audit Outcome
-    name: ICT Infrastructure Support
-  - items:
-    - amount: 447889000.0
-      financial_year: 2015-16
-      phase: Main appropriation
-    - amount: 447889000
-      financial_year: 2015-16
-      phase: Adjusted appropriation
-    - amount: 490231000
-      financial_year: 2015-16
-      phase: Final Appropriation
-    - amount: 488959000
-      financial_year: 2015-16
-      phase: Audit Outcome
-    - amount: null
-      financial_year: 2012-13
-      phase: Main appropriation
-    - amount: null
-      financial_year: 2012-13
-      phase: Adjusted appropriation
-    - amount: null
-      financial_year: 2012-13
-      phase: Final Appropriation
-    - amount: null
-      financial_year: 2012-13
-      phase: Audit Outcome
-    - amount: null
-      financial_year: 2013-14
-      phase: Main appropriation
-    - amount: null
-      financial_year: 2013-14
-      phase: Adjusted appropriation
-    - amount: null
-      financial_year: 2013-14
-      phase: Final Appropriation
-    - amount: null
-      financial_year: 2013-14
-      phase: Audit Outcome
-    - amount: null
-      financial_year: 2014-15
-      phase: Main appropriation
-    - amount: null
-      financial_year: 2014-15
-      phase: Adjusted appropriation
-    - amount: null
-      financial_year: 2014-15
-      phase: Final Appropriation
-    - amount: null
-      financial_year: 2014-15
-      phase: Audit Outcome
-    name: ICT Enterprise Development and SOE Oversight
-  - items:
-    - amount: 105578000.0
-      financial_year: 2015-16
-      phase: Main appropriation
-    - amount: 105578000
-      financial_year: 2015-16
-      phase: Adjusted appropriation
-    - amount: 97132000
-      financial_year: 2015-16
-      phase: Final Appropriation
-    - amount: 73979000
-      financial_year: 2015-16
-      phase: Audit Outcome
-    - amount: null
-      financial_year: 2012-13
-      phase: Main appropriation
-    - amount: null
-      financial_year: 2012-13
-      phase: Adjusted appropriation
-    - amount: null
-      financial_year: 2012-13
-      phase: Final Appropriation
-    - amount: null
-      financial_year: 2012-13
-      phase: Audit Outcome
-    - amount: null
-      financial_year: 2013-14
-      phase: Main appropriation
-    - amount: null
-      financial_year: 2013-14
-      phase: Adjusted appropriation
-    - amount: null
-      financial_year: 2013-14
-      phase: Final Appropriation
-    - amount: null
-      financial_year: 2013-14
-      phase: Audit Outcome
-    - amount: null
-      financial_year: 2014-15
-      phase: Main appropriation
-    - amount: null
-      financial_year: 2014-15
-      phase: Adjusted appropriation
-    - amount: null
-      financial_year: 2014-15
-      phase: Final Appropriation
-    - amount: null
-      financial_year: 2014-15
-      phase: Audit Outcome
-    name: Policy, Research and Capacity Development
   - items:
     - amount: 43447000.0
       financial_year: 2015-16
@@ -345,6 +195,56 @@ budget_actual_programmes:
       phase: Audit Outcome
     name: International Affairs and Trade
   - items:
+    - amount: 105578000.0
+      financial_year: 2015-16
+      phase: Main appropriation
+    - amount: 105578000
+      financial_year: 2015-16
+      phase: Adjusted appropriation
+    - amount: 97132000
+      financial_year: 2015-16
+      phase: Final Appropriation
+    - amount: 73979000
+      financial_year: 2015-16
+      phase: Audit Outcome
+    - amount: null
+      financial_year: 2012-13
+      phase: Main appropriation
+    - amount: null
+      financial_year: 2012-13
+      phase: Adjusted appropriation
+    - amount: null
+      financial_year: 2012-13
+      phase: Final Appropriation
+    - amount: null
+      financial_year: 2012-13
+      phase: Audit Outcome
+    - amount: null
+      financial_year: 2013-14
+      phase: Main appropriation
+    - amount: null
+      financial_year: 2013-14
+      phase: Adjusted appropriation
+    - amount: null
+      financial_year: 2013-14
+      phase: Final Appropriation
+    - amount: null
+      financial_year: 2013-14
+      phase: Audit Outcome
+    - amount: null
+      financial_year: 2014-15
+      phase: Main appropriation
+    - amount: null
+      financial_year: 2014-15
+      phase: Adjusted appropriation
+    - amount: null
+      financial_year: 2014-15
+      phase: Final Appropriation
+    - amount: null
+      financial_year: 2014-15
+      phase: Audit Outcome
+    name: Policy, Research and Capacity Development
+  - items:
     - amount: 173650000.0
       financial_year: 2015-16
       phase: Main appropriation
@@ -394,6 +294,106 @@ budget_actual_programmes:
       financial_year: 2014-15
       phase: Audit Outcome
     name: Administration
+  - items:
+    - amount: 447889000.0
+      financial_year: 2015-16
+      phase: Main appropriation
+    - amount: 447889000
+      financial_year: 2015-16
+      phase: Adjusted appropriation
+    - amount: 490231000
+      financial_year: 2015-16
+      phase: Final Appropriation
+    - amount: 488959000
+      financial_year: 2015-16
+      phase: Audit Outcome
+    - amount: null
+      financial_year: 2012-13
+      phase: Main appropriation
+    - amount: null
+      financial_year: 2012-13
+      phase: Adjusted appropriation
+    - amount: null
+      financial_year: 2012-13
+      phase: Final Appropriation
+    - amount: null
+      financial_year: 2012-13
+      phase: Audit Outcome
+    - amount: null
+      financial_year: 2013-14
+      phase: Main appropriation
+    - amount: null
+      financial_year: 2013-14
+      phase: Adjusted appropriation
+    - amount: null
+      financial_year: 2013-14
+      phase: Final Appropriation
+    - amount: null
+      financial_year: 2013-14
+      phase: Audit Outcome
+    - amount: null
+      financial_year: 2014-15
+      phase: Main appropriation
+    - amount: null
+      financial_year: 2014-15
+      phase: Adjusted appropriation
+    - amount: null
+      financial_year: 2014-15
+      phase: Final Appropriation
+    - amount: null
+      financial_year: 2014-15
+      phase: Audit Outcome
+    name: ICT Enterprise Development and SOE Oversight
+  - items:
+    - amount: 642764000.0
+      financial_year: 2015-16
+      phase: Main appropriation
+    - amount: 627990000
+      financial_year: 2015-16
+      phase: Adjusted appropriation
+    - amount: 551550000
+      financial_year: 2015-16
+      phase: Final Appropriation
+    - amount: 473753000
+      financial_year: 2015-16
+      phase: Audit Outcome
+    - amount: null
+      financial_year: 2012-13
+      phase: Main appropriation
+    - amount: null
+      financial_year: 2012-13
+      phase: Adjusted appropriation
+    - amount: null
+      financial_year: 2012-13
+      phase: Final Appropriation
+    - amount: null
+      financial_year: 2012-13
+      phase: Audit Outcome
+    - amount: null
+      financial_year: 2013-14
+      phase: Main appropriation
+    - amount: null
+      financial_year: 2013-14
+      phase: Adjusted appropriation
+    - amount: null
+      financial_year: 2013-14
+      phase: Final Appropriation
+    - amount: null
+      financial_year: 2013-14
+      phase: Audit Outcome
+    - amount: null
+      financial_year: 2014-15
+      phase: Main appropriation
+    - amount: null
+      financial_year: 2014-15
+      phase: Adjusted appropriation
+    - amount: null
+      financial_year: 2014-15
+      phase: Final Appropriation
+    - amount: null
+      financial_year: 2014-15
+      phase: Audit Outcome
+    name: ICT Infrastructure Support
 contributed_datasets:
 - contributor: International Budget Partnership
   name: How Does Civil Society Use Budget Information?
@@ -437,18 +437,18 @@ description: 'National department: Telecommunications and Postal Services budget
   YETHU.'
 economic_classification_by_programme:
   dataset_detail_page: /datasets/estimates-of-national-expenditure/estimates-of-national-expenditure-2015-16
-  department_data_csv: https://datamanager-staging.vulekamali.gov.za/csv/?api_url=https%3A//openspending.org/api/3/cubes/b9d2af843f3a7ca223eea07fb608e62a%3Aestimates-of-national-expenditure-south-africa-2015-16/aggregate/%3Fcut%3Dfinancial_year.financial_year%253A2015%257Cvote_number.department%253A%2522Telecommunications%2Band%2BPostal%2BServices%2522%26drilldown%3Dbudget_phase.budget_phase%257Ceconomic_classification_1.economic_classification_1%257Ceconomic_classification_2.economic_classification_2%257Ceconomic_classification_3.economic_classification_3%257Ceconomic_classification_4.economic_classification_4%257Cfinancial_year.financial_year%257Cprogramme_number.programme%257Cprogramme_number.programme_number%257Csubprogramme_number.subprogramme%257Csubprogramme_number.subprogramme_number%257Cvote_number.department%257Cvote_number.vote_number%26pagesize%3D10000
+  department_data_csv: https://datamanager.vulekamali.gov.za/csv/?api_url=https%3A//openspending.org/api/3/cubes/b9d2af843f3a7ca223eea07fb608e62a%3Aestimates-of-national-expenditure-2015-16-uploaded-2019-01-25t0215/aggregate/%3Fcut%3Dfinyear.finyear%253A2015%257Cvoteno.department%253A%2522Telecommunications%2Band%2BPostal%2BServices%2522%26drilldown%3Dbudget_phase.budget_phase%257Cecon1.econ1%257Cecon2.econ2%257Cecon3.econ3%257Cecon4.econ4%257Cecon5.econ5%257Cfg1.fg1%257Cfg2.fg2%257Cfinyear.finyear%257Cprogno.progno%257Cprogno.programme%257Csprogno.sprogno%257Csprogno.subprogramme%257Cvoteno.department%257Cvoteno.voteno%26pagesize%3D10000
   programmes:
   - items:
     - items:
       - name: Payments for capital assets
-        total_budget: 1694000.0
+        total_budget: 1694000
         type: economic_classification_2
       name: Capital
       type: economic_classification_1
     - items:
       - name: Current payments
-        total_budget: 171956000.0
+        total_budget: 171956000
         type: economic_classification_2
       name: Current
       type: economic_classification_1
@@ -457,19 +457,19 @@ economic_classification_by_programme:
   - items:
     - items:
       - name: Transfers and subsidies
-        total_budget: 64852000.0
+        total_budget: 64852000
         type: economic_classification_2
       - name: Payments for capital assets
-        total_budget: 573000.0
+        total_budget: 573000
         type: economic_classification_2
       name: Capital
       type: economic_classification_1
     - items:
       - name: Transfers and subsidies
-        total_budget: 351410000.0
+        total_budget: 351410000
         type: economic_classification_2
       - name: Current payments
-        total_budget: 31054000.0
+        total_budget: 31054000
         type: economic_classification_2
       name: Current
       type: economic_classification_1
@@ -478,19 +478,19 @@ economic_classification_by_programme:
   - items:
     - items:
       - name: Transfers and subsidies
-        total_budget: 109000000.0
+        total_budget: 109000000
         type: economic_classification_2
       - name: Payments for capital assets
-        total_budget: 1179000.0
+        total_budget: 1179000
         type: economic_classification_2
       name: Capital
       type: economic_classification_1
     - items:
       - name: Current payments
-        total_budget: 351425000.0
+        total_budget: 351425000
         type: economic_classification_2
       - name: Transfers and subsidies
-        total_budget: 181160000.0
+        total_budget: 181160000
         type: economic_classification_2
       name: Current
       type: economic_classification_1
@@ -499,16 +499,16 @@ economic_classification_by_programme:
   - items:
     - items:
       - name: Payments for capital assets
-        total_budget: 520000.0
+        total_budget: 520000
         type: economic_classification_2
       name: Capital
       type: economic_classification_1
     - items:
       - name: Transfers and subsidies
-        total_budget: 22194000.0
+        total_budget: 22194000
         type: economic_classification_2
       - name: Current payments
-        total_budget: 20733000.0
+        total_budget: 20733000
         type: economic_classification_2
       name: Current
       type: economic_classification_1
@@ -517,13 +517,13 @@ economic_classification_by_programme:
   - items:
     - items:
       - name: Payments for capital assets
-        total_budget: 1095000.0
+        total_budget: 1095000
         type: economic_classification_2
       name: Capital
       type: economic_classification_1
     - items:
       - name: Current payments
-        total_budget: 104483000.0
+        total_budget: 104483000
         type: economic_classification_2
       name: Current
       type: economic_classification_1
@@ -534,25 +534,25 @@ expenditure_over_time:
   expenditure:
     base_financial_year: 2017-18
     nominal:
-    - amount: 1325443000.0
+    - amount: 1325443000
       financial_year: 2011-12
       phase: Audited Outcome
-    - amount: 1017886000.0
+    - amount: 1017886000
       financial_year: 2012-13
       phase: Audited Outcome
-    - amount: 1701462000.0
+    - amount: 1701462000
       financial_year: 2013-14
       phase: Audited Outcome
-    - amount: 1616415000.0
+    - amount: 1616415000
       financial_year: 2014-15
       phase: Adjusted appropriation
-    - amount: 1413328000.0
+    - amount: 1413328000
       financial_year: 2015-16
       phase: Main appropriation
-    - amount: 1545670000.0
+    - amount: 1545670000
       financial_year: 2016-17
       phase: Medium Term Estimates
-    - amount: 1275319000.0
+    - amount: 1275319000
       financial_year: 2017-18
       phase: Medium Term Estimates
     real:
@@ -631,79 +631,79 @@ is_vote_primary: true
 name: Telecommunications and Postal Services
 programme_by_economic_classification:
   dataset_detail_page: /datasets/estimates-of-national-expenditure/estimates-of-national-expenditure-2015-16
-  department_data_csv: https://datamanager-staging.vulekamali.gov.za/csv/?api_url=https%3A//openspending.org/api/3/cubes/b9d2af843f3a7ca223eea07fb608e62a%3Aestimates-of-national-expenditure-south-africa-2015-16/aggregate/%3Fcut%3Dfinancial_year.financial_year%253A2015%257Cvote_number.department%253A%2522Telecommunications%2Band%2BPostal%2BServices%2522%26drilldown%3Dbudget_phase.budget_phase%257Ceconomic_classification_1.economic_classification_1%257Ceconomic_classification_2.economic_classification_2%257Ceconomic_classification_3.economic_classification_3%257Ceconomic_classification_4.economic_classification_4%257Cfinancial_year.financial_year%257Cprogramme_number.programme%257Cprogramme_number.programme_number%257Csubprogramme_number.subprogramme%257Csubprogramme_number.subprogramme_number%257Cvote_number.department%257Cvote_number.vote_number%26pagesize%3D10000
+  department_data_csv: https://datamanager.vulekamali.gov.za/csv/?api_url=https%3A//openspending.org/api/3/cubes/b9d2af843f3a7ca223eea07fb608e62a%3Aestimates-of-national-expenditure-2015-16-uploaded-2019-01-25t0215/aggregate/%3Fcut%3Dfinyear.finyear%253A2015%257Cvoteno.department%253A%2522Telecommunications%2Band%2BPostal%2BServices%2522%26drilldown%3Dbudget_phase.budget_phase%257Cecon1.econ1%257Cecon2.econ2%257Cecon3.econ3%257Cecon4.econ4%257Cecon5.econ5%257Cfg1.fg1%257Cfg2.fg2%257Cfinyear.finyear%257Cprogno.progno%257Cprogno.programme%257Csprogno.sprogno%257Csprogno.subprogramme%257Cvoteno.department%257Cvoteno.voteno%26pagesize%3D10000
   econ_classes:
   - items:
     - name: Administration
-      total_budget: 1694000.0
+      total_budget: 1694000
       type: programme
     - name: ICT Infrastructure Support
-      total_budget: 1179000.0
+      total_budget: 1179000
       type: programme
     - name: Policy, Research and Capacity Development
-      total_budget: 1095000.0
+      total_budget: 1095000
       type: programme
     - name: ICT Enterprise Development and SOE Oversight
-      total_budget: 573000.0
+      total_budget: 573000
       type: programme
     - name: International Affairs and Trade
-      total_budget: 520000.0
+      total_budget: 520000
       type: programme
     name: Capital - Payments for capital assets
     type: economic_classification_1_and_2
   - items:
     - name: ICT Infrastructure Support
-      total_budget: 109000000.0
+      total_budget: 109000000
       type: programme
     - name: ICT Enterprise Development and SOE Oversight
-      total_budget: 64852000.0
+      total_budget: 64852000
       type: programme
     name: Capital - Transfers and subsidies
     type: economic_classification_1_and_2
   - items:
     - name: ICT Infrastructure Support
-      total_budget: 351425000.0
+      total_budget: 351425000
       type: programme
     - name: Administration
-      total_budget: 171956000.0
+      total_budget: 171956000
       type: programme
     - name: Policy, Research and Capacity Development
-      total_budget: 104483000.0
+      total_budget: 104483000
       type: programme
     - name: ICT Enterprise Development and SOE Oversight
-      total_budget: 31054000.0
+      total_budget: 31054000
       type: programme
     - name: International Affairs and Trade
-      total_budget: 20733000.0
+      total_budget: 20733000
       type: programme
     name: Current - Current payments
     type: economic_classification_1_and_2
   - items:
     - name: ICT Enterprise Development and SOE Oversight
-      total_budget: 351410000.0
+      total_budget: 351410000
       type: programme
     - name: ICT Infrastructure Support
-      total_budget: 181160000.0
+      total_budget: 181160000
       type: programme
     - name: International Affairs and Trade
-      total_budget: 22194000.0
+      total_budget: 22194000
       type: programme
     name: Current - Transfers and subsidies
     type: economic_classification_1_and_2
 programmes:
   dataset_detail_page: /datasets/estimates-of-national-expenditure/estimates-of-national-expenditure-2015-16
-  department_data_csv: https://datamanager-staging.vulekamali.gov.za/csv/?api_url=https%3A//openspending.org/api/3/cubes/b9d2af843f3a7ca223eea07fb608e62a%3Aestimates-of-national-expenditure-south-africa-2015-16/aggregate/%3Fcut%3Dfinancial_year.financial_year%253A2015%257Cvote_number.department%253A%2522Telecommunications%2Band%2BPostal%2BServices%2522%26drilldown%3Dbudget_phase.budget_phase%257Ceconomic_classification_1.economic_classification_1%257Ceconomic_classification_2.economic_classification_2%257Ceconomic_classification_3.economic_classification_3%257Ceconomic_classification_4.economic_classification_4%257Cfinancial_year.financial_year%257Cprogramme_number.programme%257Cprogramme_number.programme_number%257Csubprogramme_number.subprogramme%257Csubprogramme_number.subprogramme_number%257Cvote_number.department%257Cvote_number.vote_number%26pagesize%3D10000
+  department_data_csv: https://datamanager.vulekamali.gov.za/csv/?api_url=https%3A//openspending.org/api/3/cubes/b9d2af843f3a7ca223eea07fb608e62a%3Aestimates-of-national-expenditure-2015-16-uploaded-2019-01-25t0215/aggregate/%3Fcut%3Dfinyear.finyear%253A2015%257Cvoteno.department%253A%2522Telecommunications%2Band%2BPostal%2BServices%2522%26drilldown%3Dbudget_phase.budget_phase%257Cecon1.econ1%257Cecon2.econ2%257Cecon3.econ3%257Cecon4.econ4%257Cecon5.econ5%257Cfg1.fg1%257Cfg2.fg2%257Cfinyear.finyear%257Cprogno.progno%257Cprogno.programme%257Csprogno.sprogno%257Csprogno.subprogramme%257Cvoteno.department%257Cvoteno.voteno%26pagesize%3D10000
   programme_budgets:
   - name: Administration
-    total_budget: 173650000.0
+    total_budget: 173650000
   - name: International Affairs and Trade
-    total_budget: 43447000.0
+    total_budget: 43447000
   - name: Policy, Research and Capacity Development
-    total_budget: 105578000.0
+    total_budget: 105578000
   - name: ICT Enterprise Development and SOE Oversight
-    total_budget: 447889000.0
+    total_budget: 447889000
   - name: ICT Infrastructure Support
-    total_budget: 642764000.0
+    total_budget: 642764000
 selected_financial_year: 2015-16
 selected_tab: departments
 slug: telecommunications-and-postal-services
@@ -712,74 +712,74 @@ sphere:
   slug: national
 subprogramme_by_programme:
   dataset_detail_page: /datasets/estimates-of-national-expenditure/estimates-of-national-expenditure-2015-16
-  department_data_csv: https://datamanager-staging.vulekamali.gov.za/csv/?api_url=https%3A//openspending.org/api/3/cubes/b9d2af843f3a7ca223eea07fb608e62a%3Aestimates-of-national-expenditure-south-africa-2015-16/aggregate/%3Fcut%3Dfinancial_year.financial_year%253A2015%257Cvote_number.department%253A%2522Telecommunications%2Band%2BPostal%2BServices%2522%26drilldown%3Dbudget_phase.budget_phase%257Ceconomic_classification_1.economic_classification_1%257Ceconomic_classification_2.economic_classification_2%257Ceconomic_classification_3.economic_classification_3%257Ceconomic_classification_4.economic_classification_4%257Cfinancial_year.financial_year%257Cprogramme_number.programme%257Cprogramme_number.programme_number%257Csubprogramme_number.subprogramme%257Csubprogramme_number.subprogramme_number%257Cvote_number.department%257Cvote_number.vote_number%26pagesize%3D10000
+  department_data_csv: https://datamanager.vulekamali.gov.za/csv/?api_url=https%3A//openspending.org/api/3/cubes/b9d2af843f3a7ca223eea07fb608e62a%3Aestimates-of-national-expenditure-2015-16-uploaded-2019-01-25t0215/aggregate/%3Fcut%3Dfinyear.finyear%253A2015%257Cvoteno.department%253A%2522Telecommunications%2Band%2BPostal%2BServices%2522%26drilldown%3Dbudget_phase.budget_phase%257Cecon1.econ1%257Cecon2.econ2%257Cecon3.econ3%257Cecon4.econ4%257Cecon5.econ5%257Cfg1.fg1%257Cfg2.fg2%257Cfinyear.finyear%257Cprogno.progno%257Cprogno.programme%257Csprogno.sprogno%257Csprogno.subprogramme%257Cvoteno.department%257Cvoteno.voteno%26pagesize%3D10000
   programmes:
   - items:
     - name: Financial Management
-      total_budget: 69932000.0
+      total_budget: 69932000
       type: subprogramme
     - name: Corporate Services
-      total_budget: 52261000.0
+      total_budget: 52261000
       type: subprogramme
     - name: Departmental Management
-      total_budget: 29814000.0
+      total_budget: 29814000
       type: subprogramme
     - name: Office Accommodation
-      total_budget: 9133000.0
+      total_budget: 9133000
       type: subprogramme
     - name: Internal Audit
-      total_budget: 8218000.0
+      total_budget: 8218000
       type: subprogramme
     - name: Ministry
-      total_budget: 4292000.0
+      total_budget: 4292000
       type: subprogramme
     name: Administration
     type: programme
   - items:
     - name: Public Entity Oversight
-      total_budget: 437460000.0
+      total_budget: 437460000
       type: subprogramme
     - name: ICT Support
-      total_budget: 6925000.0
+      total_budget: 6925000
       type: subprogramme
-    - name: Small, Medium and Micro Enterprise Development
-      total_budget: 3504000.0
+    - name: Small Medium and Micro Enterprise Development
+      total_budget: 3504000
       type: subprogramme
     name: ICT Enterprise Development and SOE Oversight
     type: programme
   - items:
     - name: Digital Terrestrial Television
-      total_budget: 371270000.0
+      total_budget: 371270000
       type: subprogramme
     - name: Broadband
-      total_budget: 271494000.0
+      total_budget: 271494000
       type: subprogramme
     name: ICT Infrastructure Support
     type: programme
   - items:
     - name: ICT Trade/Partnership
-      total_budget: 29183000.0
+      total_budget: 29183000
       type: subprogramme
     - name: International Affairs
-      total_budget: 14264000.0
+      total_budget: 14264000
       type: subprogramme
     name: International Affairs and Trade
     type: programme
   - items:
     - name: Information Society Development
-      total_budget: 53501000.0
+      total_budget: 53501000
       type: subprogramme
     - name: ICT Policy Development
-      total_budget: 28262000.0
+      total_budget: 28262000
       type: subprogramme
     - name: Capacity Development
-      total_budget: 12527000.0
+      total_budget: 12527000
       type: subprogramme
     - name: Economic and Market Analysis
-      total_budget: 5855000.0
+      total_budget: 5855000
       type: subprogramme
     - name: Research
-      total_budget: 5433000.0
+      total_budget: 5433000
       type: subprogramme
     name: Policy, Research and Capacity Development
     type: programme
