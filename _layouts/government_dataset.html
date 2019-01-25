@@ -145,17 +145,48 @@ layout: page-shell
       </div>
     {% endif %}
 
-  {% if page_data.category.slug == "estimates-of-provincial-expenditure" %}
-    <div class="Section is-bevel">
-      <div class="Section-card">
-        <h2 class="Section-title">What is an EPRE?</h2>
-        <p>...</p>
-        <a href="/guides/estimates-of-provincial-expenditure" class="Button">
-          Learn more
-        </a>
+    {% if page_data.category.slug == "estimates-of-provincial-expenditure" %}
+      <div class="Section is-bevel">
+        <div class="Section-card">
+          <h2 class="Section-title">What is an EPRE?</h2>
+          <p>
+            The Estimates of Provincial Revenue and Expenditure (EPRE) is
+            considered a summary of the departmental Strategic and Performance
+            Plan to a level at which the legislature and the public can engage
+            the provincial departments. It further contains a detailed analysis
+            of departmental receipt and payment performance; covering
+            infrastructure payments; transfers to public entities and local
+            government; personnel numbers and costs; and payments on training.
+          </p>
+          <a href="/guides/estimates-of-provincial-expenditure" class="Button">
+            Learn more
+          </a>
+        </div>
       </div>
-    </div>
-  {% endif %}
+    {% endif %} 
+      
+    {% if page_data.category.slug == "adjusted-estimates-of-national-expenditure" %}
+      <div class="Section is-bevel">
+        <div class="Section-card">
+          <h2 class="Section-title">What is an AENE?</h2>
+          <p>
+            In the middle of each financial year, the adjustments process
+            provides an opportunity to make permissible revisions to the budget,
+            in response to changes that have affected the planned government
+            spending for that year. The adjusted budget may allocate unused
+            funds, mainly from the contingency reserve, and additional amounts
+            that have been approved for particular types of spending, if that be
+            the case.
+          </p>
+          <a
+            href="/guides/adjusted-estimates-of-national-expenditure"
+            class="Button"
+          >
+            Learn more
+          </a>
+        </div>
+      </div>
+    {% endif %}
 
     {% if page_data.category.slug != "socio-economic-data" %}
       </aside>
