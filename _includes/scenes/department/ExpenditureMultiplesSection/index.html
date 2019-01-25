@@ -66,6 +66,21 @@
         %}
       </ul>
 
+      {% if include.notices %}
+        {% for notice in include.notices %}
+          <div class="Message Message--secondary u-marginBottom20 u-marginTop25">
+            <div class="Message-content">
+              <span class="Message-heading">
+                Please note
+              </span>
+            </div>
+            <div class="Message-text Message-text--secondary">
+              {{notice}}
+            </div>
+          </div>
+        {% endfor %}
+      {% endif %}
+
       <div class="ExpenditureMultiplesSection-label u-marginTop25">
         <div class="ExpenditureMultiplesSection-labelItem">
           {%
