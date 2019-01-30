@@ -106,7 +106,11 @@ layout: page-shell
     <span class="Page-subHeading u-textAlignCenter">
       {{ department_location }} Department Budget for {{ page.financial_year }}
     </span>
-
+    {% if page_data.website_url %}
+    <span class="Page-subHeading-link u-textAlignCenter">
+        <a href="http://{{ page_data.website_url }}">{{ page_data.website_url }}</a>
+    </span>
+    {% endif %}
     {%
       include components/department-budgets/IntroSection/index.html
       description=page_data.intro
@@ -426,6 +430,7 @@ layout: page-shell
           description="Budgeted and Actual Expenditure comparison"
           subtitle=review_subtitle
           notices=page_data.budget_actual.notices
+          website_url=page_data.website_url
         %}
       </div>
     {% endif %}
