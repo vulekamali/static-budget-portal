@@ -27,7 +27,9 @@
         https://discussions.vulekamali.gov.za
         https://www.google-analytics.com
         https://www.youtube.com
-        https://i.ytimg.com;
+        https://i.ytimg.com
+        {% comment %} Google Tag Manager HEAD inline {% endcomment %}
+        'sha256-v+9wGGBueHqSIuvMsUaFLaXTNw0D8igfDF+5k+9TVbE=';
       frame-src
         'self'
         https://www.youtube.com
@@ -40,7 +42,18 @@
         https://img.youtube.com
         https://www.google-analytics.com
         http://localhost;"
-  />
+    />
+
+  {% if jekyll.environment == "production" %}
+  <!-- Google Tag Manager -->
+  <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+  new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+  j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+  'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+  })(window,document,'script','dataLayer','GTM-PLNL56L');</script>
+  <!-- End Google Tag Manager -->
+  {% endif %}
+
 
   <title>{{ include.title }}</title>
 

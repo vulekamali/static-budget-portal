@@ -9,7 +9,6 @@ import './styles.scss';
 
 import './utilities/js/modules/loadStringQueries.js';
 import './utilities/js/modules/createComponentInterfaces.js';
-import './utilities/js/modules/loadGoogleAnalytics.js';
 import './utilities/js/modules/polyfillOldFeatures.js';
 
 import './components/search-results/SearchResult/scripts.js';

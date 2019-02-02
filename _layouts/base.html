@@ -37,6 +37,12 @@
 <html>
   {% include utilities/html/head.html title=page_data.title description=page_data.description %}
   <body {{ production }} data-spy="scroll" data-offset="200">
+    {% if production %}
+    <!-- Google Tag Manager (noscript) -->
+    <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-PLNL56L"
+                      height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+    <!-- End Google Tag Manager (noscript) -->
+    {% endif %}
     {{ content }}
     {% include utilities/html/scripts.html %}
   </body>
