@@ -3,32 +3,32 @@ coordinates:
   - -28.406533,24.269352
 stage: Construction
 total_budget: 142200000000
-department: Water and Sanitation
+department:
+  name: Water and Sanitation
+  url: /2018/national/departments/water-and-sanitation
 description: Upgrading of existing bulk water scheme
 projected_budget: 51800000000
-department_link: /path/to/department/detail/page
 nature_of_investment: New infrastructure assets
 infrastructure_type: Bulk Water Supply
-google_maps_link: https://www.google.com/maps/@-28.4065231,24.2674591,17z
-data:
+expenditure:
   - year: 2015-16
-    type: actual
+    type: Audit outcome
     amount: 100
   - year: 2016-17
-    type: actual
+    type: Audit outcome
     amount: 100
   - year: 2017-18
-    type: actual
+    type: Audit outcome
     amount: 100
   - year: 2018-19
-    type: adjusted
+    type: Adjusted appropriation
     amount: 100
   - year: 2019-20
-    type: projected
+    type: MTEF
     amount: 100
   - year: 2020-21
-    type: projected
+    type: MTEF
     amount: 100
   - year: 2021-22
-    type: projected
+    type: MTEF
     amount: 100
