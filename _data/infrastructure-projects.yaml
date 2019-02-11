@@ -2,8 +2,21 @@
   - name: Limpopo region
     coordinates: []
     stage: Construction
-  - name: worrisome
-    coordinates: null
-  - name: Dihlabeng hospotal upgrades:
+    total_budget: 142200000000
+    department: Water and Sanitation
+    description: Construction of water supply and sanitation backlog
+    province: ??? how do we determine the province? it is not always in the project name
+    projected_budget: 51800000000
+    detail: /path/to/detail/page
+  - name: Police stations
     coordinates:
-      - "1.1, 2.3"
+      - -30.4759, 30.2030
+    stage: Design
+    total_budget: 142200000000
+    department: Police
+    description: Construction of new and re-established police stations
+    province: ??? how do we determine the province? it is not always in the project name
+    projected_budget: 51800000000
+    detail: /path/to/detail/page
+
+
