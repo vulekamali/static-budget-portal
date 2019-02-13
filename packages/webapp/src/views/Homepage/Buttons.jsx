@@ -7,12 +7,13 @@ import { darken } from 'polished';
 
 const PrimaryButton = styled(Button)`
   && {
-    background: green;
+    background: #79B443;
     border-radius: 50px;
     color: white;
+    text-transform: none;
 
     &:hover {
-      background: ${darken(0.1, 'green')};
+      background: ${darken(0.1, '#79B443')};
     }
   }
 `;

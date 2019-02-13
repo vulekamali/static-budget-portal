@@ -36,7 +36,7 @@ const CallToAction = styled(Card)`
 
 const Wrapper = styled.div`
   display: flex;
-  background: green;
+  background: #79B443;
   min-height: ${({ hasCallToAction }) => (hasCallToAction ? '100px' : '50px')};
   position: relative;
   justify-content: center;

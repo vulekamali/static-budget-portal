@@ -25,15 +25,21 @@ const createImageTag = image => styled.div`
   justify-content: center;
   align-items: center;
   flex-direction: column;
+  font-family: Lato;
 `;
 
 const SubHeading = styled(Typography)`
   && {
     font-size: 10px;
     color: #fff;
+    text-transform: uppercase;
 
     @media screen and (min-width: 400px) {
       font-size: 14px;
+    }
+
+    @media screen and (min-width: 650px) {
+      font-size: 18px;
     }
   }
 `;
@@ -42,12 +48,14 @@ const Heading = styled(Typography)`
   && {
     font-size: 18px;
     color: #fff;
+    letter-spacing: 3px;
+    font-weight: bold;
 
     @media screen and (min-width: 400px) {
       font-size: 20px;
     }
 
-    @media screen and (min-width: 800px) {
+    @media screen and (min-width: 650px) {
       font-size: 40px;
     }
   }
