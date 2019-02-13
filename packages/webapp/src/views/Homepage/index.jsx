@@ -49,9 +49,16 @@ const Heading = styled(Typography)`
     color: #fff;
     letter-spacing: 3px;
     font-weight: bold;
+    padding-bottom: 24px;
+    font-family: Lato;
+    width: 90%;
+    padding-bottom: 15px;
+    line-height: 36px;
+    font-size: 28px;
+    text-align: center;
 
-    @media screen and (min-width: 400px) {
-      font-size: 20px;
+    @media screen and (min-width: 850px) {
+      padding-bottom: 15px;
     }
 
     @media screen and (min-width: 650px) {
@@ -59,7 +66,6 @@ const Heading = styled(Typography)`
     }
   }
 `;
-
 
 const ExampleView = (props) => {
   const {

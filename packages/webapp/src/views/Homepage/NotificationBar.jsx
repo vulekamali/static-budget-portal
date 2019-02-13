@@ -30,6 +30,9 @@ const CallToActionPositionWrapper = styled.div`
   max-width: 650px;
   padding: 10px 20px;
   position: absolute;
+  &&&& {
+    background-color: red;
+  }
 `;
 
 const CallToActionPosition = styled.div`
