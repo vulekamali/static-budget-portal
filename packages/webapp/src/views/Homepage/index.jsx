@@ -40,8 +40,12 @@ const SubHeading = styled(Typography)`
 
 const Heading = styled(Typography)`
   && {
-    font-size: 20px;
+    font-size: 18px;
     color: #fff;
+
+    @media screen and (min-width: 400px) {
+      font-size: 20px;
+    }
 
     @media screen and (min-width: 800px) {
       font-size: 40px;
