@@ -93,8 +93,6 @@ ExampleView.propTypes = {
   notice: t.string,
   /** The image to use as the background for the hero section */
   image: t.string.isRequired,
-  /** The image to use as the background for the hero section for tablet and desktop views */
-  largeImage: t.string.isRequired,
   /** A primary and secondary button to display over the image */
   buttons: t.shape({
     primary: t.shape({

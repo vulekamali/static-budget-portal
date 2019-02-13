@@ -3,6 +3,7 @@ import styled from 'styled-components';
 import Card from '@material-ui/core/Card';
 import CardContent from '@material-ui/core/CardContent';
 
+import t from 'prop-types';
 
 const NoticeWrapper = styled.div`
   position: absolute;
@@ -60,13 +61,11 @@ const buildCallToAction = callToActionData => (
       <CallToAction>
         <CardContent>
           <div>
-            {callToActionData.heading}
-          </div>
-          <div>
             {callToActionData.subheading}
+            {callToActionData.heading}
           </div>
           <div>
-            {callToActionData.heading}
+            {/* {callToActionData.heading} */}
           </div>
         </CardContent>
       </CallToAction>
@@ -84,5 +83,21 @@ const NotificationBar = ({ notice: noticeText, callToAction: callToActionData })
   );
 };
 
+NotificationBar.propTypes = {
+  notice: t.string,
+  callToAction: t.shape({
+    subheading: t.string,
+    heading: t.string,
+    link: t.shape({
+      text: t.string,
+      link: t.string,
+    }),
+  }),
+};
+
+NotificationBar.defaultProps = {
+  notice: null,
+  callToAction: null,
+};
 
 export default NotificationBar;
