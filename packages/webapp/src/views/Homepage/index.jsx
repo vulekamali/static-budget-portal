@@ -32,6 +32,9 @@ const SubHeading = styled(Typography)`
     font-size: 10px;
     color: #fff;
     text-transform: uppercase;
+    padding-bottom: 10px;
+    letter-spacing: 3px;
+    font-family: Lato;
 
     @media screen and (min-width: 400px) {
       font-size: 14px;
@@ -48,10 +51,14 @@ const Heading = styled(Typography)`
     font-size: 18px;
     color: #fff;
     letter-spacing: 3px;
-    font-weight: bold;
+    font-weight: 900;
+    padding-bottom: 24px;
+    font-family: Lato;
+    line-height: 1.5;
 
     @media screen and (min-width: 400px) {
       font-size: 20px;
+      padding-bottom: 15px;
     }
 
     @media screen and (min-width: 650px) {

@@ -11,6 +11,8 @@ const PrimaryButton = styled(Button)`
     border-radius: 50px;
     color: white;
     text-transform: none;
+    padding: 10px 25px;
+    font-family: Lato;
 
     &:hover {
       background: ${darken(0.1, '#79B443')};
@@ -24,7 +26,7 @@ const SecondaryButton = styled(PrimaryButton)`
     background: #161616;
 
     &:hover {
-      background: ${darken(0.1, 'grey')};
+      background: ${darken(0.1, '#161616')};
     }
   }
 `;
@@ -43,8 +45,12 @@ const ButtonsWrapper = styled.div`
 
 const LinkWrapper = styled.a`
   display: inline-block;
-  padding: 20px;
+  padding: 8px;
   text-decoration: none;
+
+  @media screen and (min-width: 650px) {
+    padding: 10px;
+  }
 `;
 
 
