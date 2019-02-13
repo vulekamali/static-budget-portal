@@ -20,7 +20,7 @@ const PrimaryButton = styled(Button)`
 
 const SecondaryButton = styled(PrimaryButton)`
   && {
-    background: darkgrey;
+    background: #161616;
 
     &:hover {
       background: ${darken(0.1, 'grey')};
@@ -32,6 +32,7 @@ const SecondaryButton = styled(PrimaryButton)`
 const ButtonsWrapper = styled.div`
   display: flex;
   flex-direction: column;
+  align-items: center;
 
   @media screen and (min-width: 600px) {
     flex-direction: row;
@@ -42,6 +43,7 @@ const ButtonsWrapper = styled.div`
 const LinkWrapper = styled.a`
   display: inline-block;
   padding: 20px;
+  text-decoration: none;
 `;
 
 

@@ -2,30 +2,41 @@ import React, { Fragment } from 'react';
 import styled from 'styled-components';
 import t from 'prop-types';
 import { Typography } from '@material-ui/core';
-import Card from '@material-ui/core/Card';
 import Buttons from './Buttons';
 import Resources from './Resources';
 import NotificationBar from './NotificationBar';
 
 
-const createImageTag = image => styled.div`
+const createImageTag = (image, largeImage) => styled.div`
   background-image: url('${image}');
+  background-size: cover;
+  background-position: center;
   min-height: 400px;
   display: flex;
   justify-content: center;
   align-items: center;
   flex-direction: column;
+
+  @media screen and (min-width: 400px) {
+      background-image: url('${largeImage}');
+    }
 `;
 
 const SubHeading = styled(Typography)`
   && {
     font-size: 10px;
+    color: #fff;
+
+    @media screen and (min-width: 400px) {
+      font-size: 14px;
+    }
   }
 `;
 
 const Heading = styled(Typography)`
   && {
     font-size: 20px;
+    color: #fff;
 
     @media screen and (min-width: 800px) {
       font-size: 40px;
@@ -42,10 +53,11 @@ const ExampleView = (props) => {
     notice,
     resources,
     image,
+    largeImage,
     callToAction,
   } = props;
 
-  const Image = createImageTag(image);
+  const Image = createImageTag(image, largeImage);
 
   return (
     <Fragment>
@@ -73,6 +85,8 @@ ExampleView.propTypes = {
   notice: t.string,
   /** The image to use as the background for the hero section */
   image: t.string.isRequired,
+  /** The image to use as the background for the hero section for tablet and desktop views */
+  largeImage: t.string.isRequired,
   /** A primary and secondary button to display over the image */
   buttons: t.shape({
     primary: t.shape({

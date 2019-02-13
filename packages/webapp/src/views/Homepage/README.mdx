@@ -6,6 +6,8 @@ menu: Views
 
 import { Playground, PropsTable } from 'docz';
 import Homepage from './';
+import MobileParliamentImage from '../parliament-building-budget-speech-mobile.jpg';
+import ParliamentImage from '../parliament-building-budget-speech.jpg';
 
 
 # Homepage
@@ -20,7 +22,8 @@ import Homepage from './';
 
 <Playground>
   <Homepage
-    image="https://via.placeholder.com/150"
+    image={MobileParliamentImage}
+    largeImage={ParliamentImage}
     heading="New budget data will be available soon"
     subheading="The 2019 budget speech"
     buttons={{
