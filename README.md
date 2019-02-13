@@ -5,11 +5,10 @@ Set up dev env
 ## Frontend
 
 #### Getting Started
-```
+
 1. Make sure you have the latest LTS version of [NodeJS](https://nodejs.org/en/) installed.
 2. Make sure you have the latest version of [Yarn](https://yarnpkg.com/en/docs/install) installed.
 3. Run `yarn` in the root folder of the repository to install all dependancies.
-```
 
 #### Jekyll-Preact Arhictecture
 
