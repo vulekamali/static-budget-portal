@@ -5,10 +5,19 @@ import { Typography } from '@material-ui/core';
 import Buttons from './Buttons';
 import Resources from './Resources';
 import NotificationBar from './NotificationBar';
+import parliamentImg from './parliament-building-budget-speech.jpg';
+import womanImg from './woman-smiling-budget-data.jpg';
 
+const imageChange = (image) => {
+  switch (image) {
+    case ('parliament'): return parliamentImg;
+    case ('woman'): return womanImg;
+    default: return parliamentImg;
+  }
+};
 
-const createImageTag = (image, largeImage) => styled.div`
-  background-image: url('${image}');
+const createImageTag = image => styled.div`
+  background-image: url('${imageChange(image)}');
   background-size: cover;
   background-position: center;
   min-height: 400px;
@@ -16,10 +25,6 @@ const createImageTag = (image, largeImage) => styled.div`
   justify-content: center;
   align-items: center;
   flex-direction: column;
-
-  @media screen and (min-width: 400px) {
-      background-image: url('${largeImage}');
-    }
 `;
 
 const SubHeading = styled(Typography)`
@@ -53,11 +58,10 @@ const ExampleView = (props) => {
     notice,
     resources,
     image,
-    largeImage,
     callToAction,
   } = props;
 
-  const Image = createImageTag(image, largeImage);
+  const Image = createImageTag(image);
 
   return (
     <Fragment>
@@ -122,4 +126,3 @@ ExampleView.defaultProps = {
   resources: null,
   callToAction: null,
 };
-

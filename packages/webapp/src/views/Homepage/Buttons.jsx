@@ -34,7 +34,7 @@ const ButtonsWrapper = styled.div`
   flex-direction: column;
   align-items: center;
 
-  @media screen and (min-width: 600px) {
+  @media screen and (min-width: 650px) {
     flex-direction: row;
   }
 `;

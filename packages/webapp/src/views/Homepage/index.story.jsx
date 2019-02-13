@@ -4,7 +4,7 @@ import Homepage from './index';
 
 
 const beforeSpeechProps = {
-  image: 'https://via.placeholder.com/150',
+  image: 'parliament',
   heading: 'New budget data will be available soon',
   subheading: 'The 2019 budget speech',
   buttons: {
