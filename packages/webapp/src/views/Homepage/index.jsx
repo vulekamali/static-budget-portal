@@ -25,7 +25,6 @@ const createImageTag = image => styled.div`
   justify-content: center;
   align-items: center;
   flex-direction: column;
-  font-family: Lato;
 `;
 
 const SubHeading = styled(Typography)`

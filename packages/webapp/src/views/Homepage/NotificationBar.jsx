@@ -8,13 +8,20 @@ import t from 'prop-types';
 const NoticeWrapper = styled.div`
   position: absolute;
   width: 100%;
-  max-width: 640px;
+  max-width: 272px;
   padding: 10px 20px;
+  font-family: Lato;
+  font-size: 14px;
+
   top: ${({ hasCallToAction }) => (hasCallToAction ? 'calc(100% - 40px)' : 'auto')};
   bottom: ${({ hasCallToAction }) => (hasCallToAction ? 'auto' : 'calc(100% - 40px)')};
-  @media (min-width: 378px) {
-    margin: 0 auto;
-    width: 96%;
+  @media (min-width: 450px) {
+    max-width: 400px;
+  }
+
+  @media (min-width: 650px) {
+    max-width: 640px;
+  }
 `;
 
 const CallToActionPositionWrapper = styled.div`
@@ -46,13 +53,16 @@ const Wrapper = styled.div`
   align-items: center;
 `;
 
+const Text = styled(CardContent)`
+  text-align: center;
+`;
 
 const buildNotice = (noticeText, hasCallToAction) => (
   <NoticeWrapper {...{ hasCallToAction }}>
     <Card>
-      <CardContent>
+      <Text>
         {noticeText}
-      </CardContent>
+      </Text>
     </Card>
   </NoticeWrapper>
 );
