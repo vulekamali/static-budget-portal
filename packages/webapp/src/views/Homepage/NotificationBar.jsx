@@ -14,6 +14,7 @@ const NoticeWrapper = styled.div`
   bottom: ${({ hasCallToAction }) => (hasCallToAction ? 'auto' : 'calc(100% - 40px)')};
   @media (min-width: 378px) {
     margin: 0 auto;
+    width: 96%;
 `;
 
 const CallToActionPositionWrapper = styled.div`
