@@ -2,11 +2,95 @@ datasets_url: /datasets
 description: Infrastructure projects in South Africa for 2019-20
 projects:
 - coordinates:
+  - latitude: -32.790366
+    longitude: 26.832691
+  department: Water and Sanitation
+  description: Upgrading of existing bulk water scheme
+  detail: /infrastructure-projects/water-and-sanitation-amatola-water-refurbishment-of-6-existing-plants-and-downstream-infrastructure
+  name: 'Amatola Water: Refurbishment of 6 existing plants and downstream infrastructure'
+  projected_budget: 300.0
+  provinces:
+  - Eastern Cape
+  stage: Feasibility
+  total_budget: 100.0
+- coordinates:
+  - latitude: -27.138787
+    longitude: 32.063207
+  department: Water and Sanitation
+  description: Construction of new bulk water scheme
+  detail: /infrastructure-projects/water-and-sanitation-bambanana-pipeline
+  name: Bambanana pipeline
+  projected_budget: 300.0
+  provinces:
+  - KwaZulu-Natal
+  stage: Feasibility
+  total_budget: 100.0
+- coordinates:
+  - latitude: -33.897623
+    longitude: 23.396183
+  department: Water and Sanitation
+  description: Construction of new bulk sewage conveyance pipelines
+  detail: /infrastructure-projects/water-and-sanitation-bitou-cross-border-bulk-water-supply
+  name: Bitou cross border bulk water supply
+  projected_budget: 300.0
+  provinces:
+  - Western Cape
+  stage: Feasibility
+  total_budget: 100.0
+- coordinates:
+  - latitude: -29.046269
+    longitude: 23.765644
+  department: Water and Sanitation
+  description: Construction of new pump station
+  detail: /infrastructure-projects/water-and-sanitation-breipaal-pump-station
+  name: Breipaal pump station
+  projected_budget: 300.0
+  provinces:
+  - Northern Cape
+  stage: Construction
+  total_budget: 100.0
+- coordinates:
+  - latitude: -32.320277
+    longitude: 28.185283
+  department: Water and Sanitation
+  description: Upgrading of existing bulk water scheme
+  detail: /infrastructure-projects/water-and-sanitation-butterworth-emergency
+  name: Butterworth Emergency
+  projected_budget: 300.0
+  provinces:
+  - Eastern Cape
+  stage: Tender
+  total_budget: 100.0
+- coordinates:
+  - latitude: -33.517731
+    longitude: 21.599253
+  department: Water and Sanitation
+  description: Upgrading of wastewater treatment works
+  detail: /infrastructure-projects/water-and-sanitation-calitzdorp-and-ladysmith-w
+  name: Calitzdorp and Ladysmith W
+  projected_budget: 300.0
+  provinces:
+  - Western Cape
+  stage: Feasibility
+  total_budget: 100.0
+- coordinates:
+  - latitude: -32.589157
+    longitude: 19.0118
+  department: Water and Sanitation
+  description: Construction of new wastewater treatment works
+  detail: /infrastructure-projects/water-and-sanitation-citrusdal-wastewater-treatment-works
+  name: Citrusdal wastewater treatment works
+  projected_budget: 300.0
+  provinces:
+  - Western Cape
+  stage: Construction
+  total_budget: 100.0
+- coordinates:
   - latitude: -29.861855
     longitude: 31.020099
   department: Justice and Constitutional Development
   description: Expansion of accommodation
-  detail: /infrastructure-projects/durban-high-court
+  detail: /infrastructure-projects/justice-and-constitutional-development-durban-high-court
   name: Durban high court
   projected_budget: 300.0
   provinces:
@@ -18,7 +102,7 @@ projects:
     longitude: 29.45397
   department: Health
   description: Emergency reparis
-  detail: /infrastructure-projects/eastern-cape-bambisana-hospital-emergency-repairs
+  detail: /infrastructure-projects/health-eastern-cape-bambisana-hospital-emergency-repairs
   name: 'Eastern Cape: Bambisana hospital (emergency repairs)'
   projected_budget: 300.0
   provinces:
@@ -30,7 +114,7 @@ projects:
     longitude: 29.45397
   department: Health
   description: Revitalisation of hospital
-  detail: /infrastructure-projects/eastern-cape-bambisana-hospital-refurbishment
+  detail: /infrastructure-projects/health-eastern-cape-bambisana-hospital-refurbishment
   name: 'Eastern Cape: Bambisana hospital (refurbishment)'
   projected_budget: 300.0
   provinces:
@@ -42,7 +126,7 @@ projects:
     longitude: 29.060497
   department: Health
   description: Revitalisation of hospital
-  detail: /infrastructure-projects/eastern-cape-zithulele-hospital
+  detail: /infrastructure-projects/health-eastern-cape-zithulele-hospital
   name: 'Eastern Cape: Zithulele hospital'
   projected_budget: 300.0
   provinces:
@@ -54,7 +138,7 @@ projects:
     longitude: 28.3197
   department: Health
   description: Replacement of hospital
-  detail: /infrastructure-projects/free-state-dihlabeng-hospital-revitalisation
+  detail: /infrastructure-projects/health-free-state-dihlabeng-hospital-revitalisation
   name: 'Free State:  Dihlabeng hospital revitalisation'
   projected_budget: 300.0
   provinces:
@@ -66,7 +150,7 @@ projects:
     longitude: 28.3197
   department: Health
   description: Emergency repairs
-  detail: /infrastructure-projects/free-state-dihlabeng-hospital-emergency-repairs
+  detail: /infrastructure-projects/health-free-state-dihlabeng-hospital-emergency-repairs
   name: 'Free State: Dihlabeng hospital emergency repairs'
   projected_budget: 300.0
   provinces:
@@ -78,7 +162,7 @@ projects:
     longitude: 26.69797
   department: Health
   description: Replacement of community health centre
-  detail: /infrastructure-projects/free-state-lusaka-community-health-centre
+  detail: /infrastructure-projects/health-free-state-lusaka-community-health-centre
   name: 'Free State: Lusaka community health centre'
   projected_budget: 300.0
   provinces:
@@ -91,17 +175,41 @@ projects:
   department: Water and Sanitation
   description: Construction of new bulk water scheme and upgrading of existing bulk
     water scheme
-  detail: /infrastructure-projects/giyani-water-services-phase-2
+  detail: /infrastructure-projects/water-and-sanitation-giyani-water-services-phase-2
   name: Giyani water services phase 2
   projected_budget: 300.0
   provinces:
   - Limpopo
   stage: Construction
   total_budget: 100.0
+- coordinates:
+  - latitude: -28.443218
+    longitude: 21.258871
+  department: Water and Sanitation
+  description: Supply of water
+  detail: /infrastructure-projects/water-and-sanitation-kalahari-east-to-mier-pipeline
+  name: Kalahari East to Mier pipeline
+  projected_budget: 300.0
+  provinces:
+  - Northern Cape
+  stage: Construction
+  total_budget: 100.0
+- coordinates:
+  - latitude: -33.39979
+    longitude: 25.443304
+  department: Water and Sanitation
+  description: Upgrading of existing bulk water scheme
+  detail: /infrastructure-projects/water-and-sanitation-kirkwood-water-treatment-works
+  name: Kirkwood water treatment works
+  projected_budget: 300.0
+  provinces:
+  - Eastern Cape
+  stage: Feasibility
+  total_budget: 100.0
 - coordinates: []
   department: Water and Sanitation
   description: Construction of water supply and sanitation backlog
-  detail: /infrastructure-projects/limpopo-region
+  detail: /infrastructure-projects/water-and-sanitation-limpopo-region
   name: Limpopo region
   projected_budget: 300.0
   provinces: []
@@ -112,7 +220,7 @@ projects:
     longitude: 29.479913
   department: Health
   description: Construction of new hospital
-  detail: /infrastructure-projects/limpopo-acadedmic-hospital
+  detail: /infrastructure-projects/health-limpopo-acadedmic-hospital
   name: 'Limpopo:  Acadedmic hospital'
   projected_budget: 300.0
   provinces:
@@ -124,7 +232,7 @@ projects:
     longitude: 29.2702404
   department: Health
   description: Replacement of community health centre
-  detail: /infrastructure-projects/limpopo-chebeng-community-health-centre
+  detail: /infrastructure-projects/health-limpopo-chebeng-community-health-centre
   name: 'Limpopo: Chebeng community health centre'
   projected_budget: 300.0
   provinces:
@@ -136,7 +244,7 @@ projects:
     longitude: 30.19429
   department: Health
   description: Construction of new hospital
-  detail: /infrastructure-projects/limpopo-siloam-hospital
+  detail: /infrastructure-projects/health-limpopo-siloam-hospital
   name: 'Limpopo: Siloam hospital'
   projected_budget: 300.0
   provinces:
@@ -148,7 +256,7 @@ projects:
     longitude: 27.1454
   department: Police
   description: Construction of living quarters and offices
-  detail: /infrastructure-projects/member-and-office-accommodation
+  detail: /infrastructure-projects/police-member-and-office-accommodation
   name: Member and office accommodation
   projected_budget: 300.0
   provinces:
@@ -156,11 +264,24 @@ projects:
   stage: Construction
   total_budget: 100.0
 - coordinates:
+  - latitude: -33.765182
+    longitude: 23.445781
+  department: Water and Sanitation
+  description: Construction of new bulk water scheme and Upgrading of existing bulk
+    water scheme
+  detail: /infrastructure-projects/water-and-sanitation-misgund-bulk-water-supply
+  name: Misgund bulk water supply
+  projected_budget: 300.0
+  provinces:
+  - Eastern Cape
+  stage: Feasibility
+  total_budget: 100.0
+- coordinates:
   - latitude: -23.745589
     longitude: 28.611827
   department: Water and Sanitation
   description: Upgrading of boreholes and construction of new bulk water scheme
-  detail: /infrastructure-projects/mogalakwena-bulk-water-supply-phase-1
+  detail: /infrastructure-projects/water-and-sanitation-mogalakwena-bulk-water-supply-phase-1
   name: Mogalakwena bulk water supply phase 1
   projected_budget: 300.0
   provinces:
@@ -172,7 +293,7 @@ projects:
     longitude: 28.6043845
   department: Health
   description: Replacement of community health centre
-  detail: /infrastructure-projects/mpumalanga-balfour-community-health-centre-24-hour-mini-hospital
+  detail: /infrastructure-projects/health-mpumalanga-balfour-community-health-centre-24-hour-mini-hospital
   name: 'Mpumalanga: Balfour community health centre (24-hour mini-hospital)'
   projected_budget: 300.0
   provinces:
@@ -184,12 +305,24 @@ projects:
     longitude: 29.75714
   department: Water and Sanitation
   description: Construction of new bulk water scheme
-  detail: /infrastructure-projects/nebo-bulk-water-supply
+  detail: /infrastructure-projects/water-and-sanitation-nebo-bulk-water-supply
   name: Nebo bulk water supply
   projected_budget: 600.0
   provinces:
   - Limpopo
   stage: Construction
+  total_budget: 100.0
+- coordinates:
+  - latitude: -24.8999986
+    longitude: 29.7491574
+  department: Water and Sanitation
+  description: Construction of new bulk water scheme
+  detail: /infrastructure-projects/water-and-sanitation-nebo-bulk-water-supply-de-hoop-agumentation-north-south-steelpoort
+  name: Nebo bulk water supply (De Hoop agumentation/North/South/Steelpoort)
+  projected_budget: 300.0
+  provinces:
+  - Limpopo
+  stage: Design
   total_budget: 100.0
 - coordinates: []
   department: Health
@@ -197,7 +330,7 @@ projects:
     management information systems, conditional assessments of facilities in national
     health insurance scheme pilot districts, in loco supervision, monitoring of 10-year
     health infrastr
-  detail: /infrastructure-projects/non-capital-infrastructure-projects-including-maintenance-national-health-insurance-facilities
+  detail: /infrastructure-projects/health-non-capital-infrastructure-projects-including-maintenance-national-health-insurance-facilities
   name: Non-capital infrastructure projects, including maintenance (national health
     insurance facilities)
   projected_budget: 300.0
@@ -207,18 +340,30 @@ projects:
 - coordinates: []
   department: Water and Sanitation
   description: Construction of water supply and sanitation backlog
-  detail: /infrastructure-projects/north-west-region
+  detail: /infrastructure-projects/water-and-sanitation-north-west-region
   name: North West region
   projected_budget: 300.0
   provinces: []
   stage: Construction
   total_budget: 100.0
 - coordinates:
+  - latitude: -28.44481
+    longitude: 24.46035
+  department: Health
+  description: Rehabilitation of existing nursing education institute facility
+  detail: /infrastructure-projects/health-northern-cape-henrietta-nursing-college
+  name: 'Northern Cape: Henrietta nursing college'
+  projected_budget: 300.0
+  provinces:
+  - Northern Cape
+  stage: Design
+  total_budget: 100.0
+- coordinates:
   - latitude: -30.4759
     longitude: 30.203
   department: Police
   description: Construction of new and re-established police stations
-  detail: /infrastructure-projects/police-stations
+  detail: /infrastructure-projects/police-police-stations
   name: Police stations
   projected_budget: 300.0
   provinces:
@@ -230,7 +375,7 @@ projects:
   description: Replace 510 schools that have inappropriate infrastructure, of which
     395 are mud schools; provide water to 1 120 schools, sanitation to 741 schools
     and electricity to 916 schools
-  detail: /infrastructure-projects/school-infrastructure-backlogs-grant
+  detail: /infrastructure-projects/basic-education-school-infrastructure-backlogs-grant
   name: School infrastructure backlogs grant
   projected_budget: 300.0
   provinces: []
@@ -241,7 +386,7 @@ projects:
     longitude: 27.853407
   department: Water and Sanitation
   description: Upgrading of existing wastewater treatment works
-  detail: /infrastructure-projects/sebokeng-waste-treatment-works-phase-1-and-phase-2
+  detail: /infrastructure-projects/water-and-sanitation-sebokeng-waste-treatment-works-phase-1-and-phase-2
   name: Sebokeng waste treatment works phase 1 and phase 2
   projected_budget: 300.0
   provinces:
@@ -253,7 +398,7 @@ projects:
     longitude: 27.83102
   department: Water and Sanitation
   description: Construction of new wastewater treatment works
-  detail: /infrastructure-projects/sedibeng-bulk-regional-sewerage
+  detail: /infrastructure-projects/water-and-sanitation-sedibeng-bulk-regional-sewerage
   name: Sedibeng bulk regional sewerage
   projected_budget: 300.0
   provinces:
@@ -265,7 +410,7 @@ projects:
     longitude: 26.89165
   department: Water and Sanitation
   description: Construction of new bulk water scheme
-  detail: /infrastructure-projects/welbedacht-pipeline
+  detail: /infrastructure-projects/water-and-sanitation-welbedacht-pipeline
   name: Welbedacht pipeline
   projected_budget: 300.0
   provinces:
@@ -277,12 +422,36 @@ projects:
     longitude: 27.654933
   department: Water and Sanitation
   description: Construction of new wastewater treatment works
-  detail: /infrastructure-projects/westonaria-randfontein-regional-bulk-wastewater-treatment-works-zuurbekom
+  detail: /infrastructure-projects/water-and-sanitation-westonaria-randfontein-regional-bulk-wastewater-treatment-works-zuurbekom
   name: Westonaria/Randfontein regional bulk wastewater treatment works (Zuurbekom)
   projected_budget: 300.0
   provinces:
   - Gauteng
   stage: Design
+  total_budget: 100.0
+- coordinates:
+  - latitude: -31.339668
+    longitude: 20.910653
+  department: Water and Sanitation
+  description: Construction of new bulk water scheme
+  detail: /infrastructure-projects/water-and-sanitation-williston-bulk-water-supply
+  name: Williston bulk water supply
+  projected_budget: 300.0
+  provinces:
+  - Northern Cape
+  stage: Feasibility
+  total_budget: 100.0
+- coordinates:
+  - latitude: -31.8196
+    longitude: 28.76277
+  department: Health
+  description: Emergency reparis
+  detail: /infrastructure-projects/health-zithulele-hospital-emergency-works
+  name: Zithulele hospital emergency works
+  projected_budget: 300.0
+  provinces:
+  - Eastern Cape
+  stage: Handed over
   total_budget: 100.0
 selected_tab: infrastructure-projects
 slug: infrastructure-projects
