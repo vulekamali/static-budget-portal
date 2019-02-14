@@ -29,15 +29,20 @@ const createImageTag = image => styled.div`
 
 const SubHeading = styled(Typography)`
   && {
+    padding-top: 70px;
     font-size: 10px;
     color: #fff;
     text-transform: uppercase;
-    padding-bottom: 10px;
+    padding-bottom: 5px;
     letter-spacing: 3px;
     font-family: Lato;
 
+    @supports(display: flex) {
+      padding-top: 0;
+    }
+
     @media screen and (min-width: 650px) {
-      font-size: 18px;
+      font-size: 14px;
     }
   }
 `;
@@ -45,22 +50,16 @@ const SubHeading = styled(Typography)`
 const Heading = styled(Typography)`
   && {
     color: #fff;
-    letter-spacing: 3px;
-    font-weight: 900;
-    padding-bottom: 24px;
+    font-weight: 700;
     font-family: Lato;
     width: 90%;
-    padding-bottom: 15px;
-    line-height: 1.25;
-    font-size: 26px;
+    padding-bottom: 33px;
+    line-height: 1;
+    font-size: 28px;
     text-align: center;
 
-    @media screen and (min-width: 400px) {
-      padding-bottom: 15px;
-    }
-
     @media screen and (min-width: 650px) {
-      font-size: 40px;
+      font-size: 48px;
     }
   }
 `;

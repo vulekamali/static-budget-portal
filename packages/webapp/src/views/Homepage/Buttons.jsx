@@ -13,6 +13,9 @@ const PrimaryButton = styled(Button)`
     text-transform: none;
     padding: 10px 25px;
     font-family: Lato;
+    font-size: 16px;
+    font-weight: 700;
+    box-shadow: none;
 
     &:hover {
       background: ${darken(0.1, '#79B443')};
@@ -45,11 +48,11 @@ const ButtonsWrapper = styled.div`
 
 const LinkWrapper = styled.a`
   display: inline-block;
-  padding: 8px;
+  padding: 7px;
   text-decoration: none;
 
   @media screen and (min-width: 650px) {
-    padding: 10px;
+    padding: 8px;
   }
 `;
 

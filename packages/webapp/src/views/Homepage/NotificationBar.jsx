@@ -8,20 +8,17 @@ import t from 'prop-types';
 const NoticeWrapper = styled.div`
   position: absolute;
   width: 100%;
-  max-width: 300px;
-  padding: 10px 20px;
+  padding-bottom: 5px;
   font-family: Lato;
   font-size: 14px;
   line-height: 1.5;
-
+  left: 0;
   top: ${({ hasCallToAction }) => (hasCallToAction ? 'calc(100% - 40px)' : 'auto')};
   bottom: ${({ hasCallToAction }) => (hasCallToAction ? 'auto' : 'calc(100% - 40px)')};
-  @media (min-width: 450px) {
-    max-width: 350px;
-  }
 
   @media (min-width: 650px) {
-    max-width: 450px;
+    padding-bottom: 15px;
+    font-size: 16px;
   }
 `;
 
@@ -41,7 +38,6 @@ const CallToActionPosition = styled.div`
   width: 100%;
 `;
 
-
 const CallToAction = styled(Card)`
   position: absolute;
   width: 100%;
@@ -59,15 +55,38 @@ const Wrapper = styled.div`
 
 const Text = styled(CardContent)`
   text-align: center;
+  &&& {
+    padding-top: 16px;
+    padding-bottom: 16px;
+    padding-right: 20px;
+    padding-left: 20px;
+  }
+`;
+
+const NoticeCard = styled(Card)`
+  max-width: 280px;
+  margin: 0 auto;
+
+  && {
+    box-shadow: 0px 2px 2px rgba(0, 0, 0, 0.05), 0px 4px 4px rgba(0, 0, 0, 0.25);
+  }
+
+  @media (min-width: 450px) {
+    max-width: 400px;
+  }
+
+  @media (min-width: 650px) {
+    max-width: 550px;
+  }
 `;
 
 const buildNotice = (noticeText, hasCallToAction) => (
   <NoticeWrapper {...{ hasCallToAction }}>
-    <Card>
+    <NoticeCard>
       <Text>
         {noticeText}
       </Text>
-    </Card>
+    </NoticeCard>
   </NoticeWrapper>
 );
 
