@@ -327,3 +327,36 @@ for year_slug in YEAR_SLUGS:
                 with open(department_context_path, 'wb') as department_file:
                     department_file.write(GENERATED_YAML_COMMENT)
                     department_file.write(r.text)
+
+
+# Infrastructure projects
+
+listing_url_path = '/infrastructure-projects'
+logger.info(listing_url_path)
+listing_url = portal_url + listing_url_path[1:] + '.yaml'
+r = http_get(session, listing_url)
+r.raise_for_status()
+listing_path = '_data%s.yaml' % listing_url_path
+
+with open(listing_path, 'wb') as listing_file:
+    listing_file.write(GENERATED_YAML_COMMENT)
+    listing_file.write(r.text)
+write_basic_page(listing_url_path, r.text, 'department_list')
+
+listing = yaml.load(r.text)
+for sphere in ('national', 'provincial'):
+    for government in listing[sphere]:
+        for department in government['departments']:
+            logger.info(department['url_path'])
+
+            department_path = department['url_path'] + '.yaml'
+            department_url = portal_url + department_path[1:]
+            department_context_path = '_data/' + department_path[1:]
+            ensure_file_dirs(department_context_path)
+
+            r = http_get(session, department_url)
+            r.raise_for_status()
+            write_department_page(department['url_path'], r.text)
+            with open(department_context_path, 'wb') as department_file:
+                department_file.write(GENERATED_YAML_COMMENT)
+                department_file.write(r.text)
