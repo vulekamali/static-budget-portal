@@ -26,7 +26,7 @@ const node = document.querySelector('[data-webapp="homepage-hero"]')
 
 const connection = () => {
   if (node) {
-    render(Homepage, node);
+    render(createElement(Homepage, props), node);
   }
 };
 
