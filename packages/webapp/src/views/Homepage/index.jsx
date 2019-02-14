@@ -36,6 +36,7 @@ const SubHeading = styled(Typography)`
     padding-bottom: 5px;
     letter-spacing: 3px;
     font-family: Lato;
+    text-align: center;
 
     @supports(display: flex) {
       padding-top: 0;
