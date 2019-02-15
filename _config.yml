@@ -31,6 +31,7 @@ markdown: kramdown
 exclude:
   - Gemfile
   - Gemfile.lock
+  - packages
   - node_modules
   - env
   - generate

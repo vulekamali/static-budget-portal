@@ -9,10 +9,9 @@ layout: page-shell
 {% assign video_3 = site.data.videos.data[3] %}
 
 <div class="Page-content u-paddingTop0">
-  {%
-    include scenes/homepage/Hero/index.html
-  %}
-
+  <div data-webapp="homepage-hero">
+    {% include connections/homepage-hero/index.html %}
+  </div>
   <div class="Container u-paddingTop25">
     <div class="Features">
       {% for feature in page_data.features_list %}

@@ -1,35 +1,71 @@
 import React from 'react';
+import t from 'prop-types';
+import { darken } from 'polished';
 import styled from 'styled-components';
 import Card from '@material-ui/core/Card';
 import CardContent from '@material-ui/core/CardContent';
-
-import t from 'prop-types';
+import Button from '@material-ui/core/Button';
+import ForwardArrow from '@material-ui/icons/ArrowForward';
+import constructionImg from './construction-workers.jpg';
 
 const NoticeWrapper = styled.div`
   position: absolute;
   width: 100%;
-  max-width: 272px;
-  padding: 10px 20px;
+  padding-bottom: 5px;
   font-family: Lato;
   font-size: 14px;
-
+  line-height: 1.5;
+  left: 0;
   top: ${({ hasCallToAction }) => (hasCallToAction ? 'calc(100% - 40px)' : 'auto')};
   bottom: ${({ hasCallToAction }) => (hasCallToAction ? 'auto' : 'calc(100% - 40px)')};
+
+  @media (min-width: 650px) {
+    padding-bottom: 15px;
+    font-size: 16px;
+  }
+`;
+
+const NoticeCard = styled(Card)`
+  max-width: 280px;
+  margin: 0 auto;
+
+  && {
+    box-shadow: 0px 2px 2px rgba(0, 0, 0, 0.05), 0px 4px 4px rgba(0, 0, 0, 0.25);
+  }
+
   @media (min-width: 450px) {
     max-width: 400px;
   }
 
   @media (min-width: 650px) {
-    max-width: 640px;
+    max-width: 550px;
+  }
+`;
+
+const Text = styled(CardContent)`
+  text-align: center;
+  &&& {
+    padding-top: 16px;
+    padding-bottom: 16px;
+    padding-right: 20px;
+    padding-left: 20px;
   }
 `;
 
 const CallToActionPositionWrapper = styled.div`
-  bottom: calc(100% - 70px);
   width: 100%;
-  max-width: 650px;
-  padding: 10px 20px;
+  max-width: 280px;
   position: absolute;
+  top: 180px;
+
+  @media (min-width: 450px) {
+    max-width: 400px;
+  }
+
+  @media (min-width: 650px) {
+    max-width: 550px;
+    top: 80px;
+  }
 `;
 
 const CallToActionPosition = styled.div`
@@ -37,55 +73,147 @@ const CallToActionPosition = styled.div`
   width: 100%;
 `;
 
-
 const CallToAction = styled(Card)`
   position: absolute;
   width: 100%;
   bottom: 0;
+  && {
+    box-shadow: 0px 2px 2px rgba(0, 0, 0, 0.05), 0px 4px 4px rgba(0, 0, 0, 0.25);
+  }
 `;
 
 const Wrapper = styled.div`
   display: flex;
   background: #79B443;
-  min-height: ${({ hasCallToAction }) => (hasCallToAction ? '100px' : '50px')};
+  min-height: ${({ hasCallToAction }) => (hasCallToAction ? '235px' : '50px')};
   position: relative;
   justify-content: center;
   align-items: center;
+
+  @media (min-width: 650px) {
+    min-height: ${({ hasCallToAction }) => (hasCallToAction ? '135px' : '50px')};
+  }
 `;
 
-const Text = styled(CardContent)`
-  text-align: center;
+const BuildPosition = styled(CardContent)`
+  height: 245px;
+  display: flex;
+  flex-direction: column;
+
+  &&& {
+    padding: 0;
+  }
+
+  @media screen and (min-width: 650px) {
+      flex-direction: row;
+      height: 145px;
+    }
+
+`;
+
+const ImgContainer = styled.div`
+  height: 90px;
+  background-image: url('${constructionImg}');
+  background-size: cover;
+  background-position: center;
+
+  @media screen and (min-width: 650px) {
+      flex-direction: row;
+      flex-basis: 310px;
+      height: 100%;
+      order: 1;
+    }
+`;
+
+const CallToActionDescription = styled.div`
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding: 20px;
+  flex-grow: 1;
+  font-family: Lato;
+
+  @media screen and (min-width: 650px) {
+    justify-content: space-around;
+    }
+`;
+
+const CallToActionButton = styled(Button)`
+
+  && {
+    color: #fff;
+    background-color: #79B443;
+    font-size: 16px;
+    font-weight: 700;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    text-transform: none;
+
+    &:hover {
+      background: ${darken(0.1, '#79B443')};
+    }
+
+    @media screen and (min-width: 650px) {
+      position: absolute;
+      top: 50%;
+      left: 290px;
+      width: 200px;
+    }
+  }
+`;
+
+const BudgetTitle = styled.div`
+  color: #79B443;
+  font-weight: 700;
+  font-size: 10px;
+  text-transform: Uppercase;
+  font-family: Lato;
+  letter-spacing: 1px;
+`;
+
+const BudgetHeading = styled.div`
+  font-size: 16px;
+  font-weight: 700;
+  text-transform: Capitalize;
+
+  @media screen and (min-width: 650px) {
+      font-size: 18px;
+      max-width: 370px;
+    }
 `;
 
 const buildNotice = (noticeText, hasCallToAction) => (
   <NoticeWrapper {...{ hasCallToAction }}>
-    <Card>
+    <NoticeCard>
       <Text>
         {noticeText}
       </Text>
-    </Card>
+    </NoticeCard>
   </NoticeWrapper>
 );
-
 
 const buildCallToAction = callToActionData => (
   <CallToActionPositionWrapper>
     <CallToActionPosition>
       <CallToAction>
-        <CardContent>
-          <div>
-            {callToActionData.subheading}
-            {callToActionData.heading}
-          </div>
-          <div>
-            {/* {callToActionData.heading} */}
-          </div>
-        </CardContent>
+        <BuildPosition>
+          <ImgContainer />
+          <CallToActionDescription>
+            <BudgetTitle>{callToActionData.subheading}</BudgetTitle>
+            <BudgetHeading>{callToActionData.heading}</BudgetHeading>
+            <CallToActionButton>
+              <span>
+                {callToActionData.link.text}
+              </span>
+              <ForwardArrow />
+            </CallToActionButton>
+          </CallToActionDescription>
+        </BuildPosition>
       </CallToAction>
     </CallToActionPosition>
   </CallToActionPositionWrapper>
 );
-
 
 const NotificationBar = ({ notice: noticeText, callToAction: callToActionData }) => {
   return (
