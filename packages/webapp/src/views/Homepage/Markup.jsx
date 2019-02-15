@@ -68,7 +68,7 @@ const Markup = (props) => {
     resources,
     image,
     callToAction,
-    modal, 
+    modal,
     closeModal,
     openModal,
     videoUrl
