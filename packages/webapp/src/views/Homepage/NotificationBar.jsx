@@ -55,12 +55,15 @@ const Text = styled(CardContent)`
 const CallToActionPositionWrapper = styled.div`
   width: 100%;
   position: absolute;
+<<<<<<< HEAD
+=======
   top: 180px;
   left: 0;
 
   @media (min-width: 650px) {
     top: 80px;
   }
+>>>>>>> cffb6404c6924af511d78fd61ad6dad132c343f8
 `;
 
 const CallToActionPosition = styled.div`
@@ -115,6 +118,10 @@ const BuildPosition = styled(CardContent)`
       flex-direction: row;
       height: 145px;
     }
+<<<<<<< HEAD
+=======
+
+>>>>>>> b29e31aa82e4b64c0cbf43672bbb713d8de1d4c2
 `;
 
 const ImgContainer = styled.div`
@@ -128,7 +135,7 @@ const ImgContainer = styled.div`
       flex-basis: 310px;
       height: 100%;
       order: 1;
-    }   
+    }
 `;
 
 const CallToActionDescription = styled.div`
@@ -166,7 +173,7 @@ const CallToActionButton = styled(Button)`
       left: 290px;
       width: 200px;
     }
-  } 
+  }
 `;
 
 const CallToActionLink = styled.a`
@@ -190,7 +197,7 @@ const BudgetHeading = styled.div`
   @media screen and (min-width: 650px) {
       font-size: 18px;
       max-width: 370px;
-    }      
+    }
 `;
 
 const buildNotice = (noticeText, hasCallToAction) => (
