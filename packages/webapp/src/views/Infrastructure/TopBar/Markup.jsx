@@ -14,7 +14,18 @@ import Icon from './Icon';
 
 
 const StyledSpeedDial = styled(SpeedDial)`
-  height: 400px;
+  height: 20px;
+  align-self: flex-start;
+  padding-top: 12px;
+
+  & .fab {
+    background: #C4C4C4;
+    width: 36px;
+
+    &:hover {
+      background: ${darken(0.1, '#C4C4C4')};
+    }
+  }
 `;
 
 
@@ -22,14 +33,18 @@ const WhiteButton = styled(Button)`
   &&& {
     background: white;
     border-radius: 50px;
+    ${({ text }) => (!!text ? '' : 'min-width: 16px')};
+    ${({ text }) => (!!text ? '' : 'width: 16px')};
+    ${({ text }) => (!!text ? '' : 'height: 32px')};
     color: black;
     text-transform: none;
-    padding: 10px 25px;
     font-family: Lato;
     font-size: 16px;
     font-weight: 700;
     box-shadow: none;
     opacity: ${({ disabled }) => (disabled ? 0.2 : 1)};
+    margin-right: 4px;
+    margin-left: 4px;
 
     &:hover {
       background: ${darken(0.1, 'white')};
@@ -37,18 +52,31 @@ const WhiteButton = styled(Button)`
   }
 `;
 
+const TwoArrowButtons = styled.div`
+  display: flex;
+`;
+
 
 const WhiteText = styled(Typography)`
+  border: 1px solid blue;
+  position: absolute;
+  max-width: 200px;
+  top: 75px;
+  left: calc(50% - 100px);
+  text-align: center;
   && {
-    color: white;
+    color: #3F3F3F;
   }
 `
 
 const Wrapper = styled.div`
+  position: relative;
   background: #3f3f3f;
   display: flex;
   width: 100%;
   height: 60px;
+  justify-content: space-between;
+  align-items: center;
 `;
 
 
@@ -132,6 +160,7 @@ const createSpeedDial = (sharingOpen, toggleSharingOpen, id, toggleModal) => {
       onClick={toggleSharingOpen}
       open={!!sharingOpen}
       direction="down"
+      classes={{ fab: 'fab' }}
     >
       {createButtons(id, toggleModal, toggleSharingOpen)}
     </StyledSpeedDial>
@@ -140,7 +169,7 @@ const createSpeedDial = (sharingOpen, toggleSharingOpen, id, toggleModal) => {
 
 
 const buttonMarkup = (disabled, text, reverse, clickEvent) => (
-  <WhiteButton variant="contained" {...{ disabled }} onClick={clickEvent}>
+  <WhiteButton variant="contained" {...{ disabled, text }} onClick={clickEvent}>
     {reverse ? <LeftIcon /> : <RightIcon />}
     {!!text && <span>{text}</span>}
   </WhiteButton>
@@ -166,8 +195,10 @@ const Markup = (props) => {
       {!!details && buttonMarkup(false, 'Back', true)}
       {createSpeedDial(sharingOpen, toggleSharingOpen, id, toggleModal)}
       <WhiteText>{`${amount} national department infrastructure projects`}</WhiteText>
-      {buttonMarkup(id <= 0, null, true, previousId)}
-      {buttonMarkup(id + 1 >= amount, null, null, nextId)}
+      <TwoArrowButtons>
+        {buttonMarkup(id <= 0, null, true, previousId)}
+        {buttonMarkup(id + 1 >= amount, null, null, nextId)}
+      </TwoArrowButtons>
     </Wrapper>
   )
 }
