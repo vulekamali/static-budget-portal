@@ -44,10 +44,9 @@ const SubHeading = styled(Typography)`
 
 const Heading = styled(Typography)`
   && {
-    font-size: 18px;
     color: #fff;
     letter-spacing: 3px;
-    font-weight: 900;
+    font-weight: bold;
     padding-bottom: 24px;
     font-family: Lato;
     width: 90%;
