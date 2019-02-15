@@ -54,16 +54,11 @@ const Text = styled(CardContent)`
 
 const CallToActionPositionWrapper = styled.div`
   width: 100%;
-  max-width: 280px;
   position: absolute;
   top: 180px;
-
-  @media (min-width: 450px) {
-    max-width: 400px;
-  }
+  left: 0;
 
   @media (min-width: 650px) {
-    max-width: 550px;
     top: 80px;
   }
 `;
@@ -71,6 +66,16 @@ const CallToActionPositionWrapper = styled.div`
 const CallToActionPosition = styled.div`
   position: relative;
   width: 100%;
+  max-width: 280px;
+  margin: 0 auto;
+
+  @media (min-width: 450px) {
+    max-width: 400px;
+  }
+
+  @media (min-width: 650px) {
+    max-width: 550px;
+  }
 `;
 
 const CallToAction = styled(Card)`
@@ -99,6 +104,8 @@ const BuildPosition = styled(CardContent)`
   height: 245px;
   display: flex;
   flex-direction: column;
+  position: relative;
+  width: 100%;
 
   &&& {
     padding: 0;
@@ -107,8 +114,7 @@ const BuildPosition = styled(CardContent)`
   @media screen and (min-width: 650px) {
       flex-direction: row;
       height: 145px;
-    }     
-
+    }
 `;
 
 const ImgContainer = styled.div`
@@ -122,7 +128,7 @@ const ImgContainer = styled.div`
       flex-basis: 310px;
       height: 100%;
       order: 1;
-    }   
+    }
 `;
 
 const CallToActionDescription = styled.div`
@@ -160,7 +166,11 @@ const CallToActionButton = styled(Button)`
       left: 290px;
       width: 200px;
     }
-  } 
+  }
+`;
+
+const CallToActionLink = styled.a`
+  text-decoration: none;
 `;
 
 const BudgetTitle = styled.div`
@@ -180,7 +190,7 @@ const BudgetHeading = styled.div`
   @media screen and (min-width: 650px) {
       font-size: 18px;
       max-width: 370px;
-    }      
+    }
 `;
 
 const buildNotice = (noticeText, hasCallToAction) => (
@@ -202,12 +212,14 @@ const buildCallToAction = callToActionData => (
           <CallToActionDescription>
             <BudgetTitle>{callToActionData.subheading}</BudgetTitle>
             <BudgetHeading>{callToActionData.heading}</BudgetHeading>
-            <CallToActionButton>
-              <span>
-                {callToActionData.link.text}
-              </span>
-              <ForwardArrow />
-            </CallToActionButton>
+            <CallToActionLink href={callToActionData.link.link}>
+              <CallToActionButton>
+                <span>
+                  {callToActionData.link.text}
+                </span>
+                <ForwardArrow />
+              </CallToActionButton>
+            </CallToActionLink>
           </CallToActionDescription>
         </BuildPosition>
       </CallToAction>
