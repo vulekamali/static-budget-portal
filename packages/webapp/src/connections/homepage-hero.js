@@ -4,7 +4,6 @@ import Homepage from '../views/Homepage';
 
 
 const props = {
-  image: 'parliament',
   heading: 'New budget data will be available soon',
   subheading: 'The 2019 budget speech',
   buttons: {

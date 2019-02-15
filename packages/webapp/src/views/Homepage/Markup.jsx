@@ -9,22 +9,7 @@ import parliamentImg from './parliament-building-budget-speech.jpg';
 import Modal from './Modal';
 
 
-const SubHeading = styled(Typography)`
-  && {
-    padding-top: 70px;
-    font-size: 10px;
-    color: #fff;
-    text-transform: uppercase;
-    padding-bottom: 5px;
-    letter-spacing: 3px;
-    font-family: Lato;
-    text-align: center;
 
-    @supports(display: flex) {
-      padding-top: 0;
-    }
-  }
-`;
 
 const Image = styled.div`
   background-image: url('${parliamentImg}');
@@ -47,13 +32,10 @@ const SubHeading = styled(Typography)`
     padding-bottom: 5px;
     letter-spacing: 3px;
     font-family: Lato;
+    text-align: center;
 
     @supports (display: flex) {
       padding-top: 0;
-    }
-
-    @media screen and (min-width: 650px) {
-      font-size: 14px;
     }
   }
 `;

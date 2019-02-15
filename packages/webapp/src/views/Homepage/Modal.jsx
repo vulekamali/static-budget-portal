@@ -20,7 +20,7 @@ const StyledDialogActions = styled(DialogActions)`
 
 const placeholderText = (
   <DialogContentText>
-    A live video-stream of the budget speech will be available on the homepage of Vulekamali at <strong>14:00 PM</strong> on <strong>22 February 2019</strong>.
+    A live video-stream of the budget speech will be available on the Vulekamali homepage at <strong>14:00 PM</strong> on <strong>22 February 2019</strong>.
   </DialogContentText>
 );
 
