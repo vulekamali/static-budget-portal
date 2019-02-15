@@ -1,106 +1,57 @@
-import React, { Fragment } from 'react';
-import styled from 'styled-components';
+import React, { Component } from 'react';
 import t from 'prop-types';
-import { Typography } from '@material-ui/core';
-import Buttons from './Buttons';
-import Resources from './Resources';
-import NotificationBar from './NotificationBar';
-import parliamentImg from './parliament-building-budget-speech.jpg';
-import womanImg from './woman-smiling-budget-data.jpg';
+import Markup from './Markup';
 
-const imageChange = (image) => {
-  switch (image) {
-    case ('parliament'): return parliamentImg;
-    case ('woman'): return womanImg;
-    default: return parliamentImg;
-  }
-};
 
-const createImageTag = image => styled.div`
-  background-image: url('${imageChange(image)}');
-  background-size: cover;
-  background-position: center;
-  min-height: 400px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-direction: column;
-`;
+class Homepage extends Component {
+  constructor(props) {
+    super(props);
 
-const SubHeading = styled(Typography)`
-  && {
-    padding-top: 70px;
-    font-size: 10px;
-    color: #fff;
-    text-transform: uppercase;
-    padding-bottom: 5px;
-    letter-spacing: 3px;
-    font-family: Lato;
-
-    @supports(display: flex) {
-      padding-top: 0;
+    this.state = {
+      modal: false,
     }
 
-    @media screen and (min-width: 650px) {
-      font-size: 14px;
+    this.events = {
+      openModal: this.openModal.bind(this), 
+      closeModal: this.closeModal.bind(this),
     }
   }
-`;
 
-const Heading = styled(Typography)`
-  && {
-    color: #fff;
-    font-weight: 700;
-    font-family: Lato;
-    width: 90%;
-    padding-bottom: 33px;
-    line-height: 1;
-    font-size: 28px;
-    text-align: center;
-
-    @media screen and (min-width: 650px) {
-      font-size: 48px;
-    }
+  openModal() {
+    this.setState({ modal: true });
   }
-`;
 
-const ExampleView = (props) => {
-  const {
-    buttons,
-    heading,
-    subheading,
-    notice,
-    resources,
-    image,
-    callToAction,
-  } = props;
+  closeModal() {
+    this.setState({ modal: false });
+  }
 
-  const Image = createImageTag(image);
+  render() {
+    const { state, events, props } = this;
 
-  return (
-    <Fragment>
-      <Image>
-        <SubHeading>{subheading}</SubHeading>
-        <Heading>{heading}</Heading>
-        <Buttons primary={buttons.primary} secondary={buttons.secondary} />
-      </Image>
-      <NotificationBar {...{ notice, callToAction }} />
-      {resources && <Resources {...{ resources }} />}
-    </Fragment>
-  );
-};
+    const passedProps = {
+      ...props,
+      modal: state.modal,
+      openModal: events.openModal,
+      closeModal: events.closeModal,
+    }
+
+    return <Markup {...passedProps } />
+  }
+}
 
 
-export default ExampleView;
+export default Homepage;
 
 
-ExampleView.propTypes = {
+Homepage.propTypes = {
   /** The heading text to use over the image */
   heading: t.string.isRequired,
   /** The smaller subheading text to user above the heading */
   subheading: t.string.isRequired,
   /** A single line of text to show as a notice just below image */
   notice: t.string,
+  /** The Youtube video to use for the popup modal */
+  videoUrl: t.string,
   /** The image to use as the background for the hero section */
   image: t.string.isRequired,
   /** A primary and secondary button to display over the image */
@@ -133,8 +84,9 @@ ExampleView.propTypes = {
 };
 
 
-ExampleView.defaultProps = {
+Homepage.defaultProps = {
   notice: null,
   resources: null,
   callToAction: null,
+  videoUrl: null,
 };

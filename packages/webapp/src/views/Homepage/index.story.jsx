@@ -10,7 +10,6 @@ const beforeSpeechProps = {
   buttons: {
     primary: {
       text: 'How to watch the speech',
-      link: '#',
     },
     secondary: {
       text: 'Get notified when data is live',
