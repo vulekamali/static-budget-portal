@@ -56,6 +56,8 @@ const CallToActionPositionWrapper = styled.div`
   width: 100%;
   max-width: 280px;
   position: absolute;
+<<<<<<< HEAD
+=======
   top: 180px;
 
   @media (min-width: 450px) {
@@ -66,6 +68,7 @@ const CallToActionPositionWrapper = styled.div`
     max-width: 550px;
     top: 80px;
   }
+>>>>>>> cffb6404c6924af511d78fd61ad6dad132c343f8
 `;
 
 const CallToActionPosition = styled.div`
