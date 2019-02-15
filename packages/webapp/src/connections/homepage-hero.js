@@ -10,11 +10,10 @@ const props = {
   buttons: {
     primary: {
       text: 'How to watch the speech',
-      link: '#',
     },
     secondary: {
       text: 'Get notified when data is live',
-      link: '#',
+      link: 'http://eepurl.com/ghmhT5',
     },
   },
   notice: 'The 2019/20 budget will be live on Vulekamali by 22 February 2019.',
