@@ -164,14 +164,28 @@ const List = styled.div`
   flex-wrap: wrap;
 `;
 
+const Wrapper = styled.div`
+  margin-top: 160px;
+  background: #EDEDED;
+`
+
+const Content = styled.div`
+  position: relative;
+  top: -130px;
+  max-width: 1000px;
+  margin: 0 auto;
+`;
+
 const ProjectList = ({ projects }) => {
   return (
-    <Fragment>
-      <Typography>Project List</Typography>
-      <List>
-        {projects.map(createProjectCard)}
-      </List>
-    </Fragment>
+    <Wrapper>
+      <Content>
+        <Typography>Project List</Typography>
+        <List>
+          {projects.map(createProjectCard)}
+        </List>
+      </Content>
+    </Wrapper>
   )
 }
 
