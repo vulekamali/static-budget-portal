@@ -9,7 +9,6 @@ import ForwardArrow from '@material-ui/icons/ArrowForward';
 import { darken } from 'polished';
 import Progressbar from '../../components/Progressbar';
 
-
 const AnimationWrapper = posed.div({
   enter: {
     opacity: 1,
