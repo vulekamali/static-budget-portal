@@ -2,72 +2,108 @@ import React from 'react';
 import styled from 'styled-components';
 
 
-const getCircle = ({ hover, select }) => {
-  if (hover && !select) {
-    return 'translateY(-13px)'
+const getcircle = name => ({ hover, selected }) => {
+  if (selected && name === 'fill') {
+    return 'white';
   }
 
-  return 'translateY(0)'
+  if (hover && !selected) {
+    if (name === 'transform') {
+      return 'translateY(-2px)'
+    }
+
+    return 'black';
+  }
+
+  if (name === 'transform') {
+    return 'translateY(0)'
+  }
+
+  if (name === 'fill') {
+    return '#5F5F5F'
+  }
+  return '';
 }
 
 
-const getShadow = ({ hover, select }) => {
+const getshadow = ({ hover, select }) => {
   if (hover && !select) {
-    return '0.15'
+    return '0.4'
   }
 
   return '0'
 }
 
 
-const GroupController = styled.g`
-  cursor: pointer;
+const calcState = (pointId, related = [], hoverId, selectedId) => {
+  const hover = pointId === hoverId || !!related.find(id => id === hoverId);
+  const selected = pointId === selectedId || !!related.find(id => id === selectedId);
 
-  .circle {
-    transform: ${getCircle};
-    cursor: pointer;
-    transition: transform 0.3s;
+  return {
+    selected,
+    hover,
   }
+}
 
-  .shadow {
-    opacity: ${getShadow};
-    transition: opacity 0.6s;
-  }
 
-  &:hover .circle {
-    transform: translateY(-13px);
-  }
-
-  &:hover .shadow {
-    opacity: 0.1;
-  }
+const Pin = styled.circle`
+  transform: ${getcircle('transform')};
+  fill: ${getcircle('fill')};
+  stroke: ${getcircle('stroke')};
+  transition: transform 0.3s;
 `;
 
+const HitMap = styled.circle`
+  cursor: ${({ selected }) => (selected ? 'default' : 'pointer')};
+`
 
-const Point = ({ x: cx, y: cy, hover, selected }) => {
+const Shadow = styled.rect`
+  opacity: ${getshadow};
+`
+
+const Point = (props) => {
+  const { 
+    x: cx,
+    y: cy,
+    hoveredId,
+    selectedId,
+    updateHover, 
+    updateSelected,
+    projectData,
+    pointId,
+  } = props;
+
+  const { hover, selected } = calcState(pointId, projectData.points, hoveredId, selectedId)
+  const mouseEnterWrapper = () => updateHover(pointId);
+  const mouseLeaveWrapper = () => updateHover(null);
+  const clickWrapper = () => updateSelected(pointId);
+
   return (
-    <GroupController {...{ hover, selected }}>
-      <ellipse 
-        {...{ cx, cy }}
-        rx="13"
-        ry="3"
-        fill="black"
-        opacity={0.15}
-        className="shadow"
-      />
-      <circle className="circle"
-        {...{ cx, cy }}
+    <g>
+      <Shadow 
+      {...{ hover, selected }}
+      x={cx - 5} 
+      y={cy - 3} 
+      width="10" 
+      height="10"
+      filter="url(#shadow)"
+    />
+      <Pin
+        {...{ cx, cy,  hover, selected }}
         r="5"
         strokeWidth="3"
-        stroke={selected ? 'black' : 'none'} 
-        fill={selected ? 'white' : '#5F5F5F'}
+        stroke={selected ? 'black' : 'none'}
       />
-      <circle
+      <HitMap
         {...{ cx, cy }}
+        onClick={clickWrapper}
+        onMouseEnter={mouseEnterWrapper}
+        onMouseLeave={mouseLeaveWrapper}
+        onMouse
         r="15"
         opacity="0"
       /> 
-    </GroupController>
+    </g>
   );
 }
 

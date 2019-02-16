@@ -1,21 +1,47 @@
 import React, { Component } from 'react';
 import Markup from './Markup';
+import convertGpsToVectorPoint from './convertGpsToVectorPoint';
+
+
+const convertGps = (pointsRawpoints, size) => pointsRawpoints.reduce(
+  (result, object) => {
+    const {
+      x,
+      y,
+      id,
+    } = convertGpsToVectorPoint(object, size);
+
+    return {
+      ...result,
+      [id]: {
+        x,
+        y,
+        id,
+      }
+    }
+  },
+  {},
+)
 
 
 class NationalMap extends Component {
   constructor(props) {
     super(props);
+    const { points: pointsRawpoints = [], size } = this.props;
 
     this.state = {
       hover: null,
       selected: null,
-      point: null,
     }
 
     this.events = {
       updateHover: this.updateHover.bind(this),
       updateSelected: this.updateSelected.bind(this),
-      updatePoint: this.updatePoint.bind(this),
+      checkOverlap: this.checkOverlap.bind(this),
+    }
+
+    this.values = {
+      points: convertGps(pointsRawpoints, size),
     }
   }
 
@@ -27,21 +53,21 @@ class NationalMap extends Component {
     this.setState({ selected });
   }
 
-  updatePoint(pointId) {
-    this.setState({ pointId });
+  checkOverlap(ref) {
+    console.log(this.values.mapRef, ref)
   }
 
   render() {
-    const { props, state, events } = this;
+    const { props, state, values, events } = this;
 
     const passedProps = {
       ...props,
+      points: values.points,
       hover: state.hover,
       selected: state.selected,
-      pointId: state.pointId,
       updateSelected: events.updateSelected,
       updateHover: events.updateHover,
-      updatePoint: events.updatePoint,
+      checkOverlap: events.checkOverlap,
     };
 
     return <Markup {...passedProps} />
