@@ -15,7 +15,14 @@ const Wrapper = styled.div`
 
 const Title = styled(Typography)`
   && {
-    font-size: 15px;
+    width: 173px;
+    height: 39px;
+    left: 289px;
+    top: 768px;
+    font-weight: bold;
+    line-height: 23px;
+    font-size: 16px;
+    color: #000000;
   }
 `;
 
@@ -30,17 +37,40 @@ const CardWrapper = styled.div`
   width: 100%;
   box-sizing: border-box;
 
+  @media screen and (min-width: 550px) {
+    width: ${100 / 2}%;
+  }
+
   @media screen and (min-width: 850px) {
     width: 50%;
   }
 
-  @media screen and (min-width: 1200px) {
+  @media screen and (min-width: 1050px) {
     width: ${100 / 4}%;
   }
 `;
 
 const CardContentWrapper = styled(CardContent)`
   display: flex;
+  justify-content: space-between;
+  @media screen and (min-width: 375px) {
+    display: flex;
+    flex-direction: column;
+  }
+`;
+
+const HeadingText = styled.div`
+  // &&&& {
+  //   width: 173px;
+  //   height: 39px;
+  //   left: 289px;
+  //   top: 768px;
+  //   font-weight: bold;
+  //   line-height: 23px;
+  //   font-size: 16px;
+  //   color: #000000;
+  // }
+
 `;
 
 const BtnLink = styled.a`
@@ -53,10 +83,25 @@ const ButtonBtn = styled(Button)`
     min-width: 0px;
     height: 57px;
   }
+
+  @media screen and (min-width: 375px) {
+    && {
+      display: flex;
+      justify-content: space-between;
+      width: 90%;
+      height: 40px;
+      margin-top: 40px;
+    }
+  }
 `;
 
 const SpanText = styled.span`
   display: none;
+
+  @media screen and (min-width: 375px) {
+    display: flex;
+    justify-content: flex-start;
+  }
 `;
 
 const createResource = (props) => {
@@ -71,10 +116,10 @@ const createResource = (props) => {
     <CardWrapper key={heading}>
       <Card>
         <CardContentWrapper>
-          <div>
+          <HeadingText>
               <Title>{heading}</Title>
                <Size>{size} - {format}</Size>
-            </div>
+          </HeadingText>
           <div>
             <BtnLink href={link}>
               <ButtonBtn variant="contained">
