@@ -44,25 +44,25 @@ const duringSpeechProps = {
   },
   resources: [
     {
-      heading: 'Item 1',
+      heading: '2019 Budget Speech Documentation',
       size: '2.2MB',
       format: 'PDF',
       link: '#',
     },
     {
-      heading: 'Item 2',
+      heading: '2019 Budget Speech Documentation',
       size: '2.2MB',
       format: 'PDF',
       link: '#',
     },
     {
-      heading: 'Item 3',
+      heading: '2019 Budget Speech Documentation',
       size: '2.2MB',
       format: 'PDF',
       link: '#',
     },
     {
-      heading: 'Item 4',
+      heading: '2019 Budget Speech Documentation',
       size: '2.2MB',
       format: 'PDF',
       link: '#',
