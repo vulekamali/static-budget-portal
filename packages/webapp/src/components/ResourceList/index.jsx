@@ -29,6 +29,7 @@ const Title = styled(Typography)`
 const Size = styled(Typography)`
   && {
     color: grey;
+    margin: 4.5% 0;
   }
 `;
 
@@ -60,17 +61,11 @@ const CardContentWrapper = styled(CardContent)`
 `;
 
 const HeadingText = styled.div`
-  // &&&& {
-  //   width: 173px;
-  //   height: 39px;
-  //   left: 289px;
-  //   top: 768px;
-  //   font-weight: bold;
-  //   line-height: 23px;
-  //   font-size: 16px;
-  //   color: #000000;
-  // }
-
+  &&&& {
+    height: 39px;
+    line-height: 23px;
+    font-size: 16px;
+  }
 `;
 
 const BtnLink = styled.a`
