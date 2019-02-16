@@ -146,15 +146,9 @@ export default Markup;
 
 Markup.propTypes = {
   active: t.bool,
-  points: t.arrayOf(t.shape({
-    x: t.number,
-    y: t.number,
-    related: t.arrayOf(t.string)
-  })),
 }
 
 
 Markup.defaultProps = {
   active: null,
-  points: [],
 }

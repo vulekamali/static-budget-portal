@@ -50,12 +50,13 @@ const points = [
 
 const nationalMap = () => <NationalMap />;
 const smallMap = () => <NationalMap size="small" />;
-const activeMap = () => <NationalMap active="Western Cape" />;
+const activeMap = () => <NationalMap activeProvinces={["Western Cape"]} />;
 const pointsMap = () => <NationalMap {...{ points, projects }} />;
-
+const selectionMap = () => <NationalMap {...{ points, projects }} selected="project1" />;
 
 storiesOf('component.NationalMap', module)
   .add('Default', nationalMap)
   .add('Small', smallMap)
   .add('Manual Active Province', activeMap)
-  .add('With Points', pointsMap);
+  .add('With Points', pointsMap)
+  .add('Force Selection', selectionMap);
