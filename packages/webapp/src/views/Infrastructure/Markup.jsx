@@ -1,6 +1,8 @@
 import React, { Fragment } from 'react';
+import CssBaseline from '@material-ui/core/CssBaseline';
 import TopBar from './TopBar';
 import Preview from './Preview';
+import ProjectList from './ProjectList';
 
 
 const Markup = (props) => {
@@ -26,8 +28,10 @@ const Markup = (props) => {
 
   return (
     <Fragment>
+      <CssBaseline />
       <TopBar {...topBarProps} />
       <Preview {...projects[id]} />
+      <ProjectList {...{ projects }} />
     </Fragment>
   );
 };
