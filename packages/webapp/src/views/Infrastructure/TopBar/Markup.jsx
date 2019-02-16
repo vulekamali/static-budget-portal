@@ -12,15 +12,17 @@ import { darken } from 'polished';
 import Modal from './Modal';
 import Icon from './Icon';
 
-
 const StyledSpeedDial = styled(SpeedDial)`
   height: 20px;
   align-self: flex-start;
   padding-top: 12px;
+  margin-right: 4px;
+  margin-left: 4px;
 
   & .fab {
     background: #C4C4C4;
     width: 36px;
+    margin-left: 10px;
 
     &:hover {
       background: ${darken(0.1, '#C4C4C4')};
@@ -28,14 +30,13 @@ const StyledSpeedDial = styled(SpeedDial)`
   }
 `;
 
-
 const WhiteButton = styled(Button)`
   &&& {
     background: white;
     border-radius: 50px;
-    ${({ text }) => (!!text ? '' : 'min-width: 16px')};
-    ${({ text }) => (!!text ? '' : 'width: 16px')};
-    ${({ text }) => (!!text ? '' : 'height: 32px')};
+    ${({ text }) => (!!text ? 'min-width: 96px' : 'min-width: 36px')};
+    ${({ text }) => (!!text ? '' : 'width: 36px')};
+    ${({ text }) => (!!text ? 'height: 36px' : 'height: 36px')};
     color: black;
     text-transform: none;
     font-family: Lato;
@@ -45,7 +46,9 @@ const WhiteButton = styled(Button)`
     opacity: ${({ disabled }) => (disabled ? 0.2 : 1)};
     margin-right: 4px;
     margin-left: 4px;
-
+    ${({ text }) => (!!text ? 'padding-top: 4px ' : '')};
+    ${({ text }) => (!!text ? 'padding-right: 25px' : '')};
+    
     &:hover {
       background: ${darken(0.1, 'white')};
     }
@@ -56,35 +59,76 @@ const TwoArrowButtons = styled.div`
   display: flex;
 `;
 
+const PositionedShareIcon = styled(ShareIcon)`
+  position: relative;
+  right: 2px;
+  color: #3f3f3f;
+`;
+
+const StyledCloseIcon = styled(CloseIcon)`
+  color: #3f3f3f;
+`;
+
+const TextContainer = styled.div`
+  position: absolute;
+  top: 60px;
+  left: 0;
+  padding-top: 16px;
+  padding-bottom: 16px;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  background-color: #EDEDED;
+
+    @media screen and (min-width: 450px) {
+      position: static;
+      top: 0;
+      background-color: transparent;
+    }
+
+    @media screen and (min-width: 650px) {
+    }
+`;
 
 const WhiteText = styled(Typography)`
-  border: 1px solid blue;
-  position: absolute;
-  max-width: 200px;
-  top: 75px;
-  left: calc(50% - 100px);
+  text-transform: uppercase;
+  max-width: 272px;
   text-align: center;
+
   && {
     color: #3F3F3F;
+    font-family: Lato;
+    font-size: 10px;
+    font-weight: 700;
+    line-height: 16px;
+    letter-spacing: 3px;
+
+    @media screen and (min-width: 450px) {
+      color: #fff;
+      max-width: none;
+      line-height: normal;
+      font-weight: 400;
+      font-size: 14px;
+    }
   }
 `
-
 const Wrapper = styled.div`
   position: relative;
   background: #3f3f3f;
   display: flex;
   width: 100%;
   height: 60px;
+  margin-bottom: 80px;
   justify-content: space-between;
   align-items: center;
+  padding-right: 16px;
+  padding-left: 16px;
 `;
-
 
 const createNewTab = (newUrl) => {
   const { focus } = window.open(newUrl, '_blank');
   return focus();
 };
-
 
 const sharing = [
   'Copy link',
@@ -103,7 +147,6 @@ const getUrl = (baseUrl, title) => {
     default: return null;
   };
 };
-
 
 const createObjects = (baseUrl, toggleModal, toggleSharingOpen) => (title) => {
   if (title === 'Copy link') {
@@ -127,7 +170,6 @@ const createObjects = (baseUrl, toggleModal, toggleSharingOpen) => (title) => {
   }
 };
 
-
 const creataShareLink = ({ title, icon, action }) => (
   <SpeedDialAction
     key={title}
@@ -137,7 +179,6 @@ const creataShareLink = ({ title, icon, action }) => (
   />
 )
 
-
 const createButtons = (id, toggleModal, toggleSharingOpen) => {
   const baseUrl = id ? `${window.location.href}?id=${id}` : window.location.href;
   const buttonsInfo = sharing.map(createObjects(baseUrl, toggleModal, toggleSharingOpen))
@@ -145,18 +186,11 @@ const createButtons = (id, toggleModal, toggleSharingOpen) => {
   return buttonsInfo.map(creataShareLink);
 };
 
-
-const PositionedShareIcon = styled(ShareIcon)`
-  position: relative;
-  right: 2px;
-`
-
-
 const createSpeedDial = (sharingOpen, toggleSharingOpen, id, toggleModal) => {
   return (
     <StyledSpeedDial
       ariaLabel="SpeedDial openIcon example"
-      icon={!!sharingOpen ? <CloseIcon /> : <PositionedShareIcon />}
+      icon={!!sharingOpen ? <StyledCloseIcon /> : <PositionedShareIcon />}
       onClick={toggleSharingOpen}
       open={!!sharingOpen}
       direction="down"
@@ -167,14 +201,12 @@ const createSpeedDial = (sharingOpen, toggleSharingOpen, id, toggleModal) => {
   )
 }
 
-
 const buttonMarkup = (disabled, text, reverse, clickEvent) => (
   <WhiteButton variant="contained" {...{ disabled, text }} onClick={clickEvent}>
     {reverse ? <LeftIcon /> : <RightIcon />}
     {!!text && <span>{text}</span>}
   </WhiteButton>
 );
-
 
 const Markup = (props) => {
   const { 
@@ -194,7 +226,9 @@ const Markup = (props) => {
       <Modal open={!!modal} closeModal={() => toggleModal(null)} url={modal} />
       {!!details && buttonMarkup(false, 'Back', true)}
       {createSpeedDial(sharingOpen, toggleSharingOpen, id, toggleModal)}
-      <WhiteText>{`${amount} national department infrastructure projects`}</WhiteText>
+      <TextContainer>
+        <WhiteText>{`${amount} national department infrastructure projects`}</WhiteText>
+      </TextContainer>
       <TwoArrowButtons>
         {buttonMarkup(id <= 0, null, true, previousId)}
         {buttonMarkup(id + 1 >= amount, null, null, nextId)}
@@ -202,6 +236,5 @@ const Markup = (props) => {
     </Wrapper>
   )
 }
-
 
 export default Markup;
