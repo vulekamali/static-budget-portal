@@ -7,8 +7,9 @@ import CardActionArea from '@material-ui/core/CardActionArea';
 import Button from '@material-ui/core/Button';
 import LinearProgress from '@material-ui/core/LinearProgress';
 import NationalMap from '../../components/NationalMap';
-import { calcShorthand, trimValues, calcProgress } from './helpers';
+import { calcShorthand, trimValues } from './helpers';
 import manAtLaptopImg from './man-at-laptop.jpg';
+import Progressbar from '../../components/Progressbar';
 
 
 const callToActions = {
@@ -146,7 +147,7 @@ const createProjectCard = (props, index) => {
               </TopContent>
               <div>
                 <div>{`Stage: ${stage}`}</div>
-                {calcProgress(stage) && <LinearProgress variant="determinate" value={calcProgress(stage)} />}
+                  <Progressbar stage={stage} />
                 <div>Total budget:</div>
                 <div>{`R${trimValues(totalBudget)}`}</div>
               </div>
