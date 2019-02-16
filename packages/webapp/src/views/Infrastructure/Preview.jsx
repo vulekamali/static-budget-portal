@@ -2,7 +2,6 @@ import React from 'react';
 import posed, { PoseGroup } from 'react-pose';
 import { trimValues } from './helpers';
 import styled from 'styled-components';
-import LinearProgress from '@material-ui/core/LinearProgress';
 import NationalMap from '../../components/NationalMap';
 import { Typography } from '@material-ui/core';
 import Button from '@material-ui/core/Button';
@@ -188,19 +187,6 @@ const StyledLink = styled.a`
   text-decoration: none;
 `;
 
-const StyledLinearProgress = styled(LinearProgress)`
-  && {
-    height: 16px;
-    border-radius: 200px;
-    background: #DCDCDC;
-
-    & .barColorPrimary {
-      background: linear-gradient(90deg, rgba(255, 255, 255, 0.8) 0%, #ECA03E 83.33%), #ECA03E;
-      border-right: 2px solid;
-    }
-  }
-`;
-
 const MapWrapper = styled.div`
   display: none;
 
@@ -231,7 +217,9 @@ const createItem = (props) => {
           <SubHeading >{subheading}</SubHeading>
           <Heading>{heading}</Heading>
           <Stage>Project stage: {stage}</Stage>
-            <Progressbar stage={stage} />
+            <ProgressBarContainer>
+              <Progressbar stage={stage} />
+            </ProgressBarContainer>
           <BudgetGroup>
             <BudgetCashflow>
               <CashflowTitle>Total budget:</CashflowTitle>

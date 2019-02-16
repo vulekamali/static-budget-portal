@@ -5,7 +5,6 @@ import Card from '@material-ui/core/Card';
 import CardContent from '@material-ui/core/Card';
 import CardActionArea from '@material-ui/core/CardActionArea';
 import Button from '@material-ui/core/Button';
-import LinearProgress from '@material-ui/core/LinearProgress';
 import NationalMap from '../../components/NationalMap';
 import { calcShorthand, trimValues } from './helpers';
 import manAtLaptopImg from './man-at-laptop.jpg';
