@@ -35,10 +35,29 @@ const CardWrapper = styled.div`
   }
 
   @media screen and (min-width: 1200px) {
-    width: ${100 / 3}%;
+    width: ${100 / 4}%;
   }
 `;
 
+const CardContentWrapper = styled(CardContent)`
+  display: flex;
+`;
+
+const BtnLink = styled.a`
+  text-decoration: none;
+`;
+
+const ButtonBtn = styled(Button)`
+  && {
+    padding: 6px;
+    min-width: 0px;
+    height: 57px;
+  }
+`;
+
+const SpanText = styled.span`
+  display: none;
+`;
 
 const createResource = (props) => {
   const {
@@ -51,16 +70,20 @@ const createResource = (props) => {
   return (
     <CardWrapper key={heading}>
       <Card>
-        <CardContent>
-          <Title>{heading}</Title>
-          <Size>{size} - {format}</Size>
-          <a href={link}>
-            <Button variant="contained">
-              <span>Download</span>
-              <Icon />
-            </Button>
-          </a>
-        </CardContent>
+        <CardContentWrapper>
+          <div>
+              <Title>{heading}</Title>
+               <Size>{size} - {format}</Size>
+            </div>
+          <div>
+            <BtnLink href={link}>
+              <ButtonBtn variant="contained">
+                <SpanText>Download</SpanText>
+                <Icon />
+              </ButtonBtn>
+              </BtnLink>
+          </div>
+        </CardContentWrapper>
       </Card>
     </CardWrapper>
   );
