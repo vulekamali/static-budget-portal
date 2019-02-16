@@ -15,13 +15,21 @@ const Wrapper = styled.div`
 
 const Title = styled(Typography)`
   && {
-    font-size: 15px;
+    width: 173px;
+    height: 39px;
+    left: 289px;
+    top: 768px;
+    font-weight: bold;
+    line-height: 23px;
+    font-size: 16px;
+    color: #000000;
   }
 `;
 
 const Size = styled(Typography)`
   && {
     color: grey;
+    margin: 4.5% 0;
   }
 `;
 
@@ -30,15 +38,66 @@ const CardWrapper = styled.div`
   width: 100%;
   box-sizing: border-box;
 
+  @media screen and (min-width: 550px) {
+    width: ${100 / 2}%;
+  }
+
   @media screen and (min-width: 850px) {
     width: 50%;
   }
 
-  @media screen and (min-width: 1200px) {
-    width: ${100 / 3}%;
+  @media screen and (min-width: 1050px) {
+    width: ${100 / 4}%;
   }
 `;
 
+const CardContentWrapper = styled(CardContent)`
+  display: flex;
+  justify-content: space-between;
+  @media screen and (min-width: 375px) {
+    display: flex;
+    flex-direction: column;
+  }
+`;
+
+const HeadingText = styled.div`
+  &&&& {
+    height: 39px;
+    line-height: 23px;
+    font-size: 16px;
+  }
+`;
+
+const BtnLink = styled.a`
+  text-decoration: none;
+`;
+
+const ButtonBtn = styled(Button)`
+  && {
+    padding: 6px;
+    min-width: 0px;
+    height: 57px;
+  }
+
+  @media screen and (min-width: 375px) {
+    && {
+      display: flex;
+      justify-content: space-between;
+      width: 90%;
+      height: 40px;
+      margin-top: 40px;
+    }
+  }
+`;
+
+const SpanText = styled.span`
+  display: none;
+
+  @media screen and (min-width: 375px) {
+    display: flex;
+    justify-content: flex-start;
+  }
+`;
 
 const createResource = (props) => {
   const {
@@ -51,16 +110,20 @@ const createResource = (props) => {
   return (
     <CardWrapper key={heading}>
       <Card>
-        <CardContent>
-          <Title>{heading}</Title>
-          <Size>{size} - {format}</Size>
-          <a href={link}>
-            <Button variant="contained">
-              <span>Download</span>
-              <Icon />
-            </Button>
-          </a>
-        </CardContent>
+        <CardContentWrapper>
+          <HeadingText>
+              <Title>{heading}</Title>
+               <Size>{size} - {format}</Size>
+          </HeadingText>
+          <div>
+            <BtnLink href={link}>
+              <ButtonBtn variant="contained">
+                <SpanText>Download</SpanText>
+                <Icon />
+              </ButtonBtn>
+              </BtnLink>
+          </div>
+        </CardContentWrapper>
       </Card>
     </CardWrapper>
   );
