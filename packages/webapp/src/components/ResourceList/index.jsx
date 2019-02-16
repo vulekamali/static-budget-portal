@@ -83,7 +83,7 @@ const ButtonBtn = styled(Button)`
     && {
       display: flex;
       justify-content: space-between;
-      width: 90%;
+      min-width: 193px;
       height: 40px;
       margin-top: 40px;
     }

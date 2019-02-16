@@ -14,7 +14,7 @@ const createProvince = (active, size) => name => {
 
 const findProject = (projects, pointId) => {
   const projectKeys = Object.keys(projects);
-  
+
   for (let i = 0; i < projectKeys.length; i++) {
     const projectId = projectKeys[i];
     const project = projects[projectId];
@@ -29,15 +29,15 @@ const findProject = (projects, pointId) => {
 
 const createPoint = (...args) => pointId => {
   const [
-    points, 
+    points,
     projects,
-    hover, 
-    selected, 
-    updateHover, 
+    hover,
+    selected,
+    updateHover,
     updateSelected,
   ] = args;
 
-  const { 
+  const {
     x,
     y,
   } = points[pointId];
@@ -53,7 +53,7 @@ const createPoint = (...args) => pointId => {
   };
 
   return (
-    <Point 
+    <Point
       {...pointProps}
       hover
       selected
@@ -67,11 +67,12 @@ const Wrapper = styled.div`
   position: relative;
   width: 428px;
   height: 375px;
+  border: 3px solid black;
 `;
 
 
 const Markup = (props) => {
-  const { 
+  const {
     active,
     points,
     hover,
@@ -85,11 +86,11 @@ const Markup = (props) => {
   } = props;
 
   const createPointArgs = [
-    points, 
+    points,
     projects,
-    hover, 
-    selected, 
-    updateHover, 
+    hover,
+    selected,
+    updateHover,
     updateSelected,
   ];
 
@@ -97,7 +98,7 @@ const Markup = (props) => {
 
   return (
     <Wrapper>
-      <svg 
+      <svg
         version="1"
         xmlns="http://www.w3.org/2000/svg"
         width={size === 'small' ? 104 : 428}

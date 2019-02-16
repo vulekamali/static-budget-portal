@@ -17,7 +17,7 @@ const projects = [
   },
   {
     id: 2,
-    subheading: '222222',
+    subheading: 'Correctional services',
     heading: 'aassg adfgh',
     stage: 'Construction',
     totalBudget: 124555000111,
@@ -28,7 +28,7 @@ const projects = [
   },
   {
     id: 'aa',
-    subheading: '222222',
+    subheading: 'Correctional services',
     heading: 'aassg adfgh',
     totalBudget: 124555000111,
     projectedBudget: 2342342,
@@ -38,7 +38,7 @@ const projects = [
   },
   {
     id: 3,
-    subheading: '33333',
+    subheading: 'Correctional services',
     heading: 'aassg adfgh',
     stage: 'Complete',
     totalBudget: 124555000111,
@@ -49,7 +49,7 @@ const projects = [
   },
   {
     id: 4,
-    subheading: '444444',
+    subheading: 'Correctional services',
     heading: 'asdgdhs',
     stage: 'Tender',
     totalBudget: 124555000111,

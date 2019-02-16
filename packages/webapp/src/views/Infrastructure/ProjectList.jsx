@@ -43,8 +43,9 @@ const CardHeading = styled.div`
 `;
 
 const CardWrapper = styled.div`
-  width: 25%;
+  width: 100%;
   padding: 10px;
+  border: 2px solid red;
 `;
 
 const Tag = styled.div`
@@ -68,10 +69,11 @@ const MapPosition = styled.div`
 const StyledCardContent = styled(CardContent)`
 && {
   padding: 35px 16px 16px;
-  height: 210px;
+  height: px;
   display: flex;
   flex-direction: column;
   border-radius: 0 0 4px 4px;
+  border: 2px solid blue;
 }
 `
 
@@ -79,12 +81,108 @@ const GreenCardContent = styled(StyledCardContent)`
   && {
     background: #76B649;
     color: white;
+    padding: 10px;
+    margin-bottom: 10px;
   }
 `
 
 const TopContent = styled.div`
   flex-grow: 1;
 `
+
+const CardContainer = styled(Card)`
+   border: 2px solid yellow;
+   min-width: 272px;
+   height: 235px;
+   margin-top: 20px 0;
+`;
+
+const StyledCardActionArea = styled(CardActionArea)`
+  && {
+    border: 2px solid brown;
+    min-width: 272px;
+    min-height: 235px;
+  }
+`;
+
+const SubHeading = styled.div`
+    font-family: Lato;
+    font-style: normal;
+    font-weight: bold;
+    line-height: 16px;
+    font-size: 10px;
+    letter-spacing: 1.5px;
+    text-transform: uppercase;
+    color: #76B649;
+`;
+
+const Heading = styled.div`
+    &&&& {
+      font-family: Lato;
+      font-weight: 700;
+      font-size: 18px;
+      align: left;
+      color: #000000;
+}
+`;
+
+const StageText = styled.div`
+      text-transform: uppercase;
+      margin-bottom: 5px;
+      font-size: 10px;
+      line-height: 16px;
+      font-weight: bold;
+      letter-spacing: 0.5px;
+      color: rgba(0, 0, 0, 0.5);
+`;
+
+const TotalBudgetText = styled.div`
+      text-transform: uppercase;
+      font-size: 16px;
+      line-height: 16px;
+      font-size: 10px;
+      color: #757575;
+`;
+
+  const LinearProgressDiv = styled.div`
+      &&{
+        height: 16px;
+        background-color: red;
+        margin-bottom: 5px;
+      }
+`;
+
+const TotalAmount = styled.div`
+      font-weight: bold;
+      font-size: 16px;
+`;
+
+const TopContentTitle = styled.div`
+      font-size: 14px;
+      margin-top: 2px;
+      line-height: 20px;
+      font-style: regular;
+      font-family: Lato;
+`;
+
+const ButtonLink = styled.a`
+      text-decoration: none;
+`;
+
+const StyledButton = styled(Button)`
+  && {
+       min-width: 239px;
+      height: 35px;
+      // text-transform: lowercase;
+       margin-top: 18px;
+       margin-bottom: 18px;
+    }
+`;
+
+const DownloadInfo = styled.div`
+       font-size: 14px;
+       text-align: center;
+`;
 
 const ctaIndex = Object.keys(callToActions);
 
@@ -100,18 +198,18 @@ const buildCta = index => {
 
   return (
     <CardWrapper>
-      <Card>
+      <CardContainer>
           <CardHeading {...{ image }} />
           <GreenCardContent>
             <TopContent>
-              <div>{title}</div>
+              <TopContentTitle>{title}</TopContentTitle>
             </TopContent>
-            <a href={link}>
-              <Button variant="contained">{button}</Button>
-            </a>
-            <div>{info}</div>
+            <ButtonLink href={link}>
+              <StyledButton variant="contained">{button}</StyledButton>
+            </ButtonLink>
+            <DownloadInfo>{info}</DownloadInfo>
           </GreenCardContent>
-      </Card>
+      </CardContainer>
     </CardWrapper>
   )
 }
@@ -132,7 +230,7 @@ const createProjectCard = (props, index) => {
       {ctaIndex.indexOf(index.toString()) !== -1 && buildCta(index)}
       <CardWrapper>
         <Card>
-          <CardActionArea>
+          <StyledCardActionArea>
             <CardHeading>
               <MapPosition>
                 <NationalMap size="small" active={province} />
@@ -141,17 +239,19 @@ const createProjectCard = (props, index) => {
             </CardHeading>
             <StyledCardContent>
               <TopContent>
-                <div>{subheading}</div>
-                <div>{heading}</div>
+                <SubHeading>{subheading}</SubHeading>
+                <Heading>{heading}</Heading>
               </TopContent>
               <div>
-                <div>{`Stage: ${stage}`}</div>
-                {calcProgress(stage) && <LinearProgress variant="determinate" value={calcProgress(stage)} />}
-                <div>Total budget:</div>
-                <div>{`R${trimValues(totalBudget)}`}</div>
+                <StageText>{`Stage: ${stage}`}</StageText>
+                <LinearProgressDiv>
+                  {calcProgress(stage) && <LinearProgress variant="determinate" value={calcProgress(stage)} />}
+                </LinearProgressDiv>
+                <TotalBudgetText>Total budget:</TotalBudgetText>
+                <TotalAmount>{`R${trimValues(totalBudget)}`}</TotalAmount>
               </div>
             </StyledCardContent>
-          </CardActionArea>
+          </StyledCardActionArea>
         </Card>
       </CardWrapper>
     </Fragment>
