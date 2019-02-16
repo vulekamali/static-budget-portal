@@ -85,9 +85,6 @@ const TextContainer = styled.div`
       top: 0;
       background-color: transparent;
     }
-
-    @media screen and (min-width: 650px) {
-    }
 `;
 
 const WhiteText = styled(Typography)`
@@ -123,6 +120,10 @@ const Wrapper = styled.div`
   align-items: center;
   padding-right: 16px;
   padding-left: 16px;
+
+  @media screen and (min-width: 450px) {
+      margin-bottom: 45px;
+    }
 `;
 
 const createNewTab = (newUrl) => {
