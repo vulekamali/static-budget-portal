@@ -99,7 +99,6 @@ const Point = (props) => {
         onClick={clickWrapper}
         onMouseEnter={mouseEnterWrapper}
         onMouseLeave={mouseLeaveWrapper}
-        onMouse
         r="15"
         opacity="0"
       /> 

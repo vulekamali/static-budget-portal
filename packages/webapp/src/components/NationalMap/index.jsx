@@ -24,14 +24,27 @@ const convertGps = (pointsRawpoints, size) => pointsRawpoints.reduce(
 )
 
 
+const getForcedSelect = (projectId, projects) => {
+  console.log(projects)
+  return projectId ? projects[projectId].points[0] : null;
+}
+
+
 class NationalMap extends Component {
   constructor(props) {
     super(props);
-    const { points: pointsRawpoints = [], size } = this.props;
+    const { 
+      points: pointsRawpoints = [],
+      projects,
+      size,
+      selected: forcedSelect,
+    } = this.props;
+
+    const selected = forcedSelect ? getForcedSelect(forcedSelect, projects) : null;
 
     this.state = {
       hover: null,
-      selected: null,
+      selected, 
     }
 
     this.events = {
