@@ -51,8 +51,11 @@ const calcProps = (active, size) => ({
 })
 
 
-const Province = ({ name, active, size }) => {
-  return createElement(list[name], calcProps(active, size));
+const Province = ({ name, activeProvinces = [], size }) => {
+  return createElement(
+    list[name], 
+    calcProps(!!activeProvinces.find(id => id === name), size)
+  );
 }
 
 

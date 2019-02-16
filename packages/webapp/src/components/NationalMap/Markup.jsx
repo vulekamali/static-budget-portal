@@ -7,24 +7,28 @@ import Tooltip from './Tooltip';
 import { provincesList} from './data.json';
 
 
-const createProvince = (active, size) => name => {
-  return <Province {...{ name, size }} active={active === 'Multiple' || active === name} key={name} />;
+const createProvince = (activeProvinces, size) => name => {
+  return <Province {...{ name, size, activeProvinces }} key={name} />;
 }
 
 
 const findProject = (projects, pointId) => {
+  if (!pointId) {
+    return {};
+  }
+
   const projectKeys = Object.keys(projects);
   
   for (let i = 0; i < projectKeys.length; i++) {
     const projectId = projectKeys[i];
     const project = projects[projectId];
 
-    if (!!project.indexOf(pointId)) {
-      return { projectId, project };
+    if (!!project.points.find(id => id === pointId)) {
+      return project;
     }
   }
 
-  return null;
+  return {};
 }
 
 const createPoint = (...args) => pointId => {
@@ -35,6 +39,7 @@ const createPoint = (...args) => pointId => {
     selected, 
     updateHover, 
     updateSelected,
+    checkOverlap,
   ] = args;
 
   const { 
@@ -49,7 +54,11 @@ const createPoint = (...args) => pointId => {
     y,
     hoveredId: hover,
     selectedId: selected,
+    updateHover, 
+    updateSelected,
     projectData,
+    pointId,
+    checkOverlap,
   };
 
   return (
@@ -70,18 +79,21 @@ const Wrapper = styled.div`
 `;
 
 
+const calcTooltipProps = ({ points: pointRefs = [], title }, points) => {
+  return pointRefs.map(key => ({ ...points[key], title }));
+};
+
+
 const Markup = (props) => {
-  const { 
+  const {
     active,
     points,
     hover,
     selected,
-    pointId,
     size,
     updateSelected,
     updateHover,
-    updatePoint,
-    projects,
+    projects = {},
   } = props;
 
   const createPointArgs = [
@@ -95,19 +107,35 @@ const Markup = (props) => {
 
   const pointKeys = Object.keys(points);
 
+  const defineSvgShadowForHover = (
+    <defs>
+      <filter id="shadow" x="-200%" y="-200%" width="500%" height="500%">
+        <feGaussianBlur in="SourceAlpha" stdDeviation="3" />
+      </filter>
+    </defs>
+  );
+
+
+  const pointId = points[hover];
+  const { id } = pointId || {};
+  const project = findProject(projects, id);
+  const { provinces: activeProvinces } = findProject(projects, selected);
+
+
   return (
     <Wrapper>
-      <svg 
+      <svg
         version="1"
         xmlns="http://www.w3.org/2000/svg"
         width={size === 'small' ? 104 : 428}
         height={size === 'small' ? 89.5 : 375}
         viewBox="0 0 428 375"
       >
-        {provincesList.map(createProvince(active, size))}
+        {defineSvgShadowForHover}
+        {provincesList.map(createProvince(activeProvinces, size))}
         {pointKeys.map(createPoint(...createPointArgs))}
       </svg>
-      {/* <Tooltip x={100} y={100} text="Hello!" /> */}
+      <Tooltip items={calcTooltipProps(project, points)} />
     </Wrapper>
   )
 }

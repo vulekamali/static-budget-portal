@@ -9,5 +9,19 @@
     "Northern Cape",
     "Western Cape",
     "North West Province"
-  ]
+  ],
+  "countryGpsBounds": {
+    "y": [-35, -22],
+    "x": [16.5, 33]
+  },
+  "vectorMapSizes": {
+    "small": {
+      "x": 104,
+      "y": 89.5
+    },
+    "initial": {
+      "x": 428,
+      "y": 375
+    }
+  }
 }
