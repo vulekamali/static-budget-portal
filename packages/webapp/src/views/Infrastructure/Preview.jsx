@@ -1,6 +1,6 @@
 import React from 'react';
 import posed, { PoseGroup } from 'react-pose';
-import { calcProgress, trimValues } from './helpers';
+import { trimValues } from './helpers';
 import styled from 'styled-components';
 import LinearProgress from '@material-ui/core/LinearProgress';
 import NationalMap from '../../components/NationalMap';
@@ -8,6 +8,7 @@ import { Typography } from '@material-ui/core';
 import Button from '@material-ui/core/Button';
 import ForwardArrow from '@material-ui/icons/ArrowForward';
 import { darken } from 'polished';
+import Progressbar from '../../components/Progressbar';
 
 
 const AnimationWrapper = posed.div({
@@ -230,7 +231,7 @@ const createItem = (props) => {
           <SubHeading >{subheading}</SubHeading>
           <Heading>{heading}</Heading>
           <Stage>Project stage: {stage}</Stage>
-          {calcProgress(stage) && <ProgressBarContainer><StyledLinearProgress classes={{barColorPrimary: 'barColorPrimary', root: 'root'}} variant="determinate" value={calcProgress(stage)} /></ProgressBarContainer>}
+            <Progressbar stage={stage} />
           <BudgetGroup>
             <BudgetCashflow>
               <CashflowTitle>Total budget:</CashflowTitle>
