@@ -25,7 +25,8 @@
   "homepage": "https://github.com/OpenUpSA/static-budget-portal#readme",
   "scripts": {
     "build": "webpack --display errors-only --progress -p",
-    "build:dev": "webpack --display errors-only --progress"
+    "build:dev": "webpack --display errors-only --progress",
+    "test": "mocha"
   },
   "keywords": [],
   "devDependencies": {
@@ -40,6 +41,7 @@
     "babel-preset-react": "^6.24.1",
     "babel-preset-stage-0": "^6.24.1",
     "browserslist": "^2.4.0",
+    "chai": "^4.2.0",
     "classlist-polyfill": "^1.2.0",
     "clean-webpack-plugin": "^0.1.17",
     "connect": "^3.6.6",
@@ -66,6 +68,7 @@
     "marked": "^0.3.16",
     "marked-extras": "^0.2.4",
     "mkdirp": "^0.5.1",
+    "mocha": "^5.2.0",
     "node-sass": "^4.10.0",
     "opn": "^5.4.0",
     "postcss-loader": "^2.1.6",
