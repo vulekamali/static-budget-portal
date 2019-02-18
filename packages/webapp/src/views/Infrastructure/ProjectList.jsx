@@ -150,7 +150,7 @@ const StyledButton = styled(Button)`
         min-width: 239px;
         justify-content: space-between;
         height: 35px;
-        text-transform: lowercase;
+        text-transform: none;
         margin-top: 18px;
         margin-bottom: 18px;
       }
@@ -183,6 +183,7 @@ const MapPosition = styled.div`
 
 const Tag = styled.div`
   color: white;
+  background-color: #000000;
   width: ${({ province }) => (province === 'Multiple' ? '80px' : '40px')};
   height: 25px;
   border-radius: 5px;

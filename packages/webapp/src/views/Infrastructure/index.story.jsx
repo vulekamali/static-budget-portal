@@ -108,8 +108,8 @@ const projects = [
   },
   {
     id: 2,
-    subheading: 'Correctional services',
-    heading: 'aassg adfgh',
+    subheading: 'Water & Sanitation',
+    heading: 'Vaal Gamagara bulk water supply',
     stage: 'Construction',
     points: ['Border Crossing'],
     provinces: ['Limpopo'],
@@ -126,8 +126,8 @@ const projects = [
   },
   {
     id: 'aa',
-    subheading: 'Correctional services',
-    heading: 'aassg adfgh',
+    subheading: 'Health',
+    heading: 'Elim Hospital',
     totalBudget: 124555000111,
     stage: 'Construction',
     projectedBudget: 2342342,
