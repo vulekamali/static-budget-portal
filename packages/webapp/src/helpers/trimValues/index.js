@@ -1,20 +1,4 @@
 
-const calcShorthand = (name) => {
-  switch (name) {
-    case 'Eastern Cape': return 'EC';
-    case 'Freestate': return 'FS';
-    case 'Gauteng': return 'GP';
-    case 'Kwazulu Natal': return 'KZN';
-    case 'Limpopo': return 'LIM';
-    case 'Mpumalanga': return 'MP';
-    case 'Northern Cape': return 'NC';
-    case 'North West Province': return 'NW';
-    case 'Western Cape': return 'WC';
-    default: return null;
-  }
-}
-
-
 const trimValues = (rawValue, abbreviated) => {
   const value = parseInt(rawValue, 10);
   const million = abbreviated ? 'm' : 'million';
@@ -44,12 +28,5 @@ const trimValues = (rawValue, abbreviated) => {
   return null;
 }
 
-export {
-  calcShorthand,
-  trimValues,
-}
 
-export default {
-  calcShorthand,
-  trimValues,
-}
+export default trimValues;

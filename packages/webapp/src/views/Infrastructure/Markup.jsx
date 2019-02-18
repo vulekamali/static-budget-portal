@@ -3,6 +3,7 @@ import CssBaseline from '@material-ui/core/CssBaseline';
 import TopBar from './TopBar';
 import Preview from './Preview';
 import ProjectList from './ProjectList';
+// import InfraChart from '../../components/InfraChart';
 
 
 const Markup = (props) => {
@@ -30,8 +31,10 @@ const Markup = (props) => {
     <Fragment>
       <CssBaseline />
       <TopBar {...topBarProps} />
-      <Preview {...projects[id]} details={details} />
-      <ProjectList {...{ projects }} />
+
+      <Preview {...projects[id]} details={details}  />
+      {!details && <ProjectList {...{ projects }} />}
+      {/* {sdetails && <InfraChart />} */}
     </Fragment>
   );
 };

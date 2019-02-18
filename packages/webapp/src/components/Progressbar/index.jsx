@@ -3,7 +3,7 @@ import styled from 'styled-components';
 import LinearProgress from '@material-ui/core/LinearProgress';
 
 const calcProgress = (name) => {
-  const increment = 100 / 9; 
+  const increment = 100 / 9;
 
   switch (name) {
     case 'Site identification': return increment * 1;

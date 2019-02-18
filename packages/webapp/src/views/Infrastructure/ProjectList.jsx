@@ -6,9 +6,27 @@ import CardContent from '@material-ui/core/Card';
 import CardActionArea from '@material-ui/core/CardActionArea';
 import Button from '@material-ui/core/Button';
 import NationalMap from '../../components/NationalMap';
-import { calcShorthand, trimValues } from './helpers';
+import trimValues from '../../helpers/trimValues';
 import manAtLaptopImg from './man-at-laptop.jpg';
 import Progressbar from '../../components/Progressbar';
+import Icon from '@material-ui/icons/ArrowDownward';
+
+
+
+const calcShorthand = (name) => {
+  switch (name) {
+    case 'Eastern Cape': return 'EC';
+    case 'Freestate': return 'FS';
+    case 'Gauteng': return 'GP';
+    case 'Kwazulu Natal': return 'KZN';
+    case 'Limpopo': return 'LIM';
+    case 'Mpumalanga': return 'MP';
+    case 'Northern Cape': return 'NC';
+    case 'North West Province': return 'NW';
+    case 'Western Cape': return 'WC';
+    default: return null;
+  }
+}
 
 
 const callToActions = {
@@ -45,11 +63,9 @@ const CardHeading = styled.div`
 const CardWrapper = styled.div`
   width: 100%;
   padding: 10px;
-  border: 2px solid red;
 `;
 
 const Tag = styled.div`
-  background: black;
   color: white;
   width: ${({ province }) => (province === 'Multiple' ? '80px' : '40px')};
   height: 25px;
@@ -73,7 +89,6 @@ const StyledCardContent = styled(CardContent)`
   display: flex;
   flex-direction: column;
   border-radius: 0 0 4px 4px;
-  border: 2px solid blue;
 }
 `
 
@@ -91,7 +106,6 @@ const TopContent = styled.div`
 `
 
 const CardContainer = styled(Card)`
-   border: 2px solid yellow;
    min-width: 272px;
    height: 235px;
    margin-top: 20px 0;
@@ -99,7 +113,6 @@ const CardContainer = styled(Card)`
 
 const StyledCardActionArea = styled(CardActionArea)`
   && {
-    border: 2px solid brown;
     min-width: 272px;
     min-height: 235px;
   }
@@ -143,15 +156,6 @@ const TotalBudgetText = styled.div`
       font-size: 10px;
       color: #757575;
 `;
-
-  const LinearProgressDiv = styled.div`
-      &&{
-        height: 16px;
-        background-color: red;
-        margin-bottom: 5px;
-      }
-`;
-
 const TotalAmount = styled.div`
       font-weight: bold;
       font-size: 16px;
@@ -170,12 +174,28 @@ const ButtonLink = styled.a`
 `;
 
 const StyledButton = styled(Button)`
-  && {
-       min-width: 239px;
-      height: 35px;
-      // text-transform: lowercase;
-       margin-top: 18px;
-       margin-bottom: 18px;
+      && {
+        display: flex;
+        min-width: 239px;
+        justify-content: space-between;
+        height: 35px;
+        text-transform: lowercase;
+        margin-top: 18px;
+        margin-bottom: 18px;
+      }
+
+      && {
+        display: flex;
+        justify-content: space-between;
+      }
+
+  @media screen and (min-width: 375px) {
+    && {
+      display: flex;
+      justify-content: space-between;
+      min-width: 193px;
+      height: 40px;
+      margin-top: 40px;
     }
 `;
 
@@ -205,7 +225,9 @@ const buildCta = index => {
               <TopContentTitle>{title}</TopContentTitle>
             </TopContent>
             <ButtonLink href={link}>
-              <StyledButton variant="contained">{button}</StyledButton>
+            <StyledButton variant="contained">{button}
+             <Icon />
+            </StyledButton>
             </ButtonLink>
             <DownloadInfo>{info}</DownloadInfo>
           </GreenCardContent>
@@ -213,7 +235,6 @@ const buildCta = index => {
     </CardWrapper>
   )
 }
-
 
 const createProjectCard = (props, index) => {
   const {

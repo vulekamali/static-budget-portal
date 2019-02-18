@@ -7,6 +7,12 @@ import Tooltip from './Tooltip';
 import { provincesList} from './data.json';
 
 
+const getById = (id, array = []) => {
+  console.log(id, array)
+  return array.find(({ id: itemId }) => itemId === id);
+}
+
+
 const createProvince = (activeProvinces, size) => name => {
   return <Province {...{ name, size, activeProvinces }} key={name} />;
 }
@@ -45,7 +51,7 @@ const createPoint = (...args) => pointId => {
   const {
     x,
     y,
-  } = points[pointId];
+  } = getById(pointId, points);
 
   const projectData = findProject(projects, pointId);
 
@@ -54,7 +60,7 @@ const createPoint = (...args) => pointId => {
     y,
     hoveredId: hover,
     selectedId: selected,
-    updateHover, 
+    updateHover,
     updateSelected,
     projectData,
     pointId,
@@ -76,25 +82,23 @@ const Wrapper = styled.div`
   position: relative;
   width: 428px;
   height: 375px;
-  border: 3px solid black;
 `;
 
 
 const calcTooltipProps = ({ points: pointRefs = [], title }, points) => {
-  return pointRefs.map(key => ({ ...points[key], title }));
+  return pointRefs.map(key => ({ ...getById(key, points), title }));
 };
 
 
 const Markup = (props) => {
   const {
-    active,
-    points,
+    points = [],
     hover,
     selected,
     size,
     updateSelected,
     updateHover,
-    projects = {},
+    projects = [],
   } = props;
 
   const createPointArgs = [
@@ -106,7 +110,6 @@ const Markup = (props) => {
     updateSelected,
   ];
 
-  const pointKeys = Object.keys(points);
 
   const defineSvgShadowForHover = (
     <defs>
@@ -117,7 +120,7 @@ const Markup = (props) => {
   );
 
 
-  const pointId = points[hover];
+  const pointId = getById(hover, points);
   const { id } = pointId || {};
   const project = findProject(projects, id);
   const { provinces: activeProvinces } = findProject(projects, selected);
@@ -134,7 +137,7 @@ const Markup = (props) => {
       >
         {defineSvgShadowForHover}
         {provincesList.map(createProvince(activeProvinces, size))}
-        {pointKeys.map(createPoint(...createPointArgs))}
+        {points.map(createPoint(...createPointArgs))}
       </svg>
       <Tooltip items={calcTooltipProps(project, points)} />
     </Wrapper>
@@ -143,13 +146,3 @@ const Markup = (props) => {
 
 
 export default Markup;
-
-
-Markup.propTypes = {
-  active: t.bool,
-}
-
-
-Markup.defaultProps = {
-  active: null,
-}

@@ -1,6 +1,6 @@
 import React from 'react';
 import posed, { PoseGroup } from 'react-pose';
-import { trimValues } from './helpers';
+import trimValues from '../../helpers/trimValues';
 import styled from 'styled-components';
 import NationalMap from '../../components/NationalMap';
 import { Typography } from '@material-ui/core';
@@ -9,20 +9,25 @@ import ForwardArrow from '@material-ui/icons/ArrowForward';
 import { darken } from 'polished';
 import Progressbar from '../../components/Progressbar';
 
+
+
 const AnimationWrapper = posed.div({
   enter: {
     opacity: 1,
-    x: 0,
+
   },
   exit: {
     opacity: 0,
-    x: '100vw',
   }
 });
 
 const Wrapper = styled.div`
-  @media screen and (min-width: 450px) {
-    display: flex;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+
+  @media screen and (min-width: 650px) {
+    justify-content: space-between;
   }
 `;
 
@@ -53,7 +58,7 @@ const DataGroup = styled.div`
 
 const SubHeading = styled.div`
   color: #79B443;
-  font-weight: 700;
+  font-weight: 900;
   line-height: 16px;
   font-size: 10px;
   text-align: center;
@@ -154,7 +159,6 @@ const Text = styled(Typography)`
     line-height: 30px;
     font-size: 14px;
     text-align: center;
-    padding-bottom: 24px;
 
     @media screen and (min-width: 450px) {
       line-height: 23px;
@@ -179,6 +183,7 @@ const StyledButton = styled(Button)`
     align-items: center;
     justify-content: space-around;
     text-transform: none;
+    margin-top: 24px;
 
     &:hover {
       background: ${darken(0.1, '#79B443')};
@@ -195,25 +200,33 @@ const StyledLink = styled.a`
 `;
 
 const SideWrapper = styled.div`
+  max-width: 270px;
+  margin: 0 auto;
   font-family: Lato; 
   display: flex;
   flex-direction: column;
   align-items: center;
-  border: 1px solid red;
-`;
+  padding-bottom: 48px;
+  border-bottom: 1px solid #000000;
+
+  @media screen and (min-width: 650px) {
+     margin-left: 
+  }
+`; 
 
 const SideSection = styled.div`
-   ${'' /*margin bottom goes here  */}
+   padding-bottom: 25px;
 `;
 
 const SideTitle = styled.div`
-   font-weight: 700;
+   font-weight: 900;
    font-size: 10px;
    line-height: 16px;
    text-align: center;
    letter-spacing: 0.5px;
    text-transform: uppercase;
    color: rgba(0, 0, 0, 0.5);
+   padding-bottom: 8px;
 `;
 
 const SideType = styled.div`
@@ -225,6 +238,7 @@ const SideType = styled.div`
 
 const SideLink = styled.a`
   text-decoration: none;
+  margin-bottom: 8px;
 `;
 
 const SideButton = styled(Button)`
@@ -236,19 +250,22 @@ const SideButton = styled(Button)`
     width: 270px;
     height: 32px;
     margin: 0 auto;
-    ${'' /* padding: 10px 25px; */}
     font-family: Lato;
     font-size: 12px;
+    line-height: 17px;
     letter-spacing: 0.1px;
     font-weight: normal;
-    box-shadow: none;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-right: 16px;
+    padding-left: 16px;
 
     &:hover {
       background: ${darken(0.1, 'rgba(0, 0, 0, 0.1)')};
     }
   }
 `;
-
 
 const createSideRender = (props) => {
   const {
@@ -277,9 +294,22 @@ const createSideRender = (props) => {
           <ForwardArrow />
         </SideButton>
       </SideLink>
+      <SideLink href='#'>
+        <SideButton>
+          <span>View project on Google Maps</span>
+          <ForwardArrow />
+        </SideButton>
+      </SideLink>
     </SideWrapper>
   );
 }
+const parseMapProjects = data => data.reduce(
+  (result, object) => ({
+    ...result,
+    [object.id]: object,
+  }),
+  {},
+);
 
 const createItem = (props) => {
   const {
@@ -291,16 +321,12 @@ const createItem = (props) => {
     description,
     id,
     link,
-    sideInfo,
-    details,
+    details
   } = props;
 
   return (
     <AnimationWrapper key={id}>
-      <Wrapper>
-        <MapWrapper>
-          <NationalMap active="Eastern Cape" />
-        </MapWrapper>
+      <React.Fragment>
         <DataGroup>
           <SubHeading >{subheading}</SubHeading>
           <Heading>{heading}</Heading>
@@ -319,24 +345,38 @@ const createItem = (props) => {
             </BudgetCashflow>
           </BudgetGroup>
           <Text>{description}</Text>
+          {!details && (
             <StyledLink href={link}>
               <StyledButton>
                 <span>View in more detail</span>
                 <ForwardArrow />
               </StyledButton>
             </StyledLink>
+          )}
         </DataGroup>
-        {details && sideInfo.map(createSideRender)}
-      </Wrapper>
+      </React.Fragment>
     </AnimationWrapper>
-  )
+  );
 }
 
+
+
 const Preview = (props) => {
+  const {
+    sideInfo,
+    details
+  } = props;
+
   return (
-    <PoseGroup>
-      {createItem(props)}
-    </PoseGroup>
+    <Wrapper>
+      <MapWrapper>
+        <NationalMap  />
+      </MapWrapper>
+      <PoseGroup>
+        {createItem(props)}
+      </PoseGroup>
+      {details && sideInfo.map(createSideRender)}
+    </Wrapper>
   );
 }
 

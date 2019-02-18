@@ -3,29 +3,23 @@ import Markup from './Markup';
 import convertGpsToVectorPoint from './convertGpsToVectorPoint';
 
 
-const convertGps = (pointsRawpoints, size) => pointsRawpoints.reduce(
-  (result, object) => {
-    const {
+const convertGps = (pointsRawpoints, size) => pointsRawpoints.map((object) => {
+  const {
+    x,
+    y,
+    id,
+  } = convertGpsToVectorPoint(object, size);
+
+  return {
       x,
       y,
       id,
-    } = convertGpsToVectorPoint(object, size);
-
-    return {
-      ...result,
-      [id]: {
-        x,
-        y,
-        id,
-      }
     }
-  },
-  {},
+  }
 )
 
 
 const getForcedSelect = (projectId, projects) => {
-  console.log(projects)
   return projectId ? projects[projectId].points[0] : null;
 }
 
@@ -50,7 +44,6 @@ class NationalMap extends Component {
     this.events = {
       updateHover: this.updateHover.bind(this),
       updateSelected: this.updateSelected.bind(this),
-      checkOverlap: this.checkOverlap.bind(this),
     }
 
     this.values = {
@@ -66,10 +59,6 @@ class NationalMap extends Component {
     this.setState({ selected });
   }
 
-  checkOverlap(ref) {
-    console.log(this.values.mapRef, ref)
-  }
-
   render() {
     const { props, state, values, events } = this;
 
@@ -80,7 +69,6 @@ class NationalMap extends Component {
       selected: state.selected,
       updateSelected: events.updateSelected,
       updateHover: events.updateHover,
-      checkOverlap: events.checkOverlap,
     };
 
     return <Markup {...passedProps} />
