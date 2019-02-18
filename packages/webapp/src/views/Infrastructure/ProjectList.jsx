@@ -100,18 +100,17 @@ const CardHeading = styled.div`
 
 const StyledCardContent = styled(CardContent)`
   && {
-      padding: 30px 15px 15px;
-      display: flex;
-      flex-direction: column;
-      border-radius: 0 0 4px 4px;
-      height: 171px;
-      
-      @media screen and (min-width: 1028px) {
-        height: 201px;
-        justify-content: space-between;
-      }
-        
-    }
+    padding: 30px 15px 15px;
+    display: flex;
+    flex-direction: column;
+    border-radius: 0 0 4px 4px;
+    height: 171px;
+    
+    @media screen and (min-width: 1028px) {
+      height: 201px;
+      justify-content: space-between;
+    }   
+  }
 `;
 
 const GreenCardContent = styled(StyledCardContent)`
@@ -123,7 +122,6 @@ const GreenCardContent = styled(StyledCardContent)`
 `;
 
 const TopContent = styled.div`
-  // flex-grow: 1;
 `;
 
 const TopContentTitle = styled.div`
@@ -329,7 +327,7 @@ const List = styled.div`
   display: flex;
   flex-flow: row wrap;
   justify-content: center;
-  @media screen and (min-width: 1028px) {
+  @media screen and (min-width: 912px) {
     justify-content: flex-start;
   }
 `;
