@@ -37,7 +37,7 @@ const calcStrokeColor = (active, size) => {
   }
 
   if (size === 'small') {
-    return 'black';
+    return 'rgb(150, 150, 150)';
   }
 
   return '#BEBEBE';

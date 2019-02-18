@@ -3,26 +3,26 @@ import { storiesOf } from '@storybook/react';
 import NationalMap from './index';
 
 
-const projects = {
-  project1: {
+const projects = [
+  {
     id: 'project1',
-    title: 'Project 1',
+    title: 'Project 1 sdga fadg as...',
     points: ['Cape Town', 'Pretoria'],
     provinces: ['Western Cape', 'Gauteng']
   },
-  project2: {
+  {
     id: 'project2',
     title: 'Project 2',
     points: ['Port Elizabeth'],
     provinces: ['Eastern Cape'],
   },
-  project3: {
+  {
     id: 'project3',
     title: 'Project 3',
     points: ['Border Crossing'],
     provinces: ['Limpopo'],
   },
-}
+];
 
 const points = [
   {
