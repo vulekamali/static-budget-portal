@@ -243,19 +243,10 @@ const createProjectCard = (props, index) => {
                 <Heading>{heading}</Heading>
               </TopContent>
               <div>
-<<<<<<< HEAD
                 <StageText>{`Stage: ${stage}`}</StageText>
-                <LinearProgressDiv>
-                  {calcProgress(stage) && <LinearProgress variant="determinate" value={calcProgress(stage)} />}
-                </LinearProgressDiv>
+                <Progressbar stage={stage} />
                 <TotalBudgetText>Total budget:</TotalBudgetText>
                 <TotalAmount>{`R${trimValues(totalBudget)}`}</TotalAmount>
-=======
-                <div>{`Stage: ${stage}`}</div>
-                  <Progressbar stage={stage} />
-                <div>Total budget:</div>
-                <div>{`R${trimValues(totalBudget)}`}</div>
->>>>>>> c69c3dde746c5fa6d4536958d95f9b6dcd7ff0d7
               </div>
             </StyledCardContent>
           </StyledCardActionArea>
