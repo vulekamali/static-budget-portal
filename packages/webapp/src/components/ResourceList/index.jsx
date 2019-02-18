@@ -18,10 +18,10 @@ const Title = styled(Typography)`
     width: 173px;
     height: 39px;
     left: 289px;
+    font-family: Lato;
     top: 768px;
-    font-weight: bold;
     line-height: 23px;
-    font-size: 16px;
+    font-size: 14px;
     color: #000000;
   }
 `;
@@ -30,6 +30,8 @@ const Size = styled(Typography)`
   && {
     color: grey;
     margin: 4.5% 0;
+    font-size: 10px;
+    letter-spacing: 0.5px;
   }
 `;
 
