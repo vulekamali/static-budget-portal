@@ -25,9 +25,16 @@ const Wrapper = styled.div`
   display: flex;
   flex-direction: column;
   justify-content: center;
+  padding-top: 16px;
 
   @media screen and (min-width: 650px) {
+    flex-direction: row;
     justify-content: space-between;
+    border-bottom: 1px solid #000;
+    max-width: 976px;
+    margin: 0 auto;
+    position: relative;
+    padding-top: 64px;
   }
 `;
 
@@ -43,7 +50,6 @@ const DataGroup = styled.div`
   max-width: 272px;
   margin: 0 auto;
   font-family: Lato;
-  padding-top: 16px;
   padding-bottom: 16px;
 
   @media screen and (min-width: 450px) {
@@ -207,10 +213,13 @@ const SideWrapper = styled.div`
   flex-direction: column;
   align-items: center;
   padding-bottom: 48px;
-  border-bottom: 1px solid #000000;
+  border-bottom: 1px solid #000;
+  padding-left: 24px;
 
   @media screen and (min-width: 650px) {
-     margin-left: 
+     border-bottom: none;
+     margin: 0;
+     align-items: flex-start;
   }
 `; 
 
@@ -227,6 +236,10 @@ const SideTitle = styled.div`
    text-transform: uppercase;
    color: rgba(0, 0, 0, 0.5);
    padding-bottom: 8px;
+
+  @media screen and (min-width: 650px) {
+    text-align: left;
+  }
 `;
 
 const SideType = styled.div`
@@ -234,6 +247,13 @@ const SideType = styled.div`
    font-size: 14px;
    text-align: center;
    text-transform: Capitalize;
+   color: #000;
+
+  @media screen and (min-width: 650px) {
+    text-align: left;
+    line-height: 16px;
+    font-size: 16px;
+  }
 `;
 
 const SideLink = styled.a`
@@ -246,15 +266,14 @@ const SideButton = styled(Button)`
     background: rgba(0, 0, 0, 0.1);
     border-radius: 5px;
     text-transform: none;
-    min-width: 190px;
     width: 270px;
-    height: 32px;
     margin: 0 auto;
     font-family: Lato;
     font-size: 12px;
     line-height: 17px;
     letter-spacing: 0.1px;
     font-weight: normal;
+    color: #000;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -263,6 +282,42 @@ const SideButton = styled(Button)`
 
     &:hover {
       background: ${darken(0.1, 'rgba(0, 0, 0, 0.1)')};
+    }
+
+    @media screen and (min-width: 650px) {
+      width: 190px;
+    }
+  }
+`;
+
+const SideButtonToMaps = styled(Button)`
+  && {
+    background: rgba(0, 0, 0, 0.1);
+    border-radius: 5px;
+    text-transform: none;
+    width: 270px;
+    margin: 0 auto;
+    font-family: Lato;
+    font-size: 12px;
+    line-height: 17px;
+    letter-spacing: 0.1px;
+    font-weight: normal;
+    color: #000;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-right: 16px;
+    padding-left: 16px;
+
+    &:hover {
+      background: ${darken(0.1, 'rgba(0, 0, 0, 0.1)')};
+    }
+
+    @media screen and (min-width: 650px) {
+      width: 222px;
+      position: absolute;
+      top: 290px;
+      left: 0;
     }
   }
 `;
@@ -295,10 +350,10 @@ const createSideRender = (props) => {
         </SideButton>
       </SideLink>
       <SideLink href='#'>
-        <SideButton>
+        <SideButtonToMaps>
           <span>View project on Google Maps</span>
           <ForwardArrow />
-        </SideButton>
+        </SideButtonToMaps>
       </SideLink>
     </SideWrapper>
   );
@@ -370,7 +425,7 @@ const Preview = (props) => {
   return (
     <Wrapper>
       <MapWrapper>
-        <NationalMap  />
+        <NationalMap size="medium" />
       </MapWrapper>
       <PoseGroup>
         {createItem(props)}

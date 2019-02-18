@@ -123,6 +123,8 @@ const Wrapper = styled.div`
 
   @media screen and (min-width: 450px) {
       margin-bottom: 45px;
+      max-width: 976px;
+      margin: 0 auto;
     }
 `;
 
