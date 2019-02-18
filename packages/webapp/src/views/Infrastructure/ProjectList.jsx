@@ -104,7 +104,7 @@ const CardHeading = styled.div`
   background-size: cover;
   background-position: center center;
   @media screen and (min-width: 1028px) {
-    height: 84px;
+    height: 85px;
   }
 `;
 
@@ -141,7 +141,7 @@ const TopContentTitle = styled.div`
     line-height: 20px;
     font-weight: normal;
     font-family: Lato;
-    @media screen and (min-width: 600px) {
+    @media screen and (min-width: 1028px) {
       font-size: 16px;
     }
 `;
@@ -164,7 +164,7 @@ const StyledButton = styled(Button)`
     box-shadow: none;
   }
 
-  @media screen and (min-width: 600px) {
+  @media screen and (min-width: 1028px) {
     && {
       display: flex;
       justify-content: space-between;
@@ -242,6 +242,8 @@ const TotalAmount = styled.div`
       font-size: 16px;
 `;
 
+const windowSize = window.innerWidth > 1028 ? 'medium' : 'small';
+
 const ctaIndex = Object.keys(callToActions);
 
 const buildCta = index => {
@@ -255,6 +257,7 @@ const buildCta = index => {
 
   return (
     <CardWrapper>
+      {console.log(windowSize)}
       <CardContainer>
           <CardHeading {...{ image }} />
           <GreenCardContent>
@@ -292,7 +295,7 @@ const createProjectCard = (props, index) => {
           <StyledCardActionArea>
             <CardHeading>
               <MapPosition>
-                <NationalMap size="small" active={province} />
+                <NationalMap size={windowSize} active={province} />
               </MapPosition>
               <Tag {...{ province }}>{province === 'Multiple' ? 'MULTIPLE' : calcShorthand(province)}</Tag>
             </CardHeading>
@@ -331,6 +334,9 @@ const List = styled.div`
   display: flex;
   flex-flow: row wrap;
   justify-content: center;
+  @media screen and (min-width: 1028px) {
+    justify-content: flex-start;
+  }
 `;
 
 const ProjectList = ({ projects }) => {
