@@ -125,7 +125,7 @@ const ImgContainer = styled.div`
 
   @media screen and (min-width: 650px) {
       flex-direction: row;
-      flex-basis: 310px;
+      width: 43%;
       height: 100%;
       order: 1;
     }
@@ -136,11 +136,13 @@ const CallToActionDescription = styled.div`
   flex-direction: column;
   justify-content: space-between;
   padding: 20px;
-  flex-grow: 1;
   font-family: Lato;
+  flex-grow: 1;
 
   @media screen and (min-width: 650px) {
     justify-content: space-around;
+    width: 57%;
+    flex-grow: 0;
     }
 `;
 
@@ -190,7 +192,7 @@ const BudgetHeading = styled.div`
 
   @media screen and (min-width: 650px) {
       font-size: 18px;
-      max-width: 370px;
+      max-width: 195px;
     }
 `;
 

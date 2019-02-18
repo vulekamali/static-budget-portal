@@ -46,6 +46,7 @@ const WhiteButton = styled(Button)`
     margin-left: 4px;
     ${({ text }) => (!!text ? 'padding-top: 4px ' : '')};
     ${({ text }) => (!!text ? 'padding-right: 25px' : '')};
+    padding: 0;
     
     &:hover {
       background: ${darken(0.1, 'white')};

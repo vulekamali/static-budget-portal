@@ -181,16 +181,17 @@ const StyledButton = styled(Button)`
     margin: 0 auto;
     min-width: 212px;
     border-radius: 30px;
-    padding: 16px 20px;
     color: #fff;
     background-color: #79B443;
     font-size: 16px;
     font-weight: 700;
     display: flex;
     align-items: center;
-    justify-content: space-around;
+    justify-content: space-between;
     text-transform: none;
     margin-top: 24px;
+    padding-right: 20px;
+    padding-left: 20px;
 
     &:hover {
       background: ${darken(0.1, '#79B443')};
