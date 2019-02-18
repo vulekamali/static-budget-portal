@@ -54,7 +54,7 @@ const createPoint = (...args) => pointId => {
     y,
     hoveredId: hover,
     selectedId: selected,
-    updateHover, 
+    updateHover,
     updateSelected,
     projectData,
     pointId,
@@ -76,7 +76,6 @@ const Wrapper = styled.div`
   position: relative;
   width: 428px;
   height: 375px;
-  border: 3px solid black;
 `;
 
 
