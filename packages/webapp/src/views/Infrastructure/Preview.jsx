@@ -177,6 +177,7 @@ const Text = styled(Typography)`
 
 const StyledButton = styled(Button)`
   && {
+    font-family: Lato;
     margin: 0 auto;
     min-width: 212px;
     border-radius: 30px;
@@ -263,6 +264,7 @@ const SideLink = styled.a`
 
 const SideButton = styled(Button)`
   && {
+    font-family: Lato;
     background: rgba(0, 0, 0, 0.1);
     border-radius: 5px;
     text-transform: none;
@@ -281,7 +283,7 @@ const SideButton = styled(Button)`
     padding-left: 16px;
 
     &:hover {
-      background: ${darken(0.1, 'rgba(0, 0, 0, 0.1)')};
+      background: rgba(0, 0, 0, 0.2);
     }
 
     @media screen and (min-width: 650px) {
@@ -292,6 +294,7 @@ const SideButton = styled(Button)`
 
 const SideButtonToMaps = styled(Button)`
   && {
+    font-family: Lato;
     background: rgba(0, 0, 0, 0.1);
     border-radius: 5px;
     text-transform: none;
@@ -310,7 +313,7 @@ const SideButtonToMaps = styled(Button)`
     padding-left: 16px;
 
     &:hover {
-      background: ${darken(0.1, 'rgba(0, 0, 0, 0.1)')};
+      background: rgba(0, 0, 0, 0.2);
     }
 
     @media screen and (min-width: 650px) {

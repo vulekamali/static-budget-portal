@@ -151,6 +151,7 @@ const CallToActionButton = styled(Button)`
     background-color: #79B443;
     font-size: 16px;
     font-weight: 700;
+    font-family: Lato;
     display: flex;
     align-items: center;
     justify-content: space-around;
