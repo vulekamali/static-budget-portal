@@ -10,68 +10,47 @@ import Icon from '@material-ui/icons/ArrowDownward';
 
 
 const Wrapper = styled.div`
-  display: flex;
+  ${'' /* display: flex;
   flex-direction: column;
   width: 100%;
   justify-content: center;
-  border: 2px solid red;
+  ${'' /* border: 2px solid red; */}
 
-  @media screen and (min-width: 768px) {
+  ${'' /* @media screen and (min-width: 768px) {
     flex-direction: row;
     flex-wrap: wrap;
     justify-content: flex-start;
-    border: 2px solid yellow;
+    ${'' /* border: 2px solid yellow; */}
   }
 
-  @media screen and (min-width: 1024px) {
+  ${'' /* @media screen and (min-width: 1024px) {
     max-width: 965px;
-  }
-`;
-
-const Title = styled(Typography)`
-  && {
-    width: 100%;
-    height: 39px;
-    font-family: Lato;
-    top: 768px;
-    line-height: 23px;
-    font-size: 14px;
-    color: #000000;
-  }
-`;
-
-const Size = styled(Typography)`
-  && {
-    color: grey;
-    margin: 4.5% 0;
-    font-size: 10px;
-    letter-spacing: 0.5px;
-  }
+  } */} */} */}
 `;
 
 const CardWrapper = styled.div`
-    display: flex;
+    ${'' /* display: flex;
     padding: 2px;
     width: 272px;
     margin: 0 auto;
     box-sizing: border-box;
-    border: 1px solid blue;
+    ${'' /* border: 1px solid blue; */}
 
-  @media screen and (min-width: 768px) {
+  ${'' /* @media screen and (min-width: 768px) {
     justify-content: space-around;
     max-width: 225px;
     width: ${100 / 2}%;
   }
   @media screen and (min-width: 1024px) {
     width: ${100 / 4}%;
-  }
+  } */} */}
 `;
 
 const StyledCard = styled(Card)`
    && {
-    width: 100%;
+    width: 272px;
 
-    @media screen and (min-width: 768px) {
+    @media screen and (min-width: 650px) {
       display: flex;
       width: 225px;
       height: 138px;
@@ -82,24 +61,57 @@ const StyledCard = styled(Card)`
 const CardContentWrapper = styled(CardContent)`
     display: flex;
     justify-content: space-between;
-    height: 100%;
+    align-items: center;
 
-  @media screen and (min-width: 768px) {
+    &&& {
+      padding-bottom: 16px;
+    }
+
+    ${'' /* border: 1px solid red; */}
+
+  ${'' /* @media screen and (min-width: 450px) {
     && {
     display: flex; //no need for this here since you already applied style above.
     flex-direction: column;
     justify-content: space-between;
     }
-  }
+  } */}
 `;
 
 const HeadingText = styled.div`
   display: flex;
-  flex-grow: 1;
   flex-direction: column;
-  width: 100%;
-  line-height: 23px;
-  font-size: 16px;
+`;
+
+const Title = styled(Typography)`
+  && {
+    font-family: Lato;
+    line-height: 20px;
+    font-size: 14px;
+    text-transform: Capitalize;
+    color: #000000;
+    max-width: 184px;
+
+    @media screen and (min-width: 450px) {
+      line-height: 23px;
+      font-size: 16px;
+    }
+  }
+`;
+
+const Size = styled(Typography)`
+  && {
+    color: rgba(0, 0, 0, 0.5);
+    font-size: 10px;
+    letter-spacing: 0.5px; 
+    line-height: 16px;
+    text-transform: Uppercase;
+    font-weight: 700;
+
+    @media screen and (min-width: 450px) {
+      line-height: normal;
+    }
+  }
 `;
 
 const BtnLink = styled.a`
@@ -108,37 +120,31 @@ const BtnLink = styled.a`
 
 const ButtonBtn = styled(Button)`
   && {
-    display: flex;
     min-width: 0px;
     width: 40px;
-    height: 58px;
-    border-style: solid;
-  }
+    height: 57px;
+    box-shadow: none;
 
-  @media screen and (min-width: 768px) {
-    && {
-    display: flex;
-    align-self: flex-start;
-    margin-top: 72px;
-    margin-left: 2px;
-    height: 38px;
-    width: 90%;
+    @media screen and (min-width: 450px) {
+      display: flex;
+      align-items: center;
+      margin-top: 72px;
+      margin-left: 2px;
+      height: 38px;
+      width: 90%;
     }
+  }
 `;
 
 const SpanText = styled.span`
   display: none;
-  padding: 16px;
 
-  @media screen and (min-width: 768px) {
+  @media screen and (min-width: 450px) {
     && {
-    display: flex;
-    align-items: baseline;
+    display: block;
     margin-left: 1px;
     margin-right: 40px;
-    justify-content: space-between;
-    padding-top: 4px;
-    text-transform: capitalize;
+    text-transform: Capitalize;
     }
 `;
 
