@@ -36,6 +36,7 @@ const SubHeading = styled(Typography)`
 
     @supports (display: flex) {
       padding-top: 0;
+      font-size: 10px;
     }
   }
 `;
