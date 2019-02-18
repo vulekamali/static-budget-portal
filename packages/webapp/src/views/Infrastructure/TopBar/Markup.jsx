@@ -57,11 +57,11 @@ const TwoArrowButtons = styled.div`
   display: flex;
 `;
 
-const ButtonsOnTheRight = styled.div`
+const ButtonsOnTheLeft = styled.div`
   display: flex;
 `;
 
-const ButtonsOnTheRightDetailsFalse = styled.div`
+const ButtonsOnTheLeftDetailsFalse = styled.div`
   display: flex;
   padding-bottom: 15px;
 `;
@@ -254,15 +254,15 @@ const Markup = (props) => {
   } = props;
 
   const createWrapperForButtonAndSpeedDial = details ? (
-    <ButtonsOnTheRight>
+    <ButtonsOnTheLeft>
       {!!details && buttonMarkup(false, 'Back', true)}
       {createSpeedDial(sharingOpen, toggleSharingOpen, id, toggleModal)}
-    </ButtonsOnTheRight>
+    </ButtonsOnTheLeft>
   ) : (
-    <ButtonsOnTheRightDetailsFalse>
+    <ButtonsOnTheLeftDetailsFalse>
       {!!details && buttonMarkup(false, 'Back', true)}
       {createSpeedDial(sharingOpen, toggleSharingOpen, id, toggleModal)}
-    </ButtonsOnTheRightDetailsFalse>
+    </ButtonsOnTheLeftDetailsFalse>
   )
 
   return (
