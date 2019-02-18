@@ -53,5 +53,3 @@ class Infrastructure extends Component {
 
 
 export default Infrastructure;
-
-
