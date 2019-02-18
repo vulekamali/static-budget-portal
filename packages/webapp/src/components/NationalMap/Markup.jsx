@@ -131,8 +131,8 @@ const Markup = (props) => {
       <svg
         version="1"
         xmlns="http://www.w3.org/2000/svg"
-        width={size === 'small' ? 104 : 428}
-        height={size === 'small' ? 89.5 : 375}
+        width={size === 'small' ? 74.5 : 104}
+        height={size === 'small' ? 64 : 89.5}
         viewBox="0 0 428 375"
       >
         {defineSvgShadowForHover}

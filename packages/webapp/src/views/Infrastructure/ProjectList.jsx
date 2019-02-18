@@ -49,9 +49,9 @@ const callToActions = {
 const CardWrapper = styled.div`
   width: 272px;
   height: 235px;
-  margin: 16px;
+  margin: 16px 16px 0px;
   
-  @media screen and (min-width: 375px) {
+  @media screen and (min-width: 1028px) {
     width: 226px;
     height: 286px;
     margin: 12px;
@@ -95,7 +95,7 @@ const CardContainer = styled(Card)`
 const CardHeading = styled.div`
   background-color: #F4F4F4;
   width: 100%;
-  height: 85px;
+  height: 64px;
   position: relative;
   padding: 15px;
   display: flex;
@@ -103,19 +103,23 @@ const CardHeading = styled.div`
   background-image: ${({ image }) => (image ? `url('${image}')` : 'none')};
   background-size: cover;
   background-position: center center;
+  @media screen and (min-width: 1028px) {
+    height: 84px;
+  }
 `;
 
 const StyledCardContent = styled(CardContent)`
-&& {
-      padding: 35px 16px 16px;
+  && {
+      padding: 30px 15px 15px;
       display: flex;
       flex-direction: column;
       border-radius: 0 0 4px 4px;
+      height: 171px;
       
-      @media screen and (min-width: 375px) {
+      @media screen and (min-width: 1028px) {
         height: 201px;
       }
-      
+        
     }
 `;
 
@@ -123,8 +127,7 @@ const GreenCardContent = styled(StyledCardContent)`
   && {
     background: #76B649;
     color: white;
-    padding: 10px;
-    margin-bottom: 10px;
+    padding: 15px;
   }
 `;
 
@@ -133,11 +136,14 @@ const TopContent = styled.div`
 `;
 
 const TopContentTitle = styled.div`
-      font-size: 14px;
-      margin-top: 2px;
-      line-height: 20px;
-      font-style: regular;
-      font-family: Lato;
+    font-size: 14px;
+    margin-top: 2px;
+    line-height: 20px;
+    font-weight: normal;
+    font-family: Lato;
+    @media screen and (min-width: 600px) {
+      font-size: 16px;
+    }
 `;
 
 const ButtonLink = styled.a`
@@ -145,34 +151,35 @@ const ButtonLink = styled.a`
 `;
 
 const StyledButton = styled(Button)`
-      && {
-        display: flex;
-        min-width: 239px;
-        justify-content: space-between;
-        height: 35px;
-        text-transform: none;
-        margin-top: 18px;
-        margin-bottom: 18px;
-      }
+  && {
+    display: flex;
+    width: 239px;
+    justify-content: center;
+    height: 40px;
+    text-transform: none;
+    margin-top: 24px;
+    margin-bottom: 8px;
+    color: white;
+    background-color: rgba(0, 0, 0, 0.1);
+    box-shadow: none;
+  }
 
-      && {
-        display: flex;
-        justify-content: space-between;
-      }
-
-  @media screen and (min-width: 375px) {
+  @media screen and (min-width: 600px) {
     && {
       display: flex;
       justify-content: space-between;
-      min-width: 193px;
+      width: 193px;
       height: 40px;
       margin-top: 40px;
     }
 `;
 
 const DownloadInfo = styled.div`
-       font-size: 14px;
-       text-align: center;
+   color: rgba(255, 255, 255, 0.7);
+   font-size: 10px;
+   text-align: center;
+   font-weight: bold;
+   font-family: Lato;
 `;
 
 const MapPosition = styled.div`
@@ -194,7 +201,7 @@ const Tag = styled.div`
 
 const SubHeading = styled.div`
     font-family: Lato;
-    font-style: normal;
+    font-weight: normal;
     font-weight: bold;
     line-height: 16px;
     font-size: 10px;
@@ -255,9 +262,10 @@ const buildCta = index => {
               <TopContentTitle>{title}</TopContentTitle>
             </TopContent>
             <ButtonLink href={link}>
-            <StyledButton variant="contained">{button}
-             <Icon />
-            </StyledButton>
+              <StyledButton variant="contained">
+                {button}
+                <Icon />
+              </StyledButton>
             </ButtonLink>
             <DownloadInfo>{info}</DownloadInfo>
           </GreenCardContent>
@@ -277,7 +285,7 @@ const createProjectCard = (props, index) => {
   } = props;
 
   return (
-    <Fragment key={id} style="background-color: red;">
+    <Fragment key={id}>
       {ctaIndex.indexOf(index.toString()) !== -1 && buildCta(index)}
       <CardWrapper>
         <CardContainer>
@@ -322,6 +330,7 @@ const Content = styled.div`
 const List = styled.div`
   display: flex;
   flex-flow: row wrap;
+  justify-content: center;
 `;
 
 const ProjectList = ({ projects }) => {
