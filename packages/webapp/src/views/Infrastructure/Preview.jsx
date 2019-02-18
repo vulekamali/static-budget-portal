@@ -1,6 +1,6 @@
 import React from 'react';
 import posed, { PoseGroup } from 'react-pose';
-import { trimValues } from './helpers';
+import trimValues from '../../helpers/trimValues';
 import styled from 'styled-components';
 import NationalMap from '../../components/NationalMap';
 import { Typography } from '@material-ui/core';
@@ -9,21 +9,21 @@ import ForwardArrow from '@material-ui/icons/ArrowForward';
 import { darken } from 'polished';
 import Progressbar from '../../components/Progressbar';
 
+
+
 const AnimationWrapper = posed.div({
   enter: {
     opacity: 1,
-    x: 0,
+
   },
   exit: {
     opacity: 0,
-    x: '100vw',
   }
 });
 
 const Wrapper = styled.div`
-  @media screen and (min-width: 450px) {
-    display: flex;
-  }
+  display: flex;
+  justify-content: center;
 `;
 
 const DataGroup = styled.div`
@@ -194,6 +194,15 @@ const MapWrapper = styled.div`
   }
 `;
 
+const parseMapProjects = data => data.reduce(
+  (result, object) => ({
+    ...result,
+    [object.id]: object,
+  }),
+  {},
+);
+
+
 const createItem = (props) => {
   const {
     subheading,
@@ -208,45 +217,47 @@ const createItem = (props) => {
 
   return (
     <AnimationWrapper key={id}>
-      <Wrapper>
-        <MapWrapper>
-          <NationalMap active="Eastern Cape" />
-        </MapWrapper>
-        <DataGroup>
-          <SubHeading >{subheading}</SubHeading>
-          <Heading>{heading}</Heading>
-          <Stage>Project stage: {stage}</Stage>
-            <ProgressBarContainer>
-              <Progressbar stage={stage} />
-            </ProgressBarContainer>
-          <BudgetGroup>
-            <BudgetCashflow>
-              <CashflowTitle>Total budget:</CashflowTitle>
-              <Estimation>{`R${trimValues(totalBudget)}`}</Estimation>
-            </BudgetCashflow>
-            <BudgetCashflow>
-              <CashflowTitle>3 Years project budget:</CashflowTitle>
-              <Estimation>{`R${trimValues(projectedBudget)}`}</Estimation>
-            </BudgetCashflow>
-          </BudgetGroup>
-          <Text>{description}</Text>
-            <StyledLink href={link}>
-              <StyledButton>
-                <span>View in more detail</span>
-                <ForwardArrow />
-              </StyledButton>
-            </StyledLink>
-        </DataGroup>
-      </Wrapper>
+      <DataGroup>
+        <SubHeading >{subheading}</SubHeading>
+        <Heading>{heading}</Heading>
+        <Stage>Project stage: {stage}</Stage>
+          <ProgressBarContainer>
+            <Progressbar stage={stage} />
+          </ProgressBarContainer>
+        <BudgetGroup>
+          <BudgetCashflow>
+            <CashflowTitle>Total budget:</CashflowTitle>
+            <Estimation>{`R${trimValues(totalBudget)}`}</Estimation>
+          </BudgetCashflow>
+          <BudgetCashflow>
+            <CashflowTitle>3 Years project budget:</CashflowTitle>
+            <Estimation>{`R${trimValues(projectedBudget)}`}</Estimation>
+          </BudgetCashflow>
+        </BudgetGroup>
+        <Text>{description}</Text>
+          <StyledLink href={link}>
+            <StyledButton>
+              <span>View in more detail</span>
+              <ForwardArrow />
+            </StyledButton>
+          </StyledLink>
+      </DataGroup>
     </AnimationWrapper>
-  )
+  );
 }
+
+
 
 const Preview = (props) => {
   return (
-    <PoseGroup>
-      {createItem(props)}
-    </PoseGroup>
+    <Wrapper>
+      <MapWrapper>
+        <NationalMap  />
+      </MapWrapper>
+      <PoseGroup>
+        {createItem(props)}
+      </PoseGroup>
+    </Wrapper>
   );
 }
 

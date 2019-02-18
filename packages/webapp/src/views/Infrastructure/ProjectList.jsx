@@ -6,11 +6,27 @@ import CardContent from '@material-ui/core/Card';
 import CardActionArea from '@material-ui/core/CardActionArea';
 import Button from '@material-ui/core/Button';
 import NationalMap from '../../components/NationalMap';
-import { calcShorthand, trimValues } from './helpers';
+import trimValues from '../../helpers/trimValues';
 import manAtLaptopImg from './man-at-laptop.jpg';
 import Progressbar from '../../components/Progressbar';
 import Icon from '@material-ui/icons/ArrowDownward';
 
+
+
+const calcShorthand = (name) => {
+  switch (name) {
+    case 'Eastern Cape': return 'EC';
+    case 'Freestate': return 'FS';
+    case 'Gauteng': return 'GP';
+    case 'Kwazulu Natal': return 'KZN';
+    case 'Limpopo': return 'LIM';
+    case 'Mpumalanga': return 'MP';
+    case 'Northern Cape': return 'NC';
+    case 'North West Province': return 'NW';
+    case 'Western Cape': return 'WC';
+    default: return null;
+  }
+}
 
 
 const callToActions = {
