@@ -97,7 +97,6 @@ const ButtonBtn = styled(Button)`
 const SpanText = styled.span`
   display: none;
   font-size: 12px;
-
   @media screen and (min-width: 375px) {
     display: flex;
     justify-content: flex-start;
