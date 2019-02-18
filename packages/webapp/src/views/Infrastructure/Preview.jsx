@@ -215,7 +215,6 @@ const SideWrapper = styled.div`
   align-items: center;
   padding-bottom: 48px;
   border-bottom: 1px solid #000;
-  padding-left: 24px;
 
   @media screen and (min-width: 650px) {
      border-bottom: none;
