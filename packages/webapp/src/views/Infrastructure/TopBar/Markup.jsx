@@ -112,6 +112,19 @@ const WhiteText = styled(Typography)`
 const Wrapper = styled.div`
   position: relative;
   background: #3f3f3f;
+  width: 100%;
+  height: 60px;
+  margin-bottom: 80px;
+
+  @media screen and (min-width: 450px) {
+    margin-bottom: 45px;
+    margin: 0 auto;
+  }
+`;
+
+const NavItemsWrapper = styled.div`
+  position: relative;
+  background: #3f3f3f;
   display: flex;
   width: 100%;
   height: 60px;
@@ -122,11 +135,13 @@ const Wrapper = styled.div`
   padding-left: 16px;
 
   @media screen and (min-width: 450px) {
-      margin-bottom: 45px;
-      max-width: 976px;
-      margin: 0 auto;
-    }
+    margin-bottom: 45px;
+    margin: 0 auto;
+    max-width: 976px;
+  }
 `;
+
+
 
 const createNewTab = (newUrl) => {
   const { focus } = window.open(newUrl, '_blank');
@@ -226,16 +241,18 @@ const Markup = (props) => {
 
   return (
     <Wrapper>
-      <Modal open={!!modal} closeModal={() => toggleModal(null)} url={modal} />
-      {!!details && buttonMarkup(false, 'Back', true)}
-      {createSpeedDial(sharingOpen, toggleSharingOpen, id, toggleModal)}
-      <TextContainer>
-        <WhiteText>{`${amount} national department infrastructure projects`}</WhiteText>
-      </TextContainer>
-      <TwoArrowButtons>
-        {buttonMarkup(id <= 0, null, true, previousId)}
-        {buttonMarkup(id + 1 >= amount, null, null, nextId)}
-      </TwoArrowButtons>
+      <NavItemsWrapper>
+        <Modal open={!!modal} closeModal={() => toggleModal(null)} url={modal} />
+        {!!details && buttonMarkup(false, 'Back', true)}
+        {createSpeedDial(sharingOpen, toggleSharingOpen, id, toggleModal)}
+        <TextContainer>
+          <WhiteText>{`${amount} national department infrastructure projects`}</WhiteText>
+        </TextContainer>
+        <TwoArrowButtons>
+          {buttonMarkup(id <= 0, null, true, previousId)}
+          {buttonMarkup(id + 1 >= amount, null, null, nextId)}
+        </TwoArrowButtons>
+      </NavItemsWrapper>
     </Wrapper>
   )
 }
