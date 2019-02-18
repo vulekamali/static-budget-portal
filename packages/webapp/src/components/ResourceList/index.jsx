@@ -11,13 +11,20 @@ import Icon from '@material-ui/icons/ArrowDownward';
 
 const Wrapper = styled.div`
   display: flex;
-  flex-wrap: wrap;
+  flex-direction: column;
   width: 100%;
+  justify-content: center;
+  border: 2px solid red;
 
-  @media screen and (min-width 1024px) {
-    display: flex;
-    flex-direction: column;
-    width: 100%;
+  @media screen and (min-width: 768px) {
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    border: 2px solid yellow;
+  }
+
+  @media screen and (min-width: 1024px) {
+    max-width: 965px;
   }
 `;
 
@@ -44,17 +51,18 @@ const Size = styled(Typography)`
 
 const CardWrapper = styled.div`
     display: flex;
-    padding: 10px;
-    width: 100%;
+    padding: 2px;
+    width: 272px;
+    margin: 0 auto;
     box-sizing: border-box;
+    border: 1px solid blue;
 
   @media screen and (min-width: 768px) {
-    display: flex;
-    justify-content: center;
-    width: 40%;
+    justify-content: space-around;
+    max-width: 225px;
     width: ${100 / 2}%;
   }
-  @media screen and (min-width: 1050px) {
+  @media screen and (min-width: 1024px) {
     width: ${100 / 4}%;
   }
 `;
@@ -62,15 +70,13 @@ const CardWrapper = styled.div`
 const StyledCard = styled(Card)`
    && {
     width: 100%;
-   }
 
-  @media screen and (min-width: 768px) {
-    && {
-    display: flex;
-    width: 225px;
-    height: 138px;
+    @media screen and (min-width: 768px) {
+      display: flex;
+      width: 225px;
+      height: 138px;
     }
-  }
+   }
 `;
 
 const CardContentWrapper = styled(CardContent)`
@@ -80,22 +86,20 @@ const CardContentWrapper = styled(CardContent)`
 
   @media screen and (min-width: 768px) {
     && {
-    display: flex;
+    display: flex; //no need for this here since you already applied style above.
     flex-direction: column;
     justify-content: space-between;
     }
+  }
 `;
 
 const HeadingText = styled.div`
-  &&&& {
-    display: flex;
-    flex-grow: 1;
-    flex-direction: column;
-    width: 100%;
-    height: 39px;
-    line-height: 23px;
-    font-size: 16px;
-  }
+  display: flex;
+  flex-grow: 1;
+  flex-direction: column;
+  width: 100%;
+  line-height: 23px;
+  font-size: 16px;
 `;
 
 const BtnLink = styled.a`
@@ -105,8 +109,8 @@ const BtnLink = styled.a`
 const ButtonBtn = styled(Button)`
   && {
     display: flex;
-    margin-top: auto;
     min-width: 0px;
+    width: 40px;
     height: 58px;
     border-style: solid;
   }
@@ -123,7 +127,6 @@ const ButtonBtn = styled(Button)`
 `;
 
 const SpanText = styled.span`
-  display: flex;
   display: none;
   padding: 16px;
 
@@ -156,14 +159,12 @@ const createResource = (props) => {
               <Title>{heading}</Title>
                <Size>{size} - {format}</Size>
           </HeadingText>
-          <div>
-            <BtnLink href={link}>
-              <ButtonBtn variant="contained">
-                <SpanText>Download</SpanText>
-                <Icon />
-              </ButtonBtn>
-              </BtnLink>
-          </div>
+          <BtnLink href={link}>
+            <ButtonBtn variant="contained">
+              <SpanText>Download</SpanText>
+              <Icon />
+            </ButtonBtn>
+          </BtnLink>
         </CardContentWrapper>
       </StyledCard>
     </CardWrapper>

@@ -1,10 +1,10 @@
-import React from 'react';
-import { storiesOf } from '@storybook/react';
-import InfraChart from './index';
+// import React from 'react';
+// import { storiesOf } from '@storybook/react';
+// import InfraChart from './index';
 
 
-const basic = () => <InfraChart />;
+// const basic = () => <InfraChart />;
 
 
-storiesOf('component.InfraChart', module)
-  .add('Basic', basic);
+// storiesOf('component.InfraChart', module)
+//   .add('Basic', basic);
