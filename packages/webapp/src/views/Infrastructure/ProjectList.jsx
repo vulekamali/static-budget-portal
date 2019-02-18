@@ -61,8 +61,27 @@ const CardHeading = styled.div`
 `;
 
 const CardWrapper = styled.div`
-  width: 100%;
-  padding: 10px;
+  width: 272px;
+  height: 235px;
+  padding: 16px;
+  
+  @media screen and (min-width: 375px) {
+    width: 226px;
+    height: 286px;
+    padding: 12px;
+    
+    &&:first-child{
+      padding-left: 0;
+    }
+    
+    &&:nth-child(4) {
+      padding-right: 0;
+    }
+    
+    &&:nth-child(4n + 1) {
+      padding-left: 0;
+    }
+  }
 `;
 
 const Tag = styled.div`
@@ -73,7 +92,7 @@ const Tag = styled.div`
   display: flex;
   justify-content: center;
   align-items: center;
-`
+`;
 
 const MapPosition = styled.div`
   position: absolute;
@@ -81,16 +100,14 @@ const MapPosition = styled.div`
   top: 16px;
 `;
 
-
 const StyledCardContent = styled(CardContent)`
 && {
   padding: 35px 16px 16px;
-  height: px;
   display: flex;
   flex-direction: column;
   border-radius: 0 0 4px 4px;
 }
-`
+`;
 
 const GreenCardContent = styled(StyledCardContent)`
   && {
@@ -99,23 +116,28 @@ const GreenCardContent = styled(StyledCardContent)`
     padding: 10px;
     margin-bottom: 10px;
   }
-`
+`;
 
 const TopContent = styled.div`
-  flex-grow: 1;
-`
+  // flex-grow: 1;
+`;
 
 const CardContainer = styled(Card)`
-   min-width: 272px;
-   height: 235px;
+   // min-width: 272px;
+   // height: 235px;
    margin-top: 20px 0;
 `;
 
 const StyledCardActionArea = styled(CardActionArea)`
-  && {
-    min-width: 272px;
-    min-height: 235px;
-  }
+  // && {
+  //   min-width: 272px;
+  //   min-height: 235px;
+  // }
+  //
+  // @media screen and (min-width: 375px) {
+  //   min-width: 226px;
+  //   height: 286px;
+  // }
 `;
 
 const SubHeading = styled.div`
@@ -234,7 +256,7 @@ const buildCta = index => {
       </CardContainer>
     </CardWrapper>
   )
-}
+};
 
 const createProjectCard = (props, index) => {
   const {
@@ -247,7 +269,7 @@ const createProjectCard = (props, index) => {
   } = props;
 
   return (
-    <Fragment key={id}>
+    <Fragment key={id} style="background-color: red;">
       {ctaIndex.indexOf(index.toString()) !== -1 && buildCta(index)}
       <CardWrapper>
         <Card>
@@ -280,13 +302,14 @@ const createProjectCard = (props, index) => {
 
 const List = styled.div`
   display: flex;
-  flex-wrap: wrap;
+  flex-flow: row wrap;
+  // justify-content: center;
 `;
 
 const Wrapper = styled.div`
   margin-top: 160px;
   background: #EDEDED;
-`
+`;
 
 const Content = styled.div`
   position: relative;
@@ -306,7 +329,7 @@ const ProjectList = ({ projects }) => {
       </Content>
     </Wrapper>
   )
-}
+};
 
 
 export default ProjectList;
