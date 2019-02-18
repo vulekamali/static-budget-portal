@@ -71,16 +71,6 @@ const CardWrapper = styled.div`
 `;
 
 const StyledCardActionArea = styled(CardActionArea)`
-  // && {
-  //   min-width: 272px;
-  //   min-height: 235px;
-  // }
-  //
-  // @media screen and (min-width: 375px) {
-  //   min-width: 226px;
-  //   height: 286px;
-  // }
-  
   && {
     height: 100%;
   }
@@ -118,6 +108,7 @@ const StyledCardContent = styled(CardContent)`
       
       @media screen and (min-width: 1028px) {
         height: 201px;
+        justify-content: space-between;
       }
         
     }
@@ -211,12 +202,15 @@ const SubHeading = styled.div`
 `;
 
 const Heading = styled.div`
-    &&&& {
+    && {
       font-family: Lato;
       font-weight: 700;
-      font-size: 18px;
+      font-size: 16px;
       align: left;
       color: #000000;
+      @media screen and (min-width: 1028px) {
+        font-size: 18px;
+      }
     }
 `;
 
@@ -236,6 +230,7 @@ const TotalBudgetText = styled.div`
       line-height: 16px;
       font-size: 10px;
       color: #757575;
+      margin-top: 15px;
 `;
 const TotalAmount = styled.div`
       font-weight: bold;
