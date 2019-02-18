@@ -30,7 +30,7 @@ const Markup = (props) => {
     <Fragment>
       <CssBaseline />
       <TopBar {...topBarProps} />
-      <Preview {...projects[id]} />
+      <Preview {...projects[id]} details={details} />
       <ProjectList {...{ projects }} />
     </Fragment>
   );

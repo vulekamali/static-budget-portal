@@ -26,6 +26,14 @@ const Wrapper = styled.div`
   }
 `;
 
+const MapWrapper = styled.div`
+  display: none;
+
+  @media screen and (min-width: 650px) {
+     display: block;
+  }
+`;
+
 const DataGroup = styled.div`
   max-width: 272px;
   margin: 0 auto;
@@ -186,13 +194,92 @@ const StyledLink = styled.a`
   text-decoration: none;
 `;
 
-const MapWrapper = styled.div`
-  display: none;
+const SideWrapper = styled.div`
+  font-family: Lato; 
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  border: 1px solid red;
+`;
 
-  @media screen and (min-width: 650px) {
-     display: block;
+const SideSection = styled.div`
+   ${'' /*margin bottom goes here  */}
+`;
+
+const SideTitle = styled.div`
+   font-weight: 700;
+   font-size: 10px;
+   line-height: 16px;
+   text-align: center;
+   letter-spacing: 0.5px;
+   text-transform: uppercase;
+   color: rgba(0, 0, 0, 0.5);
+`;
+
+const SideType = styled.div`
+   line-height: 20px;
+   font-size: 14px;
+   text-align: center;
+   text-transform: Capitalize;
+`;
+
+const SideLink = styled.a`
+  text-decoration: none;
+`;
+
+const SideButton = styled(Button)`
+  && {
+    background: rgba(0, 0, 0, 0.1);
+    border-radius: 5px;
+    text-transform: none;
+    min-width: 190px;
+    width: 270px;
+    height: 32px;
+    margin: 0 auto;
+    ${'' /* padding: 10px 25px; */}
+    font-family: Lato;
+    font-size: 12px;
+    letter-spacing: 0.1px;
+    font-weight: normal;
+    box-shadow: none;
+
+    &:hover {
+      background: ${darken(0.1, 'rgba(0, 0, 0, 0.1)')};
+    }
   }
 `;
+
+
+const createSideRender = (props) => {
+  const {
+    investment,
+    infrastructure,
+    department
+  } = props;
+
+  return (
+    <SideWrapper>
+      <SideSection>
+        <SideTitle>Nature of investment:</SideTitle>
+        <SideType>{investment}</SideType>
+      </SideSection>
+      <SideSection>
+        <SideTitle>Infrastructure type:</SideTitle>
+        <SideType>{infrastructure}</SideType>
+      </SideSection>
+      <SideSection>
+        <SideTitle>Department</SideTitle>
+        <SideType>{department}</SideType>
+      </SideSection>
+      <SideLink href='#'>
+        <SideButton>
+          <span>Explore this department</span>
+          <ForwardArrow />
+        </SideButton>
+      </SideLink>
+    </SideWrapper>
+  );
+}
 
 const createItem = (props) => {
   const {
@@ -204,6 +291,8 @@ const createItem = (props) => {
     description,
     id,
     link,
+    sideInfo,
+    details,
   } = props;
 
   return (
@@ -237,6 +326,7 @@ const createItem = (props) => {
               </StyledButton>
             </StyledLink>
         </DataGroup>
+        {details && sideInfo.map(createSideRender)}
       </Wrapper>
     </AnimationWrapper>
   )
