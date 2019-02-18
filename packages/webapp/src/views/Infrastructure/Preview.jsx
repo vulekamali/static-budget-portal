@@ -325,7 +325,7 @@ const SideButtonToMaps = styled(Button)`
   }
 `;
 
-const createSideRender = (props) => {
+const createSideRender = (id) => (props) => {
   const {
     investment,
     infrastructure,
@@ -333,7 +333,7 @@ const createSideRender = (props) => {
   } = props;
 
   return (
-    <SideWrapper>
+    <SideWrapper key={id}>
       <SideSection>
         <SideTitle>Nature of investment:</SideTitle>
         <SideType>{investment}</SideType>
@@ -421,8 +421,9 @@ const createItem = (props) => {
 
 const Preview = (props) => {
   const {
+    id,
     sideInfo,
-    details
+    details,
   } = props;
 
   return (
@@ -433,7 +434,7 @@ const Preview = (props) => {
       <PoseGroup>
         {createItem(props)}
       </PoseGroup>
-      {details && sideInfo.map(createSideRender)}
+      {details && sideInfo.map(createSideRender(id))}
     </Wrapper>
   );
 }

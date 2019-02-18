@@ -7,6 +7,7 @@ import Resources from './Resources';
 import NotificationBar from './NotificationBar';
 import parliamentImg from './parliament-building-budget-speech.jpg';
 import Modal from './Modal';
+import Layout from '../../components/Layout';
 
 
 
@@ -84,7 +85,7 @@ const Markup = (props) => {
   }
 
   return (
-    <Fragment>
+    <Layout>
       <Modal {...{ closeModal, videoUrl }} open={!!modal} />
       <Image>
         <SubHeading>{subheading}</SubHeading>
@@ -93,7 +94,7 @@ const Markup = (props) => {
       </Image>
       <NotificationBar {...{ notice, callToAction }} />
       {resources && <Resources {...{ resources }} />}
-    </Fragment>
+    </Layout>
   );
 };
 
