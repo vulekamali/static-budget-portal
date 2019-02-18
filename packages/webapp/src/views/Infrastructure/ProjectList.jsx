@@ -249,7 +249,11 @@ const createProjectCard = (props, index) => {
               </TopContent>
               <div>
                 <StageText>{`Stage: ${stage}`}</StageText>
+<<<<<<< HEAD
                   <Progressbar stage={stage} />
+=======
+                <Progressbar stage={stage} />
+>>>>>>> f25109d3ebee76f5c684caa6e3bd5c4f8607577f
                 <TotalBudgetText>Total budget:</TotalBudgetText>
                 <TotalAmount>{`R${trimValues(totalBudget)}`}</TotalAmount>
               </div>
