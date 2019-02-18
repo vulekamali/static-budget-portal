@@ -44,8 +44,53 @@ const callToActions = {
     info: '2.2MB - CSV, geoJSON',
     link: '#',
   }
-}
+};
 
+const CardWrapper = styled.div`
+  width: 272px;
+  height: 235px;
+  margin: 16px;
+  
+  @media screen and (min-width: 375px) {
+    width: 226px;
+    height: 286px;
+    margin: 12px;
+    
+    &&:first-child{
+      margin-left: 0;
+    }
+    
+    &&:nth-child(4) {
+      margin-right: 0;
+    }
+    
+    &&:nth-child(4n + 1) {
+      margin-left: 0;
+    }
+  }
+`;
+
+const StyledCardActionArea = styled(CardActionArea)`
+  // && {
+  //   min-width: 272px;
+  //   min-height: 235px;
+  // }
+  //
+  // @media screen and (min-width: 375px) {
+  //   min-width: 226px;
+  //   height: 286px;
+  // }
+  
+  && {
+    height: 100%;
+  }
+`;
+
+const CardContainer = styled(Card)`
+   && {
+     height: 100%;
+   }
+`;
 
 const CardHeading = styled.div`
   background-color: #F4F4F4;
@@ -60,53 +105,18 @@ const CardHeading = styled.div`
   background-position: center center;
 `;
 
-const CardWrapper = styled.div`
-  width: 272px;
-  height: 235px;
-  padding: 16px;
-  
-  @media screen and (min-width: 375px) {
-    width: 226px;
-    height: 286px;
-    padding: 12px;
-    
-    &&:first-child{
-      padding-left: 0;
-    }
-    
-    &&:nth-child(4) {
-      padding-right: 0;
-    }
-    
-    &&:nth-child(4n + 1) {
-      padding-left: 0;
-    }
-  }
-`;
-
-const Tag = styled.div`
-  color: white;
-  width: ${({ province }) => (province === 'Multiple' ? '80px' : '40px')};
-  height: 25px;
-  border-radius: 5px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-`;
-
-const MapPosition = styled.div`
-  position: absolute;
-  left: 16px;
-  top: 16px;
-`;
-
 const StyledCardContent = styled(CardContent)`
 && {
-  padding: 35px 16px 16px;
-  display: flex;
-  flex-direction: column;
-  border-radius: 0 0 4px 4px;
-}
+      padding: 35px 16px 16px;
+      display: flex;
+      flex-direction: column;
+      border-radius: 0 0 4px 4px;
+      
+      @media screen and (min-width: 375px) {
+        height: 201px;
+      }
+      
+    }
 `;
 
 const GreenCardContent = styled(StyledCardContent)`
@@ -120,67 +130,6 @@ const GreenCardContent = styled(StyledCardContent)`
 
 const TopContent = styled.div`
   // flex-grow: 1;
-`;
-
-const CardContainer = styled(Card)`
-   // min-width: 272px;
-   // height: 235px;
-   margin-top: 20px 0;
-`;
-
-const StyledCardActionArea = styled(CardActionArea)`
-  // && {
-  //   min-width: 272px;
-  //   min-height: 235px;
-  // }
-  //
-  // @media screen and (min-width: 375px) {
-  //   min-width: 226px;
-  //   height: 286px;
-  // }
-`;
-
-const SubHeading = styled.div`
-    font-family: Lato;
-    font-style: normal;
-    font-weight: bold;
-    line-height: 16px;
-    font-size: 10px;
-    letter-spacing: 1.5px;
-    text-transform: uppercase;
-    color: #76B649;
-`;
-
-const Heading = styled.div`
-    &&&& {
-      font-family: Lato;
-      font-weight: 700;
-      font-size: 18px;
-      align: left;
-      color: #000000;
-}
-`;
-
-const StageText = styled.div`
-      text-transform: uppercase;
-      margin-bottom: 5px;
-      font-size: 10px;
-      line-height: 16px;
-      font-weight: bold;
-      letter-spacing: 0.5px;
-      color: rgba(0, 0, 0, 0.5);
-`;
-
-const TotalBudgetText = styled.div`
-      text-transform: uppercase;
-      font-size: 16px;
-      line-height: 16px;
-      font-size: 10px;
-      color: #757575;
-`;
-const TotalAmount = styled.div`
-      font-weight: bold;
-      font-size: 16px;
 `;
 
 const TopContentTitle = styled.div`
@@ -226,8 +175,66 @@ const DownloadInfo = styled.div`
        text-align: center;
 `;
 
-const ctaIndex = Object.keys(callToActions);
+const MapPosition = styled.div`
+  position: absolute;
+  left: 16px;
+  top: 16px;
+`;
 
+const Tag = styled.div`
+  color: white;
+  width: ${({ province }) => (province === 'Multiple' ? '80px' : '40px')};
+  height: 25px;
+  border-radius: 5px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+`;
+
+const SubHeading = styled.div`
+    font-family: Lato;
+    font-style: normal;
+    font-weight: bold;
+    line-height: 16px;
+    font-size: 10px;
+    letter-spacing: 1.5px;
+    text-transform: uppercase;
+    color: #76B649;
+`;
+
+const Heading = styled.div`
+    &&&& {
+      font-family: Lato;
+      font-weight: 700;
+      font-size: 18px;
+      align: left;
+      color: #000000;
+    }
+`;
+
+const StageText = styled.div`
+      text-transform: uppercase;
+      margin-bottom: 5px;
+      font-size: 10px;
+      line-height: 16px;
+      font-weight: bold;
+      letter-spacing: 0.5px;
+      color: rgba(0, 0, 0, 0.5);
+`;
+
+const TotalBudgetText = styled.div`
+      text-transform: uppercase;
+      font-size: 16px;
+      line-height: 16px;
+      font-size: 10px;
+      color: #757575;
+`;
+const TotalAmount = styled.div`
+      font-weight: bold;
+      font-size: 16px;
+`;
+
+const ctaIndex = Object.keys(callToActions);
 
 const buildCta = index => {
   const {
@@ -272,7 +279,7 @@ const createProjectCard = (props, index) => {
     <Fragment key={id} style="background-color: red;">
       {ctaIndex.indexOf(index.toString()) !== -1 && buildCta(index)}
       <CardWrapper>
-        <Card>
+        <CardContainer>
           <StyledCardActionArea>
             <CardHeading>
               <MapPosition>
@@ -293,18 +300,11 @@ const createProjectCard = (props, index) => {
               </div>
             </StyledCardContent>
           </StyledCardActionArea>
-        </Card>
+        </CardContainer>
       </CardWrapper>
     </Fragment>
   )
 };
-
-
-const List = styled.div`
-  display: flex;
-  flex-flow: row wrap;
-  // justify-content: center;
-`;
 
 const Wrapper = styled.div`
   margin-top: 160px;
@@ -316,6 +316,11 @@ const Content = styled.div`
   top: -130px;
   max-width: 1000px;
   margin: 0 auto;
+`;
+
+const List = styled.div`
+  display: flex;
+  flex-flow: row wrap;
 `;
 
 const ProjectList = ({ projects }) => {
