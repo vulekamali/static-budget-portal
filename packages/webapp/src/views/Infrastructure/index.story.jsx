@@ -100,10 +100,15 @@ const projects = [
     description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc lobortis, tellus accumsan lobortis imperdiet, justo orci venenatis velit, at feugiat nibh ligula sit amet mi.',
     province: 'Eastern Cape',
     link: '#',
+    sideInfo: {
+      investment: 'New infrastructure',
+      infrastructure: 'Correctional facility',
+      department: 'Correctional services',
+    },
   },
   {
     id: 2,
-    subheading: '222222',
+    subheading: 'Correctional services',
     heading: 'aassg adfgh',
     stage: 'Construction',
     points: ['Border Crossing'],
@@ -113,10 +118,15 @@ const projects = [
     description: 'Cupidatat nostrud esse dolore voluptate nulla dolore cillum aliqua duis est nostrud in dolor magna. Ad occaecat sit magna fugiat cupidatat adipisicing in. Dolor amet minim ut ullamco ullamco occaecat ullamco nostrud voluptate nisi ex aliquip irure. Tempor cillum anim in in pariatur id anim ut do proident amet. Magna proident cillum do esse sunt minim voluptate quis amet cupidatat commodo.',
     province: 'Mpumalanga',
     link: '#',
+    sideInfo: {
+      investment: 'New infrastructure',
+      infrastructure: 'Correctional facility',
+      department: 'Correctional services',
+    },
   },
   {
     id: 'aa',
-    subheading: '222222',
+    subheading: 'Correctional services',
     heading: 'aassg adfgh',
     totalBudget: 124555000111,
     stage: 'Construction',
@@ -126,10 +136,15 @@ const projects = [
     description: 'Cupidatat nostrud esse dolore voluptate nulla dolore cillum aliqua duis est nostrud in dolor magna. Ad occaecat sit magna fugiat cupidatat adipisicing in. Dolor amet minim ut ullamco ullamco occaecat ullamco nostrud voluptate nisi ex aliquip irure. Tempor cillum anim in in pariatur id anim ut do proident amet. Magna proident cillum do esse sunt minim voluptate quis amet cupidatat commodo.',
     province: 'Multiple',
     link: '#',
+    sideInfo: {
+      investment: 'New infrastructure',
+      infrastructure: 'Correctional facility',
+      department: 'Correctional services',
+    },
   },
   {
     id: 3,
-    subheading: '33333',
+    subheading: 'Correctional services',
     heading: 'aassg adfgh',
     stage: 'Complete',
     points: ['Port Elizabeth1'],
@@ -139,10 +154,15 @@ const projects = [
     description: 'Cupidatat nostrud esse dolore voluptate nulla dolore cillum aliqua duis est nostrud in dolor magna. Ad occaecat sit magna fugiat cupidatat adipisicing in. Dolor amet minim ut ullamco ullamco occaecat ullamco nostrud voluptate nisi ex aliquip irure. Tempor cillum anim in in pariatur id anim ut do proident amet. Magna proident cillum do esse sunt minim voluptate quis amet cupidatat commodo.',
     province: 'Northern Cape',
     link: '#',
+    sideInfo: {
+      investment: 'New infrastructure',
+      infrastructure: 'Correctional facility',
+      department: 'Correctional services',
+    },
   },
   {
     id: 4,
-    subheading: '444444',
+    subheading: 'Correctional services',
     heading: 'asdgdhs',
     stage: 'Tender',
     points: ['Border Crossing1'],
@@ -152,6 +172,11 @@ const projects = [
     description: 'Cupidatat nostrud esse dolore voluptate nulla dolore cillum aliqua duis est nostrud in dolor magna. Ad occaecat sit magna fugiat cupidatat adipisicing in. Dolor amet minim ut ullamco ullamco occaecat ullamco nostrud voluptate nisi ex aliquip irure. Tempor cillum anim in in pariatur id anim ut do proident amet. Magna proident cillum do esse sunt minim voluptate quis amet cupidatat commodo.',
     province: 'Western Cape',
     link: '#',
+    sideInfo: {
+      investment: 'New infrastructure',
+      infrastructure: 'Correctional facility',
+      department: 'Correctional services',
+    },
   },
   {
     id: 5,
@@ -165,6 +190,11 @@ const projects = [
     description: 'Cupidatat nostrud esse dolore voluptate nulla dolore cillum aliqua duis est nostrud in dolor magna. Ad occaecat sit magna fugiat cupidatat adipisicing in. Dolor amet minim ut ullamco ullamco occaecat ullamco nostrud voluptate nisi ex aliquip irure. Tempor cillum anim in in pariatur id anim ut do proident amet. Magna proident cillum do esse sunt minim voluptate quis amet cupidatat commodo.',
     province: 'Gauteng',
     link: '#',
+    sideInfo: {
+      investment: 'New infrastructure',
+      infrastructure: 'Correctional facility',
+      department: 'Correctional services',
+    },
   },
   {
     id: 15,
@@ -178,6 +208,11 @@ const projects = [
     description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc lobortis, tellus accumsan lobortis imperdiet, justo orci venenatis velit, at feugiat nibh ligula sit amet mi.',
     province: 'Eastern Cape',
     link: '#',
+    sideInfo: {
+      investment: 'New infrastructure',
+      infrastructure: 'Correctional facility',
+      department: 'Correctional services',
+    },
   },
   {
     id: 25,
@@ -191,6 +226,11 @@ const projects = [
     description: 'Cupidatat nostrud esse dolore voluptate nulla dolore cillum aliqua duis est nostrud in dolor magna. Ad occaecat sit magna fugiat cupidatat adipisicing in. Dolor amet minim ut ullamco ullamco occaecat ullamco nostrud voluptate nisi ex aliquip irure. Tempor cillum anim in in pariatur id anim ut do proident amet. Magna proident cillum do esse sunt minim voluptate quis amet cupidatat commodo.',
     province: 'Mpumalanga',
     link: '#',
+    sideInfo: {
+      investment: 'New infrastructure',
+      infrastructure: 'Correctional facility',
+      department: 'Correctional services',
+    },
   },
   {
     id: 'aa5',
@@ -204,6 +244,11 @@ const projects = [
     description: 'Cupidatat nostrud esse dolore voluptate nulla dolore cillum aliqua duis est nostrud in dolor magna. Ad occaecat sit magna fugiat cupidatat adipisicing in. Dolor amet minim ut ullamco ullamco occaecat ullamco nostrud voluptate nisi ex aliquip irure. Tempor cillum anim in in pariatur id anim ut do proident amet. Magna proident cillum do esse sunt minim voluptate quis amet cupidatat commodo.',
     province: 'Multiple',
     link: '#',
+    sideInfo: {
+      investment: 'New infrastructure',
+      infrastructure: 'Correctional facility',
+      department: 'Correctional services',
+    },
   },
   {
     id: 35,
@@ -217,6 +262,11 @@ const projects = [
     description: 'Cupidatat nostrud esse dolore voluptate nulla dolore cillum aliqua duis est nostrud in dolor magna. Ad occaecat sit magna fugiat cupidatat adipisicing in. Dolor amet minim ut ullamco ullamco occaecat ullamco nostrud voluptate nisi ex aliquip irure. Tempor cillum anim in in pariatur id anim ut do proident amet. Magna proident cillum do esse sunt minim voluptate quis amet cupidatat commodo.',
     province: 'Northern Cape',
     link: '#',
+    sideInfo: {
+      investment: 'New infrastructure',
+      infrastructure: 'Correctional facility',
+      department: 'Correctional services',
+    },
   },
   {
     id: 45,
@@ -230,6 +280,11 @@ const projects = [
     description: 'Cupidatat nostrud esse dolore voluptate nulla dolore cillum aliqua duis est nostrud in dolor magna. Ad occaecat sit magna fugiat cupidatat adipisicing in. Dolor amet minim ut ullamco ullamco occaecat ullamco nostrud voluptate nisi ex aliquip irure. Tempor cillum anim in in pariatur id anim ut do proident amet. Magna proident cillum do esse sunt minim voluptate quis amet cupidatat commodo.',
     province: 'Western Cape',
     link: '#',
+    sideInfo: {
+      investment: 'New infrastructure',
+      infrastructure: 'Correctional facility',
+      department: 'Correctional services',
+    },
   },
   {
     id: 55,

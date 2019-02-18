@@ -24,7 +24,7 @@ const findProject = (projects, pointId) => {
   }
 
   const projectKeys = Object.keys(projects);
-  
+
   for (let i = 0; i < projectKeys.length; i++) {
     const projectId = projectKeys[i];
     const project = projects[projectId];
@@ -39,16 +39,16 @@ const findProject = (projects, pointId) => {
 
 const createPoint = (...args) => pointId => {
   const [
-    points, 
+    points,
     projects,
-    hover, 
-    selected, 
-    updateHover, 
+    hover,
+    selected,
+    updateHover,
     updateSelected,
     checkOverlap,
   ] = args;
 
-  const { 
+  const {
     x,
     y,
   } = getById(pointId, points);
@@ -60,7 +60,7 @@ const createPoint = (...args) => pointId => {
     y,
     hoveredId: hover,
     selectedId: selected,
-    updateHover, 
+    updateHover,
     updateSelected,
     projectData,
     pointId,
@@ -68,7 +68,7 @@ const createPoint = (...args) => pointId => {
   };
 
   return (
-    <Point 
+    <Point
       {...pointProps}
       hover
       selected
@@ -102,11 +102,11 @@ const Markup = (props) => {
   } = props;
 
   const createPointArgs = [
-    points, 
+    points,
     projects,
-    hover, 
-    selected, 
-    updateHover, 
+    hover,
+    selected,
+    updateHover,
     updateSelected,
   ];
 
