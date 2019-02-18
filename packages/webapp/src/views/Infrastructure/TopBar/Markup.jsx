@@ -61,6 +61,11 @@ const ButtonsOnTheRight = styled.div`
   display: flex;
 `;
 
+const ButtonsOnTheRightDetailsFalse = styled.div`
+  display: flex;
+  padding-bottom: 15px;
+`;
+
 const PositionedShareIcon = styled(ShareIcon)`
   position: relative;
   right: 2px;
@@ -248,15 +253,24 @@ const Markup = (props) => {
     nextId,
   } = props;
 
+  const createWrapperForButtonAndSpeedDial = details ? (
+    <ButtonsOnTheRight>
+      {!!details && buttonMarkup(false, 'Back', true)}
+      {createSpeedDial(sharingOpen, toggleSharingOpen, id, toggleModal)}
+    </ButtonsOnTheRight>
+  ) : (
+    <ButtonsOnTheRightDetailsFalse>
+      {!!details && buttonMarkup(false, 'Back', true)}
+      {createSpeedDial(sharingOpen, toggleSharingOpen, id, toggleModal)}
+    </ButtonsOnTheRightDetailsFalse>
+  )
+
   return (
     <StaticPositionWrapper>
       <Wrapper>
         <NavItemsWrapper>
           <Modal open={!!modal} closeModal={() => toggleModal(null)} url={modal} />
-          <ButtonsOnTheRight>
-            {!!details && buttonMarkup(false, 'Back', true)}
-            {createSpeedDial(sharingOpen, toggleSharingOpen, id, toggleModal)}
-          </ButtonsOnTheRight>
+          {createWrapperForButtonAndSpeedDial}
           <TextContainer>
             <WhiteText>{`${amount} national department infrastructure projects`}</WhiteText>
           </TextContainer>
