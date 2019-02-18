@@ -1,5 +1,5 @@
 import React from 'react';
-import t from 'prop-types';
+// import t from 'prop-types';
 import styled from 'styled-components';
 import Province from './Province';
 import Point from './Point';

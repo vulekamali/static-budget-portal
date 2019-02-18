@@ -157,6 +157,7 @@ const projects = [
     sideInfo: {
       investment: 'New infrastructure',
       infrastructure: 'Correctional facility',
+
       department: 'Correctional services',
     },
   },

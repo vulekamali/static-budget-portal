@@ -3,6 +3,7 @@ import styled from 'styled-components';
 import { Typography } from '@material-ui/core'
 import Card from '@material-ui/core/Card';
 import CardContent from '@material-ui/core/Card';
+import CssBaseline from '@material-ui/core/CssBaseline';
 import CardActionArea from '@material-ui/core/CardActionArea';
 import Button from '@material-ui/core/Button';
 import NationalMap from '../../components/NationalMap';
@@ -182,12 +183,6 @@ const StyledButton = styled(Button)`
         text-transform: lowercase;
         margin-top: 18px;
         margin-bottom: 18px;
-      }
-
-      && {
-        display: flex;
-        justify-content: space-between;
-      }
 
   @media screen and (min-width: 375px) {
     && {
@@ -220,7 +215,8 @@ const buildCta = index => {
     <CardWrapper>
       <CardContainer>
           <CardHeading {...{ image }} />
-          <GreenCardContent>
+        <GreenCardContent>
+        <CssBaseline />
             <TopContent>
               <TopContentTitle>{title}</TopContentTitle>
             </TopContent>
