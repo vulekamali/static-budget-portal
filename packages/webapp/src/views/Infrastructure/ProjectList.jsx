@@ -1,6 +1,5 @@
 import React, { Fragment } from 'react';
 import styled from 'styled-components';
-import { Typography } from '@material-ui/core'
 import Card from '@material-ui/core/Card';
 import CardContent from '@material-ui/core/Card';
 import CssBaseline from '@material-ui/core/CssBaseline';
@@ -45,8 +44,49 @@ const callToActions = {
     info: '2.2MB - CSV, geoJSON',
     link: '#',
   }
-}
+};
 
+const CardWrapper = styled.div`
+  width: 272px;
+  height: 255px;
+  margin: 16px 16px 0px;
+  
+  @media screen and (min-width: 1024px) {
+    width: 226px;
+    height: 286px;
+    margin: 12px;
+    
+    &&:first-child{
+      margin-left: 0;
+    }
+    
+    &&:nth-child(4) {
+      margin-right: 0;
+    }
+    
+    &&:nth-child(4n + 1) {
+      margin-left: 0;
+    }
+  }
+`;
+
+const StyledCardActionArea = styled(CardActionArea)`
+  && {
+    height: 100%;
+  }
+`;
+
+const CardContainer = styled(Card)`
+   && {
+     height: 100%;
+     box-shadow: 0px 4px 4px rgba(0,0,0,0.25);
+     transition: transform 500ms; 
+     &:hover {
+      box-shadow: 0px 2px 2px rgba(0, 0, 0, 0.05), 0px 10px 10px rgba(0, 0, 0, 0.2);
+      transform: translate(-2px, -2px);
+     }
+   }
+`;
 
 const CardHeading = styled.div`
   background-color: #F4F4F4;
@@ -61,20 +101,81 @@ const CardHeading = styled.div`
   background-position: center center;
 `;
 
-const CardWrapper = styled.div`
-  width: 100%;
-  padding: 10px;
+const StyledCardContent = styled(CardContent)`
+  && {
+    padding: 30px 15px 15px;
+    display: flex;
+    flex-direction: column;
+    border-radius: 0 0 4px 4px;
+    height: 191px;
+    
+    @media screen and (min-width: 1024px) {
+      height: 201px;
+      justify-content: space-between;
+    }   
+  }
 `;
 
-const Tag = styled.div`
-  color: white;
-  width: ${({ province }) => (province === 'Multiple' ? '80px' : '40px')};
-  height: 25px;
-  border-radius: 5px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-`
+const GreenCardContent = styled(StyledCardContent)`
+  && {
+    background: #76B649;
+    color: white;
+    padding: 15px;
+  }
+`;
+
+const TopContent = styled.div`
+`;
+
+const TopContentTitle = styled.div`
+    font-size: 14px;
+    margin-top: 2px;
+    line-height: 20px;
+    font-weight: normal;
+    font-family: Lato;
+    @media screen and (min-width: 1024px) {
+      font-size: 16px;
+    }
+`;
+
+const ButtonLink = styled.a`
+      text-decoration: none;
+`;
+
+const StyledButton = styled(Button)`
+  && {
+    display: flex;
+    width: 239px;
+    justify-content: center;
+    height: 40px;
+    text-transform: none;
+    margin-top: 24px;
+    margin-bottom: 8px;
+    color: white;
+    background-color: rgba(0, 0, 0, 0.1);
+    box-shadow: none;
+    &:hover {
+      background-color: rgba(0, 0, 0, 0.2);
+    }
+  }
+
+  @media screen and (min-width: 1024px) {
+    && {
+      display: flex;
+      justify-content: space-between;
+      width: 193px;
+      height: 40px;
+      margin-top: 40px;
+    }
+`;
+
+const DownloadInfo = styled.div`
+   color: rgba(255, 255, 255, 0.7);
+   font-size: 10px;
+   text-align: center;
+   font-weight: bold;
+   font-family: Lato;
+`;
 
 const MapPosition = styled.div`
   position: absolute;
@@ -82,41 +183,15 @@ const MapPosition = styled.div`
   top: 16px;
 `;
 
-
-const StyledCardContent = styled(CardContent)`
-&& {
-  padding: 35px 16px 16px;
-  height: px;
+const Tag = styled.div`
+  color: white;
+  background-color: #000000;
+  width: ${({ province }) => (province === 'Multiple' ? '80px' : '40px')};
+  height: 25px;
+  border-radius: 5px;
   display: flex;
-  flex-direction: column;
-  border-radius: 0 0 4px 4px;
-}
-`
-
-const GreenCardContent = styled(StyledCardContent)`
-  && {
-    background: #76B649;
-    color: white;
-    padding: 10px;
-    margin-bottom: 10px;
-  }
-`
-
-const TopContent = styled.div`
-  flex-grow: 1;
-`
-
-const CardContainer = styled(Card)`
-   min-width: 272px;
-   height: 235px;
-   margin-top: 20px 0;
-`;
-
-const StyledCardActionArea = styled(CardActionArea)`
-  && {
-    min-width: 272px;
-    min-height: 235px;
-  }
+  justify-content: center;
+  align-items: center;
 `;
 
 const SubHeading = styled.div`
@@ -134,10 +209,13 @@ const Heading = styled.div`
     &&&& {
       font-family: Lato;
       font-weight: 700;
-      font-size: 18px;
+      font-size: 16px;
       align: left;
       color: #000000;
-}
+      @media screen and (min-width: 1024px) {
+        font-size: 18px;
+      }
+    }
 `;
 
 const StageText = styled.div`
@@ -156,51 +234,14 @@ const TotalBudgetText = styled.div`
       line-height: 16px;
       font-size: 10px;
       color: #757575;
+      margin-top: 15px;
 `;
 const TotalAmount = styled.div`
       font-weight: bold;
       font-size: 16px;
 `;
 
-const TopContentTitle = styled.div`
-      font-size: 14px;
-      margin-top: 2px;
-      line-height: 20px;
-      font-style: regular;
-      font-family: Lato;
-`;
-
-const ButtonLink = styled.a`
-      text-decoration: none;
-`;
-
-const StyledButton = styled(Button)`
-      && {
-        display: flex;
-        min-width: 239px;
-        justify-content: space-between;
-        height: 35px;
-        text-transform: lowercase;
-        margin-top: 18px;
-        margin-bottom: 18px;
-
-  @media screen and (min-width: 375px) {
-    && {
-      display: flex;
-      justify-content: space-between;
-      min-width: 193px;
-      height: 40px;
-      margin-top: 40px;
-    }
-`;
-
-const DownloadInfo = styled.div`
-       font-size: 14px;
-       text-align: center;
-`;
-
 const ctaIndex = Object.keys(callToActions);
-
 
 const buildCta = index => {
   const {
@@ -214,23 +255,24 @@ const buildCta = index => {
   return (
     <CardWrapper>
       <CardContainer>
-          <CardHeading {...{ image }} />
+        <CardHeading {...{ image }} />
         <GreenCardContent>
         <CssBaseline />
-            <TopContent>
-              <TopContentTitle>{title}</TopContentTitle>
-            </TopContent>
-            <ButtonLink href={link}>
-            <StyledButton variant="contained">{button}
-             <Icon />
+          <TopContent>
+            <TopContentTitle>{title}</TopContentTitle>
+          </TopContent>
+          <ButtonLink href={link}>
+            <StyledButton variant="contained">
+              {button}
+              <Icon />
             </StyledButton>
-            </ButtonLink>
-            <DownloadInfo>{info}</DownloadInfo>
-          </GreenCardContent>
+          </ButtonLink>
+          <DownloadInfo>{info}</DownloadInfo>
+        </GreenCardContent>
       </CardContainer>
     </CardWrapper>
   )
-}
+};
 
 const createProjectCard = (props, index) => {
   const {
@@ -246,7 +288,7 @@ const createProjectCard = (props, index) => {
     <Fragment key={id}>
       {ctaIndex.indexOf(index.toString()) !== -1 && buildCta(index)}
       <CardWrapper>
-        <Card>
+        <CardContainer>
           <StyledCardActionArea>
             <CardHeading>
               <MapPosition>
@@ -267,22 +309,16 @@ const createProjectCard = (props, index) => {
               </div>
             </StyledCardContent>
           </StyledCardActionArea>
-        </Card>
+        </CardContainer>
       </CardWrapper>
     </Fragment>
   )
 };
 
-
-const List = styled.div`
-  display: flex;
-  flex-wrap: wrap;
-`;
-
 const Wrapper = styled.div`
   margin-top: 160px;
   background: #EDEDED;
-`
+`;
 
 const Content = styled.div`
   position: relative;
@@ -291,18 +327,44 @@ const Content = styled.div`
   margin: 0 auto;
 `;
 
+const Title = styled.h2`
+   font-family: Lato;
+   font-size: 10px;
+   letter-spacing: 3px;
+   text-align: center;
+   text-transform: uppercase;
+   padding: 0 16px;
+   @media screen and (min-width: 768px) {
+    text-align: left;
+    letter-spacing: 2px;
+    font-size: 14px;
+   }
+   @media screen and (min-width: 1024px) {
+    padding: 0;
+   }
+`;
+
+const List = styled.div`
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: center;
+  @media screen and (min-width: 768px) {
+    justify-content: flex-start;
+  }
+`;
+
 const ProjectList = ({ projects }) => {
   return (
     <Wrapper>
       <Content>
-        <Typography>Project List</Typography>
+        <Title>Project List</Title>
         <List>
           {projects.map(createProjectCard)}
         </List>
       </Content>
     </Wrapper>
   )
-}
+};
 
 
 export default ProjectList;

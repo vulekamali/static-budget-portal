@@ -4,7 +4,7 @@ import ResourceList from './index';
 
 const resources = [
   {
-    heading: 'Example 1 A',
+    heading: '2019 Budget Speech Documentation',
     size: '3.3MB',
     format: 'PDF',
     action: () => console.log('Example 1'),

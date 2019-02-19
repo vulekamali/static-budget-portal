@@ -24,6 +24,10 @@
         {% assign title = 'Data Quest' %}
         {% assign description = 'Tell us what you need to make vulekamali and budget data more accessible and useful. Join us for a full day event discussing budget accessibility.' %}
 
+      {% elsif event.type == 'gift-dataquest' %}
+        {% assign title = 'Better Budget Data Quest' %}
+        {% assign description = 'Find new insights on budget topics and innovative ideas to analyse and improve budget allocations and execution.' %}
+
       {% else %}
         {% assign title = 'Event' %}
         {% assign description = '' %}
