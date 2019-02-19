@@ -266,6 +266,12 @@ const Markup = (props) => {
     </ButtonsOnTheLeftDetailsFalse>
   )
 
+  const whiteTextRendering = details ? (
+    <WhiteText>Project Information</WhiteText>
+  ) : (
+    <WhiteText>{`${amount} national department infrastructure projects`}</WhiteText>
+  );
+
   return (
     <StaticPositionWrapper>
       <Wrapper>
@@ -273,7 +279,7 @@ const Markup = (props) => {
           <Modal open={!!modal} closeModal={() => toggleModal(null)} url={modal} />
           {createWrapperForButtonAndSpeedDial}
           <TextContainer>
-            <WhiteText>{`${amount} national department infrastructure projects`}</WhiteText>
+            {whiteTextRendering}
           </TextContainer>
           <TwoArrowButtons>
             {buttonMarkup(id <= 0, null, true, previousId)}
