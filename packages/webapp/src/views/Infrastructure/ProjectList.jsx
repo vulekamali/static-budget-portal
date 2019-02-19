@@ -48,10 +48,10 @@ const callToActions = {
 
 const CardWrapper = styled.div`
   width: 272px;
-  height: 235px;
+  height: 255px;
   margin: 16px 16px 0px;
   
-  @media screen and (min-width: 1028px) {
+  @media screen and (min-width: 1024px) {
     width: 226px;
     height: 286px;
     margin: 12px;
@@ -73,19 +73,28 @@ const CardWrapper = styled.div`
 const StyledCardActionArea = styled(CardActionArea)`
   && {
     height: 100%;
+    &:hover {
+      
+    }
   }
 `;
 
 const CardContainer = styled(Card)`
    && {
      height: 100%;
+     box-shadow: 0px 4px 4px rgba(0,0,0,0.25);
+     transition: transform 500ms; 
+     &:hover {
+      box-shadow: 0px 2px 2px rgba(0, 0, 0, 0.05), 0px 10px 10px rgba(0, 0, 0, 0.2);
+      transform: translate(-2px, -2px);
+     }
    }
 `;
 
 const CardHeading = styled.div`
   background-color: #F4F4F4;
   width: 100%;
-  height: 64px;
+  height: 85px;
   position: relative;
   padding: 15px;
   display: flex;
@@ -93,9 +102,6 @@ const CardHeading = styled.div`
   background-image: ${({ image }) => (image ? `url('${image}')` : 'none')};
   background-size: cover;
   background-position: center center;
-  @media screen and (min-width: 1028px) {
-    height: 85px;
-  }
 `;
 
 const StyledCardContent = styled(CardContent)`
@@ -104,9 +110,9 @@ const StyledCardContent = styled(CardContent)`
     display: flex;
     flex-direction: column;
     border-radius: 0 0 4px 4px;
-    height: 171px;
+    height: 191px;
     
-    @media screen and (min-width: 1028px) {
+    @media screen and (min-width: 1024px) {
       height: 201px;
       justify-content: space-between;
     }   
@@ -129,8 +135,8 @@ const TopContentTitle = styled.div`
     margin-top: 2px;
     line-height: 20px;
     font-weight: normal;
-    // font-family: Lato;
-    @media screen and (min-width: 1028px) {
+    font-family: Lato;
+    @media screen and (min-width: 1024px) {
       font-size: 16px;
     }
 `;
@@ -151,9 +157,12 @@ const StyledButton = styled(Button)`
     color: white;
     background-color: rgba(0, 0, 0, 0.1);
     box-shadow: none;
+    &:hover {
+      background-color: rgba(0, 0, 0, 0.2);
+    }
   }
 
-  @media screen and (min-width: 1028px) {
+  @media screen and (min-width: 1024px) {
     && {
       display: flex;
       justify-content: space-between;
@@ -206,7 +215,7 @@ const Heading = styled.div`
       font-size: 16px;
       align: left;
       color: #000000;
-      @media screen and (min-width: 1028px) {
+      @media screen and (min-width: 1024px) {
         font-size: 18px;
       }
     }
@@ -249,20 +258,20 @@ const buildCta = index => {
   return (
     <CardWrapper>
       <CardContainer>
-          <CardHeading {...{ image }} />
-          <GreenCardContent>
-          <CssBaseline />
-            <TopContent>
-              <TopContentTitle>{title}</TopContentTitle>
-            </TopContent>
-            <ButtonLink href={link}>
-              <StyledButton variant="contained">
-                {button}
-                <Icon />
-              </StyledButton>
-            </ButtonLink>
-            <DownloadInfo>{info}</DownloadInfo>
-          </GreenCardContent>
+        <CardHeading {...{ image }} />
+        <GreenCardContent>
+        <CssBaseline />
+          <TopContent>
+            <TopContentTitle>{title}</TopContentTitle>
+          </TopContent>
+          <ButtonLink href={link}>
+            <StyledButton variant="contained">
+              {button}
+              <Icon />
+            </StyledButton>
+          </ButtonLink>
+          <DownloadInfo>{info}</DownloadInfo>
+        </GreenCardContent>
       </CardContainer>
     </CardWrapper>
   )
@@ -326,7 +335,7 @@ const Title = styled.h2`
    font-size: 14px;
    text-transform: uppercase;
    padding: 0 16px;
-   @media screen and (min-width: 1028px) {
+   @media screen and (min-width: 1024px) {
     padding: 0;
    }
 `;
@@ -335,7 +344,7 @@ const List = styled.div`
   display: flex;
   flex-flow: row wrap;
   justify-content: center;
-  @media screen and (min-width: 912px) {
+  @media screen and (min-width: 768px) {
     justify-content: flex-start;
   }
 `;

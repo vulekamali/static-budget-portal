@@ -63,6 +63,17 @@ const CardWrapper = styled.div`
   }
 `;
 
+const StyledCard = styled(Card)`
+   && {
+    width: 272px;
+    @media screen and (min-width: 650px) {
+      display: flex;
+      width: 225px;
+      height: 138px;
+    }
+   }
+`;
+
 const CardContentWrapper = styled(CardContent)`
   &&&&{
     padding: 16px;
