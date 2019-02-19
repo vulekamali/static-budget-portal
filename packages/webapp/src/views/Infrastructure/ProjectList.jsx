@@ -220,10 +220,14 @@ const buildCta = index => {
             <TopContent>
               <TopContentTitle>{title}</TopContentTitle>
             </TopContent>
-            <ButtonLink href={link}>
-            <StyledButton variant="contained">{button}
-             <Icon />
-            </StyledButton>
+            <ButtonLink href="#">
+              <StyledButton
+                variant="contained"
+                to="/infrastructure-projects/"
+              >
+                {button}
+                <Icon />
+              </StyledButton>
             </ButtonLink>
             <DownloadInfo>{info}</DownloadInfo>
           </GreenCardContent>

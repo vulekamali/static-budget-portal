@@ -1,6 +1,7 @@
 import React, { Fragment } from 'react';
 import styled from 'styled-components';
 import t from 'prop-types';
+import CssBaseline from '@material-ui/core/CssBaseline';
 import { Typography } from '@material-ui/core';
 import Buttons from './Buttons';
 import Resources from './Resources';

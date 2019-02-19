@@ -16,7 +16,6 @@ const Markup = (props) => {
     toggleDetails,
   } = props;
 
-
   const amount = projects.length;
 
   const topBarProps = {
@@ -27,12 +26,10 @@ const Markup = (props) => {
     nextId,
   }
 
-
   return (
     <Layout>
       <CssBaseline />
       <TopBar {...topBarProps} />
-
       <Preview {...projects[id]} details={details}  />
       {!details && <ProjectList {...{ projects }} />}
       {/* {sdetails && <InfraChart />} */}
