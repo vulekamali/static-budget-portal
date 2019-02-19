@@ -308,8 +308,8 @@ const projects = [
 ]
 
 
-const detailsFalse = () => <Infrastructure {...{ projects }} />;
-const detailsTrue = () => <Infrastructure {...{ projects }} details />;
+const detailsFalse = () => <Infrastructure {...{ projects, points }} />;
+const detailsTrue = () => <Infrastructure {...{ projects, points }} details />;
 
 
 storiesOf('view.Infrastructure', module)

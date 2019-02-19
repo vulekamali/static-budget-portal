@@ -51,6 +51,7 @@ const MapWrapper = styled.div`
 `;
 
 const MapSubHeading = styled.div`
+  font-family: Lato;
   font-weight: 900;
   line-height: normal;
   font-size: 10px;
@@ -381,7 +382,7 @@ const createSideRender = (id) => (props) => {
   const {
     investment,
     infrastructure,
-    department
+    department,
   } = props;
 
   return (
@@ -415,13 +416,6 @@ const createSideRender = (id) => (props) => {
     </SideWrapper>
   );
 }
-const parseMapProjects = data => data.reduce(
-  (result, object) => ({
-    ...result,
-    [object.id]: object,
-  }),
-  {},
-);
 
 const createItem = (props) => {
   const {
@@ -471,29 +465,37 @@ const createItem = (props) => {
   );
 }
 
-const createMap = (props) => {
+const createMap = (props, selected) => {
   const {
-    details
+    details,
+    points,
+    id
   } = props;
+  
+  console.log(selected.points && selected.points[0])
 
   return (
     <MapWrapper>
       <MapSubHeading>Select a project on the map</MapSubHeading>
-      <NationalMap size={details ? "medium" : "large"} />
+      <NationalMap size={details ? "medium" : "large"} points={points} selected={selected.points && selected.points[0].id} />
     </MapWrapper>
   );
 }
 
 const Preview = (props) => {
+
   const {
     id,
     sideInfo,
     details,
+    selected,
   } = props;
+
+  console.log(props)
 
   return (
     <Wrapper details={details}>
-      {createMap(props)}
+      {createMap(props, selected)}
       <PoseGroup>
         {createItem(props)}
       </PoseGroup>

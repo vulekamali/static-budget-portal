@@ -78,6 +78,8 @@ const Markup = (props) => {
     projects = [],
   } = props;
 
+  console.log(selected)
+
   const createPointArgs = {
     projects,
     hover,
