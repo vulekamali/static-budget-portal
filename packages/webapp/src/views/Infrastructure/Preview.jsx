@@ -30,7 +30,7 @@ const Wrapper = styled.div`
   @media screen and (min-width: 650px) {
     flex-direction: row;
     justify-content: space-between;
-    border-bottom: 1px solid #000;
+    ${({ details }) => (!!details ? 'border-bottom: 1px solid #000;' : '')};
     max-width: 976px;
     margin: 0 auto;
     position: relative;
@@ -54,11 +54,6 @@ const DataGroup = styled.div`
 
   @media screen and (min-width: 450px) {
     max-width: 419px;
-    padding-left: 20px;
-  }
-
-  @media screen and (min-width: 850px) {
-    padding-left: none;
   }
 `;
 
@@ -70,10 +65,10 @@ const SubHeading = styled.div`
   text-align: center;
   letter-spacing: 3px;
   text-transform: Uppercase;
-  padding-bottom: 14px;
+  padding-bottom: 8px;
 
   @media screen and (min-width: 450px) {
-    font-weight: 400;
+    font-weight: 700;
     line-height: normal;
     font-size: 14px;
     text-align: left;
@@ -104,22 +99,23 @@ const Stage = styled.div`
   letter-spacing: 0.5px
   text-transform: Uppercase;
   color: rgba(0, 0, 0, 0.5);
-  padding-bottom: 14px;
+  padding-bottom: 8px;
 
   @media screen and (min-width: 450px) {
     line-height: normal;
     text-align: left;
+    font-weight: 900;
   }
 `;
 
 const ProgressBarContainer = styled.div`
-  padding-bottom: 26px;
+  padding-bottom: 24px;
 `;
 
 const BudgetGroup = styled.div`
   display: flex;
   justify-content: space-between;
-  padding-bottom: 30px;
+  padding-bottom: 24px;
 `;
 
 const BudgetCashflow = styled.div`
@@ -140,10 +136,11 @@ const CashflowTitle = styled.div`
   letter-spacing: 0.5px
   text-transform: Uppercase;
   color: #696969;
-  padding-bottom: 10px;
+  padding-bottom: 8px;
 
   @media screen and (min-width: 450px) {
     text-align: left;
+    font-weight: 900;
   }
 `;
 
@@ -427,7 +424,7 @@ const Preview = (props) => {
   } = props;
 
   return (
-    <Wrapper>
+    <Wrapper details={details}>
       <MapWrapper>
         <NationalMap size="medium" />
       </MapWrapper>
