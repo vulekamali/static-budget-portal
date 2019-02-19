@@ -45,8 +45,7 @@ const calcLabelPosition = (height, x, y, maxWidth) => {
     textX: x + (height / 3),
     textY: y - 6,
     align: 'left',
-    color: '
-    ',
+    color: 'black',
     space: maxWidth - (x + (((height / 3) * 2) + 20)),
   };
 };
