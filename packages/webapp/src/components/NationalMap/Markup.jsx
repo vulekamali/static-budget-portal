@@ -79,6 +79,8 @@ const Markup = (props) => {
     activeProvinces,
   } = props;
 
+  console.log(selected)
+
   const createPointArgs = {
     projects,
     hover,

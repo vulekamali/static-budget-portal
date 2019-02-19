@@ -383,7 +383,7 @@ const createSideRender = (id) => (props) => {
   const {
     investment,
     infrastructure,
-    department
+    department,
   } = props;
 
   return (
@@ -466,11 +466,12 @@ const createItem = (props) => {
   );
 }
 
-const createMap = (props) => {
+const createMap = (props, selected) => {
   const {
     details,
     points,
     activeProvinces: rawProvinces,
+    id,
   } = props;
 
   const all = [
@@ -490,21 +491,25 @@ const createMap = (props) => {
   return (
     <MapWrapper>
       {/* <MapSubHeading>Select a project on the map</MapSubHeading> */}
-      <NationalMap size={details ? "medium" : "large"} {...{ points, activeProvinces }} />
+      <NationalMap size={details ? "medium" : "large"} {...{ points, activeProvinces }} selected={selected.points && selected.points[0].id} />
     </MapWrapper>
   );
 }
 
 const Preview = (props) => {
+
   const {
     id,
     sideInfo,
     details,
+    selected,
   } = props;
+
+  console.log(props)
 
   return (
     <Wrapper details={details}>
-      {createMap(props)}
+      {createMap(props, selected)}
       <PoseGroup>
         {createItem(props)}
       </PoseGroup>

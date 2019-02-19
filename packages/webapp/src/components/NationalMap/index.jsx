@@ -71,7 +71,7 @@ NationalMap.propTypes = {
   /** A function to call when the location selection is changed. First parameter is an object returning the location ID (as 'selected') and the project (as 'project'). */
   selectionCallback: t.func,
   /** GPS point to mark as selected when component is initialised */
-  selected: t.string,
+  selected: t.number,
   /** Size at which to create the NationalMap component */
   size: t.oneOf(['small', 'medium', 'large']).isRequired,
   /** An array of GPS locations by longitude (x) and latitude (y). Ids (needs to be unique) is used in 'projects' prop to link project to locations. */

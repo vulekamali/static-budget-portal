@@ -17,6 +17,7 @@ const Markup = (props) => {
     datasetUrl, 
     budgetReviewUrl,
     Link,
+    points,
   } = props;
 
   const amount = projects.length;
@@ -33,7 +34,7 @@ const Markup = (props) => {
   return (
     <Layout>
       <TopBar {...topBarProps} />
-      <Preview {...projects[id]} details={details}  />
+      <Preview {...projects[id]} details={details} selected={id} {...{ points }} />
       {!details && <ProjectList {...{ projects, datasetUrl, budgetReviewUrl, Link }} />}
       {/* {sdetails && <InfraChart />} */}
     </Layout>
