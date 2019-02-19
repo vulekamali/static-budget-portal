@@ -1,16 +1,19 @@
 import React from 'react';
-// import t from 'prop-types';
+import t from 'prop-types';
 import styled from 'styled-components';
+import { provincesList, vectorMapSizes } from './data.json';
+import findProject from './findProject';
+import calcTooltipProps from './calcTooltipProps';
 import Province from './Province';
 import Point from './Point';
 import Tooltip from './Tooltip';
-import { provincesList} from './data.json';
 
 
-const getById = (id, array = []) => {
-  console.log(id, array)
-  return array.find(({ id: itemId }) => itemId === id);
-}
+const Wrapper = styled.div`
+  position: relative;
+  width: ${({ size }) => vectorMapSizes[size].x}px;
+  height: ${({ size }) => vectorMapSizes[size].y}px;
+`;
 
 
 const createProvince = (activeProvinces, size) => name => {
@@ -18,53 +21,30 @@ const createProvince = (activeProvinces, size) => name => {
 }
 
 
-const findProject = (projects, pointId) => {
-  if (!pointId) {
-    return {};
-  }
-
-  const projectKeys = Object.keys(projects);
-
-  for (let i = 0; i < projectKeys.length; i++) {
-    const projectId = projectKeys[i];
-    const project = projects[projectId];
-
-    if (!!project.points.find(id => id === pointId)) {
-      return project;
-    }
-  }
-
-  return {};
-}
-
-const createPoint = (...args) => pointId => {
-  const [
-    points,
+const createPoint = (props) => gpsPoint => {
+  const {
     projects,
     hover,
     selected,
     updateHover,
     updateSelected,
-    checkOverlap,
-  ] = args;
+  } = props;
 
   const {
     x,
     y,
-  } = getById(pointId, points);
-
-  const projectData = findProject(projects, pointId);
+    id,
+  } = gpsPoint || {};
 
   const pointProps = {
     x,
     y,
-    hoveredId: hover,
-    selectedId: selected,
+    id,
     updateHover,
     updateSelected,
-    projectData,
-    pointId,
-    checkOverlap,
+    projects,
+    hoveredId: hover,
+    selectedId: selected,
   };
 
   return (
@@ -72,21 +52,19 @@ const createPoint = (...args) => pointId => {
       {...pointProps}
       hover
       selected
-      key={`${x}-${y}`}
+      key={id}
     />
   )
 };
 
 
-const Wrapper = styled.div`
-  position: relative;
-  width: callWidth(size);
-  height: callHeight(size);
-`;
-
-const calcTooltipProps = ({ points: pointRefs = [], title }, points) => {
-  return pointRefs.map(key => ({ ...getById(key, points), title }));
-};
+const defineSvgShadowForHover = (
+  <defs>
+    <filter id="shadow" x="-200%" y="-200%" width="500%" height="500%">
+      <feGaussianBlur in="SourceAlpha" stdDeviation="3" />
+    </filter>
+  </defs>
+);
 
 
 const Markup = (props) => {
@@ -100,64 +78,74 @@ const Markup = (props) => {
     projects = [],
   } = props;
 
-  const createPointArgs = [
-    points,
+  const createPointArgs = {
     projects,
     hover,
     selected,
     updateHover,
     updateSelected,
-  ];
-
-
-  const defineSvgShadowForHover = (
-    <defs>
-      <filter id="shadow" x="-200%" y="-200%" width="500%" height="500%">
-        <feGaussianBlur in="SourceAlpha" stdDeviation="3" />
-      </filter>
-    </defs>
-  );
-
-
-  const pointId = getById(hover, points);
-  const { id } = pointId || {};
-  const project = findProject(projects, id);
-  const { provinces: activeProvinces } = findProject(projects, selected);
-
-  const callWidth = (size) => {
-    switch (size) {
-      case ('small'): return 104;
-      case ('medium'): return 226;
-      default: return 363;
-    }
   };
 
-  const callHeight = (size) => {
-    switch (size) {
-      case ('small'): return 89.5;
-      case ('medium'): return 194.5;
-      default: return 312.3;
-    }
-  };
-
+  const findFromCurrentProjects = findProject(projects)
+  const hoverProject = findFromCurrentProjects(hover);
+  const selectedProject = findFromCurrentProjects(selected);
 
   return (
-    <Wrapper>
+    <Wrapper {...{ size }}>
       <svg
         version="1"
         xmlns="http://www.w3.org/2000/svg"
-        width={callWidth(size)}
-        height={callHeight(size)}
+        width={vectorMapSizes[size].x}
+        height={vectorMapSizes[size].y}
         viewBox="0 0 428 375"
       >
         {defineSvgShadowForHover}
-        {provincesList.map(createProvince(activeProvinces, size))}
-        {points.map(createPoint(...createPointArgs))}
+        {provincesList.map(createProvince(selectedProject.provinces, size))}
+        {points.map(createPoint(createPointArgs))}
       </svg>
-      <Tooltip items={calcTooltipProps(project, points)} />
+      {/* <Tooltip items={calcTooltipProps(hoverProject, points)} /> */}
     </Wrapper>
   )
 }
 
 
 export default Markup;
+
+
+Markup.propTypes = {
+  /** An array of GPS locations by longitude (x) and latitude (y). Ids (needs to be unique) is used in 'projects' prop to link project to locations. */
+  points: t.arrayOf(t.shape({
+    id: t.string,
+    x: t.number,
+    y: t.number,
+  })).isRequired,
+  /** An array of infrastructure projects to show on map. Ids need to be unique.  */
+  projects: t.arrayOf(t.shape({
+    id: t.String,
+    title: t.Number,
+    points: t.arrayOf(t.string),
+    provinces: t.arrayOf(t.string),
+    budget: t.shape({
+      projected: t.number,
+      total: t.number,
+    }),
+  })),
+  /** GPS point of currently hovered pin */
+  hover: t.string,
+  /** GPS point of currently selected pin */
+  selected: t.string,
+  /** Size at which to create the NationalMap component */
+  size: t.oneOf(['small', 'medium', 'large']).isRequired,
+  /** Callback function that changes the state of 'selected' */
+  updateSelected: t.func.isRequired,
+  /** Callback function that changes the state of 'hover'. Has side-effects */
+  updateHover: t.func.isRequired,
+};
+
+
+Markup.defaultProps = {
+  points: [],
+  projects: [],
+  selected: null,
+  hover: null,
+}

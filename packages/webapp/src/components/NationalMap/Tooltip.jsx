@@ -1,4 +1,5 @@
 import React from 'react';
+import t from 'prop-types';
 import styled from 'styled-components';
 import Paper from '@material-ui/core/Paper';
 import posed, { PoseGroup } from 'react-pose';
@@ -14,7 +15,6 @@ const CardAnimation = posed.div({
     opacity: 0,
   }
 })
-
 
 const Position = styled(CardAnimation)`
   position: absolute;
@@ -33,22 +33,41 @@ const Card = styled(Paper)`
     0 4px 4px rgba(0, 0, 0, 0.25);
 `
 
-const buildTooltip = (x, y, title) => (
-  <Position {...{ x, y }} key={`${x}-${y}`}>
-    <CardAnimation>
-      <Card>
-        {title}
-      </Card>
-    </CardAnimation>
-  </Position>
-)
+const buildTooltip = ({ x, y, title }) => {
+  if (!x || !y || !title) {
+    return null;
+  }
+
+  return (
+    <Position {...{ x, y }} key={`${x}-${y}`}>
+      <CardAnimation>
+        <Card>
+          {title}
+        </Card>
+      </CardAnimation>
+    </Position>
+  )
+}
 
 
 const Tooltip = ({ items }) => (
   <PoseGroup>
-    {items.map(({ x, y, title }) => !!x && !!y && !!title && buildTooltip(x, y, title))}
+    {items.map(buildTooltip)}
   </PoseGroup>
 );
 
 
 export default Tooltip;
+
+
+Tooltip.propTypes = {
+  items: t.arrayOf(t.shape({
+    x: t.string,
+    y: t.string,
+    title: t.string,
+  })),
+};
+
+Tooltip.defaultProps = {
+  items: [],
+};

@@ -1,55 +1,27 @@
 import React from 'react';
+import t from 'prop-types';
 import styled from 'styled-components';
-
-
-const getcircle = name => ({ hover, selected }) => {
-  if (selected && name === 'fill') {
-    return 'white';
-  }
-
-  if (hover && !selected) {
-    if (name === 'transform') {
-      return 'translateY(-2px)'
-    }
-
-    return 'black';
-  }
-
-  if (name === 'transform') {
-    return 'translateY(0)'
-  }
-
-  if (name === 'fill') {
-    return '#5F5F5F'
-  }
-  return '';
-}
+import getPinStyling from './getPinStyling';
+import findProject from './findProject';
 
 
 const getshadow = ({ hover, select }) => {
   if (hover && !select) {
     return '0.4'
   }
-
   return '0'
 }
 
 
-const calcState = (pointId, related = [], hoverId, selectedId) => {
-  const hover = pointId === hoverId || !!related.find(id => id === hoverId);
-  const selected = pointId === selectedId || !!related.find(id => id === selectedId);
-
-  return {
-    selected,
-    hover,
-  }
-}
+const getTransform = getPinStyling('transform');
+const getFill = getPinStyling('fill');
+const getStroke = getPinStyling('stroke');
 
 
 const Pin = styled.circle`
-  transform: ${getcircle('transform')};
-  fill: ${getcircle('fill')};
-  stroke: ${getcircle('stroke')};
+  transform: ${getTransform};
+  fill: ${getFill};
+  stroke: ${getStroke};
   transition: transform 0.3s;
 `;
 
@@ -63,33 +35,41 @@ const Shadow = styled.rect`
 
 const Point = (props) => {
   const { 
-    x: cx,
-    y: cy,
+    x,
+    y,
+    id,
     hoveredId,
     selectedId,
     updateHover, 
     updateSelected,
-    projectData,
-    pointId,
+    projects = [],
   } = props;
 
-  const { hover, selected } = calcState(pointId, projectData.points, hoveredId, selectedId)
-  const mouseEnterWrapper = () => updateHover(pointId);
+  const currentProjectsFind = findProject(projects)
+  const { points: selectedArray = [] } = currentProjectsFind(selectedId) || {};
+  const { points: hoverArray = [] } = currentProjectsFind(hoveredId) || {};
+
+  const cx = x;
+  const cy = y;
+  const hover = hoverArray.find(innerId => innerId === id);
+  const selected = selectedArray.find(innerId => innerId === id);
+
+  const mouseEnterWrapper = () => updateHover(id);
   const mouseLeaveWrapper = () => updateHover(null);
-  const clickWrapper = () => updateSelected(pointId);
+  const clickWrapper = () => updateSelected(id);
 
   return (
     <g>
       <Shadow 
       {...{ hover, selected }}
-      x={cx - 5} 
-      y={cy - 3} 
+      x={x - 5} 
+      y={y - 3} 
       width="10" 
       height="10"
       filter="url(#shadow)"
     />
       <Pin
-        {...{ cx, cy,  hover, selected }}
+        {...{ cx, cy, hover, selected }}
         r="5"
         strokeWidth="3"
         stroke={selected ? 'black' : 'none'}
@@ -108,3 +88,24 @@ const Point = (props) => {
 
 
 export default Point;
+
+
+Point.propTypes = {
+  id: t.string.isRequired,
+  x: t.number.isRequired,
+  y: t.number.isRequired,
+  hoveredId: t.string,
+  selectedId: t.string,
+  updateHover: t.func.isRequired, 
+  updateSelected: t.func.isRequired,
+  projectPoints: t.arrayOf(t.string),
+};
+
+
+Point.defaultProps = {
+  hoveredId: null,
+  selectedId: null,
+  projectPoints: [],
+}
+
+

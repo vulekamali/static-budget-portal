@@ -107,7 +107,7 @@ const projects = [
     }],
   },
   {
-    id: 2,
+    id: 'aaa',
     subheading: 'Water & Sanitation',
     heading: 'Vaal Gamagara bulk water supply',
     stage: 'Construction',
@@ -119,13 +119,13 @@ const projects = [
     province: 'Mpumalanga',
     link: '#',
     sideInfo: [{
-      investment: 'New infrastructure',
+      investment: 'New',
       infrastructure: 'Correctional facility',
       department: 'Correctional services',
     }],
   },
   {
-    id: 'aa',
+    id: 3,
     subheading: 'Health',
     heading: 'Elim Hospital',
     totalBudget: 124555000111,
@@ -138,12 +138,12 @@ const projects = [
     link: '#',
     sideInfo: [{
       investment: 'New infrastructure',
-      infrastructure: 'Correctional facility',
+      infrastructure: 'Correctional',
       department: 'Correctional services',
     }],
   },
   {
-    id: 3,
+    id: 4,
     subheading: 'Correctional services',
     heading: 'aassg adfgh',
     stage: 'Complete',
@@ -162,7 +162,7 @@ const projects = [
     }],
   },
   {
-    id: 4,
+    id: 5,
     subheading: 'Correctional services',
     heading: 'asdgdhs',
     stage: 'Tender',
@@ -180,7 +180,7 @@ const projects = [
     }],
   },
   {
-    id: 5,
+    id: 6,
     subheading: '555555',
     heading: 'aassg adfgh',
     stage: 'Site identification',
@@ -198,7 +198,7 @@ const projects = [
     }],
   },
   {
-    id: 15,
+    id: 7,
     subheading: 'Correctional services',
     heading: 'Standerton Correctional Centre',
     points: ['Cape Town1b', 'Pretoria1b'],
@@ -234,8 +234,8 @@ const projects = [
     }],
   },
   {
-    id: 'aa5',
-    subheading: '222222',
+    id: 'aaaa',
+    subheading: '333333',
     heading: 'aassg adfgh',
     totalBudget: 124555000111,
     stage: 'Construction',
