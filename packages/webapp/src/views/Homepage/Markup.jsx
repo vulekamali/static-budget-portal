@@ -37,7 +37,10 @@ const SubHeading = styled(Typography)`
 
     @supports (display: flex) {
       padding-top: 0;
-      font-size: 10px;
+    }
+
+    @media screen and (min-width: 650px) {
+      font-size: 14px;
     }
   }
 `;
