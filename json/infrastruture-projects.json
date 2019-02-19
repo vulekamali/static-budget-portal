@@ -1,0 +1,8 @@
+---
+---
+
+{% if (site.data.infrastructure-projects.index) %}
+  {{ site.data.infrastructure-projects.index | jsonify }}
+{% else %}
+  {}
+{% endif %}
