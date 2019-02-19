@@ -36,7 +36,7 @@ const duringSpeechProps = {
   notice: 'The 2019/20 budget will be live on Vulekamali by 22 February 2019.',
   callToAction: {
     subheading: 'Budget feature',
-    heading: '25 Major infrastructure projects in South Africa',
+    heading: 'The Status of National Department Infrastructure Projects in South Africa',
     link: {
       text: 'Read this feature',
       link: '#',
