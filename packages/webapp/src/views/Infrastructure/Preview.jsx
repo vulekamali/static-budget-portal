@@ -426,7 +426,7 @@ const Preview = (props) => {
   return (
     <Wrapper details={details}>
       <MapWrapper>
-        <NationalMap size="medium" />
+        <NationalMap size={details ? "medium" : "large"} />
       </MapWrapper>
       <PoseGroup>
         {createItem(props)}
