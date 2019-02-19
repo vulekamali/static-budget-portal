@@ -27,7 +27,7 @@ const Wrapper = styled.div`
   justify-content: center;
   padding-top: 16px;
 
-  @media screen and (min-width: 650px) {
+  @media screen and (min-width: 950px) {
     flex-direction: row;
     justify-content: space-between;
     ${({ details }) => (!!details ? 'border-bottom: 1px solid #000;' : '')};
@@ -41,7 +41,7 @@ const Wrapper = styled.div`
 const MapWrapper = styled.div`
   display: none;
 
-  @media screen and (min-width: 650px) {
+  @media screen and (min-width: 950px) {
     width: 300px;
     display: flex;
     flex-direction: column;
@@ -51,7 +51,7 @@ const MapWrapper = styled.div`
 `;
 
 const MapSubHeading = styled.div`
-  font-weight: 700;
+  font-weight: 900;
   line-height: normal;
   font-size: 10px;
   text-align: center;
@@ -59,11 +59,6 @@ const MapSubHeading = styled.div`
   text-transform: Uppercase;
   color: #AAAAAA;
   padding-bottom: 16px;
-
-  @media screen and (min-width: 450px) {
-    text-align: left;
-    font-weight: 900;
-  }
 `;
 
 const DataGroup = styled.div`
@@ -72,7 +67,7 @@ const DataGroup = styled.div`
   font-family: Lato;
   padding-bottom: 16px;
 
-  @media screen and (min-width: 450px) {
+  @media screen and (min-width: 650px) {
     max-width: 419px;
   }
 `;
@@ -87,7 +82,7 @@ const SubHeading = styled.div`
   text-transform: Uppercase;
   padding-bottom: 8px;
 
-  @media screen and (min-width: 450px) {
+  @media screen and (min-width: 650px) {
     font-weight: 700;
     line-height: normal;
     font-size: 14px;
@@ -104,7 +99,7 @@ const Heading = styled.div`
   max-width: 272px;
   padding-bottom: 24px;
 
-  @media screen and (min-width: 450px) {
+  @media screen and (min-width: 650px) {
     font-size: 32px;
     text-align: left;
     max-width: 419px;
@@ -121,7 +116,7 @@ const Stage = styled.div`
   color: rgba(0, 0, 0, 0.5);
   padding-bottom: 8px;
 
-  @media screen and (min-width: 450px) {
+  @media screen and (min-width: 650px) {
     line-height: normal;
     text-align: left;
     font-weight: 900;
@@ -143,7 +138,7 @@ const BudgetCashflow = styled.div`
   flex-direction: column;
   align-items: center;
 
-  @media screen and (min-width: 450px) {
+  @media screen and (min-width: 650px) {
     align-items: flex-start;
   }
 `;
@@ -158,7 +153,7 @@ const CashflowTitle = styled.div`
   color: #696969;
   padding-bottom: 8px;
 
-  @media screen and (min-width: 450px) {
+  @media screen and (min-width: 650px) {
     text-align: left;
     font-weight: 900;
   }
@@ -170,7 +165,7 @@ const Estimation = styled.div`
   font-size: 18px;
   text-align: center;
 
-  @media screen and (min-width: 450px) {
+  @media screen and (min-width: 650px) {
     font-size: 24px;
     text-align: left;
   }
@@ -183,7 +178,7 @@ const Text = styled(Typography)`
     font-size: 14px;
     text-align: center;
 
-    @media screen and (min-width: 450px) {
+    @media screen and (min-width: 650px) {
       line-height: 23px;
       font-size: 16px;
       text-align: left;
@@ -214,7 +209,7 @@ const StyledButton = styled(Button)`
       background: ${darken(0.1, '#79B443')};
     }
 
-    @media screen and (min-width: 450px) {
+    @media screen and (min-width: 650px) {
       margin: 0;
     }
   }
@@ -235,11 +230,16 @@ const SideWrapper = styled.div`
   border-bottom: 1px solid #000;
 
   @media screen and (min-width: 650px) {
+    max-width: 419px;
+    align-items: flex-start;
+  }
+
+  @media screen and (min-width: 950px) {
     max-width: 300px;
-     border-bottom: none;
-     margin: 0;
-     align-items: flex-start;
-     padding-left: 40px;
+    border-bottom: none;
+    margin: 0;
+    ${'' /* align-items: flex-start; */}
+    padding-left: 40px;
   }
 `; 
 
@@ -259,6 +259,11 @@ const SideTitle = styled.div`
 
   @media screen and (min-width: 650px) {
     text-align: left;
+    max-width: 419px;
+  }
+
+  @media screen and (min-width: 950px) {
+    max-width: none;
   }
 `;
 
@@ -273,6 +278,11 @@ const SideType = styled.div`
     text-align: left;
     line-height: 16px;
     font-size: 16px;
+    max-width: 419px;
+  }
+
+  @media screen and (min-width: 950px) {
+    max-width: none;
   }
 `;
 
@@ -306,6 +316,10 @@ const SideButton = styled(Button)`
     }
 
     @media screen and (min-width: 650px) {
+      width: 419px;
+    }
+
+    @media screen and (min-width: 950px) {
       width: 190px;
     }
   }
@@ -316,6 +330,10 @@ const SideMapButtonWrapper = styled.div`
   justify-content: center;
 
   @media screen and (min-width: 650px) {
+    width: 419px;
+  }
+
+  @media screen and (min-width: 950px) {
     width: 300px;
     position: absolute;
     top: 320px;
@@ -349,11 +367,11 @@ const SideButtonToMaps = styled(Button)`
     }
 
     @media screen and (min-width: 650px) {
-      ${'' /* width: 222px;
-      position: absolute;
-      top: 320px;
-      left: 0;
-      margin: 0 auto; */}
+      width: 419px;
+    }
+
+    @media screen and (min-width: 950px) {
+      width: 270px;;
     }
   }
 `;
