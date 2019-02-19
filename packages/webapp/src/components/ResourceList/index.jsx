@@ -12,14 +12,12 @@ import Copy from '@material-ui/icons/FileCopy';
 
 const Title = styled(Typography)`
   && {
-    width: 173px;
     height: 39px;
-    left: 289px;
     font-family: Lato;
-    top: 768px;
     line-height: 23px;
     font-size: 14px;
     color: #000000;
+    max-width: 193px;
   }
 `;
 
@@ -29,6 +27,7 @@ const Size = styled(Typography)`
     margin: 4.5% 0;
     font-size: 10px;
     letter-spacing: 0.5px;
+    max-width: 193px;
   }
 `;
 
@@ -38,16 +37,12 @@ const CardWrapper = styled.div`
   box-sizing: border-box;
   height: 90px;
 
-  @media screen and (min-width: 550px) {
-    // width: ${100 / 2}%;
+  @media screen and (min-width: 375px) {
     height: auto;
+    width: auto;
   }
 
-  @media screen and (min-width: 850px) {
-    width: 250px;
-  }
-
-  @media screen and (min-width: 1028px) {
+  @media screen and (min-width: 1024px) {
     width: 225px;
     &&:first-child{
       margin-left: 0;
@@ -66,11 +61,20 @@ const CardWrapper = styled.div`
 const StyledCard = styled(Card)`
    && {
     width: 272px;
-    @media screen and (min-width: 650px) {
+    box-shadow: 0px 4px 4px rgba(0,0,0,0.25);
+    @media screen and (min-width: 375px) {
+      width: auto;
+    }
+    @media screen and (min-width: 768px) {
       display: flex;
       width: 225px;
-      height: 138px;
+      height: 145px;
     }
+    transition: transform 500ms; 
+     &:hover {
+      box-shadow: 0px 2px 2px rgba(0, 0, 0, 0.05), 0px 10px 10px rgba(0, 0, 0, 0.2);
+      transform: translate(-2px, -2px);
+     }
    }
 `;
 
@@ -79,7 +83,7 @@ const CardContentWrapper = styled(CardContent)`
     padding: 16px;
     display: flex;
     justify-content: space-between;
-    @media screen and (min-width: 550px) {
+    @media screen and (min-width: 375px) {
       display: flex;
       flex-direction: column;
     }
@@ -105,7 +109,7 @@ const ButtonBtn = styled(Button)`
     height: 57px;
     text-transform: none;
     box-shadow: none;
-    @media screen and (min-width: 550px) {
+    @media screen and (min-width: 375px) {
       padding: 6px 16px;
       display: flex;
       justify-content: space-between;
@@ -118,16 +122,16 @@ const ButtonBtn = styled(Button)`
 const SpanText = styled.span`
   display: none;
   font-size: 12px;
-  @media screen and (min-width: 550px) {
+  @media screen and (min-width: 375px) {
     display: flex;
     justify-content: flex-start;
   }
 `;
 
-const CardBlack = styled(Card)`
+const CardBlack = styled(StyledCard)`
   &&{ 
     background-color: #3F3F3F;
-    height: 149px;
+    
   }
 `;
 
@@ -149,6 +153,9 @@ const ButtonBtnBlack = styled(ButtonBtn)`
   && {
     background-color: rgba(255, 255, 255, 0.1);
     color: white;
+    &:hover {
+      background-color: rgba(255, 255, 255, 0.2);
+    }
   }
 `;
 
@@ -229,12 +236,12 @@ const MainTitle = styled.h2`
    text-align: center;
    text-transform: uppercase;
    padding: 0 16px;
-   @media screen and (min-width: 550px) {
+   @media screen and (min-width: 768px) {
     text-align: left;
     letter-spacing: 2px;
     font-size: 14px;
   }
-   @media screen and (min-width: 1028px) {
+   @media screen and (min-width: 1024px) {
     padding: 0;
    }
 `;
@@ -243,7 +250,7 @@ const List = styled.div`
   display: flex;
   flex-flow: row wrap;
   justify-content: center;
-  @media screen and (min-width: 850px) {
+  @media screen and (min-width: 768px) {
     justify-content: flex-start;
   }
 `;

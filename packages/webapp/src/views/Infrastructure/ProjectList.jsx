@@ -73,9 +73,6 @@ const CardWrapper = styled.div`
 const StyledCardActionArea = styled(CardActionArea)`
   && {
     height: 100%;
-    &:hover {
-      
-    }
   }
 `;
 
@@ -332,9 +329,16 @@ const Content = styled.div`
 
 const Title = styled.h2`
    font-family: Lato;
-   font-size: 14px;
+   font-size: 10px;
+   letter-spacing: 3px;
+   text-align: center;
    text-transform: uppercase;
    padding: 0 16px;
+   @media screen and (min-width: 768px) {
+    text-align: left;
+    letter-spacing: 2px;
+    font-size: 14px;
+   }
    @media screen and (min-width: 1024px) {
     padding: 0;
    }
