@@ -43,6 +43,8 @@ const MapWrapper = styled.div`
 
   @media screen and (min-width: 650px) {
      display: block;
+     width: 50%;
+     ${'' /* margin: 0 auto; */}
   }
 `;
 
@@ -426,7 +428,7 @@ const Preview = (props) => {
   return (
     <Wrapper details={details}>
       <MapWrapper>
-        <NationalMap size="medium" />
+        <NationalMap size={details ? "medium" : "large"} />
       </MapWrapper>
       <PoseGroup>
         {createItem(props)}

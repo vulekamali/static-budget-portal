@@ -128,7 +128,7 @@ const Markup = (props) => {
     switch (size) {
       case ('small'): return 104;
       case ('medium'): return 226;
-      default: return 428;
+      default: return 363;
     }
   };
 
@@ -136,7 +136,7 @@ const Markup = (props) => {
     switch (size) {
       case ('small'): return 89.5;
       case ('medium'): return 194.5;
-      default: return 375;
+      default: return 312.3;
     }
   };
 
