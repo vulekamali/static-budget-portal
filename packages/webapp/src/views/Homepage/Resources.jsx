@@ -13,9 +13,20 @@ const Wrapper = styled.div`
 `;
 
 
+const Heading = styled(Typography)`
+&& {
+  text-align: center;
+  text-transform: uppercase;
+  font-size: 14px;
+  letter-spacing: 3px;
+  font-family: Lato;
+  padding: 10px;
+}
+`;
+
 const Resources = ({ resources }) => (
   <Wrapper>
-    <Typography>2019 budget resources</Typography>
+    <Heading>2019 budget resources</Heading>
     <ResourceList {...{ resources }} />
   </Wrapper>
 );
