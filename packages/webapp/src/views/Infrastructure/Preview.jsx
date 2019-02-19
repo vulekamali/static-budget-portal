@@ -43,6 +43,8 @@ const MapWrapper = styled.div`
 
   @media screen and (min-width: 650px) {
      display: block;
+     width: 50%;
+     ${'' /* margin: 0 auto; */}
   }
 `;
 
