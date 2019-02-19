@@ -49,6 +49,7 @@
     "react-pose": "^4.0.7",
     "react-responsive": "^6.1.1",
     "react-responsive-embed": "^2.1.0",
+    "react-router-dom": "^4.3.1",
     "react-url-query": "^1.4.0",
     "recharts": "^1.5.0",
     "resolve": "1.10.0",
@@ -57,71 +58,25 @@
     "styled-components": "^4.1.3",
     "terser-webpack-plugin": "1.2.2",
     "url-loader": "1.1.2",
-    "webpack": "4.28.3",
     "webpack-dev-server": "3.1.14",
     "webpack-manifest-plugin": "2.0.4",
     "workbox-webpack-plugin": "3.6.3"
   },
   "scripts": {
+    "start:docs": "docz dev",
     "start:storybook": "start-storybook -p 9001 -c .storybook",
     "start": "node scripts/start.js",
     "build": "node scripts/build.js",
-    "test": "node scripts/test.js"
-  },
-  "resolutions": {
-    "ansi-styles": "^3.2.0"
+    "test": "jest"
   },
   "license": "MIT",
   "devDependencies": {
     "@babel/core": "^7.2.2",
     "@storybook/react": "^4.1.11",
     "babel-loader": "^8.0.5",
-    "react-frame-component": "^4.0.2"
-  },
-  "jest": {
-    "collectCoverageFrom": [
-      "src/**/*.{js,jsx,ts,tsx}",
-      "!src/**/*.d.ts"
-    ],
-    "resolver": "jest-pnp-resolver",
-    "setupFiles": [
-      "react-app-polyfill/jsdom"
-    ],
-    "testMatch": [
-      "<rootDir>/src/**/__tests__/**/*.{js,jsx,ts,tsx}",
-      "<rootDir>/src/**/?(*.)(spec|test).{js,jsx,ts,tsx}"
-    ],
-    "testEnvironment": "jsdom",
-    "testURL": "http://localhost",
-    "transform": {
-      "^.+\\.(js|jsx|ts|tsx)$": "<rootDir>/node_modules/babel-jest",
-      "^.+\\.css$": "<rootDir>/config/jest/cssTransform.js",
-      "^(?!.*\\.(js|jsx|ts|tsx|css|json)$)": "<rootDir>/config/jest/fileTransform.js"
-    },
-    "transformIgnorePatterns": [
-      "[/\\\\]node_modules[/\\\\].+\\.(js|jsx|ts|tsx)$",
-      "^.+\\.module\\.(css|sass|scss)$"
-    ],
-    "moduleNameMapper": {
-      "^react-native$": "react-native-web",
-      "^.+\\.module\\.(css|sass|scss)$": "identity-obj-proxy"
-    },
-    "moduleFileExtensions": [
-      "web.js",
-      "js",
-      "web.ts",
-      "ts",
-      "web.tsx",
-      "tsx",
-      "json",
-      "web.jsx",
-      "jsx",
-      "node"
-    ],
-    "watchPlugins": [
-      "C:\\Users\\vente\\Desktop\\for-pr\\node_modules\\jest-watch-typeahead\\filename.js",
-      "C:\\Users\\vente\\Desktop\\for-pr\\node_modules\\jest-watch-typeahead\\testname.js"
-    ]
+    "docz": "^0.13.7",
+    "docz-theme-default": "^0.13.7",
+    "webpack": "^4.28.4"
   },
   "babel": {
     "presets": [

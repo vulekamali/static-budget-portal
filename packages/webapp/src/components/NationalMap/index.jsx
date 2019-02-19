@@ -1,44 +1,24 @@
 import React, { Component } from 'react';
+import t from 'prop-types';
+import findProject from './findProject';
+import calcSelected from './calcSelected';
+import scaleGpsToMapSize from './scaleGpsToMapSize';
 import Markup from './Markup';
-import convertGpsToVectorPoint from './convertGpsToVectorPoint';
-
-
-const convertGps = (pointsRawpoints, size) => pointsRawpoints.map((object) => {
-  const {
-    x,
-    y,
-    id,
-  } = convertGpsToVectorPoint(object, size);
-
-  return {
-      x,
-      y,
-      id,
-    }
-  }
-)
-
-
-const getForcedSelect = (projectId, projects) => {
-  return projectId ? projects[projectId].points[0] : null;
-}
 
 
 class NationalMap extends Component {
   constructor(props) {
     super(props);
     const { 
-      points: pointsRawpoints = [],
+      points: pointsRaw = [],
       projects,
       size,
-      selected: forcedSelect,
+      selected: selectedRaw,
     } = this.props;
-
-    const selected = forcedSelect ? getForcedSelect(forcedSelect, projects) : null;
 
     this.state = {
       hover: null,
-      selected, 
+      selected: calcSelected(projects)(selectedRaw), 
     }
 
     this.events = {
@@ -47,23 +27,32 @@ class NationalMap extends Component {
     }
 
     this.values = {
-      points: convertGps(pointsRawpoints, size),
+      points: pointsRaw.map(scaleGpsToMapSize(size)),
     }
   }
 
   updateHover(hover) {
-    this.setState({ hover });
+    return this.setState({ hover });
   }
 
   updateSelected(selected) {
-    this.setState({ selected });
+    const { projects, selectionCallback } = this.props;
+
+    if (selectionCallback) {
+      const project = findProject(projects)(selected);
+      selectionCallback({ selected, project });
+    }
+
+    return this.setState({ selected });
   }
 
   render() {
-    const { props, state, values, events } = this;
-
+    const { props, values, state, events } = this;
+  
     const passedProps = {
-      ...props,
+      activeProvinces: props.activeProvinces,
+      size: props.size,
+      projects: props.projects,
       points: values.points,
       hover: state.hover,
       selected: state.selected,
@@ -77,3 +66,38 @@ class NationalMap extends Component {
 
 
 export default NationalMap;
+
+
+NationalMap.propTypes = {
+  /** A function to call when the location selection is changed. First parameter is an object returning the location ID (as 'selected') and the project (as 'project'). */
+  selectionCallback: t.func,
+  /** GPS point to mark as selected when component is initialised */
+  selected: t.string,
+  /** Size at which to create the NationalMap component */
+  size: t.oneOf(['small', 'medium', 'large']).isRequired,
+  /** An array of GPS locations by longitude (x) and latitude (y). Ids (needs to be unique) is used in 'projects' prop to link project to locations. */
+  points: t.arrayOf(t.shape({
+    id: t.string,
+    x: t.number,
+    y: t.number,
+  })),
+  /** An array of infrastructure projects to show on map. Ids need to be unique.  */
+  projects: t.arrayOf(t.shape({
+    id: t.String,
+    title: t.Number,
+    points: t.arrayOf(t.string),
+    provinces: t.arrayOf(t.string),
+    budget: t.shape({
+      projected: t.number,
+      total: t.number,
+    }),
+  }))
+};
+
+
+NationalMap.defaultProps = {
+  points: [],
+  projects: [],
+  selected: null,
+  selectionCallback: null,
+}
