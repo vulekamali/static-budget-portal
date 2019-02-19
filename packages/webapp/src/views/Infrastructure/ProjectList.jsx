@@ -8,6 +8,7 @@ import Button from '@material-ui/core/Button';
 import NationalMap from '../../components/NationalMap';
 import trimValues from '../../helpers/trimValues';
 import manAtLaptopImg from './man-at-laptop.jpg';
+import constructionWorkers from './construction-workers.jpg';
 import Progressbar from '../../components/Progressbar';
 import Icon from '@material-ui/icons/ArrowDownward';
 
@@ -16,35 +17,35 @@ import Icon from '@material-ui/icons/ArrowDownward';
 const calcShorthand = (name) => {
   switch (name) {
     case 'Eastern Cape': return 'EC';
-    case 'Freestate': return 'FS';
+    case 'Free State': return 'FS';
     case 'Gauteng': return 'GP';
-    case 'Kwazulu Natal': return 'KZN';
+    case 'KwaZulu-Natal': return 'KZN';
     case 'Limpopo': return 'LIM';
     case 'Mpumalanga': return 'MP';
     case 'Northern Cape': return 'NC';
-    case 'North West Province': return 'NW';
+    case 'North West': return 'NW';
     case 'Western Cape': return 'WC';
     default: return null;
   }
 }
 
 
-const callToActions = {
+const createCallToActions = (datasetUrl, budgetReviewUrl) => ({
   3: {
     image: manAtLaptopImg,
     title: 'Can’t find the national department project you are looking for?',
     button: 'Download the data',
-    info: '2.2MB - CSV, geoJSON',
-    link: '#',
+    info: 'CSV',
+    link: datasetUrl,
   },
   8: {
-    image: manAtLaptopImg,
+    image: constructionWorkers,
     title: 'Read more about major infrastructure projects in the 2019 Budget Review',
     button: 'Download the data',
-    info: '2.2MB - CSV, geoJSON',
-    link: '#',
+    info: 'PDF',
+    link: budgetReviewUrl,
   }
-};
+});
 
 const CardWrapper = styled.div`
   width: 272px;
@@ -136,10 +137,6 @@ const TopContentTitle = styled.div`
     @media screen and (min-width: 1024px) {
       font-size: 16px;
     }
-`;
-
-const ButtonLink = styled.a`
-      text-decoration: none;
 `;
 
 const StyledButton = styled(Button)`
@@ -241,16 +238,20 @@ const TotalAmount = styled.div`
       font-size: 16px;
 `;
 
-const ctaIndex = Object.keys(callToActions);
+const ctaIndex = Object.keys(createCallToActions());
 
-const buildCta = index => {
+const buildCta = (index, datasetUrl, budgetReviewUrl, Link = 'a') => {
+  if (!datasetUrl || !!budgetReviewUrl) {
+    return null;
+  }
+
   const {
     image,
     title,
     button,
     info,
     link,
-  } = callToActions[index];
+  } = createCallToActions(datasetUrl, budgetReviewUrl)[index];
 
   return (
     <CardWrapper>
@@ -261,12 +262,16 @@ const buildCta = index => {
           <TopContent>
             <TopContentTitle>{title}</TopContentTitle>
           </TopContent>
-          <ButtonLink href={link}>
+          <Link 
+            href={Link === 'a' && link}
+            to={Link !== 'a' && link}
+            style={{ textDecoration: 'none' }}
+          >
             <StyledButton variant="contained">
               {button}
               <Icon />
             </StyledButton>
-          </ButtonLink>
+          </Link>
           <DownloadInfo>{info}</DownloadInfo>
         </GreenCardContent>
       </CardContainer>
@@ -274,42 +279,51 @@ const buildCta = index => {
   )
 };
 
-const createProjectCard = (props, index) => {
+const createProjectCard = (datasetUrl, budgetReviewUrl, Link = 'a') => (props, index) => {
   const {
     id,
     subheading,
     heading,
     stage,
     totalBudget,
-    province
+    activeProvinces = [],
+    link,
   } = props;
 
   return (
     <Fragment key={id}>
-      {ctaIndex.indexOf(index.toString()) !== -1 && buildCta(index)}
+      {ctaIndex.indexOf(index.toString()) !== -1 && buildCta(index, datasetUrl, budgetReviewUrl, Link)}
       <CardWrapper>
-        <CardContainer>
-          <StyledCardActionArea>
-            <CardHeading>
-              <MapPosition>
-                <NationalMap size="small" active={province} />
-              </MapPosition>
-              <Tag {...{ province }}>{province === 'Multiple' ? 'MULTIPLE' : calcShorthand(province)}</Tag>
-            </CardHeading>
-            <StyledCardContent>
-              <TopContent>
-                <SubHeading>{subheading}</SubHeading>
-                <Heading>{heading}</Heading>
-              </TopContent>
-              <div>
-                <StageText>{`Stage: ${stage}`}</StageText>
-                <Progressbar stage={stage} />
-                <TotalBudgetText>Total budget:</TotalBudgetText>
-                <TotalAmount>{`R${trimValues(totalBudget)}`}</TotalAmount>
-              </div>
-            </StyledCardContent>
-          </StyledCardActionArea>
-        </CardContainer>
+        <Link 
+          href={Link === 'a' && link}
+          to={Link !== 'a' && link}
+          style={{ textDecoration: 'none', color: 'black' }}
+        >
+          <CardContainer>
+            <StyledCardActionArea>
+              <CardHeading>
+                <MapPosition>
+                  <NationalMap size="small" active={activeProvinces.length < 1 && 'Multiple'} />
+                </MapPosition>
+                  <Tag province={activeProvinces.length < 1 && 'Multiple'}>
+                    {activeProvinces.length > 0 ? calcShorthand(activeProvinces[0]) : 'MULTIPLE'}
+                  </Tag>
+              </CardHeading>
+              <StyledCardContent>
+                <TopContent>
+                  <SubHeading>{subheading}</SubHeading>
+                  <Heading>{heading.length > 30 ? `${heading.substring(0, 30)}...` : heading }</Heading>
+                </TopContent>
+                <div>
+                  <StageText>{`Stage: ${stage}`}</StageText>
+                  <Progressbar stage={stage} />
+                  <TotalBudgetText>Total budget:</TotalBudgetText>
+                  <TotalAmount>{`R${trimValues(totalBudget)}`}</TotalAmount>
+                </div>
+              </StyledCardContent>
+            </StyledCardActionArea>
+          </CardContainer>
+        </Link>
       </CardWrapper>
     </Fragment>
   )
@@ -320,7 +334,7 @@ const Wrapper = styled.div`
   background: #EDEDED;
 `;
 
-const Content = styled.div`
+const Content = styled.div` 
   position: relative;
   top: -130px;
   max-width: 1000px;
@@ -353,13 +367,13 @@ const List = styled.div`
   }
 `;
 
-const ProjectList = ({ projects }) => {
+const ProjectList = ({ projects, datasetUrl, budgetReviewUrl, Link }) => {
   return (
     <Wrapper>
       <Content>
         <Title>Project List</Title>
         <List>
-          {projects.map(createProjectCard)}
+          {projects.map(createProjectCard(datasetUrl, budgetReviewUrl, Link))}
         </List>
       </Content>
     </Wrapper>

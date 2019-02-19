@@ -45,6 +45,9 @@ class Infrastructure extends Component {
       nextId: events.nextId,
       details: state.details,
       toggleDetails: events.toggleDetails,
+      datasetUrl: props.datasetUrl,
+      budgetReviewUrl: props.budgetReviewUrl,
+      Link: props.Link,
     }
 
     return <Markup {...passedProps} />

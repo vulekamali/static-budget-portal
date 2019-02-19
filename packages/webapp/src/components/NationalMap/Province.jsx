@@ -22,14 +22,14 @@ const northWest = props => <path {...props} d="M258 71c-1 7 4 3 7 5 3 3 6 0 9-1v
 
 const list = {
   'Eastern Cape': easternCape,
-  'FreeState': freeState,
+  'Free State': freeState,
   'Gauteng': gauteng,
   'Limpopo': limpopo,
   'Mpumalanga': mpumalanga,
-  'Kwazulu Natal': kwazuluNatal,
+  'KwaZulu-Natal': kwazuluNatal,
   'Northern Cape': northernCape,
   'Western Cape': westernCape,
-  'North West Province': northWest,
+  'North West': northWest,
 };
 
 

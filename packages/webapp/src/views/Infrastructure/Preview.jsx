@@ -51,6 +51,7 @@ const MapWrapper = styled.div`
 `;
 
 const MapSubHeading = styled.div`
+  font-family: Lato;
   font-weight: 900;
   line-height: normal;
   font-size: 10px;
@@ -91,6 +92,7 @@ const SubHeading = styled.div`
 `;
 
 const Heading = styled.div`
+  width: 1000px;
   font-weight: 700;
   line-height: normal;
   font-size: 22px;
@@ -415,13 +417,6 @@ const createSideRender = (id) => (props) => {
     </SideWrapper>
   );
 }
-const parseMapProjects = data => data.reduce(
-  (result, object) => ({
-    ...result,
-    [object.id]: object,
-  }),
-  {},
-);
 
 const createItem = (props) => {
   const {
@@ -473,13 +468,29 @@ const createItem = (props) => {
 
 const createMap = (props) => {
   const {
-    details
+    details,
+    points,
+    activeProvinces: rawProvinces,
   } = props;
+
+  const all = [
+    "Eastern Cape",
+    "Free State",
+    "Gauteng",
+    "Limpopo",
+    "Mpumalanga",
+    "KwaZulu-Natal",
+    "Northern Cape",
+    "Western Cape",
+    "North West"
+  ];
+
+  const activeProvinces = rawProvinces.length > 0 ? rawProvinces : all;
 
   return (
     <MapWrapper>
-      <MapSubHeading>Select a project on the map</MapSubHeading>
-      <NationalMap size={details ? "medium" : "large"} />
+      {/* <MapSubHeading>Select a project on the map</MapSubHeading> */}
+      <NationalMap size={details ? "medium" : "large"} {...{ points, activeProvinces }} />
     </MapWrapper>
   );
 }

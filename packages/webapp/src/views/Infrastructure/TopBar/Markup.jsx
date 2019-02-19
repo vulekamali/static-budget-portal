@@ -257,11 +257,20 @@ const Markup = (props) => {
     details,
     previousId,
     nextId,
+    Link = 'a',
   } = props;
 
-  const createWrapperForButtonAndSpeedDial = details ? (
+  const createWrapperForButtonAndSpeedDial = Link => details ? (
     <ButtonsOnTheLeft>
-      {!!details && buttonMarkup(false, 'Back', true)}
+      {!!details && 
+        <Link 
+          href="/infrastructure-projects"
+          to="/infrastructure-projects"
+          style={{ textDecoration: 'none', color: 'black' }}
+        >
+        {buttonMarkup(false, 'Back', true)}
+        </Link>
+      }
       {createSpeedDial(sharingOpen, toggleSharingOpen, id, toggleModal)}
     </ButtonsOnTheLeft>
   ) : (
@@ -282,7 +291,7 @@ const Markup = (props) => {
       <Wrapper>
         <NavItemsWrapper>
           <Modal open={!!modal} closeModal={() => toggleModal(null)} url={modal} />
-          {createWrapperForButtonAndSpeedDial}
+          {createWrapperForButtonAndSpeedDial(Link)}
           <TextContainer>
             {whiteTextRendering}
           </TextContainer>

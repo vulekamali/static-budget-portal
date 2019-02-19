@@ -40,6 +40,7 @@ class TopBar extends Component {
       id: props.id,
       details: props.details,
       toggleDetails: props.toggleDetails,
+      Link: props.Link,
       nextId: () => props.nextId(true),
       previousId: () => props.nextId(false),
     }

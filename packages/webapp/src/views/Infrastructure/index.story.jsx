@@ -86,7 +86,7 @@ const props = {
       y: -21.228865,
     }
   ],
-  projects: const projects = [
+  projects: [
     {
       id: 1,
       subheading: 'Correctional services',
@@ -308,8 +308,8 @@ const props = {
 }
 
 
-const detailsFalse = () => <Infrastructure {...{ projects }} />;
-const detailsTrue = () => <Infrastructure {...{ projects }} details />;
+const detailsFalse = () => <Infrastructure {...props} />;
+const detailsTrue = () => <Infrastructure {...props} details />;
 
 
 storiesOf('view.Infrastructure', module)

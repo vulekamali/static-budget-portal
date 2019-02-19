@@ -76,6 +76,7 @@ const Markup = (props) => {
     updateSelected,
     updateHover,
     projects = [],
+    activeProvinces,
   } = props;
 
   const createPointArgs = {
@@ -100,7 +101,7 @@ const Markup = (props) => {
         viewBox="0 0 428 375"
       >
         {defineSvgShadowForHover}
-        {provincesList.map(createProvince(selectedProject.provinces, size))}
+        {provincesList.map(createProvince(activeProvinces, size))}
         {points.map(createPoint(createPointArgs))}
       </svg>
       {/* <Tooltip items={calcTooltipProps(hoverProject, points)} /> */}

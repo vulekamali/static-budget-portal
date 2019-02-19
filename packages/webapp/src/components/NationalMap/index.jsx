@@ -9,8 +9,7 @@ import Markup from './Markup';
 class NationalMap extends Component {
   constructor(props) {
     super(props);
-    const { 
-      points: pointsRaw = [],
+    const {
       projects,
       size,
       selected: selectedRaw,
@@ -18,7 +17,7 @@ class NationalMap extends Component {
 
     this.state = {
       hover: null,
-      selected: calcSelected(projects)(selectedRaw), 
+      // selected: calcSelected(projects)(selectedRaw), 
     }
 
     this.events = {
@@ -27,7 +26,7 @@ class NationalMap extends Component {
     }
 
     this.values = {
-      points: pointsRaw.map(scaleGpsToMapSize(size)),
+      // points: pointsRaw.map(scaleGpsToMapSize(size)),
     }
   }
 
@@ -48,12 +47,12 @@ class NationalMap extends Component {
 
   render() {
     const { props, values, state, events } = this;
-  
+
     const passedProps = {
       activeProvinces: props.activeProvinces,
       size: props.size,
       projects: props.projects,
-      points: values.points,
+      points: props.points.map(scaleGpsToMapSize(props.size)),
       hover: state.hover,
       selected: state.selected,
       updateSelected: events.updateSelected,
