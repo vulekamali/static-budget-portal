@@ -42,9 +42,27 @@ const MapWrapper = styled.div`
   display: none;
 
   @media screen and (min-width: 650px) {
-     display: block;
-     width: 50%;
-     ${'' /* margin: 0 auto; */}
+    width: 300px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 0 auto;
+  }
+`;
+
+const MapSubHeading = styled.div`
+  font-weight: 700;
+  line-height: normal;
+  font-size: 10px;
+  text-align: center;
+  letter-spacing: 0.5px
+  text-transform: Uppercase;
+  color: #AAAAAA;
+  padding-bottom: 16px;
+
+  @media screen and (min-width: 450px) {
+    text-align: left;
+    font-weight: 900;
   }
 `;
 
@@ -217,9 +235,11 @@ const SideWrapper = styled.div`
   border-bottom: 1px solid #000;
 
   @media screen and (min-width: 650px) {
+    max-width: 300px;
      border-bottom: none;
      margin: 0;
      align-items: flex-start;
+     padding-left: 40px;
   }
 `; 
 
@@ -291,6 +311,19 @@ const SideButton = styled(Button)`
   }
 `;
 
+const SideMapButtonWrapper = styled.div`
+  display: flex;
+  justify-content: center;
+
+  @media screen and (min-width: 650px) {
+    width: 300px;
+    position: absolute;
+    top: 320px;
+    left: 0;
+    margin: 0 auto;
+  }
+`;
+
 const SideButtonToMaps = styled(Button)`
   && {
     font-family: Lato;
@@ -316,13 +349,15 @@ const SideButtonToMaps = styled(Button)`
     }
 
     @media screen and (min-width: 650px) {
-      width: 222px;
+      ${'' /* width: 222px;
       position: absolute;
-      top: 290px;
+      top: 320px;
       left: 0;
+      margin: 0 auto; */}
     }
   }
 `;
+
 
 const createSideRender = (id) => (props) => {
   const {
@@ -351,12 +386,14 @@ const createSideRender = (id) => (props) => {
           <ForwardArrow />
         </SideButton>
       </SideLink>
-      <SideLink href='#'>
-        <SideButtonToMaps>
-          <span>View project on Google Maps</span>
-          <ForwardArrow />
-        </SideButtonToMaps>
-      </SideLink>
+      <SideMapButtonWrapper>
+        <SideLink href='#'>
+          <SideButtonToMaps>
+            <span>View project on Google Maps</span>
+            <ForwardArrow />
+          </SideButtonToMaps>
+        </SideLink>
+      </SideMapButtonWrapper>
     </SideWrapper>
   );
 }
@@ -416,6 +453,19 @@ const createItem = (props) => {
   );
 }
 
+const createMap = (props) => {
+  const {
+    details
+  } = props;
+
+  return (
+    <MapWrapper>
+      <MapSubHeading>Select a project on the map</MapSubHeading>
+      <NationalMap size={details ? "medium" : "large"} />
+    </MapWrapper>
+  );
+}
+
 
 
 const Preview = (props) => {
@@ -427,9 +477,7 @@ const Preview = (props) => {
 
   return (
     <Wrapper details={details}>
-      <MapWrapper>
-        <NationalMap size={details ? "medium" : "large"} />
-      </MapWrapper>
+      {createMap(props)}
       <PoseGroup>
         {createItem(props)}
       </PoseGroup>
