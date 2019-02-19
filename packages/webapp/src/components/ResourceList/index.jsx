@@ -8,12 +8,6 @@ import Icon from '@material-ui/icons/ArrowDownward';
 import Copy from '@material-ui/icons/FileCopy';
 
 
-const Wrapper = styled.div`
-  display: flex;
-  flex-wrap: wrap;
-  width: 100%;
-`;
-
 const Title = styled(Typography)`
   && {
     width: 173px;
@@ -189,11 +183,23 @@ const CopyCitation = () => {
   )
 };
 
+const Wrapper = styled.div`
+  background: #EDEDED;
+`;
+
+const Content = styled.div`
+  position: relative;
+  top: -130px;
+  max-width: 1000px;
+  margin: 0 auto;
+`;
 
 const Resources = ({ resources }) => (
   <Wrapper>
-    {resources.map(createResource)}
-    <CopyCitation />
+    <Content>
+      {resources.map(createResource)}
+      <CopyCitation />
+    </Content>
   </Wrapper>
 );
 

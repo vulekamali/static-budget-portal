@@ -129,7 +129,7 @@ const TopContentTitle = styled.div`
     margin-top: 2px;
     line-height: 20px;
     font-weight: normal;
-    font-family: Lato;
+    // font-family: Lato;
     @media screen and (min-width: 1028px) {
       font-size: 16px;
     }
@@ -323,6 +323,12 @@ const Content = styled.div`
   margin: 0 auto;
 `;
 
+const Title = styled.h2`
+   font-family: Lato;
+   font-size: 14px;
+   text-transform: uppercase;
+`;
+
 const List = styled.div`
   display: flex;
   flex-flow: row wrap;
@@ -336,7 +342,7 @@ const ProjectList = ({ projects }) => {
   return (
     <Wrapper>
       <Content>
-        <Typography>Project List</Typography>
+        <Title>Project List</Title>
         <List>
           {projects.map(createProjectCard)}
         </List>
