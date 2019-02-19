@@ -1,5 +1,5 @@
 import React from 'react';
-import t from 'prop-types';
+// import t from 'prop-types';
 import styled from 'styled-components';
 import { provincesList, vectorMapSizes } from './data.json';
 import findProject from './findProject';
