@@ -31,20 +31,33 @@ const Size = styled(Typography)`
 `;
 
 const CardWrapper = styled.div`
-  padding: 10px;
-  width: 100%;
+  margin: 10px;
+  width: 272px;
   box-sizing: border-box;
+  height: 90px;
 
   @media screen and (min-width: 550px) {
-    width: ${100 / 2}%;
+    // width: ${100 / 2}%;
+    height: auto;
   }
 
   @media screen and (min-width: 850px) {
-    width: 50%;
+    width: 250px;
   }
 
-  @media screen and (min-width: 1050px) {
-    width: ${100 / 4}%;
+  @media screen and (min-width: 1028px) {
+    width: 225px;
+    &&:first-child{
+      margin-left: 0;
+    }
+    
+    &&:nth-child(4) {
+      margin-right: 0;
+    }
+    
+    &&:nth-child(4n + 1) {
+      margin-left: 0;
+    }
   }
 `;
 
@@ -53,7 +66,7 @@ const CardContentWrapper = styled(CardContent)`
     padding: 16px;
     display: flex;
     justify-content: space-between;
-    @media screen and (min-width: 375px) {
+    @media screen and (min-width: 550px) {
       display: flex;
       flex-direction: column;
     }
@@ -78,7 +91,7 @@ const ButtonBtn = styled(Button)`
     height: 57px;
     text-transform: none;
     box-shadow: none;
-    @media screen and (min-width: 375px) {
+    @media screen and (min-width: 550px) {
       padding: 6px 16px;
       display: flex;
       justify-content: space-between;
@@ -91,7 +104,7 @@ const ButtonBtn = styled(Button)`
 const SpanText = styled.span`
   display: none;
   font-size: 12px;
-  @media screen and (min-width: 375px) {
+  @media screen and (min-width: 550px) {
     display: flex;
     justify-content: flex-start;
   }
@@ -185,20 +198,49 @@ const CopyCitation = () => {
 
 const Wrapper = styled.div`
   background: #EDEDED;
+  padding: 45px 0px 40px;
 `;
 
 const Content = styled.div`
   position: relative;
-  top: -130px;
   max-width: 1000px;
   margin: 0 auto;
+`;
+
+const MainTitle = styled.h2`
+   font-family: Lato;
+   font-size: 10px;
+   letter-spacing: 3px;
+   text-align: center;
+   text-transform: uppercase;
+   padding: 0 16px;
+   @media screen and (min-width: 550px) {
+    text-align: left;
+    letter-spacing: 2px;
+    font-size: 14px;
+  }
+   @media screen and (min-width: 1028px) {
+    padding: 0;
+   }
+`;
+
+const List = styled.div`
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: center;
+  @media screen and (min-width: 850px) {
+    justify-content: flex-start;
+  }
 `;
 
 const Resources = ({ resources }) => (
   <Wrapper>
     <Content>
-      {resources.map(createResource)}
-      <CopyCitation />
+      <MainTitle>Project Resources</MainTitle>
+      <List>
+        {resources.map(createResource)}
+        <CopyCitation />
+      </List>
     </Content>
   </Wrapper>
 );

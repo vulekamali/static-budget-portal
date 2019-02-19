@@ -327,6 +327,10 @@ const Title = styled.h2`
    font-family: Lato;
    font-size: 14px;
    text-transform: uppercase;
+   padding: 0 16px;
+   @media screen and (min-width: 1028px) {
+    padding: 0;
+   }
 `;
 
 const List = styled.div`
