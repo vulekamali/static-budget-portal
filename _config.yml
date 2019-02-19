@@ -41,24 +41,24 @@ exclude:
   - _includes
   - .history
   - .vscode
-  - 2015-16
-  - 2015-16/national
-  - 2015-16/datasets
-  - 2015-16/provincial
-  - 2016-17
-  - 2016-17/national
-  - 2016-17/datasets
-  - 2016-17/provincial
-  - 2017-18
-  - 2017-18/national
-  - 2017-18/datasets
-  - 2017-18/provincial
-  - 2018-19
-  - 2018-19/national
-  - 2018-19/datasets
-  - 2018-19/provincial
-  - guides
-  - datasets
+  # - 2015-16
+  # - 2015-16/national
+  # - 2015-16/datasets
+  # - 2015-16/provincial
+  # - 2016-17
+  # - 2016-17/national
+  # - 2016-17/datasets
+  # - 2016-17/provincial
+  # - 2017-18
+  # - 2017-18/national
+  # - 2017-18/datasets
+  # - 2017-18/provincial
+  # - 2018-19
+  # - 2018-19/national
+  # - 2018-19/datasets
+  # - 2018-19/provincial
+  # - guides
+  # - datasets
 
 plugins:
   - jekyll-sitemap

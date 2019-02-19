@@ -3,7 +3,6 @@ import ResourceList from '../../components/ResourceList';
 
 
 const ResourcesList = ({ resources }) => {
-  console.log(resources)
   return <ResourceList {...{ resources }} />;
 }
 
