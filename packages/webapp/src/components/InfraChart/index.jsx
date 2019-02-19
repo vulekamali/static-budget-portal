@@ -18,35 +18,6 @@ import {
 
 import trimValues from '../../helpers/trimValues';
 
-
-const data = [
-  {
-    name: '\'15', Actual: 400000000,
-  },
-  {
-    name: '\'16', Actual: 30000000,
-  },
-  {
-    name: '\'17', Actual: 200000000,
-  },
-  {
-    name: '\'18', Actual: 27800000, Connection: 27800000,
-  },
-  {
-    name: '\'19', Projected: 189000000, Connection: 189000000,
-  },
-  {
-    name: '\'20', Projected: 239000000,
-  },
-  {
-    name: '\'21', Projected: 34900000,
-  },
-  {
-    name: '\'22', Projected: 34900000,
-  },
-];
-
-
 const xAxisStyles = {
   fontSize: '12px',
   fontFamily: 'Lato',
@@ -79,7 +50,8 @@ const StyledTooltip = styled(Paper)`
 
 const Content = ({ payload = [] }) => {
   const filtered = payload.filter(({ name }) => name !== 'Connection');
-  const { name, value } = payload[0] || {}; 
+
+  const { name, value } = filtered[0] || {}; 
 
   return (
     <Fragment>
@@ -217,10 +189,11 @@ const buttons = (
 )
 
 
-const InfraChart = () => {
+const InfraChart = ({ data }) => {
+  console.log(data)
   return (
     <Fragment>
-      {buttons}
+      {/* {buttons} */}
       <ResponsiveContainer width="100%" height={340}>
         <LineChart
           width={500}
@@ -291,7 +264,7 @@ const InfraChart = () => {
               stroke: 'black',
             }}
           />
-          <ReferenceLine x="'19" stroke="black" label={<Selected />} />
+          {/* <ReferenceLine x="'19" stroke="black" label={<Selected />} /> */}
         </LineChart>
       </ResponsiveContainer>
     </Fragment>

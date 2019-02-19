@@ -52,7 +52,7 @@ class NationalMap extends Component {
       activeProvinces: props.activeProvinces,
       size: props.size,
       projects: props.projects,
-      points: props.points.map(scaleGpsToMapSize(props.size)),
+      points: props.points.map(scaleGpsToMapSize('large')),
       hover: state.hover,
       selected: state.selected,
       updateSelected: events.updateSelected,

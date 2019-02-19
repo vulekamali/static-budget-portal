@@ -17,7 +17,7 @@ const Title = styled(Typography)`
     line-height: 23px;
     font-size: 14px;
     color: #000000;
-    max-width: 193px;
+    // max-width: 193px;
   }
 `;
 
@@ -27,47 +27,39 @@ const Size = styled(Typography)`
     margin: 4.5% 0;
     font-size: 10px;
     letter-spacing: 0.5px;
-    max-width: 193px;
+    // max-width: 193px;
   }
 `;
 
 const CardWrapper = styled.div`
-  margin: 10px;
-  width: 272px;
+  padding: 10px;
+  width: 100%;
   box-sizing: border-box;
-  height: 90px;
+  height: 100%;
 
-  @media screen and (min-width: 375px) {
-    height: auto;
-    width: auto;
+  @media screen and (min-width: 600px) {
+    max-width: 50%;
   }
 
-  @media screen and (min-width: 1024px) {
-    width: 225px;
-    &&:first-child{
-      margin-left: 0;
-    }
-    
-    &&:nth-child(4) {
-      margin-right: 0;
-    }
-    
-    &&:nth-child(4n + 1) {
-      margin-left: 0;
-    }
+  @media screen and (min-width: 1000px) {
+    max-width: ${100 / 3}%
   }
 `;
 
 const StyledCard = styled(Card)`
    && {
-    width: 272px;
+    // width: 272px;
+    width: 100%;
     box-shadow: 0px 4px 4px rgba(0,0,0,0.25);
+
     @media screen and (min-width: 375px) {
-      width: auto;
+      // width: auto;
+      // max-width: 50%;
     }
+
     @media screen and (min-width: 768px) {
       display: flex;
-      width: 225px;
+      // width: 225px;
       height: 145px;
     }
     transition: transform 500ms; 
@@ -81,6 +73,7 @@ const StyledCard = styled(Card)`
 const CardContentWrapper = styled(CardContent)`
   &&&&{
     padding: 16px;
+    width: 100%;
     display: flex;
     justify-content: space-between;
     @media screen and (min-width: 375px) {
@@ -109,11 +102,13 @@ const ButtonBtn = styled(Button)`
     height: 57px;
     text-transform: none;
     box-shadow: none;
+    
     @media screen and (min-width: 375px) {
       padding: 6px 16px;
       display: flex;
       justify-content: space-between;
       min-width: 193px;
+      width: 100%;
       height: 32px;
     }
   }
@@ -224,6 +219,7 @@ const Wrapper = styled.div`
 `;
 
 const Content = styled.div`
+padding: 0 40px;
   position: relative;
   max-width: 1000px;
   margin: 0 auto;
@@ -235,37 +231,35 @@ const MainTitle = styled.h2`
    letter-spacing: 3px;
    text-align: center;
    text-transform: uppercase;
-   padding: 0 16px;
+   padding: 0 20px;
+
    @media screen and (min-width: 768px) {
     text-align: left;
     letter-spacing: 2px;
     font-size: 14px;
   }
-   @media screen and (min-width: 1024px) {
-    padding: 0;
-   }
 `;
 
 const List = styled.div`
   display: flex;
-  flex-flow: row wrap;
-  justify-content: center;
-  @media screen and (min-width: 768px) {
-    justify-content: flex-start;
-  }
+  flex-wrap: wrap;
 `;
 
-const Resources = ({ resources }) => (
-  <Wrapper>
-    <Content>
-      <MainTitle>Project Resources</MainTitle>
-      <List>
-        {resources.map(createResource)}
-        <CopyCitation />
-      </List>
-    </Content>
-  </Wrapper>
+const Resources = ({ resources, cite }) => (
+  <List>
+    {resources.map(createResource)}
+    {!!cite && <CopyCitation />}
+  </List>
 );
 
 
 export default Resources;
+
+
+/*
+
+  <Wrapper>
+    <CssBaseline />
+    <Content>
+      {/* <MainTitle>Project Resources</MainTitle> */
+      
