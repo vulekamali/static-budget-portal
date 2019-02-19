@@ -55,7 +55,7 @@ const Text = styled(CardContent)`
 const CallToActionPositionWrapper = styled.div`
   width: 100%;
   position: absolute;
-  top: 180px;
+  top: 210px;
   left: 0;
 
   @media (min-width: 650px) {
@@ -90,7 +90,7 @@ const CallToAction = styled(Card)`
 const Wrapper = styled.div`
   display: flex;
   background: #79B443;
-  min-height: ${({ hasCallToAction }) => (hasCallToAction ? '235px' : '50px')};
+  min-height: ${({ hasCallToAction }) => (hasCallToAction ? '265px' : '50px')};
   position: relative;
   justify-content: center;
   align-items: center;
@@ -101,7 +101,7 @@ const Wrapper = styled.div`
 `;
 
 const BuildPosition = styled(CardContent)`
-  height: 245px;
+  height: 100%;
   display: flex;
   flex-direction: column;
   position: relative;
@@ -125,7 +125,7 @@ const ImgContainer = styled.div`
 
   @media screen and (min-width: 650px) {
       flex-direction: row;
-      flex-basis: 310px;
+      width: 43%;
       height: 100%;
       order: 1;
     }
@@ -135,13 +135,16 @@ const CallToActionDescription = styled.div`
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-  padding: 20px;
-  flex-grow: 1;
+  padding: 24px;
   font-family: Lato;
+  flex-grow: 1;
 
   @media screen and (min-width: 650px) {
     justify-content: space-around;
-    }
+    width: 57%;
+    flex-grow: 0;
+    padding-left: 32px;
+  }
 `;
 
 const CallToActionButton = styled(Button)`
@@ -151,10 +154,14 @@ const CallToActionButton = styled(Button)`
     background-color: #79B443;
     font-size: 16px;
     font-weight: 700;
+    font-family: Lato;
     display: flex;
     align-items: center;
-    justify-content: space-around;
+    justify-content: space-between;
     text-transform: none;
+    width: 100%
+    padding-left: 24px;
+    padding-right: 16px;
 
     &:hover {
       background: ${darken(0.1, '#79B443')};
@@ -180,16 +187,18 @@ const BudgetTitle = styled.div`
   text-transform: Uppercase;
   font-family: Lato;
   letter-spacing: 1px;
+  padding-bottom: 12px;
 `;
 
 const BudgetHeading = styled.div`
   font-size: 16px;
   font-weight: 700;
   text-transform: Capitalize;
+  padding-bottom: 16px;
 
   @media screen and (min-width: 650px) {
       font-size: 18px;
-      max-width: 370px;
+      max-width: 220px;
     }
 `;
 

@@ -1,5 +1,5 @@
 import React from 'react';
-import t from 'prop-types';
+// import t from 'prop-types';
 import styled from 'styled-components';
 import Province from './Province';
 import Point from './Point';
@@ -80,10 +80,9 @@ const createPoint = (...args) => pointId => {
 
 const Wrapper = styled.div`
   position: relative;
-  width: 428px;
-  height: 375px;
+  width: callWidth(size);
+  height: callHeight(size);
 `;
-
 
 const calcTooltipProps = ({ points: pointRefs = [], title }, points) => {
   return pointRefs.map(key => ({ ...getById(key, points), title }));
@@ -125,14 +124,30 @@ const Markup = (props) => {
   const project = findProject(projects, id);
   const { provinces: activeProvinces } = findProject(projects, selected);
 
+  const callWidth = (size) => {
+    switch (size) {
+      case ('small'): return 104;
+      case ('medium'): return 226;
+      default: return 428;
+    }
+  };
+
+  const callHeight = (size) => {
+    switch (size) {
+      case ('small'): return 89.5;
+      case ('medium'): return 194.5;
+      default: return 375;
+    }
+  };
+
 
   return (
     <Wrapper>
       <svg
         version="1"
         xmlns="http://www.w3.org/2000/svg"
-        width={size === 'medium' ? 104 : (size === 'small' ? 75 : 428) }
-        height={size === 'medium' ? 89.5 : (size === 'small' ? 64 : 375) }
+        width={callWidth(size)}
+        height={callHeight(size)}
         viewBox="0 0 428 375"
       >
         {defineSvgShadowForHover}

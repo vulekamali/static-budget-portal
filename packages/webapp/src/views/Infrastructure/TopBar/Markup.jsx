@@ -15,9 +15,7 @@ import Icon from './Icon';
 const StyledSpeedDial = styled(SpeedDial)`
   height: 20px;
   align-self: flex-start;
-  padding-top: 12px;
   margin-right: 4px;
-  margin-left: 4px;
 
   & .fab {
     background: #C4C4C4;
@@ -48,6 +46,7 @@ const WhiteButton = styled(Button)`
     margin-left: 4px;
     ${({ text }) => (!!text ? 'padding-top: 4px ' : '')};
     ${({ text }) => (!!text ? 'padding-right: 25px' : '')};
+    padding: 0;
     
     &:hover {
       background: ${darken(0.1, 'white')};
@@ -57,6 +56,15 @@ const WhiteButton = styled(Button)`
 
 const TwoArrowButtons = styled.div`
   display: flex;
+`;
+
+const ButtonsOnTheLeft = styled.div`
+  display: flex;
+`;
+
+const ButtonsOnTheLeftDetailsFalse = styled.div`
+  display: flex;
+  padding-bottom: 15px;
 `;
 
 const PositionedShareIcon = styled(ShareIcon)`
@@ -80,7 +88,7 @@ const TextContainer = styled.div`
   justify-content: center;
   background-color: #EDEDED;
 
-    @media screen and (min-width: 450px) {
+    @media screen and (min-width: 650px) {
       position: static;
       top: 0;
       background-color: transparent;
@@ -100,7 +108,7 @@ const WhiteText = styled(Typography)`
     line-height: 16px;
     letter-spacing: 3px;
 
-    @media screen and (min-width: 450px) {
+    @media screen and (min-width: 650px) {
       color: #fff;
       max-width: none;
       line-height: normal;
@@ -109,7 +117,27 @@ const WhiteText = styled(Typography)`
     }
   }
 `
+const StaticPositionWrapper = styled.div`
+  position: sticky;
+  top: 0;
+  left: 0;
+  z-index: 1;
+`;
+
 const Wrapper = styled.div`
+  position: relative;
+  background: #3f3f3f;
+  width: 100%;
+  height: 60px;
+  margin-bottom: 80px;
+
+  @media screen and (min-width: 650px) {
+    margin-bottom: 45px;
+    margin: 0 auto;
+  }
+`;
+
+const NavItemsWrapper = styled.div`
   position: relative;
   background: #3f3f3f;
   display: flex;
@@ -122,9 +150,13 @@ const Wrapper = styled.div`
   padding-left: 16px;
 
   @media screen and (min-width: 450px) {
-      margin-bottom: 45px;
-    }
+    margin-bottom: 45px;
+    margin: 0 auto;
+    max-width: 976px;
+  }
 `;
+
+
 
 const createNewTab = (newUrl) => {
   const { focus } = window.open(newUrl, '_blank');
@@ -222,19 +254,34 @@ const Markup = (props) => {
     nextId,
   } = props;
 
-  return (
-    <Wrapper>
-      <Modal open={!!modal} closeModal={() => toggleModal(null)} url={modal} />
+  const createWrapperForButtonAndSpeedDial = details ? (
+    <ButtonsOnTheLeft>
       {!!details && buttonMarkup(false, 'Back', true)}
       {createSpeedDial(sharingOpen, toggleSharingOpen, id, toggleModal)}
-      <TextContainer>
-        <WhiteText>{`${amount} national department infrastructure projects`}</WhiteText>
-      </TextContainer>
-      <TwoArrowButtons>
-        {buttonMarkup(id <= 0, null, true, previousId)}
-        {buttonMarkup(id + 1 >= amount, null, null, nextId)}
-      </TwoArrowButtons>
-    </Wrapper>
+    </ButtonsOnTheLeft>
+  ) : (
+    <ButtonsOnTheLeftDetailsFalse>
+      {!!details && buttonMarkup(false, 'Back', true)}
+      {createSpeedDial(sharingOpen, toggleSharingOpen, id, toggleModal)}
+    </ButtonsOnTheLeftDetailsFalse>
+  )
+
+  return (
+    <StaticPositionWrapper>
+      <Wrapper>
+        <NavItemsWrapper>
+          <Modal open={!!modal} closeModal={() => toggleModal(null)} url={modal} />
+          {createWrapperForButtonAndSpeedDial}
+          <TextContainer>
+            <WhiteText>{`${amount} national department infrastructure projects`}</WhiteText>
+          </TextContainer>
+          <TwoArrowButtons>
+            {buttonMarkup(id <= 0, null, true, previousId)}
+            {buttonMarkup(id + 1 >= amount, null, null, nextId)}
+          </TwoArrowButtons>
+        </NavItemsWrapper>
+      </Wrapper>
+    </StaticPositionWrapper>
   )
 }
 

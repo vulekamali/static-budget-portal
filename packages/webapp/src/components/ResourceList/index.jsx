@@ -1,9 +1,11 @@
 import React from 'react';
 import styled from 'styled-components';
+import CssBaseline from '@material-ui/core/CssBaseline';
 import Card from '@material-ui/core/Card';
 import CardContent from '@material-ui/core/CardContent';
 import Button from '@material-ui/core/Button';
 import { Typography } from '@material-ui/core';
+
 import Icon from '@material-ui/icons/ArrowDownward';
 import Copy from '@material-ui/icons/FileCopy';
 
@@ -88,6 +90,7 @@ const ButtonBtn = styled(Button)`
   && {
     padding: 6px;
     min-width: 0px;
+    width: 40px;
     height: 57px;
     text-transform: none;
     box-shadow: none;
@@ -153,7 +156,8 @@ const createResource = (props) => {
 
   return (
     <CardWrapper key={heading}>
-      <Card>
+      <CssBaseline />
+      <StyledCard>
         <CardContentWrapper>
           <HeadingText>
             <Title>{heading}</Title>
@@ -168,7 +172,7 @@ const createResource = (props) => {
               </BtnLink>
           </div>
         </CardContentWrapper>
-      </Card>
+      </StyledCard>
     </CardWrapper>
   );
 };

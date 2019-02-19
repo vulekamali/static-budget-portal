@@ -1,8 +1,8 @@
 import React, { Fragment } from 'react';
 import styled from 'styled-components';
-import { Typography } from '@material-ui/core'
 import Card from '@material-ui/core/Card';
 import CardContent from '@material-ui/core/Card';
+import CssBaseline from '@material-ui/core/CssBaseline';
 import CardActionArea from '@material-ui/core/CardActionArea';
 import Button from '@material-ui/core/Button';
 import NationalMap from '../../components/NationalMap';
@@ -190,7 +190,7 @@ const Tag = styled.div`
 
 const SubHeading = styled.div`
     font-family: Lato;
-    font-weight: normal;
+    font-style: normal;
     font-weight: bold;
     line-height: 16px;
     font-size: 10px;
@@ -200,7 +200,7 @@ const SubHeading = styled.div`
 `;
 
 const Heading = styled.div`
-    && {
+    &&&& {
       font-family: Lato;
       font-weight: 700;
       font-size: 16px;
@@ -235,8 +235,6 @@ const TotalAmount = styled.div`
       font-size: 16px;
 `;
 
-const windowSize = window.innerWidth > 1028 ? 'medium' : 'small';
-
 const ctaIndex = Object.keys(callToActions);
 
 const buildCta = index => {
@@ -250,10 +248,10 @@ const buildCta = index => {
 
   return (
     <CardWrapper>
-      {console.log(windowSize)}
       <CardContainer>
           <CardHeading {...{ image }} />
           <GreenCardContent>
+          <CssBaseline />
             <TopContent>
               <TopContentTitle>{title}</TopContentTitle>
             </TopContent>
@@ -288,7 +286,7 @@ const createProjectCard = (props, index) => {
           <StyledCardActionArea>
             <CardHeading>
               <MapPosition>
-                <NationalMap size={windowSize} active={province} />
+                <NationalMap size="small" active={province} />
               </MapPosition>
               <Tag {...{ province }}>{province === 'Multiple' ? 'MULTIPLE' : calcShorthand(province)}</Tag>
             </CardHeading>
