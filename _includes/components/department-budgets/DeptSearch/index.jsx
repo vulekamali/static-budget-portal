@@ -10,7 +10,7 @@ const onlyEpreView = (slug, name, epresData) => {
         empty
         map={slug}
         name={name}
-        epre={epresData[slug] || null}
+        epre={epresData && (epresData[slug] || null)}
       />
     </div>
   );
