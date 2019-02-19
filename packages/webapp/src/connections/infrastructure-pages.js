@@ -9,6 +9,8 @@ import {
 import Infrastructure from '../views/Infrastructure';
 import Loading from '../views/Loading';
 
+const isConnectionYear = year => year === '2017' || year === '2018';
+
 const parseProjects = projects => projects.map(project => ({
   id: project.slug,
   subheading: project.department.name,
@@ -20,11 +22,18 @@ const parseProjects = projects => projects.map(project => ({
   projectedBudget: project.projected_budget,
   description: project.description,
   link: project.slug,
-  sideInfo: [{
+  resources: [],
+  chartData: project.expenditure.map(obj => ({
+    name: obj.year,
+    Actual: obj.budget_phase === 'Audited Outcome' ? obj.amount : null,
+    Projected: obj.budget_phase !== 'Audited Outcome' ? obj.amount : null,
+    Connection : isConnectionYear(obj.year) ? obj.amount : null,
+  })),
+  sideInfo: {
     investment: project.nature_of_investment,
     infrastructure: project.infrastructure_type,
     department: project.department,
-  }],
+  },
 }))
 
 class InfrastructurePages extends Component {
@@ -62,7 +71,7 @@ class InfrastructurePages extends Component {
 
 
 const node = document.querySelector('[data-webapp="infrastructure-pages"]');
-const budgetReviewUrl = document.querySelector('[data-webapp-budgetReviewUrl="#"]');
+const budgetReviewUrl = node.getAttribute('data-webapp-budgetReviewUrl');
 
 
 const connection = () => {
