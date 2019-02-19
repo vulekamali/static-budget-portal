@@ -6,11 +6,7 @@
 // import RightIcon from '@material-ui/icons/KeyboardArrowRight';
 // import { darken } from 'polished';
 // import {
-<<<<<<< HEAD
-//   LineChart,
-=======
 //   LineChart, 
->>>>>>> 8f4169b828f700e2dfd6ccd37eaf3c609ea07969
 //   Line,
 //   XAxis,
 //   YAxis,
@@ -83,21 +79,13 @@
 
 // const Content = ({ payload = [] }) => {
 //   const filtered = payload.filter(({ name }) => name !== 'Connection');
-<<<<<<< HEAD
-//   const { name, value } = payload[0] || {};
-=======
 //   const { name, value } = payload[0] || {}; 
->>>>>>> 8f4169b828f700e2dfd6ccd37eaf3c609ea07969
 
 //   return (
 //     <Fragment>
 //       <StyledTooltip>
 //         {name}: R{trimValues(value, true)}
-<<<<<<< HEAD
-//       </StyledTooltip>
-=======
 //       </StyledTooltip> 
->>>>>>> 8f4169b828f700e2dfd6ccd37eaf3c609ea07969
 //     </Fragment>
 //   )
 // }
@@ -112,11 +100,7 @@
 
 //   const extraTooltip = (
 //     <Fragment>
-<<<<<<< HEAD
-//       <rect
-=======
 //       <rect 
->>>>>>> 8f4169b828f700e2dfd6ccd37eaf3c609ea07969
 //         x={x - 22}
 //         y={y - 10}
 //         width="45"
@@ -152,13 +136,8 @@
 //   )
 
 
-<<<<<<< HEAD
-//   // console.log(params)
-//   // return null;
-=======
 //   console.log(params)
 //   return null;
->>>>>>> 8f4169b828f700e2dfd6ccd37eaf3c609ea07969
 //   // const [first, second] = points;
 
 //   // const isMobile = window.innerWidth < 500;
@@ -167,11 +146,7 @@
 
 //   // const extraTooltip = (
 //   //   <Fragment>
-<<<<<<< HEAD
-//   //     <rect
-=======
 //   //     <rect 
->>>>>>> 8f4169b828f700e2dfd6ccd37eaf3c609ea07969
 //   //       x={first.x - 20}
 //   //       y={first.y - 10}
 //   //       width="40"
@@ -216,11 +191,7 @@
 //   const isMobile = window.innerWidth < 500;
 
 //   return (
-<<<<<<< HEAD
-//     <circle
-=======
 //     <circle 
->>>>>>> 8f4169b828f700e2dfd6ccd37eaf3c609ea07969
 //       {...{ cx, cy }}
 //       fill={isMobile ? 'none' : '#76B649'}
 //       stroke="none"
@@ -235,11 +206,7 @@
 //   }
 
 //   return (
-<<<<<<< HEAD
-//     <circle
-=======
 //     <circle 
->>>>>>> 8f4169b828f700e2dfd6ccd37eaf3c609ea07969
 //       {...{ cx, cy }}
 //       fill="#76B649"
 //       stroke="none"
@@ -330,11 +297,7 @@
 //               strokeWidth: 1,
 //             }}
 //           />
-<<<<<<< HEAD
-//           <Line
-=======
 //           <Line 
->>>>>>> 8f4169b828f700e2dfd6ccd37eaf3c609ea07969
 //             dataKey="Actual"
 //             stroke="#76B649"
 //             strokeWidth={3}
@@ -344,11 +307,7 @@
 //             animationEasing="linear"
 //             animationDuration={750}
 //           />
-<<<<<<< HEAD
-//           <Line
-=======
 //           <Line 
->>>>>>> 8f4169b828f700e2dfd6ccd37eaf3c609ea07969
 //             dataKey="Connection"
 //             stroke="#76B649"
 //             strokeWidth={3}
@@ -370,11 +329,7 @@
 //             animationEasing="linear"
 //             animationDuration={750}
 //             />
-<<<<<<< HEAD
-//           <Tooltip
-=======
 //           <Tooltip 
->>>>>>> 8f4169b828f700e2dfd6ccd37eaf3c609ea07969
 //             active={false}
 //             content={<Content />}
 //             isAnimationActive={false}
