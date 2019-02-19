@@ -10,6 +10,9 @@
   {% elsif event.type == 'dataquest' %}
     {% assign title = 'Data Quest' %}
     {% assign description = 'Tell us what you need to make Vulekamali and budget data more accessible and useful. Join us for a full day event discussing budget accessibility.' %}
+  {% elsif event.type == 'gift-dataquest' %}
+    {% assign title = 'Better Budget Data Quest' %}
+    {% assign description = 'Find new insights on budget topics and innovative ideas to analyse and improve budget allocations and execution.' %}
   {% else %}
     {% assign title = 'Event' %}
     {% assign description = '' %}
@@ -22,7 +25,7 @@
             <div class="Events-type">{{ event.date }} — {{ event.province }} — {{ title }}</div>
 
             {% if event.date %}
-              <div class="Events-line"> 
+              <div class="Events-line">
                 <span class="Events-icon">
                   {%
                     include components/Icon/index.html
@@ -50,9 +53,9 @@
             <div class="Events-description">{{ description }}</div>
           </div>
         </div>
-        
-        <div class="Events-pastWrap"> 
-          <div class="Events-past"> 
+
+        <div class="Events-pastWrap">
+          <div class="Events-past">
 
             <div class="Events-buttons">
 
@@ -62,13 +65,13 @@
                   <a class="Button is-small is-inline u-marginRight5" href="{{ event.rsvp_url }}" target="_blank">RSVP</a>
                 {% endif %}
 
-                {% if event.url %}  
+                {% if event.url %}
                   <a class="Button is-small is-inline u-marginRight5" target="_blank" href="{{ event.url }}">Learn more</a>
                 {% endif %}
 
               {% else %}
 
-              {% if include.upcoming %}  
+              {% if include.upcoming %}
                 <a class="Button is-small is-inline u-marginRight5" target="_blank" href="http://eepurl.com/diwJEP">Receive updates</a>
               {% endif %}
 
@@ -101,13 +104,13 @@
                     <img class="Events-image" src="{{ url }}" />
                   </a>
                 {% endfor %}
-                
+
               </div>
             {% endif %}
           </div>
         </div>
-       
-      </div> 
+
+      </div>
     </div>
   {% endfor %}
 </div>

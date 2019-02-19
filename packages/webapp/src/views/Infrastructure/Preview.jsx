@@ -484,8 +484,6 @@ const createMap = (props) => {
   );
 }
 
-
-
 const Preview = (props) => {
   const {
     id,
