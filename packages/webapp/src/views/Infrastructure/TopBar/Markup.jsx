@@ -78,7 +78,11 @@ const StyledCloseIcon = styled(CloseIcon)`
 `;
 
 const TextContainer = styled.div`
-  position: absolute;
+  display: none;
+  ${'' /* leaving styling commented out
+  due to temporary change in design still
+  to be confirmed as permanent */}
+  ${'' /* position: absolute;
   top: 60px;
   left: 0;
   padding-top: 16px;
@@ -86,12 +90,13 @@ const TextContainer = styled.div`
   width: 100%;
   display: flex;
   justify-content: center;
-  background-color: #EDEDED;
+  background-color: #EDEDED; */}
 
-    @media screen and (min-width: 650px) {
-      position: static;
+    @media screen and (min-width: 450px) {
+      display: block;
+      ${'' /* position: static;
       top: 0;
-      background-color: transparent;
+      background-color: transparent; */}
     }
 `;
 
@@ -129,7 +134,7 @@ const Wrapper = styled.div`
   background: #3f3f3f;
   width: 100%;
   height: 60px;
-  margin-bottom: 80px;
+  margin-bottom: 16px;
 
   @media screen and (min-width: 650px) {
     margin-bottom: 45px;
