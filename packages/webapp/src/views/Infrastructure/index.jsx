@@ -53,6 +53,7 @@ class Infrastructure extends Component {
       datasetUrl: props.datasetUrl,
       budgetReviewUrl: props.budgetReviewUrl,
       Link: props.Link,
+      chartData: props.chartData,
     }
 
     return <Markup {...passedProps} />

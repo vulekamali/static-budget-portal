@@ -48,26 +48,19 @@ const createCallToActions = (datasetUrl, budgetReviewUrl) => ({
 });
 
 const CardWrapper = styled.div`
-  width: 272px;
-  height: 255px;
-  margin: 16px 16px 0px;
+  padding: 10px;
+  width: 100%;
+
+  @media screen and (min-width: 550px) {
+    width: 50%;
+  }
+
+  @media screen and (min-width: 900px) {
+    width: ${100 / 3}%;
+  }
   
   @media screen and (min-width: 1024px) {
-    width: 226px;
-    height: 286px;
-    margin: 12px;
-    
-    &&:first-child{
-      margin-left: 0;
-    }
-    
-    &&:nth-child(4) {
-      margin-right: 0;
-    }
-    
-    &&:nth-child(4n + 1) {
-      margin-left: 0;
-    }
+    width: 25%;
   }
 `;
 
@@ -338,7 +331,9 @@ const Content = styled.div`
   position: relative;
   top: -130px;
   max-width: 1000px;
+  
   margin: 0 auto;
+  padding: 0 20px;
 `;
 
 const Title = styled.h2`

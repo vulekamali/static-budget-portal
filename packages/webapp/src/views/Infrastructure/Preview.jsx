@@ -30,8 +30,7 @@ const Wrapper = styled.div`
   @media screen and (min-width: 950px) {
     flex-direction: row;
     justify-content: space-between;
-    ${({ details }) => (!!details ? 'border-bottom: 1px solid #000;' : '')};
-    max-width: 976px;
+    max-width: 1100px;
     margin: 0 auto;
     position: relative;
     padding-top: 64px;
@@ -40,6 +39,7 @@ const Wrapper = styled.div`
 
 const MapWrapper = styled.div`
   display: none;
+    max-width: 1000px;
 
   @media screen and (min-width: 950px) {
     width: 300px;
@@ -63,13 +63,13 @@ const MapSubHeading = styled.div`
 `;
 
 const DataGroup = styled.div`
-  max-width: 272px;
+  // max-width: 272px;
   margin: 0 auto;
   font-family: Lato;
-  padding-bottom: 16px;
+  padding: 0 40px 16px;
 
   @media screen and (min-width: 650px) {
-    max-width: 419px;
+    // max-width: 360px;
   }
 `;
 
@@ -92,19 +92,19 @@ const SubHeading = styled.div`
 `;
 
 const Heading = styled.div`
-  width: 1000px;
+  // width: 1000px;
   font-weight: 700;
   line-height: normal;
   font-size: 22px;
   text-align: center;
   text-transform: Capitalize;
-  max-width: 272px;
+  // max-width: 272px;
   padding-bottom: 24px;
 
   @media screen and (min-width: 650px) {
     font-size: 32px;
     text-align: left;
-    max-width: 419px;
+    // max-width: 419px;
   }
 `;
 
@@ -222,22 +222,23 @@ const StyledLink = styled.a`
 `;
 
 const SideWrapper = styled.div`
-  max-width: 270px;
+  // width: 1000px;
+  // max-width: 270px;
   margin: 0 auto;
   font-family: Lato; 
   display: flex;
   flex-direction: column;
   align-items: center;
-  padding-bottom: 48px;
-  border-bottom: 1px solid #000;
+  padding: 0 40px 48px;
+  // border-bottom: 1px solid #000;
 
   @media screen and (min-width: 650px) {
-    max-width: 419px;
+    // max-width: 419px;
     align-items: flex-start;
   }
 
   @media screen and (min-width: 950px) {
-    max-width: 300px;
+    // max-width: 300px;
     border-bottom: none;
     margin: 0;
     ${'' /* align-items: flex-start; */}
@@ -299,7 +300,7 @@ const SideButton = styled(Button)`
     background: rgba(0, 0, 0, 0.1);
     border-radius: 5px;
     text-transform: none;
-    width: 270px;
+    // width: 270px;
     margin: 0 auto;
     font-family: Lato;
     font-size: 12px;
@@ -312,17 +313,18 @@ const SideButton = styled(Button)`
     align-items: center;
     padding-right: 16px;
     padding-left: 16px;
+    width: 100%;
 
     &:hover {
       background: rgba(0, 0, 0, 0.2);
     }
 
     @media screen and (min-width: 650px) {
-      width: 419px;
+      max-width: 419px;
     }
 
     @media screen and (min-width: 950px) {
-      width: 190px;
+      max-width: 190px;
     }
   }
 `;
@@ -379,7 +381,7 @@ const SideButtonToMaps = styled(Button)`
 `;
 
 
-const createSideRender = (id) => (props) => {
+const createSideRender = (id, props) => {
   const {
     investment,
     infrastructure,
@@ -398,22 +400,22 @@ const createSideRender = (id) => (props) => {
       </SideSection>
       <SideSection>
         <SideTitle>Department</SideTitle>
-        <SideType>{department}</SideType>
+        <SideType>{department.name}</SideType>
       </SideSection>
-      <SideLink href='#'>
+      <SideLink href={department.url} style={{ marginRight: '20px' }}>
         <SideButton>
           <span>Explore this department</span>
           <ForwardArrow />
         </SideButton>
       </SideLink>
-      <SideMapButtonWrapper>
+      {/* <SideMapButtonWrapper>
         <SideLink href='#'>
           <SideButtonToMaps>
             <span>View project on Google Maps</span>
             <ForwardArrow />
           </SideButtonToMaps>
         </SideLink>
-      </SideMapButtonWrapper>
+      </SideMapButtonWrapper> */}
     </SideWrapper>
   );
 }
@@ -432,36 +434,34 @@ const createItem = (props) => {
   } = props;
 
   return (
-    <AnimationWrapper key={id}>
-      <React.Fragment>
-        <DataGroup>
-          <SubHeading >{subheading}</SubHeading>
-          <Heading>{heading}</Heading>
-          <Stage>Project stage: {stage}</Stage>
-            <ProgressBarContainer>
-              <Progressbar stage={stage} />
-            </ProgressBarContainer>
-          <BudgetGroup>
-            <BudgetCashflow>
-              <CashflowTitle>Total budget:</CashflowTitle>
-              <Estimation>{`R${trimValues(totalBudget)}`}</Estimation>
-            </BudgetCashflow>
-            <BudgetCashflow>
-              <CashflowTitle>3 Years project budget:</CashflowTitle>
-              <Estimation>{`R${trimValues(projectedBudget)}`}</Estimation>
-            </BudgetCashflow>
-          </BudgetGroup>
-          <Text>{description}</Text>
-          {!details && (
-            <StyledLink href={link}>
-              <StyledButton>
-                <span>View in more detail</span>
-                <ForwardArrow />
-              </StyledButton>
-            </StyledLink>
-          )}
-        </DataGroup>
-      </React.Fragment>
+    <AnimationWrapper key={id} style={{ width: '100%' }}>
+      <DataGroup>
+        <SubHeading >{subheading}</SubHeading>
+        <Heading>{heading}</Heading>
+        <Stage>Project stage: {stage}</Stage>
+          <ProgressBarContainer>
+            <Progressbar stage={stage} />
+          </ProgressBarContainer>
+        <BudgetGroup>
+          <BudgetCashflow>
+            <CashflowTitle>Total budget:</CashflowTitle>
+            <Estimation>{`R${trimValues(totalBudget)}`}</Estimation>
+          </BudgetCashflow>
+          <BudgetCashflow>
+            <CashflowTitle>3 Years project budget:</CashflowTitle>
+            <Estimation>{`R${trimValues(projectedBudget)}`}</Estimation>
+          </BudgetCashflow>
+        </BudgetGroup>
+        <Text>{description}</Text>
+        {!details && (
+          <StyledLink href={link}>
+            <StyledButton>
+              <span>View in more detail</span>
+              <ForwardArrow />
+            </StyledButton>
+          </StyledLink>
+        )}
+      </DataGroup>
     </AnimationWrapper>
   );
 }
@@ -491,13 +491,33 @@ const createMap = (props, selected) => {
   return (
     <MapWrapper>
       {/* <MapSubHeading>Select a project on the map</MapSubHeading> */}
-      <NationalMap size={details ? "medium" : "large"} {...{ points, activeProvinces }} selected={selected.points && selected.points[0].id} />
+      <NationalMap size={!!details ? "medium" : "large"} {...{ points, activeProvinces }} selected={selected.points && selected.points[0].id} />
     </MapWrapper>
   );
 }
 
-const Preview = (props) => {
+const LeftWrap = styled.div`
+display: none;
+width: 100%;
 
+@media screen and (min-width: 1070px) {
+  display: block;
+  // padding-right: 30px;
+}
+`;
+
+
+const RightWrap = styled.div`
+width: 100%;
+// display: none;
+
+@media screen and (min-width: 950px) {
+  // padding-left: 60px;
+}
+`;
+
+
+const Preview = (props) => {
   const {
     id,
     sideInfo,
@@ -505,15 +525,15 @@ const Preview = (props) => {
     selected,
   } = props;
 
-  console.log(props)
-
   return (
-    <Wrapper details={details}>
-      {createMap(props, selected)}
-      <PoseGroup>
+    <Wrapper>
+      <LeftWrap>
+        {createMap(props, selected)}
+      </LeftWrap>
+      <PoseGroup style={{ width: '100%' }}>
         {createItem(props)}
       </PoseGroup>
-      {details && sideInfo.map(createSideRender(id))}
+        {!!details && <RightWrap>{createSideRender(id, sideInfo)}</RightWrap>}
     </Wrapper>
   );
 }
