@@ -87,7 +87,6 @@ const Markup = (props) => {
       clickEvent: openModal,
     },
   }
-
   return (
     <Layout>
       <Modal {...{ closeModal, videoUrl }} open={!!modal} />
