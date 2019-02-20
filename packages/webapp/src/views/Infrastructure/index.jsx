@@ -32,9 +32,22 @@ class Infrastructure extends Component {
   }
 
   nextId(value) {
-    const { id } = this.state;
+    const { id, details } = this.state;
     const { projects } = this.props;
     const max = projects.length;
+
+    if (!details) {
+      window.history.pushState({}, window.document.title, `/infrastructure-projects/?preview=${id}` );
+    } else {
+      if (value === true && value < max) {
+        window.history.pushState({}, window.document.title, projects[id + 1].id);
+      }
+  
+      if (value === false && id > 0) {
+        window.history.pushState({}, window.document.title, projects[id - 1].id);
+      }
+      
+    }
 
     if (value === true && value < max) {
       this.setState({ id: id + 1 })
