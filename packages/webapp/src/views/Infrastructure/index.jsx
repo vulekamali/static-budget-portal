@@ -5,11 +5,19 @@ import Markup from './Markup';
 class Infrastructure extends Component {
   constructor(props) {
     super(props);
-    const { details: initialDetails } = this.props;
+    const { 
+      details: initialDetails,
+      projectId,
+      projects,
+    } = this.props;
+
+    const getId = () => projects.findIndex(({ slug }) => {
+      return slug.replace(/^infrastructure-projects/g, '') === projectId;
+    })
 
     this.state = {
-      id: 0,
-      details: initialDetails || false,
+      id: projectId ? getId() : 0,
+      details: initialDetails || !!projectId || false,
     }
 
     this.events = {

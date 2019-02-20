@@ -49,7 +49,7 @@ class InfrastructurePages extends Component {
   }
 
   componentDidMount() {
-    axios.get('/json/infrastruture-projects_copy.json')
+    axios.get('/json/infrastruture-projects.json')
       .then(({ data }) => this.setState({
         loading: false,
         datasetUrl: data.datasetUrl,
