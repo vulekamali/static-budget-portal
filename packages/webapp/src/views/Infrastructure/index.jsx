@@ -5,11 +5,20 @@ import Markup from './Markup';
 class Infrastructure extends Component {
   constructor(props) {
     super(props);
-    const { details: initialDetails } = this.props;
+    const { 
+      details: initialDetails,
+      projectId,
+      projects = [],
+    } = this.props;
+
+    const fixedSlugs = projects.map(({ id: rawId, ...other}) => ({
+      id: rawId.replace(/^\/infrastructure-projects\//g, ''),
+      ...other,
+    }))
 
     this.state = {
-      id: 0,
-      details: initialDetails || false,
+      id: !!projectId ? fixedSlugs.findIndex(({ id }) => id === projectId) : 0,
+      details: initialDetails || !!projectId || false,
     }
 
     this.events = {
@@ -23,9 +32,22 @@ class Infrastructure extends Component {
   }
 
   nextId(value) {
-    const { id } = this.state;
+    const { id, details } = this.state;
     const { projects } = this.props;
     const max = projects.length;
+
+    if (!details) {
+      window.history.pushState({}, window.document.title, `/infrastructure-projects/?preview=${id}` );
+    } else {
+      if (value === true && value < max) {
+        window.history.pushState({}, window.document.title, projects[id + 1].id);
+      }
+  
+      if (value === false && id > 0) {
+        window.history.pushState({}, window.document.title, projects[id - 1].id);
+      }
+      
+    }
 
     if (value === true && value < max) {
       this.setState({ id: id + 1 })
