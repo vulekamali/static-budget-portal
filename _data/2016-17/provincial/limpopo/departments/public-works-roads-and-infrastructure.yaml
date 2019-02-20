@@ -150,7 +150,7 @@ economic_classification_by_programme:
 expenditure_over_time:
   dataset_detail_page: /datasets/estimates-of-provincial-expenditure/estimates-of-provincial-expenditure-2016-17
   expenditure:
-    base_financial_year: 2017-18
+    base_financial_year: 2018-19
     nominal:
     - amount: 748024000
       financial_year: 2012-13
@@ -174,33 +174,28 @@ expenditure_over_time:
       financial_year: 2018-19
       phase: Medium Term Estimates
     real:
-    - amount: 980300668
+    - amount: 1026754389
       financial_year: 2012-13
       phase: Audited Outcome
-    - amount: 1063779591
+    - amount: 1114189146
       financial_year: 2013-14
       phase: Audited Outcome
-    - amount: 3268809242
+    - amount: 3423709017
       financial_year: 2014-15
       phase: Audited Outcome
-    - amount: 3073725421
+    - amount: 3219380717
       financial_year: 2015-16
       phase: Adjusted appropriation
-    - amount: 3043184199
+    - amount: 3187392231
       financial_year: 2016-17
       phase: Main appropriation
-    - amount: 2999218000
+    - amount: 3146545348
       financial_year: 2017-18
       phase: Medium Term Estimates
-    - amount: 2993232228
+    - amount: 3157609000
       financial_year: 2018-19
       phase: Medium Term Estimates
 financial_years:
-- closest_match:
-    is_exact_match: true
-    url_path: /2015-16/provincial/limpopo/departments/public-works-roads-and-infrastructure
-  id: 2015-16
-  is_selected: false
 - closest_match:
     is_exact_match: true
     url_path: /2016-17/provincial/limpopo/departments/public-works-roads-and-infrastructure
@@ -215,6 +210,11 @@ financial_years:
     is_exact_match: true
     url_path: /2018-19/provincial/limpopo/departments/public-works-roads-and-infrastructure
   id: 2018-19
+  is_selected: false
+- closest_match:
+    is_exact_match: false
+    url_path: /2019-20/provincial/limpopo
+  id: 2019-20
   is_selected: false
 government:
   name: Limpopo

@@ -159,7 +159,7 @@ economic_classification_by_programme:
 expenditure_over_time:
   dataset_detail_page: /datasets/estimates-of-provincial-expenditure/estimates-of-provincial-expenditure-2016-17
   expenditure:
-    base_financial_year: 2017-18
+    base_financial_year: 2018-19
     nominal:
     - amount: 1927682000
       financial_year: 2012-13
@@ -183,33 +183,28 @@ expenditure_over_time:
       financial_year: 2018-19
       phase: Medium Term Estimates
     real:
-    - amount: 2526266474
+    - amount: 2645979214
       financial_year: 2012-13
       phase: Audited Outcome
-    - amount: 2712530767
+    - amount: 2841070053
       financial_year: 2013-14
       phase: Audited Outcome
-    - amount: 2816282686
+    - amount: 2949738487
       financial_year: 2014-15
       phase: Audited Outcome
-    - amount: 2684697808
+    - amount: 2811918167
       financial_year: 2015-16
       phase: Adjusted appropriation
-    - amount: 2713280603
+    - amount: 2841855421
       financial_year: 2016-17
       phase: Main appropriation
-    - amount: 2732693000
+    - amount: 2866928128
       financial_year: 2017-18
       phase: Medium Term Estimates
-    - amount: 2719934676
+    - amount: 2869303000
       financial_year: 2018-19
       phase: Medium Term Estimates
 financial_years:
-- closest_match:
-    is_exact_match: true
-    url_path: /2015-16/provincial/free-state/departments/police-roads-and-transport
-  id: 2015-16
-  is_selected: false
 - closest_match:
     is_exact_match: true
     url_path: /2016-17/provincial/free-state/departments/police-roads-and-transport
@@ -224,6 +219,11 @@ financial_years:
     is_exact_match: true
     url_path: /2018-19/provincial/free-state/departments/police-roads-and-transport
   id: 2018-19
+  is_selected: false
+- closest_match:
+    is_exact_match: false
+    url_path: /2019-20/provincial/free-state
+  id: 2019-20
   is_selected: false
 government:
   name: Free State

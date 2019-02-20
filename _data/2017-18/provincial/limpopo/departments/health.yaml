@@ -257,7 +257,7 @@ economic_classification_by_programme:
 expenditure_over_time:
   dataset_detail_page: /datasets/estimates-of-provincial-expenditure/estimates-of-provincial-expenditure-2017-18
   expenditure:
-    base_financial_year: 2017-18
+    base_financial_year: 2018-19
     nominal:
     - amount: 13137862000
       financial_year: 2013-14
@@ -281,33 +281,28 @@ expenditure_over_time:
       financial_year: 2019-20
       phase: Medium Term Estimates
     real:
-    - amount: 16270953964
+    - amount: 17041989200
       financial_year: 2013-14
       phase: Audited Outcome
-    - amount: 17032047305
+    - amount: 17839148637
       financial_year: 2014-15
       phase: Audited Outcome
-    - amount: 17205333844
+    - amount: 18020646743
       financial_year: 2015-16
       phase: Audited Outcome
-    - amount: 17934474310
+    - amount: 18784339147
       financial_year: 2016-17
       phase: Adjusted appropriation
-    - amount: 18042779000
+    - amount: 18929074959
       financial_year: 2017-18
       phase: Main appropriation
-    - amount: 18002156961
+    - amount: 18990766000
       financial_year: 2018-19
       phase: Medium Term Estimates
-    - amount: 18218320585
+    - amount: 19243123642
       financial_year: 2019-20
       phase: Medium Term Estimates
 financial_years:
-- closest_match:
-    is_exact_match: true
-    url_path: /2015-16/provincial/limpopo/departments/health
-  id: 2015-16
-  is_selected: false
 - closest_match:
     is_exact_match: true
     url_path: /2016-17/provincial/limpopo/departments/health
@@ -322,6 +317,11 @@ financial_years:
     is_exact_match: true
     url_path: /2018-19/provincial/limpopo/departments/health
   id: 2018-19
+  is_selected: false
+- closest_match:
+    is_exact_match: false
+    url_path: /2019-20/provincial/limpopo
+  id: 2019-20
   is_selected: false
 government:
   name: Limpopo

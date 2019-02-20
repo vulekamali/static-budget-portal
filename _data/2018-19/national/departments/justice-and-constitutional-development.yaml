@@ -67,7 +67,7 @@ adjusted_budget_summary:
 budget_actual:
   dataset_detail_page: /datasets/budgeted-and-actual-national-expenditure/budgeted-and-actual-national-expenditure
   expenditure:
-    base_financial_year: 2017-18
+    base_financial_year: 2018-19
     nominal:
     - amount: 14983969000.0
       financial_year: 2015-16
@@ -118,46 +118,46 @@ budget_actual:
       financial_year: 2018-19
       phase: Audit Outcome
     real:
-    - amount: 16705722015
+    - amount: 17497359700
       financial_year: 2015-16
       phase: Main appropriation
-    - amount: 16735605965
+    - amount: 17528659767
       financial_year: 2015-16
       phase: Adjusted appropriation
-    - amount: 16735605965
+    - amount: 17528659767
       financial_year: 2015-16
       phase: Final Appropriation
-    - amount: 16692132422
+    - amount: 17483126134
       financial_year: 2015-16
       phase: Audit Outcome
-    - amount: 16834214928
+    - amount: 17631941534
       financial_year: 2016-17
       phase: Main appropriation
-    - amount: 16824775026
+    - amount: 17622054302
       financial_year: 2016-17
       phase: Adjusted appropriation
-    - amount: 16824775026
+    - amount: 17622054302
       financial_year: 2016-17
       phase: Final Appropriation
-    - amount: 16822977249
+    - amount: 17620171333
       financial_year: 2016-17
       phase: Audit Outcome
-    - amount: 16786788000
+    - amount: 17611387269
       financial_year: 2017-18
       phase: Main appropriation
-    - amount: 16786788000
+    - amount: 17611387269
       financial_year: 2017-18
       phase: Adjusted appropriation
-    - amount: 16786788000
+    - amount: 17611387269
       financial_year: 2017-18
       phase: Final Appropriation
-    - amount: 16607219000
+    - amount: 17422997495
       financial_year: 2017-18
       phase: Audit Outcome
-    - amount: 16161877986
+    - amount: 17049426000
       financial_year: 2018-19
       phase: Main appropriation
-    - amount: 16549968549
+    - amount: 17458829000
       financial_year: 2018-19
       phase: Adjusted appropriation
     - amount: null
@@ -678,7 +678,7 @@ economic_classification_by_programme:
 expenditure_over_time:
   dataset_detail_page: /datasets/estimates-of-national-expenditure/estimates-of-national-expenditure-2018-19
   expenditure:
-    base_financial_year: 2017-18
+    base_financial_year: 2018-19
     nominal:
     - amount: 15840330000.0
       financial_year: 2014-15
@@ -702,33 +702,28 @@ expenditure_over_time:
       financial_year: 2020-21
       phase: Medium Term Estimates
     real:
-    - amount: 18572986841
+    - amount: 19453109011
       financial_year: 2014-15
       phase: Audited Outcome
-    - amount: 18611765892
+    - amount: 19493725693
       financial_year: 2015-16
       phase: Audited Outcome
-    - amount: 18758905001
+    - amount: 19647837315
       financial_year: 2016-17
       phase: Audited Outcome
-    - amount: 18827308000
+    - amount: 19752141531
       financial_year: 2017-18
       phase: Adjusted appropriation
-    - amount: 18262080939
+    - amount: 19264964000
       financial_year: 2018-19
       phase: Main appropriation
-    - amount: 18516059768
+    - amount: 19557611023
       financial_year: 2019-20
       phase: Medium Term Estimates
-    - amount: 18710891577
+    - amount: 19775037921
       financial_year: 2020-21
       phase: Medium Term Estimates
 financial_years:
-- closest_match:
-    is_exact_match: true
-    url_path: /2015-16/national/departments/justice-and-constitutional-development
-  id: 2015-16
-  is_selected: false
 - closest_match:
     is_exact_match: true
     url_path: /2016-17/national/departments/justice-and-constitutional-development
@@ -744,6 +739,11 @@ financial_years:
     url_path: /2018-19/national/departments/justice-and-constitutional-development
   id: 2018-19
   is_selected: true
+- closest_match:
+    is_exact_match: true
+    url_path: /2019-20/national/departments/justice-and-constitutional-development
+  id: 2019-20
+  is_selected: false
 government:
   name: South Africa
   slug: south-africa
@@ -1018,4 +1018,4 @@ vote_primary:
   name: Justice and Constitutional Development
   slug: justice-and-constitutional-development
   url_path: /2018-19/national/departments/justice-and-constitutional-development
-website_url: www.justice.gov.za
+website_url: null

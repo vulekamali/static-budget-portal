@@ -143,7 +143,7 @@ economic_classification_by_programme:
 expenditure_over_time:
   dataset_detail_page: /datasets/estimates-of-provincial-expenditure/estimates-of-provincial-expenditure-2018-19
   expenditure:
-    base_financial_year: 2017-18
+    base_financial_year: 2018-19
     nominal:
     - amount: 1538857000.0
       financial_year: 2014-15
@@ -167,33 +167,28 @@ expenditure_over_time:
       financial_year: 2020-21
       phase: Medium Term Estimates
     real:
-    - amount: 1804329254
+    - amount: 1889831397
       financial_year: 2014-15
       phase: Audited Outcome
-    - amount: 2009585228
+    - amount: 2104813880
       financial_year: 2015-16
       phase: Audited Outcome
-    - amount: 1973534223
+    - amount: 2067054519
       financial_year: 2016-17
       phase: Audited Outcome
-    - amount: 2078184000
+    - amount: 2180268389
       financial_year: 2017-18
       phase: Adjusted appropriation
-    - amount: 2050848698
+    - amount: 2163473400
       financial_year: 2018-19
       phase: Main appropriation
-    - amount: 2037455623
+    - amount: 2152065021
       financial_year: 2019-20
       phase: Medium Term Estimates
-    - amount: 2037466960
+    - amount: 2153344016
       financial_year: 2020-21
       phase: Medium Term Estimates
 financial_years:
-- closest_match:
-    is_exact_match: true
-    url_path: /2015-16/provincial/north-west/departments/community-safety-and-transport-management
-  id: 2015-16
-  is_selected: false
 - closest_match:
     is_exact_match: true
     url_path: /2016-17/provincial/north-west/departments/community-safety-and-transport-management
@@ -209,6 +204,11 @@ financial_years:
     url_path: /2018-19/provincial/north-west/departments/community-safety-and-transport-management
   id: 2018-19
   is_selected: true
+- closest_match:
+    is_exact_match: false
+    url_path: /2019-20/provincial/north-west
+  id: 2019-20
+  is_selected: false
 government:
   name: North West
   slug: north-west

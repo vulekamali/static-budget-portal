@@ -58,7 +58,7 @@ adjusted_budget_summary:
 budget_actual:
   dataset_detail_page: /datasets/budgeted-and-actual-national-expenditure/budgeted-and-actual-national-expenditure
   expenditure:
-    base_financial_year: 2017-18
+    base_financial_year: 2018-19
     nominal:
     - amount: 234781000.0
       financial_year: 2015-16
@@ -109,28 +109,28 @@ budget_actual:
       financial_year: 2014-15
       phase: Audit Outcome
     real:
-    - amount: 261758825
+    - amount: 274162847
       financial_year: 2015-16
       phase: Main appropriation
-    - amount: 261758825
+    - amount: 274162847
       financial_year: 2015-16
       phase: Adjusted appropriation
-    - amount: 261758825
+    - amount: 274162847
       financial_year: 2015-16
       phase: Final Appropriation
-    - amount: 261063478
+    - amount: 273434549
       financial_year: 2015-16
       phase: Audit Outcome
-    - amount: 258140412
+    - amount: 270372968
       financial_year: 2016-17
       phase: Main appropriation
-    - amount: 253946998
+    - amount: 265980839
       financial_year: 2016-17
       phase: Adjusted appropriation
-    - amount: 253945218
+    - amount: 265978975
       financial_year: 2016-17
       phase: Final Appropriation
-    - amount: 253546279
+    - amount: 265561132
       financial_year: 2016-17
       phase: Audit Outcome
     - amount: null
@@ -489,7 +489,7 @@ economic_classification_by_programme:
 expenditure_over_time:
   dataset_detail_page: /datasets/estimates-of-national-expenditure/estimates-of-national-expenditure-2016-17
   expenditure:
-    base_financial_year: 2017-18
+    base_financial_year: 2018-19
     nominal:
     - amount: 171449000.0
       financial_year: 2012-13
@@ -513,33 +513,28 @@ expenditure_over_time:
       financial_year: 2018-19
       phase: Medium Term Estimates
     real:
-    - amount: 224687402
+    - amount: 235334713
       financial_year: 2012-13
       phase: Audited Outcome
-    - amount: 239200892
+    - amount: 250535957
       financial_year: 2013-14
       phase: Audited Outcome
-    - amount: 272496623
+    - amount: 285409479
       financial_year: 2014-15
       phase: Audited Outcome
-    - amount: 261758825
+    - amount: 274162847
       financial_year: 2015-16
       phase: Adjusted appropriation
-    - amount: 258140412
+    - amount: 270372968
       financial_year: 2016-17
       phase: Main appropriation
-    - amount: 255482000
+    - amount: 268031766
       financial_year: 2017-18
       phase: Medium Term Estimates
-    - amount: 253060872
+    - amount: 266958000
       financial_year: 2018-19
       phase: Medium Term Estimates
 financial_years:
-- closest_match:
-    is_exact_match: true
-    url_path: /2015-16/national/departments/independent-police-investigative-directorate
-  id: 2015-16
-  is_selected: false
 - closest_match:
     is_exact_match: true
     url_path: /2016-17/national/departments/independent-police-investigative-directorate
@@ -554,6 +549,11 @@ financial_years:
     is_exact_match: true
     url_path: /2018-19/national/departments/independent-police-investigative-directorate
   id: 2018-19
+  is_selected: false
+- closest_match:
+    is_exact_match: true
+    url_path: /2019-20/national/departments/independent-police-investigative-directorate
+  id: 2019-20
   is_selected: false
 government:
   name: South Africa
@@ -715,4 +715,4 @@ vote_primary:
   name: Independent Police Investigative Directorate
   slug: independent-police-investigative-directorate
   url_path: /2016-17/national/departments/independent-police-investigative-directorate
-website_url: www.ipid.gov.za
+website_url: null

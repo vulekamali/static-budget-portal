@@ -82,7 +82,7 @@ adjusted_budget_summary:
 budget_actual:
   dataset_detail_page: /datasets/budgeted-and-actual-national-expenditure/budgeted-and-actual-national-expenditure
   expenditure:
-    base_financial_year: 2017-18
+    base_financial_year: 2018-19
     nominal:
     - amount: 26957304000.0
       financial_year: 2015-16
@@ -133,46 +133,46 @@ budget_actual:
       financial_year: 2018-19
       phase: Audit Outcome
     real:
-    - amount: 30054869101
+    - amount: 31479085724
       financial_year: 2015-16
       phase: Main appropriation
-    - amount: 32026867492
+    - amount: 33544531632
       financial_year: 2015-16
       phase: Adjusted appropriation
-    - amount: 32337926360
+    - amount: 33870330715
       financial_year: 2015-16
       phase: Final Appropriation
-    - amount: 31987572930
+    - amount: 33503375010
       financial_year: 2015-16
       phase: Audit Outcome
-    - amount: 29863042799
+    - amount: 31278169307
       financial_year: 2016-17
       phase: Main appropriation
-    - amount: 29863042799
+    - amount: 31278169307
       financial_year: 2016-17
       phase: Adjusted appropriation
-    - amount: 29863042694
+    - amount: 31278169198
       financial_year: 2016-17
       phase: Final Appropriation
-    - amount: 29578132256
+    - amount: 30979757647
       financial_year: 2016-17
       phase: Audit Outcome
-    - amount: 30799220000
+    - amount: 32312136843
       financial_year: 2017-18
       phase: Main appropriation
-    - amount: 40584306000
+    - amount: 42577885062
       financial_year: 2017-18
       phase: Adjusted appropriation
-    - amount: 40484306000
+    - amount: 42472972870
       financial_year: 2017-18
       phase: Final Appropriation
-    - amount: 39792071170
+    - amount: 41746734135
       financial_year: 2017-18
       phase: Audit Outcome
-    - amount: 27830069883
+    - amount: 29358390000
       financial_year: 2018-19
       phase: Main appropriation
-    - amount: 28163596867
+    - amount: 29710233000
       financial_year: 2018-19
       phase: Adjusted appropriation
     - amount: null
@@ -1017,7 +1017,7 @@ economic_classification_by_programme:
 expenditure_over_time:
   dataset_detail_page: /datasets/estimates-of-national-expenditure/estimates-of-national-expenditure-2018-19
   expenditure:
-    base_financial_year: 2017-18
+    base_financial_year: 2018-19
     nominal:
     - amount: 512618434000.0
       financial_year: 2014-15
@@ -1041,33 +1041,28 @@ expenditure_over_time:
       financial_year: 2020-21
       phase: Medium Term Estimates
     real:
-    - amount: 601051583486
+    - amount: 629533745684
       financial_year: 2014-15
       phase: Audited Outcome
-    - amount: 619137539900
+    - amount: 648476745251
       financial_year: 2015-16
       phase: Audited Outcome
-    - amount: 627645352681
+    - amount: 657387719608
       financial_year: 2016-17
       phase: Audited Outcome
-    - amount: 657198355000
+    - amount: 689481200497
       financial_year: 2017-18
       phase: Adjusted appropriation
-    - amount: 656329419308
+    - amount: 692372500000
       financial_year: 2018-19
       phase: Main appropriation
-    - amount: 672027450626
+    - amount: 709829825601
       financial_year: 2019-20
       phase: Medium Term Estimates
-    - amount: 685161591083
+    - amount: 724128852434
       financial_year: 2020-21
       phase: Medium Term Estimates
 financial_years:
-- closest_match:
-    is_exact_match: true
-    url_path: /2015-16/national/departments/national-treasury
-  id: 2015-16
-  is_selected: false
 - closest_match:
     is_exact_match: true
     url_path: /2016-17/national/departments/national-treasury
@@ -1083,6 +1078,11 @@ financial_years:
     url_path: /2018-19/national/departments/national-treasury
   id: 2018-19
   is_selected: true
+- closest_match:
+    is_exact_match: true
+    url_path: /2019-20/national/departments/national-treasury
+  id: 2019-20
+  is_selected: false
 government:
   name: South Africa
   slug: south-africa
@@ -1491,4 +1491,4 @@ vote_primary:
   name: National Treasury
   slug: national-treasury
   url_path: /2018-19/national/departments/national-treasury
-website_url: www.treasury.gov.za
+website_url: null

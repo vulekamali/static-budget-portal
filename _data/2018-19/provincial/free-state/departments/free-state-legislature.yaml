@@ -112,7 +112,7 @@ economic_classification_by_programme:
 expenditure_over_time:
   dataset_detail_page: /datasets/estimates-of-provincial-expenditure/estimates-of-provincial-expenditure-2018-19
   expenditure:
-    base_financial_year: 2017-18
+    base_financial_year: 2018-19
     nominal:
     - amount: 192181000.0
       financial_year: 2014-15
@@ -136,33 +136,28 @@ expenditure_over_time:
       financial_year: 2020-21
       phase: Medium Term Estimates
     real:
-    - amount: 225334647
+    - amount: 236012629
       financial_year: 2014-15
       phase: Audited Outcome
-    - amount: 236241963
+    - amount: 247436813
       financial_year: 2015-16
       phase: Audited Outcome
-    - amount: 231636314
+    - amount: 242612914
       financial_year: 2016-17
       phase: Audited Outcome
-    - amount: 243056000
+    - amount: 254995377
       financial_year: 2017-18
       phase: Adjusted appropriation
-    - amount: 239941346
+    - amount: 253118000
       financial_year: 2018-19
       phase: Main appropriation
-    - amount: 235107619
+    - amount: 248332714
       financial_year: 2019-20
       phase: Medium Term Estimates
-    - amount: 235030594
+    - amount: 248397512
       financial_year: 2020-21
       phase: Medium Term Estimates
 financial_years:
-- closest_match:
-    is_exact_match: true
-    url_path: /2015-16/provincial/free-state/departments/free-state-legislature
-  id: 2015-16
-  is_selected: false
 - closest_match:
     is_exact_match: true
     url_path: /2016-17/provincial/free-state/departments/free-state-legislature
@@ -178,6 +173,11 @@ financial_years:
     url_path: /2018-19/provincial/free-state/departments/free-state-legislature
   id: 2018-19
   is_selected: true
+- closest_match:
+    is_exact_match: false
+    url_path: /2019-20/provincial/free-state
+  id: 2019-20
+  is_selected: false
 government:
   name: Free State
   slug: free-state

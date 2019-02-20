@@ -202,7 +202,7 @@ economic_classification_by_programme:
 expenditure_over_time:
   dataset_detail_page: /datasets/estimates-of-provincial-expenditure/estimates-of-provincial-expenditure-2016-17
   expenditure:
-    base_financial_year: 2017-18
+    base_financial_year: 2018-19
     nominal:
     - amount: 223288000
       financial_year: 2012-13
@@ -226,33 +226,28 @@ expenditure_over_time:
       financial_year: 2018-19
       phase: Medium Term Estimates
     real:
-    - amount: 292623466
+    - amount: 306490078
       financial_year: 2012-13
       phase: Audited Outcome
-    - amount: 329905788
+    - amount: 345539105
       financial_year: 2013-14
       phase: Audited Outcome
-    - amount: 325993683
+    - amount: 341441617
       financial_year: 2014-15
       phase: Audited Outcome
-    - amount: 302241074
+    - amount: 316563437
       financial_year: 2015-16
       phase: Adjusted appropriation
-    - amount: 291498928
+    - amount: 305312251
       financial_year: 2016-17
       phase: Main appropriation
-    - amount: 290096000
+    - amount: 304346072
       financial_year: 2017-18
       phase: Medium Term Estimates
-    - amount: 291462029
+    - amount: 307468000
       financial_year: 2018-19
       phase: Medium Term Estimates
 financial_years:
-- closest_match:
-    is_exact_match: true
-    url_path: /2015-16/provincial/northern-cape/departments/economic-development-and-tourism
-  id: 2015-16
-  is_selected: false
 - closest_match:
     is_exact_match: true
     url_path: /2016-17/provincial/northern-cape/departments/economic-development-and-tourism
@@ -267,6 +262,11 @@ financial_years:
     is_exact_match: true
     url_path: /2018-19/provincial/northern-cape/departments/economic-development-and-tourism
   id: 2018-19
+  is_selected: false
+- closest_match:
+    is_exact_match: false
+    url_path: /2019-20/provincial/northern-cape
+  id: 2019-20
   is_selected: false
 government:
   name: Northern Cape

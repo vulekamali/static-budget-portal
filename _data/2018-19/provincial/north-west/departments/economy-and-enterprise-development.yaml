@@ -110,7 +110,7 @@ economic_classification_by_programme:
 expenditure_over_time:
   dataset_detail_page: /datasets/estimates-of-provincial-expenditure/estimates-of-provincial-expenditure-2018-19
   expenditure:
-    base_financial_year: 2017-18
+    base_financial_year: 2018-19
     nominal:
     - amount: 225799000.0
       financial_year: 2014-15
@@ -134,33 +134,28 @@ expenditure_over_time:
       financial_year: 2020-21
       phase: Medium Term Estimates
     real:
-    - amount: 264752177
+    - amount: 277298046
       financial_year: 2014-15
       phase: Audited Outcome
-    - amount: 261734854
+    - amount: 274137741
       financial_year: 2015-16
       phase: Audited Outcome
-    - amount: 312986242
+    - amount: 327817790
       financial_year: 2016-17
       phase: Audited Outcome
-    - amount: 297708000
+    - amount: 312331988
       financial_year: 2017-18
       phase: Adjusted appropriation
-    - amount: 281719453
+    - amount: 297190400
       financial_year: 2018-19
       phase: Main appropriation
-    - amount: 282481703
+    - amount: 298371648
       financial_year: 2019-20
       phase: Medium Term Estimates
-    - amount: 319154897
+    - amount: 337306225
       financial_year: 2020-21
       phase: Medium Term Estimates
 financial_years:
-- closest_match:
-    is_exact_match: true
-    url_path: /2015-16/provincial/north-west/departments/economy-and-enterprise-development
-  id: 2015-16
-  is_selected: false
 - closest_match:
     is_exact_match: true
     url_path: /2016-17/provincial/north-west/departments/economy-and-enterprise-development
@@ -176,6 +171,11 @@ financial_years:
     url_path: /2018-19/provincial/north-west/departments/economy-and-enterprise-development
   id: 2018-19
   is_selected: true
+- closest_match:
+    is_exact_match: false
+    url_path: /2019-20/provincial/north-west
+  id: 2019-20
+  is_selected: false
 government:
   name: North West
   slug: north-west
