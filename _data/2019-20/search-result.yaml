@@ -19,14 +19,14 @@ financial_years:
     is_exact_match: true
     url_path: /2018-19/search-result
   id: 2018-19
-  is_selected: true
+  is_selected: false
 - closest_match:
     is_exact_match: true
     url_path: /2019-20/search-result
   id: 2019-20
-  is_selected: false
-selected_financial_year: 2018-19
+  is_selected: true
+selected_financial_year: 2019-20
 selected_tab: null
 slug: search-result
 title: Search Result - vulekamali
-url_path: /2018-19/search-result
+url_path: /2019-20/search-result
