@@ -181,7 +181,7 @@ const getUrl = (baseUrl, title) => {
     case 'Copy link': return `baseUrl`;
     case 'Share on Facebook': return `https://www.facebook.com/sharer/sharer.php?u=${baseUrl}`;
     case 'Share on Twitter': return `https://twitter.com/home?status=${baseUrl}`;
-    case 'Share on Linkedin': return `https://www.linkedin.com/shareArticle?url=${baseUrl}`;
+    case 'Share on Linkedin': return `https://www.linkedin.com/shareArticle?mini=true&url=${baseUrl}`;
     default: return null;
   };
 };

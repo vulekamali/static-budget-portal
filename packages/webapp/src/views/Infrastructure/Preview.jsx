@@ -489,7 +489,7 @@ const createMap = (props, selected) => {
   const activeProvinces = rawProvinces.length > 0 ? rawProvinces : all;
 
   return (
-    <MapWrapper>
+    <MapWrapper key={JSON.stringify(points)}>
       {/* <MapSubHeading>Select a project on the map</MapSubHeading> */}
       <NationalMap size={!!details ? "medium" : "large"} {...{ points, activeProvinces }} selected={selected.points && selected.points[0].id} />
     </MapWrapper>
