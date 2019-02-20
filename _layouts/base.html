@@ -1,3 +1,5 @@
+{% assign hardcoded_infrastructure = "infrastructure-projects" %}
+
 {% if page.financial_year %}
 
   {% if page.sphere %}
@@ -11,6 +13,12 @@
   {% else %}
     {% assign page_data = site.data[page.financial_year][page.data_key] %}
   {% endif %}
+
+{% elsif page.layout == 'infrastructure_project_list' %}
+  {% assign page_data = site.data[hardcoded_infrastructure].index %}
+
+{% elsif page.layout == 'infrastructure_project' %}
+  {% assign page_data = site.data[hardcoded_infrastructure].index %}
 
 {% elsif page.layout == 'contributed_dataset' %}
   {% assign page_data = site.data.datasets.contributed[page.data_key] %}
