@@ -37,7 +37,7 @@ class Infrastructure extends Component {
     const max = projects.length;
 
     if (!details) {
-      window.history.pushState({}, window.document.title, `/infrastructure-projects/?preview=${id}` );
+      window.history.pushState({}, window.document.title, `/infrastructure-projects?preview=${id}` );
     } else {
       if (value === true && value < max) {
         window.history.pushState({}, window.document.title, projects[id + 1].id);

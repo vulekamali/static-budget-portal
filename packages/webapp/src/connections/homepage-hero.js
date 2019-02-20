@@ -17,6 +17,14 @@ const props = {
       link: '#',
     },
   },
+  callToAction: {    
+    subheading: 'Budget feature',    
+    heading: 'The Status of National Department Infrastructure Projects in South Africa',    
+    link: {    
+      text: 'Read this feature',    
+      link: 'https://vulekamali.gov.za/infrastructure-projects',    
+    },    
+  },
   notice: 'The 2019/20 budget will be live on Vulekamali by 22 February 2019.',
   resources: [
     {
