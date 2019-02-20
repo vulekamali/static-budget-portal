@@ -174,7 +174,7 @@ const createResource = (props) => {
         <CardContentWrapper>
           <HeadingText>
             <Title>{heading}</Title>
-            <Size>{size} - {format}</Size>
+            {!!size && <Size>{size} - {format}</Size>}
           </HeadingText>
           <div>
             <BtnLink href={link}>

@@ -36,8 +36,8 @@ const duringSpeechProps = {
   notice: 'The 2019/20 budget will be live on Vulekamali by 22 February 2019.',
   resources: [
     {
-      heading: '2019 Budget Speech Documentation',
-      size: '2.2MB',
+      heading: 'Budget Speech',
+      size: null,
       format: 'PDF',
       link: '#',
     },
