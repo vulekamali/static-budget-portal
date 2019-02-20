@@ -1,12 +1,14 @@
 import React, { Fragment } from 'react';
 import styled from 'styled-components';
 import t from 'prop-types';
+import CssBaseline from '@material-ui/core/CssBaseline';
 import { Typography } from '@material-ui/core';
 import Buttons from './Buttons';
 import Resources from './Resources';
 import NotificationBar from './NotificationBar';
 import parliamentImg from './parliament-building-budget-speech.jpg';
 import Modal from './Modal';
+import Layout from '../../components/Layout';
 
 
 
@@ -36,6 +38,10 @@ const SubHeading = styled(Typography)`
 
     @supports (display: flex) {
       padding-top: 0;
+    }
+
+    @media screen and (min-width: 650px) {
+      font-size: 14px;
     }
   }
 `;
@@ -68,7 +74,7 @@ const Markup = (props) => {
     resources,
     image,
     callToAction,
-    modal, 
+    modal,
     closeModal,
     openModal,
     videoUrl
@@ -83,7 +89,7 @@ const Markup = (props) => {
   }
 
   return (
-    <Fragment>
+    <Layout>
       <Modal {...{ closeModal, videoUrl }} open={!!modal} />
       <Image>
         <SubHeading>{subheading}</SubHeading>
@@ -92,7 +98,7 @@ const Markup = (props) => {
       </Image>
       <NotificationBar {...{ notice, callToAction }} />
       {resources && <Resources {...{ resources }} />}
-    </Fragment>
+    </Layout>
   );
 };
 

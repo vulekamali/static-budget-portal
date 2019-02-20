@@ -12,7 +12,7 @@ class Homepage extends Component {
     }
 
     this.events = {
-      openModal: this.openModal.bind(this), 
+      openModal: this.openModal.bind(this),
       closeModal: this.closeModal.bind(this),
     }
   }
