@@ -167,6 +167,12 @@ const createResource = (props) => {
     link,
   } = props;
 
+  const SizeAndFormat = !!size ? (
+    <Size>{size} - {format}</Size>
+  ) : (
+    <Size>{format}</Size>
+  )
+
   return (
     <CardWrapper key={heading}>
       <CssBaseline />
@@ -174,7 +180,7 @@ const createResource = (props) => {
         <CardContentWrapper>
           <HeadingText>
             <Title>{heading}</Title>
-            {!!size && <Size>{size} - {format}</Size>}
+            {SizeAndFormat}
           </HeadingText>
           <div>
             <BtnLink href={link}>

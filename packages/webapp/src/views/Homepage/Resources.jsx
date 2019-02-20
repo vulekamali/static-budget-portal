@@ -12,6 +12,10 @@ const Wrapper = styled.div`
   padding: 50px 20px;
 `;
 
+const ResourceWrapper = styled.div`
+  max-width: 1000px;
+`;
+
 
 const Heading = styled(Typography)`
 && {
@@ -26,8 +30,10 @@ const Heading = styled(Typography)`
 
 const Resources = ({ resources }) => (
   <Wrapper>
-    <Heading>2019 budget resources</Heading>
-    <ResourceList {...{ resources }} />
+    <Heading id="anchor">2019 budget resources</Heading>
+    <ResourceWrapper>
+      <ResourceList {...{ resources }} />
+    </ResourceWrapper>
   </Wrapper>
 );
 

@@ -2,6 +2,7 @@ import React from 'react';
 import styled from 'styled-components';
 import t from 'prop-types';
 import { PrimaryButton, SecondaryButton } from './styled';
+import { Link as ScrollLink } from 'react-scroll';
 
 
 const ButtonsWrapper = styled.div`
@@ -16,6 +17,16 @@ const ButtonsWrapper = styled.div`
 
 
 const LinkWrapper = styled.a`
+  display: inline-block;
+  padding: 7px;
+  text-decoration: none;
+
+  @media screen and (min-width: 650px) {
+    padding: 8px;
+  }
+`;
+
+const ScrollLinkWrapper = styled(ScrollLink)`
   display: inline-block;
   padding: 7px;
   text-decoration: none;
@@ -41,11 +52,11 @@ const generateLinkProps = link => {
 const Buttons = ({ primary, secondary }) => (
   <ButtonsWrapper>
     <LinkWrapper {...generateLinkProps(primary.link)}>
-      <PrimaryButton variant="contained" onClick={primary.clickEvent}>{primary.text}</PrimaryButton>
+      <PrimaryButton variant="contained">{primary.text}</PrimaryButton>
     </LinkWrapper>
-    <LinkWrapper {...generateLinkProps(secondary.link)}>
+    <ScrollLinkWrapper to="anchor" smooth={true} duration={500} {...generateLinkProps(secondary.link)}>
       <SecondaryButton variant="contained">{secondary.text}</SecondaryButton>
-    </LinkWrapper>
+    </ScrollLinkWrapper>
   </ButtonsWrapper>
 );
 
