@@ -88,7 +88,9 @@ const connection = () => {
             <Route
               path="/infrastructure-projects/:projectId"
               component={
-                ({ projectId }) => <InfrastructurePages {...{ budgetReviewUrl, projectId }} details />
+                ({ match }) => (
+                  <InfrastructurePages {...{ budgetReviewUrl }} projectId={match.params.projectId} details />
+                )
               }
             />
           </div>

@@ -8,15 +8,16 @@ class Infrastructure extends Component {
     const { 
       details: initialDetails,
       projectId,
-      projects,
+      projects = [],
     } = this.props;
 
-    const getId = () => projects.findIndex(({ slug }) => {
-      return slug.replace(/^infrastructure-projects/g, '') === projectId;
-    })
+    const fixedSlugs = projects.map(({ id: rawId, ...other}) => ({
+      id: rawId.replace(/^\/infrastructure-projects\//g, ''),
+      ...other,
+    }))
 
     this.state = {
-      id: projectId ? getId() : 0,
+      id: !!projectId ? fixedSlugs.findIndex(({ id }) => id === projectId) : 0,
       details: initialDetails || !!projectId || false,
     }
 
