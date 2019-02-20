@@ -54,7 +54,7 @@ const Buttons = ({ primary, secondary }) => (
     <LinkWrapper {...generateLinkProps(primary.link)}>
       <PrimaryButton variant="contained">{primary.text}</PrimaryButton>
     </LinkWrapper>
-    <ScrollLinkWrapper to="anchor" smooth={true} duration={500} {...generateLinkProps(secondary.link)}>
+    <ScrollLinkWrapper to="anchor" smooth={true} duration={500}>
       <SecondaryButton variant="contained">{secondary.text}</SecondaryButton>
     </ScrollLinkWrapper>
   </ButtonsWrapper>

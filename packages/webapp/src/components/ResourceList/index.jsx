@@ -183,7 +183,7 @@ const createResource = (props) => {
             {SizeAndFormat}
           </HeadingText>
           <div>
-            <BtnLink href={link}>
+            <BtnLink href={link} target="_blank" rel="noopener noreferrer">
               <ButtonBtn variant="contained">
                 <SpanText>Download</SpanText>
                 <Icon style={iconSize} />
