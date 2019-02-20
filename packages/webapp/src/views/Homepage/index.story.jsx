@@ -26,7 +26,7 @@ const duringSpeechProps = {
   buttons: {
     primary: {
       text: 'Watch the speech',
-      link: '#',
+      link: 'http://www.treasury.gov.za/documents/national%20budget/2019/webcast.aspx'
     },
     secondary: {
       text: 'Download budget resources',
