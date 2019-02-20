@@ -92,18 +92,58 @@ const props = {
       subheading: 'Correctional services',
       heading: 'Standerton Correctional Centre',
       points: ['Cape Town1', 'Pretoria1'],
-      provinces: ['Western Cape', 'Gauteng'],
+      activeProvinces: ['Western Cape', 'Gauteng'],
       stage: 'Construction',
       totalBudget: 124255000111,
       projectedBudget: 51823429,
       description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc lobortis, tellus accumsan lobortis imperdiet, justo orci venenatis velit, at feugiat nibh ligula sit amet mi.',
       province: 'Eastern Cape',
       link: '#',
-      sideInfo: [{
+      resources: [],
+      chartData: [
+        {
+         name: '2015',
+         Actual: 1023,
+        },
+        {
+         name: '2016',
+         Actual: 1142,
+        },
+        {
+         name: '2017',
+         Actual: 911,
+         Connection: 911,
+        },
+        {
+         name: '2018',
+         Actual: 1052,
+         Connection: 1052,
+        },
+        {
+         name: '2019',
+         Projected: 1047,
+        },
+        {
+         name: '2020',
+         Projected: 1133,
+        },
+        {
+         name: '2021',
+         Projected: 9021,
+        },
+        {
+         name: '2020',
+         Projected: 1017,
+        },
+      ],
+      sideInfo: {
         investment: 'New infrastructure',
         infrastructure: 'Correctional facility',
-        department: 'Correctional services',
-      }],
+        department: {
+          name: 'Correctional services',
+          url: '#'
+        }
+      },
     },
     {
       id: 'aaa',
@@ -111,17 +151,57 @@ const props = {
       heading: 'Vaal Gamagara bulk water supply',
       stage: 'Construction',
       points: ['Border Crossing'],
-      provinces: ['Limpopo'],
+      activeProvinces: ['Limpopo'],
       totalBudget: 124555000111,
       projectedBudget: 2342342,
       description: 'Cupidatat nostrud esse dolore voluptate nulla dolore cillum aliqua duis est nostrud in dolor magna. Ad occaecat sit magna fugiat cupidatat adipisicing in. Dolor amet minim ut ullamco ullamco occaecat ullamco nostrud voluptate nisi ex aliquip irure. Tempor cillum anim in in pariatur id anim ut do proident amet. Magna proident cillum do esse sunt minim voluptate quis amet cupidatat commodo.',
       province: 'Mpumalanga',
       link: '#',
-      sideInfo: [{
-        investment: 'New',
+      resources: [],
+      chartData: [
+        {
+         name: '2015',
+         Actual: 4739,
+        },
+        {
+         name: '2016',
+         Actual: 5899,
+        },
+        {
+         name: '2017',
+         Actual: 1000,
+         Connection: 1000,
+        },
+        {
+         name: '2018',
+         Actual: 890,
+         Connection: 890,
+        },
+        {
+         name: '2019',
+         Projected: 3271,
+        },
+        {
+         name: '2020',
+         Projected: 4720,
+        },
+        {
+         name: '2021',
+         Projected: 8908,
+        },
+        {
+         name: '2020',
+         Projected: 9203,
+        },
+      ],
+      sideInfo: {
+        investment: 'New infrastructure',
         infrastructure: 'Correctional facility',
-        department: 'Correctional services',
-      }],
+        department: {
+          name: 'Correctional services',
+          url: '#'
+        }
+      },
     },
     {
       id: 3,
@@ -131,15 +211,55 @@ const props = {
       stage: 'Construction',
       projectedBudget: 2342342,
       points: ['Cape Town', 'Pretoria'],
-      provinces: ['Western Cape', 'Gauteng'],
+      activeProvinces: ['Western Cape', 'Gauteng'],
       description: 'Cupidatat nostrud esse dolore voluptate nulla dolore cillum aliqua duis est nostrud in dolor magna. Ad occaecat sit magna fugiat cupidatat adipisicing in. Dolor amet minim ut ullamco ullamco occaecat ullamco nostrud voluptate nisi ex aliquip irure. Tempor cillum anim in in pariatur id anim ut do proident amet. Magna proident cillum do esse sunt minim voluptate quis amet cupidatat commodo.',
       province: 'Multiple',
       link: '#',
-      sideInfo: [{
+      resources: [],
+      chartData: [
+        {
+         name: '2015',
+         Actual: 1023,
+        },
+        {
+         name: '2016',
+         Actual: 1142,
+        },
+        {
+         name: '2017',
+         Actual: 911,
+         Connection: 911,
+        },
+        {
+         name: '2018',
+         Actual: 1052,
+         Connection: 1052,
+        },
+        {
+         name: '2019',
+         Projected: 1047,
+        },
+        {
+         name: '2020',
+         Projected: 1133,
+        },
+        {
+         name: '2021',
+         Projected: 9021,
+        },
+        {
+         name: '2020',
+         Projected: 1017,
+        },
+      ],
+      sideInfo: {
         investment: 'New infrastructure',
-        infrastructure: 'Correctional',
-        department: 'Correctional services',
-      }],
+        infrastructure: 'Correctional facility',
+        department: {
+          name: 'Correctional services',
+          url: '#'
+        }
+      },
     },
     {
       id: 4,
@@ -147,18 +267,57 @@ const props = {
       heading: 'aassg adfgh',
       stage: 'Complete',
       points: ['Port Elizabeth1'],
-      provinces: ['Eastern Cape'],
+      activeProvinces: ['Eastern Cape'],
       totalBudget: 124555000111,
       projectedBudget: 2342342,
       description: 'Cupidatat nostrud esse dolore voluptate nulla dolore cillum aliqua duis est nostrud in dolor magna. Ad occaecat sit magna fugiat cupidatat adipisicing in. Dolor amet minim ut ullamco ullamco occaecat ullamco nostrud voluptate nisi ex aliquip irure. Tempor cillum anim in in pariatur id anim ut do proident amet. Magna proident cillum do esse sunt minim voluptate quis amet cupidatat commodo.',
       province: 'Northern Cape',
       link: '#',
-      sideInfo: [{
+      resources: [],
+      chartData: [
+        {
+         name: '2015',
+         Actual: 1023,
+        },
+        {
+         name: '2016',
+         Actual: 1142,
+        },
+        {
+         name: '2017',
+         Actual: 911,
+         Connection: 911,
+        },
+        {
+         name: '2018',
+         Actual: 1052,
+         Connection: 1052,
+        },
+        {
+         name: '2019',
+         Projected: 1047,
+        },
+        {
+         name: '2020',
+         Projected: 1133,
+        },
+        {
+         name: '2021',
+         Projected: 9021,
+        },
+        {
+         name: '2020',
+         Projected: 1017,
+        },
+      ],
+      sideInfo: {
         investment: 'New infrastructure',
         infrastructure: 'Correctional facility',
-  
-        department: 'Correctional services',
-      }],
+        department: {
+          name: 'Correctional services',
+          url: '#'
+        }
+      },
     },
     {
       id: 5,
@@ -166,17 +325,57 @@ const props = {
       heading: 'asdgdhs',
       stage: 'Tender',
       points: ['Border Crossing1'],
-      provinces: ['Limpopo'],
+      activeProvinces: ['Limpopo'],
       totalBudget: 124555000111,
       projectedBudget: 2342342,
       description: 'Cupidatat nostrud esse dolore voluptate nulla dolore cillum aliqua duis est nostrud in dolor magna. Ad occaecat sit magna fugiat cupidatat adipisicing in. Dolor amet minim ut ullamco ullamco occaecat ullamco nostrud voluptate nisi ex aliquip irure. Tempor cillum anim in in pariatur id anim ut do proident amet. Magna proident cillum do esse sunt minim voluptate quis amet cupidatat commodo.',
       province: 'Western Cape',
       link: '#',
-      sideInfo: [{
+      resources: [],
+      chartData: [
+        {
+         name: '2015',
+         Actual: 1023,
+        },
+        {
+         name: '2016',
+         Actual: 1142,
+        },
+        {
+         name: '2017',
+         Actual: 911,
+         Connection: 911,
+        },
+        {
+         name: '2018',
+         Actual: 1052,
+         Connection: 1052,
+        },
+        {
+         name: '2019',
+         Projected: 1047,
+        },
+        {
+         name: '2020',
+         Projected: 1133,
+        },
+        {
+         name: '2021',
+         Projected: 9021,
+        },
+        {
+         name: '2020',
+         Projected: 1017,
+        },
+      ],
+      sideInfo: {
         investment: 'New infrastructure',
         infrastructure: 'Correctional facility',
-        department: 'Correctional services',
-      }],
+        department: {
+          name: 'Correctional services',
+          url: '#'
+        }
+      },
     },
     {
       id: 6,
@@ -184,35 +383,115 @@ const props = {
       heading: 'aassg adfgh',
       stage: 'Site identification',
       points: ['Port Elizabeth'],
-      provinces: ['Eastern Cape'],
+      activeProvinces: ['Eastern Cape'],
       totalBudget: 124555000111,
       projectedBudget: 2342342,
       description: 'Cupidatat nostrud esse dolore voluptate nulla dolore cillum aliqua duis est nostrud in dolor magna. Ad occaecat sit magna fugiat cupidatat adipisicing in. Dolor amet minim ut ullamco ullamco occaecat ullamco nostrud voluptate nisi ex aliquip irure. Tempor cillum anim in in pariatur id anim ut do proident amet. Magna proident cillum do esse sunt minim voluptate quis amet cupidatat commodo.',
       province: 'Gauteng',
       link: '#',
-      sideInfo: [{
+      resources: [],
+      chartData: [
+        {
+         name: '2015',
+         Actual: 1023,
+        },
+        {
+         name: '2016',
+         Actual: 1142,
+        },
+        {
+         name: '2017',
+         Actual: 911,
+         Connection: 911,
+        },
+        {
+         name: '2018',
+         Actual: 1052,
+         Connection: 1052,
+        },
+        {
+         name: '2019',
+         Projected: 1047,
+        },
+        {
+         name: '2020',
+         Projected: 1133,
+        },
+        {
+         name: '2021',
+         Projected: 9021,
+        },
+        {
+         name: '2020',
+         Projected: 1017,
+        },
+      ],
+      sideInfo: {
         investment: 'New infrastructure',
         infrastructure: 'Correctional facility',
-        department: 'Correctional services',
-      }],
+        department: {
+          name: 'Correctional services',
+          url: '#'
+        }
+      },
     },
     {
       id: 7,
       subheading: 'Correctional services',
       heading: 'Standerton Correctional Centre',
       points: ['Cape Town1b', 'Pretoria1b'],
-      provinces: ['Western Cape', 'Gauteng'],
+      activeProvinces: ['Western Cape', 'Gauteng'],
       stage: 'Construction',
       totalBudget: 124255000111,
       projectedBudget: 51823429,
       description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc lobortis, tellus accumsan lobortis imperdiet, justo orci venenatis velit, at feugiat nibh ligula sit amet mi.',
       province: 'Eastern Cape',
       link: '#',
-      sideInfo: [{
+      resources: [],
+      chartData: [
+        {
+         name: '2015',
+         Actual: 1023,
+        },
+        {
+         name: '2016',
+         Actual: 1142,
+        },
+        {
+         name: '2017',
+         Actual: 911,
+         Connection: 911,
+        },
+        {
+         name: '2018',
+         Actual: 1052,
+         Connection: 1052,
+        },
+        {
+         name: '2019',
+         Projected: 1047,
+        },
+        {
+         name: '2020',
+         Projected: 1133,
+        },
+        {
+         name: '2021',
+         Projected: 9021,
+        },
+        {
+         name: '2020',
+         Projected: 1017,
+        },
+      ],
+      sideInfo: {
         investment: 'New infrastructure',
         infrastructure: 'Correctional facility',
-        department: 'Correctional services',
-      }],
+        department: {
+          name: 'Correctional services',
+          url: '#'
+        }
+      },
     },
     {
       id: 25,
@@ -220,17 +499,57 @@ const props = {
       heading: 'aassg adfgh',
       stage: 'Construction',
       points: ['Border Crossingb'],
-      provinces: ['Limpopo'],
+      activeProvinces: ['Limpopo'],
       totalBudget: 124555000111,
       projectedBudget: 2342342,
       description: 'Cupidatat nostrud esse dolore voluptate nulla dolore cillum aliqua duis est nostrud in dolor magna. Ad occaecat sit magna fugiat cupidatat adipisicing in. Dolor amet minim ut ullamco ullamco occaecat ullamco nostrud voluptate nisi ex aliquip irure. Tempor cillum anim in in pariatur id anim ut do proident amet. Magna proident cillum do esse sunt minim voluptate quis amet cupidatat commodo.',
       province: 'Mpumalanga',
       link: '#',
-      sideInfo: [{
+      resources: [],
+      chartData: [
+        {
+         name: '2015',
+         Actual: 1023,
+        },
+        {
+         name: '2016',
+         Actual: 1142,
+        },
+        {
+         name: '2017',
+         Actual: 911,
+         Connection: 911,
+        },
+        {
+         name: '2018',
+         Actual: 1052,
+         Connection: 1052,
+        },
+        {
+         name: '2019',
+         Projected: 1047,
+        },
+        {
+         name: '2020',
+         Projected: 1133,
+        },
+        {
+         name: '2021',
+         Projected: 9021,
+        },
+        {
+         name: '2020',
+         Projected: 1017,
+        },
+      ],
+      sideInfo: {
         investment: 'New infrastructure',
         infrastructure: 'Correctional facility',
-        department: 'Correctional services',
-      }],
+        department: {
+          name: 'Correctional services',
+          url: '#'
+        }
+      },
     },
     {
       id: 'aaaa',
@@ -240,15 +559,55 @@ const props = {
       stage: 'Construction',
       projectedBudget: 2342342,
       points: ['Cape Townb', 'Pretoriab'],
-      provinces: ['Western Cape', 'Gauteng'],
+      activeProvinces: ['Western Cape', 'Gauteng'],
       description: 'Cupidatat nostrud esse dolore voluptate nulla dolore cillum aliqua duis est nostrud in dolor magna. Ad occaecat sit magna fugiat cupidatat adipisicing in. Dolor amet minim ut ullamco ullamco occaecat ullamco nostrud voluptate nisi ex aliquip irure. Tempor cillum anim in in pariatur id anim ut do proident amet. Magna proident cillum do esse sunt minim voluptate quis amet cupidatat commodo.',
       province: 'Multiple',
       link: '#',
-      sideInfo: [{
+      resources: [],
+      chartData: [
+        {
+         name: '2015',
+         Actual: 1023,
+        },
+        {
+         name: '2016',
+         Actual: 1142,
+        },
+        {
+         name: '2017',
+         Actual: 911,
+         Connection: 911,
+        },
+        {
+         name: '2018',
+         Actual: 1052,
+         Connection: 1052,
+        },
+        {
+         name: '2019',
+         Projected: 1047,
+        },
+        {
+         name: '2020',
+         Projected: 1133,
+        },
+        {
+         name: '2021',
+         Projected: 9021,
+        },
+        {
+         name: '2020',
+         Projected: 1017,
+        },
+      ],
+      sideInfo: {
         investment: 'New infrastructure',
         infrastructure: 'Correctional facility',
-        department: 'Correctional services',
-      }],
+        department: {
+          name: 'Correctional services',
+          url: '#'
+        }
+      },
     },
     {
       id: 35,
@@ -256,17 +615,57 @@ const props = {
       heading: 'aassg adfgh',
       stage: 'Complete',
       points: ['Port Elizabeth1b'],
-      provinces: ['Eastern Cape'],
+      activeProvinces: ['Eastern Cape'],
       totalBudget: 124555000111,
       projectedBudget: 2342342,
       description: 'Cupidatat nostrud esse dolore voluptate nulla dolore cillum aliqua duis est nostrud in dolor magna. Ad occaecat sit magna fugiat cupidatat adipisicing in. Dolor amet minim ut ullamco ullamco occaecat ullamco nostrud voluptate nisi ex aliquip irure. Tempor cillum anim in in pariatur id anim ut do proident amet. Magna proident cillum do esse sunt minim voluptate quis amet cupidatat commodo.',
       province: 'Northern Cape',
       link: '#',
-      sideInfo: [{
+      resources: [],
+      chartData: [
+        {
+         name: '2015',
+         Actual: 1023,
+        },
+        {
+         name: '2016',
+         Actual: 1142,
+        },
+        {
+         name: '2017',
+         Actual: 911,
+         Connection: 911,
+        },
+        {
+         name: '2018',
+         Actual: 1052,
+         Connection: 1052,
+        },
+        {
+         name: '2019',
+         Projected: 1047,
+        },
+        {
+         name: '2020',
+         Projected: 1133,
+        },
+        {
+         name: '2021',
+         Projected: 9021,
+        },
+        {
+         name: '2020',
+         Projected: 1017,
+        },
+      ],
+      sideInfo: {
         investment: 'New infrastructure',
         infrastructure: 'Correctional facility',
-        department: 'Correctional services',
-      }],
+        department: {
+          name: 'Correctional services',
+          url: '#'
+        }
+      },
     },
     {
       id: 45,
@@ -274,17 +673,57 @@ const props = {
       heading: 'asdgdhs',
       stage: 'Tender',
       points: ['Border Crossing1b'],
-      provinces: ['Limpopo'],
+      activeProvinces: ['Limpopo'],
       totalBudget: 124555000111,
       projectedBudget: 2342342,
       description: 'Cupidatat nostrud esse dolore voluptate nulla dolore cillum aliqua duis est nostrud in dolor magna. Ad occaecat sit magna fugiat cupidatat adipisicing in. Dolor amet minim ut ullamco ullamco occaecat ullamco nostrud voluptate nisi ex aliquip irure. Tempor cillum anim in in pariatur id anim ut do proident amet. Magna proident cillum do esse sunt minim voluptate quis amet cupidatat commodo.',
       province: 'Western Cape',
       link: '#',
-      sideInfo: [{
+      resources: [],
+      chartData: [
+        {
+         name: '2015',
+         Actual: 1023,
+        },
+        {
+         name: '2016',
+         Actual: 1142,
+        },
+        {
+         name: '2017',
+         Actual: 911,
+         Connection: 911,
+        },
+        {
+         name: '2018',
+         Actual: 1052,
+         Connection: 1052,
+        },
+        {
+         name: '2019',
+         Projected: 1047,
+        },
+        {
+         name: '2020',
+         Projected: 1133,
+        },
+        {
+         name: '2021',
+         Projected: 9021,
+        },
+        {
+         name: '2020',
+         Projected: 1017,
+        },
+      ],
+      sideInfo: {
         investment: 'New infrastructure',
         infrastructure: 'Correctional facility',
-        department: 'Correctional services',
-      }],
+        department: {
+          name: 'Correctional services',
+          url: '#'
+        }
+      },
     },
     {
       id: 55,
@@ -292,17 +731,57 @@ const props = {
       heading: 'aassg adfgh',
       stage: 'Site identification',
       points: ['Port Elizabethb'],
-      provinces: ['Eastern Cape'],
+      activeProvinces: ['Eastern Cape'],
       totalBudget: 124555000111,
       projectedBudget: 2342342,
       description: 'Cupidatat nostrud esse dolore voluptate nulla dolore cillum aliqua duis est nostrud in dolor magna. Ad occaecat sit magna fugiat cupidatat adipisicing in. Dolor amet minim ut ullamco ullamco occaecat ullamco nostrud voluptate nisi ex aliquip irure. Tempor cillum anim in in pariatur id anim ut do proident amet. Magna proident cillum do esse sunt minim voluptate quis amet cupidatat commodo.',
       province: 'Gauteng',
       link: '#',
-      sideInfo: [{
+      resources: [],
+      chartData: [
+        {
+         name: '2015',
+         Actual: 1023,
+        },
+        {
+         name: '2016',
+         Actual: 1142,
+        },
+        {
+         name: '2017',
+         Actual: 911,
+         Connection: 911,
+        },
+        {
+         name: '2018',
+         Actual: 1052,
+         Connection: 1052,
+        },
+        {
+         name: '2019',
+         Projected: 1047,
+        },
+        {
+         name: '2020',
+         Projected: 1133,
+        },
+        {
+         name: '2021',
+         Projected: 9021,
+        },
+        {
+         name: '2020',
+         Projected: 1017,
+        },
+      ],
+      sideInfo: {
         investment: 'New infrastructure',
         infrastructure: 'Correctional facility',
-        department: 'Correctional services',
-      }],
+        department: {
+          name: 'Correctional services',
+          url: '#'
+        }
+      },
     }
   ]
 }
