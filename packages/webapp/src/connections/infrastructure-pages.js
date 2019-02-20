@@ -71,7 +71,7 @@ class InfrastructurePages extends Component {
 
 
 const node = document.querySelector('[data-webapp="infrastructure-pages"]');
-const budgetReviewUrl = node.getAttribute('data-webapp-budgetReviewUrl');
+const budgetReviewUrl = !!node && node.getAttribute('data-webapp-budgetReviewUrl');
 
 
 const connection = () => {
