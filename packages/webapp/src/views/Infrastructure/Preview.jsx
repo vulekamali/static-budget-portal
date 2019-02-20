@@ -433,6 +433,7 @@ const createItem = (props) => {
     details
   } = props;
 
+
   return (
     <AnimationWrapper key={id} style={{ width: '100%' }}>
       <DataGroup>
