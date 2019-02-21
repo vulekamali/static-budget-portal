@@ -88,7 +88,7 @@ const props = {
   ],
   projects: [
     {
-      id: 1,
+      id: '1',
       subheading: 'Correctional services',
       heading: 'Standerton Correctional Centre',
       points: ['Cape Town1', 'Pretoria1'],
@@ -204,7 +204,7 @@ const props = {
       },
     },
     {
-      id: 3,
+      id: '3',
       subheading: 'Health',
       heading: 'Elim Hospital',
       totalBudget: 124555000111,
@@ -262,7 +262,7 @@ const props = {
       },
     },
     {
-      id: 4,
+      id: '4',
       subheading: 'Correctional services',
       heading: 'aassg adfgh',
       stage: 'Complete',
@@ -320,7 +320,7 @@ const props = {
       },
     },
     {
-      id: 5,
+      id: '5',
       subheading: 'Correctional services',
       heading: 'asdgdhs',
       stage: 'Tender',
@@ -378,7 +378,7 @@ const props = {
       },
     },
     {
-      id: 6,
+      id: '6',
       subheading: '555555',
       heading: 'aassg adfgh',
       stage: 'Site identification',
@@ -436,7 +436,7 @@ const props = {
       },
     },
     {
-      id: 7,
+      id: '7',
       subheading: 'Correctional services',
       heading: 'Standerton Correctional Centre',
       points: ['Cape Town1b', 'Pretoria1b'],
@@ -494,7 +494,7 @@ const props = {
       },
     },
     {
-      id: 25,
+      id: '25',
       subheading: '222222',
       heading: 'aassg adfgh',
       stage: 'Construction',
@@ -610,7 +610,7 @@ const props = {
       },
     },
     {
-      id: 35,
+      id: '35',
       subheading: '33333',
       heading: 'aassg adfgh',
       stage: 'Complete',
@@ -668,7 +668,7 @@ const props = {
       },
     },
     {
-      id: 45,
+      id: '45',
       subheading: '444444',
       heading: 'asdgdhs',
       stage: 'Tender',
@@ -726,7 +726,7 @@ const props = {
       },
     },
     {
-      id: 55,
+      id: '55',
       subheading: '555555',
       heading: 'aassg adfgh',
       stage: 'Site identification',
