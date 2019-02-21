@@ -433,7 +433,11 @@ department_budget:
     name: "ENE 2019-20 \u2013 Vote 16 - Health"
     url: https://data.vulekamali.gov.za/dataset/99721900-59e9-476f-99fc-2d0518a5289b/resource/a4d3cfec-1b10-4d59-b33d-5fa321776c6c/download/vote-16-health.pdf
   name: "ENE 2019-20 \u2013 Vote 16 - Health"
-  tables: null
+  tables:
+    description: ''
+    format: XLSX
+    name: "ENE 2019-20 \u2013 Vote 16 - Health"
+    url: https://data.vulekamali.gov.za/dataset/99721900-59e9-476f-99fc-2d0518a5289b/resource/a45a66b8-7978-4193-a827-c5f5deedb556/download/ene19-vote16_chaptertables.xlsx
 description: 'National department: Health budget data for the 2019-20 financial year
   from National Treasury in partnership with IMALI YETHU.'
 economic_classification_by_programme:
@@ -840,4 +844,4 @@ vote_primary:
   name: Health
   slug: health
   url_path: /2019-20/national/departments/health
-website_url: null
+website_url: www.doh.gov.za

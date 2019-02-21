@@ -334,7 +334,11 @@ department_budget:
     name: "ENE 2019-20 \u2013 Vote 20 - Independent Police Investigative Directorate"
     url: https://data.vulekamali.gov.za/dataset/1697a319-643b-492f-ad52-3afe13807824/resource/0e39c2af-1b3c-47eb-ad48-1210ae9a754e/download/vote-20-independent-police-investigative-directorate.pdf
   name: "ENE 2019-20 \u2013 Vote 20 - Independent Police Investigative Directorate"
-  tables: null
+  tables:
+    description: ''
+    format: XLSX
+    name: "ENE 2019-20 \u2013 Vote 20 - Independent Police Investigative Directorate"
+    url: https://data.vulekamali.gov.za/dataset/1697a319-643b-492f-ad52-3afe13807824/resource/3009e569-fe68-4b71-b0a8-bc08c000268e/download/ene19-vote20_chaptertables.xlsx
 description: 'National department: Independent Police Investigative Directorate budget
   data for the 2019-20 financial year from National Treasury in partnership with IMALI
   YETHU.'
@@ -606,4 +610,4 @@ vote_primary:
   name: Independent Police Investigative Directorate
   slug: independent-police-investigative-directorate
   url_path: /2019-20/national/departments/independent-police-investigative-directorate
-website_url: null
+website_url: www.ipid.gov.za

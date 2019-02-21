@@ -434,7 +434,11 @@ department_budget:
     name: "ENE 2019-20 \u2013 Vote 22 - Office of the Chief Justice and Judicial Administration"
     url: https://data.vulekamali.gov.za/dataset/bdfc23a8-037a-4955-9e58-869792852d03/resource/1b4d5180-9fe1-46ca-afde-ea0c71e11866/download/vote-22-office-of-the-chief-justice-and-judicial-administration.pdf
   name: "ENE 2019-20 \u2013 Vote 22 - Office of the Chief Justice and Judicial Administration"
-  tables: null
+  tables:
+    description: ''
+    format: XLSX
+    name: "ENE 2019-20 \u2013 Vote 22 - Office of the Chief Justice and Judicial Administration"
+    url: https://data.vulekamali.gov.za/dataset/bdfc23a8-037a-4955-9e58-869792852d03/resource/5413f099-d467-4f44-89ae-0abdef3298c7/download/ene19-vote22_chaptertables.xlsx
 description: 'National department: Office of the Chief Justice and Judicial Administration
   budget data for the 2019-20 financial year from National Treasury in partnership
   with IMALI YETHU.'
@@ -712,4 +716,4 @@ vote_primary:
   name: Office of the Chief Justice and Judicial Administration
   slug: office-of-the-chief-justice-and-judicial-administration
   url_path: /2019-20/national/departments/office-of-the-chief-justice-and-judicial-administration
-website_url: null
+website_url: www.judiciary.org.za

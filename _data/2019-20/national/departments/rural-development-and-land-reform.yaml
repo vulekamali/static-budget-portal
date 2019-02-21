@@ -383,7 +383,11 @@ department_budget:
     name: "ENE 2019-20 \u2013 Vote 39 - Rural Development and Land Reform"
     url: https://data.vulekamali.gov.za/dataset/6e18ad8e-8c35-4228-aa9a-05ca10dffcd5/resource/13f147ca-8f7c-4b57-bb65-a35faaa2dfdc/download/vote-39-rural-development-and-land-reform.pdf
   name: "ENE 2019-20 \u2013 Vote 39 - Rural Development and Land Reform"
-  tables: null
+  tables:
+    description: ''
+    format: XLSX
+    name: "ENE 2019-20 \u2013 Vote 39 - Rural Development and Land Reform"
+    url: https://data.vulekamali.gov.za/dataset/6e18ad8e-8c35-4228-aa9a-05ca10dffcd5/resource/f730a880-8faa-476c-8c8c-b1dd25d26fbd/download/ene19-vote39_chaptertables.xlsx
 description: 'National department: Rural Development and Land Reform budget data for
   the 2019-20 financial year from National Treasury in partnership with IMALI YETHU.'
 economic_classification_by_programme:
@@ -822,4 +826,4 @@ vote_primary:
   name: Rural Development and Land Reform
   slug: rural-development-and-land-reform
   url_path: /2019-20/national/departments/rural-development-and-land-reform
-website_url: null
+website_url: www.ruraldevelopment.gov.za

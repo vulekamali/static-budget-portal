@@ -484,7 +484,11 @@ department_budget:
     name: "ENE 2019-20 \u2013 Vote 10 - Public Service and Administration"
     url: https://data.vulekamali.gov.za/dataset/4684150f-4293-4803-aa66-04548b38749a/resource/876567e8-10ff-45a2-bc00-537838db41ae/download/vote-10-public-service-and-administration.pdf
   name: "ENE 2019-20 \u2013 Vote 10 - Public Service and Administration"
-  tables: null
+  tables:
+    description: ''
+    format: XLSX
+    name: "ENE 2019-20 \u2013 Vote 10 - Public Service and Administration"
+    url: https://data.vulekamali.gov.za/dataset/4684150f-4293-4803-aa66-04548b38749a/resource/c38ab259-7718-4f47-8d5b-642a102647e7/download/ene19-vote10_chaptertables.xlsx
 description: 'National department: Public Service and Administration budget data for
   the 2019-20 financial year from National Treasury in partnership with IMALI YETHU.'
 economic_classification_by_programme:
@@ -923,4 +927,4 @@ vote_primary:
   name: Public Service and Administration
   slug: public-service-and-administration
   url_path: /2019-20/national/departments/public-service-and-administration
-website_url: null
+website_url: www.dpsa.gov.za
