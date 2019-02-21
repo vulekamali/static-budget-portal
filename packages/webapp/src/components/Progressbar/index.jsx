@@ -23,10 +23,10 @@ const StyledLinearProgress = styled(LinearProgress)`
   && {
     height: 16px;
     border-radius: 200px;
-    background: #DCDCDC;
+    background: #dcdcdc;
 
     & .barColorPrimary {
-      background: linear-gradient(90deg, rgba(255, 255, 255, 0.8) 0%, #ECA03E 83.33%), #ECA03E;
+      background: linear-gradient(90deg, rgba(255, 255, 255, 0.8) 0%, #eca03e 83.33%), #eca03e;
       border-right: 2px solid;
     }
   }
@@ -35,7 +35,13 @@ const StyledLinearProgress = styled(LinearProgress)`
 const Progressbar = ({ stage }) => {
   return (
     <React.Fragment>
-      {calcProgress(stage) && <StyledLinearProgress classes={{barColorPrimary: 'barColorPrimary', root: 'root'}} variant="determinate" value={calcProgress(stage)} />}
+      {calcProgress(stage) && (
+        <StyledLinearProgress
+          classes={{barColorPrimary: 'barColorPrimary', root: 'root'}}
+          variant="determinate"
+          value={calcProgress(stage)} />
+        )
+      }
     </React.Fragment>
   );
 };
