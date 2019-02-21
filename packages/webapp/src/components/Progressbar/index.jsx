@@ -1,4 +1,5 @@
 import React from 'react';
+import PropTypes from 'prop-types';
 import styled from 'styled-components';
 import LinearProgress from '@material-ui/core/LinearProgress';
 
@@ -37,7 +38,7 @@ const Progressbar = ({ stage }) => {
     <React.Fragment>
       {calcProgress(stage) && (
         <StyledLinearProgress
-          classes={{barColorPrimary: 'barColorPrimary', root: 'root'}}
+          classes={{barColorPrimary: 'barColorPrimary'}}
           variant="determinate"
           value={calcProgress(stage)} />
         )
@@ -45,5 +46,23 @@ const Progressbar = ({ stage }) => {
     </React.Fragment>
   );
 };
+
+Progressbar.propTypes = {
+  /** string that determines how far the progress should be on the progressbar. */
+  stage: PropTypes.oneOf([
+    'Site identification',
+    'Pre-feasibility',
+    'Feasibility',
+    'Design',
+    'Tender',
+    'Construction',
+    'Hand over',
+    'Handed over',
+    'Complete'])
+}
+
+Progressbar.defaultProps = {
+  stage: null
+}
 
 export default Progressbar;

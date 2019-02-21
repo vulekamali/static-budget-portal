@@ -1,0 +1,38 @@
+---
+name: Progressbar
+menu: Components
+---
+
+
+import { PropsTable, Playground } from 'docz';
+import Progressbar from './index';
+
+
+# Progressbar
+
+**⚠️ In order to view or edit this component run `yarn start:storybook` to open it in a sandbox environment.**
+
+## `index.jsx`
+
+Constitute of the entire component and calculation for how the progressbar should increment based on the
+`stage` prop of the current project.
+
+### Initial state
+
+The default state of this component is set to `null` meaning that the progressbar will not render.
+
+### Props
+
+<PropsTable of={Progressbar} />
+
+<Playground>
+  <Progressbar stage="Construction" />
+</Playground>
+
+<Playground>
+  <Progressbar stage="Pre-feasibility" />
+</Playground>
+
+<Playground>
+  <Progressbar stage="Complete" />
+</Playground>
