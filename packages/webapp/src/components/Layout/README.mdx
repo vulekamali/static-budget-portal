@@ -4,7 +4,7 @@ menu: Components
 ---
 
 
-import { PropsTable } from 'docz';
+import { PropsTable, Playground } from 'docz';
 import Layout from './index';
 
 
@@ -13,10 +13,17 @@ import Layout from './index';
 ** This component is a container wrapper where the CssBaseline component from Material UI
 is used to normalize styling throughout the projects**
 
-## How to use
+## Index.jsx
 
-This component should be wrapped as a parent component to all views within the project.
+This component should wrap all other components inside of each view.
 
 ### Props
 
 <PropsTable of={Layout} />
+
+<Playground>
+  <Layout>
+    <h1>This is tag is wrapped inside of the Layout component</h1>
+    <p>Your other components can go here</p>
+  </Layout>
+</Playground>
