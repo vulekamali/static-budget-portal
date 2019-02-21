@@ -56,7 +56,7 @@ adjusted_budget_summary:
 budget_actual:
   dataset_detail_page: /datasets/budgeted-and-actual-national-expenditure/budgeted-and-actual-national-expenditure
   expenditure:
-    base_financial_year: 2017-18
+    base_financial_year: 2018-19
     nominal:
     - amount: 267481000.0
       financial_year: 2015-16
@@ -107,28 +107,28 @@ budget_actual:
       financial_year: 2014-15
       phase: Audit Outcome
     real:
-    - amount: 298216262
+    - amount: 312347901
       financial_year: 2015-16
       phase: Main appropriation
-    - amount: 25980209756
+    - amount: 27211339610
       financial_year: 2015-16
       phase: Adjusted appropriation
-    - amount: 25980209756
+    - amount: 27211339610
       financial_year: 2015-16
       phase: Final Appropriation
-    - amount: 25932359091
+    - amount: 27161221435
       financial_year: 2015-16
       phase: Audit Outcome
-    - amount: 287367397
+    - amount: 300984939
       financial_year: 2016-17
       phase: Main appropriation
-    - amount: 281074129
+    - amount: 294393450
       financial_year: 2016-17
       phase: Adjusted appropriation
-    - amount: 281074129
+    - amount: 294393450
       financial_year: 2016-17
       phase: Final Appropriation
-    - amount: 266183208
+    - amount: 278796890
       financial_year: 2016-17
       phase: Audit Outcome
     - amount: null
@@ -409,7 +409,7 @@ economic_classification_by_programme:
 expenditure_over_time:
   dataset_detail_page: /datasets/estimates-of-national-expenditure/estimates-of-national-expenditure-2016-17
   expenditure:
-    base_financial_year: 2017-18
+    base_financial_year: 2018-19
     nominal:
     - amount: 1364294000.0
       financial_year: 2012-13
@@ -433,33 +433,28 @@ expenditure_over_time:
       financial_year: 2018-19
       phase: Medium Term Estimates
     real:
-    - amount: 1787935040
+    - amount: 1872660306
       financial_year: 2012-13
       phase: Audited Outcome
-    - amount: 333641037
+    - amount: 349451358
       financial_year: 2013-14
       phase: Audited Outcome
-    - amount: 347124706
+    - amount: 363573980
       financial_year: 2014-15
       phase: Audited Outcome
-    - amount: 25980209756
+    - amount: 27211339610
       financial_year: 2015-16
       phase: Adjusted appropriation
-    - amount: 287367397
+    - amount: 300984939
       financial_year: 2016-17
       phase: Main appropriation
-    - amount: 279483000
+    - amount: 293211741
       financial_year: 2017-18
       phase: Medium Term Estimates
-    - amount: 274844594
+    - amount: 289938000
       financial_year: 2018-19
       phase: Medium Term Estimates
 financial_years:
-- closest_match:
-    is_exact_match: true
-    url_path: /2015-16/national/departments/public-enterprises
-  id: 2015-16
-  is_selected: false
 - closest_match:
     is_exact_match: true
     url_path: /2016-17/national/departments/public-enterprises
@@ -474,6 +469,11 @@ financial_years:
     is_exact_match: true
     url_path: /2018-19/national/departments/public-enterprises
   id: 2018-19
+  is_selected: false
+- closest_match:
+    is_exact_match: true
+    url_path: /2019-20/national/departments/public-enterprises
+  id: 2019-20
   is_selected: false
 government:
   name: South Africa
@@ -633,4 +633,4 @@ vote_primary:
   name: Public Enterprises
   slug: public-enterprises
   url_path: /2016-17/national/departments/public-enterprises
-website_url: www.dpe.gov.za
+website_url: null

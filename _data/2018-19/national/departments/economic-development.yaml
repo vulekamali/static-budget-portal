@@ -38,7 +38,7 @@ adjusted_budget_summary:
 budget_actual:
   dataset_detail_page: /datasets/budgeted-and-actual-national-expenditure/budgeted-and-actual-national-expenditure
   expenditure:
-    base_financial_year: 2017-18
+    base_financial_year: 2018-19
     nominal:
     - amount: 885778000.0
       financial_year: 2015-16
@@ -89,46 +89,46 @@ budget_actual:
       financial_year: 2018-19
       phase: Audit Outcome
     real:
-    - amount: 987559506
+    - amount: 1034357204
       financial_year: 2015-16
       phase: Main appropriation
-    - amount: 987559506
+    - amount: 1034357204
       financial_year: 2015-16
       phase: Adjusted appropriation
-    - amount: 987559506
+    - amount: 1034357204
       financial_year: 2015-16
       phase: Final Appropriation
-    - amount: 985279523
+    - amount: 1031969178
       financial_year: 2015-16
       phase: Audit Outcome
-    - amount: 707637077
+    - amount: 741170029
       financial_year: 2016-17
       phase: Main appropriation
-    - amount: 707637077
+    - amount: 741170029
       financial_year: 2016-17
       phase: Adjusted appropriation
-    - amount: 707636418
+    - amount: 741169339
       financial_year: 2016-17
       phase: Final Appropriation
-    - amount: 697591668
+    - amount: 730648596
       financial_year: 2016-17
       phase: Audit Outcome
-    - amount: 797237000
+    - amount: 836398812
       financial_year: 2017-18
       phase: Main appropriation
-    - amount: 914237000
+    - amount: 959146077
       financial_year: 2017-18
       phase: Adjusted appropriation
-    - amount: 914237000
+    - amount: 959146077
       financial_year: 2017-18
       phase: Final Appropriation
-    - amount: 912049770
+    - amount: 956851406
       financial_year: 2017-18
       phase: Audit Outcome
-    - amount: 1016760437
+    - amount: 1072597000
       financial_year: 2018-19
       phase: Main appropriation
-    - amount: 1016760437
+    - amount: 1072597000
       financial_year: 2018-19
       phase: Adjusted appropriation
     - amount: null
@@ -408,7 +408,7 @@ economic_classification_by_programme:
 expenditure_over_time:
   dataset_detail_page: /datasets/estimates-of-national-expenditure/estimates-of-national-expenditure-2018-19
   expenditure:
-    base_financial_year: 2017-18
+    base_financial_year: 2018-19
     nominal:
     - amount: 694912000.0
       financial_year: 2014-15
@@ -432,33 +432,28 @@ expenditure_over_time:
       financial_year: 2020-21
       phase: Medium Term Estimates
     real:
-    - amount: 814793090
+    - amount: 853403867
       financial_year: 2014-15
       phase: Audited Outcome
-    - amount: 985279523
+    - amount: 1031969178
       financial_year: 2015-16
       phase: Audited Outcome
-    - amount: 697590924
+    - amount: 730647816
       financial_year: 2016-17
       phase: Audited Outcome
-    - amount: 914237000
+    - amount: 959146077
       financial_year: 2017-18
       phase: Adjusted appropriation
-    - amount: 1016760437
+    - amount: 1072597000
       financial_year: 2018-19
       phase: Main appropriation
-    - amount: 914933823
+    - amount: 966399982
       financial_year: 2019-20
       phase: Medium Term Estimates
-    - amount: 910384530
+    - amount: 962160918
       financial_year: 2020-21
       phase: Medium Term Estimates
 financial_years:
-- closest_match:
-    is_exact_match: true
-    url_path: /2015-16/national/departments/economic-development
-  id: 2015-16
-  is_selected: false
 - closest_match:
     is_exact_match: true
     url_path: /2016-17/national/departments/economic-development
@@ -474,6 +469,11 @@ financial_years:
     url_path: /2018-19/national/departments/economic-development
   id: 2018-19
   is_selected: true
+- closest_match:
+    is_exact_match: true
+    url_path: /2019-20/national/departments/economic-development
+  id: 2019-20
+  is_selected: false
 government:
   name: South Africa
   slug: south-africa
@@ -621,4 +621,4 @@ vote_primary:
   name: Economic Development
   slug: economic-development
   url_path: /2018-19/national/departments/economic-development
-website_url: www.economic.gov.za
+website_url: null

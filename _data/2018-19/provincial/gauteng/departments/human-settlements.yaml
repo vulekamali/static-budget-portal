@@ -130,7 +130,7 @@ economic_classification_by_programme:
 expenditure_over_time:
   dataset_detail_page: /datasets/estimates-of-provincial-expenditure/estimates-of-provincial-expenditure-2018-19
   expenditure:
-    base_financial_year: 2017-18
+    base_financial_year: 2018-19
     nominal:
     - amount: 5026297000.0
       financial_year: 2014-15
@@ -154,33 +154,28 @@ expenditure_over_time:
       financial_year: 2020-21
       phase: Medium Term Estimates
     real:
-    - amount: 5893396668
+    - amount: 6172668338
       financial_year: 2014-15
       phase: Audited Outcome
-    - amount: 5287676326
+    - amount: 5538244595
       financial_year: 2015-16
       phase: Audited Outcome
-    - amount: 6248882604
+    - amount: 6544999764
       financial_year: 2016-17
       phase: Audited Outcome
-    - amount: 6255557000
+    - amount: 6562841975
       financial_year: 2017-18
       phase: Adjusted appropriation
-    - amount: 5581889311
+    - amount: 5888425147
       financial_year: 2018-19
       phase: Main appropriation
-    - amount: 5507759404
+    - amount: 5817577680
       financial_year: 2019-20
       phase: Medium Term Estimates
-    - amount: 5574550264
+    - amount: 5891592200
       financial_year: 2020-21
       phase: Medium Term Estimates
 financial_years:
-- closest_match:
-    is_exact_match: true
-    url_path: /2015-16/provincial/gauteng/departments/human-settlements
-  id: 2015-16
-  is_selected: false
 - closest_match:
     is_exact_match: true
     url_path: /2016-17/provincial/gauteng/departments/human-settlements
@@ -196,6 +191,11 @@ financial_years:
     url_path: /2018-19/provincial/gauteng/departments/human-settlements
   id: 2018-19
   is_selected: true
+- closest_match:
+    is_exact_match: false
+    url_path: /2019-20/provincial/gauteng
+  id: 2019-20
+  is_selected: false
 government:
   name: Gauteng
   slug: gauteng

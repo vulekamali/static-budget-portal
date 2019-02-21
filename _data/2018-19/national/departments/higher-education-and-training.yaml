@@ -77,7 +77,7 @@ adjusted_budget_summary:
 budget_actual:
   dataset_detail_page: /datasets/budgeted-and-actual-national-expenditure/budgeted-and-actual-national-expenditure
   expenditure:
-    base_financial_year: 2017-18
+    base_financial_year: 2018-19
     nominal:
     - amount: 41843955000.0
       financial_year: 2015-16
@@ -128,46 +128,46 @@ budget_actual:
       financial_year: 2018-19
       phase: Audit Outcome
     real:
-    - amount: 46652090662
+    - amount: 48862803435
       financial_year: 2015-16
       phase: Main appropriation
-    - amount: 46692431318
+    - amount: 48905055722
       financial_year: 2015-16
       phase: Adjusted appropriation
-    - amount: 46692431318
+    - amount: 48905055722
       financial_year: 2015-16
       phase: Final Appropriation
-    - amount: 46598128080
+    - amount: 48806283717
       financial_year: 2015-16
       phase: Audit Outcome
-    - amount: 51592503492
+    - amount: 54037328684
       financial_year: 2016-17
       phase: Main appropriation
-    - amount: 51592503492
+    - amount: 54037328684
       financial_year: 2016-17
       phase: Adjusted appropriation
-    - amount: 51592503492
+    - amount: 54037328684
       financial_year: 2016-17
       phase: Final Appropriation
-    - amount: 51539307547
+    - amount: 53981611930
       financial_year: 2016-17
       phase: Audit Outcome
-    - amount: 52307639000
+    - amount: 54877090696
       financial_year: 2017-18
       phase: Main appropriation
-    - amount: 52307639000
+    - amount: 54877090696
       financial_year: 2017-18
       phase: Adjusted appropriation
-    - amount: 52307639000
+    - amount: 54877090696
       financial_year: 2017-18
       phase: Final Appropriation
-    - amount: 52295860000
+    - amount: 54864733089
       financial_year: 2017-18
       phase: Audit Outcome
-    - amount: 69219381500
+    - amount: 73020643000
       financial_year: 2018-19
       phase: Main appropriation
-    - amount: 69317427207
+    - amount: 73124073000
       financial_year: 2018-19
       phase: Adjusted appropriation
     - amount: null
@@ -841,7 +841,7 @@ economic_classification_by_programme:
 expenditure_over_time:
   dataset_detail_page: /datasets/estimates-of-national-expenditure/estimates-of-national-expenditure-2018-19
   expenditure:
-    base_financial_year: 2017-18
+    base_financial_year: 2018-19
     nominal:
     - amount: 52892303000.0
       financial_year: 2014-15
@@ -865,33 +865,28 @@ expenditure_over_time:
       financial_year: 2020-21
       phase: Medium Term Estimates
     real:
-    - amount: 62016892807
+    - amount: 64955700803
       financial_year: 2014-15
       phase: Audited Outcome
-    - amount: 63660922263
+    - amount: 66677636242
       financial_year: 2015-16
       phase: Audited Outcome
-    - amount: 67516875496
+    - amount: 70716312370
       financial_year: 2016-17
       phase: Audited Outcome
-    - amount: 68078193000
+    - amount: 71422324599
       financial_year: 2017-18
       phase: Adjusted appropriation
-    - amount: 85267465607
+    - amount: 89950026000
       financial_year: 2018-19
       phase: Main appropriation
-    - amount: 97177661964
+    - amount: 102644025597
       financial_year: 2019-20
       phase: Medium Term Estimates
-    - amount: 101230444627
+    - amount: 106987733483
       financial_year: 2020-21
       phase: Medium Term Estimates
 financial_years:
-- closest_match:
-    is_exact_match: true
-    url_path: /2015-16/national/departments/higher-education-and-training
-  id: 2015-16
-  is_selected: false
 - closest_match:
     is_exact_match: true
     url_path: /2016-17/national/departments/higher-education-and-training
@@ -907,6 +902,11 @@ financial_years:
     url_path: /2018-19/national/departments/higher-education-and-training
   id: 2018-19
   is_selected: true
+- closest_match:
+    is_exact_match: true
+    url_path: /2019-20/national/departments/higher-education-and-training
+  id: 2019-20
+  is_selected: false
 government:
   name: South Africa
   slug: south-africa
@@ -1206,4 +1206,4 @@ vote_primary:
   name: Higher Education and Training
   slug: higher-education-and-training
   url_path: /2018-19/national/departments/higher-education-and-training
-website_url: www.dhet.gov.za
+website_url: null

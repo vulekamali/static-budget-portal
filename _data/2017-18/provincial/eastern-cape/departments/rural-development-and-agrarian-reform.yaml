@@ -244,7 +244,7 @@ economic_classification_by_programme:
 expenditure_over_time:
   dataset_detail_page: /datasets/estimates-of-provincial-expenditure/estimates-of-provincial-expenditure-2017-18
   expenditure:
-    base_financial_year: 2017-18
+    base_financial_year: 2018-19
     nominal:
     - amount: 1731203000
       financial_year: 2013-14
@@ -268,33 +268,28 @@ expenditure_over_time:
       financial_year: 2019-20
       phase: Medium Term Estimates
     real:
-    - amount: 2144056948
+    - amount: 2245657842
       financial_year: 2013-14
       phase: Audited Outcome
-    - amount: 2172393863
+    - amount: 2275337564
       financial_year: 2014-15
       phase: Audited Outcome
-    - amount: 2194208143
+    - amount: 2298185562
       financial_year: 2015-16
       phase: Audited Outcome
-    - amount: 2323392723
+    - amount: 2433491840
       financial_year: 2016-17
       phase: Adjusted appropriation
-    - amount: 2205434000
+    - amount: 2313769154
       financial_year: 2017-18
       phase: Main appropriation
-    - amount: 2210898955
+    - amount: 2332313000
       financial_year: 2018-19
       phase: Medium Term Estimates
-    - amount: 2209522040
+    - amount: 2333810387
       financial_year: 2019-20
       phase: Medium Term Estimates
 financial_years:
-- closest_match:
-    is_exact_match: true
-    url_path: /2015-16/provincial/eastern-cape/departments/rural-development-and-agrarian-reform
-  id: 2015-16
-  is_selected: false
 - closest_match:
     is_exact_match: true
     url_path: /2016-17/provincial/eastern-cape/departments/rural-development-and-agrarian-reform
@@ -309,6 +304,11 @@ financial_years:
     is_exact_match: true
     url_path: /2018-19/provincial/eastern-cape/departments/rural-development-and-agrarian-reform
   id: 2018-19
+  is_selected: false
+- closest_match:
+    is_exact_match: false
+    url_path: /2019-20/provincial/eastern-cape
+  id: 2019-20
   is_selected: false
 government:
   name: Eastern Cape

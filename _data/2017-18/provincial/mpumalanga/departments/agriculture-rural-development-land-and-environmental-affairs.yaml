@@ -222,7 +222,7 @@ economic_classification_by_programme:
 expenditure_over_time:
   dataset_detail_page: /datasets/estimates-of-provincial-expenditure/estimates-of-provincial-expenditure-2017-18
   expenditure:
-    base_financial_year: 2017-18
+    base_financial_year: 2018-19
     nominal:
     - amount: 1007100000
       financial_year: 2013-14
@@ -246,33 +246,28 @@ expenditure_over_time:
       financial_year: 2019-20
       phase: Medium Term Estimates
     real:
-    - amount: 1247271263
+    - amount: 1306375978
       financial_year: 2013-14
       phase: Audited Outcome
-    - amount: 1177723266
+    - amount: 1233532295
       financial_year: 2014-15
       phase: Audited Outcome
-    - amount: 1120866627
+    - amount: 1173981378
       financial_year: 2015-16
       phase: Audited Outcome
-    - amount: 1021746668
+    - amount: 1070164400
       financial_year: 2016-17
       phase: Adjusted appropriation
-    - amount: 1124801000
+    - amount: 1180053385
       financial_year: 2017-18
       phase: Main appropriation
-    - amount: 1117477447
+    - amount: 1178845000
       financial_year: 2018-19
       phase: Medium Term Estimates
-    - amount: 1125822320
+    - amount: 1189151218
       financial_year: 2019-20
       phase: Medium Term Estimates
 financial_years:
-- closest_match:
-    is_exact_match: true
-    url_path: /2015-16/provincial/mpumalanga/departments/agriculture-rural-development-land-and-environmental-affairs
-  id: 2015-16
-  is_selected: false
 - closest_match:
     is_exact_match: true
     url_path: /2016-17/provincial/mpumalanga/departments/agriculture-rural-development-land-and-environmental-affairs
@@ -287,6 +282,11 @@ financial_years:
     is_exact_match: true
     url_path: /2018-19/provincial/mpumalanga/departments/agriculture-rural-development-land-and-environmental-affairs
   id: 2018-19
+  is_selected: false
+- closest_match:
+    is_exact_match: false
+    url_path: /2019-20/provincial/mpumalanga
+  id: 2019-20
   is_selected: false
 government:
   name: Mpumalanga

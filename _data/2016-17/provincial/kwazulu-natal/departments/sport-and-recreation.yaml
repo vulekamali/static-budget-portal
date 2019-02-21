@@ -108,7 +108,7 @@ economic_classification_by_programme:
 expenditure_over_time:
   dataset_detail_page: /datasets/estimates-of-provincial-expenditure/estimates-of-provincial-expenditure-2016-17
   expenditure:
-    base_financial_year: 2017-18
+    base_financial_year: 2018-19
     nominal:
     - amount: 367751000
       financial_year: 2012-13
@@ -132,33 +132,28 @@ expenditure_over_time:
       financial_year: 2018-19
       phase: Medium Term Estimates
     real:
-    - amount: 481945166
+    - amount: 504783206
       financial_year: 2012-13
       phase: Audited Outcome
-    - amount: 513928767
+    - amount: 538282421
       financial_year: 2013-14
       phase: Audited Outcome
-    - amount: 529090457
+    - amount: 554162582
       financial_year: 2014-15
       phase: Audited Outcome
-    - amount: 488136097
+    - amount: 511267509
       financial_year: 2015-16
       phase: Adjusted appropriation
-    - amount: 447324438
+    - amount: 468521899
       financial_year: 2016-17
       phase: Main appropriation
-    - amount: 438628000
+    - amount: 460174249
       financial_year: 2017-18
       phase: Medium Term Estimates
-    - amount: 429433185
+    - amount: 453016000
       financial_year: 2018-19
       phase: Medium Term Estimates
 financial_years:
-- closest_match:
-    is_exact_match: true
-    url_path: /2015-16/provincial/kwazulu-natal/departments/sport-and-recreation
-  id: 2015-16
-  is_selected: false
 - closest_match:
     is_exact_match: true
     url_path: /2016-17/provincial/kwazulu-natal/departments/sport-and-recreation
@@ -173,6 +168,11 @@ financial_years:
     is_exact_match: true
     url_path: /2018-19/provincial/kwazulu-natal/departments/sport-and-recreation
   id: 2018-19
+  is_selected: false
+- closest_match:
+    is_exact_match: false
+    url_path: /2019-20/provincial/kwazulu-natal
+  id: 2019-20
   is_selected: false
 government:
   name: KwaZulu-Natal

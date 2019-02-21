@@ -158,7 +158,7 @@ economic_classification_by_programme:
 expenditure_over_time:
   dataset_detail_page: /datasets/estimates-of-provincial-expenditure/estimates-of-provincial-expenditure-2017-18
   expenditure:
-    base_financial_year: 2017-18
+    base_financial_year: 2018-19
     nominal:
     - amount: 222196000
       financial_year: 2013-14
@@ -182,33 +182,28 @@ expenditure_over_time:
       financial_year: 2019-20
       phase: Medium Term Estimates
     real:
-    - amount: 275184873
+    - amount: 288225118
       financial_year: 2013-14
       phase: Audited Outcome
-    - amount: 310675979
+    - amount: 325398049
       financial_year: 2014-15
       phase: Audited Outcome
-    - amount: 300169578
+    - amount: 314393779
       financial_year: 2015-16
       phase: Audited Outcome
-    - amount: 304010993
+    - amount: 318417228
       financial_year: 2016-17
       phase: Adjusted appropriation
-    - amount: 302056000
+    - amount: 316893570
       financial_year: 2017-18
       phase: Main appropriation
-    - amount: 290052438
+    - amount: 305981000
       financial_year: 2018-19
       phase: Medium Term Estimates
-    - amount: 284248103
+    - amount: 300237410
       financial_year: 2019-20
       phase: Medium Term Estimates
 financial_years:
-- closest_match:
-    is_exact_match: true
-    url_path: /2015-16/provincial/western-cape/departments/community-safety
-  id: 2015-16
-  is_selected: false
 - closest_match:
     is_exact_match: true
     url_path: /2016-17/provincial/western-cape/departments/community-safety
@@ -223,6 +218,11 @@ financial_years:
     is_exact_match: true
     url_path: /2018-19/provincial/western-cape/departments/community-safety
   id: 2018-19
+  is_selected: false
+- closest_match:
+    is_exact_match: false
+    url_path: /2019-20/provincial/western-cape
+  id: 2019-20
   is_selected: false
 government:
   name: Western Cape

@@ -39,7 +39,7 @@ adjusted_budget_summary:
 budget_actual:
   dataset_detail_page: /datasets/budgeted-and-actual-national-expenditure/budgeted-and-actual-national-expenditure
   expenditure:
-    base_financial_year: 2017-18
+    base_financial_year: 2018-19
     nominal:
     - amount: 20617584000.0
       financial_year: 2015-16
@@ -90,28 +90,28 @@ budget_actual:
       financial_year: 2014-15
       phase: Audit Outcome
     real:
-    - amount: 22986675088
+    - amount: 24075949663
       financial_year: 2015-16
       phase: Main appropriation
-    - amount: 22954309357
+    - amount: 24042050210
       financial_year: 2015-16
       phase: Adjusted appropriation
-    - amount: 22954309357
+    - amount: 24042050210
       financial_year: 2015-16
       phase: Final Appropriation
-    - amount: 22954444261
+    - amount: 24042191507
       financial_year: 2015-16
       phase: Audit Outcome
-    - amount: 22631941542
+    - amount: 23704406282
       financial_year: 2016-17
       phase: Main appropriation
-    - amount: 22634987484
+    - amount: 23707596562
       financial_year: 2016-17
       phase: Adjusted appropriation
-    - amount: 22634987484
+    - amount: 23707596562
       financial_year: 2016-17
       phase: Final Appropriation
-    - amount: 22595112289
+    - amount: 23665831793
       financial_year: 2016-17
       phase: Audit Outcome
     - amount: null
@@ -576,7 +576,7 @@ economic_classification_by_programme:
 expenditure_over_time:
   dataset_detail_page: /datasets/estimates-of-national-expenditure/estimates-of-national-expenditure-2016-17
   expenditure:
-    base_financial_year: 2017-18
+    base_financial_year: 2018-19
     nominal:
     - amount: 17313554000.0
       financial_year: 2012-13
@@ -600,33 +600,28 @@ expenditure_over_time:
       financial_year: 2018-19
       phase: Medium Term Estimates
     real:
-    - amount: 22689764717
+    - amount: 23764969536
       financial_year: 2012-13
       phase: Audited Outcome
-    - amount: 23098356602
+    - amount: 24192923453
       financial_year: 2013-14
       phase: Audited Outcome
-    - amount: 22898296788
+    - amount: 23983383361
       financial_year: 2014-15
       phase: Audited Outcome
-    - amount: 22954309357
+    - amount: 24042050210
       financial_year: 2015-16
       phase: Adjusted appropriation
-    - amount: 22631941542
+    - amount: 23704406282
       financial_year: 2016-17
       phase: Main appropriation
-    - amount: 23048928000
+    - amount: 24181135614
       financial_year: 2017-18
       phase: Medium Term Estimates
-    - amount: 23414847851
+    - amount: 24700701000
       financial_year: 2018-19
       phase: Medium Term Estimates
 financial_years:
-- closest_match:
-    is_exact_match: true
-    url_path: /2015-16/national/departments/correctional-services
-  id: 2015-16
-  is_selected: false
 - closest_match:
     is_exact_match: true
     url_path: /2016-17/national/departments/correctional-services
@@ -641,6 +636,11 @@ financial_years:
     is_exact_match: true
     url_path: /2018-19/national/departments/correctional-services
   id: 2018-19
+  is_selected: false
+- closest_match:
+    is_exact_match: true
+    url_path: /2019-20/national/departments/correctional-services
+  id: 2019-20
   is_selected: false
 government:
   name: South Africa
@@ -866,4 +866,4 @@ vote_primary:
   name: Correctional Services
   slug: correctional-services
   url_path: /2016-17/national/departments/correctional-services
-website_url: www.dcs.gov.za
+website_url: null

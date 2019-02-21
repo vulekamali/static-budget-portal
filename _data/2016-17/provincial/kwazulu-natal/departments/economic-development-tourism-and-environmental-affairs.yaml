@@ -251,7 +251,7 @@ economic_classification_by_programme:
 expenditure_over_time:
   dataset_detail_page: /datasets/estimates-of-provincial-expenditure/estimates-of-provincial-expenditure-2016-17
   expenditure:
-    base_financial_year: 2017-18
+    base_financial_year: 2018-19
     nominal:
     - amount: 2421869000
       financial_year: 2012-13
@@ -275,33 +275,28 @@ expenditure_over_time:
       financial_year: 2018-19
       phase: Medium Term Estimates
     real:
-    - amount: 3173908591
+    - amount: 3324311288
       financial_year: 2012-13
       phase: Audited Outcome
-    - amount: 4101039308
+    - amount: 4295376150
       financial_year: 2013-14
       phase: Audited Outcome
-    - amount: 3465716321
+    - amount: 3629946975
       financial_year: 2014-15
       phase: Audited Outcome
-    - amount: 3341506970
+    - amount: 3499851688
       financial_year: 2015-16
       phase: Adjusted appropriation
-    - amount: 2835108831
+    - amount: 2969456750
       financial_year: 2016-17
       phase: Main appropriation
-    - amount: 2844613000
+    - amount: 2984345854
       financial_year: 2017-18
       phase: Medium Term Estimates
-    - amount: 2865387943
+    - amount: 3022744000
       financial_year: 2018-19
       phase: Medium Term Estimates
 financial_years:
-- closest_match:
-    is_exact_match: true
-    url_path: /2015-16/provincial/kwazulu-natal/departments/economic-development-tourism-and-environmental-affairs
-  id: 2015-16
-  is_selected: false
 - closest_match:
     is_exact_match: true
     url_path: /2016-17/provincial/kwazulu-natal/departments/economic-development-tourism-and-environmental-affairs
@@ -316,6 +311,11 @@ financial_years:
     is_exact_match: true
     url_path: /2018-19/provincial/kwazulu-natal/departments/economic-development-tourism-and-environmental-affairs
   id: 2018-19
+  is_selected: false
+- closest_match:
+    is_exact_match: false
+    url_path: /2019-20/provincial/kwazulu-natal
+  id: 2019-20
   is_selected: false
 government:
   name: KwaZulu-Natal

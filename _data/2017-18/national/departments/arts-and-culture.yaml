@@ -73,7 +73,7 @@ adjusted_budget_summary:
 budget_actual:
   dataset_detail_page: /datasets/budgeted-and-actual-national-expenditure/budgeted-and-actual-national-expenditure
   expenditure:
-    base_financial_year: 2017-18
+    base_financial_year: 2018-19
     nominal:
     - amount: 3919859000.0
       financial_year: 2015-16
@@ -124,40 +124,40 @@ budget_actual:
       financial_year: 2014-15
       phase: Audit Outcome
     real:
-    - amount: 4370275645
+    - amount: 4577370848
       financial_year: 2015-16
       phase: Main appropriation
-    - amount: 4265684052
+    - amount: 4467822950
       financial_year: 2015-16
       phase: Adjusted appropriation
-    - amount: 4265684052
+    - amount: 4467822950
       financial_year: 2015-16
       phase: Final Appropriation
-    - amount: 4194671207
+    - amount: 4393445005
       financial_year: 2015-16
       phase: Audit Outcome
-    - amount: 4269828135
+    - amount: 4472163410
       financial_year: 2016-17
       phase: Main appropriation
-    - amount: 4261142377
+    - amount: 4463066058
       financial_year: 2016-17
       phase: Adjusted appropriation
-    - amount: 4261142377
+    - amount: 4463066058
       financial_year: 2016-17
       phase: Final Appropriation
-    - amount: 4150900055
+    - amount: 4347599659
       financial_year: 2016-17
       phase: Audit Outcome
-    - amount: 4449845000
+    - amount: 4668429933
       financial_year: 2017-18
       phase: Main appropriation
-    - amount: 4371738000
+    - amount: 4586486167
       financial_year: 2017-18
       phase: Adjusted appropriation
-    - amount: 4371738000
+    - amount: 4586486167
       financial_year: 2017-18
       phase: Final Appropriation
-    - amount: 4141480000
+    - amount: 4344917452
       financial_year: 2017-18
       phase: Audit Outcome
     - amount: null
@@ -573,7 +573,7 @@ economic_classification_by_programme:
 expenditure_over_time:
   dataset_detail_page: /datasets/estimates-of-national-expenditure/estimates-of-national-expenditure-2017-18
   expenditure:
-    base_financial_year: 2017-18
+    base_financial_year: 2018-19
     nominal:
     - amount: 2806463000.0
       financial_year: 2013-14
@@ -597,33 +597,28 @@ expenditure_over_time:
       financial_year: 2019-20
       phase: Medium Term Estimates
     real:
-    - amount: 3475742877
+    - amount: 3640448661
       financial_year: 2013-14
       phase: Audited Outcome
-    - amount: 4097142508
+    - amount: 4291294692
       financial_year: 2014-15
       phase: Audited Outcome
-    - amount: 4194671207
+    - amount: 4393445005
       financial_year: 2015-16
       phase: Audited Outcome
-    - amount: 4261142377
+    - amount: 4463066058
       financial_year: 2016-17
       phase: Adjusted appropriation
-    - amount: 4449845000
+    - amount: 4668429933
       financial_year: 2017-18
       phase: Main appropriation
-    - amount: 4257827531
+    - amount: 4491651000
       financial_year: 2018-19
       phase: Medium Term Estimates
-    - amount: 4278545081
+    - amount: 4519218532
       financial_year: 2019-20
       phase: Medium Term Estimates
 financial_years:
-- closest_match:
-    is_exact_match: true
-    url_path: /2015-16/national/departments/arts-and-culture
-  id: 2015-16
-  is_selected: false
 - closest_match:
     is_exact_match: true
     url_path: /2016-17/national/departments/arts-and-culture
@@ -638,6 +633,11 @@ financial_years:
     is_exact_match: true
     url_path: /2018-19/national/departments/arts-and-culture
   id: 2018-19
+  is_selected: false
+- closest_match:
+    is_exact_match: true
+    url_path: /2019-20/national/departments/arts-and-culture
+  id: 2019-20
   is_selected: false
 government:
   name: South Africa
@@ -906,4 +906,4 @@ vote_primary:
   name: Arts and Culture
   slug: arts-and-culture
   url_path: /2017-18/national/departments/arts-and-culture
-website_url: www.dac.gov.za
+website_url: null

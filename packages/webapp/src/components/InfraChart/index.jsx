@@ -230,9 +230,7 @@ const InfraChart = ({ data }) => {
             strokeWidth={3}
             dot={<Dot />}
             activeDot={<ActiveDot />}
-            animationBegin={0}
-            animationEasing="linear"
-            animationDuration={750}
+            isAnimationActive={false}
           />
           <Line 
             dataKey="Connection"
@@ -241,9 +239,7 @@ const InfraChart = ({ data }) => {
             strokeDasharray="3 4"
             dot={false}
             activeDot={false}
-            animationBegin={750}
-            animationEasing="linear"
-            animationDuration={250}
+            isAnimationActive={false}
           />
           <Line
             dataKey="Projected"
@@ -252,9 +248,7 @@ const InfraChart = ({ data }) => {
             strokeDasharray="3 4"
             dot={<Dot />}
             activeDot={<ActiveDot />}
-            animationBegin={1000}
-            animationEasing="linear"
-            animationDuration={750}
+            isAnimationActive={false}
             />
           <Tooltip 
             active={false}

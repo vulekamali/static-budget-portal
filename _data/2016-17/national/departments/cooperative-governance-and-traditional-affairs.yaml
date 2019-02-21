@@ -51,7 +51,7 @@ adjusted_budget_summary:
 budget_actual:
   dataset_detail_page: /datasets/budgeted-and-actual-national-expenditure/budgeted-and-actual-national-expenditure
   expenditure:
-    base_financial_year: 2017-18
+    base_financial_year: 2018-19
     nominal:
     - amount: 69314159000.0
       financial_year: 2015-16
@@ -102,28 +102,28 @@ budget_actual:
       financial_year: 2014-15
       phase: Audit Outcome
     real:
-    - amount: 77278795224
+    - amount: 80940822312
       financial_year: 2015-16
       phase: Main appropriation
-    - amount: 78952624178
+    - amount: 82693969364
       financial_year: 2015-16
       phase: Adjusted appropriation
-    - amount: 78952624178
+    - amount: 82693969364
       financial_year: 2015-16
       phase: Final Appropriation
-    - amount: 75922375645
+    - amount: 79520125783
       financial_year: 2015-16
       phase: Audit Outcome
-    - amount: 76561850768
+    - amount: 80189903854
       financial_year: 2016-17
       phase: Main appropriation
-    - amount: 76591070412
+    - amount: 80220508134
       financial_year: 2016-17
       phase: Adjusted appropriation
-    - amount: 76591070412
+    - amount: 80220508134
       financial_year: 2016-17
       phase: Final Appropriation
-    - amount: 73266467002
+    - amount: 76738361019
       financial_year: 2016-17
       phase: Audit Outcome
     - amount: null
@@ -878,7 +878,7 @@ economic_classification_by_programme:
 expenditure_over_time:
   dataset_detail_page: /datasets/estimates-of-national-expenditure/estimates-of-national-expenditure-2016-17
   expenditure:
-    base_financial_year: 2017-18
+    base_financial_year: 2018-19
     nominal:
     - amount: 53434365000.0
       financial_year: 2012-13
@@ -902,33 +902,28 @@ expenditure_over_time:
       financial_year: 2018-19
       phase: Medium Term Estimates
     real:
-    - amount: 70026822319
+    - amount: 73345198589
       financial_year: 2012-13
       phase: Audited Outcome
-    - amount: 69852109995
+    - amount: 73162207134
       financial_year: 2013-14
       phase: Audited Outcome
-    - amount: 69839231025
+    - amount: 73148717865
       financial_year: 2014-15
       phase: Audited Outcome
-    - amount: 78952624178
+    - amount: 82693969364
       financial_year: 2015-16
       phase: Adjusted appropriation
-    - amount: 76561850768
+    - amount: 80189903854
       financial_year: 2016-17
       phase: Main appropriation
-    - amount: 78557210000
+    - amount: 82416091042
       financial_year: 2017-18
       phase: Medium Term Estimates
-    - amount: 79872189372
+    - amount: 84258462000
       financial_year: 2018-19
       phase: Medium Term Estimates
 financial_years:
-- closest_match:
-    is_exact_match: true
-    url_path: /2015-16/national/departments/cooperative-governance-and-traditional-affairs
-  id: 2015-16
-  is_selected: false
 - closest_match:
     is_exact_match: true
     url_path: /2016-17/national/departments/cooperative-governance-and-traditional-affairs
@@ -943,6 +938,11 @@ financial_years:
     is_exact_match: true
     url_path: /2018-19/national/departments/cooperative-governance-and-traditional-affairs
   id: 2018-19
+  is_selected: false
+- closest_match:
+    is_exact_match: true
+    url_path: /2019-20/national/departments/cooperative-governance-and-traditional-affairs
+  id: 2019-20
   is_selected: false
 government:
   name: South Africa
@@ -1232,4 +1232,4 @@ vote_primary:
   name: Cooperative Governance and Traditional Affairs
   slug: cooperative-governance-and-traditional-affairs
   url_path: /2016-17/national/departments/cooperative-governance-and-traditional-affairs
-website_url: www.cogta.gov.za
+website_url: null

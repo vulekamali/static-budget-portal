@@ -22,10 +22,10 @@ logHandler.setFormatter(logFormatter)
 logger.addHandler(logHandler)
 
 YEAR_SLUGS = [
+    '2019-20',
     '2018-19',
     '2017-18',
     '2016-17',
-    '2015-16',
 ]
 
 BASIC_PAGE_SLUGS = [

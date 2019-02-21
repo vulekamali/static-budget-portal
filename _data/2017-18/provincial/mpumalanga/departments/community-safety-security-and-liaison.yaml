@@ -150,7 +150,7 @@ economic_classification_by_programme:
 expenditure_over_time:
   dataset_detail_page: /datasets/estimates-of-provincial-expenditure/estimates-of-provincial-expenditure-2017-18
   expenditure:
-    base_financial_year: 2017-18
+    base_financial_year: 2018-19
     nominal:
     - amount: 1099184000
       financial_year: 2013-14
@@ -174,33 +174,28 @@ expenditure_over_time:
       financial_year: 2019-20
       phase: Medium Term Estimates
     real:
-    - amount: 1361315278
+    - amount: 1425824221
       financial_year: 2013-14
       phase: Audited Outcome
-    - amount: 1176474540
+    - amount: 1232224395
       financial_year: 2014-15
       phase: Audited Outcome
-    - amount: 1389080760
+    - amount: 1454905433
       financial_year: 2015-16
       phase: Audited Outcome
-    - amount: 1239521011
+    - amount: 1298258463
       financial_year: 2016-17
       phase: Adjusted appropriation
-    - amount: 1153099000
+    - amount: 1209741437
       financial_year: 2017-18
       phase: Main appropriation
-    - amount: 1148842026
+    - amount: 1211932000
       financial_year: 2018-19
       phase: Medium Term Estimates
-    - amount: 1141452527
+    - amount: 1205660643
       financial_year: 2019-20
       phase: Medium Term Estimates
 financial_years:
-- closest_match:
-    is_exact_match: true
-    url_path: /2015-16/provincial/mpumalanga/departments/community-safety-security-and-liaison
-  id: 2015-16
-  is_selected: false
 - closest_match:
     is_exact_match: true
     url_path: /2016-17/provincial/mpumalanga/departments/community-safety-security-and-liaison
@@ -215,6 +210,11 @@ financial_years:
     is_exact_match: true
     url_path: /2018-19/provincial/mpumalanga/departments/community-safety-security-and-liaison
   id: 2018-19
+  is_selected: false
+- closest_match:
+    is_exact_match: false
+    url_path: /2019-20/provincial/mpumalanga
+  id: 2019-20
   is_selected: false
 government:
   name: Mpumalanga
