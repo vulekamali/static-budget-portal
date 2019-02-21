@@ -56,7 +56,7 @@ adjusted_budget_summary:
 budget_actual:
   dataset_detail_page: /datasets/budgeted-and-actual-national-expenditure/budgeted-and-actual-national-expenditure
   expenditure:
-    base_financial_year: 2017-18
+    base_financial_year: 2018-19
     nominal:
     - amount: 7482094000.0
       financial_year: 2015-16
@@ -107,28 +107,28 @@ budget_actual:
       financial_year: 2014-15
       phase: Audit Outcome
     real:
-    - amount: 8341834026
+    - amount: 8737130331
       financial_year: 2015-16
       phase: Main appropriation
-    - amount: 8102714489
+    - amount: 8486679584
       financial_year: 2015-16
       phase: Adjusted appropriation
-    - amount: 8102714489
+    - amount: 8486679584
       financial_year: 2015-16
       phase: Final Appropriation
-    - amount: 7962791798
+    - amount: 8340126346
       financial_year: 2015-16
       phase: Audit Outcome
-    - amount: 7913963836
+    - amount: 8288984562
       financial_year: 2016-17
       phase: Main appropriation
-    - amount: 7919612044
+    - amount: 8294900423
       financial_year: 2016-17
       phase: Adjusted appropriation
-    - amount: 7919612044
+    - amount: 8294900423
       financial_year: 2016-17
       phase: Final Appropriation
-    - amount: 7880054232
+    - amount: 8253468077
       financial_year: 2016-17
       phase: Audit Outcome
     - amount: null
@@ -628,7 +628,7 @@ economic_classification_by_programme:
 expenditure_over_time:
   dataset_detail_page: /datasets/estimates-of-national-expenditure/estimates-of-national-expenditure-2016-17
   expenditure:
-    base_financial_year: 2017-18
+    base_financial_year: 2018-19
     nominal:
     - amount: 6658984000.0
       financial_year: 2012-13
@@ -652,33 +652,28 @@ expenditure_over_time:
       financial_year: 2018-19
       phase: Medium Term Estimates
     real:
-    - amount: 8726733992
+    - amount: 9140269635
       financial_year: 2012-13
       phase: Audited Outcome
-    - amount: 8021700478
+    - amount: 8401826545
       financial_year: 2013-14
       phase: Audited Outcome
-    - amount: 7293160994
+    - amount: 7638763602
       financial_year: 2014-15
       phase: Audited Outcome
-    - amount: 8102714489
+    - amount: 8486679584
       financial_year: 2015-16
       phase: Adjusted appropriation
-    - amount: 7913963836
+    - amount: 8288984562
       financial_year: 2016-17
       phase: Main appropriation
-    - amount: 8128980000
+    - amount: 8528291111
       financial_year: 2017-18
       phase: Medium Term Estimates
-    - amount: 8044620466
+    - amount: 8486400000
       financial_year: 2018-19
       phase: Medium Term Estimates
 financial_years:
-- closest_match:
-    is_exact_match: true
-    url_path: /2015-16/national/departments/energy
-  id: 2015-16
-  is_selected: false
 - closest_match:
     is_exact_match: true
     url_path: /2016-17/national/departments/energy
@@ -693,6 +688,11 @@ financial_years:
     is_exact_match: true
     url_path: /2018-19/national/departments/energy
   id: 2018-19
+  is_selected: false
+- closest_match:
+    is_exact_match: true
+    url_path: /2019-20/national/departments/energy
+  id: 2019-20
   is_selected: false
 government:
   name: South Africa
@@ -955,4 +955,4 @@ vote_primary:
   name: Energy
   slug: energy
   url_path: /2016-17/national/departments/energy
-website_url: www.energy.gov.za
+website_url: null

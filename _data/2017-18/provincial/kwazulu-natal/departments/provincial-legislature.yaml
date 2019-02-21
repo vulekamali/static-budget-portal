@@ -101,7 +101,7 @@ economic_classification_by_programme:
 expenditure_over_time:
   dataset_detail_page: /datasets/estimates-of-provincial-expenditure/estimates-of-provincial-expenditure-2017-18
   expenditure:
-    base_financial_year: 2017-18
+    base_financial_year: 2018-19
     nominal:
     - amount: 389834000
       financial_year: 2013-14
@@ -125,33 +125,28 @@ expenditure_over_time:
       financial_year: 2019-20
       phase: Medium Term Estimates
     real:
-    - amount: 482800859
+    - amount: 505679449
       financial_year: 2013-14
       phase: Audited Outcome
-    - amount: 461891414
+    - amount: 483779163
       financial_year: 2014-15
       phase: Audited Outcome
-    - amount: 400176676
+    - amount: 419139936
       financial_year: 2015-16
       phase: Audited Outcome
-    - amount: 496173833
+    - amount: 519686131
       financial_year: 2016-17
       phase: Adjusted appropriation
-    - amount: 447244000
+    - amount: 469213484
       financial_year: 2017-18
       phase: Main appropriation
-    - amount: 447393854
+    - amount: 471963000
       financial_year: 2018-19
       phase: Medium Term Estimates
-    - amount: 451995754
+    - amount: 477421074
       financial_year: 2019-20
       phase: Medium Term Estimates
 financial_years:
-- closest_match:
-    is_exact_match: true
-    url_path: /2015-16/provincial/kwazulu-natal/departments/provincial-legislature
-  id: 2015-16
-  is_selected: false
 - closest_match:
     is_exact_match: true
     url_path: /2016-17/provincial/kwazulu-natal/departments/provincial-legislature
@@ -166,6 +161,11 @@ financial_years:
     is_exact_match: true
     url_path: /2018-19/provincial/kwazulu-natal/departments/provincial-legislature
   id: 2018-19
+  is_selected: false
+- closest_match:
+    is_exact_match: false
+    url_path: /2019-20/provincial/kwazulu-natal
+  id: 2019-20
   is_selected: false
 government:
   name: KwaZulu-Natal

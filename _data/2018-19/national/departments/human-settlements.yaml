@@ -59,7 +59,7 @@ adjusted_budget_summary:
 budget_actual:
   dataset_detail_page: /datasets/budgeted-and-actual-national-expenditure/budgeted-and-actual-national-expenditure
   expenditure:
-    base_financial_year: 2017-18
+    base_financial_year: 2018-19
     nominal:
     - amount: 30943381000.0
       financial_year: 2015-16
@@ -110,46 +110,46 @@ budget_actual:
       financial_year: 2018-19
       phase: Audit Outcome
     real:
-    - amount: 34498971614
+    - amount: 36133781891
       financial_year: 2015-16
       phase: Main appropriation
-    - amount: 34053009079
+    - amount: 35666686431
       financial_year: 2015-16
       phase: Adjusted appropriation
-    - amount: 34053009079
+    - amount: 35666686431
       financial_year: 2015-16
       phase: Final Appropriation
-    - amount: 33485703482
+    - amount: 35072497801
       financial_year: 2015-16
       phase: Audit Outcome
-    - amount: 32190963529
+    - amount: 33716403724
       financial_year: 2016-17
       phase: Main appropriation
-    - amount: 32196732358
+    - amount: 33722445922
       financial_year: 2016-17
       phase: Adjusted appropriation
-    - amount: 32196732358
+    - amount: 33722445922
       financial_year: 2016-17
       phase: Final Appropriation
-    - amount: 32082273547
+    - amount: 33602563226
       financial_year: 2016-17
       phase: Audit Outcome
-    - amount: 33464300000
+    - amount: 35108130691
       financial_year: 2017-18
       phase: Main appropriation
-    - amount: 33477701000
+    - amount: 35122189974
       financial_year: 2017-18
       phase: Adjusted appropriation
-    - amount: 33477701000
+    - amount: 35122189974
       financial_year: 2017-18
       phase: Final Appropriation
-    - amount: 33370485000
+    - amount: 35009707318
       financial_year: 2017-18
       phase: Audit Outcome
-    - amount: 30671363021
+    - amount: 32355716000
       financial_year: 2018-19
       phase: Main appropriation
-    - amount: 30766277674
+    - amount: 32455843000
       financial_year: 2018-19
       phase: Adjusted appropriation
     - amount: null
@@ -518,7 +518,7 @@ economic_classification_by_programme:
 expenditure_over_time:
   dataset_detail_page: /datasets/estimates-of-national-expenditure/estimates-of-national-expenditure-2018-19
   expenditure:
-    base_financial_year: 2017-18
+    base_financial_year: 2018-19
     nominal:
     - amount: 29358232000.0
       financial_year: 2014-15
@@ -542,33 +542,28 @@ expenditure_over_time:
       financial_year: 2020-21
       phase: Medium Term Estimates
     real:
-    - amount: 34422897542
+    - amount: 36054102880
       financial_year: 2014-15
       phase: Audited Outcome
-    - amount: 33485703482
+    - amount: 35072497801
       financial_year: 2015-16
       phase: Audited Outcome
-    - amount: 32082273547
+    - amount: 33602563226
       financial_year: 2016-17
       phase: Audited Outcome
-    - amount: 33477701000
+    - amount: 35122189974
       financial_year: 2017-18
       phase: Adjusted appropriation
-    - amount: 30671363021
+    - amount: 32355716000
       financial_year: 2018-19
       phase: Main appropriation
-    - amount: 30329411443
+    - amount: 32035478336
       financial_year: 2019-20
       phase: Medium Term Estimates
-    - amount: 30527050223
+    - amount: 32263218099
       financial_year: 2020-21
       phase: Medium Term Estimates
 financial_years:
-- closest_match:
-    is_exact_match: true
-    url_path: /2015-16/national/departments/human-settlements
-  id: 2015-16
-  is_selected: false
 - closest_match:
     is_exact_match: true
     url_path: /2016-17/national/departments/human-settlements
@@ -584,6 +579,11 @@ financial_years:
     url_path: /2018-19/national/departments/human-settlements
   id: 2018-19
   is_selected: true
+- closest_match:
+    is_exact_match: true
+    url_path: /2019-20/national/departments/human-settlements
+  id: 2019-20
+  is_selected: false
 government:
   name: South Africa
   slug: south-africa
@@ -798,4 +798,4 @@ vote_primary:
   name: Human Settlements
   slug: human-settlements
   url_path: /2018-19/national/departments/human-settlements
-website_url: www.dhs.gov.za
+website_url: null

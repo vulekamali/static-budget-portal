@@ -37,7 +37,7 @@ adjusted_budget_summary:
 budget_actual:
   dataset_detail_page: /datasets/budgeted-and-actual-national-expenditure/budgeted-and-actual-national-expenditure
   expenditure:
-    base_financial_year: 2017-18
+    base_financial_year: 2018-19
     nominal:
     - amount: 76377059000.0
       financial_year: 2015-16
@@ -88,46 +88,46 @@ budget_actual:
       financial_year: 2018-19
       phase: Audit Outcome
     real:
-    - amount: 85153267203
+    - amount: 89188443608
       financial_year: 2015-16
       phase: Main appropriation
-    - amount: 85536559738
+    - amount: 89589899311
       financial_year: 2015-16
       phase: Adjusted appropriation
-    - amount: 85536559738
+    - amount: 89589899311
       financial_year: 2015-16
       phase: Final Appropriation
-    - amount: 85536507338
+    - amount: 89589844427
       financial_year: 2015-16
       phase: Audit Outcome
-    - amount: 84943228204
+    - amount: 88968451445
       financial_year: 2016-17
       phase: Main appropriation
-    - amount: 84943228204
+    - amount: 88968451445
       financial_year: 2016-17
       phase: Adjusted appropriation
-    - amount: 84943228204
+    - amount: 88968451445
       financial_year: 2016-17
       phase: Final Appropriation
-    - amount: 84943212471
+    - amount: 88968434967
       financial_year: 2016-17
       phase: Audit Outcome
-    - amount: 87025128000
+    - amount: 91299969439
       financial_year: 2017-18
       phase: Main appropriation
-    - amount: 86761128000
+    - amount: 91023001251
       financial_year: 2017-18
       phase: Adjusted appropriation
-    - amount: 86761128000
+    - amount: 91023001251
       financial_year: 2017-18
       phase: Final Appropriation
-    - amount: 86605048000
+    - amount: 90859254302
       financial_year: 2017-18
       phase: Audit Outcome
-    - amount: 87053517523
+    - amount: 91834161000
       financial_year: 2018-19
       phase: Main appropriation
-    - amount: 86911326127
+    - amount: 91684161000
       financial_year: 2018-19
       phase: Adjusted appropriation
     - amount: null
@@ -591,7 +591,7 @@ economic_classification_by_programme:
 expenditure_over_time:
   dataset_detail_page: /datasets/estimates-of-national-expenditure/estimates-of-national-expenditure-2018-19
   expenditure:
-    base_financial_year: 2017-18
+    base_financial_year: 2018-19
     nominal:
     - amount: 72507225000.0
       financial_year: 2014-15
@@ -615,33 +615,28 @@ expenditure_over_time:
       financial_year: 2020-21
       phase: Medium Term Estimates
     real:
-    - amount: 85015636406
+    - amount: 89044290871
       financial_year: 2014-15
       phase: Audited Outcome
-    - amount: 85536507338
+    - amount: 89589844427
       financial_year: 2015-16
       phase: Audited Outcome
-    - amount: 84943212471
+    - amount: 88968434967
       financial_year: 2016-17
       phase: Audited Outcome
-    - amount: 86761128000
+    - amount: 91023001251
       financial_year: 2017-18
       phase: Adjusted appropriation
-    - amount: 87053517523
+    - amount: 91834161000
       financial_year: 2018-19
       phase: Main appropriation
-    - amount: 88382993742
+    - amount: 93354646415
       financial_year: 2019-20
       phase: Medium Term Estimates
-    - amount: 89485584820
+    - amount: 94574907129
       financial_year: 2020-21
       phase: Medium Term Estimates
 financial_years:
-- closest_match:
-    is_exact_match: true
-    url_path: /2015-16/national/departments/police
-  id: 2015-16
-  is_selected: false
 - closest_match:
     is_exact_match: true
     url_path: /2016-17/national/departments/police
@@ -657,6 +652,11 @@ financial_years:
     url_path: /2018-19/national/departments/police
   id: 2018-19
   is_selected: true
+- closest_match:
+    is_exact_match: true
+    url_path: /2019-20/national/departments/police
+  id: 2019-20
+  is_selected: false
 government:
   name: South Africa
   slug: south-africa
@@ -906,4 +906,4 @@ vote_primary:
   name: Police
   slug: police
   url_path: /2018-19/national/departments/police
-website_url: www.saps.gov.za
+website_url: null

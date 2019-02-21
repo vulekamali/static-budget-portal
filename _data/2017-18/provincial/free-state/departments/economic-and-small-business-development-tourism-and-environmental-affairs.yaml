@@ -151,7 +151,7 @@ economic_classification_by_programme:
 expenditure_over_time:
   dataset_detail_page: /datasets/estimates-of-provincial-expenditure/estimates-of-provincial-expenditure-2017-18
   expenditure:
-    base_financial_year: 2017-18
+    base_financial_year: 2018-19
     nominal:
     - amount: 432354000
       financial_year: 2013-14
@@ -175,33 +175,28 @@ expenditure_over_time:
       financial_year: 2019-20
       phase: Medium Term Estimates
     real:
-    - amount: 535460947
+    - amount: 560834951
       financial_year: 2013-14
       phase: Audited Outcome
-    - amount: 503913094
+    - amount: 527792133
       financial_year: 2014-15
       phase: Audited Outcome
-    - amount: 516663206
+    - amount: 541146437
       financial_year: 2015-16
       phase: Audited Outcome
-    - amount: 498212852
+    - amount: 521821773
       financial_year: 2016-17
       phase: Adjusted appropriation
-    - amount: 558778000
+    - amount: 586226248
       financial_year: 2017-18
       phase: Main appropriation
-    - amount: 571003679
+    - amount: 602361000
       financial_year: 2018-19
       phase: Medium Term Estimates
-    - amount: 559251868
+    - amount: 590710477
       financial_year: 2019-20
       phase: Medium Term Estimates
 financial_years:
-- closest_match:
-    is_exact_match: true
-    url_path: /2015-16/provincial/free-state/departments/economic-and-small-business-development-tourism-and-environmental-affairs
-  id: 2015-16
-  is_selected: false
 - closest_match:
     is_exact_match: true
     url_path: /2016-17/provincial/free-state/departments/economic-and-small-business-development-tourism-and-environmental-affairs
@@ -216,6 +211,11 @@ financial_years:
     is_exact_match: true
     url_path: /2018-19/provincial/free-state/departments/economic-and-small-business-development-tourism-and-environmental-affairs
   id: 2018-19
+  is_selected: false
+- closest_match:
+    is_exact_match: false
+    url_path: /2019-20/provincial/free-state
+  id: 2019-20
   is_selected: false
 government:
   name: Free State

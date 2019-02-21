@@ -7,11 +7,6 @@ description: South Africa's National and Provincial budget data from National Tr
 financial_years:
 - closest_match:
     is_exact_match: true
-    url_path: /2015-16
-  id: 2015-16
-  is_selected: false
-- closest_match:
-    is_exact_match: true
     url_path: /2016-17
   id: 2016-17
   is_selected: true
@@ -24,6 +19,11 @@ financial_years:
     is_exact_match: true
     url_path: /2018-19
   id: 2018-19
+  is_selected: false
+- closest_match:
+    is_exact_match: true
+    url_path: /2019-20
+  id: 2019-20
   is_selected: false
 revenue:
 - amount: '441040413000'

@@ -248,7 +248,7 @@ economic_classification_by_programme:
 expenditure_over_time:
   dataset_detail_page: /datasets/estimates-of-provincial-expenditure/estimates-of-provincial-expenditure-2017-18
   expenditure:
-    base_financial_year: 2017-18
+    base_financial_year: 2018-19
     nominal:
     - amount: 17048255000
       financial_year: 2013-14
@@ -272,33 +272,28 @@ expenditure_over_time:
       financial_year: 2019-20
       phase: Medium Term Estimates
     real:
-    - amount: 21113889937
+    - amount: 22114418434
       financial_year: 2013-14
       phase: Audited Outcome
-    - amount: 20577425307
+    - amount: 21552532238
       financial_year: 2014-15
       phase: Audited Outcome
-    - amount: 21120722128
+    - amount: 22121574385
       financial_year: 2015-16
       phase: Audited Outcome
-    - amount: 21657515004
+    - amount: 22683804381
       financial_year: 2016-17
       phase: Adjusted appropriation
-    - amount: 21707168000
+    - amount: 22773465785
       financial_year: 2017-18
       phase: Main appropriation
-    - amount: 22148428706
+    - amount: 23364735000
       financial_year: 2018-19
       phase: Medium Term Estimates
-    - amount: 22589700684
+    - amount: 23860399277
       financial_year: 2019-20
       phase: Medium Term Estimates
 financial_years:
-- closest_match:
-    is_exact_match: true
-    url_path: /2015-16/provincial/eastern-cape/departments/health
-  id: 2015-16
-  is_selected: false
 - closest_match:
     is_exact_match: true
     url_path: /2016-17/provincial/eastern-cape/departments/health
@@ -313,6 +308,11 @@ financial_years:
     is_exact_match: true
     url_path: /2018-19/provincial/eastern-cape/departments/health
   id: 2018-19
+  is_selected: false
+- closest_match:
+    is_exact_match: false
+    url_path: /2019-20/provincial/eastern-cape
+  id: 2019-20
   is_selected: false
 government:
   name: Eastern Cape

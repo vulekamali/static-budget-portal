@@ -162,7 +162,7 @@ economic_classification_by_programme:
 expenditure_over_time:
   dataset_detail_page: /datasets/estimates-of-provincial-expenditure/estimates-of-provincial-expenditure-2017-18
   expenditure:
-    base_financial_year: 2017-18
+    base_financial_year: 2018-19
     nominal:
     - amount: 373622000
       financial_year: 2013-14
@@ -186,33 +186,28 @@ expenditure_over_time:
       financial_year: 2019-20
       phase: Medium Term Estimates
     real:
-    - amount: 462722653
+    - amount: 484649792
       financial_year: 2013-14
       phase: Audited Outcome
-    - amount: 482023455
+    - amount: 504865206
       financial_year: 2014-15
       phase: Audited Outcome
-    - amount: 471699033
+    - amount: 494051538
       financial_year: 2015-16
       phase: Audited Outcome
-    - amount: 521816802
+    - amount: 546544249
       financial_year: 2016-17
       phase: Adjusted appropriation
-    - amount: 511232000
+    - amount: 536344697
       financial_year: 2017-18
       phase: Main appropriation
-    - amount: 506115109
+    - amount: 533909000
       financial_year: 2018-19
       phase: Medium Term Estimates
-    - amount: 504249494
+    - amount: 532614152
       financial_year: 2019-20
       phase: Medium Term Estimates
 financial_years:
-- closest_match:
-    is_exact_match: true
-    url_path: /2015-16/provincial/mpumalanga/departments/culture-sport-and-recreation
-  id: 2015-16
-  is_selected: false
 - closest_match:
     is_exact_match: true
     url_path: /2016-17/provincial/mpumalanga/departments/culture-sport-and-recreation
@@ -227,6 +222,11 @@ financial_years:
     is_exact_match: true
     url_path: /2018-19/provincial/mpumalanga/departments/culture-sport-and-recreation
   id: 2018-19
+  is_selected: false
+- closest_match:
+    is_exact_match: false
+    url_path: /2019-20/provincial/mpumalanga
+  id: 2019-20
   is_selected: false
 government:
   name: Mpumalanga

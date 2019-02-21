@@ -20,7 +20,7 @@ adjusted_budget_summary:
 budget_actual:
   dataset_detail_page: /datasets/budgeted-and-actual-national-expenditure/budgeted-and-actual-national-expenditure
   expenditure:
-    base_financial_year: 2017-18
+    base_financial_year: 2018-19
     nominal:
     - amount: 1566922000.0
       financial_year: 2015-16
@@ -71,46 +71,46 @@ budget_actual:
       financial_year: 2018-19
       phase: Audit Outcome
     real:
-    - amount: 1746971269
+    - amount: 1829755377
       financial_year: 2015-16
       phase: Main appropriation
-    - amount: 1777426051
+    - amount: 1861653326
       financial_year: 2015-16
       phase: Adjusted appropriation
-    - amount: 1777426051
+    - amount: 1861653326
       financial_year: 2015-16
       phase: Final Appropriation
-    - amount: 1888254430
+    - amount: 1977733554
       financial_year: 2015-16
       phase: Audit Outcome
-    - amount: 1740750436
+    - amount: 1823239756
       financial_year: 2016-17
       phase: Main appropriation
-    - amount: 1740750436
+    - amount: 1823239756
       financial_year: 2016-17
       phase: Adjusted appropriation
-    - amount: 2296443901
+    - amount: 2405265988
       financial_year: 2016-17
       phase: Final Appropriation
-    - amount: 2281687236
+    - amount: 2389810046
       financial_year: 2016-17
       phase: Audit Outcome
-    - amount: 1711947000
+    - amount: 1796041124
       financial_year: 2017-18
       phase: Main appropriation
-    - amount: 1711947000
+    - amount: 1796041124
       financial_year: 2017-18
       phase: Adjusted appropriation
-    - amount: 1711947000
+    - amount: 1796041124
       financial_year: 2017-18
       phase: Final Appropriation
-    - amount: 1711947000
+    - amount: 1796041124
       financial_year: 2017-18
       phase: Audit Outcome
-    - amount: 1775206504
+    - amount: 1872694000
       financial_year: 2018-19
       phase: Main appropriation
-    - amount: 1775206504
+    - amount: 1872694000
       financial_year: 2018-19
       phase: Adjusted appropriation
     - amount: null
@@ -771,7 +771,7 @@ economic_classification_by_programme:
 expenditure_over_time:
   dataset_detail_page: /datasets/estimates-of-national-expenditure/estimates-of-national-expenditure-2018-19
   expenditure:
-    base_financial_year: 2017-18
+    base_financial_year: 2018-19
     nominal:
     - amount: 2147648000.0
       financial_year: 2014-15
@@ -795,33 +795,28 @@ expenditure_over_time:
       financial_year: 2020-21
       phase: Medium Term Estimates
     real:
-    - amount: 2518144384
+    - amount: 2637472240
       financial_year: 2014-15
       phase: Audited Outcome
-    - amount: 2379143232
+    - amount: 2491884210
       financial_year: 2015-16
       phase: Audited Outcome
-    - amount: 2281687236
+    - amount: 2389810046
       financial_year: 2016-17
       phase: Audited Outcome
-    - amount: 2268235000
+    - amount: 2379655059
       financial_year: 2017-18
       phase: Adjusted appropriation
-    - amount: 2242694847
+    - amount: 2365855000
       financial_year: 2018-19
       phase: Main appropriation
-    - amount: 2273685924
+    - amount: 2401583568
       financial_year: 2019-20
       phase: Medium Term Estimates
-    - amount: 2298226965
+    - amount: 2428934249
       financial_year: 2020-21
       phase: Medium Term Estimates
 financial_years:
-- closest_match:
-    is_exact_match: true
-    url_path: /2015-16/national/departments/parliament
-  id: 2015-16
-  is_selected: false
 - closest_match:
     is_exact_match: true
     url_path: /2016-17/national/departments/parliament
@@ -837,6 +832,11 @@ financial_years:
     url_path: /2018-19/national/departments/parliament
   id: 2018-19
   is_selected: true
+- closest_match:
+    is_exact_match: true
+    url_path: /2019-20/national/departments/parliament
+  id: 2019-20
+  is_selected: false
 government:
   name: South Africa
   slug: south-africa
@@ -1047,4 +1047,4 @@ vote_primary:
   name: Parliament
   slug: parliament
   url_path: /2018-19/national/departments/parliament
-website_url: www.parliament.gov.za
+website_url: null

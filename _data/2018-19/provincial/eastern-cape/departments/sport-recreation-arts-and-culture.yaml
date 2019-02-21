@@ -161,7 +161,7 @@ economic_classification_by_programme:
 expenditure_over_time:
   dataset_detail_page: /datasets/estimates-of-provincial-expenditure/estimates-of-provincial-expenditure-2018-19
   expenditure:
-    base_financial_year: 2017-18
+    base_financial_year: 2018-19
     nominal:
     - amount: 755781000.0
       financial_year: 2014-15
@@ -185,33 +185,28 @@ expenditure_over_time:
       financial_year: 2020-21
       phase: Medium Term Estimates
     real:
-    - amount: 886162761
+    - amount: 928155548
       financial_year: 2014-15
       phase: Audited Outcome
-    - amount: 902086327
+    - amount: 944833688
       financial_year: 2015-16
       phase: Audited Outcome
-    - amount: 882854244
+    - amount: 924690250
       financial_year: 2016-17
       phase: Audited Outcome
-    - amount: 908408450
+    - amount: 953031217
       financial_year: 2017-18
       phase: Adjusted appropriation
-    - amount: 893682107
+    - amount: 942759682
       financial_year: 2018-19
       phase: Main appropriation
-    - amount: 894685048
+    - amount: 945012188
       financial_year: 2019-20
       phase: Medium Term Estimates
-    - amount: 899603803
+    - amount: 950767057
       financial_year: 2020-21
       phase: Medium Term Estimates
 financial_years:
-- closest_match:
-    is_exact_match: true
-    url_path: /2015-16/provincial/eastern-cape/departments/sport-recreation-arts-and-culture
-  id: 2015-16
-  is_selected: false
 - closest_match:
     is_exact_match: true
     url_path: /2016-17/provincial/eastern-cape/departments/sport-recreation-arts-and-culture
@@ -227,6 +222,11 @@ financial_years:
     url_path: /2018-19/provincial/eastern-cape/departments/sport-recreation-arts-and-culture
   id: 2018-19
   is_selected: true
+- closest_match:
+    is_exact_match: false
+    url_path: /2019-20/provincial/eastern-cape
+  id: 2019-20
+  is_selected: false
 government:
   name: Eastern Cape
   slug: eastern-cape
