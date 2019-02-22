@@ -281,7 +281,6 @@ const createProjectCard = (datasetUrl, budgetReviewUrl, Link = 'a') => (props, i
     totalBudget,
     activeProvinces = [],
     link,
-    points,
   } = props;
 
   return (
@@ -297,7 +296,7 @@ const createProjectCard = (datasetUrl, budgetReviewUrl, Link = 'a') => (props, i
             <StyledCardActionArea>
               <CardHeading>
                 <MapPosition>
-                  <NationalMap size="small" {...{ activeProvinces, points }} />
+                  <NationalMap size="small" active={activeProvinces.length < 1 && 'Multiple'} />
                 </MapPosition>
                   <Tag province={activeProvinces.length < 1 && 'Multiple'}>
                     {activeProvinces.length > 0 ? calcShorthand(activeProvinces[0]) : 'MULTIPLE'}
