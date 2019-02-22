@@ -4,7 +4,7 @@ menu: Components
 ---
 
 
-import { PropsTable, Playground } from 'docz';
+import { PropsTable } from 'docz';
 import ResourceList from './index';
 
 # ResourceList
@@ -14,7 +14,7 @@ import ResourceList from './index';
 ## `index.jsx`
 This component contains a list of cards containing the following content:
  - Heading
- - Size and formats of a file
+ - Size and formats of a file (as subheadings)
  - Link to a download button
  - An additional call to action card if required
 
@@ -27,4 +27,16 @@ Custom styling added to Material UI components namely:
 
 ### Props
 
+<PropsTable of={ResourceList} />
 
+### Table representing details to loop over from resoruces array
+
+
+  | property  | Type           |
+  | :---------| :------------- |
+  |      | string         |
+  | size      | string or null |
+  | format    | string         |
+  | link      | string         |
+
+ 

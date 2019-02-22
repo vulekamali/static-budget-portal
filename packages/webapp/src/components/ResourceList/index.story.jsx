@@ -101,7 +101,7 @@ const resources = [
   }
 ]
 
-const basic = () => <ResourceList {...{ resources }} />;
+const basic = () => <ResourceList {...{ resources }} cite />;
 
 
 storiesOf('component.ResourceList', module)
