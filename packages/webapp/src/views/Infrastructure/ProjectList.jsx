@@ -157,6 +157,7 @@ const StyledButton = styled(Button)`
       height: 40px;
       margin-top: 40px;
     }
+    
 `;
 
 const DownloadInfo = styled.div`
@@ -234,7 +235,7 @@ const TotalAmount = styled.div`
 const ctaIndex = Object.keys(createCallToActions());
 
 const buildCta = (index, datasetUrl, budgetReviewUrl, Link = 'a') => {
-  if (!datasetUrl || !!budgetReviewUrl) {
+  if (!datasetUrl || !budgetReviewUrl) {
     return null;
   }
 
@@ -255,16 +256,17 @@ const buildCta = (index, datasetUrl, budgetReviewUrl, Link = 'a') => {
           <TopContent>
             <TopContentTitle>{title}</TopContentTitle>
           </TopContent>
-          <Link 
-            href={Link === 'a' && link}
-            to={Link !== 'a' && link}
+          <a 
             style={{ textDecoration: 'none' }}
+            href={link}
+            target="_blank"
+            rel="noopener noreferrer"
           >
             <StyledButton variant="contained">
               {button}
               <Icon />
             </StyledButton>
-          </Link>
+          </a>
           <DownloadInfo>{info}</DownloadInfo>
         </GreenCardContent>
       </CardContainer>
@@ -272,7 +274,7 @@ const buildCta = (index, datasetUrl, budgetReviewUrl, Link = 'a') => {
   )
 };
 
-const createProjectCard = (datasetUrl, budgetReviewUrl, Link = 'a') => (props, index) => {
+const createProjectCard = (datasetUrl, Link = 'a') => (props, index) => {
   const {
     id,
     subheading,
@@ -283,9 +285,12 @@ const createProjectCard = (datasetUrl, budgetReviewUrl, Link = 'a') => (props, i
     link,
   } = props;
 
+  const isCtaIndex = ctaIndex.indexOf(index.toString()) !== -1;
+  const budgetReviewUrl = 'http://www.treasury.gov.za/documents/national%20budget/2019/review/FullBR.pdf';
+
   return (
     <Fragment key={id}>
-      {ctaIndex.indexOf(index.toString()) !== -1 && buildCta(index, datasetUrl, budgetReviewUrl, Link)}
+      {isCtaIndex && buildCta(index, datasetUrl, Link)}
       <CardWrapper>
         <Link 
           href={Link === 'a' && link}
@@ -362,13 +367,14 @@ const List = styled.div`
   }
 `;
 
+
 const ProjectList = ({ projects, datasetUrl, budgetReviewUrl, Link }) => {
   return (
     <Wrapper>
       <Content>
         <Title>Project List</Title>
         <List>
-          {projects.map(createProjectCard(datasetUrl, budgetReviewUrl, Link))}
+          {projects.map(createProjectCard(datasetUrl, Link))}
         </List>
       </Content>
     </Wrapper>

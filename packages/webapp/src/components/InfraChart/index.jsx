@@ -34,7 +34,7 @@ const yAxisStyles = {
 }
 
 
-const axisTrimValue = value => trimValues(value, true)
+const axisTrimValue = value => `R${trimValues(value, true)}`;
 
 
 const StyledTooltip = styled(Paper)`
@@ -190,7 +190,6 @@ const buttons = (
 
 
 const InfraChart = ({ data }) => {
-  console.log(data)
   return (
     <Fragment>
       {/* {buttons} */}
@@ -200,7 +199,7 @@ const InfraChart = ({ data }) => {
           height={300}
           data={data}
           margin={{
-            top: 30, right: 30, left: 30, bottom: 30,
+            top: 30, right: 60, left: 30, bottom: 30,
           }}
         >
           <CartesianGrid stroke="#E6E6E6" />

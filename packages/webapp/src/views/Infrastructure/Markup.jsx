@@ -1,6 +1,6 @@
 import React from 'react';
 import styled from 'styled-components';
-import CssBaseline from '@material-ui/core/CssBaseline';
+import { Typography } from '@material-ui/core';
 import TopBar from './TopBar';
 import Preview from './Preview';
 import ProjectList from './ProjectList';
@@ -16,9 +16,20 @@ const ChartWrap = styled.div`
     display: block;
     max-width: 1100px;
     margin: 0 auto;
-    padding: 0 20px 100px;
+    padding: 20px;
   }
 `
+
+const ChartHeading = styled(Typography)`
+  && {
+    font-size: 14px;
+    font-weight: bold;
+    font-family: Lato;
+    padding: 40px 10px 15px;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+  }
+`;
 
 
 const Markup = (props) => {
@@ -31,7 +42,6 @@ const Markup = (props) => {
     datasetUrl, 
     budgetReviewUrl,
     Link,
-    chartData,
   } = props;
 
   const amount = projects.length;
@@ -45,15 +55,26 @@ const Markup = (props) => {
     Link,
   }
 
+  const buildChart = (details, data) => {
+    if (!details || !data) {
+      return null;
+    }
+
+    return (
+      <ChartWrap>
+        <ChartHeading>Expenditure Data</ChartHeading>
+        <InfraChart {...{ data }} />
+      </ChartWrap>
+    )
+  };
+  
   return (
     <Layout>
       <TopBar {...topBarProps} />
-      <Preview {...projects[id]} details={details} selected={id} />
+      <Preview {...projects[id]} details={details} selected={id}  />
       {!details && <ProjectList {...{ projects, datasetUrl, budgetReviewUrl, Link }} />}
-      {!!details && projects[id].resources.length > 0 && <ResourcesList resources={projects[id].resources || []} cite />}
-      <ChartWrap>
-        {!!details && <InfraChart data={projects[id].chartData} />}
-      </ChartWrap>
+      {buildChart(details, projects[id].chartData)}
+      {!!details && projects[id].resources.length > 0 && <ResourcesList resources={projects[id].resources || []} cite={projects[id].heading} />}
     </Layout>
   );
 };

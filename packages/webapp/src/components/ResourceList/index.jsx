@@ -1,13 +1,14 @@
 import React from 'react';
+import t from 'prop-types';
 import styled from 'styled-components';
-import CssBaseline from '@material-ui/core/CssBaseline';
+import copy from 'copy-to-clipboard';
 import Card from '@material-ui/core/Card';
 import CardContent from '@material-ui/core/CardContent';
 import Button from '@material-ui/core/Button';
-import { Typography } from '@material-ui/core';
-
 import Icon from '@material-ui/icons/ArrowDownward';
 import Copy from '@material-ui/icons/FileCopy';
+import { Typography } from '@material-ui/core';
+
 
 
 const Title = styled(Typography)`
@@ -17,7 +18,6 @@ const Title = styled(Typography)`
     line-height: 23px;
     font-size: 14px;
     color: #000000;
-    // max-width: 193px;
   }
 `;
 
@@ -27,7 +27,6 @@ const Size = styled(Typography)`
     margin: 4.5% 0;
     font-size: 10px;
     letter-spacing: 0.5px;
-    // max-width: 193px;
   }
 `;
 
@@ -47,31 +46,26 @@ const CardWrapper = styled.div`
 `;
 
 const StyledCard = styled(Card)`
-   && {
-    // width: 272px;
+  && {
     width: 100%;
-    box-shadow: 0px 4px 4px rgba(0,0,0,0.25);
-
-    @media screen and (min-width: 375px) {
-      // width: auto;
-      // max-width: 50%;
-    }
+    box-shadow: 0 4px 4px rgba(0, 0, 0, 0.25);
 
     @media screen and (min-width: 768px) {
       display: flex;
-      // width: 225px;
       height: 145px;
     }
-    transition: transform 500ms; 
-     &:hover {
-      box-shadow: 0px 2px 2px rgba(0, 0, 0, 0.05), 0px 10px 10px rgba(0, 0, 0, 0.2);
+
+    transition: transform 500ms;
+
+    &:hover {
+      box-shadow: 0 2px 2px rgba(0, 0, 0, 0.05), 0 10px 10px rgba(0, 0, 0, 0.2);
       transform: translate(-2px, -2px);
-     }
-   }
+    }
+  }
 `;
 
 const CardContentWrapper = styled(CardContent)`
-  &&&&{
+  &&&& {
     padding: 16px;
     width: 100%;
     display: flex;
@@ -90,14 +84,11 @@ const HeadingText = styled.div`
   }
 `;
 
-const BtnLink = styled.a`
-  text-decoration: none;
-`;
 
 const ButtonBtn = styled(Button)`
   && {
     padding: 6px;
-    min-width: 0px;
+    min-width: 0;
     width: 40px;
     height: 57px;
     text-transform: none;
@@ -126,7 +117,6 @@ const SpanText = styled.span`
 const CardBlack = styled(StyledCard)`
   &&{ 
     background-color: #3F3F3F;
-    
   }
 `;
 
@@ -154,6 +144,12 @@ const ButtonBtnBlack = styled(ButtonBtn)`
   }
 `;
 
+
+const BtnLink = styled.a`
+  text-decoration: none;
+`;
+
+
 const iconSize = {
   height:'16px',
   width: '16px',
@@ -175,7 +171,6 @@ const createResource = (props) => {
 
   return (
     <CardWrapper key={heading}>
-      <CssBaseline />
       <StyledCard>
         <CardContentWrapper>
           <HeadingText>
@@ -185,8 +180,8 @@ const createResource = (props) => {
           <div>
             <BtnLink href={link} target="_blank" rel="noopener noreferrer">
               <ButtonBtn variant="contained">
-                <SpanText>Download</SpanText>
-                <Icon style={iconSize} />
+                <SpanText>{format === 'Web' ? 'View' : 'Download'}</SpanText>
+                {format !== 'Web' && <Icon style={iconSize} />}
               </ButtonBtn>
               </BtnLink>
           </div>
@@ -196,55 +191,31 @@ const createResource = (props) => {
   );
 };
 
-const CopyCitation = () => {
+
+const createCitation = name => `South African National Treasury Infrastructure Report 2019 - ${name}`;
+
+
+const CopyCitation = ({ name }) => {
+
   return (
     <CardWrapper>
       <CardBlack>
         <CardContentWrapper>
           <HeadingText>
             <TitleBlack>How to cite this data</TitleBlack>
-            <SubHeading>(South African National Treasury Infrastructure Report 2019 - Standerton Correctional Centre)</SubHeading>
+            <SubHeading>{createCitation(name)}</SubHeading>
           </HeadingText>
           <div>
-            <BtnLink href="#">
-              <ButtonBtnBlack variant="contained">
-                <SpanText>Copy to clipboard</SpanText>
-                <Copy style={iconSize} />
-              </ButtonBtnBlack>
-            </BtnLink>
+            <ButtonBtnBlack variant="contained" onClick={() => copy(createCitation(name))}>
+              <SpanText>Copy to clipboard</SpanText>
+              <Copy style={iconSize} />
+            </ButtonBtnBlack>
           </div>
         </CardContentWrapper>
       </CardBlack>
     </CardWrapper>
   )
 };
-
-const Wrapper = styled.div`
-  background: #EDEDED;
-  padding: 45px 0px 40px;
-`;
-
-const Content = styled.div`
-padding: 0 40px;
-  position: relative;
-  max-width: 1000px;
-  margin: 0 auto;
-`;
-
-const MainTitle = styled.h2`
-   font-family: Lato;
-   font-size: 10px;
-   letter-spacing: 3px;
-   text-align: center;
-   text-transform: uppercase;
-   padding: 0 20px;
-
-   @media screen and (min-width: 768px) {
-    text-align: left;
-    letter-spacing: 2px;
-    font-size: 14px;
-  }
-`;
 
 const List = styled.div`
   display: flex;
@@ -254,18 +225,32 @@ const List = styled.div`
 const Resources = ({ resources, cite }) => (
   <List>
     {resources.map(createResource)}
-    {!!cite && <CopyCitation />}
+    {!!cite && <CopyCitation name={cite} />}
   </List>
 );
 
+Resources.propTypes = {
+  /** Array of data to loop from for card details */
+  resources: t.arrayOf(t.shape({
+    /** Displays the title of the file to be downloaded */
+    heading: t.string.isRequired,
+    /** This can be a string or empty string or null. It displays the size of the file to download,
+     * or nothing if button redirects to a website url instead.
+     */
+    size: t.string,
+    /** Displays the format of the file to be downloaded */
+    format: t.string.isRequired,
+    /** url that links to the file to be downloaded or redirects to desired website */
+    link: t.string.isRequired,
+  })).isRequired,
+  /** True or false depending whether an extra card displaying a call to action card with custom styling placed
+  as the last card in the list of cards */
+  cite: t.bool
+}
+
+Resources.defaultProps = {
+  size: null,
+  cite: false,
+}
 
 export default Resources;
-
-
-/*
-
-  <Wrapper>
-    <CssBaseline />
-    <Content>
-      {/* <MainTitle>Project Resources</MainTitle> */
-      
