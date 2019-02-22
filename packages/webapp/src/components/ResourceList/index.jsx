@@ -18,7 +18,6 @@ const Title = styled(Typography)`
     line-height: 23px;
     font-size: 14px;
     color: #000000;
-    // max-width: 193px;
   }
 `;
 
@@ -28,7 +27,6 @@ const Size = styled(Typography)`
     margin: 4.5% 0;
     font-size: 10px;
     letter-spacing: 0.5px;
-    // max-width: 193px;
   }
 `;
 
@@ -48,31 +46,26 @@ const CardWrapper = styled.div`
 `;
 
 const StyledCard = styled(Card)`
-   && {
-    // width: 272px;
+  && {
     width: 100%;
-    box-shadow: 0px 4px 4px rgba(0,0,0,0.25);
-
-    @media screen and (min-width: 375px) {
-      // width: auto;
-      // max-width: 50%;
-    }
+    box-shadow: 0 4px 4px rgba(0, 0, 0, 0.25);
 
     @media screen and (min-width: 768px) {
       display: flex;
-      // width: 225px;
       height: 145px;
     }
-    transition: transform 500ms; 
-     &:hover {
-      box-shadow: 0px 2px 2px rgba(0, 0, 0, 0.05), 0px 10px 10px rgba(0, 0, 0, 0.2);
+
+    transition: transform 500ms;
+
+    &:hover {
+      box-shadow: 0 2px 2px rgba(0, 0, 0, 0.05), 0 10px 10px rgba(0, 0, 0, 0.2);
       transform: translate(-2px, -2px);
-     }
-   }
+    }
+  }
 `;
 
 const CardContentWrapper = styled(CardContent)`
-  &&&&{
+  &&&& {
     padding: 16px;
     width: 100%;
     display: flex;
@@ -95,7 +88,7 @@ const HeadingText = styled.div`
 const ButtonBtn = styled(Button)`
   && {
     padding: 6px;
-    min-width: 0px;
+    min-width: 0;
     width: 40px;
     height: 57px;
     text-transform: none;
@@ -199,20 +192,21 @@ const createResource = (props) => {
 };
 
 
-const citation = 'South African National Treasury Infrastructure Report 2019 - Standerton Correctional Centre';
+const createCitation = name => `South African National Treasury Infrastructure Report 2019 - ${name}`;
 
 
-const CopyCitation = () => {
+const CopyCitation = ({ name }) => {
+
   return (
     <CardWrapper>
       <CardBlack>
         <CardContentWrapper>
           <HeadingText>
             <TitleBlack>How to cite this data</TitleBlack>
-            <SubHeading>{citation}</SubHeading>
+            <SubHeading>{createCitation(name)}</SubHeading>
           </HeadingText>
           <div>
-            <ButtonBtnBlack variant="contained" onClick={() => copy(citation)}>
+            <ButtonBtnBlack variant="contained" onClick={() => copy(createCitation(name))}>
               <SpanText>Copy to clipboard</SpanText>
               <Copy style={iconSize} />
             </ButtonBtnBlack>
@@ -231,7 +225,7 @@ const List = styled.div`
 const Resources = ({ resources, cite }) => (
   <List>
     {resources.map(createResource)}
-    {!!cite && <CopyCitation />}
+    {!!cite && <CopyCitation name={cite} />}
   </List>
 );
 

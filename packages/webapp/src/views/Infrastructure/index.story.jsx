@@ -1625,7 +1625,32 @@ const props = {
       "projectedBudget": 31200000,
       "description": "Student Housing Infrastructure programme",
       "link": "/infrastructure-projects/higher-education-and-training-student-housing-infrastructure-programme-sefako-makgatho-health-sciences-university",
-      "resources": [],
+      "resources": [
+        {
+          heading: 'Example 3 B',
+          size: '3.3MB',
+          format: 'PDF',
+          link:'#',
+        },
+        {
+          heading: 'Example 4 B',
+          size: '3.3MB',
+          format: 'PDF',
+          link:'#',
+        },
+        {
+          heading: 'Example 1 C',
+          size: '3.3MB',
+          format: 'PDF',
+          link:'#',
+        },
+        {
+          heading: 'Example 2 C',
+          size: '3.3MB',
+          format: 'PDF',
+          link:'#',
+        },
+      ],
       "chartData": [
         {
           "name": "2015",

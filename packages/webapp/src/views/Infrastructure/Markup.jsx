@@ -74,7 +74,7 @@ const Markup = (props) => {
       <Preview {...projects[id]} details={details} selected={id}  />
       {!details && <ProjectList {...{ projects, datasetUrl, budgetReviewUrl, Link }} />}
       {buildChart(details, projects[id].chartData)}
-      {!!details && projects[id].resources.length > 0 && <ResourcesList resources={projects[id].resources || []} cite />}
+      {!!details && projects[id].resources.length > 0 && <ResourcesList resources={projects[id].resources || []} cite={projects[id].heading} />}
     </Layout>
   );
 };
