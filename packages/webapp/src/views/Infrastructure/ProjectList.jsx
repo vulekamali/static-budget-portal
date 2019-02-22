@@ -305,7 +305,7 @@ const createProjectCard = (datasetUrl, budgetReviewUrl, Link = 'a') => (props, i
               </CardHeading>
               <StyledCardContent>
                 <TopContent>
-                  <SubHeading>{subheading}</SubHeading>
+                  <SubHeading>{subheading.length > 20 ? `${subheading.substring(0, 20)}...` : subheading }</SubHeading>
                   <Heading>{heading.length > 30 ? `${heading.substring(0, 30)}...` : heading }</Heading>
                 </TopContent>
                 <div>
