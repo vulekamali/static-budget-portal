@@ -388,9 +388,6 @@ const createSideRender = (id, props) => {
     department,
   } = props;
 
-  console.log('------a-----')
-  console.log(investment)
-
   return (
     <SideWrapper key={id}>
       <SideSection>

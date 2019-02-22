@@ -1,15 +1,14 @@
 import React from 'react';
 import t from 'prop-types';
 import styled from 'styled-components';
-import CssBaseline from '@material-ui/core/CssBaseline';
+import copy from 'copy-to-clipboard';
 import Card from '@material-ui/core/Card';
 import CardContent from '@material-ui/core/CardContent';
 import Button from '@material-ui/core/Button';
-import { Typography } from '@material-ui/core';
-
 import Icon from '@material-ui/icons/ArrowDownward';
 import Copy from '@material-ui/icons/FileCopy';
-import { allSettled } from 'q';
+import { Typography } from '@material-ui/core';
+
 
 
 const Title = styled(Typography)`
@@ -92,9 +91,6 @@ const HeadingText = styled.div`
   }
 `;
 
-const BtnLink = styled.a`
-  text-decoration: none;
-`;
 
 const ButtonBtn = styled(Button)`
   && {
@@ -155,6 +151,12 @@ const ButtonBtnBlack = styled(ButtonBtn)`
   }
 `;
 
+
+const BtnLink = styled.a`
+  text-decoration: none;
+`;
+
+
 const iconSize = {
   height:'16px',
   width: '16px',
@@ -176,7 +178,6 @@ const createResource = (props) => {
 
   return (
     <CardWrapper key={heading}>
-      <CssBaseline />
       <StyledCard>
         <CardContentWrapper>
           <HeadingText>
@@ -186,8 +187,8 @@ const createResource = (props) => {
           <div>
             <BtnLink href={link} target="_blank" rel="noopener noreferrer">
               <ButtonBtn variant="contained">
-                <SpanText>Download</SpanText>
-                <Icon style={iconSize} />
+                <SpanText>{format === 'Web' ? 'View' : 'Download'}</SpanText>
+                {format !== 'Web' && <Icon style={iconSize} />}
               </ButtonBtn>
               </BtnLink>
           </div>
@@ -197,6 +198,10 @@ const createResource = (props) => {
   );
 };
 
+
+const citation = 'South African National Treasury Infrastructure Report 2019 - Standerton Correctional Centre';
+
+
 const CopyCitation = () => {
   return (
     <CardWrapper>
@@ -204,15 +209,13 @@ const CopyCitation = () => {
         <CardContentWrapper>
           <HeadingText>
             <TitleBlack>How to cite this data</TitleBlack>
-            <SubHeading>(South African National Treasury Infrastructure Report 2019 - Standerton Correctional Centre)</SubHeading>
+            <SubHeading>{citation}</SubHeading>
           </HeadingText>
           <div>
-            <BtnLink href="#">
-              <ButtonBtnBlack variant="contained">
-                <SpanText>Copy to clipboard</SpanText>
-                <Copy style={iconSize} />
-              </ButtonBtnBlack>    
-            </BtnLink>
+            <ButtonBtnBlack variant="contained" onClick={() => copy(citation)}>
+              <SpanText>Copy to clipboard</SpanText>
+              <Copy style={iconSize} />
+            </ButtonBtnBlack>
           </div>
         </CardContentWrapper>
       </CardBlack>
