@@ -44,8 +44,6 @@ const Markup = (props) => {
     Link,
   } = props;
 
-  console.log('datasetUrl', datasetUrl)
-
   const amount = projects.length;
 
   const topBarProps = {
