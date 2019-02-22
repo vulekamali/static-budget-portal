@@ -56,14 +56,10 @@ class Infrastructure extends Component {
     if (value === false && id > 0) {
       this.setState({ id: id - 1 });
     }
-
-    // return this.setState({ id: value });
   }
 
   render() {
     const { props, state, events } = this;
-    const { id: selected } = props.projects[state.id];
-
 
     const passedProps = {
       id: state.id,
@@ -81,6 +77,5 @@ class Infrastructure extends Component {
     return <Markup {...passedProps} />
   }
 }
-
 
 export default Infrastructure;
