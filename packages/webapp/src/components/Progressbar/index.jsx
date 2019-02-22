@@ -34,15 +34,14 @@ const StyledLinearProgress = styled(LinearProgress)`
 `;
 
 const Progressbar = ({ stage }) => {
+  if (!stage) return null;
+
   return (
     <React.Fragment>
-      {calcProgress(stage) && (
-        <StyledLinearProgress
-          classes={{barColorPrimary: 'barColorPrimary'}}
-          variant="determinate"
-          value={calcProgress(stage)} />
-        )
-      }
+      <StyledLinearProgress
+        classes={{barColorPrimary: 'barColorPrimary'}}
+        variant="determinate"
+        value={calcProgress(stage)} />
     </React.Fragment>
   );
 };
