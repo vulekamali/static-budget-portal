@@ -433,7 +433,11 @@ department_budget:
     name: "ENE 2019-20 \u2013 Vote 21 - Justice and Constitutional Development"
     url: https://data.vulekamali.gov.za/dataset/94650951-0e00-4b30-b252-67afd847c885/resource/42e1234b-fdec-4bfa-9439-a99bff65646d/download/vote-21-justice-and-constitutional-development.pdf
   name: "ENE 2019-20 \u2013 Vote 21 - Justice and Constitutional Development"
-  tables: null
+  tables:
+    description: ''
+    format: XLSX
+    name: "ENE 2019-20 \u2013 Vote 21 - Justice and Constitutional Development"
+    url: https://data.vulekamali.gov.za/dataset/94650951-0e00-4b30-b252-67afd847c885/resource/89feef0d-d924-4bd7-8e18-5aca32e33131/download/ene19-vote21_chaptertables.xlsx
 description: 'National department: Justice and Constitutional Development budget data
   for the 2019-20 financial year from National Treasury in partnership with IMALI
   YETHU.'
@@ -832,4 +836,4 @@ vote_primary:
   name: Justice and Constitutional Development
   slug: justice-and-constitutional-development
   url_path: /2019-20/national/departments/justice-and-constitutional-development
-website_url: null
+website_url: www.justice.gov.za

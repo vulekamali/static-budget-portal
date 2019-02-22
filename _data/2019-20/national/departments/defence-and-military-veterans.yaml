@@ -533,7 +533,11 @@ department_budget:
     name: "ENE 2019-20 \u2013 Vote 19 - Defence and Military Veterans"
     url: https://data.vulekamali.gov.za/dataset/f55ab2a5-ae95-4657-a626-220a6ce71a9b/resource/cc97c8dc-653b-4a60-9980-d16a4cfaa4c5/download/vote-19-defence-and-military-veterans.pdf
   name: "ENE 2019-20 \u2013 Vote 19 - Defence and Military Veterans"
-  tables: null
+  tables:
+    description: ''
+    format: XLSX
+    name: "ENE 2019-20 \u2013 Vote 19 - Defence and Military Veterans"
+    url: https://data.vulekamali.gov.za/dataset/f55ab2a5-ae95-4657-a626-220a6ce71a9b/resource/9a25117e-48e0-4252-80ff-5059dc8fad4b/download/ene19-vote19_chaptertables.xlsx
 description: 'National department: Defence and Military Veterans budget data for the
   2019-20 financial year from National Treasury in partnership with IMALI YETHU.'
 economic_classification_by_programme:
@@ -1096,4 +1100,4 @@ vote_primary:
   name: Defence and Military Veterans
   slug: defence-and-military-veterans
   url_path: /2019-20/national/departments/defence-and-military-veterans
-website_url: null
+website_url: www.dod.mil.za

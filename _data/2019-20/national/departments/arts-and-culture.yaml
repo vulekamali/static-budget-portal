@@ -333,7 +333,11 @@ department_budget:
     name: "ENE 2019-20 \u2013 Vote 37 - Arts and Culture"
     url: https://data.vulekamali.gov.za/dataset/f0a19ac8-5ee5-4978-a42c-19903cdf1155/resource/fe80b7e2-5e5f-4e89-a4fc-a009cbe3491c/download/vote-37-arts-and-culture.pdf
   name: "ENE 2019-20 \u2013 Vote 37 - Arts and Culture"
-  tables: null
+  tables:
+    description: ''
+    format: XLSX
+    name: "ENE 2019-20 \u2013 Vote 37 - Arts and Culture"
+    url: https://data.vulekamali.gov.za/dataset/f0a19ac8-5ee5-4978-a42c-19903cdf1155/resource/a76dbbd0-afbc-46ce-af68-fb9e253a23ca/download/ene19-vote37_chaptertables.xlsx
 description: 'National department: Arts and Culture budget data for the 2019-20 financial
   year from National Treasury in partnership with IMALI YETHU.'
 economic_classification_by_programme:
@@ -646,4 +650,4 @@ vote_primary:
   name: Arts and Culture
   slug: arts-and-culture
   url_path: /2019-20/national/departments/arts-and-culture
-website_url: null
+website_url: www.dac.gov.za

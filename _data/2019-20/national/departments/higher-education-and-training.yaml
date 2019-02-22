@@ -483,7 +483,11 @@ department_budget:
     name: "ENE 2019-20 \u2013 Vote 15 - Higher Education and Training"
     url: https://data.vulekamali.gov.za/dataset/34d0a030-ed73-437a-aa76-16637d5fe63d/resource/1a4bc0ea-c715-4189-b961-7460c0e63072/download/vote-15-higher-education-and-training.pdf
   name: "ENE 2019-20 \u2013 Vote 15 - Higher Education and Training"
-  tables: null
+  tables:
+    description: ''
+    format: XLSX
+    name: "ENE 2019-20 \u2013 Vote 15 - Higher Education and Training"
+    url: https://data.vulekamali.gov.za/dataset/34d0a030-ed73-437a-aa76-16637d5fe63d/resource/9f422083-7760-4341-aa12-148b5a2d7ab0/download/ene19-vote15_chaptertables.xlsx
 description: 'National department: Higher Education and Training budget data for the
   2019-20 financial year from National Treasury in partnership with IMALI YETHU.'
 economic_classification_by_programme:
@@ -939,4 +943,4 @@ vote_primary:
   name: Higher Education and Training
   slug: higher-education-and-training
   url_path: /2019-20/national/departments/higher-education-and-training
-website_url: null
+website_url: www.dhet.gov.za

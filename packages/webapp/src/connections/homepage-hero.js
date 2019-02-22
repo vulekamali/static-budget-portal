@@ -5,27 +5,26 @@ import Homepage from '../views/Homepage';
 
 const props = {
   image: 'https://via.placeholder.com/150',
-  heading: 'New budget data will go live soon',
-  subheading: 'The 2019 budget speech has commenced',
+  heading: 'New budget data is now live!',
+  subheading: 'The 2019 budget speech has been completed.',
   buttons: {
     primary: {
-      text: 'Watch the speech',
-      link: 'http://www.treasury.gov.za/documents/national%20budget/2019/webcast.aspx'
+      text: 'Select a department',
+      link: '/2019-20/departments'
     },
     secondary: {
       text: 'Download budget resources',
       link: '#',
     },
   },
-  callToAction: {    
-    subheading: 'Budget feature',    
-    heading: 'The Status of National Department Infrastructure Projects in South Africa',    
-    link: {    
-      text: 'Read this feature',    
-      link: 'https://vulekamali.gov.za/infrastructure-projects',    
-    },    
+  callToAction: {
+    subheading: 'Budget feature',
+    heading: 'The Status of National Department Infrastructure Projects in South Africa',
+    link: {
+      text: 'Read this feature',
+      link: 'https://vulekamali.gov.za/infrastructure-projects',
+    },
   },
-  notice: 'The 2019/20 budget will be live on Vulekamali by 22 February 2019.',
   resources: [
     {
       heading: 'Budget Speech',

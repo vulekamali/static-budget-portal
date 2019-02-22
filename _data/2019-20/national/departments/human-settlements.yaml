@@ -333,7 +333,11 @@ department_budget:
     name: "ENE 2019-20 \u2013 Vote 38 - Human Settlements"
     url: https://data.vulekamali.gov.za/dataset/d8db4f68-866e-45e3-baef-b4d4552d74cb/resource/2d01796e-b42c-40f9-997c-38e4d91766f8/download/vote-38-human-settlements.pdf
   name: "ENE 2019-20 \u2013 Vote 38 - Human Settlements"
-  tables: null
+  tables:
+    description: ''
+    format: XLSX
+    name: "ENE 2019-20 \u2013 Vote 38 - Human Settlements"
+    url: https://data.vulekamali.gov.za/dataset/d8db4f68-866e-45e3-baef-b4d4552d74cb/resource/25367546-bc45-4a90-933e-c6bfd93452a5/download/ene19-vote38_chaptertables.xlsx
 description: 'National department: Human Settlements budget data for the 2019-20 financial
   year from National Treasury in partnership with IMALI YETHU.'
 economic_classification_by_programme:
@@ -660,4 +664,4 @@ vote_primary:
   name: Human Settlements
   slug: human-settlements
   url_path: /2019-20/national/departments/human-settlements
-website_url: null
+website_url: www.dhs.gov.za

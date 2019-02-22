@@ -383,7 +383,11 @@ department_budget:
     name: "ENE 2019-20 \u2013 Vote 14 - Basic Education"
     url: https://data.vulekamali.gov.za/dataset/b64c6843-744e-4c82-87bc-5e8d6ac658a7/resource/8a207f04-4ad4-4674-9f28-35652eb8725b/download/vote-14-basic-education.pdf
   name: "ENE 2019-20 \u2013 Vote 14 - Basic Education"
-  tables: null
+  tables:
+    description: ''
+    format: XLSX
+    name: "ENE 2019-20 \u2013 Vote 14 - Basic Education"
+    url: https://data.vulekamali.gov.za/dataset/b64c6843-744e-4c82-87bc-5e8d6ac658a7/resource/9db9ad35-f447-4698-bb00-506e17899d57/download/ene19-vote14_chaptertables.xlsx
 description: 'National department: Basic Education budget data for the 2019-20 financial
   year from National Treasury in partnership with IMALI YETHU.'
 economic_classification_by_programme:
@@ -752,4 +756,4 @@ vote_primary:
   name: Basic Education
   slug: basic-education
   url_path: /2019-20/national/departments/basic-education
-website_url: null
+website_url: www.education.gov.za

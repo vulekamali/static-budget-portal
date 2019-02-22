@@ -383,7 +383,11 @@ department_budget:
     name: "ENE 2019-20 \u2013 Vote 23 - Police"
     url: https://data.vulekamali.gov.za/dataset/a7ecd39f-a86a-4ebf-9616-10a5814036a9/resource/914c28f0-2df9-4613-9881-1ad68dbc44db/download/vote-23-police.pdf
   name: "ENE 2019-20 \u2013 Vote 23 - Police"
-  tables: null
+  tables:
+    description: ''
+    format: XLSX
+    name: "ENE 2019-20 \u2013 Vote 23 - Police"
+    url: https://data.vulekamali.gov.za/dataset/a7ecd39f-a86a-4ebf-9616-10a5814036a9/resource/355025ef-52ba-46fb-8cb2-e796a734d89a/download/ene19-vote23_chaptertables.xlsx
 description: 'National department: Police budget data for the 2019-20 financial year
   from National Treasury in partnership with IMALI YETHU.'
 economic_classification_by_programme:
@@ -719,4 +723,4 @@ vote_primary:
   name: Police
   slug: police
   url_path: /2019-20/national/departments/police
-website_url: null
+website_url: www.saps.gov.za

@@ -433,7 +433,11 @@ department_budget:
     name: "ENE 2019-20 \u2013 Vote 24 - Agriculture, Forestry and Fisheries"
     url: https://data.vulekamali.gov.za/dataset/f07a6899-7fb1-4ec8-9f60-8f5a53c13e21/resource/1639f97e-2ba8-4cd9-9f8a-3cf282065440/download/vote-24-agriculture-forestry-and-fisheries.pdf
   name: "ENE 2019-20 \u2013 Vote 24 - Agriculture, Forestry and Fisheries"
-  tables: null
+  tables:
+    description: ''
+    format: XLSX
+    name: "ENE 2019-20 \u2013 Vote 24 - Agriculture, Forestry and Fisheries"
+    url: https://data.vulekamali.gov.za/dataset/f07a6899-7fb1-4ec8-9f60-8f5a53c13e21/resource/74489bae-8813-4413-adf0-a81d7c41b090/download/ene19-vote24_chaptertables.xlsx
 description: 'National department: Agriculture, Forestry and Fisheries budget data
   for the 2019-20 financial year from National Treasury in partnership with IMALI
   YETHU.'
@@ -843,4 +847,4 @@ vote_primary:
   name: Agriculture, Forestry and Fisheries
   slug: agriculture-forestry-and-fisheries
   url_path: /2019-20/national/departments/agriculture-forestry-and-fisheries
-website_url: null
+website_url: www.daff.gov.za

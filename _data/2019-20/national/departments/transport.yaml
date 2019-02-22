@@ -533,7 +533,11 @@ department_budget:
     name: "ENE 2019-20 \u2013 Vote 35 - Transport"
     url: https://data.vulekamali.gov.za/dataset/b48e70b5-ef57-4005-882d-882d3982e5b5/resource/7476dc34-0845-422d-ba0e-d3102ff274cf/download/vote-35-transport.pdf
   name: "ENE 2019-20 \u2013 Vote 35 - Transport"
-  tables: null
+  tables:
+    description: ''
+    format: XLSX
+    name: "ENE 2019-20 \u2013 Vote 35 - Transport"
+    url: https://data.vulekamali.gov.za/dataset/b48e70b5-ef57-4005-882d-882d3982e5b5/resource/f1266308-f637-4808-aa5e-e842e4fd32c9/download/ene19-vote35_chaptertables.xlsx
 description: 'National department: Transport budget data for the 2019-20 financial
   year from National Treasury in partnership with IMALI YETHU.'
 economic_classification_by_programme:
@@ -1036,4 +1040,4 @@ vote_primary:
   name: Transport
   slug: transport
   url_path: /2019-20/national/departments/transport
-website_url: null
+website_url: www.transport.gov.za

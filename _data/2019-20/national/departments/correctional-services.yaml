@@ -383,7 +383,11 @@ department_budget:
     name: "ENE 2019-20 \u2013 Vote 18 - Correctional Services"
     url: https://data.vulekamali.gov.za/dataset/b0ee560c-7194-4a69-b49f-3593ded38077/resource/84af8732-66a6-4f26-814b-a7aab6e8b0f9/download/vote-18-correctional-services.pdf
   name: "ENE 2019-20 \u2013 Vote 18 - Correctional Services"
-  tables: null
+  tables:
+    description: ''
+    format: XLSX
+    name: "ENE 2019-20 \u2013 Vote 18 - Correctional Services"
+    url: https://data.vulekamali.gov.za/dataset/b0ee560c-7194-4a69-b49f-3593ded38077/resource/7da5e91f-84b0-403e-a413-7e7afc4a0b76/download/ene19-vote18_chaptertables.xlsx
 description: 'National department: Correctional Services budget data for the 2019-20
   financial year from National Treasury in partnership with IMALI YETHU.'
 economic_classification_by_programme:
@@ -727,4 +731,4 @@ vote_primary:
   name: Correctional Services
   slug: correctional-services
   url_path: /2019-20/national/departments/correctional-services
-website_url: null
+website_url: www.dcs.gov.za
