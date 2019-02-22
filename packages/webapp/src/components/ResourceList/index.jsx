@@ -1,4 +1,5 @@
 import React from 'react';
+import t from 'prop-types';
 import styled from 'styled-components';
 import CssBaseline from '@material-ui/core/CssBaseline';
 import Card from '@material-ui/core/Card';
@@ -8,6 +9,7 @@ import { Typography } from '@material-ui/core';
 
 import Icon from '@material-ui/icons/ArrowDownward';
 import Copy from '@material-ui/icons/FileCopy';
+import { allSettled } from 'q';
 
 
 const Title = styled(Typography)`
@@ -126,7 +128,6 @@ const SpanText = styled.span`
 const CardBlack = styled(StyledCard)`
   &&{ 
     background-color: #3F3F3F;
-    
   }
 `;
 
@@ -210,7 +211,7 @@ const CopyCitation = () => {
               <ButtonBtnBlack variant="contained">
                 <SpanText>Copy to clipboard</SpanText>
                 <Copy style={iconSize} />
-              </ButtonBtnBlack>
+              </ButtonBtnBlack>    
             </BtnLink>
           </div>
         </CardContentWrapper>
@@ -218,33 +219,6 @@ const CopyCitation = () => {
     </CardWrapper>
   )
 };
-
-const Wrapper = styled.div`
-  background: #EDEDED;
-  padding: 45px 0px 40px;
-`;
-
-const Content = styled.div`
-padding: 0 40px;
-  position: relative;
-  max-width: 1000px;
-  margin: 0 auto;
-`;
-
-const MainTitle = styled.h2`
-   font-family: Lato;
-   font-size: 10px;
-   letter-spacing: 3px;
-   text-align: center;
-   text-transform: uppercase;
-   padding: 0 20px;
-
-   @media screen and (min-width: 768px) {
-    text-align: left;
-    letter-spacing: 2px;
-    font-size: 14px;
-  }
-`;
 
 const List = styled.div`
   display: flex;
@@ -259,13 +233,31 @@ const Resources = ({ resources, cite }) => (
 );
 
 
+heading,
+    size,
+    format,
+    link,
+    cite
+
+  Resources.propTypes = {
+  /* Displays the title of the file to be downloaded */
+  heading: t.string.isRequired,
+  /* This can be a string or empty string or null. It displays the size of the file to download,
+   * or nothing if button redirects to a website url instead.
+   */
+  size: t.string,
+  /* Displays the format of the file to be downloaded */
+  format: t.string.isRequired,
+  /* url that links to the file to be downloaded or redirects to desired website */
+  link: t.string.isRequired,
+  /* True or false depending whether an extra card displaying a call to action card with custom styling placed
+  as the last card in the list of cards */
+  cite: t.bool
+}
+
+Resources.defaultProps = {
+  size: '',
+  cite: false,
+}
+
 export default Resources;
-
-
-/*
-
-  <Wrapper>
-    <CssBaseline />
-    <Content>
-      {/* <MainTitle>Project Resources</MainTitle> */
-      

@@ -1,5 +1,5 @@
 import React from 'react';
-import PropTypes from 'prop-types';
+import t from 'prop-types';
 import styled from 'styled-components';
 import LinearProgress from '@material-ui/core/LinearProgress';
 
@@ -48,8 +48,8 @@ const Progressbar = ({ stage }) => {
 };
 
 Progressbar.propTypes = {
-  /** string that determines how far the progress should be on the progressbar. */
-  stage: PropTypes.oneOf([
+  /* string that determines how far the progress should be on the progressbar. */
+  stage: t.oneOf([
     'Site identification',
     'Pre-feasibility',
     'Feasibility',
