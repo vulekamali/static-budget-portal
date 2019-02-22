@@ -11,7 +11,22 @@ import Loading from '../views/Loading';
 
 const isConnectionYear = year => year === '2017' || year === '2018';
 
-const parseProjects = projects => projects.map(project => ({
+
+const buildEne = url => ({
+  heading: 'Department Estimage of National Expenditure',
+  format: 'PDF',
+  link: url,
+});
+
+
+const datasetUrl = url => ({
+  heading: 'Department Budget',
+  format: 'CSV',
+  link: url,
+});
+
+
+const parseProjects = (projects, dataset_url) => projects.map(project => ({
   id: project.slug,
   subheading: project.department.name,
   heading: project.name,
@@ -22,7 +37,10 @@ const parseProjects = projects => projects.map(project => ({
   projectedBudget: project.projected_budget,
   description: project.description,
   link: project.slug,
-  resources: [],
+  resources: [
+    buildEne(project.department.url),
+    datasetUrl(dataset_url),
+  ].filter(({ link }) => !!link),
   chartData: project.expenditure.map(obj => ({
     name: obj.year,
     Actual: obj.budget_phase === 'Audited Outcome' ? obj.amount : null,
@@ -49,16 +67,17 @@ class InfrastructurePages extends Component {
   }
 
   componentDidMount() {
-    axios.get('/json/infrastruture-projects.json')
-      .then(({ data }) => this.setState({
+    axios.get('/json/infrastructure-projects.json')
+      .then(({ data }) => {
+        this.setState({
         loading: false,
-        datasetUrl: data.datasetUrl,
-        projects: parseProjects(data.projects),
-      }))
+        datasetUrl: data.dataset_url,
+        projects: parseProjects(data.projects, data.dataset_url),
+      })})
   }
 
   render() {
-    const { projects, points, loading, datasetUrl} = this.state;
+    const { projects, points, loading, datasetUrl } = this.state;
     const { budgetReviewUrl, details, projectId } = this.props;
 
     if (loading) {
