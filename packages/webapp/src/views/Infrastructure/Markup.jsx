@@ -67,7 +67,7 @@ const Text = styled(Typography)`
 `;
 
 const DottedLine = styled.span`
-  border-bottom: 3px dashed #76b649;
+  border-bottom: 3px dotted #76b649;
   height: 3px;
   width: 20px;
   margin-right: 12px;

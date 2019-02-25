@@ -233,8 +233,9 @@ const TotalAmount = styled.div`
 `;
 
 const ctaIndex = Object.keys(createCallToActions());
+const budgetReviewUrl = 'http://www.treasury.gov.za/documents/national%20budget/2019/review/FullBR.pdf';
 
-const buildCta = (index, datasetUrl, budgetReviewUrl, Link = 'a') => {
+const buildCta = (index, datasetUrl, Link = 'a') => {
   if (!datasetUrl || !budgetReviewUrl) {
     return null;
   }
@@ -286,7 +287,6 @@ const createProjectCard = (datasetUrl, Link = 'a') => (props, index) => {
   } = props;
 
   const isCtaIndex = ctaIndex.indexOf(index.toString()) !== -1;
-  const budgetReviewUrl = 'http://www.treasury.gov.za/documents/national%20budget/2019/review/FullBR.pdf';
 
   return (
     <Fragment key={id}>
