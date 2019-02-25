@@ -27,12 +27,12 @@ const Heading = styled(Typography)`
 `;
 
 
-const ResourcesList = ({ resources, cite }) => {
+const ResourcesList = ({ resources }) => {
   return (
     <Wrapper>
       <Content>
         <Heading>Project Resources</Heading>
-        <ResourceList {...{ resources, cite }} />
+        <ResourceList {...{ resources }} />
       </Content>
     </Wrapper>
   );
