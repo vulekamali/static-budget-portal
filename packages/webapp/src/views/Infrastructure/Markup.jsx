@@ -31,6 +31,47 @@ const ChartHeading = styled(Typography)`
   }
 `;
 
+const HeadingAndKey = styled.div`
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+  max-width: 1000px;
+`;
+
+const BothKeysStyling = styled.div`
+  display: flex;
+  width: 400px;
+  justify-content: space-between;
+`;
+
+const KeyStyling = styled.div`
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+`;
+
+const Line = styled.span`
+  border-bottom: 3px solid #76B649;
+  display: block;
+  width: 20px;
+  height: 3px;
+  margin-right: 12px;
+`;
+
+const Text = styled(Typography)`
+  && {
+    font-family: Lato;
+    margin: none;
+    padding: none;
+  }
+`;
+
+const DottedLine = styled.span`
+  border-bottom: 3px dotted #76b649;
+  height: 3px;
+  width: 20px;
+  margin-right: 12px;
+`;
 
 const Markup = (props) => {
   const {
@@ -62,7 +103,19 @@ const Markup = (props) => {
 
     return (
       <ChartWrap>
-        <ChartHeading>Expenditure Data</ChartHeading>
+        <HeadingAndKey>
+          <ChartHeading>Expenditure Data</ChartHeading>
+          <BothKeysStyling>
+            <KeyStyling>
+              <Line />
+              <Text>Actual expenditure</Text>
+            </KeyStyling>
+            <KeyStyling>
+              <DottedLine />
+              <Text>Projected or adjusted budget</Text>
+            </KeyStyling>
+          </BothKeysStyling>
+        </HeadingAndKey>
         <InfraChart {...{ data }} />
       </ChartWrap>
     )

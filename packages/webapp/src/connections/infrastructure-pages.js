@@ -38,7 +38,7 @@ const parseProjects = (projects, dataset_url) => projects.map(project => ({
   description: project.description,
   link: project.slug,
   resources: [
-    buildEne(project.department.url),
+    buildEne(project.department.budget_document),
     datasetUrl(dataset_url),
   ].filter(({ link }) => !!link),
   chartData: project.expenditure.map(obj => ({
