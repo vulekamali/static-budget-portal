@@ -67,7 +67,7 @@ adjusted_budget_summary:
 budget_actual:
   dataset_detail_page: /datasets/budgeted-and-actual-national-expenditure/budgeted-and-actual-national-expenditure
   expenditure:
-    base_financial_year: 2017-18
+    base_financial_year: 2018-19
     nominal:
     - amount: 754200000
       financial_year: 2015-16
@@ -118,43 +118,43 @@ budget_actual:
       financial_year: 2018-19
       phase: Audit Outcome
     real:
-    - amount: 840862360
+    - amount: 880708488
       financial_year: 2015-16
       phase: Adjusted appropriation
-    - amount: 840862360
+    - amount: 880708488
       financial_year: 2015-16
       phase: Final Appropriation
-    - amount: 834816223
+    - amount: 874375841
       financial_year: 2015-16
       phase: Audit Outcome
-    - amount: 868116459
+    - amount: 909254083
       financial_year: 2016-17
       phase: Main appropriation
-    - amount: 836650119
+    - amount: 876296641
       financial_year: 2016-17
       phase: Adjusted appropriation
-    - amount: 836650119
+    - amount: 876296641
       financial_year: 2016-17
       phase: Final Appropriation
-    - amount: 819431738
+    - amount: 858262328
       financial_year: 2016-17
       phase: Audit Outcome
-    - amount: 923496000
+    - amount: 968859897
       financial_year: 2017-18
       phase: Main appropriation
-    - amount: 898496000
+    - amount: 942631849
       financial_year: 2017-18
       phase: Adjusted appropriation
-    - amount: 898496000
+    - amount: 942631849
       financial_year: 2017-18
       phase: Final Appropriation
-    - amount: 866838000
+    - amount: 909418747
       financial_year: 2017-18
       phase: Audit Outcome
-    - amount: 879075560
+    - amount: 927351000
       financial_year: 2018-19
       phase: Main appropriation
-    - amount: 908162232
+    - amount: 958035000
       financial_year: 2018-19
       phase: Adjusted appropriation
     - amount: null
@@ -861,7 +861,7 @@ economic_classification_by_programme:
 expenditure_over_time:
   dataset_detail_page: /datasets/estimates-of-national-expenditure/estimates-of-national-expenditure-2018-19
   expenditure:
-    base_financial_year: 2017-18
+    base_financial_year: 2018-19
     nominal:
     - amount: 740550000.0
       financial_year: 2014-15
@@ -885,33 +885,28 @@ expenditure_over_time:
       financial_year: 2020-21
       phase: Medium Term Estimates
     real:
-    - amount: 868304221
+    - amount: 909450742
       financial_year: 2014-15
       phase: Audited Outcome
-    - amount: 834816223
+    - amount: 874375841
       financial_year: 2015-16
       phase: Audited Outcome
-    - amount: 819431738
+    - amount: 858262328
       financial_year: 2016-17
       phase: Audited Outcome
-    - amount: 898496000
+    - amount: 942631849
       financial_year: 2017-18
       phase: Adjusted appropriation
-    - amount: 879075560
+    - amount: 927351000
       financial_year: 2018-19
       phase: Main appropriation
-    - amount: 875277159
+    - amount: 924512582
       financial_year: 2019-20
       phase: Medium Term Estimates
-    - amount: 880593794
+    - amount: 930675890
       financial_year: 2020-21
       phase: Medium Term Estimates
 financial_years:
-- closest_match:
-    is_exact_match: true
-    url_path: /2015-16/national/departments/planning-monitoring-and-evaluation
-  id: 2015-16
-  is_selected: false
 - closest_match:
     is_exact_match: true
     url_path: /2016-17/national/departments/planning-monitoring-and-evaluation
@@ -927,6 +922,11 @@ financial_years:
     url_path: /2018-19/national/departments/planning-monitoring-and-evaluation
   id: 2018-19
   is_selected: true
+- closest_match:
+    is_exact_match: true
+    url_path: /2019-20/national/departments/planning-monitoring-and-evaluation
+  id: 2019-20
+  is_selected: false
 government:
   name: South Africa
   slug: south-africa

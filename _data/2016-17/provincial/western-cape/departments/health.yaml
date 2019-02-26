@@ -294,7 +294,7 @@ economic_classification_by_programme:
 expenditure_over_time:
   dataset_detail_page: /datasets/estimates-of-provincial-expenditure/estimates-of-provincial-expenditure-2016-17
   expenditure:
-    base_financial_year: 2017-18
+    base_financial_year: 2018-19
     nominal:
     - amount: 14600857000
       financial_year: 2012-13
@@ -318,33 +318,28 @@ expenditure_over_time:
       financial_year: 2018-19
       phase: Medium Term Estimates
     real:
-    - amount: 19134720116
+    - amount: 20041461262
       financial_year: 2012-13
       phase: Audited Outcome
-    - amount: 19712808366
+    - amount: 20646943506
       financial_year: 2013-14
       phase: Audited Outcome
-    - amount: 20291278292
+    - amount: 21252825512
       financial_year: 2014-15
       phase: Audited Outcome
-    - amount: 21229011866
+    - amount: 22234995672
       financial_year: 2015-16
       phase: Adjusted appropriation
-    - amount: 20959511871
+    - amount: 21952724822
       financial_year: 2016-17
       phase: Main appropriation
-    - amount: 21104864000
+    - amount: 22141575456
       financial_year: 2017-18
       phase: Medium Term Estimates
-    - amount: 21329304831
+    - amount: 22500628000
       financial_year: 2018-19
       phase: Medium Term Estimates
 financial_years:
-- closest_match:
-    is_exact_match: true
-    url_path: /2015-16/provincial/western-cape/departments/health
-  id: 2015-16
-  is_selected: false
 - closest_match:
     is_exact_match: true
     url_path: /2016-17/provincial/western-cape/departments/health
@@ -359,6 +354,11 @@ financial_years:
     is_exact_match: true
     url_path: /2018-19/provincial/western-cape/departments/health
   id: 2018-19
+  is_selected: false
+- closest_match:
+    is_exact_match: false
+    url_path: /2019-20/provincial/western-cape
+  id: 2019-20
   is_selected: false
 government:
   name: Western Cape

@@ -111,7 +111,7 @@ economic_classification_by_programme:
 expenditure_over_time:
   dataset_detail_page: /datasets/estimates-of-provincial-expenditure/estimates-of-provincial-expenditure-2016-17
   expenditure:
-    base_financial_year: 2017-18
+    base_financial_year: 2018-19
     nominal:
     - amount: 64197000
       financial_year: 2012-13
@@ -135,33 +135,28 @@ expenditure_over_time:
       financial_year: 2018-19
       phase: Medium Term Estimates
     real:
-    - amount: 84131474
+    - amount: 88118230
       financial_year: 2012-13
       phase: Audited Outcome
-    - amount: 108287568
+    - amount: 113419015
       financial_year: 2013-14
       phase: Audited Outcome
-    - amount: 162164358
+    - amount: 169848875
       financial_year: 2014-15
       phase: Audited Outcome
-    - amount: 239624589
+    - amount: 250979732
       financial_year: 2015-16
       phase: Adjusted appropriation
-    - amount: 240466818
+    - amount: 251861871
       financial_year: 2016-17
       phase: Main appropriation
-    - amount: 248847000
+    - amount: 261070842
       financial_year: 2017-18
       phase: Medium Term Estimates
-    - amount: 250067269
+    - amount: 263800000
       financial_year: 2018-19
       phase: Medium Term Estimates
 financial_years:
-- closest_match:
-    is_exact_match: true
-    url_path: /2015-16/provincial/north-west/departments/tourism
-  id: 2015-16
-  is_selected: false
 - closest_match:
     is_exact_match: true
     url_path: /2016-17/provincial/north-west/departments/tourism
@@ -176,6 +171,11 @@ financial_years:
     is_exact_match: true
     url_path: /2018-19/provincial/north-west/departments/tourism
   id: 2018-19
+  is_selected: false
+- closest_match:
+    is_exact_match: false
+    url_path: /2019-20/provincial/north-west
+  id: 2019-20
   is_selected: false
 government:
   name: North West

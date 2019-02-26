@@ -180,7 +180,7 @@ function scripts() {
       // Find DOM node that will house the Preact app and get associated data attributes that are passed via HTML
       const component = componentsList[i];
       const requestOverride = component.getAttribute('data-request-override');
-      const selectedYear = component.getAttribute('data-year') || '2018-19';
+      const selectedYear = component.getAttribute('data-year') || '2019-20';
 
       // Initialise Search Preact App
       render(

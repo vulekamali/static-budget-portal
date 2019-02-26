@@ -68,7 +68,7 @@ adjusted_budget_summary:
 budget_actual:
   dataset_detail_page: /datasets/budgeted-and-actual-national-expenditure/budgeted-and-actual-national-expenditure
   expenditure:
-    base_financial_year: 2017-18
+    base_financial_year: 2018-19
     nominal:
     - amount: 69314159000.0
       financial_year: 2015-16
@@ -119,46 +119,46 @@ budget_actual:
       financial_year: 2018-19
       phase: Audit Outcome
     real:
-    - amount: 77278795224
+    - amount: 80940822312
       financial_year: 2015-16
       phase: Main appropriation
-    - amount: 78952624178
+    - amount: 82693969364
       financial_year: 2015-16
       phase: Adjusted appropriation
-    - amount: 78952624178
+    - amount: 82693969364
       financial_year: 2015-16
       phase: Final Appropriation
-    - amount: 75922375645
+    - amount: 79520125783
       financial_year: 2015-16
       phase: Audit Outcome
-    - amount: 76561850768
+    - amount: 80189903854
       financial_year: 2016-17
       phase: Main appropriation
-    - amount: 76591070412
+    - amount: 80220508134
       financial_year: 2016-17
       phase: Adjusted appropriation
-    - amount: 76591070412
+    - amount: 80220508134
       financial_year: 2016-17
       phase: Final Appropriation
-    - amount: 73266467002
+    - amount: 76738361019
       financial_year: 2016-17
       phase: Audit Outcome
-    - amount: 78414485000
+    - amount: 82266355116
       financial_year: 2017-18
       phase: Main appropriation
-    - amount: 78463890000
+    - amount: 82318186984
       financial_year: 2017-18
       phase: Adjusted appropriation
-    - amount: 78463890000
+    - amount: 82318186984
       financial_year: 2017-18
       phase: Final Appropriation
-    - amount: 76362042763
+    - amount: 80113092974
       financial_year: 2017-18
       phase: Audit Outcome
-    - amount: 79297192010
+    - amount: 83651888000
       financial_year: 2018-19
       phase: Main appropriation
-    - amount: 80610209171
+    - amount: 85037011000
       financial_year: 2018-19
       phase: Adjusted appropriation
     - amount: null
@@ -906,7 +906,7 @@ economic_classification_by_programme:
 expenditure_over_time:
   dataset_detail_page: /datasets/estimates-of-national-expenditure/estimates-of-national-expenditure-2018-19
   expenditure:
-    base_financial_year: 2017-18
+    base_financial_year: 2018-19
     nominal:
     - amount: 59386548000.0
       financial_year: 2014-15
@@ -930,33 +930,28 @@ expenditure_over_time:
       financial_year: 2020-21
       phase: Medium Term Estimates
     real:
-    - amount: 69631477031
+    - amount: 72931118988
       financial_year: 2014-15
       phase: Audited Outcome
-    - amount: 75922375645
+    - amount: 79520125783
       financial_year: 2015-16
       phase: Audited Outcome
-    - amount: 73266467002
+    - amount: 76738361019
       financial_year: 2016-17
       phase: Audited Outcome
-    - amount: 78463890000
+    - amount: 82318186984
       financial_year: 2017-18
       phase: Adjusted appropriation
-    - amount: 79297192010
+    - amount: 83651888000
       financial_year: 2018-19
       phase: Main appropriation
-    - amount: 81565224786
+    - amount: 86153369525
       financial_year: 2019-20
       phase: Medium Term Estimates
-    - amount: 84030976327
+    - amount: 88810078160
       financial_year: 2020-21
       phase: Medium Term Estimates
 financial_years:
-- closest_match:
-    is_exact_match: true
-    url_path: /2015-16/national/departments/cooperative-governance-and-traditional-affairs
-  id: 2015-16
-  is_selected: false
 - closest_match:
     is_exact_match: true
     url_path: /2016-17/national/departments/cooperative-governance-and-traditional-affairs
@@ -972,6 +967,11 @@ financial_years:
     url_path: /2018-19/national/departments/cooperative-governance-and-traditional-affairs
   id: 2018-19
   is_selected: true
+- closest_match:
+    is_exact_match: true
+    url_path: /2019-20/national/departments/cooperative-governance-and-traditional-affairs
+  id: 2019-20
+  is_selected: false
 government:
   name: South Africa
   slug: south-africa

@@ -48,11 +48,6 @@ economic_classification_by_programme:
 expenditure_over_time: null
 financial_years:
 - closest_match:
-    is_exact_match: false
-    url_path: /2015-16/provincial/mpumalanga
-  id: 2015-16
-  is_selected: false
-- closest_match:
     is_exact_match: true
     url_path: /2016-17/provincial/mpumalanga/departments/provincial-treasury
   id: 2016-17
@@ -66,6 +61,11 @@ financial_years:
     is_exact_match: false
     url_path: /2018-19/provincial/mpumalanga
   id: 2018-19
+  is_selected: false
+- closest_match:
+    is_exact_match: false
+    url_path: /2019-20/provincial/mpumalanga
+  id: 2019-20
   is_selected: false
 government:
   name: Mpumalanga

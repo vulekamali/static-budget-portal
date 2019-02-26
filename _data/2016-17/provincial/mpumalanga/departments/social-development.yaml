@@ -195,7 +195,7 @@ economic_classification_by_programme:
 expenditure_over_time:
   dataset_detail_page: /datasets/estimates-of-provincial-expenditure/estimates-of-provincial-expenditure-2016-17
   expenditure:
-    base_financial_year: 2017-18
+    base_financial_year: 2018-19
     nominal:
     - amount: 928267000
       financial_year: 2012-13
@@ -219,33 +219,28 @@ expenditure_over_time:
       financial_year: 2018-19
       phase: Medium Term Estimates
     real:
-    - amount: 1216512786
+    - amount: 1274159942
       financial_year: 2012-13
       phase: Audited Outcome
-    - amount: 1407353223
+    - amount: 1474043776
       financial_year: 2013-14
       phase: Audited Outcome
-    - amount: 1430820668
+    - amount: 1498623279
       financial_year: 2014-15
       phase: Audited Outcome
-    - amount: 1443467006
+    - amount: 1511868891
       financial_year: 2015-16
       phase: Adjusted appropriation
-    - amount: 1525819602
+    - amount: 1598123948
       financial_year: 2016-17
       phase: Main appropriation
-    - amount: 1512590000
+    - amount: 1586891326
       financial_year: 2017-18
       phase: Medium Term Estimates
-    - amount: 1531411771
+    - amount: 1615511000
       financial_year: 2018-19
       phase: Medium Term Estimates
 financial_years:
-- closest_match:
-    is_exact_match: true
-    url_path: /2015-16/provincial/mpumalanga/departments/social-development
-  id: 2015-16
-  is_selected: false
 - closest_match:
     is_exact_match: true
     url_path: /2016-17/provincial/mpumalanga/departments/social-development
@@ -260,6 +255,11 @@ financial_years:
     is_exact_match: true
     url_path: /2018-19/provincial/mpumalanga/departments/social-development
   id: 2018-19
+  is_selected: false
+- closest_match:
+    is_exact_match: false
+    url_path: /2019-20/provincial/mpumalanga
+  id: 2019-20
   is_selected: false
 government:
   name: Mpumalanga

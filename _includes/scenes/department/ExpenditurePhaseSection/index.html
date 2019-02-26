@@ -7,7 +7,7 @@
 {% endcapture %}
 
 <div class="ExpenditurePhaseSection" id="expenditure">
-  <h3 class="Title Title--section">Budgeted and Actual Expenditure comparison</h3>
+  <h3 class="Title Title--section">Budgeted and actual expenditure comparison</h3>
 
   <div class="ExpenditurePhaseSection-container">
     <div class="ExpenditurePhaseSection-item">
@@ -16,13 +16,13 @@
       </div>
 
       <p class="js-tooltips">
-        Compare the Adjusted Appropriation to the Main Appropriation to see how the spending plans changed during the year. The Audited Outcome then shows what was actually spent.
+        Compare the adjusted appropriation to the main appropriation to see whether changes were made in the adjustments budget to the appropriations set out in the budget. The audited outcome shows what was actually spent.
       </p>
 
-      <p class="js-tooltips">Note: Direct charges against the National Revenue Fund are excluded</p>
+      <p class="js-tooltips">Note: Direct charges against the National Revenue Fund are excluded.</p>
 
         {% if include.website_url %}
-        <p>Read more in the Annual Report on <a href="http://{{ include.website_url }}">the department's website</a></p>
+        <p>Read more in the Annual Report on <a href="http://{{ include.website_url }}">the department's website.</a></p>
         {% endif %}
 
       <ul class="LinksList">
@@ -85,7 +85,7 @@
           {%
             include components/ChartLabel/index.html
             index="0"
-            label="Main Appropriation"
+            label="Main appropriation"
           %}
         </div>
 
@@ -93,7 +93,7 @@
           {%
             include components/ChartLabel/index.html
             index="1"
-            label="Adjusted Appropriation"
+            label="Adjusted appropriation"
           %}
         </div>
 
@@ -101,7 +101,7 @@
           {%
             include components/ChartLabel/index.html
             index="2"
-            label="Final Appropriation"
+            label="Final appropriation"
           %}
         </div>
 
@@ -109,7 +109,7 @@
           {%
             include components/ChartLabel/index.html
             index="3"
-            label="Audited Outcome"
+            label="Audited outcome"
           %}
         </div>
       </div>

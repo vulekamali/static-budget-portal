@@ -130,7 +130,7 @@ economic_classification_by_programme:
 expenditure_over_time:
   dataset_detail_page: /datasets/estimates-of-provincial-expenditure/estimates-of-provincial-expenditure-2018-19
   expenditure:
-    base_financial_year: 2017-18
+    base_financial_year: 2018-19
     nominal:
     - amount: 197479000.0
       financial_year: 2014-15
@@ -154,33 +154,28 @@ expenditure_over_time:
       financial_year: 2020-21
       phase: Medium Term Estimates
     real:
-    - amount: 231546619
+    - amount: 242518969
       financial_year: 2014-15
       phase: Audited Outcome
-    - amount: 237497348
+    - amount: 248751686
       financial_year: 2015-16
       phase: Audited Outcome
-    - amount: 246417103
+    - amount: 258094123
       financial_year: 2016-17
       phase: Audited Outcome
-    - amount: 359713000
+    - amount: 377382793
       financial_year: 2017-18
       phase: Adjusted appropriation
-    - amount: 239636109
+    - amount: 252796000
       financial_year: 2018-19
       phase: Main appropriation
-    - amount: 236295123
+    - amount: 249587015
       financial_year: 2019-20
       phase: Medium Term Estimates
-    - amount: 235963821
+    - amount: 249383814
       financial_year: 2020-21
       phase: Medium Term Estimates
 financial_years:
-- closest_match:
-    is_exact_match: true
-    url_path: /2015-16/provincial/western-cape/departments/local-government
-  id: 2015-16
-  is_selected: false
 - closest_match:
     is_exact_match: true
     url_path: /2016-17/provincial/western-cape/departments/local-government
@@ -196,6 +191,11 @@ financial_years:
     url_path: /2018-19/provincial/western-cape/departments/local-government
   id: 2018-19
   is_selected: true
+- closest_match:
+    is_exact_match: false
+    url_path: /2019-20/provincial/western-cape
+  id: 2019-20
+  is_selected: false
 government:
   name: Western Cape
   slug: western-cape

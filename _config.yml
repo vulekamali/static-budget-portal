@@ -20,7 +20,7 @@ baseurl: "/" # the subpath of your site, e.g. /blog
 url: "https://vulekamali.gov.za"
 twitter_username: jekyllrb
 github_username:  jekyll
-latest_year: 2018-19
+latest_year: 2019-20
 
 # Build settings
 markdown: kramdown
@@ -31,6 +31,7 @@ markdown: kramdown
 exclude:
   - Gemfile
   - Gemfile.lock
+  - packages
   - node_modules
   - env
   - generate

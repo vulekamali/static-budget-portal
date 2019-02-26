@@ -151,7 +151,7 @@ economic_classification_by_programme:
 expenditure_over_time:
   dataset_detail_page: /datasets/estimates-of-provincial-expenditure/estimates-of-provincial-expenditure-2018-19
   expenditure:
-    base_financial_year: 2017-18
+    base_financial_year: 2018-19
     nominal:
     - amount: 429772000.0
       financial_year: 2014-15
@@ -175,33 +175,28 @@ expenditure_over_time:
       financial_year: 2020-21
       phase: Medium Term Estimates
     real:
-    - amount: 503913094
+    - amount: 527792133
       financial_year: 2014-15
       phase: Audited Outcome
-    - amount: 516663206
+    - amount: 541146437
       financial_year: 2015-16
       phase: Audited Outcome
-    - amount: 485710226
+    - amount: 508726682
       financial_year: 2016-17
       phase: Audited Outcome
-    - amount: 505148000
+    - amount: 529961840
       financial_year: 2017-18
       phase: Adjusted appropriation
-    - amount: 599034343
+    - amount: 631931000
       financial_year: 2018-19
       phase: Main appropriation
-    - amount: 569841263
+    - amount: 601895538
       financial_year: 2019-20
       phase: Medium Term Estimates
-    - amount: 576535155
+    - amount: 609324495
       financial_year: 2020-21
       phase: Medium Term Estimates
 financial_years:
-- closest_match:
-    is_exact_match: true
-    url_path: /2015-16/provincial/free-state/departments/economic-and-small-business-development-tourism-and-environmental-affairs
-  id: 2015-16
-  is_selected: false
 - closest_match:
     is_exact_match: true
     url_path: /2016-17/provincial/free-state/departments/economic-and-small-business-development-tourism-and-environmental-affairs
@@ -217,6 +212,11 @@ financial_years:
     url_path: /2018-19/provincial/free-state/departments/economic-and-small-business-development-tourism-and-environmental-affairs
   id: 2018-19
   is_selected: true
+- closest_match:
+    is_exact_match: false
+    url_path: /2019-20/provincial/free-state
+  id: 2019-20
+  is_selected: false
 government:
   name: Free State
   slug: free-state

@@ -15,6 +15,12 @@
         https://vulekamali.gov.za
         https://data.vulekamali.gov.za
         https://discussions.vulekamali.gov.za;
+      connect-src
+        'self'
+        https://vulekamali.gov.za
+        https://data.vulekamali.gov.za
+        https://discussions.vulekamali.gov.za
+        https://appzi-collector-b.azurewebsites.net;
       font-src
         https://fonts.gstatic.com/;
       style-src
@@ -28,14 +34,17 @@
         https://www.google-analytics.com
         https://www.youtube.com
         https://i.ytimg.com
+        https://app.appzi.io
         {% comment %} Google Tag Manager HEAD inline {% endcomment %}
         'sha256-v+9wGGBueHqSIuvMsUaFLaXTNw0D8igfDF+5k+9TVbE=';
       frame-src
         'self'
+        https://app.appzi.io
         https://www.youtube.com
         https://discussions.vulekamali.gov.za;
       img-src
         'self'
+        https://app.appzi.io
         http://s3-eu-west-1.amazonaws.com/
         https://vulekamali.gov.za
         https://data.vulekamali.gov.za
@@ -62,11 +71,13 @@
   {% comment %} Twitter Card data {% endcomment %}
   <meta name="twitter:title" content="{{ include.title }}">
   <meta name="twitter:description" content="{{ include.description }}">
+  <meta name="twitter:card" content="summary">
+  <meta name="twitter:site" content="@vulekamali">
 
   {% comment %} Facebook's Open Graph data {% endcomment %}
   <meta property="og:title" content="{{ include.title }}" />
   <meta property="og:description" content="{{ include.description }}" />
-  <meta property="og:image" content="{{ site.url }}/assets/images/vulekamali-logo-sq-social.jpg" />
+  <meta property="og:image" content="{{ site.url }}/assets/images/vulekamali-logo-sq-social-1200.png" />
   <meta property="og:url" content="{{ site.url }}{{ page.url }}" />
   <meta property="og:type" content="website" />
   <meta property="fb:app_id" content="346780042475150" />
@@ -85,4 +96,8 @@
   <meta name="theme-color" content="#7bb344">
 
   <meta name="google-site-verification" content="AO3H6VMoji8gCAhPB73gy1R1JSvvPI98s1Gc8GV87eg" />
+
+  <!-- Appzi: Capture Insightful Feedback -->
+  <script async src="https://app.appzi.io/bootstrap/bundle.js?token=Dzqo1"></script>
+  <!-- End Appzi -->
 </head>

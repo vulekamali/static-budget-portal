@@ -1,4 +1,14 @@
 {
+  "private": true,
+  "workspaces": [
+    "packages/webapp"
+  ],
+  "nohoist": [
+    "packages/webapp"
+  ],
+  "resolutions": {
+    "ansi-styles": "^3.2.0"
+  },
   "name": "static-budget-portal",
   "version": "1.0.0",
   "description": "",
@@ -22,7 +32,7 @@
     "app-root-dir": "^1.0.2",
     "autoprefixer": "^7.1.6",
     "babel-core": "^6.26.0",
-    "babel-eslint": "^8.2.6",
+    "babel-eslint": "^9.0.0",
     "babel-loader": "^7.1.2",
     "babel-plugin-transform-react-jsx": "^6.24.1",
     "babel-preset-env": "^1.6.0",
@@ -73,6 +83,7 @@
     "stylelint-scss": "^2.1.0",
     "webpack": "^3.8.1",
     "webpack-clean-plugin": "^0.2.3",
+    "webpack-cli": "^3.2.3",
     "webpack-manifest-plugin": "^1.3.2",
     "webpack-md5-hash": "0.0.5"
   },

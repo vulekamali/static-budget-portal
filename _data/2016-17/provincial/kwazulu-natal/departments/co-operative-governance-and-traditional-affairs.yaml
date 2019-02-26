@@ -173,7 +173,7 @@ economic_classification_by_programme:
 expenditure_over_time:
   dataset_detail_page: /datasets/estimates-of-provincial-expenditure/estimates-of-provincial-expenditure-2016-17
   expenditure:
-    base_financial_year: 2017-18
+    base_financial_year: 2018-19
     nominal:
     - amount: 1314550000
       financial_year: 2012-13
@@ -197,33 +197,28 @@ expenditure_over_time:
       financial_year: 2018-19
       phase: Medium Term Estimates
     real:
-    - amount: 1722744516
+    - amount: 1804380585
       financial_year: 2012-13
       phase: Audited Outcome
-    - amount: 1538804047
+    - amount: 1611723689
       financial_year: 2013-14
       phase: Audited Outcome
-    - amount: 1738351968
+    - amount: 1820727631
       financial_year: 2014-15
       phase: Audited Outcome
-    - amount: 1762848651
+    - amount: 1846385143
       financial_year: 2015-16
       phase: Adjusted appropriation
-    - amount: 1621484617
+    - amount: 1698322262
       financial_year: 2016-17
       phase: Main appropriation
-    - amount: 1461452000
+    - amount: 1533241329
       financial_year: 2017-18
       phase: Medium Term Estimates
-    - amount: 1465969602
+    - amount: 1546475000
       financial_year: 2018-19
       phase: Medium Term Estimates
 financial_years:
-- closest_match:
-    is_exact_match: true
-    url_path: /2015-16/provincial/kwazulu-natal/departments/co-operative-governance-and-traditional-affairs
-  id: 2015-16
-  is_selected: false
 - closest_match:
     is_exact_match: true
     url_path: /2016-17/provincial/kwazulu-natal/departments/co-operative-governance-and-traditional-affairs
@@ -238,6 +233,11 @@ financial_years:
     is_exact_match: true
     url_path: /2018-19/provincial/kwazulu-natal/departments/co-operative-governance-and-traditional-affairs
   id: 2018-19
+  is_selected: false
+- closest_match:
+    is_exact_match: false
+    url_path: /2019-20/provincial/kwazulu-natal
+  id: 2019-20
   is_selected: false
 government:
   name: KwaZulu-Natal

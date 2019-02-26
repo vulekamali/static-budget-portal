@@ -22,10 +22,10 @@ logHandler.setFormatter(logFormatter)
 logger.addHandler(logHandler)
 
 YEAR_SLUGS = [
+    '2019-20',
     '2018-19',
     '2017-18',
     '2016-17',
-    '2015-16',
 ]
 
 BASIC_PAGE_SLUGS = [
@@ -139,6 +139,27 @@ def write_financial_year(session, year_slug, static_path):
 
 
 def write_department_page(department_url_path, department_yaml):
+    department = yaml.load(department_yaml)
+    file_path = ".%s.html" % department_url_path
+    ensure_file_dirs(file_path)
+    with open(file_path, "wb") as outfile:
+        outfile.write(
+            ("---\n"
+             "financial_year: %s\n"
+             "sphere: %s\n"
+             "geographic_region_slug: %s\n"
+             "data_key: %s\n"
+             "layout: department\n"
+             "---\n%s") % (
+                 department['selected_financial_year'],
+                 department['sphere']['slug'],
+                 department['government']['slug'],
+                 department['slug'],
+                 GENERATED_MARKDOWN_COMMENT,
+             ))
+
+
+def write_infrastructure_project_page(department_url_path, department_yaml):
     department = yaml.load(department_yaml)
     file_path = ".%s.html" % department_url_path
     ensure_file_dirs(file_path)
@@ -327,3 +348,38 @@ for year_slug in YEAR_SLUGS:
                 with open(department_context_path, 'wb') as department_file:
                     department_file.write(GENERATED_YAML_COMMENT)
                     department_file.write(r.text)
+
+
+# Infrastructure projects
+
+listing_url_path = '/infrastructure-projects'
+logger.info(listing_url_path)
+listing_url = portal_url + listing_url_path[1:] + '.yaml'
+r = http_get(session, listing_url)
+if r.status_code == 404:
+    logger.info("No infrastructure project data.")
+else:
+    r.raise_for_status()
+    listing_path = '_data%s.yaml' % listing_url_path
+
+    dataset_list_path = '_data%s/index.yaml' % listing_url_path
+    ensure_file_dirs(dataset_list_path)
+    with open(dataset_list_path, 'wb') as dataset_list_file:
+        dataset_list_file.write(r.text)
+    write_basic_page(listing_url_path, r.text, 'infrastructure_project_list')
+
+    listing = yaml.load(r.text)
+    for project in listing['projects']:
+        logger.info(project['detail'])
+
+        project_path = project['detail'] + '.yaml'
+        project_url = portal_url + project_path[1:]
+        project_context_path = '_data/' + project_path[1:]
+        ensure_file_dirs(project_context_path)
+
+        r = http_get(session, project_url)
+        r.raise_for_status()
+        write_basic_page(project['detail'], r.text, 'infrastructure_project')
+        with open(project_context_path, 'wb') as project_file:
+            project_file.write(GENERATED_YAML_COMMENT)
+            project_file.write(r.text)
