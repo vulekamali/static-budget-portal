@@ -13,7 +13,7 @@ const isConnectionYear = year => year === '2017' || year === '2018';
 
 
 const buildEne = url => ({
-  heading: 'Department Estimage of National Expenditure',
+  heading: 'Read more in the Department Budget',
   format: 'PDF',
   link: url,
 });
