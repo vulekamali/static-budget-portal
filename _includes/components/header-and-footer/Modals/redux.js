@@ -10,7 +10,7 @@ export function createModal(title, markup) {
     type: CREATE_MODAL,
     payload: {
       title,
-      markup,
+      ,
     },
   });
 }
