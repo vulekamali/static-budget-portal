@@ -7,74 +7,70 @@ data_key: frameworks-for-conditional-grants-to-provinces
 {% assign page_data = site.data.guides.frameworks-for-conditional-grants-to-provinces %}
 
 
-<h1 class="Page-mainHeading">Dataset Guide: Conditional Grant Frameworks and Allocations
+<h1 class="Page-mainHeading">Conditional Grant Frameworks and Allocations
 </h1>
 
 <div class="BasicContent u-marginBottom15">
-  <div class="BasicContent-title">Overview</div>
+    <p>
+      This guide relates to:
+    </p>
+
+  <ul>
+  <li>Frameworks for Conditional Grants (to  <a href="https://vulekamali.gov.za/datasets/frameworks-for-conditional-grants-to-provinces" target="_blank">provinces.</a>
+  provinces, to <a href="https://vulekamali.gov.za/datasets/frameworks-for-conditional-grants-to-municipalities" target="_blank">municipalities</a>)
+  </li>
+
+  <li>Conditional Grant allocations in the <a href="https://vulekamali.gov.za/datasets/division-of-revenue-bills" target="_blank">Division of Revenue bills</a>
+  </li>
+  </ul>
+  </div>
+
   <p>
-    This guide relates to:
+  Conditional grants have been used in South Africa to transfer funding to provinces and municipalities for the purpose of achieving particular national government policy objectives. This mechanism is especially important in South Africa, where the Constitution provides for equal access to basic public services, including health, education, water and welfare.
   </p>
 
-<ul>
-<li>Frameworks for Conditional Grants (to  <a href="https://vulekamali.gov.za/datasets/frameworks-for-conditional-grants-to-provinces" target="_blank">provinces.</a>
-provinces, to <a href="https://vulekamali.gov.za/datasets/frameworks-for-conditional-grants-to-municipalities" target="_blank">municipalities</a>)
-</li>
+  <p>
+    In addition to the conditional grants they receive, local government and each province are also entitled to “an equitable share of revenue raised nationally”, according to Section 214(1) of the Constitution. Equitable shares are unconditional and  enable provinces and municipalities to provide the services and the functions allocated to them.
+  </p>
 
-<li>Conditional Grant allocations in the <a href="https://vulekamali.gov.za/datasets/division-of-revenue-bills" target="_blank">Division of Revenue bills</a>
-</li>
-</ul>
+  <p>
+      The Conditional Grant Frameworks are published as annexures to the Division of Revenue Bill, and then gazetted once the act is signed into law. These frameworks set the rules for how the funds can be used and support the administration and oversight of conditional grants.
+  </p>
+
+  <p>
+      Conditional Grant allocations to provinces and municipalities are enacted in the Division of Revenue Act.
+  </p>
 </div>
 
 <div class="BasicContent u-marginBottom15">
-    <div class="BasicContent-title">What is the adjustments budget?
-    </div>
+  <div class="BasicContent-title">Where does the data come from?</div>
+  <p>
+      Conditional grants are managed by national departments, which submit frameworks and allocations to National Treasury. Consultations are also held with other stakeholders; these include other national and provincial departments, the South African Local Government Association, NGOs, the office of the Auditor-General, and civil society organisations. Departmental ministers and MECs provide feedback from previous grant spending which informs changes to grant rules and allocations in subsequent years.
+  </p>
 
-<p>
- Conditional grants have been used in South Africa to transfer funding to provinces and municipalities for the purpose of achieving particular national government policy objectives. This mechanism is especially important in South Africa, where the Constitution provides for equal access to basic public services, including health, education, water and welfare.
-</p>
+  <p>
+      Aside from the Constitution, which provides for equitable division of all revenue raised nationally, the annual Division of Revenue Bill contains information related to conditional grant allocations. This can be found in:
+  </p>
 
-<p>
-  In addition to the conditional grants they receive, local government and each province are also entitled to “an equitable share of revenue raised nationally”, according to Section 214(1) of the Constitution. Equitable shares are unconditional and  enable provinces and municipalities to provide the services and the functions allocated to them.
-</p>
-
-<p>
-    The Conditional Grant Frameworks are published as annexures to the Division of Revenue Bill, and then gazetted once the act is signed into law. These frameworks set the rules for how the funds can be used and support the administration and oversight of conditional grants.
-</p>
-
-<p>
-    Conditional Grant allocations to provinces and municipalities are enacted in the Division of Revenue Act.
-</p>
-
-<div class="BasicContent u-marginBottom15">
-  <div class="BasicContent-title">Where does the data come from?
-</div>
-
-<p>
-    Conditional grants are managed by national departments, which submit frameworks and allocations to National Treasury. Consultations are also held with other stakeholders; these include other national and provincial departments, the South African Local Government Association, NGOs, the office of the Auditor-General, and civil society organisations. Departmental ministers and MECs provide feedback from previous grant spending which informs changes to grant rules and allocations in subsequent years.
-</p>
-
-<p>
-    Aside from the Constitution, which provides for equitable division of all revenue raised nationally, the annual Division of Revenue Bill contains information related to conditional grant allocations. This can be found in:
-</p>
-
-<ul>
-    <li>
-    Schedule 4 (allocations to supplement the funding of programmes or functions);
-    </li>
-    <li>
-    Schedule 5 (specific-purpose allocations);
-    </li>
-    <li>
-    Schedule 6 (allocations-in-kind for designated special programmes); and
-    </li>
-    <li>
-    Schedule 7 (funds that are not allocated to specific provinces or muniicpalities, that may be released to fund an immediate response to a disaster or housing emergency).
-    </li>
-    <br/>
-    <p>
-     The Division of Revenue Bill includes the value of grants for the budget year and projected grants for the medium-term expenditure framework (MTEF) period.
-    </p>
+  <ul>
+      <li>
+      Schedule 4 (allocations to supplement the funding of programmes or functions);
+      </li>
+      <li>
+      Schedule 5 (specific-purpose allocations);
+      </li>
+      <li>
+      Schedule 6 (allocations-in-kind for designated special programmes); and
+      </li>
+      <li>
+      Schedule 7 (funds that are not allocated to specific provinces or muniicpalities, that may be released to fund an immediate response to a disaster or housing emergency).
+      </li>
+    </ul>
+      <br/>
+      <p>
+      The Division of Revenue Bill includes the value of grants for the budget year and projected grants for the medium-term expenditure framework (MTEF) period.
+      </p>
+  </div>
 
 
 <div class="BasicContent u-marginBottom15">
@@ -103,14 +99,16 @@ provinces, to <a href="https://vulekamali.gov.za/datasets/frameworks-for-conditi
          monitor the spending of past grants.
       </li>
     </ul>
-    <div class="BasicContent u-marginBottom15">
+   </div>
+
+   <div class="BasicContent u-marginBottom15">
         <div class="BasicContent-title">What data is available from vulekamali.gov.za?
     </div>
     <p>
-        Vulekamali makes information available for all provincial and municipal Conditional Grants. A copy of the gazetted frameworks, in PDF format, can be viewed and downloaded for free here.
+        Vulekamali makes information available for all provincial and municipal Conditional Grants. A copy of the gazetted frameworks, in PDF format, can be viewed and downloaded for free <a href="https://vulekamali.gov.za/datasets/frameworks-for-conditional-grants-to-provinces%5d">here</a>.
     </p>
     <p>
-        The allocations of Conditional Grants are available in the annexes to the Division of Revenue Bill.
+        The allocations of Conditional Grants are available in the annexes to the <a href="https://vulekamali.gov.za/datasets/division-of-revenue-bills" target="_blank"> Division of Revenue Bill.</a>
     </p>
     <div class="BasicContent u-marginBottom15">
         <div class="BasicContent-title">What is in the data?
