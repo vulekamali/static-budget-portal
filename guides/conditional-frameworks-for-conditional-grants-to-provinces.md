@@ -2,10 +2,10 @@
 layout: guide_item
 data_key: frameworks-for-conditional-grants-to-provinces
 ---
+qq
 
-
-{% assign page_data = site.data.guides.frameworks-for-conditional-grants-to-provinces %}
-
+{% assign page_data = site.data.guides.frameworks-for-conditional-grants-to-provinces
+ %}
 
 <h1 class="Page-mainHeading">Conditional Grant Frameworks and Allocations
 </h1>
@@ -23,7 +23,7 @@ data_key: frameworks-for-conditional-grants-to-provinces
   <li>Conditional Grant allocations in the <a href="https://vulekamali.gov.za/datasets/division-of-revenue-bills" target="_blank">Division of Revenue bills</a>
   </li>
   </ul>
-  </div>
+</div>
 
   <p>
   Conditional grants have been used in South Africa to transfer funding to provinces and municipalities for the purpose of achieving particular national government policy objectives. This mechanism is especially important in South Africa, where the Constitution provides for equal access to basic public services, including health, education, water and welfare.
