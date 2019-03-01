@@ -115,33 +115,35 @@ data_key: frameworks-for-conditional-grants-to-provinces
         <div class="BasicContent-title">What is in the data?
     </div>
         <p>
-            The frameworks for all provincial Conditional Grants can be found on vulekamali.gov.za under the Data and Analysis tab.
+            The frameworks for all provincial <a href="https://vulekamali.gov.za/datasets/frameworks-for-conditional-grants-to-provinces" target="_blank"> Conditional Grants.</a> can be found on vulekamali.gov.za under the <a href="https://vulekamali.gov.za/datasets" target="_blank"> Data and Analysis</a> tab.
         </p>
-        <ul>
+        <br/>
+        <p>Each PDF contains the following sections:</p>
+          <ul>
             <li>
               <b>Transferring department:</b> the national department that is transferring the money.
-            </ul>
+            </li>
             <li>
                <b>Grant schedule:</b>the designation of the grant in the Division of Revenue Bill. 
-            </ul>
+            </li>
             <li>
               <b>Strategic goal:</b>a description of the planned long-term objective(s) of the grant. 
-            </ul>
+            </li>
             <li>
               <b>Outcomes and outputs:</b> intended outcomes that the grant should achieve and the measurable targets that should result from the grant spending.
-            </ul>
+            </li>
             <li>
                <b>Priority outcome(s) of government:</b> this refers to the MTSF outcomes affected by the grant spending.
-            </ul>
+            </li>
             <li>
                 <b>Conditions:</b> these are the conditions which the province(s) must fulfil when they spend the grant.
-            </ul>
+            </li>
             <li>
                 <b>Allocation criteria:</b> these are the formula(e) or other determinants that are used to make allocations, as well as the source(s) for these determinants.
-            </ul>
+            </li>
             <li>
-                <b>Reasons for funding through a conditional grant:</b> a list of circumstances or conditions that make it necessary to separate a particular grant from general allocations.          
-            </ul>
+                <b>Reasons for funding through a conditional grant:</b> a list of circumstances or conditions that make it necessary to separate a particular grant from general allocations. 
+            </li>       
             <li>
                 <b>Past performance:</b> a description of the grant activity in the previous financial year. This is split into two sections:
                 <ul>
@@ -165,7 +167,8 @@ data_key: frameworks-for-conditional-grants-to-provinces
              <li>
                 <b>Responsibilities of the transferring officer and the receiving officer:</b> a list of the tasks and duties for the administration of the conditional grant for both the transferring (national) and receiving (provincial) officers. It also will provide deadlines and dates for the completion of some of the responsibilities.
             </li>
+            <li>
                 <b>Process for the approval of business plans:</b> 
-             <li>
+            </li>
         </ul>
       </div>
