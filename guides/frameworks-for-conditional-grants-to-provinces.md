@@ -2,28 +2,24 @@
 layout: guide_item
 data_key: frameworks-for-conditional-grants-to-provinces
 ---
-qq
 
 {% assign page_data = site.data.guides.frameworks-for-conditional-grants-to-provinces
  %}
-
-<h1 class="Page-mainHeading">Conditional Grant Frameworks and Allocations
-</h1>
-
 <div class="BasicContent u-marginBottom15">
+
+  <h1 class="Page-mainHeading">Conditional Grant Frameworks and Allocations
+  </h1>
     <p>
       This guide relates to:
     </p>
 
   <ul>
-  <li>Frameworks for Conditional Grants (to  <a href="https://vulekamali.gov.za/datasets/frameworks-for-conditional-grants-to-provinces" target="_blank">provinces.</a>
-  provinces, to <a href="https://vulekamali.gov.za/datasets/frameworks-for-conditional-grants-to-municipalities" target="_blank">municipalities</a>)
+  <li>Frameworks for Conditional Grants (to  <a href="https://vulekamali.gov.za/datasets/frameworks-for-conditional-grants-to-provinces" target="_blank">provinces,</a> to <a href="https://vulekamali.gov.za/datasets/frameworks-for-conditional-grants-to-municipalities" target="_blank">municipalities</a>)
   </li>
 
   <li>Conditional Grant allocations in the <a href="https://vulekamali.gov.za/datasets/division-of-revenue-bills" target="_blank">Division of Revenue bills</a>
   </li>
   </ul>
-</div>
 
   <p>
   Conditional grants have been used in South Africa to transfer funding to provinces and municipalities for the purpose of achieving particular national government policy objectives. This mechanism is especially important in South Africa, where the Constitution provides for equal access to basic public services, including health, education, water and welfare.
@@ -44,13 +40,12 @@ qq
 
 <div class="BasicContent u-marginBottom15">
   <div class="BasicContent-title">Where does the data come from?</div>
-  <p>
-      Conditional grants are managed by national departments, which submit frameworks and allocations to National Treasury. Consultations are also held with other stakeholders; these include other national and provincial departments, the South African Local Government Association, NGOs, the office of the Auditor-General, and civil society organisations. Departmental ministers and MECs provide feedback from previous grant spending which informs changes to grant rules and allocations in subsequent years.
-  </p>
-
-  <p>
-      Aside from the Constitution, which provides for equitable division of all revenue raised nationally, the annual Division of Revenue Bill contains information related to conditional grant allocations. This can be found in:
-  </p>
+    <p>
+        Conditional grants are managed by national departments, which submit frameworks and allocations to National Treasury. Consultations are also held with other stakeholders; these include other national and provincial departments, the South African Local Government Association, NGOs, the office of the Auditor-General, and civil society organisations. Departmental ministers and MECs provide feedback from previous grant spending which informs changes to grant rules and allocations in subsequent years.
+    </p>
+    <p>
+        Aside from the Constitution, which provides for equitable division of all revenue raised nationally, the annual Division of Revenue Bill contains information related to conditional grant allocations. This can be found in:
+    </p>
 
   <ul>
       <li>
@@ -74,8 +69,7 @@ qq
 
 
 <div class="BasicContent u-marginBottom15">
-  <div class="BasicContent-title">What can I do with the data?
-</div>
+  <div class="BasicContent-title">What can I do with the data?</div>
     <p>
     Big announcements are made about national spending in the first quarter of each year. These include how the national budget will be spent, who can approve spending and how grants will be allocated in the coming budget year. With this information, you can:
     </p>
@@ -102,20 +96,20 @@ qq
    </div>
 
    <div class="BasicContent u-marginBottom15">
-        <div class="BasicContent-title">What data is available from vulekamali.gov.za?
-    </div>
-    <p>
-        Vulekamali makes information available for all provincial and municipal Conditional Grants. A copy of the gazetted frameworks, in PDF format, can be viewed and downloaded for free <a href="https://vulekamali.gov.za/datasets/frameworks-for-conditional-grants-to-provinces%5d">here</a>.
-    </p>
-    <p>
-        The allocations of Conditional Grants are available in the annexes to the <a href="https://vulekamali.gov.za/datasets/division-of-revenue-bills" target="_blank"> Division of Revenue Bill.</a>
-    </p>
+        <div class="BasicContent-title">What data is available from vulekamali.gov.za?</div>
+      <p>
+          Vulekamali makes information available for all provincial and municipal Conditional Grants. A copy of the gazetted frameworks, in PDF format, can be viewed and downloaded for free <a href="https://vulekamali.gov.za/datasets/frameworks-for-conditional-grants-to-provinces%5d">here</a>.
+      </p>
+      <p>
+          The allocations of Conditional Grants are available in the annexes to the <a href="https://vulekamali.gov.za/datasets/division-of-revenue-bills" target="_blank"> Division of Revenue Bill.</a>
+      </p>
+   </div>
 
   <div class="BasicContent u-marginBottom15">
         <div class="BasicContent-title">What is in the data?
     </div>
         <p>
-            The frameworks for all provincial <a href="https://vulekamali.gov.za/datasets/frameworks-for-conditional-grants-to-provinces" target="_blank"> Conditional Grants.</a> can be found on vulekamali.gov.za under the <a href="https://vulekamali.gov.za/datasets" target="_blank"> Data and Analysis</a> tab.
+            The frameworks for all provincial <a href="https://vulekamali.gov.za/datasets/frameworks-for-conditional-grants-to-provinces" target="_blank"> Conditional Grants</a> can be found on vulekamali.gov.za under the <a href="https://vulekamali.gov.za/datasets" target="_blank"> Data and Analysis</a> tab.
         </p>
         <br/>
         <p>Each PDF contains the following sections:</p>
@@ -170,5 +164,3 @@ qq
             <li>
                 <b>Process for the approval of business plans:</b> 
             </li>
-        </ul>
-      </div>
