@@ -115,31 +115,31 @@ data_key: frameworks-for-conditional-grants-to-provinces
         <p>Each PDF contains the following sections:</p>
           <ul>
             <li>
-              <b>Transferring department:</b> the national department that is transferring the money.
+              <b>Transferring department: </b> the national department that is transferring the money.
             </li>
             <li>
-               <b>Grant schedule:</b>the designation of the grant in the Division of Revenue Bill. 
+               <b>Grant schedule: </b> the designation of the grant in the Division of Revenue Bill. 
             </li>
             <li>
-              <b>Strategic goal:</b>a description of the planned long-term objective(s) of the grant. 
+              <b>Strategic goal: </b> a description of the planned long-term objective(s) of the grant. 
             </li>
             <li>
-              <b>Outcomes and outputs:</b> intended outcomes that the grant should achieve and the measurable targets that should result from the grant spending.
+              <b>Outcomes and outputs: </b> intended outcomes that the grant should achieve and the measurable targets that should result from the grant spending.
             </li>
             <li>
-               <b>Priority outcome(s) of government:</b> this refers to the MTSF outcomes affected by the grant spending.
+               <b>Priority outcome(s) of government: </b> this refers to the MTSF outcomes affected by the grant spending.
             </li>
             <li>
-                <b>Conditions:</b> these are the conditions which the province(s) must fulfil when they spend the grant.
+                <b>Conditions: </b> these are the conditions which the province(s) must fulfil when they spend the grant.
             </li>
             <li>
-                <b>Allocation criteria:</b> these are the formula(e) or other determinants that are used to make allocations, as well as the source(s) for these determinants.
+                <b>Allocation criteria: </b> these are the formula(e) or other determinants that are used to make allocations, as well as the source(s) for these determinants.
             </li>
             <li>
-                <b>Reasons for funding through a conditional grant:</b> a list of circumstances or conditions that make it necessary to separate a particular grant from general allocations. 
+                <b>Reasons for funding through a conditional grant: </b> a list of circumstances or conditions that make it necessary to separate a particular grant from general allocations. 
             </li>       
             <li>
-                <b>Past performance:</b> a description of the grant activity in the previous financial year. This is split into two sections:
+                <b>Past performance: </b> a description of the grant activity in the previous financial year. This is split into two sections:
                 <ul>
                   <li>
                     previous <b>audited financial outcomes</b> which describes how much of previous grant allocations were transferred by national government and spent by the relevant department; and
@@ -150,16 +150,16 @@ data_key: frameworks-for-conditional-grants-to-provinces
                 </ul>
             <li>
             <li>
-                <b>Projected life:</b> confirmation of whether the grant has a fixed term or is to be renewed annually. This section may also list the factors that must be considered when making this decision. 
+                <b>Projected life: </b> confirmation of whether the grant has a fixed term or is to be renewed annually. This section may also list the factors that must be considered when making this decision. 
             </li>
              <li>
-                <b>Medium Term Expenditure Framework (MTEF) allocations:</b> a summary of the value of the grant for the three years of the MTEF.
+                <b>Medium Term Expenditure Framework (MTEF) allocations: </b> a summary of the value of the grant for the three years of the MTEF.
             </li>
              <li>
-                <b>Payment schedule:</b> a description of the number of grant payments and the dates on which they are to be paid. 
+                <b>Payment schedule: </b> a description of the number of grant payments and the dates on which they are to be paid. 
             </li>
              <li>
-                <b>Responsibilities of the transferring officer and the receiving officer:</b> a list of the tasks and duties for the administration of the conditional grant for both the transferring (national) and receiving (provincial) officers. It also will provide deadlines and dates for the completion of some of the responsibilities.
+                <b>Responsibilities of the transferring officer and the receiving officer: </b> a list of the tasks and duties for the administration of the conditional grant for both the transferring (national) and receiving (provincial) officers. It also will provide deadlines and dates for the completion of some of the responsibilities.
             </li>
             <li>
                 <b>Process for the approval of business plans:</b> 
