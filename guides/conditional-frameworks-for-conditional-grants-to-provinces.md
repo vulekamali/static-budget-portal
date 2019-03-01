@@ -110,7 +110,8 @@ data_key: frameworks-for-conditional-grants-to-provinces
     <p>
         The allocations of Conditional Grants are available in the annexes to the <a href="https://vulekamali.gov.za/datasets/division-of-revenue-bills" target="_blank"> Division of Revenue Bill.</a>
     </p>
-    <div class="BasicContent u-marginBottom15">
+
+  <div class="BasicContent u-marginBottom15">
         <div class="BasicContent-title">What is in the data?
     </div>
         <p>
@@ -145,10 +146,10 @@ data_key: frameworks-for-conditional-grants-to-provinces
                 <b>Past performance:</b> a description of the grant activity in the previous financial year. This is split into two sections:
                 <ul>
                   <li>
-                    previous audited financial outcomes which describes how much of previous grant allocations were transferred by national government and spent by the relevant department; and
+                    previous <b>audited financial outcomes</b> which describes how much of previous grant allocations were transferred by national government and spent by the relevant department; and
                   </li>
                   <li>
-                    previous service delivery performance which summarises the performance indicators that were achieved (e.g. schools built, delivery of support materials, etc).
+                    previous <b>service delivery performance</b> which summarises the performance indicators that were achieved (e.g. schools built, delivery of support materials, etc).
                   </li>
                 </ul>
             <li>
@@ -164,24 +165,7 @@ data_key: frameworks-for-conditional-grants-to-provinces
              <li>
                 <b>Responsibilities of the transferring officer and the receiving officer:</b> a list of the tasks and duties for the administration of the conditional grant for both the transferring (national) and receiving (provincial) officers. It also will provide deadlines and dates for the completion of some of the responsibilities.
             </li>
-                <b>Process for the approval of business plans:</b> a list of all the steps that will be taken to plan for the next year’s grant allocations.
+                <b>Process for the approval of business plans:</b> 
              <li>
         </ul>
-<br/>
-
-<p>
-Each PDF contains the following sections:
-</p>
-
-
-
-    
-
-
-
-
-    
-</ul>
-
-
-</div>
+      </div>
