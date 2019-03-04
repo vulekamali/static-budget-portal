@@ -119,7 +119,7 @@ data_key: frameworks-for-conditional-grants-to-provinces
               <b>Transferring department: </b> the national department that is transferring the money.
             </li>
             <li>
-               <b>Grant schedule: </b> the designation of the grant in the Division of Revenue Bill. 
+               <b>Grant schedule: </b> the designation of the grant in the Division of Revenue Bill.
             </li>
             <li>
               <b>Strategic goal: </b> a description of the planned long-term objective(s) of the grant.
