@@ -116,7 +116,7 @@ data_key: frameworks-for-conditional-grants-to-provinces
         <p>Each PDF contains the following sections:</p>
           <ul>
             <li>
-              <b>Transferring department: </b> the national department that is transferring the money.
+              <b>Transferring department:</b> the national department that is transferring the money.
             </li>
             <li>
                <b>Grant schedule: </b> the designation of the grant in the Division of Revenue Bill.
