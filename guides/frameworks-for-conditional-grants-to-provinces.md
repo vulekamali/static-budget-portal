@@ -59,7 +59,7 @@ data_key: frameworks-for-conditional-grants-to-provinces
       Schedule 6 (allocations-in-kind for designated special programmes); and
       </li>
       <li>
-      Schedule 7 (funds that are not allocated to specific provinces or muniicpalities, that may be released to fund an immediate response to a disaster or housing emergency).
+      Schedule 7 (funds that are not allocated to specific provinces or municipalities, that may be released to fund an immediate response to a disaster or housing emergency).
       </li>
     </ul>
       <br/>
