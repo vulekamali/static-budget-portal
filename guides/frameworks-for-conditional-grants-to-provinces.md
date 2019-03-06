@@ -99,7 +99,7 @@ data_key: frameworks-for-conditional-grants-to-provinces
    <div class="BasicContent u-marginBottom15">
         <div class="BasicContent-title">What data is available from vulekamali.gov.za?</div>
       <p>
-          Vulekamali makes information available for all provincial and municipal Conditional Grants. A copy of the gazetted frameworks, in PDF format, can be viewed and downloaded for free <a href="/datasets/frameworks-for-conditional-grants-to-provinces%5d">here</a>.
+          Vulekamali makes information available for all provincial and municipal Conditional Grants. A copy of the gazetted frameworks, in PDF format, can be viewed and downloaded for free <a href="/datasets/frameworks-for-conditional-grants-to-provinces/">here</a>.
       </p>
       <p>
           The allocations of Conditional Grants are available in the annexes to the <a href="/datasets/division-of-revenue-bills" target="_blank"> Division of Revenue Bill.</a>
@@ -149,7 +149,7 @@ data_key: frameworks-for-conditional-grants-to-provinces
                     previous <b>service delivery performance</b> which summarises the performance indicators that were achieved (e.g. schools built, delivery of support materials, etc).
                   </li>
                 </ul>
-            <li>
+            </li>
             <li>
                 <b>Projected life: </b> confirmation of whether the grant has a fixed term or is to be renewed annually. This section may also list the factors that must be considered when making this decision.
             </li>
