@@ -5,10 +5,11 @@ data_key: frameworks-for-conditional-grants-to-provinces
 
 {% assign page_data = site.data.guides.frameworks-for-conditional-grants-to-provinces
  %}
+<h1 class="Page-mainHeading">Conditional Grant Frameworks and Allocations
+</h1>
+
 <div class="BasicContent u-marginBottom15">
 
-  <h1 class="Page-mainHeading">Conditional Grant Frameworks and Allocations
-  </h1>
     <p>
       This guide relates to:
     </p>
@@ -58,7 +59,7 @@ data_key: frameworks-for-conditional-grants-to-provinces
       Schedule 6 (allocations-in-kind for designated special programmes); and
       </li>
       <li>
-      Schedule 7 (funds that are not allocated to specific provinces or muniicpalities, that may be released to fund an immediate response to a disaster or housing emergency).
+      Schedule 7 (funds that are not allocated to specific provinces or municipalities, that may be released to fund an immediate response to a disaster or housing emergency).
       </li>
     </ul>
       <br/>
@@ -98,7 +99,7 @@ data_key: frameworks-for-conditional-grants-to-provinces
    <div class="BasicContent u-marginBottom15">
         <div class="BasicContent-title">What data is available from vulekamali.gov.za?</div>
       <p>
-          Vulekamali makes information available for all provincial and municipal Conditional Grants. A copy of the gazetted frameworks, in PDF format, can be viewed and downloaded for free <a href="/datasets/frameworks-for-conditional-grants-to-provinces%5d">here</a>.
+          Vulekamali makes information available for all provincial and municipal Conditional Grants. A copy of the gazetted frameworks, in PDF format, can be viewed and downloaded for free <a href="/datasets/frameworks-for-conditional-grants-to-provinces/">here</a>.
       </p>
       <p>
           The allocations of Conditional Grants are available in the annexes to the <a href="/datasets/division-of-revenue-bills" target="_blank"> Division of Revenue Bill.</a>
@@ -115,13 +116,13 @@ data_key: frameworks-for-conditional-grants-to-provinces
         <p>Each PDF contains the following sections:</p>
           <ul>
             <li>
-              <b>Transferring department: </b> the national department that is transferring the money.
+              <b>Transferring department:</b> the national department that is transferring the money.
             </li>
             <li>
-               <b>Grant schedule: </b> the designation of the grant in the Division of Revenue Bill. 
+               <b>Grant schedule: </b> the designation of the grant in the Division of Revenue Bill.
             </li>
             <li>
-              <b>Strategic goal: </b> a description of the planned long-term objective(s) of the grant. 
+              <b>Strategic goal: </b> a description of the planned long-term objective(s) of the grant.
             </li>
             <li>
               <b>Outcomes and outputs: </b> intended outcomes that the grant should achieve and the measurable targets that should result from the grant spending.
@@ -136,8 +137,8 @@ data_key: frameworks-for-conditional-grants-to-provinces
                 <b>Allocation criteria: </b> these are the formula(e) or other determinants that are used to make allocations, as well as the source(s) for these determinants.
             </li>
             <li>
-                <b>Reasons for funding through a conditional grant: </b> a list of circumstances or conditions that make it necessary to separate a particular grant from general allocations. 
-            </li>       
+                <b>Reasons for funding through a conditional grant: </b> a list of circumstances or conditions that make it necessary to separate a particular grant from general allocations.
+            </li>
             <li>
                 <b>Past performance: </b> a description of the grant activity in the previous financial year. This is split into two sections:
                 <ul>
@@ -148,19 +149,19 @@ data_key: frameworks-for-conditional-grants-to-provinces
                     previous <b>service delivery performance</b> which summarises the performance indicators that were achieved (e.g. schools built, delivery of support materials, etc).
                   </li>
                 </ul>
+            </li>
             <li>
-            <li>
-                <b>Projected life: </b> confirmation of whether the grant has a fixed term or is to be renewed annually. This section may also list the factors that must be considered when making this decision. 
+                <b>Projected life: </b> confirmation of whether the grant has a fixed term or is to be renewed annually. This section may also list the factors that must be considered when making this decision.
             </li>
              <li>
                 <b>Medium Term Expenditure Framework (MTEF) allocations: </b> a summary of the value of the grant for the three years of the MTEF.
             </li>
              <li>
-                <b>Payment schedule: </b> a description of the number of grant payments and the dates on which they are to be paid. 
+                <b>Payment schedule: </b> a description of the number of grant payments and the dates on which they are to be paid.
             </li>
              <li>
                 <b>Responsibilities of the transferring officer and the receiving officer: </b> a list of the tasks and duties for the administration of the conditional grant for both the transferring (national) and receiving (provincial) officers. It also will provide deadlines and dates for the completion of some of the responsibilities.
             </li>
             <li>
-                <b>Process for the approval of business plans:</b> 
+                <b>Process for the approval of business plans:</b>
             </li>
