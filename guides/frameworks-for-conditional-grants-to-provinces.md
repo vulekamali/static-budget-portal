@@ -1,6 +1,6 @@
 ---
 layout: guide_item
-data_key: frameworks-for-conditional-grants-to-provinces
+data_key: conditional-grant-frameworks-and-allocations
 ---
 
 {% assign page_data = site.data.guides.frameworks-for-conditional-grants-to-provinces
