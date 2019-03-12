@@ -97,6 +97,9 @@ const Markup = (props) => {
       </Image>
       <NotificationBar {...{ notice, callToAction }} />
       {resources && <Resources {...{ resources }} />}
+
+
+
     </Layout>
   );
 };
