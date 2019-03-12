@@ -275,7 +275,7 @@ const buildCta = (index, datasetUrl, Link = 'a') => {
   )
 };
 
-const createProjectCard = (datasetUrl, Link = 'a') => (props, index) => {
+const createProjectCard = (datasetUrl, Link = 'a') => (props, index, selected) => {
   const {
     id,
     subheading,
@@ -284,6 +284,7 @@ const createProjectCard = (datasetUrl, Link = 'a') => (props, index) => {
     totalBudget,
     activeProvinces = [],
     link,
+    points,
   } = props;
 
   const isCtaIndex = ctaIndex.indexOf(index.toString()) !== -1;
@@ -301,7 +302,7 @@ const createProjectCard = (datasetUrl, Link = 'a') => (props, index) => {
             <StyledCardActionArea>
               <CardHeading>
                 <MapPosition>
-                  <NationalMap size="small" active={activeProvinces.length < 1 && 'Multiple'} />
+                  <NationalMap size="small" active={activeProvinces.length < 1 && 'Multiple'} {...{ points, activeProvinces }} selected={selected.points && selected.points[0].id} />
                 </MapPosition>
                   <Tag province={activeProvinces.length < 1 && 'Multiple'}>
                     {activeProvinces.length > 0 ? calcShorthand(activeProvinces[0]) : 'MULTIPLE'}
