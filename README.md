@@ -2,6 +2,19 @@
 Set up dev env
 --------------
 
+## Quickstart using Vagrant
+
+With [Vagrant](https://www.vagrantup.com/) and [VirtualBox](https://www.virtualbox.org/) installed:
+
+```
+vagrant up
+vagrant ssh -c 'cd /vagrant && bundle exec jekyll serve --force_polling --host 0.0.0.0'
+```
+
+To run other interactive commands, run `vagrant ssh`, then `cd /vagrant`.
+
+To stop Vagrant: `vagrant halt`
+
 ## Frontend
 
 #### Getting Started
