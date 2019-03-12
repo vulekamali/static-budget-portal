@@ -8,13 +8,13 @@ Set up dev env
 
 1. Make sure you have the latest LTS version of [NodeJS](https://nodejs.org/en/) installed.
 2. Make sure you have the latest version of [Yarn](https://yarnpkg.com/en/docs/install) installed.
-3. Run `yarn` in the root folder of the repository to install all dependancies.
+3. Run `yarn` in the root folder of the repository to install all dependencies.
 
 #### Jekyll-Preact Arhictecture
 
 We are in the process of incrementally moving from a bespoke Jekyll-Preact architecture to a standard React (via [Create React App](https://github.com/facebook/create-react-app)) architecture.
 
-In order to build the current Jekyll-Preact assets you can run the following in the project root folder: 
+In order to build the current Jekyll-Preact assets you can run the following in the project root folder:
 
 ```
 yarn build
