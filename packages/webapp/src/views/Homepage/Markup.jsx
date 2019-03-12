@@ -9,6 +9,7 @@ import NotificationBar from './NotificationBar';
 import parliamentImg from './parliament-building-budget-speech.jpg';
 import Modal from './Modal';
 import Layout from '../../components/Layout';
+import TreeMap from '../../components/Treemap';
 
 
 
@@ -77,7 +78,9 @@ const Markup = (props) => {
     modal,
     closeModal,
     openModal,
-    videoUrl
+    videoUrl,
+    eventHandler,
+    selected
   } = props;
 
   const buttons = {
@@ -98,7 +101,10 @@ const Markup = (props) => {
       <NotificationBar {...{ notice, callToAction }} />
       {resources && <Resources {...{ resources }} />}
 
-
+      <div>
+        <TreeMap event={eventHandler}/>
+        <p>{JSON.stringify(selected)}</p>
+      </div>
 
     </Layout>
   );

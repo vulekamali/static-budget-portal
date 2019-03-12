@@ -6,9 +6,10 @@ import Markup from './Markup';
 class Homepage extends Component {
   constructor(props) {
     super(props);
-
+    this.eventHandler = this.eventHandler.bind(this);
     this.state = {
       modal: false,
+      selected: null,
     }
 
     this.events = {
@@ -25,6 +26,10 @@ class Homepage extends Component {
     this.setState({ modal: false });
   }
 
+  eventHandler(e) {
+    this.setState({ selected: e });
+  }
+
   render() {
     const { state, events, props } = this;
 
@@ -33,6 +38,8 @@ class Homepage extends Component {
       modal: state.modal,
       openModal: events.openModal,
       closeModal: events.closeModal,
+      eventHandler: this.eventHandler,
+      selected: state.selected
     }
 
     return <Markup {...passedProps } />
