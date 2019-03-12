@@ -21,32 +21,21 @@ class TreeMap extends Component {
       .layoutPadding(0)
       .data(data)
       .groupBy("name")
-      .sort((a,b) => a.budget - b.budget)
+      .sort((a,b) => a.budget - b.amount)
       .shapeConfig({
         labelConfig: {
           verticalAlign: "top"
         }
       })
-      .label((d) => `${d.name} - R${d.budget} Billion`)
+      .label((d) => `${d.name} - R${d.amount} Billion`)
       .select(this.treemap.current)
       .on("click",event)
-      .sum("budget")
+      .sum("amount")
       .render();
   }
 
   componentDidMount() {
     this.initTreemap(this.state.data,this.event);
-  }
-}
-
-class TreeMapComponent extends Component {
-
-  render() {
-    return (
-      <div>
-        <TreeMap event={this.eventHandler}/>
-      </div>
-    );
   }
 }
 
