@@ -1,0 +1,8 @@
+---
+---
+
+{% if (site.data.departments-treemap.index) %}
+  {{ site.data.departments-treemap.index | jsonify }}
+{% else %}
+  {}
+{% endif %}
