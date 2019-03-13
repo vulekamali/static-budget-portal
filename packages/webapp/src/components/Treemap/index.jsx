@@ -1,6 +1,12 @@
 import React, { Component } from 'react';
+import styled from 'styled-components';
 import * as d3plus from "d3plus";
 import data from "./data/test.json";
+
+const TreemapContained = styled.div`
+  height: 500px;
+  width: 1000px;
+`;
 
 class TreeMap extends Component {
   constructor(props) {
@@ -12,7 +18,7 @@ class TreeMap extends Component {
 
   render() {
     return (
-      <div ref={this.treemap} style={{ height: "500px", width: "1000px" }}></div>
+      <TreemapContained ref={this.treemap} />
     )
   }
 

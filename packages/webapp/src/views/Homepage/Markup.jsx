@@ -65,6 +65,12 @@ const Heading = styled(Typography)`
   }
 `;
 
+const TreemapWrapper = styled.div`
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+`;
+
 
 const Markup = (props) => {
   const {
@@ -101,10 +107,10 @@ const Markup = (props) => {
       <NotificationBar {...{ notice, callToAction }} />
       {resources && <Resources {...{ resources }} />}
 
-      <div>
+      <TreemapWrapper>
         <TreeMap event={eventHandler}/>
         <p>{JSON.stringify(selected)}</p>
-      </div>
+      </TreemapWrapper>
 
     </Layout>
   );
