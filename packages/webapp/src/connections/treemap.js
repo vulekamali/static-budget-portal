@@ -4,7 +4,7 @@ import { render } from 'react-dom';
 import TreeMap from '../components/Treemap';
 import Loading from '../views/Loading';
 
-const parseDepartments = (departments) => departments.map(department => ({
+const parseDepartments = department => ({
   id: department.slug,
   name: department.name,
   amount: department.amount,
@@ -12,7 +12,7 @@ const parseDepartments = (departments) => departments.map(department => ({
   financial_year: department.financial_year,
   area_percentage: department.area_percentage,
   detail: department.detail,
-}));
+});
 
 class PopulatedTreeMap extends Component {
   constructor(props) {
@@ -45,13 +45,18 @@ class PopulatedTreeMap extends Component {
 }
 
 
+// <div data-webapp="national-departments-treemap" data-webapp-departments="{{ data.departments | jsonify | escape  }}"
+
 const node = document.querySelector('[data-webapp="national-departments-treemap"]');
+const departmentsString = document.querySelector('[data-webapp-departments]');
+const departmentsArray = JSON.parse(customUnescape(departmentsString));
+const departments = departmentsArray.map(parseDepartments);
 
 
 const connection = () => {
   if (node) {
     return render(
-        createElement(PopulatedTreeMap)
+        createElement(PopulatedTreeMap, { departments })
     )
   }
 };

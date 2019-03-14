@@ -3,6 +3,7 @@ import t from 'prop-types';
 import Markup from './Markup';
 
 
+
 class Homepage extends Component {
   constructor(props) {
     super(props);
@@ -40,7 +41,7 @@ class Homepage extends Component {
       closeModal: events.closeModal,
       eventHandler: this.eventHandler,
       selected: state.selected
-    }
+    };
 
     return <Markup {...passedProps } />
   }

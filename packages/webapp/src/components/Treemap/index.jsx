@@ -1,13 +1,11 @@
 import React, { Component } from 'react';
 import * as d3plus from "d3plus";
-import data from "./data/test.json";
 
 class TreeMap extends Component {
   constructor(props) {
     super(props);
     this.treemap = React.createRef();
     this.event = props.event;
-    this.state = { data }
   }
 
   render() {
@@ -35,7 +33,7 @@ class TreeMap extends Component {
   }
 
   componentDidMount() {
-    this.initTreemap(this.state.data,this.event);
+    this.initTreemap(this.props.departments,this.event);
   }
 }
 
