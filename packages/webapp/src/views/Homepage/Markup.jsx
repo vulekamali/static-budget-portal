@@ -78,6 +78,8 @@ const Markup = (props) => {
     closeModal,
     openModal,
     videoUrl,
+    eventHandler,
+    selected,
   } = props;
 
   const buttons = {
@@ -98,7 +100,7 @@ const Markup = (props) => {
       <NotificationBar {...{ notice, callToAction }} />
       {resources && <Resources {...{ resources }} />}
 
-      <TreemapSection />
+      <TreemapSection eventHandler={eventHandler} selected={selected} />
 
     </Layout>
   );
