@@ -1,7 +1,9 @@
+// @ts-nocheck
 import React from 'react';
 import styled from 'styled-components';
 import t from 'prop-types';
 import { darken } from 'polished';
+import trimValues from '../../helpers/trimValues';
 import { Typography, Button } from '@material-ui/core';
 import Icon from '@material-ui/icons/ArrowForward';
 import TreeMap from './Treemap';
@@ -157,7 +159,7 @@ const callTreeMap = (eventHandler, selected) => (
     <DetailsContainer>
       <div>
         <Department>{selected ? selected.name : `National departments budget`}</Department>
-        <Amount>R{selected ? selected.amount : `Total`} trillion </Amount>
+        <Amount>R{selected ? trimValues(selected.amount) : `Total`}</Amount>
       </div>
       <LinkWrapper href='https://www.figma.com/file/g2t3fWdsAh7XND5eiY1ImwOb/Vulekamali?node-id=0%3A1'>
         {selected ? callButtonExplore(selected) : null}
