@@ -9,8 +9,8 @@ import NotificationBar from './NotificationBar';
 import parliamentImg from './parliament-building-budget-speech.jpg';
 import Modal from './Modal';
 import Layout from '../../components/Layout';
-import TreeMap from '../../components/Treemap';
-
+import TreemapSection from '../../components/TreemapSection';
+import SpeedDial from '../../components/SpeedDial';
 
 
 
@@ -66,9 +66,39 @@ const Heading = styled(Typography)`
 `;
 
 const TreemapWrapper = styled.div`
+  margin: 0 auto;
+  max-width: 1000px;
+`;
+
+const BudgetContainer = styled.div`
   display: flex;
-  flex-direction: column;
+  justify-content: space-between;
   align-items: center;
+  border-bottom: 1px solid #000;
+  margin-bottom: 30px;
+`;
+
+const IconAndDates = styled.div`
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+  align-items: center;
+  padding-bottom: 30px;
+`;
+
+const BudgetHeading = styled(Typography)`
+  border-right: 1px solid #000;
+
+  && {
+    font-weight: 700;
+    font-size: 32px;
+    line-height: 65px;
+    color: #000;
+    text-transform: Capitalize;
+    width: 100%;
+    min-width: none;
+    padding-bottom: 30px;
+  }
 `;
 
 
@@ -86,7 +116,7 @@ const Markup = (props) => {
     openModal,
     videoUrl,
     eventHandler,
-    selected
+    selected,
   } = props;
 
   const buttons = {
@@ -107,10 +137,7 @@ const Markup = (props) => {
       <NotificationBar {...{ notice, callToAction }} />
       {resources && <Resources {...{ resources }} />}
 
-      <TreemapWrapper>
-        <TreeMap event={eventHandler}/>
-        <p>{JSON.stringify(selected)}</p>
-      </TreemapWrapper>
+      <TreemapSection />
 
     </Layout>
   );
