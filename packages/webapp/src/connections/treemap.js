@@ -1,8 +1,6 @@
-import axios from 'axios';
-import React, { createElement, Component } from 'react';
+import { createElement } from 'react';
 import { render } from 'react-dom';
 import TreeMap from '../components/Treemap';
-import Loading from '../views/Loading';
 
 const parseDepartments = department => ({
   id: department.slug,
@@ -14,36 +12,6 @@ const parseDepartments = department => ({
   detail: department.detail,
 });
 
-class PopulatedTreeMap extends Component {
-  constructor(props) {
-    super(props);
-
-    this.state = {
-      loading: true,
-      departments: [],
-    }
-  }
-
-  componentDidMount() {
-    axios.get('/json/department-treemap.json')
-      .then(({ data }) => {
-        this.setState({
-        loading: false,
-        departments: parseDepartments(data['expenditure']['national']),
-      })})
-  }
-
-  render() {
-    const { departments, loading } = this.state;
-
-    if (loading) {
-      return createElement(Loading);
-    }
-
-    return createElement(TreeMap, { departments })
-  }
-}
-
 
 const node = document.querySelector('[data-webapp="national-departments-treemap"]');
 const departmentsString = document.querySelector('[data-webapp-departments]');
@@ -54,10 +22,9 @@ const departments = departmentsArray.map(parseDepartments);
 const connection = () => {
   if (node) {
     return render(
-        createElement(PopulatedTreeMap, { departments })
+        createElement(TreeMap, { departments })
     )
   }
 };
-
 
 export default connection();
