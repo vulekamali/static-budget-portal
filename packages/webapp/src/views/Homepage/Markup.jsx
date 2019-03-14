@@ -72,7 +72,6 @@ const Markup = (props) => {
     subheading,
     notice,
     resources,
-    image,
     callToAction,
     modal,
     closeModal,

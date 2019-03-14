@@ -133,15 +133,43 @@ const FooterDetails = styled(Typography)`
   }
 `;
 
+const callTreeMap = (eventHandler) => (
+  <React.Fragment>
+    <DetailsContainer>
+      <div>
+        <Department>National departments budget</Department>
+        <Amount>R1.67 trillion </Amount>
+      </div>
+      <LinkWrapper href='https://www.figma.com/file/g2t3fWdsAh7XND5eiY1ImwOb/Vulekamali?node-id=0%3A1'>
+        <ButtonStyle>
+          <span>Explore this department</span>
+          <Icon />
+        </ButtonStyle>
+      </LinkWrapper>
+    </DetailsContainer>
+    <TreeMap event={eventHandler} />
+    <FooterContainer>
+      <FooterDetails>Budget data from 1 March 2017 - 28 February 2018</FooterDetails>
+      <FooterDetails>Direct charges against the National Revenue Fund are excluded</FooterDetails>
+    </FooterContainer>
+  </React.Fragment>
+);
 
-const TreeMapSection = (props) => {
+const callNotice = () => (
+  <React.Fragment>
+    <Typography>The data for the provincial budget summary has not been released yet</Typography>
+  </React.Fragment>
+);
 
-  const { eventHandler, selected } = props;
+
+const Markup = (props) => {
+
+  const { eventHandler, selected, isNationalBudget } = props;
 
   return (
     <TreemapWrapper>
       <BudgetContainer>
-        <BudgetHeading>National Budget Summary</BudgetHeading>
+        <BudgetHeading>{isNationalBudget ? `National Budget Summary` : `Provincial Budget Summary`}</BudgetHeading>
         <IconAndDates>
           <SpeedDial />
           <div>
@@ -149,26 +177,10 @@ const TreeMapSection = (props) => {
           </div>
         </IconAndDates>
       </BudgetContainer>
-      <DetailsContainer>
-        <div>
-          <Department>National departments budget</Department>
-          <Amount>R1.67 trillion </Amount>
-        </div>
-        <LinkWrapper href='https://www.figma.com/file/g2t3fWdsAh7XND5eiY1ImwOb/Vulekamali?node-id=0%3A1'>
-          <ButtonStyle>
-            <span>Explore this department  </span>
-            <Icon />
-          </ButtonStyle>
-        </LinkWrapper>
-      </DetailsContainer>
-      <TreeMap event={eventHandler} />
-      <FooterContainer>
-        <FooterDetails>Budget data from 1 March 2017 - 28 February 2018</FooterDetails>
-        <FooterDetails>Direct charges against the National Revenue Fund are excluded</FooterDetails>
-      </FooterContainer>
+      {isNationalBudget ? callTreeMap(eventHandler) : callNotice()}
       <p>{JSON.stringify(selected)}</p>
     </TreemapWrapper>
   );
 };
 
-export default TreeMapSection;
+export default Markup;
