@@ -93,6 +93,29 @@ const Amount = styled(Typography)`
   }
 `;
 
+const PhaseContainer = styled.div`
+  margin-top: 30px;
+`;
+
+const BudgetPhaseButton = styled(Button)`
+
+  && {
+    background-color: rgba(0, 0, 0, 0.1);
+    text-transform: none;
+    box-shadow: none;
+    font-size: 20px;
+    line-height: 24px;
+    text-align: center;
+    letter-spacing: 0.15px; 
+    color: #000;
+    padding: 10px 20px;
+
+    &:hover {
+      background-color: rgba(0, 0, 0, 0.2);
+    }
+  }
+`;
+
 const LinkWrapper = styled.a`
   text-decoration: none;
 `;
@@ -160,6 +183,9 @@ const callTreeMap = (eventHandler, selected) => (
       <div>
         <Department>{selected ? selected.name : `National departments budget`}</Department>
         <Amount>R{selected ? trimValues(selected.amount) : `Total`}</Amount>
+        <PhaseContainer>
+          <BudgetPhaseButton onClick={() => console.log('do something')}>Original Budget</BudgetPhaseButton>
+        </PhaseContainer>
       </div>
       <LinkWrapper href='https://www.figma.com/file/g2t3fWdsAh7XND5eiY1ImwOb/Vulekamali?node-id=0%3A1'>
         {selected ? callButtonExplore(selected) : null}
