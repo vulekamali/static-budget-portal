@@ -98,7 +98,7 @@ const Markup = (props) => {
       </Image>
       <NotificationBar {...{ notice, callToAction }} />
       {resources && <Resources {...{ resources }} />}
-      <TreemapSection eventHandler={eventHandler} selected={selected} />
+      <TreemapSection eventHandler={eventHandler} selected={selected} isNationalBudget />
     </Layout>
   );
 };

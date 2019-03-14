@@ -99,7 +99,8 @@ const ButtonStyle = styled(Button)`
   width: 295px;
 
   && {
-    background-color: #E57373;
+    /* background-color: #E57373; */
+    background-color: ${({ selected }) => selected.color}
     text-transform: none;
     box-shadow: none;
     min-width: 0;
@@ -133,15 +134,27 @@ const FooterDetails = styled(Typography)`
   }
 `;
 
-const callTreeMap = (eventHandler) => (
+const NoticeMessage = styled(Typography)`
+
+  && {
+    font-weight: 700;
+    font-size: 32px;
+    line-height: 65px;
+    color: #666;
+    text-transform: Uppercase;
+    text-align: center;
+  }
+`;
+
+const callTreeMap = (eventHandler, selected) => (
   <React.Fragment>
     <DetailsContainer>
       <div>
         <Department>National departments budget</Department>
-        <Amount>R1.67 trillion </Amount>
+        <Amount>R{selected.amount} trillion </Amount>
       </div>
       <LinkWrapper href='https://www.figma.com/file/g2t3fWdsAh7XND5eiY1ImwOb/Vulekamali?node-id=0%3A1'>
-        <ButtonStyle>
+        <ButtonStyle {...{selected}}>
           <span>Explore this department</span>
           <Icon />
         </ButtonStyle>
@@ -157,7 +170,7 @@ const callTreeMap = (eventHandler) => (
 
 const callNotice = () => (
   <React.Fragment>
-    <Typography>The data for the provincial budget summary has not been released yet</Typography>
+    <NoticeMessage>The data for the provincial budget summary has not been released yet</NoticeMessage>
   </React.Fragment>
 );
 
@@ -177,7 +190,7 @@ const Markup = (props) => {
           </div>
         </IconAndDates>
       </BudgetContainer>
-      {isNationalBudget ? callTreeMap(eventHandler) : callNotice()}
+      {isNationalBudget ? callTreeMap(eventHandler, selected) : callNotice()}
       <p>{JSON.stringify(selected)}</p>
     </TreemapWrapper>
   );

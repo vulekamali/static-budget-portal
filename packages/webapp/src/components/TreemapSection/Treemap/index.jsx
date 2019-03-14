@@ -22,21 +22,24 @@ class TreeMap extends Component {
       "budget_phase": "Main appropriation",
       "financial_year": 2018,
       "name": "Agriculture, Forestry and Fisheries",
-      "detail": "fake_url_path_1"
+      "detail": "fake_url_path_1",
+      "color": "red"
     },
     {
       "amount": 4809420000,
       "budget_phase": "Main appropriation",
       "financial_year": 2018,
       "name": "Health",
-      "detail": "fake_url_path_2"
+      "detail": "fake_url_path_2",
+      "color": "blue"
     },
     {
       "amount": 3653650000,
       "budget_phase": "Main appropriation",
       "financial_year": 2018,
       "name": "Police",
-      "detail": "fake_url_path_3"
+      "detail": "fake_url_path_3",
+      "color": "yellow"
     }
   ]
 
@@ -52,6 +55,7 @@ class TreeMap extends Component {
       .data(data)
       .groupBy("name")
       .sort((a,b) => a.budget - b.amount)
+      .color("color")
       .shapeConfig({
         labelConfig: {
           verticalAlign: "top"
