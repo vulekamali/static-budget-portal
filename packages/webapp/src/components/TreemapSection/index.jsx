@@ -2,6 +2,7 @@ import React from 'react';
 import styled from 'styled-components';
 import t from 'prop-types';
 import { Typography, Button } from '@material-ui/core';
+import Icon from '@material-ui/icons/ArrowDownward';
 import TreeMap from './Treemap';
 import SpeedDial from '../SpeedDial';
 
@@ -41,20 +42,44 @@ const BudgetHeading = styled(Typography)`
   }
 `;
 
-const TreeMapSection = ({ eventHandler, selected }) => (
-  <TreemapWrapper>
-    <BudgetContainer>
-      <BudgetHeading>Consolidated Budget Summary</BudgetHeading>
-      <IconAndDates>
-        <SpeedDial />
+const DetailsContainer = styled.div``;
+
+const iconSize = {
+  height:'16px',
+  width: '16px',
+}
+
+const TreeMapSection = (props) => {
+
+  const { eventHandler, selected } = props;
+
+  return (
+    <TreemapWrapper>
+      <BudgetContainer>
+        <BudgetHeading>Consolidated Budget Summary</BudgetHeading>
+        <IconAndDates>
+          <SpeedDial />
+          <div>
+            <Button onClick={() => console.log('do something')}>2017-18</Button>
+          </div>
+        </IconAndDates>
+      </BudgetContainer>
+      <DetailsContainer>
         <div>
-          <Button onClick={() => console.log('do something')}>2017-18</Button>
+          <Typography>National: Learning & Culture (61%)</Typography>
+          <Typography>R183.5 billion</Typography>
         </div>
-      </IconAndDates>
-    </BudgetContainer>
-    <TreeMap event={eventHandler} />
-    <p>{JSON.stringify(selected)}</p>
-  </TreemapWrapper>
-);
+        <a href='https://www.figma.com/file/g2t3fWdsAh7XND5eiY1ImwOb/Vulekamali?node-id=0%3A1'>
+          <Button>
+            <span>Explore this focus area</span>
+            <Icon style={iconSize} />
+          </Button>
+        </a>
+      </DetailsContainer>
+      <TreeMap event={eventHandler} />
+      <p>{JSON.stringify(selected)}</p>
+    </TreemapWrapper>
+  );
+};
 
 export default TreeMapSection;
