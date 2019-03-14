@@ -45,8 +45,6 @@ class PopulatedTreeMap extends Component {
 }
 
 
-// <div data-webapp="national-departments-treemap" data-webapp-departments="{{ data.departments | jsonify | escape  }}"
-
 const node = document.querySelector('[data-webapp="national-departments-treemap"]');
 const departmentsString = document.querySelector('[data-webapp-departments]');
 const departmentsArray = JSON.parse(customUnescape(departmentsString));
