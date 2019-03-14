@@ -9,14 +9,7 @@ class Homepage extends Component {
     this.eventHandler = this.eventHandler.bind(this);
     this.state = {
       modal: false,
-      selected: {
-        "amount": 6408750000,
-        "budget_phase": "Main appropriation",
-        "financial_year": 2018,
-        "name": "Agriculture, Forestry and Fisheries",
-        "detail": "fake_url_path_1",
-        "color": "red"
-      }
+      selected: null
     }
 
     this.events = {

@@ -99,8 +99,7 @@ const ButtonStyle = styled(Button)`
   width: 295px;
 
   && {
-    /* background-color: #E57373; */
-    background-color: ${({ selected }) => selected.color}
+    background-color: ${({ selected }) => (selected ? selected.color : null)}
     text-transform: none;
     box-shadow: none;
     min-width: 0;
@@ -146,18 +145,22 @@ const NoticeMessage = styled(Typography)`
   }
 `;
 
+const callButtonExplore = (selected) => (
+  <ButtonStyle {...{selected}}>
+    <span>Explore this department</span>
+    <Icon />
+  </ButtonStyle>
+);
+
 const callTreeMap = (eventHandler, selected) => (
   <React.Fragment>
     <DetailsContainer>
       <div>
-        <Department>National departments budget</Department>
-        <Amount>R{selected.amount} trillion </Amount>
+        <Department>{selected ? selected.name : `National departments budget`}</Department>
+        <Amount>R{selected ? selected.amount : `Total`} trillion </Amount>
       </div>
       <LinkWrapper href='https://www.figma.com/file/g2t3fWdsAh7XND5eiY1ImwOb/Vulekamali?node-id=0%3A1'>
-        <ButtonStyle {...{selected}}>
-          <span>Explore this department</span>
-          <Icon />
-        </ButtonStyle>
+        {selected ? callButtonExplore(selected) : null}
       </LinkWrapper>
     </DetailsContainer>
     <TreeMap event={eventHandler} />
