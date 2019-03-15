@@ -7,6 +7,7 @@ import { Typography, Button } from '@material-ui/core';
 import Icon from '@material-ui/icons/ArrowForward';
 import TreeMap from './Treemap';
 import SpeedDial from '../SpeedDial';
+import data from './Treemap/data/test.json';
 
 const Wrapper = styled.div`
   display: flex;
@@ -263,7 +264,7 @@ const callTreeMap = (eventHandler, selected) => (
       </div>
       {selected ? callButtonExplore(selected) : null}
     </DetailsContainer>
-    <TreeMap event={eventHandler} />
+    <TreeMap event={eventHandler} data={data} />
     <FooterContainer>
       <FooterDetails>Budget data from 1 March 2017 - 28 February 2018</FooterDetails>
       <FooterDetails>Direct charges against the National Revenue Fund are excluded</FooterDetails>
