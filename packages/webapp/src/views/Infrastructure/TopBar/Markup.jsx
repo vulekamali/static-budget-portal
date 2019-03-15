@@ -79,25 +79,10 @@ const StyledCloseIcon = styled(CloseIcon)`
 
 const TextContainer = styled.div`
   display: none;
-  ${'' /* leaving styling commented out
-  due to temporary change in design still
-  to be confirmed as permanent */}
-  ${'' /* position: absolute;
-  top: 60px;
-  left: 0;
-  padding-top: 16px;
-  padding-bottom: 16px;
-  width: 100%;
-  display: flex;
-  justify-content: center;
-  background-color: #EDEDED; */}
 
-    @media screen and (min-width: 450px) {
-      display: block;
-      ${'' /* position: static;
-      top: 0;
-      background-color: transparent; */}
-    }
+  @media screen and (min-width: 450px) {
+    display: block;
+  }
 `;
 
 const WhiteText = styled(Typography)`

@@ -1,5 +1,10 @@
 import React, { Component } from 'react';
+import styled from 'styled-components';
 import * as d3plus from "d3plus";
+
+const TreemapContained = styled.div`
+  height: 500px;
+`;
 
 class TreeMap extends Component {
   constructor(props) {
@@ -10,7 +15,7 @@ class TreeMap extends Component {
 
   render() {
     return (
-      <div ref={this.treemap} style={{ height: "500px", width: "1000px" }}></div>
+      <TreemapContained ref={this.treemap} />
     )
   }
 
@@ -20,6 +25,7 @@ class TreeMap extends Component {
       .data(data)
       .groupBy("name")
       .sort((a,b) => a.budget - b.amount)
+      .color("color")
       .shapeConfig({
         labelConfig: {
           verticalAlign: "top"
@@ -33,7 +39,7 @@ class TreeMap extends Component {
   }
 
   componentDidMount() {
-    this.initTreemap(this.props.departments,this.event);
+    this.initTreemap(this.props.data,this.event);
   }
 }
 

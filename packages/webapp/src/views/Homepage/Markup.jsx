@@ -9,8 +9,7 @@ import NotificationBar from './NotificationBar';
 import parliamentImg from './parliament-building-budget-speech.jpg';
 import Modal from './Modal';
 import Layout from '../../components/Layout';
-import TreeMap from '../../components/Treemap';
-
+import TreemapSection from '../../components/TreemapSection';
 
 
 
@@ -73,7 +72,6 @@ const Markup = (props) => {
     subheading,
     notice,
     resources,
-    image,
     callToAction,
     modal,
     closeModal,
@@ -81,7 +79,6 @@ const Markup = (props) => {
     videoUrl,
     eventHandler,
     selected,
-    departments
   } = props;
 
   const buttons = {
@@ -101,6 +98,8 @@ const Markup = (props) => {
       </Image>
       <NotificationBar {...{ notice, callToAction }} />
       {resources && <Resources {...{ resources }} />}
+      <TreemapSection eventHandler={eventHandler} selected={selected} isNationalBudget />
+      <TreemapSection eventHandler={eventHandler} selected={selected} />
     </Layout>
   );
 };

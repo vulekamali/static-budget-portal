@@ -10,12 +10,13 @@ class Homepage extends Component {
     this.eventHandler = this.eventHandler.bind(this);
     this.state = {
       modal: false,
-      selected: null,
+      selected: null
     }
 
     this.events = {
       openModal: this.openModal.bind(this),
       closeModal: this.closeModal.bind(this),
+      eventHandler: this.eventHandler.bind(this),
     }
   }
 
@@ -39,7 +40,7 @@ class Homepage extends Component {
       modal: state.modal,
       openModal: events.openModal,
       closeModal: events.closeModal,
-      eventHandler: this.eventHandler,
+      eventHandler: events.eventHandler,
       selected: state.selected
     };
 
