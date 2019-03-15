@@ -401,4 +401,3 @@ else:
     ensure_file_dirs(dataset_list_path)
     with open(dataset_list_path, 'wb') as dataset_list_file:
         dataset_list_file.write(r.text)
-    write_basic_page(listing_url_path, r.text, 'departments-treemap')
