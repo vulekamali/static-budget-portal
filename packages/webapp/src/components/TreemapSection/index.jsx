@@ -12,7 +12,11 @@ const Wrapper = styled.div`
   display: flex;
   flex-direction: column;
   align-items: center;
-  margin: 0 20px;
+  margin: 40px 20px;
+
+  @media screen and (min-width: 450px) {
+    margin: 70px 20px;
+  }
 `;
 
 const TreemapWrapper = styled.div`
@@ -21,12 +25,39 @@ const TreemapWrapper = styled.div`
 `;
 
 const BudgetContainer = styled.div`
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
   border-bottom: 1px solid #000;
-  margin-bottom: 30px;
+  margin-bottom: 20px;
   width: 100%;
+
+  @media screen and (min-width: 450px) {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 30px;
+  }
+`;
+
+const BudgetHeading = styled(Typography)`
+
+  && {
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 24px;
+    color: #000;
+    text-transform: Capitalize;
+    width: 100%;
+    padding-bottom: 20px;
+    text-align: center;
+
+    @media screen and (min-width: 450px) {
+      font-size: 24px;
+      border-right: 1px solid #000;
+      font-size: 32px;
+      line-height: 65px;
+      text-align: left;
+      padding-bottom: 30px;
+    }
+  }
 `;
 
 const IconAndDates = styled.div`
@@ -34,20 +65,10 @@ const IconAndDates = styled.div`
   width: 100%;
   justify-content: space-between;
   align-items: center;
-  padding-bottom: 30px;
-  padding-left: 30px;
-`;
+  padding-bottom: 10px;
 
-const BudgetHeading = styled(Typography)`
-  border-right: 1px solid #000;
-
-  && {
-    font-weight: 700;
-    font-size: 32px;
-    line-height: 65px;
-    color: #000;
-    text-transform: Capitalize;
-    width: 100%;
+  @media screen and (min-width: 450px) {
+    padding-left: 30px;
     padding-bottom: 30px;
   }
 `;
@@ -59,66 +80,94 @@ const DateButton = styled(Button)`
     text-transform: none;
     box-shadow: none;
     font-weight: 700;
-    font-size: 24px;
+    font-size: 16px;
     line-height: 24px;
     text-align: center;
     letter-spacing: 0.15px; 
     color: #000;
-    padding: 10px 20px;
 
     &:hover {
       background-color: rgba(0, 0, 0, 0.2);
+    }
+
+    @media screen and (min-width: 450px) {
+      font-size: 24px;
+      padding: 10px 20px;
     }
   }
 `;
 
 const DetailsContainer = styled.div`
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  padding-bottom: 35px;
+  padding-bottom: 10px;
+
+  @media screen and (min-width: 450px) {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-bottom: 35px;
+  }
 `;
 
 const Department = styled(Typography)`
 
   && {
-    font-size: 24px;
-    line-height: 65px;
+    font-size: 20px;
+    line-height: 20px;
     color: #000;
     text-transform: Capitalize;
-    padding-bottom: 20px;
+
+    @media screen and (min-width: 450px) {
+      font-size: 24px;
+      padding-bottom: 20px;
+      line-height: 65px;
+    }
   }
 `;
 
 const Amount = styled(Typography)`
 
   && {
-    font-size: 50px;
+    font-size: 24px;
     font-weight: 700;
-    line-height: 65px;
+    line-height: 20px;
     color: #000;
+    padding-top: 20px;
+
+    @media screen and (min-width: 450px) {
+      font-size: 50px;
+      line-height: 65px;
+      padding-top: none;
+    }
   }
 `;
 
 const PhaseContainer = styled.div`
-  margin-top: 30px;
+  margin-top: 20px;
+
+  @media screen and (min-width: 450px) {
+    margin-top: 30px;
+  }
 `;
 
 const BudgetPhaseButton = styled(Button)`
 
-  && {
+  &&&& {
     background-color: rgba(0, 0, 0, 0.1);
     text-transform: none;
     box-shadow: none;
-    font-size: 20px;
+    font-size: 16px;
     line-height: 24px;
     text-align: center;
     letter-spacing: 0.15px; 
     color: #000;
-    padding: 10px 20px;
 
     &:hover {
       background-color: rgba(0, 0, 0, 0.2);
+    }
+
+    @media screen and (min-width: 450px) {
+      font-size: 20px;
+      padding: 10px 20px;
     }
   }
 `;
@@ -131,29 +180,40 @@ const ButtonStyle = styled(Button)`
   width: 295px;
 
   && {
-    background-color: ${({ selected }) => (selected ? selected.color : null)}
+    background-color: ${({ selected }) => (selected ? selected.color : null)};
     text-transform: none;
     box-shadow: none;
     min-width: 0;
     font-weight: 700;
-    font-size: 20px;
-    line-height: 65px;
+    font-size: 16px;
+    line-height: 30px;
     text-align: center;
     color: #000;
-    padding-right: 20px;
-    padding-left: 20px;
     display: flex;
     justify-content: space-between;
     align-items: center;
+    margin-top: 10px;
 
     &:hover {
       background-color: ${darken(0.1, '#E57373')};
+    }
+
+    @media screen and (min-width: 450px) {
+      font-size: 20px;
+      line-height: 65px;
+      padding-right: 20px;
+      padding-left: 20px;
+      margin-top: none;
     }
   }
 `;
 
 const FooterContainer = styled.div`
-  margin-top: 25px;
+  margin-top: 10px;
+
+  @media screen and (min-width: 450px) {
+    margin-top: 25px;
+  }
 `;
 
 const FooterDetails = styled(Typography)`
@@ -162,6 +222,11 @@ const FooterDetails = styled(Typography)`
     font-size: 12px;
     line-height: 24px;
     color: #000;
+    text-align: center;
+
+    @media screen and (min-width: 450px) {
+      text-align: left;
+    }
   }
 `;
 
@@ -193,7 +258,7 @@ const callTreeMap = (eventHandler, selected) => (
         <Department>{selected ? selected.name : `National departments budget`}</Department>
         <Amount>R{selected ? trimValues(selected.amount) : `Total`}</Amount>
         <PhaseContainer>
-          <BudgetPhaseButton onClick={() => console.log('do something')}>Original Budget</BudgetPhaseButton>
+          <BudgetPhaseButton disabled onClick={() => console.log('do something')}>Original Budget</BudgetPhaseButton>
         </PhaseContainer>
       </div>
       {selected ? callButtonExplore(selected) : null}
@@ -225,12 +290,11 @@ const Markup = (props) => {
           <IconAndDates>
             <SpeedDial />
             <div>
-              <DateButton onClick={() => console.log('do something')}>2017-18</DateButton>
+              <DateButton disabled onClick={() => console.log('do something')}>2017-18</DateButton>
             </div>
           </IconAndDates>
         </BudgetContainer>
         {isNationalBudget ? callTreeMap(eventHandler, selected) : callNotice()}
-        <p>{JSON.stringify(selected)}</p>
       </TreemapWrapper>
     </Wrapper>
   );
