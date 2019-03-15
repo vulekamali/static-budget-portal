@@ -171,10 +171,12 @@ const NoticeMessage = styled(Typography)`
 `;
 
 const callButtonExplore = (selected) => (
-  <ButtonStyle {...{selected}}>
-    <span>Explore this department</span>
-    <Icon />
-  </ButtonStyle>
+  <LinkWrapper>
+    <ButtonStyle {...{selected}}>
+      <span>Explore this department</span>
+      <Icon />
+    </ButtonStyle>
+  </LinkWrapper>
 );
 
 const callTreeMap = (eventHandler, selected) => (
@@ -187,9 +189,7 @@ const callTreeMap = (eventHandler, selected) => (
           <BudgetPhaseButton onClick={() => console.log('do something')}>Original Budget</BudgetPhaseButton>
         </PhaseContainer>
       </div>
-      <LinkWrapper href='https://www.figma.com/file/g2t3fWdsAh7XND5eiY1ImwOb/Vulekamali?node-id=0%3A1'>
-        {selected ? callButtonExplore(selected) : null}
-      </LinkWrapper>
+      {selected ? callButtonExplore(selected) : null}
     </DetailsContainer>
     <TreeMap event={eventHandler} />
     <FooterContainer>
