@@ -243,7 +243,7 @@ const NoticeMessage = styled(Typography)`
 `;
 
 const callButtonExplore = (selected) => (
-  <LinkWrapper>
+  <LinkWrapper href={selected.detail}>
     <ButtonStyle {...{selected}}>
       <span>Explore this department</span>
       <Icon />
