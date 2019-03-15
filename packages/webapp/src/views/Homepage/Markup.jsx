@@ -80,7 +80,8 @@ const Markup = (props) => {
     openModal,
     videoUrl,
     eventHandler,
-    selected
+    selected,
+    departments
   } = props;
 
   const buttons = {
@@ -100,12 +101,6 @@ const Markup = (props) => {
       </Image>
       <NotificationBar {...{ notice, callToAction }} />
       {resources && <Resources {...{ resources }} />}
-
-      <div>
-        <TreeMap event={eventHandler}/>
-        <p>{JSON.stringify(selected)}</p>
-      </div>
-
     </Layout>
   );
 };

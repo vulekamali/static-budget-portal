@@ -12,6 +12,9 @@ layout: page-shell
   <div data-webapp="homepage-hero">
     {% include connections/homepage-hero/index.html %}
   </div>
+  <div data-webapp="national-departments-treemap" data-webapp-departments="{{ site.data.treemap.index | jsonify | escape  }}">
+  </div>
+
   <div class="Container u-paddingTop25">
     <div class="Features">
       {% for feature in page_data.features_list %}
