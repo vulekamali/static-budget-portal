@@ -1,4 +1,3 @@
-// @ts-nocheck
 import React from 'react';
 import styled from 'styled-components';
 import t from 'prop-types';
@@ -9,8 +8,15 @@ import Icon from '@material-ui/icons/ArrowForward';
 import TreeMap from './Treemap';
 import SpeedDial from '../SpeedDial';
 
+const Wrapper = styled.div`
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 0 20px;
+`;
+
 const TreemapWrapper = styled.div`
-  margin: 70px auto;
+  width: 100%;
   max-width: 1000px;
 `;
 
@@ -20,6 +26,7 @@ const BudgetContainer = styled.div`
   align-items: center;
   border-bottom: 1px solid #000;
   margin-bottom: 30px;
+  width: 100%;
 `;
 
 const IconAndDates = styled.div`
@@ -211,19 +218,21 @@ const Markup = (props) => {
   const { eventHandler, selected, isNationalBudget } = props;
 
   return (
-    <TreemapWrapper>
-      <BudgetContainer>
-        <BudgetHeading>{isNationalBudget ? `National Budget Summary` : `Provincial Budget Summary`}</BudgetHeading>
-        <IconAndDates>
-          <SpeedDial />
-          <div>
-            <DateButton onClick={() => console.log('do something')}>2017-18</DateButton>
-          </div>
-        </IconAndDates>
-      </BudgetContainer>
-      {isNationalBudget ? callTreeMap(eventHandler, selected) : callNotice()}
-      <p>{JSON.stringify(selected)}</p>
-    </TreemapWrapper>
+    <Wrapper>
+      <TreemapWrapper>
+        <BudgetContainer>
+          <BudgetHeading>{isNationalBudget ? `National Budget Summary` : `Provincial Budget Summary`}</BudgetHeading>
+          <IconAndDates>
+            <SpeedDial />
+            <div>
+              <DateButton onClick={() => console.log('do something')}>2017-18</DateButton>
+            </div>
+          </IconAndDates>
+        </BudgetContainer>
+        {isNationalBudget ? callTreeMap(eventHandler, selected) : callNotice()}
+        <p>{JSON.stringify(selected)}</p>
+      </TreemapWrapper>
+    </Wrapper>
   );
 };
 

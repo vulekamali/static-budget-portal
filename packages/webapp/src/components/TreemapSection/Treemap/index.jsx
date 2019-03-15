@@ -5,7 +5,6 @@ import * as d3plus from "d3plus";
 
 const TreemapContained = styled.div`
   height: 500px;
-  width: 1000px;
 `;
 
 class TreeMap extends Component {
@@ -13,7 +12,6 @@ class TreeMap extends Component {
     super(props);
     this.treemap = React.createRef();
     this.event = props.event;
-    // this.state = { data }
   }
 
   data = [
