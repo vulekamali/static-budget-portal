@@ -13,7 +13,18 @@ const originalBudget = amounts.filter(function(amount) {
 const sorted = originalBudget.sort((a, b) => b.amount - a.amount);
 const biggest = sorted.slice(0, 10);
 
-console.log(originalBudget);
+console.log(biggest);
+
+function getRandomColor() {
+  var letters = '0123456789ABCDEF';
+  var color = '#';
+  for (var i = 0; i < 6; i++) {
+    color += letters[Math.floor(Math.random() * 16)];
+  }
+  return color;
+}
+
+const coloured = biggest.map(amount => amount.color = getRandomColor());
 
 const connection = () => {
   if (node) {
