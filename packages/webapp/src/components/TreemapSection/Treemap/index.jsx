@@ -28,7 +28,7 @@ class TreeMap extends Component {
       .id("name")
       .size("amount")
       .font({ "family": "Roboto", size: 15 })
-      .labels({"align": "center", "valign": "top", "padding": 50, "resize": false })
+      .labels({"align": "left", "valign": "top", "padding": 50, "resize": false, text: d => `${d.name} - ${trimValues(d.amount)}` })
       .color(d => d.color ? d.color : "")
       .legend(false)
       .resize(true)
