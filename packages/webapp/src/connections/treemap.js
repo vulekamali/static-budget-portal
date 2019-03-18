@@ -1,5 +1,6 @@
 import { createElement } from 'react';
 import { render } from 'react-dom';
+import trimValues from '../helpers/trimValues';
 import TreemapSection from '../components/TreemapSection';
 import { colorArray } from '../components/TreemapSection/Treemap/data/colors'
 
@@ -12,9 +13,10 @@ const originalBudget = amounts.filter(function(amount) {
 });
 const sorted = originalBudget.sort((a, b) => b.amount - a.amount);
 const biggest = sorted.slice(0, 10);
+
 const colored = index => colorArray[index];
 
-const coloured = biggest.map((amount, index) => ({
+const AddedColor = biggest.map((amount, index) => ({
   color: colored(index),
   ...amount
 }));
@@ -22,7 +24,7 @@ const coloured = biggest.map((amount, index) => ({
 const connection = () => {
   if (node) {
     return render(
-        createElement(TreemapSection, { departments: coloured, isNationalBudget: true }),
+        createElement(TreemapSection, { departments: AddedColor, isNationalBudget: true }),
         node
     )
   }

@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 import styled from 'styled-components';
+import trimValues from '../../../helpers/trimValues';
 import * as d3plus from "d3plus";
 
 const TreemapContained = styled.div`
@@ -31,7 +32,7 @@ class TreeMap extends Component {
           verticalAlign: "top"
         }
       })
-      .label((d) => `${d.name} - R${d.amount} Billion`)
+      .label((d) => `${d.name} - R${trimValues(d.amount)}`)
       .select(this.treemap.current)
       .on("click",event)
       .sum("amount")
@@ -44,3 +45,5 @@ class TreeMap extends Component {
 }
 
 export default TreeMap;
+
+// R{selected ? trimValues(selected.amount) : `Total`}
