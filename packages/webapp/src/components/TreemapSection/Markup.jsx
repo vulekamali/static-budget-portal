@@ -4,7 +4,7 @@ import Icon from '@material-ui/icons/ArrowForward';
 import TreeMap from './Treemap';
 import SpeedDial from '../SpeedDial';
 
-import { 
+import {
   Wrapper,
   TreemapWrapper,
   BudgetContainer,
@@ -33,7 +33,7 @@ const callButtonExplore = (selected) => (
   </LinkWrapper>
 );
 
-const callTreeMap = (eventHandler, selected, departments) => {
+const callTreeMap = (eventHandler, selected, latestBudget) => {
   return (
     <React.Fragment>
       <DetailsContainer>
@@ -46,7 +46,7 @@ const callTreeMap = (eventHandler, selected, departments) => {
         </div>
         {selected ? callButtonExplore(selected) : null}
       </DetailsContainer>
-      <TreeMap event={eventHandler} data={departments} />
+      <TreeMap event={eventHandler} data={latestBudget} />
       <FooterContainer>
         <FooterDetails>Budget data from 1 March 2017 - 28 February 2018</FooterDetails>
         <FooterDetails>Direct charges against the National Revenue Fund are excluded</FooterDetails>
@@ -67,7 +67,7 @@ const Markup = (props) => {
   const {
     eventHandler,
     selected,
-    departments,
+    latestBudget,
     isNationalBudget,
   } = props;
 
@@ -83,7 +83,7 @@ const Markup = (props) => {
             </div>
           </IconAndDates>
         </BudgetContainer>
-        {isNationalBudget ? callTreeMap(eventHandler, selected, departments) : callNotice()}
+        {isNationalBudget ? callTreeMap(eventHandler, selected, latestBudget) : callNotice()}
       </TreemapWrapper>
     </Wrapper>
   );
