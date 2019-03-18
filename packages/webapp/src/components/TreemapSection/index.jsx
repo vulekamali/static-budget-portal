@@ -1,12 +1,10 @@
 import React from 'react';
-import styled from 'styled-components';
-import { darken } from 'polished';
 import trimValues from '../../helpers/trimValues';
-import { Typography, Button } from '@material-ui/core';
 import Icon from '@material-ui/icons/ArrowForward';
 import TreeMap from './Treemap';
 import SpeedDial from '../SpeedDial';
 import data from './Treemap/data/test.json';
+
 import { 
   Wrapper,
   TreemapWrapper,
