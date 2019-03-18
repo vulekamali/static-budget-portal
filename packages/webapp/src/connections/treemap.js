@@ -1,6 +1,5 @@
 import { createElement } from 'react';
 import { render } from 'react-dom';
-import trimValues from '../helpers/trimValues';
 import TreemapSection from '../components/TreemapSection';
 import { colorArray } from '../components/TreemapSection/Treemap/data/colors'
 
