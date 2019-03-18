@@ -3,7 +3,6 @@ import trimValues from '../../helpers/trimValues';
 import Icon from '@material-ui/icons/ArrowForward';
 import TreeMap from './Treemap';
 import SpeedDial from '../SpeedDial';
-import data from './Treemap/data/test.json';
 
 import { 
   Wrapper,
@@ -25,7 +24,6 @@ import {
  } from './styled';
 
 
-
 const callButtonExplore = (selected) => (
   <LinkWrapper href={selected.detail}>
     <ButtonStyle {...{selected}}>
@@ -35,7 +33,7 @@ const callButtonExplore = (selected) => (
   </LinkWrapper>
 );
 
-const callTreeMap = (eventHandler, selected) => (
+const callTreeMap = (eventHandler, selected, departments) => (
   <React.Fragment>
     <DetailsContainer>
       <div>
@@ -47,7 +45,7 @@ const callTreeMap = (eventHandler, selected) => (
       </div>
       {selected ? callButtonExplore(selected) : null}
     </DetailsContainer>
-    <TreeMap event={eventHandler} data={data} />
+    <TreeMap event={eventHandler} data={departments} />
     <FooterContainer>
       <FooterDetails>Budget data from 1 March 2017 - 28 February 2018</FooterDetails>
       <FooterDetails>Direct charges against the National Revenue Fund are excluded</FooterDetails>
@@ -64,7 +62,7 @@ const callNotice = () => (
 
 const TreeMapSection = (props) => {
 
-  const { eventHandler, selected, isNationalBudget } = props;
+  const { eventHandler, selected, departments, isNationalBudget } = props;
 
   return (
     <Wrapper>
@@ -78,7 +76,7 @@ const TreeMapSection = (props) => {
             </div>
           </IconAndDates>
         </BudgetContainer>
-        {isNationalBudget ? callTreeMap(eventHandler, selected) : callNotice()}
+        {isNationalBudget ? callTreeMap(eventHandler, selected, departments) : callNotice()}
       </TreemapWrapper>
     </Wrapper>
   );
