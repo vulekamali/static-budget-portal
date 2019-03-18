@@ -27,6 +27,7 @@ class TreeMap extends Component {
       .groupBy("name")
       .sort((a,b) => a.budget - b.amount)
       .color("color")
+      .legend(false)
       .shapeConfig({
         labelConfig: {
           verticalAlign: "top"
