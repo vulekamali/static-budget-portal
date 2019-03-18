@@ -1,85 +1,37 @@
-import React from 'react';
-import trimValues from '../../helpers/trimValues';
-import Icon from '@material-ui/icons/ArrowForward';
-import TreeMap from './Treemap';
-import SpeedDial from '../SpeedDial';
-
-import { 
-  Wrapper,
-  TreemapWrapper,
-  BudgetContainer,
-  BudgetHeading,
-  IconAndDates,
-  DateButton,
-  DetailsContainer,
-  Department,
-  Amount,
-  PhaseContainer,
-  BudgetPhaseButton,
-  LinkWrapper,
-  ButtonStyle,
-  FooterContainer,
-  FooterDetails,
-  NoticeMessage
- } from './styled';
+import React, { Component } from 'react';
+import Markup from './Markup';
 
 
-const callButtonExplore = (selected) => (
-  <LinkWrapper href={selected.detail}>
-    <ButtonStyle {...{selected}}>
-      <span>Explore this department</span>
-      <Icon />
-    </ButtonStyle>
-  </LinkWrapper>
-);
 
-const callTreeMap = (eventHandler, selected, departments) => (
-  <React.Fragment>
-    <DetailsContainer>
-      <div>
-        <Department>{selected ? selected.name : `National departments budget`}</Department>
-        <Amount>R{selected ? trimValues(selected.amount) : `Total`}</Amount>
-        <PhaseContainer>
-          <BudgetPhaseButton disabled onClick={() => console.log('do something')}>Original Budget</BudgetPhaseButton>
-        </PhaseContainer>
-      </div>
-      {selected ? callButtonExplore(selected) : null}
-    </DetailsContainer>
-    <TreeMap event={eventHandler} data={departments} />
-    <FooterContainer>
-      <FooterDetails>Budget data from 1 March 2017 - 28 February 2018</FooterDetails>
-      <FooterDetails>Direct charges against the National Revenue Fund are excluded</FooterDetails>
-    </FooterContainer>
-  </React.Fragment>
-);
+class TreeMapSection extends Component {
+  constructor(props) {
+    super(props);
+    this.eventHandler = this.eventHandler.bind(this);
+    this.state = {
+      selected: null
+    }
 
-const callNotice = () => (
-  <React.Fragment>
-    <NoticeMessage>The data for the provincial budget summary has not been released yet</NoticeMessage>
-  </React.Fragment>
-);
+    this.events = {
+      eventHandler: this.eventHandler.bind(this),
+    }
+  }
 
+  eventHandler(e) {
+    this.setState({ selected: e });
+  }
 
-const TreeMapSection = (props) => {
+  render() {
+    const { state, events, props } = this;
 
-  const { eventHandler, selected, departments, isNationalBudget } = props;
+    const passedProps = {
+      ...props,
+      eventHandler: events.eventHandler,
+      selected: state.selected
+    };
 
-  return (
-    <Wrapper>
-      <TreemapWrapper>
-        <BudgetContainer>
-          <BudgetHeading>{isNationalBudget ? `National Budget Summary` : `Provincial Budget Summary`}</BudgetHeading>
-          <IconAndDates>
-            <SpeedDial />
-            <div>
-              <DateButton disabled onClick={() => console.log('do something')}>2017-18</DateButton>
-            </div>
-          </IconAndDates>
-        </BudgetContainer>
-        {isNationalBudget ? callTreeMap(eventHandler, selected, departments) : callNotice()}
-      </TreemapWrapper>
-    </Wrapper>
-  );
-};
+    return <Markup {...passedProps } />
+  }
+}
+
 
 export default TreeMapSection;

@@ -62,6 +62,7 @@ const coloured = biggest.map((amount, index) => ({
   color: colored(index),
   ...amount
 }));
+console.log(coloured);
 
 const connection = () => {
   if (node) {
