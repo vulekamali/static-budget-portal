@@ -75,8 +75,6 @@ const Markup = (props) => {
     closeModal,
     openModal,
     videoUrl,
-    eventHandler,
-    selected,
   } = props;
 
   const buttons = {
