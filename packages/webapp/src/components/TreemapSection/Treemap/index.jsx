@@ -27,6 +27,7 @@ class TreeMap extends Component {
       .type("tree_map")
       .id("name")
       .size("amount")
+      .color(d => d.color)
       .resize(true)
       .mouse({
         click: event
