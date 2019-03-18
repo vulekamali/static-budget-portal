@@ -11,7 +11,6 @@ import Icon from './Icon';
 const StyledSpeedDial = styled(SpeedDial)`
   height: 40px;
   align-self: flex-start;
-  /* margin-right: 4px; */
 
   & .fab {
     background: #C4C4C4;
@@ -25,8 +24,6 @@ const StyledSpeedDial = styled(SpeedDial)`
 `;
 
 const PositionedShareIcon = styled(ShareIcon)`
-  /* position: relative;
-  right: 2px; */
   color: #3f3f3f;
 `;
 
