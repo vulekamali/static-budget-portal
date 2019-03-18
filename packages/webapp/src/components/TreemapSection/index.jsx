@@ -7,7 +7,6 @@ import { Typography, Button } from '@material-ui/core';
 import Icon from '@material-ui/icons/ArrowForward';
 import TreeMap from './Treemap';
 import SpeedDial from '../SpeedDial';
-import data from './Treemap/data/test.json';
 
 const Wrapper = styled.div`
   display: flex;
@@ -84,7 +83,7 @@ const DateButton = styled(Button)`
     font-size: 16px;
     line-height: 24px;
     text-align: center;
-    letter-spacing: 0.15px; 
+    letter-spacing: 0.15px;
     color: #000;
 
     &:hover {
@@ -159,7 +158,7 @@ const BudgetPhaseButton = styled(Button)`
     font-size: 16px;
     line-height: 24px;
     text-align: center;
-    letter-spacing: 0.15px; 
+    letter-spacing: 0.15px;
     color: #000;
 
     &:hover {
@@ -252,7 +251,7 @@ const callButtonExplore = (selected) => (
   </LinkWrapper>
 );
 
-const callTreeMap = (eventHandler, selected) => (
+const callTreeMap = (eventHandler, selected, departments) => (
   <React.Fragment>
     <DetailsContainer>
       <div>
@@ -264,7 +263,7 @@ const callTreeMap = (eventHandler, selected) => (
       </div>
       {selected ? callButtonExplore(selected) : null}
     </DetailsContainer>
-    <TreeMap event={eventHandler} data={data} />
+    <TreeMap event={eventHandler} data={departments} />
     <FooterContainer>
       <FooterDetails>Budget data from 1 March 2017 - 28 February 2018</FooterDetails>
       <FooterDetails>Direct charges against the National Revenue Fund are excluded</FooterDetails>
@@ -281,7 +280,7 @@ const callNotice = () => (
 
 const Markup = (props) => {
 
-  const { eventHandler, selected, isNationalBudget } = props;
+  const { eventHandler, selected, departments, isNationalBudget } = props;
 
   return (
     <Wrapper>
@@ -295,7 +294,7 @@ const Markup = (props) => {
             </div>
           </IconAndDates>
         </BudgetContainer>
-        {isNationalBudget ? callTreeMap(eventHandler, selected) : callNotice()}
+        {isNationalBudget ? callTreeMap(eventHandler, selected, departments) : callNotice()}
       </TreemapWrapper>
     </Wrapper>
   );
