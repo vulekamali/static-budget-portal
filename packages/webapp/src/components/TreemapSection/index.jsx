@@ -40,7 +40,7 @@ const BudgetContainer = styled.div`
 
 const BudgetHeading = styled(Typography)`
 
-  && {
+  &&&& {
     font-weight: 700;
     font-size: 20px;
     line-height: 24px;
@@ -56,7 +56,7 @@ const BudgetHeading = styled(Typography)`
       font-size: 32px;
       line-height: 65px;
       text-align: left;
-      padding-bottom: 30px;
+      padding-bottom: 0;
     }
   }
 `;
@@ -70,7 +70,7 @@ const IconAndDates = styled.div`
 
   @media screen and (min-width: 450px) {
     padding-left: 30px;
-    padding-bottom: 30px;
+    padding-bottom: 0;
   }
 `;
 
@@ -93,7 +93,8 @@ const DateButton = styled(Button)`
 
     @media screen and (min-width: 450px) {
       font-size: 24px;
-      padding: 10px 20px;
+      padding-right: 20px;
+      padding-left: 20px;
     }
   }
 `;
@@ -119,7 +120,6 @@ const Department = styled(Typography)`
 
     @media screen and (min-width: 450px) {
       font-size: 24px;
-      padding-bottom: 20px;
       line-height: 65px;
     }
   }
@@ -132,22 +132,16 @@ const Amount = styled(Typography)`
     font-weight: 700;
     line-height: 20px;
     color: #000;
-    padding-top: 20px;
 
     @media screen and (min-width: 450px) {
       font-size: 50px;
       line-height: 65px;
-      padding-top: none;
     }
   }
 `;
 
 const PhaseContainer = styled.div`
   margin-top: 20px;
-
-  @media screen and (min-width: 450px) {
-    margin-top: 30px;
-  }
 `;
 
 const BudgetPhaseButton = styled(Button)`
@@ -259,7 +253,7 @@ const callTreeMap = (eventHandler, selected) => (
         <Department>{selected ? selected.name : `National departments budget`}</Department>
         <Amount>R{selected ? trimValues(selected.amount) : `Total`}</Amount>
         <PhaseContainer>
-          <BudgetPhaseButton disabled onClick={() => console.log('do something')}>Original Budget</BudgetPhaseButton>
+          <BudgetPhaseButton disabled onClick="/">Original Budget</BudgetPhaseButton>
         </PhaseContainer>
       </div>
       {selected ? callButtonExplore(selected) : null}
@@ -291,7 +285,7 @@ const Markup = (props) => {
           <IconAndDates>
             <SpeedDial />
             <div>
-              <DateButton disabled onClick={() => console.log('do something')}>2017-18</DateButton>
+              <DateButton disabled onClick="/">2017-18</DateButton>
             </div>
           </IconAndDates>
         </BudgetContainer>
