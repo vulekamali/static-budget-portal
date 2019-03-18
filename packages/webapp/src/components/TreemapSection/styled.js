@@ -183,7 +183,7 @@ const ButtonStyle = styled(Button)`
     margin-top: 10px;
 
     &:hover {
-      background-color: ${({ selected }) => (selected ? darken(0.1, selected.color) : null)};
+      background-color: ${({ selected }) => darken(0.1, selected.color)};
     }
 
     @media screen and (min-width: 450px) {
