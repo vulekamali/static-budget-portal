@@ -7,6 +7,7 @@ import SpeedDialAction from '@material-ui/lab/SpeedDialAction';
 import ShareIcon from '@material-ui/icons/Share';
 import CloseIcon from '@material-ui/icons/Close';
 import Icon from './Icon';
+import Modal from './Modal';
 
 const StyledSpeedDial = styled(SpeedDial)`
   height: 40px;
@@ -91,18 +92,21 @@ const createButtons = (id, toggleModal, toggleSharingOpen) => {
   return buttonsInfo.map(creataShareLink);
 };
 
-const Markup = ({ sharingOpen, toggleSharingOpen, id, toggleModal }) => {
+const Markup = ({ sharingOpen, toggleSharingOpen, id, toggleModal, modal }) => {
   return (
-    <StyledSpeedDial
-      ariaLabel="SpeedDial openIcon example"
-      icon={!!sharingOpen ? <StyledCloseIcon /> : <PositionedShareIcon />}
-      onClick={toggleSharingOpen}
-      open={!!sharingOpen}
-      direction="down"
-      classes={{ fab: 'fab' }}
-    >
-      {createButtons(id, toggleModal, toggleSharingOpen)}
-    </StyledSpeedDial>
+    <React.Fragment>
+      <StyledSpeedDial
+        ariaLabel="SpeedDial openIcon example"
+        icon={!!sharingOpen ? <StyledCloseIcon /> : <PositionedShareIcon />}
+        onClick={toggleSharingOpen}
+        open={!!sharingOpen}
+        direction="down"
+        classes={{ fab: 'fab' }}
+      >
+        {createButtons(id, toggleModal, toggleSharingOpen)}
+      </StyledSpeedDial>
+      <Modal open={!!modal} closeModal={() => toggleModal(null)} url={modal} />
+    </React.Fragment>
   );
 }
 

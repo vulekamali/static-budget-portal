@@ -10,7 +10,6 @@ import DialogContentText from '@material-ui/core/DialogContentText';
 import DialogActions from '@material-ui/core/DialogActions';
 import Zoom from '@material-ui/core/Zoom'; 
 import Button from '@material-ui/core/Button';
-import Modal from './Modal';
 
 
 const PrimaryButton = styled(Button)`
