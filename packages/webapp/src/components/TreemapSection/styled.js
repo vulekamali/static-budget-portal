@@ -70,6 +70,7 @@ const IconAndDates = styled.div`
 const DateButton = styled.div`
 
   && {
+    font-family: Roboto;
     font-weight: 700;
     font-size: 16px;
     line-height: 24px;
@@ -133,6 +134,7 @@ const PhaseContainer = styled.div`
 const BudgetPhaseButton = styled.div`
 
   && {
+    font-family: Roboto;
     font-size: 16px;
     font-weight: 700;
     line-height: 24px;
