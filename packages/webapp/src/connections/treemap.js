@@ -8,7 +8,7 @@ const spendingData = JSON.parse(dataString);
 
 const connection = () => {
   if (node) {
-    return render(
+    render(
         createElement(TreemapSection, { spendingData: spendingData, isNationalBudget: true }),
         node
     )
