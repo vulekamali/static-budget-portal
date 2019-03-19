@@ -48,7 +48,7 @@ const callTreeMap = (eventHandler, selected, latestBudget, totalBudget) => {
       </DetailsContainer>
       <TreeMap event={eventHandler} data={latestBudget} />
       <FooterContainer>
-        <FooterDetails>Budget data from 1 March 2017 - 28 February 2018</FooterDetails>
+        <FooterDetails>Budget data from 1 April 2018 - 31 March 2019</FooterDetails>
         <FooterDetails>Direct charges against the National Revenue Fund are excluded</FooterDetails>
       </FooterContainer>
     </React.Fragment>
