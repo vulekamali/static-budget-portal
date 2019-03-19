@@ -139,7 +139,7 @@ const PhaseContainer = styled.div`
 
 const BudgetPhaseButton = styled(Button)`
 
-  &&&& {
+  && {
     background-color: rgba(0, 0, 0, 0.1);
     text-transform: none;
     box-shadow: none;
