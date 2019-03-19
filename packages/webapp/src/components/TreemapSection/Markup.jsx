@@ -33,13 +33,13 @@ const callButtonExplore = (selected) => (
   </LinkWrapper>
 );
 
-const callTreeMap = (eventHandler, selected, latestBudget) => {
+const callTreeMap = (eventHandler, selected, latestBudget, totalBudget) => {
   return (
     <React.Fragment>
       <DetailsContainer>
         <div>
           <Department>{selected ? selected.name : `National departments budget`}</Department>
-          <Amount>R{selected ? trimValues(selected.amount) : `Total`}</Amount>
+          <Amount>R{selected ? trimValues(selected.amount) : trimValues(totalBudget)}</Amount>
           <PhaseContainer>
             <BudgetPhaseButton disabled>Original Budget</BudgetPhaseButton>
           </PhaseContainer>
@@ -67,6 +67,7 @@ const Markup = (props) => {
     eventHandler,
     selected,
     latestBudget,
+    totalBudget,
     isNationalBudget,
   } = props;
 
@@ -82,7 +83,7 @@ const Markup = (props) => {
             </div>
           </IconAndDates>
         </BudgetContainer>
-        {isNationalBudget ? callTreeMap(eventHandler, selected, latestBudget) : callNotice()}
+        {isNationalBudget ? callTreeMap(eventHandler, selected, latestBudget, totalBudget) : callNotice()}
       </TreemapWrapper>
     </Wrapper>
   );

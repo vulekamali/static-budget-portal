@@ -40,11 +40,12 @@ class TreeMapSection extends Component {
       ...amount
     }));
 
-    console.log(spendingData.total_budgets['Main appropriation']['2019']);
+    const totalBudget = spendingData.total_budgets['Main appropriation']['2019'];
 
     const passedProps = {
       isNationalBudget,
       latestBudget: addedColor,
+      totalBudget,
       eventHandler: events.eventHandler,
       selected: state.selected
     };
