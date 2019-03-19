@@ -69,6 +69,8 @@ const Markup = (props) => {
     latestBudget,
     totalBudget,
     isNationalBudget,
+    modal,
+    toggleModal,
   } = props;
 
   return (

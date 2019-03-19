@@ -9,7 +9,7 @@ class SpeedDial extends Component {
 
     this.state = {
       sharingOpen: false,
-      modalOpen: false,
+      modal: false,
     }
 
     this.events = {
