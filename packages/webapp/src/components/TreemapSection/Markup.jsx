@@ -41,13 +41,14 @@ const callTreeMap = (eventHandler, selected, latestBudget, totalBudget) => {
           <Department>{selected ? selected.name : `National departments budget`}</Department>
           <Amount>R{selected ? trimValues(selected.amount) : trimValues(totalBudget)}</Amount>
           <PhaseContainer>
-            <BudgetPhaseButton disabled>Original Budget</BudgetPhaseButton>
+            <BudgetPhaseButton>Original Budget</BudgetPhaseButton>
           </PhaseContainer>
         </div>
         {selected ? callButtonExplore(selected) : null}
       </DetailsContainer>
       <TreeMap event={eventHandler} data={latestBudget} />
       <FooterContainer>
+        <FooterDetails>Budget data from 1 March 2017 - 28 February 2018</FooterDetails>
         <FooterDetails>Direct charges against the National Revenue Fund are excluded</FooterDetails>
       </FooterContainer>
     </React.Fragment>
@@ -81,7 +82,7 @@ const Markup = (props) => {
           <IconAndDates>
             <SpeedDial />
             <div>
-              <DateButton disabled>2019-20</DateButton>
+              <DateButton>2019-20</DateButton>
             </div>
           </IconAndDates>
         </BudgetContainer>

@@ -67,22 +67,15 @@ const IconAndDates = styled.div`
   }
 `;
 
-const DateButton = styled(Button)`
+const DateButton = styled.div`
 
   && {
-    background-color: rgba(0, 0, 0, 0.1);
-    text-transform: none;
-    box-shadow: none;
     font-weight: 700;
     font-size: 16px;
     line-height: 24px;
     text-align: center;
     letter-spacing: 0.15px; 
     color: #000;
-
-    &:hover {
-      background-color: rgba(0, 0, 0, 0.2);
-    }
 
     @media screen and (min-width: 450px) {
       font-size: 24px;
@@ -137,25 +130,18 @@ const PhaseContainer = styled.div`
   margin-top: 20px;
 `;
 
-const BudgetPhaseButton = styled(Button)`
+const BudgetPhaseButton = styled.div`
 
   && {
-    background-color: rgba(0, 0, 0, 0.1);
-    text-transform: none;
-    box-shadow: none;
     font-size: 16px;
+    font-weight: 700;
     line-height: 24px;
-    text-align: center;
+    text-align: left;
     letter-spacing: 0.15px; 
     color: #000;
 
-    &:hover {
-      background-color: rgba(0, 0, 0, 0.2);
-    }
-
     @media screen and (min-width: 450px) {
-      font-size: 20px;
-      padding: 10px 20px;
+      font-size: 24px;
     }
   }
 `;
