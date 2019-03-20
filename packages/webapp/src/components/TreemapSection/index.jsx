@@ -7,7 +7,8 @@ class TreeMapSection extends Component {
     super(props);
     this.eventHandler = this.eventHandler.bind(this);
     this.state = {
-      selected: null
+      selected: null,
+      buttonState: false
     }
 
     this.events = {
@@ -16,10 +17,8 @@ class TreeMapSection extends Component {
   }
 
   eventHandler(e) {
-    this.setState({ selected: e });
+    this.setState({ selected: e, buttonState: !this.state.buttonState });
   }
-
-
 
 
 
@@ -42,12 +41,14 @@ class TreeMapSection extends Component {
 
     const totalBudget = spendingData.total_budgets['Main appropriation']['2019'];
 
+
     const passedProps = {
       isNationalBudget,
       latestBudget: addedColor,
       totalBudget,
       eventHandler: events.eventHandler,
-      selected: state.selected
+      selected: state.selected,
+      buttonState: state.buttonState
     };
 
     return <Markup {...passedProps } />

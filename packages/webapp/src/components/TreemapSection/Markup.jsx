@@ -38,7 +38,7 @@ const callButtonExplore = (selected) => (
   </LinkWrapper>
 );
 
-const callTreeMap = (eventHandler, selected, latestBudget, totalBudget) => {
+const callTreeMap = (eventHandler, selected, latestBudget, totalBudget, buttonState) => {
   return (
     <React.Fragment>
       <DetailsContainer>
@@ -54,7 +54,7 @@ const callTreeMap = (eventHandler, selected, latestBudget, totalBudget) => {
       <TreemapContainer>
         <TreeMap event={eventHandler} data={latestBudget} />
         <ZoomButtonContainer>
-          <ZoomButton>
+          <ZoomButton disabled={buttonState}>
             <RemoveIcon />
           </ZoomButton>
           <ZoomButton>
@@ -85,8 +85,7 @@ const Markup = (props) => {
     latestBudget,
     totalBudget,
     isNationalBudget,
-    modal,
-    toggleModal,
+    buttonState,
   } = props;
 
   return (
@@ -101,7 +100,7 @@ const Markup = (props) => {
             </div>
           </IconAndDates>
         </BudgetContainer>
-        {isNationalBudget ? callTreeMap(eventHandler, selected, latestBudget, totalBudget) : callNotice()}
+        {isNationalBudget ? callTreeMap(eventHandler, selected, latestBudget, totalBudget, buttonState) : callNotice()}
       </TreemapWrapper>
     </Wrapper>
   );
