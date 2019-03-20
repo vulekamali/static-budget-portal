@@ -53,11 +53,16 @@ class TreeMapSection extends Component {
     const splicedData = fullData.splice(spliceIndex, fullData.length);
     console.log(splicedData);
     departmentData['expenditure']['national'] = splicedData;
-    this.setState({
-      departmentData: departmentData,
-      zoomIndex: zoomIndex,
-    });
-    this.treemapNode.data(splicedData).draw();
+    
+    if(spliceIndex === fullData.length) {
+      this.setState({
+        departmentData: departmentData,
+        zoomIndex: zoomIndex,
+      });
+      this.treemapNode.data(splicedData).draw();
+    } else {
+      // disable zoom in button here
+    }
   }
 
   eventZoomOut() {
