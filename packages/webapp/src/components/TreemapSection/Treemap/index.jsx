@@ -27,7 +27,7 @@ class TreeMap extends Component {
   initTreemap(data, event) {
     const svg = window.d3.select('#treemap').append("svg").append("g");
 
-    const treemapLayout = window.d3.treemap().size([400, 200]);
+    const treemapLayout = window.d3.treemap().size([800, 500]);
 
     const hierarchy = {
       "children": data
