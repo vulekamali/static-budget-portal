@@ -38,23 +38,26 @@ class TreeMapSection extends Component {
       eventZoomIn: this.eventZoomIn.bind(this),
       eventZoomOut: this.eventZoomOut.bind(this)
     }
+
+    let treemapNode = null;
   }
 
   eventZoomIn() {
-    console.log('Zooming out; increasing index by 1');
+    console.log('Zooming in; increasing index by 1');
     let { zoomIndex, departmentData } = this.state;
     const fullData = this.props.spendingData['expenditure']['national'];
+    console.log(fullData);
     zoomIndex += 1;
     const spliceIndex = 5 * zoomIndex;
+    console.log(spliceIndex, fullData.length);
     const splicedData = fullData.splice(spliceIndex, fullData.length);
-    console.log(fullData);
     console.log(splicedData);
     departmentData['expenditure']['national'] = splicedData;
     this.setState({
       departmentData: departmentData,
       zoomIndex: zoomIndex,
     });
-    // this.initTreemap()
+    this.treemapNode.data(splicedData).draw();
   }
 
   eventZoomOut() {
@@ -69,7 +72,6 @@ class TreeMapSection extends Component {
       departmentData: splicedData,
       zoomIndex: zoomIndex,
     });
-    // this.initTreemap()
   }
 
   eventHandler(e) {
@@ -95,7 +97,7 @@ class TreeMapSection extends Component {
   }
 
   componentDidMount() {
-    const a = this.initTreemap();
+    this.treemapNode = this.initTreemap();
 
     // setTimeout(function() {
     //   a.data([{"color":"#E0E0E0","amount":18479197200,"budget_phase":"Main appropriation","detail":"/2019-20/national/departments/social-development","financial_year":2019,"name":"Social Development","percentage_of_total":10.890679251027038}]).draw();
