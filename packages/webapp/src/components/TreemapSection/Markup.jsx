@@ -3,6 +3,8 @@ import trimValues from '../../helpers/trimValues';
 import Icon from '@material-ui/icons/ArrowForward';
 import TreeMap from './Treemap';
 import SpeedDial from '../SpeedDial';
+import AddIcon from '@material-ui/icons/Add';
+import RemoveIcon from '@material-ui/icons/Remove';
 
 import {
   Wrapper,
@@ -20,7 +22,10 @@ import {
   ButtonStyle,
   FooterContainer,
   FooterDetails,
-  NoticeMessage
+  NoticeMessage,
+  TreemapContainer,
+  ZoomButtonContainer,
+  ZoomButton
  } from './styled';
 
 
@@ -46,7 +51,17 @@ const callTreeMap = (eventHandler, selected, latestBudget, totalBudget) => {
         </div>
         {selected ? callButtonExplore(selected) : null}
       </DetailsContainer>
-      <TreeMap event={eventHandler} data={latestBudget} />
+      <TreemapContainer>
+        <TreeMap event={eventHandler} data={latestBudget} />
+        <ZoomButtonContainer>
+          <ZoomButton>
+            <RemoveIcon />
+          </ZoomButton>
+          <ZoomButton>
+            <AddIcon />
+          </ZoomButton>
+        </ZoomButtonContainer>
+      </TreemapContainer>
       <FooterContainer>
         <FooterDetails>Budget data from 1 April 2018 - 31 March 2019</FooterDetails>
         <FooterDetails>Direct charges against the National Revenue Fund are excluded</FooterDetails>

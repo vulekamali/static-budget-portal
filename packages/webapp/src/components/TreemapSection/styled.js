@@ -218,6 +218,40 @@ const NoticeMessage = styled(Typography)`
   }
 `;
 
+const TreemapContainer = styled.div`
+  position: relative;
+`;
+
+const ZoomButtonContainer = styled.div`
+  position: absolute;
+  bottom: 5px;
+  right: 5px;
+  height: 85px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+
+  @media screen and (min-width: 450px) {
+      flex-direction: row;
+      width: 85px;
+      height: 40px;
+    }
+`;
+
+const ZoomButton = styled(Button)`
+  && {
+    background-color: #DCDCDC;
+    padding: 0;
+    min-width: 0;
+    width: 40px;
+    height: 40px;
+
+    &:hover {
+      background-color: ${darken(0.1, '#DCDCDC')};
+    }
+  }
+`;
+
 export {
   Wrapper,
   TreemapWrapper,
@@ -234,7 +268,10 @@ export {
   ButtonStyle,
   FooterContainer,
   FooterDetails,
-  NoticeMessage
+  NoticeMessage,
+  TreemapContainer,
+  ZoomButtonContainer,
+  ZoomButton
 }
 
 export default {
@@ -253,5 +290,8 @@ export default {
   ButtonStyle,
   FooterContainer,
   FooterDetails,
-  NoticeMessage
+  NoticeMessage,
+  TreemapContainer,
+  ZoomButtonContainer,
+  ZoomButton
 }
