@@ -39,10 +39,10 @@ class TreeMap extends Component {
   }
 
   componentDidMount() {
-    this.initTreemap(this.props.data,this.event);
+    // this.initTreemap(this.props.data,this.event);
+
+    // console.log("Treemap Init");
   }
 }
 
 export default TreeMap;
-
-// R{selected ? trimValues(selected.amount) : `Total`}
