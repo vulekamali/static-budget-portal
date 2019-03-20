@@ -9,7 +9,7 @@ class TreeMapSection extends Component {
     this.state = {
       selected: null,
       buttonState: false
-    }
+    };
 
     this.events = {
       eventHandler: this.eventHandler.bind(this),
@@ -21,33 +21,31 @@ class TreeMapSection extends Component {
   }
 
 
-
   render() {
     const { state, events, props } = this;
     const { spendingData, isNationalBudget } = props;
     let totalBudget = null;
-    let addedColor = null;
+    let sortedBudgetColor = null;
     if (spendingData !== null) {
       const deptAmounts = spendingData.expenditure.national;
       const originalBudget = deptAmounts.filter(function (amount) {
-        return amount.budget_phase === "Main appropriation" && amount.financial_year === 2019;
+        return amount['budget_phase'] === "Main appropriation" && amount.financial_year === 2019;
       });
-      const sorted = originalBudget.sort((a, b) => b.amount - a.amount);
-      const biggest = sorted;
+      let sortedBudget = originalBudget.sort((a, b) => b.amount - a.amount);
       const colored = index => colorArray[index];
 
-      addedColor = biggest.map((amount, index) => ({
+      sortedBudgetColor = sortedBudget.map((amount, index) => ({
         color: colored(index),
         ...amount
       }));
 
-      totalBudget = spendingData.total_budgets['Main appropriation']['2019'];
+      totalBudget = spendingData['total_budgets']['Main appropriation']['2019'];
     }
 
 
     const passedProps = {
       isNationalBudget,
-      latestBudget: addedColor,
+      latestBudget: sortedBudgetColor,
       totalBudget,
       eventHandler: events.eventHandler,
       selected: state.selected,
