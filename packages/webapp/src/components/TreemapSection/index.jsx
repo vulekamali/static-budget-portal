@@ -9,6 +9,7 @@ class TreeMapSection extends Component {
     super(props);
     this.eventHandler = this.eventHandler.bind(this);
     this.initTreemap = this.initTreemap.bind(this);
+    this.componentDidMount = this.componentDidMount.bind(this);
     this.state = {
       selected: null,
       buttonState: false,
@@ -24,15 +25,15 @@ class TreeMapSection extends Component {
     this.setState({ selected: e, buttonState: !this.state.buttonState });
   }
 
-  initTreemap(data) {
+  initTreemap() {
     return window.d3plus.viz()
       .container("#treemap")
-      .data(this.state.departments)
+      .data(this.props.spendingData.expenditure.national.splice(0,10))
       .type("tree_map")
       .id("name")
       .size("amount")
       .font({ "family": "Roboto", size: 15 })
-      .labels({"align": "left", "valign": "top", "padding": 50, "resize": false, text: d => `${d.name} - R${trimValues(d.amount)}` })
+      .labels({"align": "left", "valign": "top", "padding": 24, "resize": false, text: d => `${d.name} \n R${trimValues(d.amount)}` })
       .color(d => d.color ? d.color : "")
       .legend(false)
       .resize(true)
@@ -44,10 +45,6 @@ class TreeMapSection extends Component {
 
   componentDidMount() {
     const a = this.initTreemap();
-
-    setTimeout(function() {
-      a.data([{"color":"#E0E0E0","amount":18479197200,"budget_phase":"Main appropriation","detail":"/2019-20/national/departments/social-development","financial_year":2019,"name":"Social Development","percentage_of_total":10.890679251027038}]).draw();
-    },3000);
   }
 
   render() {
