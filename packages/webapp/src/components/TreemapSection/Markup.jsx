@@ -54,10 +54,10 @@ const callTreeMap = (eventHandler, selected, latestBudget, totalBudget, buttonSt
       <TreemapContainer>
         <TreeMap event={eventHandler} data={latestBudget} />
         <ZoomButtonContainer>
-          <ZoomButton disabled={buttonState}>
+          <ZoomButton disabled={buttonState} onClick={() => console.log('Re-Render Treemap zoomed out')}>
             <RemoveIcon />
           </ZoomButton>
-          <ZoomButton>
+          <ZoomButton disabled={buttonState} onClick={() => console.log('Re-Render Treemap zoomed in')}>
             <AddIcon />
           </ZoomButton>
         </ZoomButtonContainer>
