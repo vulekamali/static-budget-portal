@@ -94,6 +94,7 @@ const Markup = (props) => {
       </Image>
       <NotificationBar {...{ notice, callToAction }} />
       <div data-webapp={'national-departments-treemap'}></div>
+      <div data-webapp={'provincial-departments-treemap'}></div>
       {resources && <Resources {...{ resources }} />}
     </Layout>
   );
