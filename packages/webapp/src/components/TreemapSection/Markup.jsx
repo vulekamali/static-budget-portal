@@ -1,7 +1,7 @@
 import React from 'react';
 import trimValues from '../../helpers/trimValues';
 import Icon from '@material-ui/icons/ArrowForward';
-import TreeMap from './Treemap';
+// import TreeMap from './Treemap';
 import SpeedDial from '../SpeedDial';
 import AddIcon from '@material-ui/icons/Add';
 import RemoveIcon from '@material-ui/icons/Remove';
@@ -52,7 +52,8 @@ const callTreeMap = (eventHandler, eventZoomIn, eventZoomOut, selected, latestBu
         {selected ? callButtonExplore(selected) : null}
       </DetailsContainer>
       <TreemapContainer>
-        <TreeMap event={eventHandler} data={latestBudget} />
+        {/* <TreeMap event={eventHandler} data={latestBudget} /> */}
+        <div id="treemap"></div>
         <ZoomButtonContainer>
           <ZoomButton disabled={buttonState} onClick={eventZoomOut}>
             <RemoveIcon />
