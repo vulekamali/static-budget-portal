@@ -25,21 +25,24 @@ class TreeMapSection extends Component {
   render() {
     const { state, events, props } = this;
     const { spendingData, isNationalBudget } = props;
+    let totalBudget = null;
+    let addedColor = null;
+    if (spendingData !== null) {
+      const deptAmounts = spendingData.expenditure.national;
+      const originalBudget = deptAmounts.filter(function (amount) {
+        return amount.budget_phase === "Main appropriation" && amount.financial_year === 2019;
+      });
+      const sorted = originalBudget.sort((a, b) => b.amount - a.amount);
+      const biggest = sorted;
+      const colored = index => colorArray[index];
 
-    const deptAmounts = spendingData.expenditure.national;
-    const originalBudget = deptAmounts.filter(function(amount) {
-      return amount.budget_phase === "Main appropriation" && amount.financial_year === 2019;
-    });
-    const sorted = originalBudget.sort((a, b) => b.amount - a.amount);
-    const biggest = sorted;
-    const colored = index => colorArray[index];
+      addedColor = biggest.map((amount, index) => ({
+        color: colored(index),
+        ...amount
+      }));
 
-    const addedColor = biggest.map((amount, index) => ({
-      color: colored(index),
-      ...amount
-    }));
-
-    const totalBudget = spendingData.total_budgets['Main appropriation']['2019'];
+      totalBudget = spendingData.total_budgets['Main appropriation']['2019'];
+    }
 
 
     const passedProps = {
