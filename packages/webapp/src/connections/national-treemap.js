@@ -3,7 +3,7 @@ import { render } from 'react-dom';
 import TreemapSection from '../components/TreemapSection';
 
 const node = document.querySelector('[data-webapp="national-departments-treemap"]');
-const dataString = document.querySelector('[data-webapp-departments]').dataset.webappDepartments;
+const dataString = document.querySelector('[data-webapp-national-departments]').dataset.webappNationalDepartments;
 const spendingData = JSON.parse(dataString);
 
 const connection = () => {
