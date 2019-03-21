@@ -28,6 +28,7 @@ class TreeMapSection extends Component {
             departmentData: departmentData,
             zoomIndex: 0,
             isNationalBudget: this.props.isNationalBudget,
+            nextBiggestObjectOutsideView: null,
         };
         this.events = {
             eventZoomIn: this.eventZoomIn.bind(this),
@@ -47,18 +48,15 @@ class TreeMapSection extends Component {
         const spliceIndex = this.zoomStep * zoomIndex;
         let splicedData = [...this.fullData];
         if (spliceIndex <= this.fullData.length) {
-            splicedData.splice(0, spliceIndex);
+            let removedData = splicedData.splice(0, spliceIndex);
             departmentData['expenditure']['national'] = splicedData;
             this.setState({
                 departmentData: departmentData,
                 zoomIndex: zoomIndex,
                 zoomInButtonState: false,
                 zoomOutButtonState: false,
+                nextBiggestObjectOutsideView: removedData[removedData.length - 1],
             });
-            const parent = document.getElementById("treemap");
-            while (parent.firstChild) {
-                parent.firstChild.remove();
-            }
             this.initTreemap(this.eventHandler);
         }
         if (spliceIndex + this.zoomStep >= this.fullData.length) {
@@ -74,18 +72,15 @@ class TreeMapSection extends Component {
         const spliceIndex = 5 * zoomIndex;
         let splicedData = [...this.fullData];
         if (spliceIndex >= 0) {
-            splicedData.splice(0, spliceIndex);
+            let removedData = splicedData.splice(0, spliceIndex);
             departmentData['expenditure']['national'] = splicedData;
             this.setState({
                 departmentData: departmentData,
                 zoomIndex: zoomIndex,
                 zoomOutButtonState: false,
                 zoomInButtonState: false,
+                nextBiggestObjectOutsideView: removedData[removedData.length - 1],
             });
-            const parent = document.getElementById("treemap");
-            while (parent.firstChild) {
-                parent.firstChild.remove();
-            }
             this.initTreemap(this.eventHandler);
         }
         if (zoomIndex === 0) {
@@ -97,8 +92,6 @@ class TreeMapSection extends Component {
 
     componentDidMount() {
         if (this.props.spendingData !== null) {
-            console.log('MOUNTED!');
-            console.log(this.props.spendingData);
             this.fullData = this.props.spendingData['expenditure']['national'];
             this.zoomStep = 5;
             this.initTreemap(this.eventHandler);
@@ -106,6 +99,11 @@ class TreeMapSection extends Component {
     }
 
     initTreemap(clickCallback) {
+
+        const old_parent = document.getElementById("treemap");
+        while (old_parent.firstChild) {
+            old_parent.firstChild.remove();
+        }
 
         const parent = window.d3.select('#treemap');
         const svg = parent.append("svg");
@@ -220,6 +218,7 @@ class TreeMapSection extends Component {
             zoomOutButtonState: state.zoomOutButtonState,
             eventZoomIn: events.eventZoomIn,
             eventZoomOut: events.eventZoomOut,
+            nextBiggestObjectOutsideView: state.nextBiggestObjectOutsideView,
         };
 
         return <Markup {...passedProps} />

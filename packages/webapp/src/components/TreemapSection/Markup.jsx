@@ -45,7 +45,7 @@ const callButtonExplore = (selected) => (
 );
 
 const callTreeMap = (eventZoomIn, eventZoomOut, selected, latestBudget, totalBudget,
-                     zoomOutButtonState, zoomInButtonState) => {
+                     zoomOutButtonState, zoomInButtonState, nextBiggestObjectOutsideView) => {
   return (
     <React.Fragment>
       <DetailsContainer>
@@ -54,6 +54,7 @@ const callTreeMap = (eventZoomIn, eventZoomOut, selected, latestBudget, totalBud
           <Amount>R{selected ? trimValues(selected.amount) : trimValues(totalBudget)}</Amount>
           <PhaseContainer>
             <BudgetPhaseButton>Original Budget</BudgetPhaseButton>
+            <p> {nextBiggestObjectOutsideView ? 'Showing departments smaller than: '+nextBiggestObjectOutsideView.name : ``} {nextBiggestObjectOutsideView ? nextBiggestObjectOutsideView.amount : `Showing all`}</p>
           </PhaseContainer>
         </div>
         {selected ? callButtonExplore(selected) : null}
@@ -97,6 +98,7 @@ const Markup = (props) => {
     isNationalBudget,
     zoomOutButtonState,
     zoomInButtonState,
+    nextBiggestObjectOutsideView,
   } = props;
 
   return (
@@ -112,7 +114,7 @@ const Markup = (props) => {
           </IconAndDates>
         </BudgetContainer>
         {isNationalBudget ? callTreeMap(eventZoomIn, eventZoomOut, selected, latestBudget, totalBudget,
-            zoomOutButtonState, zoomInButtonState) : callNotice()}
+            zoomOutButtonState, zoomInButtonState, nextBiggestObjectOutsideView) : callNotice()}
       </TreemapWrapper>
     </Wrapper>
   );
