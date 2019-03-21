@@ -133,6 +133,12 @@ class TreeMapSection extends Component {
             });
 
         nodes
+        .append("text")
+        .attr("class", "name")
+            .on("click", function (d) {
+                clickCallback(d.data);
+            });
+        nodes
             .append("text")
             .on("click", function (d) {
                 clickCallback(d.data);
@@ -159,7 +165,7 @@ class TreeMapSection extends Component {
             const nameFontSize = 16;
             const textPadding = 16;
             gNode
-                .selectAll("text")
+                .selectAll("text.name")
                 .attr("transform", "translate(" + textPadding + ", " + (textPadding + nameFontSize) + ")")
                 .text(function (d) {
                     return (d.y1 - d.y0) < 16 ? "" : d.data.name;
@@ -186,6 +192,21 @@ class TreeMapSection extends Component {
                         d.tw = this.getComputedTextLength();
                     }
                 });
+          gNode
+            .selectAll("text.amount")
+            .attr("transform", "translate(" + textPadding + ", " + (textPadding + nameFontSize) + ")")
+            .text(function (d) {
+              return (d.y1 - d.y0) < 16 ? "" : d.data.name;
+            })
+            .filter(function (d) {
+              d.tw = this.getComputedTextLength();
+              return (d.x1 - d.x0) < d.tw;
+            })
+            .each(function(d) {
+              ...size stuff...
+
+                window.d3.select(this).text(proposedLabel);
+            )};
         };
         resize();
         window.d3.select(window).on("resize", resize);
