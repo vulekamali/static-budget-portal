@@ -56,12 +56,10 @@ class TreeMapSection extends Component {
                 zoomOutButtonState: false,
             });
             const parent = document.getElementById("treemap");
-            console.log(parent);
             while (parent.firstChild) {
                 parent.firstChild.remove();
             }
-            console.log(parent);
-            this.initTreemap(null)
+            this.initTreemap(this.eventHandler);
         }
         if (spliceIndex + this.zoomStep >= this.fullData.length) {
             this.setState({
@@ -84,7 +82,11 @@ class TreeMapSection extends Component {
                 zoomOutButtonState: false,
                 zoomInButtonState: false,
             });
-            this.treemapNode.data(splicedData).draw();
+            const parent = document.getElementById("treemap");
+            while (parent.firstChild) {
+                parent.firstChild.remove();
+            }
+            this.initTreemap(this.eventHandler);
         }
         if (zoomIndex === 0) {
             this.setState({
@@ -94,9 +96,9 @@ class TreeMapSection extends Component {
     }
 
     componentDidMount() {
-        this.treemapNode = this.initTreemap(this.eventHandler);
         this.fullData = this.props.spendingData['expenditure']['national'];
         this.zoomStep = 5;
+        this.initTreemap(this.eventHandler);
     }
 
     initTreemap(clickCallback) {
