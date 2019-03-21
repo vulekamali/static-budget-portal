@@ -110,20 +110,19 @@ class TreeMapSection extends Component {
             "children": this.state.departmentData.expenditure.national,
         };
         var rootNode = window.d3.hierarchy(hierarchy);
-        console.log(rootNode);
+
+        // whats this doing? -JR
         rootNode.sum(function (d) {
             return d.amount;
         });
 
         var paddingAllowance = 2;
-        var nodes = gNode
-            .selectAll("g")
+        var nodes = gNode.selectAll("g")
             .data(rootNode.descendants())
             .enter()
             .append("g");
 
-        nodes
-            .append("rect")
+        nodes.append("rect")
             .style("fill", function (d) {
                 return d.data.color;
             })
@@ -132,14 +131,14 @@ class TreeMapSection extends Component {
                 clickCallback(d.data);
             });
 
-        nodes
-        .append("text")
-        .attr("class", "name")
+        nodes.append("text")
+            .attr("class", "name")
             .on("click", function (d) {
                 clickCallback(d.data);
             });
-        nodes
-            .append("text")
+
+        nodes.append("text")
+            .attr("class", "amount")
             .on("click", function (d) {
                 clickCallback(d.data);
             });
@@ -149,23 +148,24 @@ class TreeMapSection extends Component {
             const height = parseFloat(parent.style("height"));
             treemapLayout.size([width, height]);
             treemapLayout(rootNode);
-            gNode
-                .selectAll("g")
+
+            gNode.selectAll("g")
                 .attr("transform", function (d) {
                     return "translate(" + [d.x0, d.y0] + ")";
                 });
-            gNode
-                .selectAll("rect")
+
+            gNode.selectAll("rect")
                 .attr("width", function (d) {
                     return d.x1 - d.x0;
                 })
                 .attr("height", function (d) {
                     return d.y1 - d.y0;
                 });
+
             const nameFontSize = 16;
             const textPadding = 16;
-            gNode
-                .selectAll("text.name")
+
+            gNode.selectAll("text.name")
                 .attr("transform", "translate(" + textPadding + ", " + (textPadding + nameFontSize) + ")")
                 .text(function (d) {
                     return (d.y1 - d.y0) < 16 ? "" : d.data.name;
@@ -192,21 +192,21 @@ class TreeMapSection extends Component {
                         d.tw = this.getComputedTextLength();
                     }
                 });
-          gNode
-            .selectAll("text.amount")
-            .attr("transform", "translate(" + textPadding + ", " + (textPadding + nameFontSize) + ")")
-            .text(function (d) {
-              return (d.y1 - d.y0) < 16 ? "" : d.data.name;
-            })
-            .filter(function (d) {
-              d.tw = this.getComputedTextLength();
-              return (d.x1 - d.x0) < d.tw;
-            })
-            .each(function(d) {
-              ...size stuff...
 
-                window.d3.select(this).text(proposedLabel);
-            )};
+            gNode.selectAll("text.amount")
+                .attr("transform", "translate(" + textPadding + ", " + (textPadding*3 + nameFontSize) + ")")
+                .text(function (d) {
+                    return (d.y1 - d.y0) < 16 ? "" : d.data.amount;
+                })
+                .filter(function (d) {
+                    d.tw = this.getComputedTextLength();
+                    return (d.x1 - d.x0) < d.tw;
+                })
+                .each(function (d) {
+                    // ...size stuff...
+
+                    window.d3.select(this).text(d.data.amount);
+                });
         };
         resize();
         window.d3.select(window).on("resize", resize);

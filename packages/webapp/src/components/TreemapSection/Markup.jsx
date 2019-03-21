@@ -62,7 +62,8 @@ const callTreeMap = (eventZoomIn, eventZoomOut, selected, latestBudget, totalBud
         <React.Fragment>
         <GlobalStyle />
         <TreemapContained id="treemap" />
-      </React.Fragment>        <ZoomButtonContainer>
+      </React.Fragment>
+        <ZoomButtonContainer>
           <ZoomButton disabled={zoomOutButtonState} onClick={eventZoomOut}>
             <RemoveIcon />
           </ZoomButton>
