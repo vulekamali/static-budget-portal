@@ -46,7 +46,7 @@ const callTreeMap = (eventHandler, selected, latestBudget, totalBudget) => {
         </div>
         {selected ? callButtonExplore(selected) : null}
       </DetailsContainer>
-      <TreeMap event={eventHandler} data={latestBudget} />
+      <TreeMap clickCallback={eventHandler} data={latestBudget} />
       <FooterContainer>
         <FooterDetails>Budget data from 1 April 2018 - 31 March 2019</FooterDetails>
         <FooterDetails>Direct charges against the National Revenue Fund are excluded</FooterDetails>

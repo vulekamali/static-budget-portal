@@ -11,7 +11,7 @@ class TreeMap extends Component {
   constructor(props) {
     super(props);
     this.treemap = React.createRef();
-    this.event = props.event;
+    this.clickCallback = props.clickCallback;
   }
 
   render() {
@@ -24,7 +24,7 @@ class TreeMap extends Component {
     )
   }
 
-  initTreemap(data, event) {
+  initTreemap(data, clickCallback) {
 
     const parent = window.d3.select('#treemap');
     const svg = parent.append("svg");
@@ -51,10 +51,16 @@ class TreeMap extends Component {
       .append("rect")
       .style("fill", function(d) {
         return d.data.color;
+      })
+      .on("click", function(d) {
+        clickCallback(d.data);
       });
 
     nodes
-      .append("text");
+      .append("text")
+      .on("click", function(d) {
+        clickCallback(d.data);
+      });
 
     const resize = function() {
       const width = parseFloat(parent.style("width"));
@@ -110,7 +116,7 @@ class TreeMap extends Component {
   }
 
   componentDidMount() {
-    this.initTreemap(this.props.data, this.event);
+    this.initTreemap(this.props.data, this.clickCallback);
   }
 }
 
