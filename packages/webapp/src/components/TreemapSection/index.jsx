@@ -27,7 +27,7 @@ class TreeMapSection extends Component {
             zoomOutButtonState: true,
             departmentData: departmentData,
             zoomIndex: 0,
-            isNationalBudget: true,
+            isNationalBudget: this.props.isNationalBudget,
         };
         this.events = {
             eventZoomIn: this.eventZoomIn.bind(this),
@@ -96,9 +96,13 @@ class TreeMapSection extends Component {
     }
 
     componentDidMount() {
-        this.fullData = this.props.spendingData['expenditure']['national'];
-        this.zoomStep = 5;
-        this.initTreemap(this.eventHandler);
+        if (this.props.spendingData !== null) {
+            console.log('MOUNTED!');
+            console.log(this.props.spendingData);
+            this.fullData = this.props.spendingData['expenditure']['national'];
+            this.zoomStep = 5;
+            this.initTreemap(this.eventHandler);
+        }
     }
 
     initTreemap(clickCallback) {
@@ -199,10 +203,17 @@ class TreeMapSection extends Component {
         const {state, events} = this;
         const {departmentData, isNationalBudget} = state;
 
+        let data = [];
+        let total_budget = 0;
+        if (departmentData !== null){
+            data = departmentData.expenditure.national;
+            total_budget = departmentData['total_budgets']['Main appropriation']['2019']
+        }
+
         const passedProps = {
             isNationalBudget,
-            latestBudget: departmentData.expenditure.national,
-            totalBudget: departmentData['total_budgets']['Main appropriation']['2019'],
+            latestBudget: data,
+            totalBudget: total_budget,
             eventHandler: events.eventHandler,
             selected: state.selected,
             zoomInButtonState: state.zoomInButtonState,
