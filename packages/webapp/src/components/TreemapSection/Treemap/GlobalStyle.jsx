@@ -16,13 +16,9 @@ const GlobalStyle = createGlobalStyle`
   .labelbody {
       margin: 2px;
   }
-  foreignObject {
-      font: 10px sans-serif;
-      text-align: left;
-  }
-  foreignObject div {
-      word-wrap: break-word;
-      text-overflow: ellipsis;
+  svg {
+    width: 100%;
+    height: 100%;
   }
 `;
 
