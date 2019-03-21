@@ -38,7 +38,8 @@ const callButtonExplore = (selected) => (
   </LinkWrapper>
 );
 
-const callTreeMap = (eventHandler, eventZoomIn, eventZoomOut, selected, latestBudget, totalBudget, buttonState) => {
+const callTreeMap = (eventZoomIn, eventZoomOut, selected, latestBudget, totalBudget,
+                     zoomOutButtonState, zoomInButtonState) => {
   return (
     <React.Fragment>
       <DetailsContainer>
@@ -55,10 +56,10 @@ const callTreeMap = (eventHandler, eventZoomIn, eventZoomOut, selected, latestBu
         {/* <TreeMap event={eventHandler} data={latestBudget} /> */}
         <div id="treemap"></div>
         <ZoomButtonContainer>
-          <ZoomButton disabled={buttonState} onClick={eventZoomOut}>
+          <ZoomButton disabled={zoomOutButtonState} onClick={eventZoomOut}>
             <RemoveIcon />
           </ZoomButton>
-          <ZoomButton disabled={buttonState} onClick={eventZoomIn}>
+          <ZoomButton disabled={zoomInButtonState} onClick={eventZoomIn}>
             <AddIcon />
           </ZoomButton>
         </ZoomButtonContainer>
@@ -81,14 +82,14 @@ const callNotice = () => (
 const Markup = (props) => {
 
   const {
-    eventHandler,
     eventZoomIn,
     eventZoomOut,
     selected,
     latestBudget,
     totalBudget,
     isNationalBudget,
-    buttonState,
+    zoomOutButtonState,
+    zoomInButtonState,
   } = props;
 
   return (
@@ -103,7 +104,8 @@ const Markup = (props) => {
             </div>
           </IconAndDates>
         </BudgetContainer>
-        {isNationalBudget ? callTreeMap(eventHandler, eventZoomIn, eventZoomOut, selected, latestBudget, totalBudget, buttonState) : callNotice()}
+        {isNationalBudget ? callTreeMap(eventZoomIn, eventZoomOut, selected, latestBudget, totalBudget,
+            zoomOutButtonState, zoomInButtonState) : callNotice()}
       </TreemapWrapper>
     </Wrapper>
   );

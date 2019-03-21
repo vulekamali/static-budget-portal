@@ -7,7 +7,6 @@ class TreeMapSection extends Component {
     constructor(props) {
         super(props);
         this.initTreemap = this.initTreemap.bind(this);
-
         let sortedBudgetColor = null;
         let departmentData = this.props.spendingData;
         if (departmentData !== null) {
@@ -23,41 +22,40 @@ class TreeMapSection extends Component {
             }));
             departmentData.expenditure.national = sortedBudgetColor;
         }
-
         this.state = {
             selected: null,
-            buttonState: false,
+            zoomInButtonState: false,
+            zoomOutButtonState: true,
             departmentData: departmentData,
             zoomIndex: 0,
             isNationalBudget: true,
         };
-
         this.events = {
-            eventHandler: this.eventHandler.bind(this),
             eventZoomIn: this.eventZoomIn.bind(this),
             eventZoomOut: this.eventZoomOut.bind(this)
         };
-
-        let treemapNode = null;
-        let fullData = null;
     }
 
     eventZoomIn() {
         let {zoomIndex, departmentData} = this.state;
         zoomIndex += 1;
-        const spliceIndex = 5 * zoomIndex;
+        const spliceIndex = this.zoomStep * zoomIndex;
         let splicedData = [...this.fullData];
-        if (spliceIndex < this.fullData.length) {
+        if (spliceIndex <= this.fullData.length) {
             splicedData.splice(0, spliceIndex);
-            console.log(0, spliceIndex);
-            console.log(splicedData);
             departmentData['expenditure']['national'] = splicedData;
-
             this.setState({
                 departmentData: departmentData,
                 zoomIndex: zoomIndex,
+                zoomInButtonState: false,
+                zoomOutButtonState: false,
             });
             this.treemapNode.data(splicedData).draw();
+        }
+        if (spliceIndex+this.zoomStep >= this.fullData.length) {
+            this.setState({
+                zoomInButtonState: true
+            })
         }
     }
 
@@ -68,23 +66,23 @@ class TreeMapSection extends Component {
         let splicedData = [...this.fullData];
         if (spliceIndex >= 0) {
             splicedData.splice(0, spliceIndex);
-            console.log(0, spliceIndex);
-            console.log(splicedData);
             departmentData['expenditure']['national'] = splicedData;
-
             this.setState({
                 departmentData: departmentData,
                 zoomIndex: zoomIndex,
+                zoomOutButtonState: false,
+                zoomInButtonState: false,
             });
             this.treemapNode.data(splicedData).draw();
         }
+        if (zoomIndex === 0) {
+            this.setState({
+                zoomOutButtonState: true
+            })
+        }
     }
 
-    eventHandler(e) {
-        this.setState({selected: e, buttonState: !this.state.buttonState});
-    }
-
-    initTreemap(data) {
+    initTreemap() {
         return window.d3plus.viz()
             .container("#treemap")
             .data(this.state.departmentData.expenditure.national)
@@ -111,6 +109,7 @@ class TreeMapSection extends Component {
     componentDidMount() {
         this.treemapNode = this.initTreemap();
         this.fullData = this.props.spendingData['expenditure']['national'];
+        this.zoomStep = 5;
     }
 
     render() {
@@ -123,7 +122,8 @@ class TreeMapSection extends Component {
             totalBudget: departmentData['total_budgets']['Main appropriation']['2019'],
             eventHandler: events.eventHandler,
             selected: state.selected,
-            buttonState: state.buttonState,
+            zoomInButtonState: state.zoomInButtonState,
+            zoomOutButtonState: state.zoomOutButtonState,
             eventZoomIn: events.eventZoomIn,
             eventZoomOut: events.eventZoomOut,
         };
