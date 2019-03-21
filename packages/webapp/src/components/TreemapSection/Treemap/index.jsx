@@ -80,10 +80,11 @@ class TreeMap extends Component {
         .attr("height", function(d) {
           return d.y1 - d.y0;
         });
-
+      const nameFontSize = 16;
+      const textPadding = 16;
       gNode
         .selectAll("text")
-        .attr("transform", "translate(8, 22)")
+        .attr("transform", "translate(" + textPadding + ", " + (textPadding + nameFontSize) + ")")
         .text(function(d) {
           return (d.y1 - d.y0) < 16 ? "" : d.data.name;
         })

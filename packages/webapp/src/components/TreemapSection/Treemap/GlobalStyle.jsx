@@ -1,8 +1,8 @@
 import { createGlobalStyle } from 'styled-components';
 
 const GlobalStyle = createGlobalStyle`
-  rect {
-    stroke: white;
+  rect:hover {
+    opacity: 0.9;
   }
 
   text {
@@ -12,12 +12,10 @@ const GlobalStyle = createGlobalStyle`
     font-weight: bold;
   }
 
-  .labelbody {
-      margin: 2px;
-  }
   svg {
     width: 100%;
     height: 100%;
+    border-radius: 10px;
   }
 `;
 
