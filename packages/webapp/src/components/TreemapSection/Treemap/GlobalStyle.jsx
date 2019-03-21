@@ -2,15 +2,14 @@ import { createGlobalStyle } from 'styled-components';
 
 const GlobalStyle = createGlobalStyle`
   rect {
-    fill: cadetblue;
-    opacity: 0.3;
     stroke: white;
   }
 
   text {
-    font-family: "Helvetica Neue", Helvetica, sans-serif;
-    fill: white;
-    font-size: 10px;
+    font-family: Roboto, sans-serif;
+    fill: black;
+    font-size: 16px;
+    font-weight: bold;
   }
 
   .labelbody {

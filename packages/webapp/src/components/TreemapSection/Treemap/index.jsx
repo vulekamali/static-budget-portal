@@ -48,7 +48,10 @@ class TreeMap extends Component {
         .append("g");
 
     nodes
-      .append("rect");
+      .append("rect")
+      .style("fill", function(d) {
+        return d.data.color;
+      });
 
     nodes
       .append("text");
@@ -74,7 +77,7 @@ class TreeMap extends Component {
 
       gNode
         .selectAll("text")
-        .attr("transform", "translate(3, 13)")
+        .attr("transform", "translate(8, 22)")
         .text(function(d) {
           return (d.y1 - d.y0) < 16 ? "" : d.data.name;
         })
