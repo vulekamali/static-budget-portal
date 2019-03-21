@@ -41,6 +41,9 @@ class TreeMapSection extends Component {
     eventHandler(data) {
         console.log('Event fired!');
         console.log(data);
+        this.setState({
+            selected: data
+        })
     }
 
     eventZoomIn() {
