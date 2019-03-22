@@ -54,7 +54,10 @@ const callTreeMap = (eventZoomIn, eventZoomOut, selected, latestBudget, totalBud
           <Amount>R{selected ? trimValues(selected.amount) : trimValues(totalBudget)}</Amount>
           <PhaseContainer>
             <BudgetPhaseButton>Original Budget</BudgetPhaseButton>
-            <p> {nextBiggestObjectOutsideView ? 'Showing departments smaller than: '+nextBiggestObjectOutsideView.name : ``} {nextBiggestObjectOutsideView ? nextBiggestObjectOutsideView.amount : `Showing all`}</p>
+            <p>
+              {nextBiggestObjectOutsideView ? 'Showing departments smaller than: ' + nextBiggestObjectOutsideView.name + ' R' : ``}
+              {nextBiggestObjectOutsideView ? trimValues(nextBiggestObjectOutsideView.amount) : ``}
+            </p>
           </PhaseContainer>
         </div>
         {selected ? callButtonExplore(selected) : null}
