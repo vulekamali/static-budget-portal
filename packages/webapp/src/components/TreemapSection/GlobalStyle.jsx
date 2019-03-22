@@ -12,6 +12,13 @@ const GlobalStyle = createGlobalStyle`
     font-weight: bold;
   }
 
+text.amount {
+    font-family: Roboto, sans-serif;
+    fill: black;
+    font-size: 16px;
+    font-weight: normal;
+  }
+
   svg {
     width: 100%;
     height: 100%;
