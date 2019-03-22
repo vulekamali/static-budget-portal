@@ -8,7 +8,7 @@ import DialogTitle from '@material-ui/core/DialogTitle';
 import DialogContent from '@material-ui/core/DialogContent';
 import DialogContentText from '@material-ui/core/DialogContentText';
 import DialogActions from '@material-ui/core/DialogActions';
-import Zoom from '@material-ui/core/Zoom'; 
+import Zoom from '@material-ui/core/Zoom';
 import Button from '@material-ui/core/Button';
 
 
@@ -53,12 +53,12 @@ const StyledDialogActions = styled(DialogActions)`
 
 
 const Modal = ({ open, closeModal, url }) => (
-  <Dialog 
+  <Dialog
     {...{ open }}
     onClose={closeModal}
     TransitionComponent={Zoom}
   >
-    <DialogTitle>Budget Speech 2019</DialogTitle>
+    <DialogTitle>Share</DialogTitle>
     <DialogContent>
       <DialogContentText>
         <span>Link to share: </span>
