@@ -39,8 +39,6 @@ class TreeMapSection extends Component {
     }
 
     eventHandler(data) {
-        console.log('Event fired!');
-        console.log(data);
         this.setState({
             selected: data
         })
@@ -135,7 +133,6 @@ class TreeMapSection extends Component {
                 return d.data.color;
             })
             .on("click", function (d) {
-                console.log(d);
                 clickCallback(d.data);
             });
 
@@ -191,10 +188,11 @@ class TreeMapSection extends Component {
                         proposedLabelArray.pop();
                         proposedLabelArray.pop();
                         proposedLabelArray.pop();
-                        if (proposedLabelArray.length === 0) {
+                        if (proposedLabelArray.length < 5) {
                             proposedLabel = "";
                         } else {
-                            proposedLabel = proposedLabelArray.join("") + "..."; // manually truncate with ellipsis
+                          // manually truncate with ellipsis
+                          proposedLabel = proposedLabelArray.join("") + "...";
                         }
                         window.d3.select(this).text(proposedLabel);
                         d.tw = this.getComputedTextLength();
@@ -208,7 +206,6 @@ class TreeMapSection extends Component {
                 })
                 .filter(function (d) {
                     d.tw = this.getComputedTextLength();
-                    console.log(d.tw);
                     return (d.x1 - d.x0) < d.tw;
                 })
                 .each(function (d) {
