@@ -34,6 +34,10 @@ const TreemapContained = styled.div`
   height: 500px;
 `;
 
+const ZoomLevelIndicator = styled.p`
+  font-family: Roboto, sans-serif;
+  font-size: 12px;
+`;
 
 const callButtonExplore = (selected) => (
   <LinkWrapper href={selected.detail}>
@@ -54,11 +58,13 @@ const callTreeMap = (eventZoomIn, eventZoomOut, selected, latestBudget, totalBud
           <Amount>R{selected ? trimValues(selected.amount) : trimValues(totalBudget)}</Amount>
           <PhaseContainer>
             <BudgetPhaseButton>Original Budget</BudgetPhaseButton>
-            <p> {nextBiggestObjectOutsideView ? 'Showing departments smaller than: '+nextBiggestObjectOutsideView.name : ``} {nextBiggestObjectOutsideView ? nextBiggestObjectOutsideView.amount : `Showing all`}</p>
           </PhaseContainer>
         </div>
         {selected ? callButtonExplore(selected) : null}
       </DetailsContainer>
+      <ZoomLevelIndicator>
+        {nextBiggestObjectOutsideView ? 'Showing departments smaller than: ' + nextBiggestObjectOutsideView.name + ' (R' + trimValues(nextBiggestObjectOutsideView.amount) + ')' : ``}
+      </ZoomLevelIndicator>
       <TreemapContainer>
         <React.Fragment>
         <GlobalStyle />
@@ -83,7 +89,7 @@ const callTreeMap = (eventZoomIn, eventZoomOut, selected, latestBudget, totalBud
 
 const callNotice = () => (
   <React.Fragment>
-    <NoticeMessage>The data for the provincial budget summary has not been released yet</NoticeMessage>
+    <NoticeMessage>The data for the provincial budget summary will be available in April.</NoticeMessage>
   </React.Fragment>
 );
 
