@@ -75,7 +75,7 @@ const DateButton = styled.div`
     font-size: 16px;
     line-height: 24px;
     text-align: center;
-    letter-spacing: 0.15px; 
+    letter-spacing: 0.15px;
     color: #000;
 
     @media screen and (min-width: 450px) {
@@ -139,7 +139,7 @@ const BudgetPhaseButton = styled.div`
     font-weight: 700;
     line-height: 24px;
     text-align: left;
-    letter-spacing: 0.15px; 
+    letter-spacing: 0.15px;
     color: #000;
 
     @media screen and (min-width: 450px) {
@@ -210,7 +210,7 @@ const NoticeMessage = styled(Typography)`
 
   && {
     font-weight: 700;
-    font-size: 32px;
+    font-size: 18px;
     line-height: 65px;
     color: #666;
     text-transform: Uppercase;

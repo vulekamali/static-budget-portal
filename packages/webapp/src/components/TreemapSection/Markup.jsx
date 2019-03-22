@@ -89,7 +89,7 @@ const callTreeMap = (eventZoomIn, eventZoomOut, selected, latestBudget, totalBud
 
 const callNotice = () => (
   <React.Fragment>
-    <NoticeMessage>The data for the provincial budget summary has not been released yet</NoticeMessage>
+    <NoticeMessage>The data for the provincial budget summary will be available in April.</NoticeMessage>
   </React.Fragment>
 );
 
