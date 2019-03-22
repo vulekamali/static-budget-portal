@@ -176,14 +176,14 @@ class TreeMapSection extends Component {
                     return (d.y1 - d.y0) < 16 ? "" : d.data.name;
                 })
                 .filter(function (d) {
-                    d.tw = this.getComputedTextLength();
-                    return (d.x1 - d.x0) < d.tw;
+                    d.textWidth = this.getComputedTextLength();
+                    return (d.x1 - d.x0) < d.textWidth;
                 })
                 .each(function (d) {
                     // ridiculous routine where we test to see if label is short enough to fit
                     var proposedLabel = d.data.name;
                     var proposedLabelArray = proposedLabel.split("");
-                    while (d.tw > (d.x1 - d.x0) && proposedLabelArray.length) {
+                    while (d.textWidth > (d.x1 - d.x0) && proposedLabelArray.length) {
                         // pull out 3 chars at a time to speed things up (one at a time is too slow)
                         proposedLabelArray.pop();
                         proposedLabelArray.pop();
@@ -195,22 +195,26 @@ class TreeMapSection extends Component {
                           proposedLabel = proposedLabelArray.join("") + "...";
                         }
                         window.d3.select(this).text(proposedLabel);
-                        d.tw = this.getComputedTextLength();
+                        d.textWidth = this.getComputedTextLength();
                     }
                 });
 
             gNode.selectAll("text.amount")
                 .attr("transform", "translate(" + textPadding + ", " + (textPadding*3 + nameFontSize) + ")")
-                .text(function (d) {
-                    return (d.y1 - d.y0) < 100 ? "" : trimValues(d.data.amount, false);
-                })
-                .filter(function (d) {
-                    d.tw = this.getComputedTextLength();
-                    return (d.x1 - d.x0) < d.tw;
-                })
-                .each(function (d) {
-                    window.d3.select(this).text(trimValues(d.data.amount, true));
-                });
+            .text(function (d) {
+              const blockHeight = d.y1 - d.y0;
+              const blockWidth = d.x1 - d.x0;
+              const amountString = "R" + trimValues(d.data.amount, false);
+              window.d3.select(this).text(amountString);
+              d.textWidth = this.getComputedTextLength();
+              const highEnough = blockHeight > 100;
+              const wideEnough = blockWidth > (d.textWidth + textPadding);
+              if (highEnough && wideEnough) {
+                return  amountString;
+              } else {
+                return "";
+              }
+            });
         };
         resize();
         window.d3.select(window).on("resize", resize);
