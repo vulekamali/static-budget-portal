@@ -383,3 +383,21 @@ else:
         with open(project_context_path, 'wb') as project_file:
             project_file.write(GENERATED_YAML_COMMENT)
             project_file.write(r.text)
+
+
+# Departments treemap
+
+listing_url_path = '/treemap'
+logger.info(listing_url_path)
+listing_url = portal_url + listing_url_path[1:] + '.yaml'
+r = http_get(session, listing_url)
+if r.status_code == 404:
+    logger.info("No treemap data.")
+else:
+    r.raise_for_status()
+    listing_path = '_data%s.yaml' % listing_url_path
+
+    dataset_list_path = '_data%s/index.yaml' % listing_url_path
+    ensure_file_dirs(dataset_list_path)
+    with open(dataset_list_path, 'wb') as dataset_list_file:
+        dataset_list_file.write(r.text)

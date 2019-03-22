@@ -17,6 +17,8 @@
     "copy-to-clipboard": "^3.0.8",
     "core-js": "^2.6.5",
     "css-loader": "1.0.0",
+    "d3": "^5.9.2",
+    "d3plus": "2.0.0-alpha.18",
     "dotenv": "6.0.0",
     "dotenv-expand": "4.2.0",
     "eslint": "5.12.0",
@@ -66,7 +68,6 @@
     "workbox-webpack-plugin": "3.6.3"
   },
   "scripts": {
-    "start:docs": "docz dev",
     "start:storybook": "start-storybook -p 9001 -c .storybook",
     "start": "node scripts/start.js",
     "build": "node scripts/build.js",
@@ -77,8 +78,6 @@
     "@babel/core": "^7.2.2",
     "@storybook/react": "^4.1.11",
     "babel-loader": "^8.0.5",
-    "docz": "^0.13.7",
-    "docz-theme-default": "^0.13.7",
     "webpack": "^4.28.4"
   },
   "babel": {

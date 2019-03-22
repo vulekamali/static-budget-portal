@@ -1,7 +1,6 @@
-import React, { Fragment } from 'react';
+import React from 'react';
 import styled from 'styled-components';
 import t from 'prop-types';
-import CssBaseline from '@material-ui/core/CssBaseline';
 import { Typography } from '@material-ui/core';
 import Buttons from './Buttons';
 import Resources from './Resources';
@@ -9,7 +8,6 @@ import NotificationBar from './NotificationBar';
 import parliamentImg from './parliament-building-budget-speech.jpg';
 import Modal from './Modal';
 import Layout from '../../components/Layout';
-
 
 
 
@@ -72,12 +70,11 @@ const Markup = (props) => {
     subheading,
     notice,
     resources,
-    image,
     callToAction,
     modal,
     closeModal,
     openModal,
-    videoUrl
+    videoUrl,
   } = props;
 
   const buttons = {
@@ -96,6 +93,8 @@ const Markup = (props) => {
         <Buttons primary={buttons.primary} secondary={buttons.secondary} />
       </Image>
       <NotificationBar {...{ notice, callToAction }} />
+      <div data-webapp={'national-departments-treemap'}></div>
+      <div data-webapp={'provincial-departments-treemap'}></div>
       {resources && <Resources {...{ resources }} />}
     </Layout>
   );
