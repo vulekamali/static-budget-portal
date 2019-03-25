@@ -4,6 +4,7 @@ import styled from 'styled-components';
 const Wrapper = styled.div`
   display: flex;
   justify-content: center;
+  align-items: center;
 `;
 
 const BudgetContainer = styled.div`
@@ -18,8 +19,6 @@ const BudgetContainer = styled.div`
   }
 
   @media screen and (min-width: 900px) {
-    display: flex;
-    align-items: center;
     margin-bottom: 30px;
   }
 `;
@@ -27,17 +26,15 @@ const BudgetContainer = styled.div`
 const BudgetHeading = styled(Typography)`
   &&&& {
     font-weight: 700;
-    font-size: 20px;
-    line-height: 24px;
+    font-size: 18px;
+    line-height: 65px;
     color: #000;
     text-transform: Capitalize;
-    padding-bottom: 20px;
     text-align: left;
 
     @media screen and (min-width: 600px) {
       border-right: 1px solid #000;
       line-height: 40px;
-      padding-bottom: 0;
       white-space: nowrap;
       padding-right: 36px;
     }
@@ -66,13 +63,12 @@ const SpeedDialStyled = styled.div`
   position: absolute;
   top: 0;
   right: 0;
-  margin-top: 5px;
+  margin-top: 20px;
 
   @media screen and (min-width: 600px) {
     position: static;
-    margin-top: none;
+    margin-top: 0;
   }
-
 `;
 
 
