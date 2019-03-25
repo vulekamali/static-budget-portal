@@ -2,6 +2,7 @@ import React from 'react';
 import SpeedDial from '../SpeedDial';
 
 import {
+  Wrapper,
   BudgetContainer,
   BudgetHeading,
   IconAndDates,
@@ -33,10 +34,12 @@ import {
  }
 
 const SectionHeading = ({ title, share }) => (
-  <BudgetContainer>
-    <BudgetHeading>{title}</BudgetHeading>
-    {callShareIconAndDates(share)}
-  </BudgetContainer>
+  <Wrapper>
+      <BudgetContainer>
+        <BudgetHeading component='div'>{title}</BudgetHeading>
+        {callShareIconAndDates(share)}
+    </BudgetContainer>
+  </Wrapper>
 );
 
 export default SectionHeading;
