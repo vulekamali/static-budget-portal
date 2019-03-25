@@ -6,18 +6,20 @@ import {
   BudgetContainer,
   BudgetHeading,
   IconAndDates,
-  DateButton,
+  SpeedDialStyled,
  } from './styled';
 
- const callShareIconAndDates = share => {
+ const callShareIconAndDates = (share, children) => {
    if(!share) return null;
-   console.log(typeof(share))
+
    if(typeof(share) === 'string') {
     return (
       <IconAndDates>
-        <SpeedDial {...{ share }} />
+        <SpeedDialStyled>
+          <SpeedDial {...{ share }} />
+        </SpeedDialStyled>
         <div>
-          <DateButton>2019-20</DateButton>
+          {children}
         </div>
       </IconAndDates>
      );
@@ -25,19 +27,21 @@ import {
 
    if(share) return (
     <IconAndDates>
-      <SpeedDial />
+      <SpeedDialStyled>
+        <SpeedDial />
+      </SpeedDialStyled>
       <div>
-        <DateButton>2019-20</DateButton>
+        {children}
       </div>
     </IconAndDates>
    );
  }
 
-const SectionHeading = ({ title, share }) => (
+const SectionHeading = ({ title, share, children }) => (
   <Wrapper>
       <BudgetContainer>
         <BudgetHeading component='div'>{title}</BudgetHeading>
-        {callShareIconAndDates(share)}
+        {callShareIconAndDates(share, children)}
     </BudgetContainer>
   </Wrapper>
 );

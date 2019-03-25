@@ -32,11 +32,10 @@ const BudgetHeading = styled(Typography)`
     color: #000;
     text-transform: Capitalize;
     padding-bottom: 20px;
-    text-align: center;
+    text-align: left;
 
     @media screen and (min-width: 600px) {
       border-right: 1px solid #000;
-      text-align: left;
       line-height: 40px;
       padding-bottom: 0;
       white-space: nowrap;
@@ -63,24 +62,18 @@ const IconAndDates = styled.div`
   }
 `;
 
-const DateButton = styled.div`
-  && {
-    font-family: Roboto;
-    font-weight: 700;
-    font-size: 16px;
-    line-height: 24px;
-    text-align: center;
-    letter-spacing: 0.15px;
-    color: #000;
+const SpeedDialStyled = styled.div`
+  position: absolute;
+  top: 0;
+  right: 0;
+  margin-top: 5px;
 
-    @media screen and (min-width: 600px) {
-      font-size: 24px;
-      padding-right: 20px;
-      padding-left: 20px;
-    }
+  @media screen and (min-width: 600px) {
+    position: static;
+    margin-top: none;
   }
-`;
 
+`;
 
 
 export {
@@ -88,7 +81,7 @@ export {
   BudgetContainer,
   BudgetHeading,
   IconAndDates,
-  DateButton
+  SpeedDialStyled,
 }
 
 export default {
@@ -96,5 +89,5 @@ export default {
   BudgetContainer,
   BudgetHeading,
   IconAndDates,
-  DateButton
+  SpeedDialStyled,
 }

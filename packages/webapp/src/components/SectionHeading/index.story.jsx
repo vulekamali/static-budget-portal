@@ -2,9 +2,9 @@ import React from 'react';
 import { storiesOf } from '@storybook/react';
 import SectionHeading from './index';
 
-const share = () => <SectionHeading title='Provincial Budget Summary' share />;
-const noShare = () => <SectionHeading title='Provincial Budget Summary' />;
-const shareString = () => <SectionHeading title='Provincial Budget Summary' share='addTextHere' />;
+const share = () => <SectionHeading title='Provincial Budget Summary' share>Children Components</SectionHeading>;
+const noShare = () => <SectionHeading title='Provincial Budget Summary'>Children Components</SectionHeading>;
+const shareString = () => <SectionHeading title='Provincial Budget Summary' share='addTextHere'>Children Components</SectionHeading>;
 
 
 storiesOf('component.SectionHeading', module)
