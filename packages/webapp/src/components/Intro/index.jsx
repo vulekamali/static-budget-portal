@@ -1,6 +1,4 @@
 import React from 'react';
-import Down from '@material-ui/icons/ArrowDropDown';
-import Pie from '@material-ui/icons/PieChart';
 
 import {
   Wrapper,
@@ -10,6 +8,8 @@ import {
   IntroSubHeading,
   Percentages,
   PercentageBlock,
+  PieIcon,
+  DownIcon,
   Description,
 } from './styled';
 
@@ -28,11 +28,11 @@ const Intro = ({ resources }) => {
         </Budget>
         <Percentages>
           <PercentageBlock>
-            <IntroMainHeading><Pie style={ IconSize } /> {resources.consolidated}%</IntroMainHeading>
+            <IntroMainHeading><PieIcon /> {resources.consolidated}%</IntroMainHeading>
             <IntroSubHeading>of consolidated budget</IntroSubHeading>
           </PercentageBlock>
           <PercentageBlock>
-            <IntroMainHeading><Down style={ IconSize }/> {resources.change}%</IntroMainHeading>
+            <IntroMainHeading><DownIcon /> {resources.change}%</IntroMainHeading>
             <IntroSubHeading>from 2016-17</IntroSubHeading>
           </PercentageBlock>
         </Percentages>
