@@ -13,10 +13,6 @@ import {
   Description,
 } from './styled';
 
-const IconSize = {
-  fontSize: '40px',
-};
-
 const Intro = ({ resources }) => {
 
   return (
