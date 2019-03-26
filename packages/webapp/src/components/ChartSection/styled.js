@@ -26,7 +26,7 @@ const ButtonStyle = styled(Button)`
       background-color: ${({ color }) => darken(0.1, color)};
     }
 
-    @media screen and (min-width: 450px) {
+    @media screen and (min-width: 600px) {
       font-size: 20px;
       padding: 20px 24px;
     }
@@ -65,7 +65,7 @@ const DetailsContainer = styled.div`
   justify-content: space-between;
   align-items: center;
 
-  @media screen and (min-width: 450px) {
+  @media screen and (min-width: 600px) {
     padding-bottom: 32px;
   }
 `;
@@ -77,7 +77,7 @@ const Department = styled(Typography)`
     color: #000;
     text-transform: Capitalize;
 
-    @media screen and (min-width: 450px) {
+    @media screen and (min-width: 600px) {
       font-size: 20px;
     }
   }
@@ -90,7 +90,7 @@ const Amount = styled(Typography)`
     line-height: 120%;
     color: #000;
 
-    @media screen and (min-width: 450px) {
+    @media screen and (min-width: 600px) {
       font-size: 48px;
     }
   }
@@ -122,7 +122,7 @@ const FooterContainer = styled.div`
   width: 100%;
   max-width: 1200px;
 
-  @media screen and (min-width: 450px) {
+  @media screen and (min-width: 600px) {
     margin-top: 32px;
   }
 `;
@@ -135,7 +135,7 @@ const FooterDetails = styled(Typography)`
     text-align: left;
   }
 
-  @media screen and (min-width: 450px) {
+  @media screen and (min-width: 600px) {
     font-size: 12px;
   }
 `;

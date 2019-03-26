@@ -23,9 +23,6 @@ const BudgetContainer = styled.div`
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
-  }
-
-  @media screen and (min-width: 900px) {
     margin-bottom: 32px;
     padding-bottom: 32px;
   }
@@ -49,9 +46,6 @@ const BudgetHeading = styled(Typography)`
     @media screen and (min-width: 600px) {
       white-space: nowrap;
       padding-right: 22px;
-    }
-
-    @media screen and (min-width: 900px) {
       font-size: 32px;
     }
   }
