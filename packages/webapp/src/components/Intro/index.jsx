@@ -14,29 +14,36 @@ import {
   Description,
 } from './styled';
 
-const Intro = ({ resources }) => {
+const Intro = (props) => {
+
+  const {
+    value,
+    consolidated,
+    change,
+    description
+  } = props;
 
   return (
     <Wrapper>
       <Summary>
         <Numbers>
           <Budget>
-            <IntroMainHeading>R{resources.value} million</IntroMainHeading>
+            <IntroMainHeading>R{value} million</IntroMainHeading>
             <IntroSubHeading>Focus area budget</IntroSubHeading>
           </Budget>
           <Percentages>
             <PercentageBlock>
-              <IntroMainHeading><PieIcon /> {resources.consolidated}%</IntroMainHeading>
+              <IntroMainHeading><PieIcon /> {consolidated}%</IntroMainHeading>
               <IntroSubHeading>of consolidated budget</IntroSubHeading>
             </PercentageBlock>
             <PercentageBlock>
-              <IntroMainHeading><DownIcon /> {resources.change}%</IntroMainHeading>
+              <IntroMainHeading><DownIcon /> {change}%</IntroMainHeading>
               <IntroSubHeading>from 2016-17</IntroSubHeading>
             </PercentageBlock>
           </Percentages>
         </Numbers>
         <Description>
-          {resources.description}
+          {description}
         </Description>
       </Summary>
     </Wrapper>
