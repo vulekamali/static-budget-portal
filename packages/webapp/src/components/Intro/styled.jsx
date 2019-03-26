@@ -7,11 +7,13 @@ const Wrapper = styled.div`
 
 const Summary = styled.div`
   display: flex;
+  justify-content: space-between;
+  width: 100%;
   padding: 50px 0;
 `;
 
 const Budget = styled.div`
-
+  width: 50%;
 `;
 
 const IntroMainHeading = styled.h1`
@@ -27,8 +29,14 @@ const IntroSubHeading = styled.p`
 `;
 
 const Percentages = styled.div`
+  width: 50%;
   display: flex;
 `;
+
+const PercentageBlock = styled.div`
+  padding: 0 40px;
+`;
+
 
 export {
   Wrapper,
@@ -37,6 +45,7 @@ export {
   IntroMainHeading,
   IntroSubHeading,
   Percentages,
+  PercentageBlock,
 }
 
 export default {
@@ -46,4 +55,5 @@ export default {
   IntroMainHeading,
   IntroSubHeading,
   Percentages,
+  PercentageBlock,
 }

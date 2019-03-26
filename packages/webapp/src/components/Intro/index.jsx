@@ -6,7 +6,8 @@ import {
   Budget,
   IntroMainHeading,
   IntroSubHeading,
-  Percentages
+  Percentages,
+  PercentageBlock,
 } from './styled';
 
 const Intro = ({ }) => (
@@ -17,18 +18,18 @@ const Intro = ({ }) => (
         <IntroSubHeading>Focus area budget</IntroSubHeading>
       </Budget>
       <Percentages>
-        <div>
+        <PercentageBlock>
           <IntroMainHeading>
             18%
           </IntroMainHeading>
           <IntroSubHeading>of consolidated budget</IntroSubHeading>
-        </div>
-        <div>
+        </PercentageBlock>
+        <PercentageBlock>
           <IntroMainHeading>
             4%
           </IntroMainHeading>
           <IntroSubHeading>from 2016-17</IntroSubHeading>
-        </div>
+        </PercentageBlock>
       </Percentages>
     </Summary>
   </Wrapper>
