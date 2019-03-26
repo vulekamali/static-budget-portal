@@ -4,13 +4,25 @@ import Pie from '@material-ui/icons/PieChart';
 
 const Wrapper = styled.div`
   font-family: Roboto;
+  justify-content: center;
+  padding: 30px 0;
+  @media screen and (min-width: 900px) {
+    padding: 50px 0;
+  }
 `;
 
 const Summary = styled.div`
   display: flex;
   justify-content: space-between;
+  flex-direction: column;
+  margin: auto;
   width: 100%;
-  padding: 50px 0;
+  max-width: 1200px;
+`;
+
+const Numbers = styled.div`
+  display: flex;
+  padding-bottom: 50px;
 `;
 
 const Budget = styled.div`
@@ -23,8 +35,10 @@ const IntroMainHeading = styled.h1`
   font-size: 24px;
   line-height: 1.3;
   margin: 0;
+  display: flex;
+  align-items: center;
   @media screen and (min-width: 900px) {
-    font-size: 50px;
+    font-size: 48px;
   }
 `;
 
@@ -53,6 +67,7 @@ const PercentageBlock = styled.div`
 const PieIcon = styled(Pie)`
   && {
     font-size: 20px;
+    margin-right: 15px;
     @media screen and (min-width: 900px) {
       font-size: 40px;
     }
@@ -62,6 +77,7 @@ const PieIcon = styled(Pie)`
 const DownIcon = styled(Down)`
   && {
     font-size: 20px;
+    margin-right: 15px;
     @media screen and (min-width: 900px) {
       font-size: 40px;
     }
@@ -70,7 +86,7 @@ const DownIcon = styled(Down)`
 
 const Description = styled.div`
    font-size: 14px;
-   line-height: 1.7;
+   line-height: 1.5;
    text-align: justify;
    padding: 0 15px;
    
@@ -84,6 +100,7 @@ const Description = styled.div`
 export {
   Wrapper,
   Summary,
+  Numbers,
   Budget,
   IntroMainHeading,
   IntroSubHeading,
@@ -97,6 +114,7 @@ export {
 export default {
   Wrapper,
   Summary,
+  Numbers,
   Budget,
   IntroMainHeading,
   IntroSubHeading,
