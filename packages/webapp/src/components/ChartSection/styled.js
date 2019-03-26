@@ -42,6 +42,13 @@ const TextExploreButton = styled.div`
   }
 `;
 
+const SpanStyled = styled.span`
+  display: none;
+  @media screen and (min-width: 600px) {
+    display: inline-block;
+  }
+`;
+
 const DetailsWrapper = styled.div`
   display: flex;
   justify-content: center;
@@ -126,11 +133,10 @@ export {
   LinkWrapper,
   ButtonStyle,
   TextExploreButton,
+  SpanStyled,
   DetailsContainer,
   Department,
   Amount,
-  // PhaseContainer,
-  // BudgetPhaseButton,
   FooterWrapper,
   FooterContainer,
   FooterDetails
@@ -141,11 +147,10 @@ export default {
   LinkWrapper,
   ButtonStyle,
   TextExploreButton,
+  SpanStyled,
   DetailsContainer,
   Department,
   Amount,
-  // PhaseContainer,
-  // BudgetPhaseButton,
   FooterWrapper,
   FooterContainer,
   FooterDetails

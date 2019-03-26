@@ -9,11 +9,10 @@ import {
   LinkWrapper,
   ButtonStyle,
   TextExploreButton,
+  SpanStyled,
   DetailsContainer,
   Department,
   Amount,
-  // PhaseContainer,
-  // BudgetPhaseButton,
   FooterWrapper,
   FooterContainer,
   FooterDetails
@@ -22,7 +21,7 @@ import {
 const callButtonExplore = () => (
   <LinkWrapper href='/'>
     <ButtonStyle>
-      <TextExploreButton>Explore</TextExploreButton>
+      <TextExploreButton>Explore <SpanStyled>this department</SpanStyled></TextExploreButton>
       <Icon />
     </ButtonStyle>
   </LinkWrapper>
