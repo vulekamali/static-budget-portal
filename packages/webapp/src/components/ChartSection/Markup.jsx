@@ -8,11 +8,12 @@ import {
   DetailsWrapper,
   LinkWrapper,
   ButtonStyle,
+  TextExploreButton,
   DetailsContainer,
   Department,
   Amount,
-  PhaseContainer,
-  BudgetPhaseButton,
+  // PhaseContainer,
+  // BudgetPhaseButton,
   FooterWrapper,
   FooterContainer,
   FooterDetails
@@ -21,7 +22,7 @@ import {
 const callButtonExplore = () => (
   <LinkWrapper href='/'>
     <ButtonStyle>
-      <span>Explore this department</span>
+      <TextExploreButton>Explore</TextExploreButton>
       <Icon />
     </ButtonStyle>
   </LinkWrapper>
@@ -39,9 +40,6 @@ const Markup = () => {
           <div>
             <Department>National departments budget</Department>
             <Amount>R{trimValues('123456789')}</Amount>
-            <PhaseContainer>
-              <BudgetPhaseButton>Original Budget</BudgetPhaseButton>
-            </PhaseContainer>
           </div>
           {callButtonExplore()}
         </DetailsContainer>

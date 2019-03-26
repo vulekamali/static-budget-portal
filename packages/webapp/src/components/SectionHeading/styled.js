@@ -5,6 +5,8 @@ const Wrapper = styled.div`
   display: flex;
   justify-content: center;
   align-items: center;
+  margin-right: 16px;
+  margin-left: 16px;
 `;
 
 const BudgetContainer = styled.div`
@@ -20,7 +22,7 @@ const BudgetContainer = styled.div`
   }
 
   @media screen and (min-width: 900px) {
-    margin-bottom: 30px;
+    margin-bottom: 32px;
     padding-bottom: 32px;
   }
 `;

@@ -7,22 +7,20 @@ const LinkWrapper = styled.a`
 `;
 
 const ButtonStyle = styled(Button)`
-  width: 295px;
-
   && {
     background-color: #ffd54f;
     text-transform: none;
     box-shadow: none;
     min-width: 0;
     font-weight: 700; 
-    font-size: 16px;
-    line-height: 30px;
+    font-size: 14px;
+    line-height: 120%;
     text-align: center;
     color: #000;
     display: flex;
     justify-content: space-between;
     align-items: center;
-    margin-top: 10px;
+    padding: 12px 12px 12px 16px;
 
     &:hover {
       background-color: ${darken(0.1, '#FFD54F')};
@@ -30,76 +28,63 @@ const ButtonStyle = styled(Button)`
 
     @media screen and (min-width: 450px) {
       font-size: 20px;
-      line-height: 65px;
-      padding-right: 20px;
-      padding-left: 20px;
-      margin-top: none;
+      padding: 20px 24px;
     }
   }
 `;
+
+const TextExploreButton = styled.div`
+  padding-right: 12px;
+  white-space: nowrap;
+
+  @media screen and (min-width: 450px) {
+    padding-right: 24px;
+  }
+`;
+
 const DetailsWrapper = styled.div`
   display: flex;
   justify-content: center;
   align-items: center;
+  margin-right: 16px;
+  margin-left: 16px;
 `;
 
 const DetailsContainer = styled.div`
   width: 100%;
   max-width: 1200px;
-  padding-bottom: 10px;
+  padding-bottom: 16px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 
   @media screen and (min-width: 450px) {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding-bottom: 35px;
+    padding-bottom: 32px;
   }
 `;
 
 const Department = styled(Typography)`
   && {
-    font-size: 20px;
-    line-height: 20px;
+    font-size: 14px;
+    line-height: 120%;
     color: #000;
     text-transform: Capitalize;
 
     @media screen and (min-width: 450px) {
-      font-size: 24px;
-      line-height: 65px;
+      font-size: 20px;
     }
   }
 `;
 
 const Amount = styled(Typography)`
   && {
-    font-size: 24px;
+    font-size: 20px;
     font-weight: 700;
-    line-height: 20px;
+    line-height: 120%;
     color: #000;
 
     @media screen and (min-width: 450px) {
-      font-size: 50px;
-      line-height: 65px;
-    }
-  }
-`;
-
-const PhaseContainer = styled.div`
-  margin-top: 20px;
-`;
-
-const BudgetPhaseButton = styled.div`
-  && {
-    font-family: Roboto;
-    font-size: 16px;
-    font-weight: 700;
-    line-height: 24px;
-    text-align: left;
-    letter-spacing: 0.15px;
-    color: #000;
-
-    @media screen and (min-width: 450px) {
-      font-size: 24px;
+      font-size: 48px;
     }
   }
 `;
@@ -108,28 +93,30 @@ const FooterWrapper = styled.div`
   display: flex;
   justify-content: center;
   align-items: center;
+  margin-right: 16px;
+  margin-left: 16px;
 `;
 
 const FooterContainer = styled.div`
-  margin-top: 10px;
+  margin-top: 16px;
   width: 100%;
   max-width: 1200px;
 
   @media screen and (min-width: 450px) {
-    margin-top: 25px;
+    margin-top: 32px;
   }
 `;
 
 const FooterDetails = styled(Typography)`
   && {
-    font-size: 12px;
-    line-height: 24px;
+    font-size: 10px;
+    line-height: 140%;
     color: #000;
-    text-align: center;
+    text-align: left;
+  }
 
-    @media screen and (min-width: 450px) {
-      text-align: left;
-    }
+  @media screen and (min-width: 450px) {
+    font-size: 12px;
   }
 `;
 
@@ -138,11 +125,12 @@ export {
   DetailsWrapper,
   LinkWrapper,
   ButtonStyle,
+  TextExploreButton,
   DetailsContainer,
   Department,
   Amount,
-  PhaseContainer,
-  BudgetPhaseButton,
+  // PhaseContainer,
+  // BudgetPhaseButton,
   FooterWrapper,
   FooterContainer,
   FooterDetails
@@ -152,11 +140,12 @@ export default {
   DetailsWrapper,
   LinkWrapper,
   ButtonStyle,
+  TextExploreButton,
   DetailsContainer,
   Department,
   Amount,
-  PhaseContainer,
-  BudgetPhaseButton,
+  // PhaseContainer,
+  // BudgetPhaseButton,
   FooterWrapper,
   FooterContainer,
   FooterDetails
