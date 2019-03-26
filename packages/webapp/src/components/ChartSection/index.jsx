@@ -6,29 +6,19 @@ import Markup from './Markup';
 class ChartSection extends Component {
   constructor(props) {
     super(props);
-    this.eventHandler = this.eventHandler.bind(this);
+    const { initialSelected } = this.props;
     this.state = {
-      modal: false,
-      selected: null
+      selected: initialSelected || null,
+      exploreButtonState: true,
     }
 
     this.events = {
-      openModal: this.openModal.bind(this),
-      closeModal: this.closeModal.bind(this),
-      eventHandler: this.eventHandler.bind(this),
+      onSelectedChange: this.onSelectedChange.bind(this),
     }
   }
 
-  openModal() {
-    this.setState({ modal: true });
-  }
-
-  closeModal() {
-    this.setState({ modal: false });
-  }
-
-  eventHandler(e) {
-    this.setState({ selected: e });
+  onSelectedChange(event) {
+    this.setState({ selected: event, exploreButtonState: false });
   }
 
   render() {
@@ -36,11 +26,9 @@ class ChartSection extends Component {
 
     const passedProps = {
       ...props,
-      modal: state.modal,
-      openModal: events.openModal,
-      closeModal: events.closeModal,
-      eventHandler: events.eventHandler,
-      selected: state.selected
+      selected: state.selected,
+      exploreButtonState: state.exploreButtonState,
+      onSelectedChange: events.onSelectedChange
     };
 
     return <Markup {...passedProps } />

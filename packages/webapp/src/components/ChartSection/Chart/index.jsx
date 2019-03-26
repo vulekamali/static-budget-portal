@@ -1,37 +1,18 @@
-import React, { Component } from 'react';
-import Markup from './Markup';
+import React from 'react';
 
-
-
-class Chart extends Component {
-  constructor(props) {
-    super(props);
-    this.eventHandler = this.eventHandler.bind(this);
-    this.state = {
-      selected: null
-    }
-
-    this.events = {
-      eventHandler: this.eventHandler.bind(this),
-    }
-  }
-
-  eventHandler(e) {
-    this.setState({ selected: e });
-  }
-
-  render() {
-    const { state, events, props } = this;
-
-    const passedProps = {
-      ...props,
-      eventHandler: events.eventHandler,
-      selected: state.selected
-    };
-
-    return <Markup {...passedProps } />
-  }
-}
-
+const Chart = ({ data, selected }) => (
+  <ul>
+    {data.map(item => (
+      <li
+        key={item.department}
+        onClick={selected}
+      >
+        <div>{item.department}</div>
+        <div>{item.amount}</div>
+        <div>{item.url}</div>
+      </li>
+    ))}
+  </ul>
+);
 
 export default Chart;

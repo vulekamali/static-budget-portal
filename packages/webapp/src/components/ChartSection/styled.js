@@ -8,11 +8,11 @@ const LinkWrapper = styled.a`
 
 const ButtonStyle = styled(Button)`
   && {
-    background-color: #ffd54f;
+    background-color: ${({ color }) => color};
     text-transform: none;
     box-shadow: none;
     min-width: 0;
-    font-weight: 700; 
+    font-weight: 700;
     font-size: 14px;
     line-height: 120%;
     text-align: center;
@@ -23,7 +23,7 @@ const ButtonStyle = styled(Button)`
     padding: 12px 12px 12px 16px;
 
     &:hover {
-      background-color: ${darken(0.1, '#FFD54F')};
+      background-color: ${({ color }) => darken(0.1, color)};
     }
 
     @media screen and (min-width: 450px) {
@@ -96,6 +96,19 @@ const Amount = styled(Typography)`
   }
 `;
 
+const ChartWrapper = styled.div`
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-right: 16px;
+  margin-left: 16px;
+`;
+
+const ChartContainer = styled.div`
+  width: 100%;
+  max-width: 1200px;
+`;
+
 const FooterWrapper = styled.div`
   display: flex;
   justify-content: center;
@@ -137,6 +150,8 @@ export {
   DetailsContainer,
   Department,
   Amount,
+  ChartWrapper,
+  ChartContainer,
   FooterWrapper,
   FooterContainer,
   FooterDetails
@@ -151,6 +166,8 @@ export default {
   DetailsContainer,
   Department,
   Amount,
+  ChartWrapper,
+  ChartContainer,
   FooterWrapper,
   FooterContainer,
   FooterDetails
