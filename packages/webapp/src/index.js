@@ -1,4 +1,3 @@
-import './connections/homepage-hero.js';
-import './connections/infrastructure-pages.js';
-import './connections/national-treemap.js';
-import './connections/provincial-treemap.js';
+import './adaptors/homepage-hero.js';
+import './adaptors/infrastructure-pages.js';
+import './adaptors/national-treemap.js';;
