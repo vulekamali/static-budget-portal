@@ -34,7 +34,7 @@ const Chart = ({ onSelectedChange }) => (
   <ul>
     {data.map(item => (
       <li
-        key={item.department}
+        key={item.name}
         onClick={() => onSelectedChange(item)}
       >
         <div>{item.name}</div>
@@ -45,7 +45,7 @@ const Chart = ({ onSelectedChange }) => (
   </ul>
 );
 
-const basic = () => <ChartSection {...{ data, initialSelected }} chart={Chart} verb='Explore' subject='this department' />;
+const basic = () => <ChartSection {...{ data, initialSelected }} chart={(props) => <Chart {...props} />} verb='Explore' subject='this department' />;
 
 
 storiesOf('component.ChartSection', module)

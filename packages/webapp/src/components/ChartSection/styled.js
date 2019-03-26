@@ -1,12 +1,13 @@
 import { Typography, Button } from '@material-ui/core';
 import styled from 'styled-components';
 import { darken } from 'polished';
+import removeProps from '../../helpers/removeProps';
 
 const LinkWrapper = styled.a`
   text-decoration: none;
 `;
 
-const ButtonStyle = styled(Button)`
+const ButtonStyle = styled(removeProps({component: Button, blacklist: 'color'}))`
   && {
     background-color: ${({ color }) => color};
     text-transform: none;
