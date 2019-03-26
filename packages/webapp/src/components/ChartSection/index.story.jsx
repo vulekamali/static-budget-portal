@@ -45,7 +45,7 @@ const Chart = ({ onSelectedChange }) => (
   </ul>
 );
 
-const basic = () => <ChartSection {...{ data, initialSelected }} chart={Chart} />;
+const basic = () => <ChartSection {...{ data, initialSelected }} chart={Chart} verb='Explore' subject='this department' />;
 
 
 storiesOf('component.ChartSection', module)
