@@ -11,6 +11,14 @@ import DialogActions from '@material-ui/core/DialogActions';
 import Zoom from '@material-ui/core/Zoom';
 import Button from '@material-ui/core/Button';
 
+const DialogWrapper = styled.div`
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-right: 16px;
+  margin-left: 16px;
+  width: 100%;
+`;
 
 const PrimaryButton = styled(Button)`
   && {
@@ -18,7 +26,7 @@ const PrimaryButton = styled(Button)`
     border-radius: 50px;
     color: white;
     text-transform: none;
-    padding: 10px 25px;
+    padding: 5px;
     font-family: Lato;
     font-size: 16px;
     font-weight: 700;
@@ -27,9 +35,12 @@ const PrimaryButton = styled(Button)`
     &:hover {
       background: ${darken(0.1, '#79B443')};
     }
+
+    @media screen and (min-width: 600px) {
+      padding: 10px 25px;
+    }
   }
 `;
-
 
 const SecondaryButton = styled(PrimaryButton)`
   && {
@@ -41,10 +52,6 @@ const SecondaryButton = styled(PrimaryButton)`
   }
 `;
 
-
-
-
-
 const StyledDialogActions = styled(DialogActions)`
   && {
     margin: 8px 20px 20px;
@@ -53,29 +60,30 @@ const StyledDialogActions = styled(DialogActions)`
 
 
 const Modal = ({ open, closeModal, url }) => (
-  <Dialog
-    {...{ open }}
-    onClose={closeModal}
-    TransitionComponent={Zoom}
-  >
-    <DialogTitle>Share</DialogTitle>
-    <DialogContent>
-      <DialogContentText>
-        <span>Link to share: </span>
-        <a href={url}>{url}</a>
-      </DialogContentText>
-    </DialogContent>
-    <StyledDialogActions>
-      <SecondaryButton onClick={closeModal}>
-        Close
-      </SecondaryButton>
-      <PrimaryButton onClick={() => copy(url)}>
-        Copy To Clipboard
-      </PrimaryButton>
-    </StyledDialogActions>
-  </Dialog>
+  <DialogWrapper>
+    <Dialog
+      {...{ open }}
+      onClose={closeModal}
+      TransitionComponent={Zoom}
+    >
+      <DialogTitle>Share</DialogTitle>
+      <DialogContent>
+        <DialogContentText>
+          <span>Link to share: </span>
+          <a href={url}>{url}</a>
+        </DialogContentText>
+      </DialogContent>
+      <StyledDialogActions>
+        <SecondaryButton onClick={closeModal}>
+          Close
+        </SecondaryButton>
+        <PrimaryButton onClick={() => copy(url)}>
+          Copy To Clipboard
+        </PrimaryButton>
+      </StyledDialogActions>
+    </Dialog>
+  </DialogWrapper>
 );
-
 
 export default Modal;
 
