@@ -12,15 +12,19 @@ import Modal from './Modal';
 const StyledSpeedDial = styled(SpeedDial)`
   height: 40px;
   width: 40px;
-  align-self: flex-start;
 
   & .fab {
     background: #c4c4c4;
     width: 36px;
     margin-left: 10px;
+    box-shadow: none;
 
     &:hover {
       background: ${darken(0.1, '#C4C4C4')};
+    }
+
+    &:focus {
+      box-shadow: none;
     }
   }
 `;

@@ -4,44 +4,33 @@ import SpeedDial from '../SpeedDial';
 import {
   Wrapper,
   BudgetContainer,
+  BudgetHeadingAndShareIcon,
   BudgetHeading,
-  IconAndDates,
-  SpeedDialStyled,
+  ButtonYearsComponent,
  } from './styled';
 
- const callShareIconAndDates = (share, children) => {
+ const callShareIconAndDates = (share) => {
    if(!share) return null;
 
    if(typeof(share) === 'string') {
     return (
-      <IconAndDates>
-        <SpeedDialStyled>
-          <SpeedDial {...{ share }} />
-        </SpeedDialStyled>
-        <div>
-          {children}
-        </div>
-      </IconAndDates>
+      <SpeedDial {...{ share }} />
      );
    }
 
    if(share) return (
-    <IconAndDates>
-      <SpeedDialStyled>
-        <SpeedDial />
-      </SpeedDialStyled>
-      <div>
-        {children}
-      </div>
-    </IconAndDates>
+    <SpeedDial />
    );
  }
 
-const SectionHeading = ({ title, share, children }) => (
+const SectionHeading = ({ title, share }) => (
   <Wrapper>
       <BudgetContainer>
-        <BudgetHeading component='div'>{title}</BudgetHeading>
-        {callShareIconAndDates(share, children)}
+        <BudgetHeadingAndShareIcon>
+          <BudgetHeading component='div'>{title}</BudgetHeading>
+          {callShareIconAndDates(share)}
+        </BudgetHeadingAndShareIcon>
+        <ButtonYearsComponent>Hello World</ButtonYearsComponent>
     </BudgetContainer>
   </Wrapper>
 );

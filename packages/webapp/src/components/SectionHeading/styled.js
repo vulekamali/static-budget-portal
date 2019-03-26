@@ -15,9 +15,13 @@ const BudgetContainer = styled.div`
   width: 100%;
   max-width: 1200px;
   padding-bottom: 16px;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
 
   @media screen and (min-width: 600px) {
-    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
     align-items: center;
   }
 
@@ -25,6 +29,12 @@ const BudgetContainer = styled.div`
     margin-bottom: 32px;
     padding-bottom: 32px;
   }
+`;
+
+const BudgetHeadingAndShareIcon = styled.div`
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 `;
 
 const BudgetHeading = styled(Typography)`
@@ -47,44 +57,24 @@ const BudgetHeading = styled(Typography)`
   }
 `;
 
-const IconAndDates = styled.div`
-  display: flex;
-  width: 100%;
-  justify-content: space-between;
-  align-items: center;
-  padding-bottom: 10px;
 
-  @media screen and (min-width: 600px) {
-    padding-bottom: 0;
-  }
-`;
+const ButtonYearsComponent = styled.div`
 
-const SpeedDialStyled = styled.div`
-  position: absolute;
-  top: 0;
-  right: 0;
-  margin-right: 20px;
-  margin-left: 20px;
-
-  @media screen and (min-width: 600px) {
-    position: static;
-    margin-top: 0;
-  }
 `;
 
 
 export {
   Wrapper,
   BudgetContainer,
+  BudgetHeadingAndShareIcon,
   BudgetHeading,
-  IconAndDates,
-  SpeedDialStyled,
+  ButtonYearsComponent,
 }
 
 export default {
   Wrapper,
   BudgetContainer,
+  BudgetHeadingAndShareIcon,
   BudgetHeading,
-  IconAndDates,
-  SpeedDialStyled,
+  ButtonYearsComponent,
 }
