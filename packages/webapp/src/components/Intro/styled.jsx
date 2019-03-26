@@ -1,7 +1,6 @@
 import styled from 'styled-components';
 
 const Wrapper = styled.div`
-  display: flex;
   font-family: Roboto;
 `;
 
@@ -34,9 +33,15 @@ const Percentages = styled.div`
 `;
 
 const PercentageBlock = styled.div`
-  padding: 0 40px;
+  margin: 0 40px;
 `;
 
+const Description = styled.div`
+   max-width: 60%;
+   font-size: 18px;
+   line-height: 1.7;
+   text-align: justify;
+`;
 
 export {
   Wrapper,
@@ -46,6 +51,7 @@ export {
   IntroSubHeading,
   Percentages,
   PercentageBlock,
+  Description,
 }
 
 export default {
@@ -56,4 +62,5 @@ export default {
   IntroSubHeading,
   Percentages,
   PercentageBlock,
+  Description,
 }
