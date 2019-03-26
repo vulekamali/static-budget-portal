@@ -1,0 +1,8 @@
+---
+---
+
+{% if (site.data.homepage.2015-16.national.adjusted) %}
+  {{ site.data.homepage.2015-16.national.adjusted | jsonify }}
+{% else %}
+  {}
+{% endif %}
