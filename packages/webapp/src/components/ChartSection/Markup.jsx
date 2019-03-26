@@ -68,13 +68,13 @@ const Markup = (props) => {
         Children Component
       </SectionHeading>
       {selected && callDetails(selected, exploreButtonState, verb, subject)}
-        {callChart(Chart, onSelectedChange)}
-        <FooterWrapper>
-          <FooterContainer>
-            <FooterDetails>Budget data from 1 April 2018 - 31 March 2019</FooterDetails>
-            <FooterDetails>Direct charges against the National Revenue Fund are excluded</FooterDetails>
-          </FooterContainer>
-        </FooterWrapper>
+      {callChart(Chart, onSelectedChange)}
+      <FooterWrapper>
+        <FooterContainer>
+          <FooterDetails>Budget data from 1 April 2018 - 31 March 2019</FooterDetails>
+          <FooterDetails>Direct charges against the National Revenue Fund are excluded</FooterDetails>
+        </FooterContainer>
+      </FooterWrapper>
     </React.Fragment>
   );
 };

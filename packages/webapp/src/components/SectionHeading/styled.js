@@ -58,17 +58,12 @@ const BudgetHeading = styled(Typography)`
 `;
 
 
-const ButtonYearsComponent = styled.div`
-
-`;
-
 
 export {
   Wrapper,
   BudgetContainer,
   BudgetHeadingAndShareIcon,
   BudgetHeading,
-  ButtonYearsComponent,
 }
 
 export default {
@@ -76,5 +71,4 @@ export default {
   BudgetContainer,
   BudgetHeadingAndShareIcon,
   BudgetHeading,
-  ButtonYearsComponent,
 }

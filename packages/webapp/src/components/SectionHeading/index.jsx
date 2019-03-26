@@ -6,7 +6,6 @@ import {
   BudgetContainer,
   BudgetHeadingAndShareIcon,
   BudgetHeading,
-  ButtonYearsComponent,
  } from './styled';
 
  const callShareIconAndDates = (share) => {
@@ -30,7 +29,7 @@ const SectionHeading = ({ title, share }) => (
           <BudgetHeading component='div'>{title}</BudgetHeading>
           {callShareIconAndDates(share)}
         </BudgetHeadingAndShareIcon>
-        <ButtonYearsComponent>Hello World</ButtonYearsComponent>
+        <div>Hello World</div>
     </BudgetContainer>
   </Wrapper>
 );
