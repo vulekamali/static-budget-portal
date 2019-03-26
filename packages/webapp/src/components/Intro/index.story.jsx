@@ -13,7 +13,7 @@ const resources = {
 const basic = () => (
   <Fragment>
     <CssBaseline />
-    <Intro {...{ resources }} />
+    <Intro {...resources} />
   </Fragment>
 );
 
