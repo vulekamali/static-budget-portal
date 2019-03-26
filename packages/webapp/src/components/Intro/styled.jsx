@@ -5,9 +5,9 @@ import Pie from '@material-ui/icons/PieChart';
 const Wrapper = styled.div`
   font-family: Roboto;
   justify-content: center;
-  padding: 30px 0;
+  padding: 30px 15px;
   @media screen and (min-width: 900px) {
-    padding: 50px 0;
+    padding: 50px;
   }
 `;
 
@@ -22,11 +22,15 @@ const Summary = styled.div`
 
 const Numbers = styled.div`
   display: flex;
-  padding-bottom: 50px;
+  padding-bottom: 30px;
+  @media screen and (min-width: 900px) {
+    padding-bottom: 50px;
+  }
 `;
 
 const Budget = styled.div`
-  @media screen and (min-width: 900px) {
+  width: 33%;
+  @media screen and (min-width: 600px) {
     width: 50%;
   }
 `;
@@ -52,6 +56,8 @@ const IntroSubHeading = styled.p`
 
 const Percentages = styled.div`
   display: flex;
+  justify-content: space-around;
+  width: 66%;
   @media screen and (min-width: 900px) {
     width: 50%;
   }
@@ -88,12 +94,10 @@ const Description = styled.div`
    font-size: 14px;
    line-height: 1.5;
    text-align: justify;
-   padding: 0 15px;
    
    @media screen and (min-width: 900px) {
      max-width: 60%;
      font-size: 18px;
-     padding: 0;
    }
 `;
 
