@@ -80,7 +80,7 @@ const callTreeMap = (eventZoomIn, eventZoomOut, selected, latestBudget, totalBud
         </ZoomButtonContainer>
       </TreemapContainer>
       <FooterContainer>
-        <FooterDetails>Budget data from 1 April 2018 - 31 March 2019</FooterDetails>
+        <FooterDetails>Budget data from 1 April 2019 - 31 March 2020</FooterDetails>
         <FooterDetails>Direct charges against the National Revenue Fund are excluded</FooterDetails>
       </FooterContainer>
     </React.Fragment>

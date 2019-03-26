@@ -56,7 +56,7 @@ budget_actual:
   expenditure:
     base_financial_year: 2018-19
     nominal:
-    - amount: 1103188000.0
+    - amount: 1103188000
       financial_year: 2015-16
       phase: Main appropriation
     - amount: 1127520000
@@ -161,9 +161,6 @@ budget_actual_programmes:
   - One or more programmes did not exist for some years displayed.
   programmes:
   - items:
-    - amount: 15188000.0
-      financial_year: 2015-16
-      phase: Main appropriation
     - amount: 11711000
       financial_year: 2015-16
       phase: Adjusted appropriation
@@ -185,6 +182,9 @@ budget_actual_programmes:
     - amount: null
       financial_year: 2014-15
       phase: Audit Outcome
+    - amount: null
+      financial_year: 2015-16
+      phase: Main appropriation
     - amount: null
       financial_year: 2016-17
       phase: Main appropriation
@@ -210,6 +210,56 @@ budget_actual_programmes:
       financial_year: 2017-18
       phase: Audit Outcome
     name: Cooperatives Support and Development
+  - items:
+    - amount: 15188000
+      financial_year: 2015-16
+      phase: Main appropriation
+    - amount: null
+      financial_year: 2014-15
+      phase: Main appropriation
+    - amount: null
+      financial_year: 2014-15
+      phase: Adjusted appropriation
+    - amount: null
+      financial_year: 2014-15
+      phase: Final Appropriation
+    - amount: null
+      financial_year: 2014-15
+      phase: Audit Outcome
+    - amount: null
+      financial_year: 2015-16
+      phase: Adjusted appropriation
+    - amount: null
+      financial_year: 2015-16
+      phase: Final Appropriation
+    - amount: null
+      financial_year: 2015-16
+      phase: Audit Outcome
+    - amount: null
+      financial_year: 2016-17
+      phase: Main appropriation
+    - amount: null
+      financial_year: 2016-17
+      phase: Adjusted appropriation
+    - amount: null
+      financial_year: 2016-17
+      phase: Final Appropriation
+    - amount: null
+      financial_year: 2016-17
+      phase: Audit Outcome
+    - amount: null
+      financial_year: 2017-18
+      phase: Main appropriation
+    - amount: null
+      financial_year: 2017-18
+      phase: Adjusted appropriation
+    - amount: null
+      financial_year: 2017-18
+      phase: Final Appropriation
+    - amount: null
+      financial_year: 2017-18
+      phase: Audit Outcome
+    name: Co-operatives Support and Development
   - items:
     - amount: 25835000
       financial_year: 2016-17
@@ -311,7 +361,7 @@ budget_actual_programmes:
       phase: Audit Outcome
     name: Small Medium and Micro Enterprises and Cooperatives Policy and Research
   - items:
-    - amount: 64025000.0
+    - amount: 64025000
       financial_year: 2015-16
       phase: Main appropriation
     - amount: 81387000
@@ -361,7 +411,7 @@ budget_actual_programmes:
       phase: Audit Outcome
     name: Administration
   - items:
-    - amount: 1023975000.0
+    - amount: 1023975000
       financial_year: 2015-16
       phase: Main appropriation
     - amount: 1034422000
