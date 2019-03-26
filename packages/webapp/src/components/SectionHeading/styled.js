@@ -12,6 +12,7 @@ const BudgetContainer = styled.div`
   margin-bottom: 20px;
   width: 100%;
   max-width: 1200px;
+  padding-bottom: 16px;
 
   @media screen and (min-width: 600px) {
     display: flex;
@@ -20,6 +21,7 @@ const BudgetContainer = styled.div`
 
   @media screen and (min-width: 900px) {
     margin-bottom: 30px;
+    padding-bottom: 32px;
   }
 `;
 
@@ -27,21 +29,18 @@ const BudgetHeading = styled(Typography)`
   &&&& {
     font-weight: 700;
     font-size: 18px;
-    line-height: 65px;
+    line-height: 120%;
     color: #000;
     text-transform: Capitalize;
     text-align: left;
 
     @media screen and (min-width: 600px) {
-      border-right: 1px solid #000;
-      line-height: 40px;
       white-space: nowrap;
-      padding-right: 36px;
+      padding-right: 22px;
     }
 
     @media screen and (min-width: 900px) {
       font-size: 32px;
-      line-height: 65px;
     }
   }
 `;
@@ -54,7 +53,6 @@ const IconAndDates = styled.div`
   padding-bottom: 10px;
 
   @media screen and (min-width: 600px) {
-    padding-left: 20px;
     padding-bottom: 0;
   }
 `;
@@ -63,7 +61,8 @@ const SpeedDialStyled = styled.div`
   position: absolute;
   top: 0;
   right: 0;
-  margin-top: 20px;
+  margin-right: 20px;
+  margin-left: 20px;
 
   @media screen and (min-width: 600px) {
     position: static;
