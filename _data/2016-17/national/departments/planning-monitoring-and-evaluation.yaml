@@ -68,6 +68,9 @@ budget_actual:
   expenditure:
     base_financial_year: 2018-19
     nominal:
+    - amount: 717694000
+      financial_year: 2015-16
+      phase: Main appropriation
     - amount: 754200000
       financial_year: 2015-16
       phase: Adjusted appropriation
@@ -113,10 +116,10 @@ budget_actual:
     - amount: null
       financial_year: 2014-15
       phase: Audit Outcome
-    - amount: null
+    real:
+    - amount: 838079021
       financial_year: 2015-16
       phase: Main appropriation
-    real:
     - amount: 880708488
       financial_year: 2015-16
       phase: Adjusted appropriation
@@ -162,9 +165,6 @@ budget_actual:
     - amount: null
       financial_year: 2014-15
       phase: Audit Outcome
-    - amount: null
-      financial_year: 2015-16
-      phase: Main appropriation
   notices:
   - Please note that the data for 2013 and 2014 has not been published on vulekamali.
 budget_actual_programmes:
@@ -172,6 +172,9 @@ budget_actual_programmes:
   notices: []
   programmes:
   - items:
+    - amount: 59567000
+      financial_year: 2015-16
+      phase: Main appropriation
     - amount: 60431000
       financial_year: 2015-16
       phase: Adjusted appropriation
@@ -217,111 +220,11 @@ budget_actual_programmes:
     - amount: null
       financial_year: 2014-15
       phase: Audit Outcome
-    - amount: null
-      financial_year: 2015-16
-      phase: Main appropriation
     name: Institutional Performance Monitoring and Evaluation
   - items:
-    - amount: 82197000
-      financial_year: 2015-16
-      phase: Adjusted appropriation
-    - amount: 75632000
-      financial_year: 2015-16
-      phase: Final Appropriation
-    - amount: 70736000
-      financial_year: 2015-16
-      phase: Audit Outcome
-    - amount: 103237000.0
-      financial_year: 2016-17
-      phase: Main appropriation
-    - amount: 91508000
-      financial_year: 2016-17
-      phase: Adjusted appropriation
-    - amount: 88233000
-      financial_year: 2016-17
-      phase: Final Appropriation
-    - amount: 84216000
-      financial_year: 2016-17
-      phase: Audit Outcome
-    - amount: null
-      financial_year: 2013-14
-      phase: Main appropriation
-    - amount: null
-      financial_year: 2013-14
-      phase: Adjusted appropriation
-    - amount: null
-      financial_year: 2013-14
-      phase: Final Appropriation
-    - amount: null
-      financial_year: 2013-14
-      phase: Audit Outcome
-    - amount: null
-      financial_year: 2014-15
-      phase: Main appropriation
-    - amount: null
-      financial_year: 2014-15
-      phase: Adjusted appropriation
-    - amount: null
-      financial_year: 2014-15
-      phase: Final Appropriation
-    - amount: null
-      financial_year: 2014-15
-      phase: Audit Outcome
-    - amount: null
+    - amount: 69784000
       financial_year: 2015-16
       phase: Main appropriation
-    name: National Planning
-  - items:
-    - amount: 92324000
-      financial_year: 2015-16
-      phase: Adjusted appropriation
-    - amount: 90087000
-      financial_year: 2015-16
-      phase: Final Appropriation
-    - amount: 89560000
-      financial_year: 2015-16
-      phase: Audit Outcome
-    - amount: 108854000.0
-      financial_year: 2016-17
-      phase: Main appropriation
-    - amount: 91751000
-      financial_year: 2016-17
-      phase: Adjusted appropriation
-    - amount: 93162000
-      financial_year: 2016-17
-      phase: Final Appropriation
-    - amount: 89749000
-      financial_year: 2016-17
-      phase: Audit Outcome
-    - amount: null
-      financial_year: 2013-14
-      phase: Main appropriation
-    - amount: null
-      financial_year: 2013-14
-      phase: Adjusted appropriation
-    - amount: null
-      financial_year: 2013-14
-      phase: Final Appropriation
-    - amount: null
-      financial_year: 2013-14
-      phase: Audit Outcome
-    - amount: null
-      financial_year: 2014-15
-      phase: Main appropriation
-    - amount: null
-      financial_year: 2014-15
-      phase: Adjusted appropriation
-    - amount: null
-      financial_year: 2014-15
-      phase: Final Appropriation
-    - amount: null
-      financial_year: 2014-15
-      phase: Audit Outcome
-    - amount: null
-      financial_year: 2015-16
-      phase: Main appropriation
-    name: Outcomes Monitoring and Evaluation
-  - items:
     - amount: 104185000
       financial_year: 2015-16
       phase: Adjusted appropriation
@@ -367,11 +270,111 @@ budget_actual_programmes:
     - amount: null
       financial_year: 2014-15
       phase: Audit Outcome
-    - amount: null
-      financial_year: 2015-16
-      phase: Main appropriation
     name: Administration
   - items:
+    - amount: 85604000
+      financial_year: 2015-16
+      phase: Main appropriation
+    - amount: 92324000
+      financial_year: 2015-16
+      phase: Adjusted appropriation
+    - amount: 90087000
+      financial_year: 2015-16
+      phase: Final Appropriation
+    - amount: 89560000
+      financial_year: 2015-16
+      phase: Audit Outcome
+    - amount: 108854000.0
+      financial_year: 2016-17
+      phase: Main appropriation
+    - amount: 91751000
+      financial_year: 2016-17
+      phase: Adjusted appropriation
+    - amount: 93162000
+      financial_year: 2016-17
+      phase: Final Appropriation
+    - amount: 89749000
+      financial_year: 2016-17
+      phase: Audit Outcome
+    - amount: null
+      financial_year: 2013-14
+      phase: Main appropriation
+    - amount: null
+      financial_year: 2013-14
+      phase: Adjusted appropriation
+    - amount: null
+      financial_year: 2013-14
+      phase: Final Appropriation
+    - amount: null
+      financial_year: 2013-14
+      phase: Audit Outcome
+    - amount: null
+      financial_year: 2014-15
+      phase: Main appropriation
+    - amount: null
+      financial_year: 2014-15
+      phase: Adjusted appropriation
+    - amount: null
+      financial_year: 2014-15
+      phase: Final Appropriation
+    - amount: null
+      financial_year: 2014-15
+      phase: Audit Outcome
+    name: Outcomes Monitoring and Evaluation
+  - items:
+    - amount: 88197000
+      financial_year: 2015-16
+      phase: Main appropriation
+    - amount: 82197000
+      financial_year: 2015-16
+      phase: Adjusted appropriation
+    - amount: 75632000
+      financial_year: 2015-16
+      phase: Final Appropriation
+    - amount: 70736000
+      financial_year: 2015-16
+      phase: Audit Outcome
+    - amount: 103237000.0
+      financial_year: 2016-17
+      phase: Main appropriation
+    - amount: 91508000
+      financial_year: 2016-17
+      phase: Adjusted appropriation
+    - amount: 88233000
+      financial_year: 2016-17
+      phase: Final Appropriation
+    - amount: 84216000
+      financial_year: 2016-17
+      phase: Audit Outcome
+    - amount: null
+      financial_year: 2013-14
+      phase: Main appropriation
+    - amount: null
+      financial_year: 2013-14
+      phase: Adjusted appropriation
+    - amount: null
+      financial_year: 2013-14
+      phase: Final Appropriation
+    - amount: null
+      financial_year: 2013-14
+      phase: Audit Outcome
+    - amount: null
+      financial_year: 2014-15
+      phase: Main appropriation
+    - amount: null
+      financial_year: 2014-15
+      phase: Adjusted appropriation
+    - amount: null
+      financial_year: 2014-15
+      phase: Final Appropriation
+    - amount: null
+      financial_year: 2014-15
+      phase: Audit Outcome
+    name: National Planning
+  - items:
+    - amount: 414542000
+      financial_year: 2015-16
+      phase: Main appropriation
     - amount: 415063000
       financial_year: 2015-16
       phase: Adjusted appropriation
@@ -417,9 +420,6 @@ budget_actual_programmes:
     - amount: null
       financial_year: 2014-15
       phase: Audit Outcome
-    - amount: null
-      financial_year: 2015-16
-      phase: Main appropriation
     name: National Youth Development
 contributed_datasets:
 - contributor: International Budget Partnership
