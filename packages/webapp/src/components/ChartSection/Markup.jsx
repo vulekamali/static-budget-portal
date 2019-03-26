@@ -64,7 +64,7 @@ const Markup = (props) => {
   return (
     <React.Fragment>
       <CssBaseline />
-      <SectionHeading title='National Budget Summary' share>
+      <SectionHeading title='National Budget Summary' share={selected.name}>
         Children Component
       </SectionHeading>
       {selected && callDetails(selected, exploreButtonState, verb, subject)}
