@@ -12,7 +12,7 @@ const GlobalStyle = createGlobalStyle`
     font-weight: bold;
   }
 
-text.amount {
+  text.amount {
     font-family: Roboto, sans-serif;
     fill: black;
     font-size: 16px;
