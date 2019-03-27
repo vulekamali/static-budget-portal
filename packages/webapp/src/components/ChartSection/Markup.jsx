@@ -60,6 +60,7 @@ const Markup = (props) => {
     onSelectedChange,
     verb,
     subject,
+    footer,
   } = props;
   return (
     <React.Fragment>
@@ -69,8 +70,7 @@ const Markup = (props) => {
       {callChart(selected, Chart, onSelectedChange)}
       <FooterWrapper>
         <FooterContainer>
-          <FooterDetails>Budget data from 1 April 2018 - 31 March 2019</FooterDetails>
-          <FooterDetails>Direct charges against the National Revenue Fund are excluded</FooterDetails>
+          {footer && <FooterDetails>{footer}</FooterDetails>}
         </FooterContainer>
       </FooterWrapper>
     </React.Fragment>

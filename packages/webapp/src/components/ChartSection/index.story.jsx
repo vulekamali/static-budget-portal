@@ -45,7 +45,7 @@ const Chart = ({ onSelectedChange }) => (
   </ul>
 );
 
-const basic = () => <ChartSection {...{ data, initialSelected }} chart={(props) => <Chart {...props} />} verb='Explore' subject='this department' />;
+const basic = () => <ChartSection {...{ data, initialSelected }} chart={(props) => <Chart {...props} />} verb='Explore' subject='this department' footer='Budget data from 1 April 2018 - 31 March 2019' />;
 
 
 storiesOf('component.ChartSection', module)
