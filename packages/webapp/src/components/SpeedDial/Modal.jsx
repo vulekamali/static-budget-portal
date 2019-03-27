@@ -11,15 +11,6 @@ import DialogActions from '@material-ui/core/DialogActions';
 import Zoom from '@material-ui/core/Zoom';
 import Button from '@material-ui/core/Button';
 
-const DialogWrapper = styled.div`
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  margin-right: 16px;
-  margin-left: 16px;
-  width: 100%;
-`;
-
 const PrimaryButton = styled(Button)`
   && {
     background: #79b443;
@@ -60,29 +51,27 @@ const StyledDialogActions = styled(DialogActions)`
 
 
 const Modal = ({ open, closeModal, url }) => (
-  <DialogWrapper>
-    <Dialog
-      {...{ open }}
-      onClose={closeModal}
-      TransitionComponent={Zoom}
-    >
-      <DialogTitle>Share</DialogTitle>
-      <DialogContent>
-        <DialogContentText>
-          <span>Link to share: </span>
-          <a href={url}>{url}</a>
-        </DialogContentText>
-      </DialogContent>
-      <StyledDialogActions>
-        <SecondaryButton onClick={closeModal}>
-          Close
-        </SecondaryButton>
-        <PrimaryButton onClick={() => copy(url)}>
-          Copy To Clipboard
-        </PrimaryButton>
-      </StyledDialogActions>
-    </Dialog>
-  </DialogWrapper>
+  <Dialog
+    {...{ open }}
+    onClose={closeModal}
+    TransitionComponent={Zoom}
+  >
+    <DialogTitle>Share</DialogTitle>
+    <DialogContent>
+      <DialogContentText>
+        <span>Link to share: </span>
+        <a href={url}>{url}</a>
+      </DialogContentText>
+    </DialogContent>
+    <StyledDialogActions>
+      <SecondaryButton onClick={closeModal}>
+        Close
+      </SecondaryButton>
+      <PrimaryButton onClick={() => copy(url)}>
+        Copy To Clipboard
+      </PrimaryButton>
+    </StyledDialogActions>
+  </Dialog>
 );
 
 export default Modal;

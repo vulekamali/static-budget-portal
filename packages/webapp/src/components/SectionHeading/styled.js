@@ -62,18 +62,33 @@ const FormContainer = styled.div`
 `;
 
 const BudgetPhase = styled.div`
-  margin-right: 24px;
+  @media screen and (min-width: 600px) {
+    margin-right: 24px;
+  }
 `;
 
 
 const SelectStyled = styled(Select)`
   && {
     background: #d8d8d8;
-    border-radius: 2px;
-    padding: 10px 16px;
+    border-radius: 3px;
+    padding: 12px 12px 12px 16px;
+    font-size: 14px;
+    font-weight: 700;
+    line-height: 120%;
+    color: #000;
 
     & .selectMenu {
-      padding-right: 56px;
+      padding-right: 32px;
+
+      @media screen and (min-width: 600px) {
+        padding-right: 56px;
+      }
+    }
+
+    @media screen and (min-width: 600px) {
+      font-size: 20px;
+      padding: 10px 16px;
     }
   }
 `;

@@ -12,7 +12,7 @@ import {
   SelectStyled
  } from './styled';
 
- const callShareIconAndDates = (share) => {
+ const callShareIcon = (share) => {
    if(!share) return null;
 
    if(typeof(share) === 'string') {
@@ -44,7 +44,7 @@ const SectionHeading = ({ title, share }) => (
       <BudgetContainer>
         <BudgetHeadingAndShareIcon>
           <BudgetHeading component='div'>{title}</BudgetHeading>
-          {callShareIconAndDates(share)}
+          {callShareIcon(share)}
         </BudgetHeadingAndShareIcon>
         {callSelectDownOptions}
     </BudgetContainer>
