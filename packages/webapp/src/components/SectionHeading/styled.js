@@ -27,8 +27,8 @@ const BudgetContainer = styled.div`
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
-    margin-bottom: 32px;
-    padding-bottom: 32px;
+    margin-bottom: 24px;
+    padding-bottom: 24px;
   }
 `;
 
@@ -61,40 +61,25 @@ const FormContainer = styled.div`
   align-items: center;
   margin-top: 12px;
 
+  @media screen and (min-width: 375px) {
+    width: 100%;
+    flex-wrap: wrap;
+  }
+
   @media screen and (min-width: 600px) {
-    margin-right: 24px;
+    width: auto;
+    flex-wrap: nowrap;
   }
 `;
 
 const BudgetPhase = styled.div`
+  @media screen and (min-width: 375px) {
+    width: 60%;
+  }
+
   @media screen and (min-width: 600px) {
     margin-right: 24px;
-  }
-`;
-
-
-const SelectStyled = styled(Select)`
-  && {
-    background: #d8d8d8;
-    border-radius: 3px;
-    padding: 8px 12px 8px 16px;
-    font-size: 14px;
-    font-weight: 700;
-    line-height: 120%;
-    color: #000;
-
-    & .selectMenu {
-      padding-right: 32px;
-
-      @media screen and (min-width: 600px) {
-        padding-right: 56px;
-      }
-    }
-
-    @media screen and (min-width: 600px) {
-      font-size: 20px;
-      padding: 10px 16px;
-    }
+    width: auto;
   }
 `;
 
@@ -104,7 +89,6 @@ const SelectStyledPhase = styled(Select)`
     border-radius: 3px;
     padding: 8px 12px 8px 16px;
     font-size: 14px;
-    font-weight: 700;
     line-height: 120%;
     color: #000;
 
@@ -116,9 +100,59 @@ const SelectStyledPhase = styled(Select)`
       }
     }
 
+    & .disabled {
+      color: rgba(0, 0, 0, 0.26);
+    }
+
+    & .icon {
+      color: rgba(0, 0, 0, 0.26);
+    }
+
+    @media screen and (min-width: 375px) {
+      width: 100%;
+    }
+
     @media screen and (min-width: 600px) {
       font-size: 20px;
       padding: 10px 16px;
+      width: auto;
+    }
+  }
+`;
+
+const SelectStyled = styled(Select)`
+  && {
+    background: #d8d8d8;
+    border-radius: 3px;
+    padding: 8px 12px 8px 16px;
+    font-size: 14px;
+    line-height: 120%;
+    color: #000;
+
+    & .selectMenu {
+      padding-right: 32px;
+
+      @media screen and (min-width: 600px) {
+        padding-right: 56px;
+      }
+    }
+
+    & .disabled {
+      color: rgba(0, 0, 0, 0.26);
+    }
+
+    & .icon {
+      color: rgba(0, 0, 0, 0.26);
+    }
+
+    @media screen and (min-width: 375px) {
+      width: 35%;
+    }
+
+    @media screen and (min-width: 600px) {
+      font-size: 20px;
+      padding: 10px 16px;
+      width: auto;
     }
   }
 `;
@@ -126,7 +160,6 @@ const SelectStyledPhase = styled(Select)`
 const SpeedDialContainer = styled.div`
   margin-right: 8px;
 `;
-
 
 export {
   Wrapper,

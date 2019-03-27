@@ -33,11 +33,11 @@ import {
  const callSelectDownOptions = (
   <FormContainer>
     <BudgetPhase>
-      <SelectStyledPhase disabled  displayEmpty classes={{ selectMenu: 'selectMenu' }}>
+      <SelectStyledPhase disabled  displayEmpty classes={{ selectMenu: 'selectMenu', disabled: 'disabled', icon: 'icon' }}>
         <MenuItem>Original budget</MenuItem>
       </SelectStyledPhase>
     </BudgetPhase>
-    <SelectStyled disabled displayEmpty classes={{ selectMenu: 'selectMenu' }}>
+    <SelectStyled disabled displayEmpty classes={{ selectMenu: 'selectMenu', disabled: 'disabled', icon: 'icon' }}>
       <MenuItem>2017-18</MenuItem>
     </SelectStyled>
   </FormContainer>
