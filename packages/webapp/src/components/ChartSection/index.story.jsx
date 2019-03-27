@@ -30,6 +30,14 @@ const initialSelected = {
   color: "#D8D8D8"
 }
 
+const phases = {
+  disabled: "Original budget",
+}
+
+const years = {
+  disabled: "2018-19",
+}
+
 const Chart = ({ onSelectedChange }) => (
   <ul>
     {data.map(item => (
@@ -45,7 +53,18 @@ const Chart = ({ onSelectedChange }) => (
   </ul>
 );
 
-const basic = () => <ChartSection {...{ data, initialSelected }} chart={(props) => <Chart {...props} />} verb='Explore' subject='this department' footer='Budget data from 1 April 2018 - 31 March 2019' />;
+const basic = () => (
+  <ChartSection
+    {...{ data, initialSelected }}
+    chart={(props) => <Chart {...props} />}
+    verb='Explore'
+    subject='this department'
+    footer='Budget data from 1 April 2018 - 31 March 2019'
+    phases={phases}
+    years={years}
+  />
+);
+
 
 
 storiesOf('component.ChartSection', module)

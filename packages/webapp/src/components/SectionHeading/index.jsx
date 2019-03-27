@@ -30,30 +30,38 @@ import {
    );
  }
 
- const callSelectDownOptions = (
-  <FormContainer>
+ const callBudgetPhaseSelect = phases => (
     <BudgetPhase>
       <SelectStyledPhase disabled  displayEmpty classes={{ selectMenu: 'selectMenu', disabled: 'disabled', icon: 'icon' }}>
-        <MenuItem>Original budget</MenuItem>
+        <MenuItem>{phases.disabled}</MenuItem>
       </SelectStyledPhase>
     </BudgetPhase>
-    <SelectStyled disabled displayEmpty classes={{ selectMenu: 'selectMenu', disabled: 'disabled', icon: 'icon' }}>
-      <MenuItem>2017-18</MenuItem>
-    </SelectStyled>
+   );
+
+ const callYearsSelect = years => (
+  <SelectStyled disabled displayEmpty classes={{ selectMenu: 'selectMenu', disabled: 'disabled', icon: 'icon' }}>
+    <MenuItem>{years.disabled}</MenuItem>
+  </SelectStyled>
+ );
+
+ const callSelectDownOptions = (years, phases) => (
+  <FormContainer>
+    {phases && callBudgetPhaseSelect(phases)}
+    {years && callYearsSelect(years)}
   </FormContainer>
  );
 
-const SectionHeading = ({ title, share }) => (
+const SectionHeading = ({ title, share, years, phases }) => (
   <Wrapper>
+  {console.log(years)}
       <BudgetContainer>
         <BudgetHeadingAndShareIcon>
           <BudgetHeading component='div'>{title}</BudgetHeading>
           {callShareIcon(share)}
         </BudgetHeadingAndShareIcon>
-        {callSelectDownOptions}
+        {callSelectDownOptions(years, phases)}
     </BudgetContainer>
   </Wrapper>
 );
 
 export default SectionHeading;
-

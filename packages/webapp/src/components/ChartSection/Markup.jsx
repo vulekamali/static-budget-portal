@@ -61,11 +61,13 @@ const Markup = (props) => {
     verb,
     subject,
     footer,
+    years,
+    phases,
   } = props;
   return (
     <React.Fragment>
       <CssBaseline />
-      <SectionHeading title='National Budget Summary' share={selected.name} />
+      <SectionHeading title='National Budget Summary' share={selected.name} years={years} phases={phases} />
       {selected && callDetails(selected, exploreButtonState, verb, subject)}
       {callChart(selected, Chart, onSelectedChange)}
       <FooterWrapper>
