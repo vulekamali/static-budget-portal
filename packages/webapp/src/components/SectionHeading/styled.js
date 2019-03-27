@@ -23,7 +23,7 @@ const BudgetContainer = styled.div`
   display: flex;
   flex-direction: column;
 
-  @media screen and (min-width: 600px) {
+  @media screen and (min-width: 950px) {
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
@@ -47,7 +47,7 @@ const BudgetHeading = styled(Typography)`
     text-transform: Capitalize;
     text-align: left;
 
-    @media screen and (min-width: 600px) {
+    @media screen and (min-width: 950px) {
       white-space: nowrap;
       padding-right: 22px;
       font-size: 32px;
@@ -66,7 +66,7 @@ const FormContainer = styled.div`
     flex-wrap: wrap;
   }
 
-  @media screen and (min-width: 600px) {
+  @media screen and (min-width: 950px) {
     width: auto;
     flex-wrap: nowrap;
   }
@@ -77,7 +77,7 @@ const BudgetPhase = styled.div`
     width: 60%;
   }
 
-  @media screen and (min-width: 600px) {
+  @media screen and (min-width: 950px) {
     margin-right: 24px;
     width: auto;
   }
@@ -95,7 +95,7 @@ const SelectStyledPhase = styled(Select)`
     & .selectMenu {
       padding-right: 32px;
 
-      @media screen and (min-width: 600px) {
+      @media screen and (min-width: 950px) {
         padding-right: 56px;
       }
     }
@@ -112,7 +112,7 @@ const SelectStyledPhase = styled(Select)`
       width: 100%;
     }
 
-    @media screen and (min-width: 600px) {
+    @media screen and (min-width: 950px) {
       font-size: 20px;
       padding: 10px 16px;
       width: auto;
@@ -126,7 +126,7 @@ const SelectStyled = styled(SelectStyledPhase)`
       width: 35%;
     }
 
-    @media screen and (min-width: 600px) {
+    @media screen and (min-width: 950px) {
       font-size: 20px;
       padding: 10px 16px;
       width: auto;
