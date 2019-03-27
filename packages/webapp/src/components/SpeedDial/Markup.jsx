@@ -12,6 +12,8 @@ import Modal from './Modal';
 const StyledSpeedDial = styled(SpeedDial)`
   height: 40px;
   width: 40px;
+  position: relative;
+  z-index: 1;
 
   & .fab {
     background: #c4c4c4;

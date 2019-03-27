@@ -9,7 +9,9 @@ import {
   BudgetHeading,
   FormContainer,
   BudgetPhase,
-  SelectStyled
+  SelectStyled,
+  SelectStyledPhase,
+  SpeedDialContainer,
  } from './styled';
 
  const callShareIcon = (share) => {
@@ -17,7 +19,9 @@ import {
 
    if(typeof(share) === 'string') {
     return (
-      <SpeedDial {...{ share }} />
+      <SpeedDialContainer>
+        <SpeedDial {...{ share }} />
+      </SpeedDialContainer>
      );
    }
 
@@ -29,9 +33,9 @@ import {
  const callSelectDownOptions = (
   <FormContainer>
     <BudgetPhase>
-      <SelectStyled disabled displayEmpty classes={{ selectMenu: 'selectMenu' }}>
+      <SelectStyledPhase disabled  displayEmpty classes={{ selectMenu: 'selectMenu' }}>
         <MenuItem>Original budget</MenuItem>
-      </SelectStyled>
+      </SelectStyledPhase>
     </BudgetPhase>
     <SelectStyled disabled displayEmpty classes={{ selectMenu: 'selectMenu' }}>
       <MenuItem>2017-18</MenuItem>

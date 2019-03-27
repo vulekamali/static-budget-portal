@@ -59,6 +59,11 @@ const FormContainer = styled.div`
   display: flex;
   justify-content: space-between;
   align-items: center;
+  margin-top: 12px;
+
+  @media screen and (min-width: 600px) {
+    margin-right: 24px;
+  }
 `;
 
 const BudgetPhase = styled.div`
@@ -72,7 +77,7 @@ const SelectStyled = styled(Select)`
   && {
     background: #d8d8d8;
     border-radius: 3px;
-    padding: 12px 12px 12px 16px;
+    padding: 8px 12px 8px 16px;
     font-size: 14px;
     font-weight: 700;
     line-height: 120%;
@@ -93,6 +98,35 @@ const SelectStyled = styled(Select)`
   }
 `;
 
+const SelectStyledPhase = styled(Select)`
+  && {
+    background: #d8d8d8;
+    border-radius: 3px;
+    padding: 8px 12px 8px 16px;
+    font-size: 14px;
+    font-weight: 700;
+    line-height: 120%;
+    color: #000;
+
+    & .selectMenu {
+      padding-right: 32px;
+
+      @media screen and (min-width: 600px) {
+        padding-right: 56px;
+      }
+    }
+
+    @media screen and (min-width: 600px) {
+      font-size: 20px;
+      padding: 10px 16px;
+    }
+  }
+`;
+
+const SpeedDialContainer = styled.div`
+  margin-right: 8px;
+`;
+
 
 export {
   Wrapper,
@@ -102,6 +136,8 @@ export {
   FormContainer,
   BudgetPhase,
   SelectStyled,
+  SelectStyledPhase,
+  SpeedDialContainer,
 }
 
 export default {
@@ -112,4 +148,6 @@ export default {
   FormContainer,
   BudgetPhase,
   SelectStyled,
+  SelectStyledPhase,
+  SpeedDialContainer,
 }
