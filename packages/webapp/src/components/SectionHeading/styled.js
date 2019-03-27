@@ -120,31 +120,8 @@ const SelectStyledPhase = styled(Select)`
   }
 `;
 
-const SelectStyled = styled(Select)`
+const SelectStyled = styled(SelectStyledPhase)`
   && {
-    background: #d8d8d8;
-    border-radius: 3px;
-    padding: 8px 12px 8px 16px;
-    font-size: 14px;
-    line-height: 120%;
-    color: #000;
-
-    & .selectMenu {
-      padding-right: 32px;
-
-      @media screen and (min-width: 600px) {
-        padding-right: 56px;
-      }
-    }
-
-    & .disabled {
-      color: rgba(0, 0, 0, 0.26);
-    }
-
-    & .icon {
-      color: rgba(0, 0, 0, 0.26);
-    }
-
     @media screen and (min-width: 375px) {
       width: 35%;
     }
