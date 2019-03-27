@@ -1,11 +1,15 @@
 import React from 'react';
 import SpeedDial from '../SpeedDial';
+import { MenuItem } from '@material-ui/core';
 
 import {
   Wrapper,
   BudgetContainer,
   BudgetHeadingAndShareIcon,
   BudgetHeading,
+  FormContainer,
+  BudgetPhase,
+  SelectStyled
  } from './styled';
 
  const callShareIconAndDates = (share) => {
@@ -22,6 +26,19 @@ import {
    );
  }
 
+ const callSelectDownOptions = (
+  <FormContainer>
+    <BudgetPhase>
+      <SelectStyled disabled displayEmpty classes={{ selectMenu: 'selectMenu' }}>
+        <MenuItem>Original budget</MenuItem>
+      </SelectStyled>
+    </BudgetPhase>
+    <SelectStyled disabled displayEmpty classes={{ selectMenu: 'selectMenu' }}>
+      <MenuItem>2017-18</MenuItem>
+    </SelectStyled>
+  </FormContainer>
+ );
+
 const SectionHeading = ({ title, share }) => (
   <Wrapper>
       <BudgetContainer>
@@ -29,7 +46,7 @@ const SectionHeading = ({ title, share }) => (
           <BudgetHeading component='div'>{title}</BudgetHeading>
           {callShareIconAndDates(share)}
         </BudgetHeadingAndShareIcon>
-        <div>Hello World</div>
+        {callSelectDownOptions}
     </BudgetContainer>
   </Wrapper>
 );

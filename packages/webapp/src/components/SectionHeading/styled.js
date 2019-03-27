@@ -1,4 +1,8 @@
-import { Typography } from '@material-ui/core';
+import {
+  Typography,
+  Select,
+} from '@material-ui/core';
+
 import styled from 'styled-components';
 
 const Wrapper = styled.div`
@@ -51,6 +55,28 @@ const BudgetHeading = styled(Typography)`
   }
 `;
 
+const FormContainer = styled.div`
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+`;
+
+const BudgetPhase = styled.div`
+  margin-right: 24px;
+`;
+
+
+const SelectStyled = styled(Select)`
+  && {
+    background: #d8d8d8;
+    border-radius: 2px;
+    padding: 10px 16px;
+
+    & .selectMenu {
+      padding-right: 56px;
+    }
+  }
+`;
 
 
 export {
@@ -58,6 +84,9 @@ export {
   BudgetContainer,
   BudgetHeadingAndShareIcon,
   BudgetHeading,
+  FormContainer,
+  BudgetPhase,
+  SelectStyled,
 }
 
 export default {
@@ -65,4 +94,7 @@ export default {
   BudgetContainer,
   BudgetHeadingAndShareIcon,
   BudgetHeading,
+  FormContainer,
+  BudgetPhase,
+  SelectStyled,
 }
