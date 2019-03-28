@@ -1,5 +1,6 @@
 import React from 'react';
 import { maxBy } from 'lodash';
+import pixelWidth from 'string-pixel-width';
 
 import trimValues from '../../helpers/trimValues'
 
@@ -17,6 +18,9 @@ const callBarChart = (barMax) => ({ title, amount}) => {
 
   const ratio = (amount / barMax * 100);
   const remainder = 100 - ratio;
+
+  const textWidth = pixelWidth(title);
+  console.log(textWidth);
 
   return (
     <BarChartTotal key={title}>
