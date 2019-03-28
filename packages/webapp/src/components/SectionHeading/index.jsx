@@ -54,13 +54,12 @@ import {
 
 const SectionHeading = ({ title, share, years, phases }) => (
   <Wrapper>
-  {console.log(years)}
-      <BudgetContainer>
-        <BudgetHeadingAndShareIcon>
-          <BudgetHeading component='div'>{title}</BudgetHeading>
-          {callShareIcon(share)}
-        </BudgetHeadingAndShareIcon>
-        {callSelectDownOptions(years, phases)}
+    <BudgetContainer>
+      <BudgetHeadingAndShareIcon>
+        <BudgetHeading component='div'>{title}</BudgetHeading>
+        {callShareIcon(share)}
+      </BudgetHeadingAndShareIcon>
+      {callSelectDownOptions(years, phases)}
     </BudgetContainer>
   </Wrapper>
 );
