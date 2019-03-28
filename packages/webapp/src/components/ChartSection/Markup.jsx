@@ -24,7 +24,7 @@ import {
  const callChart = (chart, onSelectedChange) => (
    <ChartWrapper>
     <ChartContainer>
-      {chart({onSelectedChange})}
+      {chart(onSelectedChange)}
     </ChartContainer>
    </ChartWrapper>
  );
@@ -65,12 +65,12 @@ const Markup = (props) => {
     years,
     phases,
   } = props;
-
+  
   return (
     <React.Fragment>
       <CssBaseline />
       <SectionHeading title='National Budget Summary' share={selected.name} years={years} phases={phases} />
-      {selected && callDetails(selected, exploreButtonState, verb, subject)}
+      {selected && callDetails(selected, exploreButtonState, verb, subject)} 
       {callChart(chart, onSelectedChange)}
       <FooterWrapper>
         <FooterContainer>

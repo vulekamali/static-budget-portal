@@ -57,7 +57,7 @@ const Chart = ({ onSelectedChange }) => (
 const basic = () => (
   <ChartSection
     {...{ data, initialSelected }}
-    chart={(props) => <Chart {...props} />}
+    chart={(onSelectedChange) => <Chart {...{ onSelectedChange }} />}
     verb='Explore'
     subject='this department'
     footer='Budget data from 1 April 2018 - 31 March 2019'
