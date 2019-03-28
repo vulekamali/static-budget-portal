@@ -1,5 +1,6 @@
 import React from 'react';
 import { storiesOf } from '@storybook/react';
+
 import SectionHeading from './index';
 
 const share = () => <SectionHeading title='Provincial Budget Summary' share>Children Components</SectionHeading>;

@@ -1,4 +1,5 @@
 import React from 'react';
+
 import trimValues from '../../helpers/trimValues';
 import Icon from '@material-ui/icons/ArrowForward';
 import SectionHeading from '../SectionHeading';
@@ -20,10 +21,10 @@ import {
   FooterDetails
  } from './styled';
 
- const callChart = (selected, Chart, onSelectedChange) => (
+ const callChart = (chart, onSelectedChange) => (
    <ChartWrapper>
     <ChartContainer>
-      {Chart({selected, onSelectedChange})}
+      {chart({onSelectedChange})}
     </ChartContainer>
    </ChartWrapper>
  );
@@ -54,7 +55,7 @@ const callDetails = (selected, exploreButtonState, verb, subject) => {
 
 const Markup = (props) => {
   const {
-    chart: Chart,
+    chart,
     selected,
     exploreButtonState,
     onSelectedChange,
@@ -64,12 +65,13 @@ const Markup = (props) => {
     years,
     phases,
   } = props;
+
   return (
     <React.Fragment>
       <CssBaseline />
       <SectionHeading title='National Budget Summary' share={selected.name} years={years} phases={phases} />
       {selected && callDetails(selected, exploreButtonState, verb, subject)}
-      {callChart(selected, Chart, onSelectedChange)}
+      {callChart(chart, onSelectedChange)}
       <FooterWrapper>
         <FooterContainer>
           {footer && <FooterDetails>{footer}</FooterDetails>}

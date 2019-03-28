@@ -39,7 +39,7 @@ const BudgetHeadingAndShareIcon = styled.div`
 `;
 
 const BudgetHeading = styled(Typography)`
-  &&&& {
+  && {
     font-weight: 700;
     font-size: 18px;
     line-height: 120%;
