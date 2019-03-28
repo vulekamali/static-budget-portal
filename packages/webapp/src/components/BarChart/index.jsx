@@ -1,51 +1,30 @@
-import React from 'react';
-import { maxBy } from 'lodash';
-import pixelWidth from 'string-pixel-width';
+import React, { Component } from 'react';
+import t from 'prop-types';
+import Markup from './Markup';
 
-import trimValues from '../../helpers/trimValues'
 
-import {
-  Wrapper,
-  BarChartContainer,
-  BarChartTotal,
-  ColorBar,
-  RemainderBar,
-  Title,
-  Amount
- } from './styled';
 
-const callBarChart = (barMax) => ({ title, amount}) => {
+class Homepage extends Component {
+  constructor(props) {
+    super(props);
+    this.componentWidth = React.createRef();
+    this.state = {
+      labelOutside: false
+    }
+  } 
 
-  const ratio = (amount / barMax * 100);
-  const remainder = 100 - ratio;
+  render() {
+    const { state, props } = this;
 
-  const textWidth = pixelWidth(title);
-  console.log(textWidth);
+    const passedProps = {
+      ...props,
+      labelOutside: state.labelOutside,
+      componentWidth: this.componentWidth,
+    };
 
-  return (
-    <BarChartTotal key={title}>
-      <ColorBar {...{ ratio }}>
-        <Title component='div'>{title}</Title>
-        <Amount component='div'>{`R${trimValues(amount)}`}</Amount>
-      </ColorBar>
-      <RemainderBar {...{ remainder }}></RemainderBar>
-    </BarChartTotal>
-  )
-};
+    return <Markup {...passedProps } />
+  }
+}
 
-const BarChart = ({ items }) => {
 
-  const maxAmountObject = maxBy(items, function(max) { return max.amount; });
-  const maxAmount = maxAmountObject.amount;
-  const barMax = maxAmount + (maxAmount / 2);
-
-  return (
-    <Wrapper>
-      <BarChartContainer>
-        {items.map(callBarChart(barMax))}
-      </BarChartContainer>
-    </Wrapper>
-  );
-};
-
-export default BarChart;
+export default Homepage;
