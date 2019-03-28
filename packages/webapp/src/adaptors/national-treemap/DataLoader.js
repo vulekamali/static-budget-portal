@@ -25,16 +25,26 @@ class DataLoader extends Component {
   }
 
   render() {
-    const { state, ...events } = this;
+    const { state } = this;
     const { loading, data } = state;
 
     if (loading || !data) {
       return createElement('div', {}, 'Loading...');
     }
 
-    const passedProps = { ...events, data };
+    const {items, total } = data;
+    const initialSelected = {
+      name: "National Budget Summary",
+      value: total,
+      url: null,
+      color: "#D8D8D8"
+    }
 
-    return createElement(NationalTreemap, passedProps, 'Hello World!');
+    const passedProps = { items, initialSelected };
+
+    console.log(NationalTreemap, passedProps)
+
+    return createElement(NationalTreemap, passedProps);
   }
 }
 
