@@ -1,25 +1,8 @@
 import styled from 'styled-components';
 import { Typography } from '@material-ui/core';
 
-const Wrapper = styled.div`
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  margin: 40px 20px;
-
-  @media screen and (min-width: 450px) {
-    margin: 70px 20px;
-  }
-`;
-
-const BarChartContainer = styled.div`
-  width: 100%;
-  max-width: 1000px;
-`;
-
 const BarChartTotal = styled.div`
   display: flex;
-  ${'' /* flex-wrap: wrap; */}
   width: 100%;
   height: 75px;
   margin-bottom: 10px;
@@ -64,8 +47,6 @@ const Amount = styled(Typography)`
 `;
 
 export {
-  Wrapper,
-  BarChartContainer,
   BarChartTotal,
   ColorBar,
   Title,
@@ -73,8 +54,6 @@ export {
 }
 
 export default {
-  Wrapper,
-  BarChartContainer,
   BarChartTotal,
   ColorBar,
   Title,

@@ -1,30 +1,27 @@
-import React, { Component } from 'react';
-import t from 'prop-types';
-import Markup from './Markup';
+import React from 'react';
+import pixelWidth from 'string-pixel-width';
 
+import addRatios from './addRatios'
+import Bar from './Bar';
 
+import {
+  Wrapper,
+  BarChartContainer
+ } from './styled';
 
-class Homepage extends Component {
-  constructor(props) {
-    super(props);
-    this.componentWidth = React.createRef();
-    this.state = {
-      labelOutside: false
-    }
-  } 
+const Markup = ({ items, componentWidth }) => {
 
-  render() {
-    const { state, props } = this;
+  const itemsWithRatios = addRatios(items);
 
-    const passedProps = {
-      ...props,
-      labelOutside: state.labelOutside,
-      componentWidth: this.componentWidth,
-    };
+  return (
+    <Wrapper>
+      <BarChartContainer>
+        {itemsWithRatios.map(props => <Bar {...props} />)}
+      </BarChartContainer>
+    </Wrapper>
+  );
+};
 
-    return <Markup {...passedProps } />
-  }
-}
+export default Markup;
 
-
-export default Homepage;
+// console.log(componentWidth.current.clientWidth);
