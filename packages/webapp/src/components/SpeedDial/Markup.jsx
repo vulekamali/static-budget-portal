@@ -11,15 +11,22 @@ import Modal from './Modal';
 
 const StyledSpeedDial = styled(SpeedDial)`
   height: 40px;
-  align-self: flex-start;
+  width: 40px;
+  position: relative;
+  z-index: 1;
 
   & .fab {
-    background: #C4C4C4;
+    background: #c4c4c4;
     width: 36px;
     margin-left: 10px;
+    box-shadow: none;
 
     &:hover {
       background: ${darken(0.1, '#C4C4C4')};
+    }
+
+    &:focus {
+      box-shadow: none;
     }
   }
 `;
@@ -85,14 +92,14 @@ const creataShareLink = ({ title, icon, action }) => (
   />
 )
 
-const createButtons = (id, toggleModal, toggleSharingOpen) => {
-  const baseUrl = id ? `${window.location.href}?id=${id}` : window.location.href;
+const createButtons = (toggleModal, toggleSharingOpen, share) => {
+  const baseUrl = typeof(share) === 'string' ? `${window.location.href}/#${share}` : window.location.href;
   const buttonsInfo = sharing.map(createObjects(baseUrl, toggleModal, toggleSharingOpen))
 
   return buttonsInfo.map(creataShareLink);
 };
 
-const Markup = ({ sharingOpen, toggleSharingOpen, id, toggleModal, modal }) => {
+const Markup = ({ sharingOpen, toggleSharingOpen, toggleModal, modal, share }) => {
   return (
     <React.Fragment>
       <StyledSpeedDial
@@ -103,7 +110,7 @@ const Markup = ({ sharingOpen, toggleSharingOpen, id, toggleModal, modal }) => {
         direction="down"
         classes={{ fab: 'fab' }}
       >
-        {createButtons(id, toggleModal, toggleSharingOpen)}
+        {createButtons(toggleModal, toggleSharingOpen, share)}
       </StyledSpeedDial>
       <Modal open={!!modal} closeModal={() => toggleModal(null)} url={modal} />
     </React.Fragment>
