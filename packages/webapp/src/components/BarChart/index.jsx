@@ -1,28 +1,45 @@
 import React from 'react';
+import { maxBy } from 'lodash';
+
+import trimValues from '../../helpers/trimValues'
 
 import {
   Wrapper,
   BarChartContainer,
   BarChartTotal,
   ColorBar,
-  RemainderBar
+  RemainderBar,
+  Title,
+  Amount
  } from './styled';
 
-const callBarChart = ({ title, amount }) => (
-  <BarChartTotal>
-    <ColorBar>
-      <div>{title}</div>
-      <div>{amount}</div>
-    </ColorBar>
-    <RemainderBar></RemainderBar>
-  </BarChartTotal>
-);
+const callBarChart = (barMax) => ({ title, amount}) => { 
+  // console.log(barMax);
+  const ratio = (amount / barMax * 100);
+  const remainder = 100 - ratio;
+  console.log(remainder)
+  return (
+    <BarChartTotal key={title}>
+      <ColorBar {...{ ratio }}>
+        <Title component='div'>{title}</Title>
+        <Amount component='div'>{`R${trimValues(amount)}`}</Amount>
+      </ColorBar>
+      <RemainderBar {...{ remainder }}></RemainderBar>
+    </BarChartTotal>
+  )
+};
 
 const BarChart = ({ items }) => {
+
+  const maxAmountObject = maxBy(items, function(max) { return max.amount; });
+  const maxAmount = maxAmountObject.amount;
+
+  const barMax = maxAmount + (maxAmount / 2);
+
   return (
     <Wrapper>
       <BarChartContainer>
-        {items.map(callBarChart)}
+        {items.map(callBarChart(barMax))}
       </BarChartContainer>
     </Wrapper>
   );

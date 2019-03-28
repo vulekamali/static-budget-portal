@@ -1,4 +1,5 @@
 import styled from 'styled-components';
+import { Typography } from '@material-ui/core';
 
 const Wrapper = styled.div`
   display: flex;
@@ -25,7 +26,8 @@ const BarChartTotal = styled.div`
 `;
 
 const ColorBar = styled.div`
-  width: 70%;
+  ${'' /* width: 70%; */}
+  width: ${({ ratio }) => ratio}%;
   background-color: #e57373;
   display: flex;
   flex-direction: column;
@@ -33,9 +35,36 @@ const ColorBar = styled.div`
   align-items: flex-end;
 `;
 
+const Title = styled(Typography)`
+  && {
+    font-weight: 700;
+    font-size: 10px;
+    line-height: 120%;
+    text-align: right;
+    color: #000;
+
+    @media screen and (min-width: 600px) {
+      font-size: 18px;
+    }
+  }
+`;
+
 const RemainderBar = styled.div`
-  width: 30%;
+  width: ${({ remainder }) => remainder}%;
   background-color: #f7f7f7;
+`;
+
+const Amount = styled(Typography)`
+  && {
+    font-size: 10px;
+    line-height: 120%;
+    text-align: right;
+    color: #000;
+
+    @media screen and (min-width: 600px) {
+      font-size: 18px;
+    }
+  }
 `;
 
 export {
@@ -43,7 +72,9 @@ export {
   BarChartContainer,
   BarChartTotal,
   ColorBar,
-  RemainderBar
+  RemainderBar,
+  Title,
+  Amount
 }
 
 export default {
@@ -51,5 +82,7 @@ export default {
   BarChartContainer,
   BarChartTotal,
   ColorBar,
-  RemainderBar
+  RemainderBar,
+  Title,
+  Amount
 }
