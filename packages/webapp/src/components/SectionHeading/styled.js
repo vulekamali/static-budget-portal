@@ -16,7 +16,6 @@ const Wrapper = styled.div`
 const BudgetContainer = styled.div`
   border-bottom: 1px solid #000;
   margin-bottom: 20px;
-  width: 100%;
   max-width: 1200px;
   padding-bottom: 16px;
   width: 100%;
@@ -69,6 +68,7 @@ const FormContainer = styled.div`
   @media screen and (min-width: 950px) {
     width: auto;
     flex-wrap: nowrap;
+    margin-top: 0;
   }
 `;
 

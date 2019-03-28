@@ -93,7 +93,9 @@ const creataShareLink = ({ title, icon, action }) => (
 )
 
 const createButtons = (toggleModal, toggleSharingOpen, share) => {
-  const baseUrl = typeof(share) === 'string' ? `${window.location.href}/#${share}` : window.location.href;
+  const url = document.URL.replace(/#.*$/, "");
+
+  const baseUrl = typeof(share) === 'string' ? `${url}/#${share}` : url;
   const buttonsInfo = sharing.map(createObjects(baseUrl, toggleModal, toggleSharingOpen))
 
   return buttonsInfo.map(creataShareLink);
