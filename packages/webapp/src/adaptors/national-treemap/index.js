@@ -1,11 +1,12 @@
 import { createElement } from 'react';
 import { render } from 'react-dom';
-import Button from '../../components/Button';
+
+import DataLoader from './DataLoader'
 
 const node = document.querySelector('[data-webapp="national-treemap"]');
-const component = createElement(Button, {}, 'Hello World!');
+const component = createElement(DataLoader, {}, 'Hello World!');
 
-const initialise = (): any => {
+const initialise = () => {
   return render(component, node);
 };
 
