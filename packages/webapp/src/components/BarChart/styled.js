@@ -26,13 +26,13 @@ const BarChartTotal = styled.div`
 `;
 
 const ColorBar = styled.div`
-  ${'' /* width: 70%; */}
   width: ${({ ratio }) => ratio}%;
   background-color: #e57373;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: flex-end;
+  padding-right: 24px;
 `;
 
 const Title = styled(Typography)`

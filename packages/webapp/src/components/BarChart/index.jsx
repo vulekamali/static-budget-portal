@@ -13,11 +13,11 @@ import {
   Amount
  } from './styled';
 
-const callBarChart = (barMax) => ({ title, amount}) => { 
-  // console.log(barMax);
+const callBarChart = (barMax) => ({ title, amount}) => {
+
   const ratio = (amount / barMax * 100);
   const remainder = 100 - ratio;
-  console.log(remainder)
+
   return (
     <BarChartTotal key={title}>
       <ColorBar {...{ ratio }}>
@@ -33,7 +33,6 @@ const BarChart = ({ items }) => {
 
   const maxAmountObject = maxBy(items, function(max) { return max.amount; });
   const maxAmount = maxAmountObject.amount;
-
   const barMax = maxAmount + (maxAmount / 2);
 
   return (
