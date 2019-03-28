@@ -69,6 +69,7 @@ const FormContainer = styled.div`
   @media screen and (min-width: 950px) {
     width: auto;
     flex-wrap: nowrap;
+    margin-top: 0;
   }
 `;
 
