@@ -10353,6 +10353,11 @@ lodash.debounce@^4.0.8:
   resolved "https://registry.yarnpkg.com/lodash.debounce/-/lodash.debounce-4.0.8.tgz#82d79bff30a67c4005ffd5e2515300ad9ca4d7af"
   integrity sha1-gteb/zCmfEAF/9XiUVMArZyk168=
 
+lodash.deburr@^4.1.0:
+  version "4.1.0"
+  resolved "https://registry.yarnpkg.com/lodash.deburr/-/lodash.deburr-4.1.0.tgz#ddb1bbb3ef07458c0177ba07de14422cb033ff9b"
+  integrity sha1-3bG7s+8HRYwBd7oH3hRCLLAz/5s=
+
 lodash.flow@^3.1.0:
   version "3.5.0"
   resolved "https://registry.yarnpkg.com/lodash.flow/-/lodash.flow-3.5.0.tgz#87bf40292b8cf83e4e8ce1a3ae4209e20071675a"
@@ -15097,6 +15102,13 @@ string-length@^2.0.0:
   dependencies:
     astral-regex "^1.0.0"
     strip-ansi "^4.0.0"
+
+string-pixel-width@^1.9.0:
+  version "1.9.0"
+  resolved "https://registry.yarnpkg.com/string-pixel-width/-/string-pixel-width-1.9.0.tgz#c913e482f2ca8c35bd21a59770ef1afcd911152f"
+  integrity sha512-PIT/uoWm50av0DtWXsNz7de4Our1xvMxZHiMi2CAK06dN8QJizdKlIOwSdhcRxVK30UvC3COv4/Dv5p9+oiwfA==
+  dependencies:
+    lodash.deburr "^4.1.0"
 
 string-width@^1.0.1, string-width@^1.0.2:
   version "1.0.2"
