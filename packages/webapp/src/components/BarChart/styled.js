@@ -16,13 +16,40 @@ const BarChartContainer = styled.div`
   max-width: 1000px;
 `;
 
+const BarChartTotal = styled.div`
+  display: flex;
+  ${'' /* flex-wrap: wrap; */}
+  width: 100%;
+  height: 75px;
+  margin-bottom: 10px;
+`;
+
+const ColorBar = styled.div`
+  width: 70%;
+  background-color: #e57373;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-end;
+`;
+
+const RemainderBar = styled.div`
+  width: 30%;
+  background-color: #f7f7f7;
+`;
 
 export {
   Wrapper,
-  BarChartContainer
+  BarChartContainer,
+  BarChartTotal,
+  ColorBar,
+  RemainderBar
 }
 
 export default {
   Wrapper,
-  BarChartContainer
+  BarChartContainer,
+  BarChartTotal,
+  ColorBar,
+  RemainderBar
 }
