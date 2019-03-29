@@ -1,7 +1,7 @@
 import { Component, createElement } from 'react';
 import axios from 'axios';
 
-import NationalTreemap from '../../views/NationalTreemap';
+import ProvincialTreemap from '../../views/ProvincialTreemap';
 import transformData from './transformData';
 import { api } from './config.json';
 
@@ -34,15 +34,17 @@ class DataLoader extends Component {
 
     const {items, total } = data;
     const initialSelected = {
-      name: "National Budget Summary",
+      name: "Provincial Budget Summary",
       value: total,
       url: null,
       color: "#D8D8D8"
     }
 
     const passedProps = { items, initialSelected };
+    console.log(passedProps);
 
-    return createElement(NationalTreemap, passedProps);
+    return createElement(ProvincialTreemap, passedProps);
+    // return createElement('div', {}, 'Loading...');
   }
 }
 

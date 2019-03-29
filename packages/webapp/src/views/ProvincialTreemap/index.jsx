@@ -25,7 +25,7 @@ const Markup = ({ items, initialSelected }) => (
     years={{
       disabled: "2018-19",
     }}
-    anchor="national-treemap"
+    anchor="provincial-treemap"
   />
 )
 
