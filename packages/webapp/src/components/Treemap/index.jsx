@@ -4,6 +4,7 @@ import Markup from './Markup';
 import createColorGenerator from './generateColor';
 import ResizeWindowListener from '../../helpers/ResizeWindowListener';
 import sortItems from './sortItems';
+import modifyIfZoomed from './modifyIfZoomed';
 
 const colorsList = createColorGenerator();
 
@@ -14,6 +15,7 @@ class TreeMapSection extends Component {
     this.state = {
       selected: null,
       screenWidth: new ResizeWindowListener().stop(),
+      zoom: null,
     };
 
     this.events = {
@@ -23,6 +25,7 @@ class TreeMapSection extends Component {
     this.values = {
       fills: Object.keys(this.props.items).map(() => colorsList.next().value),
       sortedItems: sortItems(this.props.items),
+      hasChildren: !Array.isArray(this.props.items),
       resizeListener: new ResizeWindowListener(this.changeWidthHandler.bind(this)),
     };
   }
@@ -34,7 +37,10 @@ class TreeMapSection extends Component {
       onSelectedChange(selected);
     }
 
-    this.setState({ selected });
+    this.setState({ 
+      selected: selected.id,
+      zoom: selected.zoom || null,
+    });
   }
 
   changeWidthHandler(screenWidth) {
@@ -55,7 +61,16 @@ class TreeMapSection extends Component {
 
   render() {
     const { state, events, values } = this;
-    const passedProps = { ...state, ...events, items: values.sortedItems, fills: values.fills };
+    const items = modifyIfZoomed(values.sortedItems, state.zoom);
+
+    const passedProps = { 
+      ...state,
+      ...events,
+      items,
+      fills: values.fills,
+      hasChildren: values.hasChildren,
+    };
+
     return <Markup {...passedProps} />;
   }
 }

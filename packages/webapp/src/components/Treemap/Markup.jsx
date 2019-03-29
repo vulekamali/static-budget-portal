@@ -4,20 +4,16 @@ import { Treemap, Tooltip } from 'recharts';
 import Block from './Block';
 import TooltipContent from './TooltipContent';
 
-const createBlock = (fills, changeSelectedHandler, selected) => {
+const createBlock = (fills, changeSelectedHandler, selected, zoom) => {
   return props => {
-    const passedProps = { ...props, fills, changeSelectedHandler, selected };
+    const passedProps = { ...props, fills, changeSelectedHandler, selected, zoom };
     return <Block {...passedProps} />;
   };
 };
 
-const Markup = ({ items, changeSelectedHandler, selected, fills, screenWidth }) => {
+const Markup = ({ items, changeSelectedHandler, selected, fills, screenWidth, zoom, hasChildren }) => {
   const widthWithPadding = screenWidth - 48;
   const width = widthWithPadding > 1200 ? 1200 : widthWithPadding;
-
-  if (!Array.isArray(items)) {
-    return <div>xxxx</div>
-  }
 
   return (
     <Treemap
@@ -29,9 +25,9 @@ const Markup = ({ items, changeSelectedHandler, selected, fills, screenWidth }) 
       animationDuration={600}
       tooltip
       isAnimationActive={false}
-      content={createBlock(fills, changeSelectedHandler, selected)}
+      content={createBlock(fills, changeSelectedHandler, selected, zoom, hasChildren)}
     >
-      <Tooltip content={TooltipContent} />
+      {(!hasChildren || !!zoom) && <Tooltip content={TooltipContent} />}
     </Treemap>
   )
 };

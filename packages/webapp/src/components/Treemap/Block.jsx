@@ -1,7 +1,9 @@
 import React, { Fragment } from 'react';
+import { lighten } from 'polished';
 
 import { Text, TreemapBlock, TreemapBlockWrapper } from './styled';
 import trimValues from '../../helpers/trimValues';
+import { provinces } from './data';
 
 const createInlineText = (title, amount, squarePixels) => (
   <Fragment>
@@ -27,18 +29,35 @@ const Block = (props) => {
     name,
     amount,
     changeSelectedHandler,
+    children,
+    root,
+    zoom,
+    hasChildren,
   } = props;
 
   if (depth === 2) {
-    const passedProps = {
-      x,
-      y,
-      id,
-      name,
-      amount,
-    }
+    const { 
+      index: rootIndex,
+      name: rootName,
+    } = root;
+    const fullName = `${rootName}: ${name}`;
 
-    console.log(passedProps);
+    return (
+      <TreemapBlockWrapper {...{ x, y, width, height }} key={id}>
+        <div style={{ border: `1px solid ${lighten(0.1, fills[rootIndex])}` }}>
+          <TreemapBlock
+            onClick={() => changeSelectedHandler({ 
+              id,
+              name: fullName,
+              color: fills[rootIndex],
+              value: amount,
+              url,
+              zoom: rootName,
+            })}
+          />
+        </div>
+      </TreemapBlockWrapper>
+    )
   }
 
   if (depth !== 1) {
@@ -46,13 +65,14 @@ const Block = (props) => {
   }
 
   const squarePixels = width * height;
-  const color = fills[index];
+  const colourIndex = () => provinces.findIndex(province => province === zoom);
+  const color = zoom ? fills[colourIndex()] : fills[index];
 
   return (
-    <TreemapBlockWrapper x={x} y={y} width={width} height={height}>
+    <TreemapBlockWrapper x={x} y={y} width={width} height={height} key={id}>
       <TreemapBlock
-        {...{ color }}
-        selected={selected && selected.id === id}
+        {...{ color, zoom }}
+        selected={!children && selected && selected === id}
         onClick={() => changeSelectedHandler({ id, name, color, value: amount, url })}
       >
         {width > 80 && squarePixels > 10000 && createInlineText(name, amount, squarePixels)}
