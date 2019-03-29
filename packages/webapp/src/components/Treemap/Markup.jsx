@@ -19,9 +19,16 @@ const createBlock = (fills, changeSelectedHandler, selected, zoom) => {
   };
 };
 
-const Markup = ({ items, changeSelectedHandler, selected, fills, screenWidth, zoom, hasChildren, zoomToggleHandler }) => {
+const Markup = ({ items, changeSelectedHandler, selected, fills, screenWidth, zoom, hasChildren, unsetZoomHandler }) => {
   const widthWithPadding = screenWidth - 48;
   const width = widthWithPadding > 1200 ? 1200 : widthWithPadding;
+
+  const createButton = () => (
+    <TreemapButtonStyle onClick={unsetZoomHandler}>
+      <LeftIcon />
+      <TreemapButtonText component='span'>Provinces</TreemapButtonText>
+    </TreemapButtonStyle>
+  )
 
   return (
     <TreemapWrapper {...{ width }}>
@@ -36,12 +43,9 @@ const Markup = ({ items, changeSelectedHandler, selected, fills, screenWidth, zo
         isAnimationActive={false}
         content={createBlock(fills, changeSelectedHandler, selected, zoom, hasChildren)}
       >
-        {(!hasChildren || !!zoom) && <Tooltip content={TooltipContent} />}
+        {(!!zoom || !hasChildren )&& <Tooltip content={TooltipContent} />}
       </Treemap>
-      <TreemapButtonStyle onClick={zoomToggleHandler}>
-        <LeftIcon />
-        <TreemapButtonText component='span'>Provinces</TreemapButtonText>
-      </TreemapButtonStyle>
+      {!!zoom && createButton()}
     </TreemapWrapper>
   )
 };

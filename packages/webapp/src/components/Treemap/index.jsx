@@ -8,19 +8,20 @@ import modifyIfZoomed from './modifyIfZoomed';
 
 const colorsList = createColorGenerator();
 
-class TreeMapSection extends Component {
+class Treemap extends Component {
   constructor(props) {
     super(props);
 
+    const screenWidth = new ResizeWindowListener().stop();
+
     this.state = {
       selected: null,
-      zoom: true,
-      screenWidth: new ResizeWindowListener().stop(),
+      screenWidth: screenWidth,
       zoom: null,
     };
 
     this.events = {
-      zoomToggleHandler: this.zoomToggleHandler.bind(this),
+      unsetZoomHandler: this.unsetZoomHandler.bind(this),
       changeSelectedHandler: this.changeSelectedHandler.bind(this),
     };
 
@@ -28,13 +29,27 @@ class TreeMapSection extends Component {
       fills: Object.keys(this.props.items).map(() => colorsList.next().value),
       sortedItems: sortItems(this.props.items),
       hasChildren: !Array.isArray(this.props.items),
-      resizeListener: new ResizeWindowListener(this.changeWidthHandler.bind(this)),
     };
   }
 
-  zoomToggleHandler() {
-    const { zoom } = this.state;
-    return this.setState({ zoom: !zoom });
+  componentDidMount() {
+    this.values = {
+      ...this.values,
+      resizeListener: new ResizeWindowListener(this.changeWidthHandler.bind(this)),
+    }
+  }
+
+  unsetZoomHandler() {
+    const { onSelectedChange } = this.props;
+
+    if (onSelectedChange) {
+      onSelectedChange(null);
+    }
+    
+    return this.setState({ 
+      selected: null,
+      zoom: null,
+    });
   }
 
   changeSelectedHandler(selected) {
@@ -55,7 +70,6 @@ class TreeMapSection extends Component {
       this.setState({ screenWidth });
     }
   }
-
 
   componentWillUnmount() {
     const { resizeListener } = this.values;
@@ -83,4 +97,4 @@ class TreeMapSection extends Component {
   }
 }
 
-export default TreeMapSection;
+export default Treemap;

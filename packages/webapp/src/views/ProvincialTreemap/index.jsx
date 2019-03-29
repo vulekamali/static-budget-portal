@@ -5,16 +5,10 @@ import calcIfForeignObjectIsSupported from './calcIfForeignObjectIsSupported';
 import ChartSection from './../../components/ChartSection';
 import Treemap from './../../components/Treemap';
 
-const footer = (
-  <Fragment>
-    <div>Budget data from 1 April 2018 - 31 March 2019</div>
-  </Fragment>
-)
-
-
 const Markup = ({ items, initialSelected }) => (
   <ChartSection
-    {...{ initialSelected, footer }}
+    {...{ initialSelected }}
+    footer="Budget data from 1 April 2018 - 31 March 2019"
     chart={(onSelectedChange) => <Treemap {...{ items, onSelectedChange }} />}
     verb='Explore'
     subject='this department'

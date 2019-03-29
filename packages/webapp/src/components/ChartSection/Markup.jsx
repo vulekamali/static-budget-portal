@@ -29,16 +29,16 @@ import {
    </ChartWrapper>
  );
 
-const callButtonExplore = (url, exploreButtonState, color,  verb, subject) => (
+const callButtonExplore = (url, color,  verb, subject) => (
   <LinkWrapper href={url}>
-    <ButtonStyle disabled={exploreButtonState} {...{color}}>
+    <ButtonStyle disabled={!url} {...{color}}>
       <TextExploreButton>{verb} <SpanStyled>{subject}</SpanStyled></TextExploreButton>
       <Icon />
     </ButtonStyle>
   </LinkWrapper>
 );
 
-const callDetails = (selected, exploreButtonState, verb, subject) => {
+const callDetails = (selected, verb, subject) => {
   const { name, value, url, color } = selected;
   return (
     <DetailsWrapper>
@@ -47,7 +47,7 @@ const callDetails = (selected, exploreButtonState, verb, subject) => {
           <Department>{name}</Department>
           <Amount>R{trimValues(value)}</Amount>
         </div>
-        {callButtonExplore(url, exploreButtonState, color,  verb, subject)}
+        {callButtonExplore(url, color,  verb, subject)}
       </DetailsContainer>
     </DetailsWrapper>
   );
@@ -57,7 +57,6 @@ const Markup = (props) => {
   const {
     chart,
     selected,
-    exploreButtonState,
     onSelectedChange,
     verb,
     subject,
@@ -72,7 +71,7 @@ const Markup = (props) => {
     <React.Fragment>
       <CssBaseline />
       <SectionHeading title={title} share={anchor} years={years} phases={phases} />
-      {selected && callDetails(selected, exploreButtonState, verb, subject)} 
+      {!!selected && callDetails(selected, verb, subject)} 
       {callChart(chart, onSelectedChange)}
       <FooterWrapper>
         <FooterContainer>

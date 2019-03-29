@@ -44,7 +44,6 @@ class DataLoader extends Component {
     console.log(passedProps);
 
     return createElement(ProvincialTreemap, passedProps);
-    // return createElement('div', {}, 'Loading...');
   }
 }
 

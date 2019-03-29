@@ -73,7 +73,7 @@ const Block = (props) => {
       <TreemapBlock
         {...{ color, zoom }}
         selected={!children && selected && selected === id}
-        onClick={() => changeSelectedHandler({ id, name, color, value: amount, url })}
+        onClick={() => changeSelectedHandler({ id, name, color, value: amount, url, zoom })}
       >
         {width > 80 && squarePixels > 10000 && createInlineText(name, amount, squarePixels)}
       </TreemapBlock>
