@@ -7,9 +7,9 @@ class ChartSection extends Component {
   constructor(props) {
     super(props);
     const { initialSelected } = this.props;
+  
     this.state = {
       selected: initialSelected || null,
-      exploreButtonState: true,
     }
 
     this.events = {
@@ -18,7 +18,13 @@ class ChartSection extends Component {
   }
 
   onSelectedChange(event) {
-    this.setState({ selected: event, exploreButtonState: false });
+    const { initialSelected } = this.props;
+
+    if (event === null) {
+      return this.setState({ selected: initialSelected });
+    }
+
+    this.setState({ selected: event });
   }
 
   render() {
@@ -27,7 +33,6 @@ class ChartSection extends Component {
     const passedProps = {
       ...props,
       selected: state.selected,
-      exploreButtonState: state.exploreButtonState,
       onSelectedChange: events.onSelectedChange
     };
 
