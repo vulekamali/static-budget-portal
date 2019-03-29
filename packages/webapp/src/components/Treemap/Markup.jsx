@@ -32,11 +32,16 @@ const ButtonStyle = styled(Button)`
 
 const ButtonText = styled(Typography)`
   && {
-    padding-left: 20px;
+    padding-left: 24px;
     font-family: Roboto;
     font-weight: 700;
-    font-size: 24px;
+    font-size: 14px;
     color: #fff;
+    line-height: 120%;
+
+    @media screen and (min-width: 950px) {
+      font-size: 20px;
+    }
   }
 `;
 
