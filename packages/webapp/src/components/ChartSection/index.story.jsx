@@ -54,7 +54,7 @@ const Chart = ({ onSelectedChange }) => (
   </ul>
 );
 
-const basic = () => (
+const national = () => (
   <ChartSection
     {...{ data, initialSelected }}
     chart={(onSelectedChange) => <Chart {...{ onSelectedChange }} />}
@@ -63,10 +63,25 @@ const basic = () => (
     footer='Budget data from 1 April 2018 - 31 March 2019'
     phases={phases}
     years={years}
+    title='National Budget Summary'
+  />
+);
+
+const provincial = () => (
+  <ChartSection
+    {...{ data, initialSelected }}
+    chart={(onSelectedChange) => <Chart {...{ onSelectedChange }} />}
+    verb='Explore'
+    subject='this department'
+    footer='Budget data from 1 April 2018 - 31 March 2019'
+    phases={phases}
+    years={years}
+    title='Provincial Budget Summary'
   />
 );
 
 
 
 storiesOf('component.ChartSection', module)
-  .add('Default', basic)
+  .add('National', national)
+  .add('Default', provincial)
