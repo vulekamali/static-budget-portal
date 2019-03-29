@@ -5,45 +5,13 @@ import styled from 'styled-components';
 import Block from './Block';
 import TooltipContent from './TooltipContent';
 import LeftIcon from '@material-ui/icons/ArrowBack';
-import { Button, Typography } from '@material-ui/core';
 
-const Wrapper = styled.div`
-  position: relative;
-  display: inline-block;
-`;
+import {
+  TreemapWrapper,
+  TreemapButtonStyle,
+  TreemapButtonText
+ } from './styled';
 
-const ButtonStyle = styled(Button)`
-  && {
-    color: #fff;
-    text-transform: none;
-    position: absolute;
-    top: 0;
-    right: 0;
-    background-color: rgba(0, 0, 0, 0.5);
-    margin-top: 16px;
-    margin-right: 16px;
-    padding: 12px 16px;
-
-    &:hover {
-      background-color: rgba(0, 0, 0, 0.6);
-    }
-  }
-`;
-
-const ButtonText = styled(Typography)`
-  && {
-    padding-left: 24px;
-    font-family: Roboto;
-    font-weight: 700;
-    font-size: 14px;
-    color: #fff;
-    line-height: 120%;
-
-    @media screen and (min-width: 950px) {
-      font-size: 20px;
-    }
-  }
-`;
 
 const createBlock = (fills, changeSelectedHandler, selected) => {
   return props => {
@@ -61,7 +29,7 @@ const Markup = ({ items, changeSelectedHandler, selected, fills, screenWidth, zo
   }
 
   return (
-    <Wrapper {...{ width }}>
+    <TreemapWrapper {...{ width }}>
       <Treemap
         {...{ width }}
         key={width}
@@ -75,11 +43,11 @@ const Markup = ({ items, changeSelectedHandler, selected, fills, screenWidth, zo
       >
         <Tooltip content={TooltipContent} />
       </Treemap>
-      <ButtonStyle onClick={zoomToggleHandler}>
+      <TreemapButtonStyle onClick={zoomToggleHandler}>
         <LeftIcon />
-        <ButtonText component='span'>Provinces</ButtonText>
-      </ButtonStyle>
-    </Wrapper>
+        <TreemapButtonText component='span'>Provinces</TreemapButtonText>
+      </TreemapButtonStyle>
+    </TreemapWrapper>
   )
 };
 
