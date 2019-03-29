@@ -63,7 +63,6 @@ class TreeMapSection extends Component {
 
   render() {
     const { state, events, values } = this;
-    // console.log(state.zoom);
     const passedProps = { ...state, ...events, items: values.sortedItems, fills: values.fills };
     return <Markup {...passedProps} />;
   }
