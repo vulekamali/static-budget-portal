@@ -47,7 +47,7 @@ const createBlock = (fills, changeSelectedHandler, selected) => {
   };
 };
 
-const Markup = ({ items, changeSelectedHandler, selected, fills, screenWidth }) => {
+const Markup = ({ items, changeSelectedHandler, selected, fills, screenWidth, zoomToggleHandler }) => {
   const widthWithPadding = screenWidth - 48;
   const width = widthWithPadding > 1200 ? 1200 : widthWithPadding;
 
@@ -70,7 +70,7 @@ const Markup = ({ items, changeSelectedHandler, selected, fills, screenWidth }) 
       >
         <Tooltip content={TooltipContent} />
       </Treemap>
-      <ButtonStyle>
+      <ButtonStyle onClick={zoomToggleHandler}>
         <LeftIcon />
         <ButtonText component='span'>Provinces</ButtonText>
       </ButtonStyle>

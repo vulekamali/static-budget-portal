@@ -13,10 +13,12 @@ class TreeMapSection extends Component {
 
     this.state = {
       selected: null,
+      zoom: true,
       screenWidth: new ResizeWindowListener().stop(),
     };
 
     this.events = {
+      zoomToggleHandler: this.zoomToggleHandler.bind(this),
       changeSelectedHandler: this.changeSelectedHandler.bind(this),
     };
 
@@ -25,6 +27,11 @@ class TreeMapSection extends Component {
       sortedItems: sortItems(this.props.items),
       resizeListener: new ResizeWindowListener(this.changeWidthHandler.bind(this)),
     };
+  }
+
+  zoomToggleHandler() {
+    const { zoom } = this.state;
+    return this.setState({ zoom: !zoom });
   }
 
   changeSelectedHandler(selected) {
@@ -43,6 +50,7 @@ class TreeMapSection extends Component {
     }
   }
 
+
   componentWillUnmount() {
     const { resizeListener } = this.values;
 
@@ -55,6 +63,7 @@ class TreeMapSection extends Component {
 
   render() {
     const { state, events, values } = this;
+    // console.log(state.zoom);
     const passedProps = { ...state, ...events, items: values.sortedItems, fills: values.fills };
     return <Markup {...passedProps} />;
   }
