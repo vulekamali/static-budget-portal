@@ -32,7 +32,7 @@ If you've received a link to this specific README file it means that you are exp
 2. Implement desired changes
 3. Make sure that changes do not break any existing functionality by [testing existing code in this project](#)
 4. Get user-facing changes signed-off by brand manager:
-   - Run `yarn storybook` from `/packages/webapp`
+   - Run `yarn build:storybook` from `/packages/webapp`
    - Upload drag and drop the `/packages/webapp/storybook-build` into [https://app.netlify.com/drop](https://app.netlify.com/drop).
    - Once uploaded it will provide you with a unique URL.
    - Share the following message in the `treasury-dev` channel in the OpenUp workspace: `@Matt please confirm that you are happy with the <-- FEATURE_NAME_HERE --> at <-- NETLIFY_DROP_URL_HERE -->`
