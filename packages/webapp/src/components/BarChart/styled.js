@@ -19,7 +19,6 @@ const BarChartContainer = styled.div`
 
 const BarChartTotal = styled.div`
   display: flex;
-  ${'' /* flex-wrap: wrap; */}
   width: 100%;
   height: 75px;
   margin-bottom: 10px;
