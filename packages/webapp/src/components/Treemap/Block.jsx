@@ -12,7 +12,7 @@ const createInlineText = (title, amount, squarePixels) => (
   </Fragment>
 );
 
-const Block = (props): any => {
+const Block = (props) => {
   const {
     depth,
     x,
@@ -28,6 +28,18 @@ const Block = (props): any => {
     amount,
     changeSelectedHandler,
   } = props;
+
+  if (depth === 2) {
+    const passedProps = {
+      x,
+      y,
+      id,
+      name,
+      amount,
+    }
+
+    console.log(passedProps);
+  }
 
   if (depth !== 1) {
     return null;

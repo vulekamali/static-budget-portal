@@ -3,10 +3,11 @@ import React, { Component } from 'react';
 import Markup from './Markup';
 import createColorGenerator from './generateColor';
 import ResizeWindowListener from '../../helpers/ResizeWindowListener';
+import sortItems from './sortItems';
 
 const colorsList = createColorGenerator();
 
-class TreeMapSection extends Component<Props, State> {
+class TreeMapSection extends Component {
   constructor(props) {
     super(props);
 
@@ -20,8 +21,8 @@ class TreeMapSection extends Component<Props, State> {
     };
 
     this.values = {
-      fills: this.props.items.map(() => colorsList.next().value),
-      sortedItems: this.props.items.sort(({ amount: a }, { amount: b }) => b - a),
+      fills: Object.keys(this.props.items).map(() => colorsList.next().value),
+      sortedItems: sortItems(this.props.items),
       resizeListener: new ResizeWindowListener(this.changeWidthHandler.bind(this)),
     };
   }
@@ -55,7 +56,6 @@ class TreeMapSection extends Component<Props, State> {
   render() {
     const { state, events, values } = this;
     const passedProps = { ...state, ...events, items: values.sortedItems, fills: values.fills };
-    console.log(state.width)
     return <Markup {...passedProps} />;
   }
 }

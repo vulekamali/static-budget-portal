@@ -15,6 +15,10 @@ const Markup = ({ items, changeSelectedHandler, selected, fills, screenWidth }) 
   const widthWithPadding = screenWidth - 48;
   const width = widthWithPadding > 1200 ? 1200 : widthWithPadding;
 
+  if (!Array.isArray(items)) {
+    return <div>xxxx</div>
+  }
+
   return (
     <Treemap
       {...{ width }}
