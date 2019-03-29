@@ -42,8 +42,6 @@ class DataLoader extends Component {
 
     const passedProps = { items, initialSelected };
 
-    console.log(NationalTreemap, passedProps)
-
     return createElement(NationalTreemap, passedProps);
   }
 }

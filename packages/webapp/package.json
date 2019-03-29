@@ -72,6 +72,7 @@
   "scripts": {
     "start:storybook": "start-storybook -p 9001 -c .storybook",
     "start": "node scripts/start.js",
+    "build:storybook": "build-storybook -c .storybook -o storybook-build",
     "build": "node scripts/build.js",
     "test": "jest"
   },
