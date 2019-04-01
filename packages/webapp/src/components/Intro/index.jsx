@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { Component } from 'react';
 
 import trimValues from '../../helpers/trimValues';
 import ResizeWindowListener from '../../helpers/ResizeWindowListener';
@@ -18,79 +18,111 @@ import {
   Description,
 } from './styled';
 
-const screenWidth = new ResizeWindowListener().onResize();
+class Intro extends Component {
+  constructor(props) {
+    super(props);
 
-const valueName = (value) => {
+    const screenWidth = new ResizeWindowListener().stop();
 
-  if (screenWidth >= 900 ) {
-    return (
-      <IntroMainHeading>
-        {`R${trimValues(value)}`}
-      </IntroMainHeading>
-    )
-  } else {
-    return (
-      <IntroMainHeading>
-        {`R${trimValues(value, true)}`}
-      </IntroMainHeading>
-    )
-  };
-};
+    this.state = {
+      screenWidth: screenWidth,
+    };
 
-const PieChartSized = (consolidated) => {
-  if (screenWidth >= 900 ) {
-    return (
-      <PieChart dimensions="40" values={[consolidated]} />
-    )
-  } else {
-    return (
-      <PieChart dimensions="20" values={[consolidated]} />
-    )
   }
-};
 
-const changeIcon = (change) => {
-  if (change > 0) {
-    return <UpIcon />
-  } else if (change < 0) {
-    return <DownIcon />
+  componentDidMount() {
+    this.values = {
+      resizeListener: new ResizeWindowListener(this.changeWidthHandler.bind(this)),
+    }
   }
-};
 
-const Intro = (props) => {
+  changeWidthHandler(screenWidth) {
+    this.setState({ screenWidth });
+  }
 
-  const {
-    value,
-    consolidated,
-    change,
-    description
-  } = props;
+  componentWillUnmount() {
+    const { resizeListener } = this.values;
 
-  return (
-    <Wrapper>
-      <Summary>
-        <Numbers>
-          <Budget>
-            {valueName(value)}
-            <IntroSubHeading>Focus area budget</IntroSubHeading>
-          </Budget>
-          <Percentages>
-            <PercentageBlock>
-              <IntroMainHeading>{PieChartSized(consolidated)} {consolidated}%</IntroMainHeading>
-              <IntroSubHeading>of consolidated budget</IntroSubHeading>
-            </PercentageBlock>
-            <PercentageBlock>
-              <IntroMainHeading>{changeIcon(change)} {Math.abs(change)}%</IntroMainHeading>
-              <IntroSubHeading>from 2016-17</IntroSubHeading>
-            </PercentageBlock>
-          </Percentages>
-        </Numbers>
-        <Description>
-          {description}
-        </Description>
-      </Summary>
-    </Wrapper>
-  );
+    if (resizeListener) {
+      return resizeListener.stop();
+    }
+
+    return null;
+  }
+
+  render () {
+
+    const valueName = (value) => {
+
+      if (this.state.screenWidth >= 900 ) {
+        return (
+          <IntroMainHeading>
+            {`R${trimValues(value)}`}
+          </IntroMainHeading>
+        )
+      } else {
+        return (
+          <IntroMainHeading>
+            {`R${trimValues(value, true)}`}
+          </IntroMainHeading>
+        )
+      };
+    };
+
+
+    const PieChartSized = (consolidated) => {
+      if (this.state.screenWidth >= 900 ) {
+        return (
+          <PieChart dimensions="40" values={[consolidated]} />
+        )
+      } else {
+        return (
+          <PieChart dimensions="20" values={[consolidated]} />
+        )
+      }
+    };
+
+    const changeIcon = (change) => {
+      if (change > 0) {
+        return <UpIcon />
+      } else if (change < 0) {
+        return <DownIcon />
+      }
+    };
+
+    const {
+      value,
+      consolidated,
+      change,
+      description
+    } = this.props;
+
+    return (
+      <Wrapper>
+        <Summary>
+          <Numbers>
+            <Budget>
+              {valueName(value)}
+              <IntroSubHeading>Focus area budget</IntroSubHeading>
+            </Budget>
+            <Percentages>
+              <PercentageBlock>
+                <IntroMainHeading>{PieChartSized(consolidated)} {consolidated}%</IntroMainHeading>
+                <IntroSubHeading>of consolidated budget</IntroSubHeading>
+              </PercentageBlock>
+              <PercentageBlock>
+                <IntroMainHeading>{changeIcon(change)} {Math.abs(change)}%</IntroMainHeading>
+                <IntroSubHeading>from 2016-17</IntroSubHeading>
+              </PercentageBlock>
+            </Percentages>
+          </Numbers>
+          <Description>
+            {description}
+          </Description>
+        </Summary>
+      </Wrapper>
+    );
+  }
 };
 
 export default Intro;
