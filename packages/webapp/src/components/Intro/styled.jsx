@@ -93,7 +93,6 @@ const DownIcon = styled(Down)`
 const Description = styled.div`
    font-size: 14px;
    line-height: 1.5;
-   text-align: justify;
    
    @media screen and (min-width: 900px) {
      max-width: 60%;
