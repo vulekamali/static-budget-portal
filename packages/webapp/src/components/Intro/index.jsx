@@ -40,16 +40,6 @@ class Intro extends Component {
     this.setState({ screenWidth });
   }
 
-  componentWillUnmount() {
-    const { resizeListener } = this.values;
-
-    if (resizeListener) {
-      return resizeListener.stop();
-    }
-
-    return null;
-  }
-
   render () {
 
     const valueName = (value) => {
