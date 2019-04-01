@@ -1,5 +1,8 @@
 import React from 'react';
 
+import trimValues from '../../helpers/trimValues';
+import ResizeWindowListener from '../../helpers/ResizeWindowListener';
+
 import {
   Wrapper,
   Summary,
@@ -13,6 +16,25 @@ import {
   DownIcon,
   Description,
 } from './styled';
+
+const valueName = (value) => {
+
+  const screenWidth = new ResizeWindowListener().onResize();
+
+  if (screenWidth >= 900 ) {
+    return (
+      <IntroMainHeading>
+        {`R${trimValues(value)}`}
+      </IntroMainHeading>
+    )
+  } else {
+    return (
+      <IntroMainHeading>
+        {`R${trimValues(value, true)}`}
+      </IntroMainHeading>
+    )
+  };
+};
 
 const Intro = (props) => {
 
@@ -28,7 +50,7 @@ const Intro = (props) => {
       <Summary>
         <Numbers>
           <Budget>
-            <IntroMainHeading>R{value} million</IntroMainHeading>
+            {valueName(value)}
             <IntroSubHeading>Focus area budget</IntroSubHeading>
           </Budget>
           <Percentages>
