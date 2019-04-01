@@ -73,7 +73,7 @@ const PercentageBlock = styled.div`
 const PieIcon = styled(Pie)`
   && {
     font-size: 20px;
-    margin-right: 15px;
+    margin-right: 4px;
     @media screen and (min-width: 900px) {
       font-size: 40px;
     }
@@ -83,7 +83,7 @@ const PieIcon = styled(Pie)`
 const DownIcon = styled(Down)`
   && {
     font-size: 20px;
-    margin-right: 15px;
+    margin-right: 4px;
     @media screen and (min-width: 900px) {
       font-size: 40px;
     }
