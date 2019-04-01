@@ -13,7 +13,6 @@ import {
   CartesianGrid,
   Tooltip,
   ResponsiveContainer,
-  ReferenceLine,
 } from 'recharts';
 
 import trimValues from '../../helpers/trimValues';
@@ -62,53 +61,6 @@ const Content = ({ payload = [] }) => {
   )
 }
 
-
-const Selected = ({ viewBox }) => {
-  if (!viewBox) {
-    return null;
-  }
-
-  const { height, x, y } = viewBox || {};
-
-  const extraTooltip = (
-    <Fragment>
-      <rect 
-        x={x - 22}
-        y={y - 10}
-        width="45"
-        height="20"
-        rx="5"
-        ry="5"
-      />
-      <text
-        fill="white"
-        x={x - 12}
-        y={y + 3}
-        style={{
-          fontFamily: 'Lato',
-          fontSize: '10px',
-        }}
-      >
-        R11m
-      </text>
-    </Fragment>
-  )
-
-  return (
-    <Fragment>
-      <line
-        x1={x}
-        y1={y}
-        x2={x}
-        y2={height}
-        stroke="black"
-      />
-      {extraTooltip}
-    </Fragment>
-  )
-}
-
-
 const Dot = ({ cx, cy }) => {
   if (!cx || !cy ) {
     return null;
@@ -150,7 +102,6 @@ const GreyButton = styled(Button)`
     min-width: 36px;
     width: 36px;
     height: 36px;
-    color: black;
     text-transform: none;
     font-family: Lato;
     font-size: 16px;
@@ -167,27 +118,6 @@ const GreyButton = styled(Button)`
     }
   }
 `;
-
-
-const buttonMarkup = (disabled, reverse, clickEvent) => (
-  <GreyButton variant="contained" {...{ disabled }} onClick={clickEvent}>
-    {reverse ? <LeftIcon /> : <RightIcon />}
-  </GreyButton>
-);
-
-const ButtonsWrap = styled.div`
-  display: flex;
-  justify-content: space-between;
-  padding: 0 23px 0 33px;
-`;
-
-const buttons = (
-  <ButtonsWrap>
-    {buttonMarkup(false, true, console.log)}
-    {buttonMarkup(false, false, console.log)}
-  </ButtonsWrap>
-)
-
 
 const InfraChart = ({ data }) => {
   return (

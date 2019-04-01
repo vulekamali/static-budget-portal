@@ -11,14 +11,13 @@ import DialogActions from '@material-ui/core/DialogActions';
 import Zoom from '@material-ui/core/Zoom';
 import Button from '@material-ui/core/Button';
 
-
 const PrimaryButton = styled(Button)`
   && {
     background: #79b443;
     border-radius: 50px;
     color: white;
     text-transform: none;
-    padding: 10px 25px;
+    padding: 5px;
     font-family: Lato;
     font-size: 16px;
     font-weight: 700;
@@ -27,9 +26,12 @@ const PrimaryButton = styled(Button)`
     &:hover {
       background: ${darken(0.1, '#79B443')};
     }
+
+    @media screen and (min-width: 600px) {
+      padding: 10px 25px;
+    }
   }
 `;
-
 
 const SecondaryButton = styled(PrimaryButton)`
   && {
@@ -40,10 +42,6 @@ const SecondaryButton = styled(PrimaryButton)`
     }
   }
 `;
-
-
-
-
 
 const StyledDialogActions = styled(DialogActions)`
   && {
@@ -75,7 +73,6 @@ const Modal = ({ open, closeModal, url }) => (
     </StyledDialogActions>
   </Dialog>
 );
-
 
 export default Modal;
 
