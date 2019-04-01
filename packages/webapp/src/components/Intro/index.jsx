@@ -14,6 +14,7 @@ import {
   PercentageBlock,
   PieIcon,
   DownIcon,
+  UpIcon,
   Description,
 } from './styled';
 
@@ -34,6 +35,14 @@ const valueName = (value) => {
       </IntroMainHeading>
     )
   };
+};
+
+const changeIcon = (change) => {
+  if (change > 0) {
+    return <UpIcon />
+  } else if (change < 0) {
+    return <DownIcon />
+  }
 };
 
 const Intro = (props) => {
@@ -59,7 +68,7 @@ const Intro = (props) => {
               <IntroSubHeading>of consolidated budget</IntroSubHeading>
             </PercentageBlock>
             <PercentageBlock>
-              <IntroMainHeading><DownIcon /> {change}%</IntroMainHeading>
+              <IntroMainHeading>{changeIcon(change)} {Math.abs(change)}%</IntroMainHeading>
               <IntroSubHeading>from 2016-17</IntroSubHeading>
             </PercentageBlock>
           </Percentages>

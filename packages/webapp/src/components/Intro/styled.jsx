@@ -1,5 +1,6 @@
 import styled from 'styled-components';
 import Down from '@material-ui/icons/ArrowDropDown';
+import Up from '@material-ui/icons/ArrowDropUp';
 import Pie from '@material-ui/icons/PieChart';
 
 const Wrapper = styled.div`
@@ -90,6 +91,16 @@ const DownIcon = styled(Down)`
   }
 `;
 
+const UpIcon = styled(Up)`
+  && {
+    font-size: 20px;
+    margin-right: 4px;
+    @media screen and (min-width: 900px) {
+      font-size: 40px;
+    }
+  }
+`;
+
 const Description = styled.div`
    font-size: 14px;
    line-height: 1.5;
@@ -112,6 +123,7 @@ export {
   Description,
   PieIcon,
   DownIcon,
+  UpIcon,
 }
 
 export default {
@@ -119,11 +131,5 @@ export default {
   Summary,
   Numbers,
   Budget,
-  IntroMainHeading,
-  IntroSubHeading,
-  Percentages,
-  PercentageBlock,
   Description,
-  PieIcon,
-  DownIcon,
 }
