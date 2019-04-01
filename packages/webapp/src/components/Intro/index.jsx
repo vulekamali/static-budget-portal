@@ -2,6 +2,7 @@ import React from 'react';
 
 import trimValues from '../../helpers/trimValues';
 import ResizeWindowListener from '../../helpers/ResizeWindowListener';
+import PieChart from '../PieChart'
 
 import {
   Wrapper,
@@ -12,15 +13,14 @@ import {
   IntroSubHeading,
   Percentages,
   PercentageBlock,
-  PieIcon,
   DownIcon,
   UpIcon,
   Description,
 } from './styled';
 
-const valueName = (value) => {
+const screenWidth = new ResizeWindowListener().onResize();
 
-  const screenWidth = new ResizeWindowListener().onResize();
+const valueName = (value) => {
 
   if (screenWidth >= 900 ) {
     return (
@@ -35,6 +35,18 @@ const valueName = (value) => {
       </IntroMainHeading>
     )
   };
+};
+
+const PieChartSized = (consolidated) => {
+  if (screenWidth >= 900 ) {
+    return (
+      <PieChart dimensions="40" values={[consolidated]} />
+    )
+  } else {
+    return (
+      <PieChart dimensions="20" values={[consolidated]} />
+    )
+  }
 };
 
 const changeIcon = (change) => {
@@ -64,7 +76,7 @@ const Intro = (props) => {
           </Budget>
           <Percentages>
             <PercentageBlock>
-              <IntroMainHeading><PieIcon /> {consolidated}%</IntroMainHeading>
+              <IntroMainHeading>{PieChartSized(consolidated)} {consolidated}%</IntroMainHeading>
               <IntroSubHeading>of consolidated budget</IntroSubHeading>
             </PercentageBlock>
             <PercentageBlock>

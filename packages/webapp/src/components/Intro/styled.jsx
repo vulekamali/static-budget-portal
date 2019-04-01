@@ -1,7 +1,6 @@
 import styled from 'styled-components';
 import Down from '@material-ui/icons/ArrowDropDown';
 import Up from '@material-ui/icons/ArrowDropUp';
-import Pie from '@material-ui/icons/PieChart';
 
 const Wrapper = styled.div`
   font-family: Roboto;
@@ -71,16 +70,6 @@ const PercentageBlock = styled.div`
   }
 `;
 
-const PieIcon = styled(Pie)`
-  && {
-    font-size: 20px;
-    margin-right: 4px;
-    @media screen and (min-width: 900px) {
-      font-size: 40px;
-    }
-  }
-`;
-
 const DownIcon = styled(Down)`
   && {
     font-size: 20px;
@@ -121,7 +110,6 @@ export {
   Percentages,
   PercentageBlock,
   Description,
-  PieIcon,
   DownIcon,
   UpIcon,
 }
