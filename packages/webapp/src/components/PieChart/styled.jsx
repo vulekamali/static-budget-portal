@@ -10,6 +10,13 @@ const StyledSvg = styled.svg`
   border: 0.5px solid #000000;
   border-radius: 50%;
   margin-right: 4px;
+  width: 20px;
+  height: 20px;
+  
+  @media screen and (min-width: 900px) {
+    width: 40px;
+    height: 40px;
+  }
 `;
 
 export {
