@@ -11,7 +11,7 @@ const BarChartTotal = styled.div`
 
 const ColorBar = styled.div`
   width: ${({ ratio }) => ratio}%;
-  background-color: #e57373;
+  background-color: ${({ color }) => color};
   display: flex;
   flex-direction: column;
   justify-content: center;
