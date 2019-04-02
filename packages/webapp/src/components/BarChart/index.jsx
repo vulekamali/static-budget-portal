@@ -1,5 +1,4 @@
 import React from 'react';
-// import pixelWidth from 'string-pixel-width';
 
 import addRatios from './addRatios'
 import Bar from './Bar';
@@ -16,12 +15,10 @@ const Markup = ({ items, componentWidth }) => {
   return (
     <Wrapper>
       <BarChartContainer>
-        {itemsWithRatios.map(props => <Bar {...props} />)}
+        {itemsWithRatios.map((props, index) => <Bar {...props} items={items} index={index} key={index} />)}
       </BarChartContainer>
     </Wrapper>
   );
 };
 
 export default Markup;
-
-// console.log(componentWidth.current.clientWidth);
