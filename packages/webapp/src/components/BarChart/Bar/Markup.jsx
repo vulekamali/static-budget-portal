@@ -17,31 +17,41 @@ const createlabel = (title, amount, textNode, labelOutside) => (
   </Details>
 );
 
-const callColorBar = (ratio, title, amount, textNode, componentNode, labelOutside) => {
+const callColorBar = (ratio, title, amount, textNode, componentNode, labelOutside, fills, index) => {
+  const color = fills[index];
+
   if (labelOutside) {
     return (
       <React.Fragment>
-        <ColorBar ref={componentNode} {...{ ratio }} />
+        <ColorBar ref={componentNode} {...{ ratio, color }} />
         {createlabel(title, amount, textNode, labelOutside)}
       </React.Fragment>
     );
   }
   return (
-    <ColorBar ref={componentNode} {...{ ratio }}>
+    <ColorBar ref={componentNode} {...{ ratio, color }}>
       {createlabel(title, amount, textNode)}
     </ColorBar>
   );
 };
 
-const Bar =  ({ ratio, title, amount, labelOutside, textNode, componentNode }) => {
+const Bar = props => {
+  const {
+    ratio,
+    title,
+    amount,
+    labelOutside,
+    textNode,
+    componentNode,
+    fills,
+    index
+  } = props;
+
   return (
-    <BarChartTotal key={title}>
-      {callColorBar(ratio, title, amount, textNode, componentNode, labelOutside)}
+    <BarChartTotal>
+      {callColorBar(ratio, title, amount, textNode, componentNode, labelOutside, fills, index)}
     </BarChartTotal>
   )
 };
 
 export default Bar;
-
-
-// {labelOutside !== null && createlabel(title, amount, textNode)}
