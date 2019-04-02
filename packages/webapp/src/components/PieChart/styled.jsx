@@ -1,8 +1,6 @@
 import styled from 'styled-components';
 
 const StyledCircle = styled.circle`
-  transform: rotate(-90deg);
-  transform-origin: 50% 50%;
   stroke: #000000;
 `;
 

@@ -20,6 +20,7 @@ const Slice = ({amount}) => {
             fill="none"
             strokeDasharray={`${((amount / 100) * Math.round(Math.PI * (20 / 2)))}, ${Math.round(Math.PI * (20 / 2))}`}
             strokeDashoffset="0"
+            transform="rotate(-90 10 10)"
           />
         ) : (
           <StyledCircle
@@ -30,6 +31,7 @@ const Slice = ({amount}) => {
             fill="none"
             strokeDasharray={`${((amount / 100) * Math.round(Math.PI * (40 / 2)))}, ${Math.round(Math.PI * (40 / 2))}`}
             strokeDashoffset="0"
+            transform="rotate(-90 20 20)"
           />
         )
       }
