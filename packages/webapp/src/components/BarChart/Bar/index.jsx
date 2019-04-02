@@ -14,7 +14,7 @@ class Bar extends Component {
   }
 
   componentDidMount () {
-    const ColorBarWidth = this.componentNode.current.clientWidth;
+    const ColorBarWidth = this.componentNode.current.clientWidth - 24;
     const TextWidth = this.textNode.current.clientWidth;
 
     if (TextWidth >= ColorBarWidth) {

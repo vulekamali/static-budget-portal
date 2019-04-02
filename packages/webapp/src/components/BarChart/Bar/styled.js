@@ -17,10 +17,15 @@ const ColorBar = styled.div`
   justify-content: center;
   align-items: flex-end;
   padding-right: 24px;
+  white-space: nowrap;
 `;
 
 const Details = styled.div`
-  text-align: left;
+  text-align: ${({ labelOutside }) => (labelOutside ? 'left' : 'right')};
+  margin-left: ${({ labelOutside }) => (labelOutside ? '24px' : null)};
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
 `;
 
 const Title = styled(Typography)`
@@ -28,7 +33,6 @@ const Title = styled(Typography)`
     font-weight: 700;
     font-size: 10px;
     line-height: 120%;
-    text-align: right;
     color: #000;
 
     @media screen and (min-width: 600px) {
@@ -41,7 +45,6 @@ const Amount = styled(Typography)`
   && {
     font-size: 10px;
     line-height: 120%;
-    text-align: right;
     color: #000;
 
     @media screen and (min-width: 600px) {
