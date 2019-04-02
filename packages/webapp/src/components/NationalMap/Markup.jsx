@@ -87,12 +87,6 @@ const Markup = (props) => {
     updateSelected,
   };
 
-
-  const findFromCurrentProjects = findProject(projects)
-  const hoverProject = findFromCurrentProjects(hover);
-  const selectedProject = findFromCurrentProjects(selected);
-
-
   return (
     <Wrapper {...{ size }}>
       <svg

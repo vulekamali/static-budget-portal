@@ -37,6 +37,7 @@ class SpeedDial extends Component {
       toggleSharingOpen: events.toggleSharingOpen,
       toggleModal: events.toggleModal,
       id: props.id,
+      share: props.share,
     }
 
     return <Markup {...passedProps} />
