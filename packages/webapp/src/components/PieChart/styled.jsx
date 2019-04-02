@@ -9,7 +9,7 @@ const StyledCircle = styled.circle`
 const StyledSvg = styled.svg`
   border: 0.5px solid #000000;
   border-radius: 50%;
-  margin-right: 4px;
+  margin-right: 12px;
   width: 20px;
   height: 20px;
   
