@@ -1,5 +1,5 @@
 import React from 'react';
-import pixelWidth from 'string-pixel-width';
+// import pixelWidth from 'string-pixel-width';
 
 import addRatios from './addRatios'
 import Bar from './Bar';

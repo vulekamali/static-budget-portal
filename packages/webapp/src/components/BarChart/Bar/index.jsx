@@ -6,15 +6,18 @@ import Markup from './Markup';
 class Bar extends Component {
   constructor(props) {
     super(props);
-    this.componentWidth = React.createRef();
-    this.htmlNode = React.createRef();
+    this.componentNode = React.createRef();
+    this.textNode = React.createRef();
     this.state = {
       labelOutside: null
     }
   }
 
   componentDidMount () {
-    // console.log(this.componentWidth.current.offsetWidth)
+    const ColorBarWidth = this.componentNode.current.clientWidth;
+    const TextWidth = this.textNode.current.clientWidth;
+    if (TextWidth => ColorBarWidth) return this.setState({ labelOutside: true });
+    if (TextWidth <= ColorBarWidth) return this.setState({ labelOutside: false });
   }
 
   render() {
@@ -23,7 +26,8 @@ class Bar extends Component {
     const passedProps = {
       ...props,
       labelOutside: state.labelOutside,
-      htmlNode: this.htmlNode,
+      textNode: this.textNode,
+      componentNode: this.componentNode,
     };
 
     return <Markup {...passedProps } />

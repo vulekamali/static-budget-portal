@@ -9,22 +9,38 @@ import {
   Amount
  } from './styled';
 
-const createlabel = (title, amount) => (
+const createlabel = (title, amount, textNode) => (
   <React.Fragment>
-    <Title component='div'>{title}</Title>
+    <Title component='div' ref={textNode}>{title}</Title>
     <Amount component='div'>{`R${trimValues(amount)}`}</Amount>
   </React.Fragment>
 );
 
-const Bar =  ({ ratio, title, amount, labelOutside, htmlNode }) => {
-  console.log(ratio)
+const callColorBar = (ratio, title, amount, textNode, componentNode, labelOutside) => {
+  if (labelOutside) {
+    return (
+      <React.Fragment>
+        <ColorBar ref={componentNode} {...{ ratio }} />
+        {createlabel(title, amount, textNode)}
+      </React.Fragment>
+    );
+  }
+  return (
+    <ColorBar ref={componentNode} {...{ ratio }}>
+      {createlabel(title, amount, textNode)}
+    </ColorBar>
+  );
+};
+
+const Bar =  ({ ratio, title, amount, labelOutside, textNode, componentNode }) => {
   return (
     <BarChartTotal key={title}>
-      <ColorBar ref={htmlNode} {...{ ratio }}>
-        {labelOutside !== null && createlabel(title, amount)}
-      </ColorBar>
+      {callColorBar(ratio, title, amount, textNode, componentNode, labelOutside)}
     </BarChartTotal>
   )
 };
 
 export default Bar;
+
+
+// {labelOutside !== null && createlabel(title, amount, textNode)}
