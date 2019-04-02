@@ -4,7 +4,7 @@ import { render } from 'react-dom';
 import DataLoader from './DataLoader'
 
 const node = document.querySelector('[data-webapp="provincial-treemap"]');
-const component = createElement(DataLoader, {});
+const component = createElement(DataLoader);
 
 const initialise = () => {
   if (node) {
