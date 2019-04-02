@@ -6,14 +6,15 @@ import {
   BarChartTotal,
   ColorBar,
   Title,
-  Amount
+  Amount,
+  Details
  } from './styled';
 
-const createlabel = (title, amount, textNode) => (
-  <React.Fragment>
-    <Title component='div' ref={textNode}>{title}</Title>
+const createlabel = (title, amount, textNode, labelOutside) => (
+  <Details ref={textNode} {...{ labelOutside }}>
+    <Title component='div'>{title}</Title>
     <Amount component='div'>{`R${trimValues(amount)}`}</Amount>
-  </React.Fragment>
+  </Details>
 );
 
 const callColorBar = (ratio, title, amount, textNode, componentNode, labelOutside) => {
@@ -21,7 +22,7 @@ const callColorBar = (ratio, title, amount, textNode, componentNode, labelOutsid
     return (
       <React.Fragment>
         <ColorBar ref={componentNode} {...{ ratio }} />
-        {createlabel(title, amount, textNode)}
+        {createlabel(title, amount, textNode, labelOutside)}
       </React.Fragment>
     );
   }

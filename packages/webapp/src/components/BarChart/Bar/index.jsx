@@ -16,8 +16,12 @@ class Bar extends Component {
   componentDidMount () {
     const ColorBarWidth = this.componentNode.current.clientWidth;
     const TextWidth = this.textNode.current.clientWidth;
-    if (TextWidth => ColorBarWidth) return this.setState({ labelOutside: true });
-    if (TextWidth <= ColorBarWidth) return this.setState({ labelOutside: false });
+
+    if (TextWidth >= ColorBarWidth) {
+      return this.setState({ labelOutside: true });
+    }
+
+    return this.setState({ labelOutside: false });
   }
 
   render() {

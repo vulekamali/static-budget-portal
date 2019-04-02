@@ -19,6 +19,10 @@ const ColorBar = styled.div`
   padding-right: 24px;
 `;
 
+const Details = styled.div`
+  text-align: left;
+`;
+
 const Title = styled(Typography)`
   && {
     font-weight: 700;
@@ -50,12 +54,14 @@ export {
   BarChartTotal,
   ColorBar,
   Title,
-  Amount
+  Amount,
+  Details
 }
 
 export default {
   BarChartTotal,
   ColorBar,
   Title,
-  Amount
+  Amount,
+  Details
 }
