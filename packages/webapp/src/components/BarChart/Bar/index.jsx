@@ -1,31 +1,37 @@
 import React, { Component } from 'react';
 import Markup from './Markup';
 import createColorGenerator from './generateColor';
+import ResizeWindowListener from '../../../helpers/ResizeWindowListener';
 
 const colorsList = createColorGenerator();
-
 
 
 class Bar extends Component {
   constructor(props) {
     super(props);
-    this.componentNode = React.createRef();
-    this.textNode = React.createRef();
     this.state = {
-      labelOutside: null
+      labelOutside: null,
     }
 
     this.values = {
       fills: Object.keys(this.props.items).map(() => colorsList.next().value),
+      componentNode: React.createRef(),
+      textNode: React.createRef(),
     };
   }
 
   componentDidMount () {
     this.values = {
       ...this.values,
+      resizeListener: new ResizeWindowListener(this.labelOutsideHandler.bind(this)),
     }
-    const ColorBarWidth = this.componentNode.current.clientWidth - 24;
-    const TextWidth = this.textNode.current.clientWidth;
+    this.labelOutsideHandler();
+  }
+
+  labelOutsideHandler() {
+    const { componentNode, textNode } = this.values;
+    const { clientWidth: ColorBarWidth} = componentNode.current;
+    const { clientWidth: TextWidth } = textNode.current;
 
     if (TextWidth >= ColorBarWidth) {
       return this.setState({ labelOutside: true });
@@ -34,15 +40,26 @@ class Bar extends Component {
     return this.setState({ labelOutside: false });
   }
 
+  componentWillUnmount() {
+    const { resizeListener } = this.values;
+
+    if (resizeListener) {
+      return resizeListener.stop();
+    }
+
+    return null;
+  }
+
   render() {
-    const { state, props } = this;
+    const { state, props, values } = this;
 
     const passedProps = {
       ...props,
+      ...state,
       labelOutside: state.labelOutside,
-      textNode: this.textNode,
-      componentNode: this.componentNode,
-      fills: this.values.fills,
+      textNode: values.textNode,
+      componentNode: values.componentNode,
+      fills: values.fills,
     };
 
     return <Markup {...passedProps } />

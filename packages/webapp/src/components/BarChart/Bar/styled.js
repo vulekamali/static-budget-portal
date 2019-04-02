@@ -4,9 +4,13 @@ import { Typography } from '@material-ui/core';
 const BarChartTotal = styled.div`
   display: flex;
   width: 100%;
-  height: 75px;
+  height: 42px;
   margin-bottom: 10px;
   background-color: #f7f7f7;
+
+  @media screen and (min-width: 600px) {
+    height: 75px;
+  }
 `;
 
 const ColorBar = styled.div`
@@ -16,16 +20,21 @@ const ColorBar = styled.div`
   flex-direction: column;
   justify-content: center;
   align-items: flex-end;
-  padding-right: 24px;
   white-space: nowrap;
 `;
 
 const Details = styled.div`
   text-align: ${({ labelOutside }) => (labelOutside ? 'left' : 'right')};
-  margin-left: ${({ labelOutside }) => (labelOutside ? '24px' : null)};
   display: flex;
   flex-direction: column;
   justify-content: center;
+  padding-right: ${({ labelOutside }) => (labelOutside ? null : '16px')};
+  padding-left: ${({ labelOutside }) => (labelOutside ? '16px' : null)};
+
+  @media screen and (min-width: 600px) {
+    padding-right: ${({ labelOutside }) => (labelOutside ? null : '24px')};
+    padding-left: ${({ labelOutside }) => (labelOutside ? '24px' : null)};
+  }
 `;
 
 const Title = styled(Typography)`
