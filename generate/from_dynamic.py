@@ -423,12 +423,11 @@ for year in YEAR_SLUGS:
 
 # Department preview pages
 
-GOVERNMENTS = PROVINCE_SLUGS
 for year in YEAR_SLUGS:
     for budget_phase in BUDGET_TYPES:
         for sphere in SPHERES:
             if sphere == 'provincial':
-                for government in GOVERNMENTS:
+                for government in PROVINCE_SLUGS:
                     listing_url_path = '/{}/previews/{}/{}/{}'.format(year, sphere, government, budget_phase)
                     logger.info(listing_url_path)
                     listing_url = portal_url + listing_url_path[1:] + '.yaml'
