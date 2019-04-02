@@ -1,5 +1,8 @@
 import React, { Component } from 'react';
 import Markup from './Markup';
+import createColorGenerator from './generateColor';
+
+const colorsList = createColorGenerator();
 
 
 
@@ -11,9 +14,16 @@ class Bar extends Component {
     this.state = {
       labelOutside: null
     }
+
+    this.values = {
+      fills: Object.keys(this.props.items).map(() => colorsList.next().value),
+    };
   }
 
   componentDidMount () {
+    this.values = {
+      ...this.values,
+    }
     const ColorBarWidth = this.componentNode.current.clientWidth - 24;
     const TextWidth = this.textNode.current.clientWidth;
 
@@ -32,6 +42,7 @@ class Bar extends Component {
       labelOutside: state.labelOutside,
       textNode: this.textNode,
       componentNode: this.componentNode,
+      fills: this.values.fills,
     };
 
     return <Markup {...passedProps } />
