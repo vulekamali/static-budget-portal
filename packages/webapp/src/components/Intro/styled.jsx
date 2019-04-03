@@ -90,16 +90,6 @@ const UpIcon = styled(Up)`
   }
 `;
 
-const Description = styled.div`
-   font-size: 14px;
-   line-height: 1.5;
-   
-   @media screen and (min-width: 900px) {
-     max-width: 60%;
-     font-size: 18px;
-   }
-`;
-
 export {
   Wrapper,
   Summary,
@@ -109,7 +99,6 @@ export {
   IntroSubHeading,
   Percentages,
   PercentageBlock,
-  Description,
   DownIcon,
   UpIcon,
 }
@@ -119,5 +108,4 @@ export default {
   Summary,
   Numbers,
   Budget,
-  Description,
 }
