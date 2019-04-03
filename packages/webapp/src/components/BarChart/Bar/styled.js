@@ -28,12 +28,12 @@ const Details = styled.div`
   display: flex;
   flex-direction: column;
   justify-content: center;
-  padding-right: ${({ labelOutside }) => (labelOutside ? null : '12px')};
-  padding-left: ${({ labelOutside }) => (labelOutside ? '12px' : null)};
+  padding-right: 12px;
+  padding-left: 12px;
 
   @media screen and (min-width: 600px) {
-    padding-right: ${({ labelOutside }) => (labelOutside ? null : '16px')};
-    padding-left: ${({ labelOutside }) => (labelOutside ? '16px' : null)};
+    padding-right: 16px;
+    padding-left: 16px;
   }
 `;
 
