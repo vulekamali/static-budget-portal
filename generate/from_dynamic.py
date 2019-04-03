@@ -103,10 +103,12 @@ def write_basic_page(page_url_path, page_yaml, layout=None):
     file_path = "%s.md" % page_url_path[1:]
     ensure_file_dirs(file_path)
     front_matter = {
-        'data_key': page['slug'],
+        'data_key': page['slug'] if page else '',
         'layout': layout or page['slug'],
     }
-    financial_year = page.get('selected_financial_year', None)
+    financial_year = None
+    if page:
+        financial_year = page.get('selected_financial_year', None)
     if financial_year:
         front_matter['financial_year'] = financial_year
     with open(file_path, "wb") as outfile:
@@ -440,6 +442,7 @@ for year in YEAR_SLUGS:
                         ensure_file_dirs(listing_path)
                         with open(listing_path, 'wb') as dataset_list_file:
                             dataset_list_file.write(r.text)
+                    write_basic_page(listing_url_path, '', 'department_preview')
             elif sphere == 'national':
                 listing_url_path = '/{}/previews/{}/south-africa/{}'.format(year, sphere, budget_phase)
                 logger.info(listing_url_path)
@@ -453,3 +456,4 @@ for year in YEAR_SLUGS:
                     ensure_file_dirs(listing_path)
                     with open(listing_path, 'wb') as dataset_list_file:
                         dataset_list_file.write(r.text)
+                write_basic_page(listing_url_path, '', 'department_preview')
