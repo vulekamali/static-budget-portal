@@ -22,8 +22,7 @@ const Intro = (props) => {
   const {
     value,
     consolidated,
-    change,
-    description
+    change
   } = props;
 
   const changeIcon = (change) => {
