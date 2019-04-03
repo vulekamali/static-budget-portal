@@ -2,7 +2,7 @@ import React from 'react';
 import Media from 'react-media';
 
 import trimValues from '../../helpers/trimValues';
-import PieChart from '../PieChart'
+import PieChart from '../PieChart';
 
 import {
   Wrapper,
@@ -15,7 +15,6 @@ import {
   PercentageBlock,
   DownIcon,
   UpIcon,
-  Description,
 } from './styled';
 
 const Intro = (props) => {
@@ -66,9 +65,6 @@ const Intro = (props) => {
             </PercentageBlock>
           </Percentages>
         </Numbers>
-        <Description>
-          {description}
-        </Description>
       </Summary>
     </Wrapper>
   );
