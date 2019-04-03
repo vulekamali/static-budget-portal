@@ -1,0 +1,8 @@
+---
+---
+
+{% if (site.data.2016-17.previews.provincial.north-west.actual) %}
+  {{ site.data.2016-17.previews.provincial.north-west.actual | jsonify }}
+{% else %}
+  {}
+{% endif %}

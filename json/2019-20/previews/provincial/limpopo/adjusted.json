@@ -1,0 +1,8 @@
+---
+---
+
+{% if (site.data.2019-20.previews.provincial.limpopo.adjusted) %}
+  {{ site.data.2019-20.previews.provincial.limpopo.adjusted | jsonify }}
+{% else %}
+  {}
+{% endif %}

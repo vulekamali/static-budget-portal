@@ -1,0 +1,8 @@
+---
+---
+
+{% if (site.data.2019-20.previews.provincial.north-west.adjusted) %}
+  {{ site.data.2019-20.previews.provincial.north-west.adjusted | jsonify }}
+{% else %}
+  {}
+{% endif %}
