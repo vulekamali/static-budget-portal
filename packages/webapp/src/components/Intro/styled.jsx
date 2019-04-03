@@ -5,10 +5,8 @@ import Up from '@material-ui/icons/ArrowDropUp';
 const Wrapper = styled.div`
   font-family: Roboto;
   justify-content: center;
-  padding: 30px 15px;
-  @media screen and (min-width: 900px) {
-    padding: 50px;
-  }
+  margin-right: 16px;
+  margin-left: 16px;
 `;
 
 const Summary = styled.div`
@@ -22,10 +20,6 @@ const Summary = styled.div`
 
 const Numbers = styled.div`
   display: flex;
-  padding-bottom: 30px;
-  @media screen and (min-width: 900px) {
-    padding-bottom: 50px;
-  }
 `;
 
 const Budget = styled.div`
