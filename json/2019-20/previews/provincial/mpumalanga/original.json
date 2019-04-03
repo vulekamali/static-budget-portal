@@ -1,0 +1,8 @@
+---
+---
+
+{% if (site.data.2019-20.previews.provincial.mpumalanga.original) %}
+  {{ site.data.2019-20.previews.provincial.mpumalanga.original | jsonify }}
+{% else %}
+  {}
+{% endif %}
