@@ -6,8 +6,7 @@ import Intro from './index';
 const resources = {
     value: 372800000,
     consolidated: 37,
-    change: -5,
-    description: 'Pastry cupcake jelly jujubes. Jelly beans biscuit cheesecake. Danish tart gummi bears chupa chups sesame snaps. Fruitcake ice cream liquorice wafer. Dragée bear claw macaroon. Lemon drops caramels soufflé soufflé carrot cake tart. Fruitcake pastry cupcake halvah candy croissant chocolate pastry topping.'
+    change: -5
   };
 
 const basic = () => (
