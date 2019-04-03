@@ -7,14 +7,14 @@ const Wrapper = styled.div`
   align-items: center;
   margin: 40px 20px;
 
-  @media screen and (min-width: 450px) {
+  @media screen and (min-width: 600px) {
     margin: 70px 20px;
   }
 `;
 
 const BarChartContainer = styled.div`
   width: 100%;
-  max-width: 1000px;
+  max-width: 1200px;
 `;
 
 const BarChartTotal = styled.div`

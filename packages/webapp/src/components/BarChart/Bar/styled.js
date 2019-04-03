@@ -5,11 +5,11 @@ const BarChartTotal = styled.div`
   display: flex;
   width: 100%;
   height: 42px;
-  margin-bottom: 10px;
+  margin-bottom: 8px;
   background-color: #f7f7f7;
 
   @media screen and (min-width: 600px) {
-    height: 75px;
+    height: 48px;
   }
 `;
 
@@ -28,12 +28,12 @@ const Details = styled.div`
   display: flex;
   flex-direction: column;
   justify-content: center;
-  padding-right: ${({ labelOutside }) => (labelOutside ? null : '16px')};
-  padding-left: ${({ labelOutside }) => (labelOutside ? '16px' : null)};
+  padding-right: ${({ labelOutside }) => (labelOutside ? null : '12px')};
+  padding-left: ${({ labelOutside }) => (labelOutside ? '12px' : null)};
 
   @media screen and (min-width: 600px) {
-    padding-right: ${({ labelOutside }) => (labelOutside ? null : '24px')};
-    padding-left: ${({ labelOutside }) => (labelOutside ? '24px' : null)};
+    padding-right: ${({ labelOutside }) => (labelOutside ? null : '16px')};
+    padding-left: ${({ labelOutside }) => (labelOutside ? '16px' : null)};
   }
 `;
 
@@ -45,7 +45,8 @@ const Title = styled(Typography)`
     color: #000;
 
     @media screen and (min-width: 600px) {
-      font-size: 18px;
+      font-size: 14px;
+      line-height: 100%;
     }
   }
 `;
@@ -57,7 +58,8 @@ const Amount = styled(Typography)`
     color: #000;
 
     @media screen and (min-width: 600px) {
-      font-size: 18px;
+      font-size: 14px;
+      line-height: 100%;
     }
   }
 `;
