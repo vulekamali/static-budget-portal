@@ -5,11 +5,8 @@ const Wrapper = styled.div`
   display: flex;
   flex-direction: column;
   align-items: center;
-  margin: 40px 20px;
-
-  @media screen and (min-width: 600px) {
-    margin: 70px 20px;
-  }
+  margin-right: 16px;
+  margin-left: 16px;
 `;
 
 const BarChartContainer = styled.div`
