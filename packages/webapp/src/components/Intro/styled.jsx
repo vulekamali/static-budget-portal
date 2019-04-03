@@ -20,6 +20,12 @@ const Summary = styled.div`
 
 const Numbers = styled.div`
   display: flex;
+  padding-bottom: 36px;
+
+  @media screen and (min-width: 600px) {
+    padding-bottom: 64px;
+
+  }
 `;
 
 const Budget = styled.div`
