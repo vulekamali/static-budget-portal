@@ -12,9 +12,6 @@ import {
   IntroMainHeading,
   IntroSubHeading,
   Percentages,
-  PercentageBlock,
-  DownIcon,
-  UpIcon,
 } from './styled';
 
 const Intro = (props) => {

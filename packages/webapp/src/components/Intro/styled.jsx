@@ -1,6 +1,4 @@
 import styled from 'styled-components';
-import Down from '@material-ui/icons/ArrowDropDown';
-import Up from '@material-ui/icons/ArrowDropUp';
 
 const Wrapper = styled.div`
   font-family: Roboto;
@@ -62,25 +60,6 @@ const Percentages = styled.div`
   }
 `;
 
-const DownIcon = styled(Down)`
-  && {
-    font-size: 20px;
-    margin-right: 4px;
-    @media screen and (min-width: 900px) {
-      font-size: 40px;
-    }
-  }
-`;
-
-const UpIcon = styled(Up)`
-  && {
-    font-size: 20px;
-    margin-right: 4px;
-    @media screen and (min-width: 900px) {
-      font-size: 40px;
-    }
-  }
-`;
 
 export {
   Wrapper,
@@ -90,8 +69,6 @@ export {
   IntroMainHeading,
   IntroSubHeading,
   Percentages,
-  DownIcon,
-  UpIcon,
 }
 
 export default {
