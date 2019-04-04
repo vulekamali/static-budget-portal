@@ -9,6 +9,4 @@ const query = {
   view: 'url',
 };
 
-const testy = "testy";
-
 export default preactConnect(SearchResult, 'SearchResult', query);
