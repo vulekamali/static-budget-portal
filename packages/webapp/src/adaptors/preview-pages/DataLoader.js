@@ -35,7 +35,7 @@ class DataLoader extends Component {
     }
 
     console.log(data);
-    return createElement('div', {}, 'Loading...');
+    return createElement(Preview, data);
   }
 }
 
