@@ -1,0 +1,8 @@
+---
+---
+
+{% if (site.data.2014-15.previews.provincial.kwazulu-natal.actual) %}
+  {{ site.data.2014-15.previews.provincial.kwazulu-natal.actual | jsonify }}
+{% else %}
+  {}
+{% endif %}

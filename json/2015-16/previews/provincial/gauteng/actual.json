@@ -1,0 +1,8 @@
+---
+---
+
+{% if (site.data.2015-16.previews.provincial.gauteng.actual) %}
+  {{ site.data.2015-16.previews.provincial.gauteng.actual | jsonify }}
+{% else %}
+  {}
+{% endif %}

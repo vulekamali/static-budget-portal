@@ -1,0 +1,8 @@
+---
+---
+
+{% if (site.data.2017-18.previews.provincial.northern-cape.actual) %}
+  {{ site.data.2017-18.previews.provincial.northern-cape.actual | jsonify }}
+{% else %}
+  {}
+{% endif %}
