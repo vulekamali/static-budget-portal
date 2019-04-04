@@ -34,7 +34,7 @@ const BudgetContainer = styled.div`
 const BudgetHeadingAndShareIcon = styled.div`
   display: flex;
   justify-content: space-between;
-  align-items: center;
+  align-items: right;
 `;
 
 const BudgetHeading = styled(Typography)`
