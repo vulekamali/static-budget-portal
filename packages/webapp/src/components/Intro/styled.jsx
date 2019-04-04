@@ -13,7 +13,7 @@ const Summary = styled.div`
   display: flex;
   justify-content: space-between;
   flex-direction: column;
-  margin: auto;
+  margin: 0 auto;
   width: 100%;
   max-width: 1200px;
 `;
@@ -24,7 +24,6 @@ const Numbers = styled.div`
 
   @media screen and (min-width: 600px) {
     padding-bottom: 64px;
-
   }
 `;
 
@@ -56,17 +55,10 @@ const IntroSubHeading = styled.p`
 
 const Percentages = styled.div`
   display: flex;
-  justify-content: space-around;
+  justify-content: flex-end;
   width: 66%;
   @media screen and (min-width: 900px) {
     width: 50%;
-  }
-`;
-
-const PercentageBlock = styled.div`
-  margin: 0 10px;
-  @media screen and (min-width: 900px) {
-    margin: 0 40px;
   }
 `;
 
@@ -98,7 +90,6 @@ export {
   IntroMainHeading,
   IntroSubHeading,
   Percentages,
-  PercentageBlock,
   DownIcon,
   UpIcon,
 }

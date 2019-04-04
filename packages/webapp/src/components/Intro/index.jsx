@@ -21,17 +21,10 @@ const Intro = (props) => {
 
   const {
     value,
-    consolidated,
-    change
+    consolidated
   } = props;
 
-  const changeIcon = (change) => {
-    if (change > 0) {
-      return <UpIcon />
-    } else if (change < 0) {
-      return <DownIcon />
-    }
-  };
+  const newConsolidated = consolidated.toFixed(2);
 
   return (
     <Wrapper>
@@ -52,16 +45,12 @@ const Intro = (props) => {
             <IntroSubHeading>Focus area budget</IntroSubHeading>
           </Budget>
           <Percentages>
-            <PercentageBlock>
+            <div>
               <IntroMainHeading>
-                <PieChart values={[consolidated]} /> {consolidated}%
+                <PieChart values={[newConsolidated]} /> {newConsolidated}%
               </IntroMainHeading>
               <IntroSubHeading>of consolidated budget</IntroSubHeading>
-            </PercentageBlock>
-            <PercentageBlock>
-              <IntroMainHeading>{changeIcon(change)} {Math.abs(change)}%</IntroMainHeading>
-              <IntroSubHeading>from 2016-17</IntroSubHeading>
-            </PercentageBlock>
+            </div>
           </Percentages>
         </Numbers>
       </Summary>
