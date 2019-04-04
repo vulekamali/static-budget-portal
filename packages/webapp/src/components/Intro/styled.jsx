@@ -38,7 +38,7 @@ const IntroMainHeading = styled.h1`
   margin: 0;
   display: flex;
   align-items: center;
-  @media screen and (min-width: 900px) {
+  @media screen and (min-width: 600px) {
     font-size: 48px;
   }
 `;
@@ -46,7 +46,7 @@ const IntroMainHeading = styled.h1`
 const IntroSubHeading = styled.p`
   font-size: 10px;
   margin: 0;
-  @media screen and (min-width: 900px) {
+  @media screen and (min-width: 600px) {
     font-size: 20px;
   }
 `;
@@ -55,7 +55,7 @@ const Percentages = styled.div`
   display: flex;
   justify-content: flex-end;
   width: 66%;
-  @media screen and (min-width: 900px) {
+  @media screen and (min-width: 600px) {
     width: 50%;
   }
 `;

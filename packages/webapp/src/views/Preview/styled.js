@@ -25,9 +25,10 @@ const Description = styled(Typography)`
     font-size: 14px;
     line-height: 26px;
     color: #000;
+    columns: 2;
+    column-gap: 60px;
 
     @media screen and (min-width: 600px) {
-      max-width: 60%;
       font-size: 16px;
     }
   }

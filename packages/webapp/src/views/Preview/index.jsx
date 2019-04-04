@@ -1,4 +1,5 @@
 import React from 'react';
+import ReactMarkdown from 'react-markdown';
 
 import Intro from '../../components/Intro';
 import SectionHeading from '../../components/SectionHeading';
@@ -19,7 +20,9 @@ const Preview = ({ resources, items, description }) => (
     <SectionHeading title='Department information' />
     <TextWrapper>
       <TextContainer>
-        <Description>{description}</Description>
+        <Description>
+          <ReactMarkdown source={description} />
+        </Description>
       </TextContainer>
     </TextWrapper>
     <SectionHeading title='Department programmes' />

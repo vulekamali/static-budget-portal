@@ -39,7 +39,7 @@ const Intro = (props) => {
               }
             </Media>
             </IntroMainHeading>
-            <IntroSubHeading>Focus area budget</IntroSubHeading>
+            <IntroSubHeading>Original department budget</IntroSubHeading>
           </Budget>
           <Percentages>
             <div>
