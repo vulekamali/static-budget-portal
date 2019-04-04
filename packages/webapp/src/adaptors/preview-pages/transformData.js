@@ -4,7 +4,6 @@ const createProgrammeObject = ({ amount, title }) => ({
 });
 
 const transformData = (response, departmentId) => {
-  console.log(response);
 
   const department = response.items.filter(({ slug }) => slug === departmentId);
 
