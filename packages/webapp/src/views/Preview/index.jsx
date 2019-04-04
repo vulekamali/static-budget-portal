@@ -1,7 +1,7 @@
 import React from 'react';
 import ReactMarkdown from 'react-markdown';
 
-import Intro from '../../components/Intro';
+import Intro from './Intro';
 import SectionHeading from '../../components/SectionHeading';
 import BarChart from '../../components/BarChart';
 
@@ -14,9 +14,9 @@ import {
   FooterDetails
 } from './styled';
 
-const Preview = ({ resources, items, description }) => (
+const Preview = ({ resources, items, description, sphere }) => (
   <React.Fragment>
-    <Intro {...resources} />
+    <Intro {...resources} sphere={sphere} />
     <SectionHeading title='Department information' />
     <TextWrapper>
       <TextContainer>

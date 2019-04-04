@@ -1,8 +1,8 @@
 import React from 'react';
 import Media from 'react-media';
 
-import trimValues from '../../helpers/trimValues';
-import PieChart from '../PieChart';
+import trimValues from '../../../helpers/trimValues';
+import PieChart from '../../../components/PieChart';
 
 import {
   Wrapper,
@@ -18,7 +18,8 @@ const Intro = (props) => {
 
   const {
     value,
-    consolidated
+    consolidated,
+    sphere
   } = props;
 
   const newConsolidated = consolidated.toFixed(2);
@@ -46,7 +47,7 @@ const Intro = (props) => {
               <IntroMainHeading>
                 <PieChart values={[newConsolidated]} /> {newConsolidated}%
               </IntroMainHeading>
-              <IntroSubHeading>of consolidated budget</IntroSubHeading>
+              <IntroSubHeading>of {sphere} budget</IntroSubHeading>
             </div>
           </Percentages>
         </Numbers>
