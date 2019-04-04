@@ -10,7 +10,7 @@ import {
 const passRouteValues = ({ match }) => createElement(DataLoader, match.params)
 
 const routeConfig = {
-  path: "/:year/previews/:type/:government/:department",
+  path: "/:year/previews/:sphere/:government/:department",
   component: passRouteValues,
 };
 
