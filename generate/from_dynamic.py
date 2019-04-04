@@ -442,7 +442,12 @@ for year in YEAR_SLUGS:
                         ensure_file_dirs(listing_path)
                         with open(listing_path, 'wb') as dataset_list_file:
                             dataset_list_file.write(r.text)
-                    write_basic_page(listing_url_path, '', 'department_preview')
+                            data = yaml.load(r.text)
+                            if data:
+                                for department_object in data['data']['items']:
+                                    slug = department_object['slug']
+                                    markdown_path = '/{}/previews/{}/{}/{}'.format(year, sphere, government, slug)
+                                    write_basic_page(markdown_path, '', 'department_preview')
             elif sphere == 'national':
                 listing_url_path = '/{}/previews/{}/south-africa/{}'.format(year, sphere, budget_phase)
                 logger.info(listing_url_path)
@@ -456,4 +461,9 @@ for year in YEAR_SLUGS:
                     ensure_file_dirs(listing_path)
                     with open(listing_path, 'wb') as dataset_list_file:
                         dataset_list_file.write(r.text)
-                write_basic_page(listing_url_path, '', 'department_preview')
+                        data = yaml.load(r.text)
+                        if data:
+                            for department_object in data['data']['items']:
+                                slug = department_object['slug']
+                                markdown_path = '/{}/previews/{}/south-africa/{}'.format(year, sphere, slug)
+                                write_basic_page(markdown_path, '', 'department_preview')
