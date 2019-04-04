@@ -6,28 +6,15 @@
   "nohoist": [
     "packages/webapp"
   ],
-  "resolutions": {
-    "ansi-styles": "^3.2.0"
-  },
   "name": "static-budget-portal",
   "version": "1.0.0",
-  "description": "",
-  "main": "index.js",
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/OpenUpSA/static-budget-portal.git"
-  },
-  "author": "",
-  "license": "ISC",
-  "bugs": {
-    "url": "https://github.com/OpenUpSA/static-budget-portal/issues"
-  },
-  "homepage": "https://github.com/OpenUpSA/static-budget-portal#readme",
   "scripts": {
-    "build": "webpack --display errors-only --progress -p",
-    "build:dev": "webpack --display errors-only --progress"
+    "build:webapp": "cd ./packages/webapp && node ./scripts/build",
+    "build:root": "webpack --display errors-only --progress -p",
+    "build:dev": "webpack --display errors-only --progress",
+    "build": "yarn build:webapp && yarn build:root && yarn copy:webapp",
+    "copy:webapp": "node monorepo-custom-script"
   },
-  "keywords": [],
   "devDependencies": {
     "app-root-dir": "^1.0.2",
     "autoprefixer": "^7.1.6",
@@ -42,6 +29,7 @@
     "browserslist": "^2.4.0",
     "classlist-polyfill": "^1.2.0",
     "clean-webpack-plugin": "^0.1.17",
+    "colour": "^0.7.1",
     "connect": "^3.6.6",
     "css-loader": "^0.28.7",
     "escape-html": "^1.0.3",
@@ -56,6 +44,7 @@
     "extract-text-webpack-plugin": "^3.0.2",
     "front-matter": "^2.3.0",
     "frontmatter": "0.0.3",
+    "fs-extra": "^7.0.1",
     "highlightjs": "^9.12.0",
     "html": "^1.0.0",
     "html-entities": "^1.2.1",
@@ -72,7 +61,6 @@
     "postcss-normalize": "^4.0.0",
     "preact-render-to-string": "^3.8.2",
     "prop-types": "^15.6.1",
-    "rimraf": "^2.6.2",
     "sass-loader": "^6.0.6",
     "serve-static": "^1.13.2",
     "style-loader": "^0.18.2",
@@ -233,6 +221,7 @@
     "redux": "^4.0.1",
     "save-svg-as-png": "^1.4.6",
     "uuid": "^3.3.2",
-    "whatwg-fetch": "^2.0.3"
+    "whatwg-fetch": "^2.0.3",
+    "yarn": "^1.13.0"
   }
 }

@@ -28,6 +28,12 @@ YEAR_SLUGS = [
     '2016-17',
 ]
 
+TREEMAP_BUDGET_TYPES = [
+    'original',
+    'adjusted',
+    'actual'
+]
+
 BASIC_PAGE_SLUGS = [
     'search-result',
 ]
@@ -383,3 +389,20 @@ else:
         with open(project_context_path, 'wb') as project_file:
             project_file.write(GENERATED_YAML_COMMENT)
             project_file.write(r.text)
+
+SPHERES = ('national', 'provincial')
+for year in YEAR_SLUGS:
+    for budget_phase in TREEMAP_BUDGET_TYPES:
+        for sphere in SPHERES:
+            listing_url_path = '/{}/{}/{}'.format(year, sphere, budget_phase)
+            logger.info(listing_url_path)
+            listing_url = portal_url + listing_url_path[1:] + '.yaml'
+            r = http_get(session, listing_url)
+            if r.status_code == 404:
+                logger.info("No data for {}".format(listing_url))
+            else:
+                r.raise_for_status()
+                listing_path = '_data/homepage%s.yaml' % listing_url_path
+                ensure_file_dirs(listing_path)
+                with open(listing_path, 'wb') as dataset_list_file:
+                    dataset_list_file.write(r.text)
