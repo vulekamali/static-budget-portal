@@ -15,8 +15,8 @@ class DataLoader extends Component {
   }
 
   componentDidMount() {
-    const { year, type, government, department } = this.props;
-    const api = `/json/${year}/previews/${type}/${government}/original.json`;
+    const { year, sphere, government, department } = this.props;
+    const api = `/json/${year}/previews/${sphere}/${government}/original.json`;
 
     const loadliveData = ({ data }) =>
       this.setState({ data: transformData(data, department), loading: false });
@@ -27,15 +27,19 @@ class DataLoader extends Component {
   }
 
   render() {
-    const { state } = this;
+    const { state, props } = this;
     const { loading, data } = state;
 
     if (loading || !data) {
       return createElement('div', {}, 'Loading...');
     }
 
-    console.log(data);
-    return createElement(Preview, data);
+    const passedProps = {
+      ...data,
+      sphere: props.sphere
+    }
+
+    return createElement(Preview, passedProps);
   }
 }
 
