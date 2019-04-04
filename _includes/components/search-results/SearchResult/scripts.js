@@ -9,4 +9,5 @@ const query = {
   view: 'url',
 };
 
+
 export default preactConnect(SearchResult, 'SearchResult', query);
