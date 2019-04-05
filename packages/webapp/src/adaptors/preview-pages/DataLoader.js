@@ -39,6 +39,8 @@ class DataLoader extends Component {
       sphere: props.sphere
     }
 
+    console.log(passedProps)
+
     return createElement(Preview, passedProps);
   }
 }

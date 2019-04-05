@@ -1,7 +1,7 @@
-import { Typography, Button } from '@material-ui/core';
 import styled from 'styled-components';
 import { darken } from 'polished';
 
+import { Typography, Button } from '@material-ui/core';
 import Arrow from '@material-ui/icons/ArrowForward';
 
 const HeadingWrapper = styled.div`
@@ -10,8 +10,12 @@ const HeadingWrapper = styled.div`
   justify-content: center;
   align-items: center;
   background: #f7f7f7;
-  padding-top: 80px;
-  padding-bottom: 64px;
+  padding: 16px;
+
+  @media screen and (min-width: 600px) {
+    padding-top: 80px;
+    padding-bottom: 64px;
+  }
 `;
 
 const HeadingContainer = styled.div`
@@ -69,12 +73,11 @@ const ButtonDetails = styled(Button)`
     background: #000;
     color: #fff;
     text-transform: none;
-    padding: 16px 12px 16px 16px;
+    padding: 16px;
     margin-left: 36px;
     display: flex;
     align-items: center;
     justify-content: space-between;
-    max-width: 170px;
 
     &:hover {
       background: ${darken(0.1, '#000')};
@@ -82,7 +85,7 @@ const ButtonDetails = styled(Button)`
 
     @media screen and (min-width: 600px) {
       max-width: none;
-      padding: 24px 16px 24px 24px;
+      padding: 24px;
     }
   }
 `;
@@ -101,7 +104,10 @@ const ButtonText = styled.span`
 `;
 
 const ArrowStyled = styled(Arrow)`
-  padding-left: 16px;
+  && {
+    padding-left: 16px;
+    box-sizing: content-box;
+  }
 `;
 
 export {

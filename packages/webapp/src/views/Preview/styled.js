@@ -25,11 +25,15 @@ const Description = styled(Typography)`
     font-size: 14px;
     line-height: 26px;
     color: #000;
-    columns: 2;
-    column-gap: 60px;
 
     @media screen and (min-width: 600px) {
       font-size: 16px;
+    }
+
+    @media screen and (min-width: 850px) {
+      font-size: 16px;
+      columns: 2;
+      column-gap: 60px;
     }
   }
 `;

@@ -3,11 +3,8 @@ const createProgrammeObject = ({ amount, title }) => ({
   title
 });
 
-const transformData = (response, departmentId) => {
-
-  const department = response.items.filter(({ slug }) => slug === departmentId);
-
-  const [departmentSchema] = department.map(department => {
+const transformData = (response) => {
+  const departmentSchema = response.items.map(department => {
     const {
       percentage_of_budget: percentage,
       total,
@@ -24,6 +21,8 @@ const transformData = (response, departmentId) => {
       description,
     }
   })
+
+  console.log(departmentSchema)
 
  return departmentSchema;
 

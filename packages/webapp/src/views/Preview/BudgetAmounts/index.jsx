@@ -22,7 +22,7 @@ const BudgetAmounts = (props) => {
     sphere
   } = props;
 
-  const newConsolidated = consolidated.toFixed(2);
+  const newConsolidated = consolidated.toFixed(0);
 
   return (
     <Wrapper>

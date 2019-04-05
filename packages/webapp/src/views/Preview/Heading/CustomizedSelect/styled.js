@@ -16,29 +16,51 @@ const CustomizedForm = styled.div`
 
 const SelectPreview = styled(Select)`
   background: #fff;
-  height: 42px;
 
   && {
     width: 100%;
-    font-size: 14px;
-    font-weight: 700;
-    background: #fff;
-    line-height: 120%;
-    letter-spacing: 0.15px;
-    padding-left: 20px;
-    padding-right: 20px;
-    color: #000;
-    border: none;
 
     @media screen and (min-width: 600px) {
-      height: 64px;
-      font-size: 24px;
-      padding-left: 15px;
       max-width: 616px;
     }
 
     & .icon {
       color: #000;
+      background-color: #d7d7d7;
+      height: 100%;
+      top: 0;
+      width: 42px;
+      padding: 0 10px;
+
+      @media screen and (min-width: 600px) {
+        width: 64px;
+        padding: 0 20px;
+      }
+    }
+
+    & .selectMenu {
+      padding-left: 20px;
+      padding-right: 50px;
+      height: 42px;
+      box-sizing: border-box;
+      width: 100%;
+      font-size: 14px;
+      font-weight: 700;
+      background: #fff;
+      line-height: 30px;
+      letter-spacing: 0.15px;
+      color: #000;
+      border: none;
+      white-space: nowrap;
+      overflow: hidden;
+      text-overflow: ellipsis;
+
+      @media screen and (min-width: 600px) {
+        padding-left: 15px;
+        height: 64px;
+        font-size: 24px;
+        line-height: 45px;
+      }
     }
   }
 `;
