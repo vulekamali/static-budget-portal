@@ -57,6 +57,7 @@ const FooterContainer = styled.div`
 
   @media screen and (min-width: 600px) {
     margin-top: 32px;
+    margin-bottom: 32px;
   }
 `;
 
@@ -72,7 +73,6 @@ const FooterDetails = styled(Typography)`
     }
   }
 `;
-
 
 export {
   TextWrapper,

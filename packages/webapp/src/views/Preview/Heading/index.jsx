@@ -18,26 +18,31 @@ import {
   ArrowStyled
  } from './styled';
 
+const Heading = ({ government, departmentNames, selected, eventHandler, year, sphere }) => {
+  const url = `/${year}/${sphere}/${government === 'south-africa' ? '' : `${government}/`}departments/${selected}`;
 
-const Heading = ({ government, departmentNames, selected, eventHandler }) => (
-  <HeadingWrapper>
-    <HeadingContainer>
-      <HeadingText>
-        <Title>{calcPrettyName(government)}</Title>
-      </HeadingText>
-      <SelectsGroup>
-        <CustomizedSelect {...{ departmentNames, selected, eventHandler }} />
-        <RightOptions>
-          <CustomizedDateSelect />
-          <ButtonDetails>
-            <ButtonText>Detailed Analysis</ButtonText>
-            <ArrowStyled />
-          </ButtonDetails>
-        </RightOptions>
-      </SelectsGroup>
-    </HeadingContainer>
-  </HeadingWrapper>
-);
+  return (
+    <HeadingWrapper>
+      <HeadingContainer>
+        <HeadingText>
+          <Title>{calcPrettyName(government)}</Title>
+        </HeadingText>
+        <SelectsGroup>
+          <CustomizedSelect {...{ departmentNames, selected, eventHandler }} />
+          <RightOptions>
+            <CustomizedDateSelect />
+            <a href={url}>
+            <ButtonDetails>
+              <ButtonText>Detailed Analysis</ButtonText>
+              <ArrowStyled />
+            </ButtonDetails>
+            </a>
+          </RightOptions>
+        </SelectsGroup>
+      </HeadingContainer>
+    </HeadingWrapper>
+  )
+};
 
 
 export default Heading;

@@ -5,6 +5,7 @@ import Heading from './Heading';
 import BudgetAmounts from './BudgetAmounts';
 import SectionHeading from '../../components/SectionHeading';
 import BarChart from '../../components/BarChart';
+import calcFineprint from './calcFineprint';
 
 import {
   TextWrapper,
@@ -42,12 +43,13 @@ const Markup = (props) => {
     government,
     departmentNames,
     selected,
-    eventHandler
+    eventHandler,
+    year,
   } = props;
 
   return (
     <React.Fragment>
-      <Heading government={government} {...{ departmentNames, selected, eventHandler }} />
+      <Heading {...{ departmentNames, government, selected, eventHandler, year, sphere }} />
       <BudgetAmounts {...resources} sphere={sphere} />
       {callDescription(description)}
       <SectionHeading title='Department programmes' />
@@ -56,7 +58,7 @@ const Markup = (props) => {
       </div>
       <FooterWrapper>
         <FooterContainer>
-          <FooterDetails>Budget data from to confirm date</FooterDetails>
+          <FooterDetails>{calcFineprint(year)}</FooterDetails>
         </FooterContainer>
       </FooterWrapper>
     </React.Fragment>

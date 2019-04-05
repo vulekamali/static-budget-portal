@@ -11,7 +11,8 @@ const transformData = (response) => {
       programmes,
       description,
       title,
-      slug
+      slug,
+      url,
     } = department;
 
     return {
@@ -22,7 +23,8 @@ const transformData = (response) => {
       items: programmes.map(createProgrammeObject),
       description,
       title,
-      id: slug
+      id: slug,
+      url,
     }
   })
 
