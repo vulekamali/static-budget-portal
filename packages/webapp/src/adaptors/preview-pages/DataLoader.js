@@ -12,6 +12,8 @@ class DataLoader extends Component {
       loading: true,
       data: null,
     };
+
+    this.handleOnSelectChange = this.handleOnSelectChange.bind(this);
   }
 
   componentDidMount() {
@@ -26,6 +28,11 @@ class DataLoader extends Component {
       .then(loadliveData);
   }
 
+  handleOnSelectChange(event) {
+    // this.setState({ [event.target.name]: event.target.value });
+    console.log({ [event.target.name]: event.target.value });
+  }
+
   render() {
     const { state, props } = this;
     const { loading, data } = state;
@@ -36,8 +43,9 @@ class DataLoader extends Component {
 
     const passedProps = {
       ...data,
-      sphere: props.sphere
-    }
+      sphere: props.sphere,
+      handleOnSelectChange: this.handleOnSelectChange,
+    };
 
     return createElement(Preview, passedProps);
   }

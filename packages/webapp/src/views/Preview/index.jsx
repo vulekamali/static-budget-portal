@@ -15,9 +15,9 @@ import {
   FooterDetails
 } from './styled';
 
-const Preview = ({ resources, items, description, sphere }) => (
+const Preview = ({ resources, items, description, sphere, options, handleOnSelectChange }) => (
   <React.Fragment>
-    <Heading />
+    <Heading options={options} handleOnSelectChange={handleOnSelectChange} />
     <BudgetAmounts {...resources} sphere={sphere} />
     <SectionHeading title='Department information' />
     <TextWrapper>

@@ -61,11 +61,20 @@ const ImageIcon = styled.img`
 class CustomizedSelect extends Component{
 
   state = {
-    budgetValue: ''
+    budgetValue: '',
+    _mounted: false
   };
 
+  componentDidMount() {
+    this.setState({
+      _mounted: true
+    })
+  }
+
   handleChange = event => {
-    this.setState({ [event.target.name]: event.target.value });
+    if (this.state._mounted) {
+      this.props.options.handleOnSelectChange(event)
+    }
   };
 
   render() {
@@ -81,10 +90,11 @@ class CustomizedSelect extends Component{
               <ImageIcon src={Icon} alt="Logo" />
             )}
           >
-            <MenuItem value="">None</MenuItem>
-            <MenuItem value={10}>Ten</MenuItem>
-            <MenuItem value={20}>Twenty</MenuItem>
-            <MenuItem value={30}>Thirty</MenuItem>
+            {
+              this.props.options.options.map(option => {
+                return <MenuItem key={option.slug} value={option.slug}>{option.title}</MenuItem>
+              })
+            }
           </SelectPreview>
         </FormControlCtrl>
       </form>

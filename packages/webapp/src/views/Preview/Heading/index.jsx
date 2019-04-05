@@ -89,14 +89,14 @@ const ArrowImage = styled.img`
 `;
 
 
-const Heading = () => (
+const Heading = (options, handleOnSelectChange) => (
   <HeadingWrapper>
     <div>
       <HeadingText>
         <Title>National Budget</Title>
       </HeadingText>
       <SelectsGroup>
-      <CustomizedSelect />
+      <CustomizedSelect options={options} handleOnSelectChange={handleOnSelectChange} />
         <CustomizedDateSelect />
         <ButtonDetails>
           Detailed analysis
