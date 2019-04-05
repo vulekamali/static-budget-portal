@@ -1,0 +1,8 @@
+---
+---
+
+{% if (site.data.2015-16.previews.provincial.free-state.original) %}
+  {{ site.data.2015-16.previews.provincial.free-state.original | jsonify }}
+{% else %}
+  {}
+{% endif %}
