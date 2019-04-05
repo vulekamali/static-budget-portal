@@ -1,40 +1,56 @@
-import React from 'react';
-import ReactMarkdown from 'react-markdown';
+import React, { Component } from 'react';
+import Markup from './Markup';
 
-import Heading from './Heading';
-import BudgetAmounts from './BudgetAmounts';
-import SectionHeading from '../../components/SectionHeading';
-import BarChart from '../../components/BarChart';
 
-import {
-  TextWrapper,
-  TextContainer,
-  Description,
-  FooterWrapper,
-  FooterContainer,
-  FooterDetails
-} from './styled';
 
-const Preview = ({ resources, items, description, sphere }) => (
-  <React.Fragment>
-    <Heading />
-    <BudgetAmounts {...resources} sphere={sphere} />
-    <SectionHeading title='Department information' />
-    <TextWrapper>
-      <TextContainer>
-        <Description>
-          <ReactMarkdown source={description} />
-        </Description>
-      </TextContainer>
-    </TextWrapper>
-    <SectionHeading title='Department programmes' />
-    <BarChart {...{ items }} />
-    <FooterWrapper>
-      <FooterContainer>
-        <FooterDetails>Budget data from to confirm date</FooterDetails>
-      </FooterContainer>
-    </FooterWrapper>
-  </React.Fragment>
-);
+class Preview extends Component {
+  constructor(props) {
+    super(props);
+    this.eventHandler = this.eventHandler.bind(this);
+    console.log(this.props)
+    this.state = {
+      selected: this.props.department
+    }
+
+    this.events = {
+      eventHandler: this.eventHandler.bind(this),
+    }
+
+    this.departmentNames = this.props.items.map(({ id, title }) => ({
+      id,
+      name: title
+    }))
+  }
+
+  eventHandler(e) {
+    if(e.target.value === this.state.selected) {
+      return null;
+    }
+    const newUrl = `/${this.props.year}/previews/${this.props.sphere}/${this.props.government}/${e.target.value}`;
+    window.history.pushState({}, window.document.title, newUrl );
+    this.setState({ selected: e.target.value });
+  }
+
+  render() {
+    const { state, events, props } = this;
+
+    const selectedObject = props.items.find(({ id }) => id === state.selected);
+
+    const passedProps = {
+      ...props,
+      ...selectedObject,
+      eventHandler: events.eventHandler,
+      selected: state.selected,
+      government: props.government,
+      departmentNames: this.departmentNames
+    };
+
+
+
+    return <Markup {...passedProps } />
+  }
+}
+
 
 export default Preview;
+

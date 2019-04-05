@@ -29,17 +29,19 @@ class DataLoader extends Component {
   render() {
     const { state, props } = this;
     const { loading, data } = state;
+    const { sphere, department, government, year } = props;
 
     if (loading || !data) {
       return createElement('div', {}, 'Loading...');
     }
 
     const passedProps = {
-      ...data,
-      sphere: props.sphere
+      items: data,
+      sphere,
+      department,
+      government,
+      year
     }
-
-    console.log(passedProps)
 
     return createElement(Preview, passedProps);
   }

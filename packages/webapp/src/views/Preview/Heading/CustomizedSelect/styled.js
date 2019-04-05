@@ -39,13 +39,13 @@ const SelectPreview = styled(Select)`
     }
 
     & .selectMenu {
-      padding-left: 20px;
+      padding-left: 16px;
       padding-right: 50px;
       height: 42px;
       box-sizing: border-box;
       width: 100%;
       font-size: 14px;
-      font-weight: 700;
+      font-weight: 900;
       background: #fff;
       line-height: 30px;
       letter-spacing: 0.15px;
@@ -56,10 +56,10 @@ const SelectPreview = styled(Select)`
       text-overflow: ellipsis;
 
       @media screen and (min-width: 600px) {
-        padding-left: 15px;
         height: 64px;
         font-size: 24px;
         line-height: 45px;
+        padding-right: 80px;
       }
     }
   }

@@ -11,18 +11,19 @@ const HeadingWrapper = styled.div`
   align-items: center;
   background: #f7f7f7;
   padding: 16px;
+  margin-bottom: 36px;
 
   @media screen and (min-width: 600px) {
     padding-top: 80px;
     padding-bottom: 64px;
+    margin-bottom: 74px;
+
   }
 `;
 
 const HeadingContainer = styled.div`
   width: 100%;
   max-width: 1375px;
-  margin-right: 16px;
-  margin-left: 16px;
   box-sizing: border-box;
   background: #f7f7f7;
 `;
@@ -47,9 +48,10 @@ const Title = styled(Typography)`
 const SelectsGroup = styled.div`
   display: flex;
   flex-direction: column;
-  align-items: center;
+  align-items: flex-start;
+  width: 100%;
 
-  @media screen and (min-width: 600px) {
+  @media screen and (min-width: 1200px) {
     flex-direction: row;
     justify-content: space-between;
   }
@@ -57,12 +59,16 @@ const SelectsGroup = styled.div`
 
 const RightOptions = styled.div`
   display: flex;
-  justify-content: space-between;
-  align-items: center;
+  justify-content: flex-start;
   width: 100%;
 
   @media screen and (min-width: 600px) {
-    width: auto;
+    margin-top: 24px;
+  }
+
+  @media screen and (min-width: 1200px) {
+    flex-wrap: wrap;
+    justify-content: flex-end;
   }
 `;
 
@@ -73,19 +79,16 @@ const ButtonDetails = styled(Button)`
     background: #000;
     color: #fff;
     text-transform: none;
-    padding: 16px;
-    margin-left: 36px;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
+    padding: 10px 16px;
+    margin-left: 8px;
 
     &:hover {
       background: ${darken(0.1, '#000')};
     }
 
     @media screen and (min-width: 600px) {
-      max-width: none;
-      padding: 24px;
+      padding: 20px 24px;
+      width: 260px;
     }
   }
 `;
@@ -105,8 +108,13 @@ const ButtonText = styled.span`
 
 const ArrowStyled = styled(Arrow)`
   && {
-    padding-left: 16px;
+    padding-left: 13px;
     box-sizing: content-box;
+    display: none;
+
+    @media screen and (min-width: 400px) {
+      display: block;
+    }
   }
 `;
 

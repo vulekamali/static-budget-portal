@@ -9,7 +9,9 @@ const transformData = (response) => {
       percentage_of_budget: percentage,
       total,
       programmes,
-      description
+      description,
+      title,
+      slug
     } = department;
 
     return {
@@ -19,10 +21,10 @@ const transformData = (response) => {
       },
       items: programmes.map(createProgrammeObject),
       description,
+      title,
+      id: slug
     }
   })
-
-  console.log(departmentSchema)
 
  return departmentSchema;
 

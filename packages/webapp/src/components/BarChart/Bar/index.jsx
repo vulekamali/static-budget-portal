@@ -1,9 +1,8 @@
 import React, { Component } from 'react';
-import Markup from './Markup';
-import createColorGenerator from './generateColor';
-import ResizeWindowListener from '../../../helpers/ResizeWindowListener';
 
-const colorsList = createColorGenerator();
+import Markup from './Markup';
+import ResizeWindowListener from '../../../helpers/ResizeWindowListener';
+import { colors } from './data';
 
 
 class Bar extends Component {
@@ -14,7 +13,7 @@ class Bar extends Component {
     }
 
     this.values = {
-      fills: Object.keys(this.props.items).map(() => colorsList.next().value),
+      fills: colors,
       componentNode: React.createRef(),
       textNode: React.createRef(),
     };

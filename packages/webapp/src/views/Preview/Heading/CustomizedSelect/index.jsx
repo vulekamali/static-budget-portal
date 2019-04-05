@@ -11,7 +11,7 @@ const callMenuItems = ({ id, name }) => (
   <MenuItem value={id}>{name}</MenuItem>
 );
 
-class CustomizedSelect extends Component{
+class CustomizedSelect extends Component {
 
   state = {
     budgetValue: ''
@@ -22,22 +22,18 @@ class CustomizedSelect extends Component{
   };
 
   render() {
-    const { departments } = this.props;
+    const { departmentNames, selected, eventHandler } = this.props;
     return (
       <CustomizedForm>
         <CssBaseline />
         <SelectPreview
-          value={this.state.budgetValue}
-          onChange={this.handleChange}
+          value={selected}
+          onChange={eventHandler}
           displayEmpty
           name="budgetValue"
           classes={{ icon: 'icon', selectMenu: 'selectMenu'}}
         >
-        {departments.map(callMenuItems)}
-          <MenuItem value="">Something suuuuper loooooong! Not long enough man</MenuItem>
-          <MenuItem value={10}>Ten</MenuItem>
-          <MenuItem value={20}>Twenty</MenuItem>
-          <MenuItem value={30}>Thirty</MenuItem>
+        {departmentNames.map(callMenuItems)}
         </SelectPreview>
       </CustomizedForm>
     );

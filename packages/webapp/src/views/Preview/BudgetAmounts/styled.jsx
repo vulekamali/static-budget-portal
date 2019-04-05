@@ -26,10 +26,7 @@ const Numbers = styled.div`
 `;
 
 const Budget = styled.div`
-  width: 33%;
-  @media screen and (min-width: 600px) {
-    width: 50%;
-  }
+  width: 50%;
 `;
 
 const IntroMainHeading = styled.h1`

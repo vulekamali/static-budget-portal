@@ -34,6 +34,10 @@ const Description = styled(Typography)`
       font-size: 16px;
       columns: 2;
       column-gap: 60px;
+
+      & > p {
+        margin-top: 0;
+      }
     }
   }
 `;

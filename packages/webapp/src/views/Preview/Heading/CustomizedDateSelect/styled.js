@@ -1,30 +1,19 @@
 import styled from 'styled-components';
 
-import { FormControl, Select } from '@material-ui/core';
+import { Select } from '@material-ui/core';
 
 const CustomizedForm = styled.div`
-  width: 50%;
+  margin-right: 8px;
+  width: 100%;
 
-  @media screen and (max-width: 675px) {
-    width: 65%;
+  @media screen and (min-width: 600px) {
+    width: auto;
   }
-`;
-
-const FormControlDateCtrl = styled(FormControl)`
-  ${'' /* Check if styling is taking on */}
-  font-weight: 700;
-  width: 94%;
 `;
 
 const SelectPreviewDate = styled(Select)`
   && {
     width: 100%;
-    background: #d8d8d8;
-    border-radius: 3px;
-    padding: 16px 12px 16px 16px;
-    font-size: 14px;
-    line-height: 120%;
-    color: #000;
 
     & .disabled {
       color: rgba(0, 0, 0, 0.26);
@@ -34,10 +23,22 @@ const SelectPreviewDate = styled(Select)`
       color: rgba(0, 0, 0, 0.26);
     }
 
+    & .selectMenu {
+      background: #d8d8d8;
+      border-radius: 3px;
+      padding: 13px 16px;
+      font-size: 14px;
+      font-weight: 700;
+      line-height: 120%;
+
+      @media screen and (min-width: 600px) {
+        font-size: 20px;
+        padding: 20px;
+      }
+    }
+
     @media screen and (min-width: 600px) {
-      font-size: 20px;
-      padding: 24px 16px 24px 24px;
-      width: auto;
+      width: 185px;
     }
   }
 `;
@@ -45,12 +46,10 @@ const SelectPreviewDate = styled(Select)`
 
 export {
   CustomizedForm,
-  FormControlDateCtrl,
   SelectPreviewDate
 }
 
 export default {
   CustomizedForm,
-  FormControlDateCtrl,
   SelectPreviewDate
 }
