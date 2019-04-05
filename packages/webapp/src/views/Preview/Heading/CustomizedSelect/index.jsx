@@ -4,7 +4,7 @@ import styled from 'styled-components';
 import FormControl from "@material-ui/core/FormControl";
 import Select from "@material-ui/core/Select";
 import MenuItem from "@material-ui/core/MenuItem";
-import Icon from './arrow-drop-down.svg';
+import Icon from '../arrow-drop-down.svg';
 
 const FormControlCtrl = styled(FormControl)`
   font-weight: 700;

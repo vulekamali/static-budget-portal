@@ -8,73 +8,37 @@ import { Typography, Button } from '@material-ui/core';
 
 import Arrow from './Arrow.svg';
 
-const Title = styled(Typography)`
-  && {
-    font-weight: 700;
-    letter-spacing: 0.01rem;
-  }
-`;
-
 const HeadingWrapper = styled.div`
   width: 100%;
+  max-width: 1375px;
+  margin-right: 16px;
+  margin-left: 16px;
   box-sizing: border-box;
   background: #f7f7f7;
-
-  @media screen and (min-width: 600px) {
-    max-width: 100%;
-  }
-`;
-
-const HeadingContentWrapper = styled.div`
-  &&&& {
-    padding: 0;
-    width: 100%;
-    display: flex;
-    justify-content: space-between;
-
-    @media screen and (max-width: 675px) {
-      width: auto;
-      flex-direction: column;
-    }
-  }
 `;
 
 const HeadingText = styled.div`
-  &&&& {
-    line-height: 23px;
-    font-size: 16px;
-    width: 60%;
-
-    @media screen and (max-width: 675px){
-      display: block;
-      width: 100%;
-    }
-  }
+  width: 100%;
 `;
 
-const TitleBlack = styled(Title)`
+const Title = styled(Typography)`
   && {
+    font-size: 32px;
+    font-weight: 700;
+    line-height: 120%;
     color: #000;
-    font-size: 48px;
-    padding-top: 30px;
 
-    @media screen and (max-width: 675px){
-      font-size: 32px;
+    @media screen and (min-width: 600px) {
+      font-size: 48px;
     }
   }
 `;
 
-
-const RightColumn = styled.div`
-  margin-top: 99px;
-  width: 40%;
+const SelectsGroup = styled.div`
   display: flex;
-
-  @media screen and (max-width: 675px){
-    width: 100%;
-    margin-top: 0;
-  }
 `;
+
+
 
 
 const ButtonDetails = styled(Button)`
@@ -94,7 +58,7 @@ const ButtonDetails = styled(Button)`
     padding-left: 25px;
     border-radius: 2px;
 
-    @media screen and (max-width: 675px){
+    @media screen and (max-width: 675px) {
       font-size: 14px;
       height: 42px;
       padding-left: 15px;
@@ -109,7 +73,7 @@ const ArrowImage = styled.img`
   right: 25px;
   top: 24px;
 
-  @media screen and (max-width: 675px){
+  @media screen and (max-width: 675px) {
     right: 15px;
     top: 15px;
     height: 12px;
@@ -119,21 +83,19 @@ const ArrowImage = styled.img`
 
 const Heading = () => (
   <HeadingWrapper>
-    <HeadingContentWrapper>
+    <div>
       <HeadingText>
-        <TitleBlack>
-          National Budget
-        </TitleBlack>
-        <CustomizedSelect />
+        <Title>National Budget</Title>
       </HeadingText>
-      <RightColumn>
+      <SelectsGroup>
+      <CustomizedSelect />
         <CustomizedDateSelect />
         <ButtonDetails>
           Detailed analysis
           <ArrowImage src={Arrow} alt="Arrow" />
         </ButtonDetails>
-      </RightColumn>
-    </HeadingContentWrapper>
+      </SelectsGroup>
+    </div>
   </HeadingWrapper>
 );
 
