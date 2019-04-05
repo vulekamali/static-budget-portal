@@ -14,7 +14,7 @@ import {
   Percentages,
 } from './styled';
 
-const Intro = (props) => {
+const BudgetAmounts = (props) => {
 
   const {
     value,
@@ -56,4 +56,4 @@ const Intro = (props) => {
   );
 };
 
-export default Intro;
+export default BudgetAmounts;

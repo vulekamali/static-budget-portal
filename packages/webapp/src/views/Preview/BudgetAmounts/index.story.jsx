@@ -1,7 +1,7 @@
 import React, { Fragment } from 'react';
 import { CssBaseline } from '@material-ui/core';
 import { storiesOf } from '@storybook/react';
-import Intro from './index';
+import BudgetAmounts from './index';
 
 const resources = {
     value: 372800000,
@@ -12,9 +12,9 @@ const resources = {
 const basic = () => (
   <Fragment>
     <CssBaseline />
-    <Intro {...resources} />
+    <BudgetAmounts {...resources} />
   </Fragment>
 );
 
-storiesOf('component.Intro', module)
+storiesOf('component.BudgetAmounts', module)
   .add('Default', basic);

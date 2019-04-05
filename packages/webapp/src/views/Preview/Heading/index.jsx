@@ -9,7 +9,15 @@ import { Typography, Button } from '@material-ui/core';
 import Arrow from './Arrow.svg';
 
 const HeadingWrapper = styled.div`
+  display: flex;
   width: 100%;
+  justify-content: center;
+  align-items: center;
+  margin-right: 16px;
+  margin-left: 16px;
+`;
+
+const HeadingContainer = styled.div`
   max-width: 1375px;
   margin-right: 16px;
   margin-left: 16px;
