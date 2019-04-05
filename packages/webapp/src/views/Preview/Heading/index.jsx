@@ -15,9 +15,11 @@ const HeadingWrapper = styled.div`
   align-items: center;
   margin-right: 16px;
   margin-left: 16px;
+  background: #f7f7f7;
 `;
 
 const HeadingContainer = styled.div`
+  width: 100%;
   max-width: 1375px;
   margin-right: 16px;
   margin-left: 16px;
@@ -91,7 +93,7 @@ const ArrowImage = styled.img`
 
 const Heading = () => (
   <HeadingWrapper>
-    <div>
+    <HeadingContainer>
       <HeadingText>
         <Title>National Budget</Title>
       </HeadingText>
@@ -103,7 +105,7 @@ const Heading = () => (
           <ArrowImage src={Arrow} alt="Arrow" />
         </ButtonDetails>
       </SelectsGroup>
-    </div>
+    </HeadingContainer>
   </HeadingWrapper>
 );
 
