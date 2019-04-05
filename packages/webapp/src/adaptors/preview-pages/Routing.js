@@ -7,7 +7,7 @@ import {
   Route
 } from 'react-router-dom';
 
-const passRouteValues = ({ match }) => createElement(DataLoader, match.params)
+const passRouteValues = ({ match }) => createElement(DataLoader, match.params);
 
 const routeConfig = {
   path: "/:year/previews/:sphere/:government/:department",
