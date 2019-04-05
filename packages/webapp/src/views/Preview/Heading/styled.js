@@ -9,8 +9,6 @@ const HeadingWrapper = styled.div`
   width: 100%;
   justify-content: center;
   align-items: center;
-  margin-right: 16px;
-  margin-left: 16px;
   background: #f7f7f7;
   padding-top: 80px;
   padding-bottom: 64px;
@@ -45,7 +43,8 @@ const Title = styled(Typography)`
 const SelectsGroup = styled.div`
   display: flex;
   flex-direction: column;
-  justify-content: center;
+  align-items: center;
+
   @media screen and (min-width: 600px) {
     flex-direction: row;
     justify-content: space-between;
@@ -56,6 +55,11 @@ const RightOptions = styled.div`
   display: flex;
   justify-content: space-between;
   align-items: center;
+  width: 100%;
+
+  @media screen and (min-width: 600px) {
+    width: auto;
+  }
 `;
 
 
