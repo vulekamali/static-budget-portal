@@ -45,10 +45,16 @@ const Title = styled(Typography)`
 `;
 
 const SelectsGroup = styled.div`
-  display: flex;
+  @media screen and (min-width: 600px) {
+    display: flex;
+    justify-content: space-between;
+  }
 `;
 
-
+const RightOptions = styled.div`
+  display: flex;
+  justify-content: space-between;
+`;
 
 
 const ButtonDetails = styled(Button)`
@@ -98,12 +104,14 @@ const Heading = () => (
         <Title>National Budget</Title>
       </HeadingText>
       <SelectsGroup>
-      <CustomizedSelect />
-        <CustomizedDateSelect />
-        <ButtonDetails>
-          Detailed analysis
-          <ArrowImage src={Arrow} alt="Arrow" />
-        </ButtonDetails>
+        <CustomizedSelect />
+        <RightOptions>
+          <CustomizedDateSelect />
+          <ButtonDetails>
+            Detailed analysis
+            <ArrowImage src={Arrow} alt="Arrow" />
+          </ButtonDetails>
+        </RightOptions>
       </SelectsGroup>
     </HeadingContainer>
   </HeadingWrapper>

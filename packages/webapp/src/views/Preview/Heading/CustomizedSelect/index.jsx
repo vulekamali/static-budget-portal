@@ -6,6 +6,14 @@ import Select from "@material-ui/core/Select";
 import MenuItem from "@material-ui/core/MenuItem";
 import Icon from '../arrow-drop-down.svg';
 
+const CustomizedForm = styled.div`
+  width: 50%;
+
+  @media screen and (max-width: 675px) {
+    width: 65%;
+  }
+`;
+
 const FormControlCtrl = styled(FormControl)`
   font-weight: 700;
   width: 70%;
@@ -70,24 +78,26 @@ class CustomizedSelect extends Component{
 
   render() {
     return (
-      <form autoComplete="off">
-        <FormControlCtrl>
-          <SelectPreview
-            value={this.state.budgetValue}
-            onChange={this.handleChange}
-            displayEmpty
-            name="budgetValue"
-            IconComponent={() => (
-              <ImageIcon src={Icon} alt="Logo" />
-            )}
-          >
-            <MenuItem value="">None</MenuItem>
-            <MenuItem value={10}>Ten</MenuItem>
-            <MenuItem value={20}>Twenty</MenuItem>
-            <MenuItem value={30}>Thirty</MenuItem>
-          </SelectPreview>
-        </FormControlCtrl>
-      </form>
+      <CustomizedForm>
+          <form autoComplete="off">
+          <FormControlCtrl>
+            <SelectPreview
+              value={this.state.budgetValue}
+              onChange={this.handleChange}
+              displayEmpty
+              name="budgetValue"
+              IconComponent={() => (
+                <ImageIcon src={Icon} alt="Logo" />
+              )}
+            >
+              <MenuItem value="">None</MenuItem>
+              <MenuItem value={10}>Ten</MenuItem>
+              <MenuItem value={20}>Twenty</MenuItem>
+              <MenuItem value={30}>Thirty</MenuItem>
+            </SelectPreview>
+          </FormControlCtrl>
+        </form>
+      </CustomizedForm>
     );
   }
 }
