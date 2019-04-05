@@ -1,6 +1,7 @@
 import React from 'react';
 import ReactMarkdown from 'react-markdown';
 
+import Heading from './Heading';
 import Intro from './Intro';
 import SectionHeading from '../../components/SectionHeading';
 import BarChart from '../../components/BarChart';
@@ -16,6 +17,7 @@ import {
 
 const Preview = ({ resources, items, description, sphere }) => (
   <React.Fragment>
+    <Heading />
     <Intro {...resources} sphere={sphere} />
     <SectionHeading title='Department information' />
     <TextWrapper>
