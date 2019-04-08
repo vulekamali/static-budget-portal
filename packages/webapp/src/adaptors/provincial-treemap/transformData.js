@@ -1,6 +1,6 @@
 const transformData = ({ total, items }) => {
   console.log(items)
-  const provinces = ['Eastern Cape','Free State','Gauteng','Limpopo','Mpumalanga','Northern Cape','Western Cape','North West'].reduce(
+  const provinces = ['Eastern Cape','Free State','Gauteng','Limpopo','Mpumalanga','Northern Cape','Western Cape','North West', 'KwaZulu-Natal'].reduce(
     (result, provinceName) => {
       const children = items.filter(item => item.province === provinceName).map(({ slug, percentage_of_total, ...data }) => ({
         ...data,
