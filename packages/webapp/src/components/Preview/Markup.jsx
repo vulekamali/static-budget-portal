@@ -16,13 +16,13 @@ import {
   FooterDetails
 } from './styled';
 
-const callDescription = description => {
+const callDescription = (description, subHeading) => {
   if(!description) {
     return null;
   }
   return (
     <React.Fragment>
-      <SectionHeading title='Department information' />
+      <SectionHeading title={subHeading} />
       <TextWrapper>
         <TextContainer>
           <Description>
@@ -45,13 +45,14 @@ const Markup = (props) => {
     selected,
     eventHandler,
     year,
+    subHeading
   } = props;
 
   return (
     <React.Fragment>
       <Heading {...{ departmentNames, government, selected, eventHandler, year, sphere }} />
       <BudgetAmounts {...resources} sphere={sphere} />
-      {callDescription(description)}
+      {callDescription(description, subHeading)}
       <SectionHeading title='Department programmes' />
       <div key={selected}>
         <BarChart {...{ items }} />
