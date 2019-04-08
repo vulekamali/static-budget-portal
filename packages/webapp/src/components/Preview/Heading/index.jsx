@@ -19,6 +19,16 @@ import {
   ArrowStyled
  } from './styled';
 
+
+const callDetailedAnalysisButton = url => (
+  <Link href={url}>
+    <ButtonDetails>
+      <ButtonText>Detailed Analysis</ButtonText>
+      <ArrowStyled />
+    </ButtonDetails>
+  </Link>
+);
+
 const Heading = ({ government, departmentNames, selected, eventHandler, year, sphere }) => {
   const url = `/${year}/${sphere}/${government === 'south-africa' ? '' : `${government}/`}departments/${selected}`;
 
@@ -32,12 +42,7 @@ const Heading = ({ government, departmentNames, selected, eventHandler, year, sp
           <CustomizedSelect {...{ departmentNames, selected, eventHandler }} />
           <RightOptions>
             <CustomizedDateSelect />
-            <Link href={url}>
-            <ButtonDetails>
-              <ButtonText>Detailed Analysis</ButtonText>
-              <ArrowStyled />
-            </ButtonDetails>
-            </Link>
+            {!!url && callDetailedAnalysisButton(url)}
           </RightOptions>
         </SelectsGroup>
       </HeadingContainer>
