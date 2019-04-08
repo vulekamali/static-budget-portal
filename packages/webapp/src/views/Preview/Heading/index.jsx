@@ -13,6 +13,7 @@ import {
   Title,
   SelectsGroup,
   RightOptions,
+  Link,
   ButtonDetails,
   ButtonText,
   ArrowStyled
@@ -31,12 +32,12 @@ const Heading = ({ government, departmentNames, selected, eventHandler, year, sp
           <CustomizedSelect {...{ departmentNames, selected, eventHandler }} />
           <RightOptions>
             <CustomizedDateSelect />
-            <a href={url}>
+            <Link href={url}>
             <ButtonDetails>
               <ButtonText>Detailed Analysis</ButtonText>
               <ArrowStyled />
             </ButtonDetails>
-            </a>
+            </Link>
           </RightOptions>
         </SelectsGroup>
       </HeadingContainer>

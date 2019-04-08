@@ -72,6 +72,9 @@ const RightOptions = styled.div`
   }
 `;
 
+const Link = styled.a`
+  text-decoration: none;
+`;
 
 const ButtonDetails = styled(Button)`
   && {
@@ -125,6 +128,7 @@ export {
   Title,
   SelectsGroup,
   RightOptions,
+  Link,
   ButtonDetails,
   ButtonText,
   ArrowStyled
@@ -137,6 +141,7 @@ export default {
   Title,
   SelectsGroup,
   RightOptions,
+  Link,
   ButtonDetails,
   ButtonText,
   ArrowStyled
