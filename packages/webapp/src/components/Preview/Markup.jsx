@@ -5,15 +5,12 @@ import Heading from './Heading';
 import BudgetAmounts from './BudgetAmounts';
 import SectionHeading from '../SectionHeading';
 import BarChart from '../BarChart';
-import calcFineprint from './calcFineprint';
+import FinePrint from './FinePrint';
 
 import {
   TextWrapper,
   TextContainer,
-  Description,
-  FooterWrapper,
-  FooterContainer,
-  FooterDetails
+  Description
 } from './styled';
 
 const callDescription = (description, subHeading) => {
@@ -57,11 +54,7 @@ const Markup = (props) => {
       <div key={selected}>
         <BarChart {...{ items }} />
       </div>
-      <FooterWrapper>
-        <FooterContainer>
-          <FooterDetails>{calcFineprint(year)}</FooterDetails>
-        </FooterContainer>
-      </FooterWrapper>
+      <FinePrint {...{ year }} />
     </React.Fragment>
   );
 };
