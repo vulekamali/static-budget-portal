@@ -9,23 +9,25 @@ const HeadingWrapper = styled.div`
   width: 100%;
   justify-content: center;
   align-items: center;
-  background: #f7f7f7;
+  background: #efefef;
   padding: 16px;
   margin-bottom: 36px;
 
-  @media screen and (min-width: 600px) {
-    padding-top: 80px;
-    padding-bottom: 64px;
-    margin-bottom: 74px;
+  @media screen and (min-width: 550px) {
+    padding-right: 48px;
+    padding-left: 48px;
+  }
 
+  @media screen and (min-width: 600px) {
+    padding: 64px 48px;
+    margin-bottom: 64px;
   }
 `;
 
 const HeadingContainer = styled.div`
   width: 100%;
-  max-width: 1375px;
+  max-width: 1200px;
   box-sizing: border-box;
-  background: #f7f7f7;
 `;
 
 const HeadingText = styled.div`
@@ -82,16 +84,14 @@ const ButtonDetails = styled(Button)`
     background: #000;
     color: #fff;
     text-transform: none;
-    padding: 10px 16px;
-    margin-left: 8px;
+    padding: 10px 13px 9px 16px;
 
     &:hover {
       background: ${darken(0.1, '#000')};
     }
 
     @media screen and (min-width: 600px) {
-      padding: 20px 24px;
-      width: 260px;
+      padding: 20px 16px;
     }
   }
 `;
@@ -109,15 +109,36 @@ const ButtonText = styled.span`
   }
 `;
 
+const Details = styled.span`
+  font-family: Roboto;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 120%;
+  letter-spacing: 0.15px;
+  white-space: nowrap;
+
+  @media screen and (min-width: 600px) {
+    display: none;
+  }
+`;
+const DetailedAnalysis = styled.span`
+  display: none;
+
+  @media screen and (min-width: 600px) {
+    display: block;
+    font-family: Roboto;
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 120%;
+    letter-spacing: 0.15px;
+    white-space: nowrap;
+  }
+`;
+
 const ArrowStyled = styled(Arrow)`
   && {
     padding-left: 13px;
     box-sizing: content-box;
-    display: none;
-
-    @media screen and (min-width: 400px) {
-      display: block;
-    }
   }
 `;
 
@@ -131,7 +152,9 @@ export {
   Link,
   ButtonDetails,
   ButtonText,
-  ArrowStyled
+  ArrowStyled,
+  Details,
+  DetailedAnalysis
 }
 
 export default {
@@ -144,5 +167,7 @@ export default {
   Link,
   ButtonDetails,
   ButtonText,
-  ArrowStyled
+  ArrowStyled,
+  Details,
+  DetailedAnalysis
 }

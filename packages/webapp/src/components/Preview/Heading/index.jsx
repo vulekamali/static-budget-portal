@@ -16,14 +16,19 @@ import {
   Link,
   ButtonDetails,
   ButtonText,
-  ArrowStyled
+  ArrowStyled,
+  Details,
+  DetailedAnalysis
  } from './styled';
 
 
 const callDetailedAnalysisButton = url => (
   <Link href={url}>
     <ButtonDetails>
-      <ButtonText>Detailed Analysis</ButtonText>
+    <ButtonText>
+      <Details>Details</Details>
+      <DetailedAnalysis>Detailed Analysis</DetailedAnalysis>
+    </ButtonText>
       <ArrowStyled />
     </ButtonDetails>
   </Link>
