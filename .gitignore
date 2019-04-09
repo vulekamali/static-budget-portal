@@ -1,4 +1,8 @@
 _site
+assets/generated
+_data/assets.json
+webapp-assets.json
+static/js
 .sass-cache
 .jekyll-metadata
 backstop_data
@@ -11,6 +15,7 @@ vendor
 .docz
 packages/webapp/build
 /.vagrant/
+packages/webapp/public
 
 # dependencies
 node_modules
