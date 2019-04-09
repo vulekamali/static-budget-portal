@@ -14,6 +14,7 @@ const CustomizedForm = styled.div`
 const SelectPreviewDate = styled(Select)`
   && {
     width: 100%;
+    margin-right: 8px;
 
     & .disabled {
       color: rgba(0, 0, 0, 0.26);
@@ -21,13 +22,17 @@ const SelectPreviewDate = styled(Select)`
 
     & .icon {
       color: rgba(0, 0, 0, 0.26);
-      margin-right: 16px;
+      margin-right: 10px;
+
+      @media screen and (min-width: 600px) {
+        margin-right: 16px;
+      }
     }
 
     & .selectMenu {
       background: #d8d8d8;
       border-radius: 3px;
-      padding: 13px 16px;
+      padding: 13.5px 14px;
       font-size: 14px;
       font-weight: 700;
       line-height: 120%;

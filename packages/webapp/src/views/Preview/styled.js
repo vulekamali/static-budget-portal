@@ -70,13 +70,12 @@ const FooterWrapper = styled.div`
 `;
 
 const FooterContainer = styled.div`
-  margin-top: 16px;
+  margin-top: 8px;
   width: 100%;
   max-width: 1200px;
 
   @media screen and (min-width: 600px) {
-    margin-top: 32px;
-    margin-bottom: 32px;
+    margin-bottom: 16px;
   }
 `;
 

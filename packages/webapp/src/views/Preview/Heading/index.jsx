@@ -16,7 +16,9 @@ import {
   Link,
   ButtonDetails,
   ButtonText,
-  ArrowStyled
+  ArrowStyled,
+  Details,
+  DetailedAnalysis
  } from './styled';
 
 const Heading = ({ government, departmentNames, selected, eventHandler, year, sphere }) => {
@@ -34,7 +36,7 @@ const Heading = ({ government, departmentNames, selected, eventHandler, year, sp
             <CustomizedDateSelect />
             <Link href={url}>
             <ButtonDetails>
-              <ButtonText>Detailed Analysis</ButtonText>
+              <ButtonText><Details>Details</Details><DetailedAnalysis>Detailed Analysis</DetailedAnalysis></ButtonText>
               <ArrowStyled />
             </ButtonDetails>
             </Link>

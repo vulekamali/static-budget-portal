@@ -19,8 +19,8 @@ const HeadingWrapper = styled.div`
   }
 
   @media screen and (min-width: 600px) {
-    padding: 80px 48px 64px;
-    margin-bottom: 74px;
+    padding: 64px 48px;
+    margin-bottom: 64px;
   }
 `;
 
@@ -84,8 +84,7 @@ const ButtonDetails = styled(Button)`
     background: #000;
     color: #fff;
     text-transform: none;
-    padding: 10px 16px;
-    margin-left: 8px;
+    padding: 10px 13px 9px 16px;
 
     &:hover {
       background: ${darken(0.1, '#000')};
@@ -110,15 +109,36 @@ const ButtonText = styled.span`
   }
 `;
 
+const Details = styled.span`
+  font-family: Roboto;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 120%;
+  letter-spacing: 0.15px;
+  white-space: nowrap;
+
+  @media screen and (min-width: 600px) {
+    display: none;
+  }
+`;
+const DetailedAnalysis = styled.span`
+  display: none;
+
+  @media screen and (min-width: 600px) {
+    display: block;
+    font-family: Roboto;
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 120%;
+    letter-spacing: 0.15px;
+    white-space: nowrap;
+  }
+`;
+
 const ArrowStyled = styled(Arrow)`
   && {
     padding-left: 13px;
     box-sizing: content-box;
-    display: none;
-
-    @media screen and (min-width: 400px) {
-      display: block;
-    }
   }
 `;
 
@@ -132,7 +152,9 @@ export {
   Link,
   ButtonDetails,
   ButtonText,
-  ArrowStyled
+  ArrowStyled,
+  Details,
+  DetailedAnalysis
 }
 
 export default {
@@ -145,5 +167,7 @@ export default {
   Link,
   ButtonDetails,
   ButtonText,
-  ArrowStyled
+  ArrowStyled,
+  Details,
+  DetailedAnalysis
 }

@@ -56,6 +56,7 @@ const IntroSubHeading = styled(Typography)`
     font-size: 10px;
     margin: 0;
     color: #000;
+    white-space: nowrap;
 
     @media screen and (min-width: 600px) {
       font-size: 20px;
