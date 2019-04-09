@@ -8,18 +8,19 @@ import BarChart from '../BarChart';
 import FinePrint from './FinePrint';
 
 import {
+  Wrapper,
   TextWrapper,
   TextContainer,
   Description
 } from './styled';
 
-const callDescription = (description, subHeading) => {
+const callDescription = (description) => {
   if(!description) {
     return null;
   }
   return (
     <React.Fragment>
-      <SectionHeading title={subHeading} />
+      <SectionHeading title='Department Information' />
       <TextWrapper>
         <TextContainer>
           <Description>
@@ -34,7 +35,6 @@ const callDescription = (description, subHeading) => {
 const Markup = (props) => {
   const {
     resources,
-    items,
     description,
     sphere,
     government,
@@ -42,20 +42,17 @@ const Markup = (props) => {
     selected,
     eventHandler,
     year,
-    subHeading
+    children,
+    hasButton
   } = props;
 
   return (
-    <React.Fragment>
-      <Heading {...{ departmentNames, government, selected, eventHandler, year, sphere }} />
+    <Wrapper>
+      <Heading {...{ departmentNames, government, selected, eventHandler, year, sphere }} hasButton={hasButton}/>
       <BudgetAmounts {...resources} sphere={sphere} />
-      {callDescription(description, subHeading)}
-      <SectionHeading title='Department programmes' />
-      <div key={selected}>
-        <BarChart {...{ items }} />
-      </div>
-      <FinePrint {...{ year }} />
-    </React.Fragment>
+      {callDescription(description)}
+      {children}
+    </Wrapper>
   );
 };
 

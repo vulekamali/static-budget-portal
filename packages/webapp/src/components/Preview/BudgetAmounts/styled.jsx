@@ -5,6 +5,11 @@ const Wrapper = styled.div`
   justify-content: center;
   margin-right: 16px;
   margin-left: 16px;
+
+  @media screen and (min-width: 550px) {
+    padding-right: 48px;
+    padding-left: 48px;
+  }
 `;
 
 const Summary = styled.div`

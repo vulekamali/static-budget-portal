@@ -45,7 +45,7 @@ const Markup = (props) => {
     departmentNames,
     selected,
     eventHandler,
-    year,
+    year
   } = props;
 
   return (

@@ -2,12 +2,21 @@ import styled from 'styled-components';
 
 import { Typography } from '@material-ui/core';
 
+const Wrapper = styled.div`
+  background: #fff;
+`;
+
 const TextWrapper = styled.div`
   display: flex;
   justify-content: center;
   align-items: center;
   margin-right: 16px;
   margin-left: 16px;
+
+  @media screen and (min-width: 550px) {
+    margin-right: 48px;
+    margin-left: 48px;
+  }
 `;
 
 const TextContainer = styled.div`
@@ -26,6 +35,11 @@ const Description = styled(Typography)`
     line-height: 26px;
     color: #000;
 
+    & > h2 {
+      margin-top: 0;
+      font-size: 16px;
+    }
+
     @media screen and (min-width: 600px) {
       font-size: 16px;
     }
@@ -43,12 +57,14 @@ const Description = styled(Typography)`
 `;
 
 export {
+  Wrapper,
   TextWrapper,
   TextContainer,
   Description
 }
 
 export default {
+  Wrapper,
   TextWrapper,
   TextContainer,
   Description

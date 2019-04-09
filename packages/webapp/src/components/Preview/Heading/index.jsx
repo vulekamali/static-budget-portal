@@ -22,19 +22,23 @@ import {
  } from './styled';
 
 
-const callDetailedAnalysisButton = url => (
-  <Link href={url}>
-    <ButtonDetails>
-    <ButtonText>
-      <Details>Details</Details>
-      <DetailedAnalysis>Detailed Analysis</DetailedAnalysis>
-    </ButtonText>
-      <ArrowStyled />
-    </ButtonDetails>
-  </Link>
-);
+const callDetailedAnalysisButton = (url, hasButton) => {
+  if(hasButton) {
+    return (
+      <Link href={url}>
+        <ButtonDetails>
+        <ButtonText>
+          <Details>Details</Details>
+          <DetailedAnalysis>Detailed Analysis</DetailedAnalysis>
+        </ButtonText>
+          <ArrowStyled />
+        </ButtonDetails>
+    </Link>
+    );
+  }
+};
 
-const Heading = ({ government, departmentNames, selected, eventHandler, year, sphere }) => {
+const Heading = ({ government, departmentNames, selected, eventHandler, year, sphere, hasButton }) => {
   const provinceFolder = government === 'south-africa' ? '' : `${government}/`;
   const url = `/${year}/${sphere}/${provinceFolder}departments/${selected}`;
 
@@ -48,7 +52,7 @@ const Heading = ({ government, departmentNames, selected, eventHandler, year, sp
           <CustomizedSelect {...{ departmentNames, selected, eventHandler }} />
           <RightOptions>
             <CustomizedDateSelect />
-            {!!url && callDetailedAnalysisButton(url)}
+            {callDetailedAnalysisButton(url, hasButton)}
           </RightOptions>
         </SelectsGroup>
       </HeadingContainer>
