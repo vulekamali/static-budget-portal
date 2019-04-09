@@ -48,7 +48,7 @@ const Markup = (props) => {
 
   return (
     <Wrapper>
-      <Heading {...{ departmentNames, government, selected, eventHandler, year, sphere }} hasButton={hasButton}/>
+      <Heading {...{ departmentNames, government, selected, eventHandler, year, sphere, hasButton }} />
       <BudgetAmounts {...resources} sphere={sphere} />
       {callDescription(description)}
       {children}

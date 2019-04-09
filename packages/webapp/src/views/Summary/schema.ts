@@ -27,6 +27,10 @@ export type Tyear = string;
  * Outlining the scope and mandate of a department
  */
 export type Tdescription = string;
+/**
+ * A specific department category
+ */
+export type Tsphere = string;
 
 export interface ItemShape {
   title: TitemTitle;
@@ -41,6 +45,7 @@ export interface ResourcesShape {
 export interface PropsShape {
   year: Tyear;
   items: ItemShape[];
+  sphere: Tsphere;
   resources: ResourcesShape;
   description?: Tdescription;
 }
@@ -57,6 +62,7 @@ const mock: PropsShape = {
       amount: 700,
     }
   ],
+  sphere: 'national',
   resources: {
     value: 2000,
     consolidated: 25

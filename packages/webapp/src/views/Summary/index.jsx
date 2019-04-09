@@ -10,11 +10,14 @@ const Summary = (props) => {
     items,
     resources,
     description,
-    year
+    year,
+    sphere,
+    government
   } = props;
+  console.log(props)
   return (
     <React.Fragment>
-      <Preview {...{ items, resources, description }} hasButton>
+      <Preview {...{ items, resources, description, sphere, government }} hasButton>
         <SectionHeading title='Department programmes' />
           <div>
             <BarChart {...{ items }} />

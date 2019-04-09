@@ -15,6 +15,8 @@ const props = {
       amount: 700,
     }
   ],
+  sphere: 'national',
+  government: 'south-africa',
   resources: {
     value: 2000,
     consolidated: 25
