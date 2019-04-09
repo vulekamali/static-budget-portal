@@ -22,7 +22,8 @@ import {
  } from './styled';
 
 const Heading = ({ government, departmentNames, selected, eventHandler, year, sphere }) => {
-  const url = `/${year}/${sphere}/${government === 'south-africa' ? '' : `${government}/`}departments/${selected}`;
+  const provinceFolder = government === 'south-africa' ? '' : `${government}/`;
+  const url = `/${year}/${sphere}/${provinceFolder}departments/${selected}`;
 
   return (
     <HeadingWrapper>

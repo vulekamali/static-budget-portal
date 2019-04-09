@@ -9,6 +9,11 @@ const FooterWrapper = styled.div`
   align-items: center;
   margin-right: 16px;
   margin-left: 16px;
+
+  @media screen and (min-width: 550px) {
+    margin-right: 48px;
+    margin-left: 48px;
+  }
 `;
 
 const FooterContainer = styled.div`
