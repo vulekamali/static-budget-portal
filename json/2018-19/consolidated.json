@@ -1,0 +1,8 @@
+---
+---
+
+{% if (site.data.2018-19.consolidated) %}
+  {{ site.data.2018-19.consolidated | jsonify }}
+{% else %}
+  {}
+{% endif %}
