@@ -3,7 +3,7 @@ import ReactMarkdown from 'react-markdown';
 
 import Heading from './Heading';
 import BudgetAmounts from './BudgetAmounts';
-import SectionHeading from '../SectionHeading';
+import SectionHeading from './SectionHeading';
 import BarChart from '../BarChart';
 import FinePrint from './FinePrint';
 
