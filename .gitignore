@@ -1,4 +1,8 @@
 _site
+assets/generated
+_data/assets.json
+webapp-assets.json
+static/js
 .sass-cache
 .jekyll-metadata
 backstop_data
@@ -37,3 +41,4 @@ yarn-error.log*
 
 package-lock.json
 storybook-build
+public/json/

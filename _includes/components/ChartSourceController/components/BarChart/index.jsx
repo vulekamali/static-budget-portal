@@ -24,7 +24,7 @@ const Markup = ({ renderChart, height, downloadAction, rotated }) => {
       <div className="BarChart-chart">
         <canvas ref={renderChart} style={{ width: '100%', height: `${rotated ? 350 : height}px` }} />
       </div>
-      {buildDownloadButton(downloadAction)}
+      {/* {buildDownloadButton(downloadAction)} */}
     </div>
   );
 };
