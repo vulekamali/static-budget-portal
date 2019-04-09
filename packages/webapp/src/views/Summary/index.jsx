@@ -14,7 +14,7 @@ const Summary = (props) => {
   } = props;
   return (
     <React.Fragment>
-      <Preview {...{ items, resources, description }}>
+      <Preview {...{ items, resources, description }} hasButton>
         <SectionHeading title='Department programmes' />
           <div>
             <BarChart {...{ items }} />
