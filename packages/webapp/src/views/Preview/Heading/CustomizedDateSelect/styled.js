@@ -21,6 +21,7 @@ const SelectPreviewDate = styled(Select)`
 
     & .icon {
       color: rgba(0, 0, 0, 0.26);
+      margin-right: 16px;
     }
 
     & .selectMenu {

@@ -1,10 +1,16 @@
 import styled from 'styled-components';
+import { Typography } from '@material-ui/core';
 
 const Wrapper = styled.div`
   font-family: Roboto;
   justify-content: center;
   margin-right: 16px;
   margin-left: 16px;
+
+  @media screen and (min-width: 550px) {
+    margin-right: 48px;
+    margin-left: 48px;
+  }
 `;
 
 const Summary = styled.div`
@@ -29,22 +35,31 @@ const Budget = styled.div`
   width: 50%;
 `;
 
-const IntroMainHeading = styled.h1`
-  font-size: 24px;
-  line-height: 1.3;
-  margin: 0;
-  display: flex;
-  align-items: center;
-  @media screen and (min-width: 600px) {
-    font-size: 48px;
+const IntroMainHeading = styled(Typography)`
+  && {
+    font-size: 24px;
+    line-height: 1.3;
+    margin: 0;
+    display: flex;
+    align-items: center;
+    color: #000;
+    font-weight: 700;
+
+    @media screen and (min-width: 600px) {
+      font-size: 48px;
+    }
   }
 `;
 
-const IntroSubHeading = styled.p`
-  font-size: 10px;
-  margin: 0;
-  @media screen and (min-width: 600px) {
-    font-size: 20px;
+const IntroSubHeading = styled(Typography)`
+  && {
+    font-size: 10px;
+    margin: 0;
+    color: #000;
+
+    @media screen and (min-width: 600px) {
+      font-size: 20px;
+    }
   }
 `;
 

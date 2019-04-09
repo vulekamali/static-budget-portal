@@ -58,7 +58,7 @@ const SelectPreview = styled(Select)`
       @media screen and (min-width: 600px) {
         height: 64px;
         font-size: 24px;
-        line-height: 45px;
+        line-height: 49px;
         padding-right: 80px;
       }
     }

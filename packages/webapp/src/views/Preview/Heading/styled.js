@@ -9,23 +9,25 @@ const HeadingWrapper = styled.div`
   width: 100%;
   justify-content: center;
   align-items: center;
-  background: #f7f7f7;
+  background: #efefef;
   padding: 16px;
   margin-bottom: 36px;
 
-  @media screen and (min-width: 600px) {
-    padding-top: 80px;
-    padding-bottom: 64px;
-    margin-bottom: 74px;
+  @media screen and (min-width: 550px) {
+    padding-right: 48px;
+    padding-left: 48px;
+  }
 
+  @media screen and (min-width: 600px) {
+    padding: 80px 48px 64px;
+    margin-bottom: 74px;
   }
 `;
 
 const HeadingContainer = styled.div`
   width: 100%;
-  max-width: 1375px;
+  max-width: 1200px;
   box-sizing: border-box;
-  background: #f7f7f7;
 `;
 
 const HeadingText = styled.div`
@@ -90,8 +92,7 @@ const ButtonDetails = styled(Button)`
     }
 
     @media screen and (min-width: 600px) {
-      padding: 20px 24px;
-      width: 260px;
+      padding: 20px 16px;
     }
   }
 `;

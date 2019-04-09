@@ -3,11 +3,12 @@ import ReactMarkdown from 'react-markdown';
 
 import Heading from './Heading';
 import BudgetAmounts from './BudgetAmounts';
-import SectionHeading from '../../components/SectionHeading';
+import SectionHeading from './SectionHeading';
 import BarChart from '../../components/BarChart';
 import calcFineprint from './calcFineprint';
 
 import {
+  Wrapper,
   TextWrapper,
   TextContainer,
   Description,
@@ -48,7 +49,7 @@ const Markup = (props) => {
   } = props;
 
   return (
-    <React.Fragment>
+    <Wrapper>
       <Heading {...{ departmentNames, government, selected, eventHandler, year, sphere }} />
       <BudgetAmounts {...resources} sphere={sphere} />
       {callDescription(description)}
@@ -61,7 +62,7 @@ const Markup = (props) => {
           <FooterDetails>{calcFineprint(year)}</FooterDetails>
         </FooterContainer>
       </FooterWrapper>
-    </React.Fragment>
+    </Wrapper>
   );
 };
 
