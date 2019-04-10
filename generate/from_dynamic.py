@@ -28,12 +28,6 @@ YEAR_SLUGS = [
     '2016-17',
 ]
 
-TREEMAP_BUDGET_TYPES = [
-    'original',
-    'adjusted',
-    'actual'
-]
-
 BUDGET_TYPES = [
     'original',
     'adjusted',
@@ -109,10 +103,12 @@ def write_basic_page(page_url_path, page_yaml, layout=None):
     file_path = "%s.md" % page_url_path[1:]
     ensure_file_dirs(file_path)
     front_matter = {
-        'data_key': page['slug'],
+        'data_key': page['slug'] if page else '',
         'layout': layout or page['slug'],
     }
-    financial_year = page.get('selected_financial_year', None)
+    financial_year = None
+    if page:
+        financial_year = page.get('selected_financial_year', None)
     if financial_year:
         front_matter['financial_year'] = financial_year
     with open(file_path, "wb") as outfile:
@@ -408,9 +404,11 @@ else:
             project_file.write(GENERATED_YAML_COMMENT)
             project_file.write(r.text)
 
+# Treemaps
+
 SPHERES = ('national', 'provincial')
 for year in YEAR_SLUGS:
-    for budget_phase in TREEMAP_BUDGET_TYPES:
+    for budget_phase in BUDGET_TYPES:
         for sphere in SPHERES:
             listing_url_path = '/{}/{}/{}'.format(year, sphere, budget_phase)
             logger.info(listing_url_path)
@@ -470,8 +468,6 @@ for year in YEAR_SLUGS:
                                 slug = department_object['slug']
                                 markdown_path = '/{}/previews/{}/south-africa/{}'.format(year, sphere, slug)
                                 write_basic_page(markdown_path, '', 'department_preview')
-
-
 
 # Consolidated treemap
 

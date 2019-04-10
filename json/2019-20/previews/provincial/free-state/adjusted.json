@@ -1,0 +1,8 @@
+---
+---
+
+{% if (site.data.2019-20.previews.provincial.free-state.adjusted) %}
+  {{ site.data.2019-20.previews.provincial.free-state.adjusted | jsonify }}
+{% else %}
+  {}
+{% endif %}

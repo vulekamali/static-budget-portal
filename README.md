@@ -14,7 +14,7 @@ Set up dev env
 
 We are in the process of incrementally moving from a bespoke Jekyll-Preact architecture to a standard React (via [Create React App](https://github.com/facebook/create-react-app)) architecture.
 
-In order to build the current Jekyll-Preact assets you can run the following in the project root folder: 
+In order to build the current Jekyll-Preact assets you can run the following in the project root folder:
 
 ```
 yarn build
@@ -26,12 +26,6 @@ The new React environment is integrated into the existing architecture via a sin
 
 - `yarn start`: This is where you will spend the majority of your time, this is a library that contains (and documents) all the components/views that will be included in the built JavaScript file.
 - `yarn build`: Builds the production JavaScript file that needs to be added to the existing Vulekamali stack.
-
-Once a JavaScript file has been generated via `yarn build` you can include it in Vulekamali as follows (this will be automated in future):
-
-- Replace the generated JavaScript file in `/assets/webapp` from `/packages/workspace/dist`.
-- Update the value of the `/assets/webapp/scripts.js` key inside `/_data/webapp.assets.json`.
-
 
 ## Backend
 
@@ -54,17 +48,6 @@ Development
 ```
 yarn build
 ```
-
-Note that it's a good idea to make sure your branch's generated assets are up to date with master before deploying merging your pull request:
-
-```
-git fetch
-git merge origin/master # ignore conflicts on assets/* or _data/assets.json
-rm -r assets/generated/* _data/assets.json
-yarn build
-```
-
-Then stage the changes and commit as you would normally for a merge.
 
 Be sure to run Jekyll and have a quick look whether things look and work right.
 
