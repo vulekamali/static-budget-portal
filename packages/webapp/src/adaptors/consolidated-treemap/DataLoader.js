@@ -2,8 +2,7 @@ import { Component, createElement } from 'react';
 import axios from 'axios';
 
 import NationalTreemap from '../../views/NationalTreemap';
-import transformData from './transformData';
-import { api } from './config.json';
+import { api } from './config.json.js';
 
 class DataLoader extends Component {
   constructor(props) {
@@ -17,7 +16,7 @@ class DataLoader extends Component {
 
   componentDidMount() {
     const loadliveData = ({ data }) =>
-      this.setState({ data: transformData(data), loading: false });
+      this.setState({ data, loading: false });
 
     return axios.get(api)
       .then(({ data }) => data)
