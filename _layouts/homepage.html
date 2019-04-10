@@ -17,27 +17,6 @@ layout: page-shell
 
   <div id="provincial-treemap" class="national-treemap" data-webapp="provincial-treemap"></div>
 
-  <div class="Container u-paddingTop25">
-    <div class="Features">
-      {% for feature in page_data.features_list %}
-        <div class="Features-item">
-          {%
-            include components/Preview/index.html
-            title=feature.title
-            excerpt=feature.excerpt
-            url=feature.url
-            icon=feature.icon
-            color=feature.color
-            transparent="true"
-            full_height="true"
-            top_align="true"
-            prompt="Read more"
-          %}
-        </div>
-      {% endfor %}
-    </div>
-  </div>
-
   {%
     include scenes/homepage/VideoSection/index.html
     video_1=video_1
