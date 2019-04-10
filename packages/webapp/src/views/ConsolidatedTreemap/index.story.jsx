@@ -4,7 +4,7 @@ import faker from 'faker';
 import { CssBaseline } from '@material-ui/core';
 
 import { randomLengthBlankArray, randomNumber, randomBool } from '../../helpers/randomizer';
-import NationalTreemap from './';
+import ConsolidatedTreemap from './';
 
 const items = randomLengthBlankArray(35, 45).map((value, id) => ({
   id,
@@ -18,7 +18,7 @@ const items = randomLengthBlankArray(35, 45).map((value, id) => ({
 
 
 const initialSelected = {
-  name: "National Budget Summary",
+  name: "Consolidated Budget Summary",
   value: "92348259852",
   url: null,
   color: "#D8D8D8"
@@ -27,7 +27,7 @@ const initialSelected = {
 const basic = () => (
   <Fragment>
     <CssBaseline />
-    <NationalTreemap
+    <ConsolidatedTreemap
       {...{ items, initialSelected }}
       verb='Explore'
       subject='this department'
@@ -37,5 +37,5 @@ const basic = () => (
 
 
 
-storiesOf('views.NationalTreemap', module)
+storiesOf('views.ConsolidatedTreemap', module)
   .add('Default', basic)

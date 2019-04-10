@@ -18,7 +18,7 @@ const Markup = ({ items, initialSelected }) => (
     {...{ initialSelected, footer }}
     chart={(onSelectedChange) => <Treemap {...{ items, onSelectedChange }} />}
     verb='Explore'
-    subject='this department'
+    subject='this focus area'
     title='Consolidated Budget Summary'
     phases={{
       disabled: "Original budget",
@@ -27,6 +27,7 @@ const Markup = ({ items, initialSelected }) => (
       disabled: "2019-20",
     }}
     anchor="consolidated-treemap"
+    isConsolidatedChart
   />
 )
 
