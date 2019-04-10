@@ -1,8 +1,8 @@
 import { Component, createElement } from 'react';
 import axios from 'axios';
 
-import NationalTreemap from '../../views/NationalTreemap';
-import { api } from './config.json.js';
+import ConsolidatedTreemap from '../../views/ConsolidatedTreemap';
+import { api } from './config';
 
 class DataLoader extends Component {
   constructor(props) {
@@ -41,7 +41,7 @@ class DataLoader extends Component {
 
     const passedProps = { items, initialSelected };
 
-    return createElement(NationalTreemap, passedProps);
+    return createElement(ConsolidatedTreemap, passedProps);
   }
 }
 
