@@ -34,6 +34,24 @@ TREEMAP_BUDGET_TYPES = [
     'actual'
 ]
 
+BUDGET_TYPES = [
+    'original',
+    'adjusted',
+    'actual'
+]
+
+PROVINCE_SLUGS = [
+    'gauteng',
+    'north-west',
+    'kwazulu-natal',
+    'western-cape',
+    'eastern-cape',
+    'northern-cape',
+    'free-state',
+    'mpumalanga',
+    'limpopo'
+]
+
 BASIC_PAGE_SLUGS = [
     'search-result',
 ]
