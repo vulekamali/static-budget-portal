@@ -19,7 +19,7 @@ const Markup = ({ items, initialSelected }) => (
     chart={(onSelectedChange) => <Treemap {...{ items, onSelectedChange }} />}
     verb='Explore'
     subject='this department'
-    title='National Budget Summary'
+    title='Consolidated Budget Summary'
     phases={{
       disabled: "Original budget",
     }}
