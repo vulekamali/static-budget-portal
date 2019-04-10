@@ -28,10 +28,22 @@ YEAR_SLUGS = [
     '2016-17',
 ]
 
-TREEMAP_BUDGET_TYPES = [
+BUDGET_TYPES = [
     'original',
     'adjusted',
     'actual'
+]
+
+PROVINCE_SLUGS = [
+    'gauteng',
+    'north-west',
+    'kwazulu-natal',
+    'western-cape',
+    'eastern-cape',
+    'northern-cape',
+    'free-state',
+    'mpumalanga',
+    'limpopo'
 ]
 
 BASIC_PAGE_SLUGS = [
@@ -91,10 +103,12 @@ def write_basic_page(page_url_path, page_yaml, layout=None):
     file_path = "%s.md" % page_url_path[1:]
     ensure_file_dirs(file_path)
     front_matter = {
-        'data_key': page['slug'],
+        'data_key': page['slug'] if page else '',
         'layout': layout or page['slug'],
     }
-    financial_year = page.get('selected_financial_year', None)
+    financial_year = None
+    if page:
+        financial_year = page.get('selected_financial_year', None)
     if financial_year:
         front_matter['financial_year'] = financial_year
     with open(file_path, "wb") as outfile:
@@ -390,9 +404,11 @@ else:
             project_file.write(GENERATED_YAML_COMMENT)
             project_file.write(r.text)
 
+# Treemaps
+
 SPHERES = ('national', 'provincial')
 for year in YEAR_SLUGS:
-    for budget_phase in TREEMAP_BUDGET_TYPES:
+    for budget_phase in BUDGET_TYPES:
         for sphere in SPHERES:
             listing_url_path = '/{}/{}/{}'.format(year, sphere, budget_phase)
             logger.info(listing_url_path)
@@ -422,3 +438,48 @@ for year in YEAR_SLUGS:
         ensure_file_dirs(listing_path)
         with open(listing_path, 'wb') as dataset_list_file:
             dataset_list_file.write(r.text)
+
+# Department preview pages
+
+for year in YEAR_SLUGS:
+    for budget_phase in BUDGET_TYPES:
+        for sphere in SPHERES:
+            if sphere == 'provincial':
+                for government in PROVINCE_SLUGS:
+                    listing_url_path = '/{}/previews/{}/{}/{}'.format(year, sphere, government, budget_phase)
+                    logger.info(listing_url_path)
+                    listing_url = portal_url + listing_url_path[1:] + '.yaml'
+                    r = http_get(session, listing_url)
+                    if r.status_code == 404:
+                        logger.info("No data for {}".format(listing_url))
+                    else:
+                        r.raise_for_status()
+                        listing_path = '_data%s.yaml' % listing_url_path
+                        ensure_file_dirs(listing_path)
+                        with open(listing_path, 'wb') as dataset_list_file:
+                            dataset_list_file.write(r.text)
+                            data = yaml.load(r.text)
+                            if data:
+                                for department_object in data['data']['items']:
+                                    slug = department_object['slug']
+                                    markdown_path = '/{}/previews/{}/{}/{}'.format(year, sphere, government, slug)
+                                    write_basic_page(markdown_path, '', 'department_preview')
+            elif sphere == 'national':
+                listing_url_path = '/{}/previews/{}/south-africa/{}'.format(year, sphere, budget_phase)
+                logger.info(listing_url_path)
+                listing_url = portal_url + listing_url_path[1:] + '.yaml'
+                r = http_get(session, listing_url)
+                if r.status_code == 404:
+                    logger.info("No data for {}".format(listing_url))
+                else:
+                    r.raise_for_status()
+                    listing_path = '_data%s.yaml' % listing_url_path
+                    ensure_file_dirs(listing_path)
+                    with open(listing_path, 'wb') as dataset_list_file:
+                        dataset_list_file.write(r.text)
+                        data = yaml.load(r.text)
+                        if data:
+                            for department_object in data['data']['items']:
+                                slug = department_object['slug']
+                                markdown_path = '/{}/previews/{}/south-africa/{}'.format(year, sphere, slug)
+                                write_basic_page(markdown_path, '', 'department_preview')

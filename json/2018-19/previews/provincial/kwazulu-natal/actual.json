@@ -1,0 +1,8 @@
+---
+---
+
+{% if (site.data.2018-19.previews.provincial.kwazulu-natal.actual) %}
+  {{ site.data.2018-19.previews.provincial.kwazulu-natal.actual | jsonify }}
+{% else %}
+  {}
+{% endif %}

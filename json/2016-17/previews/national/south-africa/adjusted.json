@@ -1,0 +1,8 @@
+---
+---
+
+{% if (site.data.2016-17.previews.national.south-africa.adjusted) %}
+  {{ site.data.2016-17.previews.national.south-africa.adjusted | jsonify }}
+{% else %}
+  {}
+{% endif %}

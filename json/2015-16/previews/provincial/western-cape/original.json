@@ -1,0 +1,8 @@
+---
+---
+
+{% if (site.data.2015-16.previews.provincial.western-cape.original) %}
+  {{ site.data.2015-16.previews.provincial.western-cape.original | jsonify }}
+{% else %}
+  {}
+{% endif %}
