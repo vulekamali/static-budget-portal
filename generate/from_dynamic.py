@@ -407,6 +407,54 @@ for year in YEAR_SLUGS:
                 with open(listing_path, 'wb') as dataset_list_file:
                     dataset_list_file.write(r.text)
 
+
+# Department preview pages
+
+for year in YEAR_SLUGS:
+    for budget_phase in BUDGET_TYPES:
+        for sphere in SPHERES:
+            if sphere == 'provincial':
+                for government in PROVINCE_SLUGS:
+                    listing_url_path = '/{}/previews/{}/{}/{}'.format(year, sphere, government, budget_phase)
+                    logger.info(listing_url_path)
+                    listing_url = portal_url + listing_url_path[1:] + '.yaml'
+                    r = http_get(session, listing_url)
+                    if r.status_code == 404:
+                        logger.info("No data for {}".format(listing_url))
+                    else:
+                        r.raise_for_status()
+                        listing_path = '_data%s.yaml' % listing_url_path
+                        ensure_file_dirs(listing_path)
+                        with open(listing_path, 'wb') as dataset_list_file:
+                            dataset_list_file.write(r.text)
+                            data = yaml.load(r.text)
+                            if data:
+                                for department_object in data['data']['items']:
+                                    slug = department_object['slug']
+                                    markdown_path = '/{}/previews/{}/{}/{}'.format(year, sphere, government, slug)
+                                    write_basic_page(markdown_path, '', 'department_preview')
+            elif sphere == 'national':
+                listing_url_path = '/{}/previews/{}/south-africa/{}'.format(year, sphere, budget_phase)
+                logger.info(listing_url_path)
+                listing_url = portal_url + listing_url_path[1:] + '.yaml'
+                r = http_get(session, listing_url)
+                if r.status_code == 404:
+                    logger.info("No data for {}".format(listing_url))
+                else:
+                    r.raise_for_status()
+                    listing_path = '_data%s.yaml' % listing_url_path
+                    ensure_file_dirs(listing_path)
+                    with open(listing_path, 'wb') as dataset_list_file:
+                        dataset_list_file.write(r.text)
+                        data = yaml.load(r.text)
+                        if data:
+                            for department_object in data['data']['items']:
+                                slug = department_object['slug']
+                                markdown_path = '/{}/previews/{}/south-africa/{}'.format(year, sphere, slug)
+                                write_basic_page(markdown_path, '', 'department_preview')
+
+
+
 # Consolidated treemap
 
 for year in YEAR_SLUGS:
