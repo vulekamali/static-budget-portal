@@ -7,8 +7,8 @@ import Treemap from './../../components/Treemap';
 
 const footer = (
   <Fragment>
-    <div>Please note the above treemap is a representation of the allocation for National Departments as per the National Revenue Fund.</div>
-    <div>Budget data from 1 April 2019 - 31 March 2020</div>
+    <div>Please note the above treemap is a representation of the allocation the National Revenue Fund to functions of government.</div>
+    <div>Budget data for the financial year 1 April 2019 - 31 March 2020</div>
   </Fragment>
 )
 
