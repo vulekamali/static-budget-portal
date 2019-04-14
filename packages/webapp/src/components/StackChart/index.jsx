@@ -8,7 +8,7 @@ import modifyIfZoomed from './modifyIfZoomed';
 
 const colorsList = createColorGenerator();
 
-class Treemap extends Component {
+class StackChart extends Component {
   constructor(props) {
     super(props);
 
@@ -59,8 +59,6 @@ class Treemap extends Component {
       onSelectedChange(selected);
     }
 
-    console.log("selectedURL", selected);
-
     this.setState({ 
       selected: selected.id,
       zoom: selected.zoom || null,
@@ -99,4 +97,4 @@ class Treemap extends Component {
   }
 }
 
-export default Treemap;
+export default StackChart;
