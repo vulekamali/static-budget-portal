@@ -108,7 +108,7 @@ const FocusItem = styled.div`
   padding: 0 32px;
 
   left: 0;
-  width: calc(100% - 32px);
+  width: calc(100%);
   background: white;
   font-family: Roboto;
   font-style: normal;
