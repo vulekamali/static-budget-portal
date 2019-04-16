@@ -56,6 +56,14 @@ const DetailsWrapper = styled.div`
   align-items: center;
   margin-right: 16px;
   margin-left: 16px;
+  &.StickToTop {
+    position: fixed;
+    z-index: 10;
+    top: 0;
+    padding-top: 17px;
+    width: calc(100% - 32px);
+    background: #fafafa;
+  }
 `;
 
 const DetailsContainer = styled.div`

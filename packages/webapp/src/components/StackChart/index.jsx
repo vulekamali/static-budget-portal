@@ -83,6 +83,7 @@ class StackChart extends Component {
 
   render() {
     const { state, events, values } = this;
+    const {canStickToTop} = this.props;
     const items = modifyIfZoomed(values.sortedItems, state.zoom);
 
     const passedProps = { 
@@ -91,6 +92,7 @@ class StackChart extends Component {
       items,
       fills: values.fills,
       hasChildren: values.hasChildren,
+      canStickToTop 
     };
 
     return <Markup {...passedProps} />;

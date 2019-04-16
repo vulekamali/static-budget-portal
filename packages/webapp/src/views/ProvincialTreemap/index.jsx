@@ -9,9 +9,10 @@ import StackChart from './../../components/StackChart';
 const Markup = ({ items, initialSelected, isMobile }) => (
   <ChartSection
     {...{ initialSelected }}
+    isMobile={isMobile}
     footer="Budget data from 1 April 2018 - 31 March 2019"
     chart={(onSelectedChange) => isMobile
-      ? <StackChart {...{ items, onSelectedChange }} /> 
+      ? <StackChart {...{ items, onSelectedChange }} canStickToTop /> 
       : <Treemap {...{ items, onSelectedChange }} />
     }
     verb='Explore'

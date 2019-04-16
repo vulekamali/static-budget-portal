@@ -37,13 +37,66 @@ export default function StackChart(containerNode) {
     return 0;
   }
 
+  this.getActiveLv2Idx = function(scrollTop) {
+    const { items } = chartOptions;
+    var lastIdx = items.length - 1;
+    var sumVal = items[lastIdx].amount + items[lastIdx].initialOffset;
+
+    var scaleY = d3.scaleLinear()
+      .domain([0, sumVal])
+      .range([0, totalRectHeight]);
+
+    for (var i = 0; i < items.length; i ++) {
+      var item = items[i];
+      if (scrollTop <= scaleY(item.initialOffset + item.amount) + i * groupLabelHeight) {
+        var itemL2s = item.children;
+        for (var j = 0; j < itemL2s.length; j ++) {
+          var item2 = itemL2s[j];
+          if (scrollTop <= scaleY(item.initialOffset + item2.initialOffset + item2.amount) + i * groupLabelHeight) {
+            return [i, j];
+          }
+        }
+      }
+    }
+    return [0,0];
+  }
+
+  this.updateSelection = function(Lv1Idx, Lv2Idx) {
+    var prevItem = svg.select(".selectedItem2");
+    prevItem.select(`rect`)
+      .transition()
+      .duration(100)
+      .attr("x", 0);
+    prevItem
+      .classed("selectedItem2", false);
+
+    var nextSelectId = calculateId(Lv1Idx, Lv2Idx);
+    svg.select(`#id-${nextSelectId} rect`)
+      .transition()
+      .duration(100)
+      .attr("x", selectedOffset);
+    svg.select(`#id-${nextSelectId}`)
+      .classed("selectedItem2", true);
+  }
+
   this.draw = function(options) {
     container.selectAll("svg").remove();
     svg = container.append("svg")
       .classed("svg-content", true);
 
-    const { items, changeSelectedHandler, selected, fills, screenWidth, zoom, hasChildren, unsetZoomHandler } = options;
+    const { 
+      items, 
+      changeSelectedHandler, 
+      selected, 
+      fills, 
+      screenWidth, 
+      zoom, 
+      hasChildren, 
+      unsetZoomHandler,
+      handleClickEvent
+    } = options;
     chartOptions = options;
+    var viewportWidth = screenWidth - 64;
 
     // find minimum amount and total amount
     var sumVal = 0;
@@ -72,17 +125,19 @@ export default function StackChart(containerNode) {
     
     var viewBoxHeight = totalRectHeight + groupLabelHeight * items.length;
 
-    svg.attr("viewBox", "0 0 " + (screenWidth) + " " + (viewBoxHeight));
+    svg.attr("viewBox", "0 0 " + (viewportWidth) + " " + (viewBoxHeight));
+    svg.attr("width", viewportWidth)
+      .attr("height", viewBoxHeight);
 
-    var itemSvgs = svg.selectAll(".item-lv1").data(items);
+    var itemSvgs = svg.selectAll(".itemLv1").data(items);
     
     itemSvgs.enter()
       .append("g")
-      .attr("class", (item, idx) => `item-lv1 idx-${idx}`)
+      .attr("class", (item, idx) => `itemLv1 idx-${idx}`)
       .attr("transform", (item, idx) => `translate(0, ${scaleY(item.initialOffset) + idx * groupLabelHeight})`);
 
     items.forEach((item, idx) => {
-      var itemSvg = svg.selectAll(`.item-lv1.idx-${idx}`);
+      var itemSvg = svg.selectAll(`.itemLv1.idx-${idx}`);
       var itemLabelSvg = itemSvg
         .append("g")
         .attr("class", "itemLabel");
@@ -95,7 +150,7 @@ export default function StackChart(containerNode) {
 
       itemLabelSvg.append("text")
         .attr("class", "groupLabel")
-        .attr("x", screenWidth)
+        .attr("x", viewportWidth)
         .attr("y", (groupLabelHeight + fontHeight) / 2 - subItemOffset )
         .attr("text-anchor", "end")
         .text(`R${trimValues(item.amount)}`);
@@ -106,37 +161,26 @@ export default function StackChart(containerNode) {
         .attr("transform", `translate(0, ${groupLabelHeight})`);
       
       var itemL2s = item.children;
-      var itemL2Svgs = itemBodySvg.selectAll(".item-lv2").data(itemL2s);
+      var itemL2Svgs = itemBodySvg.selectAll(".itemLv2").data(itemL2s);
       itemL2Svgs.enter()
         .append("g")
-        .attr("class", (itemL2, idx2) => `item-lv2 idx2-${idx2}`)
-        .attr("transform", (itemL2, idx2) => `translate(${calculateId(idx, idx2) == selected? selectedOffset: 0}, ${scaleY(itemL2.initialOffset)})`);
+        .attr("class", (itemL2, idx2) => `itemLv2 idx2-${idx2} ${calculateId(idx, idx2) == selected? "selectedItem2": ""}`)
+        .attr("transform", (itemL2, idx2) => 
+          `translate(0, ${scaleY(itemL2.initialOffset)})`)
+        .attr("id", (itemL2, idx2) => `id-${calculateId(idx, idx2)}`)
       
       itemL2s.forEach((item2, idx2) => {
-        var item2Svg = itemSvg.selectAll(`.item-lv2.idx2-${idx2}`);
+        var item2Svg = itemSvg.selectAll(`.itemLv2.idx2-${idx2}`);
         function handleClick(d) {
-          var rootIndex = idx;
-          var rootName = items[rootIndex].name;
-          var currIndex = idx2;
-          var id = calculateId(rootIndex, currIndex);
-          var amount = item2.amount;
-          var name = item2.name;
-          var fullName = `${rootName}: ${name}`;
-
-          changeSelectedHandler({ 
-            id,
-            name: fullName,
-            color: fills[rootIndex],
-            value: amount,
-            zoom: null,
-          })
+          var scrollToPosition = (idx) * groupLabelHeight + scaleY(item.initialOffset) + scaleY(item2.initialOffset) + 1;
+          handleClickEvent(scrollToPosition);
         }
 
         item2Svg.append("rect")
           .attr("class", "item2Rect")
-          .attr("x", 0)
+          .attr("x", calculateId(idx, idx2) == selected? selectedOffset: 0)
           .attr("y", 0)
-          .attr("width", screenWidth)
+          .attr("width", viewportWidth - selectedOffset)
           .attr("height", Math.max(scaleY(item2.amount) - subItemOffset, 0))
           .attr("fill", fills[idx])
           .on("mouseover", function(d) {
@@ -157,7 +201,7 @@ export default function StackChart(containerNode) {
 
           item2Svg.append("text")
             .attr("class", "subItemLabel")
-            .attr("x", screenWidth - subItemTextOffsetX)
+            .attr("x", viewportWidth - subItemTextOffsetX)
             .attr("y", (groupLabelHeight + fontHeight) / 2 - subItemOffset )
             .attr("text-anchor", "end")
             .text(`R${trimValues(item2.amount, true)}`)

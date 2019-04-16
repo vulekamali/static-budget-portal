@@ -1,30 +1,26 @@
 import * as d3 from "d3";
-import trimValues from '../../helpers/trimValues';
 
 export default function Navigator(containerNode) {
   var container = d3.select(containerNode);
   var svg = null;
   
-  var chartOptions = {};
   var viewBoxHeight = 8 * 3;
+  var viewportWidth = 0;
 
   this.draw = function(options) {
     container.selectAll("svg").remove();
     svg = container.append("svg")
       .classed("svg-content", true);
 
-    chartOptions = options;
-    const { items, 
-      changeSelectedHandler, 
-      selected, 
+    const { 
+      items, 
       fills, 
       screenWidth, 
-      zoom, 
-      hasChildren, 
-      unsetZoomHandler, 
       scrollTopPercent,
       windowPercent 
     } = options;
+
+    viewportWidth = screenWidth - 32;
     
     // calculate total amount
     var sumVal = 0;
@@ -43,10 +39,12 @@ export default function Navigator(containerNode) {
 
     var scaleX = d3.scaleLinear()
       .domain([0, sumVal])
-      .range([0, screenWidth]);
+      .range([0, viewportWidth]);
     
 
-    svg.attr("viewBox", "0 0 " + (screenWidth) + " " + (viewBoxHeight));
+    svg.attr("viewBox", "0 0 " + (viewportWidth) + " " + (viewBoxHeight));
+    svg.attr("width", viewportWidth)
+      .attr("height", viewBoxHeight);
 
     var itemSvgs = svg.selectAll(".item-lv1").data(items);
     
@@ -80,9 +78,9 @@ export default function Navigator(containerNode) {
 
     svg.append("rect")
       .attr("class", "domainWindow")
-      .attr("x", scrollTopPercent * screenWidth)
+      .attr("x", scrollTopPercent * viewportWidth)
       .attr("y", 0)
-      .attr("width", windowPercent * screenWidth)
+      .attr("width", windowPercent * viewportWidth)
       .attr("height", viewBoxHeight)
       .attr("fill", "purple")
       .attr("stroke", "purple")
@@ -91,23 +89,13 @@ export default function Navigator(containerNode) {
   }
 
   this.updateDomainWindow = function(scrollTopPercent, windowPercent) {
-    const { items, 
-      changeSelectedHandler, 
-      selected, 
-      fills, 
-      screenWidth, 
-      zoom, 
-      hasChildren, 
-      unsetZoomHandler, 
-    } = chartOptions;
-
     svg.selectAll(".domainWindow").remove();
 
     svg.append("rect")
       .attr("class", "domainWindow")
-      .attr("x", scrollTopPercent * screenWidth)
+      .attr("x", scrollTopPercent * viewportWidth)
       .attr("y", 0)
-      .attr("width", windowPercent * screenWidth)
+      .attr("width", windowPercent * viewportWidth)
       .attr("height", viewBoxHeight)
       .attr("fill", "purple")
       .attr("stroke", "purple")

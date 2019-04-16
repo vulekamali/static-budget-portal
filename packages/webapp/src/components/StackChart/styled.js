@@ -66,6 +66,26 @@ const StyledTooltip = styled.div`
 const StackChartWrapper = styled.div`
   position: relative;
   display: inline-block;
+  &.StickToTop {
+    .Navigator {
+      position: fixed;
+      z-index: 10;
+      top: 81px;
+      width: 100%;
+      background: #fafafa;
+    }
+    .StackChartBody {
+      padding-top: 28px;
+    }
+    .FocusItem {
+      position: fixed;
+      display: block !important;
+      z-index: 10;
+      top: 109px;
+      width: 100%;
+      background: #fafafa;
+    }
+  }
 `;
 
 const StackChartButtonStyle = styled(Button)`
@@ -98,18 +118,17 @@ const StackChartButtonText = styled(Typography)`
 `;
 
 const Navigator = styled.div`
-  width: 100vw;
+  width: 100%;
 `;
 
 const FocusItem = styled.div`
-  position: absolute;
-  top: 25px;
+  display: none;
   height: 96px;
-  padding: 0 32px;
+  padding: 27px 32px 27px 32px;
 
   left: 0;
   width: calc(100%);
-  background: white;
+  background: #fafafa;
   font-family: Roboto;
   font-style: normal;
   font-weight: bold;
@@ -127,9 +146,8 @@ const FocusItem = styled.div`
 const StackChartBody = styled.div`
   position: relative;
   padding: 0 16px;
-  max-height: calc(100vh - 105px);
   overflow-y: scroll;
-  background: white;
+  background: #fafafa;
 
   &::-webkit-scrollbar { 
     width: 0 !important 

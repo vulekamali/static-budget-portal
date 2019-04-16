@@ -1,13 +1,7 @@
 import React, { Component } from 'react';
-import * as d3 from "d3";
-
-import { Treemap, Tooltip } from 'recharts';
-
 import NaviChart from './d3-navigator';
-import StackBodyChart from './d3-stackchart';
+import StackBodyChart, {calculateId} from './d3-stackchart';
 
-import Block from './Block';
-import TooltipContent from './TooltipContent';
 import LeftIcon from '@material-ui/icons/ArrowBack';
 import trimValues from '../../helpers/trimValues';
 
@@ -20,13 +14,6 @@ import {
   StackChartBody
  } from './styled';
 
-const createBlock = (fills, changeSelectedHandler, selected, zoom) => {
-  return props => {
-    const passedProps = { ...props, fills, changeSelectedHandler, selected, zoom };
-    return <Block {...passedProps} />;
-  };
-};
-
 class Markup extends Component {
   constructor(props) {
     super(props);
@@ -34,7 +21,10 @@ class Markup extends Component {
     this.windowPercent = 1;
     this.state = {
       activeLv1Idx: 0,
+      activeLv2Idx: 0,
+      stickToTop: false
     }
+    this.handleScroll = this.handleScroll.bind(this);
   }
 
   componentDidMount() {
@@ -42,6 +32,7 @@ class Markup extends Component {
     this.bodyChart = new StackBodyChart(this.refs.stackchartbody);
     this.draw();
     this.handleScroll();
+    window.addEventListener('scroll', this.handleScroll);
   }
 
   componentWillUnmount() {
@@ -49,10 +40,17 @@ class Markup extends Component {
     this.bodyChart.destroy();
     this.naviChart = null;
     this.bodyChart = null;
+    window.removeEventListener('scroll', this.handleScroll);
   }
 
   componentDidUpdate(prevProps) {
-    if (JSON.stringify(prevProps) != JSON.stringify(this.props)) {
+    // console.log("prevProps", prevProps);
+    var pickedPrevProps = (({ fills, hasChildren, items, screenWidth }) => ({ fills, hasChildren, items, screenWidth }))(prevProps);
+    var pickedCurrProps = (({ fills, hasChildren, items, screenWidth }) => ({ fills, hasChildren, items, screenWidth }))(this.props);
+
+    // console.log("comparing objects", pickedPrevProps, pickedCurrProps);
+    
+    if (JSON.stringify(pickedPrevProps) != JSON.stringify(pickedCurrProps)) {
       this.draw();
       this.handleScroll();
     }
@@ -71,7 +69,10 @@ class Markup extends Component {
       });
     }
     if (this.bodyChart) {
-      this.bodyChart.draw(this.props);
+      this.bodyChart.draw({
+        ...this.props,
+        handleClickEvent: this.handleClickEvent.bind(this)
+      });
     }
   }
 
@@ -85,36 +86,86 @@ class Markup extends Component {
     );
   }
 
-  handleScroll() {
+  handleClickEvent(scrollToPosition) {
+    var stackchartWrapperBoundingRect = this.refs.stackchartwrapper.getBoundingClientRect();
     var bodyEle = this.refs.stackchartbody;
-    var scrollHeight = bodyEle.scrollHeight;
-    var scrollTop = bodyEle.scrollTop;
-    var clientHeight = bodyEle.clientHeight;
+    bodyEle.scrollTo({
+      top: scrollToPosition + stackchartWrapperBoundingRect.top,
+      behavior: 'smooth'
+    });
+  }
+
+  handleScroll(event) {
+    const { 
+      items, 
+      changeSelectedHandler, 
+      fills, 
+      canStickToTop 
+    } = this.props;
+
+    var stickToTop = false;
+    var chartHeaderSize = 81;
+    var stackchartWrapperBoundingRect = this.refs.stackchartwrapper.getBoundingClientRect();
+    if (stackchartWrapperBoundingRect.top < chartHeaderSize && canStickToTop) {
+      stickToTop = true;
+    }
+
+    var scrollHeight = this.refs.stackchartbody.getBoundingClientRect().height;
+    var scrollTop = chartHeaderSize - stackchartWrapperBoundingRect.top;
+    // console.log("handleScroll stackchartbody, scrollTop, stackchartWrapperBoundingRect.top", scrollTop, stackchartWrapperBoundingRect.top)
+
+    var clientHeight = document.documentElement.clientHeight;
+
     var activeLv1Idx = this.bodyChart.getActiveLv1Idx(scrollTop);
+    var activeLv2Idx = this.bodyChart.getActiveLv2Idx(scrollTop)[1];
+
     var scrollTopPercent = scrollTop/scrollHeight;
     var windowPercent = clientHeight/scrollHeight;
     this.scrollTopPercent = scrollTopPercent;
     this.windowPercent = windowPercent;
 
-    this.setState({activeLv1Idx});
+
+    var rootIndex = activeLv1Idx;
+    var rootName = items[rootIndex].name;
+    var currIndex = activeLv2Idx;
+    var id = calculateId(rootIndex, currIndex);
+    var item2 = items[rootIndex].children[currIndex];
+    var amount = item2.amount;
+    var name = item2.name;
+    var fullName = `${rootName}: ${name}`;
+
+    changeSelectedHandler({ 
+      id,
+      name: fullName,
+      color: fills[rootIndex],
+      value: amount,
+      zoom: null,
+    })
+
+    this.setState({activeLv1Idx, activeLv2Idx, stickToTop});
     this.naviChart.updateDomainWindow(scrollTopPercent, windowPercent);
+    this.bodyChart.updateSelection(activeLv1Idx, activeLv2Idx);
   }
 
   render() {
-    const { items, changeSelectedHandler, selected, fills, screenWidth, zoom, hasChildren, unsetZoomHandler } = this.props;
+    const { screenWidth } = this.props;
     const widthWithPadding = screenWidth - 48;
     const width = widthWithPadding > 1200 ? 1200 : widthWithPadding;
 
     const {
-      activeLv1Idx 
+      activeLv1Idx,
+      stickToTop 
     } = this.state;
   
     return (
-      <StackChartWrapper {...{ width }}>
+      <StackChartWrapper 
+        ref="stackchartwrapper"
+        {...{ width }} 
+        className={stickToTop && "StickToTop"}>
         <Navigator 
           ref="navigation" 
-          className="Navigator">
-        </Navigator>
+          className="Navigator"
+        />
         <StackChartBody 
           ref="stackchartbody" 
           className="StackChartBody"
