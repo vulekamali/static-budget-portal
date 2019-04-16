@@ -38,7 +38,18 @@ const callDetailedAnalysisButton = (url, hasButton) => {
   }
 };
 
-const Heading = ({ government, departmentNames, selected, eventHandler, year, sphere, hasButton }) => {
+const Heading = (props) => {
+
+  const {
+    government,
+    items,
+    selected,
+    eventHandler,
+    year,
+    sphere,
+    hasButton
+  } = props;
+
   const provinceFolder = government === 'south-africa' ? '' : `${government}/`;
   const url = `/${year}/${sphere}/${provinceFolder}departments/${selected}`;
 
@@ -49,7 +60,7 @@ const Heading = ({ government, departmentNames, selected, eventHandler, year, sp
           <Title>{calcPrettyName(government)}</Title>
         </HeadingText>
         <SelectsGroup>
-          <CustomizedSelect {...{ departmentNames, selected, eventHandler }} />
+          <CustomizedSelect {...{ items, selected, eventHandler }} />
           <RightOptions>
             <CustomizedDateSelect />
             {callDetailedAnalysisButton(url, hasButton)}
