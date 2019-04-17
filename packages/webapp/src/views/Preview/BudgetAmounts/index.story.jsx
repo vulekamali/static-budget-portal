@@ -5,8 +5,7 @@ import BudgetAmounts from './index';
 
 const resources = {
     value: 372800000,
-    consolidated: 37.344,
-    change: -5
+    consolidated: 37.344
   };
 
 const basic = () => (
