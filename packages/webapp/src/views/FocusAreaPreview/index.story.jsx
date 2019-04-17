@@ -3,11 +3,10 @@ import { storiesOf } from '@storybook/react';
 import FocusAreaPreview from './';
 
 
-const props = {
+const item = (value) => ({
   resources: {
       value: 372800000,
-      consolidated: 37,
-      change: -5,
+      consolidated: 37
     },
   items: [
     {
@@ -47,15 +46,23 @@ const props = {
     }
   ],
   description: 'Pastry cupcake jelly jujubes. Jelly beans biscuit cheesecake. Danish tart gummi bears chupa chups sesame snaps. Fruitcake ice cream liquorice wafer. Dragée bear claw macaroon. Lemon drops caramels soufflé soufflé carrot cake tart.',
-  government: 'Focus Area',
-  year: '2019-20',
-  initialSelected: {
-    name: "Total",
-    value: "92348259852",
-    url: null,
-    color: "#D8D8D8"
-  }
-};
+  name: 'Something',
+  id: value
+});
+
+
+const items = [1,2,3,4,5].map((value) => item(value));
+
+const initialSelected = {
+  name: 'Total',
+  amount: 92348259852,
+  url: null
+}
+
+const props = {
+  items,
+  department: 2
+}
 
 
 const basic = () => <FocusAreaPreview {...props} />;

@@ -42,7 +42,7 @@ const Heading = (props) => {
 
   const {
     government,
-    items,
+    departmentNames,
     selected,
     eventHandler,
     year,
@@ -60,7 +60,7 @@ const Heading = (props) => {
           <Title>{calcPrettyName(government)}</Title>
         </HeadingText>
         <SelectsGroup>
-          <CustomizedSelect {...{ items, selected, eventHandler }} />
+          <CustomizedSelect {...{ departmentNames, selected, eventHandler }} />
           <RightOptions>
             <CustomizedDateSelect />
             {callDetailedAnalysisButton(url, hasButton)}

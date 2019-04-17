@@ -14,7 +14,7 @@ const Summary = (props) => {
     sphere,
     government
   } = props;
-  console.log(props)
+
   return (
     <React.Fragment>
       <Preview {...{ items, resources, description, sphere, government }} hasButton>

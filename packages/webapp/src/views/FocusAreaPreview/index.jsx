@@ -1,6 +1,5 @@
 import React from 'react';
 import Preview from '../../components/Preview';
-import NationalTreemap from '../NationalTreemap';
 import ChartSection from '../../components/ChartSection';
 import Treemap from '../../components/Treemap';
 
@@ -15,13 +14,12 @@ const FocusAreaPreview = (props) => {
     eventHandler,
     year,
     hasButton,
-    initialSelected
+    initialSelected,
+    department
   } = props;
 
-  console.log(items)
-
   return (
-    <Preview {...{ resources, items, description, sphere, government, selected, eventHandler, year, hasButton }} section='Focus area information' >
+    <Preview {...{ resources, items, department, description, sphere, government, selected, eventHandler, year, hasButton }} section='Focus area information' >
       <ChartSection
         {...{ initialSelected }}
         chart={(onSelectedChange) => <Treemap {...{ items, onSelectedChange }} />}

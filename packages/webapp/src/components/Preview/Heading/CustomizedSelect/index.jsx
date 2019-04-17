@@ -27,7 +27,7 @@ class CustomizedSelect extends Component {
   };
 
   render() {
-    const { items, selected, eventHandler } = this.props;
+    const { departmentNames, selected, eventHandler } = this.props;
     return (
       <CustomizedForm>
         <CssBaseline />
@@ -38,7 +38,7 @@ class CustomizedSelect extends Component {
           name={this.state.budgetValue}
           classes={{ icon: 'icon', selectMenu: 'selectMenu'}}
         >
-        {items.map(callMenuItems)}
+        {departmentNames.map(callMenuItems)}
         </SelectPreview>
       </CustomizedForm>
     );

@@ -16,9 +16,9 @@ class Preview extends Component {
       eventHandler: this.eventHandler.bind(this),
     }
 
-    this.departmentNames = this.props.items.map(({ id, title }) => ({
+    this.departmentNames = this.props.items.map(({ id, name }) => ({
       id,
-      name: title
+      name
     }))
   }
 
