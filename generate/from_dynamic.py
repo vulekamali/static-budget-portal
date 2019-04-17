@@ -467,3 +467,25 @@ for year in YEAR_SLUGS:
                                 slug = department_object['slug']
                                 markdown_path = '/{}/previews/{}/south-africa/{}'.format(year, sphere, slug)
                                 write_basic_page(markdown_path, '', 'department_preview')
+
+
+# Focus area pages
+for year in YEAR_SLUGS:
+    listing_url_path = '/{}/focus'.format(year)
+    logger.info(listing_url_path)
+    listing_url = portal_url + listing_url_path[1:] + '.yaml'
+    r = http_get(session, listing_url)
+    if r.status_code == 404:
+        logger.info("No data for {}".format(listing_url))
+    else:
+        r.raise_for_status()
+        listing_path = '_data%s.yaml' % listing_url_path
+        ensure_file_dirs(listing_path)
+        with open(listing_path, 'wb') as dataset_list_file:
+            dataset_list_file.write(r.text)
+            data = yaml.load(r.text)
+            if data:
+                for department_object in data['data']['items']:
+                    slug = department_object['slug']
+                    markdown_path = '/{}/focus/{}'.format(year, slug)
+                    write_basic_page(markdown_path, '', 'focus_page')
