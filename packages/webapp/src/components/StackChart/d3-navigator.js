@@ -4,7 +4,7 @@ export default function Navigator(containerNode) {
   var container = d3.select(containerNode);
   var svg = null;
   
-  var viewBoxHeight = 8 * 3;
+  var viewBoxHeight = 8;
   var viewportWidth = 0;
 
   this.draw = function(options) {

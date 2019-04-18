@@ -126,17 +126,15 @@ class Markup extends Component {
 
 
     var rootIndex = activeLv1Idx;
-    var rootName = items[rootIndex].name;
     var currIndex = activeLv2Idx;
     var id = calculateId(rootIndex, currIndex);
     var item2 = items[rootIndex].children[currIndex];
     var amount = item2.amount;
     var name = item2.name;
-    var fullName = `${rootName}: ${name}`;
 
     changeSelectedHandler({ 
       id,
-      name: fullName,
+      name: name,
       color: fills[rootIndex],
       value: amount,
       zoom: null,

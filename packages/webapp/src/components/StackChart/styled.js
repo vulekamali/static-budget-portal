@@ -81,7 +81,7 @@ const StackChartWrapper = styled.div`
       position: fixed;
       display: block !important;
       z-index: 10;
-      top: 109px;
+      top: 99px;
       width: 100%;
       background: #fafafa;
     }
@@ -123,8 +123,8 @@ const Navigator = styled.div`
 
 const FocusItem = styled.div`
   display: none;
-  height: 96px;
-  padding: 27px 32px 27px 32px;
+  height: 32px;
+  padding: 9px 32px 9px 32px;
 
   left: 0;
   width: calc(100%);
@@ -132,7 +132,7 @@ const FocusItem = styled.div`
   font-family: Roboto;
   font-style: normal;
   font-weight: bold;
-  font-size: 36px;
+  font-size: 12px;
   line-height: normal;
   color: #000000;
   .left {
@@ -158,7 +158,7 @@ const StackChartBody = styled.div`
   font-family: Roboto;
   font-style: normal;
   font-weight: normal;
-  font-size: 36px;
+  font-size: 12px;
   line-height: normal;
 
   .groupLabel {
@@ -166,7 +166,14 @@ const StackChartBody = styled.div`
     color: #000000;
   }
   .subItemLabel {
-    color: rgba(0, 0, 0, 0.4);    
+    color: rgba(0, 0, 0);
+    opacity: 0.4;    
+  }
+  .subItemLabel.smallFont {
+    font-size: 10px;
+  }
+  .selectedItem2 .subItemLabel{
+    opacity: 1;
   }
 `;
 
