@@ -55,13 +55,15 @@ const items = [1,2,3,4,5].map((value) => item(value));
 
 const initialSelected = {
   name: 'Total',
-  amount: 92348259852,
-  url: null
+  value: 92348259852,
+  url: null,
+  color: 'rgba(0, 0, 0, 0.1)'
 }
 
 const props = {
   items,
-  department: 2
+  department: 2,
+  initialSelected
 }
 
 
