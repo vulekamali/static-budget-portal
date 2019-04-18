@@ -8,7 +8,7 @@ budget_actual:
   expenditure:
     base_financial_year: 2018-19
     nominal:
-    - amount: 21577287000.0
+    - amount: 21577287000
       financial_year: 2016-17
       phase: Main appropriation
     - amount: 21580191000
@@ -111,7 +111,7 @@ budget_actual_programmes:
   notices: []
   programmes:
   - items:
-    - amount: 807777000.0
+    - amount: 807777000
       financial_year: 2016-17
       phase: Main appropriation
     - amount: 807777000
@@ -161,7 +161,7 @@ budget_actual_programmes:
       phase: Audit Outcome
     name: Social Reintegration
   - items:
-    - amount: 1217339000.0
+    - amount: 1217339000
       financial_year: 2016-17
       phase: Main appropriation
     - amount: 1219589000
@@ -211,7 +211,7 @@ budget_actual_programmes:
       phase: Audit Outcome
     name: Rehabilitation
   - items:
-    - amount: 1975116000.0
+    - amount: 1975116000
       financial_year: 2016-17
       phase: Main appropriation
     - amount: 1975116000
@@ -261,7 +261,7 @@ budget_actual_programmes:
       phase: Audit Outcome
     name: Care
   - items:
-    - amount: 3876194000.0
+    - amount: 3876194000
       financial_year: 2016-17
       phase: Main appropriation
     - amount: 3876194000
@@ -311,7 +311,7 @@ budget_actual_programmes:
       phase: Audit Outcome
     name: Administration
   - items:
-    - amount: 13700861000.0
+    - amount: 13700861000
       financial_year: 2016-17
       phase: Main appropriation
     - amount: 13701515000
@@ -391,7 +391,7 @@ description: 'National department: Correctional Services budget data for the 201
   financial year from National Treasury in partnership with IMALI YETHU.'
 economic_classification_by_programme:
   dataset_detail_page: /datasets/estimates-of-national-expenditure/estimates-of-national-expenditure-2019-20
-  department_data_csv: https://datamanager.vulekamali.gov.za/csv/?api_url=https%3A//openspending.org/api/3/cubes/b9d2af843f3a7ca223eea07fb608e62a%3Aestimates-of-national-expenditure-2019-20-uploaded-2019-02-20t1910/aggregate/%3Fcut%3Dfinyear.finyear%253A2019%257Cvoteno.department%253A%2522Correctional%2BServices%2522%26drilldown%3Dbudget_phase.budget_phase%257Cecon1.econ1%257Cecon2.econ2%257Cecon3.econ3%257Cecon4.econ4%257Cecon5.econ5%257Cfg1.fg1%257Cfg2.fg2%257Cfinyear.finyear%257Cprogno.progno%257Cprogno.programme%257Csprogno.sprogno%257Csprogno.subprogramme%257Cvoteno.department%257Cvoteno.voteno%26pagesize%3D10000
+  department_data_csv: https://datamanager-staging.vulekamali.gov.za/csv/?api_url=https%3A//openspending.org/api/3/cubes/b9d2af843f3a7ca223eea07fb608e62a%3Aestimates-of-national-expenditure-2019-20-uploaded-2019-02-20t1910/aggregate/%3Fcut%3Dfinyear.finyear%253A2019%257Cvoteno.department%253A%2522Correctional%2BServices%2522%26drilldown%3Dbudget_phase.budget_phase%257Cecon1.econ1%257Cecon2.econ2%257Cecon3.econ3%257Cecon4.econ4%257Cecon5.econ5%257Cfg1.fg1%257Cfg2.fg2%257Cfinyear.finyear%257Cprogno.progno%257Cprogno.programme%257Csprogno.sprogno%257Csprogno.subprogramme%257Cvoteno.department%257Cvoteno.voteno%26pagesize%3D10000
   programmes:
   - items:
     - items:
@@ -569,7 +569,7 @@ is_vote_primary: true
 name: Correctional Services
 programme_by_economic_classification:
   dataset_detail_page: /datasets/estimates-of-national-expenditure/estimates-of-national-expenditure-2019-20
-  department_data_csv: https://datamanager.vulekamali.gov.za/csv/?api_url=https%3A//openspending.org/api/3/cubes/b9d2af843f3a7ca223eea07fb608e62a%3Aestimates-of-national-expenditure-2019-20-uploaded-2019-02-20t1910/aggregate/%3Fcut%3Dfinyear.finyear%253A2019%257Cvoteno.department%253A%2522Correctional%2BServices%2522%26drilldown%3Dbudget_phase.budget_phase%257Cecon1.econ1%257Cecon2.econ2%257Cecon3.econ3%257Cecon4.econ4%257Cecon5.econ5%257Cfg1.fg1%257Cfg2.fg2%257Cfinyear.finyear%257Cprogno.progno%257Cprogno.programme%257Csprogno.sprogno%257Csprogno.subprogramme%257Cvoteno.department%257Cvoteno.voteno%26pagesize%3D10000
+  department_data_csv: https://datamanager-staging.vulekamali.gov.za/csv/?api_url=https%3A//openspending.org/api/3/cubes/b9d2af843f3a7ca223eea07fb608e62a%3Aestimates-of-national-expenditure-2019-20-uploaded-2019-02-20t1910/aggregate/%3Fcut%3Dfinyear.finyear%253A2019%257Cvoteno.department%253A%2522Correctional%2BServices%2522%26drilldown%3Dbudget_phase.budget_phase%257Cecon1.econ1%257Cecon2.econ2%257Cecon3.econ3%257Cecon4.econ4%257Cecon5.econ5%257Cfg1.fg1%257Cfg2.fg2%257Cfinyear.finyear%257Cprogno.progno%257Cprogno.programme%257Csprogno.sprogno%257Csprogno.subprogramme%257Cvoteno.department%257Cvoteno.voteno%26pagesize%3D10000
   econ_classes:
   - items:
     - name: Incarceration
@@ -627,7 +627,7 @@ programme_by_economic_classification:
     type: economic_classification_1_and_2
 programmes:
   dataset_detail_page: /datasets/estimates-of-national-expenditure/estimates-of-national-expenditure-2019-20
-  department_data_csv: https://datamanager.vulekamali.gov.za/csv/?api_url=https%3A//openspending.org/api/3/cubes/b9d2af843f3a7ca223eea07fb608e62a%3Aestimates-of-national-expenditure-2019-20-uploaded-2019-02-20t1910/aggregate/%3Fcut%3Dfinyear.finyear%253A2019%257Cvoteno.department%253A%2522Correctional%2BServices%2522%26drilldown%3Dbudget_phase.budget_phase%257Cecon1.econ1%257Cecon2.econ2%257Cecon3.econ3%257Cecon4.econ4%257Cecon5.econ5%257Cfg1.fg1%257Cfg2.fg2%257Cfinyear.finyear%257Cprogno.progno%257Cprogno.programme%257Csprogno.sprogno%257Csprogno.subprogramme%257Cvoteno.department%257Cvoteno.voteno%26pagesize%3D10000
+  department_data_csv: https://datamanager-staging.vulekamali.gov.za/csv/?api_url=https%3A//openspending.org/api/3/cubes/b9d2af843f3a7ca223eea07fb608e62a%3Aestimates-of-national-expenditure-2019-20-uploaded-2019-02-20t1910/aggregate/%3Fcut%3Dfinyear.finyear%253A2019%257Cvoteno.department%253A%2522Correctional%2BServices%2522%26drilldown%3Dbudget_phase.budget_phase%257Cecon1.econ1%257Cecon2.econ2%257Cecon3.econ3%257Cecon4.econ4%257Cecon5.econ5%257Cfg1.fg1%257Cfg2.fg2%257Cfinyear.finyear%257Cprogno.progno%257Cprogno.programme%257Csprogno.sprogno%257Csprogno.subprogramme%257Cvoteno.department%257Cvoteno.voteno%26pagesize%3D10000
   programme_budgets:
   - name: Administration
     total_budget: 4786272000
@@ -647,7 +647,7 @@ sphere:
   slug: national
 subprogramme_by_programme:
   dataset_detail_page: /datasets/estimates-of-national-expenditure/estimates-of-national-expenditure-2019-20
-  department_data_csv: https://datamanager.vulekamali.gov.za/csv/?api_url=https%3A//openspending.org/api/3/cubes/b9d2af843f3a7ca223eea07fb608e62a%3Aestimates-of-national-expenditure-2019-20-uploaded-2019-02-20t1910/aggregate/%3Fcut%3Dfinyear.finyear%253A2019%257Cvoteno.department%253A%2522Correctional%2BServices%2522%26drilldown%3Dbudget_phase.budget_phase%257Cecon1.econ1%257Cecon2.econ2%257Cecon3.econ3%257Cecon4.econ4%257Cecon5.econ5%257Cfg1.fg1%257Cfg2.fg2%257Cfinyear.finyear%257Cprogno.progno%257Cprogno.programme%257Csprogno.sprogno%257Csprogno.subprogramme%257Cvoteno.department%257Cvoteno.voteno%26pagesize%3D10000
+  department_data_csv: https://datamanager-staging.vulekamali.gov.za/csv/?api_url=https%3A//openspending.org/api/3/cubes/b9d2af843f3a7ca223eea07fb608e62a%3Aestimates-of-national-expenditure-2019-20-uploaded-2019-02-20t1910/aggregate/%3Fcut%3Dfinyear.finyear%253A2019%257Cvoteno.department%253A%2522Correctional%2BServices%2522%26drilldown%3Dbudget_phase.budget_phase%257Cecon1.econ1%257Cecon2.econ2%257Cecon3.econ3%257Cecon4.econ4%257Cecon5.econ5%257Cfg1.fg1%257Cfg2.fg2%257Cfinyear.finyear%257Cprogno.progno%257Cprogno.programme%257Csprogno.sprogno%257Csprogno.subprogramme%257Cvoteno.department%257Cvoteno.voteno%26pagesize%3D10000
   programmes:
   - items:
     - name: Human Resources

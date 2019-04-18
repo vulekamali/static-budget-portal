@@ -8,7 +8,7 @@ budget_actual:
   expenditure:
     base_financial_year: 2018-19
     nominal:
-    - amount: 28471417000.0
+    - amount: 28471417000
       financial_year: 2016-17
       phase: Main appropriation
     - amount: 28471417000
@@ -111,7 +111,7 @@ budget_actual_programmes:
   notices: []
   programmes:
   - items:
-    - amount: 107211000.0
+    - amount: 107211000
       financial_year: 2016-17
       phase: Main appropriation
     - amount: 113129000
@@ -161,7 +161,7 @@ budget_actual_programmes:
       phase: Audit Outcome
     name: Asset and Liability Management
   - items:
-    - amount: 146070000.0
+    - amount: 146070000
       financial_year: 2016-17
       phase: Main appropriation
     - amount: 150161000
@@ -211,7 +211,7 @@ budget_actual_programmes:
       phase: Audit Outcome
     name: Economic Policy, Tax, Financial Regulation and Research
   - items:
-    - amount: 286955000.0
+    - amount: 286955000
       financial_year: 2016-17
       phase: Main appropriation
     - amount: 294483000
@@ -261,7 +261,7 @@ budget_actual_programmes:
       phase: Audit Outcome
     name: Public Finance and Budget Management
   - items:
-    - amount: 412661000.0
+    - amount: 412661000
       financial_year: 2016-17
       phase: Main appropriation
     - amount: 467416000
@@ -311,7 +311,7 @@ budget_actual_programmes:
       phase: Audit Outcome
     name: Administration
   - items:
-    - amount: 849854000.0
+    - amount: 849854000
       financial_year: 2016-17
       phase: Main appropriation
     - amount: 1216758000
@@ -361,7 +361,7 @@ budget_actual_programmes:
       phase: Audit Outcome
     name: Financial Accounting and Supply Chain Management Systems
   - items:
-    - amount: 2634718000.0
+    - amount: 2634718000
       financial_year: 2016-17
       phase: Main appropriation
     - amount: 2612688000
@@ -411,7 +411,7 @@ budget_actual_programmes:
       phase: Audit Outcome
     name: Technical Support and Development Finance
   - items:
-    - amount: 4173242000.0
+    - amount: 4173242000
       financial_year: 2016-17
       phase: Main appropriation
     - amount: 4462642000
@@ -461,7 +461,7 @@ budget_actual_programmes:
       phase: Audit Outcome
     name: Civil and Military Pensions, Contributions to Funds and Other Benefits
   - items:
-    - amount: 4812487000.0
+    - amount: 4812487000
       financial_year: 2016-17
       phase: Main appropriation
     - amount: 4812487000
@@ -511,7 +511,7 @@ budget_actual_programmes:
       phase: Audit Outcome
     name: Financial Intelligence and State Security
   - items:
-    - amount: 5039068000.0
+    - amount: 5039068000
       financial_year: 2016-17
       phase: Main appropriation
     - amount: 4977977000
@@ -561,7 +561,7 @@ budget_actual_programmes:
       phase: Audit Outcome
     name: International Financial Relations
   - items:
-    - amount: 10009151000.0
+    - amount: 10009151000
       financial_year: 2016-17
       phase: Main appropriation
     - amount: 9363676000
@@ -611,7 +611,7 @@ budget_actual_programmes:
       phase: Audit Outcome
     name: Revenue Administration
   - items:
-    - amount: 569787416000.0
+    - amount: 569787416000
       financial_year: 2016-17
       phase: Main appropriation
     - amount: 570833034000
@@ -691,7 +691,7 @@ description: 'National department: National Treasury budget data for the 2019-20
   year from National Treasury in partnership with IMALI YETHU.'
 economic_classification_by_programme:
   dataset_detail_page: /datasets/estimates-of-national-expenditure/estimates-of-national-expenditure-2019-20
-  department_data_csv: https://datamanager.vulekamali.gov.za/csv/?api_url=https%3A//openspending.org/api/3/cubes/b9d2af843f3a7ca223eea07fb608e62a%3Aestimates-of-national-expenditure-2019-20-uploaded-2019-02-20t1910/aggregate/%3Fcut%3Dfinyear.finyear%253A2019%257Cvoteno.department%253A%2522National%2BTreasury%2522%26drilldown%3Dbudget_phase.budget_phase%257Cecon1.econ1%257Cecon2.econ2%257Cecon3.econ3%257Cecon4.econ4%257Cecon5.econ5%257Cfg1.fg1%257Cfg2.fg2%257Cfinyear.finyear%257Cprogno.progno%257Cprogno.programme%257Csprogno.sprogno%257Csprogno.subprogramme%257Cvoteno.department%257Cvoteno.voteno%26pagesize%3D10000
+  department_data_csv: https://datamanager-staging.vulekamali.gov.za/csv/?api_url=https%3A//openspending.org/api/3/cubes/b9d2af843f3a7ca223eea07fb608e62a%3Aestimates-of-national-expenditure-2019-20-uploaded-2019-02-20t1910/aggregate/%3Fcut%3Dfinyear.finyear%253A2019%257Cvoteno.department%253A%2522National%2BTreasury%2522%26drilldown%3Dbudget_phase.budget_phase%257Cecon1.econ1%257Cecon2.econ2%257Cecon3.econ3%257Cecon4.econ4%257Cecon5.econ5%257Cfg1.fg1%257Cfg2.fg2%257Cfinyear.finyear%257Cprogno.progno%257Cprogno.programme%257Csprogno.sprogno%257Csprogno.subprogramme%257Cvoteno.department%257Cvoteno.voteno%26pagesize%3D10000
   programmes:
   - items:
     - items:
@@ -977,7 +977,7 @@ is_vote_primary: true
 name: National Treasury
 programme_by_economic_classification:
   dataset_detail_page: /datasets/estimates-of-national-expenditure/estimates-of-national-expenditure-2019-20
-  department_data_csv: https://datamanager.vulekamali.gov.za/csv/?api_url=https%3A//openspending.org/api/3/cubes/b9d2af843f3a7ca223eea07fb608e62a%3Aestimates-of-national-expenditure-2019-20-uploaded-2019-02-20t1910/aggregate/%3Fcut%3Dfinyear.finyear%253A2019%257Cvoteno.department%253A%2522National%2BTreasury%2522%26drilldown%3Dbudget_phase.budget_phase%257Cecon1.econ1%257Cecon2.econ2%257Cecon3.econ3%257Cecon4.econ4%257Cecon5.econ5%257Cfg1.fg1%257Cfg2.fg2%257Cfinyear.finyear%257Cprogno.progno%257Cprogno.programme%257Csprogno.sprogno%257Csprogno.subprogramme%257Cvoteno.department%257Cvoteno.voteno%26pagesize%3D10000
+  department_data_csv: https://datamanager-staging.vulekamali.gov.za/csv/?api_url=https%3A//openspending.org/api/3/cubes/b9d2af843f3a7ca223eea07fb608e62a%3Aestimates-of-national-expenditure-2019-20-uploaded-2019-02-20t1910/aggregate/%3Fcut%3Dfinyear.finyear%253A2019%257Cvoteno.department%253A%2522National%2BTreasury%2522%26drilldown%3Dbudget_phase.budget_phase%257Cecon1.econ1%257Cecon2.econ2%257Cecon3.econ3%257Cecon4.econ4%257Cecon5.econ5%257Cfg1.fg1%257Cfg2.fg2%257Cfinyear.finyear%257Cprogno.progno%257Cprogno.programme%257Csprogno.sprogno%257Csprogno.subprogramme%257Cvoteno.department%257Cvoteno.voteno%26pagesize%3D10000
   econ_classes:
   - items:
     - name: Administration
@@ -1089,7 +1089,7 @@ programme_by_economic_classification:
     type: economic_classification_1_and_2
 programmes:
   dataset_detail_page: /datasets/estimates-of-national-expenditure/estimates-of-national-expenditure-2019-20
-  department_data_csv: https://datamanager.vulekamali.gov.za/csv/?api_url=https%3A//openspending.org/api/3/cubes/b9d2af843f3a7ca223eea07fb608e62a%3Aestimates-of-national-expenditure-2019-20-uploaded-2019-02-20t1910/aggregate/%3Fcut%3Dfinyear.finyear%253A2019%257Cvoteno.department%253A%2522National%2BTreasury%2522%26drilldown%3Dbudget_phase.budget_phase%257Cecon1.econ1%257Cecon2.econ2%257Cecon3.econ3%257Cecon4.econ4%257Cecon5.econ5%257Cfg1.fg1%257Cfg2.fg2%257Cfinyear.finyear%257Cprogno.progno%257Cprogno.programme%257Csprogno.sprogno%257Csprogno.subprogramme%257Cvoteno.department%257Cvoteno.voteno%26pagesize%3D10000
+  department_data_csv: https://datamanager-staging.vulekamali.gov.za/csv/?api_url=https%3A//openspending.org/api/3/cubes/b9d2af843f3a7ca223eea07fb608e62a%3Aestimates-of-national-expenditure-2019-20-uploaded-2019-02-20t1910/aggregate/%3Fcut%3Dfinyear.finyear%253A2019%257Cvoteno.department%253A%2522National%2BTreasury%2522%26drilldown%3Dbudget_phase.budget_phase%257Cecon1.econ1%257Cecon2.econ2%257Cecon3.econ3%257Cecon4.econ4%257Cecon5.econ5%257Cfg1.fg1%257Cfg2.fg2%257Cfinyear.finyear%257Cprogno.progno%257Cprogno.programme%257Csprogno.sprogno%257Csprogno.subprogramme%257Cvoteno.department%257Cvoteno.voteno%26pagesize%3D10000
   programme_budgets:
   - name: Administration
     total_budget: 555720000
@@ -1121,7 +1121,7 @@ sphere:
   slug: national
 subprogramme_by_programme:
   dataset_detail_page: /datasets/estimates-of-national-expenditure/estimates-of-national-expenditure-2019-20
-  department_data_csv: https://datamanager.vulekamali.gov.za/csv/?api_url=https%3A//openspending.org/api/3/cubes/b9d2af843f3a7ca223eea07fb608e62a%3Aestimates-of-national-expenditure-2019-20-uploaded-2019-02-20t1910/aggregate/%3Fcut%3Dfinyear.finyear%253A2019%257Cvoteno.department%253A%2522National%2BTreasury%2522%26drilldown%3Dbudget_phase.budget_phase%257Cecon1.econ1%257Cecon2.econ2%257Cecon3.econ3%257Cecon4.econ4%257Cecon5.econ5%257Cfg1.fg1%257Cfg2.fg2%257Cfinyear.finyear%257Cprogno.progno%257Cprogno.programme%257Csprogno.sprogno%257Csprogno.subprogramme%257Cvoteno.department%257Cvoteno.voteno%26pagesize%3D10000
+  department_data_csv: https://datamanager-staging.vulekamali.gov.za/csv/?api_url=https%3A//openspending.org/api/3/cubes/b9d2af843f3a7ca223eea07fb608e62a%3Aestimates-of-national-expenditure-2019-20-uploaded-2019-02-20t1910/aggregate/%3Fcut%3Dfinyear.finyear%253A2019%257Cvoteno.department%253A%2522National%2BTreasury%2522%26drilldown%3Dbudget_phase.budget_phase%257Cecon1.econ1%257Cecon2.econ2%257Cecon3.econ3%257Cecon4.econ4%257Cecon5.econ5%257Cfg1.fg1%257Cfg2.fg2%257Cfinyear.finyear%257Cprogno.progno%257Cprogno.programme%257Csprogno.sprogno%257Csprogno.subprogramme%257Cvoteno.department%257Cvoteno.voteno%26pagesize%3D10000
   programmes:
   - items:
     - name: Corporate Services

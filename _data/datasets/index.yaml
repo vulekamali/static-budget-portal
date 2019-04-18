@@ -24,11 +24,19 @@ categories:
   name: Budgeted and Actual National Expenditure
   slug: budgeted-and-actual-national-expenditure
   url_path: /datasets/budgeted-and-actual-national-expenditure
+- description: ''
+  name: Budgeted and Actual Provincial Expenditure
+  slug: budgeted-and-actual-provincial-expenditure
+  url_path: /datasets/budgeted-and-actual-provincial-expenditure
 - description: Consumer Price Index (CPI) Inflation data to calculate expenditure
     in real terms from amounts in nominal terms
   name: CPI Inflation
   slug: cpi-inflation
   url_path: /datasets/cpi-inflation
+- description: Consolidated dataset consisting of national and provincial expenditure
+  name: Consolidated Expenditure
+  slug: consolidated-expenditure-budget
+  url_path: /datasets/consolidated-expenditure-budget
 - description: 'Data and analysis contributed by other organisations on South African
     government budgets. '
   name: Contributed data and analysis
