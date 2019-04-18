@@ -8,20 +8,17 @@ const FocusAreaPreview = (props) => {
     resources,
     items,
     description,
-    sphere,
-    government,
     selected,
     eventHandler,
     year,
     hasButton,
     initialSelected,
-    department
+    department,
+    selectedObject
   } = props;
 
-  const selectedObject = items.find(({ id }) => id === department);
-
   return (
-    <Preview {...{ resources, items, department, description, selected, eventHandler, year, hasButton, sphere }} section='Focus area information' government='Focus Areas' year='2018-19' >
+    <Preview {...{ resources, items, department, description, selected, eventHandler, year, hasButton }} section='Focus area information' >
       <ChartSection
         {...{ initialSelected }}
         chart={(onSelectedChange) => <Treemap {...{ onSelectedChange }} items={selectedObject.items} />}
@@ -35,3 +32,4 @@ const FocusAreaPreview = (props) => {
 };
 
 export default FocusAreaPreview;
+
