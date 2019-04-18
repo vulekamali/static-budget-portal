@@ -8,10 +8,7 @@ budget_actual:
   expenditure:
     base_financial_year: 2018-19
     nominal:
-    - amount: 14387436000
-      financial_year: 2015-16
-      phase: Main appropriation
-    - amount: 17781066000
+    - amount: 2383626000
       financial_year: 2016-17
       phase: Main appropriation
     - amount: null
@@ -38,6 +35,9 @@ budget_actual:
     - amount: null
       financial_year: 2014-15
       phase: Audit Outcome
+    - amount: null
+      financial_year: 2015-16
+      phase: Main appropriation
     - amount: null
       financial_year: 2015-16
       phase: Adjusted appropriation
@@ -57,10 +57,7 @@ budget_actual:
       financial_year: 2016-17
       phase: Audit Outcome
     real:
-    - amount: 16800765061
-      financial_year: 2015-16
-      phase: Main appropriation
-    - amount: 19533948479
+    - amount: 2618607201
       financial_year: 2016-17
       phase: Main appropriation
     - amount: null
@@ -87,6 +84,9 @@ budget_actual:
     - amount: null
       financial_year: 2014-15
       phase: Audit Outcome
+    - amount: null
+      financial_year: 2015-16
+      phase: Main appropriation
     - amount: null
       financial_year: 2015-16
       phase: Adjusted appropriation
@@ -107,15 +107,14 @@ budget_actual:
       phase: Audit Outcome
   notices:
   - Please note that the data for 2013 and 2014 has not been published on vulekamali.
+  - This department did not exist for some years displayed.
 budget_actual_programmes:
   dataset_detail_page: /datasets/budgeted-and-actual-provincial-expenditure/budgeted-and-actual-provincial-expenditure
-  notices: []
+  notices:
+  - One or more programmes did not exist for some years displayed.
   programmes:
   - items:
-    - amount: 9946000
-      financial_year: 2015-16
-      phase: Main appropriation
-    - amount: 12234000
+    - amount: 316310000
       financial_year: 2016-17
       phase: Main appropriation
     - amount: null
@@ -144,154 +143,7 @@ budget_actual_programmes:
       phase: Audit Outcome
     - amount: null
       financial_year: 2015-16
-      phase: Adjusted appropriation
-    - amount: null
-      financial_year: 2015-16
-      phase: Final Appropriation
-    - amount: null
-      financial_year: 2015-16
-      phase: Audit Outcome
-    - amount: null
-      financial_year: 2016-17
-      phase: Adjusted appropriation
-    - amount: null
-      financial_year: 2016-17
-      phase: Final Appropriation
-    - amount: null
-      financial_year: 2016-17
-      phase: Audit Outcome
-    name: Special Programs
-  - items:
-    - amount: 157969000
-      financial_year: 2015-16
       phase: Main appropriation
-    - amount: 180251000
-      financial_year: 2016-17
-      phase: Main appropriation
-    - amount: null
-      financial_year: 2013-14
-      phase: Main appropriation
-    - amount: null
-      financial_year: 2013-14
-      phase: Adjusted appropriation
-    - amount: null
-      financial_year: 2013-14
-      phase: Final Appropriation
-    - amount: null
-      financial_year: 2013-14
-      phase: Audit Outcome
-    - amount: null
-      financial_year: 2014-15
-      phase: Main appropriation
-    - amount: null
-      financial_year: 2014-15
-      phase: Adjusted appropriation
-    - amount: null
-      financial_year: 2014-15
-      phase: Final Appropriation
-    - amount: null
-      financial_year: 2014-15
-      phase: Audit Outcome
-    - amount: null
-      financial_year: 2015-16
-      phase: Adjusted appropriation
-    - amount: null
-      financial_year: 2015-16
-      phase: Final Appropriation
-    - amount: null
-      financial_year: 2015-16
-      phase: Audit Outcome
-    - amount: null
-      financial_year: 2016-17
-      phase: Adjusted appropriation
-    - amount: null
-      financial_year: 2016-17
-      phase: Final Appropriation
-    - amount: null
-      financial_year: 2016-17
-      phase: Audit Outcome
-    name: Development And Research
-  - items:
-    - amount: 654000000
-      financial_year: 2015-16
-      phase: Main appropriation
-    - amount: 704352000
-      financial_year: 2016-17
-      phase: Main appropriation
-    - amount: null
-      financial_year: 2013-14
-      phase: Main appropriation
-    - amount: null
-      financial_year: 2013-14
-      phase: Adjusted appropriation
-    - amount: null
-      financial_year: 2013-14
-      phase: Final Appropriation
-    - amount: null
-      financial_year: 2013-14
-      phase: Audit Outcome
-    - amount: null
-      financial_year: 2014-15
-      phase: Main appropriation
-    - amount: null
-      financial_year: 2014-15
-      phase: Adjusted appropriation
-    - amount: null
-      financial_year: 2014-15
-      phase: Final Appropriation
-    - amount: null
-      financial_year: 2014-15
-      phase: Audit Outcome
-    - amount: null
-      financial_year: 2015-16
-      phase: Adjusted appropriation
-    - amount: null
-      financial_year: 2015-16
-      phase: Final Appropriation
-    - amount: null
-      financial_year: 2015-16
-      phase: Audit Outcome
-    - amount: null
-      financial_year: 2016-17
-      phase: Adjusted appropriation
-    - amount: null
-      financial_year: 2016-17
-      phase: Final Appropriation
-    - amount: null
-      financial_year: 2016-17
-      phase: Audit Outcome
-    name: Children And Families
-  - items:
-    - amount: 1187378000
-      financial_year: 2015-16
-      phase: Main appropriation
-    - amount: 1658255000
-      financial_year: 2016-17
-      phase: Main appropriation
-    - amount: null
-      financial_year: 2013-14
-      phase: Main appropriation
-    - amount: null
-      financial_year: 2013-14
-      phase: Adjusted appropriation
-    - amount: null
-      financial_year: 2013-14
-      phase: Final Appropriation
-    - amount: null
-      financial_year: 2013-14
-      phase: Audit Outcome
-    - amount: null
-      financial_year: 2014-15
-      phase: Main appropriation
-    - amount: null
-      financial_year: 2014-15
-      phase: Adjusted appropriation
-    - amount: null
-      financial_year: 2014-15
-      phase: Final Appropriation
-    - amount: null
-      financial_year: 2014-15
-      phase: Audit Outcome
     - amount: null
       financial_year: 2015-16
       phase: Adjusted appropriation
@@ -312,10 +164,7 @@ budget_actual_programmes:
       phase: Audit Outcome
     name: Development and Research
   - items:
-    - amount: 1955199000
-      financial_year: 2015-16
-      phase: Main appropriation
-    - amount: 2432220000
+    - amount: 366267000
       financial_year: 2016-17
       phase: Main appropriation
     - amount: null
@@ -342,6 +191,9 @@ budget_actual_programmes:
     - amount: null
       financial_year: 2014-15
       phase: Audit Outcome
+    - amount: null
+      financial_year: 2015-16
+      phase: Main appropriation
     - amount: null
       financial_year: 2015-16
       phase: Adjusted appropriation
@@ -362,10 +214,7 @@ budget_actual_programmes:
       phase: Audit Outcome
     name: Restorative Services
   - items:
-    - amount: 2253074000
-      financial_year: 2015-16
-      phase: Main appropriation
-    - amount: 2755923000
+    - amount: 438237000
       financial_year: 2016-17
       phase: Main appropriation
     - amount: null
@@ -392,6 +241,9 @@ budget_actual_programmes:
     - amount: null
       financial_year: 2014-15
       phase: Audit Outcome
+    - amount: null
+      financial_year: 2015-16
+      phase: Main appropriation
     - amount: null
       financial_year: 2015-16
       phase: Adjusted appropriation
@@ -412,10 +264,7 @@ budget_actual_programmes:
       phase: Audit Outcome
     name: Administration
   - items:
-    - amount: 3118631000
-      financial_year: 2015-16
-      phase: Main appropriation
-    - amount: 4013107000
+    - amount: 614690000
       financial_year: 2016-17
       phase: Main appropriation
     - amount: null
@@ -442,6 +291,9 @@ budget_actual_programmes:
     - amount: null
       financial_year: 2014-15
       phase: Audit Outcome
+    - amount: null
+      financial_year: 2015-16
+      phase: Main appropriation
     - amount: null
       financial_year: 2015-16
       phase: Adjusted appropriation
@@ -462,10 +314,7 @@ budget_actual_programmes:
       phase: Audit Outcome
     name: Social Welfare Services
   - items:
-    - amount: 5051239000
-      financial_year: 2015-16
-      phase: Main appropriation
-    - amount: 6024724000
+    - amount: 648122000
       financial_year: 2016-17
       phase: Main appropriation
     - amount: null
@@ -492,6 +341,9 @@ budget_actual_programmes:
     - amount: null
       financial_year: 2014-15
       phase: Audit Outcome
+    - amount: null
+      financial_year: 2015-16
+      phase: Main appropriation
     - amount: null
       financial_year: 2015-16
       phase: Adjusted appropriation

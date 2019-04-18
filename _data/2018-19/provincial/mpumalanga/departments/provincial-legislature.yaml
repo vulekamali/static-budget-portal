@@ -8,17 +8,17 @@ budget_actual:
   expenditure:
     base_financial_year: 2018-19
     nominal:
-    - amount: 1394662000
-      financial_year: 2015-16
-      phase: Main appropriation
-    - amount: 1990500000
+    - amount: 273423000
       financial_year: 2016-17
       phase: Main appropriation
-    - amount: 2060989000
+    - amount: 292321000
       financial_year: 2017-18
       phase: Main appropriation
-    - amount: 2521016514.7629
+    - amount: 346647000.0
       financial_year: 2018-19
+      phase: Main appropriation
+    - amount: null
+      financial_year: 2015-16
       phase: Main appropriation
     - amount: null
       financial_year: 2015-16
@@ -57,17 +57,17 @@ budget_actual:
       financial_year: 2018-19
       phase: Audit Outcome
     real:
-    - amount: 1628600718
-      financial_year: 2015-16
-      phase: Main appropriation
-    - amount: 2186726287
+    - amount: 300377423
       financial_year: 2016-17
       phase: Main appropriation
-    - amount: 2162228738
+    - amount: 306680368
       financial_year: 2017-18
       phase: Main appropriation
-    - amount: 2521016514
+    - amount: 346647000
       financial_year: 2018-19
+      phase: Main appropriation
+    - amount: null
+      financial_year: 2015-16
       phase: Main appropriation
     - amount: null
       financial_year: 2015-16
@@ -105,414 +105,15 @@ budget_actual:
     - amount: null
       financial_year: 2018-19
       phase: Audit Outcome
-  notices: []
+  notices:
+  - This department did not exist for some years displayed.
 budget_actual_programmes:
   dataset_detail_page: /datasets/budgeted-and-actual-provincial-expenditure/budgeted-and-actual-provincial-expenditure
   notices:
   - One or more programmes did not exist for some years displayed.
   programmes:
   - items:
-    - amount: 0
-      financial_year: 2016-17
-      phase: Main appropriation
-    - amount: 0
-      financial_year: 2017-18
-      phase: Main appropriation
-    - amount: 33855000.0
-      financial_year: 2018-19
-      phase: Main appropriation
-    - amount: null
-      financial_year: 2015-16
-      phase: Main appropriation
-    - amount: null
-      financial_year: 2015-16
-      phase: Adjusted appropriation
-    - amount: null
-      financial_year: 2015-16
-      phase: Final Appropriation
-    - amount: null
-      financial_year: 2015-16
-      phase: Audit Outcome
-    - amount: null
-      financial_year: 2016-17
-      phase: Adjusted appropriation
-    - amount: null
-      financial_year: 2016-17
-      phase: Final Appropriation
-    - amount: null
-      financial_year: 2016-17
-      phase: Audit Outcome
-    - amount: null
-      financial_year: 2017-18
-      phase: Adjusted appropriation
-    - amount: null
-      financial_year: 2017-18
-      phase: Final Appropriation
-    - amount: null
-      financial_year: 2017-18
-      phase: Audit Outcome
-    - amount: null
-      financial_year: 2018-19
-      phase: Adjusted appropriation
-    - amount: null
-      financial_year: 2018-19
-      phase: Final Appropriation
-    - amount: null
-      financial_year: 2018-19
-      phase: Audit Outcome
-    name: Statutory Payments
-  - items:
-    - amount: 45574000.0
-      financial_year: 2018-19
-      phase: Main appropriation
-    - amount: null
-      financial_year: 2015-16
-      phase: Main appropriation
-    - amount: null
-      financial_year: 2015-16
-      phase: Adjusted appropriation
-    - amount: null
-      financial_year: 2015-16
-      phase: Final Appropriation
-    - amount: null
-      financial_year: 2015-16
-      phase: Audit Outcome
-    - amount: null
-      financial_year: 2016-17
-      phase: Main appropriation
-    - amount: null
-      financial_year: 2016-17
-      phase: Adjusted appropriation
-    - amount: null
-      financial_year: 2016-17
-      phase: Final Appropriation
-    - amount: null
-      financial_year: 2016-17
-      phase: Audit Outcome
-    - amount: null
-      financial_year: 2017-18
-      phase: Main appropriation
-    - amount: null
-      financial_year: 2017-18
-      phase: Adjusted appropriation
-    - amount: null
-      financial_year: 2017-18
-      phase: Final Appropriation
-    - amount: null
-      financial_year: 2017-18
-      phase: Audit Outcome
-    - amount: null
-      financial_year: 2018-19
-      phase: Adjusted appropriation
-    - amount: null
-      financial_year: 2018-19
-      phase: Final Appropriation
-    - amount: null
-      financial_year: 2018-19
-      phase: Audit Outcome
-    name: Policy And Governance
-  - items:
-    - amount: 91482000.0
-      financial_year: 2018-19
-      phase: Main appropriation
-    - amount: null
-      financial_year: 2015-16
-      phase: Main appropriation
-    - amount: null
-      financial_year: 2015-16
-      phase: Adjusted appropriation
-    - amount: null
-      financial_year: 2015-16
-      phase: Final Appropriation
-    - amount: null
-      financial_year: 2015-16
-      phase: Audit Outcome
-    - amount: null
-      financial_year: 2016-17
-      phase: Main appropriation
-    - amount: null
-      financial_year: 2016-17
-      phase: Adjusted appropriation
-    - amount: null
-      financial_year: 2016-17
-      phase: Final Appropriation
-    - amount: null
-      financial_year: 2016-17
-      phase: Audit Outcome
-    - amount: null
-      financial_year: 2017-18
-      phase: Main appropriation
-    - amount: null
-      financial_year: 2017-18
-      phase: Adjusted appropriation
-    - amount: null
-      financial_year: 2017-18
-      phase: Final Appropriation
-    - amount: null
-      financial_year: 2017-18
-      phase: Audit Outcome
-    - amount: null
-      financial_year: 2018-19
-      phase: Adjusted appropriation
-    - amount: null
-      financial_year: 2018-19
-      phase: Final Appropriation
-    - amount: null
-      financial_year: 2018-19
-      phase: Audit Outcome
-    name: Institutional Development
-  - items:
-    - amount: 125943000
-      financial_year: 2016-17
-      phase: Main appropriation
-    - amount: null
-      financial_year: 2015-16
-      phase: Main appropriation
-    - amount: null
-      financial_year: 2015-16
-      phase: Adjusted appropriation
-    - amount: null
-      financial_year: 2015-16
-      phase: Final Appropriation
-    - amount: null
-      financial_year: 2015-16
-      phase: Audit Outcome
-    - amount: null
-      financial_year: 2016-17
-      phase: Adjusted appropriation
-    - amount: null
-      financial_year: 2016-17
-      phase: Final Appropriation
-    - amount: null
-      financial_year: 2016-17
-      phase: Audit Outcome
-    - amount: null
-      financial_year: 2017-18
-      phase: Main appropriation
-    - amount: null
-      financial_year: 2017-18
-      phase: Adjusted appropriation
-    - amount: null
-      financial_year: 2017-18
-      phase: Final Appropriation
-    - amount: null
-      financial_year: 2017-18
-      phase: Audit Outcome
-    - amount: null
-      financial_year: 2018-19
-      phase: Main appropriation
-    - amount: null
-      financial_year: 2018-19
-      phase: Adjusted appropriation
-    - amount: null
-      financial_year: 2018-19
-      phase: Final Appropriation
-    - amount: null
-      financial_year: 2018-19
-      phase: Audit Outcome
-    name: Direct charge against the Provincial Revenue Fund
-  - items:
-    - amount: 128819000
-      financial_year: 2015-16
-      phase: Main appropriation
-    - amount: 134718000
-      financial_year: 2016-17
-      phase: Main appropriation
-    - amount: 88351000
-      financial_year: 2017-18
-      phase: Main appropriation
-    - amount: null
-      financial_year: 2015-16
-      phase: Adjusted appropriation
-    - amount: null
-      financial_year: 2015-16
-      phase: Final Appropriation
-    - amount: null
-      financial_year: 2015-16
-      phase: Audit Outcome
-    - amount: null
-      financial_year: 2016-17
-      phase: Adjusted appropriation
-    - amount: null
-      financial_year: 2016-17
-      phase: Final Appropriation
-    - amount: null
-      financial_year: 2016-17
-      phase: Audit Outcome
-    - amount: null
-      financial_year: 2017-18
-      phase: Adjusted appropriation
-    - amount: null
-      financial_year: 2017-18
-      phase: Final Appropriation
-    - amount: null
-      financial_year: 2017-18
-      phase: Audit Outcome
-    - amount: null
-      financial_year: 2018-19
-      phase: Main appropriation
-    - amount: null
-      financial_year: 2018-19
-      phase: Adjusted appropriation
-    - amount: null
-      financial_year: 2018-19
-      phase: Final Appropriation
-    - amount: null
-      financial_year: 2018-19
-      phase: Audit Outcome
-    name: Legislature operations
-  - items:
-    - amount: 144917000.0
-      financial_year: 2018-19
-      phase: Main appropriation
-    - amount: null
-      financial_year: 2015-16
-      phase: Main appropriation
-    - amount: null
-      financial_year: 2015-16
-      phase: Adjusted appropriation
-    - amount: null
-      financial_year: 2015-16
-      phase: Final Appropriation
-    - amount: null
-      financial_year: 2015-16
-      phase: Audit Outcome
-    - amount: null
-      financial_year: 2016-17
-      phase: Main appropriation
-    - amount: null
-      financial_year: 2016-17
-      phase: Adjusted appropriation
-    - amount: null
-      financial_year: 2016-17
-      phase: Final Appropriation
-    - amount: null
-      financial_year: 2016-17
-      phase: Audit Outcome
-    - amount: null
-      financial_year: 2017-18
-      phase: Main appropriation
-    - amount: null
-      financial_year: 2017-18
-      phase: Adjusted appropriation
-    - amount: null
-      financial_year: 2017-18
-      phase: Final Appropriation
-    - amount: null
-      financial_year: 2017-18
-      phase: Audit Outcome
-    - amount: null
-      financial_year: 2018-19
-      phase: Adjusted appropriation
-    - amount: null
-      financial_year: 2018-19
-      phase: Final Appropriation
-    - amount: null
-      financial_year: 2018-19
-      phase: Audit Outcome
-    name: Legislature Operations
-  - items:
-    - amount: 218912000
-      financial_year: 2015-16
-      phase: Main appropriation
-    - amount: 184008000
-      financial_year: 2016-17
-      phase: Main appropriation
-    - amount: 196347000
-      financial_year: 2017-18
-      phase: Main appropriation
-    - amount: 192800024.67319998
-      financial_year: 2018-19
-      phase: Main appropriation
-    - amount: null
-      financial_year: 2015-16
-      phase: Adjusted appropriation
-    - amount: null
-      financial_year: 2015-16
-      phase: Final Appropriation
-    - amount: null
-      financial_year: 2015-16
-      phase: Audit Outcome
-    - amount: null
-      financial_year: 2016-17
-      phase: Adjusted appropriation
-    - amount: null
-      financial_year: 2016-17
-      phase: Final Appropriation
-    - amount: null
-      financial_year: 2016-17
-      phase: Audit Outcome
-    - amount: null
-      financial_year: 2017-18
-      phase: Adjusted appropriation
-    - amount: null
-      financial_year: 2017-18
-      phase: Final Appropriation
-    - amount: null
-      financial_year: 2017-18
-      phase: Audit Outcome
-    - amount: null
-      financial_year: 2018-19
-      phase: Adjusted appropriation
-    - amount: null
-      financial_year: 2018-19
-      phase: Final Appropriation
-    - amount: null
-      financial_year: 2018-19
-      phase: Audit Outcome
-    name: Parliamentary Services
-  - items:
-    - amount: 225200000
-      financial_year: 2015-16
-      phase: Main appropriation
-    - amount: 258038000
-      financial_year: 2016-17
-      phase: Main appropriation
-    - amount: 257691000
-      financial_year: 2017-18
-      phase: Main appropriation
-    - amount: null
-      financial_year: 2015-16
-      phase: Adjusted appropriation
-    - amount: null
-      financial_year: 2015-16
-      phase: Final Appropriation
-    - amount: null
-      financial_year: 2015-16
-      phase: Audit Outcome
-    - amount: null
-      financial_year: 2016-17
-      phase: Adjusted appropriation
-    - amount: null
-      financial_year: 2016-17
-      phase: Final Appropriation
-    - amount: null
-      financial_year: 2016-17
-      phase: Audit Outcome
-    - amount: null
-      financial_year: 2017-18
-      phase: Adjusted appropriation
-    - amount: null
-      financial_year: 2017-18
-      phase: Final Appropriation
-    - amount: null
-      financial_year: 2017-18
-      phase: Audit Outcome
-    - amount: null
-      financial_year: 2018-19
-      phase: Main appropriation
-    - amount: null
-      financial_year: 2018-19
-      phase: Adjusted appropriation
-    - amount: null
-      financial_year: 2018-19
-      phase: Final Appropriation
-    - amount: null
-      financial_year: 2018-19
-      phase: Audit Outcome
-    name: Facilities for Members and Political Parties
-  - items:
-    - amount: 234425167.7
+    - amount: 26678000.0
       financial_year: 2018-19
       phase: Main appropriation
     - amount: null
@@ -562,67 +163,17 @@ budget_actual_programmes:
       phase: Audit Outcome
     name: Direct Charges
   - items:
-    - amount: 239018864.8
+    - amount: 129821000
+      financial_year: 2016-17
+      phase: Main appropriation
+    - amount: 141285000
+      financial_year: 2017-18
+      phase: Main appropriation
+    - amount: 156248000.0
       financial_year: 2018-19
       phase: Main appropriation
     - amount: null
       financial_year: 2015-16
-      phase: Main appropriation
-    - amount: null
-      financial_year: 2015-16
-      phase: Adjusted appropriation
-    - amount: null
-      financial_year: 2015-16
-      phase: Final Appropriation
-    - amount: null
-      financial_year: 2015-16
-      phase: Audit Outcome
-    - amount: null
-      financial_year: 2016-17
-      phase: Main appropriation
-    - amount: null
-      financial_year: 2016-17
-      phase: Adjusted appropriation
-    - amount: null
-      financial_year: 2016-17
-      phase: Final Appropriation
-    - amount: null
-      financial_year: 2016-17
-      phase: Audit Outcome
-    - amount: null
-      financial_year: 2017-18
-      phase: Main appropriation
-    - amount: null
-      financial_year: 2017-18
-      phase: Adjusted appropriation
-    - amount: null
-      financial_year: 2017-18
-      phase: Final Appropriation
-    - amount: null
-      financial_year: 2017-18
-      phase: Audit Outcome
-    - amount: null
-      financial_year: 2018-19
-      phase: Adjusted appropriation
-    - amount: null
-      financial_year: 2018-19
-      phase: Final Appropriation
-    - amount: null
-      financial_year: 2018-19
-      phase: Audit Outcome
-    name: Facilities For Members And Political Parties
-  - items:
-    - amount: 240457000
-      financial_year: 2015-16
-      phase: Main appropriation
-    - amount: 443208000
-      financial_year: 2016-17
-      phase: Main appropriation
-    - amount: 453312000
-      financial_year: 2017-18
-      phase: Main appropriation
-    - amount: 439215000.0
-      financial_year: 2018-19
       phase: Main appropriation
     - amount: null
       financial_year: 2015-16
@@ -662,17 +213,17 @@ budget_actual_programmes:
       phase: Audit Outcome
     name: Parliamentary Business
   - items:
-    - amount: 581274000
-      financial_year: 2015-16
-      phase: Main appropriation
-    - amount: 844585000
+    - amount: 143602000
       financial_year: 2016-17
       phase: Main appropriation
-    - amount: 1065288000
+    - amount: 151036000
       financial_year: 2017-18
       phase: Main appropriation
-    - amount: 1099729457.5897
+    - amount: 163721000.0
       financial_year: 2018-19
+      phase: Main appropriation
+    - amount: null
+      financial_year: 2015-16
       phase: Main appropriation
     - amount: null
       financial_year: 2015-16

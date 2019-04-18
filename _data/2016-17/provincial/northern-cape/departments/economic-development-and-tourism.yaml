@@ -8,10 +8,10 @@ budget_actual:
   expenditure:
     base_financial_year: 2018-19
     nominal:
-    - amount: 1528306000
+    - amount: 266436000
       financial_year: 2015-16
       phase: Main appropriation
-    - amount: 764684000
+    - amount: 277915000
       financial_year: 2016-17
       phase: Main appropriation
     - amount: null
@@ -57,10 +57,10 @@ budget_actual:
       financial_year: 2016-17
       phase: Audit Outcome
     real:
-    - amount: 1784661982
+    - amount: 311127614
       financial_year: 2015-16
       phase: Main appropriation
-    - amount: 840067623
+    - amount: 305312251
       financial_year: 2016-17
       phase: Main appropriation
     - amount: null
@@ -109,12 +109,14 @@ budget_actual:
   - Please note that the data for 2013 and 2014 has not been published on vulekamali.
 budget_actual_programmes:
   dataset_detail_page: /datasets/budgeted-and-actual-provincial-expenditure/budgeted-and-actual-provincial-expenditure
-  notices:
-  - One or more programmes did not exist for some years displayed.
+  notices: []
   programmes:
   - items:
-    - amount: 0
+    - amount: 17152000
       financial_year: 2015-16
+      phase: Main appropriation
+    - amount: 19567000
+      financial_year: 2016-17
       phase: Main appropriation
     - amount: null
       financial_year: 2013-14
@@ -151,9 +153,6 @@ budget_actual_programmes:
       phase: Audit Outcome
     - amount: null
       financial_year: 2016-17
-      phase: Main appropriation
-    - amount: null
-      financial_year: 2016-17
       phase: Adjusted appropriation
     - amount: null
       financial_year: 2016-17
@@ -161,7 +160,7 @@ budget_actual_programmes:
     - amount: null
       financial_year: 2016-17
       phase: Audit Outcome
-    name: Environmental Services
+    name: Economic Planning
   - items:
     - amount: 29400000
       financial_year: 2015-16
@@ -263,10 +262,10 @@ budget_actual_programmes:
       phase: Audit Outcome
     name: Trade And Sector Development
   - items:
-    - amount: 42471000
+    - amount: 50894000
       financial_year: 2015-16
       phase: Main appropriation
-    - amount: 46588000
+    - amount: 53569000
       financial_year: 2016-17
       phase: Main appropriation
     - amount: null
@@ -311,12 +310,12 @@ budget_actual_programmes:
     - amount: null
       financial_year: 2016-17
       phase: Audit Outcome
-    name: Tourism Arts and Entertainment
+    name: Tourism
   - items:
-    - amount: 51290000
+    - amount: 53544000
       financial_year: 2015-16
       phase: Main appropriation
-    - amount: 63242000
+    - amount: 58057000
       financial_year: 2016-17
       phase: Main appropriation
     - amount: null
@@ -361,107 +360,7 @@ budget_actual_programmes:
     - amount: null
       financial_year: 2016-17
       phase: Audit Outcome
-    name: Skills Development and Innovation
-  - items:
-    - amount: 52625000
-      financial_year: 2015-16
-      phase: Main appropriation
-    - amount: 234752000
-      financial_year: 2016-17
-      phase: Main appropriation
-    - amount: null
-      financial_year: 2013-14
-      phase: Main appropriation
-    - amount: null
-      financial_year: 2013-14
-      phase: Adjusted appropriation
-    - amount: null
-      financial_year: 2013-14
-      phase: Final Appropriation
-    - amount: null
-      financial_year: 2013-14
-      phase: Audit Outcome
-    - amount: null
-      financial_year: 2014-15
-      phase: Main appropriation
-    - amount: null
-      financial_year: 2014-15
-      phase: Adjusted appropriation
-    - amount: null
-      financial_year: 2014-15
-      phase: Final Appropriation
-    - amount: null
-      financial_year: 2014-15
-      phase: Audit Outcome
-    - amount: null
-      financial_year: 2015-16
-      phase: Adjusted appropriation
-    - amount: null
-      financial_year: 2015-16
-      phase: Final Appropriation
-    - amount: null
-      financial_year: 2015-16
-      phase: Audit Outcome
-    - amount: null
-      financial_year: 2016-17
-      phase: Adjusted appropriation
-    - amount: null
-      financial_year: 2016-17
-      phase: Final Appropriation
-    - amount: null
-      financial_year: 2016-17
-      phase: Audit Outcome
-    name: Economic Planning
-  - items:
-    - amount: 59253000
-      financial_year: 2015-16
-      phase: Main appropriation
-    - amount: 40938000
-      financial_year: 2016-17
-      phase: Main appropriation
-    - amount: null
-      financial_year: 2013-14
-      phase: Main appropriation
-    - amount: null
-      financial_year: 2013-14
-      phase: Adjusted appropriation
-    - amount: null
-      financial_year: 2013-14
-      phase: Final Appropriation
-    - amount: null
-      financial_year: 2013-14
-      phase: Audit Outcome
-    - amount: null
-      financial_year: 2014-15
-      phase: Main appropriation
-    - amount: null
-      financial_year: 2014-15
-      phase: Adjusted appropriation
-    - amount: null
-      financial_year: 2014-15
-      phase: Final Appropriation
-    - amount: null
-      financial_year: 2014-15
-      phase: Audit Outcome
-    - amount: null
-      financial_year: 2015-16
-      phase: Adjusted appropriation
-    - amount: null
-      financial_year: 2015-16
-      phase: Final Appropriation
-    - amount: null
-      financial_year: 2015-16
-      phase: Audit Outcome
-    - amount: null
-      financial_year: 2016-17
-      phase: Adjusted appropriation
-    - amount: null
-      financial_year: 2016-17
-      phase: Final Appropriation
-    - amount: null
-      financial_year: 2016-17
-      phase: Audit Outcome
-    name: Integrated Economic Development Services
+    name: Administration
   - items:
     - amount: 84122000
       financial_year: 2015-16
@@ -512,256 +411,6 @@ budget_actual_programmes:
       financial_year: 2016-17
       phase: Audit Outcome
     name: Intergrated Economic Development Services
-  - items:
-    - amount: 128140000
-      financial_year: 2015-16
-      phase: Main appropriation
-    - amount: 11311000
-      financial_year: 2016-17
-      phase: Main appropriation
-    - amount: null
-      financial_year: 2013-14
-      phase: Main appropriation
-    - amount: null
-      financial_year: 2013-14
-      phase: Adjusted appropriation
-    - amount: null
-      financial_year: 2013-14
-      phase: Final Appropriation
-    - amount: null
-      financial_year: 2013-14
-      phase: Audit Outcome
-    - amount: null
-      financial_year: 2014-15
-      phase: Main appropriation
-    - amount: null
-      financial_year: 2014-15
-      phase: Adjusted appropriation
-    - amount: null
-      financial_year: 2014-15
-      phase: Final Appropriation
-    - amount: null
-      financial_year: 2014-15
-      phase: Audit Outcome
-    - amount: null
-      financial_year: 2015-16
-      phase: Adjusted appropriation
-    - amount: null
-      financial_year: 2015-16
-      phase: Final Appropriation
-    - amount: null
-      financial_year: 2015-16
-      phase: Audit Outcome
-    - amount: null
-      financial_year: 2016-17
-      phase: Adjusted appropriation
-    - amount: null
-      financial_year: 2016-17
-      phase: Final Appropriation
-    - amount: null
-      financial_year: 2016-17
-      phase: Audit Outcome
-    name: Business Regulation and Governance
-  - items:
-    - amount: 180202000
-      financial_year: 2015-16
-      phase: Main appropriation
-    - amount: 107976000
-      financial_year: 2016-17
-      phase: Main appropriation
-    - amount: null
-      financial_year: 2013-14
-      phase: Main appropriation
-    - amount: null
-      financial_year: 2013-14
-      phase: Adjusted appropriation
-    - amount: null
-      financial_year: 2013-14
-      phase: Final Appropriation
-    - amount: null
-      financial_year: 2013-14
-      phase: Audit Outcome
-    - amount: null
-      financial_year: 2014-15
-      phase: Main appropriation
-    - amount: null
-      financial_year: 2014-15
-      phase: Adjusted appropriation
-    - amount: null
-      financial_year: 2014-15
-      phase: Final Appropriation
-    - amount: null
-      financial_year: 2014-15
-      phase: Audit Outcome
-    - amount: null
-      financial_year: 2015-16
-      phase: Adjusted appropriation
-    - amount: null
-      financial_year: 2015-16
-      phase: Final Appropriation
-    - amount: null
-      financial_year: 2015-16
-      phase: Audit Outcome
-    - amount: null
-      financial_year: 2016-17
-      phase: Adjusted appropriation
-    - amount: null
-      financial_year: 2016-17
-      phase: Final Appropriation
-    - amount: null
-      financial_year: 2016-17
-      phase: Audit Outcome
-    name: Administration
-  - items:
-    - amount: 211413000
-      financial_year: 2015-16
-      phase: Main appropriation
-    - amount: null
-      financial_year: 2013-14
-      phase: Main appropriation
-    - amount: null
-      financial_year: 2013-14
-      phase: Adjusted appropriation
-    - amount: null
-      financial_year: 2013-14
-      phase: Final Appropriation
-    - amount: null
-      financial_year: 2013-14
-      phase: Audit Outcome
-    - amount: null
-      financial_year: 2014-15
-      phase: Main appropriation
-    - amount: null
-      financial_year: 2014-15
-      phase: Adjusted appropriation
-    - amount: null
-      financial_year: 2014-15
-      phase: Final Appropriation
-    - amount: null
-      financial_year: 2014-15
-      phase: Audit Outcome
-    - amount: null
-      financial_year: 2015-16
-      phase: Adjusted appropriation
-    - amount: null
-      financial_year: 2015-16
-      phase: Final Appropriation
-    - amount: null
-      financial_year: 2015-16
-      phase: Audit Outcome
-    - amount: null
-      financial_year: 2016-17
-      phase: Main appropriation
-    - amount: null
-      financial_year: 2016-17
-      phase: Adjusted appropriation
-    - amount: null
-      financial_year: 2016-17
-      phase: Final Appropriation
-    - amount: null
-      financial_year: 2016-17
-      phase: Audit Outcome
-    name: Integrated Economic Development
-  - items:
-    - amount: 272437000
-      financial_year: 2015-16
-      phase: Main appropriation
-    - amount: 59586000
-      financial_year: 2016-17
-      phase: Main appropriation
-    - amount: null
-      financial_year: 2013-14
-      phase: Main appropriation
-    - amount: null
-      financial_year: 2013-14
-      phase: Adjusted appropriation
-    - amount: null
-      financial_year: 2013-14
-      phase: Final Appropriation
-    - amount: null
-      financial_year: 2013-14
-      phase: Audit Outcome
-    - amount: null
-      financial_year: 2014-15
-      phase: Main appropriation
-    - amount: null
-      financial_year: 2014-15
-      phase: Adjusted appropriation
-    - amount: null
-      financial_year: 2014-15
-      phase: Final Appropriation
-    - amount: null
-      financial_year: 2014-15
-      phase: Audit Outcome
-    - amount: null
-      financial_year: 2015-16
-      phase: Adjusted appropriation
-    - amount: null
-      financial_year: 2015-16
-      phase: Final Appropriation
-    - amount: null
-      financial_year: 2015-16
-      phase: Audit Outcome
-    - amount: null
-      financial_year: 2016-17
-      phase: Adjusted appropriation
-    - amount: null
-      financial_year: 2016-17
-      phase: Final Appropriation
-    - amount: null
-      financial_year: 2016-17
-      phase: Audit Outcome
-    name: Trade and Sector Development
-  - items:
-    - amount: 385629000
-      financial_year: 2015-16
-      phase: Main appropriation
-    - amount: 53569000
-      financial_year: 2016-17
-      phase: Main appropriation
-    - amount: null
-      financial_year: 2013-14
-      phase: Main appropriation
-    - amount: null
-      financial_year: 2013-14
-      phase: Adjusted appropriation
-    - amount: null
-      financial_year: 2013-14
-      phase: Final Appropriation
-    - amount: null
-      financial_year: 2013-14
-      phase: Audit Outcome
-    - amount: null
-      financial_year: 2014-15
-      phase: Main appropriation
-    - amount: null
-      financial_year: 2014-15
-      phase: Adjusted appropriation
-    - amount: null
-      financial_year: 2014-15
-      phase: Final Appropriation
-    - amount: null
-      financial_year: 2014-15
-      phase: Audit Outcome
-    - amount: null
-      financial_year: 2015-16
-      phase: Adjusted appropriation
-    - amount: null
-      financial_year: 2015-16
-      phase: Final Appropriation
-    - amount: null
-      financial_year: 2015-16
-      phase: Audit Outcome
-    - amount: null
-      financial_year: 2016-17
-      phase: Adjusted appropriation
-    - amount: null
-      financial_year: 2016-17
-      phase: Final Appropriation
-    - amount: null
-      financial_year: 2016-17
-      phase: Audit Outcome
-    name: Tourism
 contributed_datasets:
 - contributor: International Budget Partnership
   name: How Does Civil Society Use Budget Information?

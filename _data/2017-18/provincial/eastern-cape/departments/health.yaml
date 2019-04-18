@@ -8,13 +8,13 @@ budget_actual:
   expenditure:
     base_financial_year: 2018-19
     nominal:
-    - amount: 150869395000
+    - amount: 18495914000
       financial_year: 2015-16
       phase: Main appropriation
-    - amount: 163933627000
+    - amount: 20244339000
       financial_year: 2016-17
       phase: Main appropriation
-    - amount: 177875458000
+    - amount: 21707168000
       financial_year: 2017-18
       phase: Main appropriation
     - amount: null
@@ -57,13 +57,13 @@ budget_actual:
       financial_year: 2017-18
       phase: Audit Outcome
     real:
-    - amount: 176176023330
+    - amount: 21598393606
       financial_year: 2015-16
       phase: Main appropriation
-    - amount: 180094434378
+    - amount: 22240054394
       financial_year: 2016-17
       phase: Main appropriation
-    - amount: 186613042147
+    - amount: 22773465785
       financial_year: 2017-18
       phase: Main appropriation
     - amount: null
@@ -113,7 +113,13 @@ budget_actual_programmes:
   - One or more programmes did not exist for some years displayed.
   programmes:
   - items:
-    - amount: 140445000
+    - amount: 102650000
+      financial_year: 2015-16
+      phase: Main appropriation
+    - amount: 118609000
+      financial_year: 2016-17
+      phase: Main appropriation
+    - amount: 130758000
       financial_year: 2017-18
       phase: Main appropriation
     - amount: null
@@ -130,9 +136,6 @@ budget_actual_programmes:
       phase: Audit Outcome
     - amount: null
       financial_year: 2015-16
-      phase: Main appropriation
-    - amount: null
-      financial_year: 2015-16
       phase: Adjusted appropriation
     - amount: null
       financial_year: 2015-16
@@ -140,9 +143,6 @@ budget_actual_programmes:
     - amount: null
       financial_year: 2015-16
       phase: Audit Outcome
-    - amount: null
-      financial_year: 2016-17
-      phase: Main appropriation
     - amount: null
       financial_year: 2016-17
       phase: Adjusted appropriation
@@ -161,15 +161,15 @@ budget_actual_programmes:
     - amount: null
       financial_year: 2017-18
       phase: Audit Outcome
-    name: HEALTH CARE SUPPORT SERVICES
+    name: Health Care Support Services
   - items:
-    - amount: 212521000
+    - amount: 625488000
       financial_year: 2015-16
       phase: Main appropriation
-    - amount: 195927000
+    - amount: 674962000
       financial_year: 2016-17
       phase: Main appropriation
-    - amount: 245775000
+    - amount: 687002000
       financial_year: 2017-18
       phase: Main appropriation
     - amount: null
@@ -211,66 +211,10 @@ budget_actual_programmes:
     - amount: null
       financial_year: 2017-18
       phase: Audit Outcome
-    name: Health Science & Training
+    name: Administration
   - items:
-    - amount: 306248000
-      financial_year: 2017-18
-      phase: Main appropriation
-    - amount: null
-      financial_year: 2014-15
-      phase: Main appropriation
-    - amount: null
-      financial_year: 2014-15
-      phase: Adjusted appropriation
-    - amount: null
-      financial_year: 2014-15
-      phase: Final Appropriation
-    - amount: null
-      financial_year: 2014-15
-      phase: Audit Outcome
-    - amount: null
+    - amount: 751910000
       financial_year: 2015-16
-      phase: Main appropriation
-    - amount: null
-      financial_year: 2015-16
-      phase: Adjusted appropriation
-    - amount: null
-      financial_year: 2015-16
-      phase: Final Appropriation
-    - amount: null
-      financial_year: 2015-16
-      phase: Audit Outcome
-    - amount: null
-      financial_year: 2016-17
-      phase: Main appropriation
-    - amount: null
-      financial_year: 2016-17
-      phase: Adjusted appropriation
-    - amount: null
-      financial_year: 2016-17
-      phase: Final Appropriation
-    - amount: null
-      financial_year: 2016-17
-      phase: Audit Outcome
-    - amount: null
-      financial_year: 2017-18
-      phase: Adjusted appropriation
-    - amount: null
-      financial_year: 2017-18
-      phase: Final Appropriation
-    - amount: null
-      financial_year: 2017-18
-      phase: Audit Outcome
-    name: ADMINISTRATION
-  - items:
-    - amount: 313548000
-      financial_year: 2015-16
-      phase: Main appropriation
-    - amount: 393564000
-      financial_year: 2016-17
-      phase: Main appropriation
-    - amount: 418140000
-      financial_year: 2017-18
       phase: Main appropriation
     - amount: null
       financial_year: 2014-15
@@ -295,51 +239,7 @@ budget_actual_programmes:
       phase: Audit Outcome
     - amount: null
       financial_year: 2016-17
-      phase: Adjusted appropriation
-    - amount: null
-      financial_year: 2016-17
-      phase: Final Appropriation
-    - amount: null
-      financial_year: 2016-17
-      phase: Audit Outcome
-    - amount: null
-      financial_year: 2017-18
-      phase: Adjusted appropriation
-    - amount: null
-      financial_year: 2017-18
-      phase: Final Appropriation
-    - amount: null
-      financial_year: 2017-18
-      phase: Audit Outcome
-    name: Health Science and Training
-  - items:
-    - amount: 568523000
-      financial_year: 2015-16
       phase: Main appropriation
-    - amount: 571492000
-      financial_year: 2016-17
-      phase: Main appropriation
-    - amount: null
-      financial_year: 2014-15
-      phase: Main appropriation
-    - amount: null
-      financial_year: 2014-15
-      phase: Adjusted appropriation
-    - amount: null
-      financial_year: 2014-15
-      phase: Final Appropriation
-    - amount: null
-      financial_year: 2014-15
-      phase: Audit Outcome
-    - amount: null
-      financial_year: 2015-16
-      phase: Adjusted appropriation
-    - amount: null
-      financial_year: 2015-16
-      phase: Final Appropriation
-    - amount: null
-      financial_year: 2015-16
-      phase: Audit Outcome
     - amount: null
       financial_year: 2016-17
       phase: Adjusted appropriation
@@ -361,257 +261,7 @@ budget_actual_programmes:
     - amount: null
       financial_year: 2017-18
       phase: Audit Outcome
-    name: Health Sciences And Training
-  - items:
-    - amount: 586577000
-      financial_year: 2015-16
-      phase: Main appropriation
-    - amount: 686647000
-      financial_year: 2016-17
-      phase: Main appropriation
-    - amount: null
-      financial_year: 2014-15
-      phase: Main appropriation
-    - amount: null
-      financial_year: 2014-15
-      phase: Adjusted appropriation
-    - amount: null
-      financial_year: 2014-15
-      phase: Final Appropriation
-    - amount: null
-      financial_year: 2014-15
-      phase: Audit Outcome
-    - amount: null
-      financial_year: 2015-16
-      phase: Adjusted appropriation
-    - amount: null
-      financial_year: 2015-16
-      phase: Final Appropriation
-    - amount: null
-      financial_year: 2015-16
-      phase: Audit Outcome
-    - amount: null
-      financial_year: 2016-17
-      phase: Adjusted appropriation
-    - amount: null
-      financial_year: 2016-17
-      phase: Final Appropriation
-    - amount: null
-      financial_year: 2016-17
-      phase: Audit Outcome
-    - amount: null
-      financial_year: 2017-18
-      phase: Main appropriation
-    - amount: null
-      financial_year: 2017-18
-      phase: Adjusted appropriation
-    - amount: null
-      financial_year: 2017-18
-      phase: Final Appropriation
-    - amount: null
-      financial_year: 2017-18
-      phase: Audit Outcome
-    name: Emergency  Madical Services
-  - items:
-    - amount: 652172000
-      financial_year: 2017-18
-      phase: Main appropriation
-    - amount: null
-      financial_year: 2014-15
-      phase: Main appropriation
-    - amount: null
-      financial_year: 2014-15
-      phase: Adjusted appropriation
-    - amount: null
-      financial_year: 2014-15
-      phase: Final Appropriation
-    - amount: null
-      financial_year: 2014-15
-      phase: Audit Outcome
-    - amount: null
-      financial_year: 2015-16
-      phase: Main appropriation
-    - amount: null
-      financial_year: 2015-16
-      phase: Adjusted appropriation
-    - amount: null
-      financial_year: 2015-16
-      phase: Final Appropriation
-    - amount: null
-      financial_year: 2015-16
-      phase: Audit Outcome
-    - amount: null
-      financial_year: 2016-17
-      phase: Main appropriation
-    - amount: null
-      financial_year: 2016-17
-      phase: Adjusted appropriation
-    - amount: null
-      financial_year: 2016-17
-      phase: Final Appropriation
-    - amount: null
-      financial_year: 2016-17
-      phase: Audit Outcome
-    - amount: null
-      financial_year: 2017-18
-      phase: Adjusted appropriation
-    - amount: null
-      financial_year: 2017-18
-      phase: Final Appropriation
-    - amount: null
-      financial_year: 2017-18
-      phase: Audit Outcome
-    name: HEALTH FACILITIES MANAGEMENT
-  - items:
-    - amount: 660478000
-      financial_year: 2017-18
-      phase: Main appropriation
-    - amount: null
-      financial_year: 2014-15
-      phase: Main appropriation
-    - amount: null
-      financial_year: 2014-15
-      phase: Adjusted appropriation
-    - amount: null
-      financial_year: 2014-15
-      phase: Final Appropriation
-    - amount: null
-      financial_year: 2014-15
-      phase: Audit Outcome
-    - amount: null
-      financial_year: 2015-16
-      phase: Main appropriation
-    - amount: null
-      financial_year: 2015-16
-      phase: Adjusted appropriation
-    - amount: null
-      financial_year: 2015-16
-      phase: Final Appropriation
-    - amount: null
-      financial_year: 2015-16
-      phase: Audit Outcome
-    - amount: null
-      financial_year: 2016-17
-      phase: Main appropriation
-    - amount: null
-      financial_year: 2016-17
-      phase: Adjusted appropriation
-    - amount: null
-      financial_year: 2016-17
-      phase: Final Appropriation
-    - amount: null
-      financial_year: 2016-17
-      phase: Audit Outcome
-    - amount: null
-      financial_year: 2017-18
-      phase: Adjusted appropriation
-    - amount: null
-      financial_year: 2017-18
-      phase: Final Appropriation
-    - amount: null
-      financial_year: 2017-18
-      phase: Audit Outcome
-    name: HEALTH SCIENCES AND TRAINING
-  - items:
-    - amount: 728878000
-      financial_year: 2017-18
-      phase: Main appropriation
-    - amount: null
-      financial_year: 2014-15
-      phase: Main appropriation
-    - amount: null
-      financial_year: 2014-15
-      phase: Adjusted appropriation
-    - amount: null
-      financial_year: 2014-15
-      phase: Final Appropriation
-    - amount: null
-      financial_year: 2014-15
-      phase: Audit Outcome
-    - amount: null
-      financial_year: 2015-16
-      phase: Main appropriation
-    - amount: null
-      financial_year: 2015-16
-      phase: Adjusted appropriation
-    - amount: null
-      financial_year: 2015-16
-      phase: Final Appropriation
-    - amount: null
-      financial_year: 2015-16
-      phase: Audit Outcome
-    - amount: null
-      financial_year: 2016-17
-      phase: Main appropriation
-    - amount: null
-      financial_year: 2016-17
-      phase: Adjusted appropriation
-    - amount: null
-      financial_year: 2016-17
-      phase: Final Appropriation
-    - amount: null
-      financial_year: 2016-17
-      phase: Audit Outcome
-    - amount: null
-      financial_year: 2017-18
-      phase: Adjusted appropriation
-    - amount: null
-      financial_year: 2017-18
-      phase: Final Appropriation
-    - amount: null
-      financial_year: 2017-18
-      phase: Audit Outcome
-    name: EMERGENCY  MADICAL SERVICES
-  - items:
-    - amount: 797074000
-      financial_year: 2015-16
-      phase: Main appropriation
-    - amount: 545112000
-      financial_year: 2016-17
-      phase: Main appropriation
-    - amount: 630747000
-      financial_year: 2017-18
-      phase: Main appropriation
-    - amount: null
-      financial_year: 2014-15
-      phase: Main appropriation
-    - amount: null
-      financial_year: 2014-15
-      phase: Adjusted appropriation
-    - amount: null
-      financial_year: 2014-15
-      phase: Final Appropriation
-    - amount: null
-      financial_year: 2014-15
-      phase: Audit Outcome
-    - amount: null
-      financial_year: 2015-16
-      phase: Adjusted appropriation
-    - amount: null
-      financial_year: 2015-16
-      phase: Final Appropriation
-    - amount: null
-      financial_year: 2015-16
-      phase: Audit Outcome
-    - amount: null
-      financial_year: 2016-17
-      phase: Adjusted appropriation
-    - amount: null
-      financial_year: 2016-17
-      phase: Final Appropriation
-    - amount: null
-      financial_year: 2016-17
-      phase: Audit Outcome
-    - amount: null
-      financial_year: 2017-18
-      phase: Adjusted appropriation
-    - amount: null
-      financial_year: 2017-18
-      phase: Final Appropriation
-    - amount: null
-      financial_year: 2017-18
-      phase: Audit Outcome
-    name: Health Facilities and Maintenance
+    name: Health Sciences and Training
   - items:
     - amount: 799467000
       financial_year: 2016-17
@@ -663,13 +313,13 @@ budget_actual_programmes:
       phase: Audit Outcome
     name: Health Sciences & Training
   - items:
-    - amount: 1160311000
+    - amount: 803770000
       financial_year: 2015-16
       phase: Main appropriation
-    - amount: 1199775000
+    - amount: 2838790000
       financial_year: 2016-17
       phase: Main appropriation
-    - amount: 1277850000
+    - amount: 3108965000
       financial_year: 2017-18
       phase: Main appropriation
     - amount: null
@@ -711,265 +361,15 @@ budget_actual_programmes:
     - amount: null
       financial_year: 2017-18
       phase: Audit Outcome
-    name: Emergency Medical  Services
+    name: Central Hospital Services
   - items:
-    - amount: 1509687000
+    - amount: 971832000
       financial_year: 2015-16
       phase: Main appropriation
-    - amount: 1918701000
+    - amount: 1120995000
       financial_year: 2016-17
       phase: Main appropriation
-    - amount: 1855268000
-      financial_year: 2017-18
-      phase: Main appropriation
-    - amount: null
-      financial_year: 2014-15
-      phase: Main appropriation
-    - amount: null
-      financial_year: 2014-15
-      phase: Adjusted appropriation
-    - amount: null
-      financial_year: 2014-15
-      phase: Final Appropriation
-    - amount: null
-      financial_year: 2014-15
-      phase: Audit Outcome
-    - amount: null
-      financial_year: 2015-16
-      phase: Adjusted appropriation
-    - amount: null
-      financial_year: 2015-16
-      phase: Final Appropriation
-    - amount: null
-      financial_year: 2015-16
-      phase: Audit Outcome
-    - amount: null
-      financial_year: 2016-17
-      phase: Adjusted appropriation
-    - amount: null
-      financial_year: 2016-17
-      phase: Final Appropriation
-    - amount: null
-      financial_year: 2016-17
-      phase: Audit Outcome
-    - amount: null
-      financial_year: 2017-18
-      phase: Adjusted appropriation
-    - amount: null
-      financial_year: 2017-18
-      phase: Final Appropriation
-    - amount: null
-      financial_year: 2017-18
-      phase: Audit Outcome
-    name: Health Care Support Services
-  - items:
-    - amount: 1768187000
-      financial_year: 2017-18
-      phase: Main appropriation
-    - amount: null
-      financial_year: 2014-15
-      phase: Main appropriation
-    - amount: null
-      financial_year: 2014-15
-      phase: Adjusted appropriation
-    - amount: null
-      financial_year: 2014-15
-      phase: Final Appropriation
-    - amount: null
-      financial_year: 2014-15
-      phase: Audit Outcome
-    - amount: null
-      financial_year: 2015-16
-      phase: Main appropriation
-    - amount: null
-      financial_year: 2015-16
-      phase: Adjusted appropriation
-    - amount: null
-      financial_year: 2015-16
-      phase: Final Appropriation
-    - amount: null
-      financial_year: 2015-16
-      phase: Audit Outcome
-    - amount: null
-      financial_year: 2016-17
-      phase: Main appropriation
-    - amount: null
-      financial_year: 2016-17
-      phase: Adjusted appropriation
-    - amount: null
-      financial_year: 2016-17
-      phase: Final Appropriation
-    - amount: null
-      financial_year: 2016-17
-      phase: Audit Outcome
-    - amount: null
-      financial_year: 2017-18
-      phase: Adjusted appropriation
-    - amount: null
-      financial_year: 2017-18
-      phase: Final Appropriation
-    - amount: null
-      financial_year: 2017-18
-      phase: Audit Outcome
-    name: CENTRAL HOSPITAL SERVICES
-  - items:
-    - amount: 2364444000
-      financial_year: 2017-18
-      phase: Main appropriation
-    - amount: null
-      financial_year: 2014-15
-      phase: Main appropriation
-    - amount: null
-      financial_year: 2014-15
-      phase: Adjusted appropriation
-    - amount: null
-      financial_year: 2014-15
-      phase: Final Appropriation
-    - amount: null
-      financial_year: 2014-15
-      phase: Audit Outcome
-    - amount: null
-      financial_year: 2015-16
-      phase: Main appropriation
-    - amount: null
-      financial_year: 2015-16
-      phase: Adjusted appropriation
-    - amount: null
-      financial_year: 2015-16
-      phase: Final Appropriation
-    - amount: null
-      financial_year: 2015-16
-      phase: Audit Outcome
-    - amount: null
-      financial_year: 2016-17
-      phase: Main appropriation
-    - amount: null
-      financial_year: 2016-17
-      phase: Adjusted appropriation
-    - amount: null
-      financial_year: 2016-17
-      phase: Final Appropriation
-    - amount: null
-      financial_year: 2016-17
-      phase: Audit Outcome
-    - amount: null
-      financial_year: 2017-18
-      phase: Adjusted appropriation
-    - amount: null
-      financial_year: 2017-18
-      phase: Final Appropriation
-    - amount: null
-      financial_year: 2017-18
-      phase: Audit Outcome
-    name: PROVINCIAL HOSPITAL SERVICES
-  - items:
-    - amount: 3477846000
-      financial_year: 2015-16
-      phase: Main appropriation
-    - amount: 2929996000
-      financial_year: 2016-17
-      phase: Main appropriation
-    - amount: 3112007000
-      financial_year: 2017-18
-      phase: Main appropriation
-    - amount: null
-      financial_year: 2014-15
-      phase: Main appropriation
-    - amount: null
-      financial_year: 2014-15
-      phase: Adjusted appropriation
-    - amount: null
-      financial_year: 2014-15
-      phase: Final Appropriation
-    - amount: null
-      financial_year: 2014-15
-      phase: Audit Outcome
-    - amount: null
-      financial_year: 2015-16
-      phase: Adjusted appropriation
-    - amount: null
-      financial_year: 2015-16
-      phase: Final Appropriation
-    - amount: null
-      financial_year: 2015-16
-      phase: Audit Outcome
-    - amount: null
-      financial_year: 2016-17
-      phase: Adjusted appropriation
-    - amount: null
-      financial_year: 2016-17
-      phase: Final Appropriation
-    - amount: null
-      financial_year: 2016-17
-      phase: Audit Outcome
-    - amount: null
-      financial_year: 2017-18
-      phase: Adjusted appropriation
-    - amount: null
-      financial_year: 2017-18
-      phase: Final Appropriation
-    - amount: null
-      financial_year: 2017-18
-      phase: Audit Outcome
-    name: Health Sciences and Training
-  - items:
-    - amount: 3917985000
-      financial_year: 2015-16
-      phase: Main appropriation
-    - amount: 4537978000
-      financial_year: 2016-17
-      phase: Main appropriation
-    - amount: 4208852000
-      financial_year: 2017-18
-      phase: Main appropriation
-    - amount: null
-      financial_year: 2014-15
-      phase: Main appropriation
-    - amount: null
-      financial_year: 2014-15
-      phase: Adjusted appropriation
-    - amount: null
-      financial_year: 2014-15
-      phase: Final Appropriation
-    - amount: null
-      financial_year: 2014-15
-      phase: Audit Outcome
-    - amount: null
-      financial_year: 2015-16
-      phase: Adjusted appropriation
-    - amount: null
-      financial_year: 2015-16
-      phase: Final Appropriation
-    - amount: null
-      financial_year: 2015-16
-      phase: Audit Outcome
-    - amount: null
-      financial_year: 2016-17
-      phase: Adjusted appropriation
-    - amount: null
-      financial_year: 2016-17
-      phase: Final Appropriation
-    - amount: null
-      financial_year: 2016-17
-      phase: Audit Outcome
-    - amount: null
-      financial_year: 2017-18
-      phase: Adjusted appropriation
-    - amount: null
-      financial_year: 2017-18
-      phase: Final Appropriation
-    - amount: null
-      financial_year: 2017-18
-      phase: Audit Outcome
-    name: Administration
-  - items:
-    - amount: 4436418000
-      financial_year: 2015-16
-      phase: Main appropriation
-    - amount: 4799403000
-      financial_year: 2016-17
-      phase: Main appropriation
-    - amount: 5084838000
+    - amount: 1222367000
       financial_year: 2017-18
       phase: Main appropriation
     - amount: null
@@ -1012,6 +412,56 @@ budget_actual_programmes:
       financial_year: 2017-18
       phase: Audit Outcome
     name: Emergency Medical Services
+  - items:
+    - amount: 1210307000
+      financial_year: 2015-16
+      phase: Main appropriation
+    - amount: 1402776000
+      financial_year: 2016-17
+      phase: Main appropriation
+    - amount: 1444818000
+      financial_year: 2017-18
+      phase: Main appropriation
+    - amount: null
+      financial_year: 2014-15
+      phase: Main appropriation
+    - amount: null
+      financial_year: 2014-15
+      phase: Adjusted appropriation
+    - amount: null
+      financial_year: 2014-15
+      phase: Final Appropriation
+    - amount: null
+      financial_year: 2014-15
+      phase: Audit Outcome
+    - amount: null
+      financial_year: 2015-16
+      phase: Adjusted appropriation
+    - amount: null
+      financial_year: 2015-16
+      phase: Final Appropriation
+    - amount: null
+      financial_year: 2015-16
+      phase: Audit Outcome
+    - amount: null
+      financial_year: 2016-17
+      phase: Adjusted appropriation
+    - amount: null
+      financial_year: 2016-17
+      phase: Final Appropriation
+    - amount: null
+      financial_year: 2016-17
+      phase: Audit Outcome
+    - amount: null
+      financial_year: 2017-18
+      phase: Adjusted appropriation
+    - amount: null
+      financial_year: 2017-18
+      phase: Final Appropriation
+    - amount: null
+      financial_year: 2017-18
+      phase: Audit Outcome
+    name: Health Facilities Management
   - items:
     - amount: 4691672000
       financial_year: 2015-16
@@ -1063,213 +513,13 @@ budget_actual_programmes:
       phase: Audit Outcome
     name: Provincial Hospitals Services
   - items:
-    - amount: 7192798000
+    - amount: 9338285000
       financial_year: 2015-16
       phase: Main appropriation
-    - amount: 8252127000
+    - amount: 9968415000
       financial_year: 2016-17
       phase: Main appropriation
-    - amount: 8053731000
-      financial_year: 2017-18
-      phase: Main appropriation
-    - amount: null
-      financial_year: 2014-15
-      phase: Main appropriation
-    - amount: null
-      financial_year: 2014-15
-      phase: Adjusted appropriation
-    - amount: null
-      financial_year: 2014-15
-      phase: Final Appropriation
-    - amount: null
-      financial_year: 2014-15
-      phase: Audit Outcome
-    - amount: null
-      financial_year: 2015-16
-      phase: Adjusted appropriation
-    - amount: null
-      financial_year: 2015-16
-      phase: Final Appropriation
-    - amount: null
-      financial_year: 2015-16
-      phase: Audit Outcome
-    - amount: null
-      financial_year: 2016-17
-      phase: Adjusted appropriation
-    - amount: null
-      financial_year: 2016-17
-      phase: Final Appropriation
-    - amount: null
-      financial_year: 2016-17
-      phase: Audit Outcome
-    - amount: null
-      financial_year: 2017-18
-      phase: Adjusted appropriation
-    - amount: null
-      financial_year: 2017-18
-      phase: Final Appropriation
-    - amount: null
-      financial_year: 2017-18
-      phase: Audit Outcome
-    name: Health Facilities Management
-  - items:
-    - amount: 11421927000
-      financial_year: 2017-18
-      phase: Main appropriation
-    - amount: null
-      financial_year: 2014-15
-      phase: Main appropriation
-    - amount: null
-      financial_year: 2014-15
-      phase: Adjusted appropriation
-    - amount: null
-      financial_year: 2014-15
-      phase: Final Appropriation
-    - amount: null
-      financial_year: 2014-15
-      phase: Audit Outcome
-    - amount: null
-      financial_year: 2015-16
-      phase: Main appropriation
-    - amount: null
-      financial_year: 2015-16
-      phase: Adjusted appropriation
-    - amount: null
-      financial_year: 2015-16
-      phase: Final Appropriation
-    - amount: null
-      financial_year: 2015-16
-      phase: Audit Outcome
-    - amount: null
-      financial_year: 2016-17
-      phase: Main appropriation
-    - amount: null
-      financial_year: 2016-17
-      phase: Adjusted appropriation
-    - amount: null
-      financial_year: 2016-17
-      phase: Final Appropriation
-    - amount: null
-      financial_year: 2016-17
-      phase: Audit Outcome
-    - amount: null
-      financial_year: 2017-18
-      phase: Adjusted appropriation
-    - amount: null
-      financial_year: 2017-18
-      phase: Final Appropriation
-    - amount: null
-      financial_year: 2017-18
-      phase: Audit Outcome
-    name: DISTRICT HEALTH SERVICES
-  - items:
-    - amount: 24546242000
-      financial_year: 2015-16
-      phase: Main appropriation
-    - amount: 26247799000
-      financial_year: 2016-17
-      phase: Main appropriation
-    - amount: 26090059000
-      financial_year: 2017-18
-      phase: Main appropriation
-    - amount: null
-      financial_year: 2014-15
-      phase: Main appropriation
-    - amount: null
-      financial_year: 2014-15
-      phase: Adjusted appropriation
-    - amount: null
-      financial_year: 2014-15
-      phase: Final Appropriation
-    - amount: null
-      financial_year: 2014-15
-      phase: Audit Outcome
-    - amount: null
-      financial_year: 2015-16
-      phase: Adjusted appropriation
-    - amount: null
-      financial_year: 2015-16
-      phase: Final Appropriation
-    - amount: null
-      financial_year: 2015-16
-      phase: Audit Outcome
-    - amount: null
-      financial_year: 2016-17
-      phase: Adjusted appropriation
-    - amount: null
-      financial_year: 2016-17
-      phase: Final Appropriation
-    - amount: null
-      financial_year: 2016-17
-      phase: Audit Outcome
-    - amount: null
-      financial_year: 2017-18
-      phase: Adjusted appropriation
-    - amount: null
-      financial_year: 2017-18
-      phase: Final Appropriation
-    - amount: null
-      financial_year: 2017-18
-      phase: Audit Outcome
-    name: Provincial Hospital Services
-  - items:
-    - amount: 28362523000
-      financial_year: 2015-16
-      phase: Main appropriation
-    - amount: 32652655000
-      financial_year: 2016-17
-      phase: Main appropriation
-    - amount: 33918231000
-      financial_year: 2017-18
-      phase: Main appropriation
-    - amount: null
-      financial_year: 2014-15
-      phase: Main appropriation
-    - amount: null
-      financial_year: 2014-15
-      phase: Adjusted appropriation
-    - amount: null
-      financial_year: 2014-15
-      phase: Final Appropriation
-    - amount: null
-      financial_year: 2014-15
-      phase: Audit Outcome
-    - amount: null
-      financial_year: 2015-16
-      phase: Adjusted appropriation
-    - amount: null
-      financial_year: 2015-16
-      phase: Final Appropriation
-    - amount: null
-      financial_year: 2015-16
-      phase: Audit Outcome
-    - amount: null
-      financial_year: 2016-17
-      phase: Adjusted appropriation
-    - amount: null
-      financial_year: 2016-17
-      phase: Final Appropriation
-    - amount: null
-      financial_year: 2016-17
-      phase: Audit Outcome
-    - amount: null
-      financial_year: 2017-18
-      phase: Adjusted appropriation
-    - amount: null
-      financial_year: 2017-18
-      phase: Final Appropriation
-    - amount: null
-      financial_year: 2017-18
-      phase: Audit Outcome
-    name: Central Hospital Services
-  - items:
-    - amount: 69095670000
-      financial_year: 2015-16
-      phase: Main appropriation
-    - amount: 74882659000
-      financial_year: 2016-17
-      phase: Main appropriation
-    - amount: 70761467000
+    - amount: 10937544000
       financial_year: 2017-18
       phase: Main appropriation
     - amount: null

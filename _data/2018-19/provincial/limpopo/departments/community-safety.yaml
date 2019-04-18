@@ -8,20 +8,14 @@ budget_actual:
   expenditure:
     base_financial_year: 2018-19
     nominal:
-    - amount: 856726000
-      financial_year: 2015-16
-      phase: Main appropriation
-    - amount: 944896000
-      financial_year: 2016-17
-      phase: Main appropriation
-    - amount: 980523000
-      financial_year: 2017-18
-      phase: Main appropriation
-    - amount: 1145826000.0
+    - amount: 109714000.0
       financial_year: 2018-19
       phase: Main appropriation
     - amount: null
       financial_year: 2015-16
+      phase: Main appropriation
+    - amount: null
+      financial_year: 2015-16
       phase: Adjusted appropriation
     - amount: null
       financial_year: 2015-16
@@ -31,6 +25,9 @@ budget_actual:
       phase: Audit Outcome
     - amount: null
       financial_year: 2016-17
+      phase: Main appropriation
+    - amount: null
+      financial_year: 2016-17
       phase: Adjusted appropriation
     - amount: null
       financial_year: 2016-17
@@ -38,6 +35,9 @@ budget_actual:
     - amount: null
       financial_year: 2016-17
       phase: Audit Outcome
+    - amount: null
+      financial_year: 2017-18
+      phase: Main appropriation
     - amount: null
       financial_year: 2017-18
       phase: Adjusted appropriation
@@ -57,17 +57,11 @@ budget_actual:
       financial_year: 2018-19
       phase: Audit Outcome
     real:
-    - amount: 1000432060
-      financial_year: 2015-16
-      phase: Main appropriation
-    - amount: 1038045175
-      financial_year: 2016-17
-      phase: Main appropriation
-    - amount: 1028688173
-      financial_year: 2017-18
-      phase: Main appropriation
-    - amount: 1145826000
+    - amount: 109714000
       financial_year: 2018-19
+      phase: Main appropriation
+    - amount: null
+      financial_year: 2015-16
       phase: Main appropriation
     - amount: null
       financial_year: 2015-16
@@ -80,6 +74,9 @@ budget_actual:
       phase: Audit Outcome
     - amount: null
       financial_year: 2016-17
+      phase: Main appropriation
+    - amount: null
+      financial_year: 2016-17
       phase: Adjusted appropriation
     - amount: null
       financial_year: 2016-17
@@ -89,6 +86,9 @@ budget_actual:
       phase: Audit Outcome
     - amount: null
       financial_year: 2017-18
+      phase: Main appropriation
+    - amount: null
+      financial_year: 2017-18
       phase: Adjusted appropriation
     - amount: null
       financial_year: 2017-18
@@ -105,7 +105,8 @@ budget_actual:
     - amount: null
       financial_year: 2018-19
       phase: Audit Outcome
-  notices: []
+  notices:
+  - This department did not exist for some years displayed.
 budget_actual_programmes:
   dataset_detail_page: /datasets/budgeted-and-actual-provincial-expenditure/budgeted-and-actual-provincial-expenditure
   notices:
@@ -162,7 +163,10 @@ budget_actual_programmes:
       phase: Audit Outcome
     name: Direct Charges
   - items:
-    - amount: 55178000
+    - amount: 50042000.0
+      financial_year: 2018-19
+      phase: Main appropriation
+    - amount: null
       financial_year: 2015-16
       phase: Main appropriation
     - amount: null
@@ -200,9 +204,6 @@ budget_actual_programmes:
       phase: Audit Outcome
     - amount: null
       financial_year: 2018-19
-      phase: Main appropriation
-    - amount: null
-      financial_year: 2018-19
       phase: Adjusted appropriation
     - amount: null
       financial_year: 2018-19
@@ -210,57 +211,7 @@ budget_actual_programmes:
     - amount: null
       financial_year: 2018-19
       phase: Audit Outcome
-    name: Provincial Secretariat for Police Services
-  - items:
-    - amount: 56420000
-      financial_year: 2015-16
-      phase: Main appropriation
-    - amount: 53875000
-      financial_year: 2016-17
-      phase: Main appropriation
-    - amount: 46054000
-      financial_year: 2017-18
-      phase: Main appropriation
-    - amount: 45310000.0
-      financial_year: 2018-19
-      phase: Main appropriation
-    - amount: null
-      financial_year: 2015-16
-      phase: Adjusted appropriation
-    - amount: null
-      financial_year: 2015-16
-      phase: Final Appropriation
-    - amount: null
-      financial_year: 2015-16
-      phase: Audit Outcome
-    - amount: null
-      financial_year: 2016-17
-      phase: Adjusted appropriation
-    - amount: null
-      financial_year: 2016-17
-      phase: Final Appropriation
-    - amount: null
-      financial_year: 2016-17
-      phase: Audit Outcome
-    - amount: null
-      financial_year: 2017-18
-      phase: Adjusted appropriation
-    - amount: null
-      financial_year: 2017-18
-      phase: Final Appropriation
-    - amount: null
-      financial_year: 2017-18
-      phase: Audit Outcome
-    - amount: null
-      financial_year: 2018-19
-      phase: Adjusted appropriation
-    - amount: null
-      financial_year: 2018-19
-      phase: Final Appropriation
-    - amount: null
-      financial_year: 2018-19
-      phase: Audit Outcome
-    name: Provincial Policing Functions
+    name: Administration
   - items:
     - amount: 59672000.0
       financial_year: 2018-19
@@ -311,256 +262,6 @@ budget_actual_programmes:
       financial_year: 2018-19
       phase: Audit Outcome
     name: Provincial Secretariat Of Police Services
-  - items:
-    - amount: 80903000
-      financial_year: 2015-16
-      phase: Main appropriation
-    - amount: 88310000
-      financial_year: 2016-17
-      phase: Main appropriation
-    - amount: 99715000
-      financial_year: 2017-18
-      phase: Main appropriation
-    - amount: 104249000.0
-      financial_year: 2018-19
-      phase: Main appropriation
-    - amount: null
-      financial_year: 2015-16
-      phase: Adjusted appropriation
-    - amount: null
-      financial_year: 2015-16
-      phase: Final Appropriation
-    - amount: null
-      financial_year: 2015-16
-      phase: Audit Outcome
-    - amount: null
-      financial_year: 2016-17
-      phase: Adjusted appropriation
-    - amount: null
-      financial_year: 2016-17
-      phase: Final Appropriation
-    - amount: null
-      financial_year: 2016-17
-      phase: Audit Outcome
-    - amount: null
-      financial_year: 2017-18
-      phase: Adjusted appropriation
-    - amount: null
-      financial_year: 2017-18
-      phase: Final Appropriation
-    - amount: null
-      financial_year: 2017-18
-      phase: Audit Outcome
-    - amount: null
-      financial_year: 2018-19
-      phase: Adjusted appropriation
-    - amount: null
-      financial_year: 2018-19
-      phase: Final Appropriation
-    - amount: null
-      financial_year: 2018-19
-      phase: Audit Outcome
-    name: Security Risk Management
-  - items:
-    - amount: 128000000
-      financial_year: 2015-16
-      phase: Main appropriation
-    - amount: 176735000
-      financial_year: 2016-17
-      phase: Main appropriation
-    - amount: 187256000
-      financial_year: 2017-18
-      phase: Main appropriation
-    - amount: 273623000.0
-      financial_year: 2018-19
-      phase: Main appropriation
-    - amount: null
-      financial_year: 2015-16
-      phase: Adjusted appropriation
-    - amount: null
-      financial_year: 2015-16
-      phase: Final Appropriation
-    - amount: null
-      financial_year: 2015-16
-      phase: Audit Outcome
-    - amount: null
-      financial_year: 2016-17
-      phase: Adjusted appropriation
-    - amount: null
-      financial_year: 2016-17
-      phase: Final Appropriation
-    - amount: null
-      financial_year: 2016-17
-      phase: Audit Outcome
-    - amount: null
-      financial_year: 2017-18
-      phase: Adjusted appropriation
-    - amount: null
-      financial_year: 2017-18
-      phase: Final Appropriation
-    - amount: null
-      financial_year: 2017-18
-      phase: Audit Outcome
-    - amount: null
-      financial_year: 2018-19
-      phase: Adjusted appropriation
-    - amount: null
-      financial_year: 2018-19
-      phase: Final Appropriation
-    - amount: null
-      financial_year: 2018-19
-      phase: Audit Outcome
-    name: Administration
-  - items:
-    - amount: 185464000.0
-      financial_year: 2018-19
-      phase: Main appropriation
-    - amount: null
-      financial_year: 2015-16
-      phase: Main appropriation
-    - amount: null
-      financial_year: 2015-16
-      phase: Adjusted appropriation
-    - amount: null
-      financial_year: 2015-16
-      phase: Final Appropriation
-    - amount: null
-      financial_year: 2015-16
-      phase: Audit Outcome
-    - amount: null
-      financial_year: 2016-17
-      phase: Main appropriation
-    - amount: null
-      financial_year: 2016-17
-      phase: Adjusted appropriation
-    - amount: null
-      financial_year: 2016-17
-      phase: Final Appropriation
-    - amount: null
-      financial_year: 2016-17
-      phase: Audit Outcome
-    - amount: null
-      financial_year: 2017-18
-      phase: Main appropriation
-    - amount: null
-      financial_year: 2017-18
-      phase: Adjusted appropriation
-    - amount: null
-      financial_year: 2017-18
-      phase: Final Appropriation
-    - amount: null
-      financial_year: 2017-18
-      phase: Audit Outcome
-    - amount: null
-      financial_year: 2018-19
-      phase: Adjusted appropriation
-    - amount: null
-      financial_year: 2018-19
-      phase: Final Appropriation
-    - amount: null
-      financial_year: 2018-19
-      phase: Audit Outcome
-    name: Provincial Secretariat For Police Service
-  - items:
-    - amount: 189330000
-      financial_year: 2015-16
-      phase: Main appropriation
-    - amount: 270189000
-      financial_year: 2016-17
-      phase: Main appropriation
-    - amount: 265161000
-      financial_year: 2017-18
-      phase: Main appropriation
-    - amount: 74092000.0
-      financial_year: 2018-19
-      phase: Main appropriation
-    - amount: null
-      financial_year: 2015-16
-      phase: Adjusted appropriation
-    - amount: null
-      financial_year: 2015-16
-      phase: Final Appropriation
-    - amount: null
-      financial_year: 2015-16
-      phase: Audit Outcome
-    - amount: null
-      financial_year: 2016-17
-      phase: Adjusted appropriation
-    - amount: null
-      financial_year: 2016-17
-      phase: Final Appropriation
-    - amount: null
-      financial_year: 2016-17
-      phase: Audit Outcome
-    - amount: null
-      financial_year: 2017-18
-      phase: Adjusted appropriation
-    - amount: null
-      financial_year: 2017-18
-      phase: Final Appropriation
-    - amount: null
-      financial_year: 2017-18
-      phase: Audit Outcome
-    - amount: null
-      financial_year: 2018-19
-      phase: Adjusted appropriation
-    - amount: null
-      financial_year: 2018-19
-      phase: Final Appropriation
-    - amount: null
-      financial_year: 2018-19
-      phase: Audit Outcome
-    name: Civilian Oversight
-  - items:
-    - amount: 346895000
-      financial_year: 2015-16
-      phase: Main appropriation
-    - amount: 355787000
-      financial_year: 2016-17
-      phase: Main appropriation
-    - amount: 382337000
-      financial_year: 2017-18
-      phase: Main appropriation
-    - amount: 403416000.0
-      financial_year: 2018-19
-      phase: Main appropriation
-    - amount: null
-      financial_year: 2015-16
-      phase: Adjusted appropriation
-    - amount: null
-      financial_year: 2015-16
-      phase: Final Appropriation
-    - amount: null
-      financial_year: 2015-16
-      phase: Audit Outcome
-    - amount: null
-      financial_year: 2016-17
-      phase: Adjusted appropriation
-    - amount: null
-      financial_year: 2016-17
-      phase: Final Appropriation
-    - amount: null
-      financial_year: 2016-17
-      phase: Audit Outcome
-    - amount: null
-      financial_year: 2017-18
-      phase: Adjusted appropriation
-    - amount: null
-      financial_year: 2017-18
-      phase: Final Appropriation
-    - amount: null
-      financial_year: 2017-18
-      phase: Audit Outcome
-    - amount: null
-      financial_year: 2018-19
-      phase: Adjusted appropriation
-    - amount: null
-      financial_year: 2018-19
-      phase: Final Appropriation
-    - amount: null
-      financial_year: 2018-19
-      phase: Audit Outcome
-    name: Traffic Management
 contributed_datasets:
 - contributor: International Budget Partnership
   name: How Does Civil Society Use Budget Information?

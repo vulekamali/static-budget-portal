@@ -8,13 +8,13 @@ budget_actual:
   expenditure:
     base_financial_year: 2018-19
     nominal:
-    - amount: 3132011000
+    - amount: 352150000
       financial_year: 2015-16
       phase: Main appropriation
-    - amount: 3016410000
+    - amount: 376284000
       financial_year: 2016-17
       phase: Main appropriation
-    - amount: 3779608000
+    - amount: 395789000
       financial_year: 2017-18
       phase: Main appropriation
     - amount: null
@@ -57,13 +57,13 @@ budget_actual:
       financial_year: 2017-18
       phase: Audit Outcome
     real:
-    - amount: 3657370290
+    - amount: 411219164
       financial_year: 2015-16
       phase: Main appropriation
-    - amount: 3313771937
+    - amount: 413378605
       financial_year: 2016-17
       phase: Main appropriation
-    - amount: 3965269604
+    - amount: 415230915
       financial_year: 2017-18
       phase: Main appropriation
     - amount: null
@@ -113,8 +113,11 @@ budget_actual_programmes:
   - One or more programmes did not exist for some years displayed.
   programmes:
   - items:
-    - amount: 68032000
+    - amount: 83210000
       financial_year: 2015-16
+      phase: Main appropriation
+    - amount: 96031000
+      financial_year: 2017-18
       phase: Main appropriation
     - amount: null
       financial_year: 2014-15
@@ -151,9 +154,6 @@ budget_actual_programmes:
       phase: Audit Outcome
     - amount: null
       financial_year: 2017-18
-      phase: Main appropriation
-    - amount: null
-      financial_year: 2017-18
       phase: Adjusted appropriation
     - amount: null
       financial_year: 2017-18
@@ -161,10 +161,10 @@ budget_actual_programmes:
     - amount: null
       financial_year: 2017-18
       phase: Audit Outcome
-    name: Executive Support Services
+    name: Policy & Governance
   - items:
-    - amount: 119391000
-      financial_year: 2017-18
+    - amount: 90973000
+      financial_year: 2016-17
       phase: Main appropriation
     - amount: null
       financial_year: 2014-15
@@ -192,17 +192,17 @@ budget_actual_programmes:
       phase: Audit Outcome
     - amount: null
       financial_year: 2016-17
+      phase: Adjusted appropriation
+    - amount: null
+      financial_year: 2016-17
+      phase: Final Appropriation
+    - amount: null
+      financial_year: 2016-17
+      phase: Audit Outcome
+    - amount: null
+      financial_year: 2017-18
       phase: Main appropriation
     - amount: null
-      financial_year: 2016-17
-      phase: Adjusted appropriation
-    - amount: null
-      financial_year: 2016-17
-      phase: Final Appropriation
-    - amount: null
-      financial_year: 2016-17
-      phase: Audit Outcome
-    - amount: null
       financial_year: 2017-18
       phase: Adjusted appropriation
     - amount: null
@@ -211,12 +211,15 @@ budget_actual_programmes:
     - amount: null
       financial_year: 2017-18
       phase: Audit Outcome
-    name: ADMINISTRATION
+    name: Policy and Governance
   - items:
-    - amount: 133729000
+    - amount: 132557000
+      financial_year: 2015-16
+      phase: Main appropriation
+    - amount: 145793000
       financial_year: 2016-17
       phase: Main appropriation
-    - amount: 134833000
+    - amount: 150425000
       financial_year: 2017-18
       phase: Main appropriation
     - amount: null
@@ -233,9 +236,6 @@ budget_actual_programmes:
       phase: Audit Outcome
     - amount: null
       financial_year: 2015-16
-      phase: Main appropriation
-    - amount: null
-      financial_year: 2015-16
       phase: Adjusted appropriation
     - amount: null
       financial_year: 2015-16
@@ -261,7 +261,7 @@ budget_actual_programmes:
     - amount: null
       financial_year: 2017-18
       phase: Audit Outcome
-    name: Planning, Policy Coordination, Monitoring and Evaluation
+    name: Administration
   - items:
     - amount: 136383000
       financial_year: 2015-16
@@ -313,14 +313,8 @@ budget_actual_programmes:
       phase: Audit Outcome
     name: Institutional Support
   - items:
-    - amount: 165448000
-      financial_year: 2015-16
-      phase: Main appropriation
-    - amount: 139764000
+    - amount: 139518000
       financial_year: 2016-17
-      phase: Main appropriation
-    - amount: 139683000
-      financial_year: 2017-18
       phase: Main appropriation
     - amount: null
       financial_year: 2014-15
@@ -334,6 +328,9 @@ budget_actual_programmes:
     - amount: null
       financial_year: 2014-15
       phase: Audit Outcome
+    - amount: null
+      financial_year: 2015-16
+      phase: Main appropriation
     - amount: null
       financial_year: 2015-16
       phase: Adjusted appropriation
@@ -354,304 +351,7 @@ budget_actual_programmes:
       phase: Audit Outcome
     - amount: null
       financial_year: 2017-18
-      phase: Adjusted appropriation
-    - amount: null
-      financial_year: 2017-18
-      phase: Final Appropriation
-    - amount: null
-      financial_year: 2017-18
-      phase: Audit Outcome
-    name: Institutional Development and Organisational Support
-  - items:
-    - amount: 216489000
-      financial_year: 2015-16
       phase: Main appropriation
-    - amount: 133496000
-      financial_year: 2016-17
-      phase: Main appropriation
-    - amount: 96031000
-      financial_year: 2017-18
-      phase: Main appropriation
-    - amount: null
-      financial_year: 2014-15
-      phase: Main appropriation
-    - amount: null
-      financial_year: 2014-15
-      phase: Adjusted appropriation
-    - amount: null
-      financial_year: 2014-15
-      phase: Final Appropriation
-    - amount: null
-      financial_year: 2014-15
-      phase: Audit Outcome
-    - amount: null
-      financial_year: 2015-16
-      phase: Adjusted appropriation
-    - amount: null
-      financial_year: 2015-16
-      phase: Final Appropriation
-    - amount: null
-      financial_year: 2015-16
-      phase: Audit Outcome
-    - amount: null
-      financial_year: 2016-17
-      phase: Adjusted appropriation
-    - amount: null
-      financial_year: 2016-17
-      phase: Final Appropriation
-    - amount: null
-      financial_year: 2016-17
-      phase: Audit Outcome
-    - amount: null
-      financial_year: 2017-18
-      phase: Adjusted appropriation
-    - amount: null
-      financial_year: 2017-18
-      phase: Final Appropriation
-    - amount: null
-      financial_year: 2017-18
-      phase: Audit Outcome
-    name: Policy & Governance
-  - items:
-    - amount: 228793000
-      financial_year: 2017-18
-      phase: Main appropriation
-    - amount: null
-      financial_year: 2014-15
-      phase: Main appropriation
-    - amount: null
-      financial_year: 2014-15
-      phase: Adjusted appropriation
-    - amount: null
-      financial_year: 2014-15
-      phase: Final Appropriation
-    - amount: null
-      financial_year: 2014-15
-      phase: Audit Outcome
-    - amount: null
-      financial_year: 2015-16
-      phase: Main appropriation
-    - amount: null
-      financial_year: 2015-16
-      phase: Adjusted appropriation
-    - amount: null
-      financial_year: 2015-16
-      phase: Final Appropriation
-    - amount: null
-      financial_year: 2015-16
-      phase: Audit Outcome
-    - amount: null
-      financial_year: 2016-17
-      phase: Main appropriation
-    - amount: null
-      financial_year: 2016-17
-      phase: Adjusted appropriation
-    - amount: null
-      financial_year: 2016-17
-      phase: Final Appropriation
-    - amount: null
-      financial_year: 2016-17
-      phase: Audit Outcome
-    - amount: null
-      financial_year: 2017-18
-      phase: Adjusted appropriation
-    - amount: null
-      financial_year: 2017-18
-      phase: Final Appropriation
-    - amount: null
-      financial_year: 2017-18
-      phase: Audit Outcome
-    name: INSTITUTIONAL DEVELOPMENT
-  - items:
-    - amount: 261126000
-      financial_year: 2017-18
-      phase: Main appropriation
-    - amount: null
-      financial_year: 2014-15
-      phase: Main appropriation
-    - amount: null
-      financial_year: 2014-15
-      phase: Adjusted appropriation
-    - amount: null
-      financial_year: 2014-15
-      phase: Final Appropriation
-    - amount: null
-      financial_year: 2014-15
-      phase: Audit Outcome
-    - amount: null
-      financial_year: 2015-16
-      phase: Main appropriation
-    - amount: null
-      financial_year: 2015-16
-      phase: Adjusted appropriation
-    - amount: null
-      financial_year: 2015-16
-      phase: Final Appropriation
-    - amount: null
-      financial_year: 2015-16
-      phase: Audit Outcome
-    - amount: null
-      financial_year: 2016-17
-      phase: Main appropriation
-    - amount: null
-      financial_year: 2016-17
-      phase: Adjusted appropriation
-    - amount: null
-      financial_year: 2016-17
-      phase: Final Appropriation
-    - amount: null
-      financial_year: 2016-17
-      phase: Audit Outcome
-    - amount: null
-      financial_year: 2017-18
-      phase: Adjusted appropriation
-    - amount: null
-      financial_year: 2017-18
-      phase: Final Appropriation
-    - amount: null
-      financial_year: 2017-18
-      phase: Audit Outcome
-    name: POLICY & GOVERNANCE
-  - items:
-    - amount: 837728000
-      financial_year: 2015-16
-      phase: Main appropriation
-    - amount: 648464000
-      financial_year: 2016-17
-      phase: Main appropriation
-    - amount: 601195000
-      financial_year: 2017-18
-      phase: Main appropriation
-    - amount: null
-      financial_year: 2014-15
-      phase: Main appropriation
-    - amount: null
-      financial_year: 2014-15
-      phase: Adjusted appropriation
-    - amount: null
-      financial_year: 2014-15
-      phase: Final Appropriation
-    - amount: null
-      financial_year: 2014-15
-      phase: Audit Outcome
-    - amount: null
-      financial_year: 2015-16
-      phase: Adjusted appropriation
-    - amount: null
-      financial_year: 2015-16
-      phase: Final Appropriation
-    - amount: null
-      financial_year: 2015-16
-      phase: Audit Outcome
-    - amount: null
-      financial_year: 2016-17
-      phase: Adjusted appropriation
-    - amount: null
-      financial_year: 2016-17
-      phase: Final Appropriation
-    - amount: null
-      financial_year: 2016-17
-      phase: Audit Outcome
-    - amount: null
-      financial_year: 2017-18
-      phase: Adjusted appropriation
-    - amount: null
-      financial_year: 2017-18
-      phase: Final Appropriation
-    - amount: null
-      financial_year: 2017-18
-      phase: Audit Outcome
-    name: Policy and Governance
-  - items:
-    - amount: 841277000
-      financial_year: 2015-16
-      phase: Main appropriation
-    - amount: 956577000
-      financial_year: 2016-17
-      phase: Main appropriation
-    - amount: 1208350000
-      financial_year: 2017-18
-      phase: Main appropriation
-    - amount: null
-      financial_year: 2014-15
-      phase: Main appropriation
-    - amount: null
-      financial_year: 2014-15
-      phase: Adjusted appropriation
-    - amount: null
-      financial_year: 2014-15
-      phase: Final Appropriation
-    - amount: null
-      financial_year: 2014-15
-      phase: Audit Outcome
-    - amount: null
-      financial_year: 2015-16
-      phase: Adjusted appropriation
-    - amount: null
-      financial_year: 2015-16
-      phase: Final Appropriation
-    - amount: null
-      financial_year: 2015-16
-      phase: Audit Outcome
-    - amount: null
-      financial_year: 2016-17
-      phase: Adjusted appropriation
-    - amount: null
-      financial_year: 2016-17
-      phase: Final Appropriation
-    - amount: null
-      financial_year: 2016-17
-      phase: Audit Outcome
-    - amount: null
-      financial_year: 2017-18
-      phase: Adjusted appropriation
-    - amount: null
-      financial_year: 2017-18
-      phase: Final Appropriation
-    - amount: null
-      financial_year: 2017-18
-      phase: Audit Outcome
-    name: Administration
-  - items:
-    - amount: 866654000
-      financial_year: 2015-16
-      phase: Main appropriation
-    - amount: 1004380000
-      financial_year: 2016-17
-      phase: Main appropriation
-    - amount: 840873000
-      financial_year: 2017-18
-      phase: Main appropriation
-    - amount: null
-      financial_year: 2014-15
-      phase: Main appropriation
-    - amount: null
-      financial_year: 2014-15
-      phase: Adjusted appropriation
-    - amount: null
-      financial_year: 2014-15
-      phase: Final Appropriation
-    - amount: null
-      financial_year: 2014-15
-      phase: Audit Outcome
-    - amount: null
-      financial_year: 2015-16
-      phase: Adjusted appropriation
-    - amount: null
-      financial_year: 2015-16
-      phase: Final Appropriation
-    - amount: null
-      financial_year: 2015-16
-      phase: Audit Outcome
-    - amount: null
-      financial_year: 2016-17
-      phase: Adjusted appropriation
-    - amount: null
-      financial_year: 2016-17
-      phase: Final Appropriation
-    - amount: null
-      financial_year: 2016-17
-      phase: Audit Outcome
     - amount: null
       financial_year: 2017-18
       phase: Adjusted appropriation

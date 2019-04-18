@@ -8,10 +8,10 @@ budget_actual:
   expenditure:
     base_financial_year: 2018-19
     nominal:
-    - amount: 3655003000
+    - amount: 744542000
       financial_year: 2015-16
       phase: Main appropriation
-    - amount: 3694321000
+    - amount: 745825000
       financial_year: 2016-17
       phase: Main appropriation
     - amount: null
@@ -57,10 +57,10 @@ budget_actual:
       financial_year: 2016-17
       phase: Audit Outcome
     real:
-    - amount: 4268088261
+    - amount: 869430468
       financial_year: 2015-16
       phase: Main appropriation
-    - amount: 4058512357
+    - amount: 819349476
       financial_year: 2016-17
       phase: Main appropriation
     - amount: null
@@ -363,6 +363,56 @@ budget_actual_programmes:
       phase: Audit Outcome
     name: STRUCTURED AGRICULTURAL TRAINING
   - items:
+    - amount: 26266000
+      financial_year: 2015-16
+      phase: Main appropriation
+    - amount: null
+      financial_year: 2013-14
+      phase: Main appropriation
+    - amount: null
+      financial_year: 2013-14
+      phase: Adjusted appropriation
+    - amount: null
+      financial_year: 2013-14
+      phase: Final Appropriation
+    - amount: null
+      financial_year: 2013-14
+      phase: Audit Outcome
+    - amount: null
+      financial_year: 2014-15
+      phase: Main appropriation
+    - amount: null
+      financial_year: 2014-15
+      phase: Adjusted appropriation
+    - amount: null
+      financial_year: 2014-15
+      phase: Final Appropriation
+    - amount: null
+      financial_year: 2014-15
+      phase: Audit Outcome
+    - amount: null
+      financial_year: 2015-16
+      phase: Adjusted appropriation
+    - amount: null
+      financial_year: 2015-16
+      phase: Final Appropriation
+    - amount: null
+      financial_year: 2015-16
+      phase: Audit Outcome
+    - amount: null
+      financial_year: 2016-17
+      phase: Main appropriation
+    - amount: null
+      financial_year: 2016-17
+      phase: Adjusted appropriation
+    - amount: null
+      financial_year: 2016-17
+      phase: Final Appropriation
+    - amount: null
+      financial_year: 2016-17
+      phase: Audit Outcome
+    name: Rural Development
+  - items:
     - amount: 30210000
       financial_year: 2015-16
       phase: Main appropriation
@@ -462,56 +512,6 @@ budget_actual_programmes:
       financial_year: 2016-17
       phase: Audit Outcome
     name: SUSTAINABLE RESOURCE MANAGEMENT
-  - items:
-    - amount: 45227000
-      financial_year: 2015-16
-      phase: Main appropriation
-    - amount: 11222000
-      financial_year: 2016-17
-      phase: Main appropriation
-    - amount: null
-      financial_year: 2013-14
-      phase: Main appropriation
-    - amount: null
-      financial_year: 2013-14
-      phase: Adjusted appropriation
-    - amount: null
-      financial_year: 2013-14
-      phase: Final Appropriation
-    - amount: null
-      financial_year: 2013-14
-      phase: Audit Outcome
-    - amount: null
-      financial_year: 2014-15
-      phase: Main appropriation
-    - amount: null
-      financial_year: 2014-15
-      phase: Adjusted appropriation
-    - amount: null
-      financial_year: 2014-15
-      phase: Final Appropriation
-    - amount: null
-      financial_year: 2014-15
-      phase: Audit Outcome
-    - amount: null
-      financial_year: 2015-16
-      phase: Adjusted appropriation
-    - amount: null
-      financial_year: 2015-16
-      phase: Final Appropriation
-    - amount: null
-      financial_year: 2015-16
-      phase: Audit Outcome
-    - amount: null
-      financial_year: 2016-17
-      phase: Adjusted appropriation
-    - amount: null
-      financial_year: 2016-17
-      phase: Final Appropriation
-    - amount: null
-      financial_year: 2016-17
-      phase: Audit Outcome
-    name: Rural Development
   - items:
     - amount: 53811000
       financial_year: 2016-17
@@ -763,11 +763,8 @@ budget_actual_programmes:
       phase: Audit Outcome
     name: ADMINISTRATION
   - items:
-    - amount: 163466000
+    - amount: 160635000
       financial_year: 2015-16
-      phase: Main appropriation
-    - amount: 217289000
-      financial_year: 2016-17
       phase: Main appropriation
     - amount: null
       financial_year: 2013-14
@@ -804,55 +801,8 @@ budget_actual_programmes:
       phase: Audit Outcome
     - amount: null
       financial_year: 2016-17
-      phase: Adjusted appropriation
-    - amount: null
-      financial_year: 2016-17
-      phase: Final Appropriation
-    - amount: null
-      financial_year: 2016-17
-      phase: Audit Outcome
-    name: Environmental Affairs
-  - items:
-    - amount: 377189000
-      financial_year: 2015-16
-      phase: Main appropriation
-    - amount: 379368000
-      financial_year: 2016-17
       phase: Main appropriation
     - amount: null
-      financial_year: 2013-14
-      phase: Main appropriation
-    - amount: null
-      financial_year: 2013-14
-      phase: Adjusted appropriation
-    - amount: null
-      financial_year: 2013-14
-      phase: Final Appropriation
-    - amount: null
-      financial_year: 2013-14
-      phase: Audit Outcome
-    - amount: null
-      financial_year: 2014-15
-      phase: Main appropriation
-    - amount: null
-      financial_year: 2014-15
-      phase: Adjusted appropriation
-    - amount: null
-      financial_year: 2014-15
-      phase: Final Appropriation
-    - amount: null
-      financial_year: 2014-15
-      phase: Audit Outcome
-    - amount: null
-      financial_year: 2015-16
-      phase: Adjusted appropriation
-    - amount: null
-      financial_year: 2015-16
-      phase: Final Appropriation
-    - amount: null
-      financial_year: 2015-16
-      phase: Audit Outcome
-    - amount: null
       financial_year: 2016-17
       phase: Adjusted appropriation
     - amount: null
@@ -861,7 +811,7 @@ budget_actual_programmes:
     - amount: null
       financial_year: 2016-17
       phase: Audit Outcome
-    name: Agriculture And Rural Development
+    name: Administration
   - items:
     - amount: 387498000
       financial_year: 2015-16
@@ -962,106 +912,6 @@ budget_actual_programmes:
       financial_year: 2016-17
       phase: Audit Outcome
     name: FARMER SUPPORT AND DEVELOPMENT
-  - items:
-    - amount: 735197000
-      financial_year: 2015-16
-      phase: Main appropriation
-    - amount: 667339000
-      financial_year: 2016-17
-      phase: Main appropriation
-    - amount: null
-      financial_year: 2013-14
-      phase: Main appropriation
-    - amount: null
-      financial_year: 2013-14
-      phase: Adjusted appropriation
-    - amount: null
-      financial_year: 2013-14
-      phase: Final Appropriation
-    - amount: null
-      financial_year: 2013-14
-      phase: Audit Outcome
-    - amount: null
-      financial_year: 2014-15
-      phase: Main appropriation
-    - amount: null
-      financial_year: 2014-15
-      phase: Adjusted appropriation
-    - amount: null
-      financial_year: 2014-15
-      phase: Final Appropriation
-    - amount: null
-      financial_year: 2014-15
-      phase: Audit Outcome
-    - amount: null
-      financial_year: 2015-16
-      phase: Adjusted appropriation
-    - amount: null
-      financial_year: 2015-16
-      phase: Final Appropriation
-    - amount: null
-      financial_year: 2015-16
-      phase: Audit Outcome
-    - amount: null
-      financial_year: 2016-17
-      phase: Adjusted appropriation
-    - amount: null
-      financial_year: 2016-17
-      phase: Final Appropriation
-    - amount: null
-      financial_year: 2016-17
-      phase: Audit Outcome
-    name: Administration
-  - items:
-    - amount: 1776283000
-      financial_year: 2015-16
-      phase: Main appropriation
-    - amount: 1673278000
-      financial_year: 2016-17
-      phase: Main appropriation
-    - amount: null
-      financial_year: 2013-14
-      phase: Main appropriation
-    - amount: null
-      financial_year: 2013-14
-      phase: Adjusted appropriation
-    - amount: null
-      financial_year: 2013-14
-      phase: Final Appropriation
-    - amount: null
-      financial_year: 2013-14
-      phase: Audit Outcome
-    - amount: null
-      financial_year: 2014-15
-      phase: Main appropriation
-    - amount: null
-      financial_year: 2014-15
-      phase: Adjusted appropriation
-    - amount: null
-      financial_year: 2014-15
-      phase: Final Appropriation
-    - amount: null
-      financial_year: 2014-15
-      phase: Audit Outcome
-    - amount: null
-      financial_year: 2015-16
-      phase: Adjusted appropriation
-    - amount: null
-      financial_year: 2015-16
-      phase: Final Appropriation
-    - amount: null
-      financial_year: 2015-16
-      phase: Audit Outcome
-    - amount: null
-      financial_year: 2016-17
-      phase: Adjusted appropriation
-    - amount: null
-      financial_year: 2016-17
-      phase: Final Appropriation
-    - amount: null
-      financial_year: 2016-17
-      phase: Audit Outcome
-    name: Agriculture
 contributed_datasets:
 - contributor: International Budget Partnership
   name: How Does Civil Society Use Budget Information?
