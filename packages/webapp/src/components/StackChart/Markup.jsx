@@ -31,7 +31,11 @@ class Markup extends Component {
     this.naviChart = new NaviChart(this.refs.navigation);
     this.bodyChart = new StackBodyChart(this.refs.stackchartbody);
     this.draw();
-    this.handleScroll();
+
+    this.scrollTopPercent = 0;
+    this.windowPercent = document.documentElement.clientHeight / this.refs.stackchartbody.getBoundingClientRect().height;
+    this.naviChart.updateDomainWindow(this.scrollTopPercent, this.windowPercent);
+    
     window.addEventListener('scroll', this.handleScroll);
   }
 
