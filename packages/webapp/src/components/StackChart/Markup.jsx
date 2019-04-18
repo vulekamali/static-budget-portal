@@ -105,8 +105,9 @@ class Markup extends Component {
 
     var stickToTop = false;
     var chartHeaderSize = 81;
+    var headerStickyHeight = 140;
     var stackchartWrapperBoundingRect = this.refs.stackchartwrapper.getBoundingClientRect();
-    if (stackchartWrapperBoundingRect.top < chartHeaderSize && canStickToTop) {
+    if (stackchartWrapperBoundingRect.top < chartHeaderSize && stackchartWrapperBoundingRect.bottom > headerStickyHeight && canStickToTop) {
       stickToTop = true;
     }
 

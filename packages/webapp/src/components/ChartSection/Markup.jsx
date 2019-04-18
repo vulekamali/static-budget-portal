@@ -86,8 +86,9 @@ class Markup extends Component {
     var footerBoundingRect = this.refs.footer.getBoundingClientRect();
 
     // console.log("handleScroll chartSection", scrollTop, headerBoundingRect, footerBoundingRect)
-
-    if (footerBoundingRect.bottom > 0
+    var headerHeight = 64;
+    console.log("footerBoundingRect.top", footerBoundingRect.top);
+    if (footerBoundingRect.top > headerHeight * 2
         && headerBoundingRect.bottom <= 17) { // when component is Active && header is not visible
       this.setState({stickToTop: true});
     } else {

@@ -22,7 +22,6 @@ export default function StackChart(containerNode) {
   var groupLabelHeight = 32;
   var subItemOffset = 2;
   var subItemTextOffsetX = 10;
-  var subItemTextOffsetY = 9;
   var selectedOffset = 4;
 
   var minBoxHeight = 19;
@@ -192,18 +191,20 @@ export default function StackChart(containerNode) {
             d3.select(this).style("opacity", 1);
           })
           .on("click", handleClick);
+
+        var textY = (Math.min(groupLabelHeight, item2.totalHeight)  + fontHeight) / 2 - subItemOffset;
         
         item2Svg.append("text")
           .attr("class", "subItemLabel" + (item2.totalHeight - subItemOffset < smallFontBlockH? " smallFont": ""))
           .attr("x", subItemTextOffsetX)
-          .attr("y", subItemTextOffsetY + fontHeight)
+          .attr("y", textY)
           .text(truncatedLabel(item2.name))
           .on("click", handleClick);
 
         item2Svg.append("text")
           .attr("class", "subItemLabel")
           .attr("x", viewportWidth - subItemTextOffsetX)
-          .attr("y", (groupLabelHeight + fontHeight) / 2 - subItemOffset )
+          .attr("y", textY )
           .attr("text-anchor", "end")
           .text(`R${trimValues(item2.amount, true)}`)
           .on("click", handleClick);
