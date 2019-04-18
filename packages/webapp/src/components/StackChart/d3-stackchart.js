@@ -5,7 +5,7 @@ export function calculateId(rootIndex, currIndex) {
   return rootIndex * 10000 + currIndex;
 }
 
-export function truncatedLabel(label, maxLen = 100) {
+export function truncatedLabel(label, maxLen = 40) {
   if (label.length > maxLen) {
     return label.slice(0, maxLen - 2) + "..";
   } 
@@ -60,7 +60,7 @@ export default function StackChart(containerNode) {
     return [0,0];
   }
 
-  this.updateSelection = function(Lv1Idx, Lv2Idx) {
+  this.updateSelection = function(Lv1Idx, Lv2Idx, scrollTop) {
     var prevItem = svg.select(".selectedItem2");
     prevItem.select(`rect`)
       .transition()
@@ -130,6 +130,15 @@ export default function StackChart(containerNode) {
     svg.attr("width", viewportWidth)
       .attr("height", viewBoxHeight);
 
+
+    svg.append("clipPath")
+      .attr("id", "labelClipPath")
+    .append("rect")
+      .attr("x", 0)
+      .attr("y", 0)
+      .attr("width", viewportWidth - 90)
+      .attr("height", viewBoxHeight);   
+
     var itemSvgs = svg.selectAll(".itemLv1").data(items);
     
     itemSvgs.enter()
@@ -145,9 +154,10 @@ export default function StackChart(containerNode) {
 
       itemLabelSvg.append("text")
         .attr("class", "groupLabel")
+        .attr("clip-path", "url(#labelClipPath)")
         .attr("x", 0)
         .attr("y", (groupLabelHeight + fontHeight) / 2 - subItemOffset )
-        .text(truncatedLabel(item.name));
+        .text(item.name);
 
       itemLabelSvg.append("text")
         .attr("class", "groupLabel")
@@ -196,9 +206,10 @@ export default function StackChart(containerNode) {
         
         item2Svg.append("text")
           .attr("class", "subItemLabel" + (item2.totalHeight - subItemOffset < smallFontBlockH? " smallFont": ""))
+          .attr("clip-path", "url(#labelClipPath)")
           .attr("x", subItemTextOffsetX)
           .attr("y", textY)
-          .text(truncatedLabel(item2.name))
+          .text(item2.name)
           .on("click", handleClick);
 
         item2Svg.append("text")

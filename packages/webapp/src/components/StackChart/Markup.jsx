@@ -35,7 +35,7 @@ class Markup extends Component {
     this.scrollTopPercent = 0;
     this.windowPercent = document.documentElement.clientHeight / this.refs.stackchartbody.getBoundingClientRect().height;
     this.naviChart.updateDomainWindow(this.scrollTopPercent, this.windowPercent);
-    
+
     window.addEventListener('scroll', this.handleScroll);
   }
 
@@ -147,7 +147,7 @@ class Markup extends Component {
 
     this.setState({activeLv1Idx, activeLv2Idx, stickToTop});
     this.naviChart.updateDomainWindow(scrollTopPercent, windowPercent);
-    this.bodyChart.updateSelection(activeLv1Idx, activeLv2Idx);
+    this.bodyChart.updateSelection(activeLv1Idx, activeLv2Idx, scrollTop);
   }
 
   render() {
