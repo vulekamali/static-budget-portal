@@ -1,6 +1,8 @@
 import React, { Component } from 'react';
 import NaviChart from './d3-navigator';
 import StackBodyChart, {calculateId} from './d3-stackchart';
+import NaviLv1Chart from './d3-navigatorLv1';
+import StackBodyLv1Chart, {calculateId as calculateIdLv1} from './d3-stackchartLv1';
 
 import LeftIcon from '@material-ui/icons/ArrowBack';
 import trimValues from '../../helpers/trimValues';
@@ -28,8 +30,15 @@ class Markup extends Component {
   }
 
   componentDidMount() {
-    this.naviChart = new NaviChart(this.refs.navigation);
-    this.bodyChart = new StackBodyChart(this.refs.stackchartbody);
+    var hasChildren = this.props.hasChildren;
+
+    if (hasChildren) {
+      this.naviChart = new NaviChart(this.refs.navigation);
+      this.bodyChart = new StackBodyChart(this.refs.stackchartbody);
+    } else {
+      this.naviChart = new NaviLv1Chart(this.refs.navigation);
+      this.bodyChart = new StackBodyLv1Chart(this.refs.stackchartbody);
+    }
     this.draw();
 
     this.scrollTopPercent = 0;
@@ -48,11 +57,8 @@ class Markup extends Component {
   }
 
   componentDidUpdate(prevProps) {
-    // console.log("prevProps", prevProps);
     var pickedPrevProps = (({ fills, hasChildren, items, screenWidth }) => ({ fills, hasChildren, items, screenWidth }))(prevProps);
     var pickedCurrProps = (({ fills, hasChildren, items, screenWidth }) => ({ fills, hasChildren, items, screenWidth }))(this.props);
-
-    // console.log("comparing objects", pickedPrevProps, pickedCurrProps);
     
     if (JSON.stringify(pickedPrevProps) != JSON.stringify(pickedCurrProps)) {
       this.draw();
@@ -104,9 +110,9 @@ class Markup extends Component {
       items, 
       changeSelectedHandler, 
       fills, 
-      canStickToTop 
+      canStickToTop,
     } = this.props;
-
+    var hasChildren = this.props.hasChildren;
     var stickToTop = false;
     var chartHeaderSize = 81;
     var headerStickyHeight = 140;
@@ -117,41 +123,63 @@ class Markup extends Component {
 
     var scrollHeight = this.refs.stackchartbody.getBoundingClientRect().height;
     var scrollTop = chartHeaderSize - stackchartWrapperBoundingRect.top;
-    // console.log("handleScroll stackchartbody, scrollTop, stackchartWrapperBoundingRect.top", scrollTop, stackchartWrapperBoundingRect.top)
 
     var clientHeight = document.documentElement.clientHeight;
-
-    var activeLv1Idx = this.bodyChart.getActiveLv1Idx(scrollTop);
-    var activeLv2Idx = this.bodyChart.getActiveLv2Idx(scrollTop)[1];
-
     var scrollTopPercent = scrollTop/scrollHeight;
     var windowPercent = clientHeight/scrollHeight;
+
     this.scrollTopPercent = scrollTopPercent;
     this.windowPercent = windowPercent;
 
+    if (hasChildren) { //Level 1
+      var activeLv1Idx = this.bodyChart.getActiveLv1Idx(scrollTop);
+      var activeLv2Idx = this.bodyChart.getActiveLv2Idx(scrollTop)[1];
 
-    var rootIndex = activeLv1Idx;
-    var currIndex = activeLv2Idx;
-    var id = calculateId(rootIndex, currIndex);
-    var item2 = items[rootIndex].children[currIndex];
-    var amount = item2.amount;
-    var name = item2.name;
+      var rootIndex = activeLv1Idx;
+      var currIndex = activeLv2Idx;
+      var id = calculateId(rootIndex, currIndex);
+      var item2 = items[rootIndex].children[currIndex];
+      var amount = item2.amount;
+      var name = item2.name;
+  
+      changeSelectedHandler({ 
+        id,
+        name: name,
+        color: fills[rootIndex],
+        value: amount,
+        zoom: null,
+      })
+  
+      this.setState({activeLv1Idx, activeLv2Idx, stickToTop});
+      this.naviChart.updateDomainWindow(scrollTopPercent, windowPercent);
+      this.bodyChart.updateSelection(activeLv1Idx, activeLv2Idx, scrollTop);
+    } else {
+      var activeLv1Idx = this.bodyChart.getActiveIdx(scrollTop);
 
-    changeSelectedHandler({ 
-      id,
-      name: name,
-      color: fills[rootIndex],
-      value: amount,
-      zoom: null,
-    })
-
-    this.setState({activeLv1Idx, activeLv2Idx, stickToTop});
-    this.naviChart.updateDomainWindow(scrollTopPercent, windowPercent);
-    this.bodyChart.updateSelection(activeLv1Idx, activeLv2Idx, scrollTop);
+      var itemIdx = activeLv1Idx;
+      var id = calculateIdLv1(itemIdx);
+      var item = items[itemIdx];
+      var amount = item.amount;
+      var name = item.name;
+  
+      changeSelectedHandler({ 
+        id,
+        name: name,
+        color: fills[itemIdx],
+        value: amount,
+        zoom: null,
+      })
+  
+      this.setState({activeLv1Idx, stickToTop});
+      this.naviChart.updateDomainWindow(scrollTopPercent, windowPercent);
+      this.bodyChart.updateSelection(activeLv1Idx, scrollTop);
+    }
   }
 
   render() {
     const { screenWidth } = this.props;
+    var hasChildren = this.props.hasChildren;
+
     const widthWithPadding = screenWidth - 48;
     const width = widthWithPadding > 1200 ? 1200 : widthWithPadding;
 
@@ -174,10 +202,13 @@ class Markup extends Component {
           className="StackChartBody"
           onScroll={this.handleScroll.bind(this)}
         />
-        <FocusItem className="FocusItem">
-          <div className="left">{this.props.items[activeLv1Idx].name}</div>
-          <div className="right">R{trimValues(this.props.items[activeLv1Idx].amount)}</div>
-        </FocusItem>
+        {
+          hasChildren && 
+            <FocusItem className="FocusItem">
+              <div className="left">{this.props.items[activeLv1Idx].name}</div>
+              <div className="right">R{trimValues(this.props.items[activeLv1Idx].amount)}</div>
+            </FocusItem>
+        }
       </StackChartWrapper>
     )
   }

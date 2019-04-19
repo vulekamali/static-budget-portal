@@ -27,12 +27,6 @@ export default function Navigator(containerNode) {
     for (var i = 0; i < items.length; i ++) {
       items[i].initialOffsetAmount = sumVal;
       sumVal += items[i].amount;
-
-      var subSumVal = 0;
-      for (var j = 0; j < items[i].children.length; j ++) {
-        items[i].children[j].initialOffsetAmount = subSumVal;
-        subSumVal += items[i].children[j].amount;
-      }
     }
 
     var subItemOffset = 1;
@@ -55,25 +49,14 @@ export default function Navigator(containerNode) {
 
     items.forEach((item, idx) => {
       var itemSvg = svg.selectAll(`.item-lv1.idx-${idx}`);
-      
-      var itemL2s = item.children;
-      var itemL2Svgs = itemSvg.selectAll(".item-lv2").data(itemL2s);
-      itemL2Svgs.enter()
-        .append("g")
-        .attr("class", (itemL2, idx2) => `item-lv2 idx2-${idx2}`)
-        .attr("transform", (itemL2, idx2) => `translate(${scaleX(itemL2.initialOffsetAmount)}, 0)`);
-      
-      itemL2s.forEach((item2, idx2) => {
-        var item2Svg = itemSvg.selectAll(`.item-lv2.idx2-${idx2}`);
 
-        item2Svg.append("rect")
+      itemSvg.append("rect")
           .attr("class", "item2Rect")
           .attr("x", 0)
           .attr("y", 0)
-          .attr("width", Math.max(scaleX(item2.amount) - subItemOffset, 0))
+          .attr("width", Math.max(scaleX(item.amount) - subItemOffset, 0))
           .attr("height", viewBoxHeight)
           .attr("fill", fills[idx]);
-      })
     })
 
     svg.append("rect")
