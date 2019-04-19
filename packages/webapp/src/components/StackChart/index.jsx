@@ -60,8 +60,8 @@ class StackChart extends Component {
     }
 
     this.setState({ 
-      selected: selected.id,
-      zoom: selected.zoom || null,
+      selected: selected && selected.id,
+      zoom: selected && selected.zoom || null,
     });
   }
 

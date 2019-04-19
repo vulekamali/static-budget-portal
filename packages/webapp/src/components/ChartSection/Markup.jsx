@@ -71,6 +71,7 @@ class Markup extends Component {
   }
 
   componentDidMount() {
+    console.log("add Event listener");
     window.addEventListener('scroll', this.handleScroll);
   }
 
@@ -85,7 +86,7 @@ class Markup extends Component {
     var headerBoundingRect = ReactDOM.findDOMNode(this.refs.header).getBoundingClientRect();
     var footerBoundingRect = this.refs.footer.getBoundingClientRect();
 
-    // console.log("handleScroll chartSection", scrollTop, headerBoundingRect, footerBoundingRect)
+    console.log("handleScroll chartSection", headerBoundingRect)
     var headerHeight = 64;
     if (footerBoundingRect.top > headerHeight * 2
         && headerBoundingRect.bottom <= 17) { // when component is Active && header is not visible

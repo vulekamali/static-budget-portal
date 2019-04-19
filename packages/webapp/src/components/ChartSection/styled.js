@@ -61,6 +61,7 @@ const DetailsWrapper = styled.div`
     z-index: 10;
     top: 0;
     padding-top: 17px;
+    padding-bottom: 16px;
     width: calc(100% - 32px);
     background: #fafafa;
   }

@@ -117,9 +117,12 @@ class Markup extends Component {
     var chartHeaderSize = 81;
     var headerStickyHeight = 140;
     var stackchartWrapperBoundingRect = this.refs.stackchartwrapper.getBoundingClientRect();
-    if (stackchartWrapperBoundingRect.top < chartHeaderSize && stackchartWrapperBoundingRect.bottom > headerStickyHeight && canStickToTop) {
+    var withinRange = stackchartWrapperBoundingRect.top < chartHeaderSize && stackchartWrapperBoundingRect.bottom > headerStickyHeight;
+    if ( withinRange && canStickToTop) {
       stickToTop = true;
     }
+
+    console.log("withinRange", withinRange);
 
     var scrollHeight = this.refs.stackchartbody.getBoundingClientRect().height;
     var scrollTop = chartHeaderSize - stackchartWrapperBoundingRect.top;
@@ -141,14 +144,20 @@ class Markup extends Component {
       var item2 = items[rootIndex].children[currIndex];
       var amount = item2.amount;
       var name = item2.name;
+
+      if (withinRange) {
+        changeSelectedHandler({ 
+          id,
+          name: name,
+          color: fills[rootIndex],
+          value: amount,
+          zoom: null,
+        })
+      } else {
+        changeSelectedHandler(null)
+        activeLv1Idx = -1;
+      }
   
-      changeSelectedHandler({ 
-        id,
-        name: name,
-        color: fills[rootIndex],
-        value: amount,
-        zoom: null,
-      })
   
       this.setState({activeLv1Idx, activeLv2Idx, stickToTop});
       this.naviChart.updateDomainWindow(scrollTopPercent, windowPercent);
@@ -161,15 +170,19 @@ class Markup extends Component {
       var item = items[itemIdx];
       var amount = item.amount;
       var name = item.name;
-  
-      changeSelectedHandler({ 
-        id,
-        name: name,
-        color: fills[itemIdx],
-        value: amount,
-        zoom: null,
-      })
-  
+      if (withinRange) {
+        changeSelectedHandler({ 
+          id,
+          name: name,
+          color: fills[itemIdx],
+          value: amount,
+          zoom: null,
+        })
+      } else {
+        changeSelectedHandler(null)
+        activeLv1Idx = -1;
+      }
+    
       this.setState({activeLv1Idx, stickToTop});
       this.naviChart.updateDomainWindow(scrollTopPercent, windowPercent);
       this.bodyChart.updateSelection(activeLv1Idx, scrollTop);

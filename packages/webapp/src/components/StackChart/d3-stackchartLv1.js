@@ -2,7 +2,7 @@ import * as d3 from "d3";
 import trimValues from '../../helpers/trimValues';
 
 export function calculateId(currIndex) {
-  return currIndex;
+  return currIndex + 10000;
 }
 
 export default function StackChartLv1(containerNode) {
