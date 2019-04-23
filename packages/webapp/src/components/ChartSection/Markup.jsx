@@ -45,10 +45,13 @@ const callButtonExplore = (url, color,  verb, subject, isConsolidatedChart) => {
   );
 };
 
-const callDetails = (selected, verb, subject, isConsolidatedChart, stickToTop, stickToChartBottom) => {
+const callDetails = (selected, verb, subject, isConsolidatedChart, hasChildren, stickToTop, stickToChartBottom) => {
   const { name, value, url, color } = selected;
   return (
-    <DetailsWrapper className={stickToTop? "StickToTop": stickToChartBottom? "StickToChartBottom": ""}>
+    <DetailsWrapper 
+    hasChildren={hasChildren}
+    className={stickToTop? "StickToTop": stickToChartBottom? "StickToChartBottom": ""}
+    >
       <DetailsContainer>
         <div>
           <Department>{name}</Department>
@@ -113,6 +116,7 @@ class Markup extends Component {
     const {
       chart,
       isMobile,
+      hasChildren,
       selected,
       onSelectedChange,
       verb,
@@ -139,11 +143,11 @@ class Markup extends Component {
           share={anchor} 
           years={years} 
           phases={phases} />
-        {!!selected && callDetails(selected, verb, subject, isConsolidatedChart, false, false)} 
-        {!!selected && stickToTop && callDetails(selected, verb, subject, isConsolidatedChart, stickToTop, stickToChartBottom)} 
+        {!!selected && callDetails(selected, verb, subject, isConsolidatedChart, hasChildren, false, false)} 
+        {!!selected && stickToTop && callDetails(selected, verb, subject, isConsolidatedChart, hasChildren, stickToTop, stickToChartBottom)} 
         {callChart(chart, onSelectedChange)}
         <FooterWrapper ref="footer">
-          {!!selected && stickToChartBottom && callDetails(selected, verb, subject, isConsolidatedChart, stickToTop, stickToChartBottom)} 
+          {!!selected && stickToChartBottom && callDetails(selected, verb, subject, isConsolidatedChart, hasChildren, stickToTop, stickToChartBottom)} 
           <FooterContainer>
             {footer && <FooterDetails>{footer}</FooterDetails>}
           </FooterContainer>

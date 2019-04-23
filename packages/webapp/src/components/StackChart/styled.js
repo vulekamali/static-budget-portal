@@ -90,7 +90,7 @@ const StackChartWrapper = styled.div`
     .Navigator {
       position: absolute;
       z-index: 10;
-      bottom: ${(props) => props.hasChildren? '40px': '16px'};
+      bottom: ${(props) => props.hasChildren? '42px': '18px'};
       width: 100%;
       background: #fafafa;
     }
