@@ -66,6 +66,7 @@ const StyledTooltip = styled.div`
 const StackChartWrapper = styled.div`
   position: relative;
   display: inline-block;
+
   &.StickToTop {
     .Navigator {
       position: fixed;
@@ -74,9 +75,11 @@ const StackChartWrapper = styled.div`
       width: 100%;
       background: #fafafa;
     }
+
     .StackChartBody {
       padding-top: 28px;
     }
+
     .FocusItem {
       position: fixed;
       display: block !important;
@@ -86,6 +89,7 @@ const StackChartWrapper = styled.div`
       background: #fafafa;
     }
   }
+
   &.StickToChartBottom {
     .Navigator {
       position: absolute;
@@ -94,9 +98,11 @@ const StackChartWrapper = styled.div`
       width: 100%;
       background: #fafafa;
     }
+
     .StackChartBody {
       padding-top: 28px;
     }
+
     .FocusItem {
       position: absolute;
       display: block !important;
@@ -154,10 +160,12 @@ const FocusItem = styled.div`
   font-weight: bold;
   font-size: 12px;
   line-height: normal;
-  color: #000000;
+  color: #000;
+
   .left {
     float: left;
   }
+
   .right {
     float: right;
   }
@@ -169,9 +177,10 @@ const StackChartBody = styled.div`
   overflow-y: scroll;
   background: #fafafa;
 
-  &::-webkit-scrollbar { 
-    width: 0 !important 
+  &::-webkit-scrollbar {
+    width: 0 !important;
   }
+
   overflow: -moz-scrollbars-none;
   -ms-overflow-style: none;
 
@@ -183,16 +192,19 @@ const StackChartBody = styled.div`
 
   .groupLabel {
     font-weight: bold;
-    color: #000000;
+    color: #000;
   }
+
   .subItemLabel {
     color: rgba(0, 0, 0);
-    opacity: 0.4;    
+    opacity: 0.4;
   }
+
   .subItemLabel.smallFont {
     font-size: 10px;
   }
-  .selectedItem2 .subItemLabel{
+
+  .selectedItem2 .subItemLabel {
     opacity: 1;
   }
 `;
