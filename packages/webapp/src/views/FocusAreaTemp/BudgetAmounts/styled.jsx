@@ -6,11 +6,6 @@ const Wrapper = styled.div`
   justify-content: center;
   margin-right: 16px;
   margin-left: 16px;
-
-  @media screen and (min-width: 550px) {
-    margin-right: 48px;
-    margin-left: 48px;
-  }
 `;
 
 const Summary = styled.div`

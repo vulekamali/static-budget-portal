@@ -13,13 +13,8 @@ const HeadingWrapper = styled.div`
   padding: 16px;
   margin-bottom: 36px;
 
-  @media screen and (min-width: 550px) {
-    padding-right: 48px;
-    padding-left: 48px;
-  }
-
   @media screen and (min-width: 600px) {
-    padding: 64px 48px;
+    padding: 64px 16px;
     margin-bottom: 64px;
   }
 `;

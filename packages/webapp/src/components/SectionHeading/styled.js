@@ -12,11 +12,6 @@ const Wrapper = styled.div`
   margin-right: 16px;
   margin-left: 16px;
   margin-bottom: 20px;
-  
-  @media screen and (min-width: 550px) {
-    margin-right: 48px;
-    margin-left: 48px;
-  }
 
   @media screen and (min-width: 950px) {
     margin-bottom: 40px;
