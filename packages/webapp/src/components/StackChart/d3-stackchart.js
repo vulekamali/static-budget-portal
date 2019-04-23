@@ -39,7 +39,7 @@ export default function StackChart(containerNode) {
         return i;
       }
     }
-    return 0;
+    return items.length - 1;
   }
 
   this.getActiveLv2Idx = function(scrollTop) {
@@ -57,7 +57,7 @@ export default function StackChart(containerNode) {
         }
       }
     }
-    return [0,0];
+    return [items.length-1, items[items.length-1].children.length-1];
   }
 
   this.updateSelection = function(Lv1Idx, Lv2Idx, scrollTop) {

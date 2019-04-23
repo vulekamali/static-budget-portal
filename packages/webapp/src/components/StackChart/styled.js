@@ -101,7 +101,8 @@ const StackChartWrapper = styled.div`
       position: absolute;
       display: block !important;
       z-index: 10;
-      bottom: 24px;
+      bottom: 10px;
+      padding: 9px 16px;
       width: 100%;
       background: #fafafa;
     }

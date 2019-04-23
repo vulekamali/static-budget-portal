@@ -158,7 +158,7 @@ class Markup extends Component {
       var amount = item2.amount;
       var name = item2.name;
 
-      if (withinRange) {
+      if (stackchartWrapperBoundingRect.top < chartHeaderSize ) {
         changeSelectedHandler({ 
           id,
           name: name,
@@ -171,7 +171,6 @@ class Markup extends Component {
         activeLv1Idx = -1;
       }
   
-  
       this.setState({activeLv1Idx, activeLv2Idx, stickToTop, stickToChartBottom});
       this.naviChart.updateDomainWindow(scrollTopPercent, windowPercent);
       this.bodyChart.updateSelection(activeLv1Idx, activeLv2Idx, scrollTop);
@@ -183,7 +182,7 @@ class Markup extends Component {
       var item = items[itemIdx];
       var amount = item.amount;
       var name = item.name;
-      if (withinRange) {
+      if (stackchartWrapperBoundingRect.top < chartHeaderSize ) {
         changeSelectedHandler({ 
           id,
           name: name,
@@ -195,7 +194,7 @@ class Markup extends Component {
         changeSelectedHandler(null)
         activeLv1Idx = -1;
       }
-    
+
       this.setState({activeLv1Idx, stickToTop, stickToChartBottom});
       this.naviChart.updateDomainWindow(scrollTopPercent, windowPercent);
       this.bodyChart.updateSelection(activeLv1Idx, scrollTop);

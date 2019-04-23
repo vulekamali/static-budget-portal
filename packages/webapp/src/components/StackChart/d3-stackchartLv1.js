@@ -32,7 +32,7 @@ export default function StackChartLv1(containerNode) {
         return i;
       }
     }
-    return 0;
+    return items.length - 1;
   }
 
   this.updateSelection = function(Lv1Idx) {
