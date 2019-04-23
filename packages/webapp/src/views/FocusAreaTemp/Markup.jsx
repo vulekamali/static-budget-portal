@@ -24,7 +24,6 @@ const callDescription = description => {
   }
   return (
     <React.Fragment>
-      <SectionHeading title='Department information' />
       <TextWrapper>
         <TextContainer>
           <Description>
@@ -45,18 +44,16 @@ const Markup = (props) => {
     selected,
     eventHandler,
     initialSelected,
-    year,
-    selectedObject
+    year
   } = props;
 
   return (
     <Wrapper>
       <Heading {...{ departmentNames, selected, eventHandler, year }} />
-      {console.log(selectedObject.items)}
+      <SectionHeading title='Focus area information' />
       <BudgetAmounts {...resources} />
       {callDescription(description)}
-      <SectionHeading title='Department programmes' />
-      <div key={selected}>
+      <div key={selected}> 
         <ChartSection
           {...{ initialSelected }}
           chart={(onSelectedChange) => <Treemap {...{ items, onSelectedChange }} />}
