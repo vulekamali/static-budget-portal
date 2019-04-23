@@ -117,6 +117,7 @@ class Markup extends Component {
     } = this.props;
     var hasChildren = this.props.hasChildren;
     var stickToTop = false;
+    var stickToChartBottom = false;
     var chartHeaderSize = 81;
     var headerStickyHeight = 140;
     if (!hasChildren) {
@@ -124,9 +125,14 @@ class Markup extends Component {
     }
     var stackchartWrapperBoundingRect = this.refs.stackchartwrapper.getBoundingClientRect();
     var withinRange = stackchartWrapperBoundingRect.top < chartHeaderSize 
-    && stackchartWrapperBoundingRect.bottom > headerStickyHeight;
+            && stackchartWrapperBoundingRect.bottom > headerStickyHeight;
+    
     if ( withinRange && canStickToTop) {
       stickToTop = true;
+    }
+
+    if (stackchartWrapperBoundingRect.bottom <= headerStickyHeight && canStickToTop) {
+      stickToChartBottom = true;
     }
 
     // console.log("withinRange", withinRange);
@@ -166,7 +172,7 @@ class Markup extends Component {
       }
   
   
-      this.setState({activeLv1Idx, activeLv2Idx, stickToTop});
+      this.setState({activeLv1Idx, activeLv2Idx, stickToTop, stickToChartBottom});
       this.naviChart.updateDomainWindow(scrollTopPercent, windowPercent);
       this.bodyChart.updateSelection(activeLv1Idx, activeLv2Idx, scrollTop);
     } else {
@@ -190,7 +196,7 @@ class Markup extends Component {
         activeLv1Idx = -1;
       }
     
-      this.setState({activeLv1Idx, stickToTop});
+      this.setState({activeLv1Idx, stickToTop, stickToChartBottom});
       this.naviChart.updateDomainWindow(scrollTopPercent, windowPercent);
       this.bodyChart.updateSelection(activeLv1Idx, scrollTop);
     }
@@ -205,14 +211,16 @@ class Markup extends Component {
 
     const {
       activeLv1Idx,
-      stickToTop 
+      stickToTop,
+      stickToChartBottom 
     } = this.state;
   
     return (
       <StackChartWrapper 
         ref="stackchartwrapper"
         {...{ width }} 
-        className={stickToTop && "StickToTop"}>
+        hasChildren={hasChildren}
+        className={stickToTop? "StickToTop": stickToChartBottom? "StickToChartBottom": ""}>
         <Navigator 
           ref="navigation" 
           className="Navigator"

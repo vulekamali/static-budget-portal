@@ -45,10 +45,10 @@ const callButtonExplore = (url, color,  verb, subject, isConsolidatedChart) => {
   );
 };
 
-const callDetails = (selected, verb, subject, isConsolidatedChart, stickToTop) => {
+const callDetails = (selected, verb, subject, isConsolidatedChart, stickToTop, stickToChartBottom) => {
   const { name, value, url, color } = selected;
   return (
-    <DetailsWrapper className={stickToTop && "StickToTop"}>
+    <DetailsWrapper className={stickToTop? "StickToTop": stickToChartBottom? "StickToChartBottom": ""}>
       <DetailsContainer>
         <div>
           <Department>{name}</Department>
@@ -65,7 +65,8 @@ class Markup extends Component {
   constructor(props) {
     super(props);
     this.state = {
-      stickToTop: false
+      stickToTop: false,
+      stickToChartBottom: false,
     }
     this.handleScroll = this.handleScroll.bind(this);
   }
@@ -87,19 +88,25 @@ class Markup extends Component {
     var footerBoundingRect = this.refs.footer.getBoundingClientRect();
 
     // console.log("this.props", this.props);
-    var headerHeight = 64 * 2;
+    var headerHeight = 143;
     var bottomLimit = 17;
     if (!this.props.hasChildren) {
       headerHeight -= 28;
     }
+    var stickToTop = false;
+    var stickToChartBottom = false;
     // console.log("footerBoundingRect.top > headerHeight", footerBoundingRect.top, headerHeight);
     // console.log("headerBoundingRect.bottom <= bottomLimit", headerBoundingRect.bottom, bottomLimit)
     if (footerBoundingRect.top > headerHeight
         && headerBoundingRect.bottom <= bottomLimit) { // when component is Active && header is not visible
-      this.setState({stickToTop: true});
-    } else {
-      this.setState({stickToTop: false});
+      stickToTop = true;
+    } 
+
+    if (footerBoundingRect.top <= headerHeight) {
+      stickToChartBottom = true;
     }
+
+    this.setState({stickToTop, stickToChartBottom});
   }
 
   render() {
@@ -119,7 +126,8 @@ class Markup extends Component {
     } = this.props;
 
     const {
-      stickToTop
+      stickToTop,
+      stickToChartBottom
     } = this.state;
     
     return (
@@ -131,10 +139,11 @@ class Markup extends Component {
           share={anchor} 
           years={years} 
           phases={phases} />
-        {!!selected && callDetails(selected, verb, subject, isConsolidatedChart, false)} 
-        {!!selected && stickToTop && callDetails(selected, verb, subject, isConsolidatedChart, true)} 
+        {!!selected && callDetails(selected, verb, subject, isConsolidatedChart, false, false)} 
+        {!!selected && stickToTop && callDetails(selected, verb, subject, isConsolidatedChart, stickToTop, stickToChartBottom)} 
         {callChart(chart, onSelectedChange)}
         <FooterWrapper ref="footer">
+          {!!selected && stickToChartBottom && callDetails(selected, verb, subject, isConsolidatedChart, stickToTop, stickToChartBottom)} 
           <FooterContainer>
             {footer && <FooterDetails>{footer}</FooterDetails>}
           </FooterContainer>

@@ -86,6 +86,26 @@ const StackChartWrapper = styled.div`
       background: #fafafa;
     }
   }
+  &.StickToChartBottom {
+    .Navigator {
+      position: absolute;
+      z-index: 10;
+      bottom: ${(props) => props.hasChildren? '40px': '16px'};
+      width: 100%;
+      background: #fafafa;
+    }
+    .StackChartBody {
+      padding-top: 28px;
+    }
+    .FocusItem {
+      position: absolute;
+      display: block !important;
+      z-index: 10;
+      bottom: 24px;
+      width: 100%;
+      background: #fafafa;
+    }
+  }
 `;
 
 const StackChartButtonStyle = styled(Button)`
