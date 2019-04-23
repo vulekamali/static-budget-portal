@@ -81,7 +81,7 @@ const StackChartWrapper = styled.div`
       position: fixed;
       display: block !important;
       z-index: 10;
-      top: 99px;
+      top: 97px;
       width: 100%;
       background: #fafafa;
     }
