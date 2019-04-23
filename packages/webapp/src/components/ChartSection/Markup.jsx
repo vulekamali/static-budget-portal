@@ -71,7 +71,7 @@ class Markup extends Component {
   }
 
   componentDidMount() {
-    console.log("add Event listener");
+    // console.log("add Event listener");
     window.addEventListener('scroll', this.handleScroll);
   }
 
@@ -86,10 +86,16 @@ class Markup extends Component {
     var headerBoundingRect = ReactDOM.findDOMNode(this.refs.header).getBoundingClientRect();
     var footerBoundingRect = this.refs.footer.getBoundingClientRect();
 
-    console.log("handleScroll chartSection", headerBoundingRect)
-    var headerHeight = 64;
-    if (footerBoundingRect.top > headerHeight * 2
-        && headerBoundingRect.bottom <= 17) { // when component is Active && header is not visible
+    // console.log("this.props", this.props);
+    var headerHeight = 64 * 2;
+    var bottomLimit = 17;
+    if (!this.props.hasChildren) {
+      headerHeight -= 28;
+    }
+    // console.log("footerBoundingRect.top > headerHeight", footerBoundingRect.top, headerHeight);
+    // console.log("headerBoundingRect.bottom <= bottomLimit", headerBoundingRect.bottom, bottomLimit)
+    if (footerBoundingRect.top > headerHeight
+        && headerBoundingRect.bottom <= bottomLimit) { // when component is Active && header is not visible
       this.setState({stickToTop: true});
     } else {
       this.setState({stickToTop: false});

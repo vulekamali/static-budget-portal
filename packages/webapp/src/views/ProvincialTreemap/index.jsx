@@ -10,9 +10,10 @@ const Markup = ({ items, initialSelected, isMobile }) => (
   <ChartSection
     {...{ initialSelected }}
     isMobile={isMobile}
+    hasChildren={true}
     footer="Budget data from 1 April 2018 - 31 March 2019"
     chart={(onSelectedChange) => isMobile
-      ? <StackChart {...{ items, onSelectedChange }} canStickToTop hasChildren={false}/> 
+      ? <StackChart {...{ items, onSelectedChange }} canStickToTop/> 
       : <Treemap {...{ items, onSelectedChange }} />
     }
     verb='Explore'

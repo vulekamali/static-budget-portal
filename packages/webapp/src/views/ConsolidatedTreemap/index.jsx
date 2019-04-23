@@ -18,8 +18,9 @@ const Markup = ({ items, initialSelected, isMobile }) => (
   <ChartSection
     {...{ initialSelected, footer }}
     isMobile={isMobile}
+    hasChildren={false}
     chart={(onSelectedChange) => isMobile
-      ? <StackChart {...{ items, onSelectedChange }} canStickToTop hasChildren={false}/> 
+      ? <StackChart {...{ items, onSelectedChange }} canStickToTop /> 
       : <Treemap {...{ items, onSelectedChange }} />
     }
     verb='Explore'

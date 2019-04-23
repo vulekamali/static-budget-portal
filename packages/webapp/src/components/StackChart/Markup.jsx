@@ -98,9 +98,12 @@ class Markup extends Component {
 
   handleClickEvent(scrollToPosition) {
     var stackchartWrapperBoundingRect = this.refs.stackchartwrapper.getBoundingClientRect();
-    var bodyEle = this.refs.stackchartbody;
-    bodyEle.scrollTo({
-      top: scrollToPosition + stackchartWrapperBoundingRect.top,
+    var chartHeaderSize = 81;
+    
+    // console.log("scrollToPosition", scrollToPosition, stackchartWrapperBoundingRect.top, window.scrollY);
+    
+    window.scrollTo({
+      top: scrollToPosition + stackchartWrapperBoundingRect.top + window.scrollY - chartHeaderSize,
       behavior: 'smooth'
     });
   }
@@ -116,13 +119,17 @@ class Markup extends Component {
     var stickToTop = false;
     var chartHeaderSize = 81;
     var headerStickyHeight = 140;
+    if (!hasChildren) {
+      headerStickyHeight -= 28;
+    }
     var stackchartWrapperBoundingRect = this.refs.stackchartwrapper.getBoundingClientRect();
-    var withinRange = stackchartWrapperBoundingRect.top < chartHeaderSize && stackchartWrapperBoundingRect.bottom > headerStickyHeight;
+    var withinRange = stackchartWrapperBoundingRect.top < chartHeaderSize 
+    && stackchartWrapperBoundingRect.bottom > headerStickyHeight;
     if ( withinRange && canStickToTop) {
       stickToTop = true;
     }
 
-    console.log("withinRange", withinRange);
+    // console.log("withinRange", withinRange);
 
     var scrollHeight = this.refs.stackchartbody.getBoundingClientRect().height;
     var scrollTop = chartHeaderSize - stackchartWrapperBoundingRect.top;
@@ -216,7 +223,7 @@ class Markup extends Component {
           onScroll={this.handleScroll.bind(this)}
         />
         {
-          hasChildren && 
+          hasChildren && this.props.items[activeLv1Idx] &&
             <FocusItem className="FocusItem">
               <div className="left">{this.props.items[activeLv1Idx].name}</div>
               <div className="right">R{trimValues(this.props.items[activeLv1Idx].amount)}</div>
