@@ -1,7 +1,7 @@
 import { Component, createElement } from 'react';
 import axios from 'axios';
 
-import FocusAreaPreview from '../../views/FocusAreaPreview';
+import FocusAreaPreview from '../../views/FocusAreaTemp';
 import transformData from './transformData';
 
 class DataLoader extends Component {
