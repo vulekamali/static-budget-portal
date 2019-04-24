@@ -8,6 +8,7 @@ import SectionHeading from '../SectionHeading';
 import CssBaseline from '@material-ui/core/CssBaseline';
 
 import {
+  Wrapper,
   DetailsWrapper,
   LinkWrapper,
   ButtonStyle,
@@ -135,7 +136,7 @@ class Markup extends Component {
     } = this.state;
     
     return (
-      <React.Fragment>
+      <Wrapper>
         <CssBaseline/>
         <SectionHeading 
           ref="header"
@@ -152,7 +153,7 @@ class Markup extends Component {
             {footer && <FooterDetails>{footer}</FooterDetails>}
           </FooterContainer>
         </FooterWrapper>
-      </React.Fragment>
+      </Wrapper>
     );
   }
 };
