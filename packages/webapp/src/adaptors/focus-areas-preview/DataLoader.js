@@ -1,7 +1,7 @@
 import { Component, createElement } from 'react';
 import axios from 'axios';
 
-import FocusAreaPreview from '../../views/FocusAreaTemp';
+import FocusAreaPreview from '../../views/FocusArea';
 import transformData from './transformData';
 
 class DataLoader extends Component {
@@ -15,7 +15,7 @@ class DataLoader extends Component {
   }
 
   componentDidMount() {
-    const { year, department } = this.props;
+    const { year } = this.props;
     const api = `/json/${year}/focus.json`;
 
     const loadliveData = ({ data }) =>
