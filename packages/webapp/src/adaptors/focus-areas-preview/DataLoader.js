@@ -38,7 +38,7 @@ class DataLoader extends Component {
     const selectedObject = data.find(({ id }) => id === department);
 
     const initialSelected = {
-      name: "Total",
+      name: "National Department Contributions",
       value: selectedObject.total,
       url: null,
       color: "#D8D8D8"
