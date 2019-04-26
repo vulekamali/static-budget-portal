@@ -74,6 +74,7 @@ const DetailsContainer = styled.div`
 const Department = styled(Typography)`
   && {
     font-size: 14px;
+    font-weight: 700;
     line-height: 120%;
     color: #000;
     text-transform: Capitalize;
