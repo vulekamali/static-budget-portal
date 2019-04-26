@@ -143,13 +143,7 @@ export {
   HeadingText,
   Title,
   SelectsGroup,
-  RightOptions,
-  Link,
-  ButtonDetails,
-  ButtonText,
-  ArrowStyled,
-  Details,
-  DetailedAnalysis
+  RightOptions
 }
 
 export default {
@@ -158,11 +152,5 @@ export default {
   HeadingText,
   Title,
   SelectsGroup,
-  RightOptions,
-  Link,
-  ButtonDetails,
-  ButtonText,
-  ArrowStyled,
-  Details,
-  DetailedAnalysis
+  RightOptions
 }
