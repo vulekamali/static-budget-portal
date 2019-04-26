@@ -4,6 +4,57 @@ import { lighten } from 'polished';
 
 import { Button, Typography } from '@material-ui/core';
 
+const StackChartWrapper = styled.div`
+  position: relative;
+  display: inline-block;
+
+  &.StickToTop {
+    .Navigator {
+      position: fixed;
+      z-index: 10;
+      top: 81px;
+      width: 100%;
+      background: #fafafa;
+    }
+
+    .StackChartBody {
+      padding-top: 28px;
+    }
+
+    .FocusItem {
+      position: fixed;
+      display: block !important;
+      z-index: 10;
+      top: 97px;
+      width: 100%;
+      background: #fafafa;
+    }
+  }
+
+  &.StickToChartBottom {
+    .Navigator {
+      position: absolute;
+      z-index: 10;
+      bottom: ${(props) => props.hasChildren? '42px': '18px'};
+      width: 100%;
+      background: #fafafa;
+    }
+
+    .StackChartBody {
+      padding-top: 28px;
+    }
+
+    .FocusItem {
+      position: absolute;
+      display: block !important;
+      z-index: 10;
+      bottom: 24px;
+      width: 100%;
+      background: #fafafa;
+    }
+  }
+`;
+
 const Text = ({ bold, small, ...otherProps }) => {
   const innerComponent = styled.div`
     font-weight: ${bold ? 'bold' : '400'};
@@ -61,57 +112,6 @@ const StyledTooltip = styled.div`
   background: rgba(0, 0, 0, 0.75);
   color: white;
   padding: 10px;
-`;
-
-const StackChartWrapper = styled.div`
-  position: relative;
-  display: inline-block;
-
-  &.StickToTop {
-    .Navigator {
-      position: fixed;
-      z-index: 10;
-      top: 81px;
-      width: 100%;
-      background: #fafafa;
-    }
-
-    .StackChartBody {
-      padding-top: 28px;
-    }
-
-    .FocusItem {
-      position: fixed;
-      display: block !important;
-      z-index: 10;
-      top: 97px;
-      width: 100%;
-      background: #fafafa;
-    }
-  }
-
-  &.StickToChartBottom {
-    .Navigator {
-      position: absolute;
-      z-index: 10;
-      bottom: ${(props) => props.hasChildren? '42px': '18px'};
-      width: 100%;
-      background: #fafafa;
-    }
-
-    .StackChartBody {
-      padding-top: 28px;
-    }
-
-    .FocusItem {
-      position: absolute;
-      display: block !important;
-      z-index: 10;
-      bottom: 24px;
-      width: 100%;
-      background: #fafafa;
-    }
-  }
 `;
 
 const StackChartButtonStyle = styled(Button)`

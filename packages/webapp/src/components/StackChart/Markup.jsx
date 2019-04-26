@@ -127,7 +127,7 @@ class Markup extends Component {
     var withinRange = stackchartWrapperBoundingRect.top < chartHeaderSize 
             && stackchartWrapperBoundingRect.bottom > headerStickyHeight;
     
-    if ( withinRange && canStickToTop) {
+    if (withinRange && canStickToTop) {
       stickToTop = true;
     }
 
@@ -220,7 +220,7 @@ class Markup extends Component {
         ref="stackchartwrapper"
         {...{ width }} 
         hasChildren={hasChildren}
-        className={stickToTop? "StickToTop": stickToChartBottom? "StickToChartBottom": ""}>
+        className={stickToTop ? "StickToTop": stickToChartBottom ? "StickToChartBottom": ""}>
         <Navigator 
           ref="navigation" 
           className="Navigator"
