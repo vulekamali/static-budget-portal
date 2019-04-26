@@ -6,22 +6,23 @@ const Wrapper = styled.div`
   background: #fff;
 `;
 
-const FooterWrapper = styled.div`
+const FooterContainer = styled.div`
   display: flex;
-  justify-content: center;
-  align-items: center;
-  margin-right: 16px;
-  margin-left: 16px;
 `;
 
-const FooterContainer = styled.div`
-  margin-top: 8px;
-  width: 100%;
-  max-width: 1200px;
+const FooterTitle = styled(Typography)`
+&& {
+  font-size: 10px;
+  font-weight: 700;
+  line-height: 140%;
+  color: #000;
+  text-align: left;
+  margin-right: 4px;
 
   @media screen and (min-width: 600px) {
-    margin-bottom: 16px;
+    font-size: 12px;
   }
+}
 `;
 
 const FooterDetails = styled(Typography)`
@@ -39,14 +40,14 @@ const FooterDetails = styled(Typography)`
 
 export {
   Wrapper,
-  FooterWrapper,
   FooterContainer,
+  FooterTitle,
   FooterDetails
 }
 
 export default {
-  Wrapper,
-  FooterWrapper,           
+  Wrapper,          
   FooterContainer,
+  FooterTitle,
   FooterDetails
 }
