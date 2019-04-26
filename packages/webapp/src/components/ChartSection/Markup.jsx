@@ -47,7 +47,7 @@ const callDetails = (selected, verb, subject) => {
           <Department>{name}</Department>
           <Amount>R{trimValues(value)}</Amount>
         </div>
-        {callButtonExplore(url, color,  verb, subject)}
+        {!!verb && callButtonExplore(url, color, verb, subject)}
       </DetailsContainer>
     </DetailsWrapper>
   );
