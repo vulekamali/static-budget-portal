@@ -6,6 +6,7 @@ import SectionHeading from '../SectionHeading';
 import CssBaseline from '@material-ui/core/CssBaseline';
 
 import {
+  Wrapper,
   DetailsWrapper,
   LinkWrapper,
   ButtonStyle,
@@ -68,7 +69,7 @@ const Markup = (props) => {
   } = props;
   
   return (
-    <React.Fragment>
+    <Wrapper>
       <CssBaseline />
       <SectionHeading title={title} share={anchor} years={years} phases={phases} />
       {!!selected && callDetails(selected, verb, subject)} 
@@ -78,7 +79,7 @@ const Markup = (props) => {
           {footer && <FooterDetails>{footer}</FooterDetails>}
         </FooterContainer>
       </FooterWrapper>
-    </React.Fragment>
+    </Wrapper>
   );
 };
 
