@@ -8,7 +8,7 @@ import {
 
 
 const callMenuItems = ({ id, name }) => (
-  <MenuItem value={id}>{name}</MenuItem>
+  <MenuItem key={id} value={id}>{name}</MenuItem>
 );
 
 class CustomizedSelect extends Component {
