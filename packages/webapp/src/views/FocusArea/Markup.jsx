@@ -19,8 +19,8 @@ const callFootNote = footnote => footnote.map(footer => (
   </div>
 ))
 
-const callProvincialChart = (selected, initialSelected, items, footnote, notices) => {
-  if(items === null || items.length === 0) {
+const callProvincialChart = (selected, initialSelected, items, footnotes, notices) => {
+  if(items === null || Object.entries(items).length === 0) {
     return (
       <div key={`${selected}-provincial`}>
       <ChartSection
@@ -28,7 +28,7 @@ const callProvincialChart = (selected, initialSelected, items, footnote, notices
         chart={() => <Notices {...{ notices }} />}
         title='Contributing provincial departments'
         anchor='contributing-provincial-departments'
-        footer={callFootNote(footnote)}
+        footer={callFootNote(footnotes)}
       />
     </div>
     );
@@ -42,7 +42,7 @@ const callProvincialChart = (selected, initialSelected, items, footnote, notices
         subject='this department'
         title='Contributing provincial departments'
         anchor='contributing-provincial-departments'
-        footer={callFootNote(footnote)}
+        footer={callFootNote(footnotes)}
       />
     </div>
   );
@@ -54,29 +54,26 @@ const Markup = (props) => {
     departmentNames,
     selected,
     eventHandler,
-    initialSelected,
+    initialSelectedNational,
+    initialSelectedProvincial,
     year,
-    notices,
-    footnote
   } = props;
-
-  console.log(items[selected]);
 
   return (
     <Wrapper>
       <Heading {...{ departmentNames, selected, eventHandler, year }} />
       <div key={`${selected}-national`}> 
         <ChartSection
-          {...{ initialSelected }}
-          chart={(onSelectedChange) => <Treemap {...{ onSelectedChange }} items={items[selected].national} />}
+          initialSelected={initialSelectedNational}
+          chart={(onSelectedChange) => <Treemap {...{ onSelectedChange }} items={items[selected].national.departments} />}
           verb='Explore'
           subject='this department'
           title='Contributing national departments'
           anchor='contributing-national-departments'
-          footer={callFootNote(footnote)}
+          footer={callFootNote(items[selected].national.footnotes)}
         />
       </div>
-      {callProvincialChart(selected, initialSelected, items[selected].provincial, footnote, notices)}
+      {callProvincialChart(selected, initialSelectedProvincial, items[selected].provincial.provinces, items[selected].provincial.footnotes, items[selected].provincial.notices)}
     </Wrapper>
   );
 };
