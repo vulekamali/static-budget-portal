@@ -36,20 +36,30 @@ class DataLoader extends Component {
     }
 
     const selectedObject = data.find(({ id }) => id === department);
+    console.log(department)
 
-    const initialSelected = {
+    const initialSelectedNational = {
       name: "National Department Contributions",
       value: selectedObject.total,
       url: null,
       color: "#D8D8D8"
     }
 
+    const initialSelectedProvincial = {
+      name: 'Provincial Department Contributions',
+      value: 0,
+      url: null,
+      color: 'rgba(0, 0, 0, 0.1)'
+    }
+
     const passedProps = {
       items: data,
       department,
       year,
-      initialSelected,
-      selectedObject
+      initialSelectedNational,
+      initialSelectedProvincial,
+      nationalSelected: selectedObject.national,
+      provincialSelected: selectedObject.provincial
     }
     return createElement(FocusAreaPreview, passedProps);
   }
