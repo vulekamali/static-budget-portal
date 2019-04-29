@@ -23,8 +23,6 @@ const BudgetAmounts = (props) => {
     sphere
   } = props;
 
-  const newConsolidated = consolidated.toFixed(0);
-
   return (
     <Wrapper>
       <Summary>
@@ -46,7 +44,7 @@ const BudgetAmounts = (props) => {
           <Percentages>
             <div>
               <IntroMainHeading>
-                <PieChart values={[newConsolidated]} /> {calcTotal(newConsolidated)}%
+                <PieChart values={[consolidated < 1 ? 1 : consolidated]} /> {calcTotal(consolidated)}%
               </IntroMainHeading>
               <IntroSubHeading>of {sphere} budget</IntroSubHeading>
             </div>
