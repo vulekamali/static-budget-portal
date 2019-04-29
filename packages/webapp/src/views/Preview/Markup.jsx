@@ -26,7 +26,7 @@ const callDescription = description => {
       <SectionHeading title='Department information' />
       <TextWrapper>
         <TextContainer>
-          <Description>
+          <Description component='div'>
             <ReactMarkdown source={description} />
           </Description>
         </TextContainer>
