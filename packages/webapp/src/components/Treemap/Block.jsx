@@ -8,9 +8,9 @@ import { provinces } from './data';
 const createInlineText = (title, amount, squarePixels) => (
   <Fragment>
     <Text bold small={squarePixels < 20000}>
-      {title}
+      {(squarePixels < 8000 && title.length > 15)? `${title.substring(0, 15)}...` : title}
     </Text>
-    <Text small={squarePixels < 20000}>R{trimValues(amount)}</Text>
+    <Text small={squarePixels < 20000}>R{trimValues(amount, true)}</Text>
   </Fragment>
 );
 
@@ -32,7 +32,6 @@ const Block = (props) => {
     children,
     root,
     zoom,
-    hasChildren,
   } = props;
 
   if (depth === 2) {
@@ -75,7 +74,7 @@ const Block = (props) => {
         selected={!children && selected && selected === id}
         onClick={() => changeSelectedHandler({ id, name, color, value: amount, url, zoom })}
       >
-        {width > 80 && squarePixels > 10000 && createInlineText(name, amount, squarePixels)}
+        {width > 60 && squarePixels > 6000 && createInlineText(name, amount, squarePixels)}
       </TreemapBlock>
     </TreemapBlockWrapper>
   );
