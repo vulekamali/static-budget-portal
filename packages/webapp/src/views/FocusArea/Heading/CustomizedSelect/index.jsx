@@ -7,9 +7,9 @@ import {
 } from './styled';
 
 
-const callMenuItems = ({ id, name }) => (
-  <MenuItem key={id} value={id}>{name}</MenuItem>
-);
+const callMenuItems = ({ id, name }) => {
+  return <MenuItem key={id} value={id}>{name}</MenuItem>
+};
 
 class CustomizedSelect extends Component {
   constructor(props) {
