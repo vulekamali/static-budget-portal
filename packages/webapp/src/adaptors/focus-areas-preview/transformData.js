@@ -10,16 +10,15 @@ const createNationalDepartments = ({ title, slug, amount }) => ({
 const transformData = (response) => {
   const focusSchema = response.items.map(department => {
     const {
-      total,
       national,
       title,
       slug,
       provincial
     } = department;
 
-    const { notices: nationalNotices, footnotes: nationalFootnotes, data: nationalData } = national;
+    const { notices: nationalNotices, footnotes: nationalFootnotes, data: nationalData, total: nationalTotal } = national;
 
-    const { notices: provincialNotices, footnotes: provincialFootnotes, data: provincialData } = provincial;
+    const { notices: provincialNotices, footnotes: provincialFootnotes, data: provincialData, total: provincialTotal } = provincial;
 
     return {
       name: title,
@@ -27,13 +26,14 @@ const transformData = (response) => {
       national: {
         notices: nationalNotices,
         footnotes: nationalFootnotes,
-        departments: nationalData.map(createNationalDepartments) 
+        departments: nationalData.map(createNationalDepartments),
+        total: nationalTotal
       },
-      total,
       provincial: {
         notices: provincialNotices,
         footnotes: provincialFootnotes,
-        provinces: addProvinceToObject(provincialData)
+        provinces: addProvinceToObject(provincialData),
+        total: provincialTotal
       }
     }
   })
