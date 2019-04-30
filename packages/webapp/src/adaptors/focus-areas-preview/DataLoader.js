@@ -54,10 +54,11 @@ class DataLoader extends Component {
 
     const passedProps = {
       items: data,
-      department: selectedKey,
+      department: this.props.department,
       year,
       initialSelectedNational,
-      initialSelectedProvincial
+      initialSelectedProvincial,
+      selectedObject
     }
     
     return createElement(FocusAreaPreview, passedProps);
