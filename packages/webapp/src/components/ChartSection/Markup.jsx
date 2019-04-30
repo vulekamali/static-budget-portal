@@ -41,6 +41,9 @@ const callButtonExplore = (url, color,  verb, subject) => (
 
 const callDetails = (selected, verb, subject) => {
   const { name, value, url, color } = selected;
+  if (value === null) {
+    return null;
+  }
   return (
     <DetailsWrapper>
       <DetailsContainer>
