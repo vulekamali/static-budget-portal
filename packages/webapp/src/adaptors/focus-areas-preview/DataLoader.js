@@ -40,14 +40,14 @@ class DataLoader extends Component {
 
     const initialSelectedNational = {
       name: "National Department Contributions",
-      value: selectedObject.total,
+      value: selectedObject.national.total,
       url: null,
       color: "#D8D8D8"
     }
 
     const initialSelectedProvincial = {
       name: 'Provincial Department Contributions',
-      value: 0,
+      value: selectedObject.provincial.total,
       url: null,
       color: 'rgba(0, 0, 0, 0.1)'
     }
