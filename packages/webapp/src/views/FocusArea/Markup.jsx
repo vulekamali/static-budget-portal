@@ -56,7 +56,8 @@ const Markup = (props) => {
     eventHandler,
     initialSelectedNational,
     initialSelectedProvincial,
-    year,
+    selectedObject,
+    year
   } = props;
 
   return (
@@ -65,15 +66,15 @@ const Markup = (props) => {
       <div key={`${selected}-national`}> 
         <ChartSection
           initialSelected={initialSelectedNational}
-          chart={(onSelectedChange) => <Treemap {...{ onSelectedChange }} items={items[selected].national.departments} />}
+          chart={(onSelectedChange) => <Treemap {...{ onSelectedChange }} items={selectedObject.national.departments} />}
           verb='Explore'
           subject='this department'
           title='Contributing national departments'
           anchor='contributing-national-departments'
-          footer={callFootNote(items[selected].national.footnotes)}
+          footer={callFootNote(selectedObject.national.footnotes)}
         />
       </div>
-      {callProvincialChart(selected, initialSelectedProvincial, items[selected].provincial.provinces, items[selected].provincial.footnotes, items[selected].provincial.notices)}
+      {callProvincialChart(selected, initialSelectedProvincial, selectedObject.provincial.provinces, selectedObject.provincial.footnotes, selectedObject.provincial.notices)}
     </Wrapper>
   );
 };
