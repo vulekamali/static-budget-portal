@@ -32,158 +32,151 @@ data:
       total: 172245305000.0
     provincial:
       data:
-      - amount: 11250149145
-        children:
-        - amount: 468235000
-          slug: cooperative-governance-and-traditional-affairs
-          title: Cooperative Governance And Traditional Affairs
-          url: 2018-19/previews/provincial/free-state/cooperative-governance-and-traditional-affairs
-        - amount: 5888425145
-          slug: human-settlements
-          title: Human Settlements
-          url: 2018-19/previews/provincial/free-state/human-settlements
-        - amount: 4893489000
-          slug: roads-and-transport
-          title: Roads And Transport
-          url: 2018-19/previews/provincial/northern-cape/roads-and-public-works
-        slug: gauteng
-        title: Gauteng
-      - amount: 5484407887
-        children:
-        - amount: 2376749000
-          slug: human-settlements
-          title: Human Settlements
-          url: 2018-19/previews/provincial/north-west/culture-arts-and-traditional-affairs
-        - amount: 983800097
-          slug: local-government-and-traditional-affairs
-          title: LOCAL GOVERNMENT AND TRADITIONAL AFFAIRS
-          url: null
-        - amount: 580773000
-          slug: roads-and-public-works
-          title: Roads And Public Works
-          url: null
-        - amount: 1543085790
-          slug: transport
-          title: Transport
-          url: 2018-19/previews/provincial/gauteng/roads-and-transport
-        slug: eastern-cape
-        title: Eastern Cape
-      - amount: 4071957000
-        children:
-        - amount: 2318554000
-          slug: human-settlements
-          title: Human Settlements
-          url: 2018-19/previews/provincial/mpumalanga/human-settlements
-        - amount: 252796000
-          slug: local-government
-          title: Local Government
-          url: 2018-19/previews/provincial/western-cape/human-settlements
-        - amount: 1500607000
-          slug: transport-public-works
-          title: TRANSPORT & PUBLIC WORKS
-          url: 2018-19/previews/provincial/limpopo/transport
-        slug: western-cape
-        title: Western Cape
-      - amount: 4500412782
-        children:
-        - amount: 2624005582
-          slug: co-operative-governance-human-settlements-and-traditional-affairs
-          title: Co-Operative Governance, Human Settlements And Traditional Affairs
-          url: 2018-19/previews/provincial/northern-cape/cooperative-governance-human-settlements-and-traditional-affairs
-        - amount: 386480740
-          slug: public-works-roads-infrastructure
-          title: PUBLIC WORKS,ROADS & INFRASTRUCTURE
-          url: 2018-19/previews/provincial/mpumalanga/public-works-roads-and-transport
-        - amount: 1489926460
-          slug: transport
-          title: Transport
-          url: 2018-19/previews/provincial/kwazulu-natal/transport
-        slug: limpopo
-        title: Limpopo
-      - amount: 4375487400
-        children:
-        - amount: 1533272400
-          slug: community-safety-and-transport-management
-          title: Community Safety And Transport Management
-          url: 2018-19/previews/national/south-africa/water-and-sanitation
-        - amount: 133949000
-          slug: culture-arts-and-traditional-affairs
-          title: Culture, Arts And Traditional Affairs
-          url: 2018-19/previews/provincial/limpopo/co-operative-governance-human-settlements-and-traditional-affairs
-        - amount: 2476863000
-          slug: local-government-and-human-settlement
-          title: LOCAL GOVERNMENT AND HUMAN SETTLEMENT
-          url: 2018-19/previews/provincial/western-cape/local-government
-        - amount: 231403000
-          slug: public-works-and-roads
-          title: Public Works And Roads
-          url: 2018-19/previews/provincial/free-state/police-roads-and-transport
-        slug: north-west
-        title: North West
-      - amount: 3838857000
-        children:
-        - amount: 522260000
-          slug: co-operative-governance-and-traditional-affairs
-          title: Co-Operative Governance And Traditional Affairs
-          url: 2018-19/previews/provincial/kwazulu-natal/co-operative-governance-and-traditional-affairs
-        - amount: 1774080000
-          slug: human-settlements
-          title: Human Settlements
-          url: 2018-19/previews/provincial/kwazulu-natal/human-settlements
-        - amount: 1542517000
-          slug: public-works-roads-and-transport
-          title: Public Works, Roads And Transport
-          url: 2018-19/previews/provincial/north-west/public-works-and-roads
-        slug: mpumalanga
-        title: Mpumalanga
-      - amount: 6971457000
-        children:
-        - amount: 1679082000
-          slug: co-operative-governance-and-traditional-affairs
-          title: Co-Operative Governance And Traditional Affairs
-          url: 2018-19/previews/provincial/gauteng/cooperative-governance-and-traditional-affairs
-        - amount: 3647237000
-          slug: human-settlements
-          title: Human Settlements
-          url: 2018-19/previews/provincial/gauteng/human-settlements
-        - amount: 1645138000
-          slug: transport
-          title: Transport
-          url: 2018-19/previews/provincial/eastern-cape/transport
-        slug: kwazulu-natal
-        title: KwaZulu-Natal
-      - amount: 1159953322
-        children:
-        - amount: 831899000
-          slug: cooperative-governance-human-settlements-and-traditional-affairs
-          title: Cooperative Governance, Human Settlements And Traditional Affairs
-          url: 2018-19/previews/provincial/mpumalanga/co-operative-governance-and-traditional-affairs
-        - amount: 155259000
-          slug: roads-and-public-works
-          title: Roads And Public Works
-          url: 2018-19/previews/provincial/eastern-cape/roads-and-public-works
-        - amount: 172795322
-          slug: transport-safety-and-liaison
-          title: Transport, Safety And Liaison
-          url: null
-        slug: northern-cape
-        title: Northern Cape
-      - amount: 2470862000
-        children:
-        - amount: 443329000
-          slug: cooperative-governance-and-traditional-affairs
-          title: Cooperative Governance And Traditional Affairs
-          url: 2018-19/previews/provincial/north-west/community-safety-and-transport-management
-        - amount: 1391778000
-          slug: human-settlements
-          title: Human Settlements
-          url: 2018-19/previews/provincial/eastern-cape/human-settlements
-        - amount: 635755000
-          slug: police-roads-and-transport
-          title: Police, Roads And Transport
-          url: null
-        slug: free-state
-        title: Free State
+      - amount: 1533272400
+        name: Community Safety And Transport Management
+        province: North West
+        slug: community-safety-and-transport-management
+        url: 2018-19/previews/national/south-africa/water-and-sanitation
+      - amount: 443329000
+        name: Cooperative Governance And Traditional Affairs
+        province: Free State
+        slug: cooperative-governance-and-traditional-affairs
+        url: 2018-19/previews/provincial/north-west/community-safety-and-transport-management
+      - amount: 468235000
+        name: Cooperative Governance And Traditional Affairs
+        province: Gauteng
+        slug: cooperative-governance-and-traditional-affairs
+        url: 2018-19/previews/provincial/free-state/cooperative-governance-and-traditional-affairs
+      - amount: 1679082000
+        name: Co-Operative Governance And Traditional Affairs
+        province: KwaZulu-Natal
+        slug: co-operative-governance-and-traditional-affairs
+        url: 2018-19/previews/provincial/gauteng/cooperative-governance-and-traditional-affairs
+      - amount: 522260000
+        name: Co-Operative Governance And Traditional Affairs
+        province: Mpumalanga
+        slug: co-operative-governance-and-traditional-affairs
+        url: 2018-19/previews/provincial/kwazulu-natal/co-operative-governance-and-traditional-affairs
+      - amount: 831899000
+        name: Cooperative Governance, Human Settlements And Traditional Affairs
+        province: Northern Cape
+        slug: cooperative-governance-human-settlements-and-traditional-affairs
+        url: 2018-19/previews/provincial/mpumalanga/co-operative-governance-and-traditional-affairs
+      - amount: 2624005582
+        name: Co-Operative Governance, Human Settlements And Traditional Affairs
+        province: Limpopo
+        slug: co-operative-governance-human-settlements-and-traditional-affairs
+        url: 2018-19/previews/provincial/northern-cape/cooperative-governance-human-settlements-and-traditional-affairs
+      - amount: 133949000
+        name: Culture, Arts And Traditional Affairs
+        province: North West
+        slug: culture-arts-and-traditional-affairs
+        url: 2018-19/previews/provincial/limpopo/co-operative-governance-human-settlements-and-traditional-affairs
+      - amount: 2376749000
+        name: Human Settlements
+        province: Eastern Cape
+        slug: human-settlements
+        url: 2018-19/previews/provincial/north-west/culture-arts-and-traditional-affairs
+      - amount: 1391778000
+        name: Human Settlements
+        province: Free State
+        slug: human-settlements
+        url: 2018-19/previews/provincial/eastern-cape/human-settlements
+      - amount: 5888425145
+        name: Human Settlements
+        province: Gauteng
+        slug: human-settlements
+        url: 2018-19/previews/provincial/free-state/human-settlements
+      - amount: 3647237000
+        name: Human Settlements
+        province: KwaZulu-Natal
+        slug: human-settlements
+        url: 2018-19/previews/provincial/gauteng/human-settlements
+      - amount: 1774080000
+        name: Human Settlements
+        province: Mpumalanga
+        slug: human-settlements
+        url: 2018-19/previews/provincial/kwazulu-natal/human-settlements
+      - amount: 2318554000
+        name: Human Settlements
+        province: Western Cape
+        slug: human-settlements
+        url: 2018-19/previews/provincial/mpumalanga/human-settlements
+      - amount: 252796000
+        name: Local Government
+        province: Western Cape
+        slug: local-government
+        url: 2018-19/previews/provincial/western-cape/human-settlements
+      - amount: 2476863000
+        name: LOCAL GOVERNMENT AND HUMAN SETTLEMENT
+        province: North West
+        slug: local-government-and-human-settlement
+        url: 2018-19/previews/provincial/western-cape/local-government
+      - amount: 983800097
+        name: LOCAL GOVERNMENT AND TRADITIONAL AFFAIRS
+        province: Eastern Cape
+        slug: local-government-and-traditional-affairs
+        url: null
+      - amount: 635755000
+        name: Police, Roads And Transport
+        province: Free State
+        slug: police-roads-and-transport
+        url: null
+      - amount: 231403000
+        name: Public Works And Roads
+        province: North West
+        slug: public-works-and-roads
+        url: 2018-19/previews/provincial/free-state/police-roads-and-transport
+      - amount: 1542517000
+        name: Public Works, Roads And Transport
+        province: Mpumalanga
+        slug: public-works-roads-and-transport
+        url: 2018-19/previews/provincial/north-west/public-works-and-roads
+      - amount: 386480740
+        name: PUBLIC WORKS,ROADS & INFRASTRUCTURE
+        province: Limpopo
+        slug: public-works-roads-infrastructure
+        url: 2018-19/previews/provincial/mpumalanga/public-works-roads-and-transport
+      - amount: 580773000
+        name: Roads And Public Works
+        province: Eastern Cape
+        slug: roads-and-public-works
+        url: null
+      - amount: 155259000
+        name: Roads And Public Works
+        province: Northern Cape
+        slug: roads-and-public-works
+        url: 2018-19/previews/provincial/eastern-cape/roads-and-public-works
+      - amount: 4893489000
+        name: Roads And Transport
+        province: Gauteng
+        slug: roads-and-transport
+        url: 2018-19/previews/provincial/northern-cape/roads-and-public-works
+      - amount: 1543085790
+        name: Transport
+        province: Eastern Cape
+        slug: transport
+        url: 2018-19/previews/provincial/gauteng/roads-and-transport
+      - amount: 1645138000
+        name: Transport
+        province: KwaZulu-Natal
+        slug: transport
+        url: 2018-19/previews/provincial/eastern-cape/transport
+      - amount: 1489926460
+        name: Transport
+        province: Limpopo
+        slug: transport
+        url: 2018-19/previews/provincial/kwazulu-natal/transport
+      - amount: 1500607000
+        name: TRANSPORT & PUBLIC WORKS
+        province: Western Cape
+        slug: transport-public-works
+        url: 2018-19/previews/provincial/limpopo/transport
+      - amount: 172795322
+        name: Transport, Safety And Liaison
+        province: Northern Cape
+        slug: transport-safety-and-liaison
+        url: null
       footnotes:
       - '**Source:** Estimates of Provincial Expenditure 2018-19'
       notices: []
@@ -285,174 +278,171 @@ data:
       total: 104667372000.0
     provincial:
       data:
-      - amount: 5304895000
-        children:
-        - amount: 957000000
-          slug: agriculture-and-rural-development
-          title: Agriculture And Rural Development
-          url: 2018-19/previews/provincial/free-state/agriculture-and-rural-development
-        - amount: 1510450000
-          slug: economic-development
-          title: Economic Development
-          url: 2018-19/previews/provincial/mpumalanga/agriculture-rural-development-land-and-environmental-affairs
-        - amount: 317763000
-          slug: infrastructure-development
-          title: Infrastructure Development
-          url: 2018-19/previews/provincial/northern-cape/environment-and-nature-conservation
-        - amount: 2519682000
-          slug: roads-and-transport
-          title: Roads And Transport
-          url: 2018-19/previews/provincial/northern-cape/roads-and-public-works
-        slug: gauteng
-        title: Gauteng
-      - amount: 5516715000
-        children:
-        - amount: 834342000
-          slug: agriculture
-          title: Agriculture
-          url: 2018-19/previews/national/south-africa/water-and-sanitation
-        - amount: 433462000
-          slug: economic-development-tourism
-          title: ECONOMIC DEVELOPMENT & TOURISM
-          url: 2018-19/previews/provincial/eastern-cape/economic-development-environmental-affairs-and-tourism
-        - amount: 604621000
-          slug: environmental-affairs-dev-planning
-          title: ENVIRONMENTAL AFFAIRS & DEV PLANNING
-          url: null
-        - amount: 3644290000
-          slug: transport-public-works
-          title: TRANSPORT & PUBLIC WORKS
-          url: 2018-19/previews/provincial/kwazulu-natal/transport
-        slug: western-cape
-        title: Western Cape
-      - amount: 6496415602
-        children:
-        - amount: 1146006188
-          slug: economic-development-environmental-affairs-and-tourism
-          title: Economic Development, Environmental Affairs And Tourism
-          url: 2018-19/previews/provincial/northern-cape/economic-development-and-tourism
-        - amount: 95511000
-          slug: roads-and-public-works
-          title: Roads And Public Works
-          url: null
-        - amount: 2328236326
-          slug: rural-development-and-agrarian-reform
-          title: Rural Development And Agrarian Reform
-          url: 2018-19/previews/provincial/gauteng/roads-and-transport
-        - amount: 2926662088
-          slug: transport
-          title: Transport
-          url: 2018-19/previews/provincial/north-west/tourism
-        slug: eastern-cape
-        title: Eastern Cape
-      - amount: 3781949400
-        children:
-        - amount: 297190400
-          slug: economy-and-entreprise-development
-          title: ECONOMY AND ENTREPRISE DEVELOPMENT
-          url: null
-        - amount: 1782730000
-          slug: public-works-and-roads
-          title: Public Works And Roads
-          url: 2018-19/previews/provincial/free-state/public-works-and-infrastructure
-        - amount: 1440478000
-          slug: rural-environment-and-agricultural-development
-          title: Rural, Environment And Agricultural Development
-          url: null
-        - amount: 261551000
-          slug: tourism
-          title: Tourism
-          url: 2018-19/previews/provincial/north-west/rural-environment-and-agricultural-development
-        slug: north-west
-        title: North West
-      - amount: 4947551000
-        children:
-        - amount: 1180437000
-          slug: agriculture-rural-development-land-and-environmental-affairs
-          title: Agriculture, Rural Development, Land And Environmental Affairs
-          url: 2018-19/previews/provincial/northern-cape/agriculture-land-reform-and-rural-development
-        - amount: 1198058000
-          slug: economic-development-and-tourism
-          title: Economic Development And Tourism
-          url: 2018-19/previews/provincial/gauteng/economic-development
-        - amount: 2569056000
-          slug: public-works-roads-and-transport
-          title: Public Works, Roads And Transport
-          url: 2018-19/previews/provincial/north-west/public-works-and-roads
-        slug: mpumalanga
-        title: Mpumalanga
-      - amount: 5523765555
-        children:
-        - amount: 1665373538
-          slug: limpopo-economic-development-environmental-affairs-and-tourism
-          title: LIMPOPO ECONOMIC DEVELOPMENT, ENVIRONMENTAL AFFAIRS AND TOURISM
-          url: 2018-19/previews/provincial/gauteng/infrastructure-development
-        - amount: 1941038017
-          slug: public-works-roads-infrastructure
-          title: PUBLIC WORKS,ROADS & INFRASTRUCTURE
-          url: 2018-19/previews/provincial/mpumalanga/public-works-roads-and-transport
-        - amount: 1917354000
-          slug: rural-development-and-agrarian-reform
-          title: RURAL DEVELOPMENT AND AGRARIAN REFORM
-          url: 2018-19/previews/provincial/eastern-cape/rural-development-and-agrarian-reform
-        slug: limpopo
-        title: Limpopo
-      - amount: 12830249000
-        children:
-        - amount: 2324108000
-          slug: agriculture-and-rural-development
-          title: Agriculture And Rural Development
-          url: 2018-19/previews/provincial/gauteng/agriculture-and-rural-development
-        - amount: 3009296000
-          slug: economic-development-tourism-and-environmental-affairs
-          title: Economic Development, Tourism And Environmental Affairs
-          url: null
-        - amount: 7496845000
-          slug: transport
-          title: Transport
-          url: 2018-19/previews/provincial/eastern-cape/transport
-        slug: kwazulu-natal
-        title: KwaZulu-Natal
-      - amount: 2565348378
-        children:
-        - amount: 648908238
-          slug: agriculture-land-reform-and-rural-development
-          title: Agriculture, Land Reform And Rural Development
-          url: 2018-19/previews/provincial/kwazulu-natal/agriculture-and-rural-development
-        - amount: 314834000
-          slug: economic-development-and-tourism
-          title: Economic Development And Tourism
-          url: 2018-19/previews/provincial/mpumalanga/economic-development-and-tourism
-        - amount: 157988140
-          slug: environment-and-nature-conservation
-          title: Environment And Nature Conservation
-          url: null
-        - amount: 1443618000
-          slug: roads-and-public-works
-          title: Roads And Public Works
-          url: 2018-19/previews/provincial/eastern-cape/roads-and-public-works
-        slug: northern-cape
-        title: Northern Cape
-      - amount: 3318777000
-        children:
-        - amount: 810479000
-          slug: agriculture-and-rural-development
-          title: Agriculture And Rural Development
-          url: 2018-19/previews/provincial/western-cape/agriculture
-        - amount: 631931000
-          slug: economic-small-business-development-tourism-and-environmental-affairs
-          title: ECONOMIC, SMALL BUSINESS DEVELOPMENT, TOURISM AND ENVIRONMENTAL AFFAIRS
-          url: 2018-19/previews/provincial/kwazulu-natal/economic-development-tourism-and-environmental-affairs
-        - amount: 1704180000
-          slug: police-roads-and-transport
-          title: Police, Roads And Transport
-          url: null
-        - amount: 172187000
-          slug: public-works-and-infrastructure
-          title: Public Works And Infrastructure
-          url: 2018-19/previews/provincial/free-state/police-roads-and-transport
-        slug: free-state
-        title: Free State
+      - amount: 834342000
+        name: Agriculture
+        province: Western Cape
+        slug: agriculture
+        url: 2018-19/previews/national/south-africa/water-and-sanitation
+      - amount: 810479000
+        name: Agriculture And Rural Development
+        province: Free State
+        slug: agriculture-and-rural-development
+        url: 2018-19/previews/provincial/western-cape/agriculture
+      - amount: 957000000
+        name: Agriculture And Rural Development
+        province: Gauteng
+        slug: agriculture-and-rural-development
+        url: 2018-19/previews/provincial/free-state/agriculture-and-rural-development
+      - amount: 2324108000
+        name: Agriculture And Rural Development
+        province: KwaZulu-Natal
+        slug: agriculture-and-rural-development
+        url: 2018-19/previews/provincial/gauteng/agriculture-and-rural-development
+      - amount: 648908238
+        name: Agriculture, Land Reform And Rural Development
+        province: Northern Cape
+        slug: agriculture-land-reform-and-rural-development
+        url: 2018-19/previews/provincial/kwazulu-natal/agriculture-and-rural-development
+      - amount: 1180437000
+        name: Agriculture, Rural Development, Land And Environmental Affairs
+        province: Mpumalanga
+        slug: agriculture-rural-development-land-and-environmental-affairs
+        url: 2018-19/previews/provincial/northern-cape/agriculture-land-reform-and-rural-development
+      - amount: 1510450000
+        name: Economic Development
+        province: Gauteng
+        slug: economic-development
+        url: 2018-19/previews/provincial/mpumalanga/agriculture-rural-development-land-and-environmental-affairs
+      - amount: 1198058000
+        name: Economic Development And Tourism
+        province: Mpumalanga
+        slug: economic-development-and-tourism
+        url: 2018-19/previews/provincial/gauteng/economic-development
+      - amount: 314834000
+        name: Economic Development And Tourism
+        province: Northern Cape
+        slug: economic-development-and-tourism
+        url: 2018-19/previews/provincial/mpumalanga/economic-development-and-tourism
+      - amount: 1146006188
+        name: Economic Development, Environmental Affairs And Tourism
+        province: Eastern Cape
+        slug: economic-development-environmental-affairs-and-tourism
+        url: 2018-19/previews/provincial/northern-cape/economic-development-and-tourism
+      - amount: 433462000
+        name: ECONOMIC DEVELOPMENT & TOURISM
+        province: Western Cape
+        slug: economic-development-tourism
+        url: 2018-19/previews/provincial/eastern-cape/economic-development-environmental-affairs-and-tourism
+      - amount: 3009296000
+        name: Economic Development, Tourism And Environmental Affairs
+        province: KwaZulu-Natal
+        slug: economic-development-tourism-and-environmental-affairs
+        url: null
+      - amount: 631931000
+        name: ECONOMIC, SMALL BUSINESS DEVELOPMENT, TOURISM AND ENVIRONMENTAL AFFAIRS
+        province: Free State
+        slug: economic-small-business-development-tourism-and-environmental-affairs
+        url: 2018-19/previews/provincial/kwazulu-natal/economic-development-tourism-and-environmental-affairs
+      - amount: 297190400
+        name: ECONOMY AND ENTREPRISE DEVELOPMENT
+        province: North West
+        slug: economy-and-entreprise-development
+        url: null
+      - amount: 604621000
+        name: ENVIRONMENTAL AFFAIRS & DEV PLANNING
+        province: Western Cape
+        slug: environmental-affairs-dev-planning
+        url: null
+      - amount: 157988140
+        name: Environment And Nature Conservation
+        province: Northern Cape
+        slug: environment-and-nature-conservation
+        url: null
+      - amount: 317763000
+        name: Infrastructure Development
+        province: Gauteng
+        slug: infrastructure-development
+        url: 2018-19/previews/provincial/northern-cape/environment-and-nature-conservation
+      - amount: 1665373538
+        name: LIMPOPO ECONOMIC DEVELOPMENT, ENVIRONMENTAL AFFAIRS AND TOURISM
+        province: Limpopo
+        slug: limpopo-economic-development-environmental-affairs-and-tourism
+        url: 2018-19/previews/provincial/gauteng/infrastructure-development
+      - amount: 1704180000
+        name: Police, Roads And Transport
+        province: Free State
+        slug: police-roads-and-transport
+        url: null
+      - amount: 172187000
+        name: Public Works And Infrastructure
+        province: Free State
+        slug: public-works-and-infrastructure
+        url: 2018-19/previews/provincial/free-state/police-roads-and-transport
+      - amount: 1782730000
+        name: Public Works And Roads
+        province: North West
+        slug: public-works-and-roads
+        url: 2018-19/previews/provincial/free-state/public-works-and-infrastructure
+      - amount: 2569056000
+        name: Public Works, Roads And Transport
+        province: Mpumalanga
+        slug: public-works-roads-and-transport
+        url: 2018-19/previews/provincial/north-west/public-works-and-roads
+      - amount: 1941038017
+        name: PUBLIC WORKS,ROADS & INFRASTRUCTURE
+        province: Limpopo
+        slug: public-works-roads-infrastructure
+        url: 2018-19/previews/provincial/mpumalanga/public-works-roads-and-transport
+      - amount: 95511000
+        name: Roads And Public Works
+        province: Eastern Cape
+        slug: roads-and-public-works
+        url: null
+      - amount: 1443618000
+        name: Roads And Public Works
+        province: Northern Cape
+        slug: roads-and-public-works
+        url: 2018-19/previews/provincial/eastern-cape/roads-and-public-works
+      - amount: 2519682000
+        name: Roads And Transport
+        province: Gauteng
+        slug: roads-and-transport
+        url: 2018-19/previews/provincial/northern-cape/roads-and-public-works
+      - amount: 2328236326
+        name: Rural Development And Agrarian Reform
+        province: Eastern Cape
+        slug: rural-development-and-agrarian-reform
+        url: 2018-19/previews/provincial/gauteng/roads-and-transport
+      - amount: 1917354000
+        name: RURAL DEVELOPMENT AND AGRARIAN REFORM
+        province: Limpopo
+        slug: rural-development-and-agrarian-reform
+        url: 2018-19/previews/provincial/eastern-cape/rural-development-and-agrarian-reform
+      - amount: 1440478000
+        name: Rural, Environment And Agricultural Development
+        province: North West
+        slug: rural-environment-and-agricultural-development
+        url: null
+      - amount: 261551000
+        name: Tourism
+        province: North West
+        slug: tourism
+        url: 2018-19/previews/provincial/north-west/rural-environment-and-agricultural-development
+      - amount: 2926662088
+        name: Transport
+        province: Eastern Cape
+        slug: transport
+        url: 2018-19/previews/provincial/north-west/tourism
+      - amount: 7496845000
+        name: Transport
+        province: KwaZulu-Natal
+        slug: transport
+        url: 2018-19/previews/provincial/eastern-cape/transport
+      - amount: 3644290000
+        name: TRANSPORT & PUBLIC WORKS
+        province: Western Cape
+        slug: transport-public-works
+        url: 2018-19/previews/provincial/kwazulu-natal/transport
       footnotes:
       - '**Source:** Estimates of Provincial Expenditure 2018-19'
       notices: []
@@ -536,190 +526,191 @@ data:
       total: 505993406000.0
     provincial:
       data:
-      - amount: 6207957603
-        children:
-        - amount: 1273825944
-          slug: e-government
-          title: E-Government
-          url: 2018-19/previews/national/south-africa/women
-        - amount: 2719200934
-          slug: infrastructure-development
-          title: Infrastructure Development
-          url: 2018-19/previews/provincial/north-west/finance
-        - amount: 702694000
-          slug: office-of-the-premier
-          title: Office Of The Premier
-          url: 2018-19/previews/provincial/eastern-cape/office-of-the-premier
-        - amount: 715823725
-          slug: provincial-legislature
-          title: PROVINCIAL LEGISLATURE
-          url: null
-        - amount: 796413000
-          slug: provincial-treasury
-          title: PROVINCIAL TREASURY
-          url: 2018-19/previews/provincial/western-cape/provincial-treasury
-        slug: gauteng
-        title: Gauteng
-      - amount: 3807395000
-        children:
-        - amount: 1486193000
-          slug: premier
-          title: Premier
-          url: 2018-19/previews/provincial/free-state/premier
-        - amount: 187371000
-          slug: provincial-parliament
-          title: Provincial Parliament
-          url: null
-        - amount: 325390000
-          slug: provincial-treasury
-          title: Provincial Treasury
-          url: 2018-19/previews/provincial/northern-cape/provincial-treasury
-        - amount: 1808441000
-          slug: transport-public-works
-          title: TRANSPORT & PUBLIC WORKS
-          url: 2018-19/previews/provincial/northern-cape/roads-and-public-works
-        slug: western-cape
-        title: Western Cape
-      - amount: 3758770567
-        children:
-        - amount: 973396122
-          slug: office-of-the-premier
-          title: Office Of The Premier
-          url: 2018-19/previews/provincial/gauteng/infrastructure-development
-        - amount: 525999445
-          slug: provincial-legislature
-          title: Provincial Legislature
-          url: 2018-19/previews/provincial/western-cape/premier
-        - amount: 591487000
-          slug: provincial-planning-and-treasury
-          title: PROVINCIAL PLANNING AND TREASURY
-          url: 2018-19/previews/provincial/western-cape/provincial-parliament
-        - amount: 1667888000
-          slug: roads-and-public-works
-          title: Roads And Public Works
-          url: null
-        slug: eastern-cape
-        title: Eastern Cape
-      - amount: 2740191800
-        children:
-        - amount: 484084400
-          slug: finance
-          title: Finance
-          url: 2018-19/previews/provincial/gauteng/e-government
-        - amount: 775381400
-          slug: office-of-the-premier
-          title: Office Of The Premier
-          url: 2018-19/previews/provincial/northern-cape/office-of-the-premier
-        - amount: 473898000
-          slug: provincial-legislature
-          title: Provincial Legislature
-          url: 2018-19/previews/provincial/northern-cape/provincial-legislature
-        - amount: 1006828000
-          slug: public-works-and-roads
-          title: Public Works And Roads
-          url: 2018-19/previews/provincial/free-state/public-works-and-infrastructure
-        slug: north-west
-        title: North West
-      - amount: 1826560000
-        children:
-        - amount: 281778000
-          slug: office-of-the-premier
-          title: Office Of The Premier
-          url: 2018-19/previews/provincial/limpopo/office-of-the-premier
-        - amount: 346647000
-          slug: provincial-legislature
-          title: Provincial Legislature
-          url: 2018-19/previews/provincial/limpopo/provincial-legislature
-        - amount: 322706000
-          slug: provincial-treasury
-          title: PROVINCIAL TREASURY
-          url: null
-        - amount: 875429000
-          slug: public-works-roads-and-transport
-          title: Public Works, Roads And Transport
-          url: 2018-19/previews/provincial/north-west/public-works-and-roads
-        slug: mpumalanga
-        title: Mpumalanga
-      - amount: 2675310000
-        children:
-        - amount: 611279000
-          slug: premier
-          title: Premier
-          url: 2018-19/previews/provincial/north-west/office-of-the-premier
-        - amount: 253118000
-          slug: provincial-legislature
-          title: PROVINCIAL LEGISLATURE
-          url: 2018-19/previews/provincial/north-west/provincial-legislature
-        - amount: 347832000
-          slug: provincial-treasury
-          title: Provincial Treasury
-          url: null
-        - amount: 1463081000
-          slug: public-works-and-infrastructure
-          title: Public Works And Infrastructure
-          url: 2018-19/previews/provincial/kwazulu-natal/public-works
-        slug: free-state
-        title: Free State
-      - amount: 3591183000
-        children:
-        - amount: 787137000
-          slug: office-of-the-premier
-          title: Office Of The Premier
-          url: 2018-19/previews/provincial/gauteng/office-of-the-premier
-        - amount: 565214000
-          slug: provincial-legislature
-          title: Provincial Legislature
-          url: 2018-19/previews/provincial/eastern-cape/provincial-legislature
-        - amount: 650900000
-          slug: provincial-treasury
-          title: Provincial Treasury
-          url: 2018-19/previews/provincial/free-state/provincial-treasury
-        - amount: 1587932000
-          slug: public-works
-          title: Public Works
-          url: null
-        slug: kwazulu-natal
-        title: KwaZulu-Natal
-      - amount: 899909665
-        children:
-        - amount: 248331000
-          slug: office-of-the-premier
-          title: Office Of The Premier
-          url: 2018-19/previews/provincial/mpumalanga/office-of-the-premier
-        - amount: 200280000
-          slug: provincial-legislature
-          title: Provincial Legislature
-          url: 2018-19/previews/provincial/mpumalanga/provincial-legislature
-        - amount: 302231665
-          slug: provincial-treasury
-          title: Provincial Treasury
-          url: 2018-19/previews/provincial/limpopo/provincial-treasury
-        - amount: 149067000
-          slug: roads-and-public-works
-          title: Roads And Public Works
-          url: 2018-19/previews/provincial/eastern-cape/roads-and-public-works
-        slug: northern-cape
-        title: Northern Cape
-      - amount: 2045114217
-        children:
-        - amount: 420680000
-          slug: office-of-the-premier
-          title: Office Of The Premier
-          url: 2018-19/previews/provincial/kwazulu-natal/office-of-the-premier
-        - amount: 360927075
-          slug: provincial-legislature
-          title: Provincial Legislature
-          url: 2018-19/previews/provincial/kwazulu-natal/provincial-legislature
-        - amount: 472850360
-          slug: provincial-treasury
-          title: Provincial Treasury
-          url: 2018-19/previews/provincial/kwazulu-natal/provincial-treasury
-        - amount: 790656782
-          slug: public-works-roads-infrastructure
-          title: PUBLIC WORKS,ROADS & INFRASTRUCTURE
-          url: 2018-19/previews/provincial/mpumalanga/public-works-roads-and-transport
-        slug: limpopo
-        title: Limpopo
+      - amount: 1273825944
+        name: E-Government
+        province: Gauteng
+        slug: e-government
+        url: 2018-19/previews/national/south-africa/women
+      - amount: 484084400
+        name: Finance
+        province: North West
+        slug: finance
+        url: 2018-19/previews/provincial/gauteng/e-government
+      - amount: 2719200934
+        name: Infrastructure Development
+        province: Gauteng
+        slug: infrastructure-development
+        url: 2018-19/previews/provincial/north-west/finance
+      - amount: 973396122
+        name: Office Of The Premier
+        province: Eastern Cape
+        slug: office-of-the-premier
+        url: 2018-19/previews/provincial/gauteng/infrastructure-development
+      - amount: 702694000
+        name: Office Of The Premier
+        province: Gauteng
+        slug: office-of-the-premier
+        url: 2018-19/previews/provincial/eastern-cape/office-of-the-premier
+      - amount: 787137000
+        name: Office Of The Premier
+        province: KwaZulu-Natal
+        slug: office-of-the-premier
+        url: 2018-19/previews/provincial/gauteng/office-of-the-premier
+      - amount: 420680000
+        name: Office Of The Premier
+        province: Limpopo
+        slug: office-of-the-premier
+        url: 2018-19/previews/provincial/kwazulu-natal/office-of-the-premier
+      - amount: 281778000
+        name: Office Of The Premier
+        province: Mpumalanga
+        slug: office-of-the-premier
+        url: 2018-19/previews/provincial/limpopo/office-of-the-premier
+      - amount: 248331000
+        name: Office Of The Premier
+        province: Northern Cape
+        slug: office-of-the-premier
+        url: 2018-19/previews/provincial/mpumalanga/office-of-the-premier
+      - amount: 775381400
+        name: Office Of The Premier
+        province: North West
+        slug: office-of-the-premier
+        url: 2018-19/previews/provincial/northern-cape/office-of-the-premier
+      - amount: 611279000
+        name: Premier
+        province: Free State
+        slug: premier
+        url: 2018-19/previews/provincial/north-west/office-of-the-premier
+      - amount: 1486193000
+        name: Premier
+        province: Western Cape
+        slug: premier
+        url: 2018-19/previews/provincial/free-state/premier
+      - amount: 525999445
+        name: Provincial Legislature
+        province: Eastern Cape
+        slug: provincial-legislature
+        url: 2018-19/previews/provincial/western-cape/premier
+      - amount: 565214000
+        name: Provincial Legislature
+        province: KwaZulu-Natal
+        slug: provincial-legislature
+        url: 2018-19/previews/provincial/eastern-cape/provincial-legislature
+      - amount: 360927075
+        name: Provincial Legislature
+        province: Limpopo
+        slug: provincial-legislature
+        url: 2018-19/previews/provincial/kwazulu-natal/provincial-legislature
+      - amount: 346647000
+        name: Provincial Legislature
+        province: Mpumalanga
+        slug: provincial-legislature
+        url: 2018-19/previews/provincial/limpopo/provincial-legislature
+      - amount: 200280000
+        name: Provincial Legislature
+        province: Northern Cape
+        slug: provincial-legislature
+        url: 2018-19/previews/provincial/mpumalanga/provincial-legislature
+      - amount: 473898000
+        name: Provincial Legislature
+        province: North West
+        slug: provincial-legislature
+        url: 2018-19/previews/provincial/northern-cape/provincial-legislature
+      - amount: 253118000
+        name: PROVINCIAL LEGISLATURE
+        province: Free State
+        slug: provincial-legislature
+        url: 2018-19/previews/provincial/north-west/provincial-legislature
+      - amount: 715823725
+        name: PROVINCIAL LEGISLATURE
+        province: Gauteng
+        slug: provincial-legislature
+        url: null
+      - amount: 187371000
+        name: Provincial Parliament
+        province: Western Cape
+        slug: provincial-parliament
+        url: null
+      - amount: 591487000
+        name: PROVINCIAL PLANNING AND TREASURY
+        province: Eastern Cape
+        slug: provincial-planning-and-treasury
+        url: 2018-19/previews/provincial/western-cape/provincial-parliament
+      - amount: 347832000
+        name: Provincial Treasury
+        province: Free State
+        slug: provincial-treasury
+        url: null
+      - amount: 650900000
+        name: Provincial Treasury
+        province: KwaZulu-Natal
+        slug: provincial-treasury
+        url: 2018-19/previews/provincial/free-state/provincial-treasury
+      - amount: 472850360
+        name: Provincial Treasury
+        province: Limpopo
+        slug: provincial-treasury
+        url: 2018-19/previews/provincial/kwazulu-natal/provincial-treasury
+      - amount: 302231665
+        name: Provincial Treasury
+        province: Northern Cape
+        slug: provincial-treasury
+        url: 2018-19/previews/provincial/limpopo/provincial-treasury
+      - amount: 325390000
+        name: Provincial Treasury
+        province: Western Cape
+        slug: provincial-treasury
+        url: 2018-19/previews/provincial/northern-cape/provincial-treasury
+      - amount: 796413000
+        name: PROVINCIAL TREASURY
+        province: Gauteng
+        slug: provincial-treasury
+        url: 2018-19/previews/provincial/western-cape/provincial-treasury
+      - amount: 322706000
+        name: PROVINCIAL TREASURY
+        province: Mpumalanga
+        slug: provincial-treasury
+        url: null
+      - amount: 1587932000
+        name: Public Works
+        province: KwaZulu-Natal
+        slug: public-works
+        url: null
+      - amount: 1463081000
+        name: Public Works And Infrastructure
+        province: Free State
+        slug: public-works-and-infrastructure
+        url: 2018-19/previews/provincial/kwazulu-natal/public-works
+      - amount: 1006828000
+        name: Public Works And Roads
+        province: North West
+        slug: public-works-and-roads
+        url: 2018-19/previews/provincial/free-state/public-works-and-infrastructure
+      - amount: 875429000
+        name: Public Works, Roads And Transport
+        province: Mpumalanga
+        slug: public-works-roads-and-transport
+        url: 2018-19/previews/provincial/north-west/public-works-and-roads
+      - amount: 790656782
+        name: PUBLIC WORKS,ROADS & INFRASTRUCTURE
+        province: Limpopo
+        slug: public-works-roads-infrastructure
+        url: 2018-19/previews/provincial/mpumalanga/public-works-roads-and-transport
+      - amount: 1667888000
+        name: Roads And Public Works
+        province: Eastern Cape
+        slug: roads-and-public-works
+        url: null
+      - amount: 149067000
+        name: Roads And Public Works
+        province: Northern Cape
+        slug: roads-and-public-works
+        url: 2018-19/previews/provincial/eastern-cape/roads-and-public-works
+      - amount: 1808441000
+        name: TRANSPORT & PUBLIC WORKS
+        province: Western Cape
+        slug: transport-public-works
+        url: 2018-19/previews/provincial/northern-cape/roads-and-public-works
       footnotes:
       - '**Source:** Estimates of Provincial Expenditure 2018-19'
       notices: []
@@ -742,78 +733,51 @@ data:
       total: 51791264000.0
     provincial:
       data:
-      - amount: 46429326000
-        children:
-        - amount: 46429326000
-          slug: health
-          title: Health
-          url: 2018-19/previews/provincial/free-state/health
-        slug: gauteng
-        title: Gauteng
-      - amount: 23063703000
-        children:
-        - amount: 23063703000
-          slug: health
-          title: Health
-          url: 2018-19/previews/provincial/north-west/health
-        slug: western-cape
-        title: Western Cape
       - amount: 23699560298
-        children:
-        - amount: 23699560298
-          slug: health
-          title: Health
-          url: 2018-19/previews/national/south-africa/health
-        slug: eastern-cape
-        title: Eastern Cape
-      - amount: 11153568000
-        children:
-        - amount: 11153568000
-          slug: health
-          title: Health
-          url: 2018-19/previews/provincial/northern-cape/health
-        slug: north-west
-        title: North West
-      - amount: 13278174000
-        children:
-        - amount: 13278174000
-          slug: health
-          title: Health
-          url: 2018-19/previews/provincial/limpopo/health
-        slug: mpumalanga
-        title: Mpumalanga
+        name: Health
+        province: Eastern Cape
+        slug: health
+        url: 2018-19/previews/national/south-africa/health
       - amount: 10403313000
-        children:
-        - amount: 10403313000
-          slug: health
-          title: Health
-          url: 2018-19/previews/provincial/eastern-cape/health
-        slug: free-state
-        title: Free State
+        name: Health
+        province: Free State
+        slug: health
+        url: 2018-19/previews/provincial/eastern-cape/health
+      - amount: 46429326000
+        name: Health
+        province: Gauteng
+        slug: health
+        url: 2018-19/previews/provincial/free-state/health
       - amount: 42347664000
-        children:
-        - amount: 42347664000
-          slug: health
-          title: Health
-          url: 2018-19/previews/provincial/gauteng/health
-        slug: kwazulu-natal
-        title: KwaZulu-Natal
-      - amount: 4735195000
-        children:
-        - amount: 4735195000
-          slug: health
-          title: Health
-          url: 2018-19/previews/provincial/mpumalanga/health
-        slug: northern-cape
-        title: Northern Cape
+        name: Health
+        province: KwaZulu-Natal
+        slug: health
+        url: 2018-19/previews/provincial/gauteng/health
       - amount: 19511420000
-        children:
-        - amount: 19511420000
-          slug: health
-          title: Health
-          url: 2018-19/previews/provincial/kwazulu-natal/health
-        slug: limpopo
-        title: Limpopo
+        name: Health
+        province: Limpopo
+        slug: health
+        url: 2018-19/previews/provincial/kwazulu-natal/health
+      - amount: 13278174000
+        name: Health
+        province: Mpumalanga
+        slug: health
+        url: 2018-19/previews/provincial/limpopo/health
+      - amount: 4735195000
+        name: Health
+        province: Northern Cape
+        slug: health
+        url: 2018-19/previews/provincial/mpumalanga/health
+      - amount: 11153568000
+        name: Health
+        province: North West
+        slug: health
+        url: 2018-19/previews/provincial/northern-cape/health
+      - amount: 23063703000
+        name: Health
+        province: Western Cape
+        slug: health
+        url: 2018-19/previews/provincial/north-west/health
       footnotes:
       - '**Source:** Estimates of Provincial Expenditure 2018-19'
       notices: []
@@ -844,118 +808,101 @@ data:
       total: 118135504000.0
     provincial:
       data:
-      - amount: 46163191506
-        children:
-        - amount: 45220540006
-          slug: education
-          title: Education
-          url: 2018-19/previews/provincial/free-state/education
-        - amount: 942651500
-          slug: sport-arts-culture-and-recreation
-          title: Sport, Arts, Culture And Recreation
-          url: 2018-19/previews/provincial/free-state/sport-arts-culture-and-recreation
-        slug: gauteng
-        title: Gauteng
-      - amount: 22954046000
-        children:
-        - amount: 760734000
-          slug: cultural-affairs-sport
-          title: CULTURAL AFFAIRS & SPORT
-          url: 2018-19/previews/provincial/kwazulu-natal/arts-and-culture
-        - amount: 22193312000
-          slug: education
-          title: Education
-          url: 2018-19/previews/provincial/northern-cape/education
-        slug: western-cape
-        title: Western Cape
-      - amount: 35714885499
-        children:
-        - amount: 34772125816
-          slug: education
-          title: Education
-          url: 2018-19/previews/provincial/mpumalanga/culture-sport-and-recreation
-        - amount: 942759683
-          slug: sport-recreation-arts-and-culture
-          title: Sport, Recreation, Arts And Culture
-          url: 2018-19/previews/provincial/gauteng/sport-arts-culture-and-recreation
-        slug: eastern-cape
-        title: Eastern Cape
-      - amount: 16781968400
-        children:
-        - amount: 598100400
-          slug: culture-arts-and-traditional-affairs
-          title: Culture, Arts And Traditional Affairs
-          url: null
-        - amount: 16183868000
-          slug: education-and-sports-development
-          title: Education And Sports Development
-          url: 2018-19/previews/provincial/western-cape/education
-        slug: north-west
-        title: North West
-      - amount: 21441894000
-        children:
-        - amount: 468461000
-          slug: culture-sport-and-recreation
-          title: Culture, Sport And Recreation
-          url: 2018-19/previews/provincial/north-west/culture-arts-and-traditional-affairs
-        - amount: 20973433000
-          slug: education
-          title: Education
-          url: 2018-19/previews/provincial/limpopo/education
-        slug: mpumalanga
-        title: Mpumalanga
-      - amount: 31080017326
-        children:
-        - amount: 30607752898
-          slug: education
-          title: Education
-          url: 2018-19/previews/provincial/kwazulu-natal/education
-        - amount: 472264428
-          slug: sport-arts-and-culture
-          title: Sport, Arts And Culture
-          url: 2018-19/previews/provincial/kwazulu-natal/sport-and-recreation
-        slug: limpopo
-        title: Limpopo
-      - amount: 52318206000
-        children:
-        - amount: 962571000
-          slug: arts-and-culture
-          title: Arts And Culture
-          url: 2018-19/previews/national/south-africa/sport-and-recreation-south-africa
-        - amount: 50903682000
-          slug: education
-          title: Education
-          url: 2018-19/previews/provincial/gauteng/education
-        - amount: 451953000
-          slug: sport-and-recreation
-          title: Sport And Recreation
-          url: 2018-19/previews/provincial/north-west/education-and-sports-development
-        slug: kwazulu-natal
-        title: KwaZulu-Natal
-      - amount: 6800043568
-        children:
-        - amount: 6417223000
-          slug: education
-          title: Education
-          url: 2018-19/previews/provincial/mpumalanga/education
-        - amount: 382820568
-          slug: sport-arts-and-culture
-          title: Sport, Arts And Culture
-          url: 2018-19/previews/provincial/limpopo/sport-arts-and-culture
-        slug: northern-cape
-        title: Northern Cape
-      - amount: 14306234030
-        children:
-        - amount: 13579224000
-          slug: education
-          title: Education
-          url: 2018-19/previews/provincial/eastern-cape/education
-        - amount: 727010030
-          slug: sport-arts-culture-and-recreation
-          title: Sport, Arts, Culture And Recreation
-          url: 2018-19/previews/provincial/northern-cape/sport-arts-and-culture
-        slug: free-state
-        title: Free State
+      - amount: 962571000
+        name: Arts And Culture
+        province: KwaZulu-Natal
+        slug: arts-and-culture
+        url: 2018-19/previews/national/south-africa/sport-and-recreation-south-africa
+      - amount: 760734000
+        name: CULTURAL AFFAIRS & SPORT
+        province: Western Cape
+        slug: cultural-affairs-sport
+        url: 2018-19/previews/provincial/kwazulu-natal/arts-and-culture
+      - amount: 598100400
+        name: Culture, Arts And Traditional Affairs
+        province: North West
+        slug: culture-arts-and-traditional-affairs
+        url: null
+      - amount: 468461000
+        name: Culture, Sport And Recreation
+        province: Mpumalanga
+        slug: culture-sport-and-recreation
+        url: 2018-19/previews/provincial/north-west/culture-arts-and-traditional-affairs
+      - amount: 34772125816
+        name: Education
+        province: Eastern Cape
+        slug: education
+        url: 2018-19/previews/provincial/mpumalanga/culture-sport-and-recreation
+      - amount: 13579224000
+        name: Education
+        province: Free State
+        slug: education
+        url: 2018-19/previews/provincial/eastern-cape/education
+      - amount: 45220540006
+        name: Education
+        province: Gauteng
+        slug: education
+        url: 2018-19/previews/provincial/free-state/education
+      - amount: 50903682000
+        name: Education
+        province: KwaZulu-Natal
+        slug: education
+        url: 2018-19/previews/provincial/gauteng/education
+      - amount: 30607752898
+        name: Education
+        province: Limpopo
+        slug: education
+        url: 2018-19/previews/provincial/kwazulu-natal/education
+      - amount: 20973433000
+        name: Education
+        province: Mpumalanga
+        slug: education
+        url: 2018-19/previews/provincial/limpopo/education
+      - amount: 6417223000
+        name: Education
+        province: Northern Cape
+        slug: education
+        url: 2018-19/previews/provincial/mpumalanga/education
+      - amount: 22193312000
+        name: Education
+        province: Western Cape
+        slug: education
+        url: 2018-19/previews/provincial/northern-cape/education
+      - amount: 16183868000
+        name: Education And Sports Development
+        province: North West
+        slug: education-and-sports-development
+        url: 2018-19/previews/provincial/western-cape/education
+      - amount: 451953000
+        name: Sport And Recreation
+        province: KwaZulu-Natal
+        slug: sport-and-recreation
+        url: 2018-19/previews/provincial/north-west/education-and-sports-development
+      - amount: 472264428
+        name: Sport, Arts And Culture
+        province: Limpopo
+        slug: sport-arts-and-culture
+        url: 2018-19/previews/provincial/kwazulu-natal/sport-and-recreation
+      - amount: 382820568
+        name: Sport, Arts And Culture
+        province: Northern Cape
+        slug: sport-arts-and-culture
+        url: 2018-19/previews/provincial/limpopo/sport-arts-and-culture
+      - amount: 727010030
+        name: Sport, Arts, Culture And Recreation
+        province: Free State
+        slug: sport-arts-culture-and-recreation
+        url: 2018-19/previews/provincial/northern-cape/sport-arts-and-culture
+      - amount: 942651500
+        name: Sport, Arts, Culture And Recreation
+        province: Gauteng
+        slug: sport-arts-culture-and-recreation
+        url: 2018-19/previews/provincial/free-state/sport-arts-culture-and-recreation
+      - amount: 942759683
+        name: Sport, Recreation, Arts And Culture
+        province: Eastern Cape
+        slug: sport-recreation-arts-and-culture
+        url: 2018-19/previews/provincial/gauteng/sport-arts-culture-and-recreation
       footnotes:
       - '**Source:** Estimates of Provincial Expenditure 2018-19'
       notices: []
@@ -1010,98 +957,76 @@ data:
       total: 194077545000.0
     provincial:
       data:
-      - amount: 834678000
-        children:
-        - amount: 534031000
-          slug: community-safety
-          title: Community Safety
-          url: 2018-19/previews/national/south-africa/police
-        - amount: 300647000
-          slug: roads-and-transport
-          title: Roads And Transport
-          url: 2018-19/previews/provincial/free-state/police-roads-and-transport
-        slug: gauteng
-        title: Gauteng
-      - amount: 1092719000
-        children:
-        - amount: 316617000
-          slug: community-safety
-          title: Community Safety
-          url: 2018-19/previews/provincial/gauteng/community-safety
-        - amount: 776102000
-          slug: transport-public-works
-          title: TRANSPORT & PUBLIC WORKS
-          url: 2018-19/previews/provincial/limpopo/transport
-        slug: western-cape
-        title: Western Cape
-      - amount: 443326224
-        children:
-        - amount: 101490000
-          slug: safety-and-liaison
-          title: Safety And Liaison
-          url: 2018-19/previews/provincial/gauteng/roads-and-transport
-        - amount: 341836224
-          slug: transport
-          title: Transport
-          url: null
-        slug: eastern-cape
-        title: Eastern Cape
+      - amount: 534031000
+        name: Community Safety
+        province: Gauteng
+        slug: community-safety
+        url: 2018-19/previews/national/south-africa/police
+      - amount: 316617000
+        name: Community Safety
+        province: Western Cape
+        slug: community-safety
+        url: 2018-19/previews/provincial/gauteng/community-safety
+      - amount: 224949000
+        name: Community Safety And Liaison
+        province: KwaZulu-Natal
+        slug: community-safety-and-liaison
+        url: 2018-19/previews/provincial/western-cape/community-safety
       - amount: 630201000
-        children:
-        - amount: 630201000
-          slug: community-safety-and-transport-management
-          title: Community Safety And Transport Management
-          url: 2018-19/previews/provincial/kwazulu-natal/community-safety-and-liaison
-        slug: north-west
-        title: North West
+        name: Community Safety And Transport Management
+        province: North West
+        slug: community-safety-and-transport-management
+        url: 2018-19/previews/provincial/kwazulu-natal/community-safety-and-liaison
       - amount: 1222822000
-        children:
-        - amount: 1222822000
-          slug: community-safety-security-and-liaison
-          title: Community Safety, Security And Liaison
-          url: 2018-19/previews/provincial/north-west/community-safety-and-transport-management
-        slug: mpumalanga
-        title: Mpumalanga
-      - amount: 726015838
-        children:
-        - amount: 109714000
-          slug: safety-security-and-liaison
-          title: SAFETY, SECURITY AND LIAISON
-          url: 2018-19/previews/provincial/eastern-cape/safety-and-liaison
-        - amount: 616301838
-          slug: transport
-          title: Transport
-          url: 2018-19/previews/provincial/kwazulu-natal/transport
-        slug: limpopo
-        title: Limpopo
-      - amount: 1145013000
-        children:
-        - amount: 224949000
-          slug: community-safety-and-liaison
-          title: Community Safety And Liaison
-          url: 2018-19/previews/provincial/western-cape/community-safety
-        - amount: 920064000
-          slug: transport
-          title: Transport
-          url: 2018-19/previews/provincial/eastern-cape/transport
-        slug: kwazulu-natal
-        title: KwaZulu-Natal
-      - amount: 118900688
-        children:
-        - amount: 118900688
-          slug: transport-safety-and-liaison
-          title: Transport, Safety And Liaison
-          url: null
-        slug: northern-cape
-        title: Northern Cape
+        name: Community Safety, Security And Liaison
+        province: Mpumalanga
+        slug: community-safety-security-and-liaison
+        url: 2018-19/previews/provincial/north-west/community-safety-and-transport-management
       - amount: 436674000
-        children:
-        - amount: 436674000
-          slug: police-roads-and-transport
-          title: Police, Roads And Transport
-          url: 2018-19/previews/provincial/mpumalanga/community-safety-security-and-liaison
-        slug: free-state
-        title: Free State
+        name: Police, Roads And Transport
+        province: Free State
+        slug: police-roads-and-transport
+        url: 2018-19/previews/provincial/mpumalanga/community-safety-security-and-liaison
+      - amount: 300647000
+        name: Roads And Transport
+        province: Gauteng
+        slug: roads-and-transport
+        url: 2018-19/previews/provincial/free-state/police-roads-and-transport
+      - amount: 101490000
+        name: Safety And Liaison
+        province: Eastern Cape
+        slug: safety-and-liaison
+        url: 2018-19/previews/provincial/gauteng/roads-and-transport
+      - amount: 109714000
+        name: SAFETY, SECURITY AND LIAISON
+        province: Limpopo
+        slug: safety-security-and-liaison
+        url: 2018-19/previews/provincial/eastern-cape/safety-and-liaison
+      - amount: 341836224
+        name: Transport
+        province: Eastern Cape
+        slug: transport
+        url: null
+      - amount: 920064000
+        name: Transport
+        province: KwaZulu-Natal
+        slug: transport
+        url: 2018-19/previews/provincial/eastern-cape/transport
+      - amount: 616301838
+        name: Transport
+        province: Limpopo
+        slug: transport
+        url: 2018-19/previews/provincial/kwazulu-natal/transport
+      - amount: 776102000
+        name: TRANSPORT & PUBLIC WORKS
+        province: Western Cape
+        slug: transport-public-works
+        url: 2018-19/previews/provincial/limpopo/transport
+      - amount: 118900688
+        name: Transport, Safety And Liaison
+        province: Northern Cape
+        slug: transport-safety-and-liaison
+        url: null
       footnotes:
       - '**Source:** Estimates of Provincial Expenditure 2018-19'
       notices: []
@@ -1124,78 +1049,51 @@ data:
       total: 172967251000.0
     provincial:
       data:
-      - amount: 4983495000
-        children:
-        - amount: 4983495000
-          slug: social-development
-          title: Social Development
-          url: 2018-19/previews/provincial/free-state/social-development
-        slug: gauteng
-        title: Gauteng
-      - amount: 2241664000
-        children:
-        - amount: 2241664000
-          slug: social-development
-          title: Social Development
-          url: 2018-19/previews/provincial/north-west/social-development
-        slug: western-cape
-        title: Western Cape
       - amount: 2836581000
-        children:
-        - amount: 2836581000
-          slug: social-development
-          title: Social Development
-          url: 2018-19/previews/national/south-africa/social-development
-        slug: eastern-cape
-        title: Eastern Cape
-      - amount: 1608750000
-        children:
-        - amount: 1608750000
-          slug: social-development
-          title: Social Development
-          url: 2018-19/previews/provincial/northern-cape/social-development
-        slug: north-west
-        title: North West
-      - amount: 1551584000
-        children:
-        - amount: 1551584000
-          slug: social-development
-          title: Social Development
-          url: 2018-19/previews/provincial/limpopo/social-development
-        slug: mpumalanga
-        title: Mpumalanga
+        name: Social Development
+        province: Eastern Cape
+        slug: social-development
+        url: 2018-19/previews/national/south-africa/social-development
       - amount: 1266057000
-        children:
-        - amount: 1266057000
-          slug: social-development
-          title: Social Development
-          url: 2018-19/previews/provincial/eastern-cape/social-development
-        slug: free-state
-        title: Free State
+        name: Social Development
+        province: Free State
+        slug: social-development
+        url: 2018-19/previews/provincial/eastern-cape/social-development
+      - amount: 4983495000
+        name: Social Development
+        province: Gauteng
+        slug: social-development
+        url: 2018-19/previews/provincial/free-state/social-development
       - amount: 3287882000
-        children:
-        - amount: 3287882000
-          slug: social-development
-          title: Social Development
-          url: 2018-19/previews/provincial/gauteng/social-development
-        slug: kwazulu-natal
-        title: KwaZulu-Natal
-      - amount: 870916000
-        children:
-        - amount: 870916000
-          slug: social-development
-          title: Social Development
-          url: 2018-19/previews/provincial/mpumalanga/social-development
-        slug: northern-cape
-        title: Northern Cape
+        name: Social Development
+        province: KwaZulu-Natal
+        slug: social-development
+        url: 2018-19/previews/provincial/gauteng/social-development
       - amount: 1986729065
-        children:
-        - amount: 1986729065
-          slug: social-development
-          title: Social Development
-          url: 2018-19/previews/provincial/kwazulu-natal/social-development
-        slug: limpopo
-        title: Limpopo
+        name: Social Development
+        province: Limpopo
+        slug: social-development
+        url: 2018-19/previews/provincial/kwazulu-natal/social-development
+      - amount: 1551584000
+        name: Social Development
+        province: Mpumalanga
+        slug: social-development
+        url: 2018-19/previews/provincial/limpopo/social-development
+      - amount: 870916000
+        name: Social Development
+        province: Northern Cape
+        slug: social-development
+        url: 2018-19/previews/provincial/mpumalanga/social-development
+      - amount: 1608750000
+        name: Social Development
+        province: North West
+        slug: social-development
+        url: 2018-19/previews/provincial/northern-cape/social-development
+      - amount: 2241664000
+        name: Social Development
+        province: Western Cape
+        slug: social-development
+        url: 2018-19/previews/provincial/north-west/social-development
       footnotes:
       - '**Source:** Estimates of Provincial Expenditure 2018-19'
       notices: []
