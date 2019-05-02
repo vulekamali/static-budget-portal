@@ -10,7 +10,7 @@ import {
 const passRouteValues = ({ match }) => createElement(DataLoader, match.params)
 
 const routeConfig = {
-  path: "/:year/:department",
+  path: "/:year/focus/:department",
   component: passRouteValues,
 };
 
