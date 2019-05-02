@@ -20,11 +20,11 @@ const callFootNote = footnote => footnote.map(footer => (
 ))
 
 const callProvincialChart = (selected, initialSelected, items, footnotes, notices) => {
-  if(initialSelected.value === null || Object.entries(items).length === 0) {
+  if(Object.entries(items).length === 0) {
     return (
       <div key={`${selected}-provincial`}>
       <ChartSection
-        {...{ initialSelected }}
+        {...{ initialSelected  }}
         chart={() => <Notices {...{ notices }} />}
         title='Contributing provincial departments'
         anchor='contributing-provincial-departments'
