@@ -30,16 +30,21 @@ import {
    </ChartWrapper>
  );
 
-const callButtonExplore = (url, color,  verb, subject) => (
-  <LinkWrapper href={url}>
-    <ButtonStyle disabled={!url} {...{color}}>
-      <TextExploreButton>{verb} <SpanStyled>{subject}</SpanStyled></TextExploreButton>
-      <Icon />
-    </ButtonStyle>
-  </LinkWrapper>
-);
+const callButtonExplore = (url, color,  verb, subject, isConsolidatedChart) => {
+  if(isConsolidatedChart) {
+    return null;
+  }
+  return (
+    <LinkWrapper href={url}>
+      <ButtonStyle disabled={!url} {...{color}}>
+        <TextExploreButton>{verb} <SpanStyled>{subject}</SpanStyled></TextExploreButton>
+        <Icon />
+      </ButtonStyle>
+    </LinkWrapper>
+  );
+};
 
-const callDetails = (selected, verb, subject) => {
+const callDetails = (selected, verb, subject, isConsolidatedChart) => {
   const { name, value, url, color } = selected;
   if (value === null) {
     return null;
@@ -51,7 +56,7 @@ const callDetails = (selected, verb, subject) => {
           <Department>{name}</Department>
           <Amount>R{trimValues(value)}</Amount>
         </div>
-        {!!verb && callButtonExplore(url, color, verb, subject)}
+        {!!verb && callButtonExplore(url, color,  verb, subject, isConsolidatedChart)}
       </DetailsContainer>
     </DetailsWrapper>
   );
@@ -68,14 +73,15 @@ const Markup = (props) => {
     years,
     phases,
     anchor,
-    title
+    title,
+    isConsolidatedChart
   } = props;
   
   return (
     <Wrapper>
       <CssBaseline />
       <SectionHeading title={title} share={anchor} years={years} phases={phases} />
-      {!!selected && callDetails(selected, verb, subject)} 
+      {!!selected && callDetails(selected, verb, subject, isConsolidatedChart)} 
       {callChart(chart, onSelectedChange)}
       <FooterWrapper>
         <FooterContainer>

@@ -72,7 +72,7 @@ Vagrant.configure("2") do |config|
   # Show a usage message.
   config.vm.provision "shell", privileged: false, run: "always", inline: <<-SHELL
     echo "Jekyll environment ready for use. To run:"
-    echo "vagrant ssh -c 'cd /vagrant && bundle exec jekyll serve --force_polling --host 0.0.0.0 --incremental'"
+    echo "vagrant ssh -c 'cd /vagrant && bundle exec jekyll serve --force_polling --host 0.0.0.0'"
   SHELL
 
 end
