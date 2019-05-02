@@ -40,7 +40,7 @@ intro: "This dataset includes expenditure data as published in the Estimates of 
   \ as a whole.\r\n"
 intro_short: null
 key_points: null
-last_updated: '2018-11-09T09:34:41.855396'
+last_updated: '2019-04-25T13:00:54.434113'
 license:
   name: Other (Public Domain)
   url: null
@@ -58,12 +58,8 @@ organization:
 resources:
 - description: ''
   format: CSV
-  name: Estimates of Provincial Expenditure Data 2015
-  url: https://data.vulekamali.gov.za/dataset/5c619f67-c06b-489e-b8ef-7d8842975f8f/resource/21c34f78-dc66-4cf6-bc42-faaa42bed590/download/estimates-of-provincial-expenditure-south-africa-2015-16.csv
-- description: ''
-  format: CSV
   name: Estimates of Provincial Expenditure 2015-16
-  url: https://data.vulekamali.gov.za/dataset/5c619f67-c06b-489e-b8ef-7d8842975f8f/resource/b65549ba-927f-44a5-a780-ccfd8bb8ecf8/download/estimates-of-provincial-expenditure-south-africa-2015-16.csv
+  url: https://data.vulekamali.gov.za/dataset/5c619f67-c06b-489e-b8ef-7d8842975f8f/resource/b65549ba-927f-44a5-a780-ccfd8bb8ecf8/download/epre-2015-16.csv
 - description: ''
   format: OpenSpending API
   name: Estimates of Provincial Expenditure 2015-16
