@@ -29,37 +29,17 @@ class DataLoader extends Component {
   render() {
     const { state, props } = this;
     const { loading, data } = state;
-    const { department, year } = props;
+    const { year } = props;
 
     if (loading || !data) {
       return createElement('div', {}, 'Loading...');
     }
 
-
-    const selectedKey = data.findIndex(({ id }) => id === department);
-    const selectedObject = data[selectedKey];
-
-    const initialSelectedNational = {
-      name: "National Department Contributions",
-      value: selectedObject.national.total,
-      url: null,
-      color: "#D8D8D8"
-    }
-
-    const initialSelectedProvincial = {
-      name: 'Provincial Department Contributions',
-      value: selectedObject.provincial.total,
-      url: null,
-      color: 'rgba(0, 0, 0, 0.1)'
-    }
-
     const passedProps = {
       items: data,
-      department: selectedKey,
+      department: this.props.department,
       year,
-      initialSelectedNational,
-      initialSelectedProvincial,
-      selectedObject
+      updateUrl: true
     }
     
     return createElement(FocusAreaPreview, passedProps);
