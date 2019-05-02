@@ -35,6 +35,7 @@ class DataLoader extends Component {
       return createElement('div', {}, 'Loading...');
     }
 
+
     const selectedKey = data.findIndex(({ id }) => id === department);
     const selectedObject = data[selectedKey];
 
@@ -54,7 +55,7 @@ class DataLoader extends Component {
 
     const passedProps = {
       items: data,
-      department: this.props.department,
+      department: selectedKey,
       year,
       initialSelectedNational,
       initialSelectedProvincial,
