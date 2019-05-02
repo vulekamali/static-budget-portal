@@ -58,6 +58,7 @@ const Markup = (props) => {
     initialSelectedProvincial,
     year
   } = props;
+  const selectedInstance = items.find(({ id }) => id === selected)
 
   return (
     <Wrapper>
@@ -65,15 +66,15 @@ const Markup = (props) => {
       <div key={`${selected}-national`}> 
         <ChartSection
           initialSelected={initialSelectedNational}
-          chart={(onSelectedChange) => <Treemap {...{ onSelectedChange }} items={items[selected].national.departments} />}
+          chart={(onSelectedChange) => <Treemap {...{ onSelectedChange }} items={selectedInstance.national.departments} />}
           verb='Explore'
           subject='this department'
           title='Contributing national departments'
           anchor='contributing-national-departments'
-          footer={callFootNote(items[selected].national.footnotes)}
+          footer={callFootNote(selectedInstance.national.footnotes)}
         />
       </div>
-      {callProvincialChart(selected, initialSelectedProvincial, items[selected].provincial.provinces, items[selected].provincial.footnotes, items[selected].provincial.notices)}
+      {callProvincialChart(selected, initialSelectedProvincial, selectedInstance.provincial.provinces, selectedInstance.provincial.footnotes, selectedInstance.provincial.notices)}
     </Wrapper>
   );
 };
