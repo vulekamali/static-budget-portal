@@ -7,6 +7,7 @@ const allComponents = value => ({
       'source: random text footer for expenditure',
       'note: Other random text to test footer note for provincial equitable share.'
     ],
+    total: 10 * parseInt(value),
     departments: [
     {
       name: 'Administration',
@@ -49,6 +50,7 @@ const allComponents = value => ({
     footnotes: [
       'source: Some random text to test footer expenditure'
     ],
+    total: 20 * parseInt(value),
     provinces: {
       'Eastern Cape': {
         name: 'Eastern Cape',
