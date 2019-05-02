@@ -2,123 +2,1922 @@
     "data": {
         "items": [
             {
-                "description": null,
                 "national": {
                     "data": [
                         {
                             "amount": 78513718000,
-                            "percentage_total": 45.58250107310617,
+                            "percentage_total": 36.286978708460744,
                             "slug": "cooperative-governance-and-traditional-affairs",
-                            "title": "Cooperative Governance and Traditional Affairs",
-                            "url": "2018-19/previews/national/"
+                            "title": "Cooperative Governance and Traditional Affairs"
                         },
                         {
                             "amount": 5435400000,
-                            "percentage_total": 3.155615765550184,
+                            "percentage_total": 2.512099147717951,
                             "slug": "energy",
-                            "title": "Energy",
-                            "url": "2018-19/previews/national/energy"
+                            "title": "Energy"
                         },
                         {
                             "amount": 32355716000,
-                            "percentage_total": 18.784672244041715,
+                            "percentage_total": 14.953962281967117,
                             "slug": "human-settlements",
-                            "title": "Human Settlements",
-                            "url": "2018-19/previews/national/human-settlements"
+                            "title": "Human Settlements"
+                        },
+                        {
+                            "amount": 14039441000,
+                            "percentage_total": 6.488660957893891,
+                            "slug": "national-treasury",
+                            "title": "National Treasury"
+                        },
+                        {
+                            "amount": 31832004000,
+                            "percentage_total": 14.711916348116864,
+                            "slug": "transport",
+                            "title": "Transport"
+                        },
+                        {
+                            "amount": 10069026000,
+                            "percentage_total": 4.653639407026141,
+                            "slug": "water-and-sanitation",
+                            "title": "Water and Sanitation"
                         }
                     ],
-                    "notices": [],
-                    "footnotes": [],
-                    "total": 12345678909
+                    "footnotes": [
+                        "**Source:** Estimates of National Expenditure 2018-19"
+                    ],
+                    "notices": []
                 },
                 "provincial": {
                     "data": [
+                        {
+                            "amount": 11250149145,
+                            "children": [
+                                {
+                                    "amount": 468235000,
+                                    "percentage_total": 0.21640592126278008,
+                                    "slug": "cooperative-governance-and-traditional-affairs",
+                                    "title": "Cooperative Governance And Traditional Affairs"
+                                },
+                                {
+                                    "amount": 5888425145,
+                                    "percentage_total": 2.7214754734068243,
+                                    "slug": "human-settlements",
+                                    "title": "Human Settlements"
+                                },
+                                {
+                                    "amount": 4893489000,
+                                    "percentage_total": 2.2616421139690117,
+                                    "slug": "roads-and-transport",
+                                    "title": "Roads And Transport"
+                                }
+                            ],
+                            "percentage": 5.199523508638617,
+                            "slug": "gauteng",
+                            "title": "Gauteng"
+                        },
+                        {
+                            "amount": 5484407887,
+                            "children": [
+                                {
+                                    "amount": 2376749000,
+                                    "percentage_total": 1.0984709749493122,
+                                    "slug": "human-settlements",
+                                    "title": "Human Settlements"
+                                },
+                                {
+                                    "amount": 983800097,
+                                    "percentage_total": 0.45468657048212413,
+                                    "slug": "local-government-and-traditional-affairs",
+                                    "title": "LOCAL GOVERNMENT AND TRADITIONAL AFFAIRS"
+                                },
+                                {
+                                    "amount": 580773000,
+                                    "percentage_total": 0.2684180296422706,
+                                    "slug": "roads-and-public-works",
+                                    "title": "Roads And Public Works"
+                                },
+                                {
+                                    "amount": 1543085790,
+                                    "percentage_total": 0.7131737310804506,
+                                    "slug": "transport",
+                                    "title": "Transport"
+                                }
+                            ],
+                            "percentage": 2.5347493061541577,
+                            "slug": "eastern-cape",
+                            "title": "Eastern Cape"
+                        },
+                        {
+                            "amount": 4071957000,
+                            "children": [
+                                {
+                                    "amount": 2318554000,
+                                    "percentage_total": 1.0715747741358588,
+                                    "slug": "human-settlements",
+                                    "title": "Human Settlements"
+                                },
+                                {
+                                    "amount": 252796000,
+                                    "percentage_total": 0.11683567283852286,
+                                    "slug": "local-government",
+                                    "title": "Local Government"
+                                },
+                                {
+                                    "amount": 1500607000,
+                                    "percentage_total": 0.6935411498251446,
+                                    "slug": "transport-public-works",
+                                    "title": "TRANSPORT & PUBLIC WORKS"
+                                }
+                            ],
+                            "percentage": 1.8819515967995262,
+                            "slug": "western-cape",
+                            "title": "Western Cape"
+                        },
+                        {
+                            "amount": 4500412782,
+                            "children": [
+                                {
+                                    "amount": 2624005582,
+                                    "percentage_total": 1.2127464742520047,
+                                    "slug": "co-operative-governance-human-settlements-and-traditional-affairs",
+                                    "title": "Co-Operative Governance, Human Settlements And Traditional Affairs"
+                                },
+                                {
+                                    "amount": 386480740,
+                                    "percentage_total": 0.1786212491377641,
+                                    "slug": "public-works-roads-infrastructure",
+                                    "title": "PUBLIC WORKS,ROADS & INFRASTRUCTURE"
+                                },
+                                {
+                                    "amount": 1489926460,
+                                    "percentage_total": 0.6886048847055274,
+                                    "slug": "transport",
+                                    "title": "Transport"
+                                }
+                            ],
+                            "percentage": 2.079972608095296,
+                            "slug": "limpopo",
+                            "title": "Limpopo"
+                        },
+                        {
+                            "amount": 4375487400,
+                            "children": [
+                                {
+                                    "amount": 1533272400,
+                                    "percentage_total": 0.7086382399196852,
+                                    "slug": "community-safety-and-transport-management",
+                                    "title": "Community Safety And Transport Management"
+                                },
+                                {
+                                    "amount": 133949000,
+                                    "percentage_total": 0.061907710331837916,
+                                    "slug": "culture-arts-and-traditional-affairs",
+                                    "title": "Culture, Arts And Traditional Affairs"
+                                },
+                                {
+                                    "amount": 2476863000,
+                                    "percentage_total": 1.1447410367800213,
+                                    "slug": "local-government-and-human-settlement",
+                                    "title": "LOCAL GOVERNMENT AND HUMAN SETTLEMENT"
+                                },
+                                {
+                                    "amount": 231403000,
+                                    "percentage_total": 0.10694839001349984,
+                                    "slug": "public-works-and-roads",
+                                    "title": "Public Works And Roads"
+                                }
+                            ],
+                            "percentage": 2.0222353770450443,
+                            "slug": "north-west",
+                            "title": "North West"
+                        },
+                        {
+                            "amount": 3838857000,
+                            "children": [
+                                {
+                                    "amount": 522260000,
+                                    "percentage_total": 0.24137485757941957,
+                                    "slug": "co-operative-governance-and-traditional-affairs",
+                                    "title": "Co-Operative Governance And Traditional Affairs"
+                                },
+                                {
+                                    "amount": 1774080000,
+                                    "percentage_total": 0.8199331890906764,
+                                    "slug": "human-settlements",
+                                    "title": "Human Settlements"
+                                },
+                                {
+                                    "amount": 1542517000,
+                                    "percentage_total": 0.7129108512787377,
+                                    "slug": "public-works-roads-and-transport",
+                                    "title": "Public Works, Roads And Transport"
+                                }
+                            ],
+                            "percentage": 1.7742188979488336,
+                            "slug": "mpumalanga",
+                            "title": "Mpumalanga"
+                        },
+                        {
+                            "amount": 6971457000,
+                            "children": [
+                                {
+                                    "amount": 1679082000,
+                                    "percentage_total": 0.7760276081150518,
+                                    "slug": "co-operative-governance-and-traditional-affairs",
+                                    "title": "Co-Operative Governance And Traditional Affairs"
+                                },
+                                {
+                                    "amount": 3647237000,
+                                    "percentage_total": 1.6856571658434294,
+                                    "slug": "human-settlements",
+                                    "title": "Human Settlements"
+                                },
+                                {
+                                    "amount": 1645138000,
+                                    "percentage_total": 0.7603395826762362,
+                                    "slug": "transport",
+                                    "title": "Transport"
+                                }
+                            ],
+                            "percentage": 3.2220243566347175,
+                            "slug": "kwazulu-natal",
+                            "title": "KwaZulu-Natal"
+                        },
+                        {
+                            "amount": 1159953322,
+                            "children": [
+                                {
+                                    "amount": 831899000,
+                                    "percentage_total": 0.38448187233458725,
+                                    "slug": "cooperative-governance-human-settlements-and-traditional-affairs",
+                                    "title": "Cooperative Governance, Human Settlements And Traditional Affairs"
+                                },
+                                {
+                                    "amount": 155259000,
+                                    "percentage_total": 0.07175663273642074,
+                                    "slug": "roads-and-public-works",
+                                    "title": "Roads And Public Works"
+                                },
+                                {
+                                    "amount": 172795322,
+                                    "percentage_total": 0.07986146026527007,
+                                    "slug": "transport-safety-and-liaison",
+                                    "title": "Transport, Safety And Liaison"
+                                }
+                            ],
+                            "percentage": 0.536099965336278,
+                            "slug": "northern-cape",
+                            "title": "Northern Cape"
+                        },
+                        {
+                            "amount": 2470862000,
+                            "children": [
+                                {
+                                    "amount": 443329000,
+                                    "percentage_total": 0.2048950220882826,
+                                    "slug": "cooperative-governance-and-traditional-affairs",
+                                    "title": "Cooperative Governance And Traditional Affairs"
+                                },
+                                {
+                                    "amount": 1391778000,
+                                    "percentage_total": 0.6432432438482162,
+                                    "slug": "human-settlements",
+                                    "title": "Human Settlements"
+                                },
+                                {
+                                    "amount": 635755000,
+                                    "percentage_total": 0.29382926622832284,
+                                    "slug": "police-roads-and-transport",
+                                    "title": "Police, Roads And Transport"
+                                }
+                            ],
+                            "percentage": 1.1419675321648215,
+                            "slug": "free-state",
+                            "title": "Free State"
+                        }
                     ],
-                    "notices": ["No contributing provincial departments"],
-                    "footnotes": [],
-                    "total": 0
+                    "footnotes": [
+                        "**Source:** Estimates of Provincial Expenditure 2018-19"
+                    ],
+                    "notices": []
                 },
                 "slug": "community-development",
                 "title": "Community development"
             },
             {
-                "description": null,
                 "national": {
                     "data": [
                         {
-                            "amount": 420485000,
-                            "percentage_total": 0.08310088531074651,
-                            "slug": "government-communication-and-information-system",
-                            "title": "Government Communication and Information System",
-                            "url": "2018-19/previews/national/government-communication-and-information-system"
-                        },
-                        {
-                            "amount": 6552768000,
-                            "percentage_total": 1.2950303150788491,
-                            "slug": "international-relations-and-cooperation",
-                            "title": "International Relations and Cooperation",
-                            "url": "2018-19/previews/national/international-relations-and-cooperation"
-                        },
-                        {
-                            "amount": 168959000,
-                            "percentage_total": 0.03339154186527087,
-                            "slug": "national-school-of-government",
-                            "title": "National School of Government",
-                            "url": "2018-19/previews/national/national-school-of-government"
-                        },
-                        {
-                            "amount": 487406441000,
-                            "percentage_total": 96.32663888904513,
+                            "amount": 180123990000,
+                            "percentage_total": 100,
                             "slug": "national-treasury",
-                            "title": "National Treasury",
-                            "url": "2018-19/previews/national/national-treasury"
+                            "title": "National Treasury"
                         }
                     ],
-                    "notices": [],
-                    "footnotes": ["**Note:** Provincial Equitable Share excluded"],
-                    "total": 98765432123
+                    "footnotes": [
+                        "**Source:** Estimates of National Expenditure 2018-19"
+                    ],
+                    "notices": []
+                },
+                "provincial": {
+                    "data": [],
+                    "footnotes": [
+                        "**Source:** Estimates of Provincial Expenditure 2018-19"
+                    ],
+                    "notices": []
+                },
+                "slug": "debt-service-costs",
+                "title": "Debt-service costs"
+            },
+            {
+                "national": {
+                    "data": [
+                        {
+                            "amount": 7164998000,
+                            "percentage_total": 4.623980333322401,
+                            "slug": "agriculture-forestry-and-fisheries",
+                            "title": "Agriculture, Forestry and Fisheries"
+                        },
+                        {
+                            "amount": 3834643000,
+                            "percentage_total": 2.4747130169907114,
+                            "slug": "cooperative-governance-and-traditional-affairs",
+                            "title": "Cooperative Governance and Traditional Affairs"
+                        },
+                        {
+                            "amount": 1072597000,
+                            "percentage_total": 0.6922077903693215,
+                            "slug": "economic-development",
+                            "title": "Economic Development"
+                        },
+                        {
+                            "amount": 1609617000,
+                            "percentage_total": 1.0387773105004918,
+                            "slug": "energy",
+                            "title": "Energy"
+                        },
+                        {
+                            "amount": 7112532000,
+                            "percentage_total": 4.590121042340312,
+                            "slug": "environmental-affairs",
+                            "title": "Environmental Affairs"
+                        },
+                        {
+                            "amount": 3295243000,
+                            "percentage_total": 2.126607547625039,
+                            "slug": "labour",
+                            "title": "Labour"
+                        },
+                        {
+                            "amount": 1890661000,
+                            "percentage_total": 1.2201509729632394,
+                            "slug": "mineral-resources",
+                            "title": "Mineral Resources"
+                        },
+                        {
+                            "amount": 6039095000,
+                            "percentage_total": 3.8973711522411656,
+                            "slug": "national-treasury",
+                            "title": "National Treasury"
+                        },
+                        {
+                            "amount": 6816985000,
+                            "percentage_total": 4.3993877698994215,
+                            "slug": "public-works",
+                            "title": "Public Works"
+                        },
+                        {
+                            "amount": 10425243000,
+                            "percentage_total": 6.728001682918408,
+                            "slug": "rural-development-and-land-reform",
+                            "title": "Rural Development and Land Reform"
+                        },
+                        {
+                            "amount": 7790488000,
+                            "percentage_total": 5.0276445714268405,
+                            "slug": "science-and-technology",
+                            "title": "Science and Technology"
+                        },
+                        {
+                            "amount": 1488453000,
+                            "percentage_total": 0.9605832966142808,
+                            "slug": "small-business-development",
+                            "title": "Small Business Development"
+                        },
+                        {
+                            "amount": 923407000,
+                            "percentage_total": 0.5959270062116192,
+                            "slug": "telecommunications-and-postal-services",
+                            "title": "Telecommunications and Postal Services"
+                        },
+                        {
+                            "amount": 2261817000,
+                            "percentage_total": 1.4596790292996975,
+                            "slug": "tourism",
+                            "title": "Tourism"
+                        },
+                        {
+                            "amount": 9462611000,
+                            "percentage_total": 6.106760555394464,
+                            "slug": "trade-and-industry",
+                            "title": "Trade and Industry"
+                        },
+                        {
+                            "amount": 27976490000,
+                            "percentage_total": 18.054818655272594,
+                            "slug": "transport",
+                            "title": "Transport"
+                        },
+                        {
+                            "amount": 5502492000,
+                            "percentage_total": 3.5510707459044437,
+                            "slug": "water-and-sanitation",
+                            "title": "Water and Sanitation"
+                        }
+                    ],
+                    "footnotes": [
+                        "**Source:** Estimates of National Expenditure 2018-19"
+                    ],
+                    "notices": []
                 },
                 "provincial": {
                     "data": [
                         {
-                            "amount": 2328236322.4110003,
-                            "name": "Rural Development And Agrarian Reform",
-                            "percentage_of_total": 0,
-                            "province": "Eastern Cape",
-                            "slug": "rural-development-and-agrarian-reform",
-                            "url": "2018-19/previews/provincial/eastern-cape/rural-development-and-agrarian-reform"
+                            "amount": 5304895000,
+                            "children": [
+                                {
+                                    "amount": 957000000,
+                                    "percentage_total": 0.617606477906838,
+                                    "slug": "agriculture-and-rural-development",
+                                    "title": "Agriculture And Rural Development"
+                                },
+                                {
+                                    "amount": 1510450000,
+                                    "percentage_total": 0.974779210610641,
+                                    "slug": "economic-development",
+                                    "title": "Economic Development"
+                                },
+                                {
+                                    "amount": 317763000,
+                                    "percentage_total": 0.20507051958109776,
+                                    "slug": "infrastructure-development",
+                                    "title": "Infrastructure Development"
+                                },
+                                {
+                                    "amount": 2519682000,
+                                    "percentage_total": 1.6260939660034037,
+                                    "slug": "roads-and-transport",
+                                    "title": "Roads And Transport"
+                                }
+                            ],
+                            "percentage": 3.4235501741019805,
+                            "slug": "gauteng",
+                            "title": "Gauteng"
                         },
                         {
-                            "amount": 1440478000,
-                            "name": "Rural, Environment And Agricultural Development",
-                            "percentage_of_total": 0,
-                            "province": "North West",
-                            "slug": "rural-environment-and-agricultural-development",
-                            "url": "2018-19/previews/provincial/north-west/rural-environment-and-agricultural-development"
+                            "amount": 5516715000,
+                            "children": [
+                                {
+                                    "amount": 834342000,
+                                    "percentage_total": 0.5384483009297252,
+                                    "slug": "agriculture",
+                                    "title": "Agriculture"
+                                },
+                                {
+                                    "amount": 433462000,
+                                    "percentage_total": 0.27973765843934567,
+                                    "slug": "economic-development-tourism",
+                                    "title": "ECONOMIC DEVELOPMENT & TOURISM"
+                                },
+                                {
+                                    "amount": 604621000,
+                                    "percentage_total": 0.39019628660241407,
+                                    "slug": "environmental-affairs-dev-planning",
+                                    "title": "ENVIRONMENTAL AFFAIRS & DEV PLANNING"
+                                },
+                                {
+                                    "amount": 3644290000,
+                                    "percentage_total": 2.3518674100011605,
+                                    "slug": "transport-public-works",
+                                    "title": "TRANSPORT & PUBLIC WORKS"
+                                }
+                            ],
+                            "percentage": 3.560249655972645,
+                            "slug": "western-cape",
+                            "title": "Western Cape"
                         },
                         {
-                            "amount": 101490000,
-                            "name": "Safety And Liaison",
-                            "percentage_of_total": 0,
-                            "province": "Eastern Cape",
-                            "slug": "safety-and-liaison",
-                            "url": "2018-19/previews/provincial/eastern-cape/safety-and-liaison"
+                            "amount": 6496415602,
+                            "children": [
+                                {
+                                    "amount": 1146006188,
+                                    "percentage_total": 0.739582910585289,
+                                    "slug": "economic-development-environmental-affairs-and-tourism",
+                                    "title": "Economic Development, Environmental Affairs And Tourism"
+                                },
+                                {
+                                    "amount": 95511000,
+                                    "percentage_total": 0.06163867535147335,
+                                    "slug": "roads-and-public-works",
+                                    "title": "Roads And Public Works"
+                                },
+                                {
+                                    "amount": 2328236326,
+                                    "percentage_total": 1.5025431943945837,
+                                    "slug": "rural-development-and-agrarian-reform",
+                                    "title": "Rural Development And Agrarian Reform"
+                                },
+                                {
+                                    "amount": 2926662088,
+                                    "percentage_total": 1.888741341894621,
+                                    "slug": "transport",
+                                    "title": "Transport"
+                                }
+                            ],
+                            "percentage": 4.192506122225967,
+                            "slug": "eastern-cape",
+                            "title": "Eastern Cape"
                         },
                         {
-                            "amount": 2836581000,
-                            "name": "Social Development",
-                            "percentage_of_total": 0,
-                            "province": "Eastern Cape",
-                            "slug": "social-development",
-                            "url": "2018-19/previews/provincial/eastern-cape/social-development"
+                            "amount": 3781949400,
+                            "children": [
+                                {
+                                    "amount": 297190400,
+                                    "percentage_total": 0.19179385184088227,
+                                    "slug": "economy-and-entreprise-development",
+                                    "title": "ECONOMY AND ENTREPRISE DEVELOPMENT"
+                                },
+                                {
+                                    "amount": 1782730000,
+                                    "percentage_total": 1.1504969658922228,
+                                    "slug": "public-works-and-roads",
+                                    "title": "Public Works And Roads"
+                                },
+                                {
+                                    "amount": 1440478000,
+                                    "percentage_total": 0.9296223031162865,
+                                    "slug": "rural-environment-and-agricultural-development",
+                                    "title": "Rural, Environment And Agricultural Development"
+                                },
+                                {
+                                    "amount": 261551000,
+                                    "percentage_total": 0.16879372194672035,
+                                    "slug": "tourism",
+                                    "title": "Tourism"
+                                }
+                            ],
+                            "percentage": 2.440706842796112,
+                            "slug": "north-west",
+                            "title": "North West"
+                        },
+                        {
+                            "amount": 4947551000,
+                            "children": [
+                                {
+                                    "amount": 1180437000,
+                                    "percentage_total": 0.7618030699696071,
+                                    "slug": "agriculture-rural-development-land-and-environmental-affairs",
+                                    "title": "Agriculture, Rural Development, Land And Environmental Affairs"
+                                },
+                                {
+                                    "amount": 1198058000,
+                                    "percentage_total": 0.7731749025163118,
+                                    "slug": "economic-development-and-tourism",
+                                    "title": "Economic Development And Tourism"
+                                },
+                                {
+                                    "amount": 2569056000,
+                                    "percentage_total": 1.6579578136942836,
+                                    "slug": "public-works-roads-and-transport",
+                                    "title": "Public Works, Roads And Transport"
+                                }
+                            ],
+                            "percentage": 3.1929357861802026,
+                            "slug": "mpumalanga",
+                            "title": "Mpumalanga"
+                        },
+                        {
+                            "amount": 5523765555,
+                            "children": [
+                                {
+                                    "amount": 1665373538,
+                                    "percentage_total": 1.0747601726263631,
+                                    "slug": "limpopo-economic-development-environmental-affairs-and-tourism",
+                                    "title": "LIMPOPO ECONOMIC DEVELOPMENT, ENVIRONMENTAL AFFAIRS AND TOURISM"
+                                },
+                                {
+                                    "amount": 1941038017,
+                                    "percentage_total": 1.2526621245168683,
+                                    "slug": "public-works-roads-infrastructure",
+                                    "title": "PUBLIC WORKS,ROADS & INFRASTRUCTURE"
+                                },
+                                {
+                                    "amount": 1917354000,
+                                    "percentage_total": 1.2373774825920452,
+                                    "slug": "rural-development-and-agrarian-reform",
+                                    "title": "RURAL DEVELOPMENT AND AGRARIAN REFORM"
+                                }
+                            ],
+                            "percentage": 3.5647997797352766,
+                            "slug": "limpopo",
+                            "title": "Limpopo"
+                        },
+                        {
+                            "amount": 12830249000,
+                            "children": [
+                                {
+                                    "amount": 2324108000,
+                                    "percentage_total": 1.4998789510502668,
+                                    "slug": "agriculture-and-rural-development",
+                                    "title": "Agriculture And Rural Development"
+                                },
+                                {
+                                    "amount": 3009296000,
+                                    "percentage_total": 1.9420697006678533,
+                                    "slug": "economic-development-tourism-and-environmental-affairs",
+                                    "title": "Economic Development, Tourism And Environmental Affairs"
+                                },
+                                {
+                                    "amount": 7496845000,
+                                    "percentage_total": 4.8381400583735505,
+                                    "slug": "transport",
+                                    "title": "Transport"
+                                }
+                            ],
+                            "percentage": 8.280088710091672,
+                            "slug": "kwazulu-natal",
+                            "title": "KwaZulu-Natal"
+                        },
+                        {
+                            "amount": 2565348378,
+                            "children": [
+                                {
+                                    "amount": 648908238,
+                                    "percentage_total": 0.4187773577386752,
+                                    "slug": "agriculture-land-reform-and-rural-development",
+                                    "title": "Agriculture, Land Reform And Rural Development"
+                                },
+                                {
+                                    "amount": 314834000,
+                                    "percentage_total": 0.20318026945174653,
+                                    "slug": "economic-development-and-tourism",
+                                    "title": "Economic Development And Tourism"
+                                },
+                                {
+                                    "amount": 157988140,
+                                    "percentage_total": 0.10195872382074445,
+                                    "slug": "environment-and-nature-conservation",
+                                    "title": "Environment And Nature Conservation"
+                                },
+                                {
+                                    "amount": 1443618000,
+                                    "percentage_total": 0.931648723534915,
+                                    "slug": "roads-and-public-works",
+                                    "title": "Roads And Public Works"
+                                }
+                            ],
+                            "percentage": 1.655565074546081,
+                            "slug": "northern-cape",
+                            "title": "Northern Cape"
+                        },
+                        {
+                            "amount": 3318777000,
+                            "children": [
+                                {
+                                    "amount": 810479000,
+                                    "percentage_total": 0.5230481511049698,
+                                    "slug": "agriculture-and-rural-development",
+                                    "title": "Agriculture And Rural Development"
+                                },
+                                {
+                                    "amount": 631931000,
+                                    "percentage_total": 0.4078209813899123,
+                                    "slug": "economic-small-business-development-tourism-and-environmental-affairs",
+                                    "title": "ECONOMIC, SMALL BUSINESS DEVELOPMENT, TOURISM AND ENVIRONMENTAL AFFAIRS"
+                                },
+                                {
+                                    "amount": 1704180000,
+                                    "percentage_total": 1.0998041875854494,
+                                    "slug": "police-roads-and-transport",
+                                    "title": "Police, Roads And Transport"
+                                },
+                                {
+                                    "amount": 172187000,
+                                    "percentage_total": 0.11112205497528181,
+                                    "slug": "public-works-and-infrastructure",
+                                    "title": "Public Works And Infrastructure"
+                                }
+                            ],
+                            "percentage": 2.1417953750556133,
+                            "slug": "free-state",
+                            "title": "Free State"
                         }
                     ],
-                    "notices": [],
-                    "footnotes": [],
-                    "total": 12345
+                    "footnotes": [
+                        "**Source:** Estimates of Provincial Expenditure 2018-19"
+                    ],
+                    "notices": []
+                },
+                "slug": "economic-development",
+                "title": "Economic development"
+            },
+            {
+                "national": {
+                    "data": [
+                        {
+                            "amount": 36030000,
+                            "percentage_total": 0.006752934826785825,
+                            "slug": "centre-for-public-service-innovation",
+                            "title": "Centre for Public Service Innovation"
+                        },
+                        {
+                            "amount": 1513146000,
+                            "percentage_total": 0.2836018962367933,
+                            "slug": "communications",
+                            "title": "Communications"
+                        },
+                        {
+                            "amount": 1303527000,
+                            "percentage_total": 0.24431398490023995,
+                            "slug": "cooperative-governance-and-traditional-affairs",
+                            "title": "Cooperative Governance and Traditional Affairs"
+                        },
+                        {
+                            "amount": 420485000,
+                            "percentage_total": 0.07880954206608486,
+                            "slug": "government-communication-and-information-system",
+                            "title": "Government Communication and Information System"
+                        },
+                        {
+                            "amount": 6552768000,
+                            "percentage_total": 1.2281547388023228,
+                            "slug": "international-relations-and-cooperation",
+                            "title": "International Relations and Cooperation"
+                        },
+                        {
+                            "amount": 168959000,
+                            "percentage_total": 0.03166719720785196,
+                            "slug": "national-school-of-government",
+                            "title": "National School of Government"
+                        },
+                        {
+                            "amount": 17119931000,
+                            "percentage_total": 91.35231557670357,
+                            "slug": "national-treasury",
+                            "title": "National Treasury"
+                        },
+                        {
+                            "amount": 2365855000,
+                            "percentage_total": 0.4434211663787226,
+                            "slug": "parliament",
+                            "title": "Parliament"
+                        },
+                        {
+                            "amount": 927351000,
+                            "percentage_total": 0.17380907201095366,
+                            "slug": "planning-monitoring-and-evaluation",
+                            "title": "Planning, Monitoring and Evaluation"
+                        },
+                        {
+                            "amount": 273914000,
+                            "percentage_total": 0.05133842326239834,
+                            "slug": "public-enterprises",
+                            "title": "Public Enterprises"
+                        },
+                        {
+                            "amount": 956656000,
+                            "percentage_total": 0.17930157145860726,
+                            "slug": "public-service-and-administration",
+                            "title": "Public Service and Administration"
+                        },
+                        {
+                            "amount": 264399000,
+                            "percentage_total": 0.04955507119809451,
+                            "slug": "public-service-commission",
+                            "title": "Public Service Commission"
+                        },
+                        {
+                            "amount": 636341000,
+                            "percentage_total": 0.11926642521819923,
+                            "slug": "public-works",
+                            "title": "Public Works"
+                        },
+                        {
+                            "amount": 2271699000,
+                            "percentage_total": 0.42577394651886014,
+                            "slug": "statistics-south-africa",
+                            "title": "Statistics South Africa"
+                        },
+                        {
+                            "amount": 512322000,
+                            "percentage_total": 0.09602212257364882,
+                            "slug": "the-presidency",
+                            "title": "The Presidency"
+                        },
+                        {
+                            "amount": 153306000,
+                            "percentage_total": 0.028733428436170626,
+                            "slug": "traditional-affairs",
+                            "title": "Traditional Affairs"
+                        },
+                        {
+                            "amount": 230207000,
+                            "percentage_total": 0.043146624137382295,
+                            "slug": "women",
+                            "title": "Women"
+                        }
+                    ],
+                    "footnotes": [
+                        "**Source:** Estimates of National Expenditure 2018-19",
+                        "**Note:** Provincial Equitable Share is excluded"
+                    ],
+                    "notices": []
+                },
+                "provincial": {
+                    "data": [
+                        {
+                            "amount": 6207957603,
+                            "children": [
+                                {
+                                    "amount": 1273825944,
+                                    "percentage_total": 0.23874725452403353,
+                                    "slug": "e-government",
+                                    "title": "E-Government"
+                                },
+                                {
+                                    "amount": 2719200934,
+                                    "percentage_total": 0.5096471464956187,
+                                    "slug": "infrastructure-development",
+                                    "title": "Infrastructure Development"
+                                },
+                                {
+                                    "amount": 702694000,
+                                    "percentage_total": 0.13170265848385895,
+                                    "slug": "office-of-the-premier",
+                                    "title": "Office Of The Premier"
+                                },
+                                {
+                                    "amount": 715823725,
+                                    "percentage_total": 0.13416350159289644,
+                                    "slug": "provincial-legislature",
+                                    "title": "PROVINCIAL LEGISLATURE"
+                                },
+                                {
+                                    "amount": 796413000,
+                                    "percentage_total": 0.14926797347224477,
+                                    "slug": "provincial-treasury",
+                                    "title": "PROVINCIAL TREASURY"
+                                }
+                            ],
+                            "percentage": 1.1635285345686524,
+                            "slug": "gauteng",
+                            "title": "Gauteng"
+                        },
+                        {
+                            "amount": 3807395000,
+                            "children": [
+                                {
+                                    "amount": 1486193000,
+                                    "percentage_total": 0.27855022117749945,
+                                    "slug": "premier",
+                                    "title": "Premier"
+                                },
+                                {
+                                    "amount": 187371000,
+                                    "percentage_total": 0.03511807247931409,
+                                    "slug": "provincial-parliament",
+                                    "title": "Provincial Parliament"
+                                },
+                                {
+                                    "amount": 325390000,
+                                    "percentage_total": 0.060986329816481805,
+                                    "slug": "provincial-treasury",
+                                    "title": "Provincial Treasury"
+                                },
+                                {
+                                    "amount": 1808441000,
+                                    "percentage_total": 0.3389476605908238,
+                                    "slug": "transport-public-works",
+                                    "title": "TRANSPORT & PUBLIC WORKS"
+                                }
+                            ],
+                            "percentage": 0.7136022840641192,
+                            "slug": "western-cape",
+                            "title": "Western Cape"
+                        },
+                        {
+                            "amount": 3758770567,
+                            "children": [
+                                {
+                                    "amount": 973396122,
+                                    "percentage_total": 0.18243909443552772,
+                                    "slug": "office-of-the-premier",
+                                    "title": "Office Of The Premier"
+                                },
+                                {
+                                    "amount": 525999445,
+                                    "percentage_total": 0.0985856222872749,
+                                    "slug": "provincial-legislature",
+                                    "title": "Provincial Legislature"
+                                },
+                                {
+                                    "amount": 591487000,
+                                    "percentage_total": 0.11085964923372375,
+                                    "slug": "provincial-planning-and-treasury",
+                                    "title": "PROVINCIAL PLANNING AND TREASURY"
+                                },
+                                {
+                                    "amount": 1667888000,
+                                    "percentage_total": 0.3126044674542924,
+                                    "slug": "roads-and-public-works",
+                                    "title": "Roads And Public Works"
+                                }
+                            ],
+                            "percentage": 0.7044888334108187,
+                            "slug": "eastern-cape",
+                            "title": "Eastern Cape"
+                        },
+                        {
+                            "amount": 2740191800,
+                            "children": [
+                                {
+                                    "amount": 484084400,
+                                    "percentage_total": 0.09072968092877379,
+                                    "slug": "finance",
+                                    "title": "Finance"
+                                },
+                                {
+                                    "amount": 775381400,
+                                    "percentage_total": 0.1453261187927269,
+                                    "slug": "office-of-the-premier",
+                                    "title": "Office Of The Premier"
+                                },
+                                {
+                                    "amount": 473898000,
+                                    "percentage_total": 0.08882049149442543,
+                                    "slug": "provincial-legislature",
+                                    "title": "Provincial Legislature"
+                                },
+                                {
+                                    "amount": 1006828000,
+                                    "percentage_total": 0.18870507537560693,
+                                    "slug": "public-works-and-roads",
+                                    "title": "Public Works And Roads"
+                                }
+                            ],
+                            "percentage": 0.513581366591533,
+                            "slug": "north-west",
+                            "title": "North West"
+                        },
+                        {
+                            "amount": 1826560000,
+                            "children": [
+                                {
+                                    "amount": 281778000,
+                                    "percentage_total": 0.05281233609830852,
+                                    "slug": "office-of-the-premier",
+                                    "title": "Office Of The Premier"
+                                },
+                                {
+                                    "amount": 346647000,
+                                    "percentage_total": 0.06497043016655081,
+                                    "slug": "provincial-legislature",
+                                    "title": "Provincial Legislature"
+                                },
+                                {
+                                    "amount": 322706000,
+                                    "percentage_total": 0.06048328021684003,
+                                    "slug": "provincial-treasury",
+                                    "title": "PROVINCIAL TREASURY"
+                                },
+                                {
+                                    "amount": 875429000,
+                                    "percentage_total": 0.16407757375737683,
+                                    "slug": "public-works-roads-and-transport",
+                                    "title": "Public Works, Roads And Transport"
+                                }
+                            ],
+                            "percentage": 0.34234362023907616,
+                            "slug": "mpumalanga",
+                            "title": "Mpumalanga"
+                        },
+                        {
+                            "amount": 2675310000,
+                            "children": [
+                                {
+                                    "amount": 611279000,
+                                    "percentage_total": 0.11456917146774387,
+                                    "slug": "premier",
+                                    "title": "Premier"
+                                },
+                                {
+                                    "amount": 253118000,
+                                    "percentage_total": 0.04744072599185052,
+                                    "slug": "provincial-legislature",
+                                    "title": "PROVINCIAL LEGISLATURE"
+                                },
+                                {
+                                    "amount": 347832000,
+                                    "percentage_total": 0.06519252918874734,
+                                    "slug": "provincial-treasury",
+                                    "title": "Provincial Treasury"
+                                },
+                                {
+                                    "amount": 1463081000,
+                                    "percentage_total": 0.2742184468306586,
+                                    "slug": "public-works-and-infrastructure",
+                                    "title": "Public Works And Infrastructure"
+                                }
+                            ],
+                            "percentage": 0.5014208734790004,
+                            "slug": "free-state",
+                            "title": "Free State"
+                        },
+                        {
+                            "amount": 3591183000,
+                            "children": [
+                                {
+                                    "amount": 787137000,
+                                    "percentage_total": 0.14752941606305062,
+                                    "slug": "office-of-the-premier",
+                                    "title": "Office Of The Premier"
+                                },
+                                {
+                                    "amount": 565214000,
+                                    "percentage_total": 0.10593542340235701,
+                                    "slug": "provincial-legislature",
+                                    "title": "Provincial Legislature"
+                                },
+                                {
+                                    "amount": 650900000,
+                                    "percentage_total": 0.12199515067318605,
+                                    "slug": "provincial-treasury",
+                                    "title": "Provincial Treasury"
+                                },
+                                {
+                                    "amount": 1587932000,
+                                    "percentage_total": 0.29761868735408453,
+                                    "slug": "public-works",
+                                    "title": "Public Works"
+                                }
+                            ],
+                            "percentage": 0.6730786774926782,
+                            "slug": "kwazulu-natal",
+                            "title": "KwaZulu-Natal"
+                        },
+                        {
+                            "amount": 899909665,
+                            "children": [
+                                {
+                                    "amount": 248331000,
+                                    "percentage_total": 0.046543520912310586,
+                                    "slug": "office-of-the-premier",
+                                    "title": "Office Of The Premier"
+                                },
+                                {
+                                    "amount": 200280000,
+                                    "percentage_total": 0.03753754613124244,
+                                    "slug": "provincial-legislature",
+                                    "title": "Provincial Legislature"
+                                },
+                                {
+                                    "amount": 302231665,
+                                    "percentage_total": 0.056645871116735115,
+                                    "slug": "provincial-treasury",
+                                    "title": "Provincial Treasury"
+                                },
+                                {
+                                    "amount": 149067000,
+                                    "percentage_total": 0.027938932440313143,
+                                    "slug": "roads-and-public-works",
+                                    "title": "Roads And Public Works"
+                                }
+                            ],
+                            "percentage": 0.16866587060060126,
+                            "slug": "northern-cape",
+                            "title": "Northern Cape"
+                        },
+                        {
+                            "amount": 2045114217,
+                            "children": [
+                                {
+                                    "amount": 420680000,
+                                    "percentage_total": 0.07884609000644631,
+                                    "slug": "office-of-the-premier",
+                                    "title": "Office Of The Premier"
+                                },
+                                {
+                                    "amount": 360927075,
+                                    "percentage_total": 0.0676468780099206,
+                                    "slug": "provincial-legislature",
+                                    "title": "Provincial Legislature"
+                                },
+                                {
+                                    "amount": 472850360,
+                                    "percentage_total": 0.08862413721627017,
+                                    "slug": "provincial-treasury",
+                                    "title": "Provincial Treasury"
+                                },
+                                {
+                                    "amount": 790656782,
+                                    "percentage_total": 0.14818911238418558,
+                                    "slug": "public-works-roads-infrastructure",
+                                    "title": "PUBLIC WORKS,ROADS & INFRASTRUCTURE"
+                                }
+                            ],
+                            "percentage": 0.3833062176168227,
+                            "slug": "limpopo",
+                            "title": "Limpopo"
+                        }
+                    ],
+                    "footnotes": [
+                        "**Source:** Estimates of Provincial Expenditure 2018-19"
+                    ],
+                    "notices": []
                 },
                 "slug": "general-public-services",
                 "title": "General public services"
+            },
+            {
+                "national": {
+                    "data": [
+                        {
+                            "amount": 4714062000,
+                            "percentage_total": 1.9130721255997736,
+                            "slug": "defence-and-military-veterans",
+                            "title": "Defence and Military Veterans"
+                        },
+                        {
+                            "amount": 47077202000,
+                            "percentage_total": 19.104984808733935,
+                            "slug": "health",
+                            "title": "Health"
+                        }
+                    ],
+                    "footnotes": [
+                        "**Source:** Estimates of National Expenditure 2018-19"
+                    ],
+                    "notices": []
+                },
+                "provincial": {
+                    "data": [
+                        {
+                            "amount": 46429326000,
+                            "children": [
+                                {
+                                    "amount": 46429326000,
+                                    "percentage_total": 18.842062192008683,
+                                    "slug": "health",
+                                    "title": "Health"
+                                }
+                            ],
+                            "percentage": 18.842062192008683,
+                            "slug": "gauteng",
+                            "title": "Gauteng"
+                        },
+                        {
+                            "amount": 23063703000,
+                            "children": [
+                                {
+                                    "amount": 23063703000,
+                                    "percentage_total": 9.359768141024,
+                                    "slug": "health",
+                                    "title": "Health"
+                                }
+                            ],
+                            "percentage": 9.359768141024,
+                            "slug": "western-cape",
+                            "title": "Western Cape"
+                        },
+                        {
+                            "amount": 23699560298,
+                            "children": [
+                                {
+                                    "amount": 23699560298,
+                                    "percentage_total": 9.617813298822728,
+                                    "slug": "health",
+                                    "title": "Health"
+                                }
+                            ],
+                            "percentage": 9.617813298822728,
+                            "slug": "eastern-cape",
+                            "title": "Eastern Cape"
+                        },
+                        {
+                            "amount": 11153568000,
+                            "children": [
+                                {
+                                    "amount": 11153568000,
+                                    "percentage_total": 4.526368138938694,
+                                    "slug": "health",
+                                    "title": "Health"
+                                }
+                            ],
+                            "percentage": 4.526368138938694,
+                            "slug": "north-west",
+                            "title": "North West"
+                        },
+                        {
+                            "amount": 13278174000,
+                            "children": [
+                                {
+                                    "amount": 13278174000,
+                                    "percentage_total": 5.38858092198695,
+                                    "slug": "health",
+                                    "title": "Health"
+                                }
+                            ],
+                            "percentage": 5.38858092198695,
+                            "slug": "mpumalanga",
+                            "title": "Mpumalanga"
+                        },
+                        {
+                            "amount": 10403313000,
+                            "children": [
+                                {
+                                    "amount": 10403313000,
+                                    "percentage_total": 4.221897827009861,
+                                    "slug": "health",
+                                    "title": "Health"
+                                }
+                            ],
+                            "percentage": 4.221897827009861,
+                            "slug": "free-state",
+                            "title": "Free State"
+                        },
+                        {
+                            "amount": 42347664000,
+                            "children": [
+                                {
+                                    "amount": 42347664000,
+                                    "percentage_total": 17.185632175110342,
+                                    "slug": "health",
+                                    "title": "Health"
+                                }
+                            ],
+                            "percentage": 17.185632175110342,
+                            "slug": "kwazulu-natal",
+                            "title": "KwaZulu-Natal"
+                        },
+                        {
+                            "amount": 4735195000,
+                            "children": [
+                                {
+                                    "amount": 4735195000,
+                                    "percentage_total": 1.921648371145611,
+                                    "slug": "health",
+                                    "title": "Health"
+                                }
+                            ],
+                            "percentage": 1.921648371145611,
+                            "slug": "northern-cape",
+                            "title": "Northern Cape"
+                        },
+                        {
+                            "amount": 19511420000,
+                            "children": [
+                                {
+                                    "amount": 19511420000,
+                                    "percentage_total": 7.918171999619422,
+                                    "slug": "health",
+                                    "title": "Health"
+                                }
+                            ],
+                            "percentage": 7.918171999619422,
+                            "slug": "limpopo",
+                            "title": "Limpopo"
+                        }
+                    ],
+                    "footnotes": [
+                        "**Source:** Estimates of Provincial Expenditure 2018-19"
+                    ],
+                    "notices": []
+                },
+                "slug": "health",
+                "title": "Health"
+            },
+            {
+                "national": {
+                    "data": [
+                        {
+                            "amount": 4372264000,
+                            "percentage_total": 1.195600749154092,
+                            "slug": "arts-and-culture",
+                            "title": "Arts and Culture"
+                        },
+                        {
+                            "amount": 22722437000,
+                            "percentage_total": 6.213477205357833,
+                            "slug": "basic-education",
+                            "title": "Basic Education"
+                        },
+                        {
+                            "amount": 89950026000,
+                            "percentage_total": 24.596940731856552,
+                            "slug": "higher-education-and-training",
+                            "title": "Higher Education and Training"
+                        },
+                        {
+                            "amount": 1090777000,
+                            "percentage_total": 0.2982742575379833,
+                            "slug": "sport-and-recreation-south-africa",
+                            "title": "Sport and Recreation South Africa"
+                        }
+                    ],
+                    "footnotes": [
+                        "**Source:** Estimates of National Expenditure 2018-19"
+                    ],
+                    "notices": []
+                },
+                "provincial": {
+                    "data": [
+                        {
+                            "amount": 46163191506,
+                            "children": [
+                                {
+                                    "amount": 45220540006,
+                                    "percentage_total": 12.365610015389326,
+                                    "slug": "education",
+                                    "title": "Education"
+                                },
+                                {
+                                    "amount": 942651500,
+                                    "percentage_total": 0.25776916480597434,
+                                    "slug": "sport-arts-culture-and-recreation",
+                                    "title": "Sport, Arts, Culture And Recreation"
+                                }
+                            ],
+                            "percentage": 12.623379180195299,
+                            "slug": "gauteng",
+                            "title": "Gauteng"
+                        },
+                        {
+                            "amount": 22954046000,
+                            "children": [
+                                {
+                                    "amount": 760734000,
+                                    "percentage_total": 0.2080236098064959,
+                                    "slug": "cultural-affairs-sport",
+                                    "title": "CULTURAL AFFAIRS & SPORT"
+                                },
+                                {
+                                    "amount": 22193312000,
+                                    "percentage_total": 6.068787349851359,
+                                    "slug": "education",
+                                    "title": "Education"
+                                }
+                            ],
+                            "percentage": 6.276810959657854,
+                            "slug": "western-cape",
+                            "title": "Western Cape"
+                        },
+                        {
+                            "amount": 35714885499,
+                            "children": [
+                                {
+                                    "amount": 34772125816,
+                                    "percentage_total": 9.508478828197461,
+                                    "slug": "education",
+                                    "title": "Education"
+                                },
+                                {
+                                    "amount": 942759683,
+                                    "percentage_total": 0.2577987475749576,
+                                    "slug": "sport-recreation-arts-and-culture",
+                                    "title": "Sport, Recreation, Arts And Culture"
+                                }
+                            ],
+                            "percentage": 9.766277575772419,
+                            "slug": "eastern-cape",
+                            "title": "Eastern Cape"
+                        },
+                        {
+                            "amount": 16781968400,
+                            "children": [
+                                {
+                                    "amount": 598100400,
+                                    "percentage_total": 0.16355126001297318,
+                                    "slug": "culture-arts-and-traditional-affairs",
+                                    "title": "Culture, Arts And Traditional Affairs"
+                                },
+                                {
+                                    "amount": 16183868000,
+                                    "percentage_total": 4.4254977981683945,
+                                    "slug": "education-and-sports-development",
+                                    "title": "Education And Sports Development"
+                                }
+                            ],
+                            "percentage": 4.589049058181368,
+                            "slug": "north-west",
+                            "title": "North West"
+                        },
+                        {
+                            "amount": 21441894000,
+                            "children": [
+                                {
+                                    "amount": 468461000,
+                                    "percentage_total": 0.12810121313568326,
+                                    "slug": "culture-sport-and-recreation",
+                                    "title": "Culture, Sport And Recreation"
+                                },
+                                {
+                                    "amount": 20973433000,
+                                    "percentage_total": 5.735209998100105,
+                                    "slug": "education",
+                                    "title": "Education"
+                                }
+                            ],
+                            "percentage": 5.863311211235788,
+                            "slug": "mpumalanga",
+                            "title": "Mpumalanga"
+                        },
+                        {
+                            "amount": 31080017326,
+                            "children": [
+                                {
+                                    "amount": 30607752898,
+                                    "percentage_total": 8.369726140684124,
+                                    "slug": "education",
+                                    "title": "Education"
+                                },
+                                {
+                                    "amount": 472264428,
+                                    "percentage_total": 0.12914126500953024,
+                                    "slug": "sport-arts-and-culture",
+                                    "title": "Sport, Arts And Culture"
+                                }
+                            ],
+                            "percentage": 8.498867405693654,
+                            "slug": "limpopo",
+                            "title": "Limpopo"
+                        },
+                        {
+                            "amount": 52318206000,
+                            "children": [
+                                {
+                                    "amount": 962571000,
+                                    "percentage_total": 0.26321617558180466,
+                                    "slug": "arts-and-culture",
+                                    "title": "Arts And Culture"
+                                },
+                                {
+                                    "amount": 50903682000,
+                                    "percentage_total": 13.91967189856369,
+                                    "slug": "education",
+                                    "title": "Education"
+                                },
+                                {
+                                    "amount": 451953000,
+                                    "percentage_total": 0.12358708105970713,
+                                    "slug": "sport-and-recreation",
+                                    "title": "Sport And Recreation"
+                                }
+                            ],
+                            "percentage": 14.3064751552052,
+                            "slug": "kwazulu-natal",
+                            "title": "KwaZulu-Natal"
+                        },
+                        {
+                            "amount": 6800043568,
+                            "children": [
+                                {
+                                    "amount": 6417223000,
+                                    "percentage_total": 1.7547972003266201,
+                                    "slug": "education",
+                                    "title": "Education"
+                                },
+                                {
+                                    "amount": 382820568,
+                                    "percentage_total": 0.10468273596754338,
+                                    "slug": "sport-arts-and-culture",
+                                    "title": "Sport, Arts And Culture"
+                                }
+                            ],
+                            "percentage": 1.8594799362941636,
+                            "slug": "northern-cape",
+                            "title": "Northern Cape"
+                        },
+                        {
+                            "amount": 14306234030,
+                            "children": [
+                                {
+                                    "amount": 13579224000,
+                                    "percentage_total": 3.7132548234350047,
+                                    "slug": "education",
+                                    "title": "Education"
+                                },
+                                {
+                                    "amount": 727010030,
+                                    "percentage_total": 0.19880175042278758,
+                                    "slug": "sport-arts-culture-and-recreation",
+                                    "title": "Sport, Arts, Culture And Recreation"
+                                }
+                            ],
+                            "percentage": 3.9120565738577926,
+                            "slug": "free-state",
+                            "title": "Free State"
+                        }
+                    ],
+                    "footnotes": [
+                        "**Source:** Estimates of Provincial Expenditure 2018-19"
+                    ],
+                    "notices": []
+                },
+                "slug": "learning-and-culture",
+                "title": "Learning and culture"
+            },
+            {
+                "national": {
+                    "data": [
+                        {
+                            "amount": 131219000,
+                            "percentage_total": 0.06537158184388321,
+                            "slug": "civilian-secretariat",
+                            "title": "Civilian Secretariat"
+                        },
+                        {
+                            "amount": 23848510000,
+                            "percentage_total": 11.881014360112996,
+                            "slug": "correctional-services",
+                            "title": "Correctional Services"
+                        },
+                        {
+                            "amount": 43235681000,
+                            "percentage_total": 21.539448243528195,
+                            "slug": "defence-and-military-veterans",
+                            "title": "Defence and Military Veterans"
+                        },
+                        {
+                            "amount": 7915439000,
+                            "percentage_total": 3.943367716708442,
+                            "slug": "home-affairs",
+                            "title": "Home Affairs"
+                        },
+                        {
+                            "amount": 315113000,
+                            "percentage_total": 0.1569851566432572,
+                            "slug": "independent-police-investigative-directorate",
+                            "title": "Independent Police Investigative Directorate"
+                        },
+                        {
+                            "amount": 19264964000,
+                            "percentage_total": 9.597551961571599,
+                            "slug": "justice-and-constitutional-development",
+                            "title": "Justice and Constitutional Development"
+                        },
+                        {
+                            "amount": 627087000,
+                            "percentage_total": 0.3124065047267178,
+                            "slug": "military-veterans",
+                            "title": "Military Veterans"
+                        },
+                        {
+                            "amount": 4763533000,
+                            "percentage_total": 2.373129557270963,
+                            "slug": "national-treasury",
+                            "title": "National Treasury"
+                        },
+                        {
+                            "amount": 2141838000,
+                            "percentage_total": 1.0670355521177506,
+                            "slug": "office-of-the-chief-justice-and-judicial-administration",
+                            "title": "Office of the Chief Justice and Judicial Administration"
+                        },
+                        {
+                            "amount": 91834161000,
+                            "percentage_total": 45.75057249236656,
+                            "slug": "police",
+                            "title": "Police"
+                        }
+                    ],
+                    "footnotes": [
+                        "**Source:** Estimates of National Expenditure 2018-19"
+                    ],
+                    "notices": []
+                },
+                "provincial": {
+                    "data": [
+                        {
+                            "amount": 834678000,
+                            "children": [
+                                {
+                                    "amount": 534031000,
+                                    "percentage_total": 0.2660472280970804,
+                                    "slug": "community-safety",
+                                    "title": "Community Safety"
+                                },
+                                {
+                                    "amount": 300647000,
+                                    "percentage_total": 0.14977838549766387,
+                                    "slug": "roads-and-transport",
+                                    "title": "Roads And Transport"
+                                }
+                            ],
+                            "percentage": 0.41582561359474424,
+                            "slug": "gauteng",
+                            "title": "Gauteng"
+                        },
+                        {
+                            "amount": 1092719000,
+                            "children": [
+                                {
+                                    "amount": 316617000,
+                                    "percentage_total": 0.15773442968369497,
+                                    "slug": "community-safety",
+                                    "title": "Community Safety"
+                                },
+                                {
+                                    "amount": 776102000,
+                                    "percentage_total": 0.3866438199666317,
+                                    "slug": "transport-public-works",
+                                    "title": "TRANSPORT & PUBLIC WORKS"
+                                }
+                            ],
+                            "percentage": 0.5443782496503267,
+                            "slug": "western-cape",
+                            "title": "Western Cape"
+                        },
+                        {
+                            "amount": 443326224,
+                            "children": [
+                                {
+                                    "amount": 101490000,
+                                    "percentage_total": 0.05056098462368794,
+                                    "slug": "safety-and-liaison",
+                                    "title": "Safety And Liaison"
+                                },
+                                {
+                                    "amount": 341836224,
+                                    "percentage_total": 0.17029831575015808,
+                                    "slug": "transport",
+                                    "title": "Transport"
+                                }
+                            ],
+                            "percentage": 0.22085930037384602,
+                            "slug": "eastern-cape",
+                            "title": "Eastern Cape"
+                        },
+                        {
+                            "amount": 630201000,
+                            "children": [
+                                {
+                                    "amount": 630201000,
+                                    "percentage_total": 0.3139578586149646,
+                                    "slug": "community-safety-and-transport-management",
+                                    "title": "Community Safety And Transport Management"
+                                }
+                            ],
+                            "percentage": 0.3139578586149646,
+                            "slug": "north-west",
+                            "title": "North West"
+                        },
+                        {
+                            "amount": 1222822000,
+                            "children": [
+                                {
+                                    "amount": 1222822000,
+                                    "percentage_total": 0.6091938549562255,
+                                    "slug": "community-safety-security-and-liaison",
+                                    "title": "Community Safety, Security And Liaison"
+                                }
+                            ],
+                            "percentage": 0.6091938549562255,
+                            "slug": "mpumalanga",
+                            "title": "Mpumalanga"
+                        },
+                        {
+                            "amount": 726015838,
+                            "children": [
+                                {
+                                    "amount": 109714000,
+                                    "percentage_total": 0.05465807337671985,
+                                    "slug": "safety-security-and-liaison",
+                                    "title": "SAFETY, SECURITY AND LIAISON"
+                                },
+                                {
+                                    "amount": 616301838,
+                                    "percentage_total": 0.3070334787138498,
+                                    "slug": "transport",
+                                    "title": "Transport"
+                                }
+                            ],
+                            "percentage": 0.36169155209056963,
+                            "slug": "limpopo",
+                            "title": "Limpopo"
+                        },
+                        {
+                            "amount": 1145013000,
+                            "children": [
+                                {
+                                    "amount": 224949000,
+                                    "percentage_total": 0.11206663641850406,
+                                    "slug": "community-safety-and-liaison",
+                                    "title": "Community Safety And Liaison"
+                                },
+                                {
+                                    "amount": 920064000,
+                                    "percentage_total": 0.4583637969928941,
+                                    "slug": "transport",
+                                    "title": "Transport"
+                                }
+                            ],
+                            "percentage": 0.5704304334113981,
+                            "slug": "kwazulu-natal",
+                            "title": "KwaZulu-Natal"
+                        },
+                        {
+                            "amount": 118900688,
+                            "children": [
+                                {
+                                    "amount": 118900688,
+                                    "percentage_total": 0.059234760643550266,
+                                    "slug": "transport-safety-and-liaison",
+                                    "title": "Transport, Safety And Liaison"
+                                }
+                            ],
+                            "percentage": 0.059234760643550266,
+                            "slug": "northern-cape",
+                            "title": "Northern Cape"
+                        },
+                        {
+                            "amount": 436674000,
+                            "children": [
+                                {
+                                    "amount": 436674000,
+                                    "percentage_total": 0.2175452497740103,
+                                    "slug": "police-roads-and-transport",
+                                    "title": "Police, Roads And Transport"
+                                }
+                            ],
+                            "percentage": 0.2175452497740103,
+                            "slug": "free-state",
+                            "title": "Free State"
+                        }
+                    ],
+                    "footnotes": [
+                        "**Source:** Estimates of Provincial Expenditure 2018-19"
+                    ],
+                    "notices": []
+                },
+                "slug": "peace-and-security",
+                "title": "Peace and security"
+            },
+            {
+                "national": {
+                    "data": [
+                        {
+                            "amount": 65664000,
+                            "percentage_total": 0.03391719611086838,
+                            "slug": "health",
+                            "title": "Health"
+                        },
+                        {
+                            "amount": 172901587000,
+                            "percentage_total": 89.3082516167058,
+                            "slug": "social-development",
+                            "title": "Social Development"
+                        }
+                    ],
+                    "footnotes": [
+                        "**Source:** Estimates of National Expenditure 2018-19"
+                    ],
+                    "notices": []
+                },
+                "provincial": {
+                    "data": [
+                        {
+                            "amount": 4983495000,
+                            "children": [
+                                {
+                                    "amount": 4983495000,
+                                    "percentage_total": 2.5741072312459186,
+                                    "slug": "social-development",
+                                    "title": "Social Development"
+                                }
+                            ],
+                            "percentage": 2.5741072312459186,
+                            "slug": "gauteng",
+                            "title": "Gauteng"
+                        },
+                        {
+                            "amount": 2241664000,
+                            "children": [
+                                {
+                                    "amount": 2241664000,
+                                    "percentage_total": 1.1578788606035826,
+                                    "slug": "social-development",
+                                    "title": "Social Development"
+                                }
+                            ],
+                            "percentage": 1.1578788606035826,
+                            "slug": "western-cape",
+                            "title": "Western Cape"
+                        },
+                        {
+                            "amount": 2836581000,
+                            "children": [
+                                {
+                                    "amount": 2836581000,
+                                    "percentage_total": 1.4651692565387902,
+                                    "slug": "social-development",
+                                    "title": "Social Development"
+                                }
+                            ],
+                            "percentage": 1.4651692565387902,
+                            "slug": "eastern-cape",
+                            "title": "Eastern Cape"
+                        },
+                        {
+                            "amount": 1608750000,
+                            "children": [
+                                {
+                                    "amount": 1608750000,
+                                    "percentage_total": 0.8309620072392712,
+                                    "slug": "social-development",
+                                    "title": "Social Development"
+                                }
+                            ],
+                            "percentage": 0.8309620072392712,
+                            "slug": "north-west",
+                            "title": "North West"
+                        },
+                        {
+                            "amount": 1551584000,
+                            "children": [
+                                {
+                                    "amount": 1551584000,
+                                    "percentage_total": 0.801434253327327,
+                                    "slug": "social-development",
+                                    "title": "Social Development"
+                                }
+                            ],
+                            "percentage": 0.801434253327327,
+                            "slug": "mpumalanga",
+                            "title": "Mpumalanga"
+                        },
+                        {
+                            "amount": 1266057000,
+                            "children": [
+                                {
+                                    "amount": 1266057000,
+                                    "percentage_total": 0.6539519912971747,
+                                    "slug": "social-development",
+                                    "title": "Social Development"
+                                }
+                            ],
+                            "percentage": 0.6539519912971747,
+                            "slug": "free-state",
+                            "title": "Free State"
+                        },
+                        {
+                            "amount": 3287882000,
+                            "children": [
+                                {
+                                    "amount": 3287882000,
+                                    "percentage_total": 1.698278182617479,
+                                    "slug": "social-development",
+                                    "title": "Social Development"
+                                }
+                            ],
+                            "percentage": 1.698278182617479,
+                            "slug": "kwazulu-natal",
+                            "title": "KwaZulu-Natal"
+                        },
+                        {
+                            "amount": 870916000,
+                            "children": [
+                                {
+                                    "amount": 870916000,
+                                    "percentage_total": 0.4498511934712025,
+                                    "slug": "social-development",
+                                    "title": "Social Development"
+                                }
+                            ],
+                            "percentage": 0.4498511934712025,
+                            "slug": "northern-cape",
+                            "title": "Northern Cape"
+                        },
+                        {
+                            "amount": 1986729065,
+                            "children": [
+                                {
+                                    "amount": 1986729065,
+                                    "percentage_total": 1.0261982108425798,
+                                    "slug": "social-development",
+                                    "title": "Social Development"
+                                }
+                            ],
+                            "percentage": 1.0261982108425798,
+                            "slug": "limpopo",
+                            "title": "Limpopo"
+                        }
+                    ],
+                    "footnotes": [
+                        "**Source:** Estimates of Provincial Expenditure 2018-19"
+                    ],
+                    "notices": []
+                },
+                "slug": "social-development",
+                "title": "Social development"
             }
         ]
     }
