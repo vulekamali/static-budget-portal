@@ -36,12 +36,9 @@ class Preview extends Component {
 
   render() {
     const { state, events, props } = this;
-    const selectedkey = props.items.findIndex(({ id }) => id === state.selected);
-    const selectedObject = props.items[selectedkey];
 
     const passedProps = {
       ...props,
-      ...selectedObject,
       eventHandler: events.eventHandler,
       selected: state.selected,
       government: props.government,
