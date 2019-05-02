@@ -6,10 +6,13 @@ import {
   SelectPreview
 } from './styled';
 
+const callMenuItems = departmentNames => (
+  departmentNames.map(({ id: idVal, name}) => {
+    const selectedKey = departmentNames.findIndex(({ id }) => id === idVal);
 
-const callMenuItems = ({ id, name }) => {
-  return <MenuItem key={id} value={id}>{name}</MenuItem>
-};
+    return <MenuItem key={selectedKey} value={selectedKey}>{name}</MenuItem>
+  })
+)
 
 class CustomizedSelect extends Component {
   constructor(props) {
@@ -35,10 +38,11 @@ class CustomizedSelect extends Component {
           value={selected}
           onChange={eventHandler}
           displayEmpty
-          name="budgetValue"
+          name={this.state.budgetValue}
           classes={{ icon: 'icon', selectMenu: 'selectMenu'}}
         >
-        {departmentNames.map(callMenuItems)}
+        {/* {departmentNames.map(callMenuItems)} */}
+        {callMenuItems(departmentNames)}
         </SelectPreview>
       </CustomizedForm>
     );
