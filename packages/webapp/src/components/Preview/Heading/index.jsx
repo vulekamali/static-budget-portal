@@ -38,7 +38,18 @@ const callDetailedAnalysisButton = (url, hasButton) => {
   }
 };
 
-const Heading = ({ government, departmentNames, selected, eventHandler, year, sphere, hasButton }) => {
+const Heading = (props) => {
+
+  const {
+    government,
+    departmentNames,
+    selected,
+    eventHandler,
+    year,
+    sphere,
+    hasButton
+  } = props;
+
   const provinceFolder = government === 'south-africa' ? '' : `${government}/`;
   const url = `/${year}/${sphere}/${provinceFolder}departments/${selected}`;
 

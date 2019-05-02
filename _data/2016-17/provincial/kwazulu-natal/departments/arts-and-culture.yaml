@@ -3,8 +3,415 @@
 #########################################
 
 adjusted_budget_summary: null
-budget_actual: null
-budget_actual_programmes: null
+budget_actual:
+  dataset_detail_page: /datasets/budgeted-and-actual-provincial-expenditure/budgeted-and-actual-provincial-expenditure
+  expenditure:
+    base_financial_year: 2018-19
+    nominal:
+    - amount: 783914000
+      financial_year: 2015-16
+      phase: Main appropriation
+    - amount: 786472000
+      financial_year: 2016-17
+      phase: Main appropriation
+    - amount: null
+      financial_year: 2013-14
+      phase: Main appropriation
+    - amount: null
+      financial_year: 2013-14
+      phase: Adjusted appropriation
+    - amount: null
+      financial_year: 2013-14
+      phase: Final Appropriation
+    - amount: null
+      financial_year: 2013-14
+      phase: Audit Outcome
+    - amount: null
+      financial_year: 2014-15
+      phase: Main appropriation
+    - amount: null
+      financial_year: 2014-15
+      phase: Adjusted appropriation
+    - amount: null
+      financial_year: 2014-15
+      phase: Final Appropriation
+    - amount: null
+      financial_year: 2014-15
+      phase: Audit Outcome
+    - amount: null
+      financial_year: 2015-16
+      phase: Adjusted appropriation
+    - amount: null
+      financial_year: 2015-16
+      phase: Final Appropriation
+    - amount: null
+      financial_year: 2015-16
+      phase: Audit Outcome
+    - amount: null
+      financial_year: 2016-17
+      phase: Adjusted appropriation
+    - amount: null
+      financial_year: 2016-17
+      phase: Final Appropriation
+    - amount: null
+      financial_year: 2016-17
+      phase: Audit Outcome
+    real:
+    - amount: 915406674
+      financial_year: 2015-16
+      phase: Main appropriation
+    - amount: 864003515
+      financial_year: 2016-17
+      phase: Main appropriation
+    - amount: null
+      financial_year: 2013-14
+      phase: Main appropriation
+    - amount: null
+      financial_year: 2013-14
+      phase: Adjusted appropriation
+    - amount: null
+      financial_year: 2013-14
+      phase: Final Appropriation
+    - amount: null
+      financial_year: 2013-14
+      phase: Audit Outcome
+    - amount: null
+      financial_year: 2014-15
+      phase: Main appropriation
+    - amount: null
+      financial_year: 2014-15
+      phase: Adjusted appropriation
+    - amount: null
+      financial_year: 2014-15
+      phase: Final Appropriation
+    - amount: null
+      financial_year: 2014-15
+      phase: Audit Outcome
+    - amount: null
+      financial_year: 2015-16
+      phase: Adjusted appropriation
+    - amount: null
+      financial_year: 2015-16
+      phase: Final Appropriation
+    - amount: null
+      financial_year: 2015-16
+      phase: Audit Outcome
+    - amount: null
+      financial_year: 2016-17
+      phase: Adjusted appropriation
+    - amount: null
+      financial_year: 2016-17
+      phase: Final Appropriation
+    - amount: null
+      financial_year: 2016-17
+      phase: Audit Outcome
+  notices:
+  - Please note that the data for 2013 and 2014 has not been published on vulekamali.
+budget_actual_programmes:
+  dataset_detail_page: /datasets/budgeted-and-actual-provincial-expenditure/budgeted-and-actual-provincial-expenditure
+  notices:
+  - One or more programmes did not exist for some years displayed.
+  programmes:
+  - items:
+    - amount: 113504000
+      financial_year: 2015-16
+      phase: Main appropriation
+    - amount: null
+      financial_year: 2013-14
+      phase: Main appropriation
+    - amount: null
+      financial_year: 2013-14
+      phase: Adjusted appropriation
+    - amount: null
+      financial_year: 2013-14
+      phase: Final Appropriation
+    - amount: null
+      financial_year: 2013-14
+      phase: Audit Outcome
+    - amount: null
+      financial_year: 2014-15
+      phase: Main appropriation
+    - amount: null
+      financial_year: 2014-15
+      phase: Adjusted appropriation
+    - amount: null
+      financial_year: 2014-15
+      phase: Final Appropriation
+    - amount: null
+      financial_year: 2014-15
+      phase: Audit Outcome
+    - amount: null
+      financial_year: 2015-16
+      phase: Adjusted appropriation
+    - amount: null
+      financial_year: 2015-16
+      phase: Final Appropriation
+    - amount: null
+      financial_year: 2015-16
+      phase: Audit Outcome
+    - amount: null
+      financial_year: 2016-17
+      phase: Main appropriation
+    - amount: null
+      financial_year: 2016-17
+      phase: Adjusted appropriation
+    - amount: null
+      financial_year: 2016-17
+      phase: Final Appropriation
+    - amount: null
+      financial_year: 2016-17
+      phase: Audit Outcome
+    name: Administration
+  - items:
+    - amount: 134546000
+      financial_year: 2016-17
+      phase: Main appropriation
+    - amount: null
+      financial_year: 2013-14
+      phase: Main appropriation
+    - amount: null
+      financial_year: 2013-14
+      phase: Adjusted appropriation
+    - amount: null
+      financial_year: 2013-14
+      phase: Final Appropriation
+    - amount: null
+      financial_year: 2013-14
+      phase: Audit Outcome
+    - amount: null
+      financial_year: 2014-15
+      phase: Main appropriation
+    - amount: null
+      financial_year: 2014-15
+      phase: Adjusted appropriation
+    - amount: null
+      financial_year: 2014-15
+      phase: Final Appropriation
+    - amount: null
+      financial_year: 2014-15
+      phase: Audit Outcome
+    - amount: null
+      financial_year: 2015-16
+      phase: Main appropriation
+    - amount: null
+      financial_year: 2015-16
+      phase: Adjusted appropriation
+    - amount: null
+      financial_year: 2015-16
+      phase: Final Appropriation
+    - amount: null
+      financial_year: 2015-16
+      phase: Audit Outcome
+    - amount: null
+      financial_year: 2016-17
+      phase: Adjusted appropriation
+    - amount: null
+      financial_year: 2016-17
+      phase: Final Appropriation
+    - amount: null
+      financial_year: 2016-17
+      phase: Audit Outcome
+    name: 1. Administration
+  - items:
+    - amount: 198740000
+      financial_year: 2015-16
+      phase: Main appropriation
+    - amount: null
+      financial_year: 2013-14
+      phase: Main appropriation
+    - amount: null
+      financial_year: 2013-14
+      phase: Adjusted appropriation
+    - amount: null
+      financial_year: 2013-14
+      phase: Final Appropriation
+    - amount: null
+      financial_year: 2013-14
+      phase: Audit Outcome
+    - amount: null
+      financial_year: 2014-15
+      phase: Main appropriation
+    - amount: null
+      financial_year: 2014-15
+      phase: Adjusted appropriation
+    - amount: null
+      financial_year: 2014-15
+      phase: Final Appropriation
+    - amount: null
+      financial_year: 2014-15
+      phase: Audit Outcome
+    - amount: null
+      financial_year: 2015-16
+      phase: Adjusted appropriation
+    - amount: null
+      financial_year: 2015-16
+      phase: Final Appropriation
+    - amount: null
+      financial_year: 2015-16
+      phase: Audit Outcome
+    - amount: null
+      financial_year: 2016-17
+      phase: Main appropriation
+    - amount: null
+      financial_year: 2016-17
+      phase: Adjusted appropriation
+    - amount: null
+      financial_year: 2016-17
+      phase: Final Appropriation
+    - amount: null
+      financial_year: 2016-17
+      phase: Audit Outcome
+    name: Cultural Affairs
+  - items:
+    - amount: 205351000
+      financial_year: 2016-17
+      phase: Main appropriation
+    - amount: null
+      financial_year: 2013-14
+      phase: Main appropriation
+    - amount: null
+      financial_year: 2013-14
+      phase: Adjusted appropriation
+    - amount: null
+      financial_year: 2013-14
+      phase: Final Appropriation
+    - amount: null
+      financial_year: 2013-14
+      phase: Audit Outcome
+    - amount: null
+      financial_year: 2014-15
+      phase: Main appropriation
+    - amount: null
+      financial_year: 2014-15
+      phase: Adjusted appropriation
+    - amount: null
+      financial_year: 2014-15
+      phase: Final Appropriation
+    - amount: null
+      financial_year: 2014-15
+      phase: Audit Outcome
+    - amount: null
+      financial_year: 2015-16
+      phase: Main appropriation
+    - amount: null
+      financial_year: 2015-16
+      phase: Adjusted appropriation
+    - amount: null
+      financial_year: 2015-16
+      phase: Final Appropriation
+    - amount: null
+      financial_year: 2015-16
+      phase: Audit Outcome
+    - amount: null
+      financial_year: 2016-17
+      phase: Adjusted appropriation
+    - amount: null
+      financial_year: 2016-17
+      phase: Final Appropriation
+    - amount: null
+      financial_year: 2016-17
+      phase: Audit Outcome
+    name: 2. Cultural Affairs
+  - items:
+    - amount: 446575000
+      financial_year: 2016-17
+      phase: Main appropriation
+    - amount: null
+      financial_year: 2013-14
+      phase: Main appropriation
+    - amount: null
+      financial_year: 2013-14
+      phase: Adjusted appropriation
+    - amount: null
+      financial_year: 2013-14
+      phase: Final Appropriation
+    - amount: null
+      financial_year: 2013-14
+      phase: Audit Outcome
+    - amount: null
+      financial_year: 2014-15
+      phase: Main appropriation
+    - amount: null
+      financial_year: 2014-15
+      phase: Adjusted appropriation
+    - amount: null
+      financial_year: 2014-15
+      phase: Final Appropriation
+    - amount: null
+      financial_year: 2014-15
+      phase: Audit Outcome
+    - amount: null
+      financial_year: 2015-16
+      phase: Main appropriation
+    - amount: null
+      financial_year: 2015-16
+      phase: Adjusted appropriation
+    - amount: null
+      financial_year: 2015-16
+      phase: Final Appropriation
+    - amount: null
+      financial_year: 2015-16
+      phase: Audit Outcome
+    - amount: null
+      financial_year: 2016-17
+      phase: Adjusted appropriation
+    - amount: null
+      financial_year: 2016-17
+      phase: Final Appropriation
+    - amount: null
+      financial_year: 2016-17
+      phase: Audit Outcome
+    name: 3. Library and Archive Services
+  - items:
+    - amount: 471670000
+      financial_year: 2015-16
+      phase: Main appropriation
+    - amount: null
+      financial_year: 2013-14
+      phase: Main appropriation
+    - amount: null
+      financial_year: 2013-14
+      phase: Adjusted appropriation
+    - amount: null
+      financial_year: 2013-14
+      phase: Final Appropriation
+    - amount: null
+      financial_year: 2013-14
+      phase: Audit Outcome
+    - amount: null
+      financial_year: 2014-15
+      phase: Main appropriation
+    - amount: null
+      financial_year: 2014-15
+      phase: Adjusted appropriation
+    - amount: null
+      financial_year: 2014-15
+      phase: Final Appropriation
+    - amount: null
+      financial_year: 2014-15
+      phase: Audit Outcome
+    - amount: null
+      financial_year: 2015-16
+      phase: Adjusted appropriation
+    - amount: null
+      financial_year: 2015-16
+      phase: Final Appropriation
+    - amount: null
+      financial_year: 2015-16
+      phase: Audit Outcome
+    - amount: null
+      financial_year: 2016-17
+      phase: Main appropriation
+    - amount: null
+      financial_year: 2016-17
+      phase: Adjusted appropriation
+    - amount: null
+      financial_year: 2016-17
+      phase: Final Appropriation
+    - amount: null
+      financial_year: 2016-17
+      phase: Audit Outcome
+    name: Library and Archive Services
 contributed_datasets:
 - contributor: International Budget Partnership
   name: How Does Civil Society Use Budget Information?

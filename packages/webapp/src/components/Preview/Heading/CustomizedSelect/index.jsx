@@ -8,7 +8,7 @@ import {
 
 
 const callMenuItems = ({ id, name }) => (
-  <MenuItem value={id}>{name}</MenuItem>
+  <MenuItem key={id} value={id}>{name}</MenuItem>
 );
 
 class CustomizedSelect extends Component {
@@ -35,7 +35,7 @@ class CustomizedSelect extends Component {
           value={selected}
           onChange={eventHandler}
           displayEmpty
-          name="budgetValue"
+          name={this.state.budgetValue}
           classes={{ icon: 'icon', selectMenu: 'selectMenu'}}
         >
         {departmentNames.map(callMenuItems)}

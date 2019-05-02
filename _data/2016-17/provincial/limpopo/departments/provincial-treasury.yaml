@@ -3,8 +3,365 @@
 #########################################
 
 adjusted_budget_summary: null
-budget_actual: null
-budget_actual_programmes: null
+budget_actual:
+  dataset_detail_page: /datasets/budgeted-and-actual-provincial-expenditure/budgeted-and-actual-provincial-expenditure
+  expenditure:
+    base_financial_year: 2018-19
+    nominal:
+    - amount: 385180000
+      financial_year: 2015-16
+      phase: Main appropriation
+    - amount: 412604000
+      financial_year: 2016-17
+      phase: Main appropriation
+    - amount: null
+      financial_year: 2013-14
+      phase: Main appropriation
+    - amount: null
+      financial_year: 2013-14
+      phase: Adjusted appropriation
+    - amount: null
+      financial_year: 2013-14
+      phase: Final Appropriation
+    - amount: null
+      financial_year: 2013-14
+      phase: Audit Outcome
+    - amount: null
+      financial_year: 2014-15
+      phase: Main appropriation
+    - amount: null
+      financial_year: 2014-15
+      phase: Adjusted appropriation
+    - amount: null
+      financial_year: 2014-15
+      phase: Final Appropriation
+    - amount: null
+      financial_year: 2014-15
+      phase: Audit Outcome
+    - amount: null
+      financial_year: 2015-16
+      phase: Adjusted appropriation
+    - amount: null
+      financial_year: 2015-16
+      phase: Final Appropriation
+    - amount: null
+      financial_year: 2015-16
+      phase: Audit Outcome
+    - amount: null
+      financial_year: 2016-17
+      phase: Adjusted appropriation
+    - amount: null
+      financial_year: 2016-17
+      phase: Final Appropriation
+    - amount: null
+      financial_year: 2016-17
+      phase: Audit Outcome
+    real:
+    - amount: 449789572
+      financial_year: 2015-16
+      phase: Main appropriation
+    - amount: 453279082
+      financial_year: 2016-17
+      phase: Main appropriation
+    - amount: null
+      financial_year: 2013-14
+      phase: Main appropriation
+    - amount: null
+      financial_year: 2013-14
+      phase: Adjusted appropriation
+    - amount: null
+      financial_year: 2013-14
+      phase: Final Appropriation
+    - amount: null
+      financial_year: 2013-14
+      phase: Audit Outcome
+    - amount: null
+      financial_year: 2014-15
+      phase: Main appropriation
+    - amount: null
+      financial_year: 2014-15
+      phase: Adjusted appropriation
+    - amount: null
+      financial_year: 2014-15
+      phase: Final Appropriation
+    - amount: null
+      financial_year: 2014-15
+      phase: Audit Outcome
+    - amount: null
+      financial_year: 2015-16
+      phase: Adjusted appropriation
+    - amount: null
+      financial_year: 2015-16
+      phase: Final Appropriation
+    - amount: null
+      financial_year: 2015-16
+      phase: Audit Outcome
+    - amount: null
+      financial_year: 2016-17
+      phase: Adjusted appropriation
+    - amount: null
+      financial_year: 2016-17
+      phase: Final Appropriation
+    - amount: null
+      financial_year: 2016-17
+      phase: Audit Outcome
+  notices:
+  - Please note that the data for 2013 and 2014 has not been published on vulekamali.
+budget_actual_programmes:
+  dataset_detail_page: /datasets/budgeted-and-actual-provincial-expenditure/budgeted-and-actual-provincial-expenditure
+  notices:
+  - One or more programmes did not exist for some years displayed.
+  programmes:
+  - items:
+    - amount: 62327000
+      financial_year: 2015-16
+      phase: Main appropriation
+    - amount: 77371000
+      financial_year: 2016-17
+      phase: Main appropriation
+    - amount: null
+      financial_year: 2013-14
+      phase: Main appropriation
+    - amount: null
+      financial_year: 2013-14
+      phase: Adjusted appropriation
+    - amount: null
+      financial_year: 2013-14
+      phase: Final Appropriation
+    - amount: null
+      financial_year: 2013-14
+      phase: Audit Outcome
+    - amount: null
+      financial_year: 2014-15
+      phase: Main appropriation
+    - amount: null
+      financial_year: 2014-15
+      phase: Adjusted appropriation
+    - amount: null
+      financial_year: 2014-15
+      phase: Final Appropriation
+    - amount: null
+      financial_year: 2014-15
+      phase: Audit Outcome
+    - amount: null
+      financial_year: 2015-16
+      phase: Adjusted appropriation
+    - amount: null
+      financial_year: 2015-16
+      phase: Final Appropriation
+    - amount: null
+      financial_year: 2015-16
+      phase: Audit Outcome
+    - amount: null
+      financial_year: 2016-17
+      phase: Adjusted appropriation
+    - amount: null
+      financial_year: 2016-17
+      phase: Final Appropriation
+    - amount: null
+      financial_year: 2016-17
+      phase: Audit Outcome
+    name: Sustainable Resource Management
+  - items:
+    - amount: 79340000
+      financial_year: 2016-17
+      phase: Main appropriation
+    - amount: null
+      financial_year: 2013-14
+      phase: Main appropriation
+    - amount: null
+      financial_year: 2013-14
+      phase: Adjusted appropriation
+    - amount: null
+      financial_year: 2013-14
+      phase: Final Appropriation
+    - amount: null
+      financial_year: 2013-14
+      phase: Audit Outcome
+    - amount: null
+      financial_year: 2014-15
+      phase: Main appropriation
+    - amount: null
+      financial_year: 2014-15
+      phase: Adjusted appropriation
+    - amount: null
+      financial_year: 2014-15
+      phase: Final Appropriation
+    - amount: null
+      financial_year: 2014-15
+      phase: Audit Outcome
+    - amount: null
+      financial_year: 2015-16
+      phase: Main appropriation
+    - amount: null
+      financial_year: 2015-16
+      phase: Adjusted appropriation
+    - amount: null
+      financial_year: 2015-16
+      phase: Final Appropriation
+    - amount: null
+      financial_year: 2015-16
+      phase: Audit Outcome
+    - amount: null
+      financial_year: 2016-17
+      phase: Adjusted appropriation
+    - amount: null
+      financial_year: 2016-17
+      phase: Final Appropriation
+    - amount: null
+      financial_year: 2016-17
+      phase: Audit Outcome
+    name: Assets, Liabilities and Management
+  - items:
+    - amount: 79380000
+      financial_year: 2015-16
+      phase: Main appropriation
+    - amount: null
+      financial_year: 2013-14
+      phase: Main appropriation
+    - amount: null
+      financial_year: 2013-14
+      phase: Adjusted appropriation
+    - amount: null
+      financial_year: 2013-14
+      phase: Final Appropriation
+    - amount: null
+      financial_year: 2013-14
+      phase: Audit Outcome
+    - amount: null
+      financial_year: 2014-15
+      phase: Main appropriation
+    - amount: null
+      financial_year: 2014-15
+      phase: Adjusted appropriation
+    - amount: null
+      financial_year: 2014-15
+      phase: Final Appropriation
+    - amount: null
+      financial_year: 2014-15
+      phase: Audit Outcome
+    - amount: null
+      financial_year: 2015-16
+      phase: Adjusted appropriation
+    - amount: null
+      financial_year: 2015-16
+      phase: Final Appropriation
+    - amount: null
+      financial_year: 2015-16
+      phase: Audit Outcome
+    - amount: null
+      financial_year: 2016-17
+      phase: Main appropriation
+    - amount: null
+      financial_year: 2016-17
+      phase: Adjusted appropriation
+    - amount: null
+      financial_year: 2016-17
+      phase: Final Appropriation
+    - amount: null
+      financial_year: 2016-17
+      phase: Audit Outcome
+    name: Assets, Liabilities & SCM
+  - items:
+    - amount: 83239000
+      financial_year: 2015-16
+      phase: Main appropriation
+    - amount: 89568000
+      financial_year: 2016-17
+      phase: Main appropriation
+    - amount: null
+      financial_year: 2013-14
+      phase: Main appropriation
+    - amount: null
+      financial_year: 2013-14
+      phase: Adjusted appropriation
+    - amount: null
+      financial_year: 2013-14
+      phase: Final Appropriation
+    - amount: null
+      financial_year: 2013-14
+      phase: Audit Outcome
+    - amount: null
+      financial_year: 2014-15
+      phase: Main appropriation
+    - amount: null
+      financial_year: 2014-15
+      phase: Adjusted appropriation
+    - amount: null
+      financial_year: 2014-15
+      phase: Final Appropriation
+    - amount: null
+      financial_year: 2014-15
+      phase: Audit Outcome
+    - amount: null
+      financial_year: 2015-16
+      phase: Adjusted appropriation
+    - amount: null
+      financial_year: 2015-16
+      phase: Final Appropriation
+    - amount: null
+      financial_year: 2015-16
+      phase: Audit Outcome
+    - amount: null
+      financial_year: 2016-17
+      phase: Adjusted appropriation
+    - amount: null
+      financial_year: 2016-17
+      phase: Final Appropriation
+    - amount: null
+      financial_year: 2016-17
+      phase: Audit Outcome
+    name: Financial Governance
+  - items:
+    - amount: 160234000
+      financial_year: 2015-16
+      phase: Main appropriation
+    - amount: 166325000
+      financial_year: 2016-17
+      phase: Main appropriation
+    - amount: null
+      financial_year: 2013-14
+      phase: Main appropriation
+    - amount: null
+      financial_year: 2013-14
+      phase: Adjusted appropriation
+    - amount: null
+      financial_year: 2013-14
+      phase: Final Appropriation
+    - amount: null
+      financial_year: 2013-14
+      phase: Audit Outcome
+    - amount: null
+      financial_year: 2014-15
+      phase: Main appropriation
+    - amount: null
+      financial_year: 2014-15
+      phase: Adjusted appropriation
+    - amount: null
+      financial_year: 2014-15
+      phase: Final Appropriation
+    - amount: null
+      financial_year: 2014-15
+      phase: Audit Outcome
+    - amount: null
+      financial_year: 2015-16
+      phase: Adjusted appropriation
+    - amount: null
+      financial_year: 2015-16
+      phase: Final Appropriation
+    - amount: null
+      financial_year: 2015-16
+      phase: Audit Outcome
+    - amount: null
+      financial_year: 2016-17
+      phase: Adjusted appropriation
+    - amount: null
+      financial_year: 2016-17
+      phase: Final Appropriation
+    - amount: null
+      financial_year: 2016-17
+      phase: Audit Outcome
+    name: Administration
 contributed_datasets:
 - contributor: International Budget Partnership
   name: How Does Civil Society Use Budget Information?

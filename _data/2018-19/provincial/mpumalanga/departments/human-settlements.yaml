@@ -3,8 +3,414 @@
 #########################################
 
 adjusted_budget_summary: null
-budget_actual: null
-budget_actual_programmes: null
+budget_actual:
+  dataset_detail_page: /datasets/budgeted-and-actual-provincial-expenditure/budgeted-and-actual-provincial-expenditure
+  expenditure:
+    base_financial_year: 2018-19
+    nominal:
+    - amount: 1677477000
+      financial_year: 2015-16
+      phase: Main appropriation
+    - amount: 1822108000
+      financial_year: 2016-17
+      phase: Main appropriation
+    - amount: 1646082000
+      financial_year: 2017-18
+      phase: Main appropriation
+    - amount: 1774080000
+      financial_year: 2018-19
+      phase: Main appropriation
+    - amount: null
+      financial_year: 2015-16
+      phase: Adjusted appropriation
+    - amount: null
+      financial_year: 2015-16
+      phase: Final Appropriation
+    - amount: null
+      financial_year: 2015-16
+      phase: Audit Outcome
+    - amount: null
+      financial_year: 2016-17
+      phase: Adjusted appropriation
+    - amount: null
+      financial_year: 2016-17
+      phase: Final Appropriation
+    - amount: null
+      financial_year: 2016-17
+      phase: Audit Outcome
+    - amount: null
+      financial_year: 2017-18
+      phase: Adjusted appropriation
+    - amount: null
+      financial_year: 2017-18
+      phase: Final Appropriation
+    - amount: null
+      financial_year: 2017-18
+      phase: Audit Outcome
+    - amount: null
+      financial_year: 2018-19
+      phase: Adjusted appropriation
+    - amount: null
+      financial_year: 2018-19
+      phase: Final Appropriation
+    - amount: null
+      financial_year: 2018-19
+      phase: Audit Outcome
+    real:
+    - amount: 1958854723
+      financial_year: 2015-16
+      phase: Main appropriation
+    - amount: 2001733967
+      financial_year: 2016-17
+      phase: Main appropriation
+    - amount: 1726940709
+      financial_year: 2017-18
+      phase: Main appropriation
+    - amount: 1774080000
+      financial_year: 2018-19
+      phase: Main appropriation
+    - amount: null
+      financial_year: 2015-16
+      phase: Adjusted appropriation
+    - amount: null
+      financial_year: 2015-16
+      phase: Final Appropriation
+    - amount: null
+      financial_year: 2015-16
+      phase: Audit Outcome
+    - amount: null
+      financial_year: 2016-17
+      phase: Adjusted appropriation
+    - amount: null
+      financial_year: 2016-17
+      phase: Final Appropriation
+    - amount: null
+      financial_year: 2016-17
+      phase: Audit Outcome
+    - amount: null
+      financial_year: 2017-18
+      phase: Adjusted appropriation
+    - amount: null
+      financial_year: 2017-18
+      phase: Final Appropriation
+    - amount: null
+      financial_year: 2017-18
+      phase: Audit Outcome
+    - amount: null
+      financial_year: 2018-19
+      phase: Adjusted appropriation
+    - amount: null
+      financial_year: 2018-19
+      phase: Final Appropriation
+    - amount: null
+      financial_year: 2018-19
+      phase: Audit Outcome
+  notices: []
+budget_actual_programmes:
+  dataset_detail_page: /datasets/budgeted-and-actual-provincial-expenditure/budgeted-and-actual-provincial-expenditure
+  notices:
+  - One or more programmes did not exist for some years displayed.
+  programmes:
+  - items:
+    - amount: 3819000
+      financial_year: 2015-16
+      phase: Main appropriation
+    - amount: 3256000
+      financial_year: 2016-17
+      phase: Main appropriation
+    - amount: 3691000
+      financial_year: 2017-18
+      phase: Main appropriation
+    - amount: 69352000
+      financial_year: 2018-19
+      phase: Main appropriation
+    - amount: null
+      financial_year: 2015-16
+      phase: Adjusted appropriation
+    - amount: null
+      financial_year: 2015-16
+      phase: Final Appropriation
+    - amount: null
+      financial_year: 2015-16
+      phase: Audit Outcome
+    - amount: null
+      financial_year: 2016-17
+      phase: Adjusted appropriation
+    - amount: null
+      financial_year: 2016-17
+      phase: Final Appropriation
+    - amount: null
+      financial_year: 2016-17
+      phase: Audit Outcome
+    - amount: null
+      financial_year: 2017-18
+      phase: Adjusted appropriation
+    - amount: null
+      financial_year: 2017-18
+      phase: Final Appropriation
+    - amount: null
+      financial_year: 2017-18
+      phase: Audit Outcome
+    - amount: null
+      financial_year: 2018-19
+      phase: Adjusted appropriation
+    - amount: null
+      financial_year: 2018-19
+      phase: Final Appropriation
+    - amount: null
+      financial_year: 2018-19
+      phase: Audit Outcome
+    name: Housing Asset Management
+  - items:
+    - amount: 38265000
+      financial_year: 2016-17
+      phase: Main appropriation
+    - amount: 40015000
+      financial_year: 2017-18
+      phase: Main appropriation
+    - amount: null
+      financial_year: 2015-16
+      phase: Main appropriation
+    - amount: null
+      financial_year: 2015-16
+      phase: Adjusted appropriation
+    - amount: null
+      financial_year: 2015-16
+      phase: Final Appropriation
+    - amount: null
+      financial_year: 2015-16
+      phase: Audit Outcome
+    - amount: null
+      financial_year: 2016-17
+      phase: Adjusted appropriation
+    - amount: null
+      financial_year: 2016-17
+      phase: Final Appropriation
+    - amount: null
+      financial_year: 2016-17
+      phase: Audit Outcome
+    - amount: null
+      financial_year: 2017-18
+      phase: Adjusted appropriation
+    - amount: null
+      financial_year: 2017-18
+      phase: Final Appropriation
+    - amount: null
+      financial_year: 2017-18
+      phase: Audit Outcome
+    - amount: null
+      financial_year: 2018-19
+      phase: Main appropriation
+    - amount: null
+      financial_year: 2018-19
+      phase: Adjusted appropriation
+    - amount: null
+      financial_year: 2018-19
+      phase: Final Appropriation
+    - amount: null
+      financial_year: 2018-19
+      phase: Audit Outcome
+    name: Housing Needs, Research and Planning
+  - items:
+    - amount: 39585000
+      financial_year: 2015-16
+      phase: Main appropriation
+    - amount: null
+      financial_year: 2015-16
+      phase: Adjusted appropriation
+    - amount: null
+      financial_year: 2015-16
+      phase: Final Appropriation
+    - amount: null
+      financial_year: 2015-16
+      phase: Audit Outcome
+    - amount: null
+      financial_year: 2016-17
+      phase: Main appropriation
+    - amount: null
+      financial_year: 2016-17
+      phase: Adjusted appropriation
+    - amount: null
+      financial_year: 2016-17
+      phase: Final Appropriation
+    - amount: null
+      financial_year: 2016-17
+      phase: Audit Outcome
+    - amount: null
+      financial_year: 2017-18
+      phase: Main appropriation
+    - amount: null
+      financial_year: 2017-18
+      phase: Adjusted appropriation
+    - amount: null
+      financial_year: 2017-18
+      phase: Final Appropriation
+    - amount: null
+      financial_year: 2017-18
+      phase: Audit Outcome
+    - amount: null
+      financial_year: 2018-19
+      phase: Main appropriation
+    - amount: null
+      financial_year: 2018-19
+      phase: Adjusted appropriation
+    - amount: null
+      financial_year: 2018-19
+      phase: Final Appropriation
+    - amount: null
+      financial_year: 2018-19
+      phase: Audit Outcome
+    name: Housing Needs, Planning and Research
+  - items:
+    - amount: 120996000
+      financial_year: 2015-16
+      phase: Main appropriation
+    - amount: 133425000
+      financial_year: 2016-17
+      phase: Main appropriation
+    - amount: 144254000
+      financial_year: 2017-18
+      phase: Main appropriation
+    - amount: 149590000
+      financial_year: 2018-19
+      phase: Main appropriation
+    - amount: null
+      financial_year: 2015-16
+      phase: Adjusted appropriation
+    - amount: null
+      financial_year: 2015-16
+      phase: Final Appropriation
+    - amount: null
+      financial_year: 2015-16
+      phase: Audit Outcome
+    - amount: null
+      financial_year: 2016-17
+      phase: Adjusted appropriation
+    - amount: null
+      financial_year: 2016-17
+      phase: Final Appropriation
+    - amount: null
+      financial_year: 2016-17
+      phase: Audit Outcome
+    - amount: null
+      financial_year: 2017-18
+      phase: Adjusted appropriation
+    - amount: null
+      financial_year: 2017-18
+      phase: Final Appropriation
+    - amount: null
+      financial_year: 2017-18
+      phase: Audit Outcome
+    - amount: null
+      financial_year: 2018-19
+      phase: Adjusted appropriation
+    - amount: null
+      financial_year: 2018-19
+      phase: Final Appropriation
+    - amount: null
+      financial_year: 2018-19
+      phase: Audit Outcome
+    name: Administration
+  - items:
+    - amount: 221306000
+      financial_year: 2018-19
+      phase: Main appropriation
+    - amount: null
+      financial_year: 2015-16
+      phase: Main appropriation
+    - amount: null
+      financial_year: 2015-16
+      phase: Adjusted appropriation
+    - amount: null
+      financial_year: 2015-16
+      phase: Final Appropriation
+    - amount: null
+      financial_year: 2015-16
+      phase: Audit Outcome
+    - amount: null
+      financial_year: 2016-17
+      phase: Main appropriation
+    - amount: null
+      financial_year: 2016-17
+      phase: Adjusted appropriation
+    - amount: null
+      financial_year: 2016-17
+      phase: Final Appropriation
+    - amount: null
+      financial_year: 2016-17
+      phase: Audit Outcome
+    - amount: null
+      financial_year: 2017-18
+      phase: Main appropriation
+    - amount: null
+      financial_year: 2017-18
+      phase: Adjusted appropriation
+    - amount: null
+      financial_year: 2017-18
+      phase: Final Appropriation
+    - amount: null
+      financial_year: 2017-18
+      phase: Audit Outcome
+    - amount: null
+      financial_year: 2018-19
+      phase: Adjusted appropriation
+    - amount: null
+      financial_year: 2018-19
+      phase: Final Appropriation
+    - amount: null
+      financial_year: 2018-19
+      phase: Audit Outcome
+    name: Housing Needs, Research And Planning
+  - items:
+    - amount: 1513077000
+      financial_year: 2015-16
+      phase: Main appropriation
+    - amount: 1647162000
+      financial_year: 2016-17
+      phase: Main appropriation
+    - amount: 1458122000
+      financial_year: 2017-18
+      phase: Main appropriation
+    - amount: 1333832000
+      financial_year: 2018-19
+      phase: Main appropriation
+    - amount: null
+      financial_year: 2015-16
+      phase: Adjusted appropriation
+    - amount: null
+      financial_year: 2015-16
+      phase: Final Appropriation
+    - amount: null
+      financial_year: 2015-16
+      phase: Audit Outcome
+    - amount: null
+      financial_year: 2016-17
+      phase: Adjusted appropriation
+    - amount: null
+      financial_year: 2016-17
+      phase: Final Appropriation
+    - amount: null
+      financial_year: 2016-17
+      phase: Audit Outcome
+    - amount: null
+      financial_year: 2017-18
+      phase: Adjusted appropriation
+    - amount: null
+      financial_year: 2017-18
+      phase: Final Appropriation
+    - amount: null
+      financial_year: 2017-18
+      phase: Audit Outcome
+    - amount: null
+      financial_year: 2018-19
+      phase: Adjusted appropriation
+    - amount: null
+      financial_year: 2018-19
+      phase: Final Appropriation
+    - amount: null
+      financial_year: 2018-19
+      phase: Audit Outcome
+    name: Housing Development
 contributed_datasets:
 - contributor: International Budget Partnership
   name: How Does Civil Society Use Budget Information?

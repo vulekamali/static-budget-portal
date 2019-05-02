@@ -4,7 +4,6 @@ import ReactMarkdown from 'react-markdown';
 import Heading from './Heading';
 import BudgetAmounts from './BudgetAmounts';
 import SectionHeading from './SectionHeading';
-import BarChart from '../BarChart';
 import FinePrint from './FinePrint';
 
 import {
@@ -20,7 +19,6 @@ const callDescription = (description) => {
   }
   return (
     <React.Fragment>
-      <SectionHeading title='Department Information' />
       <TextWrapper>
         <TextContainer>
           <Description>
@@ -43,15 +41,19 @@ const Markup = (props) => {
     eventHandler,
     year,
     children,
-    hasButton
+    hasButton,
+    section,
+    items
   } = props;
 
   return (
     <Wrapper>
-      <Heading {...{ departmentNames, government, selected, eventHandler, year, sphere, hasButton }} />
+      <Heading {...{ departmentNames, items, government, selected, eventHandler, year, sphere, hasButton }} />
+      <SectionHeading title={section} />
       <BudgetAmounts {...resources} sphere={sphere} />
       {callDescription(description)}
       {children}
+      <FinePrint {...{ year }} />
     </Wrapper>
   );
 };

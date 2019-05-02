@@ -6,6 +6,7 @@ import SectionHeading from '../SectionHeading';
 import CssBaseline from '@material-ui/core/CssBaseline';
 
 import {
+  Wrapper,
   DetailsWrapper,
   LinkWrapper,
   ButtonStyle,
@@ -29,17 +30,25 @@ import {
    </ChartWrapper>
  );
 
-const callButtonExplore = (url, color,  verb, subject) => (
-  <LinkWrapper href={url}>
-    <ButtonStyle disabled={!url} {...{color}}>
-      <TextExploreButton>{verb} <SpanStyled>{subject}</SpanStyled></TextExploreButton>
-      <Icon />
-    </ButtonStyle>
-  </LinkWrapper>
-);
+const callButtonExplore = (url, color,  verb, subject, isConsolidatedChart) => {
+  if(isConsolidatedChart) {
+    return null;
+  }
+  return (
+    <LinkWrapper href={url}>
+      <ButtonStyle disabled={!url} {...{color}}>
+        <TextExploreButton>{verb} <SpanStyled>{subject}</SpanStyled></TextExploreButton>
+        <Icon />
+      </ButtonStyle>
+    </LinkWrapper>
+  );
+};
 
-const callDetails = (selected, verb, subject) => {
+const callDetails = (selected, verb, subject, isConsolidatedChart) => {
   const { name, value, url, color } = selected;
+  if (value === null) {
+    return null;
+  }
   return (
     <DetailsWrapper>
       <DetailsContainer>
@@ -47,7 +56,7 @@ const callDetails = (selected, verb, subject) => {
           <Department>{name}</Department>
           <Amount>R{trimValues(value)}</Amount>
         </div>
-        {callButtonExplore(url, color,  verb, subject)}
+        {!!verb && callButtonExplore(url, color,  verb, subject, isConsolidatedChart)}
       </DetailsContainer>
     </DetailsWrapper>
   );
@@ -64,21 +73,22 @@ const Markup = (props) => {
     years,
     phases,
     anchor,
-    title
+    title,
+    isConsolidatedChart
   } = props;
   
   return (
-    <React.Fragment>
+    <Wrapper>
       <CssBaseline />
       <SectionHeading title={title} share={anchor} years={years} phases={phases} />
-      {!!selected && callDetails(selected, verb, subject)} 
+      {!!selected && callDetails(selected, verb, subject, isConsolidatedChart)} 
       {callChart(chart, onSelectedChange)}
       <FooterWrapper>
         <FooterContainer>
           {footer && <FooterDetails>{footer}</FooterDetails>}
         </FooterContainer>
       </FooterWrapper>
-    </React.Fragment>
+    </Wrapper>
   );
 };
 

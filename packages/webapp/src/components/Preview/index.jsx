@@ -16,18 +16,19 @@ class Preview extends Component {
       eventHandler: this.eventHandler.bind(this),
     }
 
-    this.departmentNames = this.props.items.map(({ id, title }) => ({
+    this.departmentNames = this.props.items.map(({ id, name }) => ({
       id,
-      name: title
+      name
     }))
   }
 
   eventHandler(e) {
+    const { year, sphere, government } = this.props;
+
     if(e.target.value === this.state.selected) {
       return null;
     }
-
-    const newUrl = `/${this.props.year}/previews/${this.props.sphere}/${this.props.government}/${e.target.value}`;
+    const newUrl = !!sphere && !!government ? `/${year}/previews/${sphere}/${government}/${e.target.value}` : `/${year}/${e.target.value}`;
     window.history.pushState({}, window.document.title, newUrl );
     this.setState({ selected: e.target.value });
   }
