@@ -37,6 +37,24 @@ class Preview extends Component {
   render() {
     const { state, events, props } = this;
 
+    const selectedkey = props.items.findIndex(({ id }) => id === state.selected);	
+    const selectedObject = props.items[selectedkey];
+
+    const initialSelectedNational = {
+      name: "National Department Contributions",
+      value: selectedObject.national.total,
+      url: null,
+      color: "#D8D8D8"
+    }
+
+    const initialSelectedProvincial = {
+      name: 'Provincial Department Contributions',
+      value: selectedObject.provincial.total,
+      url: null,
+      color: 'rgba(0, 0, 0, 0.1)'
+    }
+
+
     const passedProps = {
       ...props,
       eventHandler: events.eventHandler,
@@ -44,6 +62,8 @@ class Preview extends Component {
       government: props.government,
       departmentNames: this.departmentNames,
       year: props.year,
+      initialSelectedNational,
+      initialSelectedProvincial
     };
 
     return <Markup {...passedProps } />
