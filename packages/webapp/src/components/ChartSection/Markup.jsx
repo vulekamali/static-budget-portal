@@ -81,7 +81,7 @@ const Markup = (props) => {
     <Wrapper>
       <CssBaseline />
       <SectionHeading title={title} share={anchor} years={years} phases={phases} />
-      {!!selected && callDetails(selected, verb, subject, isConsolidatedChart)} 
+      {!!selected && callDetails(selected, verb, subject, isConsolidatedChart)}
       {callChart(chart, onSelectedChange)}
       <FooterWrapper>
         <FooterContainer>
