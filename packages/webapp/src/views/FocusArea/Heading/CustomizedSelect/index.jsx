@@ -10,7 +10,7 @@ const callMenuItems = departmentNames => (
   departmentNames.map(({ id: idVal, name}) => {
     const selectedKey = departmentNames.findIndex(({ id }) => id === idVal);
 
-    return <MenuItem key={selectedKey} value={selectedKey}>{name}</MenuItem>
+    return <MenuItem key={selectedKey} value={idVal}>{name}</MenuItem>
   })
 )
 
@@ -31,6 +31,7 @@ class CustomizedSelect extends Component {
 
   render() {
     const { departmentNames, selected, eventHandler } = this.props;
+
     return (
       <CustomizedForm>
         <CssBaseline />
@@ -41,7 +42,6 @@ class CustomizedSelect extends Component {
           name={this.state.budgetValue}
           classes={{ icon: 'icon', selectMenu: 'selectMenu'}}
         >
-        {/* {departmentNames.map(callMenuItems)} */}
         {callMenuItems(departmentNames)}
         </SelectPreview>
       </CustomizedForm>
