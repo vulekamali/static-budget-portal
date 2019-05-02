@@ -58,6 +58,7 @@ const Markup = (props) => {
     initialSelectedProvincial,
     year
   } = props;
+
   const selectedInstance = items.find(({ id }) => id === selected)
 
   return (
