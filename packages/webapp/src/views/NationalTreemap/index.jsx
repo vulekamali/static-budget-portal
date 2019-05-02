@@ -4,6 +4,7 @@ import MediaQuery from "react-media";
 import calcIfForeignObjectIsSupported from './calcIfForeignObjectIsSupported';
 import ChartSection from './../../components/ChartSection';
 import Treemap from './../../components/Treemap';
+import StackChart from './../../components/StackChart';
 
 const footer = (
   <Fragment>
@@ -14,10 +15,15 @@ const footer = (
 )
 
 
-const Markup = ({ items, initialSelected }) => (
+const Markup = ({ items, initialSelected, isMobile }) => (
   <ChartSection
     {...{ initialSelected, footer }}
-    chart={(onSelectedChange) => <Treemap {...{ items, onSelectedChange }} />}
+    isMobile={isMobile}
+    hasChildren={false}
+    chart={(onSelectedChange) => isMobile
+      ? <StackChart {...{ items, onSelectedChange }} canStickToTop/> 
+      : <Treemap {...{ items, onSelectedChange }} />
+    }
     verb='Explore'
     subject='this department'
     title='National Budget Summary'
@@ -32,8 +38,8 @@ const Markup = ({ items, initialSelected }) => (
 )
 
 const NationalTreemap = props => (
-  <MediaQuery query="(min-width: 600px)">
-    {matches => !!matches && calcIfForeignObjectIsSupported() && <Markup {...props} />}
+  <MediaQuery query="(min-width: 1000px)">
+    {matches => calcIfForeignObjectIsSupported() && <Markup {...props} isMobile={!matches}/>}
   </MediaQuery>
 );
 

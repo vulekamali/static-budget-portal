@@ -56,6 +56,26 @@ const DetailsWrapper = styled.div`
   align-items: center;
   margin-right: 16px;
   margin-left: 16px;
+  &.StickToTop {
+    position: fixed;
+    z-index: 10;
+    top: 0;
+    padding-top: 17px;
+    height: 81px;
+    width: calc(100% - 32px);
+    background: #fafafa;
+  }
+  &.StickToChartBottom {
+    position: absolute;
+    z-index: 10;
+    padding-top: 17px;
+    height: 81px;
+    margin-left: 0px;
+    width: 100%;
+    background: #fafafa;
+    top: ${(props) => props.hasChildren? '-142px': '-118px'};
+    left: 0;
+  }
 `;
 
 const DetailsContainer = styled.div`
@@ -111,6 +131,7 @@ const ChartContainer = styled.div`
 `;
 
 const FooterWrapper = styled.div`
+  position: relative;
   display: flex;
   justify-content: center;
   align-items: center;

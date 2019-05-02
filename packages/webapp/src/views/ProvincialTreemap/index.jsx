@@ -4,12 +4,18 @@ import MediaQuery from "react-media";
 import calcIfForeignObjectIsSupported from './calcIfForeignObjectIsSupported';
 import ChartSection from './../../components/ChartSection';
 import Treemap from './../../components/Treemap';
+import StackChart from './../../components/StackChart';
 
-const Markup = ({ items, initialSelected }) => (
+const Markup = ({ items, initialSelected, isMobile }) => (
   <ChartSection
     {...{ initialSelected }}
+    isMobile={isMobile}
+    hasChildren={true}
     footer="Budget data from 1 April 2018 - 31 March 2019"
-    chart={(onSelectedChange) => <Treemap {...{ items, onSelectedChange }} />}
+    chart={(onSelectedChange) => isMobile
+      ? <StackChart {...{ items, onSelectedChange }} canStickToTop/> 
+      : <Treemap {...{ items, onSelectedChange }} />
+    }
     verb='Explore'
     subject='this department'
     title='Provincial Budget Summary'
@@ -24,8 +30,10 @@ const Markup = ({ items, initialSelected }) => (
 )
 
 const ProvincialTreemap = props => (
-  <MediaQuery query="(min-width: 600px)">
-    {matches => !!matches && calcIfForeignObjectIsSupported() && <Markup {...props} />}
+  <MediaQuery query="(min-width: 1000px)">
+    {
+      matches => calcIfForeignObjectIsSupported() && <Markup {...props} isMobile={!matches}/>
+    }
   </MediaQuery>
 );
 
