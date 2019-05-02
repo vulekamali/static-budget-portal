@@ -30,10 +30,7 @@ import {
    </ChartWrapper>
  );
 
-const callButtonExplore = (url, color,  verb, subject, isConsolidatedChart) => {
-  if(isConsolidatedChart) {
-    return null;
-  }
+const callButtonExplore = (url, color,  verb, subject) => {
   return (
     <LinkWrapper href={url}>
       <ButtonStyle disabled={!url} {...{color}}>
@@ -44,7 +41,7 @@ const callButtonExplore = (url, color,  verb, subject, isConsolidatedChart) => {
   );
 };
 
-const callDetails = (selected, verb, subject, isConsolidatedChart) => {
+const callDetails = (selected, verb, subject) => {
   const { name, value, url, color } = selected;
   if (value === null) {
     return null;
@@ -56,7 +53,7 @@ const callDetails = (selected, verb, subject, isConsolidatedChart) => {
           <Department>{name}</Department>
           <Amount>R{trimValues(value)}</Amount>
         </div>
-        {!!verb && callButtonExplore(url, color,  verb, subject, isConsolidatedChart)}
+        {!!verb && callButtonExplore(url, color,  verb, subject)}
       </DetailsContainer>
     </DetailsWrapper>
   );
@@ -73,15 +70,14 @@ const Markup = (props) => {
     years,
     phases,
     anchor,
-    title,
-    isConsolidatedChart
+    title
   } = props;
   
   return (
     <Wrapper>
       <CssBaseline />
       <SectionHeading title={title} share={anchor} years={years} phases={phases} />
-      {!!selected && callDetails(selected, verb, subject, isConsolidatedChart)}
+      {!!selected && callDetails(selected, verb, subject)}
       {callChart(chart, onSelectedChange)}
       <FooterWrapper>
         <FooterContainer>
