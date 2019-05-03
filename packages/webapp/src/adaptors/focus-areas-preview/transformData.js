@@ -1,9 +1,9 @@
 import addProvinceToObject from './addProvinceToObject';
 
-const createNationalDepartments = ({ title, slug, amount }) => ({
+const createNationalDepartments = ({ title, amount, url }) => ({
   name: title,
   amount,
-  url: slug
+  url: url && `/${url}`
 });
 
 
