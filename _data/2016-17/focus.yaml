@@ -1,280 +1,361 @@
 data:
   items:
-  - description: null
-    national:
-    - amount: 6332965000
-      percentage_total: 39.503685502765926
-      slug: agriculture-forestry-and-fisheries
-      title: Agriculture, Forestry and Fisheries
-    - amount: 9698362000
-      percentage_total: 60.496314497234074
-      slug: rural-development-and-land-reform
-      title: Rural Development and Land Reform
-    percentage_changed: 0
-    percentage_total: 1.2218335340808508
+  - national:
+      data:
+      - amount: 6332965000
+        slug: agriculture-forestry-and-fisheries
+        title: Agriculture, Forestry and Fisheries
+        url: 2016-17/previews/national/south-africa/agriculture-forestry-and-fisheries
+      - amount: 9698362000
+        slug: rural-development-and-land-reform
+        title: Rural Development and Land Reform
+        url: 2016-17/previews/national/south-africa/rural-development-and-land-reform
+      footnotes:
+      - '**Source:** Estimates of National Expenditure 2016-17'
+      notices: []
+      total: 16031327000
+    provincial:
+      data: []
+      footnotes:
+      - '**Source:** Estimates of Provincial Expenditure 2016-17'
+      notices:
+      - No provincial departments allocated budget to this focus area.
+      total: 0
     slug: agriculture-rural-development-and-land-reform
     title: Agriculture, rural development and land reform
-    total: 16031327000
-  - description: null
-    national:
-    - amount: 4070853000
-      percentage_total: 14.873929849514678
-      slug: arts-and-culture
-      title: Arts and Culture
-    - amount: 22269595000
-      percentage_total: 81.36781008970425
-      slug: basic-education
-      title: Basic Education
-    - amount: 1028600000
-      percentage_total: 3.758260060781069
-      slug: sport-and-recreation-south-africa
-      title: Sport and Recreation South Africa
-    percentage_changed: 0
-    percentage_total: 2.0859421457917016
+  - national:
+      data:
+      - amount: 4070853000
+        slug: arts-and-culture
+        title: Arts and Culture
+        url: 2016-17/previews/national/south-africa/arts-and-culture
+      - amount: 22269595000
+        slug: basic-education
+        title: Basic Education
+        url: 2016-17/previews/national/south-africa/basic-education
+      - amount: 1028600000
+        slug: sport-and-recreation-south-africa
+        title: Sport and Recreation South Africa
+        url: 2016-17/previews/national/south-africa/sport-and-recreation-south-africa
+      footnotes:
+      - '**Source:** Estimates of National Expenditure 2016-17'
+      notices: []
+      total: 27369048000
+    provincial:
+      data: []
+      footnotes:
+      - '**Source:** Estimates of Provincial Expenditure 2016-17'
+      notices:
+      - No provincial departments allocated budget to this focus area.
+      total: 0
     slug: basic-education
     title: Basic education
-    total: 27369048000
-  - description: null
-    national:
-    - amount: 147720000000
-      percentage_total: 100.0
-      slug: national-treasury
-      title: National Treasury
-    percentage_changed: 0
-    percentage_total: 11.258534596320272
+  - national:
+      data:
+      - amount: 147720000000
+        slug: national-treasury
+        title: National Treasury
+        url: 2016-17/previews/national/south-africa/national-treasury
+      footnotes:
+      - '**Source:** Estimates of National Expenditure 2016-17'
+      notices: []
+      total: 147720000000
+    provincial:
+      data: []
+      footnotes:
+      - '**Source:** Estimates of Provincial Expenditure 2016-17'
+      notices:
+      - No provincial departments allocated budget to this focus area.
+      total: 0
     slug: debt-service-costs
     title: Debt-service costs
-    total: 147720000000
-  - description: null
-    national:
-    - amount: 21577287000
-      percentage_total: 12.35349633533084
-      slug: correctional-services
-      title: Correctional Services
-    - amount: 47169745000
-      percentage_total: 27.00577102190791
-      slug: defence-and-military-veterans
-      title: Defence and Military Veterans
-    - amount: 246111000
-      percentage_total: 0.14090424512519154
-      slug: independent-police-investigative-directorate
-      title: Independent Police Investigative Directorate
-    - amount: 18089898000
-      percentage_total: 10.35688539757147
-      slug: justice-and-constitutional-development
-      title: Justice and Constitutional Development
-    - amount: 4812487000
-      percentage_total: 2.755260219615529
-      slug: national-treasury
-      title: National Treasury
-    - amount: 1785047000
-      percentage_total: 1.0219807324661951
-      slug: office-of-the-chief-justice-and-judicial-administration
-      title: Office of the Chief Justice and Judicial Administration
-    - amount: 80984851000
-      percentage_total: 46.365702047982865
-      slug: police
-      title: Police
-    percentage_changed: 0
-    percentage_total: 13.312190234240578
+  - national:
+      data:
+      - amount: 21577287000
+        slug: correctional-services
+        title: Correctional Services
+        url: 2016-17/previews/national/south-africa/correctional-services
+      - amount: 47169745000
+        slug: defence-and-military-veterans
+        title: Defence and Military Veterans
+        url: 2016-17/previews/national/south-africa/defence-and-military-veterans
+      - amount: 246111000
+        slug: independent-police-investigative-directorate
+        title: Independent Police Investigative Directorate
+        url: 2016-17/previews/national/south-africa/independent-police-investigative-directorate
+      - amount: 18089898000
+        slug: justice-and-constitutional-development
+        title: Justice and Constitutional Development
+        url: 2016-17/previews/national/south-africa/justice-and-constitutional-development
+      - amount: 4812487000
+        slug: national-treasury
+        title: National Treasury
+        url: 2016-17/previews/national/south-africa/national-treasury
+      - amount: 1785047000
+        slug: office-of-the-chief-justice-and-judicial-administration
+        title: Office of the Chief Justice and Judicial Administration
+        url: 2016-17/previews/national/south-africa/office-of-the-chief-justice-and-judicial-administration
+      - amount: 80984851000
+        slug: police
+        title: Police
+        url: 2016-17/previews/national/south-africa/police
+      footnotes:
+      - '**Source:** Estimates of National Expenditure 2016-17'
+      notices: []
+      total: 174665426000
+    provincial:
+      data: []
+      footnotes:
+      - '**Source:** Estimates of Provincial Expenditure 2016-17'
+      notices:
+      - No provincial departments allocated budget to this focus area.
+      total: 0
     slug: defence-public-order-and-safety
     title: Defence, public order and safety
-    total: 174665426000
-  - description: null
-    national:
-    - amount: 3191185000
-      percentage_total: 4.086939990938658
-      slug: cooperative-governance-and-traditional-affairs
-      title: Cooperative Governance and Traditional Affairs
-    - amount: 674661000
-      percentage_total: 0.8640360935598113
-      slug: economic-development
-      title: Economic Development
-    - amount: 1845264000
-      percentage_total: 2.363223453181007
-      slug: energy
-      title: Energy
-    - amount: 6430101000
-      percentage_total: 8.235008914454868
-      slug: environmental-affairs
-      title: Environmental Affairs
-    - amount: 61643000
-      percentage_total: 0.07894598459864649
-      slug: health
-      title: Health
-    - amount: 2847877000
-      percentage_total: 3.6472665798361463
-      slug: labour
-      title: Labour
-    - amount: 1669077000
-      percentage_total: 2.1375813496415668
-      slug: mineral-resources
-      title: Mineral Resources
-    - amount: 4956125000
-      percentage_total: 6.3472927650985
-      slug: national-treasury
-      title: National Treasury
-    - amount: 2319500000
-      percentage_total: 2.970575917404418
-      slug: public-works
-      title: Public Works
-    - amount: 425983000
-      percentage_total: 0.5455550079860687
-      slug: rural-development-and-land-reform
-      title: Rural Development and Land Reform
-    - amount: 7428995996
-      percentage_total: 9.514290405782043
-      slug: science-and-technology
-      title: Science and Technology
-    - amount: 1325439000
-      percentage_total: 1.697485308639187
-      slug: small-business-development
-      title: Small Business Development
-    - amount: 2417412000
-      percentage_total: 3.095971489391873
-      slug: telecommunications-and-postal-services
-      title: Telecommunications and Postal Services
-    - amount: 2009516000
-      percentage_total: 2.5735804420085606
-      slug: tourism
-      title: Tourism
-    - amount: 10327517000
-      percentage_total: 13.226416592707361
-      slug: trade-and-industry
-      title: Trade and Industry
-    - amount: 25413519000
-      percentage_total: 32.54700906139237
-      slug: transport
-      title: Transport
-    - amount: 4738687000
-      percentage_total: 6.068820643378913
-      slug: water-and-sanitation
-      title: Water and Sanitation
-    percentage_changed: 0
-    percentage_total: 5.9510868541105655
+  - national:
+      data:
+      - amount: 3191185000
+        slug: cooperative-governance-and-traditional-affairs
+        title: Cooperative Governance and Traditional Affairs
+        url: 2016-17/previews/national/south-africa/cooperative-governance-and-traditional-affairs
+      - amount: 674661000
+        slug: economic-development
+        title: Economic Development
+        url: 2016-17/previews/national/south-africa/economic-development
+      - amount: 1845264000
+        slug: energy
+        title: Energy
+        url: 2016-17/previews/national/south-africa/energy
+      - amount: 6430101000
+        slug: environmental-affairs
+        title: Environmental Affairs
+        url: 2016-17/previews/national/south-africa/environmental-affairs
+      - amount: 61643000
+        slug: health
+        title: Health
+        url: 2016-17/previews/national/south-africa/health
+      - amount: 2847877000
+        slug: labour
+        title: Labour
+        url: 2016-17/previews/national/south-africa/labour
+      - amount: 1669077000
+        slug: mineral-resources
+        title: Mineral Resources
+        url: 2016-17/previews/national/south-africa/mineral-resources
+      - amount: 4956125000
+        slug: national-treasury
+        title: National Treasury
+        url: 2016-17/previews/national/south-africa/national-treasury
+      - amount: 2319500000
+        slug: public-works
+        title: Public Works
+        url: 2016-17/previews/national/south-africa/public-works
+      - amount: 425983000
+        slug: rural-development-and-land-reform
+        title: Rural Development and Land Reform
+        url: 2016-17/previews/national/south-africa/rural-development-and-land-reform
+      - amount: 7428995996
+        slug: science-and-technology
+        title: Science and Technology
+        url: 2016-17/previews/national/south-africa/science-and-technology
+      - amount: 1325439000
+        slug: small-business-development
+        title: Small Business Development
+        url: 2016-17/previews/national/south-africa/small-business-development
+      - amount: 2417412000
+        slug: telecommunications-and-postal-services
+        title: Telecommunications and Postal Services
+        url: 2016-17/previews/national/south-africa/telecommunications-and-postal-services
+      - amount: 2009516000
+        slug: tourism
+        title: Tourism
+        url: 2016-17/previews/national/south-africa/tourism
+      - amount: 10327517000
+        slug: trade-and-industry
+        title: Trade and Industry
+        url: 2016-17/previews/national/south-africa/trade-and-industry
+      - amount: 25413519000
+        slug: transport
+        title: Transport
+        url: 2016-17/previews/national/south-africa/transport
+      - amount: 4738687000
+        slug: water-and-sanitation
+        title: Water and Sanitation
+        url: 2016-17/previews/national/south-africa/water-and-sanitation
+      footnotes:
+      - '**Source:** Estimates of National Expenditure 2016-17'
+      notices: []
+      total: 78082501996
+    provincial:
+      data: []
+      footnotes:
+      - '**Source:** Estimates of Provincial Expenditure 2016-17'
+      notices:
+      - No provincial departments allocated budget to this focus area.
+      total: 0
     slug: economic-affairs
     title: Economic affairs
-    total: 78082501996
-  - description: null
-    national:
-    - amount: 1345406000
-      percentage_total: 0.2952941278155903
-      slug: communications
-      title: Communications
-    - amount: 1714313000
-      percentage_total: 0.37626304783680764
-      slug: cooperative-governance-and-traditional-affairs
-      title: Cooperative Governance and Traditional Affairs
-    - amount: 7167140000
-      percentage_total: 1.573067427402754
-      slug: home-affairs
-      title: Home Affairs
-    - amount: 5888651000
-      percentage_total: 1.2924604625335427
-      slug: international-relations-and-cooperation
-      title: International Relations and Cooperation
-    - amount: 428037641000
-      percentage_total: 93.94710732027191
-      slug: national-treasury
-      title: National Treasury
-    - amount: 2189429000
-      percentage_total: 0.48054306801750557
-      slug: parliament
-      title: Parliament
-    - amount: 827662000
-      percentage_total: 0.18165797418482382
-      slug: planning-monitoring-and-evaluation
-      title: Planning, Monitoring and Evaluation
-    - amount: 273976000
-      percentage_total: 0.060133152343905226
-      slug: public-enterprises
-      title: Public Enterprises
-    - amount: 770380000
-      percentage_total: 0.16908553268424137
-      slug: public-service-and-administration
-      title: Public Service and Administration
-    - amount: 4209265000
-      percentage_total: 0.9238633073731578
-      slug: public-works
-      title: Public Works
-    - amount: 2489102000
-      percentage_total: 0.5463162823222443
-      slug: statistics-south-africa
-      title: Statistics South Africa
-    - amount: 505710000
-      percentage_total: 0.11099489178554442
-      slug: the-presidency
-      title: The Presidency
-    - amount: 196887000
-      percentage_total: 0.04321340542797351
-      slug: women
-      title: Women
-    percentage_changed: 0
-    percentage_total: 34.724909067146655
+  - national:
+      data:
+      - amount: 1345406000
+        slug: communications
+        title: Communications
+        url: 2016-17/previews/national/south-africa/communications
+      - amount: 1714313000
+        slug: cooperative-governance-and-traditional-affairs
+        title: Cooperative Governance and Traditional Affairs
+        url: 2016-17/previews/national/south-africa/cooperative-governance-and-traditional-affairs
+      - amount: 7167140000
+        slug: home-affairs
+        title: Home Affairs
+        url: 2016-17/previews/national/south-africa/home-affairs
+      - amount: 5888651000
+        slug: international-relations-and-cooperation
+        title: International Relations and Cooperation
+        url: 2016-17/previews/national/south-africa/international-relations-and-cooperation
+      - amount: 17339056000
+        slug: national-treasury
+        title: National Treasury
+        url: 2016-17/previews/national/south-africa/national-treasury
+      - amount: 2189429000
+        slug: parliament
+        title: Parliament
+        url: 2016-17/previews/national/south-africa/parliament
+      - amount: 827662000
+        slug: planning-monitoring-and-evaluation
+        title: Planning, Monitoring and Evaluation
+        url: 2016-17/previews/national/south-africa/planning-monitoring-and-evaluation
+      - amount: 273976000
+        slug: public-enterprises
+        title: Public Enterprises
+        url: 2016-17/previews/national/south-africa/public-enterprises
+      - amount: 770380000
+        slug: public-service-and-administration
+        title: Public Service and Administration
+        url: 2016-17/previews/national/south-africa/public-service-and-administration
+      - amount: 4209265000
+        slug: public-works
+        title: Public Works
+        url: 2016-17/previews/national/south-africa/public-works
+      - amount: 2489102000
+        slug: statistics-south-africa
+        title: Statistics South Africa
+        url: 2016-17/previews/national/south-africa/statistics-south-africa
+      - amount: 505710000
+        slug: the-presidency
+        title: The Presidency
+        url: 2016-17/previews/national/south-africa/the-presidency
+      - amount: 196887000
+        slug: women
+        title: Women
+        url: 2016-17/previews/national/south-africa/women
+      footnotes:
+      - '**Source:** Estimates of National Expenditure 2016-17'
+      - '**Note:** Provincial Equitable Share is excluded'
+      notices: []
+      total: 455615562000
+    provincial:
+      data: []
+      footnotes:
+      - '**Source:** Estimates of Provincial Expenditure 2016-17'
+      notices:
+      - No provincial departments allocated budget to this focus area.
+      total: 0
     slug: general-public-services
     title: General public services
-    total: 455615562000
-  - description: null
-    national:
-    - amount: 38501674000
-      percentage_total: 100.0
-      slug: health
-      title: Health
-    percentage_changed: 0
-    percentage_total: 2.934419365998137
+  - national:
+      data:
+      - amount: 38501674000
+        slug: health
+        title: Health
+        url: 2016-17/previews/national/south-africa/health
+      footnotes:
+      - '**Source:** Estimates of National Expenditure 2016-17'
+      notices: []
+      total: 38501674000
+    provincial:
+      data: []
+      footnotes:
+      - '**Source:** Estimates of Provincial Expenditure 2016-17'
+      notices:
+      - No provincial departments allocated budget to this focus area.
+      total: 0
     slug: health
     title: Health
-    total: 38501674000
-  - description: null
-    national:
-    - amount: 68088550000
-      percentage_total: 43.00687644005283
-      slug: cooperative-governance-and-traditional-affairs
-      title: Cooperative Governance and Traditional Affairs
-    - amount: 5699907000
-      percentage_total: 3.6002410988160594
-      slug: energy
-      title: Energy
-    - amount: 30690856000
-      percentage_total: 19.385312975991614
-      slug: human-settlements
-      title: Human Settlements
-    - amount: 12732580000
-      percentage_total: 8.042299253297182
-      slug: national-treasury
-      title: National Treasury
-    - amount: 30601644000
-      percentage_total: 19.328963862066146
-      slug: transport
-      title: Transport
-    - amount: 10506610000
-      percentage_total: 6.636306369776173
-      slug: water-and-sanitation
-      title: Water and Sanitation
-    percentage_changed: 0
-    percentage_total: 12.066428732020114
+  - national:
+      data:
+      - amount: 68088550000
+        slug: cooperative-governance-and-traditional-affairs
+        title: Cooperative Governance and Traditional Affairs
+        url: 2016-17/previews/national/south-africa/cooperative-governance-and-traditional-affairs
+      - amount: 5699907000
+        slug: energy
+        title: Energy
+        url: 2016-17/previews/national/south-africa/energy
+      - amount: 30690856000
+        slug: human-settlements
+        title: Human Settlements
+        url: 2016-17/previews/national/south-africa/human-settlements
+      - amount: 12732580000
+        slug: national-treasury
+        title: National Treasury
+        url: 2016-17/previews/national/south-africa/national-treasury
+      - amount: 30601644000
+        slug: transport
+        title: Transport
+        url: 2016-17/previews/national/south-africa/transport
+      - amount: 10506610000
+        slug: water-and-sanitation
+        title: Water and Sanitation
+        url: 2016-17/previews/national/south-africa/water-and-sanitation
+      footnotes:
+      - '**Source:** Estimates of National Expenditure 2016-17'
+      notices: []
+      total: 158320147000
+    provincial:
+      data: []
+      footnotes:
+      - '**Source:** Estimates of Provincial Expenditure 2016-17'
+      notices:
+      - No provincial departments allocated budget to this focus area.
+      total: 0
     slug: human-settlements-and-municipal-infrastructure
     title: Human settlements and municipal infrastructure
-    total: 158320147000
-  - description: null
-    national:
-    - amount: 66827874000
-      percentage_total: 100.0
-      slug: higher-education-and-training
-      title: Higher Education and Training
-    percentage_changed: 0
-    percentage_total: 5.093311206522691
+  - national:
+      data:
+      - amount: 66827874000
+        slug: higher-education-and-training
+        title: Higher Education and Training
+        url: 2016-17/previews/national/south-africa/higher-education-and-training
+      footnotes:
+      - '**Source:** Estimates of National Expenditure 2016-17'
+      notices: []
+      total: 66827874000
+    provincial:
+      data: []
+      footnotes:
+      - '**Source:** Estimates of Provincial Expenditure 2016-17'
+      notices:
+      - No provincial departments allocated budget to this focus area.
+      total: 0
     slug: post-school-education-and-training
     title: Post school education and training
-    total: 66827874000
-  - description: null
-    national:
-    - amount: 148937729000
-      percentage_total: 100.0
-      slug: social-development
-      title: Social Development
-    percentage_changed: 0
-    percentage_total: 11.351344263768434
+  - national:
+      data:
+      - amount: 148937729000
+        slug: social-development
+        title: Social Development
+        url: 2016-17/previews/national/south-africa/social-development
+      footnotes:
+      - '**Source:** Estimates of National Expenditure 2016-17'
+      notices: []
+      total: 148937729000
+    provincial:
+      data: []
+      footnotes:
+      - '**Source:** Estimates of Provincial Expenditure 2016-17'
+      notices:
+      - No provincial departments allocated budget to this focus area.
+      total: 0
     slug: social-protection
     title: Social protection
-    total: 148937729000
