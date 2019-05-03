@@ -16,6 +16,7 @@ const callFootNote = footnote => footnote.map(footer => (
       <FooterDetails component='div'>
         <ReactMarkdown source={footer} />
       </FooterDetails>
+      <FooterDetails>Flows between spheres have not been netted out.</FooterDetails>
   </div>
 ))
 
