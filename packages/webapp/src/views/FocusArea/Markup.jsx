@@ -27,7 +27,6 @@ const callProvincialChart = (selected, initialSelected, items, footnotes, notice
         {...{ initialSelected  }}
         chart={() => <Notices {...{ notices }} />}
         title='Contributing provincial departments'
-        anchor='contributing-provincial-departments'
         footer={callFootNote(footnotes)}
       />
     </div>
@@ -71,7 +70,6 @@ const Markup = (props) => {
           verb='Explore'
           subject='this department'
           title='Contributing national departments'
-          anchor='contributing-national-departments'
           footer={callFootNote(selectedInstance.national.footnotes)}
         />
       </div>
