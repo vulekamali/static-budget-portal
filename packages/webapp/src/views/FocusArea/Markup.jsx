@@ -11,14 +11,18 @@ import {
   FooterDetails
 } from './styled';
 
-const callFootNote = footnote => footnote.map(footer => (
-  <div key={footer}>
-      <FooterDetails component='div'>
-        <ReactMarkdown source={footer} />
-      </FooterDetails>
-      <FooterDetails>Flows between spheres have not been netted out.</FooterDetails>
+const addDynamicFootnotes = dynamicFootnotes => dynamicFootnotes.map(footer => (
+  <FooterDetails component='div'>
+    <ReactMarkdown source={footer} />
+  </FooterDetails>
+));
+
+const callFootNote = dynamicFootnotes => (
+  <div key={dynamicFootnotes}>
+    {!!dynamicFootnotes && addDynamicFootnotes (dynamicFootnotes )}
+    <FooterDetails>Flows between spheres have not been netted out.</FooterDetails>
   </div>
-))
+);
 
 const callProvincialChart = (selected, initialSelected, items, footnotes, notices) => {
   if(Object.entries(items).length === 0) {
