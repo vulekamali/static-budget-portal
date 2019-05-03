@@ -27,7 +27,6 @@ const Markup = ({ items, initialSelected }) => (
       disabled: "2019-20",
     }}
     anchor="consolidated-treemap"
-    isConsolidatedChart
   />
 )
 

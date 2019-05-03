@@ -28,7 +28,7 @@ class Preview extends Component {
       return null;
     }
     if (updateUrl) {
-      const newUrl = `/${this.props.year}/${e.target.value}`;
+      const newUrl = `/${this.props.year}/focus/${e.target.value}`;
       window.history.pushState({}, window.document.title, newUrl );
     }
     this.setState({ selected: e.target.value });

@@ -1,4 +1,8 @@
 const addProvinceToObject = (provincialData) => {
+  if (provincialData.length === 0) {
+    return {};
+  }
+
   return (
     ['Eastern Cape','Free State','Gauteng','Limpopo','Mpumalanga','Northern Cape','Western Cape','North West', 'KwaZulu-Natal'].reduce(
       (result, provinceName) => {
