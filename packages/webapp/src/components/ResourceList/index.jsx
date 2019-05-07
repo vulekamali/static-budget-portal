@@ -14,7 +14,6 @@ import { Typography } from '@material-ui/core';
 const Title = styled(Typography)`
   && {
     height: 39px;
-    font-family: Lato;
     line-height: 23px;
     font-size: 14px;
     color: #000000;
