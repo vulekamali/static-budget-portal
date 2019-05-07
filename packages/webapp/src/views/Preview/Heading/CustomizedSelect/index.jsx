@@ -12,12 +12,17 @@ const callMenuItems = ({ id, name }) => (
 );
 
 class CustomizedSelect extends Component {
+  constructor(props) {
+    super(props);
+  
+    this.state = {
+      budgetValue: ''
+    };
 
-  state = {
-    budgetValue: ''
-  };
+    this.handleChange = this.handleChange.bind(this)
+  }
 
-  handleChange = event => {
+  handleChange(event) {
     this.setState({ [event.target.name]: event.target.value });
   };
 

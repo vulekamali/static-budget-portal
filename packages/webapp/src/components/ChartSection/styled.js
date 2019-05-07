@@ -3,6 +3,10 @@ import styled from 'styled-components';
 import { darken } from 'polished';
 import removeProps from '../../helpers/removeProps';
 
+const Wrapper = styled.div`
+  margin-bottom: 60px;
+`;
+
 const LinkWrapper = styled.a`
   text-decoration: none;
 `;
@@ -74,6 +78,7 @@ const DetailsContainer = styled.div`
 const Department = styled(Typography)`
   && {
     font-size: 14px;
+    font-weight: 700;
     line-height: 120%;
     color: #000;
     text-transform: Capitalize;
@@ -143,6 +148,7 @@ const FooterDetails = styled(Typography)`
 
 
 export {
+  Wrapper,
   DetailsWrapper,
   LinkWrapper,
   ButtonStyle,
@@ -159,6 +165,7 @@ export {
 }
 
 export default {
+  Wrapper,
   DetailsWrapper,
   LinkWrapper,
   ButtonStyle,

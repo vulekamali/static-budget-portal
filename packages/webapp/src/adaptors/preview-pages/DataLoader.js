@@ -42,7 +42,6 @@ class DataLoader extends Component {
       government,
       year
     }
-
     return createElement(Preview, passedProps);
   }
 }
