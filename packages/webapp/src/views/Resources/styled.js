@@ -6,40 +6,36 @@ import {
 import styled from 'styled-components';
 
 const Wrapper = styled.div`
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  margin-right: 16px;
-  margin-left: 16px;
-  margin-bottom: 20px;
-
-  @media screen and (min-width: 950px) {
-    margin-bottom: 40px;
-  }
-`;
-
-const ResourcesContainer = styled.div`
-  max-width: 1200px;
-  padding-bottom: 16px;
-  width: 100%;
+  background: #f4f4f4;
   display: flex;
   flex-direction: column;
+  align-items: center;
+  padding: 50px 20px;
+`;
 
-  @media screen and (min-width: 950px) {
-    flex-direction: row;
-    justify-content: space-between;
-    align-items: center;
-    padding-bottom: 24px;
-  }
+const ResourceWrapper = styled.div`
+  max-width: 1000px;
+`;
+
+const Heading = styled(Typography)`
+&& {
+  text-align: center;
+  text-transform: uppercase;
+  font-size: 14px;
+  letter-spacing: 3px;
+  padding: 10px;
+}
 `;
 
 
 export {
   Wrapper,
-  ResourcesContainer
+  ResourceWrapper,
+  Heading
 }
 
 export default {
   Wrapper,
-  ResourcesContainer
+  ResourceWrapper,
+  Heading
 }
