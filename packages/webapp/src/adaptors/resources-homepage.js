@@ -1,7 +1,6 @@
 import { createElement } from 'react';
 import { render } from 'react-dom';
-import Resources from '../views/Homepage';
-
+import Resources from '../views/Resources';
 
 const props = {
   resources: [
@@ -98,11 +97,11 @@ const props = {
   ],
 };
 
-const node = document.querySelector('[data-webapp="homepage-hero"]')
+const node = document.querySelector('[data-webapp="resources-homepage"]')
 
 const connection = () => {
   if (node) {
-    render(createElement(Homepage, props), node);
+    render(createElement(Resources, props), node);
   }
 };
 
