@@ -12,3 +12,4 @@ import './adaptors/national-treemap';
 import './adaptors/provincial-treemap';
 import './adaptors/preview-pages';
 import './adaptors/consolidated-treemap';
+import './adaptors/focus-areas-preview';

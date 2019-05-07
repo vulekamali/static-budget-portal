@@ -36,6 +36,7 @@ class Preview extends Component {
     const { state, events, props } = this;
     const selectedObject = props.items.find(({ id }) => id === state.selected);
 
+
     const passedProps = {
       ...props,
       ...selectedObject,

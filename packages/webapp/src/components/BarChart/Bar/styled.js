@@ -46,7 +46,6 @@ const Title = styled(Typography)`
 
     @media screen and (min-width: 600px) {
       font-size: 14px;
-      line-height: 100%;
     }
   }
 `;

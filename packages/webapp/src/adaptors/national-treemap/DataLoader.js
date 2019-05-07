@@ -33,6 +33,7 @@ class DataLoader extends Component {
     }
 
     const {items, total } = data;
+
     const initialSelected = {
       name: "National Budget Summary",
       value: total,

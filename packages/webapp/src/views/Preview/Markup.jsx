@@ -3,11 +3,12 @@ import ReactMarkdown from 'react-markdown';
 
 import Heading from './Heading';
 import BudgetAmounts from './BudgetAmounts';
-import SectionHeading from '../../components/SectionHeading';
+import SectionHeading from './SectionHeading';
 import BarChart from '../../components/BarChart';
 import calcFineprint from './calcFineprint';
 
 import {
+  Wrapper,
   TextWrapper,
   TextContainer,
   Description,
@@ -25,7 +26,7 @@ const callDescription = description => {
       <SectionHeading title='Department information' />
       <TextWrapper>
         <TextContainer>
-          <Description>
+          <Description component='div'>
             <ReactMarkdown source={description} />
           </Description>
         </TextContainer>
@@ -44,11 +45,11 @@ const Markup = (props) => {
     departmentNames,
     selected,
     eventHandler,
-    year,
+    year
   } = props;
 
   return (
-    <React.Fragment>
+    <Wrapper>
       <Heading {...{ departmentNames, government, selected, eventHandler, year, sphere }} />
       <BudgetAmounts {...resources} sphere={sphere} />
       {callDescription(description)}
@@ -59,9 +60,10 @@ const Markup = (props) => {
       <FooterWrapper>
         <FooterContainer>
           <FooterDetails>{calcFineprint(year)}</FooterDetails>
+          <FooterDetails>Direct charges against the national revenue fund included here, while it is not normally counted as part of the total budget of the department, as it is not part of the voted appropriation.</FooterDetails>
         </FooterContainer>
       </FooterWrapper>
-    </React.Fragment>
+    </Wrapper>
   );
 };
 

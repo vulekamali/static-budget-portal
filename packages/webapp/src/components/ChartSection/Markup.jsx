@@ -6,6 +6,7 @@ import SectionHeading from '../SectionHeading';
 import CssBaseline from '@material-ui/core/CssBaseline';
 
 import {
+  Wrapper,
   DetailsWrapper,
   LinkWrapper,
   ButtonStyle,
@@ -29,10 +30,7 @@ import {
    </ChartWrapper>
  );
 
-const callButtonExplore = (url, color,  verb, subject, isConsolidatedChart) => {
-  if(isConsolidatedChart) {
-    return null;
-  }
+const callButtonExplore = (url, color,  verb, subject) => {
   return (
     <LinkWrapper href={url}>
       <ButtonStyle disabled={!url} {...{color}}>
@@ -43,8 +41,11 @@ const callButtonExplore = (url, color,  verb, subject, isConsolidatedChart) => {
   );
 };
 
-const callDetails = (selected, verb, subject, isConsolidatedChart) => {
+const callDetails = (selected, verb, subject) => {
   const { name, value, url, color } = selected;
+  if (value === null) {
+    return null;
+  }
   return (
     <DetailsWrapper>
       <DetailsContainer>
@@ -52,7 +53,7 @@ const callDetails = (selected, verb, subject, isConsolidatedChart) => {
           <Department>{name}</Department>
           <Amount>R{trimValues(value)}</Amount>
         </div>
-        {callButtonExplore(url, color,  verb, subject, isConsolidatedChart)}
+        {!!verb && callButtonExplore(url, color,  verb, subject)}
       </DetailsContainer>
     </DetailsWrapper>
   );
@@ -69,22 +70,21 @@ const Markup = (props) => {
     years,
     phases,
     anchor,
-    title,
-    isConsolidatedChart
+    title
   } = props;
   
   return (
-    <React.Fragment>
+    <Wrapper>
       <CssBaseline />
       <SectionHeading title={title} share={anchor} years={years} phases={phases} />
-      {!!selected && callDetails(selected, verb, subject, isConsolidatedChart)} 
+      {!!selected && callDetails(selected, verb, subject)}
       {callChart(chart, onSelectedChange)}
       <FooterWrapper>
         <FooterContainer>
           {footer && <FooterDetails>{footer}</FooterDetails>}
         </FooterContainer>
       </FooterWrapper>
-    </React.Fragment>
+    </Wrapper>
   );
 };
 
