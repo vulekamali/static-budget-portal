@@ -10,6 +10,7 @@ import os
 import requests
 import yaml
 import logging
+import argparse
 from requests.adapters import HTTPAdapter
 from requests.packages.urllib3.util.retry import Retry
 from requests.exceptions import ChunkedEncodingError
@@ -20,6 +21,14 @@ logFormatter = logging.Formatter('%(asctime)s - %(name)s - %(levelname)s - %(mes
 logHandler = logging.StreamHandler()
 logHandler.setFormatter(logFormatter)
 logger.addHandler(logHandler)
+
+ARG_CHOICES = ['basic_pages', 'contributed_datasets', 'categories_list', 'category_detail', 'departments',
+               'infrastructure_projects', 'treemaps', 'preview_pages', 'json_apis', 'focus_areas']
+
+parser = argparse.ArgumentParser()
+parser.add_argument('--only', nargs='+', default='all', required=False, choices=ARG_CHOICES)
+
+# PARSE ARGS HERE
 
 YEAR_SLUGS = [
     '2019-20',
@@ -236,7 +245,7 @@ def write_categorised_dataset_page(dataset_url_path, dataset_yaml):
 
 session = requests_session()
 
-# Basic Pages
+# Basic Pages (arg: basic_pages)
 
 for year_slug in YEAR_SLUGS:
     write_financial_year(session, year_slug, "/%s" % year_slug)
@@ -255,7 +264,7 @@ for year_slug in YEAR_SLUGS:
 
         write_basic_page(url_path, r.text)
 
-# Contributed Datasets
+# Contributed Datasets (arg: contributed_datasets)
 
 listing_url_path = '/datasets/contributed'
 logger.info(listing_url_path)
@@ -286,7 +295,7 @@ for dataset in listing['datasets']:
         dataset_file.write(GENERATED_YAML_COMMENT)
         dataset_file.write(r.text)
 
-# Category list page
+# Category list page (arg: categories_list)
 
 category_list_url_path = "/datasets"
 logger.info(category_list_url_path)
@@ -303,7 +312,7 @@ write_basic_page(category_list_url_path, r.text, 'dataset_landing_page')
 dataset_categories = [c['slug'] for c in yaml.load(r.text)['categories']]
 dataset_categories.remove('contributed')
 
-# Category detail pages
+# Category detail pages (arg: category_detail)
 
 for category in dataset_categories:
     dataset_list_url_path = "/datasets/" + category
@@ -337,7 +346,7 @@ for category in dataset_categories:
         with open(dataset_context_path, 'wb') as dataset_file:
             dataset_file.write(r.text)
 
-# Departments
+# Departments (arg: departments)
 
 for year_slug in YEAR_SLUGS:
     listing_url_path = '/%s/departments' % year_slug
@@ -370,7 +379,7 @@ for year_slug in YEAR_SLUGS:
                     department_file.write(GENERATED_YAML_COMMENT)
                     department_file.write(r.text)
 
-# Infrastructure projects
+# Infrastructure projects (arg: infrastructure_projects)
 
 listing_url_path = '/infrastructure-projects'
 logger.info(listing_url_path)
@@ -404,7 +413,7 @@ else:
             project_file.write(GENERATED_YAML_COMMENT)
             project_file.write(r.text)
 
-# Treemaps
+# Treemaps (arg: treemaps)
 
 SPHERES = ('national', 'provincial')
 for year in YEAR_SLUGS:
@@ -423,7 +432,22 @@ for year in YEAR_SLUGS:
                 with open(listing_path, 'wb') as dataset_list_file:
                     dataset_list_file.write(r.text)
 
-# Department preview pages
+for year in YEAR_SLUGS:
+    listing_url_path = '/{}/consolidated'.format(year)
+    logger.info(listing_url_path)
+    listing_url = portal_url + listing_url_path[1:] + '.yaml'
+    r = http_get(session, listing_url)
+    if r.status_code == 404:
+        logger.info("No data for {}".format(listing_url))
+    else:
+        r.raise_for_status()
+        listing_path = '_data%s.yaml' % listing_url_path
+        ensure_file_dirs(listing_path)
+        with open(listing_path, 'wb') as dataset_list_file:
+            dataset_list_file.write(r.text)
+
+
+# Department preview pages (arg: preview_pages)
 
 for year in YEAR_SLUGS:
     for budget_phase in BUDGET_TYPES:
@@ -448,23 +472,8 @@ for year in YEAR_SLUGS:
                                 markdown_path = '/{}/previews/{}/{}/{}'.format(year, sphere, government, slug)
                                 write_basic_page(markdown_path, '', 'department_preview')
 
-# Consolidated treemap
 
-for year in YEAR_SLUGS:
-    listing_url_path = '/{}/consolidated'.format(year)
-    logger.info(listing_url_path)
-    listing_url = portal_url + listing_url_path[1:] + '.yaml'
-    r = http_get(session, listing_url)
-    if r.status_code == 404:
-        logger.info("No data for {}".format(listing_url))
-    else:
-        r.raise_for_status()
-        listing_path = '_data%s.yaml' % listing_url_path
-        ensure_file_dirs(listing_path)
-        with open(listing_path, 'wb') as dataset_list_file:
-            dataset_list_file.write(r.text)
-
-# JSON APIs
+# JSON APIs (arg: json_apis)
 
 for year in YEAR_SLUGS:
     json_year_path = 'json/{}'.format(year)
@@ -478,7 +487,8 @@ for year in YEAR_SLUGS:
                 # write file
 
 
-# Focus area pages
+# Focus area pages (arg: focus_areas)
+
 for year in YEAR_SLUGS:
     listing_url_path = '/{}/focus'.format(year)
     logger.info(listing_url_path)
