@@ -60,6 +60,7 @@ const Markup = (props) => {
       <FooterWrapper>
         <FooterContainer>
           <FooterDetails>{calcFineprint(year)}</FooterDetails>
+          <FooterDetails>Direct charges against the national revenue fund included here, while it is not normally counted as part of the total budget of the department, as it is not part of the voted appropriation.</FooterDetails>
         </FooterContainer>
       </FooterWrapper>
     </Wrapper>
