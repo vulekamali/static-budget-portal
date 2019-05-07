@@ -34,17 +34,20 @@ BUDGET_TYPES = [
     'actual'
 ]
 
-PROVINCE_SLUGS = [
-    'gauteng',
-    'north-west',
-    'kwazulu-natal',
-    'western-cape',
-    'eastern-cape',
-    'northern-cape',
-    'free-state',
-    'mpumalanga',
-    'limpopo'
-]
+GOVERNMENT_SLUGS = {
+    'provincial': [
+        'gauteng',
+        'north-west',
+        'kwazulu-natal',
+        'western-cape',
+        'eastern-cape',
+        'northern-cape',
+        'free-state',
+        'mpumalanga',
+        'limpopo'
+    ],
+    'national': ['south-africa']
+}
 
 BASIC_PAGE_SLUGS = [
     'search-result',
@@ -61,10 +64,10 @@ portal_url = os.environ.get('PORTAL_URL', "https://dynamicbudgetportal.openup.or
 # Use session with retries and keepalive
 # https://www.peterbe.com/plog/best-practice-with-retries-with-requests
 def requests_session(
-    retries=3,
-    backoff_factor=0.3,
-    status_forcelist=(500, 502, 504),
-    session=None,
+        retries=3,
+        backoff_factor=0.3,
+        status_forcelist=(500, 502, 504),
+        session=None,
 ):
     session = session or requests.Session()
     retry = Retry(
@@ -86,7 +89,7 @@ def http_get(session, url, retries=3):
     except ChunkedEncodingError as e:
         logger.error(e, exc_info=True)
         if retries:
-            return http_get(session, url, retries-1)
+            return http_get(session, url, retries - 1)
         else:
             raise e
 
@@ -153,9 +156,9 @@ def write_financial_year(session, year_slug, static_path):
              "financial_year: %s\n"
              "data_key: index\n"
              "---\n%s") % (
-                 year_slug,
-                 GENERATED_MARKDOWN_COMMENT,
-             ))
+                year_slug,
+                GENERATED_MARKDOWN_COMMENT,
+            ))
 
 
 def write_department_page(department_url_path, department_yaml):
@@ -171,12 +174,12 @@ def write_department_page(department_url_path, department_yaml):
              "data_key: %s\n"
              "layout: department\n"
              "---\n%s") % (
-                 department['selected_financial_year'],
-                 department['sphere']['slug'],
-                 department['government']['slug'],
-                 department['slug'],
-                 GENERATED_MARKDOWN_COMMENT,
-             ))
+                department['selected_financial_year'],
+                department['sphere']['slug'],
+                department['government']['slug'],
+                department['slug'],
+                GENERATED_MARKDOWN_COMMENT,
+            ))
 
 
 def write_infrastructure_project_page(department_url_path, department_yaml):
@@ -192,12 +195,12 @@ def write_infrastructure_project_page(department_url_path, department_yaml):
              "data_key: %s\n"
              "layout: department\n"
              "---\n%s") % (
-                 department['selected_financial_year'],
-                 department['sphere']['slug'],
-                 department['government']['slug'],
-                 department['slug'],
-                 GENERATED_MARKDOWN_COMMENT,
-             ))
+                department['selected_financial_year'],
+                department['sphere']['slug'],
+                department['government']['slug'],
+                department['slug'],
+                GENERATED_MARKDOWN_COMMENT,
+            ))
 
 
 def write_contributed_dataset_page(dataset_url_path, dataset_yaml):
@@ -210,9 +213,9 @@ def write_contributed_dataset_page(dataset_url_path, dataset_yaml):
              "data_key: %s\n"
              "layout: contributed_dataset\n"
              "---\n%s") % (
-                 dataset['slug'],
-                 GENERATED_MARKDOWN_COMMENT,
-             ))
+                dataset['slug'],
+                GENERATED_MARKDOWN_COMMENT,
+            ))
 
 
 def write_categorised_dataset_page(dataset_url_path, dataset_yaml):
@@ -226,9 +229,9 @@ def write_categorised_dataset_page(dataset_url_path, dataset_yaml):
              "category: %s\n"
              "layout: government_dataset\n"
              "---") % (
-                 dataset['slug'],
-                 dataset['category']['slug'],
-             ))
+                dataset['slug'],
+                dataset['category']['slug'],
+            ))
 
 
 session = requests_session()
@@ -251,7 +254,6 @@ for year_slug in YEAR_SLUGS:
             file.write(r.text)
 
         write_basic_page(url_path, r.text)
-
 
 # Contributed Datasets
 
@@ -283,7 +285,6 @@ for dataset in listing['datasets']:
     with open(dataset_context_path, 'wb') as dataset_file:
         dataset_file.write(GENERATED_YAML_COMMENT)
         dataset_file.write(r.text)
-
 
 # Category list page
 
@@ -369,7 +370,6 @@ for year_slug in YEAR_SLUGS:
                     department_file.write(GENERATED_YAML_COMMENT)
                     department_file.write(r.text)
 
-
 # Infrastructure projects
 
 listing_url_path = '/infrastructure-projects'
@@ -423,34 +423,13 @@ for year in YEAR_SLUGS:
                 with open(listing_path, 'wb') as dataset_list_file:
                     dataset_list_file.write(r.text)
 
-
 # Department preview pages
 
 for year in YEAR_SLUGS:
     for budget_phase in BUDGET_TYPES:
         for sphere in SPHERES:
-            if sphere == 'provincial':
-                for government in PROVINCE_SLUGS:
-                    listing_url_path = '/{}/previews/{}/{}/{}'.format(year, sphere, government, budget_phase)
-                    logger.info(listing_url_path)
-                    listing_url = portal_url + listing_url_path[1:] + '.yaml'
-                    r = http_get(session, listing_url)
-                    if r.status_code == 404:
-                        logger.info("No data for {}".format(listing_url))
-                    else:
-                        r.raise_for_status()
-                        listing_path = '_data%s.yaml' % listing_url_path
-                        ensure_file_dirs(listing_path)
-                        with open(listing_path, 'wb') as dataset_list_file:
-                            dataset_list_file.write(r.text)
-                            data = yaml.load(r.text)
-                            if data:
-                                for department_object in data['data']['items']:
-                                    slug = department_object['slug']
-                                    markdown_path = '/{}/previews/{}/{}/{}'.format(year, sphere, government, slug)
-                                    write_basic_page(markdown_path, '', 'department_preview')
-            elif sphere == 'national':
-                listing_url_path = '/{}/previews/{}/south-africa/{}'.format(year, sphere, budget_phase)
+            for government in GOVERNMENT_SLUGS[sphere]:
+                listing_url_path = '/{}/previews/{}/{}/{}'.format(year, sphere, government, budget_phase)
                 logger.info(listing_url_path)
                 listing_url = portal_url + listing_url_path[1:] + '.yaml'
                 r = http_get(session, listing_url)
@@ -466,7 +445,7 @@ for year in YEAR_SLUGS:
                         if data:
                             for department_object in data['data']['items']:
                                 slug = department_object['slug']
-                                markdown_path = '/{}/previews/{}/south-africa/{}'.format(year, sphere, slug)
+                                markdown_path = '/{}/previews/{}/{}/{}'.format(year, sphere, government, slug)
                                 write_basic_page(markdown_path, '', 'department_preview')
 
 # Consolidated treemap
@@ -484,6 +463,7 @@ for year in YEAR_SLUGS:
         ensure_file_dirs(listing_path)
         with open(listing_path, 'wb') as dataset_list_file:
             dataset_list_file.write(r.text)
+
 
 
 # Focus area pages
