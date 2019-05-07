@@ -464,6 +464,18 @@ for year in YEAR_SLUGS:
         with open(listing_path, 'wb') as dataset_list_file:
             dataset_list_file.write(r.text)
 
+# JSON APIs
+
+for year in YEAR_SLUGS:
+    json_year_path = 'json/{}'.format(year)
+    # previews
+    for sphere in SPHERES:
+        json_year_previews_path = json_year_path + '/previews/{}'.format(sphere)
+        for government in GOVERNMENT_SLUGS[sphere]:
+            for budget_type in BUDGET_TYPES:
+                json_api_path = json_year_previews_path + '/{}/{}.json'.format(government, budget_type)
+                print(json_api_path)
+                # write file
 
 
 # Focus area pages
