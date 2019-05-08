@@ -1,6 +1,7 @@
 ---
 ---
 
+
 {% if (site.data.2018-19.previews.provincial.western-cape.actual) %}
   {{ site.data.2018-19.previews.provincial.western-cape.actual | jsonify }}
 {% else %}

@@ -1,8 +1,9 @@
 ---
 ---
 
-{% if (site.data.homepage.2018-19.national.original) %}
-  {{ site.data.homepage.2018-19.national.original | jsonify }}
+
+{% if (site.data.2018-19.national.original) %}
+  {{ site.data.2018-19.national.original | jsonify }}
 {% else %}
   {}
 {% endif %}

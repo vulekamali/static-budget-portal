@@ -1,6 +1,7 @@
 ---
 ---
 
+
 {% if (site.data.2016-17.previews.provincial.western-cape.adjusted) %}
   {{ site.data.2016-17.previews.provincial.western-cape.adjusted | jsonify }}
 {% else %}

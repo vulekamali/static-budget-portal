@@ -1,6 +1,7 @@
 ---
 ---
 
+
 {% if (site.data.2017-18.previews.provincial.mpumalanga.original) %}
   {{ site.data.2017-18.previews.provincial.mpumalanga.original | jsonify }}
 {% else %}

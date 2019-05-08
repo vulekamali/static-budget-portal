@@ -1,8 +1,9 @@
 ---
 ---
 
-{% if (site.data.homepage.2017-18.provincial.original) %}
-  {{ site.data.homepage.2017-18.provincial.original | jsonify }}
+
+{% if (site.data.2017-18.provincial.original) %}
+  {{ site.data.2017-18.provincial.original | jsonify }}
 {% else %}
   {}
 {% endif %}

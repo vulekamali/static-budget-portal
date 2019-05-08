@@ -1,6 +1,7 @@
 ---
 ---
 
+
 {% if (site.data.2019-20.previews.provincial.kwazulu-natal.adjusted) %}
   {{ site.data.2019-20.previews.provincial.kwazulu-natal.adjusted | jsonify }}
 {% else %}

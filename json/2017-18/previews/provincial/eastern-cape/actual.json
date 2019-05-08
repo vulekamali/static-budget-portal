@@ -1,6 +1,7 @@
 ---
 ---
 
+
 {% if (site.data.2017-18.previews.provincial.eastern-cape.actual) %}
   {{ site.data.2017-18.previews.provincial.eastern-cape.actual | jsonify }}
 {% else %}

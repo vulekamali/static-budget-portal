@@ -11,6 +11,7 @@ import requests
 import yaml
 import logging
 import argparse
+from string import Template
 from requests.adapters import HTTPAdapter
 from requests.packages.urllib3.util.retry import Retry
 from requests.exceptions import ChunkedEncodingError
@@ -137,6 +138,25 @@ def write_basic_page(page_url_path, page_yaml, layout=None):
             front_matter_yaml,
             GENERATED_MARKDOWN_COMMENT
         ))
+
+
+JSON_API_LIQUID_SYNTAX = Template("""
+{% if (site.data.$path) %}
+  {{ site.data.$path | jsonify }}
+{% else %}
+  {}
+{% endif %}
+""")
+
+
+def write_json_file(page_url_path):
+    file_path = page_url_path + '.json'
+    ensure_file_dirs(file_path)
+    with open(file_path, "wb") as outfile:
+        outfile.write("---\n---\n\n{}".format(
+            JSON_API_LIQUID_SYNTAX.substitute(
+                path=page_url_path[5:].replace('/', '.')))  # Remove json/ prefix with 5:
+        )
 
 
 def write_financial_year(session, year_slug, static_path):
@@ -439,7 +459,7 @@ if ('all' in args.only) or ('treemaps' in args.only):
                     logger.info("No data for {}".format(listing_url))
                 else:
                     r.raise_for_status()
-                    listing_path = '_data/homepage%s.yaml' % listing_url_path
+                    listing_path = '_data/%s.yaml' % listing_url_path
                     ensure_file_dirs(listing_path)
                     with open(listing_path, 'wb') as dataset_list_file:
                         dataset_list_file.write(r.text)
@@ -491,14 +511,18 @@ if ('all' in args.only) or ('preview_pages' in args.only):
 if ('all' in args.only) or ('json_apis' in args.only):
     for year in YEAR_SLUGS:
         json_year_path = 'json/{}'.format(year)
-        # previews
         for sphere in SPHERES:
-            json_year_previews_path = json_year_path + '/previews/{}'.format(sphere)
+            # preview pages
             for government in GOVERNMENT_SLUGS[sphere]:
                 for budget_type in BUDGET_TYPES:
-                    json_api_path = json_year_previews_path + '/{}/{}.json'.format(government, budget_type)
-                    print(json_api_path)
-                    # write file
+                    json_api_path = json_year_path + '/previews/{}/{}/{}'.format(sphere, government, budget_type)
+                    logger.info('JSON API: ' + json_api_path)
+                    write_json_file(json_api_path)
+            # national and provincial budgets
+            for budget_type in BUDGET_TYPES:
+                json_api_path = json_year_path + '/{}/{}'.format(sphere, budget_type)
+                logger.info('JSON API: ' + json_api_path)
+                write_json_file(json_api_path)
 
 
 # Focus area pages (arg: focus_areas)
