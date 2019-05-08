@@ -523,6 +523,11 @@ if ('all' in args.only) or ('json_apis' in args.only):
                 json_api_path = json_year_path + '/{}/{}'.format(sphere, budget_type)
                 logger.info('JSON API: ' + json_api_path)
                 write_json_file(json_api_path)
+        # consolidated and focus
+        for data_type in ['consolidated', 'focus']:
+            json_api_path = json_year_path + '/{}'.format(data_type)
+            logger.info('JSON API: ' + json_api_path)
+            write_json_file(json_api_path)
 
 
 # Focus area pages (arg: focus_areas)
