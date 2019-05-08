@@ -7,6 +7,8 @@ All url_path variables should start with /
 """
 
 import os
+import shutil
+
 import requests
 import yaml
 import logging
@@ -141,8 +143,8 @@ def write_basic_page(page_url_path, page_yaml, layout=None):
 
 
 JSON_API_LIQUID_SYNTAX = Template("""
-{% if (site.data.$path) %}
-  {{ site.data.$path | jsonify }}
+{% if site["data"]$path %}
+  {{ site["data"]$path | jsonify }}
 {% else %}
   {}
 {% endif %}
@@ -153,9 +155,14 @@ def write_json_file(page_url_path):
     file_path = page_url_path + '.json'
     ensure_file_dirs(file_path)
     with open(file_path, "wb") as outfile:
+        page_url_path_no_json_dir = page_url_path[5:]
+        page_url_path_no_json_dir_split = page_url_path_no_json_dir.split('/')
+        page_url = ""
+        for url_section in page_url_path_no_json_dir_split:
+            page_url += '["' + url_section + '"]'
         outfile.write("---\n---\n\n{}".format(
             JSON_API_LIQUID_SYNTAX.substitute(
-                path=page_url_path[5:].replace('/', '.')))  # Remove json/ prefix with 5:
+                path=page_url))  # Remove json/ prefix with 5:
         )
 
 
@@ -509,6 +516,13 @@ if ('all' in args.only) or ('preview_pages' in args.only):
 # JSON APIs (arg: json_apis)
 
 if ('all' in args.only) or ('json_apis' in args.only):
+    filenames = os.listdir("./json")  # get all files' and folders' names in the current directory
+    for filename in filenames:  # loop through all the files and folders
+        file_path = os.path.join(os.path.abspath("./json"), filename)
+        if os.path.isdir(file_path):  # is it a dir?
+            if filename not in YEAR_SLUGS:  # if not part of the current financial years scope
+                shutil.rmtree(file_path)
+                logger.warning("Deleted \"{}\" since it is out of the financial year scope.".format(file_path))
     for year in YEAR_SLUGS:
         json_year_path = 'json/{}'.format(year)
         for sphere in SPHERES:
