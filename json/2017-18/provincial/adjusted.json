@@ -2,8 +2,8 @@
 ---
 
 
-{% if (site.data.2017-18.provincial.adjusted) %}
-  {{ site.data.2017-18.provincial.adjusted | jsonify }}
+{% if site["data"]["2017-18"]["provincial"]["adjusted"] %}
+  {{ site["data"]["2017-18"]["provincial"]["adjusted"] | jsonify }}
 {% else %}
   {}
 {% endif %}

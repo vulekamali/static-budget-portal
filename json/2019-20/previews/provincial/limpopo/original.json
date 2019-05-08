@@ -2,8 +2,8 @@
 ---
 
 
-{% if (site.data.2019-20.previews.provincial.limpopo.original) %}
-  {{ site.data.2019-20.previews.provincial.limpopo.original | jsonify }}
+{% if site["data"]["2019-20"]["previews"]["provincial"]["limpopo"]["original"] %}
+  {{ site["data"]["2019-20"]["previews"]["provincial"]["limpopo"]["original"] | jsonify }}
 {% else %}
   {}
 {% endif %}

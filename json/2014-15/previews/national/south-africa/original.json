@@ -1,8 +1,0 @@
----
----
-
-{% if (site.data.2014-15.previews.national.south-africa.original) %}
-  {{ site.data.2014-15.previews.national.south-africa.original | jsonify }}
-{% else %}
-  {}
-{% endif %}

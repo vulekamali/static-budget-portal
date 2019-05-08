@@ -2,8 +2,8 @@
 ---
 
 
-{% if (site.data.2017-18.previews.provincial.western-cape.adjusted) %}
-  {{ site.data.2017-18.previews.provincial.western-cape.adjusted | jsonify }}
+{% if site["data"]["2017-18"]["previews"]["provincial"]["western-cape"]["adjusted"] %}
+  {{ site["data"]["2017-18"]["previews"]["provincial"]["western-cape"]["adjusted"] | jsonify }}
 {% else %}
   {}
 {% endif %}

@@ -2,8 +2,8 @@
 ---
 
 
-{% if (site.data.2016-17.previews.national.south-africa.actual) %}
-  {{ site.data.2016-17.previews.national.south-africa.actual | jsonify }}
+{% if site["data"]["2016-17"]["previews"]["national"]["south-africa"]["actual"] %}
+  {{ site["data"]["2016-17"]["previews"]["national"]["south-africa"]["actual"] | jsonify }}
 {% else %}
   {}
 {% endif %}

@@ -2,8 +2,8 @@
 ---
 
 
-{% if (site.data.2019-20.national.adjusted) %}
-  {{ site.data.2019-20.national.adjusted | jsonify }}
+{% if site["data"]["2019-20"]["national"]["adjusted"] %}
+  {{ site["data"]["2019-20"]["national"]["adjusted"] | jsonify }}
 {% else %}
   {}
 {% endif %}

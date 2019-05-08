@@ -2,8 +2,8 @@
 ---
 
 
-{% if (site.data.2019-20.national.original) %}
-  {{ site.data.2019-20.national.original | jsonify }}
+{% if site["data"]["2019-20"]["national"]["original"] %}
+  {{ site["data"]["2019-20"]["national"]["original"] | jsonify }}
 {% else %}
   {}
 {% endif %}

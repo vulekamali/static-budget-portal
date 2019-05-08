@@ -1,8 +1,0 @@
----
----
-
-{% if (site.data.homepage.2014-15.provincial.adjusted) %}
-  {{ site.data.homepage.2014-15.provincial.adjusted | jsonify }}
-{% else %}
-  {}
-{% endif %}

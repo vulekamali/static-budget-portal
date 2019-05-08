@@ -2,8 +2,8 @@
 ---
 
 
-{% if (site.data.2017-18.previews.provincial.free-state.actual) %}
-  {{ site.data.2017-18.previews.provincial.free-state.actual | jsonify }}
+{% if site["data"]["2017-18"]["previews"]["provincial"]["free-state"]["actual"] %}
+  {{ site["data"]["2017-18"]["previews"]["provincial"]["free-state"]["actual"] | jsonify }}
 {% else %}
   {}
 {% endif %}

@@ -2,8 +2,8 @@
 ---
 
 
-{% if (site.data.2019-20.previews.provincial.northern-cape.adjusted) %}
-  {{ site.data.2019-20.previews.provincial.northern-cape.adjusted | jsonify }}
+{% if site["data"]["2019-20"]["previews"]["provincial"]["northern-cape"]["adjusted"] %}
+  {{ site["data"]["2019-20"]["previews"]["provincial"]["northern-cape"]["adjusted"] | jsonify }}
 {% else %}
   {}
 {% endif %}
