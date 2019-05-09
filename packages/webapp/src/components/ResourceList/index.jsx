@@ -13,9 +13,6 @@ import { Typography } from '@material-ui/core';
 
 const Title = styled(Typography)`
   && {
-    height: 39px;
-    font-family: Lato;
-    line-height: 23px;
     font-size: 14px;
     color: #000000;
   }
@@ -24,7 +21,6 @@ const Title = styled(Typography)`
 const Size = styled(Typography)`
   && {
     color: grey;
-    margin: 4.5% 0;
     font-size: 10px;
     letter-spacing: 0.5px;
   }
@@ -41,7 +37,7 @@ const CardWrapper = styled.div`
   }
 
   @media screen and (min-width: 1000px) {
-    max-width: ${100 / 3}%
+    max-width: ${100 / 3}%;
   }
 `;
 
@@ -52,7 +48,6 @@ const StyledCard = styled(Card)`
 
     @media screen and (min-width: 768px) {
       display: flex;
-      height: 145px;
     }
 
     transition: transform 500ms;
@@ -78,10 +73,9 @@ const CardContentWrapper = styled(CardContent)`
 `;
 
 const HeadingText = styled.div`
-  &&&& {
-    line-height: 23px;
-    font-size: 16px;
-  }
+  line-height: 23px;
+  font-size: 16px;
+  padding-bottom: 16px;
 `;
 
 
