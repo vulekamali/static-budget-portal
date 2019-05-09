@@ -18,7 +18,7 @@ intro: "Combined dataset consisting of ENE, AENE and Annual Report expenditure d
   \n\r\nIncludes data from multiple fiscal years."
 intro_short: null
 key_points: null
-last_updated: '2019-03-14T08:58:08.281924'
+last_updated: '2019-04-16T10:11:46.256014'
 license:
   name: License not specified
   url: null
@@ -37,11 +37,11 @@ resources:
 - description: ''
   format: CSV
   name: Budgeted and Actual Expenditure
-  url: http://datastore.openspending.org/b9d2af843f3a7ca223eea07fb608e62a/expenditure-time-series-v2/final/data/expenditure-time-series.csv
+  url: http://datastore.openspending.org/b9d2af843f3a7ca223eea07fb608e62a/budgeted-and-actual-national-expenditure-uploaded-2019-04-16t1104/final/data/expenditure-time-series-1.csv
 - description: ''
   format: OpenSpending API
   name: Budgeted and Actual Expenditure
-  url: https://openspending.org/api/3/cubes/b9d2af843f3a7ca223eea07fb608e62a:expenditure-time-series-v3/model/
+  url: https://openspending.org/api/3/cubes/b9d2af843f3a7ca223eea07fb608e62a:budgeted-and-actual-national-expenditure-uploaded-2019-04-16t1104/model
 selected_tab: datasets
 slug: budgeted-and-actual-national-expenditure
 title: Budgeted and Actual National Expenditure - vulekamali

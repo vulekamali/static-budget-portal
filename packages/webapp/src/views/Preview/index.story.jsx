@@ -2,12 +2,13 @@ import React from 'react';
 import { storiesOf } from '@storybook/react';
 import Preview from './';
 
-
-const props = {
+const item = (value) => ({
+  description: 'Pastry cupcake jelly jujubes. Jelly beans biscuit cheesecake. Danish tart gummi bears chupa chups sesame snaps. Fruitcake ice cream liquorice wafer. Dragée bear claw macaroon. Lemon drops caramels soufflé soufflé carrot cake tart.',
+  title: 'Something',
+  id: value,
   resources: {
       value: 372800000,
-      consolidated: 37,
-      change: -5,
+      consolidated: 37
     },
   items: [
     {
@@ -38,9 +39,15 @@ const props = {
       title: 'Survey Operations',
       amount: 194740000000
     }
-  ],
-  description: 'Pastry cupcake jelly jujubes. Jelly beans biscuit cheesecake. Danish tart gummi bears chupa chups sesame snaps. Fruitcake ice cream liquorice wafer. Dragée bear claw macaroon. Lemon drops caramels soufflé soufflé carrot cake tart.'
-};
+  ]
+});
+
+const items = [1,2,3,4,5].map((value) => item(value));
+
+const props = {
+  items,
+  department: 2
+}
 
 
 const basic = () => <Preview {...props} />;

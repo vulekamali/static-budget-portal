@@ -8,7 +8,7 @@ const addSingleRatio = maxBy => ({ title, amount }) => ({
 
 const addRatio = items => {
   const max = maxBy(items, 'amount');
-  return items.map(addSingleRatio((max.amount * 1.5)))
+  return items.map(addSingleRatio((max.amount * 1.33)))
 };
 
 export default addRatio;

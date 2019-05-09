@@ -12,10 +12,6 @@ data:
       percentage: 75.72212651047198
       slug: agriculture
       title: Agriculture
-    - amount: 0.0
-      percentage: 0.0
-      slug: direct-charges
-      title: Direct Charges
     - amount: 31439000.0
       percentage: 1.3527340381772275
       slug: rural-development
@@ -29,20 +25,16 @@ data:
     programmes:
     - amount: 152667000.0
       percentage: 15.860336536213952
-      slug: administration
-      title: Administration
+      slug: 1-administration
+      title: 1. Administration
     - amount: 255489000.0
       percentage: 26.54235375883961
-      slug: cultural-affairs
-      title: Cultural Affairs
-    - amount: 0.0
-      percentage: 0.0
-      slug: direct-charges
-      title: Direct Charges
+      slug: 2-cultural-affairs
+      title: 2. Cultural Affairs
     - amount: 554415000.0
       percentage: 57.59730970494644
-      slug: library-and-archive-services
-      title: Library And Archive Services
+      slug: 3-library-and-archive-services
+      title: 3. Library And Archive Services
     slug: arts-and-culture
     title: Arts And Culture
     total: 962571000.0
@@ -54,10 +46,6 @@ data:
       percentage: 37.17242574983663
       slug: administration
       title: Administration
-    - amount: 0.0
-      percentage: 0.0
-      slug: direct-charges
-      title: Direct Charges
     - amount: 141330000.0
       percentage: 62.827574250163366
       slug: provincial-secretariat-for-police-service
@@ -71,24 +59,20 @@ data:
     programmes:
     - amount: 454952000.0
       percentage: 27.095281826617164
-      slug: administration
-      title: Administration
-    - amount: 350598000.0
-      percentage: 20.880338184793835
-      slug: development-and-planning
-      title: Development And Planning
-    - amount: 0.0
-      percentage: 0.0
-      slug: direct-charges
-      title: Direct Charges
+      slug: 1-administration
+      title: 1. Administration
     - amount: 300739000.0
       percentage: 17.910917989711045
-      slug: local-governance
-      title: Local Governance
+      slug: 2-local-governance
+      title: 2. Local Governance
+    - amount: 350598000.0
+      percentage: 20.880338184793835
+      slug: 3-development-and-planning
+      title: 3. Development And Planning
     - amount: 572793000.0
       percentage: 34.11346199887796
-      slug: traditional-institutional-management
-      title: Traditional Institutional Management
+      slug: 4-traditional-institutional-management
+      title: 4. Traditional Institutional Management
     slug: co-operative-governance-and-traditional-affairs
     title: Co-Operative Governance And Traditional Affairs
     total: 1679082000.0
@@ -104,10 +88,6 @@ data:
       percentage: 3.992462024340577
       slug: business-regulation-and-governance
       title: Business Regulation And Governance
-    - amount: 0.0
-      percentage: 0.0
-      slug: direct-charges
-      title: Direct Charges
     - amount: 40024000.0
       percentage: 1.3300120692680282
       slug: economic-planning
@@ -139,10 +119,6 @@ data:
       percentage: 3.8991796310530153
       slug: administration
       title: Administration
-    - amount: 0.0
-      percentage: 0.0
-      slug: direct-charges
-      title: Direct Charges
     - amount: 1280418000.0
       percentage: 2.5153740352220493
       slug: early-childhood-development
@@ -182,10 +158,6 @@ data:
       percentage: 11.703108346188824
       slug: central-hospital-services
       title: Central Hospital Services
-    - amount: 0.0
-      percentage: 0.0
-      slug: direct-charges
-      title: Direct Charges
     - amount: 20825714000.0
       percentage: 49.177952295078185
       slug: district-health-services
@@ -221,10 +193,6 @@ data:
       percentage: 6.190274994468416
       slug: administration
       title: Administration
-    - amount: 0.0
-      percentage: 0.0
-      slug: direct-charges
-      title: Direct Charges
     - amount: 192578000.0
       percentage: 5.280106557374801
       slug: housing-asset-management-property-management
@@ -248,10 +216,6 @@ data:
       percentage: 12.999770052735421
       slug: administration
       title: Administration
-    - amount: 0.0
-      percentage: 0.0
-      slug: direct-charges
-      title: Direct Charges
     - amount: 410377000.0
       percentage: 52.13539701475093
       slug: institutional-development
@@ -273,8 +237,8 @@ data:
       title: Administration
     - amount: 90251000.0
       percentage: 15.967580420867142
-      slug: direct-charges
-      title: Direct Charges
+      slug: direct-charge-against-the-provincial-revenue-fund
+      title: Direct Charge Against The Provincial Revenue Fund
     - amount: 282967000.0
       percentage: 50.06369268984845
       slug: parliamentary-business
@@ -290,10 +254,6 @@ data:
       percentage: 29.555538485174377
       slug: administration
       title: Administration
-    - amount: 0.0
-      percentage: 0.0
-      slug: direct-charges
-      title: Direct Charges
     - amount: 209602000.0
       percentage: 32.201874327853744
       slug: financial-governance
@@ -321,10 +281,6 @@ data:
       percentage: 25.617469765707853
       slug: administration
       title: Administration
-    - amount: 0.0
-      percentage: 0.0
-      slug: direct-charges
-      title: Direct Charges
     - amount: 683593000.0
       percentage: 43.04926155528071
       slug: property-management
@@ -352,10 +308,6 @@ data:
       percentage: 6.432743024232622
       slug: development-and-research
       title: Development And Research
-    - amount: 0.0
-      percentage: 0.0
-      slug: direct-charges
-      title: Direct Charges
     - amount: 393093000.0
       percentage: 11.955812282800904
       slug: restorative-services
@@ -375,10 +327,6 @@ data:
       percentage: 20.973641064446966
       slug: administration
       title: Administration
-    - amount: 0.0
-      percentage: 0.0
-      slug: direct-charges
-      title: Direct Charges
     - amount: 357162000.0
       percentage: 79.02635893555303
       slug: sport-and-recreation
@@ -392,28 +340,24 @@ data:
     programmes:
     - amount: 363292000.0
       percentage: 3.6105178200817387
-      slug: administration
-      title: Administration
-    - amount: 36623000.0
-      percentage: 0.3639716650101118
-      slug: community-based-programme
-      title: Community Based Programme
-    - amount: 0.0
-      percentage: 0.0
-      slug: direct-charges
-      title: Direct Charges
+      slug: 1-administration
+      title: 1. Administration
     - amount: 7460222000.0
       percentage: 74.14218995399247
-      slug: transport-infrastructure
-      title: Transport Infrastructure
+      slug: 2-transport-infrastructure
+      title: 2. Transport Infrastructure
     - amount: 1281846000.0
       percentage: 12.739415747113883
-      slug: transport-operations
-      title: Transport Operations
+      slug: 3-transport-operations
+      title: 3. Transport Operations
     - amount: 920064000.0
       percentage: 9.143904813801804
-      slug: transport-regulation
-      title: Transport Regulation
+      slug: 4-transport-regulation
+      title: 4. Transport Regulation
+    - amount: 36623000.0
+      percentage: 0.3639716650101118
+      slug: 5-community-based-programme
+      title: 5. Community Based Programme
     slug: transport
     title: Transport
     total: 10062047000.0

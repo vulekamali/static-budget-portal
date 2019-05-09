@@ -13,13 +13,17 @@ import {
   Title,
   SelectsGroup,
   RightOptions,
+  Link,
   ButtonDetails,
   ButtonText,
-  ArrowStyled
+  ArrowStyled,
+  Details,
+  DetailedAnalysis
  } from './styled';
 
 const Heading = ({ government, departmentNames, selected, eventHandler, year, sphere }) => {
-  const url = `/${year}/${sphere}/${government === 'south-africa' ? '' : `${government}/`}departments/${selected}`;
+  const provinceFolder = government === 'south-africa' ? '' : `${government}/`;
+  const url = `/${year}/${sphere}/${provinceFolder}departments/${selected}`;
 
   return (
     <HeadingWrapper>
@@ -31,12 +35,12 @@ const Heading = ({ government, departmentNames, selected, eventHandler, year, sp
           <CustomizedSelect {...{ departmentNames, selected, eventHandler }} />
           <RightOptions>
             <CustomizedDateSelect />
-            <a href={url}>
+            <Link href={url}>
             <ButtonDetails>
-              <ButtonText>Detailed Analysis</ButtonText>
+              <ButtonText><Details>Details</Details><DetailedAnalysis>Detailed Analysis</DetailedAnalysis></ButtonText>
               <ArrowStyled />
             </ButtonDetails>
-            </a>
+            </Link>
           </RightOptions>
         </SelectsGroup>
       </HeadingContainer>

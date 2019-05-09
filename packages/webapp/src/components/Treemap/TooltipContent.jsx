@@ -13,7 +13,7 @@ const TooltipContent = ({ payload }) => {
   return (
     <StyledTooltip>
       <Text bold>{name}</Text>
-      <Text>R{trimValues(amount)}</Text>
+      <Text>R{trimValues(amount, true)}</Text>
     </StyledTooltip>
   );
 };
