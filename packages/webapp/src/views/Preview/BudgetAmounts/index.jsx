@@ -4,6 +4,7 @@ import Media from 'react-media';
 import trimValues from '../../../helpers/trimValues';
 import PieChart from '../../../components/PieChart';
 import calcTotal from './calcTotal';
+import { Tooltip } from '@material-ui/core';
 
 import {
   Wrapper,
@@ -13,6 +14,7 @@ import {
   IntroMainHeading,
   IntroSubHeading,
   Percentages,
+  TooltipStyled
 } from './styled';
 
 const BudgetAmounts = (props) => {
@@ -42,12 +44,19 @@ const BudgetAmounts = (props) => {
             <IntroSubHeading>Original department budget</IntroSubHeading>
           </Budget>
           <Percentages>
-            <div>
-              <IntroMainHeading>
-                <PieChart values={[consolidated < 1 ? 1 : consolidated]} /> {calcTotal(consolidated)}%
-              </IntroMainHeading>
-              <IntroSubHeading>of {sphere} budget</IntroSubHeading>
-            </div>
+            <TooltipStyled />
+            <Tooltip
+              title={`${consolidated}%`}
+              placement="top-start"
+              classes={{ tooltip: 'previewPercentageTooltip' }}
+            >
+              <div>
+                <IntroMainHeading>
+                  <PieChart values={[consolidated < 1 ? 1 : consolidated]} /> {calcTotal(consolidated)}%
+                </IntroMainHeading>
+                <IntroSubHeading>of {sphere} budget</IntroSubHeading>
+              </div>
+            </Tooltip>
           </Percentages>
         </Numbers>
       </Summary>
