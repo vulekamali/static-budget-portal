@@ -1,8 +1,6 @@
 import React, { Component } from 'react';
 import Markup from './Markup';
 
-
-
 class ChartSection extends Component {
   constructor(props) {
     super(props);
@@ -21,7 +19,8 @@ class ChartSection extends Component {
     const { initialSelected } = this.props;
 
     if (event === null) {
-      return this.setState({ selected: initialSelected });
+       this.setState({ selected: initialSelected });
+       return null;
     }
 
     this.setState({ selected: event });

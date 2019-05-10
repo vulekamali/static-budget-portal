@@ -1,4 +1,7 @@
 import React from 'react';
+import Minimap from '../Minimap';
+import { mockProps as mockMinimapProps } from '../Minimap/schema';
+import { generateItems as mockChartItems } from '../StackChart/schema';
 import { storiesOf } from '@storybook/react';
 
 import ChartSection from './';
@@ -54,6 +57,8 @@ const Chart = ({ onSelectedChange }) => (
   </ul>
 );
 
+const renderMinimap = () => <Minimap {...mockMinimapProps(false)} reverse />
+
 const national = () => (
   <ChartSection
     {...{ data, initialSelected }}
@@ -80,8 +85,22 @@ const provincial = () => (
   />
 );
 
-
+const sticky = () => (
+  <ChartSection
+    {...{ initialSelected }}
+    data={mockChartItems()}
+    chart={(onSelectedChange) => <Chart {...{ onSelectedChange }} />}
+    verb='Explore'
+    subject='this department'
+    footer='Budget data from 1 April 2018 - 31 March 2019'
+    phases={phases}
+    years={years}
+    title='Provincial Budget Summary'
+    minimapRender={renderMinimap}
+  />
+);
 
 storiesOf('component.ChartSection', module)
   .add('National', national)
   .add('Provincial', provincial)
+  .add('Sticky', sticky);
