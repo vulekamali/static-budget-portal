@@ -10,7 +10,11 @@ data:
       \ of legislation, including the Sea Fishery Act (1988), the National Forests\
       \ Act (1998), the Agricultural Products Standards Act (1990), and the Conservation\
       \ of Agricultural Resources Act (1983)."
-    percentage_of_budget: 0.47125122255114543
+    focus_areas:
+    - slug: economic-development
+      title: Economic Development
+      url: 2019-20/focus/economic-development
+    percentage_of_budget: 0.8683972474491309
     programmes:
     - amount: 935725000.0
       percentage: 12.207939345240355
@@ -56,7 +60,11 @@ data:
       \ enhance archives and records management structures and systems, and promote\
       \ access to information \n\u2022 provide leadership to the arts and culture\
       \ sector so as to accelerate its transformation.\n"
-    percentage_of_budget: 0.28389131941265894
+    focus_areas:
+    - slug: learning-and-culture
+      title: Learning And Culture
+      url: 2019-20/focus/learning-and-culture
+    percentage_of_budget: 0.523140160821331
     programmes:
     - amount: 308274000.0
       percentage: 6.676231758197374
@@ -90,7 +98,11 @@ data:
       \ of Educators Act (1998), which regulates the professional, moral and ethical\
       \ responsibilities of educators, as well as the competency requirements for\
       \ teachers."
-    percentage_of_budget: 1.506582833983955
+    focus_areas:
+    - slug: learning-and-culture
+      title: Learning And Culture
+      url: 2019-20/focus/learning-and-culture
+    percentage_of_budget: 2.776252502864934
     programmes:
     - amount: 496253000.0
       percentage: 2.025147920602928
@@ -136,7 +148,11 @@ data:
       \ Minister of Telecommunications and Postal Services\n\u2022 the Electronic\
       \ Communications and Transactions Act (2005), a joint responsibility with the\
       \ Minister of Telecommunications and Postal Services.\n"
-    percentage_of_budget: 0.0969009219314014
+    focus_areas:
+    - slug: general-public-services
+      title: General Public Services
+      url: 2019-20/focus/general-public-services
+    percentage_of_budget: 0.17856398000406115
     programmes:
     - amount: 64879000.0
       percentage: 4.116450128831393
@@ -172,7 +188,17 @@ data:
       \ Relations Framework Act (2005)\n\u2022 the Municipal Property Rates Act (2004)\n\
       \u2022 the Municipal Systems Act (2000)\n\u2022 the Municipal Structures Act\
       \ (1998)\n\u2022 the Disaster Management Act (2002).\n"
-    percentage_of_budget: 5.577493428917811
+    focus_areas:
+    - slug: community-development
+      title: Community Development
+      url: 2019-20/focus/community-development
+    - slug: economic-development
+      title: Economic Development
+      url: 2019-20/focus/economic-development
+    - slug: general-public-services
+      title: General Public Services
+      url: 2019-20/focus/general-public-services
+    percentage_of_budget: 10.27791485636342
     programmes:
     - amount: 275708000.0
       percentage: 0.30391834844913046
@@ -211,7 +237,11 @@ data:
       \ a just, peaceful and safe society by correcting offending behaviour in a safe,\
       \ secure and humane environment, which allows for optimal rehabilitation and\
       \ reduced repeat offending."
-    percentage_of_budget: 1.5621074838313953
+    focus_areas:
+    - slug: peace-and-security
+      title: Peace And Security
+      url: 2019-20/focus/peace-and-security
+    percentage_of_budget: 2.8785704402743395
     programmes:
     - amount: 4786272000.0
       percentage: 18.837925823722774
@@ -245,7 +275,14 @@ data:
       \ Paper on Defence and the 2015 South African Defence Review. The department\
       \ is required to provide, manage, prepare and employ defence capabilities that\
       \ are commensurate with the needs of South Africa."
-    percentage_of_budget: 3.1056300012584956
+    focus_areas:
+    - slug: health
+      title: Health
+      url: 2019-20/focus/health
+    - slug: peace-and-security
+      title: Peace And Security
+      url: 2019-20/focus/peace-and-security
+    percentage_of_budget: 5.722893470893052
     programmes:
     - amount: 6187144000.0
       percentage: 12.248619127530597
@@ -301,7 +338,11 @@ data:
       \ of the following legislation:\n\u2022 the Industrial Development Corporation\
       \ Act (1940)\n\u2022 the Competition Act (1998)\n\u2022 the International Trade\
       \ Administration Act (2002)\n\u2022 the Infrastructure Development Act (2014)."
-    percentage_of_budget: 0.0642726501709822
+    focus_areas:
+    - slug: economic-development
+      title: Economic Development
+      url: 2019-20/focus/economic-development
+    percentage_of_budget: 0.11843829750210204
     programmes:
     - amount: 90334000.0
       percentage: 8.641152179132632
@@ -352,7 +393,14 @@ data:
       \ and position South Africa to become globally competitive in the use of innovative\
       \ technology for the design, manufacture and deployment of state of the art\
       \ nuclear energy systems, power reactors and nuclear fuel cycle systems\n"
-    percentage_of_budget: 0.457425931680967
+    focus_areas:
+    - slug: community-development
+      title: Community Development
+      url: 2019-20/focus/community-development
+    - slug: economic-development
+      title: Economic Development
+      url: 2019-20/focus/economic-development
+    percentage_of_budget: 0.8429207203605596
     programmes:
     - amount: 308264000.0
       percentage: 4.1433216384738705
@@ -411,7 +459,11 @@ data:
       \ pollution\n\u2022 the National Environmental Management: Integrated Coastal\
       \ Management Act (2008), which promotes the conservation of the coastal environment\
       \ and ensures sustainable development practices and the use of natural resources."
-    percentage_of_budget: 0.46293777563613847
+    focus_areas:
+    - slug: economic-development
+      title: Economic Development
+      url: 2019-20/focus/economic-development
+    percentage_of_budget: 0.8530776597805325
     programmes:
     - amount: 891872000.0
       percentage: 11.844767188367195
@@ -454,7 +506,11 @@ data:
       \ provision of health services. The department contributes directly to the realisation\
       \ of outcome 2 (a long and healthy life for all South Africans) of government\u2019\
       s 2014-2019 medium-term strategic framework."
-    percentage_of_budget: 3.163896186340794
+    focus_areas:
+    - slug: health
+      title: Health
+      url: 2019-20/focus/health
+    percentage_of_budget: 5.830263366871068
     programmes:
     - amount: 661277000.0
       percentage: 1.2850138620372171
@@ -506,39 +562,39 @@ data:
       \ qualifications framework, the South African Qualifications Authority and quality\
       \ councils, for the issuing and quality assurance of qualifications required\
       \ on the sub-frameworks of the national qualifications framework."
-    percentage_of_budget: 6.655817054310119
+    focus_areas:
+    - slug: learning-and-culture
+      title: Learning And Culture
+      url: 2019-20/focus/learning-and-culture
+    percentage_of_budget: 10.139739240698542
     programmes:
     - amount: 460430000.0
-      percentage: 0.4253131951850774
+      percentage: 0.5144573717211667
       slug: administration
       title: Administration
     - amount: 2532819000.0
-      percentage: 2.3396419471265393
+      percentage: 2.8300228173347386
       slug: community-education-and-training
       title: Community Education And Training
-    - amount: 18758510000.0
-      percentage: 17.327806235499914
-      slug: direct-charge-against-the-national-revenue-fund
-      title: Direct Charge Against The National Revenue Fund
     - amount: 90771000.0
-      percentage: 0.08384793354070035
+      percentage: 0.10142217077189154
       slug: planning-policy-and-strategy
       title: Planning, Policy And Strategy
     - amount: 282381000.0
-      percentage: 0.26084391844483923
+      percentage: 0.31551590270832647
       slug: skills-development
       title: Skills Development
     - amount: 12721834000.0
-      percentage: 11.751545006090293
+      percentage: 14.214628245581254
       slug: technical-and-vocational-education-and-training
       title: Technical And Vocational Education And Training
     - amount: 73409948000.0
-      percentage: 67.81100176411263
+      percentage: 82.02395349188262
       slug: university-education
       title: University Education
     slug: higher-education-and-training
     title: Higher Education and Training
-    total: 108256693000.0
+    total: 89498183000.0
   - description: "## Vote purpose \n\nEfficiently determine and safeguard the identity\
       \ and status of citizens. Regulate immigration to ensure security, promote development\
       \ and fulfil South Africa\u2019s international obligations.\n\n## Vote mandate\n\
@@ -548,7 +604,11 @@ data:
       \ services. The primary mandate of the department is to secure and manage identity\
       \ and international migration through the delivery of enabling services to all\
       \ citizens, foreign nationals, government and the private sector."
-    percentage_of_budget: 0.512740067822858
+    focus_areas:
+    - slug: peace-and-security
+      title: Peace And Security
+      url: 2019-20/focus/peace-and-security
+    percentage_of_budget: 0.9448507340602723
     programmes:
     - amount: 2340209000.0
       percentage: 28.0610558839978
@@ -581,7 +641,11 @@ data:
       \ also builds capacity for provinces and municipalities; and promotes consultation\
       \ with all stakeholders in the housing delivery chain, including other sector\
       \ departments, civil society and the private sector."
-    percentage_of_budget: 2.082952329317907
+    focus_areas:
+    - slug: community-development
+      title: Community Development
+      url: 2019-20/focus/community-development
+    percentage_of_budget: 3.8383562371577966
     programmes:
     - amount: 464667000.0
       percentage: 1.371542026742925
@@ -622,7 +686,11 @@ data:
       \ Police Service and Municipal Police Services to report matters that must be\
       \ investigated by the directorate and ensure the implementation of resultant\
       \ disciplinary recommendations made by the directorate.\n"
-    percentage_of_budget: 0.020698033752086124
+    focus_areas:
+    - slug: peace-and-security
+      title: Peace And Security
+      url: 2019-20/focus/peace-and-security
+    percentage_of_budget: 0.0381412602828209
     programmes:
     - amount: 107571391.0
       percentage: 31.953196755545783
@@ -666,7 +734,11 @@ data:
       \ to the creation of an enabling international environment for South African\
       \ businesses\n\u2022 sourcing developmental assistance\n\u2022 assisting South\
       \ African citizens abroad\n"
-    percentage_of_budget: 0.4001552600099582
+    focus_areas:
+    - slug: general-public-services
+      title: General Public Services
+      url: 2019-20/focus/general-public-services
+    percentage_of_budget: 0.7373853047293157
     programmes:
     - amount: 1711268000.0
       percentage: 26.29275648899941
@@ -711,35 +783,35 @@ data:
       \ departments; the promotion, protection and enforcement of certain human rights;\
       \ the protection of vulnerable groups; the management of third-party funds;\
       \ and the provision of support to chapter 9 institutions."
-    percentage_of_budget: 1.2973135816804364
+    focus_areas:
+    - slug: peace-and-security
+      title: Peace And Security
+      url: 2019-20/focus/peace-and-security
+    percentage_of_budget: 2.1205601473280873
     programmes:
     - amount: 2504495000.0
-      percentage: 11.869210282922351
+      percentage: 13.380801927565933
       slug: administration
       title: Administration
     - amount: 4108755000.0
-      percentage: 19.472060074389695
+      percentage: 21.951905204001672
       slug: auxiliary-and-associated-services
       title: Auxiliary And Associated Services
     - amount: 6824900000.0
-      percentage: 32.344314226986576
+      percentage: 36.463492670356594
       slug: court-services
       title: Court Services
-    - amount: 2383695000.0
-      percentage: 11.29671938069375
-      slug: direct-charge-against-the-national-revenue-fund
-      title: Direct Charge Against The National Revenue Fund
     - amount: 3929137000.0
-      percentage: 18.6208210770677
+      percentage: 20.99225749832626
       slug: national-prosecuting-authority
       title: National Prosecuting Authority
     - amount: 1349790000.0
-      percentage: 6.396874957939927
+      percentage: 7.211542699749539
       slug: state-legal-services
       title: State Legal Services
     slug: justice-and-constitutional-development
     title: Justice and Constitutional Development
-    total: 21100772000.0
+    total: 18717077000.0
   - description: "## Vote purpose \n\nPlay a significant role in reducing unemployment,\
       \ poverty and inequality by pursuing the objectives of decent work for all through:\
       \ employment creation and enterprise development; the setting of standards and\
@@ -763,7 +835,11 @@ data:
       \ formulation of sound and responsive legislation and policies to attain labour\
       \ market flexibility for the competitiveness of enterprises, balanced with the\
       \ promotion of decent employment.\n"
-    percentage_of_budget: 0.21119818250150577
+    focus_areas:
+    - slug: economic-development
+      title: Economic Development
+      url: 2019-20/focus/economic-development
+    percentage_of_budget: 0.3891850282269809
     programmes:
     - amount: 961959000.0
       percentage: 28.003544549803454
@@ -796,7 +872,11 @@ data:
       \ the transparent and efficient regulation of the development of South Africa\u2019\
       s mineral resources and mineral industry to meet national objectives and bring\
       \ optimum benefit to the nation."
-    percentage_of_budget: 0.12328454808465039
+    focus_areas:
+    - slug: economic-development
+      title: Economic Development
+      url: 2019-20/focus/economic-development
+    percentage_of_budget: 0.2271823543080593
     programmes:
     - amount: 345454000.0
       percentage: 17.22773561005775
@@ -833,55 +913,67 @@ data:
       \ the budget preparation process\n\u2022 enforce transparency and effective\
       \ management in respect of revenue and expenditure, assets and liabilities,\
       \ public entities, and constitutional institutions."
-    percentage_of_budget: 46.22416048444687
+    focus_areas:
+    - slug: community-development
+      title: Community Development
+      url: 2019-20/focus/community-development
+    - slug: debt-service-costs
+      title: Debt-Service Costs
+      url: 2019-20/focus/debt-service-costs
+    - slug: economic-development
+      title: Economic Development
+      url: 2019-20/focus/economic-development
+    - slug: general-public-services
+      title: General Public Services
+      url: 2019-20/focus/general-public-services
+    - slug: peace-and-security
+      title: Peace And Security
+      url: 2019-20/focus/peace-and-security
+    percentage_of_budget: 3.486224041162208
     programmes:
     - amount: 555720000.0
-      percentage: 0.07391517588478681
+      percentage: 1.8059815192050952
       slug: administration
       title: Administration
     - amount: 108428000.0
-      percentage: 0.014421785594968085
+      percentage: 0.3523698340249947
       slug: asset-and-liability-management
       title: Asset And Liability Management
     - amount: 5574503000.0
-      percentage: 0.741453195341668
+      percentage: 18.116046564372994
       slug: civil-and-military-pensions-contributions-to-funds-and-other-benefits
       title: Civil And Military Pensions, Contributions To Funds And Other Benefits
-    - amount: 721063701000.0
-      percentage: 95.90720197860493
-      slug: direct-charge-against-the-national-revenue-fund
-      title: Direct Charge Against The National Revenue Fund
     - amount: 149713000.0
-      percentage: 0.01991301865550833
+      percentage: 0.48653802487719067
       slug: economic-policy-tax-financial-regulation-and-research
       title: Economic Policy, Tax, Financial Regulation And Research
     - amount: 1093586000.0
-      percentage: 0.14545562789739522
+      percentage: 3.5539410236475617
       slug: financial-accounting-and-supply-chain-management-systems
       title: Financial Accounting And Supply Chain Management Systems
     - amount: 4951053000.0
-      percentage: 0.6585293912580101
+      percentage: 16.08995576658199
       slug: financial-intelligence-and-state-security
       title: Financial Intelligence And State Security
     - amount: 5751482000.0
-      percentage: 0.7649928086593707
+      percentage: 18.691193766718417
       slug: international-financial-relations
       title: International Financial Relations
     - amount: 320006000.0
-      percentage: 0.042563340844646746
+      percentage: 1.0399570323809575
       slug: public-finance-and-budget-management
       title: Public Finance And Budget Management
     - amount: 9529031000.0
-      percentage: 1.2674368429723348
+      percentage: 30.96749061025777
       slug: revenue-administration
       title: Revenue Administration
     - amount: 2737557000.0
-      percentage: 0.36411683428638403
+      percentage: 8.896525857933028
       slug: technical-support-and-development-finance
       title: Technical Support And Development Finance
     slug: national-treasury
     title: National Treasury
-    total: 751834780000.0
+    total: 30771079000.0
   - description: "## Vote purpose \n\nStrengthen judicial governance and independence\
       \ by rendering effective support to the Chief Justice in executing administrative\
       \ and judicial powers and duties as both head of the Judiciary and the Constitutional\
@@ -896,27 +988,27 @@ data:
       \ standards; support the judicial function of the Constitutional Court; and\
       \ support the Judicial Service Commission and South African Judicial Education\
       \ Institute in the execution of their mandates."
-    percentage_of_budget: 0.141176860456609
+    focus_areas:
+    - slug: peace-and-security
+      title: Peace And Security
+      url: 2019-20/focus/peace-and-security
+    percentage_of_budget: 0.13569308519560355
     programmes:
     - amount: 214611000.0
-      percentage: 9.346200176114149
+      percentage: 17.918713659271333
       slug: administration
       title: Administration
-    - amount: 1098546000.0
-      percentage: 47.841120998781484
-      slug: direct-charge-against-the-national-revenue-fund
-      title: Direct Charge Against The National Revenue Fund
     - amount: 82971000.0
-      percentage: 3.613344958144583
+      percentage: 6.927574034058839
       slug: judicial-education-and-support
       title: Judicial Education And Support
     - amount: 900110000.0
-      percentage: 39.19933386695978
+      percentage: 75.15371230666983
       slug: superior-court-services
       title: Superior Court Services
     slug: office-of-the-chief-justice-and-judicial-administration
     title: Office of the Chief Justice and Judicial Administration
-    total: 2296238000.0
+    total: 1197692000.0
   - description: "## Vote purpose \n\nProvide the support services required by Parliament\
       \ to fulfil its constitutional functions, assist political parties represented\
       \ in Parliament to secure administrative support and service constituents, and\
@@ -933,35 +1025,35 @@ data:
       \ are met over feasible timeframes, 5-year, 10-year and 15-year milestones have\
       \ been set. The tabled strategic plan for the fifth Parliament is aimed at implementing\
       \ the first milestone.\n"
-    percentage_of_budget: 0.1549942816555519
+    focus_areas:
+    - slug: general-public-services
+      title: General Public Services
+      url: 2019-20/focus/general-public-services
+    percentage_of_budget: 0.22584999951074888
     programmes:
     - amount: 118523000.0
-      percentage: 4.701469033049872
+      percentage: 5.945592086121618
       slug: administration
       title: Administration
     - amount: 704395000.0
-      percentage: 27.941338639210656
+      percentage: 35.33529641929108
       slug: associated-services
       title: Associated Services
     - amount: 642908000.0
-      percentage: 25.502324891371526
+      percentage: 32.250860313224244
       slug: core-business
       title: Core Business
-    - amount: 527518000.0
-      percentage: 20.925133023770933
-      slug: direct-charge-against-the-national-revenue-fund
-      title: Direct Charge Against The National Revenue Fund
     - amount: 105741000.0
-      percentage: 4.194443584989635
+      percentage: 5.3043953728692825
       slug: strategic-leadership-and-governance
       title: Strategic Leadership And Governance
     - amount: 421893000.0
-      percentage: 16.73529082760738
+      percentage: 21.163855808493775
       slug: support-services
       title: Support Services
     slug: parliament
     title: Parliament
-    total: 2520978000.0
+    total: 1993460000.0
   - description: "## Vote purpose \n\nImprove government service delivery through\
       \ integrated planning, monitoring and evaluation.\n\n## Vote mandate\n\nThe\
       \ Department of Planning, Monitoring and Evaluation is mandated to:\n\u2022\
@@ -979,7 +1071,11 @@ data:
       \ promote good planning, monitoring and evaluation practices in government\n\
       \u2022 facilitate the integration of youth development priorities into key government\
       \ programmes."
-    percentage_of_budget: 0.05883433845641739
+    focus_areas:
+    - slug: general-public-services
+      title: General Public Services
+      url: 2019-20/focus/general-public-services
+    percentage_of_budget: 0.10841685947137968
     programmes:
     - amount: 187187000.0
       percentage: 19.561016950923726
@@ -1015,7 +1111,11 @@ data:
       \ the Constitution and from the South African Police Service Act (1995). This\
       \ legislation regulates the police service in terms of its core function, which\
       \ is to prevent, investigate and combat crime."
-    percentage_of_budget: 6.000335844427178
+    focus_areas:
+    - slug: peace-and-security
+      title: Peace And Security
+      url: 2019-20/focus/peace-and-security
+    percentage_of_budget: 11.057106871495485
     programmes:
     - amount: 20446548000.0
       percentage: 20.95033912900813
@@ -1053,7 +1153,11 @@ data:
       s strategic objectives of creating jobs, and enhancing equity and transformation.\
       \ The department does not directly execute programmes but seeks to use state\
       \ ownership in the economy to support the achievement of these objectives."
-    percentage_of_budget: 0.01801601376669149
+    focus_areas:
+    - slug: general-public-services
+      title: General Public Services
+      url: 2019-20/focus/general-public-services
+    percentage_of_budget: 0.033198973321077296
     programmes:
     - amount: 164921000.0
       percentage: 56.28126812954305
@@ -1086,7 +1190,11 @@ data:
       \ and anti-corruption\n\u2022 transformation, reform, innovation and any other\
       \ matter to improve the effectiveness and efficiency of the public service and\
       \ its service delivery to the public."
-    percentage_of_budget: 0.06161356203867696
+    focus_areas:
+    - slug: general-public-services
+      title: General Public Services
+      url: 2019-20/focus/general-public-services
+    percentage_of_budget: 0.1135382681667555
     programmes:
     - amount: 246097000.0
       percentage: 24.55707419001081
@@ -1134,7 +1242,14 @@ data:
       \ of the expanded public works programme. Public works is constitutionally designated\
       \ as a concurrent function exercised by the national and provincial spheres\
       \ of government."
-    percentage_of_budget: 0.4801106893899213
+    focus_areas:
+    - slug: economic-development
+      title: Economic Development
+      url: 2019-20/focus/economic-development
+    - slug: general-public-services
+      title: General Public Services
+      url: 2019-20/focus/general-public-services
+    percentage_of_budget: 0.8847230122397459
     programmes:
     - amount: 508013000.0
       percentage: 6.505490852335797
@@ -1240,7 +1355,11 @@ data:
       \ General for the regulation of the valuation of property that has been identified\
       \ for land reform, and property that has been identified for acquisition or\
       \ disposal by a department."
-    percentage_of_budget: 0.6729926424634628
+    focus_areas:
+    - slug: economic-development
+      title: Economic Development
+      url: 2019-20/focus/economic-development
+    percentage_of_budget: 1.2401558453365282
     programmes:
     - amount: 1889100000.0
       percentage: 17.258031274392007
@@ -1276,7 +1395,11 @@ data:
       \ the country achieve its national development priorities by promoting change\
       \ through in-novation, enabling all South Africans to enjoy the economic, sociopolitical\
       \ and intellectual benefits of sci-ence, technology and innovation."
-    percentage_of_budget: 0.5011362989449665
+    focus_areas:
+    - slug: economic-development
+      title: Economic Development
+      url: 2019-20/focus/economic-development
+    percentage_of_budget: 0.9234679121780369
     programmes:
     - amount: 380282000.0
       percentage: 4.6654821051743625
@@ -1313,7 +1436,11 @@ data:
       \ Act (1996)\n\u2022 the National Small Business Amendment Act (2004)\n\u2022\
       \ the Small Business Development Act (1981)\n\u2022 the Cooperatives Act (2005)\n\
       \u2022 the Cooperatives Amendment Act (2013)."
-    percentage_of_budget: 0.15791921711928114
+    focus_areas:
+    - slug: economic-development
+      title: Economic Development
+      url: 2019-20/focus/economic-development
+    percentage_of_budget: 0.2910053213725548
     programmes:
     - amount: 124388000.0
       percentage: 4.842728510071044
@@ -1374,7 +1501,11 @@ data:
       \ of social service professionals \n\u2022 the Victim Empowerment Support Services\
       \ Bill is aimed at regulating victim support services and empowering victims.\
       \ \n"
-    percentage_of_budget: 11.3613442703002
+    focus_areas:
+    - slug: social-development
+      title: Social Development
+      url: 2019-20/focus/social-development
+    percentage_of_budget: 20.93609442165397
     programmes:
     - amount: 408374000.0
       percentage: 0.2209912019338156
@@ -1413,7 +1544,11 @@ data:
       s international ranking in selected sports. The act also ensures that sport\
       \ and physical activity contribute to social cohesion by legislating on sports\
       \ participation and sports infrastructure."
-    percentage_of_budget: 0.07092897795465915
+    focus_areas:
+    - slug: learning-and-culture
+      title: Learning And Culture
+      url: 2019-20/focus/learning-and-culture
+    percentage_of_budget: 0.130704232207103
     programmes:
     - amount: 744069000.0
       percentage: 64.49649722881477
@@ -1450,7 +1585,11 @@ data:
       \ The act also requires that the department coordinates statistical production\
       \ among organs of state in line with the purpose of official statistics and\
       \ statistical principles."
-    percentage_of_budget: 0.15458788691440653
+    focus_areas:
+    - slug: general-public-services
+      title: General Public Services
+      url: 2019-20/focus/general-public-services
+    percentage_of_budget: 0.2848665193030423
     programmes:
     - amount: 682052000.0
       percentage: 27.12618041591366
@@ -1499,7 +1638,11 @@ data:
       \ the capacity of state-owned companies within its portfolio.\nThe department\
       \ derives its legislative mandate from the Electronic Communications Act (2005)\
       \ and the Electronic Communications and Transactions Act (2002)."
-    percentage_of_budget: 0.10357065274890129
+    focus_areas:
+    - slug: economic-development
+      title: Economic Development
+      url: 2019-20/focus/economic-development
+    percentage_of_budget: 0.1908546131228218
     programmes:
     - amount: 276828000.0
       percentage: 16.433116028147175
@@ -1529,23 +1672,23 @@ data:
       \ planning, coordination, oversight, mobilisation and support.\n\n## Vote mandate\n\
       \nTo serve the president in the execution of his responsibilities and duties,\
       \ supported by the deputy president, as articulated in chapter 5 of the Constitution. "
-    percentage_of_budget: 0.042951681894416296
+    focus_areas:
+    - slug: general-public-services
+      title: General Public Services
+      url: 2019-20/focus/general-public-services
+    percentage_of_budget: 0.07832728048807314
     programmes:
     - amount: 623968000.0
-      percentage: 89.31589675468933
+      percentage: 90.25303968733817
       slug: administration
       title: Administration
-    - amount: 7254000.0
-      percentage: 1.0383505485193412
-      slug: direct-charge-against-the-national-revenue-fund
-      title: Direct Charge Against The National Revenue Fund
     - amount: 67386000.0
-      percentage: 9.645752696791334
+      percentage: 9.74696031266182
       slug: executive-support
       title: Executive Support
     slug: the-presidency
     title: The Presidency
-    total: 698608000.0
+    total: 691354000.0
   - description: "## Vote purpose \n\nPromote and support the growth and development\
       \ of an equitable, competitive and sustainable tourism sector, enhancing its\
       \ contribution to national priorities.\n\n## Vote mandate\n\nThe mandate of\
@@ -1562,7 +1705,11 @@ data:
       \ and international tourism. The national tourism sector strategy provides a\
       \ blueprint for the sector to meet the growth targets contained in the National\
       \ Development Plan (NDP)."
-    percentage_of_budget: 0.1471056740236485
+    focus_areas:
+    - slug: economic-development
+      title: Economic Development
+      url: 2019-20/focus/economic-development
+    percentage_of_budget: 0.2710786864694469
     programmes:
     - amount: 291494000.0
       percentage: 12.182791609373629
@@ -1596,7 +1743,11 @@ data:
       \ Act (2008)\n\u2022 the Manufacturing Development Act (1993) \n\u2022 the Broad-Based\
       \ Black Economic Empowerment Act (2003) \n\u2022 the Consumer Protection Act\
       \ (2008)."
-    percentage_of_budget: 0.618447151866776
+    focus_areas:
+    - slug: economic-development
+      title: Economic Development
+      url: 2019-20/focus/economic-development
+    percentage_of_budget: 1.1396422516772897
     programmes:
     - amount: 803475000.0
       percentage: 7.98760158412936
@@ -1652,43 +1803,46 @@ data:
       \ the strategic direction of sub-sectors, assigning responsibilities to public\
       \ entities and other spheres of government, regulating through setting norms\
       \ and standards, and monitoring implementation."
-    percentage_of_budget: 3.9474148568437837
+    focus_areas:
+    - slug: community-development
+      title: Community Development
+      url: 2019-20/focus/community-development
+    - slug: economic-development
+      title: Economic Development
+      url: 2019-20/focus/economic-development
+    percentage_of_budget: 7.272909837189072
     programmes:
     - amount: 463038000.0
-      percentage: 0.7211913052773274
+      percentage: 0.7213084140014756
       slug: administration
       title: Administration
     - amount: 245124000.0
-      percentage: 0.3817857228020154
+      percentage: 0.3818477180570443
       slug: civil-aviation
       title: Civil Aviation
-    - amount: 10424000.0
-      percentage: 0.016235596573522824
-      slug: direct-charge-against-the-national-revenue-fund
-      title: Direct Charge Against The National Revenue Fund
     - amount: 169226000.0
-      percentage: 0.2635730109124111
+      percentage: 0.26361581051190985
       slug: integrated-transport-planning
       title: Integrated Transport Planning
     - amount: 136771000.0
-      percentage: 0.21302367411332404
+      percentage: 0.2130582653937599
       slug: maritime-transport
       title: Maritime Transport
     - amount: 13588088000.0
-      percentage: 21.16372937198068
+      percentage: 21.16716598765648
       slug: public-transport
       title: Public Transport
     - amount: 16573782000.0
-      percentage: 25.814009809047793
+      percentage: 25.818201548093683
       slug: rail-transport
       title: Rail Transport
     - amount: 33018148000.0
-      percentage: 51.426451509292924
+      percentage: 51.434802256285636
       slug: road-transport
       title: Road Transport
     slug: transport
     title: Transport
-    total: 64204601000.0
+    total: 64194177000.0
   - description: "## Vote purpose \n\nEnsure the availability of water resources to\
       \ facilitate equitable and sustainable socioeconomic development, and ensure\
       \ universal access to water and sanitation services.\n\n## Vote mandate\n\n\
@@ -1700,7 +1854,14 @@ data:
       \ is done in accordance with the requirements of water-related policies and\
       \ legislation that are critical in delivering on the people\u2019s right to\
       \ have sufficient food and water, growing the economy, and eradicating poverty."
-    percentage_of_budget: 1.0107837705406588
+    focus_areas:
+    - slug: community-development
+      title: Community Development
+      url: 2019-20/focus/community-development
+    - slug: economic-development
+      title: Economic Development
+      url: 2019-20/focus/economic-development
+    percentage_of_budget: 1.8626197707285475
     programmes:
     - amount: 1832344000.0
       percentage: 11.145392573842003
@@ -1727,7 +1888,11 @@ data:
       \ and the presidential proclamation made in 2014 that mandates the department\
       \ to champion gender equality, and the achievement of women\u2019s socioeconomic\
       \ empowerment and rights."
-    percentage_of_budget: 0.01502603055165637
+    focus_areas:
+    - slug: general-public-services
+      title: General Public Services
+      url: 2019-20/focus/general-public-services
+    percentage_of_budget: 0.027689187734104528
     programmes:
     - amount: 84387000.0
       percentage: 34.528514963297575
