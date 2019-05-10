@@ -1,4 +1,4 @@
-import React, {Component} from 'react';
+import React from 'react';
 
 import SpeedDial from '../SpeedDial';
 import { MenuItem } from '@material-ui/core';
@@ -52,24 +52,16 @@ import {
   </FormContainer>
  );
 
-class SectionHeading extends Component {
-  constructor(props) {
-    super(props);
-  }
-  render() {
-    const { title, share, years, phases } = this.props;
-    return (
-      <Wrapper>
-        <BudgetContainer>
-          <BudgetHeadingAndShareIcon>
-            <BudgetHeading component='div'>{title}</BudgetHeading>
-            {callShareIcon(share)}
-          </BudgetHeadingAndShareIcon>
-          {callSelectDownOptions(years, phases)}
-        </BudgetContainer>
-      </Wrapper>
-    );
-  }
-}
+const SectionHeading = ({ title, share, years, phases }) => (
+  <Wrapper>
+    <BudgetContainer>
+      <BudgetHeadingAndShareIcon>
+        <BudgetHeading component='div'>{title}</BudgetHeading>
+        {callShareIcon(share)}
+      </BudgetHeadingAndShareIcon>
+      {callSelectDownOptions(years, phases)}
+    </BudgetContainer>
+  </Wrapper>
+);
 
 export default SectionHeading;
