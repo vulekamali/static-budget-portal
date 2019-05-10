@@ -1,102 +1,142 @@
 import React, { Component } from 'react';
-
-import Markup from './Markup';
-import createColorGenerator from './generateColor';
+import createHeightConvertor from './createHeightConvertor';
 import ResizeWindowListener from '../../helpers/ResizeWindowListener';
-import sortItems from './sortItems';
-import modifyIfZoomed from './modifyIfZoomed';
+import calcActiveBlocks from './calcActiveBlocks';
+import Markup from './Markup';
+import ScrollOffsetListener from './ScrollOffsetListener';
+import transformItems from './transformItems';
 
-const colorsList = createColorGenerator();
-
-class StackChart extends Component {
+class Treemap extends Component {
   constructor(props) {
     super(props);
-
-    const screenWidth = new ResizeWindowListener().stop();
+    const { items } = this.props;
 
     this.state = {
       selected: null,
-      screenWidth: screenWidth,
+      convertHeightFn: null,
+      scrollOffset: null,
       zoom: null,
     };
 
     this.events = {
-      unsetZoomHandler: this.unsetZoomHandler.bind(this),
-      changeSelectedHandler: this.changeSelectedHandler.bind(this),
+      updateCurrentActive: this.updateCurrentActive.bind(this),
+      changeConvertHeightFnHandler: this.changeConvertHeightFnHandler.bind(this),
+      changeScrollOffsetHandler: this.changeScrollOffsetHandler.bind(this),
     };
 
     this.values = {
-      fills: Object.keys(this.props.items).map(() => colorsList.next().value),
-      sortedItems: sortItems(this.props.items),
-      hasChildren: !Array.isArray(this.props.items),
+      transformedItems: transformItems(items),
     };
   }
+  
+  componentDidMount () {
+    const { events: { changeConvertHeightFnHandler, changeScrollOffsetHandler } } = this;
+    changeConvertHeightFnHandler();
 
-  componentDidMount() {
     this.values = {
       ...this.values,
-      resizeListener: new ResizeWindowListener(this.changeWidthHandler.bind(this)),
+      resizeListener: new ResizeWindowListener(changeConvertHeightFnHandler),
+      scrollListener: new ScrollOffsetListener(changeScrollOffsetHandler),
     }
   }
 
-  unsetZoomHandler() {
-    const { onSelectedChange } = this.props;
-
-    if (onSelectedChange) {
-      onSelectedChange(null);
-    }
+  componentDidUpdate() {
+    const { 
+      values: { transformedItems }, 
+      state: { scrollOffset }, 
+      props: { threshold = 10 },
+      events: { updateCurrentActive },
+    } = this;
     
-    return this.setState({ 
-      selected: null,
-      zoom: null,
-    });
+    if (scrollOffset || scrollOffset === 0) {
+      updateCurrentActive(threshold, scrollOffset, transformedItems);
+    }
   }
 
-  changeSelectedHandler(selected) {
-    const { onSelectedChange } = this.props;
+  updateCurrentActive(threshold, scrollOffset, transformedItems) {
+    const { props: { onZoomChange, onSelectedChange, onActiveChange }, state: currentState } = this;
+    const activeBlocks = calcActiveBlocks(threshold, scrollOffset, transformedItems);
+
+    if (!activeBlocks) {
+      return null;
+    }
+
+    const { zoom: newZoom, selected: newSelected } = activeBlocks;
+    const noChange = currentState.selected === (newSelected && newSelected.id);
+
+    if (noChange) {
+      return null;
+    }
+
+    if (onActiveChange) {
+      const isCurrentlyActive = !!currentState.selected;
+      const willBeActive = !!newSelected;
+
+      if (isCurrentlyActive !== willBeActive) {
+        onActiveChange(willBeActive);
+      }
+    }
+
+    if (onZoomChange) {
+      onZoomChange(newZoom);
+    }
 
     if (onSelectedChange) {
-      onSelectedChange(selected);
+      const hasSelected = newSelected ? true : null;
+      const props = hasSelected && {
+        id: newSelected.id,
+        name: newSelected.name,
+        color: newSelected.color,
+        value: newSelected.amount,
+        url: newSelected.url,
+        zoom: newSelected.zoom,
+      };
+
+      onSelectedChange(props);
     }
 
-    this.setState({ 
-      selected: selected && selected.id,
-      zoom: selected && selected.zoom || null,
+    this.setState({
+      ...currentState,
+      selected: (newSelected && newSelected.id),
+      zoom: newZoom,
     });
-  }
-
-  changeWidthHandler(screenWidth) {
-    if (screenWidth >= 600) {
-      this.setState({ screenWidth });
-    }
   }
 
   componentWillUnmount() {
-    const { resizeListener } = this.values;
+    const { resizeListener, scrollListener } = this.values;
 
     if (resizeListener) {
-      return resizeListener.stop();
+      resizeListener.stop();
     }
 
-    return null;
+    if (scrollListener) {
+      scrollListener.stop();
+    }
+  }
+
+  changeScrollOffsetHandler(scrollOffset) {
+    this.setState({ scrollOffset })
+  }
+
+  changeConvertHeightFnHandler() {
+    const { items } = this.props;
+  
+    const convertHeightFn = createHeightConvertor(items);
+    this.setState({ convertHeightFn });
   }
 
   render() {
-    const { state, events, values } = this;
-    const {canStickToTop} = this.props;
-    const items = modifyIfZoomed(values.sortedItems, state.zoom);
+    const { state, events, values: { transformedItems: items, refsArray } } = this;
 
     const passedProps = { 
       ...state,
       ...events,
       items,
-      fills: values.fills,
-      hasChildren: values.hasChildren,
-      canStickToTop 
+      refsArray,
     };
 
     return <Markup {...passedProps} />;
   }
 }
 
-export default StackChart;
+export default Treemap;
