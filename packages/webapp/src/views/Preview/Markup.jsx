@@ -14,7 +14,14 @@ import {
   Description,
   FooterWrapper,
   FooterContainer,
-  FooterDetails
+  FooterDetails,
+  FocusWrapper,
+  Link,
+  ButtonStyled,
+  TextButton,
+  FocusLinksWrapper,
+  FocusLinksContainer,
+  ButtonContainer,
 } from './styled';
 
 const callDescription = description => {
@@ -35,6 +42,16 @@ const callDescription = description => {
   );
 };
 
+const callFocusButtons = ({ slug, title, url }) => (
+  <ButtonContainer key={slug}>
+    <Link href={url}>
+    <ButtonStyled>
+      <TextButton component='div'>{title}</TextButton>
+    </ButtonStyled>
+  </Link>
+  </ButtonContainer>
+);
+
 const Markup = (props) => {
   const {
     resources,
@@ -45,7 +62,8 @@ const Markup = (props) => {
     departmentNames,
     selected,
     eventHandler,
-    year
+    year,
+    focus_areas
   } = props;
 
   return (
@@ -63,6 +81,14 @@ const Markup = (props) => {
           <FooterDetails>Direct charges against the national revenue fund included here, while it is not normally counted as part of the total budget of the department, as it is not part of the voted appropriation.</FooterDetails>
         </FooterContainer>
       </FooterWrapper>
+      <FocusWrapper>
+        <SectionHeading title='Focus areas of this department' />
+        <FocusLinksWrapper>
+          <FocusLinksContainer>
+            {focus_areas.map(callFocusButtons)}
+          </FocusLinksContainer>
+        </FocusLinksWrapper>
+      </FocusWrapper>
     </Wrapper>
   );
 };
