@@ -19,16 +19,34 @@ import {
   ChartContainer,
   FooterWrapper,
   FooterContainer,
-  FooterDetails
+  FooterDetails,
+  LoadingChart,
+  CircularProgressStyled
  } from './styled';
 
- const callChart = (chart, onSelectedChange) => (
-   <ChartWrapper>
-    <ChartContainer>
-      {chart(onSelectedChange)}
-    </ChartContainer>
-   </ChartWrapper>
- );
+ const callChart = (chart, onSelectedChange, loading) => {
+   if (loading) {
+     return (
+      <ChartWrapper>
+        <ChartContainer>
+          <LoadingChart>
+            <CircularProgressStyled
+              size={100}
+              thickness={2.5}
+            />
+          </LoadingChart>
+        </ChartContainer>
+      </ChartWrapper>
+     );
+   }
+   return (
+    <ChartWrapper>
+      <ChartContainer>
+        {chart(onSelectedChange)}
+      </ChartContainer>
+    </ChartWrapper>
+   );
+ };
 
 const callButtonExplore = (url, color,  verb, subject) => {
   return (
@@ -41,7 +59,13 @@ const callButtonExplore = (url, color,  verb, subject) => {
   );
 };
 
-const callDetails = (selected, verb, subject) => {
+const callAmount = (value, loading) => (
+  <Amount ariaHidden={loading} {...{ loading }}>
+    {loading ? '_'.repeat(13) : `R${trimValues(value)}`}
+  </Amount>
+);
+
+const callDetails = (selected, verb, subject, loading) => {
   const { name, value, url, color } = selected;
   if (value === null) {
     return null;
@@ -51,13 +75,19 @@ const callDetails = (selected, verb, subject) => {
       <DetailsContainer>
         <div>
           <Department>{name}</Department>
-          <Amount>R{trimValues(value)}</Amount>
+          {callAmount(value, loading)}
         </div>
         {!!verb && callButtonExplore(url, color,  verb, subject)}
       </DetailsContainer>
     </DetailsWrapper>
   );
 };
+
+const callFooter = (footer, loading) => (
+  <FooterDetails ariaHidden={loading} {...{ loading }}>
+    {loading ? '_'.repeat(110) : footer}
+  </FooterDetails>
+);
 
 const Markup = (props) => {
   const {
@@ -70,18 +100,20 @@ const Markup = (props) => {
     years,
     phases,
     anchor,
-    title
+    title,
+    loading
   } = props;
   
   return (
     <Wrapper>
       <CssBaseline />
       <SectionHeading title={title} share={anchor} years={years} phases={phases} />
-      {!!selected && callDetails(selected, verb, subject)}
-      {callChart(chart, onSelectedChange)}
+      {!!selected && callDetails(selected, verb, subject, loading)}
+      {callChart(chart, onSelectedChange, loading)}
       <FooterWrapper>
         <FooterContainer>
-          {footer && <FooterDetails>{footer}</FooterDetails>}
+          {footer && callFooter(footer, loading)}
+          {/* {footer && <FooterDetails>{footer}</FooterDetails>} */}
         </FooterContainer>
       </FooterWrapper>
     </Wrapper>
