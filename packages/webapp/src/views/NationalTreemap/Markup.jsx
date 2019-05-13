@@ -14,9 +14,9 @@ const footer = (
 )
 
 
-const Markup = ({ items, initialSelected, loading }) => (
+const Markup = ({ items, initialSelected, loading, yearsObject, phasesObject }) => (
   <ChartSection
-    {...{ initialSelected, footer }}
+    {...{ initialSelected, footer, yearsObject, phasesObject }}
     chart={(onSelectedChange) => <Treemap {...{ items, onSelectedChange }} />}
     verb='Explore'
     subject='this department'
