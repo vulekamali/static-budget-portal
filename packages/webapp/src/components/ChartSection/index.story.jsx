@@ -80,8 +80,23 @@ const provincial = () => (
   />
 );
 
+const loadingTreemap = () => (
+  <ChartSection
+    {...{ data, initialSelected }}
+    chart={(onSelectedChange) => <Chart {...{ onSelectedChange }} />}
+    verb='Explore'
+    subject='this department'
+    footer='Budget data from 1 April 2018 - 31 March 2019'
+    phases={phases}
+    years={years}
+    title='Provincial Budget Summary'
+    loading
+  />
+);
+
 
 
 storiesOf('component.ChartSection', module)
   .add('National', national)
   .add('Provincial', provincial)
+  .add('Loading', loadingTreemap)
