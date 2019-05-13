@@ -101,7 +101,10 @@ const Markup = (props) => {
     phases,
     anchor,
     title,
-    loading
+    loading,
+    yearsObject,
+    phasesObject,
+    chartItemDetails
   } = props;
   
   return (
@@ -113,7 +116,6 @@ const Markup = (props) => {
       <FooterWrapper>
         <FooterContainer>
           {footer && callFooter(footer, loading)}
-          {/* {footer && <FooterDetails>{footer}</FooterDetails>} */}
         </FooterContainer>
       </FooterWrapper>
     </Wrapper>
