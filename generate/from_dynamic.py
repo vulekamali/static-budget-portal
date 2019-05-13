@@ -151,7 +151,7 @@ JSON_API_LIQUID_SYNTAX = Template("""
 """)
 
 
-def write_json_file(page_url_path):
+def write_json_liquid_template(page_url_path):
     file_path = page_url_path + '.json'
     ensure_file_dirs(file_path)
     with open(file_path, "wb") as outfile:
@@ -531,17 +531,17 @@ if ('all' in args.only) or ('json_apis' in args.only):
                 for budget_type in BUDGET_TYPES:
                     json_api_path = json_year_path + '/previews/{}/{}/{}'.format(sphere, government, budget_type)
                     logger.info('JSON API: ' + json_api_path)
-                    write_json_file(json_api_path)
+                    write_json_liquid_template(json_api_path)
             # national and provincial budgets
             for budget_type in BUDGET_TYPES:
                 json_api_path = json_year_path + '/{}/{}'.format(sphere, budget_type)
                 logger.info('JSON API: ' + json_api_path)
-                write_json_file(json_api_path)
+                write_json_liquid_template(json_api_path)
         # consolidated and focus
         for data_type in ['consolidated', 'focus']:
             json_api_path = json_year_path + '/{}'.format(data_type)
             logger.info('JSON API: ' + json_api_path)
-            write_json_file(json_api_path)
+            write_json_liquid_template(json_api_path)
 
 
 # Focus area pages (arg: focus_areas)
