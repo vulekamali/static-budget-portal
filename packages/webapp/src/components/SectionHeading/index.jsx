@@ -31,17 +31,21 @@ import {
    );
  }
 
+  const callMenuItems = item => (
+    <MenuItem key={item}>{item}</MenuItem>
+  );
+
  const callBudgetPhaseSelect = phases => (
     <BudgetPhase>
-      <SelectStyledPhase disabled  displayEmpty classes={{ selectMenu: 'selectMenu', disabled: 'disabled', icon: 'icon' }}>
-        <MenuItem>{phases.disabled}</MenuItem>
+      <SelectStyledPhase displayEmpty classes={{ selectMenu: 'selectMenu', disabled: 'disabled', icon: 'icon' }}>
+        {phases.options.map(callMenuItems)}
       </SelectStyledPhase>
     </BudgetPhase>
    );
 
  const callYearsSelect = years => (
-  <SelectStyled disabled displayEmpty classes={{ selectMenu: 'selectMenu', disabled: 'disabled', icon: 'icon' }}>
-    <MenuItem>{years.disabled}</MenuItem>
+  <SelectStyled displayEmpty classes={{ selectMenu: 'selectMenu', disabled: 'disabled', icon: 'icon' }}>
+    {years.options.map(callMenuItems)}
   </SelectStyled>
  );
 
