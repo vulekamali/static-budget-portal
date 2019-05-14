@@ -5,7 +5,7 @@ import ChartSection from '../index';
 const passedProps = {
   ...mockProps(),
   years: null,
-  phases: null,
+  phases: null
 }
 
 const Test = () => <ChartSection {...passedProps} />;
