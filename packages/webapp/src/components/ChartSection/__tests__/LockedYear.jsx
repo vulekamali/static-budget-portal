@@ -4,7 +4,7 @@ import ChartSection from '../index';
 
 const passedProps = {
   ...mockProps(),
-  year: {
+  years: {
     ...mockYearsProp(),
     onChange: null,
   },
