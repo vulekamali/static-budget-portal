@@ -65,8 +65,8 @@ const callAmount = (value, loading) => (
   </Amount>
 );
 
-const callDetails = (selected, verb, subject, loading) => {
-  const { name, value, url, color } = selected;
+const callDetails = (itemPreview, verb, subject, loading) => {
+  const { name, value, url, color } = itemPreview;
   if (value === null) {
     return null;
   }
@@ -92,7 +92,7 @@ const callFooter = (footer, loading) => (
 const Markup = (props) => {
   const {
     chart,
-    selected,
+    itemPreview,
     onSelectedChange,
     verb,
     subject,
@@ -111,7 +111,7 @@ const Markup = (props) => {
     <Wrapper>
       <CssBaseline />
       <SectionHeading title={title} share={anchor} years={years} phases={phases} />
-      {!!selected && callDetails(selected, verb, subject, loading)}
+      {!!itemPreview && callDetails(itemPreview, verb, subject, loading)}
       {callChart(chart, onSelectedChange, loading)}
       <FooterWrapper>
         <FooterContainer>
