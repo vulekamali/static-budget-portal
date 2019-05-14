@@ -107,6 +107,7 @@ const TreemapButtonText = styled(Typography)`
 
 const BlockContent = styled.div`
   height: 100%;
+  overflow: hidden;
 `;
 
 export {
