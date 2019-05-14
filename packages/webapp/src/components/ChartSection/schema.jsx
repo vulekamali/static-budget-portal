@@ -91,7 +91,7 @@ export const mockSelectObject = (createOptionCallback) => {
   return {
     options,
     selected: faker.random.arrayElement(options),
-    onChange: mockSelectObjectCallback,
+    onChange: mockSelectObjectCallback(),
     loading: mockSelectLoading(),
   }
 };
