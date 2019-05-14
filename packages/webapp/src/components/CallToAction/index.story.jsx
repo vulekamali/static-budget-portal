@@ -5,5 +5,5 @@ import CallToAction from './index';
 
 const share = () => <CallToAction share>Children Components</CallToAction>;
 
-storiesOf('component.CallToAction', module)
+storiesOf('components.CallToAction', module)
   .add('Static', share)
