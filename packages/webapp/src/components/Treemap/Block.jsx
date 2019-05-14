@@ -8,7 +8,7 @@ import { provinces } from './data';
 
 const createIcon = (id) => (
   <div style={{ background: 'black', width: '32px', height: '32px', borderRadius: '50%', color: 'white', display: 'flex', justifyContent: 'center', alignItems: 'center' }}>
-    <CustomIcon type="Test" fontSize="small" />
+    <CustomIcon type={id} fontSize="small" />
   </div>
 )
 
