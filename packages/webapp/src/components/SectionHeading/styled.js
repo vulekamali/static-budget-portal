@@ -1,6 +1,8 @@
 import {
   Typography,
   Select,
+  CircularProgress,
+  MenuItem
 } from '@material-ui/core';
 
 import styled from 'styled-components';
@@ -141,6 +143,23 @@ const SpeedDialContainer = styled.div`
   margin-right: 8px;
 `;
 
+const CircularProgressStyled = styled(CircularProgress)`
+  && {
+    color: rgba(0, 0, 0, 0.4);
+    margin-left: 10px;
+    position: relative;
+    top: 3px;
+
+    @media screen and (min-width: 375px) {
+      margin-left: 5px;
+    }
+
+    @media screen and (min-width: 450px) {
+      margin-left: 20px;
+    }
+  }
+`;
+
 export {
   Wrapper,
   BudgetContainer,
@@ -151,6 +170,7 @@ export {
   SelectStyled,
   SelectStyledPhase,
   SpeedDialContainer,
+  CircularProgressStyled
 }
 
 export default {
@@ -163,4 +183,5 @@ export default {
   SelectStyled,
   SelectStyledPhase,
   SpeedDialContainer,
+  CircularProgressStyled
 }

@@ -13,6 +13,7 @@ import {
   SelectStyled,
   SelectStyledPhase,
   SpeedDialContainer,
+  CircularProgressStyled
  } from './styled';
 
  const callShareIcon = (share) => {
@@ -31,21 +32,46 @@ import {
    );
  }
 
-  const callMenuItems = item => (
-    <MenuItem key={item} value={item}>{item}</MenuItem>
-  );
+ const callSpinner = () => (
+  <CircularProgressStyled
+    size={20}
+    thickness={2.5}
+  />
+ );
 
- const callBudgetPhaseSelect = ({ selected, options, onChange }) => (
+  const callMenuItems = (loading, selected) => item => {
+    if (loading) {
+      return (
+        <MenuItem key={item} value={item} classes={{selected: 'selected'}}>
+          <span>{item}</span>
+          {callSpinner()}
+        </MenuItem>
+      );
+    }
+    return <MenuItem key={item} value={item}>{item}</MenuItem>;
+  };
+
+ const callBudgetPhaseSelect = ({ selected, options, onChange, loading }) => (
     <BudgetPhase>
-      <SelectStyledPhase value={selected} classes={{ selectMenu: 'selectMenu', disabled: 'disabled', icon: 'icon' }} onChange={event => onChange(event.target.value)} >
-        {options.map(callMenuItems)}
+      <SelectStyledPhase
+        value={selected}
+        classes={{ selectMenu: 'selectMenu', disabled: 'disabled', icon: 'icon' }}
+        onChange={event => onChange(event.target.value)}
+        disabled={loading}
+      >
+        {options.map(callMenuItems(loading, selected))}
       </SelectStyledPhase>
     </BudgetPhase>
    );
 
- const callYearsSelect = ({ selected, options, onChange }) => (
-  <SelectStyled value={selected} classes={{ selectMenu: 'selectMenu', disabled: 'disabled', icon: 'icon' }} onChange={event => onChange(event.target.value)} >
-    {options.map(callMenuItems)}
+ const callYearsSelect = ({ selected, options, onChange, loading }) => (
+  <SelectStyled
+    value={selected}
+    classes={{ selectMenu: 'selectMenu', disabled: 'disabled', icon: 'icon' }}
+    onChange={event => onChange(event.target.value)}
+    disabled={loading}
+  >
+    {options.map(callMenuItems(loading, selected))}
   </SelectStyled>
  );
 
