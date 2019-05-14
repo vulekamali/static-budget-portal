@@ -41,12 +41,12 @@ const mockPreviewZoom = () => faker.commerce.department();
 /**
  * This is an object that contains all the information needed to render the preview of a specific item in the chart. It usually updates when an item is selected. It usually also falls back to a preset of object of values. If null, then no itemPreview will be shown in the chart wrapper.
  */
-// export type TitemPreview = {name: TpreviewName; color: TpreviewColor | null;
+// export type TitemPreview = {name: TpreviewName; color: TpreviewColor;
 //   value: TpreviewValue; url: TpreviewUrl | null; zoom: TpreviewZoom | null;
 // }
 export const mockItemPreview = () => ({
   name: mockPreviewName(),
-  color: faker.random.boolean() ? mockPreviewColor() : null,
+  color: mockPreviewColor(),
   value: mockPreviewValue(),
   url: faker.random.boolean() ? mockPreviewUrl() : null,
   zoom: faker.random.boolean() ? mockPreviewZoom() : null,
@@ -67,6 +67,14 @@ export const mockItemPreview = () => ({
 // export type TselectObjectCallback = (Toption) => void | null;
 export const mockSelectObjectCallback = () => value => console.log(value);
 
+// Type: TSelectLoading
+/**
+ * This value is usually set to true when the data regarding what options are available is not loaded yet. If this is true, then the drop down should be disabled. If no selected value in that object is passed, then Spinner will show instead of the value. However if selected is passed, then spinner will be added after the value. Note that even if onChange exists, it cannot be fired until loading is set to false.
+ */
+
+// export type TSelectLoading = boolean;
+export const mockSelectLoading = () => faker.random.boolean();
+
 // Type: TselectObject
 /**
  * This is an object that has all the values and behavior needed for either the years or phases drop down filter. If null, then dropdown filter will not appear. If, `selected` is present but neither `options` nor `onChange`, then the drop down is disabled (and therefore a user cannot change a selected value).
@@ -75,6 +83,7 @@ export const mockSelectObjectCallback = () => value => console.log(value);
 //   options: Toption[];
 //   selected: Toption;
 //   onChange: TselectObjectCallback;
+//   loading?: boolean;
 // }
 export const mockSelectObject = (createOptionCallback) => {
   const options = [1,2,3,4,5].map(createOptionCallback);
@@ -83,6 +92,7 @@ export const mockSelectObject = (createOptionCallback) => {
     options,
     selected: faker.random.arrayElement(options),
     onChange: mockSelectObjectCallback,
+    loading: mockSelectLoading(),
   }
 };
 
@@ -180,7 +190,11 @@ export const mockChartCallback = () => () => <div>Hello World!</div>
 //   footer?: Tfooter;
 //   chart: TchartCallback;
 // }
-export const mockYearsProp = () => mockSelectObject(() => faker.random.number(1990, 2015));
+export const mockYearsProp = () => mockSelectObject(() => {
+  const year = faker.random.number(1990, 2015);
+  const nextYear = (year + 1).toString().substr(-2);
+  return `${year}-${nextYear}`;
+});
 export const mockPhasesProp = () => mockSelectObject(() => faker.hacker.noun());
 
 export const mockAnchorProp = () => {
