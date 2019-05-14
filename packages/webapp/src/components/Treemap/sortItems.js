@@ -16,7 +16,8 @@ const sortItems = items => {
   }
 
   const keysArray = Object.keys(items);
-  return keysArray.map(reformatAsArray(items));
+  const result = keysArray.map(reformatAsArray(items))
+  return result.sort(sortSingleItem);
 };
 
 export default sortItems;

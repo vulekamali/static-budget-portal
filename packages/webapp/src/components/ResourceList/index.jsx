@@ -21,7 +21,6 @@ const Title = styled(Typography)`
 const Size = styled(Typography)`
   && {
     color: grey;
-    margin: 4.5% 0;
     font-size: 10px;
     letter-spacing: 0.5px;
   }
@@ -49,7 +48,6 @@ const StyledCard = styled(Card)`
 
     @media screen and (min-width: 768px) {
       display: flex;
-      height: 145px;
     }
 
     transition: transform 500ms;
@@ -75,10 +73,9 @@ const CardContentWrapper = styled(CardContent)`
 `;
 
 const HeadingText = styled.div`
-  &&&& {
-    line-height: 23px;
-    font-size: 16px;
-  }
+  line-height: 23px;
+  font-size: 16px;
+  padding-bottom: 16px;
 `;
 
 const ButtonBtn = styled(Button)`

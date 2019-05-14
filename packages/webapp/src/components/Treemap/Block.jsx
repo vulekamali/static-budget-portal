@@ -1,8 +1,15 @@
 import React, { Fragment } from 'react';
 import { lighten } from 'polished';
+import { Tooltip } from '@material-ui/core';
 
-import CustomIcon from '../CustomIcon';
-import { Text, TreemapBlock, TreemapBlockWrapper } from './styled';
+import {
+  Text,
+  TreemapBlock,
+  TreemapBlockWrapper,
+  BlockContent,
+  ResetTooltipDefaultStyling,
+} from './styled';
+import TooltipContent from './TooltipContent';
 import trimValues from '../../helpers/trimValues';
 import { provinces } from './data';
 
@@ -61,18 +68,27 @@ const Block = props => {
     return (
       <TreemapBlockWrapper {...{ x, y, width, height }} key={id}>
         <div style={{ border: `1px solid ${lighten(0.1, fills[rootIndex])}` }}>
-          <TreemapBlock
-            onClick={() =>
-              changeSelectedHandler({
-                id,
-                name: fullName,
-                color: fills[rootIndex],
-                value: amount,
-                url,
-                zoom: rootName,
-              })
-            }
-          />
+          <ResetTooltipDefaultStyling />
+          <Tooltip
+            title={<TooltipContent {...{ amount }} name={fullName} />}
+            placement="top"
+            classes={{ tooltip: 'treemapBlockTooltipOverride' }}
+          >
+            <BlockContent>
+              <TreemapBlock
+                onClick={() =>
+                  changeSelectedHandler({
+                    id,
+                    name: fullName,
+                    color: fills[rootIndex],
+                    value: amount,
+                    url,
+                    zoom: rootName,
+                  })
+                }
+              />
+            </BlockContent>
+          </Tooltip>
         </div>
       </TreemapBlockWrapper>
     );
@@ -88,15 +104,22 @@ const Block = props => {
 
   return (
     <TreemapBlockWrapper x={x} y={y} width={width} height={height} key={id}>
-      <TreemapBlock
-        {...{ color, zoom }}
-        selected={!children && selected && selected === id}
-        onClick={() => changeSelectedHandler({ id, name, color, value: amount, url, zoom })}
+      <ResetTooltipDefaultStyling />
+      <Tooltip
+        title={<TooltipContent {...{ amount, name }} />}
+        placement="top"
+        classes={{ tooltip: 'treemapBlockTooltipOverride' }}
       >
-        {width > 60 &&
-          squarePixels > 6000 &&
-          createInlineText(name, amount, squarePixels, icons, id)}
-      </TreemapBlock>
+        <BlockContent>
+          <TreemapBlock
+            {...{ color, zoom }}
+            selected={!children && selected && selected === id}
+            onClick={() => changeSelectedHandler({ id, name, color, value: amount, url, zoom })}
+          >
+            {width > 60 && squarePixels > 6000 && createInlineText(name, amount, squarePixels)}
+          </TreemapBlock>
+        </BlockContent>
+      </Tooltip>
     </TreemapBlockWrapper>
   );
 };

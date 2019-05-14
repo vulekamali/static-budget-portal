@@ -44,10 +44,8 @@ const Markup = ({
         animationDuration={600}
         tooltip
         isAnimationActive={false}
-        content={createBlock(fills, changeSelectedHandler, selected, zoom, icons)}
-      >
-        {(!!zoom || !hasChildren) && <Tooltip content={TooltipContent} />}
-      </Treemap>
+        content={createBlock(fills, changeSelectedHandler, selected, zoom, hasChildren)}
+      />
       {!!zoom && createButton()}
     </TreemapWrapper>
   );
