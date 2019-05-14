@@ -1,12 +1,20 @@
 import React, { Fragment } from 'react';
 import { lighten } from 'polished';
 
+import CustomIcon from '../CustomIcon';
 import { Text, TreemapBlock, TreemapBlockWrapper } from './styled';
 import trimValues from '../../helpers/trimValues';
 import { provinces } from './data';
 
-const createInlineText = (title, amount, squarePixels) => (
+const createIcon = (id) => (
+  <div style={{ background: 'black', width: '32px', height: '32px', borderRadius: '50%', color: 'white', display: 'flex', justifyContent: 'center', alignItems: 'center' }}>
+    <CustomIcon type="Test" fontSize="small" />
+  </div>
+)
+
+const createInlineText = (title, amount, squarePixels, icons, id) => (
   <Fragment>
+    {!!icons && squarePixels > 20000 && createIcon(id)}
     <Text bold small={squarePixels < 20000}>
       {(squarePixels < 8000 && title.length > 15)? `${title.substring(0, 15)}...` : title}
     </Text>
@@ -32,6 +40,7 @@ const Block = (props) => {
     children,
     root,
     zoom,
+    icons,
   } = props;
 
   if (depth === 2) {
@@ -74,7 +83,7 @@ const Block = (props) => {
         selected={!children && selected && selected === id}
         onClick={() => changeSelectedHandler({ id, name, color, value: amount, url, zoom })}
       >
-        {width > 60 && squarePixels > 6000 && createInlineText(name, amount, squarePixels)}
+        {width > 60 && squarePixels > 6000 && createInlineText(name, amount, squarePixels, icons, id)}
       </TreemapBlock>
     </TreemapBlockWrapper>
   );

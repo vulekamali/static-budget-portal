@@ -82,7 +82,7 @@ class Treemap extends Component {
   }
 
   render() {
-    const { state, events, values } = this;
+    const { state, events, values, props: { icons } } = this;
     const items = modifyIfZoomed(values.sortedItems, state.zoom);
 
     const passedProps = { 
@@ -91,6 +91,7 @@ class Treemap extends Component {
       items,
       fills: values.fills,
       hasChildren: values.hasChildren,
+      icons,
     };
 
     return <Markup {...passedProps} />;
