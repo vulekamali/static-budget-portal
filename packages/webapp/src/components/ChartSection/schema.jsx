@@ -69,7 +69,7 @@ export const mockSelectObjectCallback = () => value => console.log(value);
 
 // Type: TSelectLoading
 /**
- * This value is usually set to true when the data regarding what options are available is not loaded yet. If this is true, then the drop down should be disabled. If no selected value in that object is passed, then Spinner will show instead of the value. However if selected is passed, then spinner will be added after the value. Note that even if onChange exists, it cannot be fired until loading is set to false.
+ * This value is true when there is no options to show the user yet (the data is still loading asynchronously). If loading is true, the drop down should be disabled. Furthermore, if `TselectObject` has a `selected` value, then a spinner should be attached after the selected value but if no `selected` value is present, then the spinner will just be where the `selected` value would have been. Note that even if `onChange` exists, it cannot be fired until `loading` is set to false.
  */
 
 // export type TSelectLoading = boolean;
