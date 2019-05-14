@@ -159,7 +159,7 @@ export const mockOnPreviewChange = () => console.log;
  * render prop).
  */
 // export type TchartCallback = (TonPreviewChange) => JSX.Element;
-export const mockChartCallback = () => <div>Hello World!</div>
+export const mockChartCallback = () => () => <div>Hello World!</div>
 
 
 // Type: TselectObject
