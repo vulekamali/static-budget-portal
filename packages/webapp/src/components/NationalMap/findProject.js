@@ -1,20 +1,19 @@
 const isPointId = pointId => id => id === pointId;
 
-const findProject = projects => (pointId) => { 
+const findProject = projects => pointId => {
   if (!pointId) {
     return {};
   }
-  
-  for (let i = 0; i < projects.length; i++) {
+
+  for (let i = 0; i < projects.length; i += 1) {
     const project = projects[i];
 
-    if (!!project.points.find(isPointId(pointId))) {
+    if (project.points.find(isPointId(pointId))) {
       return project;
     }
   }
 
   return {};
-}
-
+};
 
 export default findProject;

@@ -3,22 +3,26 @@ import addProvinceToObject from './addProvinceToObject';
 const createNationalDepartments = ({ title, amount, url }) => ({
   name: title,
   amount,
-  url: url && `/${url}`
+  url: url && `/${url}`,
 });
 
-
-const transformData = (response) => {
+const transformData = response => {
   const focusSchema = response.items.map(department => {
+    const { national, title, slug, provincial } = department;
+
     const {
-      national,
-      title,
-      slug,
-      provincial
-    } = department;
+      notices: nationalNotices,
+      footnotes: nationalFootnotes,
+      data: nationalData,
+      total: nationalTotal,
+    } = national;
 
-    const { notices: nationalNotices, footnotes: nationalFootnotes, data: nationalData, total: nationalTotal } = national;
-
-    const { notices: provincialNotices, footnotes: provincialFootnotes, data: provincialData, total: provincialTotal } = provincial;
+    const {
+      notices: provincialNotices,
+      footnotes: provincialFootnotes,
+      data: provincialData,
+      total: provincialTotal,
+    } = provincial;
 
     return {
       name: title,
@@ -27,19 +31,18 @@ const transformData = (response) => {
         notices: nationalNotices,
         footnotes: nationalFootnotes,
         departments: nationalData.map(createNationalDepartments),
-        total: nationalTotal
+        total: nationalTotal,
       },
       provincial: {
         notices: provincialNotices,
         footnotes: provincialFootnotes,
         provinces: addProvinceToObject(provincialData),
-        total: provincialTotal
-      }
-    }
-  })
+        total: provincialTotal,
+      },
+    };
+  });
 
- return focusSchema;
-
+  return focusSchema;
 };
 
 export default transformData;

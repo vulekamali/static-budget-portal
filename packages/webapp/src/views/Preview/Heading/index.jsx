@@ -5,7 +5,6 @@ import calcPrettyName from './calcPrettyName';
 import CustomizedDateSelect from './CustomizedDateSelect';
 import CustomizedSelect from './CustomizedSelect';
 
-
 import {
   HeadingWrapper,
   HeadingContainer,
@@ -18,8 +17,8 @@ import {
   ButtonText,
   ArrowStyled,
   Details,
-  DetailedAnalysis
- } from './styled';
+  DetailedAnalysis,
+} from './styled';
 
 const Heading = ({ government, departmentNames, selected, eventHandler, year, sphere }) => {
   const provinceFolder = government === 'south-africa' ? '' : `${government}/`;
@@ -36,17 +35,19 @@ const Heading = ({ government, departmentNames, selected, eventHandler, year, sp
           <RightOptions>
             <CustomizedDateSelect />
             <Link href={url}>
-            <ButtonDetails>
-              <ButtonText><Details>Details</Details><DetailedAnalysis>Detailed Analysis</DetailedAnalysis></ButtonText>
-              <ArrowStyled />
-            </ButtonDetails>
+              <ButtonDetails>
+                <ButtonText>
+                  <Details>Details</Details>
+                  <DetailedAnalysis>Detailed Analysis</DetailedAnalysis>
+                </ButtonText>
+                <ArrowStyled />
+              </ButtonDetails>
             </Link>
           </RightOptions>
         </SelectsGroup>
       </HeadingContainer>
     </HeadingWrapper>
-  )
+  );
 };
-
 
 export default Heading;

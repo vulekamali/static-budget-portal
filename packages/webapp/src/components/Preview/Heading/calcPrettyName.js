@@ -1,10 +1,10 @@
 import { titleCase } from 'change-case';
 
 const calcPrettyName = government => {
-  if(government === 'south-africa') {
+  if (government === 'south-africa') {
     return 'National Budget';
   }
-  if(!government) {
+  if (!government) {
     return 'Focus Areas';
   }
   return titleCase(government);

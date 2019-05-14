@@ -1,14 +1,10 @@
+/* eslint-disable no-console */
+/* eslint-disable import/no-extraneous-dependencies */
+
 import React, { Fragment } from 'react';
 import { storiesOf } from '@storybook/react';
-import faker from 'faker';
 import { CssBaseline } from '@material-ui/core';
-
-import {
-  randomLengthBlankArray,
-  randomNumber,
-  randomBool,
-} from '../../helpers/randomizer';
-import ProvincialTreemap from './';
+import ProvincialTreemap from '.';
 
 const items = {
   'Eastern Cape': {
@@ -137,11 +133,9 @@ const items = {
       },
       {
         amount: 631931000,
-        name:
-          'Economic And Small Business Development, Tourism And Environmental Affairs',
+        name: 'Economic And Small Business Development, Tourism And Environmental Affairs',
         province: 'Free State',
-        id:
-          'economic-and-small-business-development-tourism-and-environmental-affairs',
+        id: 'economic-and-small-business-development-tourism-and-environmental-affairs',
         percentage: 0,
       },
       {
@@ -349,8 +343,7 @@ const items = {
       },
       {
         amount: 2624005580.0433,
-        name:
-          'Co-Operative Governance, Human Settlements And Traditional Affairs',
+        name: 'Co-Operative Governance, Human Settlements And Traditional Affairs',
         province: 'Limpopo',
         id: 'co-operative-governance-human-settlements-and-traditional-affairs',
         percentage: 0,
@@ -539,8 +532,7 @@ const items = {
       },
       {
         amount: 831899000,
-        name:
-          'Cooperative Governance, Human Settlements And Traditional Affairs',
+        name: 'Cooperative Governance, Human Settlements And Traditional Affairs',
         province: 'Northern Cape',
         id: 'cooperative-governance-human-settlements-and-traditional-affairs',
         percentage: 0,
@@ -839,11 +831,7 @@ const initialSelected = {
 const basic = () => (
   <Fragment>
     <CssBaseline />
-    <ProvincialTreemap
-      {...{ items, initialSelected }}
-      verb="Explore"
-      subject="this department"
-    />
+    <ProvincialTreemap {...{ items, initialSelected }} verb="Explore" subject="this department" />
   </Fragment>
 );
 

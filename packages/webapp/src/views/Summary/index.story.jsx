@@ -1,7 +1,9 @@
+/* eslint-disable no-console */
+/* eslint-disable import/no-extraneous-dependencies */
+
 import React from 'react';
 import { storiesOf } from '@storybook/react';
-import Summary from './';
-
+import Summary from '.';
 
 const props = {
   year: '2018-19',
@@ -13,20 +15,17 @@ const props = {
     {
       title: 'Education',
       amount: 700,
-    }
+    },
   ],
   sphere: 'national',
   government: 'south-africa',
   resources: {
     value: 2000,
-    consolidated: 25
+    consolidated: 25,
   },
-  description: 'Charlie and the Chocolate Factory umpa lumpa'
+  description: 'Charlie and the Chocolate Factory umpa lumpa',
 };
-
 
 const basic = () => <Summary {...props} />;
 
-
-storiesOf('view.Summary', module)
-  .add('Default', basic)
+storiesOf('view.Summary', module).add('Default', basic);

@@ -9,7 +9,7 @@ const Text = ({ bold, small, ...otherProps }) => {
     font-weight: ${bold ? 'bold' : '400'};
     font-size: ${small ? '10px' : '14px'};
     font-family: Roboto, sans-serif;
-`;
+  `;
 
   return createElement(innerComponent, otherProps);
 };
@@ -24,7 +24,7 @@ const getWidth = (zoom, selected) => {
   }
 
   return 0;
-}
+};
 
 const TreemapBlock = ({ color, selected, zoom, ...otherProps }) => {
   const width = getWidth(zoom, selected);
@@ -37,13 +37,13 @@ const TreemapBlock = ({ color, selected, zoom, ...otherProps }) => {
     height: 100%;
     background-color: ${color || 'none'};
     border-style: solid;
-    border-color:rgba(255, 255, 255, ${selected ? 0.8 : 0.3});
+    border-color: rgba(255, 255, 255, ${selected ? 0.8 : 0.3});
     border-width: ${width}px;
 
     &:hover {
       background: ${color ? lighten(0.1, color) : 'rgba(255, 255, 255, 0.2)'};
     }
-`;
+  `;
 
   return createElement(innerComponent, otherProps);
 };
@@ -89,7 +89,7 @@ const TreemapButtonStyle = styled(Button)`
 const TreemapButtonText = styled(Typography)`
   && {
     padding-left: 20px;
-    font-family: Roboto;
+    font-family: Roboto, sans-serif;
     font-weight: 700;
     font-size: 18px;
     color: #fff;
@@ -104,7 +104,7 @@ export {
   StyledTooltip,
   TreemapWrapper,
   TreemapButtonStyle,
-  TreemapButtonText
+  TreemapButtonText,
 };
 
 export default {
@@ -114,5 +114,5 @@ export default {
   StyledTooltip,
   TreemapWrapper,
   TreemapButtonStyle,
-  TreemapButtonText
+  TreemapButtonText,
 };

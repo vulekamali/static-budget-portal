@@ -1,8 +1,5 @@
 import styled from 'styled-components';
-import { darken } from 'polished';
-
-import { Typography, Button } from '@material-ui/core';
-import Arrow from '@material-ui/icons/ArrowForward';
+import { Typography } from '@material-ui/core';
 
 const HeadingWrapper = styled.div`
   display: flex;
@@ -69,82 +66,7 @@ const RightOptions = styled.div`
   }
 `;
 
-const Link = styled.a`
-  text-decoration: none;
-`;
-
-const ButtonDetails = styled(Button)`
-  && {
-    width: 100%;
-    background: #000;
-    color: #fff;
-    text-transform: none;
-    padding: 10px 13px 9px 16px;
-
-    &:hover {
-      background: ${darken(0.1, '#000')};
-    }
-
-    @media screen and (min-width: 600px) {
-      padding: 20px 16px;
-    }
-  }
-`;
-
-const ButtonText = styled.span`
-  font-family: Roboto;
-  font-weight: 700;
-  font-size: 14px;
-  line-height: 120%;
-  letter-spacing: 0.15px;
-  white-space: nowrap;
-
-  @media screen and (min-width: 600px) {
-    font-size: 20px;
-  }
-`;
-
-const Details = styled.span`
-  font-family: Roboto;
-  font-weight: 700;
-  font-size: 14px;
-  line-height: 120%;
-  letter-spacing: 0.15px;
-  white-space: nowrap;
-
-  @media screen and (min-width: 600px) {
-    display: none;
-  }
-`;
-const DetailedAnalysis = styled.span`
-  display: none;
-
-  @media screen and (min-width: 600px) {
-    display: block;
-    font-family: Roboto;
-    font-weight: 700;
-    font-size: 20px;
-    line-height: 120%;
-    letter-spacing: 0.15px;
-    white-space: nowrap;
-  }
-`;
-
-const ArrowStyled = styled(Arrow)`
-  && {
-    padding-left: 13px;
-    box-sizing: content-box;
-  }
-`;
-
-export {
-  HeadingWrapper,
-  HeadingContainer,
-  HeadingText,
-  Title,
-  SelectsGroup,
-  RightOptions
-}
+export { HeadingWrapper, HeadingContainer, HeadingText, Title, SelectsGroup, RightOptions };
 
 export default {
   HeadingWrapper,
@@ -152,5 +74,5 @@ export default {
   HeadingText,
   Title,
   SelectsGroup,
-  RightOptions
-}
+  RightOptions,
+};

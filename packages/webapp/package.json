@@ -34,6 +34,7 @@
     "fs-extra": "7.0.1",
     "html-webpack-plugin": "4.0.0-alpha.2",
     "identity-obj-proxy": "3.0.0",
+    "lodash": "^4.17.11",
     "mini-css-extract-plugin": "0.5.0",
     "optimize-css-assets-webpack-plugin": "5.0.1",
     "pnp-webpack-plugin": "1.2.1",
@@ -69,10 +70,10 @@
   },
   "scripts": {
     "start:storybook": "start-storybook -p 9001 -c .storybook",
-    "start": "node scripts/start.js",
+    "start": " yarn test && node scripts/start.js",
     "build:storybook": "build-storybook -c .storybook -o storybook-build",
     "build": "node scripts/build.js",
-    "test": "jest"
+    "test": "stylelint src && eslint src --ext .jsx --ext .js --fix"
   },
   "license": "MIT",
   "devDependencies": {

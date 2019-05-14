@@ -1,5 +1,4 @@
 import React from 'react';
-import t from 'prop-types';
 import { darken } from 'polished';
 import styled from 'styled-components';
 import Card from '@material-ui/core/Card';
@@ -12,7 +11,7 @@ const NoticeWrapper = styled.div`
   position: absolute;
   width: 100%;
   padding-bottom: 5px;
-  font-family: Lato;
+  font-family: Roboto, sans-serif;
   font-size: 14px;
   line-height: 1.5;
   left: 0;
@@ -89,7 +88,7 @@ const CallToAction = styled(Card)`
 
 const Wrapper = styled.div`
   display: flex;
-  background: #79B443;
+  background: #79b443;
   min-height: ${({ hasCallToAction }) => (hasCallToAction ? '265px' : '50px')};
   position: relative;
   justify-content: center;
@@ -112,9 +111,9 @@ const BuildPosition = styled(CardContent)`
   }
 
   @media screen and (min-width: 650px) {
-      flex-direction: row;
-      height: 145px;
-    }
+    flex-direction: row;
+    height: 145px;
+  }
 `;
 
 const ImgContainer = styled.div`
@@ -136,7 +135,7 @@ const CallToActionDescription = styled.div`
   flex-direction: column;
   justify-content: space-between;
   padding: 24px;
-  font-family: Lato;
+  font-family: Roboto, sans-serif;
   flex-grow: 1;
 
   @media screen and (min-width: 650px) {
@@ -148,18 +147,17 @@ const CallToActionDescription = styled.div`
 `;
 
 const CallToActionButton = styled(Button)`
-
   && {
     color: #fff;
-    background-color: #79B443;
+    background-color: #79b443;
     font-size: 16px;
     font-weight: 700;
-    font-family: Lato;
+    font-family: Roboto, sans-serif;
     display: flex;
     align-items: center;
     justify-content: space-between;
     text-transform: none;
-    width: 100%
+    width: 100%;
     padding-left: 24px;
     padding-right: 16px;
 
@@ -181,11 +179,11 @@ const CallToActionLink = styled.a`
 `;
 
 const BudgetTitle = styled.div`
-  color: #79B443;
+  color: #79b443;
   font-weight: 700;
   font-size: 10px;
   text-transform: Uppercase;
-  font-family: Lato;
+  font-family: Roboto, sans-serif;
   letter-spacing: 1px;
   padding-bottom: 12px;
 `;
@@ -197,17 +195,15 @@ const BudgetHeading = styled.div`
   padding-bottom: 16px;
 
   @media screen and (min-width: 650px) {
-      font-size: 18px;
-      max-width: 220px;
-    }
+    font-size: 18px;
+    max-width: 220px;
+  }
 `;
 
 const buildNotice = (noticeText, hasCallToAction) => (
   <NoticeWrapper {...{ hasCallToAction }}>
     <NoticeCard>
-      <Text>
-        {noticeText}
-      </Text>
+      <Text>{noticeText}</Text>
     </NoticeCard>
   </NoticeWrapper>
 );
@@ -223,9 +219,7 @@ const buildCallToAction = callToActionData => (
             <BudgetHeading>{callToActionData.heading}</BudgetHeading>
             <CallToActionLink href={callToActionData.link.link}>
               <CallToActionButton>
-                <span>
-                  {callToActionData.link.text}
-                </span>
+                <span>{callToActionData.link.text}</span>
                 <ForwardArrow />
               </CallToActionButton>
             </CallToActionLink>
@@ -245,21 +239,21 @@ const NotificationBar = ({ notice: noticeText, callToAction: callToActionData })
   );
 };
 
-NotificationBar.propTypes = {
-  notice: t.string,
-  callToAction: t.shape({
-    subheading: t.string,
-    heading: t.string,
-    link: t.shape({
-      text: t.string,
-      link: t.string,
-    }),
-  }),
-};
+// NotificationBar.propTypes = {
+//   notice: t.string,
+//   callToAction: t.shape({
+//     subheading: t.string,
+//     heading: t.string,
+//     link: t.shape({
+//       text: t.string,
+//       link: t.string,
+//     }),
+//   }),
+// };
 
-NotificationBar.defaultProps = {
-  notice: null,
-  callToAction: null,
-};
+// NotificationBar.defaultProps = {
+//   notice: null,
+//   callToAction: null,
+// };
 
 export default NotificationBar;

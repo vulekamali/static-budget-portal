@@ -9,7 +9,7 @@ import arrowImg from './Shape.svg';
 
 const Title = styled(Typography)`
   && {
-    font-family: Roboto;
+    font-family: Roboto, sans-serif;
     font-size: 14px;
     letter-spacing: 0.01rem;
   }
@@ -40,7 +40,7 @@ const CardContentWrapper = styled(CardContent)`
     width: 100%;
     display: flex;
     justify-content: space-between;
-    background: #F7F7F7;
+    background: #f7f7f7;
     @media screen and (max-width: 375px) {
       width: auto;
       display: flex;
@@ -54,7 +54,7 @@ const HeadingText = styled.div`
     line-height: 23px;
     font-size: 16px;
     width: 60%;
-    @media screen and (max-width: 675px){
+    @media screen and (max-width: 675px) {
       height: 100%;
       width: 100%;
     }
@@ -72,7 +72,6 @@ const TopImage = styled.div`
   }
 `;
 
-
 const ButtonBtn = styled(Button)`
   && {
     padding: 6px;
@@ -81,7 +80,7 @@ const ButtonBtn = styled(Button)`
     height: 57px;
     text-transform: none;
     box-shadow: none;
-    
+
     @media screen and (max-width: 425px) {
       padding: 6px 16px;
       display: flex;
@@ -99,21 +98,21 @@ const TitleBlack = styled(Title)`
     padding: 32px 96px 32px 32px;
     font-size: 24px;
     line-height: 150%;
-    @media screen and (max-width: 425px){
+    @media screen and (max-width: 425px) {
       font-size: 18px;
       padding: 20px 25px 15px 25px;
       line-height: 173%;
     }
-    @media screen and (max-width: 675px){
+    @media screen and (max-width: 675px) {
       padding-right: 32px;
     }
   }
 `;
 
 const ButtonExplore = styled(ButtonBtn)`
-  &&{
+  && {
     margin: 0 32px 32px 32px;
-    background-color: #E5E5E5;
+    background-color: #e5e5e5;
     color: white;
     width: auto;
     height: 64px;
@@ -121,22 +120,21 @@ const ButtonExplore = styled(ButtonBtn)`
     border-bottom-right-radius: 30px;
     border-bottom-left-radius: 7px;
     border-top-left-radius: 7px;
-    @media screen and (max-width: 425px){
+    @media screen and (max-width: 425px) {
       margin: 0 23px 22px 23px;
       height: 47px;
       width: 87%;
     }
-    @media screen and (max-width: 340px){
-      width: 86%
+    @media screen and (max-width: 340px) {
+      width: 86%;
       line-height: 16px;
       padding-left: 7px;
     }
     &:hover {
-      background-color: #D8D8D8;
+      background-color: #d8d8d8;
     }
   }
 `;
-
 
 const SpanText = styled.span`
   font-size: 16px;
@@ -144,15 +142,15 @@ const SpanText = styled.span`
   color: #000000;
   position: relative;
   bottom: 5px;
-  @media screen and (min-width: 425px){
+  @media screen and (min-width: 425px) {
     left: 20px;
   }
-  @media screen and (max-width: 425px){
+  @media screen and (max-width: 425px) {
     font-size: 14px;
     padding-left: 0;
     bottom: 6px;
   }
-  @media screen and (max-width: 335px){
+  @media screen and (max-width: 335px) {
     padding-left: 0;
     position: realative;
     left: 5px;
@@ -172,7 +170,7 @@ const StyledImage = styled.div`
 `;
 
 const ArrowWrapper = styled.div`
-  background: #ECA03E;
+  background: #eca03e;
   padding: 15px;
   margin-left: 25px;
   width: 33px;
@@ -181,7 +179,7 @@ const ArrowWrapper = styled.div`
   position: relative;
   left: 16px;
   bottom: 6px;
-  @media screen and (max-width: 425px){
+  @media screen and (max-width: 425px) {
     width: 17px;
     height: 17px;
     margin-left: 0;
@@ -193,20 +191,19 @@ const Arrow = styled.div`
   position: relative;
   top: 7px;
   left: 1px;
-  @media screen and (max-width: 425px){
-    top:0;
+  @media screen and (max-width: 425px) {
+    top: 0;
     left: 0;
   }
 `;
 
 const ArrowImage = styled.img`
-  @media screen and (max-width: 425px){
+  @media screen and (max-width: 425px) {
     height: 15px;
   }
 `;
 
 const CallToAction = () => {
-
   return (
     <CardWrapper>
       <StyledCard>
@@ -225,12 +222,11 @@ const CallToAction = () => {
               </ArrowWrapper>
             </ButtonExplore>
           </HeadingText>
-            <StyledImage />
+          <StyledImage />
         </CardContentWrapper>
       </StyledCard>
     </CardWrapper>
-  )
+  );
 };
-
 
 export default CallToAction;

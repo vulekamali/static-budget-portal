@@ -1,8 +1,7 @@
 import { debounce } from 'lodash';
 
-
 class ResizeWindowListener {
-  constructor(callback, { delay = 300, dimension } = {}) {
+  constructor(callback, { delay = 300 } = {}) {
     this.callback = callback;
     this.debouncedResize = debounce(this.onResize, delay);
 
@@ -16,7 +15,7 @@ class ResizeWindowListener {
     window.removeEventListener('resize', this.debouncedResize, false);
 
     return size;
-  }
+  };
 
   onResize = () => {
     const size = this.dimensions !== 'height' ? window.innerWidth : window.innerHeight;
@@ -26,8 +25,7 @@ class ResizeWindowListener {
     }
 
     return size;
-  }
+  };
 }
-
 
 export default ResizeWindowListener;

@@ -1,31 +1,27 @@
 import React, { Component } from 'react';
 import Markup from './Markup';
 
-
-
 class TopBar extends Component {
   constructor(props) {
     super(props);
 
     this.state = {
       sharingOpen: false,
-      modalOpen: false,
-    }
+    };
 
     this.events = {
       toggleModal: this.toggleModal.bind(this),
       toggleSharingOpen: this.toggleSharingOpen.bind(this),
-    }
+    };
   }
 
   toggleModal(value = null) {
-    return this.setState({ modal: value })
+    return this.setState({ modal: value });
   }
-
 
   toggleSharingOpen() {
     const { sharingOpen: currentSharingOpen } = this.state;
-    return this.setState({ sharingOpen: !currentSharingOpen })
+    return this.setState({ sharingOpen: !currentSharingOpen });
   }
 
   render() {
@@ -43,13 +39,10 @@ class TopBar extends Component {
       Link: props.Link,
       nextId: () => props.nextId(true),
       previousId: () => props.nextId(false),
-    }
+    };
 
-    return <Markup {...passedProps} />
+    return <Markup {...passedProps} />;
   }
 }
 
-
 export default TopBar;
-
-

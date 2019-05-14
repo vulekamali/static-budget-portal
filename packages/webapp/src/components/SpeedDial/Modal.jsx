@@ -1,5 +1,4 @@
 import React from 'react';
-import t from 'prop-types';
 import styled from 'styled-components';
 import { darken } from 'polished';
 import copy from 'copy-to-clipboard';
@@ -18,7 +17,7 @@ const PrimaryButton = styled(Button)`
     color: white;
     text-transform: none;
     padding: 5px;
-    font-family: Lato;
+    font-family: Roboto, sans-serif;
     font-size: 16px;
     font-weight: 700;
     box-shadow: none;
@@ -49,13 +48,8 @@ const StyledDialogActions = styled(DialogActions)`
   }
 `;
 
-
 const Modal = ({ open, closeModal, url }) => (
-  <Dialog
-    {...{ open }}
-    onClose={closeModal}
-    TransitionComponent={Zoom}
-  >
+  <Dialog {...{ open }} onClose={closeModal} TransitionComponent={Zoom}>
     <DialogTitle>Share</DialogTitle>
     <DialogContent>
       <DialogContentText>
@@ -64,25 +58,19 @@ const Modal = ({ open, closeModal, url }) => (
       </DialogContentText>
     </DialogContent>
     <StyledDialogActions>
-      <SecondaryButton onClick={closeModal}>
-        Close
-      </SecondaryButton>
-      <PrimaryButton onClick={() => copy(url)}>
-        Copy To Clipboard
-      </PrimaryButton>
+      <SecondaryButton onClick={closeModal}>Close</SecondaryButton>
+      <PrimaryButton onClick={() => copy(url)}>Copy To Clipboard</PrimaryButton>
     </StyledDialogActions>
   </Dialog>
 );
 
 export default Modal;
 
+// Modal.propTypes = {
+//   closeModal: t.func.isRequired,
+//   videoUrl: t.string,
+// };
 
-Modal.propTypes = {
-  closeModal: t.func.isRequired,
-  videoUrl: t.string,
-}
-
-
-Modal.defaultProps = {
-  videoUrl: null,
-}
+// Modal.defaultProps = {
+//   videoUrl: null,
+// };

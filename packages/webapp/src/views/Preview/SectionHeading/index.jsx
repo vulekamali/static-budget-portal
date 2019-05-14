@@ -1,7 +1,7 @@
 import React from 'react';
 
-import SpeedDial from '../../../components/SpeedDial';
 import { MenuItem } from '@material-ui/core';
+import SpeedDial from '../../../components/SpeedDial';
 
 import {
   Wrapper,
@@ -13,50 +13,58 @@ import {
   SelectStyled,
   SelectStyledPhase,
   SpeedDialContainer,
- } from './styled';
+} from './styled';
 
- const callShareIcon = (share) => {
-   if(!share) return null;
+const callShareIcon = share => {
+  if (!share) return null;
 
-   if(typeof(share) === 'string') {
+  if (typeof share === 'string') {
     return (
       <SpeedDialContainer>
         <SpeedDial {...{ share }} />
       </SpeedDialContainer>
-     );
-   }
+    );
+  }
 
-   if(share) return (
-    <SpeedDial />
-   );
- }
+  if (share) return <SpeedDial />;
 
- const callBudgetPhaseSelect = phases => (
-    <BudgetPhase>
-      <SelectStyledPhase disabled  displayEmpty classes={{ selectMenu: 'selectMenu', disabled: 'disabled', icon: 'icon' }}>
-        <MenuItem>{phases.disabled}</MenuItem>
-      </SelectStyledPhase>
-    </BudgetPhase>
-   );
+  return null;
+};
 
- const callYearsSelect = years => (
-  <SelectStyled disabled displayEmpty classes={{ selectMenu: 'selectMenu', disabled: 'disabled', icon: 'icon' }}>
+const callBudgetPhaseSelect = phases => (
+  <BudgetPhase>
+    <SelectStyledPhase
+      disabled
+      displayEmpty
+      classes={{ selectMenu: 'selectMenu', disabled: 'disabled', icon: 'icon' }}
+    >
+      <MenuItem>{phases.disabled}</MenuItem>
+    </SelectStyledPhase>
+  </BudgetPhase>
+);
+
+const callYearsSelect = years => (
+  <SelectStyled
+    disabled
+    displayEmpty
+    classes={{ selectMenu: 'selectMenu', disabled: 'disabled', icon: 'icon' }}
+  >
     <MenuItem>{years.disabled}</MenuItem>
   </SelectStyled>
- );
+);
 
- const callSelectDownOptions = (years, phases) => (
+const callSelectDownOptions = (years, phases) => (
   <FormContainer>
     {phases && callBudgetPhaseSelect(phases)}
     {years && callYearsSelect(years)}
   </FormContainer>
- );
+);
 
 const SectionHeading = ({ title, share, years, phases }) => (
   <Wrapper>
     <BudgetContainer>
       <BudgetHeadingAndShareIcon>
-        <BudgetHeading component='div'>{title}</BudgetHeading>
+        <BudgetHeading component="div">{title}</BudgetHeading>
         {callShareIcon(share)}
       </BudgetHeadingAndShareIcon>
       {callSelectDownOptions(years, phases)}

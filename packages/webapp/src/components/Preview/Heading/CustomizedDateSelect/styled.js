@@ -43,13 +43,9 @@ const SelectPreviewDate = styled(Select)`
   }
 `;
 
-
-export {
-  CustomizedForm,
-  SelectPreviewDate
-}
+export { CustomizedForm, SelectPreviewDate };
 
 export default {
   CustomizedForm,
-  SelectPreviewDate
-}
+  SelectPreviewDate,
+};

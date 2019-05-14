@@ -1,11 +1,7 @@
 import React from 'react';
 import calcFineprint from './calcFineprint';
 
-import {
-  FooterWrapper,
-  FooterContainer,
-  FooterDetails
-} from './styled';
+import { FooterWrapper, FooterContainer, FooterDetails } from './styled';
 
 const FinePrint = ({ year }) => (
   <FooterWrapper>

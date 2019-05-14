@@ -19,12 +19,9 @@ const FooterDetails = styled(Typography)`
   }
 `;
 
-export {
-  Wrapper,
-  FooterDetails
-}
+export { Wrapper, FooterDetails };
 
 export default {
-  Wrapper,          
-  FooterDetails
-}
+  Wrapper,
+  FooterDetails,
+};

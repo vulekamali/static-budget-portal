@@ -2,7 +2,7 @@ import React from 'react';
 import Media from 'react-media';
 
 import trimValues from '../../../helpers/trimValues';
-import PieChart from '../../../components/PieChart';
+import PieChart from '../../PieChart';
 
 import {
   Wrapper,
@@ -14,13 +14,8 @@ import {
   Percentages,
 } from './styled';
 
-const BudgetAmounts = (props) => {
-
-  const {
-    value,
-    consolidated,
-    sphere
-  } = props;
+const BudgetAmounts = props => {
+  const { value, consolidated, sphere } = props;
 
   const newConsolidated = consolidated.toFixed(0);
 
@@ -30,15 +25,9 @@ const BudgetAmounts = (props) => {
         <Numbers>
           <Budget>
             <IntroMainHeading>
-            <Media query="(max-width: 899px)">
-              {matches =>
-                matches ? (
-                  `R${trimValues(value, true)}`
-                ) : (
-                  `R${trimValues(value)}`
-                )
-              }
-            </Media>
+              <Media query="(max-width: 899px)">
+                {matches => (matches ? `R${trimValues(value, true)}` : `R${trimValues(value)}`)}
+              </Media>
             </IntroMainHeading>
             <IntroSubHeading>Original department budget</IntroSubHeading>
           </Budget>

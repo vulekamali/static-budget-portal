@@ -1,15 +1,11 @@
 import React from 'react';
 import styled from 'styled-components';
-import t from 'prop-types';
 import { Typography } from '@material-ui/core';
 import Buttons from './Buttons';
-import Resources from './Resources';
 import NotificationBar from './NotificationBar';
 import parliamentImg from './parliament-building-budget-speech.jpg';
 import Modal from './Modal';
 import Layout from '../../components/Layout';
-
-
 
 const Image = styled.div`
   background-image: url('${parliamentImg}');
@@ -22,7 +18,6 @@ const Image = styled.div`
   flex-direction: column;
 `;
 
-
 const SubHeading = styled(Typography)`
   && {
     padding-top: 70px;
@@ -31,7 +26,7 @@ const SubHeading = styled(Typography)`
     text-transform: uppercase;
     padding-bottom: 5px;
     letter-spacing: 3px;
-    font-family: Lato;
+    font-family: Roboto, sans-serif;
     text-align: center;
 
     @supports (display: flex) {
@@ -44,12 +39,11 @@ const SubHeading = styled(Typography)`
   }
 `;
 
-
 const Heading = styled(Typography)`
   && {
     color: #fff;
     font-weight: 700;
-    font-family: Lato;
+    font-family: Roboto, sans-serif;
     width: 90%;
     padding-bottom: 33px;
     line-height: 1;
@@ -62,14 +56,12 @@ const Heading = styled(Typography)`
   }
 `;
 
-
-const Markup = (props) => {
+const Markup = props => {
   const {
     buttons: buttonsRaw,
     heading,
     subheading,
     notice,
-    resources,
     callToAction,
     modal,
     closeModal,
@@ -83,7 +75,7 @@ const Markup = (props) => {
       ...buttonsRaw.primary,
       clickEvent: openModal,
     },
-  }
+  };
   return (
     <Layout>
       <Modal {...{ closeModal, videoUrl }} open={!!modal} />
@@ -93,57 +85,55 @@ const Markup = (props) => {
         <Buttons primary={buttons.primary} secondary={buttons.secondary} />
       </Image>
       <NotificationBar {...{ notice, callToAction }} />
-      <div data-webapp={'national-departments-treemap'}></div>
-      <div data-webapp={'provincial-departments-treemap'}></div>
-      {/* {resources && <Resources {...{ resources }} />} */}
+      <div data-webapp="national-departments-treemap" />
+      <div data-webapp="provincial-departments-treemap" />
     </Layout>
   );
 };
 
-
 export default Markup;
 
+// Markup.propTypes = {
+//   heading: t.string.isRequired,
+//   subheading: t.string.isRequired,
+//   notice: t.string,
+//   videoUrl: t.string,
+//   image: t.string.isRequired,
+//   openModal: t.func.isRequired,
+//   closeModal: t.func.isRequired,
+//   modal: t.bool,
+//   buttons: t.shape({
+//     primary: t.shape({
+//       text: t.string,
+//       link: t.string,
+//     }),
+//     secondary: t.shape({
+//       text: t.string,
+//       link: t.string,
+//     }),
+//   }).isRequired,
+//   resources: t.arrayOf(
+//     t.shape({
+//       title: t.string,
+//       size: t.string,
+//       format: t.string,
+//       link: t.string,
+//     }),
+//   ),
+//   callToAction: t.shape({
+//     heading: t.string,
+//     subheading: t.string,
+//     button: t.shape({
+//       text: t.string,
+//       link: t.string,
+//     }),
+//   }),
+// };
 
-Markup.propTypes = {
-  heading: t.string.isRequired,
-  subheading: t.string.isRequired,
-  notice: t.string,
-  videoUrl: t.string,
-  image: t.string.isRequired,
-  openModal: t.func.isRequired,
-  closeModal: t.func.isRequired,
-  modal: t.bool,
-  buttons: t.shape({
-    primary: t.shape({
-      text: t.string,
-      link: t.string,
-    }),
-    secondary: t.shape({
-      text: t.string,
-      link: t.string,
-    }),
-  }).isRequired,
-  resources: t.arrayOf(t.shape({
-    title: t.string,
-    size: t.string,
-    format: t.string,
-    link: t.string,
-  })),
-  callToAction: t.shape({
-    heading: t.string,
-    subheading: t.string,
-    button: t.shape({
-      text: t.string,
-      link: t.string,
-    }),
-  }),
-};
-
-
-Markup.defaultProps = {
-  notice: null,
-  resources: null,
-  callToAction: null,
-  videoUrl: null,
-  modal: false,
-};
+// Markup.defaultProps = {
+//   notice: null,
+//   resources: null,
+//   callToAction: null,
+//   videoUrl: null,
+//   modal: false,
+// };

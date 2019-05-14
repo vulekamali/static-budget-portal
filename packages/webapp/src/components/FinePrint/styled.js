@@ -2,7 +2,6 @@ import styled from 'styled-components';
 
 import { Typography } from '@material-ui/core';
 
-
 const FooterWrapper = styled.div`
   display: flex;
   justify-content: center;
@@ -40,14 +39,10 @@ const FooterDetails = styled(Typography)`
   }
 `;
 
-export {
-  FooterWrapper,
-  FooterContainer,
-  FooterDetails
-}
+export { FooterWrapper, FooterContainer, FooterDetails };
 
 export default {
-  FooterWrapper,           
+  FooterWrapper,
   FooterContainer,
-  FooterDetails
-}
+  FooterDetails,
+};

@@ -11,7 +11,7 @@ const LinkWrapper = styled.a`
   text-decoration: none;
 `;
 
-const ButtonStyle = styled(removeProps({component: Button, blacklist: 'color'}))`
+const ButtonStyle = styled(removeProps({ component: Button, blacklist: 'color' }))`
   && {
     background-color: ${({ color }) => color};
     text-transform: none;
@@ -146,7 +146,6 @@ const FooterDetails = styled(Typography)`
   }
 `;
 
-
 export {
   Wrapper,
   DetailsWrapper,
@@ -161,8 +160,8 @@ export {
   ChartContainer,
   FooterWrapper,
   FooterContainer,
-  FooterDetails
-}
+  FooterDetails,
+};
 
 export default {
   Wrapper,
@@ -178,5 +177,5 @@ export default {
   ChartContainer,
   FooterWrapper,
   FooterContainer,
-  FooterDetails
-}
+  FooterDetails,
+};

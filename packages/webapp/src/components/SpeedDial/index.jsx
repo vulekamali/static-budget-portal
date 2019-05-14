@@ -1,8 +1,6 @@
 import React, { Component } from 'react';
 import Markup from './Markup';
 
-
-
 class SpeedDial extends Component {
   constructor(props) {
     super(props);
@@ -10,22 +8,21 @@ class SpeedDial extends Component {
     this.state = {
       sharingOpen: false,
       modal: false,
-    }
+    };
 
     this.events = {
       toggleModal: this.toggleModal.bind(this),
       toggleSharingOpen: this.toggleSharingOpen.bind(this),
-    }
+    };
   }
 
   toggleModal(value = null) {
-    return this.setState({ modal: value })
+    return this.setState({ modal: value });
   }
-
 
   toggleSharingOpen() {
     const { sharingOpen: currentSharingOpen } = this.state;
-    return this.setState({ sharingOpen: !currentSharingOpen })
+    return this.setState({ sharingOpen: !currentSharingOpen });
   }
 
   render() {
@@ -38,13 +35,10 @@ class SpeedDial extends Component {
       toggleModal: events.toggleModal,
       id: props.id,
       share: props.share,
-    }
+    };
 
-    return <Markup {...passedProps} />
+    return <Markup {...passedProps} />;
   }
 }
 
-
 export default SpeedDial;
-
-

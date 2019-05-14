@@ -1,16 +1,11 @@
 /* eslint-disable import/no-extraneous-dependencies */
 /* eslint-disable no-console */
 
-import React, { Fragment } from 'react';
+import React from 'react';
 import { storiesOf } from '@storybook/react';
 import faker from 'faker';
-import { CssBaseline } from '@material-ui/core';
 
-import {
-  randomLengthBlankArray,
-  randomNumber,
-  randomBool,
-} from '../../helpers/randomizer';
+import { randomLengthBlankArray, randomNumber, randomBool } from '../../helpers/randomizer';
 import Treemap from './index';
 
 const nestedItems = [
@@ -182,11 +177,9 @@ const nestedItems = [
       },
       {
         amount: 631931000,
-        name:
-          'Economic And Small Business Development, Tourism And Environmental Affairs',
+        name: 'Economic And Small Business Development, Tourism And Environmental Affairs',
         province: 'Free State',
-        id:
-          'economic-and-small-business-development-tourism-and-environmental-affairs',
+        id: 'economic-and-small-business-development-tourism-and-environmental-affairs',
         percentage: 0,
       },
       {
@@ -359,8 +352,7 @@ const nestedItems = [
       },
       {
         amount: 2624005580.0433,
-        name:
-          'Co-Operative Governance, Human Settlements And Traditional Affairs',
+        name: 'Co-Operative Governance, Human Settlements And Traditional Affairs',
         province: 'Limpopo',
         id: 'co-operative-governance-human-settlements-and-traditional-affairs',
         percentage: 0,
@@ -563,8 +555,7 @@ const nestedItems = [
       },
       {
         amount: 831899000,
-        name:
-          'Cooperative Governance, Human Settlements And Traditional Affairs',
+        name: 'Cooperative Governance, Human Settlements And Traditional Affairs',
         province: 'Northern Cape',
         id: 'cooperative-governance-human-settlements-and-traditional-affairs',
         percentage: 0,
@@ -862,10 +853,10 @@ const largeItem = randomLengthBlankArray(35, 45).map((value, id) => ({
   percentage: randomNumber(1, 100),
 }));
 
-const basic = () => <Treemap items={basicItems} onSelectedChange={console.log} />
-const small = () => <Treemap items={smallItems} onSelectedChange={console.log} />
-const large = () => <Treemap items={largeItem} onSelectedChange={console.log} />
-const nested = () => <Treemap items={nestedItems} onSelectedChange={console.log} />
+const basic = () => <Treemap items={basicItems} onSelectedChange={console.log} />;
+const small = () => <Treemap items={smallItems} onSelectedChange={console.log} />;
+const large = () => <Treemap items={largeItem} onSelectedChange={console.log} />;
+const nested = () => <Treemap items={nestedItems} onSelectedChange={console.log} />;
 
 storiesOf('component.Treemap', module)
   .add('Basic', basic)

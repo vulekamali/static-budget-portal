@@ -1,9 +1,7 @@
 import React from 'react';
 import styled from 'styled-components';
-import t from 'prop-types';
-import { PrimaryButton, SecondaryButton } from './styled';
 import { Link as ScrollLink } from 'react-scroll';
-
+import { PrimaryButton, SecondaryButton } from './styled';
 
 const ButtonsWrapper = styled.div`
   display: flex;
@@ -14,7 +12,6 @@ const ButtonsWrapper = styled.div`
     flex-direction: row;
   }
 `;
-
 
 const LinkWrapper = styled.a`
   display: inline-block;
@@ -36,7 +33,6 @@ const ScrollLinkWrapper = styled(ScrollLink)`
   }
 `;
 
-
 const generateLinkProps = link => {
   if (!link) {
     return {};
@@ -45,34 +41,32 @@ const generateLinkProps = link => {
   return {
     href: link,
     target: '_blank',
-    rel: 'noopener noreferrer'
-  }
-}
+    rel: 'noopener noreferrer',
+  };
+};
 
 const Buttons = ({ primary, secondary }) => (
   <ButtonsWrapper>
     <LinkWrapper {...generateLinkProps(primary.link)}>
       <PrimaryButton variant="contained">{primary.text}</PrimaryButton>
     </LinkWrapper>
-    <ScrollLinkWrapper to="anchor" smooth={true} duration={500}>
+    <ScrollLinkWrapper to="anchor" smooth duration={500}>
       <SecondaryButton variant="contained">{secondary.text}</SecondaryButton>
     </ScrollLinkWrapper>
   </ButtonsWrapper>
 );
 
-
 export default Buttons;
 
-
-Buttons.propTypes = {
-  primary: t.shape({
-    text: t.string,
-    link: t.string,
-    clickEvent: t.func,
-  }).isRequired,
-  secondary: t.shape({
-    text: t.string,
-    link: t.string,
-    clickEvent: t.func,
-  }).isRequired,
-};
+// Buttons.propTypes = {
+//   primary: t.shape({
+//     text: t.string,
+//     link: t.string,
+//     clickEvent: t.func,
+//   }).isRequired,
+//   secondary: t.shape({
+//     text: t.string,
+//     link: t.string,
+//     clickEvent: t.func,
+//   }).isRequired,
+// };

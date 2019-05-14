@@ -42,6 +42,7 @@ module.exports = {
     'prettier/prettier': ['error'],
     'linebreak-style': 'off',
     'react/prop-types': 'off',
+    'jsx-a11y/href-no-hash': 'off',
     'react/jsx-one-expression-per-line': 'off' // Conflicts with Prettier
   },
   settings: {

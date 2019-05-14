@@ -5,17 +5,16 @@ import calcPrettyName from './calcPrettyName';
 import CustomizedDateSelect from './CustomizedDateSelect';
 import CustomizedSelect from './CustomizedSelect';
 
-
 import {
   HeadingWrapper,
   HeadingContainer,
   HeadingText,
   Title,
   SelectsGroup,
-  RightOptions
- } from './styled';
+  RightOptions,
+} from './styled';
 
-const Heading = ({ government, departmentNames, selected, eventHandler, year, sphere }) => (
+const Heading = ({ government, departmentNames, selected, eventHandler }) => (
   <HeadingWrapper>
     <HeadingContainer>
       <HeadingText>
@@ -30,6 +29,5 @@ const Heading = ({ government, departmentNames, selected, eventHandler, year, sp
     </HeadingContainer>
   </HeadingWrapper>
 );
-
 
 export default Heading;

@@ -99,15 +99,15 @@ export {
   Description,
   FooterWrapper,
   FooterContainer,
-  FooterDetails
-}
+  FooterDetails,
+};
 
 export default {
   Wrapper,
   TextWrapper,
   TextContainer,
   Description,
-  FooterWrapper,           
+  FooterWrapper,
   FooterContainer,
-  FooterDetails
-}
+  FooterDetails,
+};

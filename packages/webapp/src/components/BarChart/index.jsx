@@ -1,21 +1,19 @@
 import React from 'react';
 
-import addRatios from './addRatios'
+import addRatios from './addRatios';
 import Bar from './Bar';
 
-import {
-  Wrapper,
-  BarChartContainer
- } from './styled';
+import { Wrapper, BarChartContainer } from './styled';
 
-const Markup = ({ items, componentWidth }) => {
-
+const Markup = ({ items }) => {
   const itemsWithRatios = addRatios(items);
 
   return (
     <Wrapper>
       <BarChartContainer>
-        {itemsWithRatios.map((props, index) => <Bar {...props} items={items} index={index} key={index} />)}
+        {itemsWithRatios.map((props, index) => (
+          <Bar {...props} items={items} index={index} />
+        ))}
       </BarChartContainer>
     </Wrapper>
   );

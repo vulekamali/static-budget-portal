@@ -1,5 +1,4 @@
 import React from 'react';
-import t from 'prop-types';
 import styled from 'styled-components';
 import { darken } from 'polished';
 import copy from 'copy-to-clipboard';
@@ -8,9 +7,8 @@ import DialogTitle from '@material-ui/core/DialogTitle';
 import DialogContent from '@material-ui/core/DialogContent';
 import DialogContentText from '@material-ui/core/DialogContentText';
 import DialogActions from '@material-ui/core/DialogActions';
-import Zoom from '@material-ui/core/Zoom'; 
+import Zoom from '@material-ui/core/Zoom';
 import Button from '@material-ui/core/Button';
-
 
 const PrimaryButton = styled(Button)`
   && {
@@ -19,7 +17,7 @@ const PrimaryButton = styled(Button)`
     color: white;
     text-transform: none;
     padding: 10px 25px;
-    font-family: Lato;
+    font-family: Roboto, sans-serif;
     font-size: 16px;
     font-weight: 700;
     box-shadow: none;
@@ -29,7 +27,6 @@ const PrimaryButton = styled(Button)`
     }
   }
 `;
-
 
 const SecondaryButton = styled(PrimaryButton)`
   && {
@@ -41,23 +38,14 @@ const SecondaryButton = styled(PrimaryButton)`
   }
 `;
 
-
-
-
-
 const StyledDialogActions = styled(DialogActions)`
   && {
     margin: 8px 20px 20px;
   }
 `;
 
-
 const Modal = ({ open, closeModal, url }) => (
-  <Dialog 
-    {...{ open }}
-    onClose={closeModal}
-    TransitionComponent={Zoom}
-  >
+  <Dialog {...{ open }} onClose={closeModal} TransitionComponent={Zoom}>
     <DialogTitle>Budget Speech 2019</DialogTitle>
     <DialogContent>
       <DialogContentText>
@@ -66,26 +54,10 @@ const Modal = ({ open, closeModal, url }) => (
       </DialogContentText>
     </DialogContent>
     <StyledDialogActions>
-      <SecondaryButton onClick={closeModal}>
-        Close
-      </SecondaryButton>
-      <PrimaryButton onClick={() => copy(url)}>
-        Copy To Clipboard
-      </PrimaryButton>
+      <SecondaryButton onClick={closeModal}>Close</SecondaryButton>
+      <PrimaryButton onClick={() => copy(url)}>Copy To Clipboard</PrimaryButton>
     </StyledDialogActions>
   </Dialog>
 );
 
-
 export default Modal;
-
-
-Modal.propTypes = {
-  closeModal: t.func.isRequired,
-  videoUrl: t.string,
-}
-
-
-Modal.defaultProps = {
-  videoUrl: null,
-}

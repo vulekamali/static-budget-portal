@@ -10,14 +10,11 @@ const StyledSvg = styled.svg`
   margin-right: 12px;
   width: 20px;
   height: 20px;
-  
+
   @media screen and (min-width: 900px) {
     width: 40px;
     height: 40px;
   }
 `;
 
-export {
-  StyledCircle,
-  StyledSvg,
-}
+export { StyledCircle, StyledSvg };

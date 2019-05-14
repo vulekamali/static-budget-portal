@@ -3,10 +3,91 @@
 
 import React from 'react';
 import { storiesOf } from '@storybook/react';
-import Infrastructure from './index';
+import NationalMap from './index';
 
 const props = {
-  datasetUrl: '123',
+  points: [
+    {
+      id: 'Cape Town',
+      x: 18.468361,
+      y: -33.920175,
+    },
+    {
+      id: 'Pretoria',
+      x: 28.198471,
+      y: -25.73905,
+    },
+    {
+      id: 'Cape Town1',
+      x: 18.968361,
+      y: -33.020175,
+    },
+    {
+      id: 'Pretoria1',
+      x: 28.998471,
+      y: -25.03905,
+    },
+    {
+      id: 'Port Elizabeth1',
+      x: 25.920117,
+      y: -33.054467,
+    },
+    {
+      id: 'Port Elizabeth',
+      x: 25.620117,
+      y: -33.954467,
+    },
+    {
+      id: 'Border Crossing1',
+      x: 29.983063,
+      y: -22.228865,
+    },
+    {
+      id: 'Border Crossing',
+      x: 20.983063,
+      y: -22.228865,
+    },
+    {
+      id: 'Cape Townb',
+      x: 19.468361,
+      y: -32.920175,
+    },
+    {
+      id: 'Pretoriab',
+      x: 27.198471,
+      y: -24.73905,
+    },
+    {
+      id: 'Cape Town1b',
+      x: 17.968361,
+      y: -32.020175,
+    },
+    {
+      id: 'Pretoria1b',
+      x: 27.998471,
+      y: -24.03905,
+    },
+    {
+      id: 'Port Elizabeth1b',
+      x: 24.920117,
+      y: -32.054467,
+    },
+    {
+      id: 'Port Elizabethb',
+      x: 24.620117,
+      y: -32.954467,
+    },
+    {
+      id: 'Border Crossing1b',
+      x: 28.983063,
+      y: -21.228865,
+    },
+    {
+      id: 'Border Crossingb',
+      x: 21.983063,
+      y: -21.228865,
+    },
+  ],
   projects: [
     {
       id: '/infrastructure-projects/water-and-sanitation-calitzdorp-and-ladismith-w',
@@ -1602,32 +1683,7 @@ const props = {
       description: 'Student Housing Infrastructure programme',
       link:
         '/infrastructure-projects/higher-education-and-training-student-housing-infrastructure-programme-sefako-makgatho-health-sciences-university',
-      resources: [
-        {
-          heading: 'Example 3 B',
-          size: '3.3MB',
-          format: 'PDF',
-          link: '123',
-        },
-        {
-          heading: 'Example 4 B',
-          size: '3.3MB',
-          format: 'PDF',
-          link: '345',
-        },
-        {
-          heading: 'Example 1 C',
-          size: '3.3MB',
-          format: 'PDF',
-          link: '678',
-        },
-        {
-          heading: 'Example 2 C',
-          size: '3.3MB',
-          format: 'PDF',
-          link: '910',
-        },
-      ],
+      resources: [],
       chartData: [
         {
           name: '2015',
@@ -1833,9 +1889,15 @@ const props = {
   ],
 };
 
-const detailsFalse = () => <Infrastructure {...props} />;
-const detailsTrue = () => <Infrastructure {...props} details />;
+const largeMap = () => <NationalMap size="large" />;
+const mediumMap = () => <NationalMap size="medium" />;
+const smallMap = () => <NationalMap size="small" />;
+const withData = () => <NationalMap {...props} size="large" />;
+const startSelected = () => <NationalMap {...props} size="large" selected="55" />;
 
-storiesOf('view.Infrastructure', module)
-  .add('Details False', detailsFalse)
-  .add('Details True', detailsTrue);
+storiesOf('component.NationalMap', module)
+  .add('Small Map', smallMap)
+  .add('Medium Map', mediumMap)
+  .add('Large Map', largeMap)
+  .add('With Points', withData)
+  .add('Force Selection', startSelected);

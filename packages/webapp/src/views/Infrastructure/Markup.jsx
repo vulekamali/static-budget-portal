@@ -8,7 +8,6 @@ import Layout from '../../components/Layout';
 import InfraChart from '../../components/InfraChart';
 import ResourcesList from './ResourcesList';
 
-
 const ChartWrap = styled.div`
   display: none;
 
@@ -18,13 +17,13 @@ const ChartWrap = styled.div`
     margin: 0 auto;
     padding: 20px;
   }
-`
+`;
 
 const ChartHeading = styled(Typography)`
   && {
     font-size: 14px;
     font-weight: bold;
-    font-family: Lato;
+    font-family: Roboto, sans-serif;
     padding: 40px 10px 15px;
     text-transform: uppercase;
     letter-spacing: 2px;
@@ -51,7 +50,7 @@ const KeyStyling = styled.div`
 `;
 
 const Line = styled.span`
-  border-bottom: 3px solid #76B649;
+  border-bottom: 3px solid #76b649;
   display: block;
   width: 20px;
   height: 3px;
@@ -60,7 +59,7 @@ const Line = styled.span`
 
 const Text = styled(Typography)`
   && {
-    font-family: Lato;
+    font-family: Roboto, sans-serif;
     margin: none;
     padding: none;
   }
@@ -73,17 +72,8 @@ const DottedLine = styled.span`
   margin-right: 12px;
 `;
 
-const Markup = (props) => {
-  const {
-    id,
-    projects,
-    nextId,
-    details,
-    toggleDetails,
-    datasetUrl, 
-    budgetReviewUrl,
-    Link,
-  } = props;
+const Markup = props => {
+  const { id, projects, nextId, details, toggleDetails, datasetUrl, budgetReviewUrl, Link } = props;
 
   const amount = projects.length;
 
@@ -94,10 +84,10 @@ const Markup = (props) => {
     toggleDetails,
     nextId,
     Link,
-  }
+  };
 
-  const buildChart = (details, data) => {
-    if (!details || !data) {
+  const buildChart = (innerDetails, data) => {
+    if (!innerDetails || !data) {
       return null;
     }
 
@@ -118,19 +108,20 @@ const Markup = (props) => {
         </HeadingAndKey>
         <InfraChart {...{ data }} />
       </ChartWrap>
-    )
+    );
   };
-  
+
   return (
     <Layout>
       <TopBar {...topBarProps} />
-      <Preview {...projects[id]} details={details} selected={id}  />
+      <Preview {...projects[id]} details={details} selected={id} />
       {!details && <ProjectList {...{ projects, datasetUrl, budgetReviewUrl, Link }} />}
       {buildChart(details, projects[id].chartData)}
-      {!!details && projects[id].resources.length > 0 && <ResourcesList resources={projects[id].resources || []} cite={projects[id].heading} />}
+      {!!details && projects[id].resources.length > 0 && (
+        <ResourcesList resources={projects[id].resources || []} cite={projects[id].heading} />
+      )}
     </Layout>
   );
 };
-
 
 export default Markup;

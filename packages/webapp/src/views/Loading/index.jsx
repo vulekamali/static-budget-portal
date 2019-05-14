@@ -3,7 +3,6 @@ import styled from 'styled-components';
 import CircularProgress from '@material-ui/core/CircularProgress';
 import Layout from '../../components/Layout';
 
-
 const Wrapper = styled.div`
   height: 100vh;
   width: 100%;
@@ -16,7 +15,6 @@ const Wrapper = styled.div`
   }
 `;
 
-
 export default () => (
   <Layout>
     <Wrapper>
@@ -24,4 +22,3 @@ export default () => (
     </Wrapper>
   </Layout>
 );
- 

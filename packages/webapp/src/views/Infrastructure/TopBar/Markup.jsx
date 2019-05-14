@@ -7,7 +7,7 @@ import ShareIcon from '@material-ui/icons/Share';
 import CloseIcon from '@material-ui/icons/Close';
 import LeftIcon from '@material-ui/icons/KeyboardArrowLeft';
 import RightIcon from '@material-ui/icons/KeyboardArrowRight';
-import { Typography } from '@material-ui/core'
+import { Typography } from '@material-ui/core';
 import { darken } from 'polished';
 import Modal from './Modal';
 import Icon from './Icon';
@@ -18,7 +18,7 @@ const StyledSpeedDial = styled(SpeedDial)`
   margin-right: 4px;
 
   & .fab {
-    background: #C4C4C4;
+    background: #c4c4c4;
     width: 36px;
     margin-left: 10px;
 
@@ -32,22 +32,22 @@ const WhiteButton = styled(Button)`
   &&& {
     background: white;
     border-radius: 50px;
-    ${({ text }) => (!!text ? 'min-width: 96px' : 'min-width: 36px')};
-    ${({ text }) => (!!text ? '' : 'width: 36px')};
-    ${({ text }) => (!!text ? 'height: 36px' : 'height: 36px')};
+    ${({ text }) => (text ? 'min-width: 96px' : 'min-width: 36px')};
+    ${({ text }) => (text ? '' : 'width: 36px')};
+    ${({ text }) => (text ? 'height: 36px' : 'height: 36px')};
     color: black;
     text-transform: none;
-    font-family: Lato;
+    font-family: Roboto, sans-serif;
     font-size: 16px;
     font-weight: 700;
     box-shadow: none;
     opacity: ${({ disabled }) => (disabled ? 0.2 : 1)};
     margin-right: 4px;
     margin-left: 4px;
-    ${({ text }) => (!!text ? 'padding-top: 4px ' : '')};
-    ${({ text }) => (!!text ? 'padding-right: 25px' : '')};
+    ${({ text }) => (text ? 'padding-top: 4px ' : '')};
+    ${({ text }) => (text ? 'padding-right: 25px' : '')};
     padding: 0;
-    
+
     &:hover {
       background: ${darken(0.1, 'white')};
     }
@@ -91,8 +91,8 @@ const WhiteText = styled(Typography)`
   text-align: center;
 
   && {
-    color: #3F3F3F;
-    font-family: Lato;
+    color: #3f3f3f;
+    font-family: Roboto, sans-serif;
     font-size: 10px;
     font-weight: 700;
     line-height: 16px;
@@ -106,7 +106,7 @@ const WhiteText = styled(Typography)`
       font-size: 14px;
     }
   }
-`
+`;
 const StaticPositionWrapper = styled.div`
   position: sticky;
   top: 0;
@@ -122,7 +122,6 @@ const Wrapper = styled.div`
   margin-bottom: 16px;
 
   @media screen and (min-width: 650px) {
-    margin-bottom: 45px;
     margin: 0 auto;
   }
 `;
@@ -140,47 +139,43 @@ const NavItemsWrapper = styled.div`
   padding-left: 16px;
 
   @media screen and (min-width: 450px) {
-    margin-bottom: 45px;
     margin: 0 auto;
     max-width: 976px;
   }
 `;
 
-
-
-const createNewTab = (newUrl) => {
+const createNewTab = newUrl => {
   const { focus } = window.open(newUrl, '_blank');
   return focus();
 };
 
-const sharing = [
-  'Copy link',
-  'Share on Facebook',
-  'Share on Twitter',
-  'Share on Linkedin',
-];
-
+const sharing = ['Copy link', 'Share on Facebook', 'Share on Twitter', 'Share on Linkedin'];
 
 const getUrl = (baseUrl, title) => {
   switch (title) {
-    case 'Copy link': return `baseUrl`;
-    case 'Share on Facebook': return `https://www.facebook.com/sharer/sharer.php?u=${baseUrl}`;
-    case 'Share on Twitter': return `https://twitter.com/home?status=${baseUrl}`;
-    case 'Share on Linkedin': return `https://www.linkedin.com/shareArticle?mini=true&url=${baseUrl}`;
-    default: return null;
-  };
+    case 'Copy link':
+      return `baseUrl`;
+    case 'Share on Facebook':
+      return `https://www.facebook.com/sharer/sharer.php?u=${baseUrl}`;
+    case 'Share on Twitter':
+      return `https://twitter.com/home?status=${baseUrl}`;
+    case 'Share on Linkedin':
+      return `https://www.linkedin.com/shareArticle?mini=true&url=${baseUrl}`;
+    default:
+      return null;
+  }
 };
 
-const createObjects = (baseUrl, toggleModal, toggleSharingOpen) => (title) => {
+const createObjects = (baseUrl, toggleModal, toggleSharingOpen) => title => {
   if (title === 'Copy link') {
     return {
       title,
       icon: <Icon {...{ title }} />,
       action: () => {
         toggleSharingOpen();
-        toggleModal(baseUrl)
-      }
-    }
+        toggleModal(baseUrl);
+      },
+    };
   }
 
   return {
@@ -188,23 +183,18 @@ const createObjects = (baseUrl, toggleModal, toggleSharingOpen) => (title) => {
     icon: <Icon {...{ title }} />,
     action: () => {
       toggleSharingOpen();
-      createNewTab(getUrl(baseUrl, title))
+      createNewTab(getUrl(baseUrl, title));
     },
-  }
+  };
 };
 
 const creataShareLink = ({ title, icon, action }) => (
-  <SpeedDialAction
-    key={title}
-    icon={icon}
-    tooltipTitle={title}
-    onClick={action}
-  />
-)
+  <SpeedDialAction key={title} icon={icon} tooltipTitle={title} onClick={action} />
+);
 
 const createButtons = (id, toggleModal, toggleSharingOpen) => {
   const baseUrl = id ? `${window.location.href}?id=${id}` : window.location.href;
-  const buttonsInfo = sharing.map(createObjects(baseUrl, toggleModal, toggleSharingOpen))
+  const buttonsInfo = sharing.map(createObjects(baseUrl, toggleModal, toggleSharingOpen));
 
   return buttonsInfo.map(creataShareLink);
 };
@@ -213,7 +203,7 @@ const createSpeedDial = (sharingOpen, toggleSharingOpen, id, toggleModal) => {
   return (
     <StyledSpeedDial
       ariaLabel="SpeedDial openIcon example"
-      icon={!!sharingOpen ? <StyledCloseIcon /> : <PositionedShareIcon />}
+      icon={sharingOpen ? <StyledCloseIcon /> : <PositionedShareIcon />}
       onClick={toggleSharingOpen}
       open={!!sharingOpen}
       direction="down"
@@ -221,8 +211,8 @@ const createSpeedDial = (sharingOpen, toggleSharingOpen, id, toggleModal) => {
     >
       {createButtons(id, toggleModal, toggleSharingOpen)}
     </StyledSpeedDial>
-  )
-}
+  );
+};
 
 const buttonMarkup = (disabled, text, reverse, clickEvent) => (
   <WhiteButton variant="contained" {...{ disabled, text }} onClick={clickEvent}>
@@ -231,8 +221,8 @@ const buttonMarkup = (disabled, text, reverse, clickEvent) => (
   </WhiteButton>
 );
 
-const Markup = (props) => {
-  const { 
+const Markup = props => {
+  const {
     sharingOpen,
     modal,
     toggleSharingOpen,
@@ -245,25 +235,26 @@ const Markup = (props) => {
     Link = 'a',
   } = props;
 
-  const createWrapperForButtonAndSpeedDial = Link => details ? (
-    <ButtonsOnTheLeft>
-      {!!details && 
-        <Link 
-          href="/infrastructure-projects"
-          to="/infrastructure-projects"
-          style={{ textDecoration: 'none', color: 'black' }}
-        >
-        {buttonMarkup(false, 'Back', true)}
-        </Link>
-      }
-      {createSpeedDial(sharingOpen, toggleSharingOpen, id, toggleModal)}
-    </ButtonsOnTheLeft>
-  ) : (
-    <ButtonsOnTheLeftDetailsFalse>
-      {!!details && buttonMarkup(false, 'Back', true)}
-      {createSpeedDial(sharingOpen, toggleSharingOpen, id, toggleModal)}
-    </ButtonsOnTheLeftDetailsFalse>
-  )
+  const createWrapperForButtonAndSpeedDial = InnerLink =>
+    details ? (
+      <ButtonsOnTheLeft>
+        {!!details && (
+          <InnerLink
+            href="/infrastructure-projects"
+            to="/infrastructure-projects"
+            style={{ textDecoration: 'none', color: 'black' }}
+          >
+            {buttonMarkup(false, 'Back', true)}
+          </InnerLink>
+        )}
+        {createSpeedDial(sharingOpen, toggleSharingOpen, id, toggleModal)}
+      </ButtonsOnTheLeft>
+    ) : (
+      <ButtonsOnTheLeftDetailsFalse>
+        {!!details && buttonMarkup(false, 'Back', true)}
+        {createSpeedDial(sharingOpen, toggleSharingOpen, id, toggleModal)}
+      </ButtonsOnTheLeftDetailsFalse>
+    );
 
   const whiteTextRendering = details ? (
     <WhiteText>Project Information</WhiteText>
@@ -277,9 +268,7 @@ const Markup = (props) => {
         <NavItemsWrapper>
           <Modal open={!!modal} closeModal={() => toggleModal(null)} url={modal} />
           {createWrapperForButtonAndSpeedDial(Link)}
-          <TextContainer>
-            {whiteTextRendering}
-          </TextContainer>
+          <TextContainer>{whiteTextRendering}</TextContainer>
           <TwoArrowButtons>
             {buttonMarkup(id <= 0, null, true, previousId)}
             {buttonMarkup(id + 1 >= amount, null, null, nextId)}
@@ -287,7 +276,7 @@ const Markup = (props) => {
         </NavItemsWrapper>
       </Wrapper>
     </StaticPositionWrapper>
-  )
-}
+  );
+};
 
 export default Markup;

@@ -2,7 +2,6 @@ import Button from '@material-ui/core/Button';
 import styled from 'styled-components';
 import { darken } from 'polished';
 
-
 const PrimaryButton = styled(Button)`
   && {
     background: #79b443;
@@ -10,7 +9,7 @@ const PrimaryButton = styled(Button)`
     color: white;
     text-transform: none;
     padding: 10px 25px;
-    font-family: Lato;
+    font-family: Roboto, sans-serif;
     font-size: 16px;
     font-weight: 700;
     box-shadow: none;
@@ -20,7 +19,6 @@ const PrimaryButton = styled(Button)`
     }
   }
 `;
-
 
 const SecondaryButton = styled(PrimaryButton)`
   && {
@@ -32,13 +30,9 @@ const SecondaryButton = styled(PrimaryButton)`
   }
 `;
 
-
-export {
-  PrimaryButton,
-  SecondaryButton,
-}
+export { PrimaryButton, SecondaryButton };
 
 export default {
   PrimaryButton,
   SecondaryButton,
-}
+};

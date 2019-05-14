@@ -13,7 +13,6 @@ const CustomizedForm = styled.div`
   }
 `;
 
-
 const SelectPreview = styled(Select)`
   background: #fff;
 
@@ -65,13 +64,9 @@ const SelectPreview = styled(Select)`
   }
 `;
 
-
-export {
-  CustomizedForm,
-  SelectPreview
-}
+export { CustomizedForm, SelectPreview };
 
 export default {
   CustomizedForm,
-  SelectPreview
-}
+  SelectPreview,
+};

@@ -1,10 +1,10 @@
+/* eslint-disable no-console */
+/* eslint-disable import/no-extraneous-dependencies */
+
 import React from 'react';
-
 import calcPrettyName from './calcPrettyName';
-
 import CustomizedDateSelect from './CustomizedDateSelect';
 import CustomizedSelect from './CustomizedSelect';
-
 
 import {
   HeadingWrapper,
@@ -18,37 +18,29 @@ import {
   ButtonText,
   ArrowStyled,
   Details,
-  DetailedAnalysis
- } from './styled';
-
+  DetailedAnalysis,
+} from './styled';
 
 const callDetailedAnalysisButton = (url, hasButton) => {
-  if(hasButton) {
+  if (hasButton) {
     return (
       <Link href={url}>
         <ButtonDetails>
-        <ButtonText>
-          <Details>Details</Details>
-          <DetailedAnalysis>Detailed Analysis</DetailedAnalysis>
-        </ButtonText>
+          <ButtonText>
+            <Details>Details</Details>
+            <DetailedAnalysis>Detailed Analysis</DetailedAnalysis>
+          </ButtonText>
           <ArrowStyled />
         </ButtonDetails>
-    </Link>
+      </Link>
     );
   }
+
+  return null;
 };
 
-const Heading = (props) => {
-
-  const {
-    government,
-    departmentNames,
-    selected,
-    eventHandler,
-    year,
-    sphere,
-    hasButton
-  } = props;
+const Heading = props => {
+  const { government, departmentNames, selected, eventHandler, year, sphere, hasButton } = props;
 
   const provinceFolder = government === 'south-africa' ? '' : `${government}/`;
   const url = `/${year}/${sphere}/${provinceFolder}departments/${selected}`;
@@ -68,8 +60,7 @@ const Heading = (props) => {
         </SelectsGroup>
       </HeadingContainer>
     </HeadingWrapper>
-  )
+  );
 };
-
 
 export default Heading;

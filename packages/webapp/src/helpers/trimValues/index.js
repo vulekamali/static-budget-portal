@@ -1,4 +1,3 @@
-
 const trimValues = (rawValue, abbreviated) => {
   const value = parseInt(rawValue, 10);
   const million = abbreviated ? 'm' : 'million';
@@ -31,9 +30,7 @@ const trimValues = (rawValue, abbreviated) => {
     return `${(value / 1000000).toFixed(1).replace(/\.0$/, '')} ${million}`;
   }
 
-
   return null;
-}
-
+};
 
 export default trimValues;

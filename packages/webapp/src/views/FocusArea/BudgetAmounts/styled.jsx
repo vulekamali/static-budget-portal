@@ -2,7 +2,7 @@ import styled from 'styled-components';
 import { Typography } from '@material-ui/core';
 
 const Wrapper = styled.div`
-  font-family: Roboto;
+  font-family: Roboto, sans-serif;
   justify-content: center;
   margin-right: 16px;
   margin-left: 16px;
@@ -68,20 +68,11 @@ const Percentages = styled.div`
   }
 `;
 
-
-export {
-  Wrapper,
-  Summary,
-  Numbers,
-  Budget,
-  IntroMainHeading,
-  IntroSubHeading,
-  Percentages,
-}
+export { Wrapper, Summary, Numbers, Budget, IntroMainHeading, IntroSubHeading, Percentages };
 
 export default {
   Wrapper,
   Summary,
   Numbers,
   Budget,
-}
+};

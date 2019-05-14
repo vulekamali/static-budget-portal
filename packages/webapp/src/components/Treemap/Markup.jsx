@@ -5,19 +5,24 @@ import LeftIcon from '@material-ui/icons/ArrowBack';
 import Block from './Block';
 import TooltipContent from './TooltipContent';
 
-import {
-  TreemapWrapper,
-  TreemapButtonStyle,
-  TreemapButtonText,
-} from './styled';
+import { TreemapWrapper, TreemapButtonStyle, TreemapButtonText } from './styled';
 
-
-const createBlock = (fills, changeSelectedHandler, selected, zoom, icons) => (props) => {
+const createBlock = (fills, changeSelectedHandler, selected, zoom, icons) => props => {
   const passedProps = { ...props, fills, changeSelectedHandler, selected, zoom, icons };
   return <Block {...passedProps} />;
 };
 
-const Markup = ({ items, changeSelectedHandler, selected, fills, screenWidth, zoom, hasChildren, unsetZoomHandler, icons }) => {
+const Markup = ({
+  items,
+  changeSelectedHandler,
+  selected,
+  fills,
+  screenWidth,
+  zoom,
+  hasChildren,
+  unsetZoomHandler,
+  icons,
+}) => {
   const widthWithPadding = screenWidth - 48;
   const width = widthWithPadding > 1200 ? 1200 : widthWithPadding;
 

@@ -6,15 +6,10 @@ import BudgetAmounts from './BudgetAmounts';
 import SectionHeading from './SectionHeading';
 import FinePrint from './FinePrint';
 
-import {
-  Wrapper,
-  TextWrapper,
-  TextContainer,
-  Description
-} from './styled';
+import { Wrapper, TextWrapper, TextContainer, Description } from './styled';
 
-const callDescription = (description) => {
-  if(!description) {
+const callDescription = description => {
+  if (!description) {
     return null;
   }
   return (
@@ -30,7 +25,7 @@ const callDescription = (description) => {
   );
 };
 
-const Markup = (props) => {
+const Markup = props => {
   const {
     resources,
     description,
@@ -43,12 +38,14 @@ const Markup = (props) => {
     children,
     hasButton,
     section,
-    items
+    items,
   } = props;
 
   return (
     <Wrapper>
-      <Heading {...{ departmentNames, items, government, selected, eventHandler, year, sphere, hasButton }} />
+      <Heading
+        {...{ departmentNames, items, government, selected, eventHandler, year, sphere, hasButton }}
+      />
       <SectionHeading title={section} />
       <BudgetAmounts {...resources} sphere={sphere} />
       {callDescription(description)}

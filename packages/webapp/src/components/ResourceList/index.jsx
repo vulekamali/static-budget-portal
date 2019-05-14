@@ -1,5 +1,4 @@
 import React from 'react';
-import t from 'prop-types';
 import styled from 'styled-components';
 import copy from 'copy-to-clipboard';
 import Card from '@material-ui/core/Card';
@@ -9,12 +8,10 @@ import Icon from '@material-ui/icons/ArrowDownward';
 import Copy from '@material-ui/icons/FileCopy';
 import { Typography } from '@material-ui/core';
 
-
-
 const Title = styled(Typography)`
   && {
     height: 39px;
-    font-family: Lato;
+    font-family: Roboto, sans-serif;
     line-height: 23px;
     font-size: 14px;
     color: #000000;
@@ -41,7 +38,7 @@ const CardWrapper = styled.div`
   }
 
   @media screen and (min-width: 1000px) {
-    max-width: ${100 / 3}%
+    max-width: ${100 / 3}%;
   }
 `;
 
@@ -84,7 +81,6 @@ const HeadingText = styled.div`
   }
 `;
 
-
 const ButtonBtn = styled(Button)`
   && {
     padding: 6px;
@@ -93,7 +89,7 @@ const ButtonBtn = styled(Button)`
     height: 57px;
     text-transform: none;
     box-shadow: none;
-    
+
     @media screen and (min-width: 375px) {
       padding: 6px 16px;
       display: flex;
@@ -115,8 +111,8 @@ const SpanText = styled.span`
 `;
 
 const CardBlack = styled(StyledCard)`
-  &&{ 
-    background-color: #3F3F3F;
+  && {
+    background-color: #3f3f3f;
   }
 `;
 
@@ -129,9 +125,9 @@ const TitleBlack = styled(Title)`
 `;
 
 const SubHeading = styled(Size)`
-   && {
-      color: #ffffff;
-   }
+  && {
+    color: #ffffff;
+  }
 `;
 
 const ButtonBtnBlack = styled(ButtonBtn)`
@@ -144,30 +140,25 @@ const ButtonBtnBlack = styled(ButtonBtn)`
   }
 `;
 
-
 const BtnLink = styled.a`
   text-decoration: none;
 `;
 
-
 const iconSize = {
-  height:'16px',
+  height: '16px',
   width: '16px',
-}
+};
 
-const createResource = (props) => {
-  const {
-    heading,
-    size,
-    format,
-    link,
-  } = props;
+const createResource = props => {
+  const { heading, size, format, link } = props;
 
-  const SizeAndFormat = !!size ? (
-    <Size>{size} - {format}</Size>
+  const SizeAndFormat = size ? (
+    <Size>
+      {size} - {format}
+    </Size>
   ) : (
     <Size>{format}</Size>
-  )
+  );
 
   return (
     <CardWrapper key={heading}>
@@ -183,7 +174,7 @@ const createResource = (props) => {
                 <SpanText>{format === 'Web' ? 'View' : 'Download'}</SpanText>
                 {format !== 'Web' && <Icon style={iconSize} />}
               </ButtonBtn>
-              </BtnLink>
+            </BtnLink>
           </div>
         </CardContentWrapper>
       </StyledCard>
@@ -191,12 +182,10 @@ const createResource = (props) => {
   );
 };
 
-
-const createCitation = name => `South African National Treasury Infrastructure Report 2019 - ${name}`;
-
+const createCitation = name =>
+  `South African National Treasury Infrastructure Report 2019 - ${name}`;
 
 const CopyCitation = ({ name }) => {
-
   return (
     <CardWrapper>
       <CardBlack>
@@ -214,7 +203,7 @@ const CopyCitation = ({ name }) => {
         </CardContentWrapper>
       </CardBlack>
     </CardWrapper>
-  )
+  );
 };
 
 const List = styled.div`
@@ -229,28 +218,30 @@ const Resources = ({ resources, cite }) => (
   </List>
 );
 
-Resources.propTypes = {
-  /** Array of data to loop from for card details */
-  resources: t.arrayOf(t.shape({
-    /** Displays the title of the file to be downloaded */
-    heading: t.string.isRequired,
-    /** This can be a string or empty string or null. It displays the size of the file to download,
-     * or nothing if button redirects to a website url instead.
-     */
-    size: t.string,
-    /** Displays the format of the file to be downloaded */
-    format: t.string.isRequired,
-    /** url that links to the file to be downloaded or redirects to desired website */
-    link: t.string.isRequired,
-  })).isRequired,
-  /** True or false depending whether an extra card displaying a call to action card with custom styling placed
-  as the last card in the list of cards */
-  cite: t.bool
-}
+// Resources.propTypes = {
+//   /** Array of data to loop from for card details */
+//   resources: t.arrayOf(
+//     t.shape({
+//       /** Displays the title of the file to be downloaded */
+//       heading: t.string.isRequired,
+//       /** This can be a string or empty string or null. It displays the size of the file to download,
+//        * or nothing if button redirects to a website url instead.
+//        */
+//       size: t.string,
+//       /** Displays the format of the file to be downloaded */
+//       format: t.string.isRequired,
+//       /** url that links to the file to be downloaded or redirects to desired website */
+//       link: t.string.isRequired,
+//     }),
+//   ).isRequired,
+//   /** True or false depending whether an extra card displaying a call to action card with custom styling placed
+//   as the last card in the list of cards */
+//   cite: t.bool,
+// };
 
-Resources.defaultProps = {
-  size: null,
-  cite: false,
-}
+// Resources.defaultProps = {
+//   size: null,
+//   cite: false,
+// };
 
 export default Resources;

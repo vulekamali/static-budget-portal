@@ -1,17 +1,10 @@
 import React, { Component } from 'react';
+import { MenuItem } from '@material-ui/core';
+import { CustomizedForm, SelectPreviewDate } from './styled';
 
-import { MenuItem, CssBaseline } from '@material-ui/core';
-
-import {
-  CustomizedForm,
-  FormControlDateCtrl,
-  SelectPreviewDate
-} from './styled';
-
-class CustomizedDateSelect extends Component{
-
+class CustomizedDateSelect extends Component {
   state = {
-    DateValue: ''
+    DateValue: '',
   };
 
   handleChange = event => {
@@ -19,18 +12,20 @@ class CustomizedDateSelect extends Component{
   };
 
   render() {
+    const { DateValue } = this.state;
+
     return (
       <CustomizedForm>
         <SelectPreviewDate
           disabled
-          value={this.state.DateValue}
+          value={DateValue}
           onChange={this.handleChange}
           displayEmpty
           name="DateValue"
-          classes={{ 
+          classes={{
             selectMenu: 'selectMenu',
             disabled: 'disabled',
-            icon: 'icon'
+            icon: 'icon',
           }}
         >
           <MenuItem value="">2019-20</MenuItem>

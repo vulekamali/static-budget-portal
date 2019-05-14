@@ -56,16 +56,11 @@ const Description = styled(Typography)`
   }
 `;
 
-export {
-  Wrapper,
-  TextWrapper,
-  TextContainer,
-  Description
-}
+export { Wrapper, TextWrapper, TextContainer, Description };
 
 export default {
   Wrapper,
   TextWrapper,
   TextContainer,
-  Description
-}
+  Description,
+};

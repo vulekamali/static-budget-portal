@@ -97,7 +97,7 @@ const ButtonDetails = styled(Button)`
 `;
 
 const ButtonText = styled.span`
-  font-family: Roboto;
+  font-family: Roboto, sans-serif;
   font-weight: 700;
   font-size: 14px;
   line-height: 120%;
@@ -110,7 +110,7 @@ const ButtonText = styled.span`
 `;
 
 const Details = styled.span`
-  font-family: Roboto;
+  font-family: Roboto, sans-serif;
   font-weight: 700;
   font-size: 14px;
   line-height: 120%;
@@ -126,7 +126,7 @@ const DetailedAnalysis = styled.span`
 
   @media screen and (min-width: 600px) {
     display: block;
-    font-family: Roboto;
+    font-family: Roboto, sans-serif;
     font-weight: 700;
     font-size: 20px;
     line-height: 120%;
@@ -154,8 +154,8 @@ export {
   ButtonText,
   ArrowStyled,
   Details,
-  DetailedAnalysis
-}
+  DetailedAnalysis,
+};
 
 export default {
   HeadingWrapper,
@@ -169,5 +169,5 @@ export default {
   ButtonText,
   ArrowStyled,
   Details,
-  DetailedAnalysis
-}
+  DetailedAnalysis,
+};

@@ -20,14 +20,8 @@ const Text = styled(Typography)`
   }
 `;
 
-const callText = notices => notices.map(notice => (
-  <Text key={notice}>{notice}</Text>
-));
+const callText = notices => notices.map(notice => <Text key={notice}>{notice}</Text>);
 
-const Notices = ({ notices }) => (
-  <Wrapper>
-    {callText(notices)}
-  </Wrapper>
-);
+const Notices = ({ notices }) => <Wrapper>{callText(notices)}</Wrapper>;
 
 export default Notices;

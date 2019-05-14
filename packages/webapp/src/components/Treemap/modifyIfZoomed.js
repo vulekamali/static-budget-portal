@@ -5,7 +5,6 @@ const modifyIfZoomed = (items, zoom) => {
 
   const result = items.find(({ name }) => name === zoom).children;
   return result;
-}
-
+};
 
 export default modifyIfZoomed;

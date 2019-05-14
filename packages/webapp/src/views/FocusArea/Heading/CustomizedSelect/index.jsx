@@ -1,36 +1,39 @@
 import React, { Component } from 'react';
 import { MenuItem, CssBaseline } from '@material-ui/core';
 
-import {
-  CustomizedForm,
-  SelectPreview
-} from './styled';
+import { CustomizedForm, SelectPreview } from './styled';
 
-const callMenuItems = departmentNames => (
-  departmentNames.map(({ id: idVal, name}) => {
+const callMenuItems = departmentNames =>
+  departmentNames.map(({ id: idVal, name }) => {
     const selectedKey = departmentNames.findIndex(({ id }) => id === idVal);
 
-    return <MenuItem key={selectedKey} value={idVal}>{name}</MenuItem>
-  })
-)
+    return (
+      <MenuItem key={selectedKey} value={idVal}>
+        {name}
+      </MenuItem>
+    );
+  });
 
 class CustomizedSelect extends Component {
   constructor(props) {
     super(props);
-  
+
     this.state = {
-      budgetValue: ''
+      budgetValue: '',
     };
 
-    this.handleChange = this.handleChange.bind(this)
+    this.handleChange = this.handleChange.bind(this);
   }
 
   handleChange(event) {
     this.setState({ [event.target.name]: event.target.value });
-  };
+  }
 
   render() {
-    const { departmentNames, selected, eventHandler } = this.props;
+    const {
+      props: { departmentNames, selected, eventHandler },
+      state: { budgetValue },
+    } = this;
 
     return (
       <CustomizedForm>
@@ -39,10 +42,10 @@ class CustomizedSelect extends Component {
           value={selected}
           onChange={eventHandler}
           displayEmpty
-          name={this.state.budgetValue}
-          classes={{ icon: 'icon', selectMenu: 'selectMenu'}}
+          name={budgetValue}
+          classes={{ icon: 'icon', selectMenu: 'selectMenu' }}
         >
-        {callMenuItems(departmentNames)}
+          {callMenuItems(departmentNames)}
         </SelectPreview>
       </CustomizedForm>
     );

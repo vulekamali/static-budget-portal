@@ -20,11 +20,11 @@ const wrapInHeaderAndFooter = ({ canvas, height, downloadText, source }) => {
   context.fillStyle = 'white';
   context.fill();
 
-  context.font = 'bold 32px Lato, sans-serif';
+  context.font = 'bold 32px Roboto, sans-serif';
   context.fillStyle = '#ee9f31';
   context.fillText(title, 50, 60);
 
-  context.font = '18px Lato, sans-serif';
+  context.font = '18px Roboto, sans-serif';
   context.fillStyle = 'grey';
   context.fillText(subtitle, 50, 100);
 
@@ -33,7 +33,7 @@ const wrapInHeaderAndFooter = ({ canvas, height, downloadText, source }) => {
 
   context.drawImage(canvas, 50, 150);
 
-  context.font = '18px Lato, sans-serif';
+  context.font = '18px Roboto, sans-serif';
   context.fillStyle = '#ee9f31';
   context.fillText('Downloaded from vulekamali.gov.za', 50, 190 + height);
 

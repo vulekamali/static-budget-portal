@@ -1,13 +1,8 @@
 import React from 'react';
-
 import Media from 'react-media';
+import { StyledCircle, StyledSvg } from './styled';
 
-import {
-  StyledCircle,
-  StyledSvg,
-} from './styled';
-
-const Slice = ({amount}) => {
+const Slice = ({ amount }) => {
   return (
     <Media query="(max-width: 899px)">
       {matches =>
@@ -18,7 +13,9 @@ const Slice = ({amount}) => {
             cx={20 / 2}
             strokeWidth={20 / 2 - 1}
             fill="none"
-            strokeDasharray={`${((amount / 100) * Math.round(Math.PI * (20 / 2)))}, ${Math.round(Math.PI * (20 / 2))}`}
+            strokeDasharray={`${(amount / 100) * Math.round(Math.PI * (20 / 2))}, ${Math.round(
+              Math.PI * (20 / 2),
+            )}`}
             strokeDashoffset="0"
             transform="rotate(-90 10 10)"
           />
@@ -29,7 +26,9 @@ const Slice = ({amount}) => {
             cx={40 / 2}
             strokeWidth={40 / 2 - 1}
             fill="none"
-            strokeDasharray={`${((amount / 100) * Math.round(Math.PI * (40 / 2)))}, ${Math.round(Math.PI * (40 / 2))}`}
+            strokeDasharray={`${(amount / 100) * Math.round(Math.PI * (40 / 2))}, ${Math.round(
+              Math.PI * (40 / 2),
+            )}`}
             strokeDashoffset="0"
             transform="rotate(-90 20 20)"
           />
@@ -40,42 +39,32 @@ const Slice = ({amount}) => {
 };
 
 const PieChart = ({ values }) => {
-
   const startRanges = values.reduce(
     (result, val, i) => {
-      return [
-        ...result,
-        val + result[i],
-      ]
+      return [...result, val + result[i]];
     },
-    [0]
+    [0],
   );
 
-  const slices = values.map((value, i) => {
-    return <Slice start={startRanges} amount={value} key={i} />
+  const slices = values.map(value => {
+    return <Slice start={startRanges} amount={value} key={`${value}-${startRanges}`} />;
   });
 
   return (
     <Media query="(max-width: 899px)">
       {matches =>
         matches ? (
-          <StyledSvg
-            viewBox={`0 0 20 20`}
-            xmlns='http://www.w3.org/2000/svg'
-          >
+          <StyledSvg viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
             {slices}
           </StyledSvg>
         ) : (
-          <StyledSvg
-            viewBox={`0 0 40 40`}
-            xmlns='http://www.w3.org/2000/svg'
-          >
+          <StyledSvg viewBox="0 0 40 40" xmlns="http://www.w3.org/2000/svg">
             {slices}
           </StyledSvg>
         )
       }
     </Media>
-  )
+  );
 };
 
 export default PieChart;

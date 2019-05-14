@@ -1,12 +1,9 @@
 import React, { Fragment } from 'react';
 import styled from 'styled-components';
 import Paper from '@material-ui/core/Paper';
-import Button from '@material-ui/core/Button';
-import LeftIcon from '@material-ui/icons/KeyboardArrowLeft';
-import RightIcon from '@material-ui/icons/KeyboardArrowRight';
-import { darken } from 'polished';
+
 import {
-  LineChart, 
+  LineChart,
   Line,
   XAxis,
   YAxis,
@@ -22,19 +19,16 @@ const xAxisStyles = {
   fontFamily: 'Lato',
   fontWeight: 700,
   fill: 'black',
-}
-
+};
 
 const yAxisStyles = {
   fontSize: '12px',
   fontFamily: 'Lato',
   fontWeight: 700,
   fill: 'black',
-}
-
+};
 
 const axisTrimValue = value => `R${trimValues(value, true)}`;
-
 
 const StyledTooltip = styled(Paper)`
   && {
@@ -42,94 +36,56 @@ const StyledTooltip = styled(Paper)`
     border-radius: 5px;
     color: white;
     font-size: 16px;
-    font-family: Lato;
+    font-family: Roboto, sans-serif;
     padding: 10px;
   }
-`
+`;
 
 const Content = ({ payload = [] }) => {
   const filtered = payload.filter(({ name }) => name !== 'Connection');
 
-  const { name, value } = filtered[0] || {}; 
+  const { name, value } = filtered[0] || {};
 
   return (
     <Fragment>
       <StyledTooltip>
         {name}: R{trimValues(value, true)}
-      </StyledTooltip> 
+      </StyledTooltip>
     </Fragment>
-  )
-}
+  );
+};
 
 const Dot = ({ cx, cy }) => {
-  if (!cx || !cy ) {
+  if (!cx || !cy) {
     return null;
   }
 
   const isMobile = window.innerWidth < 500;
 
-  return (
-    <circle 
-      {...{ cx, cy }}
-      fill={isMobile ? 'none' : '#76B649'}
-      stroke="none"
-      r="4"
-    />
-  )
-}
+  return <circle {...{ cx, cy }} fill={isMobile ? 'none' : '#76B649'} stroke="none" r="4" />;
+};
 
 const ActiveDot = ({ cx, cy }) => {
-  if (!cx || !cy ) {
+  if (!cx || !cy) {
     return null;
   }
 
-  return (
-    <circle 
-      {...{ cx, cy }}
-      fill="#76B649"
-      stroke="none"
-      r="7"
-    />
-  )
-}
-
-
-
-const GreyButton = styled(Button)`
-  &&& {
-    background: black;
-    border-radius: 50px;
-    min-width: 36px;
-    width: 36px;
-    height: 36px;
-    text-transform: none;
-    font-family: Lato;
-    font-size: 16px;
-    font-weight: 700;
-    box-shadow: none;
-    opacity: ${({ disabled }) => (disabled ? 0.2 : 1)};
-    margin-right: 4px;
-    margin-left: 4px;
-    fill: white;
-    color: white;
-
-    &:hover {
-      background: ${darken(0.1, '#C4C4C4')};
-    }
-  }
-`;
+  return <circle {...{ cx, cy }} fill="#76B649" stroke="none" r="7" />;
+};
 
 const InfraChart = ({ data }) => {
   return (
     <Fragment>
-      {/* {buttons} */}
       <ResponsiveContainer width="100%" height={340}>
         <LineChart
           width={500}
           height={300}
           data={data}
           margin={{
-            top: 30, right: 60, left: 30, bottom: 30,
+            top: 30,
+            right: 60,
+            left: 30,
+            bottom: 30,
           }}
         >
           <CartesianGrid stroke="#E6E6E6" />
@@ -140,7 +96,7 @@ const InfraChart = ({ data }) => {
             style={xAxisStyles}
             axisLine={{
               stroke: 'black',
-              strokeWidth: 1
+              strokeWidth: 1,
             }}
           />
           <YAxis
@@ -153,7 +109,7 @@ const InfraChart = ({ data }) => {
               strokeWidth: 1,
             }}
           />
-          <Line 
+          <Line
             dataKey="Actual"
             stroke="#76B649"
             strokeWidth={3}
@@ -161,7 +117,7 @@ const InfraChart = ({ data }) => {
             activeDot={<ActiveDot />}
             isAnimationActive={false}
           />
-          <Line 
+          <Line
             dataKey="Connection"
             stroke="#76B649"
             strokeWidth={3}
@@ -178,8 +134,8 @@ const InfraChart = ({ data }) => {
             dot={<Dot />}
             activeDot={<ActiveDot />}
             isAnimationActive={false}
-            />
-          <Tooltip 
+          />
+          <Tooltip
             active={false}
             content={<Content />}
             isAnimationActive={false}
@@ -187,12 +143,10 @@ const InfraChart = ({ data }) => {
               stroke: 'black',
             }}
           />
-          {/* <ReferenceLine x="'19" stroke="black" label={<Selected />} /> */}
         </LineChart>
       </ResponsiveContainer>
     </Fragment>
-  )
-}
-
+  );
+};
 
 export default InfraChart;

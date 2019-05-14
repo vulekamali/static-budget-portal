@@ -5,52 +5,51 @@ const allComponents = value => ({
     notices: ['This data will be available upon the release of the 2019-20 Provincial Budgets'],
     footnotes: [
       'source: random text footer for expenditure',
-      'note: Other random text to test footer note for provincial equitable share.'
+      'note: Other random text to test footer note for provincial equitable share.',
     ],
-    total: 10 * parseInt(value),
+    total: 10 * parseInt(value, 10),
     departments: [
-    {
-      name: 'Administration',
-      amount: 695320000000,
-      url: null
-    },
-    {
-      name: 'Economic Statistics',
-      amount: 493210000000,
-      url: null
-    },
-    {
-      name: 'Population & Social Statistics',
-      amount: 202300000000,
-      url: null
-    },
-    {
-      name: 'Methodology, Standards & Reasearch',
-      amount: 67400000000,
-      url: null
-    },
-    {
-      name: 'Statistical Support & Informatics',
-      amount: 267100000000,
-      url: null
-    },
-    {
-      name: 'Statistical Collection & Outreach',
-      amount: 608000000000,
-      url: null
-    },
-    {
-      name: 'Survey Operations',
-      amount: 194740000000,
-      url: null
-    },
-  ]},
+      {
+        name: 'Administration',
+        amount: 695320000000,
+        url: null,
+      },
+      {
+        name: 'Economic Statistics',
+        amount: 493210000000,
+        url: null,
+      },
+      {
+        name: 'Population & Social Statistics',
+        amount: 202300000000,
+        url: null,
+      },
+      {
+        name: 'Methodology, Standards & Reasearch',
+        amount: 67400000000,
+        url: null,
+      },
+      {
+        name: 'Statistical Support & Informatics',
+        amount: 267100000000,
+        url: null,
+      },
+      {
+        name: 'Statistical Collection & Outreach',
+        amount: 608000000000,
+        url: null,
+      },
+      {
+        name: 'Survey Operations',
+        amount: 194740000000,
+        url: null,
+      },
+    ],
+  },
   provincial: {
     notices: ['This is a string inside of an array of strings for notices'],
-    footnotes: [
-      'source: Some random text to test footer expenditure'
-    ],
-    total: 20 * parseInt(value),
+    footnotes: ['source: Some random text to test footer expenditure'],
+    total: 20 * parseInt(value, 10),
     provinces: {
       'Eastern Cape': {
         name: 'Eastern Cape',
@@ -178,11 +177,9 @@ const allComponents = value => ({
           },
           {
             amount: 631931000,
-            name:
-              'Economic And Small Business Development, Tourism And Environmental Affairs',
+            name: 'Economic And Small Business Development, Tourism And Environmental Affairs',
             province: 'Free State',
-            id:
-              'economic-and-small-business-development-tourism-and-environmental-affairs',
+            id: 'economic-and-small-business-development-tourism-and-environmental-affairs',
             percentage: 0,
           },
           {
@@ -257,8 +254,8 @@ const allComponents = value => ({
           },
         ],
       },
-    }  
-  }
+    },
+  },
 });
 
 export default allComponents;

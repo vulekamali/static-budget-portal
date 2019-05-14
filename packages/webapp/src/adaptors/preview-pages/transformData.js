@@ -1,9 +1,9 @@
 const createProgrammeObject = ({ amount, title }) => ({
   amount,
-  title
+  title,
 });
 
-const transformData = (response) => {
+const transformData = response => {
   const departmentSchema = response.items.map(department => {
     const {
       percentage_of_budget: percentage,
@@ -18,18 +18,17 @@ const transformData = (response) => {
     return {
       resources: {
         consolidated: percentage,
-        value: total
+        value: total,
       },
       items: programmes.map(createProgrammeObject),
       description,
       title,
       id: slug,
       url,
-    }
-  })
+    };
+  });
 
- return departmentSchema;
-
+  return departmentSchema;
 };
 
 export default transformData;

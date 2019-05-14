@@ -15,13 +15,8 @@ import {
   Percentages,
 } from './styled';
 
-const BudgetAmounts = (props) => {
-
-  const {
-    value,
-    consolidated,
-    sphere
-  } = props;
+const BudgetAmounts = props => {
+  const { value, consolidated, sphere } = props;
 
   return (
     <Wrapper>
@@ -29,22 +24,17 @@ const BudgetAmounts = (props) => {
         <Numbers>
           <Budget>
             <IntroMainHeading>
-            <Media query="(max-width: 899px)">
-              {matches =>
-                matches ? (
-                  `R${trimValues(value, true)}`
-                ) : (
-                  `R${trimValues(value)}`
-                )
-              }
-            </Media>
+              <Media query="(max-width: 899px)">
+                {matches => (matches ? `R${trimValues(value, true)}` : `R${trimValues(value)}`)}
+              </Media>
             </IntroMainHeading>
             <IntroSubHeading>Original department budget</IntroSubHeading>
           </Budget>
           <Percentages>
             <div>
               <IntroMainHeading>
-                <PieChart values={[consolidated < 1 ? 1 : consolidated]} /> {calcTotal(consolidated)}%
+                <PieChart values={[consolidated < 1 ? 1 : consolidated]} />{' '}
+                {calcTotal(consolidated)}%
               </IntroMainHeading>
               <IntroSubHeading>of {sphere} budget</IntroSubHeading>
             </div>
