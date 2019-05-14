@@ -1,5 +1,4 @@
 import React from 'react';
-import t from 'prop-types';
 import { darken } from 'polished';
 import styled from 'styled-components';
 import Card from '@material-ui/core/Card';
@@ -245,21 +244,21 @@ const NotificationBar = ({ notice: noticeText, callToAction: callToActionData })
   );
 };
 
-NotificationBar.propTypes = {
-  notice: t.string,
-  callToAction: t.shape({
-    subheading: t.string,
-    heading: t.string,
-    link: t.shape({
-      text: t.string,
-      link: t.string,
-    }),
-  }),
-};
+// NotificationBar.propTypes = {
+//   notice: t.string,
+//   callToAction: t.shape({
+//     subheading: t.string,
+//     heading: t.string,
+//     link: t.shape({
+//       text: t.string,
+//       link: t.string,
+//     }),
+//   }),
+// };
 
-NotificationBar.defaultProps = {
-  notice: null,
-  callToAction: null,
-};
+// NotificationBar.defaultProps = {
+//   notice: null,
+//   callToAction: null,
+// };
 
 export default NotificationBar;

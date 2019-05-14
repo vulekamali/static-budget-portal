@@ -36,5 +36,5 @@ const items = [
 const basic = () => <BarChart {...{ items }} />;
 
 
-storiesOf('component.BarChart', module)
+storiesOf('components.BarChart', module)
   .add('Default', basic)
