@@ -101,16 +101,13 @@ const Markup = (props) => {
     phases,
     anchor,
     title,
-    loading,
-    yearsObject,
-    phasesObject,
-    chartItemDetails
+    loading
   } = props;
   
   return (
     <Wrapper>
       <CssBaseline />
-      <SectionHeading title={title} share={anchor} years={years} phases={phases} />
+      <SectionHeading {...{ title, years, phases }} share={anchor} />
       {!!itemPreview && callDetails(itemPreview, verb, subject, loading)}
       {callChart(chart, onSelectedChange, loading)}
       <FooterWrapper>
