@@ -22,13 +22,9 @@
     "d3plus": "2.0.0-alpha.18",
     "dotenv": "6.0.0",
     "dotenv-expand": "4.2.0",
-    "eslint": "5.12.0",
     "eslint-config-react-app": "^3.0.7",
     "eslint-loader": "2.1.1",
     "eslint-plugin-flowtype": "2.50.1",
-    "eslint-plugin-import": "2.14.0",
-    "eslint-plugin-jsx-a11y": "6.1.2",
-    "eslint-plugin-react": "7.12.4",
     "faker": "^4.1.0",
     "file-loader": "2.0.0",
     "fork-ts-checker-webpack-plugin-alt": "0.4.14",
@@ -82,16 +78,14 @@
   "license": "MIT",
   "devDependencies": {
     "@babel/core": "^7.2.2",
-    "@storybook/react": "^4.1.11",
+    "@storybook/addon-a11y": "^5.0.3",
+    "@storybook/addon-knobs": "^5.0.3",
+    "@storybook/react": "^5.0.5",
+    "@types/storybook-readme": "^5.0.1",
+    "@types/storybook__addon-a11y": "^5.0.0",
+    "@types/storybook__react": "^4.0.1",
     "babel-loader": "^8.0.5",
+    "storybook-readme": "^5.0.1",
     "webpack": "^4.28.4"
-  },
-  "babel": {
-    "presets": [
-      "react-app"
-    ]
-  },
-  "eslintConfig": {
-    "extends": "react-app"
   }
 }
