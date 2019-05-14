@@ -69,6 +69,7 @@ class SectionHeading extends Component {
         loading: phases.loading
       }
     }
+
     return <Markup {...passedProps} />;
   }
 };
