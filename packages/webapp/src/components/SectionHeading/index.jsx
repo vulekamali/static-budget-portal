@@ -1,71 +1,77 @@
-import React from 'react';
+import React, { Component } from 'react';
+import Markup from './Markup';
 
-import SpeedDial from '../SpeedDial';
-import { MenuItem } from '@material-ui/core';
+class SectionHeading extends Component {
+  constructor(props) {
+    super(props);
+    const {
+      years,
+      phases
+    }= this.props;
 
-import {
-  Wrapper,
-  BudgetContainer,
-  BudgetHeadingAndShareIcon,
-  BudgetHeading,
-  FormContainer,
-  BudgetPhase,
-  SelectStyled,
-  SelectStyledPhase,
-  SpeedDialContainer,
- } from './styled';
+    this.state = {
+      selectedYear: years && years.selected,
+      selectedPhase: phases && phases.selected,
+    }
+    this.events = {
+      changeYearHandler: this.changeYearHandler.bind(this),
+      changePhaseHandler: this.changePhaseHandler.bind(this)
+    }
+  }
 
- const callShareIcon = (share) => {
-   if(!share) return null;
+  componentDidUpdate({ selectedYear: prevSelectedYear, selectedPhase: prevSelectedPhase }) {
+    const {
+      state: {
+        selectedYear: newSelectedYear,
+        selectedPhase: newSelectedPhase
+      },
+      props: {
+        years,
+        phases
+      }
+    } = this;
 
-   if(typeof(share) === 'string') {
-    return (
-      <SpeedDialContainer>
-        <SpeedDial {...{ share }} />
-      </SpeedDialContainer>
-     );
-   }
+    if (years && years.onChange && newSelectedYear !== prevSelectedYear) {
+      years.onChange(newSelectedYear)
+    }
+    if (phases && phases.onChange && newSelectedPhase !== prevSelectedPhase) {
+      years.onChange(newSelectedPhase)
+    }
+  }
 
-   if(share) return (
-    <SpeedDial />
-   );
- }
+  changeYearHandler(selectedYear) {
+    this.setState({ selectedYear })
+  }
 
-  const callMenuItems = item => (
-    <MenuItem key={item}>{item}</MenuItem>
-  );
+  changePhaseHandler(selectedPhase) {
+    this.setState({ selectedPhase })
+  }
 
- const callBudgetPhaseSelect = phases => (
-    <BudgetPhase>
-      <SelectStyledPhase displayEmpty classes={{ selectMenu: 'selectMenu', disabled: 'disabled', icon: 'icon' }}>
-        {phases.options.map(callMenuItems)}
-      </SelectStyledPhase>
-    </BudgetPhase>
-   );
+  render() {
+    const {
+      state: { selectedYear, selectedPhase },
+      events: { changeYearHandler, changePhaseHandler },
+      props: { years, phases}
+    } = this;
 
- const callYearsSelect = years => (
-  <SelectStyled displayEmpty classes={{ selectMenu: 'selectMenu', disabled: 'disabled', icon: 'icon' }}>
-    {years.options.map(callMenuItems)}
-  </SelectStyled>
- );
-
- const callSelectDownOptions = (years, phases) => (
-  <FormContainer>
-    {phases && callBudgetPhaseSelect(phases)}
-    {years && callYearsSelect(years)}
-  </FormContainer>
- );
-
-const SectionHeading = ({ title, share, years, phases }) => (
-  <Wrapper>
-    <BudgetContainer>
-      <BudgetHeadingAndShareIcon>
-        <BudgetHeading component='div'>{title}</BudgetHeading>
-        {callShareIcon(share)}
-      </BudgetHeadingAndShareIcon>
-      {callSelectDownOptions(years, phases)}
-    </BudgetContainer>
-  </Wrapper>
-);
+    const passedProps = {
+      ...this.props,
+      years: years && {
+        selected: selectedYear,
+        options: years.options,
+        onChange: changeYearHandler,
+        loading: years.loading
+      },
+      phases: phases && {
+        selected: selectedPhase,
+        options: phases.options,
+        onChange: changePhaseHandler,
+        loading: phases.loading
+      }
+    }
+    return <Markup {...passedProps} />;
+  }
+};
 
 export default SectionHeading;
+
