@@ -6,8 +6,10 @@ import { CssBaseline } from '@material-ui/core';
 import { randomLengthBlankArray, randomNumber, randomBool } from '../../helpers/randomizer';
 import ConsolidatedTreemap from './';
 
+const iconsArray = ['social-development', 'economic-affairs-and-agriculture', 'defence', 'debt-service-costs', 'contingency-reserve', 'general-admin', 'economic-development', 'health', 'learning-and-culture', 'local-development-and-infrastructure', 'community-development', 'peace-and-security', 'general-public-services', 'post-school-training'];
+
 const items = randomLengthBlankArray(35, 45).map((value, id) => ({
-  id,
+  id: faker.random.arrayElement(iconsArray),
   name: randomBool()
     ? faker.commerce.productName()
     : `${faker.commerce.productName()} ${faker.commerce.productName()}`,
