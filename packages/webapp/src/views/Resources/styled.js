@@ -1,7 +1,4 @@
-import {
-  Typography,
-  Select,
-} from '@material-ui/core';
+import { Typography } from '@material-ui/core';
 
 import styled from 'styled-components';
 
@@ -18,24 +15,19 @@ const ResourceWrapper = styled.div`
 `;
 
 const Heading = styled(Typography)`
-&& {
-  text-align: center;
-  text-transform: uppercase;
-  font-size: 14px;
-  letter-spacing: 3px;
-  padding: 10px;
-}
+  && {
+    text-align: center;
+    text-transform: uppercase;
+    font-size: 14px;
+    letter-spacing: 3px;
+    padding: 10px;
+  }
 `;
 
-
-export {
-  Wrapper,
-  ResourceWrapper,
-  Heading
-}
+export { Wrapper, ResourceWrapper, Heading };
 
 export default {
   Wrapper,
   ResourceWrapper,
-  Heading
-}
+  Heading,
+};

@@ -13,26 +13,8 @@ import TooltipContent from './TooltipContent';
 import trimValues from '../../helpers/trimValues';
 import { provinces } from './data';
 
-const createIcon = id => (
-  <div
-    style={{
-      background: 'black',
-      width: '32px',
-      height: '32px',
-      borderRadius: '50%',
-      color: 'white',
-      display: 'flex',
-      justifyContent: 'center',
-      alignItems: 'center',
-    }}
-  >
-    <CustomIcon type={id} fontSize="small" />
-  </div>
-);
-
-const createInlineText = (title, amount, squarePixels, icons, id) => (
+const createInlineText = (title, amount, squarePixels) => (
   <Fragment>
-    {!!icons && squarePixels > 20000 && createIcon(id)}
     <Text bold small={squarePixels < 20000}>
       {squarePixels < 8000 && title.length > 15 ? `${title.substring(0, 15)}...` : title}
     </Text>
@@ -58,7 +40,6 @@ const Block = props => {
     children,
     root,
     zoom,
-    icons,
   } = props;
 
   if (depth === 2) {

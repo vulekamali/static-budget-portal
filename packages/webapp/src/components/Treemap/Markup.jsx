@@ -1,9 +1,8 @@
 import React from 'react';
-import { Treemap, Tooltip } from 'recharts';
+import { Treemap } from 'recharts';
 import LeftIcon from '@material-ui/icons/ArrowBack';
 
 import Block from './Block';
-import TooltipContent from './TooltipContent';
 
 import { TreemapWrapper, TreemapButtonStyle, TreemapButtonText } from './styled';
 
@@ -21,7 +20,6 @@ const Markup = ({
   zoom,
   hasChildren,
   unsetZoomHandler,
-  icons,
 }) => {
   const widthWithPadding = screenWidth - 48;
   const width = widthWithPadding > 1200 ? 1200 : widthWithPadding;
