@@ -3,6 +3,7 @@ import axios from 'axios';
 
 import ConsolidatedTreemap from '../../views/ConsolidatedTreemap';
 import { api } from './config';
+import transformData from './transformData';
 
 class DataLoader extends Component {
   constructor(props) {
@@ -16,7 +17,7 @@ class DataLoader extends Component {
 
   componentDidMount() {
     const loadliveData = ({ data }) =>
-      this.setState({ data, loading: false });
+      this.setState({ data: transformData(data), loading: false });
 
     return axios.get(api)
       .then(({ data }) => data)
