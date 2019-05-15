@@ -100,6 +100,10 @@ const SelectStyledPhase = styled(Select)`
       }
     }
 
+    & .select {
+      background: none;
+    }
+
     & .disabled {
       color: rgba(0, 0, 0, 0.26);
     }
