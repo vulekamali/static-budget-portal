@@ -4,6 +4,7 @@ import Icon from '@material-ui/icons/ArrowForward';
 import CssBaseline from '@material-ui/core/CssBaseline';
 import trimValues from '../../helpers/trimValues';
 import SectionHeading from '../SectionHeading';
+import Notices from './Notices';
 
 import {
   Wrapper,
@@ -24,7 +25,7 @@ import {
   CircularProgressStyled,
 } from './styled';
 
-const callChart = (chart, onSelectedChange, loading) => {
+const callChart = (chart, onSelectedChange, loading, notices) => {
   if (loading) {
     return (
       <ChartWrapper>
@@ -32,6 +33,16 @@ const callChart = (chart, onSelectedChange, loading) => {
           <LoadingChart>
             <CircularProgressStyled size={100} thickness={2.5} />
           </LoadingChart>
+        </ChartContainer>
+      </ChartWrapper>
+    );
+  }
+
+  if (notices) {
+    return (
+      <ChartWrapper>
+        <ChartContainer>
+          <Notices {...{ notices }} />
         </ChartContainer>
       </ChartWrapper>
     );
@@ -99,6 +110,7 @@ const Markup = props => {
     anchor,
     title,
     loading,
+    notices,
   } = props;
 
   return (
@@ -106,7 +118,7 @@ const Markup = props => {
       <CssBaseline />
       <SectionHeading {...{ title, years, phases }} share={anchor} />
       {!!itemPreview && callDetails(itemPreview, verb, subject, loading)}
-      {callChart(chart, onSelectedChange, loading)}
+      {callChart(chart, onSelectedChange, loading, notices)}
       <FooterWrapper>
         <FooterContainer>{footer && callFooter(footer, loading)}</FooterContainer>
       </FooterWrapper>
