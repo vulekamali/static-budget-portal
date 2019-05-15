@@ -178,31 +178,6 @@ export const mockProvincialChartInfo = (): TprovincialChartInfo => ({
   provinces: [1, 2, 3, 4, 5].map(mockChartParentItemObject),
 });
 
-// Type: Tprops
-/**
- *  React props accepted by `<FocusArea />`.
- */
-export type Tprops = {
-  focusAreas: TfilterObject;
-  years: TfilterObject;
-  nationalChartData: TnationalChartInfo;
-  provincialChartData: TprovincialChartInfo;
-};
-
-export const mockYearsProp = (): TfilterObject =>
-  mockFilterObject(() => faker.random.number({ min: 1950, max: 2015 }).toString());
-export const mockFocusAreasProp = () => mockFilterObject(faker.commerce.department);
-
-const nationalChart = mockNationalChartInfo();
-const provinceChart = mockProvincialChartInfo();
-
-export const mockProps = (): Tprops => ({
-  focusAreas: mockFocusAreasProp(),
-  years: mockYearsProp(),
-  nationalChartData: mockNationalChartInfo(),
-  provincialChartData: mockProvincialChartInfo(),
-});
-
 // Type: TdataError
 /**
  * TODO: Zeeshaan add description
@@ -220,6 +195,30 @@ export type Terrors = {
 
 export const mockErrors = () => ({
   data: mockDataError(),
+});
+
+// Type: Tprops
+/**
+ * TODO: Zeeshaaan add description
+ */
+export type Tprops = {
+  focusAreas: TfilterObject;
+  years: TfilterObject;
+  nationalChartData: TnationalChartInfo;
+  provincialChartData: TprovincialChartInfo;
+  adaptorErrors: Terrors;
+};
+
+export const mockYearsProp = (): TfilterObject =>
+  mockFilterObject(() => faker.random.number({ min: 1950, max: 2015 }).toString());
+export const mockFocusAreasProp = () => mockFilterObject(faker.commerce.department);
+
+export const mockProps = (): Tprops => ({
+  focusAreas: mockFocusAreasProp(),
+  years: mockYearsProp(),
+  nationalChartData: mockNationalChartInfo(),
+  provincialChartData: mockProvincialChartInfo(),
+  adaptorErrors: mockErrors(),
 });
 
 // Type: Tstate
