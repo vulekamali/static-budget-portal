@@ -1,9 +1,9 @@
 import React from 'react';
 
-import trimValues from '../../helpers/trimValues';
 import Icon from '@material-ui/icons/ArrowForward';
-import SectionHeading from '../SectionHeading';
 import CssBaseline from '@material-ui/core/CssBaseline';
+import trimValues from '../../helpers/trimValues';
+import SectionHeading from '../SectionHeading';
 
 import {
   Wrapper,
@@ -21,38 +21,35 @@ import {
   FooterContainer,
   FooterDetails,
   LoadingChart,
-  CircularProgressStyled
- } from './styled';
+  CircularProgressStyled,
+} from './styled';
 
- const callChart = (chart, onSelectedChange, loading) => {
-   if (loading) {
-     return (
+const callChart = (chart, onSelectedChange, loading) => {
+  if (loading) {
+    return (
       <ChartWrapper>
         <ChartContainer>
           <LoadingChart>
-            <CircularProgressStyled
-              size={100}
-              thickness={2.5}
-            />
+            <CircularProgressStyled size={100} thickness={2.5} />
           </LoadingChart>
         </ChartContainer>
       </ChartWrapper>
-     );
-   }
-   return (
+    );
+  }
+  return (
     <ChartWrapper>
-      <ChartContainer>
-        {chart(onSelectedChange)}
-      </ChartContainer>
+      <ChartContainer>{chart(onSelectedChange)}</ChartContainer>
     </ChartWrapper>
-   );
- };
+  );
+};
 
-const callButtonExplore = (url, color,  verb, subject) => {
+const callButtonExplore = (url, color, verb, subject) => {
   return (
     <LinkWrapper href={url}>
-      <ButtonStyle disabled={!url} {...{color}}>
-        <TextExploreButton>{verb} <SpanStyled>{subject}</SpanStyled></TextExploreButton>
+      <ButtonStyle disabled={!url} {...{ color }}>
+        <TextExploreButton>
+          {verb} <SpanStyled>{subject}</SpanStyled>
+        </TextExploreButton>
         <Icon />
       </ButtonStyle>
     </LinkWrapper>
@@ -77,7 +74,7 @@ const callDetails = (itemPreview, verb, subject, loading) => {
           <Department>{name}</Department>
           {callAmount(value, loading)}
         </div>
-        {!!verb && callButtonExplore(url, color,  verb, subject)}
+        {!!verb && callButtonExplore(url, color, verb, subject)}
       </DetailsContainer>
     </DetailsWrapper>
   );
@@ -89,7 +86,7 @@ const callFooter = (footer, loading) => (
   </FooterDetails>
 );
 
-const Markup = (props) => {
+const Markup = props => {
   const {
     chart,
     itemPreview,
@@ -101,9 +98,9 @@ const Markup = (props) => {
     phases,
     anchor,
     title,
-    loading
+    loading,
   } = props;
-  
+
   return (
     <Wrapper>
       <CssBaseline />
@@ -111,9 +108,7 @@ const Markup = (props) => {
       {!!itemPreview && callDetails(itemPreview, verb, subject, loading)}
       {callChart(chart, onSelectedChange, loading)}
       <FooterWrapper>
-        <FooterContainer>
-          {footer && callFooter(footer, loading)}
-        </FooterContainer>
+        <FooterContainer>{footer && callFooter(footer, loading)}</FooterContainer>
       </FooterWrapper>
     </Wrapper>
   );
