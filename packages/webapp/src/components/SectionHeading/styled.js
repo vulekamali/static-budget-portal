@@ -18,16 +18,17 @@ const Wrapper = styled.div`
 const BudgetContainer = styled.div`
   border-bottom: 1px solid #000;
   max-width: 1200px;
-  padding-bottom: 16px;
   width: 100%;
   display: flex;
   flex-direction: column;
+  justify-content: center;
+  padding-bottom: 16px;
 
   @media screen and (min-width: 950px) {
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
-    padding-bottom: 24px;
+    min-height: 90px;
   }
 `;
 
