@@ -70,5 +70,5 @@ const props = {
 const basic = () => <Preview {...props} />;
 
 
-storiesOf('view.Preview', module)
+storiesOf('views.Preview', module)
   .add('Default', basic)

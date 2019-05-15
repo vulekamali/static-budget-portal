@@ -101,5 +101,5 @@ const props = {
 const basic = () => <Resources {...props} />;
 
 
-storiesOf('view.Resources', module)
+storiesOf('views.Resources', module)
   .add('default', basic);

@@ -12,12 +12,15 @@ const reformatAsArray = items => (key) => {
 };
 
 const sortItems = (items) => {
+  
+
   if (Array.isArray(items)) {
     return items.sort(sortSingleItem);
   }
 
   const keysArray = Object.keys(items);
-  return keysArray.map(reformatAsArray(items))
+  const result = keysArray.map(reformatAsArray(items))
+  return result.sort(sortSingleItem);
 }
 
 
