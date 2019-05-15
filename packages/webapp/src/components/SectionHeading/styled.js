@@ -1,9 +1,4 @@
-import {
-  Typography,
-  Select,
-  CircularProgress,
-  MenuItem
-} from '@material-ui/core';
+import { Typography, Select, CircularProgress, MenuItem } from '@material-ui/core';
 
 import styled from 'styled-components';
 
@@ -170,8 +165,8 @@ export {
   SelectStyled,
   SelectStyledPhase,
   SpeedDialContainer,
-  CircularProgressStyled
-}
+  CircularProgressStyled,
+};
 
 export default {
   Wrapper,
@@ -183,5 +178,5 @@ export default {
   SelectStyled,
   SelectStyledPhase,
   SpeedDialContainer,
-  CircularProgressStyled
-}
+  CircularProgressStyled,
+};
