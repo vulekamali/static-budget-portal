@@ -1,4 +1,8 @@
 import faker from 'faker';
+import { TitemPreview } from '../../components/ChartSection/schema';
+
+export type TnationalSelected = TitemPreview;
+export type TprovincialSelected = TitemPreview;
 
 // Type: TfilterOnChange
 /**
@@ -57,86 +61,88 @@ export const mockFilterObject = (createOptionCallback): TfilterObject => {
   };
 };
 
-// Type: Tprops
+// Type: TchartItemName
 /**
- * React props accepted by `<FocusArea />` view.
+ * TODO: Zeeshaaan add description
  */
-export type Tprops = {
-  focusAreas: TfilterObject;
-  years: TfilterObject;
-};
+export type TchartItemName = string;
+export const chartItemName = (): TchartItemName => faker.commerce.department();
 
-export const mockYearsProp = (): TfilterObject =>
-  mockFilterObject(() => faker.random.number({ min: 1950, max: 2015 }).toString());
-export const mockFocusAreasProp = () => mockFilterObject(faker.commerce.department);
-
-export const mockProps = (): Tprops => ({
-  focusAreas: mockFocusAreasProp(),
-  years: mockYearsProp(),
-});
-
-// Type: TfocusAreaName
+// Type: TchartItemAmount
 /**
- * TODO: Zeeshaaan add description and mock
+ * TODO: Zeeshaaan add description
  */
-export type TfocusAreaName = string;
+export type TchartItemAmount = number;
+export const chartItemAmount = (): TchartItemAmount =>
+  faker.commerce.amount({ min: 100000000, max: 999999999 });
 
-// Type: TfocusAreaAmount
+// Type: TchartItemUrl
 /**
- * TODO: Zeeshaaan add description and mock
+ * TODO: Zeeshaaan add description
  */
-export type TfocusAreaAmount = number;
+export type TchartItemUrl = string;
+export const chartItemUrl = (): TchartItemUrl => faker.internet.url();
 
-// Type: TfocusAreaUrl
+// Type: TchartItemId
 /**
- * TODO: Zeeshaaan add description and mock
+ * TODO: Zeeshaaan add description
  */
-export type TfocusAreaUrl = string;
-
-// Type: TfocusAreaId
-/**
- * TODO: Zeeshaaan add description and mock
- */
-export type TfocusAreaId = string;
+export type TchartItemId = string;
+export const chartItemId = (): TchartItemId => faker.random.uuid();
 
 // Type: TchartItemObject
 /**
- * TODO: Zeeshaaan add description and mock
+ * TODO: Zeeshaaan add description
  */
 export type TchartItemObject = {
-  id: TfocusAreaId;
-  name: TfocusAreaName;
-  amount: TfocusAreaAmount;
-  url: TfocusAreaUrl;
+  id: TchartItemId;
+  name: TchartItemName;
+  amount: TchartItemAmount;
+  url: TchartItemUrl | null;
 };
+
+export const mockChartItemObject = (): TchartItemObject => ({
+  id: chartItemId(),
+  name: chartItemName(),
+  amount: chartItemAmount(),
+  url: faker.random.boolean() ? chartItemUrl() : null,
+});
 
 // Type: TchartParentItemObject
 /**
- * TODO: Zeeshaaan add description and mock
+ * TODO: Zeeshaaan add description
  */
 export type TchartParentItemObject = TchartItemObject & { children: TchartItemObject[] };
 
+export const mockChartParentItemObject = (): TchartParentItemObject => ({
+  ...mockChartItemObject(),
+  children: [1, 2, 3, 4, 5].map(mockChartItemObject),
+});
+
 // Type: Tfootnote
 /**
- * TODO: Zeeshaaan add description and mock
+ * TODO: Zeeshaaan add description
  */
 export type Tfootnote = string;
+export const mockFootnote = (): Tfootnote => faker.random.phrase();
 
 // Type: Tnotice
 /**
- * TODO: Zeeshaaan add description and mock
+ * TODO: Zeeshaaan add description
  */
 export type Tnotice = string;
+export const mockNotice = (): Tnotice => faker.random.phrase();
 
 // Type: Ttotal
 /**
- * TODO: Zeeshaaan add description and mock
+ * TODO: Zeeshaaan add description
  */
 export type Ttotal = number;
+export const mockTotal = (): Ttotal => faker.commerce.amount({ min: 100000000, max: 999999999 });
 
 // Type: TchartMetaInfo
 /**
- * TODO: Zeeshaaan add description and mock
+ * TODO: Zeeshaaan add description
  */
 export type TchartMetaInfo = {
   notices?: Tnotice[];
@@ -144,25 +150,86 @@ export type TchartMetaInfo = {
   total: Ttotal;
 };
 
+export const mockChartMetaInfo = (): TchartMetaInfo => ({
+  notices: faker.random.boolean() ? [1, 2, 3, 4].map(mockNotice) : null,
+  footnotes: faker.random.boolean() ? [1, 2, 3, 4].map(mockFootnote) : null,
+  total: mockTotal(),
+});
+
 // Type: TnationalChartInfo
 /**
- * TODO: Zeeshaaan add description and mock
+ * TODO: Zeeshaaan add description
  */
 export type TnationalChartInfo = TchartMetaInfo & { departments: TchartItemObject[] };
 
+export const mockNationalChartInfo = (): TnationalChartInfo => ({
+  ...mockChartMetaInfo(),
+  departments: [1, 2, 3, 4, 5].map(mockChartItemObject),
+});
+
 // Type: TprovincialChartInfo
 /**
- * TODO: Zeeshaaan add description and mock
+ * TODO: Zeeshaaan add description
  */
 export type TprovincialChartInfo = TchartMetaInfo & { provinces: TchartParentItemObject[] | null };
 
-// Type: Tstate
+export const mockProvincialChartInfo = (): TprovincialChartInfo => ({
+  ...mockChartMetaInfo(),
+  provinces: [1, 2, 3, 4, 5].map(mockChartParentItemObject),
+});
+
+// Type: Tprops
 /**
- * React state of the `<FocusArea />` view
+ *  React props accepted by `<FocusArea />`.
  */
-export type Tstate = {
-  selectedFocusArea: Toption;
-  selectedYear: Toption;
+export type Tprops = {
+  focusAreas: TfilterObject;
+  years: TfilterObject;
   nationalChartData: TnationalChartInfo;
   provincialChartData: TprovincialChartInfo;
+};
+
+export const mockYearsProp = (): TfilterObject =>
+  mockFilterObject(() => faker.random.number({ min: 1950, max: 2015 }).toString());
+export const mockFocusAreasProp = () => mockFilterObject(faker.commerce.department);
+
+const nationalChart = mockNationalChartInfo();
+const provinceChart = mockProvincialChartInfo();
+
+export const mockProps = (): Tprops => ({
+  focusAreas: mockFocusAreasProp(),
+  years: mockYearsProp(),
+  nationalChartData: mockNationalChartInfo(),
+  provincialChartData: mockProvincialChartInfo(),
+});
+
+// Type: TdataError
+/**
+ * TODO: Zeeshaan add description
+ */
+export type TdataError = boolean;
+export const mockDataError = () => faker.random.boolean();
+
+// Type: Terrors
+/**
+ * TODO: Zeeshaan add description
+ */
+export type Terrors = {
+  data: TdataError | false;
+};
+
+export const mockErrors = () => ({
+  data: mockDataError(),
+});
+
+// Type: Tstate
+/**
+ * TODO: Zeeshaaan add description
+ */
+export type Tstate = {
+  selectedFocusArea: TfilterObject;
+  selectedYear: TfilterObject;
+  nationalSelected: TnationalSelected;
+  provincialSelected: TprovincialSelected;
+  errors: Terrors;
 };
