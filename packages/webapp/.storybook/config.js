@@ -17,7 +17,7 @@ import { withKnobs } from "@storybook/addon-knobs";
 import { configureReadme } from 'storybook-readme';
 
 
-const req = require.context("../src", true, /.story.jsx$/);
+const req = require.context("../src", true, /.stories.tsx$/);
 function loadStories() {
   req.keys().forEach(req);
 }
@@ -31,7 +31,7 @@ const Documentation = styled.div`
 `;
 
 configureReadme({
-  StoryPreview: Fragment,
+  StoryPreview: Wrapper,
   DocPreview: Documentation,
 });
 
