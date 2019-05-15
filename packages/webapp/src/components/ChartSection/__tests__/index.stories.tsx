@@ -6,7 +6,7 @@ import NoOptions from './NoOptions';
 import OnlyYears from './OnlyYears';
 import LockedYear from './LockedYear';
 import StringAnchor from './StringAnchor';
-import ButtonLoadingFalse from './ButtonLoadingFalse';
+import ButtonLoadingTrue from './ButtonLoadingTrue';
 
 storiesOf('component.ChartSection', module)
   .add('Randomized state', Random)
@@ -15,4 +15,4 @@ storiesOf('component.ChartSection', module)
   .add('Only show years filter', OnlyYears)
   .add('Year filter locked', LockedYear)
   .add('Anchor is a string', StringAnchor)
-  .add('Button where loading false', ButtonLoadingFalse);
+  .add('Button where loading true', ButtonLoadingTrue);
