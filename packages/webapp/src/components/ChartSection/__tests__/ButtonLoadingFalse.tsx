@@ -1,18 +1,18 @@
 import React from 'react';
-import { mockProps, mockYearsProp, mockPhasesProp } from '../schema';
+import { mockProps, mockYearsProp, mockPhasesProp, Tprops } from '../schema';
 import ChartSection from '../index';
 
-const passedProps = {
+const passedProps: Tprops = {
   ...mockProps(),
   phases: {
     ...mockPhasesProp(),
-    loading: true
+    loading: true,
   },
   years: {
     ...mockYearsProp(),
-    loading: true
+    loading: true,
   },
-}
+};
 
 const Test = () => <ChartSection {...passedProps} />;
 
