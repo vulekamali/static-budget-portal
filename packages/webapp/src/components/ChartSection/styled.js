@@ -1,8 +1,8 @@
 import { Typography, Button } from '@material-ui/core';
 import styled from 'styled-components';
 import { darken } from 'polished';
-import removeProps from '../../helpers/removeProps';
 import CircularProgress from '@material-ui/core/CircularProgress';
+import removeProps from '../../helpers/removeProps';
 
 const Wrapper = styled.div`
   margin-bottom: 60px;
@@ -12,7 +12,7 @@ const LinkWrapper = styled.a`
   text-decoration: none;
 `;
 
-const ButtonStyle = styled(removeProps({component: Button, blacklist: 'color'}))`
+const ButtonStyle = styled(removeProps({ component: Button, blacklist: 'color' }))`
   && {
     background-color: ${({ color }) => color};
     text-transform: none;
@@ -153,6 +153,7 @@ const FooterDetails = styled(Typography)`
 const LoadingChart = styled.div`
   width: 100%;
   height: 650px;
+  height: ${({ loading }) => `${loading}px`};
   background-color: #d8d8d8;
   display: flex;
   justify-content: center;
@@ -164,7 +165,6 @@ const CircularProgressStyled = styled(CircularProgress)`
     color: rgb(121, 180, 67);
   }
 `;
-
 
 export {
   Wrapper,
@@ -182,8 +182,8 @@ export {
   FooterContainer,
   FooterDetails,
   LoadingChart,
-  CircularProgressStyled
-}
+  CircularProgressStyled,
+};
 
 export default {
   Wrapper,
@@ -201,5 +201,5 @@ export default {
   FooterContainer,
   FooterDetails,
   LoadingChart,
-  CircularProgressStyled
-}
+  CircularProgressStyled,
+};
