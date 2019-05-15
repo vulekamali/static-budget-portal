@@ -82,6 +82,6 @@ const provincial = () => (
 
 
 
-storiesOf('component.ChartSection', module)
+storiesOf('components.ChartSection', module)
   .add('National', national)
   .add('Provincial', provincial)

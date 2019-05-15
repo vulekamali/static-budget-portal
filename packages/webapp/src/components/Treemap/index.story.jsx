@@ -867,7 +867,7 @@ const small = () => <Treemap items={smallItems} onSelectedChange={console.log} /
 const large = () => <Treemap items={largeItem} onSelectedChange={console.log} />
 const nested = () => <Treemap items={nestedItems} onSelectedChange={console.log} />
 
-storiesOf('component.Treemap', module)
+storiesOf('components.Treemap', module)
   .add('Basic', basic)
   .add('Small Treemap', small)
   .add('Large Treemap', large)
