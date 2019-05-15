@@ -30,7 +30,7 @@ const callChart = (chart, onSelectedChange, loading, notices) => {
     return (
       <ChartWrapper>
         <ChartContainer>
-          <LoadingChart>
+          <LoadingChart {...{ loading }}>
             <CircularProgressStyled size={100} thickness={2.5} />
           </LoadingChart>
         </ChartContainer>
