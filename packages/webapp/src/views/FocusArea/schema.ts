@@ -2,27 +2,42 @@ import faker from 'faker';
 
 // Type: TfilterOnChange
 /**
- * TODO: Zeeshaaan add description and mock
+ * This is a function that fires when the year is selected from
+ * the drop down. The year that is clicked on will be passed
+ * as an argument to the function.
  */
 export type TfilterOnChange = (Toption) => void | null;
 export const mockFilterOnChange = (): TfilterOnChange => console.log;
 
 // Type: Tfilterloading
 /**
- * TODO: Zeeshaaan add description and mock
+ * This value is true when there is no options to show the user yet (the data is
+ * still loading asynchronously). If loading is true, the drop down should be
+ * disabled. Furthermore, if `TfilterObject` has a `selected` value, then a
+ * spinner should be attached after the selected value but if no `selected`
+ * value is present, then the spinner will just be where the `selected` value
+ * would have been. Note that even if `onChange` exists, it cannot be fired
+ * until `loading` is set to false.
  */
 export type Tfilterloading = boolean;
 export const mockFilterLoading = (): Tfilterloading => faker.random.boolean();
 
 // Type: Toption
 /**
- * TODO: Zeeshaaan add description and mock
+ * This is the year for the FocusArea. year e.g:
+ * '2019-20'. This usually corresponds to the data that
+ * is passed to the chart and changing this will update the data that is passed
+ * to the chart.
  */
 export type Toption = string;
 
 // Type: TfilterObject
 /**
- * TODO: Zeeshaaan add description and mock
+ * This is an object that has all the values and behavior needed for either the
+ * years or phases drop down filter. If null, then dropdown filter will not
+ * appear. If, `selected` is present but neither `options` nor `onChange`, then
+ * the drop down is disabled (and therefore a user cannot change a selected
+ * value).
  */
 export type TfilterObject = {
   options: Toption[];
@@ -44,7 +59,7 @@ export const mockFilterObject = (createOptionCallback): TfilterObject => {
 
 // Type: Tprops
 /**
- * TODO: Zeeshaaan add description and mock
+ * React props accepted by `<FocusArea />` view.
  */
 export type Tprops = {
   focusAreas: TfilterObject;
@@ -143,7 +158,7 @@ export type TprovincialChartInfo = TchartMetaInfo & { provinces: TchartParentIte
 
 // Type: Tstate
 /**
- * TODO: Zeeshaaan add description and mock
+ * React state of the `<FocusArea />` view
  */
 export type Tstate = {
   selectedFocusArea: Toption;
