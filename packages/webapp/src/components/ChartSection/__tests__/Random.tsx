@@ -1,8 +1,8 @@
 import React from 'react';
-import { mockProps } from '../schema';
+import { mockProps, Tprops } from '../schema';
 import ChartSection from '../index';
 
-const passedProps = mockProps();
+const passedProps: Tprops = mockProps();
 
 const Test = () => <ChartSection {...passedProps} />;
 
