@@ -1,4 +1,4 @@
-import { Typography, Select, CircularProgress, MenuItem } from '@material-ui/core';
+import { Typography, Select, CircularProgress } from '@material-ui/core';
 
 import styled from 'styled-components';
 
