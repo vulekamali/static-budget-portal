@@ -10,6 +10,7 @@ const item = value => ({
   resources: {
     value: 372800000,
     consolidated: 37,
+    sphere: 'national',
   },
   items: [
     {
