@@ -1,11 +1,11 @@
 module.exports = ({ config }) => {
   config.module.rules.push({
-    test: /\.(jsx?)$/,
+    test: /\.(tsx?)$/,
     loader: require.resolve('babel-loader'),
     options: {
-      presets: [['react-app', { flow: false, typescript: false, corejs: 2, compact : false }]],
+      presets: [['react-app', { flow: false, typescript: true, corejs: 2 }]],
     },
   });
-  config.resolve.extensions.push('.js', '.jsx');
+  config.resolve.extensions.push('.ts', '.tsx');
   return config;
 };
