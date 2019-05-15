@@ -8,7 +8,6 @@ import LockedYear from './LockedYear';
 import StringAnchor from './StringAnchor';
 import ButtonLoadingFalse from './ButtonLoadingFalse';
 
-
 storiesOf('component.ChartSection', module)
   .add('Randomized state', Random)
   .add('Loading data', Loading)
