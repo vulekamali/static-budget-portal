@@ -1,11 +1,11 @@
 import React from 'react';
-import { mockProps, mockAnchor } from '../schema';
+import { mockProps, mockAnchor, Tprops } from '../schema';
 import ChartSection from '../index';
 
-const passedProps = {
+const passedProps: Tprops = {
   ...mockProps(),
-  anchor: mockAnchor()
-}
+  anchor: mockAnchor(),
+};
 
 const Test = () => <ChartSection {...passedProps} />;
 
