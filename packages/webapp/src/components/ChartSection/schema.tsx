@@ -211,7 +211,16 @@ export const mockOnPreviewChange = (): TonPreviewChange => console.log;
 export type TchartCallback = (TonPreviewChange) => JSX.Element;
 export const mockChartCallback = (): TchartCallback => () => <div>Hello World!</div>;
 
-// Type: TselectObject
+// Type: Tnotice
+/**
+ * This is the notice component that shows if data for a specific chart is not
+ * available.
+ */
+export type Tnotice = string;
+
+export const mockNotice = (): Tnotice => faker.hacker.phrase();
+
+// Type: Tprops
 /**
  * React props accepted by `<ChartSection />`.
  */
@@ -227,6 +236,7 @@ export type Tprops = {
   anchor?: string | true;
   footer?: Tfooter;
   chart: TchartCallback;
+  notices?: Tnotice[];
 };
 
 export const mockYearsProp = () =>
@@ -264,4 +274,5 @@ export const mockProps = (): Tprops => ({
   anchor: mockAnchorProp(),
   footer: faker.random.boolean() ? mockFooter() : null,
   chart: mockChartCallback(),
+  notices: faker.random.boolean() ? [1, 2, 3].map(mockNotice) : null,
 });
