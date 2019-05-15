@@ -1,20 +1,18 @@
 import React, { Component } from 'react';
 import Markup from './Markup';
 
-
-
 class ChartSection extends Component {
   constructor(props) {
     super(props);
     const { initialSelected } = this.props;
-  
+
     this.state = {
       selected: initialSelected || null,
-    }
+    };
 
     this.events = {
       onSelectedChange: this.onSelectedChange.bind(this),
-    }
+    };
   }
 
   onSelectedChange(event) {
@@ -33,12 +31,11 @@ class ChartSection extends Component {
     const passedProps = {
       ...props,
       selected: state.selected,
-      onSelectedChange: events.onSelectedChange
+      onSelectedChange: events.onSelectedChange,
     };
 
-    return <Markup {...passedProps } />
+    return <Markup {...passedProps} />;
   }
 }
-
 
 export default ChartSection;
