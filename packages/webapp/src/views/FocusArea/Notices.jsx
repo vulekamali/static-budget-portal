@@ -5,7 +5,6 @@ import { Typography } from '@material-ui/core';
 
 const Wrapper = styled.div`
   background-color: rgba(0, 0, 0, 0.04);
-  ${'' /* background-color: red; */}
   padding-top: 16px;
   padding-bottom: 16px;
 `;
@@ -20,14 +19,8 @@ const Text = styled(Typography)`
   }
 `;
 
-const callText = notices => notices.map(notice => (
-  <Text key={notice}>{notice}</Text>
-));
+const callText = notices => notices.map(notice => <Text key={notice}>{notice}</Text>);
 
-const Notices = ({ notices }) => (
-  <Wrapper>
-    {callText(notices)}
-  </Wrapper>
-);
+const Notices = ({ notices }) => <Wrapper>{callText(notices)}</Wrapper>;
 
 export default Notices;
