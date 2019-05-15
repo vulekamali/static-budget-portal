@@ -131,10 +131,13 @@ export const mockSelectObject = (createOptionCallback): TselectObject => {
 /**
  * This reflects the state of the ChartSection. E.g when `loading` is true, show
  * chart, otherwise, show loading state of the ChartSection, i.e Greyed out
- * Chart and Spinner.
+ * Chart and Spinner. If `loading` is a number, then it also dictates the height of greyed out Chart with its value.
  */
-export type Tloading = Boolean;
-export const mockLoading = (): Tloading => faker.random.boolean();
+export type Tloading = Boolean | number;
+export const createLoadingBool = () => faker.random.boolean();
+export const createLoadingNumber = () => faker.random.number();
+export const mockLoading = (): Tloading =>
+  faker.random.boolean() ? createLoadingBool() : createLoadingNumber();
 
 // Type: Tverb
 /**
