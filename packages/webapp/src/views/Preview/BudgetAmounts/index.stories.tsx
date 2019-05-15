@@ -4,9 +4,9 @@ import { storiesOf } from '@storybook/react';
 import BudgetAmounts from './index';
 
 const resources = {
-    value: 372800000,
-    consolidated: 37.344
-  };
+  value: 372800000,
+  consolidated: 37.344,
+};
 
 const basic = () => (
   <Fragment>
@@ -15,5 +15,4 @@ const basic = () => (
   </Fragment>
 );
 
-storiesOf('components.BudgetAmounts', module)
-  .add('Default', basic);
+storiesOf('components.BudgetAmounts', module).add('Default', basic);
