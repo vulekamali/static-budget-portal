@@ -8,7 +8,7 @@ const noShare = () => <SectionHeading title='Provincial Budget Summary'>Children
 const shareString = () => <SectionHeading title='Provincial Budget Summary' share='addTextHere'>Children Components</SectionHeading>;
 
 
-storiesOf('components.SectionHeading', module)
+storiesOf('component.SectionHeading', module)
   .add('Share', share)
   .add('No Share', noShare)
   .add('Share is a String', shareString)

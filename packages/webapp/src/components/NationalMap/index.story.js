@@ -1920,7 +1920,7 @@ const withData = () => <NationalMap {...props} size="large"/>;
 const startSelected = () => <NationalMap {...props} size="large" selected="55"/>;
 
 
-storiesOf('components.NationalMap', module)
+storiesOf('component.NationalMap', module)
   .add('Small Map', smallMap)
   .add('Medium Map', mediumMap)
   .add('Large Map', largeMap)

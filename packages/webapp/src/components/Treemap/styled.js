@@ -1,5 +1,5 @@
 import { createElement } from 'react';
-import styled, { createGlobalStyle } from 'styled-components';
+import styled from 'styled-components';
 import { lighten } from 'polished';
 
 import { Button, Typography } from '@material-ui/core';
@@ -56,15 +56,7 @@ const TreemapBlockWrapper = styled.foreignObject`
   }
 `;
 
-const ResetTooltipDefaultStyling = createGlobalStyle`
-  .treemapBlockTooltipOverride {
-    background: none !important;
-  }
-`;
-
 const StyledTooltip = styled.div`
-  position: relative;
-  top: 10px;
   border-radius: 5px;
   background: rgba(0, 0, 0, 0.75);
   color: white;
@@ -105,30 +97,22 @@ const TreemapButtonText = styled(Typography)`
   }
 `;
 
-const BlockContent = styled.div`
-  height: 100%;
-`;
-
 export {
-  BlockContent,
   Text,
   TreemapBlock,
   TreemapBlockWrapper,
   StyledTooltip,
   TreemapWrapper,
   TreemapButtonStyle,
-  TreemapButtonText,
-  ResetTooltipDefaultStyling
+  TreemapButtonText
 };
 
 export default {
-  BlockContent,
   Text,
   TreemapBlock,
   TreemapBlockWrapper,
   StyledTooltip,
   TreemapWrapper,
   TreemapButtonStyle,
-  TreemapButtonText,
-  ResetTooltipDefaultStyling,
+  TreemapButtonText
 };

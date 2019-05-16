@@ -36,7 +36,76 @@ const props = {
   initialSelectedProvincial
 }
 
-const basic = () => <FocusAreaTemp {...props} />;
 
-storiesOf('views.FocusAreaTemp', module)
-  .add('Default', basic);
+//case where initialSelectedProvincial is null
+const propsNoInitialSelectedProvincial = {
+  items,
+  department: 2,
+  initialSelectedNational
+}
+
+
+// case where provinces list is null
+const itemNull = (value) => (
+  provincesNull(value)
+);
+
+const itemsNull = [1,2,3,4,5].map((value) => {
+  return itemNull(value)
+});
+
+const propsItemsNull = {
+  items: itemsNull,
+  department: 2,
+  initialSelectedNational,
+  initialSelectedProvincial
+}
+
+
+// case where provinces list is an empty object
+const itemEmpty = (value) => (
+  provincesEmpty(value)
+);
+
+const itemsEmpty = [1,2,3,4,5].map((value) => {
+  return itemEmpty(value)
+});
+
+const propsitemsEmpty = {
+  items: itemsEmpty,
+  department: 2,
+  initialSelectedNational,
+  initialSelectedProvincial
+}
+
+
+//case where every equitable share is excluded from National Treemap footer
+const itemNoEquitableShare = (value) => (
+  noEquitableShare(value)
+);
+
+const itemsNoEquitableShare = [1,2,3,4,5].map((value) => {
+  return itemNoEquitableShare(value)
+});
+
+const propsNoEquitableShare = {
+  items: itemsNoEquitableShare,
+  department: 2,
+  initialSelectedNational,
+  initialSelectedProvincial
+}
+
+
+const basic = () => <FocusAreaTemp {...props} />;
+const NoInitialSelectedProvincial = () => <FocusAreaTemp {...propsNoInitialSelectedProvincial} />;
+const ItemsNull = () => <FocusAreaTemp {...propsItemsNull} />;
+const ItemsEmpty = () => <FocusAreaTemp {...propsitemsEmpty} />;
+const NoEquitableShareFooter = () => <FocusAreaTemp {...propsNoEquitableShare} />;
+
+
+storiesOf('view.FocusAreaTemp', module)
+  .add('Default', basic)
+  .add('NoInitialSelectedProvincial', NoInitialSelectedProvincial)
+  .add('ItemsNull', ItemsNull)
+  .add('ItemsEmpty', ItemsEmpty)
+  .add('NoEquitableShareFooter', NoEquitableShareFooter)

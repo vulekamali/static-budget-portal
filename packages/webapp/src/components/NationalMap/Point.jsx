@@ -1,4 +1,5 @@
 import React from 'react';
+import t from 'prop-types';
 import styled from 'styled-components';
 import getPinStyling from './getPinStyling';
 import findProject from './findProject';
@@ -89,22 +90,22 @@ const Point = (props) => {
 export default Point;
 
 
-// Point.propTypes = {
-//   id: t.string.isRequired,
-//   x: t.number.isRequired,
-//   y: t.number.isRequired,
-//   hoveredId: t.string,
-//   selectedId: t.string,
-//   updateHover: t.func.isRequired, 
-//   updateSelected: t.func.isRequired,
-//   projectPoints: t.arrayOf(t.string),
-// };
+Point.propTypes = {
+  id: t.string.isRequired,
+  x: t.number.isRequired,
+  y: t.number.isRequired,
+  hoveredId: t.string,
+  selectedId: t.string,
+  updateHover: t.func.isRequired, 
+  updateSelected: t.func.isRequired,
+  projectPoints: t.arrayOf(t.string),
+};
 
 
-// Point.defaultProps = {
-//   hoveredId: null,
-//   selectedId: null,
-//   projectPoints: [],
-// }
+Point.defaultProps = {
+  hoveredId: null,
+  selectedId: null,
+  projectPoints: [],
+}
 
 

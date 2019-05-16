@@ -1,4 +1,5 @@
 import React, { createElement } from 'react';
+import t from 'prop-types';
 
 
 const easternCape = props => <path {...props} d="M327 227l2 3-2 2-4 4c-2-1-4 0-3 3v2l2 1c0 1 3 3 3 1 1-2 3-1 3 1s7 2 9 2l8 2c2-1 3 2 5 2 1 3 6 3 5 6l2 3-3 4c-2 2-4 6-7 7s-3 3-5 5l-7 5-9 12c-7 7-13 16-22 19l-2 3-3 3-6 5c-4 5-11 6-15 11-3 3-7 3-11 5s-6 4-11 3-8-3-13-1l-5 5c-1 3 1 2 2 5l-12-2c-3-1-6-1-8 1l-1 3c-1 1-2 2 0 3-2 1-10-1-12-2-5-4-14-4-20-5-1-1 0-2 1-3l-2-1-2-2h-4l4-4h3c1-2-1-2-2-3-1-2 1-2-2-3l-3-1c-3 0-4-2-8-1h-7c-5 0 3-8 4-10 0-2-1-3 1-5 1-2 4-1 2-4l1 2c2-3 5-2 7-1 0-1-1-4-3-5 2-1-1-5-1-7l2-2c1 0 2 1 3-1 1 0 7 1 6-1-1-1 1-2 2-3h2c1 0 1 2 2 1l4-2c3 0 2-2 1-3h1v-1c2-1 4-5 0-4l1-2v-1c-2-4 2 0 4-2s5 1 5-3l2-7 7-1c0-2 8-5 10-5l3 1c2-1 0-2 1-3s3-1 2-2c3-2 0-6 2-9-3 1-2-3-2-5h4l1 2c2 0 3 0 5-2l1-2h2c2-2 3 0 4 0s0-2 2-2l3 3c2 0 4-2 4 1 1 2 4 1 4 2h6c2 1 2-3 5-2-3-3 2-1 2-3l5-1v-1h1v-1c2-1 1-1 0-2l3-1c1 3 5 5 6 7 2 2 5 1 6 2 1 2 4 1 5 2l3-8c3-1-1-2 0-4l3-2c1-1 1-2 3-2h4c3 1 8-3 11-4z"/>
@@ -63,13 +64,13 @@ const Province = ({ name, activeProvinces = [], size }) => {
 export default Province;
 
 
-// Province.propTypes = {
-//   name: t.string,
-//   activeProvinces: t.arrayOf(t.string),
-//   size: t.oneOf(['small', 'medium', 'large'])
-// };
+Province.propTypes = {
+  name: t.string,
+  activeProvinces: t.arrayOf(t.string),
+  size: t.oneOf(['small', 'medium', 'large'])
+};
 
 
-// Province.defaultProps = {
-//   activeProvinces: [],
-// }
+Province.defaultProps = {
+  activeProvinces: [],
+}
