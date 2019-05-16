@@ -1,6 +1,6 @@
 const calcIfForeignObjectIsSupported = () => {
-  if (!!document.createElementNS) {
-    return true;
+  if (!document.createElementNS) {
+    return false;
   }
 
   const toStringFnc = ({}).toString;

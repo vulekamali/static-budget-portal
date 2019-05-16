@@ -133,6 +133,6 @@ const beforeSpeech = () => <Homepage {...beforeSpeechProps} />;
 const duringSpeech = () => <Homepage {...duringSpeechProps} />;
 
 
-storiesOf('view.Homepage', module)
+storiesOf('views.Homepage', module)
   .add('Before Speech', beforeSpeech)
   .add('During Speech', duringSpeech);
