@@ -1,5 +1,4 @@
 import React from 'react';
-import t from 'prop-types';
 import SvgIcon from '@material-ui/core/SvgIcon';
 import Assignment from '@material-ui/icons/Assignment';
 
@@ -39,6 +38,6 @@ const Icon = ({ title, ...props }) => {
 export default Icon;
 
 
-Icon.propTypes = {
-  title: t.string.isRequired,
-}
+// Icon.propTypes = {
+//   title: t.string.isRequired,
+// }

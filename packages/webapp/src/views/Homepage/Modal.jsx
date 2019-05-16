@@ -1,5 +1,4 @@
 import React from 'react';
-import t from 'prop-types';
 import styled from 'styled-components';
 import Youtube from 'react-responsive-embed';
 import Dialog from '@material-ui/core/Dialog';
@@ -47,12 +46,12 @@ const Modal = ({ open, closeModal, videoUrl }) => (
 export default Modal;
 
 
-Modal.propTypes = {
-  closeModal: t.func.isRequired,
-  videoUrl: t.string,
-}
+// Modal.propTypes = {
+//   closeModal: t.func.isRequired,
+//   videoUrl: t.string,
+// }
 
 
-Modal.defaultProps = {
-  videoUrl: null,
-}
+// Modal.defaultProps = {
+//   videoUrl: null,
+// }

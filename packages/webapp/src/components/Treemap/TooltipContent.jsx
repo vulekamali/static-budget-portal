@@ -3,13 +3,7 @@ import React from 'react';
 import trimValues from '../../helpers/trimValues';
 import { Text, StyledTooltip } from './styled';
 
-const TooltipContent = ({ payload }) => {
-  if (payload.length <= 0) {
-    return null;
-  }
-
-  const { name, amount } = payload[0].payload;
-
+const TooltipContent = ({ name, amount }) => {
   return (
     <StyledTooltip>
       <Text bold>{name}</Text>
