@@ -1,6 +1,7 @@
 import styled from 'styled-components';
 
 import { Typography, Button } from '@material-ui/core';
+import Arrow from '@material-ui/icons/ArrowForward';
 
 const Wrapper = styled.div`
   background: #fff;
@@ -134,7 +135,11 @@ const ButtonStyled = styled(Button)`
   && {
     background: rgba(0, 0, 0, 0.1);
     border-radius: 2px;
-    padding: 16px 36px;
+    padding: 16px 24px;
+
+    &:hover {
+      background: rgba(0, 0, 0, 0.2);
+    }
   }
 `;
 
@@ -145,6 +150,14 @@ const TextButton = styled(Typography)`
     font-weight: 700;
     line-height: 24px;
     letter-spacing: 0.15px;
+    text-transform: capitalize;
+  }
+`;
+
+const ArrowStyled = styled(Arrow)`
+  && {
+    padding-left: 13px;
+    box-sizing: content-box;
   }
 `;
 
@@ -163,14 +176,15 @@ export {
   FocusLinksWrapper,
   FocusLinksContainer,
   ButtonContainer,
-}
+  ArrowStyled,
+};
 
 export default {
   Wrapper,
   TextWrapper,
   TextContainer,
   Description,
-  FooterWrapper,           
+  FooterWrapper,
   FooterContainer,
   FooterDetails,
   FocusWrapper,
@@ -180,4 +194,5 @@ export default {
   FocusLinksWrapper,
   FocusLinksContainer,
   ButtonContainer,
-}
+  ArrowStyled,
+};
