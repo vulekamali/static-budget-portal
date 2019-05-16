@@ -65,7 +65,7 @@ const Markup = props => {
     selected,
     eventHandler,
     year,
-    focus_areas: focusAreas,
+    focusAreas,
   } = props;
 
   return (
