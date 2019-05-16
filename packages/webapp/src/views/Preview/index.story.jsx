@@ -39,23 +39,6 @@ const item = (value) => ({
       title: 'Survey Operations',
       amount: 194740000000
     }
-  ],
-  focus_areas: [
-    {
-      slug: 'general-public-services',
-      title: 'General Public Services',
-      url: '2019-20/focus/general-public-services'
-    },
-    {
-      slug: 'economic-development',
-      title: 'Economic Development',
-      url: '2019-20/focus/economic-development'
-    },
-    {
-      slug: 'community-development',
-      title: 'Community Development',
-      url: '2019-20/focus/community-development'
-    }
   ]
 });
 
@@ -70,5 +53,5 @@ const props = {
 const basic = () => <Preview {...props} />;
 
 
-storiesOf('views.Preview', module)
+storiesOf('view.Preview', module)
   .add('Default', basic)

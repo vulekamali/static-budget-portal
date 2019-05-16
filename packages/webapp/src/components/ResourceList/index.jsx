@@ -1,4 +1,5 @@
 import React from 'react';
+import t from 'prop-types';
 import styled from 'styled-components';
 import copy from 'copy-to-clipboard';
 import Card from '@material-ui/core/Card';
@@ -222,28 +223,28 @@ const Resources = ({ resources, cite }) => (
   </List>
 );
 
-// Resources.propTypes = {
-//   /** Array of data to loop from for card details */
-//   resources: t.arrayOf(t.shape({
-//     /** Displays the title of the file to be downloaded */
-//     heading: t.string.isRequired,
-//     /** This can be a string or empty string or null. It displays the size of the file to download,
-//      * or nothing if button redirects to a website url instead.
-//      */
-//     size: t.string,
-//     /** Displays the format of the file to be downloaded */
-//     format: t.string.isRequired,
-//     /** url that links to the file to be downloaded or redirects to desired website */
-//     link: t.string.isRequired,
-//   })).isRequired,
-//   /** True or false depending whether an extra card displaying a call to action card with custom styling placed
-//   as the last card in the list of cards */
-//   cite: t.bool
-// }
+Resources.propTypes = {
+  /** Array of data to loop from for card details */
+  resources: t.arrayOf(t.shape({
+    /** Displays the title of the file to be downloaded */
+    heading: t.string.isRequired,
+    /** This can be a string or empty string or null. It displays the size of the file to download,
+     * or nothing if button redirects to a website url instead.
+     */
+    size: t.string,
+    /** Displays the format of the file to be downloaded */
+    format: t.string.isRequired,
+    /** url that links to the file to be downloaded or redirects to desired website */
+    link: t.string.isRequired,
+  })).isRequired,
+  /** True or false depending whether an extra card displaying a call to action card with custom styling placed
+  as the last card in the list of cards */
+  cite: t.bool
+}
 
-// Resources.defaultProps = {
-//   size: null,
-//   cite: false,
-// }
+Resources.defaultProps = {
+  size: null,
+  cite: false,
+}
 
 export default Resources;

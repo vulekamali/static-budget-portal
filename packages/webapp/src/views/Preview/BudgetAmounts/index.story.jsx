@@ -15,5 +15,5 @@ const basic = () => (
   </Fragment>
 );
 
-storiesOf('components.BudgetAmounts', module)
+storiesOf('component.BudgetAmounts', module)
   .add('Default', basic);

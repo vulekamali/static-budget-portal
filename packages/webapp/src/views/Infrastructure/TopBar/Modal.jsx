@@ -1,4 +1,5 @@
 import React from 'react';
+import t from 'prop-types';
 import styled from 'styled-components';
 import { darken } from 'polished';
 import copy from 'copy-to-clipboard';
@@ -79,12 +80,12 @@ const Modal = ({ open, closeModal, url }) => (
 export default Modal;
 
 
-// Modal.propTypes = {
-//   closeModal: t.func.isRequired,
-//   videoUrl: t.string,
-// }
+Modal.propTypes = {
+  closeModal: t.func.isRequired,
+  videoUrl: t.string,
+}
 
 
-// Modal.defaultProps = {
-//   videoUrl: null,
-// }
+Modal.defaultProps = {
+  videoUrl: null,
+}

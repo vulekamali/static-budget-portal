@@ -1,4 +1,5 @@
 import React from 'react';
+import t from 'prop-types';
 import styled from 'styled-components';
 import LinearProgress from '@material-ui/core/LinearProgress';
 
@@ -45,22 +46,22 @@ const Progressbar = ({ stage }) => {
   );
 };
 
-// Progressbar.propTypes = {
-//   /* string that determines how far the progress should be on the progressbar. */
-//   stage: t.oneOf([
-//     'Site identification',
-//     'Pre-feasibility',
-//     'Feasibility',
-//     'Design',
-//     'Tender',
-//     'Construction',
-//     'Hand over',
-//     'Handed over',
-//     'Complete'])
-// }
+Progressbar.propTypes = {
+  /* string that determines how far the progress should be on the progressbar. */
+  stage: t.oneOf([
+    'Site identification',
+    'Pre-feasibility',
+    'Feasibility',
+    'Design',
+    'Tender',
+    'Construction',
+    'Hand over',
+    'Handed over',
+    'Complete'])
+}
 
-// Progressbar.defaultProps = {
-//   stage: null
-// }
+Progressbar.defaultProps = {
+  stage: null
+}
 
 export default Progressbar;

@@ -104,5 +104,5 @@ const resources = [
 const basic = () => <ResourceList {...{ resources }} cite />;
 
 
-storiesOf('components.ResourceList', module)
+storiesOf('component.ResourceList', module)
   .add('Default', basic)
