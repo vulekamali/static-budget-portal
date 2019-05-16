@@ -1,6 +1,5 @@
 import React from 'react';
 import styled from 'styled-components';
-import t from 'prop-types';
 import { PrimaryButton, SecondaryButton } from './styled';
 import { Link as ScrollLink } from 'react-scroll';
 
@@ -64,15 +63,15 @@ const Buttons = ({ primary, secondary }) => (
 export default Buttons;
 
 
-Buttons.propTypes = {
-  primary: t.shape({
-    text: t.string,
-    link: t.string,
-    clickEvent: t.func,
-  }).isRequired,
-  secondary: t.shape({
-    text: t.string,
-    link: t.string,
-    clickEvent: t.func,
-  }).isRequired,
-};
+// Buttons.propTypes = {
+//   primary: t.shape({
+//     text: t.string,
+//     link: t.string,
+//     clickEvent: t.func,
+//   }).isRequired,
+//   secondary: t.shape({
+//     text: t.string,
+//     link: t.string,
+//     clickEvent: t.func,
+//   }).isRequired,
+// };

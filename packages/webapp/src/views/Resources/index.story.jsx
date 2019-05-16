@@ -1,39 +1,8 @@
 import React from 'react';
 import { storiesOf } from '@storybook/react';
-import Homepage from './index';
+import Resources from './index';
 
-
-const beforeSpeechProps = {
-  image: 'parliament',
-  heading: 'New budget data will be available soon',
-  subheading: 'The 2019 budget speech',
-  buttons: {
-    primary: {
-      text: 'How to watch the speech',
-    },
-    secondary: {
-      text: 'Get notified when data is live',
-      link: '#',
-    },
-  },
-  notice: 'The 2019/20 budget will be live on Vulekamali by 22 February 2019.',
-};
-
-const duringSpeechProps = {
-  image: 'https://via.placeholder.com/150',
-  heading: 'New budget data will go live soon',
-  subheading: 'The 2019 budget speech has commenced',
-  buttons: {
-    primary: {
-      text: 'Watch the speech',
-      link: 'http://www.treasury.gov.za/documents/national%20budget/2019/webcast.aspx'
-    },
-    secondary: {
-      text: 'Download budget resources',
-      link: '#',
-    },
-  },
-  notice: 'The 2019/20 budget will be live on Vulekamali by 22 February 2019.',
+const props = {
   resources: [
     {
       heading: 'Budget Speech',
@@ -129,10 +98,8 @@ const duringSpeechProps = {
 };
 
 
-const beforeSpeech = () => <Homepage {...beforeSpeechProps} />;
-const duringSpeech = () => <Homepage {...duringSpeechProps} />;
+const basic = () => <Resources {...props} />;
 
 
-storiesOf('views.Homepage', module)
-  .add('Before Speech', beforeSpeech)
-  .add('During Speech', duringSpeech);
+storiesOf('views.Resources', module)
+  .add('default', basic);

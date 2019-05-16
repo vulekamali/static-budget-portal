@@ -1,4 +1,4 @@
-import styled from 'styled-components';
+import styled, { createGlobalStyle } from 'styled-components';
 import { Typography } from '@material-ui/core';
 
 const Wrapper = styled.div`
@@ -73,6 +73,13 @@ const Percentages = styled.div`
   }
 `;
 
+const TooltipStyled = createGlobalStyle`
+  .previewPercentageTooltip {
+    width: 50px;
+    text-align: center;
+  }
+`;
+
 
 export {
   Wrapper,
@@ -82,6 +89,7 @@ export {
   IntroMainHeading,
   IntroSubHeading,
   Percentages,
+  TooltipStyled,
 }
 
 export default {
@@ -89,4 +97,5 @@ export default {
   Summary,
   Numbers,
   Budget,
+  TooltipStyled,
 }
