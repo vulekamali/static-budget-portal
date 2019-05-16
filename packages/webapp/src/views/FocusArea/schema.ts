@@ -63,36 +63,44 @@ export const mockFilterObject = (createOptionCallback): TfilterObject => {
 
 // Type: TchartItemName
 /**
- * TODO: Zeeshaaan add description
+ * Displays the name associated with a specific chart item (Note that if, zoom
+ * is present, that zoom will be prefixed to this name).
  */
 export type TchartItemName = string;
 export const chartItemName = (): TchartItemName => faker.commerce.department();
 
 // Type: TchartItemAmount
 /**
- * TODO: Zeeshaaan add description
+ * This is a specific value associated with a specific chart item (or a default
+ * state if no item is selected). Keep in mind that an 'R' (Rand) will be
+ * prefixed to the value. If the value is higher than a million or a billion,
+ * etc, it will show as an amount of million or billion.
  */
 export type TchartItemAmount = number;
 export const chartItemAmount = (): TchartItemAmount =>
-  faker.commerce.amount({ min: 100000000, max: 999999999 });
+  parseInt(faker.finance.amount(100000000, 999999999));
 
 // Type: TchartItemUrl
 /**
- * TODO: Zeeshaaan add description
+ * takes a url that navigates to a page associated with a specific chart item.
+ * If value is null, then button will be greyed out (disabled).
  */
 export type TchartItemUrl = string;
 export const chartItemUrl = (): TchartItemUrl => faker.internet.url();
 
 // Type: TchartItemId
 /**
- * TODO: Zeeshaaan add description
+ * A unique id associated with a specific chart item. This id can be attached as an anchor in the sharing feature.
  */
 export type TchartItemId = string;
 export const chartItemId = (): TchartItemId => faker.random.uuid();
 
 // Type: TchartItemObject
 /**
- * TODO: Zeeshaaan add description
+ * This is an object that contains all the information needed to render the
+ * preview of a specific item in the chart. It usually updates when an item is
+ * selected. It usually also falls back to a preset of object of values. If
+ * null, then no itemPreview will be shown in the chart wrapper.
  */
 export type TchartItemObject = {
   id: TchartItemId;
@@ -110,7 +118,7 @@ export const mockChartItemObject = (): TchartItemObject => ({
 
 // Type: TchartParentItemObject
 /**
- * TODO: Zeeshaaan add description
+ * This is an array of objects that is responsible for creating all the relevant chart items that constitute of the specific treemap in question. If the array is empty, or null it will display a notice instead of a chart. The notice will be passed through the data.
  */
 export type TchartParentItemObject = TchartItemObject & { children: TchartItemObject[] };
 
@@ -121,28 +129,34 @@ export const mockChartParentItemObject = (): TchartParentItemObject => ({
 
 // Type: Tfootnote
 /**
- * TODO: Zeeshaaan add description
+ * This is the fineprint/disclaimer text that goes under the chart. It should be
+ * used to indicate any caveats or contexts that the user should keep in mind. If null, or empty, nothing will render.
  */
 export type Tfootnote = string;
-export const mockFootnote = (): Tfootnote => faker.random.phrase();
+export const mockFootnote = (): Tfootnote => faker.hacker.phrase();
 
 // Type: Tnotice
 /**
- * TODO: Zeeshaaan add description
+ * This notice should appear when a specific chart is not available. It should notify the user why the chart is not showing.
  */
 export type Tnotice = string;
-export const mockNotice = (): Tnotice => faker.random.phrase();
+export const mockNotice = (): Tnotice => faker.hacker.phrase();
 
 // Type: Ttotal
 /**
- * TODO: Zeeshaaan add description
+ * This is a specific value associated with a specific chart. It consists of the
+ * total of all the chart items added together. Keep in mind that an 'R' (Rand)
+ * will be prefixed to the value. If the value is higher than a million or a
+ * billion, etc, it will show as an amount of million or billion.
  */
 export type Ttotal = number;
-export const mockTotal = (): Ttotal => faker.commerce.amount({ min: 100000000, max: 999999999 });
+export const mockTotal = (): Ttotal => parseInt(faker.finance.amount(100000000, 999999999));
 
 // Type: TchartMetaInfo
 /**
- * TODO: Zeeshaaan add description
+ * This is an object that contains all the meta data needed to render alongside the
+ * preview of a specific chart. It usually updates when a different focus area is
+ * selected.
  */
 export type TchartMetaInfo = {
   notices?: Tnotice[];
@@ -158,7 +172,9 @@ export const mockChartMetaInfo = (): TchartMetaInfo => ({
 
 // Type: TnationalChartInfo
 /**
- * TODO: Zeeshaaan add description
+ * This is an object that contains all the information needed to render the
+ * preview of a national chart. It usually updates when a focus area is
+ * selected.
  */
 export type TnationalChartInfo = TchartMetaInfo & { departments: TchartItemObject[] };
 
@@ -169,7 +185,9 @@ export const mockNationalChartInfo = (): TnationalChartInfo => ({
 
 // Type: TprovincialChartInfo
 /**
- * TODO: Zeeshaaan add description
+ * This is an object that contains all the information needed to render the
+ * preview of a provincial chart. It usually updates when a focus area is
+ * selected. If null or empty, then a notice will be shown instead.
  */
 export type TprovincialChartInfo = TchartMetaInfo & { provinces: TchartParentItemObject[] | null };
 
@@ -199,7 +217,7 @@ export const mockErrors = () => ({
 
 // Type: Tprops
 /**
- * TODO: Zeeshaaan add description
+ * React props accepted by `<FocusArea />`.
  */
 export type Tprops = {
   focusAreas: TfilterObject;
@@ -223,7 +241,7 @@ export const mockProps = (): Tprops => ({
 
 // Type: Tstate
 /**
- * TODO: Zeeshaaan add description
+ * All the react state inside of `<FocusArea />`.
  */
 export type Tstate = {
   selectedFocusArea: TfilterObject;
