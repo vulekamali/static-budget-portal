@@ -1,5 +1,4 @@
 import React from 'react';
-import t from 'prop-types';
 import styled from 'styled-components';
 import copy from 'copy-to-clipboard';
 import Card from '@material-ui/core/Card';
@@ -13,9 +12,6 @@ import { Typography } from '@material-ui/core';
 
 const Title = styled(Typography)`
   && {
-    height: 39px;
-    font-family: Lato;
-    line-height: 23px;
     font-size: 14px;
     color: #000000;
   }
@@ -24,7 +20,6 @@ const Title = styled(Typography)`
 const Size = styled(Typography)`
   && {
     color: grey;
-    margin: 4.5% 0;
     font-size: 10px;
     letter-spacing: 0.5px;
   }
@@ -41,7 +36,7 @@ const CardWrapper = styled.div`
   }
 
   @media screen and (min-width: 1000px) {
-    max-width: ${100 / 3}%
+    max-width: ${100 / 3}%;
   }
 `;
 
@@ -52,7 +47,6 @@ const StyledCard = styled(Card)`
 
     @media screen and (min-width: 768px) {
       display: flex;
-      height: 145px;
     }
 
     transition: transform 500ms;
@@ -78,10 +72,9 @@ const CardContentWrapper = styled(CardContent)`
 `;
 
 const HeadingText = styled.div`
-  &&&& {
-    line-height: 23px;
-    font-size: 16px;
-  }
+  line-height: 23px;
+  font-size: 16px;
+  padding-bottom: 16px;
 `;
 
 
@@ -229,28 +222,28 @@ const Resources = ({ resources, cite }) => (
   </List>
 );
 
-Resources.propTypes = {
-  /** Array of data to loop from for card details */
-  resources: t.arrayOf(t.shape({
-    /** Displays the title of the file to be downloaded */
-    heading: t.string.isRequired,
-    /** This can be a string or empty string or null. It displays the size of the file to download,
-     * or nothing if button redirects to a website url instead.
-     */
-    size: t.string,
-    /** Displays the format of the file to be downloaded */
-    format: t.string.isRequired,
-    /** url that links to the file to be downloaded or redirects to desired website */
-    link: t.string.isRequired,
-  })).isRequired,
-  /** True or false depending whether an extra card displaying a call to action card with custom styling placed
-  as the last card in the list of cards */
-  cite: t.bool
-}
+// Resources.propTypes = {
+//   /** Array of data to loop from for card details */
+//   resources: t.arrayOf(t.shape({
+//     /** Displays the title of the file to be downloaded */
+//     heading: t.string.isRequired,
+//     /** This can be a string or empty string or null. It displays the size of the file to download,
+//      * or nothing if button redirects to a website url instead.
+//      */
+//     size: t.string,
+//     /** Displays the format of the file to be downloaded */
+//     format: t.string.isRequired,
+//     /** url that links to the file to be downloaded or redirects to desired website */
+//     link: t.string.isRequired,
+//   })).isRequired,
+//   /** True or false depending whether an extra card displaying a call to action card with custom styling placed
+//   as the last card in the list of cards */
+//   cite: t.bool
+// }
 
-Resources.defaultProps = {
-  size: null,
-  cite: false,
-}
+// Resources.defaultProps = {
+//   size: null,
+//   cite: false,
+// }
 
 export default Resources;
