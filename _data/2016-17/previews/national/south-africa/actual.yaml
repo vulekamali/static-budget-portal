@@ -1,15 +1,19 @@
 data:
   items:
-  - description: "## Vote purpose\n\nLead, support and promote agricultural, forestry\
+  - description: "## Vote purpose\r\n\r\nLead, support and promote agricultural, forestry\
       \ and fisheries resources management through policies, strategies and programmes\
       \ to enhance sustainable use, and achieve economic growth, job creation, food\
-      \ security, rural development and transformation.\n\n## Mandate\n\nThe mandate\
-      \ of the Department of Agriculture, Forestry and Fisheries includes value chains,\
-      \ inputs, production and consumption in the agriculture, forestry and fishery\
-      \ sectors. The department\u2019s mandate is derived from a range of legislation,\
-      \ including the Sea Fisheries Act (1988), the National Forests Act (1988), the\
-      \ Agricultural Products Standards Act (1990), and the Conservation of Agricultural\
-      \ Resources Act (1993)."
+      \ security, rural development and transformation.\r\n\r\n## Mandate\r\n\r\n\
+      The mandate of the Department of Agriculture, Forestry and Fisheries includes\
+      \ value chains, inputs, production and consumption in the agriculture, forestry\
+      \ and fishery sectors. The department\u2019s mandate is derived from a range\
+      \ of legislation, including the Sea Fisheries Act (1988), the National Forests\
+      \ Act (1988), the Agricultural Products Standards Act (1990), and the Conservation\
+      \ of Agricultural Resources Act (1993)."
+    focus_areas:
+    - slug: agriculture-rural-development-and-land-reform
+      title: Agriculture, Rural Development And Land Reform
+      url: 2016-17/focus/agriculture-rural-development-and-land-reform
     percentage_of_budget: 0.4971963267217662
     programmes:
     - amount: 828485000.0
@@ -59,6 +63,10 @@ data:
       \ and monitor the implementation of policy, legislation and strategic direction\
       \ for the identification, conservation and promotion of cultural heritage.\n\
       \n"
+    focus_areas:
+    - slug: basic-education
+      title: Basic Education
+      url: 2016-17/focus/basic-education
     percentage_of_budget: 0.3031413494031821
     programmes:
     - amount: 242684000.0
@@ -93,6 +101,10 @@ data:
       \ of Educators Act\_(1998), which regulates the professional, moral and ethical\
       \ responsibilities of educators, as well as the competency requirements for\
       \ teachers.\n\n"
+    focus_areas:
+    - slug: basic-education
+      title: Basic Education
+      url: 2016-17/focus/basic-education
     percentage_of_budget: 1.6450631226562595
     programmes:
     - amount: 418301000.0
@@ -141,6 +153,10 @@ data:
       \ Act\_(2005) \u2013 joint responsibility with the Minister of Telecommunications\
       \ and Postal Services.\n\nThe department is also responsible for the oversight\
       \ of the entities within\nits portfolio.\n\n"
+    focus_areas:
+    - slug: general-public-services
+      title: General Public Services
+      url: 2016-17/focus/general-public-services
     percentage_of_budget: 0.1023176269908265
     programmes:
     - amount: 57255000.0
@@ -176,6 +192,16 @@ data:
       \ the following legislation:\n\n  * the Intergovernmental Relations Framework\
       \ Act\_(2005)\n\n  * the Municipal Property Rates Act\_(2004)\n\n  * the Municipal\
       \ Systems Act\_(2000)\n\n  * the Municipal Structures Act\_(1998).\n\n"
+    focus_areas:
+    - slug: economic-affairs
+      title: Economic Affairs
+      url: 2016-17/focus/economic-affairs
+    - slug: general-public-services
+      title: General Public Services
+      url: 2016-17/focus/general-public-services
+    - slug: human-settlements-and-municipal-infrastructure
+      title: Human Settlements And Municipal Infrastructure
+      url: 2016-17/focus/human-settlements-and-municipal-infrastructure
     percentage_of_budget: 5.350669825173889
     programmes:
     - amount: 267266000.0
@@ -216,6 +242,10 @@ data:
       safe society by correcting offending behaviour in a safe, secure and humane\n\
       environment, thus facilitating optimal rehabilitation and reduced repeat\noffending.\n\
       \n"
+    focus_areas:
+    - slug: defence-public-order-and-safety
+      title: Defence, Public Order And Safety
+      url: 2016-17/focus/defence-public-order-and-safety
     percentage_of_budget: 1.650127138252358
     programmes:
     - amount: 3879599000.0
@@ -251,6 +281,10 @@ data:
       \ South African Defence Review. The department is required to\nprovide, manage,\
       \ prepare and employ defence capabilities that are commensurate\nwith the needs\
       \ of South Africa.\n\n"
+    focus_areas:
+    - slug: defence-public-order-and-safety
+      title: Defence, Public Order And Safety
+      url: 2016-17/focus/defence-public-order-and-safety
     percentage_of_budget: 3.6152899728712398
     programmes:
     - amount: 5740559000.0
@@ -305,6 +339,10 @@ data:
       \ Development Act\_(1940)\n\n  * the Competition Act\_(1998)\n\n  * the International\
       \ Trade Administration Act\_(2002)\n\n  * the Infrastructure Development Act\_\
       (2014).\n\n"
+    focus_areas:
+    - slug: economic-affairs
+      title: Economic Affairs
+      url: 2016-17/focus/economic-affairs
     percentage_of_budget: 0.05094530752005629
     programmes:
     - amount: 90417318.0
@@ -357,6 +395,13 @@ data:
       \ South Africa to\nbecome globally competitive in the use of innovative technology\
       \ for the\ndesign, manufacture and deployment of state of the art nuclear energy\
       \ systems,\npower reactors and nuclear fuel cycle systems.\n\n"
+    focus_areas:
+    - slug: economic-affairs
+      title: Economic Affairs
+      url: 2016-17/focus/economic-affairs
+    - slug: human-settlements-and-municipal-infrastructure
+      title: Human Settlements And Municipal Infrastructure
+      url: 2016-17/focus/human-settlements-and-municipal-infrastructure
     percentage_of_budget: 0.5754824837084863
     programmes:
     - amount: 282761955.0
@@ -416,6 +461,10 @@ data:
       \ National Environmental Management: Integrated Coastal Management Act\_(2008),\
       \ which promotes the conservation of the coastal environment and ensures sustainable\
       \ development practices and the use of natural resources.\n\n"
+    focus_areas:
+    - slug: economic-affairs
+      title: Economic Affairs
+      url: 2016-17/focus/economic-affairs
     percentage_of_budget: 0.48878137441008906
     programmes:
     - amount: 827902000.0
@@ -459,6 +508,13 @@ data:
       \ as they relate to health services. The\ndepartment contributes directly to\
       \ achieving the government outcome that calls\nfor a long and healthy life for\
       \ all South Africans\_(outcome 2).\n\n"
+    focus_areas:
+    - slug: economic-affairs
+      title: Economic Affairs
+      url: 2016-17/focus/economic-affairs
+    - slug: health
+      title: Health
+      url: 2016-17/focus/health
     percentage_of_budget: 2.9488017893556373
     programmes:
     - amount: 442877000.0
@@ -512,6 +568,10 @@ data:
       \ Qualifications Authority and the quality councils, for the issuing and quality\
       \ assurance of qualifications required on the sub-frameworks of the national\
       \ qualifications framework. \n\n"
+    focus_areas:
+    - slug: post-school-education-and-training
+      title: Post School Education And Training
+      url: 2016-17/focus/post-school-education-and-training
     percentage_of_budget: 4.930775608436744
     programmes:
     - amount: 372713000.0
@@ -555,6 +615,10 @@ data:
       \ safeguarding of the\nidentity and status of citizens and foreigners, and provide\
       \ for the management\nof immigration to ensure security, promote development\
       \ and fulfil South\nAfrica\u2019s international obligations.\n\n"
+    focus_areas:
+    - slug: general-public-services
+      title: General Public Services
+      url: 2016-17/focus/general-public-services
     percentage_of_budget: 0.6237926568325646
     programmes:
     - amount: 2210834000.0
@@ -585,6 +649,10 @@ data:
       \ of provinces and municipalities; and promoting\nconsultation with all stakeholders\
       \ in the housing delivery chain, including\ncivil society and the private sector.\n\
       \n"
+    focus_areas:
+    - slug: human-settlements-and-municipal-infrastructure
+      title: Human Settlements And Municipal Infrastructure
+      url: 2016-17/focus/human-settlements-and-municipal-infrastructure
     percentage_of_budget: 2.342977081008342
     programmes:
     - amount: 420897000.0
@@ -626,6 +694,10 @@ data:
       \ Police Service and Municipal Police\nServices to report matters that must\
       \ be investigated by the directorate and\nensures the implementation of disciplinary\
       \ recommendations made by the\ndirectorate.\n\n"
+    focus_areas:
+    - slug: defence-public-order-and-safety
+      title: Defence, Public Order And Safety
+      url: 2016-17/focus/defence-public-order-and-safety
     percentage_of_budget: 0.018516553111174366
     programmes:
     - amount: 72374313.0
@@ -670,6 +742,10 @@ data:
       \n  * contributing to the creation of an enabling international environment\
       \ for South African businesses\n\n  * sourcing developmental assistance\n\n\
       \  * assisting South African citizens abroad.\n\n"
+    focus_areas:
+    - slug: general-public-services
+      title: General Public Services
+      url: 2016-17/focus/general-public-services
     percentage_of_budget: 0.5243205686088451
     programmes:
     - amount: 1544797000.0
@@ -716,6 +792,10 @@ data:
       \ departments; the\npromotion, protection and enforcement of certain human rights;\
       \ the protection\nof vulnerable groups; the management of third party funds;\
       \ and support to\nchapter\_9 institutions.\n\n"
+    focus_areas:
+    - slug: defence-public-order-and-safety
+      title: Defence, Public Order And Safety
+      url: 2016-17/focus/defence-public-order-and-safety
     percentage_of_budget: 1.3699678864329934
     programmes:
     - amount: 1969006000.0
@@ -767,6 +847,10 @@ data:
       \ formulation of sound, and responsive legislation and policies to attain labour\
       \ market flexibility for competitiveness of enterprises, balanced with the promotion\
       \ of decent employment.\n\n"
+    focus_areas:
+    - slug: economic-affairs
+      title: Economic Affairs
+      url: 2016-17/focus/economic-affairs
     percentage_of_budget: 0.21153697640222557
     programmes:
     - amount: 819070000.0
@@ -799,6 +883,10 @@ data:
       \ safety the 1998 White Paper on the Minerals and Mining Policy for South Africa,\
       \ which provides the framework for the transparent and efficient regulation\
       \ of the mineral resources and mineral industry.\n\n"
+    focus_areas:
+    - slug: economic-affairs
+      title: Economic Affairs
+      url: 2016-17/focus/economic-affairs
     percentage_of_budget: 0.12724007518823913
     programmes:
     - amount: 361050000.0
@@ -836,6 +924,22 @@ data:
       \ the budget preparation process\n\n  * enforce transparency and effective management\
       \ in respect of revenue and expenditure, assets and liabilities, public entities,\
       \ and constitutional institutions.\n\n"
+    focus_areas:
+    - slug: debt-service-costs
+      title: Debt-Service Costs
+      url: 2016-17/focus/debt-service-costs
+    - slug: defence-public-order-and-safety
+      title: Defence, Public Order And Safety
+      url: 2016-17/focus/defence-public-order-and-safety
+    - slug: economic-affairs
+      title: Economic Affairs
+      url: 2016-17/focus/economic-affairs
+    - slug: general-public-services
+      title: General Public Services
+      url: 2016-17/focus/general-public-services
+    - slug: human-settlements-and-municipal-infrastructure
+      title: Human Settlements And Municipal Infrastructure
+      url: 2016-17/focus/human-settlements-and-municipal-infrastructure
     percentage_of_budget: 45.83710923928928
     programmes:
     - amount: 436312954.0
@@ -899,6 +1003,10 @@ data:
       \ and norms and standards; support\nthe judicial function of the Constitutional\
       \ Court; and support the Judicial\nService Commission and South African Judicial\
       \ Education Institute in the\nexecution of their mandates.\n\n"
+    focus_areas:
+    - slug: defence-public-order-and-safety
+      title: Defence, Public Order And Safety
+      url: 2016-17/focus/defence-public-order-and-safety
     percentage_of_budget: 0.13683397567779476
     programmes:
     - amount: 139079000.0
@@ -933,6 +1041,10 @@ data:
 
 
       '
+    focus_areas:
+    - slug: general-public-services
+      title: General Public Services
+      url: 2016-17/focus/general-public-services
     percentage_of_budget: 0.16663223365797014
     programmes:
     - amount: 2175360000.0
@@ -942,31 +1054,20 @@ data:
     slug: parliament
     title: Parliament
     total: 2175360000.0
-  - description: '## Vote purpose
-
-
-      Improve government service delivery through planning, monitoring and evaluation.
-
-
-      ## Mandate
-
-
-      The Department of Planning Monitoring and Evaluation is mandated to:
-
-
-      * facilitate the implementation of the national development plan through the
-      development of medium term plans and delivery agreements for the cross-cutting
-      priorities or outcomes of government, and monitor and evaluate the implementation
-      of these plans
-
-      * monitor the performance of individual national and provincial government departments
-      and municipalities
-
-      * monitor frontline service delivery
-
-      * manage the presidential hotline
-
-      * promote good planning, monitoring and evaluation practices in government.'
+  - description: "## Vote purpose\r\n\r\nImprove government service delivery through\
+      \ planning, monitoring and evaluation.\r\n\r\n## Mandate\r\n\r\nThe Department\
+      \ of Planning Monitoring and Evaluation is mandated to:\r\n\r\n* facilitate\
+      \ the implementation of the national development plan through the development\
+      \ of medium term plans and delivery agreements for the cross-cutting priorities\
+      \ or outcomes of government, and monitor and evaluate the implementation of\
+      \ these plans\r\n* monitor the performance of individual national and provincial\
+      \ government departments and municipalities\r\n* monitor frontline service delivery\r\
+      \n* manage the presidential hotline\r\n* promote good planning, monitoring and\
+      \ evaluation practices in government."
+    focus_areas:
+    - slug: general-public-services
+      title: General Public Services
+      url: 2016-17/focus/general-public-services
     percentage_of_budget: 0.05984332065329626
     programmes:
     - amount: 134299000.0
@@ -999,6 +1100,10 @@ data:
       \ of the Constitution and from the South African Police Service Act\_(1995).\n\
       This legislation regulates the police service in terms of its core function,\n\
       which is to prevent, investigate and combat crime.\n\n"
+    focus_areas:
+    - slug: defence-public-order-and-safety
+      title: Defence, Public Order And Safety
+      url: 2016-17/focus/defence-public-order-and-safety
     percentage_of_budget: 6.2034256928068885
     programmes:
     - amount: 17715067000.0
@@ -1042,6 +1147,10 @@ data:
       \ in the economy to support\nthe delivery of key outcomes outlined in the national\
       \ development plan and\ngovernment\u2019s 2014-2019 medium term strategic framework.\n\
       \n"
+    focus_areas:
+    - slug: general-public-services
+      title: General Public Services
+      url: 2016-17/focus/general-public-services
     percentage_of_budget: 0.01943943146214236
     programmes:
     - amount: 153788000.0
@@ -1072,6 +1181,10 @@ data:
       \ conditions of service, labour relations, IT and service delivery\n\n  * issue\
       \ directives and regulations for the public service\n\n  * formulate the national\
       \ anti-corruption strategy.\n\n"
+    focus_areas:
+    - slug: general-public-services
+      title: General Public Services
+      url: 2016-17/focus/general-public-services
     percentage_of_budget: 0.0584664384820685
     programmes:
     - amount: 225267000.0
@@ -1121,6 +1234,13 @@ data:
       \ implementation of\nthe expanded public works programme. Public works is constitutionally\n\
       designated as a concurrent function exercised by both the national and\nprovincial\
       \ spheres of government.\n\n"
+    focus_areas:
+    - slug: economic-affairs
+      title: Economic Affairs
+      url: 2016-17/focus/economic-affairs
+    - slug: general-public-services
+      title: General Public Services
+      url: 2016-17/focus/general-public-services
     percentage_of_budget: 0.49049529588887747
     programmes:
     - amount: 450444000.0
@@ -1191,6 +1311,13 @@ data:
       \ and implement an integrated rural development programme, which is linked to\
       \ the need to create vibrant, equitable and sustainable rural communities (outcome\
       \ 7 of government\u2019s 2014-2019 medium term strategic framework). \n\n"
+    focus_areas:
+    - slug: agriculture-rural-development-and-land-reform
+      title: Agriculture, Rural Development And Land Reform
+      url: 2016-17/focus/agriculture-rural-development-and-land-reform
+    - slug: economic-affairs
+      title: Economic Affairs
+      url: 2016-17/focus/economic-affairs
     percentage_of_budget: 0.7711305550630959
     programmes:
     - amount: 1607482000.0
@@ -1241,6 +1368,10 @@ data:
 
 
       '
+    focus_areas:
+    - slug: economic-affairs
+      title: Economic Affairs
+      url: 2016-17/focus/economic-affairs
     percentage_of_budget: 0.5655821384247143
     programmes:
     - amount: 332629000.0
@@ -1280,6 +1411,10 @@ data:
       \ Small Business Act (1996)\n- the National Small Business Amendment Act (2004)\n\
       - the Small Business Development Act (1981)\n- the Cooperatives Act (2005)\n\
       - the Cooperatives Amendment Act (2013).\n"
+    focus_areas:
+    - slug: economic-affairs
+      title: Economic Affairs
+      url: 2016-17/focus/economic-affairs
     percentage_of_budget: 0.09169306581393916
     programmes:
     - amount: 98924951.0
@@ -1328,6 +1463,10 @@ data:
       \ Population Policy for South Africa is aimed at promoting the sustainable development\
       \ of all South Africans by integrating population issues with development planning\
       \ in all spheres of government and all sectors of society. \n\n"
+    focus_areas:
+    - slug: social-protection
+      title: Social Protection
+      url: 2016-17/focus/social-protection
     percentage_of_budget: 11.286422117109524
     programmes:
     - amount: 349746000.0
@@ -1367,6 +1506,10 @@ data:
       s\ninternational ranking in selected sports. The act also ensures that sport\
       \ and\nphysical education contribute to social cohesion by legislating on sports\n\
       participation and sports infrastructure.\n\n"
+    focus_areas:
+    - slug: basic-education
+      title: Basic Education
+      url: 2016-17/focus/basic-education
     percentage_of_budget: 0.07840928410995822
     programmes:
     - amount: 683960000.0
@@ -1404,6 +1547,10 @@ data:
       \ making. The act also requires that the department coordinates\nstatistical\
       \ production among organs of state in line with the purpose of\nofficial statistics\
       \ and statistical principles.\n\n"
+    focus_areas:
+    - slug: general-public-services
+      title: General Public Services
+      url: 2016-17/focus/general-public-services
     percentage_of_budget: 0.18852791567380314
     programmes:
     - amount: 671188000.0
@@ -1463,6 +1610,10 @@ data:
       \ Africa Post Office SOC Ltd Act\_(2011)\n\n  * the South African Postbank Limited\
       \ Act\_(2010)\n\n  * the State Information Technology Agency Act\_(1998)\n\n\
       \  * the Broadband Infraco Act\_(2007).\n\n"
+    focus_areas:
+    - slug: economic-affairs
+      title: Economic Affairs
+      url: 2016-17/focus/economic-affairs
     percentage_of_budget: 0.1589976805429811
     programmes:
     - amount: 211582000.0
@@ -1511,6 +1662,10 @@ data:
 
 
       '
+    focus_areas:
+    - slug: general-public-services
+      title: General Public Services
+      url: 2016-17/focus/general-public-services
     percentage_of_budget: 0.036848047896546735
     programmes:
     - amount: 447709000.0
@@ -1544,6 +1699,10 @@ data:
       \ the\npromotion of domestic and international tourism. The national tourism\
       \ sector\nstrategy provides a blueprint for the sector to meet the growth targets\n\
       contained in the national development plan.\n\n"
+    focus_areas:
+    - slug: economic-affairs
+      title: Economic Affairs
+      url: 2016-17/focus/economic-affairs
     percentage_of_budget: 0.14704458150034375
     programmes:
     - amount: 227079000.0
@@ -1578,6 +1737,10 @@ data:
       \ Act\_(2008) \n\n  * the Manufacturing Development Act\_(1993) \n\n  * the\
       \ Broad Based Black Economic Empowerment Act\_(2003) \n\n  * the Consumer Protection\
       \ Act\_(2008). \n\n"
+    focus_areas:
+    - slug: economic-affairs
+      title: Economic Affairs
+      url: 2016-17/focus/economic-affairs
     percentage_of_budget: 0.7927621048887824
     programmes:
     - amount: 699139000.0
@@ -1636,6 +1799,13 @@ data:
       \ and policy to set the strategic direction of sub-\nsectors, assigning responsibilities\
       \ to public entities and other spheres of\ngovernment, regulating the sector\
       \ through setting norms and standards, and\nmonitoring implementation.\n\n"
+    focus_areas:
+    - slug: economic-affairs
+      title: Economic Affairs
+      url: 2016-17/focus/economic-affairs
+    - slug: human-settlements-and-municipal-infrastructure
+      title: Human Settlements And Municipal Infrastructure
+      url: 2016-17/focus/human-settlements-and-municipal-infrastructure
     percentage_of_budget: 4.320804091008972
     programmes:
     - amount: 365136000.0
@@ -1685,6 +1855,13 @@ data:
       \ and legislation that are critical for delivering on people\u2019s right to\n\
       have access to sufficient food and water, transforming the economy, and\neradicating\
       \ poverty.\n\n"
+    focus_areas:
+    - slug: economic-affairs
+      title: Economic Affairs
+      url: 2016-17/focus/economic-affairs
+    - slug: human-settlements-and-municipal-infrastructure
+      title: Human Settlements And Municipal Infrastructure
+      url: 2016-17/focus/human-settlements-and-municipal-infrastructure
     percentage_of_budget: 1.19767209021068
     programmes:
     - amount: 1504930000.0
@@ -1716,6 +1893,10 @@ data:
       \ and the\npresidential proclamation made in 2014, in terms of which the department\
       \ is\nmandated to champion gender equality, and the achievement of women\u2019\
       s\nsocioeconomic empowerment and rights.\n\n"
+    focus_areas:
+    - slug: general-public-services
+      title: General Public Services
+      url: 2016-17/focus/general-public-services
     percentage_of_budget: 0.01491697675341987
     programmes:
     - amount: 88459000.0
