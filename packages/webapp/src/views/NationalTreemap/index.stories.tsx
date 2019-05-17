@@ -16,26 +16,18 @@ const items = randomLengthBlankArray(35, 45).map((value, id) => ({
   percentage: randomNumber(1, 100),
 }));
 
-
 const initialSelected = {
-  name: "National Budget Summary",
-  value: "92348259852",
+  name: 'National Budget Summary',
+  value: '92348259852',
   url: null,
-  color: "#D8D8D8"
-}
+  color: '#D8D8D8',
+};
 
 const basic = () => (
   <Fragment>
     <CssBaseline />
-    <NationalTreemap
-      {...{ items, initialSelected }}
-      verb='Explore'
-      subject='this department'
-    />
+    <NationalTreemap {...{ items, initialSelected }} verb="Explore" subject="this department" />
   </Fragment>
 );
 
-
-
-storiesOf('views.NationalTreemap', module)
-  .add('Default', basic)
+storiesOf('views.NationalTreemap', module).add('Default', basic);

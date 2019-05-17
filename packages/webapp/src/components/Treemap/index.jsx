@@ -16,7 +16,7 @@ class Treemap extends Component {
 
     this.state = {
       selected: null,
-      screenWidth: screenWidth,
+      screenWidth,
       zoom: null,
     };
 
@@ -25,10 +25,10 @@ class Treemap extends Component {
       changeSelectedHandler: this.changeSelectedHandler.bind(this),
     };
 
+    const { items } = this.props;
+
     this.values = {
-      fills: Object.keys(this.props.items).map(() => colorsList.next().value),
-      sortedItems: sortItems(this.props.items),
-      hasChildren: !Array.isArray(this.props.items),
+      sortedItems: sortItems(items),
     };
   }
 
@@ -36,39 +36,7 @@ class Treemap extends Component {
     this.values = {
       ...this.values,
       resizeListener: new ResizeWindowListener(this.changeWidthHandler.bind(this)),
-    }
-  }
-
-  unsetZoomHandler() {
-    const { onSelectedChange } = this.props;
-
-    if (onSelectedChange) {
-      onSelectedChange(null);
-    }
-    
-    return this.setState({ 
-      selected: null,
-      zoom: null,
-    });
-  }
-
-  changeSelectedHandler(selected) {
-    const { onSelectedChange } = this.props;
-
-    if (onSelectedChange) {
-      onSelectedChange(selected);
-    }
-
-    this.setState({ 
-      selected: selected.id,
-      zoom: selected.zoom || null,
-    });
-  }
-
-  changeWidthHandler(screenWidth) {
-    if (screenWidth >= 600) {
-      this.setState({ screenWidth });
-    }
+    };
   }
 
   componentWillUnmount() {
@@ -81,17 +49,48 @@ class Treemap extends Component {
     return null;
   }
 
+  unsetZoomHandler() {
+    const { onSelectedChange } = this.props;
+
+    if (onSelectedChange) {
+      onSelectedChange(null);
+    }
+
+    return this.setState({
+      selected: null,
+      zoom: null,
+    });
+  }
+
+  changeSelectedHandler(selected) {
+    const { onSelectedChange } = this.props;
+
+    if (onSelectedChange) {
+      onSelectedChange(selected);
+    }
+
+    this.setState({
+      selected: selected.id,
+      zoom: selected.zoom || null,
+    });
+  }
+
+  changeWidthHandler(screenWidth) {
+    if (screenWidth >= 600) {
+      this.setState({ screenWidth });
+    }
+  }
+
   render() {
-    const { state, events, values, props: { icons } } = this;
+    const { state, events, values } = this;
     const items = modifyIfZoomed(values.sortedItems, state.zoom);
 
-    const passedProps = { 
+    const passedProps = {
       ...state,
       ...events,
       items,
       fills: values.fills,
       hasChildren: values.hasChildren,
-      icons,
     };
 
     return <Markup {...passedProps} />;

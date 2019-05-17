@@ -1,48 +1,53 @@
 import { SvgIcon } from '@material-ui/core';
 import React from 'react';
 
-import Test from './Test';
-import SocialDevelopment from './SocialDevelopment';
-import EconomicAffairsAndAgriculture from './EconomicAffairsAndAgriculture';
-import Defence from './Defence';
-import DebtServiceCosts from './DebtServiceCosts';
-import ContingencyReserve from './ContingencyReserve';
-import GeneralAdmin from './GeneralAdmin';
-import EconomicDevelopment from './EconomicDevelopment';
+import Family from './Family';
+import Plant from './Plant';
+import Shield from './Shield';
+import Dollar from './Dollar';
+import Money from './Money';
+import Growth from './Growth';
 import Health from './Health';
-import LearningAndCulture from './LearningAndCulture';
-import LocalDevelopmentAndInfrastructure from './LocalDevelopmentAndInfrastructure';
-import CommunityDevelopment from './CommunityDevelopment';
-import PeaceAndSecurity from './PeaceAndSecurity';
-import GeneralPublicServices from './GeneralPublicServices';
-import PostSchoolTraining from './PostSchoolTraining';
+import Education from './Education';
+import Tap from './Tap';
+import Community from './Community';
+import Police from './Police';
+import Person from './Person';
+import Training from './Training';
 
-const returnContent = (type) => {
+const returnContent = type => {
   switch (type) {
-    case 'Test': return <Test />;
-    case 'social-development': return <SocialDevelopment />;
-    case 'economic-affairs-and-agriculture': return <EconomicAffairsAndAgriculture />;
-    case 'defence': return <Defence />;
-    case 'debt-service-costs': return <DebtServiceCosts />;
-    case 'contingency-reserve': return <ContingencyReserve />;
-    case 'general-admin': return <GeneralAdmin />;
-    case 'economic-development': return <EconomicDevelopment />;
-    case 'health': return <Health />;
-    case 'learning-and-culture': return <LearningAndCulture />;
-    case 'local-development-and-infrastructure': return <LocalDevelopmentAndInfrastructure />;
-
-    case 'community-development': return <CommunityDevelopment />;
-    case 'peace-and-security': return <PeaceAndSecurity />;
-    case 'general-public-services': return <GeneralPublicServices />;
-    case 'post-school-training': return <PostSchoolTraining />;
-    default: return null;
+    case 'family':
+      return <Family />;
+    case 'plant':
+      return <Plant />;
+    case 'shield':
+      return <Shield />;
+    case 'dollar':
+      return <Dollar />;
+    case 'money':
+      return <Money />;
+    case 'growth':
+      return <Growth />;
+    case 'health':
+      return <Health />;
+    case 'education':
+      return <Education />;
+    case 'tap':
+      return <Tap />;
+    case 'community':
+      return <Community />;
+    case 'police':
+      return <Police />;
+    case 'person':
+      return <Person />;
+    case 'training':
+      return <Training />;
+    default:
+      return null;
   }
 };
 
-const CustomIcon = ({ type, ...props }) => (
-  <SvgIcon {...props}>
-    {returnContent(type)}
-  </SvgIcon>
-);
+const CustomIcon = ({ type, ...props }) => <SvgIcon {...props}>{returnContent(type)}</SvgIcon>;
 
 export default CustomIcon;

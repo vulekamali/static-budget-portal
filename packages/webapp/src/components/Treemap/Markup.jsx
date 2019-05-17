@@ -21,7 +21,6 @@ const Markup = ({
   zoom,
   hasChildren,
   unsetZoomHandler,
-  icons,
 }) => {
   const widthWithPadding = screenWidth - 48;
   const width = widthWithPadding > 1200 ? 1200 : widthWithPadding;
