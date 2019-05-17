@@ -1861,6 +1861,6 @@ const detailsFalse = () => <Infrastructure {...props} />;
 const detailsTrue = () => <Infrastructure {...props} details />;
 
 
-storiesOf('view.Infrastructure', module)
+storiesOf('views.Infrastructure', module)
   .add('Details False', detailsFalse)
   .add('Details True', detailsTrue);

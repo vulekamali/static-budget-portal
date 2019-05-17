@@ -14,19 +14,27 @@ import {
   Description,
   FooterWrapper,
   FooterContainer,
-  FooterDetails
+  FooterDetails,
+  FocusWrapper,
+  Link,
+  ButtonStyled,
+  TextButton,
+  FocusLinksWrapper,
+  FocusLinksContainer,
+  ButtonContainer,
+  ArrowStyled,
 } from './styled';
 
 const callDescription = description => {
-  if(!description) {
+  if (!description) {
     return null;
   }
   return (
     <React.Fragment>
-      <SectionHeading title='Department information' />
+      <SectionHeading title="Department information" />
       <TextWrapper>
         <TextContainer>
-          <Description component='div'>
+          <Description component="div">
             <ReactMarkdown source={description} />
           </Description>
         </TextContainer>
@@ -35,7 +43,18 @@ const callDescription = description => {
   );
 };
 
-const Markup = (props) => {
+const callFocusButtons = ({ slug, title, url }) => (
+  <ButtonContainer key={slug}>
+    <Link href={url}>
+      <ButtonStyled>
+        <TextButton component="div">{title}</TextButton>
+        <ArrowStyled />
+      </ButtonStyled>
+    </Link>
+  </ButtonContainer>
+);
+
+const Markup = props => {
   const {
     resources,
     items,
@@ -45,7 +64,8 @@ const Markup = (props) => {
     departmentNames,
     selected,
     eventHandler,
-    year
+    year,
+    focusAreas,
   } = props;
 
   return (
@@ -53,16 +73,26 @@ const Markup = (props) => {
       <Heading {...{ departmentNames, government, selected, eventHandler, year, sphere }} />
       <BudgetAmounts {...resources} sphere={sphere} />
       {callDescription(description)}
-      <SectionHeading title='Department programmes' />
+      <SectionHeading title="Department programmes" />
       <div key={selected}>
         <BarChart {...{ items }} />
       </div>
       <FooterWrapper>
         <FooterContainer>
           <FooterDetails>{calcFineprint(year)}</FooterDetails>
-          <FooterDetails>Direct charges against the national revenue fund included here, while it is not normally counted as part of the total budget of the department, as it is not part of the voted appropriation.</FooterDetails>
+          <FooterDetails>
+            Direct charges against the national revenue fund included here, while it is not normally
+            counted as part of the total budget of the department, as it is not part of the voted
+            appropriation.
+          </FooterDetails>
         </FooterContainer>
       </FooterWrapper>
+      <FocusWrapper>
+        <SectionHeading title="Focus areas of this department" />
+        <FocusLinksWrapper>
+          <FocusLinksContainer>{focusAreas.map(callFocusButtons)}</FocusLinksContainer>
+        </FocusLinksWrapper>
+      </FocusWrapper>
     </Wrapper>
   );
 };

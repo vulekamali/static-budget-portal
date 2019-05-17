@@ -10,7 +10,7 @@ function* createColorGenerator() {
       count = 0;
     }
 
-    const color: Tcolor = colors[count];
+    const color = colors[count];
     yield color;
 
     count += 1;

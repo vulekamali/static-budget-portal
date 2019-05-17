@@ -1,5 +1,4 @@
 import React from 'react';
-import t from 'prop-types';
 import styled from 'styled-components';
 import Paper from '@material-ui/core/Paper';
 import posed, { PoseGroup } from 'react-pose';
@@ -60,14 +59,14 @@ const Tooltip = ({ items }) => (
 export default Tooltip;
 
 
-Tooltip.propTypes = {
-  items: t.arrayOf(t.shape({
-    x: t.string,
-    y: t.string,
-    title: t.string,
-  })),
-};
+// Tooltip.propTypes = {
+//   items: t.arrayOf(t.shape({
+//     x: t.string,
+//     y: t.string,
+//     title: t.string,
+//   })),
+// };
 
-Tooltip.defaultProps = {
-  items: [],
-};
+// Tooltip.defaultProps = {
+//   items: [],
+// };
