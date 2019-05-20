@@ -62,8 +62,9 @@ Vagrant.configure("2") do |config|
   config.vm.provision "shell", privileged: false, inline: <<-SHELL
     cd /vagrant
 
-    yarn
     bundle install
+    yarn
+    yarn build
   SHELL
 
   # Show a usage message.
