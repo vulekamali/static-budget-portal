@@ -32,6 +32,7 @@ class DataLoader extends Component {
     }
 
     const { items, total } = data;
+
     const initialSelected = {
       name: 'Consolidated Budget Summary',
       value: total,
