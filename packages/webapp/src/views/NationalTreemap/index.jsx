@@ -4,6 +4,7 @@ import MediaQuery from 'react-media';
 import calcIfForeignObjectIsSupported from './calcIfForeignObjectIsSupported';
 import ChartSection from '../../components/ChartSection';
 import Treemap from '../../components/Treemap';
+import sortItems from './sortItems';
 
 import colorsList from './colorsList.js';
 
@@ -19,7 +20,8 @@ const footer = (
 );
 
 const Markup = ({ items, initialSelected }) => {
-  const itemsWithColor = items.map((item, index) => ({
+  const sortedItems = sortItems(items);
+  const itemsWithColor = sortedItems.map((item, index) => ({
     ...item,
     color: colorsList[index],
   }));
