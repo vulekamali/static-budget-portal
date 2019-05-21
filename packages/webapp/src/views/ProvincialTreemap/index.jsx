@@ -6,13 +6,16 @@ import ChartSection from '../../components/ChartSection';
 import Treemap from '../../components/Treemap';
 
 import colorsList from './colorsList';
+import sortItems from './sortItems';
 
-const addColors = (items, overrideColor) =>
-  items.map((item, index) => ({
+const addColors = (items, overrideColor) => {
+  const sortedItems = sortItems(items);
+  return sortedItems.map((item, index) => ({
     ...item,
     color: overrideColor || colorsList[index],
     children: item.children ? addColors(item.children, overrideColor || colorsList[index]) : null,
   }));
+};
 
 const transformData = item => ({
   ...item,
