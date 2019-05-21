@@ -27,6 +27,7 @@ const Markup = ({ items, initialSelected }) => {
     ...item,
     icon: mapFocusToIcon(item.id),
   }));
+
   return (
     <ChartSection
       {...{ initialSelected, footer }}
