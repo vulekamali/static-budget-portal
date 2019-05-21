@@ -1,9 +1,9 @@
 import React from 'react';
 
-import trimValues from '../../helpers/trimValues';
 import Icon from '@material-ui/icons/ArrowForward';
-import SectionHeading from '../SectionHeading';
 import CssBaseline from '@material-ui/core/CssBaseline';
+import trimValues from '../../helpers/trimValues';
+import SectionHeading from '../SectionHeading';
 
 import {
   Wrapper,
@@ -19,22 +19,22 @@ import {
   ChartContainer,
   FooterWrapper,
   FooterContainer,
-  FooterDetails
- } from './styled';
+  FooterDetails,
+} from './styled';
 
- const callChart = (chart, onSelectedChange) => (
-   <ChartWrapper>
-    <ChartContainer>
-      {chart(onSelectedChange)}
-    </ChartContainer>
-   </ChartWrapper>
- );
+const callChart = (chart, onSelectedChange) => (
+  <ChartWrapper>
+    <ChartContainer>{chart(onSelectedChange)}</ChartContainer>
+  </ChartWrapper>
+);
 
-const callButtonExplore = (url, color,  verb, subject) => {
+const callButtonExplore = (url, color, verb, subject) => {
   return (
     <LinkWrapper href={url}>
-      <ButtonStyle disabled={!url} {...{color}}>
-        <TextExploreButton>{verb} <SpanStyled>{subject}</SpanStyled></TextExploreButton>
+      <ButtonStyle disabled={!url} {...{ color }}>
+        <TextExploreButton>
+          {verb} <SpanStyled>{subject}</SpanStyled>
+        </TextExploreButton>
         <Icon />
       </ButtonStyle>
     </LinkWrapper>
@@ -53,13 +53,13 @@ const callDetails = (selected, verb, subject) => {
           <Department>{name}</Department>
           <Amount>R{trimValues(value)}</Amount>
         </div>
-        {!!verb && callButtonExplore(url, color,  verb, subject)}
+        {!!verb && callButtonExplore(url, color, verb, subject)}
       </DetailsContainer>
     </DetailsWrapper>
   );
 };
 
-const Markup = (props) => {
+const Markup = props => {
   const {
     chart,
     selected,
@@ -70,9 +70,9 @@ const Markup = (props) => {
     years,
     phases,
     anchor,
-    title
+    title,
   } = props;
-  
+
   return (
     <Wrapper>
       <CssBaseline />
@@ -80,9 +80,7 @@ const Markup = (props) => {
       {!!selected && callDetails(selected, verb, subject)}
       {callChart(chart, onSelectedChange)}
       <FooterWrapper>
-        <FooterContainer>
-          {footer && <FooterDetails>{footer}</FooterDetails>}
-        </FooterContainer>
+        <FooterContainer>{footer && <FooterDetails>{footer}</FooterDetails>}</FooterContainer>
       </FooterWrapper>
     </Wrapper>
   );
