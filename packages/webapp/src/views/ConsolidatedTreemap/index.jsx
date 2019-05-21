@@ -6,6 +6,7 @@ import ChartSection from '../../components/ChartSection';
 import Treemap from '../../components/Treemap';
 import colorsList from './colorsList';
 import mapFocusToIcon from './mapFocusToIcon';
+import sortItems from './sortItems';
 
 const footer = (
   <Fragment>
@@ -18,7 +19,8 @@ const footer = (
 );
 
 const Markup = ({ items, initialSelected }) => {
-  const itemsWithColor = items.map((item, index) => ({
+  const sortedItems = sortItems(items);
+  const itemsWithColor = sortedItems.map((item, index) => ({
     ...item,
     color: colorsList[index],
   }));
