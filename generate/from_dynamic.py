@@ -245,7 +245,7 @@ for year_slug in YEAR_SLUGS:
         r = http_get(session, url)
         r.raise_for_status()
         path = '_data%s.yaml' % url_path
-
+        ensure_file_dirs(path)
         with open(path, 'wb') as file:
             file.write(GENERATED_YAML_COMMENT)
             file.write(r.text)
@@ -280,6 +280,7 @@ for dataset in listing['datasets']:
     r = http_get(session, dataset_url)
     r.raise_for_status()
     write_contributed_dataset_page(dataset['url_path'], r.text)
+    ensure_file_dirs(dataset_context_path)
     with open(dataset_context_path, 'wb') as dataset_file:
         dataset_file.write(GENERATED_YAML_COMMENT)
         dataset_file.write(r.text)
@@ -333,6 +334,7 @@ for category in dataset_categories:
         r = http_get(session, dataset_url)
         r.raise_for_status()
         write_categorised_dataset_page(dataset['url_path'], r.text)
+        ensure_file_dirs(dataset_context_path)
         with open(dataset_context_path, 'wb') as dataset_file:
             dataset_file.write(r.text)
 
@@ -346,6 +348,7 @@ for year_slug in YEAR_SLUGS:
     r.raise_for_status()
     listing_path = '_data%s.yaml' % listing_url_path
 
+    ensure_file_dirs(listing_path)
     with open(listing_path, 'wb') as listing_file:
         listing_file.write(GENERATED_YAML_COMMENT)
         listing_file.write(r.text)
@@ -365,6 +368,7 @@ for year_slug in YEAR_SLUGS:
                 r = http_get(session, department_url)
                 r.raise_for_status()
                 write_department_page(department['url_path'], r.text)
+                ensure_file_dirs(department_context_path)
                 with open(department_context_path, 'wb') as department_file:
                     department_file.write(GENERATED_YAML_COMMENT)
                     department_file.write(r.text)
@@ -400,6 +404,7 @@ else:
         r = http_get(session, project_url)
         r.raise_for_status()
         write_basic_page(project['detail'], r.text, 'infrastructure_project')
+        ensure_file_dirs(project_context_path)
         with open(project_context_path, 'wb') as project_file:
             project_file.write(GENERATED_YAML_COMMENT)
             project_file.write(r.text)
