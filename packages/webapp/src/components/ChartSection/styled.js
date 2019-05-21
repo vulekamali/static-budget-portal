@@ -11,7 +11,7 @@ const LinkWrapper = styled.a`
   text-decoration: none;
 `;
 
-const ButtonStyle = styled(removeProps({component: Button, blacklist: 'color'}))`
+const ButtonStyle = styled(removeProps({ component: Button, blacklist: 'color' }))`
   && {
     background-color: ${({ color }) => color};
     text-transform: none;
@@ -133,19 +133,19 @@ const FooterContainer = styled.div`
   }
 `;
 
-const FooterDetails = styled(Typography)`
+const FooterDetails = styled.div`
   && {
     font-size: 10px;
     line-height: 140%;
     color: #000;
     text-align: left;
+    font-family: Roboto;
   }
 
   @media screen and (min-width: 950px) {
     font-size: 12px;
   }
 `;
-
 
 export {
   Wrapper,
@@ -161,8 +161,8 @@ export {
   ChartContainer,
   FooterWrapper,
   FooterContainer,
-  FooterDetails
-}
+  FooterDetails,
+};
 
 export default {
   Wrapper,
@@ -178,5 +178,5 @@ export default {
   ChartContainer,
   FooterWrapper,
   FooterContainer,
-  FooterDetails
-}
+  FooterDetails,
+};
