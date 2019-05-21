@@ -1,35 +1,33 @@
 import React, { Component } from 'react';
 import Markup from './Markup';
 
-
-
 class Preview extends Component {
   constructor(props) {
     super(props);
     this.eventHandler = this.eventHandler.bind(this);
 
     this.state = {
-      selected: this.props.department
-    }
+      selected: this.props.department,
+    };
 
     this.events = {
       eventHandler: this.eventHandler.bind(this),
-    }
+    };
 
     this.departmentNames = this.props.items.map(({ id, name }) => ({
       id,
-      name
-    }))
+      name,
+    }));
   }
 
   eventHandler(e) {
     const { updateUrl } = this.props;
-    if(e.target.value === this.state.selected) {
+    if (e.target.value === this.state.selected) {
       return null;
     }
     if (updateUrl) {
       const newUrl = `/${this.props.year}/focus/${e.target.value}`;
-      window.history.pushState({}, window.document.title, newUrl );
+      window.history.pushState({}, window.document.title, newUrl);
     }
     this.setState({ selected: e.target.value });
   }
@@ -37,23 +35,22 @@ class Preview extends Component {
   render() {
     const { state, events, props } = this;
 
-    const selectedkey = props.items.findIndex(({ id }) => id === state.selected);	
+    const selectedkey = props.items.findIndex(({ id }) => id === state.selected);
     const selectedObject = props.items[selectedkey];
 
     const initialSelectedNational = {
-      name: "National Department Contributions",
+      name: 'National Department Contributions',
       value: selectedObject.national.total,
       url: null,
-      color: "#D8D8D8"
-    }
+      color: '#D8D8D8',
+    };
 
     const initialSelectedProvincial = {
       name: 'Provincial Department Contributions',
       value: selectedObject.provincial.total,
       url: null,
-      color: 'rgba(0, 0, 0, 0.1)'
-    }
-
+      color: 'rgba(0, 0, 0, 0.1)',
+    };
 
     const passedProps = {
       ...props,
@@ -63,12 +60,11 @@ class Preview extends Component {
       departmentNames: this.departmentNames,
       year: props.year,
       initialSelectedNational,
-      initialSelectedProvincial
+      initialSelectedProvincial,
     };
 
-    return <Markup {...passedProps } />
+    return <Markup {...passedProps} />;
   }
 }
 
 export default Preview;
-
