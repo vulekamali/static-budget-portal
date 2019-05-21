@@ -6,6 +6,7 @@ import CustomIcon from '../CustomIcon';
 
 import {
   Text,
+  TextContainer,
   TreemapBlock,
   TreemapBlockWrapper,
   BlockContent,
@@ -34,10 +35,12 @@ const createIcon = icon => (
 const createInlineText = (title, amount, squarePixels, icon) => (
   <Fragment>
     {!!icon && squarePixels > 20000 && createIcon(icon)}
-    <Text bold small={squarePixels < 20000}>
-      {squarePixels < 8000 && title.length > 15 ? `${title.substring(0, 15)}...` : title}
-    </Text>
-    <Text small={squarePixels < 20000}>R{trimValues(amount, true)}</Text>
+    <TextContainer>
+      <Text bold small={squarePixels < 20000}>
+        {squarePixels < 8000 && title.length > 15 ? `${title.substring(0, 15)}...` : title}
+      </Text>
+      <Text small={squarePixels < 20000}>R{trimValues(amount, true)}</Text>
+    </TextContainer>
   </Fragment>
 );
 
