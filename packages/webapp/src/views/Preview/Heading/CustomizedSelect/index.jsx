@@ -4,7 +4,7 @@ import { MenuItem, CssBaseline } from '@material-ui/core';
 import { CustomizedForm, SelectPreview } from './styled';
 
 const callMenuItems = ({ id, name }) => (
-  <MenuItem key={id} value={id}>
+  <MenuItem value={id} key={id}>
     {name}
   </MenuItem>
 );
