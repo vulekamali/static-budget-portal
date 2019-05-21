@@ -54,6 +54,15 @@ const callFocusButtons = ({ slug, title, url }) => (
   </ButtonContainer>
 );
 
+const callFocusAreas = focusAreas => (
+  <FocusWrapper>
+    <SectionHeading title="Focus areas of this department" />
+    <FocusLinksWrapper>
+      <FocusLinksContainer>{focusAreas.map(callFocusButtons)}</FocusLinksContainer>
+    </FocusLinksWrapper>
+  </FocusWrapper>
+);
+
 const Markup = props => {
   const {
     resources,
@@ -87,12 +96,7 @@ const Markup = props => {
           </FooterDetails>
         </FooterContainer>
       </FooterWrapper>
-      <FocusWrapper>
-        <SectionHeading title="Focus areas of this department" />
-        <FocusLinksWrapper>
-          <FocusLinksContainer>{focusAreas.map(callFocusButtons)}</FocusLinksContainer>
-        </FocusLinksWrapper>
-      </FocusWrapper>
+      {focusAreas && callFocusAreas(focusAreas)}
     </Wrapper>
   );
 };
