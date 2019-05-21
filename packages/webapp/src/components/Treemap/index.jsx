@@ -3,7 +3,6 @@ import React, { Component } from 'react';
 import Markup from './Markup';
 import createColorGenerator from './generateColor';
 import ResizeWindowListener from '../../helpers/ResizeWindowListener';
-import sortItems from './sortItems';
 import modifyIfZoomed from './modifyIfZoomed';
 
 const colorsList = createColorGenerator();
@@ -28,7 +27,7 @@ class Treemap extends Component {
     const { items } = this.props;
 
     this.values = {
-      sortedItems: sortItems(items),
+      items,
     };
   }
 
@@ -83,7 +82,7 @@ class Treemap extends Component {
 
   render() {
     const { state, events, values } = this;
-    const items = modifyIfZoomed(values.sortedItems, state.zoom);
+    const items = modifyIfZoomed(values.items, state.zoom);
 
     const passedProps = {
       ...state,
