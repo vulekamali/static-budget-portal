@@ -2,27 +2,130 @@ data:
   items:
   - national:
       data:
-      - amount: 6332965000
-        slug: agriculture-forestry-and-fisheries
-        title: Agriculture, Forestry and Fisheries
-        url: 2016-17/previews/national/south-africa/agriculture-forestry-and-fisheries
-      - amount: 9698362000
-        slug: rural-development-and-land-reform
-        title: Rural Development and Land Reform
-        url: 2016-17/previews/national/south-africa/rural-development-and-land-reform
+      - amount: 1345406000
+        slug: communications
+        title: Communications
+        url: 2016-17/previews/national/south-africa/communications
+      - amount: 1714313000
+        slug: cooperative-governance-and-traditional-affairs
+        title: Cooperative Governance and Traditional Affairs
+        url: 2016-17/previews/national/south-africa/cooperative-governance-and-traditional-affairs
+      - amount: 7167140000
+        slug: home-affairs
+        title: Home Affairs
+        url: 2016-17/previews/national/south-africa/home-affairs
+      - amount: 5888651000
+        slug: international-relations-and-cooperation
+        title: International Relations and Cooperation
+        url: 2016-17/previews/national/south-africa/international-relations-and-cooperation
+      - amount: 17339056000
+        slug: national-treasury
+        title: National Treasury
+        url: 2016-17/previews/national/south-africa/national-treasury
+      - amount: 2189429000
+        slug: parliament
+        title: Parliament
+        url: 2016-17/previews/national/south-africa/parliament
+      - amount: 827662000
+        slug: planning-monitoring-and-evaluation
+        title: Planning, Monitoring and Evaluation
+        url: 2016-17/previews/national/south-africa/planning-monitoring-and-evaluation
+      - amount: 273976000
+        slug: public-enterprises
+        title: Public Enterprises
+        url: 2016-17/previews/national/south-africa/public-enterprises
+      - amount: 770380000
+        slug: public-service-and-administration
+        title: Public Service and Administration
+        url: 2016-17/previews/national/south-africa/public-service-and-administration
+      - amount: 4209265000
+        slug: public-works
+        title: Public Works
+        url: 2016-17/previews/national/south-africa/public-works
+      - amount: 2489102000
+        slug: statistics-south-africa
+        title: Statistics South Africa
+        url: 2016-17/previews/national/south-africa/statistics-south-africa
+      - amount: 505710000
+        slug: the-presidency
+        title: The Presidency
+        url: 2016-17/previews/national/south-africa/the-presidency
+      - amount: 196887000
+        slug: women
+        title: Women
+        url: 2016-17/previews/national/south-africa/women
+      footnotes:
+      - '**Source:** Estimates of National Expenditure 2016-17'
+      - '**Note:** Provincial Equitable Share is excluded'
+      notices: []
+      total: 455615562000
+    provincial:
+      data: []
+      footnotes: []
+      notices:
+      - Provincial budget allocations to focus areas for 2016-17 not published yet
+        on vulekamali.
+      total: null
+    slug: general-public-services
+    title: General public services
+  - national:
+      data:
+      - amount: 147720000000
+        slug: national-treasury
+        title: National Treasury
+        url: 2016-17/previews/national/south-africa/national-treasury
       footnotes:
       - '**Source:** Estimates of National Expenditure 2016-17'
       notices: []
-      total: 16031327000
+      total: 147720000000
     provincial:
       data: []
-      footnotes:
-      - '**Source:** Estimates of Provincial Expenditure 2016-17'
+      footnotes: []
       notices:
-      - No provincial departments allocated budget to this focus area.
-      total: 0
-    slug: agriculture-rural-development-and-land-reform
-    title: Agriculture, rural development and land reform
+      - Provincial budget allocations to focus areas for 2016-17 not published yet
+        on vulekamali.
+      total: null
+    slug: debt-service-costs
+    title: Debt-service costs
+  - national:
+      data:
+      - amount: 68088550000
+        slug: cooperative-governance-and-traditional-affairs
+        title: Cooperative Governance and Traditional Affairs
+        url: 2016-17/previews/national/south-africa/cooperative-governance-and-traditional-affairs
+      - amount: 5699907000
+        slug: energy
+        title: Energy
+        url: 2016-17/previews/national/south-africa/energy
+      - amount: 30690856000
+        slug: human-settlements
+        title: Human Settlements
+        url: 2016-17/previews/national/south-africa/human-settlements
+      - amount: 12732580000
+        slug: national-treasury
+        title: National Treasury
+        url: 2016-17/previews/national/south-africa/national-treasury
+      - amount: 30601644000
+        slug: transport
+        title: Transport
+        url: 2016-17/previews/national/south-africa/transport
+      - amount: 10506610000
+        slug: water-and-sanitation
+        title: Water and Sanitation
+        url: 2016-17/previews/national/south-africa/water-and-sanitation
+      footnotes:
+      - '**Source:** Estimates of National Expenditure 2016-17'
+      notices: []
+      total: 158320147000
+    provincial:
+      data: []
+      footnotes: []
+      notices:
+      - Provincial budget allocations to focus areas for 2016-17 not published yet
+        on vulekamali.
+      total: null
+    slug: human-settlements-and-municipal-infrastructure
+    title: Human settlements and municipal infrastructure
   - national:
       data:
       - amount: 4070853000
@@ -43,32 +146,32 @@ data:
       total: 27369048000
     provincial:
       data: []
-      footnotes:
-      - '**Source:** Estimates of Provincial Expenditure 2016-17'
+      footnotes: []
       notices:
-      - No provincial departments allocated budget to this focus area.
-      total: 0
+      - Provincial budget allocations to focus areas for 2016-17 not published yet
+        on vulekamali.
+      total: null
     slug: basic-education
     title: Basic education
   - national:
       data:
-      - amount: 147720000000
-        slug: national-treasury
-        title: National Treasury
-        url: 2016-17/previews/national/south-africa/national-treasury
+      - amount: 66827874000
+        slug: higher-education-and-training
+        title: Higher Education and Training
+        url: 2016-17/previews/national/south-africa/higher-education-and-training
       footnotes:
       - '**Source:** Estimates of National Expenditure 2016-17'
       notices: []
-      total: 147720000000
+      total: 66827874000
     provincial:
       data: []
-      footnotes:
-      - '**Source:** Estimates of Provincial Expenditure 2016-17'
+      footnotes: []
       notices:
-      - No provincial departments allocated budget to this focus area.
-      total: 0
-    slug: debt-service-costs
-    title: Debt-service costs
+      - Provincial budget allocations to focus areas for 2016-17 not published yet
+        on vulekamali.
+      total: null
+    slug: post-school-education-and-training
+    title: Post school education and training
   - national:
       data:
       - amount: 21577287000
@@ -105,13 +208,74 @@ data:
       total: 174665426000
     provincial:
       data: []
-      footnotes:
-      - '**Source:** Estimates of Provincial Expenditure 2016-17'
+      footnotes: []
       notices:
-      - No provincial departments allocated budget to this focus area.
-      total: 0
+      - Provincial budget allocations to focus areas for 2016-17 not published yet
+        on vulekamali.
+      total: null
     slug: defence-public-order-and-safety
     title: Defence, public order and safety
+  - national:
+      data:
+      - amount: 38501674000
+        slug: health
+        title: Health
+        url: 2016-17/previews/national/south-africa/health
+      footnotes:
+      - '**Source:** Estimates of National Expenditure 2016-17'
+      notices: []
+      total: 38501674000
+    provincial:
+      data: []
+      footnotes: []
+      notices:
+      - Provincial budget allocations to focus areas for 2016-17 not published yet
+        on vulekamali.
+      total: null
+    slug: health
+    title: Health
+  - national:
+      data:
+      - amount: 6332965000
+        slug: agriculture-forestry-and-fisheries
+        title: Agriculture, Forestry and Fisheries
+        url: 2016-17/previews/national/south-africa/agriculture-forestry-and-fisheries
+      - amount: 9698362000
+        slug: rural-development-and-land-reform
+        title: Rural Development and Land Reform
+        url: 2016-17/previews/national/south-africa/rural-development-and-land-reform
+      footnotes:
+      - '**Source:** Estimates of National Expenditure 2016-17'
+      notices: []
+      total: 16031327000
+    provincial:
+      data: []
+      footnotes: []
+      notices:
+      - Provincial budget allocations to focus areas for 2016-17 not published yet
+        on vulekamali.
+      total: null
+    slug: agriculture-rural-development-and-land-reform
+    title: Agriculture, rural development and land reform
+  - national:
+      data:
+      - amount: 148937729000
+        slug: social-development
+        title: Social Development
+        url: 2016-17/previews/national/south-africa/social-development
+      footnotes:
+      - '**Source:** Estimates of National Expenditure 2016-17'
+      notices: []
+      total: 148937729000
+    provincial:
+      data: []
+      footnotes: []
+      notices:
+      - Provincial budget allocations to focus areas for 2016-17 not published yet
+        on vulekamali.
+      total: null
+    slug: social-protection
+    title: Social protection
   - national:
       data:
       - amount: 3191185000
@@ -188,174 +352,10 @@ data:
       total: 78082501996
     provincial:
       data: []
-      footnotes:
-      - '**Source:** Estimates of Provincial Expenditure 2016-17'
+      footnotes: []
       notices:
-      - No provincial departments allocated budget to this focus area.
-      total: 0
+      - Provincial budget allocations to focus areas for 2016-17 not published yet
+        on vulekamali.
+      total: null
     slug: economic-affairs
     title: Economic affairs
-  - national:
-      data:
-      - amount: 1345406000
-        slug: communications
-        title: Communications
-        url: 2016-17/previews/national/south-africa/communications
-      - amount: 1714313000
-        slug: cooperative-governance-and-traditional-affairs
-        title: Cooperative Governance and Traditional Affairs
-        url: 2016-17/previews/national/south-africa/cooperative-governance-and-traditional-affairs
-      - amount: 7167140000
-        slug: home-affairs
-        title: Home Affairs
-        url: 2016-17/previews/national/south-africa/home-affairs
-      - amount: 5888651000
-        slug: international-relations-and-cooperation
-        title: International Relations and Cooperation
-        url: 2016-17/previews/national/south-africa/international-relations-and-cooperation
-      - amount: 17339056000
-        slug: national-treasury
-        title: National Treasury
-        url: 2016-17/previews/national/south-africa/national-treasury
-      - amount: 2189429000
-        slug: parliament
-        title: Parliament
-        url: 2016-17/previews/national/south-africa/parliament
-      - amount: 827662000
-        slug: planning-monitoring-and-evaluation
-        title: Planning, Monitoring and Evaluation
-        url: 2016-17/previews/national/south-africa/planning-monitoring-and-evaluation
-      - amount: 273976000
-        slug: public-enterprises
-        title: Public Enterprises
-        url: 2016-17/previews/national/south-africa/public-enterprises
-      - amount: 770380000
-        slug: public-service-and-administration
-        title: Public Service and Administration
-        url: 2016-17/previews/national/south-africa/public-service-and-administration
-      - amount: 4209265000
-        slug: public-works
-        title: Public Works
-        url: 2016-17/previews/national/south-africa/public-works
-      - amount: 2489102000
-        slug: statistics-south-africa
-        title: Statistics South Africa
-        url: 2016-17/previews/national/south-africa/statistics-south-africa
-      - amount: 505710000
-        slug: the-presidency
-        title: The Presidency
-        url: 2016-17/previews/national/south-africa/the-presidency
-      - amount: 196887000
-        slug: women
-        title: Women
-        url: 2016-17/previews/national/south-africa/women
-      footnotes:
-      - '**Source:** Estimates of National Expenditure 2016-17'
-      - '**Note:** Provincial Equitable Share is excluded'
-      notices: []
-      total: 455615562000
-    provincial:
-      data: []
-      footnotes:
-      - '**Source:** Estimates of Provincial Expenditure 2016-17'
-      notices:
-      - No provincial departments allocated budget to this focus area.
-      total: 0
-    slug: general-public-services
-    title: General public services
-  - national:
-      data:
-      - amount: 38501674000
-        slug: health
-        title: Health
-        url: 2016-17/previews/national/south-africa/health
-      footnotes:
-      - '**Source:** Estimates of National Expenditure 2016-17'
-      notices: []
-      total: 38501674000
-    provincial:
-      data: []
-      footnotes:
-      - '**Source:** Estimates of Provincial Expenditure 2016-17'
-      notices:
-      - No provincial departments allocated budget to this focus area.
-      total: 0
-    slug: health
-    title: Health
-  - national:
-      data:
-      - amount: 68088550000
-        slug: cooperative-governance-and-traditional-affairs
-        title: Cooperative Governance and Traditional Affairs
-        url: 2016-17/previews/national/south-africa/cooperative-governance-and-traditional-affairs
-      - amount: 5699907000
-        slug: energy
-        title: Energy
-        url: 2016-17/previews/national/south-africa/energy
-      - amount: 30690856000
-        slug: human-settlements
-        title: Human Settlements
-        url: 2016-17/previews/national/south-africa/human-settlements
-      - amount: 12732580000
-        slug: national-treasury
-        title: National Treasury
-        url: 2016-17/previews/national/south-africa/national-treasury
-      - amount: 30601644000
-        slug: transport
-        title: Transport
-        url: 2016-17/previews/national/south-africa/transport
-      - amount: 10506610000
-        slug: water-and-sanitation
-        title: Water and Sanitation
-        url: 2016-17/previews/national/south-africa/water-and-sanitation
-      footnotes:
-      - '**Source:** Estimates of National Expenditure 2016-17'
-      notices: []
-      total: 158320147000
-    provincial:
-      data: []
-      footnotes:
-      - '**Source:** Estimates of Provincial Expenditure 2016-17'
-      notices:
-      - No provincial departments allocated budget to this focus area.
-      total: 0
-    slug: human-settlements-and-municipal-infrastructure
-    title: Human settlements and municipal infrastructure
-  - national:
-      data:
-      - amount: 66827874000
-        slug: higher-education-and-training
-        title: Higher Education and Training
-        url: 2016-17/previews/national/south-africa/higher-education-and-training
-      footnotes:
-      - '**Source:** Estimates of National Expenditure 2016-17'
-      notices: []
-      total: 66827874000
-    provincial:
-      data: []
-      footnotes:
-      - '**Source:** Estimates of Provincial Expenditure 2016-17'
-      notices:
-      - No provincial departments allocated budget to this focus area.
-      total: 0
-    slug: post-school-education-and-training
-    title: Post school education and training
-  - national:
-      data:
-      - amount: 148937729000
-        slug: social-development
-        title: Social Development
-        url: 2016-17/previews/national/south-africa/social-development
-      footnotes:
-      - '**Source:** Estimates of National Expenditure 2016-17'
-      notices: []
-      total: 148937729000
-    provincial:
-      data: []
-      footnotes:
-      - '**Source:** Estimates of Provincial Expenditure 2016-17'
-      notices:
-      - No provincial departments allocated budget to this focus area.
-      total: 0
-    slug: social-protection
-    title: Social protection
