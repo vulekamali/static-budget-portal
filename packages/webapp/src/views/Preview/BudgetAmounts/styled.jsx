@@ -75,11 +75,9 @@ const Percentages = styled.div`
 
 const TooltipStyled = createGlobalStyle`
   .previewPercentageTooltip {
-    width: 50px;
     text-align: center;
   }
 `;
-
 
 export {
   Wrapper,
@@ -90,7 +88,7 @@ export {
   IntroSubHeading,
   Percentages,
   TooltipStyled,
-}
+};
 
 export default {
   Wrapper,
@@ -98,4 +96,4 @@ export default {
   Numbers,
   Budget,
   TooltipStyled,
-}
+};

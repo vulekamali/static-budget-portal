@@ -19,7 +19,6 @@ import {
 
 const BudgetAmounts = props => {
   const { value, consolidated, sphere } = props;
-
   return (
     <Wrapper>
       <Summary>
@@ -27,15 +26,15 @@ const BudgetAmounts = props => {
           <Budget>
             <IntroMainHeading>
               <Media query="(max-width: 899px)">
-                  {matches => (matches ? `R${trimValues(value, true)}` : `R${trimValues(value)}`)}
-                </Media>
+                {matches => (matches ? `R${trimValues(value, true)}` : `R${trimValues(value)}`)}
+              </Media>
             </IntroMainHeading>
             <IntroSubHeading>Original department budget</IntroSubHeading>
           </Budget>
           <Percentages>
             <TooltipStyled />
             <Tooltip
-              title={`${consolidated}%`}
+              title={`${consolidated.toPrecision(3)}%`}
               placement="top-start"
               classes={{ tooltip: 'previewPercentageTooltip' }}
             >
