@@ -91,10 +91,6 @@ const Markup = props => {
   return (
     <Wrapper>
       <Heading {...{ departmentNames, selected, eventHandler, year }} />
-      {console.log(111, departmentNames)}
-      {console.log(222, selected)}
-      {console.log(333, eventHandler)}
-      {console.log(444, year)}
       <div key={`${selected}-national`}>
         <ChartSection
           initialSelected={initialSelectedNational}

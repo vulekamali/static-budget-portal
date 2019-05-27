@@ -7,7 +7,11 @@ const callSpinner = () => <CircularProgressStyled size={20} thickness={2.5} />;
 
 const callMenuItems = (options, loading) => {
   if (loading) {
-    return <MenuItem>{callSpinner()}</MenuItem>;
+    return (
+      <MenuItem value="boom" displayEmpty name="something">
+        {callSpinner()}
+      </MenuItem>
+    );
   }
 
   return options.map(({ id: idVal, name }) => {

@@ -1,4 +1,4 @@
-import { Select } from '@material-ui/core';
+import { Select, CircularProgress } from '@material-ui/core';
 
 import styled from 'styled-components';
 
@@ -19,25 +19,6 @@ const FormContainer = styled.div`
     margin-top: 0;
   }
 `;
-
-// const SelectStyledPhase = styled(Select)`
-//   && {
-//     background: #d8d8d8;
-//     border-radius: 3px;
-//     padding: 8px 12px 8px 16px;
-//     font-size: 14px;
-//     line-height: 120%;
-//     color: #000;
-
-//     & .disabled {
-//       color: rgba(0, 0, 0, 0.26);
-//     }
-
-//     & .icon {
-//       color: rgba(0, 0, 0, 0.26);
-//     }
-//   }
-// `;
 
 const SelectPreview = styled(Select)`
   && {
@@ -108,11 +89,27 @@ const SelectPreview = styled(Select)`
   }
 `;
 
-// ${({ labelOutside }) => (labelOutside ? 'left' : 'right')};
+const CircularProgressStyled = styled(CircularProgress)`
+  && {
+    color: rgba(0, 0, 0, 0.4);
+    margin-left: 10px;
+    position: relative;
+    top: 3px;
 
-export { FormContainer, SelectPreview };
+    @media screen and (min-width: 375px) {
+      margin-left: 5px;
+    }
+
+    @media screen and (min-width: 450px) {
+      margin-left: 20px;
+    }
+  }
+`;
+
+export { FormContainer, SelectPreview, CircularProgressStyled };
 
 export default {
   FormContainer,
   SelectPreview,
+  CircularProgressStyled,
 };
