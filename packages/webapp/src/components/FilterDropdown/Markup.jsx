@@ -1,17 +1,35 @@
 import React from 'react';
-import { MenuItem } from '@material-ui/core';
+import { MenuItem, CssBaseline } from '@material-ui/core';
 
-import {
-  FormContainer,
-  BudgetPhase,
-  SelectStyled,
-  SelectStyledPhase,
-  SelectPreview,
-} from './styled';
+import { FormContainer, SelectStyledPhase, SelectPreview } from './styled';
 
-const callMenuItems = departmentNames =>
-  departmentNames.map(({ id: idVal, name }) => {
-    const selectedKey = departmentNames.findIndex(({ id }) => id === idVal);
+const callBudgetPhaseSelect = phases => (
+  <SelectPreview
+    value={phases.disabled}
+    disabled
+    displayEmpty
+    classes={{ selectMenu: 'selectMenu', disabled: 'disabled', icon: 'icon' }}
+    greyTheme
+  >
+    <MenuItem value={phases.disabled}>{phases.disabled}</MenuItem>
+  </SelectPreview>
+);
+
+const callYearsSelect = years => (
+  <SelectPreview
+    value={years.disabled}
+    disabled
+    displayEmpty
+    classes={{ selectMenu: 'selectMenu', disabled: 'disabled', icon: 'icon' }}
+    greyTheme
+  >
+    <MenuItem value={years.disabled}>{years.disabled}</MenuItem>
+  </SelectPreview>
+);
+
+const callMenuItems = options =>
+  options.map(({ id: idVal, name }) => {
+    const selectedKey = options.findIndex(({ id }) => id === idVal);
 
     return (
       <MenuItem key={selectedKey} value={idVal}>
@@ -20,47 +38,34 @@ const callMenuItems = departmentNames =>
     );
   });
 
-const calldepartmentSelect = (departmentNames, selected, eventHandler) => (
+const callOptions = (options, selected, eventHandler, greyTheme, disabled) => (
   <SelectPreview
-    value={selected}
+    {...{ greyTheme }}
+    disabled={disabled}
+    value={selected || options[0].id}
     onChange={eventHandler}
     displayEmpty
     name={selected}
     classes={{ icon: 'icon', selectMenu: 'selectMenu' }}
   >
-    {callMenuItems(departmentNames)}
+    {callMenuItems(options)}
   </SelectPreview>
 );
 
-const callBudgetPhaseSelect = phases => (
-  <BudgetPhase>
-    <SelectStyledPhase
-      value={phases.disabled}
-      disabled
-      displayEmpty
-      classes={{ selectMenu: 'selectMenu', disabled: 'disabled', icon: 'icon' }}
-    >
-      <MenuItem value={phases.disabled}>{phases.disabled}</MenuItem>
-    </SelectStyledPhase>
-  </BudgetPhase>
-);
-
-const callYearsSelect = years => (
-  <SelectStyled
-    value={years.disabled}
-    disabled
-    displayEmpty
-    classes={{ selectMenu: 'selectMenu', disabled: 'disabled', icon: 'icon' }}
-  >
-    <MenuItem value={years.disabled}>{years.disabled}</MenuItem>
-  </SelectStyled>
-);
-
-const FilterDropdown = ({ years, phases, departmentNames, selected, eventHandler }) => (
+const FilterDropdown = ({
+  phases,
+  years,
+  options,
+  selected,
+  eventHandler,
+  greyTheme,
+  disabled,
+}) => (
   <FormContainer>
+    <CssBaseline />
     {phases && callBudgetPhaseSelect(phases)}
     {years && callYearsSelect(years)}
-    {departmentNames && calldepartmentSelect(departmentNames, selected, eventHandler)}
+    {options && callOptions(options, selected, eventHandler, greyTheme, disabled)}
   </FormContainer>
 );
 

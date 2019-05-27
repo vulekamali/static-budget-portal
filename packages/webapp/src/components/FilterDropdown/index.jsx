@@ -13,11 +13,6 @@ class FilterDropdown extends Component {
     this.events = {
       eventHandler: this.eventHandler.bind(this),
     };
-
-    // this.departmentNames = items.map(({ id, name }) => ({
-    //   id,
-    //   name,
-    // }));
   }
 
   eventHandler(e) {
@@ -41,7 +36,6 @@ class FilterDropdown extends Component {
       ...props,
       eventHandler: events.eventHandler,
       selected: state.selected,
-      // departmentNames: this.departmentNames,
       year: props.year,
     };
 

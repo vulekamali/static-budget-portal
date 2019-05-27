@@ -1,4 +1,4 @@
-import { Typography, Select } from '@material-ui/core';
+import { Select } from '@material-ui/core';
 
 import styled from 'styled-components';
 
@@ -20,31 +20,71 @@ const FormContainer = styled.div`
   }
 `;
 
-const BudgetPhase = styled.div`
-  @media screen and (min-width: 375px) {
-    width: 60%;
-  }
+// const SelectStyledPhase = styled(Select)`
+//   && {
+//     background: #d8d8d8;
+//     border-radius: 3px;
+//     padding: 8px 12px 8px 16px;
+//     font-size: 14px;
+//     line-height: 120%;
+//     color: #000;
 
-  @media screen and (min-width: 950px) {
-    margin-right: 24px;
-    width: auto;
-  }
-`;
+//     & .disabled {
+//       color: rgba(0, 0, 0, 0.26);
+//     }
 
-const SelectStyledPhase = styled(Select)`
+//     & .icon {
+//       color: rgba(0, 0, 0, 0.26);
+//     }
+//   }
+// `;
+
+const SelectPreview = styled(Select)`
   && {
-    background: #d8d8d8;
-    border-radius: 3px;
-    padding: 8px 12px 8px 16px;
-    font-size: 14px;
-    line-height: 120%;
-    color: #000;
+    width: ${({ greyTheme }) => (greyTheme ? null : '100%')};
+    background: ${({ greyTheme }) => (greyTheme ? '#d8d8d8' : null)};
+
+    & .icon {
+      color: #000;
+      background-color: #d7d7d7;
+      height: 100%;
+      top: 0;
+      width: ${({ greyTheme }) => (greyTheme ? null : '42px')};
+      padding: ${({ greyTheme }) => (greyTheme ? null : '0 10px')};
+
+      @media screen and (min-width: 600px) {
+        width: ${({ greyTheme }) => (greyTheme ? null : '64px')};
+        padding: ${({ greyTheme }) => (greyTheme ? null : '0 20px')};
+      }
+    }
 
     & .selectMenu {
-      padding-right: 32px;
+      padding-left: ${({ greyTheme }) => (greyTheme ? null : '16px')};
+      padding-right: ${({ greyTheme }) => (greyTheme ? '32px' : '50px')};
+      height: ${({ greyTheme }) => (greyTheme ? null : '42px')};
+      box-sizing: border-box;
+      width: 100%;
+      width: ${({ greyTheme }) => (greyTheme ? null : '100%')};
+      font-size: 14px;
+      font-weight: ${({ greyTheme }) => (greyTheme ? 400 : 900)};
+      line-height: ${({ greyTheme }) => (greyTheme ? null : '30px')};
+      letter-spacing: 0.15px;
+      color: #000;
+      border: none;
+      white-space: nowrap;
+      overflow: hidden;
+      text-overflow: ellipsis;
+      background: ${({ greyTheme }) => (greyTheme ? '#d8d8d8' : '#fff')};
+
+      @media screen and (min-width: 600px) {
+        height: ${({ greyTheme }) => (greyTheme ? null : '64px')};
+        font-size: ${({ greyTheme }) => (greyTheme ? null : '24px')};
+        line-height: ${({ greyTheme }) => (greyTheme ? null : '49px')};
+        padding-right: ${({ greyTheme }) => (greyTheme ? null : '80px')};
+      }
 
       @media screen and (min-width: 950px) {
-        padding-right: 56px;
+        padding-right: ${({ greyTheme }) => (greyTheme ? '56px' : null)};
       }
     }
 
@@ -52,93 +92,27 @@ const SelectStyledPhase = styled(Select)`
       color: rgba(0, 0, 0, 0.26);
     }
 
-    & .icon {
-      color: rgba(0, 0, 0, 0.26);
-    }
-
     @media screen and (min-width: 375px) {
-      width: 100%;
+      width: ${({ greyTheme }) => (greyTheme ? '100%' : null)};
     }
-
-    @media screen and (min-width: 950px) {
-      font-size: 20px;
-      padding: 10px 16px;
-      width: auto;
-    }
-  }
-`;
-
-const SelectStyled = styled(SelectStyledPhase)`
-  && {
-    @media screen and (min-width: 375px) {
-      width: 35%;
-    }
-
-    @media screen and (min-width: 950px) {
-      font-size: 20px;
-      padding: 10px 16px;
-      width: auto;
-    }
-  }
-`;
-
-const SelectPreview = styled(Select)`
-  background: #fff;
-
-  && {
-    width: 100%;
 
     @media screen and (min-width: 600px) {
-      max-width: 616px;
+      max-width: ${({ greyTheme }) => (greyTheme ? null : '616px')};
     }
 
-    & .icon {
-      color: #000;
-      background-color: #d7d7d7;
-      height: 100%;
-      top: 0;
-      width: 42px;
-      padding: 0 10px;
-
-      @media screen and (min-width: 600px) {
-        width: 64px;
-        padding: 0 20px;
-      }
-    }
-
-    & .selectMenu {
-      padding-left: 16px;
-      padding-right: 50px;
-      height: 42px;
-      box-sizing: border-box;
-      width: 100%;
-      font-size: 14px;
-      font-weight: 900;
-      background: #fff;
-      line-height: 30px;
-      letter-spacing: 0.15px;
-      color: #000;
-      border: none;
-      white-space: nowrap;
-      overflow: hidden;
-      text-overflow: ellipsis;
-
-      @media screen and (min-width: 600px) {
-        height: 64px;
-        font-size: 24px;
-        line-height: 49px;
-        padding-right: 80px;
-      }
+    @media screen and (min-width: 950px) {
+      font-size: ${({ greyTheme }) => (greyTheme ? '20px' : null)};
+      padding: ${({ greyTheme }) => (greyTheme ? '10px 16px' : null)};
+      width: ${({ greyTheme }) => (greyTheme ? 'auto' : null)};
     }
   }
 `;
 
-export { FormContainer, BudgetPhase, SelectStyled, SelectStyledPhase, SelectPreview };
+// ${({ labelOutside }) => (labelOutside ? 'left' : 'right')};
+
+export { FormContainer, SelectPreview };
 
 export default {
   FormContainer,
-  BudgetPhase,
-  SelectStyled,
-  SelectStyledPhase,
   SelectPreview,
 };
