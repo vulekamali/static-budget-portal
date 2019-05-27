@@ -1,7 +1,13 @@
 import React from 'react';
 import { MenuItem } from '@material-ui/core';
 
-import { FormContainer, BudgetPhase, SelectStyled, SelectStyledPhase } from './styled';
+import {
+  FormContainer,
+  BudgetPhase,
+  SelectStyled,
+  SelectStyledPhase,
+  SelectPreview,
+} from './styled';
 
 const callMenuItems = departmentNames =>
   departmentNames.map(({ id: idVal, name }) => {
@@ -14,12 +20,12 @@ const callMenuItems = departmentNames =>
     );
   });
 
-const calldepartmentSelect = departmentNames => (
+const calldepartmentSelect = (departmentNames, selected, eventHandler) => (
   <SelectPreview
     value={selected}
     onChange={eventHandler}
     displayEmpty
-    name={budgetValue}
+    name={selected}
     classes={{ icon: 'icon', selectMenu: 'selectMenu' }}
   >
     {callMenuItems(departmentNames)}
@@ -50,11 +56,11 @@ const callYearsSelect = years => (
   </SelectStyled>
 );
 
-const FilterDropdown = ({ years, phases, departmentNames }) => (
+const FilterDropdown = ({ years, phases, departmentNames, selected, eventHandler }) => (
   <FormContainer>
     {phases && callBudgetPhaseSelect(phases)}
     {years && callYearsSelect(years)}
-    {departmentNames && calldepartmentSelect(departmentNames)}
+    {departmentNames && calldepartmentSelect(departmentNames, selected, eventHandler)}
   </FormContainer>
 );
 

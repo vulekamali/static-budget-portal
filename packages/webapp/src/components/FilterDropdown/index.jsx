@@ -5,20 +5,19 @@ class FilterDropdown extends Component {
   constructor(props) {
     super(props);
     this.eventHandler = this.eventHandler.bind(this);
-    const { department, items } = this.props;
 
     this.state = {
-      selected: department,
+      selected: '',
     };
 
     this.events = {
       eventHandler: this.eventHandler.bind(this),
     };
 
-    this.departmentNames = items.map(({ id, name }) => ({
-      id,
-      name,
-    }));
+    // this.departmentNames = items.map(({ id, name }) => ({
+    //   id,
+    //   name,
+    // }));
   }
 
   eventHandler(e) {
@@ -38,32 +37,12 @@ class FilterDropdown extends Component {
   render() {
     const { state, events, props } = this;
 
-    const selectedkey = props.items.findIndex(({ id }) => id === state.selected);
-    const selectedObject = props.items[selectedkey];
-
-    const initialSelectedNational = {
-      name: 'National Department Contributions',
-      value: selectedObject.national.total,
-      url: null,
-      color: '#D8D8D8',
-    };
-
-    const initialSelectedProvincial = {
-      name: 'Provincial Department Contributions',
-      value: selectedObject.provincial.total,
-      url: null,
-      color: 'rgba(0, 0, 0, 0.1)',
-    };
-
     const passedProps = {
       ...props,
       eventHandler: events.eventHandler,
       selected: state.selected,
-      government: props.government,
-      departmentNames: this.departmentNames,
+      // departmentNames: this.departmentNames,
       year: props.year,
-      initialSelectedNational,
-      initialSelectedProvincial,
     };
 
     return <Markup {...passedProps} />;
