@@ -31,7 +31,6 @@ class FilterDropdown extends Component {
       ...props,
       onSelectionChange: events.onSelectionChange,
       selected: state.selected,
-      year: props.year,
     };
 
     return <Markup {...passedProps} />;
