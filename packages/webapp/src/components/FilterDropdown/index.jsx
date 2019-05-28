@@ -4,18 +4,18 @@ import Markup from './Markup';
 class FilterDropdown extends Component {
   constructor(props) {
     super(props);
-    this.eventHandler = this.eventHandler.bind(this);
+    this.onSelectionChange = this.onSelectionChange.bind(this);
 
     this.state = {
       selected: '',
     };
 
     this.events = {
-      eventHandler: this.eventHandler.bind(this),
+      onSelectionChange: this.onSelectionChange.bind(this),
     };
   }
 
-  eventHandler(e) {
+  onSelectionChange(e) {
     const { updateUrl, year } = this.props;
     const { selected } = this.state;
     if (e.target.value === selected) {
@@ -34,7 +34,7 @@ class FilterDropdown extends Component {
 
     const passedProps = {
       ...props,
-      eventHandler: events.eventHandler,
+      onSelectionChange: events.onSelectionChange,
       selected: state.selected,
       year: props.year,
     };

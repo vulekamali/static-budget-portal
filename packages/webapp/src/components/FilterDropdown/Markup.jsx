@@ -21,12 +21,11 @@ const callMenuItems = (options, loading) => {
   ));
 };
 
-const callOptions = (options, selected, eventHandler, greyTheme, disabled, loading) => (
+const callOptions = (options, selected, onSelectionChange, greyTheme, disabled, loading) => (
   <SelectPreview
-    {...{ greyTheme }}
-    disabled={disabled}
+    {...{ greyTheme, disabled }}
     value={selected || options[0].id}
-    onChange={eventHandler}
+    onChange={onSelectionChange}
     displayEmpty
     name={selected}
     classes={{ icon: 'icon', selectMenu: 'selectMenu' }}
@@ -35,9 +34,9 @@ const callOptions = (options, selected, eventHandler, greyTheme, disabled, loadi
   </SelectPreview>
 );
 
-const FilterDropdown = ({ options, selected, eventHandler, greyTheme, disabled, loading }) => (
+const FilterDropdown = ({ options, selected, onSelectionChange, greyTheme, disabled, loading }) => (
   <FormContainer>
-    {options && callOptions(options, selected, eventHandler, greyTheme, disabled, loading)}
+    {options && callOptions(options, selected, onSelectionChange, greyTheme, disabled, loading)}
   </FormContainer>
 );
 
