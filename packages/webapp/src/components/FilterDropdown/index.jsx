@@ -16,14 +16,9 @@ class FilterDropdown extends Component {
   }
 
   onSelectionChange(e) {
-    const { updateUrl, year } = this.props;
     const { selected } = this.state;
     if (e.target.value === selected) {
       return null;
-    }
-    if (updateUrl) {
-      const newUrl = `/${year}/focus/${e.target.value}`;
-      window.history.pushState({}, window.document.title, newUrl);
     }
     this.setState({ selected: e.target.value });
     return null;
