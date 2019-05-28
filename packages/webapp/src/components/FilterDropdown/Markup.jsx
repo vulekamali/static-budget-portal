@@ -36,7 +36,7 @@ const callOptions = (options, selected, onSelectionChange, greyTheme, disabled, 
 
 const FilterDropdown = ({ options, selected, onSelectionChange, greyTheme, disabled, loading }) => (
   <FormContainer>
-    {options && callOptions(options, selected, onSelectionChange, greyTheme, disabled, loading)}
+    {callOptions(options, selected, onSelectionChange, greyTheme, disabled, loading)}
   </FormContainer>
 );
 
