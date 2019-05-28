@@ -1,15 +1,15 @@
 import React from 'react';
 import { MenuItem } from '@material-ui/core';
 
-import { SelectPreview, CircularProgressStyled } from './styled';
+import { SelectPreview, SpinnerContainer, CircularProgressStyled } from './styled';
 
 const callSpinner = () => <CircularProgressStyled size={20} thickness={2.5} />;
 
 const callMenuItems = (options, loading) => {
   if (loading) {
     return (
-      <MenuItem value="boom" displayEmpty name="something">
-        {callSpinner()}
+      <MenuItem value={options[0].id}>
+        <SpinnerContainer>{callSpinner()}</SpinnerContainer>
       </MenuItem>
     );
   }

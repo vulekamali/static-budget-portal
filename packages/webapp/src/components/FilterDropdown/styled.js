@@ -26,7 +26,6 @@ const SelectPreview = styled(Select)`
       padding-right: ${({ primary }) => (primary ? '50px' : '32px')};
       height: ${({ primary }) => (primary ? '42px' : null)};
       box-sizing: border-box;
-      width: 100%;
       width: ${({ primary }) => (primary ? '100%' : null)};
       font-size: 14px;
       font-weight: ${({ primary }) => (primary ? 900 : 400)};
@@ -71,6 +70,13 @@ const SelectPreview = styled(Select)`
   }
 `;
 
+const SpinnerContainer = styled.div`
+  display: flex;
+  justify-content: center;
+  height: 100%;
+  align-items: center;
+`;
+
 const CircularProgressStyled = styled(CircularProgress)`
   && {
     color: rgba(0, 0, 0, 0.4);
@@ -88,9 +94,10 @@ const CircularProgressStyled = styled(CircularProgress)`
   }
 `;
 
-export { SelectPreview, CircularProgressStyled };
+export { SelectPreview, SpinnerContainer, CircularProgressStyled };
 
 export default {
   SelectPreview,
+  SpinnerContainer,
   CircularProgressStyled,
 };
