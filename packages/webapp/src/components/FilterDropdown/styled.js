@@ -9,6 +9,7 @@ const SelectPreview = styled(Select)`
 
     & .icon {
       color: #000;
+      color: ${({ disabled }) => (disabled ? 'rgba(0, 0, 0, 0.26)' : '#000')};
       background-color: #d7d7d7;
       height: 100%;
       top: 0;

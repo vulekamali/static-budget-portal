@@ -28,7 +28,7 @@ const callOptions = (options, selected, onSelectionChange, primary, disabled, lo
     onChange={onSelectionChange}
     displayEmpty
     name={selected}
-    classes={{ icon: 'icon', selectMenu: 'selectMenu' }}
+    classes={{ icon: 'icon', selectMenu: 'selectMenu', disabled: 'disabled' }}
   >
     {callMenuItems(options, loading)}
   </SelectPreview>
