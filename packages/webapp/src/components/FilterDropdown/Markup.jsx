@@ -14,15 +14,11 @@ const callMenuItems = (options, loading) => {
     );
   }
 
-  return options.map(({ id: idVal, name }) => {
-    const selectedKey = options.findIndex(({ id }) => id === idVal);
-
-    return (
-      <MenuItem key={selectedKey} value={idVal}>
-        {name}
-      </MenuItem>
-    );
-  });
+  return options.map(({ id, name }) => (
+    <MenuItem key={id} value={id}>
+      {name}
+    </MenuItem>
+  ));
 };
 
 const callOptions = (options, selected, eventHandler, greyTheme, disabled, loading) => (
