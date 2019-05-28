@@ -1,5 +1,5 @@
 import React from 'react';
-import { MenuItem, CssBaseline } from '@material-ui/core';
+import { MenuItem } from '@material-ui/core';
 
 import { FormContainer, SelectPreview, CircularProgressStyled } from './styled';
 
@@ -41,7 +41,6 @@ const callOptions = (options, selected, eventHandler, greyTheme, disabled, loadi
 
 const FilterDropdown = ({ options, selected, eventHandler, greyTheme, disabled, loading }) => (
   <FormContainer>
-    <CssBaseline />
     {options && callOptions(options, selected, eventHandler, greyTheme, disabled, loading)}
   </FormContainer>
 );
