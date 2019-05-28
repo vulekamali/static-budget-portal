@@ -21,10 +21,20 @@ const options = [
   },
 ];
 
+const option = [
+  {
+    id: 'random1',
+    name: 'department1',
+    disabled: '2018-19',
+  },
+];
+
+const NoOption = [];
+
 const optionsDropdownPrimary = () => <FilterDropdown {...{ options }} primary />;
 const optionsDropdownSecondary = () => <FilterDropdown {...{ options }} />;
-const PrimaryDisabled = () => <FilterDropdown {...{ options }} primary disabled />;
-const SecondaryDisabled = () => <FilterDropdown {...{ options }} disabled />;
+const PrimaryDisabled = () => <FilterDropdown options={option} primary />;
+const SecondaryDisabled = () => <FilterDropdown options={NoOption} />;
 const PrimaryLoading = () => <FilterDropdown {...{ options }} primary loading />;
 const SecondaryLoading = () => <FilterDropdown {...{ options }} loading />;
 
