@@ -8,6 +8,7 @@ class FilterDropdown extends Component {
 
     this.state = {
       selected: '',
+      loading: false,
     };
 
     this.events = {
@@ -31,6 +32,7 @@ class FilterDropdown extends Component {
       ...props,
       onSelectionChange: events.onSelectionChange,
       selected: state.selected,
+      loading: state.loading,
     };
 
     return <Markup {...passedProps} />;
