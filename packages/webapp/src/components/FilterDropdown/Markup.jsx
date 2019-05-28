@@ -1,7 +1,7 @@
 import React from 'react';
 import { MenuItem } from '@material-ui/core';
 
-import { FormContainer, SelectPreview, CircularProgressStyled } from './styled';
+import { SelectPreview, CircularProgressStyled } from './styled';
 
 const callSpinner = () => <CircularProgressStyled size={20} thickness={2.5} />;
 
@@ -21,9 +21,9 @@ const callMenuItems = (options, loading) => {
   ));
 };
 
-const callOptions = (options, selected, onSelectionChange, greyTheme, disabled, loading) => (
+const callOptions = (options, selected, onSelectionChange, primary, disabled, loading) => (
   <SelectPreview
-    {...{ greyTheme, disabled }}
+    {...{ primary, disabled }}
     value={selected || options[0].id}
     onChange={onSelectionChange}
     displayEmpty
@@ -34,10 +34,7 @@ const callOptions = (options, selected, onSelectionChange, greyTheme, disabled, 
   </SelectPreview>
 );
 
-const FilterDropdown = ({ options, selected, onSelectionChange, greyTheme, disabled, loading }) => (
-  <FormContainer>
-    {callOptions(options, selected, onSelectionChange, greyTheme, disabled, loading)}
-  </FormContainer>
-);
+const FilterDropdown = ({ options, selected, onSelectionChange, primary, disabled, loading }) =>
+  callOptions(options, selected, onSelectionChange, primary, disabled, loading);
 
 export default FilterDropdown;

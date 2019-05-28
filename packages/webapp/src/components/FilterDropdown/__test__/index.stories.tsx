@@ -21,12 +21,12 @@ const options = [
   },
 ];
 
-const optionsDropdownPrimary = () => <FilterDropdown {...{ options }} />;
-const optionsDropdownSecondary = () => <FilterDropdown {...{ options }} greyTheme />;
-const PrimaryDisabled = () => <FilterDropdown {...{ options }} disabled />;
-const SecondaryDisabled = () => <FilterDropdown {...{ options }} greyTheme disabled />;
-const PrimaryLoading = () => <FilterDropdown {...{ options }} loading />;
-const SecondaryLoading = () => <FilterDropdown {...{ options }} greyTheme loading />;
+const optionsDropdownPrimary = () => <FilterDropdown {...{ options }} primary />;
+const optionsDropdownSecondary = () => <FilterDropdown {...{ options }} />;
+const PrimaryDisabled = () => <FilterDropdown {...{ options }} primary disabled />;
+const SecondaryDisabled = () => <FilterDropdown {...{ options }} disabled />;
+const PrimaryLoading = () => <FilterDropdown {...{ options }} primary loading />;
+const SecondaryLoading = () => <FilterDropdown {...{ options }} loading />;
 
 storiesOf('components.FilterDropdown', module)
   .add('Options Primary', optionsDropdownPrimary)

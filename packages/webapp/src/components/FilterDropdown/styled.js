@@ -1,71 +1,53 @@
-import { Select, CircularProgress } from '@material-ui/core';
-
 import styled from 'styled-components';
 
-const FormContainer = styled.div`
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  margin-top: 12px;
-
-  @media screen and (min-width: 375px) {
-    width: 100%;
-    flex-wrap: wrap;
-  }
-
-  @media screen and (min-width: 950px) {
-    width: auto;
-    flex-wrap: nowrap;
-    margin-top: 0;
-  }
-`;
+import { Select, CircularProgress } from '@material-ui/core';
 
 const SelectPreview = styled(Select)`
   && {
-    width: ${({ greyTheme }) => (greyTheme ? null : '100%')};
-    background: ${({ greyTheme }) => (greyTheme ? '#d8d8d8' : null)};
+    width: ${({ primary }) => (primary ? '100%' : null)};
+    background: ${({ primary }) => (primary ? null : '#d8d8d8')};
 
     & .icon {
       color: #000;
       background-color: #d7d7d7;
       height: 100%;
       top: 0;
-      width: ${({ greyTheme }) => (greyTheme ? null : '42px')};
-      padding: ${({ greyTheme }) => (greyTheme ? null : '0 10px')};
+      width: ${({ primary }) => (primary ? '42px' : null)};
+      padding: ${({ primary }) => (primary ? '0 10px' : null)};
 
       @media screen and (min-width: 600px) {
-        width: ${({ greyTheme }) => (greyTheme ? null : '64px')};
-        padding: ${({ greyTheme }) => (greyTheme ? null : '0 20px')};
+        width: ${({ primary }) => (primary ? '64px' : null)};
+        padding: ${({ primary }) => (primary ? '0 20px' : null)};
       }
     }
 
     & .selectMenu {
-      padding-left: ${({ greyTheme }) => (greyTheme ? null : '16px')};
-      padding-right: ${({ greyTheme }) => (greyTheme ? '32px' : '50px')};
-      height: ${({ greyTheme }) => (greyTheme ? null : '42px')};
+      padding-left: ${({ primary }) => (primary ? '16px' : null)};
+      padding-right: ${({ primary }) => (primary ? '50px' : '32px')};
+      height: ${({ primary }) => (primary ? '42px' : null)};
       box-sizing: border-box;
       width: 100%;
-      width: ${({ greyTheme }) => (greyTheme ? null : '100%')};
+      width: ${({ primary }) => (primary ? '100%' : null)};
       font-size: 14px;
-      font-weight: ${({ greyTheme }) => (greyTheme ? 400 : 900)};
-      line-height: ${({ greyTheme }) => (greyTheme ? null : '30px')};
+      font-weight: ${({ primary }) => (primary ? 900 : 400)};
+      line-height: ${({ primary }) => (primary ? '30px' : null)};
       letter-spacing: 0.15px;
       color: #000;
       border: none;
       white-space: nowrap;
       overflow: hidden;
       text-overflow: ellipsis;
-      background: ${({ greyTheme }) => (greyTheme ? '#d8d8d8' : '#fff')};
+      background: ${({ primary }) => (primary ? '#fff' : '#d8d8d8')};
 
       @media screen and (min-width: 600px) {
-        height: ${({ greyTheme }) => (greyTheme ? null : '64px')};
-        font-size: ${({ greyTheme }) => (greyTheme ? null : '24px')};
-        line-height: ${({ greyTheme }) => (greyTheme ? null : '49px')};
-        padding-right: ${({ greyTheme }) => (greyTheme ? null : '80px')};
+        height: ${({ primary }) => (primary ? '64px' : null)};
+        font-size: ${({ primary }) => (primary ? '24px' : null)};
+        line-height: ${({ primary }) => (primary ? '49px' : null)};
+        padding-right: ${({ primary }) => (primary ? '80px' : null)};
       }
 
       @media screen and (min-width: 950px) {
-        padding-right: ${({ greyTheme }) => (greyTheme ? '56px' : null)};
+        padding-right: ${({ primary }) => (primary ? null : '56px')};
       }
     }
 
@@ -74,17 +56,17 @@ const SelectPreview = styled(Select)`
     }
 
     @media screen and (min-width: 375px) {
-      width: ${({ greyTheme }) => (greyTheme ? '100%' : null)};
+      width: ${({ primary }) => (primary ? null : '100%')};
     }
 
     @media screen and (min-width: 600px) {
-      max-width: ${({ greyTheme }) => (greyTheme ? null : '616px')};
+      max-width: ${({ primary }) => (primary ? '616px' : null)};
     }
 
     @media screen and (min-width: 950px) {
-      font-size: ${({ greyTheme }) => (greyTheme ? '20px' : null)};
-      padding: ${({ greyTheme }) => (greyTheme ? '10px 16px' : null)};
-      width: ${({ greyTheme }) => (greyTheme ? 'auto' : null)};
+      font-size: ${({ primary }) => (primary ? null : '20px')};
+      padding: ${({ primary }) => (primary ? null : '10px 16px')};
+      width: ${({ primary }) => (primary ? null : 'auto')};
     }
   }
 `;
@@ -106,10 +88,9 @@ const CircularProgressStyled = styled(CircularProgress)`
   }
 `;
 
-export { FormContainer, SelectPreview, CircularProgressStyled };
+export { SelectPreview, CircularProgressStyled };
 
 export default {
-  FormContainer,
   SelectPreview,
   CircularProgressStyled,
 };
