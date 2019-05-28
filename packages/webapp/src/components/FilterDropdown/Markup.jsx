@@ -23,7 +23,8 @@ const callMenuItems = (options, loading) => {
 
 const callOptions = (options, selected, onSelectionChange, primary, disabled, loading) => (
   <SelectPreview
-    {...{ primary, disabled }}
+    {...{ primary }}
+    disabled={options.length === null || options.length <= 1 || loading}
     value={selected || options[0].id}
     onChange={onSelectionChange}
     displayEmpty
