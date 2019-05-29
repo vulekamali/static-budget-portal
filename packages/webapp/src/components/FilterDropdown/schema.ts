@@ -1,19 +1,21 @@
 import faker from 'faker';
+import { Omit } from 'utility-types';
 
 const createRandomLengthArray = (min, max, callback) =>
   new Array(faker.random.number({ min, max })).fill(true).map(callback);
+
 const conditionalValue = callback => (faker.random.boolean() ? callback() : null);
 
-// Type: Tvalue
+// Type: ToptionValue
 /**
  * A unique text value associated with an item displayed in the dropdown.
  */
-export type Tvalue = string;
-export const mockValue = (): Tvalue => faker.commerce.department();
+export type ToptionValue = string;
+export const mockValue = (): ToptionValue => faker.commerce.department();
 
 // Type: Tdisabled
 /**
- * Whether the associated `Tvalue` inside a `Toption` should be disabled. If an
+ * Whether the associated `ToptionValue` inside a `Toption` should be disabled. If an
  * item is disabled it will be presented as greyed out and the user will not be
  * able to select it from the dropdown. There are use cases where you want to
  * show the entire range of options (i.e. you don't want to just list the
@@ -29,7 +31,7 @@ export const mockDisabled = (): Tdisabled => faker.random.boolean();
  * dropdown.
  */
 export type Toption = {
-  value: Tvalue;
+  value: ToptionValue;
   disabled?: boolean;
 };
 
@@ -41,10 +43,10 @@ export const mockOption = (): Toption => ({
 // Type: TonSelectedChange
 /**
  * A callback passed to the component that is fired whenever the selected item
- * is changed. Note that the callback passes `Tvalue` from the associated
+ * is changed. Note that the callback passes `ToptionValue` from the associated
  * `Toption` into the callback and not the entire `Toption` object.
  */
-export type TonSelectedChange = (Tvalue) => void;
+export type TonSelectedChange = (ToptionValue) => void;
 export const mockOnSelectedChange = (): TonSelectedChange => value => console.log(value);
 
 // Type: Tprimary
@@ -70,16 +72,11 @@ export const mockLoading = (): Tloading => faker.random.boolean();
 /**
  * All props accepted by the `<Presentation />` sub-component inside
  * `<FilterDropdown />`.
- *
- * Note that if `options` is an empty array or `null` then an array will
- * automatically be created that only has the `selected` value in it. Therefore
- * automatically setting the button to disabled, since there are not other
- * options to toggle between.
  */
 export type TpresentationProps = {
   options: Toption[];
-  selected: Tvalue;
-  onSelectedChange: TonSelectedChange;
+  selected: ToptionValue;
+  changeSelected: TonSelectedChange;
   primary?: Tprimary;
   loading?: Tloading;
 };
@@ -89,8 +86,37 @@ export const mockPresentationprops = (): TpresentationProps => {
 
   return {
     options,
-    selected: faker.random.arrayElement(options).value || null,
-    onSelectedChange: mockOnSelectedChange,
+    selected: faker.random.arrayElement(options).value,
+    changeSelected: mockOnSelectedChange(),
+    primary: mockPrimary(),
+    loading: mockLoading(),
+  };
+};
+
+// Type: Tprops
+/**
+ * All props accepted by the `<FilterDropdown />` component.
+ *
+ * Note that if `options` is an empty array or `null` then an array will
+ * automatically be created that only has the `selected` value in it. Therefore
+ * automatically setting the button to disabled, since there are not other
+ * options to toggle between.
+ */
+export type Tprops = {
+  options: Toption[];
+  initialSelected: ToptionValue;
+  onSelectedChange: TonSelectedChange;
+  primary?: Tprimary;
+  loading?: Tloading;
+};
+
+export const mockProps = (): Tprops => {
+  const options = createRandomLengthArray(1, 30, () => mockOption()) as Toption[];
+
+  return {
+    options,
+    initialSelected: faker.random.arrayElement(options).value,
+    onSelectedChange: mockOnSelectedChange(),
     primary: mockPrimary(),
     loading: mockLoading(),
   };
