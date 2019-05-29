@@ -66,7 +66,7 @@ export const mockPrimary = (): Tprimary => faker.random.boolean();
 export type Tloading = boolean;
 export const mockLoading = (): Tloading => faker.random.boolean();
 
-// Type: Tprops
+// Type: TpresentationProps
 /**
  * All props accepted by the `<Presentation />` sub-component inside
  * `<FilterDropdown />`.
@@ -77,7 +77,7 @@ export const mockLoading = (): Tloading => faker.random.boolean();
  * options to toggle between.
  */
 export type TpresentationProps = {
-  options?: Toption[];
+  options: Toption[];
   selected: Tvalue;
   onSelectedChange: TonSelectedChange;
   primary?: Tprimary;
@@ -89,7 +89,7 @@ export const mockPresentationprops = (): TpresentationProps => {
 
   return {
     options,
-    selected: faker.random.arrayElement(options).value,
+    selected: faker.random.arrayElement(options).value || null,
     onSelectedChange: mockOnSelectedChange,
     primary: mockPrimary(),
     loading: mockLoading(),
