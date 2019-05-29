@@ -99,11 +99,11 @@ def ensure_file_dirs(file_path):
 
 
 def write_basic_page(page_url_path, page_yaml, layout=None):
-    page = yaml.load(page_yaml)
+    front_matter = yaml.load(page_yaml) or {}
     file_path = "%s.md" % page_url_path[1:]
     ensure_file_dirs(file_path)
-    front_matter = page.update({
-        'layout': layout or page['slug'],
+    front_matter.update({
+        'layout': layout or front_matter['slug'],
     })
     with open(file_path, "wb") as outfile:
         front_matter_yaml = yaml.safe_dump(
@@ -124,8 +124,8 @@ def write_financial_year(session, year_slug, static_path):
     r = http_get(session, url)
     r.raise_for_status()
 
-    page = yaml.load(r.text)
-    front_matter = page.update({
+    front_matter = yaml.load(r.text)
+    front_matter.update({
         'layout': 'homepage',
     })
 
@@ -144,8 +144,8 @@ def write_financial_year(session, year_slug, static_path):
 
 
 def write_department_page(department_url_path, department_yaml):
-    department = yaml.load(department_yaml)
-    front_matter = department.update({
+    front_matter = yaml.load(department_yaml)
+    front_matter.update({
         'layout': 'department',
     })
     file_path = ".%s.html" % department_url_path
@@ -163,8 +163,8 @@ def write_department_page(department_url_path, department_yaml):
 
 
 def write_contributed_dataset_page(dataset_url_path, dataset_yaml):
-    dataset = yaml.load(dataset_yaml)
-    front_matter = dataset.update({
+    front_matter = yaml.load(dataset_yaml)
+    front_matter.update({
         'layout': 'contributed_dataset',
     })
     file_path = ".%s.html" % dataset_url_path
@@ -182,8 +182,8 @@ def write_contributed_dataset_page(dataset_url_path, dataset_yaml):
 
 
 def write_categorised_dataset_page(dataset_url_path, dataset_yaml):
-    dataset = yaml.load(dataset_yaml)
-    front_matter = dataset.update({
+    front_matter = yaml.load(dataset_yaml)
+    front_matter.update({
         'layout': 'government_dataset',
     })
     file_path = ".%s.html" % dataset_url_path
