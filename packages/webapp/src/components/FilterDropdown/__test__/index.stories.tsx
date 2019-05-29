@@ -1,47 +1,22 @@
-import React from 'react';
 import { storiesOf } from '@storybook/react';
 
-import FilterDropdown from '../';
-
-const options = [
-  {
-    id: 'random1',
-    name: 'department1',
-    disabled: '2018-19',
-  },
-  {
-    id: 'random2',
-    name: 'department2',
-    disabled: 'Original budget',
-  },
-  {
-    id: 'random3',
-    name: 'department3',
-    disabled: '2018-19',
-  },
-];
-
-const option = [
-  {
-    id: 'random1',
-    name: 'department1',
-    disabled: '2018-19',
-  },
-];
-
-const NoOption = [];
-
-const optionsDropdownPrimary = () => <FilterDropdown {...{ options }} primary />;
-const optionsDropdownSecondary = () => <FilterDropdown {...{ options }} />;
-const PrimaryDisabled = () => <FilterDropdown options={option} primary />;
-const SecondaryDisabled = () => <FilterDropdown options={NoOption} />;
-const PrimaryLoading = () => <FilterDropdown {...{ options }} primary loading />;
-const SecondaryLoading = () => <FilterDropdown {...{ options }} loading />;
+import Random from './Random';
+import Primary from './Primary';
+import Secondary from './Secondary';
+import PrimaryDisabled from './PrimaryDisabled';
+import SecondaryDisabled from './SecondaryDisabled';
+import LoadingPrimary from './LoadingPrimary';
+import LoadingSecondary from './LoadingSecondary';
+import MenuItemDisabledPrimary from './MenuItemDisabledPrimary';
+import MenuItemDisabledSecondary from './MenuItemDisabledSecondary';
 
 storiesOf('components.FilterDropdown', module)
-  .add('Options Primary', optionsDropdownPrimary)
-  .add('Options Secondary', optionsDropdownSecondary)
+  .add('Randomized state', Random)
+  .add('Primary', Primary)
+  .add('Secondary', Secondary)
   .add('Primary Disabled', PrimaryDisabled)
   .add('Secondary Disabled', SecondaryDisabled)
-  .add('Primary Loading', PrimaryLoading)
-  .add('Secondary Loading', SecondaryLoading);
+  .add('Loading Primary', LoadingPrimary)
+  .add('Loading Secondary', LoadingSecondary)
+  .add('Menu Item Disabled Primary', MenuItemDisabledPrimary)
+  .add('Menu Item Disabled Secondary', MenuItemDisabledSecondary);
