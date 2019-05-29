@@ -2,9 +2,6 @@
 layout: page-shell
 ---
 
-{% assign page_data = site.data.datasets[page.category][page.data_key] %}
-
-
 <div class="Page-content">
   <div class="Page-contentInner">
     <div class="Section is-invisible">
@@ -12,22 +9,22 @@ layout: page-shell
       <span> / </span>
       <a href="/datasets">Data and Analysis</a>
       <span> / </span>
-      <a href="/datasets/{{ page_data.category.slug }}">{{ page_data.category.name }}</a>
-      <span> / {{ page_data.name }}</span>
+      <a href="/datasets/{{ page.category.slug }}">{{ page.category.name }}</a>
+      <span> / {{ page.name }}</span>
     </div>
 
-    <h1 class="Page-mainHeading u-marginTop15">{{ page_data.name }}</h1>
+    <h1 class="Page-mainHeading u-marginTop15">{{ page.name }}</h1>
 
-    {% if page_data.category.slug != "socio-economic-data" %}
+    {% if page.category.slug != "socio-economic-data" %}
       <main class="Page-main">
     {% endif %}
 
-      {% if page_data.intro %}
+      {% if page.intro %}
         <div class="BasicContent">
 
-          {% if page_data.category.slug == "socio-economic-data" %}
+          {% if page.category.slug == "socio-economic-data" %}
             <div class="Screenshots">
-              {% for resource in page_data.resources %}
+              {% for resource in page.resources %}
                 {% if resource.format == 'PNG' %}
                   <a href="{{ resource.url }}" target="_blank" class="Screenshots-imageWrap">
                     <img src="{{ resource.url }}" class="Screenshots-image">
@@ -38,22 +35,22 @@ layout: page-shell
           {% endif %}
 
           <div class="BasicContent-title">What is this?</div>
-          {{ page_data.intro }}
+          {{ page.intro }}
 
-          {% if page_data.key_points %}
+          {% if page.key_points %}
             <div class="BasicContent-title u-marginTop20">Key points</div>
-            {{ page_data.key_points | strip_html | markdownify }}
+            {{ page.key_points | strip_html | markdownify }}
           {% endif %}
 
-          {% if page_data.use_for %}
+          {% if page.use_for %}
             <div class="BasicContent-title u-marginTop20">What can it be used for?</div>
-            {{ page_data.use_for }}
+            {{ page.use_for }}
           {% endif %}
 
-          {% if page_data.category.slug == "socio-economic-data" %}
-            {% if page_data.resources %}
+          {% if page.category.slug == "socio-economic-data" %}
+            {% if page.resources %}
               <div>
-                {% for resource in page_data.resources %}
+                {% for resource in page.resources %}
                   {% if resource.format == 'PNG' %}
                   {% else %}
                     <a href="{{ resource.url }}" target="_blank" class="Button is-inline u-marginTop15">{{ resource.name }}</a>
@@ -66,39 +63,39 @@ layout: page-shell
         </div>
       {% endif %}
 
-      {% if 
-        page_data.category.slug == "frameworks-for-conditional-grants-to-provinces" 
-        or page_data.category.slug == "frameworks-for-conditional-grants-to-municipalities" 
+      {% if
+        page.category.slug == "frameworks-for-conditional-grants-to-provinces"
+        or page.category.slug == "frameworks-for-conditional-grants-to-municipalities"
       %}
-        {% assign source = page_data.resources[0].url %}
+        {% assign source = page.resources[0].url %}
         {%
           include scenes/government_dataset/PdfEmbed/index.html
           source=source
         %}
       {% endif %}
 
-      {% if page_data.usage %}
+      {% if page.usage %}
         <div class="BasicContent u-marginTop20">
           <div class="BasicContent-title">How can it be accessed and used?</div>
-          {{ page_data.usage | strip_html | markdownify }}
+          {{ page.usage | strip_html | markdownify }}
         </div>
       {% endif %}
 
-      {% if page_data.category.slug != "socio-economic-data" %}
+      {% if page.category.slug != "socio-economic-data" %}
         {%
-          include components/universal/Downloads/index.html resources=page_data.resources
+          include components/universal/Downloads/index.html resources=page.resources
           utils="u-marginTop20"
         %}
       {% endif %}
 
       <div class="Section u-marginBottom20 u-marginTop20">
         <h2 class="Section-title">Discuss this dataset with others</h2>
-        <div data-enhance-component="Comments" data-url="https://vulekamali.gov.za{{ page_data.url_path }}">
+        <div data-enhance-component="Comments" data-url="https://vulekamali.gov.za{{ page.url_path }}">
           <div id="discourse-comments"></div>
         </div>
       </div>
 
-    {% if page_data.category.slug != "socio-economic-data" %}
+    {% if page.category.slug != "socio-economic-data" %}
       </main>
       <aside class="Page-sidebar">
 
@@ -108,7 +105,7 @@ layout: page-shell
         </div>
     {% endif %}
 
-    {% if page_data.category.slug == "performance-and-expenditure-reviews" %}
+    {% if page.category.slug == "performance-and-expenditure-reviews" %}
       <div class="Section is-bevel">
         <div class="Section-card">
           <h2 class="Section-title">What is a PER?</h2>
@@ -120,7 +117,7 @@ layout: page-shell
       </div>
     {% endif %}
 
-    {% if page_data.category.slug == "estimates-of-national-expenditure" %}
+    {% if page.category.slug == "estimates-of-national-expenditure" %}
       <div class="Section is-bevel">
         <div class="Section-card">
           <h2 class="Section-title">What is an ENE?</h2>
@@ -133,7 +130,7 @@ layout: page-shell
     {% endif %}
 
 
-    {% if page_data.category.slug == "frameworks-for-conditional-grants-to-provinces" %}
+    {% if page.category.slug == "frameworks-for-conditional-grants-to-provinces" %}
       <div class="Section is-bevel">
         <div class="Section-card">
           <h2 class="Section-title">Allocations</h2>
@@ -145,7 +142,7 @@ layout: page-shell
       </div>
     {% endif %}
 
-    {% if page_data.category.slug == "estimates-of-provincial-expenditure" %}
+    {% if page.category.slug == "estimates-of-provincial-expenditure" %}
       <div class="Section is-bevel">
         <div class="Section-card">
           <h2 class="Section-title">What is an EPRE?</h2>
@@ -163,9 +160,9 @@ layout: page-shell
           </a>
         </div>
       </div>
-    {% endif %} 
-      
-    {% if page_data.category.slug == "adjusted-estimates-of-national-expenditure" %}
+    {% endif %}
+
+    {% if page.category.slug == "adjusted-estimates-of-national-expenditure" %}
       <div class="Section is-bevel">
         <div class="Section-card">
           <h2 class="Section-title">What is an AENE?</h2>
@@ -188,7 +185,7 @@ layout: page-shell
       </div>
     {% endif %}
 
-    {% if page_data.category.slug != "socio-economic-data" %}
+    {% if page.category.slug != "socio-economic-data" %}
       </aside>
     {% endif %}
   </div>
