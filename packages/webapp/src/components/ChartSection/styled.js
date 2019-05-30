@@ -1,6 +1,7 @@
 import { Typography, Button } from '@material-ui/core';
 import styled from 'styled-components';
 import { darken } from 'polished';
+import CircularProgress from '@material-ui/core/CircularProgress';
 import removeProps from '../../helpers/removeProps';
 
 const Wrapper = styled.div`
@@ -94,7 +95,8 @@ const Amount = styled(Typography)`
     font-size: 20px;
     font-weight: 700;
     line-height: 120%;
-    color: #000;
+    color: ${({ loading }) => (loading ? 'transparent' : '#000')};
+    background-color: ${({ loading }) => (loading ? '#d8d8d8' : null)};
 
     @media screen and (min-width: 950px) {
       font-size: 48px;
@@ -133,17 +135,34 @@ const FooterContainer = styled.div`
   }
 `;
 
-const FooterDetails = styled.div`
+const FooterDetails = styled(Typography)`
   && {
     font-size: 10px;
     line-height: 140%;
-    color: #000;
     text-align: left;
-    font-family: Roboto;
+    color: ${({ loading }) => (loading ? 'transparent' : '#000')};
+    background-color: ${({ loading }) => (loading ? '#d8d8d8' : null)};
+    display: ${({ loading }) => (loading ? 'inline-block' : null)};
   }
 
   @media screen and (min-width: 950px) {
     font-size: 12px;
+  }
+`;
+
+const LoadingChart = styled.div`
+  width: 100%;
+  height: 650px;
+  height: ${({ loading }) => `${loading}px`};
+  background-color: #d8d8d8;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+`;
+
+const CircularProgressStyled = styled(CircularProgress)`
+  && {
+    color: rgb(121, 180, 67);
   }
 `;
 
@@ -162,6 +181,8 @@ export {
   FooterWrapper,
   FooterContainer,
   FooterDetails,
+  LoadingChart,
+  CircularProgressStyled,
 };
 
 export default {
@@ -179,4 +200,6 @@ export default {
   FooterWrapper,
   FooterContainer,
   FooterDetails,
+  LoadingChart,
+  CircularProgressStyled,
 };
