@@ -26,7 +26,7 @@ const SelectPreview = styled(Select)`
     & .selectMenu {
       padding-left: ${({ primary }) => (primary ? '16px' : null)};
       padding-right: ${({ primary }) => (primary ? '50px' : '32px')};
-      height: ${({ primary }) => (primary ? '42px' : null)};
+      height: 42px;
       box-sizing: border-box;
       font-size: 14px;
       font-weight: ${({ primary }) => (primary ? 900 : 700)};
@@ -55,7 +55,7 @@ const SelectPreview = styled(Select)`
       color: rgba(0, 0, 0, 0.26);
     }
 
-    @media screen and (min-width: 950px) {
+    @media screen and (min-width: 600px) {
       font-size: ${({ primary }) => (primary ? null : '20px')};
       padding: ${({ primary }) => (primary ? null : '10px 16px')};
     }
@@ -65,7 +65,6 @@ const SelectPreview = styled(Select)`
 const SpinnerContainer = styled.div`
   display: flex;
   justify-content: space-between;
-  height: 100%;
   align-items: center;
 `;
 
