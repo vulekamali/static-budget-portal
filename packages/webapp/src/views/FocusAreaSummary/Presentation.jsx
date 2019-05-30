@@ -49,7 +49,6 @@ const callProvincialChart = provincial => {
 
 const Presentation = props => {
   const { heading, national, provincial } = props;
-  // const { initialSelected } = selectionDropdown;
   const { chartLoading, chartData, intialSelectedValues, chartFooterData } = national;
 
   return (
