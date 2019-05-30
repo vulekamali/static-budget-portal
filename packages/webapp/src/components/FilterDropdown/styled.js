@@ -4,11 +4,12 @@ import { Select, CircularProgress } from '@material-ui/core';
 
 const SelectPreview = styled(Select)`
   && {
-    width: 100%;
+    width: ${({ primary }) => (primary ? '100%' : 'auto')};
     background: ${({ primary }) => (primary ? null : '#d8d8d8')};
+    padding: ${({ primary }) => (primary ? null : '0 8px')};
+    border-radius: 3px;
 
     & .icon {
-      color: #000;
       color: ${({ disabled }) => (disabled ? 'rgba(0, 0, 0, 0.26)' : '#000')};
       background-color: #d7d7d7;
       height: 100%;
@@ -29,7 +30,7 @@ const SelectPreview = styled(Select)`
       box-sizing: border-box;
       width: ${({ primary }) => (primary ? '100%' : null)};
       font-size: 14px;
-      font-weight: ${({ primary }) => (primary ? 900 : 400)};
+      font-weight: ${({ primary }) => (primary ? 900 : 700)};
       line-height: ${({ primary }) => (primary ? '30px' : null)};
       letter-spacing: 0.15px;
       color: #000;
@@ -55,6 +56,10 @@ const SelectPreview = styled(Select)`
       color: rgba(0, 0, 0, 0.26);
     }
 
+    @media screen and (min-width: 600px) {
+      max-width: ${({ primary }) => (primary ? '616px' : null)};
+    }
+
     @media screen and (min-width: 950px) {
       font-size: ${({ primary }) => (primary ? null : '20px')};
       padding: ${({ primary }) => (primary ? null : '10px 16px')};
@@ -64,7 +69,7 @@ const SelectPreview = styled(Select)`
 
 const SpinnerContainer = styled.div`
   display: flex;
-  justify-content: center;
+  justify-content: space-between;
   height: 100%;
   align-items: center;
 `;
