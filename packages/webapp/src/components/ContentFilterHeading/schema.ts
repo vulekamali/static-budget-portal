@@ -1,16 +1,12 @@
 import faker from 'faker';
 import { Omit } from 'utility-types';
-import {
-  TpresentationProps as TdropdownBase,
-  mockPresentationprops as mockDropdownbBase,
-} from '../FilterDropdown/schema';
+import { omit } from 'lodash';
+import { Tprops as TdropdownBase, mockProps as mockDropdownBase } from '../FilterDropdown/schema';
 
 export type Tdropdown = Omit<TdropdownBase, 'primary'>;
-export const mockDropdown = mockDropdownbBase;
+export const mockDropdown = omit(mockDropdownBase, 'primary');
 
 const conditionalValue = callback => (faker.random.boolean() ? callback() : null);
-const createRandomLengthArray = (min, max, callback) =>
-  new Array(faker.random.number({ min, max })).fill(true).map(callback);
 
 // Type: Ttitle
 /**
@@ -21,39 +17,12 @@ const createRandomLengthArray = (min, max, callback) =>
 export type Ttitle = string;
 export const mockTitle = (): Ttitle => faker.commerce.productName();
 
-// Type: TbuttonUrl
-/**
- * The URL that a user should be direct to once they click on the call-to-action
- * button.
- */
-export type TbuttonUrl = string;
-export const mockButtonUrl = (): TbuttonUrl => faker.internet.url();
-
-// Type: TbuttonValue
+// Type: Tbutton
 /**
  * The text that should be shown in the call-to-action button.
  */
-export type TbuttonValue = string;
-export const mockButtonValue = (): TbuttonValue => faker.hacker.verb();
-
-// Type: TbuttonValue
-/**
- * All the data required to render a specific call-to-action button. This button
- * is usually associated with current data filtered by the year and seletion
- * filter dropdowns.
- *
- * Note that if `TbuttonValue` is present, but `TbuttonUrl` is not supplied the
- * button will be rendered with the supplied value as text inside it, however it
- * will be marked as disabled until a URL is supplied.
- */
-export type Tbutton = {
-  url?: TbuttonUrl;
-  value: TbuttonValue;
-};
-export const mockButton = (): Tbutton => ({
-  url: conditionalValue(mockButtonUrl),
-  value: mockButtonValue(),
-});
+export type Tbutton = string;
+export const mockButton = (): Tbutton => faker.hacker.verb();
 
 // Type: TpresentationProps
 /**
