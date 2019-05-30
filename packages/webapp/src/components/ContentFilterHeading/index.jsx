@@ -26,7 +26,7 @@ const callDetailsButton = button => {
   const { url } = button;
   return (
     <Link href={url}>
-      <ButtonDetails>
+      <ButtonDetails disabled={!url} classes={{ disabled: 'disabled' }}>
         <ButtonText>
           <Details>Details</Details>
           <DetailedAnalysis>Detailed Analysis</DetailedAnalysis>
@@ -37,7 +37,7 @@ const callDetailsButton = button => {
   );
 };
 
-const ContentFilterHeading = ({ year, sphere, title, selectionDropdown, yearDropdown, button }) => {
+const ContentFilterHeading = ({ title, selectionDropdown, yearDropdown, button }) => {
   const { options, selected, onSelectedChange, primary, loading } = selectionDropdown;
   const {
     options: yearOptions,

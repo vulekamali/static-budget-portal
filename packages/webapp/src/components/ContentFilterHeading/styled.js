@@ -83,8 +83,8 @@ const Link = styled.a`
 const ButtonDetails = styled(Button)`
   && {
     width: 100%;
-    background: #000;
-    color: #fff;
+    background: ${({ disabled }) => (disabled ? 'rgba(0, 0, 0, 0.26)' : '#000')};
+    color: ${({ disabled }) => (disabled ? 'rgba(0, 0, 0, 0.26)' : '#fff')};
     text-transform: none;
     padding: 10px 13px 9px 16px;
 
