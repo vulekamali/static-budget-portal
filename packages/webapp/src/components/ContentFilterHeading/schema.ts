@@ -22,7 +22,7 @@ export const mockTitle = (): Ttitle => faker.commerce.productName();
  * The text that should be shown in the call-to-action button.
  */
 export type Tbutton = string;
-export const mockButton = (): Tbutton => faker.hacker.verb();
+export const mockButton = (): Tbutton => faker.internet.url();
 
 // Type: TpresentationProps
 /**
