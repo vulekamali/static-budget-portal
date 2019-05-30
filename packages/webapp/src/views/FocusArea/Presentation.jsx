@@ -2,7 +2,7 @@ import React from 'react';
 import ReactMarkdown from 'react-markdown';
 
 import Heading from './Heading';
-// import ContentFilterHeading from '../../components/ContentFilterHeading';
+import ContentFilterHeading from '../../components/ContentFilterHeading';
 import ChartSection from '../../components/ChartSection';
 import Treemap from '../../components/Treemap';
 import Notices from './Notices';
@@ -71,16 +71,22 @@ const callProvincialChart = (selected, initialSelected, items, footnotes, notice
   );
 };
 
-const Markup = props => {
+const Presentation = props => {
   const {
     items,
-    departmentNames,
+    // departmentNames,
     selected,
-    eventHandler,
+    // eventHandler,
     initialSelectedNational,
     initialSelectedProvincial,
-    year,
+    // year,
+
+    heading,
+    national,
+    provincial,
   } = props;
+
+  const { title, selectionDropdown, yearDropdown, button } = heading;
 
   const selectedInstance = items.find(({ id }) => id === selected);
 
@@ -91,8 +97,8 @@ const Markup = props => {
 
   return (
     <Wrapper>
-      <Heading {...{ departmentNames, selected, eventHandler, year }} />
-      {/* <ContentFilterHeading {...{ departmentNames, selected, eventHandler, year }} /> */}
+      {/* <Heading {...{ departmentNames, selected, eventHandler, year }} /> */}
+      <ContentFilterHeading {...{ title, selectionDropdown, yearDropdown, button }} />
       <div key={`${selected}-national`}>
         <ChartSection
           initialSelected={initialSelectedNational}
@@ -114,4 +120,4 @@ const Markup = props => {
   );
 };
 
-export default Markup;
+export default Presentation;

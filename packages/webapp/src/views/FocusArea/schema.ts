@@ -35,7 +35,7 @@ const conditionalValue = callback => (faker.random.boolean() ? callback() : null
 export type TfooterItem = string;
 export const mockFooterItem = () => faker.hacker.phrase();
 
-// Type: TtreemapChart
+// Type: TnationalTreemap
 /**
  *
  */
