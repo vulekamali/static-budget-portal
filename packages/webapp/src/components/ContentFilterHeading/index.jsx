@@ -19,19 +19,25 @@ import {
   DetailedAnalysis,
 } from './styled';
 
-const ContentFilterHeading = ({
-  // government,
-  // options,
-  // selected,
-  // onSelectedChange,
-  // primary,
-  // loading,
-  year,
-  sphere,
-  title,
-  selectionDropdown,
-  yearDropdown,
-}) => {
+const callDetailsButton = button => {
+  if (!button) {
+    return null;
+  }
+  const { url } = button;
+  return (
+    <Link href={url}>
+      <ButtonDetails>
+        <ButtonText>
+          <Details>Details</Details>
+          <DetailedAnalysis>Detailed Analysis</DetailedAnalysis>
+        </ButtonText>
+        <ArrowStyled />
+      </ButtonDetails>
+    </Link>
+  );
+};
+
+const ContentFilterHeading = ({ year, sphere, title, selectionDropdown, yearDropdown, button }) => {
   const { options, selected, onSelectedChange, primary, loading } = selectionDropdown;
   const {
     options: yearOptions,
@@ -40,9 +46,6 @@ const ContentFilterHeading = ({
     primary: yearPrimary,
     loading: yearLoading,
   } = yearDropdown;
-
-  const provinceFolder = title === 'south-africa' ? '' : `${title}/`;
-  const url = `/${year}/${sphere}/${provinceFolder}departments/${selected}`;
 
   return (
     <HeadingWrapper>
@@ -60,15 +63,7 @@ const ContentFilterHeading = ({
               primary={yearPrimary}
               loading={yearLoading}
             />
-            <Link href={url}>
-              <ButtonDetails>
-                <ButtonText>
-                  <Details>Details</Details>
-                  <DetailedAnalysis>Detailed Analysis</DetailedAnalysis>
-                </ButtonText>
-                <ArrowStyled />
-              </ButtonDetails>
-            </Link>
+            {callDetailsButton(button)}
           </RightOptions>
         </SelectsGroup>
       </HeadingContainer>

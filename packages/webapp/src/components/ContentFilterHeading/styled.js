@@ -40,9 +40,11 @@ const Title = styled(Typography)`
     font-weight: 700;
     line-height: 120%;
     color: #000;
+    margin-bottom: 16px;
 
     @media screen and (min-width: 600px) {
       font-size: 48px;
+      margin-bottom: 24px;
     }
   }
 `;
@@ -64,19 +66,18 @@ const RightOptions = styled.div`
   display: flex;
   justify-content: flex-start;
   width: 100%;
-
-  @media screen and (min-width: 600px) {
-    margin-top: 24px;
-  }
+  margin-top: 24px;
 
   @media screen and (min-width: 1200px) {
     flex-wrap: wrap;
     justify-content: flex-end;
+    margin-top: 0;
   }
 `;
 
 const Link = styled.a`
   text-decoration: none;
+  margin-left: 16px;
 `;
 
 const ButtonDetails = styled(Button)`
