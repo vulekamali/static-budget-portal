@@ -38,6 +38,8 @@ const SelectPreview = styled(Select)`
       overflow: hidden;
       text-overflow: ellipsis;
       background: ${({ primary }) => (primary ? '#fff' : '#d8d8d8')};
+      display: flex;
+      align-items: center;
 
       @media screen and (min-width: 600px) {
         height: ${({ primary }) => (primary ? '64px' : null)};
