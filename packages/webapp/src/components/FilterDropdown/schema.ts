@@ -131,8 +131,6 @@ export const mockProps = (): Tprops => {
 
   const options = createRandomLengthArray(1, 30, mockUniqueOption) as Toption[];
 
-  faker.commerce.department;
-
   return {
     options,
     initialSelected: faker.random.arrayElement(options).value,

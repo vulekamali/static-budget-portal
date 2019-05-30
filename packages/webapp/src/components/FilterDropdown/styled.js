@@ -4,7 +4,7 @@ import { Select, CircularProgress } from '@material-ui/core';
 
 const SelectPreview = styled(Select)`
   && {
-    width: ${({ primary }) => (primary ? '100%' : 'auto')};
+    width: 100%;
     background: ${({ primary }) => (primary ? null : '#d8d8d8')};
     padding: ${({ primary }) => (primary ? null : '0 8px')};
     border-radius: 3px;
@@ -26,9 +26,8 @@ const SelectPreview = styled(Select)`
     & .selectMenu {
       padding-left: ${({ primary }) => (primary ? '16px' : null)};
       padding-right: ${({ primary }) => (primary ? '50px' : '32px')};
-      height: ${({ primary }) => (primary ? '42px' : null)};
+      height: 42px;
       box-sizing: border-box;
-      width: ${({ primary }) => (primary ? '100%' : null)};
       font-size: 14px;
       font-weight: ${({ primary }) => (primary ? 900 : 700)};
       line-height: ${({ primary }) => (primary ? '30px' : null)};
@@ -57,10 +56,6 @@ const SelectPreview = styled(Select)`
     }
 
     @media screen and (min-width: 600px) {
-      max-width: ${({ primary }) => (primary ? '616px' : null)};
-    }
-
-    @media screen and (min-width: 950px) {
       font-size: ${({ primary }) => (primary ? null : '20px')};
       padding: ${({ primary }) => (primary ? null : '10px 16px')};
     }
@@ -70,7 +65,6 @@ const SelectPreview = styled(Select)`
 const SpinnerContainer = styled.div`
   display: flex;
   justify-content: space-between;
-  height: 100%;
   align-items: center;
 `;
 

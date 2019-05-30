@@ -62,6 +62,13 @@ const SelectsGroup = styled.div`
   }
 `;
 
+const PrimaryFilter = styled.div`
+  width: 100%;
+  @media screen and (min-width: 600px) {
+    max-width: 616px;
+  }
+`;
+
 const RightOptions = styled.div`
   display: flex;
   justify-content: flex-start;
@@ -123,6 +130,7 @@ const Details = styled.span`
     display: none;
   }
 `;
+
 const DetailedAnalysis = styled.span`
   display: none;
 
@@ -157,6 +165,7 @@ export {
   ArrowStyled,
   Details,
   DetailedAnalysis,
+  PrimaryFilter,
 };
 
 export default {
@@ -172,4 +181,5 @@ export default {
   ArrowStyled,
   Details,
   DetailedAnalysis,
+  PrimaryFilter,
 };

@@ -1,74 +1,56 @@
-import React from 'react';
+import React, { useEffect, useState } from 'react';
+import Presentation from './Presentation';
 
-import calcPrettyName from './calcPrettyName';
-
-import FilterDropdown from '../FilterDropdown';
-
-import {
-  HeadingWrapper,
-  HeadingContainer,
-  HeadingText,
-  Title,
-  SelectsGroup,
-  RightOptions,
-  Link,
-  ButtonDetails,
-  ButtonText,
-  ArrowStyled,
-  Details,
-  DetailedAnalysis,
-} from './styled';
-
-const callDetailsButton = button => {
-  if (!button) {
-    return null;
+const createCallbackFn = (callback, prop, didMount) => () => {
+  if (callback && didMount) {
+    callback(prop);
   }
-  const { url } = button;
-  return (
-    <Link href={url}>
-      <ButtonDetails disabled={!url} classes={{ disabled: 'disabled' }}>
-        <ButtonText>
-          <Details>Details</Details>
-          <DetailedAnalysis>Detailed Analysis</DetailedAnalysis>
-        </ButtonText>
-        <ArrowStyled />
-      </ButtonDetails>
-    </Link>
-  );
 };
 
-const ContentFilterHeading = ({ title, selectionDropdown, yearDropdown, button }) => {
-  const { options, selected, onSelectedChange, primary, loading } = selectionDropdown;
+const FilterDropdown = props => {
   const {
-    options: yearOptions,
-    selected: yearSelected,
-    onSelectedChange: yearOnSelectedChange,
-    primary: yearPrimary,
-    loading: yearLoading,
-  } = yearDropdown;
+    selectionDropdown: {
+      initialSelected: selectionSelected,
+      onSelectedChange: selectionOnSelectedChange,
+      ...otherSelectionDropdownProps
+    },
+    yearDropdown: {
+      initialSelected: yearSelected,
+      onSelectedChange: yearOnSelectedChange,
+      ...otherYearDropdownProps
+    },
+    ...otherProps
+  } = props;
 
-  return (
-    <HeadingWrapper>
-      <HeadingContainer>
-        <HeadingText>
-          <Title>{calcPrettyName(title)}</Title>
-        </HeadingText>
-        <SelectsGroup>
-          <FilterDropdown {...{ options, selected, onSelectedChange, primary, loading }} />
-          <RightOptions>
-            <FilterDropdown
-              options={yearOptions}
-              selected={yearSelected}
-              onSelectedChange={yearOnSelectedChange}
-              primary={yearPrimary}
-              loading={yearLoading}
-            />
-            {callDetailsButton(button)}
-          </RightOptions>
-        </SelectsGroup>
-      </HeadingContainer>
-    </HeadingWrapper>
-  );
+  const [didMount, setDidMount] = useState(false);
+  const [selection, changeSelection] = useState(selectionSelected);
+  const [year, changeYear] = useState(yearSelected);
+
+  const selectionDropdown = {
+    initialSelected: selection,
+    onSelectedChange: changeSelection,
+    ...otherSelectionDropdownProps,
+  };
+
+  const yearDropdown = {
+    initialSelected: year,
+    onSelectedChange: changeYear,
+    ...otherYearDropdownProps,
+  };
+
+  useEffect(() => setDidMount(true), []);
+  useEffect(createCallbackFn(selectionOnSelectedChange, selection, didMount), [selection]);
+  useEffect(createCallbackFn(yearOnSelectedChange, year, didMount), [year]);
+
+  const passedProps = {
+    ...otherProps,
+    selectionDropdown,
+    yearDropdown,
+  };
+
+  console.log(passedProps);
+
+  return <Presentation {...passedProps} />;
 };
 
-export default ContentFilterHeading;
+export default FilterDropdown;
