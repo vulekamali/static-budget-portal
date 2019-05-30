@@ -60,8 +60,6 @@ class Bar extends Component {
       fills: values.fills,
     };
 
-    console.log(passedProps);
-
     return <Markup {...passedProps} />;
   }
 }

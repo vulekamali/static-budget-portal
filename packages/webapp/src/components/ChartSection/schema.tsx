@@ -136,7 +136,7 @@ export const mockSelectObject = (createOptionCallback): TselectObject => {
  */
 export type Tloading = Boolean | number;
 export const createLoadingBool = () => faker.random.boolean();
-export const createLoadingNumber = () => faker.random.number();
+export const createLoadingNumber = () => faker.random.number({ min: 300, max: 1000 });
 export const mockLoading = (): Tloading =>
   faker.random.boolean() ? createLoadingBool() : createLoadingNumber();
 
