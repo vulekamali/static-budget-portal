@@ -1,24 +1,10 @@
 import React from 'react';
+import addRatios from './addRatios';
+import Presentation from './Presentation';
 
-import addRatios from './addRatios'
-import Bar from './Bar';
-
-import {
-  Wrapper,
-  BarChartContainer
- } from './styled';
-
-const Markup = ({ items, componentWidth }) => {
-
+const BarChart = ({ items }) => {
   const itemsWithRatios = addRatios(items);
-
-  return (
-    <Wrapper>
-      <BarChartContainer>
-        {itemsWithRatios.map((props, index) => <Bar {...props} items={items} index={index} key={index} />)}
-      </BarChartContainer>
-    </Wrapper>
-  );
+  return <Presentation items={itemsWithRatios} />;
 };
 
-export default Markup;
+export default BarChart;

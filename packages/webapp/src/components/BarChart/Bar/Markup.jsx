@@ -1,23 +1,26 @@
 import React from 'react';
 
-import trimValues from '../../../helpers/trimValues'
+import trimValues from '../../../helpers/trimValues';
 
-import {
-  BarChartTotal,
-  ColorBar,
-  Title,
-  Amount,
-  Details
- } from './styled';
+import { BarChartTotal, ColorBar, Title, Amount, Details } from './styled';
 
 const createlabel = (title, amount, textNode, labelOutside) => (
   <Details ref={textNode} {...{ labelOutside }}>
-    <Title component='div'>{title}</Title>
-    <Amount component='div'>{`R${trimValues(amount)}`}</Amount>
+    <Title component="div">{title}</Title>
+    <Amount component="div">{`R${trimValues(amount)}`}</Amount>
   </Details>
 );
 
-const callColorBar = (ratio, title, amount, textNode, componentNode, labelOutside, fills, index) => {
+const callColorBar = (
+  ratio,
+  title,
+  amount,
+  textNode,
+  componentNode,
+  labelOutside,
+  fills,
+  index,
+) => {
   const color = fills[index];
 
   if (labelOutside) {
@@ -36,22 +39,13 @@ const callColorBar = (ratio, title, amount, textNode, componentNode, labelOutsid
 };
 
 const Bar = props => {
-  const {
-    ratio,
-    title,
-    amount,
-    labelOutside,
-    textNode,
-    componentNode,
-    fills,
-    index
-  } = props;
+  const { ratio, title, amount, labelOutside, textNode, componentNode, fills, index } = props;
 
   return (
     <BarChartTotal>
       {callColorBar(ratio, title, amount, textNode, componentNode, labelOutside, fills, index)}
     </BarChartTotal>
-  )
+  );
 };
 
 export default Bar;
