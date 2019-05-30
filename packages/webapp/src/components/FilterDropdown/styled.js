@@ -69,7 +69,7 @@ const SelectPreview = styled(Select)`
 
 const SpinnerContainer = styled.div`
   display: flex;
-  justify-content: center;
+  justify-content: space-between;
   height: 100%;
   align-items: center;
 `;
