@@ -38,12 +38,11 @@ const callDetailsButton = button => {
 };
 
 const ContentFilterHeading = ({ title, selectionDropdown, yearDropdown, button }) => {
-  const { options, selected, onSelectedChange, primary, loading } = selectionDropdown;
+  const { options, selected, onSelectedChange, loading } = selectionDropdown;
   const {
     options: yearOptions,
     selected: yearSelected,
     onSelectedChange: yearOnSelectedChange,
-    primary: yearPrimary,
     loading: yearLoading,
   } = yearDropdown;
 
@@ -54,13 +53,12 @@ const ContentFilterHeading = ({ title, selectionDropdown, yearDropdown, button }
           <Title>{calcPrettyName(title)}</Title>
         </HeadingText>
         <SelectsGroup>
-          <FilterDropdown {...{ options, selected, onSelectedChange, primary, loading }} />
+          <FilterDropdown {...{ options, selected, onSelectedChange, loading }} primary />
           <RightOptions>
             <FilterDropdown
               options={yearOptions}
               selected={yearSelected}
               onSelectedChange={yearOnSelectedChange}
-              primary={yearPrimary}
               loading={yearLoading}
             />
             {callDetailsButton(button)}
