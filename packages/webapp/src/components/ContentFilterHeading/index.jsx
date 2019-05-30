@@ -48,8 +48,6 @@ const FilterDropdown = props => {
     yearDropdown,
   };
 
-  console.log(passedProps);
-
   return <Presentation {...passedProps} />;
 };
 
