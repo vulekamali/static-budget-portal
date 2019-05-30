@@ -1,24 +1,65 @@
 import React from 'react';
+import ReactMarkdown from 'react-markdown';
 
 import ContentFilterHeading from '../../components/ContentFilterHeading';
 import ChartSection from '../../components/ChartSection';
 import Treemap from '../../components/Treemap';
 
-import { Wrapper } from './styled';
+import { Wrapper, FooterDetails } from './styled';
+
+const addDynamicFootnotes = dynamicFootnotes =>
+  dynamicFootnotes.map(footer => (
+    <FooterDetails component="div">
+      <ReactMarkdown source={footer} />
+    </FooterDetails>
+  ));
+
+const callFootNote = dynamicFootnotes => (
+  <div key={dynamicFootnotes}>
+    {!!dynamicFootnotes && addDynamicFootnotes(dynamicFootnotes)}
+    <FooterDetails>Flows between spheres have not been netted out.</FooterDetails>
+  </div>
+);
+
+const callProvincialChart = provincial => {
+  const {
+    chartLoading,
+    chartData,
+    intialSelectedValues,
+    chartFooterData,
+    chartNoticesData,
+  } = provincial;
+
+  return (
+    <div key={`${provincial}-provincial`}>
+      <ChartSection
+        itemPreview={intialSelectedValues}
+        chart={onSelectedChange => <Treemap {...{ onSelectedChange }} items={chartData} />}
+        footer={callFootNote(chartFooterData)}
+        loading={chartLoading}
+        verb="Explore"
+        subject="this department"
+        title="Contributing provincial departments"
+        anchor="contributing-provincial-departments"
+        notices={chartNoticesData}
+      />
+    </div>
+  );
+};
 
 const Presentation = props => {
   const { heading, national, provincial } = props;
   // const { initialSelected } = selectionDropdown;
-  const { chartLoading, chartData, chartTotalAmount, chartFooterData } = national;
-  console.log(111, chartData);
+  const { chartLoading, chartData, intialSelectedValues, chartFooterData } = national;
 
   return (
     <Wrapper>
       <ContentFilterHeading {...heading} />
-      <div>
+      <div key={`${national}-national`}>
         <ChartSection
+          itemPreview={intialSelectedValues}
           chart={onSelectedChange => <Treemap {...{ onSelectedChange }} items={chartData} />}
-          footer={chartFooterData}
+          footer={callFootNote(chartFooterData)}
           loading={chartLoading}
           verb="Explore"
           subject="this department"
@@ -26,6 +67,7 @@ const Presentation = props => {
           anchor="contributing-provincial-departments"
         />
       </div>
+      {callProvincialChart(provincial)}
     </Wrapper>
   );
 };
