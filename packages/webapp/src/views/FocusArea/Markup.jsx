@@ -2,6 +2,7 @@ import React from 'react';
 import ReactMarkdown from 'react-markdown';
 
 import Heading from './Heading';
+// import ContentFilterHeading from '../../components/ContentFilterHeading';
 import ChartSection from '../../components/ChartSection';
 import Treemap from '../../components/Treemap';
 import Notices from './Notices';
@@ -91,6 +92,7 @@ const Markup = props => {
   return (
     <Wrapper>
       <Heading {...{ departmentNames, selected, eventHandler, year }} />
+      {/* <ContentFilterHeading {...{ departmentNames, selected, eventHandler, year }} /> */}
       <div key={`${selected}-national`}>
         <ChartSection
           initialSelected={initialSelectedNational}
