@@ -32,7 +32,7 @@ const conditionalValue = callback => (faker.random.boolean() ? callback() : null
  * to indicate any caveats or contexts that the user should keep in mind.
  */
 export type TfooterItem = string;
-export const mockFooterItem = () => faker.hacker.phrase();
+export const mockFooterItem = (): TfooterItem => faker.hacker.phrase();
 
 // Type: TnationalTreemap
 /**
@@ -45,11 +45,11 @@ export type TnationalTreemap = {
   chartFooterData: TfooterItem[];
 };
 
-export const mockNationalTreemap = () => ({
+export const mockNationalTreemap = (): TnationalTreemap => ({
   chartLoading: mockChartLoading(),
-  chartData: createRandomLengthArray(0, 10, () => mockChartItem()),
+  chartData: createRandomLengthArray(0, 10, () => mockChartItem()) as TchartItem[],
   intialSelectedValues: mockInitialSelected(),
-  chartFooterData: createRandomLengthArray(0, 3, mockFooterItem),
+  chartFooterData: createRandomLengthArray(0, 3, mockFooterItem) as TfooterItem[],
 });
 
 // Type: TprovincialTreemap
@@ -61,9 +61,10 @@ export type TprovincialTreemap = TnationalTreemap & {
   chartNoticesData: TchartNoticeItem[];
 };
 
-export const mockProvincialTreemap = () => ({
-  chartData: createRandomLengthArray(0, 10, mockNestedChartItem),
-  chartNoticesData: createRandomLengthArray(0, 3, mockNoticeItem),
+export const mockProvincialTreemap = (): TprovincialTreemap => ({
+  ...mockProvincialTreemap(),
+  chartData: createRandomLengthArray(0, 10, mockNestedChartItem) as TnestedChartItem[],
+  chartNoticesData: createRandomLengthArray(0, 3, mockNoticeItem) as TchartNoticeItem[],
 });
 
 // Type: TpresentationProps
@@ -77,15 +78,41 @@ export type TpresentationProps = {
   provincial: TprovincialTreemap;
 };
 
-export const mockPresentationalProps = () => ({
+export const mockPresentationalProps = (): TpresentationProps => ({
   heading: mockHeading(),
   national: mockNationalTreemap(),
   provincial: mockProvincialTreemap(),
 });
 
+// Type: TlatestYear
+/**
+ *
+ */
+export type TlatestYear = string;
+
+const testYears = ['2019-20', '2018-19', '2017-18', '2016-17'];
+
+export const mockLatestYear = (): TlatestYear => testYears[0];
+
+// Type: startingSelectedYear
+/**
+ *
+ */
+export type TstartingSelectedYear = string;
+export const mockStartingSelectedYear = (): TstartingSelectedYear =>
+  faker.random.arrayElement(testYears);
+
 // Type: TpresentationProps
 /**
  *  The view component that render the summary page for consolidated budget focus areas.
  */
-export type Tprops = TpresentationProps;
-export const mockProps = mockPresentationalProps;
+export type Tprops = TpresentationProps & {
+  latestYear: TlatestYear;
+  startingSelectedYear: TstartingSelectedYear;
+};
+
+export const mockProps = (): Tprops => ({
+  ...mockPresentationalProps(),
+  latestYear: mockLatestYear(),
+  startingSelectedYear: mockStartingSelectedYear(),
+});
