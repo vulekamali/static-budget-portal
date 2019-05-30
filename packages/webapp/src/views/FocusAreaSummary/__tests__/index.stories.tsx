@@ -14,6 +14,6 @@ const urls = [
 
 urls.forEach((url, index) => mockApi.onGet(url).reply(200, index === 1 ? {} : { test: 123 }));
 
-storiesOf('views.FocusAreaSummary', module).add('Demo', Demo);
+// storiesOf('views.FocusAreaSummary', module).add('Demo', Demo);
 
 storiesOf('views.FocusAreaSummary/tests', module).add('Randomized state', Random);
