@@ -1,11 +1,8 @@
 import React, { Component } from 'react';
 
 import Markup from './Markup';
-import createColorGenerator from './generateColor';
 import ResizeWindowListener from '../../helpers/ResizeWindowListener';
 import modifyIfZoomed from './modifyIfZoomed';
-
-const colorsList = createColorGenerator();
 
 class Treemap extends Component {
   constructor(props) {
@@ -88,8 +85,6 @@ class Treemap extends Component {
       ...state,
       ...events,
       items,
-      fills: values.fills,
-      hasChildren: values.hasChildren,
     };
 
     return <Markup {...passedProps} />;
