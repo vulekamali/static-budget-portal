@@ -45,6 +45,8 @@ export type TnationalTreemap = {
   chartFooterData: TfooterItem[];
 };
 
+console.log(444, mockChartItem());
+
 export const mockNationalTreemap = () => ({
   chartLoading: mockChartLoading(),
   chartData: createRandomLengthArray(0, 10, mockChartItem),

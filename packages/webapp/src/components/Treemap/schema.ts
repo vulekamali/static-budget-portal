@@ -53,7 +53,7 @@ export type TbaseItem = {
   icon: Ticon | null;
 };
 
-export const mockBaseItem = (color): TbaseItem => ({
+export const mockBaseItem = (color?: string): TbaseItem => ({
   amount: mockAmount(),
   id: mockId(),
   name: mockName(),
