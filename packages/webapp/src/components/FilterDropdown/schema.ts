@@ -82,7 +82,16 @@ export type TpresentationProps = {
 };
 
 export const mockPresentationprops = (): TpresentationProps => {
-  const options = createRandomLengthArray(1, 30, () => mockOption()) as Toption[];
+  const mockUniqueOption = (value, index) => {
+    const option = mockOption();
+
+    return {
+      ...option,
+      value: `${index}-${option.value}`,
+    };
+  };
+
+  const options = createRandomLengthArray(1, 30, mockUniqueOption) as Toption[];
 
   return {
     options,
@@ -111,7 +120,18 @@ export type Tprops = {
 };
 
 export const mockProps = (): Tprops => {
-  const options = createRandomLengthArray(1, 30, () => mockOption()) as Toption[];
+  const mockUniqueOption = (value, index) => {
+    const option = mockOption();
+
+    return {
+      ...option,
+      value: `${index}-${option.value}`,
+    };
+  };
+
+  const options = createRandomLengthArray(1, 30, mockUniqueOption) as Toption[];
+
+  faker.commerce.department;
 
   return {
     options,
