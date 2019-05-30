@@ -14,10 +14,10 @@ import {
 
 import {
   Tloading as TchartLoading,
-  TpreviewValue as TchartTotalAmount,
+  TitemPreview as TintialSelected,
   Tnotice as TchartNoticeItem,
   mockLoading as mockChartLoading,
-  mockPreviewValue as mockTotalAmount,
+  mockItemPreview as mockInitialSelected,
   mockNotice as mockNoticeItem,
 } from '../../components/ChartSection/schema';
 
@@ -41,14 +41,14 @@ export const mockFooterItem = () => faker.hacker.phrase();
 export type TnationalTreemap = {
   chartLoading: TchartLoading;
   chartData: TchartItem[];
-  chartTotalAmount: TchartTotalAmount;
+  intialSelectedValues: TintialSelected;
   chartFooterData: TfooterItem[];
 };
 
 export const mockNationalTreemap = () => ({
   chartLoading: mockChartLoading(),
   chartData: createRandomLengthArray(0, 10, () => mockChartItem()),
-  chartTotalAmount: mockTotalAmount(),
+  intialSelectedValues: mockInitialSelected(),
   chartFooterData: createRandomLengthArray(0, 3, mockFooterItem),
 });
 
