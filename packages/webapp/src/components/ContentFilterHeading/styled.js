@@ -62,6 +62,13 @@ const SelectsGroup = styled.div`
   }
 `;
 
+const PrimaryFilter = styled.div`
+  width: 100%;
+  @media screen and (min-width: 600px) {
+    max-width: 616px;
+  }
+`;
+
 const RightOptions = styled.div`
   display: flex;
   justify-content: flex-start;
@@ -145,16 +152,6 @@ const ArrowStyled = styled(Arrow)`
   }
 `;
 
-const PrimaryFilter = styled.div`
-  @media screen and (min-width: 600px) {
-    max-width: ${({ primary }) => (primary ? '616px' : null)};
-  }
-`;
-
-const SecondaryFilter = styled.div`
-  width: auto;
-`;
-
 export {
   HeadingWrapper,
   HeadingContainer,
@@ -169,7 +166,6 @@ export {
   Details,
   DetailedAnalysis,
   PrimaryFilter,
-  SecondaryFilter,
 };
 
 export default {
@@ -186,5 +182,4 @@ export default {
   Details,
   DetailedAnalysis,
   PrimaryFilter,
-  SecondaryFilter,
 };

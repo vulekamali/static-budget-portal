@@ -15,6 +15,7 @@ import {
   ArrowStyled,
   Details,
   DetailedAnalysis,
+  PrimaryFilter,
 } from './styled';
 
 const callDetailsButton = button => {
@@ -56,20 +57,24 @@ const Presentation = ({ title = '', selectionDropdown, yearDropdown, button }) =
           <Title>{title && calcPrettyName(title)}</Title>
         </HeadingText>
         <SelectsGroup>
-          <FilterDropdown
-            primary
-            options={selectionOptions}
-            initialSelected={selectionSelected}
-            onSelectedChange={selectionChange}
-            loading={selectionLoading}
-          />
-          <RightOptions>
+          <PrimaryFilter>
             <FilterDropdown
-              options={yearOptions}
-              initialSelected={yearSelected}
-              onSelectedChange={yearsChange}
-              loading={yearLoading}
+              primary
+              options={selectionOptions}
+              initialSelected={selectionSelected}
+              onSelectedChange={selectionChange}
+              loading={selectionLoading}
             />
+          </PrimaryFilter>
+          <RightOptions>
+            <div>
+              <FilterDropdown
+                options={yearOptions}
+                initialSelected={yearSelected}
+                onSelectedChange={yearsChange}
+                loading={yearLoading}
+              />
+            </div>
             {callDetailsButton(button)}
           </RightOptions>
         </SelectsGroup>
