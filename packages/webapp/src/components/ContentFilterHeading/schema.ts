@@ -4,7 +4,7 @@ import { omit } from 'lodash';
 import { Tprops as TdropdownBase, mockProps as mockDropdownBase } from '../FilterDropdown/schema';
 
 export type Tdropdown = Omit<TdropdownBase, 'primary'>;
-export const mockDropdown = omit(mockDropdownBase, 'primary');
+export const mockDropdown = () => omit(mockDropdownBase(), 'primary');
 
 const conditionalValue = callback => (faker.random.boolean() ? callback() : null);
 
@@ -22,7 +22,7 @@ export const mockTitle = (): Ttitle => faker.commerce.productName();
  * The text that should be shown in the call-to-action button.
  */
 export type Tbutton = string;
-export const mockButton = (): Tbutton => faker.hacker.verb();
+export const mockButton = (): Tbutton => faker.internet.url();
 
 // Type: TpresentationProps
 /**
