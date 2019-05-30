@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import Markup from './Markup';
+import Presentation from './Presentation';
 
 class Preview extends Component {
   constructor(props) {
@@ -63,7 +63,7 @@ class Preview extends Component {
       initialSelectedProvincial,
     };
 
-    return <Markup {...passedProps} />;
+    return <Presentation {...passedProps} />;
   }
 }
 
