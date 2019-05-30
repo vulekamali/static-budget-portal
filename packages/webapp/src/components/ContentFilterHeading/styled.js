@@ -123,6 +123,7 @@ const Details = styled.span`
     display: none;
   }
 `;
+
 const DetailedAnalysis = styled.span`
   display: none;
 
@@ -144,6 +145,16 @@ const ArrowStyled = styled(Arrow)`
   }
 `;
 
+const PrimaryFilter = styled.div`
+  @media screen and (min-width: 600px) {
+    max-width: ${({ primary }) => (primary ? '616px' : null)};
+  }
+`;
+
+const SecondaryFilter = styled.div`
+  width: auto;
+`;
+
 export {
   HeadingWrapper,
   HeadingContainer,
@@ -157,6 +168,8 @@ export {
   ArrowStyled,
   Details,
   DetailedAnalysis,
+  PrimaryFilter,
+  SecondaryFilter,
 };
 
 export default {
@@ -172,4 +185,6 @@ export default {
   ArrowStyled,
   Details,
   DetailedAnalysis,
+  PrimaryFilter,
+  SecondaryFilter,
 };

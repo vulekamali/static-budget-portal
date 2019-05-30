@@ -17,6 +17,8 @@ import {
   ArrowStyled,
   Details,
   DetailedAnalysis,
+  PrimaryFilter,
+  SecondaryFilter,
 } from './styled';
 
 const callDetailsButton = button => {
@@ -53,14 +55,18 @@ const ContentFilterHeading = ({ title, selectionDropdown, yearDropdown, button }
           <Title>{calcPrettyName(title)}</Title>
         </HeadingText>
         <SelectsGroup>
-          <FilterDropdown {...{ options, selected, onSelectedChange, loading }} primary />
+          <PrimaryFilter>
+            <FilterDropdown {...{ options, selected, onSelectedChange, loading }} primary />
+          </PrimaryFilter>
           <RightOptions>
-            <FilterDropdown
-              options={yearOptions}
-              selected={yearSelected}
-              onSelectedChange={yearOnSelectedChange}
-              loading={yearLoading}
-            />
+            <SecondaryFilter>
+              <FilterDropdown
+                options={yearOptions}
+                selected={yearSelected}
+                onSelectedChange={yearOnSelectedChange}
+                loading={yearLoading}
+              />
+            </SecondaryFilter>
             {callDetailsButton(button)}
           </RightOptions>
         </SelectsGroup>

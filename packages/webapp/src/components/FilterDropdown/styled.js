@@ -4,7 +4,8 @@ import { Select, CircularProgress } from '@material-ui/core';
 
 const SelectPreview = styled(Select)`
   && {
-    width: ${({ primary }) => (primary ? '100%' : 'auto')};
+    ${'' /* width: ${({ primary }) => (primary ? '100%' : 'auto')}; */}
+    width: 100%;
     background: ${({ primary }) => (primary ? null : '#d8d8d8')};
     padding: ${({ primary }) => (primary ? null : '0 8px')};
     border-radius: 3px;
@@ -56,9 +57,9 @@ const SelectPreview = styled(Select)`
       color: rgba(0, 0, 0, 0.26);
     }
 
-    @media screen and (min-width: 600px) {
+    ${'' /* @media screen and (min-width: 600px) {
       max-width: ${({ primary }) => (primary ? '616px' : null)};
-    }
+    } */}
 
     @media screen and (min-width: 950px) {
       font-size: ${({ primary }) => (primary ? null : '20px')};
