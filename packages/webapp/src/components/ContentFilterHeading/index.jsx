@@ -23,8 +23,8 @@ const FilterDropdown = props => {
   } = props;
 
   const [didMount, setDidMount] = useState(false);
-  const [selection, changeSelection] = useState(selectionOnSelectedChange);
-  const [year, changeYear] = useState(yearOnSelectedChange);
+  const [selection, changeSelection] = useState(selectionSelected);
+  const [year, changeYear] = useState(yearSelected);
 
   const selectionDropdown = {
     initialSelected: selection,
@@ -47,6 +47,8 @@ const FilterDropdown = props => {
     selectionDropdown,
     yearDropdown,
   };
+
+  console.log(passedProps);
 
   return <Presentation {...passedProps} />;
 };
