@@ -97,8 +97,8 @@ export const mockPresentationprops = (): TpresentationProps => {
     options,
     selected: faker.random.arrayElement(options).value,
     changeSelected: mockOnSelectedChange(),
-    primary: mockPrimary(),
-    loading: mockLoading(),
+    primary: mockPrimary() || null,
+    loading: mockLoading() || null,
   };
 };
 

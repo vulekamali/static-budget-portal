@@ -2,7 +2,9 @@ import faker from 'faker';
 
 import {
   Tprops as Theading,
-  mockProps as mockHeading,
+  mockDropdown,
+  Tprops as TpropsView,
+  mockProps as mockPropsView,
 } from '../../components/ContentFilterHeading/schema';
 
 import {
@@ -19,10 +21,17 @@ import {
   mockNotice as mockNoticeItem,
 } from '../../components/ChartSection/schema';
 
+import { Subtract } from 'utility-types';
+import { omit } from 'lodash';
+
+export { mockDropdown };
+
+export type HeadingProps = { title?: string; button?: string };
+export type Theading = Subtract<TpropsView, HeadingProps>;
+export const mockHeading = () => omit(mockPropsView(), ['title', 'button']);
+
 const createRandomLengthArray = (min, max, callback) =>
   new Array(faker.random.number({ min, max })).fill(true).map(callback);
-
-const conditionalValue = callback => (faker.random.boolean() ? callback() : null);
 
 // Type: Tfooter
 /**
@@ -46,7 +55,7 @@ export type Tprogrammes = {
 
 export const mockProgrammes = (): Tprogrammes => ({
   chartLoading: mockChartLoading(),
-  chartData: createRandomLengthArray(0, 10, mockChartItem) as TchartItem[],
+  chartData: createRandomLengthArray(1, 10, mockChartItem) as TchartItem[],
   chartTotalAmount: mockTotalAmount(),
   chartFooterData: createRandomLengthArray(0, 3, mockFooterItem) as TfooterItem[],
   chartNoticeData: createRandomLengthArray(0, 3, mockNoticeItem) as TchartNoticeItem[],
