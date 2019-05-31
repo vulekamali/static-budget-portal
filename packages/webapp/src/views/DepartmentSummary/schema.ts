@@ -23,8 +23,6 @@ import { Totals } from 'istanbul-lib-coverage';
 const createRandomLengthArray = (min, max, callback) =>
   new Array(faker.random.number({ min, max })).fill(true).map(callback);
 
-const conditionalValue = callback => (faker.random.boolean() ? callback() : null);
-
 // Type: Tfooter
 /**
  * This is a single line of fineprint/disclaimer text that goes under the chart. It should be used
