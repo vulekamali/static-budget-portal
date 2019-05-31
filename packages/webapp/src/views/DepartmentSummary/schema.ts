@@ -18,7 +18,6 @@ import {
   mockPreviewValue as mockTotalAmount,
   mockNotice as mockNoticeItem,
 } from '../../components/ChartSection/schema';
-import { Totals } from 'istanbul-lib-coverage';
 
 const createRandomLengthArray = (min, max, callback) =>
   new Array(faker.random.number({ min, max })).fill(true).map(callback);
@@ -94,7 +93,7 @@ export type Tintroduction = {
 
 export const mockIntroduction = (): Tintroduction => ({
   total: mockTotal(),
-  description: conditionalValue(mockDescription()),
+  description: conditionalValue(mockDescription),
   percentage: mockPercentage(),
   sphere: mockSphere(),
 });
@@ -155,9 +154,75 @@ export const mockPresentationalProps = (): TpresentationProps => ({
   relatedFocusAreas: createRandomLengthArray(0, 10, mockFocusArea) as TfocusArea[],
 });
 
-// Type: TpresentationProps
+// Type: TlatestYear
 /**
- *  The view component that render the summary page for consolidated budget focus areas.
+ *
  */
-export type Tprops = TpresentationProps;
-export const mockProps = mockPresentationalProps;
+export type TlatestYear = string;
+
+const testYears = ['2019-20', '2018-19', '2017-18', '2016-17'];
+export const mockLatestYear = (): TlatestYear => testYears[0];
+
+// Type: startingSelectedYear
+/**
+ *
+ */
+export type TstartingSelectedYear = string;
+export const mockStartingSelectedYear = (): TstartingSelectedYear =>
+  faker.random.arrayElement(testYears.filter(year => year !== '2017-18'));
+
+// Type: startingSelectedYear
+/**
+ *
+ */
+export type TstartingSelectedFocusArea = string;
+
+const testFocusAreas = [
+  'Cooperative Governance and Traditional Affairs',
+  'Communications',
+  'Basic Education",Agriculture',
+  'Forestry and Fisheries',
+];
+
+export const mockStartingSelectedFocusArea = (): TstartingSelectedFocusArea =>
+  faker.random.arrayElement(testFocusAreas);
+
+// Type: TchangeUrl
+/**
+ *
+ */
+export type TonUrlChange = (string) => void;
+const mockOnUrlChange = () => value => console.log(value);
+
+// Type: Tgovernment
+/**
+ *
+ */
+export type Tgovernment = '';
+
+// Type: Tsphere
+/**
+ *
+ */
+export type Tsphere = '';
+
+// Type: Tprops
+/**
+ * The view component that render the summary page for consolidated budget focus areas.
+ */
+export type Tprops = TpresentationProps & {
+  latestYear: TlatestYear;
+  startingSelectedYear: TstartingSelectedYear;
+  startingSelectedFocusArea: TstartingSelectedFocusArea;
+  onUrlChange: TonUrlChange;
+  government: Tgovernment;
+  sphere: Tsphere;
+};
+
+export const mockProps = (): Tprops => ({
+  ...mockPresentationalProps(),
+  latestYear: mockLatestYear(),
+  startingSelectedYear: mockStartingSelectedYear(),
+  startingSelectedFocusArea: mockStartingSelectedFocusArea(),
+  onUrlChange: mockOnUrlChange(),
+});

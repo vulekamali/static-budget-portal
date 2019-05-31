@@ -1,8 +1,9 @@
 import React from 'react';
 import { mockProps, Tprops, mockPresentationalProps } from '../schema';
-import FocusAreaSummary from '..';
+import DepartmentSummary from '..';
 
+console.log(mockPresentationalProps());
 const passedProps: Tprops = mockProps();
-const Test = () => <FocusAreaSummary {...passedProps} />;
+const Test = () => <DepartmentSummary {...passedProps} />;
 
 export default Test;
