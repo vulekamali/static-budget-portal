@@ -58,7 +58,7 @@ const valid = {
           total: null,
         },
         slug: 'learning-and-culture',
-        title: 'Community development',
+        title: 'Learning and Culture',
       },
       {
         national: {
@@ -83,7 +83,7 @@ const valid = {
           total: null,
         },
         slug: 'social-development',
-        title: 'Debt-service costs',
+        title: 'Social Development',
       },
       {
         national: {
@@ -205,7 +205,7 @@ const valid = {
           total: null,
         },
         slug: 'health',
-        title: 'Economic development',
+        title: 'Health',
       },
       {
         national: {
@@ -330,13 +330,13 @@ const valid = {
           total: null,
         },
         slug: 'peace-and-security',
-        title: 'General public services',
+        title: 'Peace and Security',
       },
     ],
   },
 };
 
-const mockApi = new MockAdapter(axios);
+const mockApi = new MockAdapter(axios, { delayResponse: 2000 });
 
 const urls = [
   '/json/2019-20/focus.json',

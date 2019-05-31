@@ -117,23 +117,31 @@ export const mockStartingSelectedYear = (): TstartingSelectedYear =>
 export type TstartingSelectedFocusArea = string;
 
 const testFocusAreas = [
-  'learning-and-culture',
-  'social-development',
-  'health',
-  'peace-and-security',
+  'Learning and Culture',
+  'Social Development',
+  'Health',
+  'Peace and Security',
 ];
 
 export const mockStartingSelectedFocusArea = (): TstartingSelectedFocusArea =>
   faker.random.arrayElement(testFocusAreas);
 
+// Type: TchangeUrl
+/**
+ *
+ */
+export type TonUrlChange = (string) => void;
+const mockOnUrlChange = () => value => console.log(value);
+
 // Type: TpresentationProps
 /**
- *  The view component that render the summary page for consolidated budget focus areas.
+ * The view component that render the summary page for consolidated budget focus areas.
  */
 export type Tprops = TpresentationProps & {
   latestYear: TlatestYear;
   startingSelectedYear: TstartingSelectedYear;
   startingSelectedFocusArea: TstartingSelectedFocusArea;
+  onUrlChange: TonUrlChange;
 };
 
 export const mockProps = (): Tprops => ({
@@ -141,4 +149,5 @@ export const mockProps = (): Tprops => ({
   latestYear: mockLatestYear(),
   startingSelectedYear: mockStartingSelectedYear(),
   startingSelectedFocusArea: mockStartingSelectedFocusArea(),
+  onUrlChange: mockOnUrlChange(),
 });

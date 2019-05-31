@@ -8,15 +8,17 @@ const createCallbackFn = (callback, prop, didMount) => () => {
 };
 
 const FilterDropdown = props => {
-  const { initialSelected, onSelectedChange, ...otherProps } = props;
+  const { initialSelected, onSelectedChange, options: passedOptions, ...otherProps } = props;
   const [didMount, setDidMount] = useState(false);
   const [selected, changeSelected] = useState(initialSelected);
 
   useEffect(() => setDidMount(true), []);
   useEffect(createCallbackFn(onSelectedChange, selected, didMount), [selected]);
+  const options = passedOptions && passedOptions.length > 1 ? passedOptions : [{ value: selected }];
 
   const passedProps = {
     ...otherProps,
+    options,
     selected,
     changeSelected,
   };

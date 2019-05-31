@@ -10,7 +10,7 @@ const callSpinner = value => (
   </SpinnerContainer>
 );
 
-const callMenuItems = (options, loading) => {
+const callMenuItems = (options = [], loading) => {
   return options.map(({ value, disabled }) => (
     <MenuItem key={value} value={value} {...{ disabled }}>
       {loading ? callSpinner(value) : value}
@@ -21,8 +21,8 @@ const callMenuItems = (options, loading) => {
 const callOptions = (options, selected, changeSelected, primary, loading) => (
   <SelectPreview
     {...{ primary }}
-    disabled={options.length <= 1 || loading}
-    value={selected || options[0].id}
+    disabled={(options && options.length) <= 1 || loading}
+    value={selected || null}
     onChange={({ target: { value } }) => changeSelected(value)}
     displayEmpty
     name={selected}
