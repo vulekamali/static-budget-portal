@@ -1,12 +1,14 @@
 import React from 'react';
 
-import ContentFilterHeading from '../../components/ContentFilterHeading';
-import ChartSection from '../../components/ChartSection';
-import Treemap from '../../components/Treemap';
+// import ContentFilterHeading from '../../components/ContentFilterHeading';
+// import ChartSection from '../../components/ChartSection';
+// import Treemap from '../../components/Treemap';
 
-import { Wrapper } from './styled';
+// import { Wrapper } from './styled';
 
 const Presentation = props => {
+  return <div>1232</div>;
+
   const { heading, national, provincial } = props;
   // const { initialSelected } = selectionDropdown;
   const { chartLoading, chartData, chartTotalAmount, chartFooterData } = national;
