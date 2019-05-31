@@ -1,26 +1,14 @@
 import React from 'react';
-import {
-  mockPresentationalProps,
-  TpresentationProps,
-  mockProgrammes,
-  mockHeading,
-  mockDropdown,
-} from '../../schema';
+import { mockPresentationalProps, TpresentationProps, mockProgrammes } from '../../schema';
 import DepartmentSummary from '../../Presentation';
 
 const passedProps: TpresentationProps = {
   ...mockPresentationalProps(),
-  heading: {
-    ...mockHeading(),
-    selectionDropdown: {
-      ...mockDropdown(),
-      loading: true,
-    },
-  },
   programmes: {
     ...mockProgrammes(),
     chartLoading: false,
-    chartNoticeData: null,
+    chartNoticeData: ['Please wait while we fetch the data'],
+    chartFooterData: null,
   },
 };
 

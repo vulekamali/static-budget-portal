@@ -16,7 +16,6 @@ const passedProps: TpresentationProps = {
       ...mockDropdown(),
       loading: true,
     },
-    button: './this-goes-somewhere',
   },
   programmes: {
     ...mockProgrammes(),

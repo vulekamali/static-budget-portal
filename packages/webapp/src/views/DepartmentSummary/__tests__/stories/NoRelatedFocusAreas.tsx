@@ -1,19 +1,10 @@
 import React from 'react';
-import {
-  mockPresentationalProps,
-  TpresentationProps,
-  mockProgrammes,
-  mockHeading,
-} from '../../schema';
+import { mockPresentationalProps, TpresentationProps, mockIntroduction } from '../../schema';
 import DepartmentSummary from '../../Presentation';
 
 const passedProps: TpresentationProps = {
   ...mockPresentationalProps(),
-  programmes: {
-    ...mockProgrammes(),
-    chartLoading: false,
-    chartNoticeData: null,
-  },
+  relatedFocusAreas: null,
 };
 
 const Test = () => <DepartmentSummary {...passedProps} />;

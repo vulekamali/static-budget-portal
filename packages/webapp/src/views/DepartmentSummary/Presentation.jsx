@@ -44,7 +44,7 @@ const Presentation = props => {
   const { chartLoading, chartData, chartFooterData, chartNoticeData } = programmes;
   return (
     <Wrapper>
-      <ContentFilterHeading {...heading} />
+      <ContentFilterHeading {...heading} title="National Budget" button="it-goes-somewhere" />
       <Introduction {...introduction} />
       <div key={`${introduction.description}-department`}>
         <ChartSection
