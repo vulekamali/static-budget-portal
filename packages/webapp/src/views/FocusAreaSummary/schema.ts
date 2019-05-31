@@ -2,7 +2,9 @@ import faker from 'faker';
 
 import {
   Tprops as Theading,
-  mockProps as mockHeading,
+  Tprops as TpropsView,
+  mockProps as mockPropsView,
+  mockDropdown,
 } from '../../components/ContentFilterHeading/schema';
 
 import {
@@ -20,6 +22,15 @@ import {
   mockItemPreview as mockInitialSelected,
   mockNotice as mockNoticeItem,
 } from '../../components/ChartSection/schema';
+
+import { Subtract } from 'utility-types';
+import { omit } from 'lodash';
+
+export { mockDropdown };
+
+export type HeadingProps = { title?: string; button?: string };
+export type Theading = Subtract<TpropsView, HeadingProps>;
+export const mockHeading = () => omit(mockPropsView(), ['title', 'button']);
 
 const createRandomLengthArray = (min, max, callback) =>
   new Array(faker.random.number({ min, max })).fill(true).map(callback);

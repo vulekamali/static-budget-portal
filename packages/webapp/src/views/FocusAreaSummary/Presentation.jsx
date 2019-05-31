@@ -9,7 +9,7 @@ import { Wrapper, FooterDetails } from './styled';
 
 const addDynamicFootnotes = dynamicFootnotes =>
   dynamicFootnotes.map(footer => (
-    <FooterDetails component="div">
+    <FooterDetails key={footer} component="div">
       <ReactMarkdown source={footer} />
     </FooterDetails>
   ));
@@ -61,7 +61,7 @@ const Presentation = props => {
           loading={chartLoading}
           verb="Explore"
           subject="this department"
-          title="Contributing provincial departments"
+          title="Contributing National departments"
         />
       </div>
       {callProvincialChart(provincial)}

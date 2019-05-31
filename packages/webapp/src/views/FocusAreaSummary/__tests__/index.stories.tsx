@@ -1,10 +1,24 @@
 import { storiesOf } from '@storybook/react';
-import Random from './stories/Random';
+
 import Demo from './Demo';
 import mockEndpoint from './mockEndpoint';
+import Random from './stories/Random';
+import TreemapsPresent from './stories/TreemapsPresent';
+import FilterDropdownsLoading from './stories/FilterDropdownsLoading';
+import TreemapsLoading from './stories/TreemapsLoading';
+import ShowNoticeForProvincial from './stories/ShowNoticeForProvincial';
+import OnlyOneYear from './stories/OnlyOneYear';
+import OnlyOneSelection from './stories/OnlyOneSelection';
 
 mockEndpoint();
 
 storiesOf('views.FocusAreaSummary', module).add('Demo', Demo);
 
-storiesOf('views.FocusAreaSummary/tests', module).add('Randomized state', Random);
+storiesOf('views.FocusAreaSummary/tests', module)
+  .add('Randomized state', Random)
+  .add('TreemapsPresent', TreemapsPresent)
+  .add('FilterDropdownsLoading', FilterDropdownsLoading)
+  .add('TreemapsLoading', TreemapsLoading)
+  .add('ShowNoticeForProvincial', ShowNoticeForProvincial)
+  .add('OnlyOneYear', OnlyOneYear)
+  .add('OnlyOneSelection', OnlyOneSelection);
