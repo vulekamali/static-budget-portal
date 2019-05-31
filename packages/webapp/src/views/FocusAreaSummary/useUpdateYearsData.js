@@ -4,19 +4,25 @@ import calcValidYearsRange from './calcValidYearsRange';
 
 const createEndpointUrl = year => `/json/${year}/focus.json`;
 
-const createSetDataAsYearsArrayFn = (validYears, setData) => data => {
+const createSetDataAsYearsArrayFn = (validYears, focusArea, setData) => data => {
   const createYearObject = (year, index) => ({
-    year,
-    valid: !!data[index] && Object.keys(data[index]).length > 0,
+    value: year,
+    disabled:
+      !data ||
+      !data[index] ||
+      !data[index].data ||
+      !data[index].data.items.find(({ title }) => title === focusArea),
   });
 
   const validYearsArray = validYears.map(createYearObject);
   setData(validYearsArray);
 };
 
-const useUpdateYearsData = (initialUrl, initialData) => {
-  const [data, setData] = useState(initialData || null);
+const useUpdateYearsData = (initialUrl, initialFocusArea) => {
+  const [data, setData] = useState(null);
   const [url, setUrl] = useState(initialUrl);
+  const [focusArea, setFocusArea] = useState(initialFocusArea);
+
   const [isLoading, setIsLoading] = useState(false);
   const [isError, setIsError] = useState(false);
 
@@ -25,15 +31,15 @@ const useUpdateYearsData = (initialUrl, initialData) => {
   const fetchData = createFetchDataFn(
     setIsError,
     setIsLoading,
-    createSetDataAsYearsArrayFn(validYears, setData),
+    createSetDataAsYearsArrayFn(validYears, focusArea, setData),
   );
 
   useEffect(() => {
     const validYearUrls = validYears.map(createEndpointUrl);
     fetchData(validYearUrls);
-  }, [url]);
+  }, [url, focusArea]);
 
-  return [{ data, isLoading, isError }, setUrl];
+  return [{ data, isLoading, isError }, { setUrl, setFocusArea }];
 };
 
 export default useUpdateYearsData;

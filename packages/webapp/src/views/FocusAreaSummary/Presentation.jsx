@@ -40,7 +40,6 @@ const callProvincialChart = provincial => {
         verb="Explore"
         subject="this department"
         title="Contributing provincial departments"
-        anchor="contributing-provincial-departments"
         notices={chartNoticesData}
       />
     </div>
@@ -63,7 +62,6 @@ const Presentation = props => {
           verb="Explore"
           subject="this department"
           title="Contributing provincial departments"
-          anchor="contributing-provincial-departments"
         />
       </div>
       {callProvincialChart(provincial)}

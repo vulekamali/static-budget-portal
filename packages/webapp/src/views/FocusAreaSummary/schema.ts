@@ -67,18 +67,27 @@ export const mockProvincialTreemap = (): TprovincialTreemap => ({
   chartNoticesData: createRandomLengthArray(0, 3, mockNoticeItem) as TchartNoticeItem[],
 });
 
+// Type: Terror
+/**
+ *
+ */
+export type Terror = boolean;
+export const mockError = () => faker.random.boolean();
+
 // Type: TpresentationProps
 /**
  *  All props accepted by the `<Presentation />` sub-component inside
  *  `<FocusAreaSummary />` component.
  */
 export type TpresentationProps = {
+  error: Terror;
   heading: Theading;
   national: TnationalTreemap;
   provincial: TprovincialTreemap;
 };
 
 export const mockPresentationalProps = (): TpresentationProps => ({
+  error: mockError(),
   heading: mockHeading(),
   national: mockNationalTreemap(),
   provincial: mockProvincialTreemap(),
@@ -91,7 +100,6 @@ export const mockPresentationalProps = (): TpresentationProps => ({
 export type TlatestYear = string;
 
 const testYears = ['2019-20', '2018-19', '2017-18', '2016-17'];
-
 export const mockLatestYear = (): TlatestYear => testYears[0];
 
 // Type: startingSelectedYear
@@ -100,19 +108,46 @@ export const mockLatestYear = (): TlatestYear => testYears[0];
  */
 export type TstartingSelectedYear = string;
 export const mockStartingSelectedYear = (): TstartingSelectedYear =>
-  faker.random.arrayElement(testYears);
+  faker.random.arrayElement(testYears.filter(year => year !== '2017-18'));
+
+// Type: startingSelectedYear
+/**
+ *
+ */
+export type TstartingSelectedFocusArea = string;
+
+const testFocusAreas = [
+  'Learning and Culture',
+  'Social Development',
+  'Health',
+  'Peace and Security',
+];
+
+export const mockStartingSelectedFocusArea = (): TstartingSelectedFocusArea =>
+  faker.random.arrayElement(testFocusAreas);
+
+// Type: TchangeUrl
+/**
+ *
+ */
+export type TonUrlChange = (string) => void;
+const mockOnUrlChange = () => value => console.log(value);
 
 // Type: TpresentationProps
 /**
- *  The view component that render the summary page for consolidated budget focus areas.
+ * The view component that render the summary page for consolidated budget focus areas.
  */
 export type Tprops = TpresentationProps & {
   latestYear: TlatestYear;
   startingSelectedYear: TstartingSelectedYear;
+  startingSelectedFocusArea: TstartingSelectedFocusArea;
+  onUrlChange: TonUrlChange;
 };
 
 export const mockProps = (): Tprops => ({
   ...mockPresentationalProps(),
   latestYear: mockLatestYear(),
   startingSelectedYear: mockStartingSelectedYear(),
+  startingSelectedFocusArea: mockStartingSelectedFocusArea(),
+  onUrlChange: mockOnUrlChange(),
 });
