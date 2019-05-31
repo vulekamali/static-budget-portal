@@ -3,6 +3,7 @@ import faker from 'faker';
 import {
   Tprops as Theading,
   mockProps as mockHeading,
+  mockDropdown,
 } from '../../components/ContentFilterHeading/schema';
 
 import {
@@ -19,6 +20,8 @@ import {
   mockNotice as mockNoticeItem,
 } from '../../components/ChartSection/schema';
 import { Totals } from 'istanbul-lib-coverage';
+
+export { mockHeading, mockDropdown };
 
 const createRandomLengthArray = (min, max, callback) =>
   new Array(faker.random.number({ min, max })).fill(true).map(callback);

@@ -22,9 +22,10 @@ const callDetailsButton = button => {
   if (!button) {
     return null;
   }
+  const { url } = button;
   return (
     <Link href={button}>
-      <ButtonDetails disabled={!button} classes={{ disabled: 'disabled' }}>
+      <ButtonDetails disabled={!url} classes={{ disabled: 'disabled' }}>
         <ButtonText>
           <Details>Details</Details>
           <DetailedAnalysis>Detailed Analysis</DetailedAnalysis>

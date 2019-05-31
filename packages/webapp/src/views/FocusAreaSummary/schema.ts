@@ -62,7 +62,7 @@ export type TprovincialTreemap = TnationalTreemap & {
 };
 
 export const mockProvincialTreemap = (): TprovincialTreemap => ({
-  ...mockProvincialTreemap(),
+  ...mockNationalTreemap(),
   chartData: createRandomLengthArray(0, 10, mockNestedChartItem) as TnestedChartItem[],
   chartNoticesData: createRandomLengthArray(0, 3, mockNoticeItem) as TchartNoticeItem[],
 });
