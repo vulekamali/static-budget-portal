@@ -55,7 +55,7 @@ export type Tprogrammes = {
 
 export const mockProgrammes = (): Tprogrammes => ({
   chartLoading: mockChartLoading(),
-  chartData: createRandomLengthArray(0, 10, mockChartItem) as TchartItem[],
+  chartData: createRandomLengthArray(1, 10, mockChartItem) as TchartItem[],
   chartTotalAmount: mockTotalAmount(),
   chartFooterData: createRandomLengthArray(0, 3, mockFooterItem) as TfooterItem[],
   chartNoticeData: createRandomLengthArray(0, 3, mockNoticeItem) as TchartNoticeItem[],

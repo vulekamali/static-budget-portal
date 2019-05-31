@@ -42,11 +42,12 @@ const Presentation = props => {
   const { heading, introduction, programmes, relatedFocusAreas } = props;
 
   const { chartLoading, chartData, chartFooterData, chartNoticeData } = programmes;
+
   return (
     <Wrapper>
       <ContentFilterHeading {...heading} title="National Budget" button="it-goes-somewhere" />
       <Introduction {...introduction} />
-      <div key={`${introduction.description}-department`}>
+      <div key={heading.selectionDropdown.initialSelected}>
         <ChartSection
           chart={() => <BarChart items={chartData} />}
           footer={chartFooterData}

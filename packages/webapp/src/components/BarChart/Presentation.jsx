@@ -5,7 +5,7 @@ import { BarChartContainer } from './styled';
 const Markup = ({ items }) => (
   <BarChartContainer>
     {items.map((props, index) => (
-      <Bar {...{ index, items, ...props }} />
+      <Bar key={items[index].amount} {...{ index, items, ...props }} />
     ))}
   </BarChartContainer>
 );

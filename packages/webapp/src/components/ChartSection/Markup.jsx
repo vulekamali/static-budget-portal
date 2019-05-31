@@ -68,7 +68,7 @@ const callButtonExplore = (url, color, verb, subject) => {
 };
 
 const callAmount = (value, loading) => (
-  <Amount ariaHidden={loading} {...{ loading }}>
+  <Amount aria-hidden={loading} {...{ loading }}>
     {loading ? '_'.repeat(13) : `R${trimValues(value)}`}
   </Amount>
 );
@@ -92,7 +92,7 @@ const callDetails = (itemPreview, verb, subject, loading) => {
 };
 
 const callFooter = (footer, loading) => (
-  <FooterDetails ariaHidden={loading} {...{ loading }}>
+  <FooterDetails aria-hidden={loading} {...{ loading }}>
     {loading ? '_'.repeat(110) : footer}
   </FooterDetails>
 );

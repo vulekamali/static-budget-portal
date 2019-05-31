@@ -53,7 +53,7 @@ const Presentation = props => {
   return (
     <Wrapper>
       <ContentFilterHeading {...heading} />
-      <div key={`${national}-national`}>
+      <div key={heading.selectionDropdown.initialSelected}>
         <ChartSection
           itemPreview={intialSelectedValues}
           chart={onSelectedChange => <Treemap {...{ onSelectedChange }} items={chartData} />}

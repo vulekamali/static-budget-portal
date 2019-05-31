@@ -1,8 +1,9 @@
 import styled from 'styled-components';
 
 import { Select, CircularProgress } from '@material-ui/core';
+import removeProps from '../../helpers/removeProps';
 
-const SelectPreview = styled(Select)`
+const SelectPreview = styled(removeProps({ component: Select, blacklist: 'primary' }))`
   && {
     width: 100%;
     background: ${({ primary }) => (primary ? null : '#d8d8d8')};

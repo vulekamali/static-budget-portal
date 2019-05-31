@@ -90,7 +90,7 @@ const Department = styled(Typography)`
   }
 `;
 
-const Amount = styled(Typography)`
+const Amount = styled(removeProps({ component: Typography, blacklist: 'loading' }))`
   && {
     font-size: 20px;
     font-weight: 700;
@@ -135,7 +135,7 @@ const FooterContainer = styled.div`
   }
 `;
 
-const FooterDetails = styled(Typography)`
+const FooterDetails = styled(removeProps({ component: Typography, blacklist: 'loading' }))`
   && {
     font-size: 10px;
     line-height: 140%;
