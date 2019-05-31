@@ -94,7 +94,7 @@ export type Tintroduction = {
 
 export const mockIntroduction = (): Tintroduction => ({
   total: mockTotal(),
-  description: conditionalValue(mockDescription()),
+  description: mockDescription(),
   percentage: mockPercentage(),
   sphere: mockSphere(),
 });
