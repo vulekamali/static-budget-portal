@@ -184,13 +184,8 @@ export const mockAnchor = (): Tanchor => faker.commerce.department();
  */
 export type Tfooter = string | JSX.Element;
 
-export const createFooterComponent = (): any => (
-  <Fragment>
-    {[1, 2, 3].map(() => (
-      <p>{faker.hacker.phrase()}</p>
-    ))}
-  </Fragment>
-);
+export const createFooterComponent = (): any =>
+  [1, 2, 3].map(value => <p key={value}>{faker.hacker.phrase()}</p>);
 
 export const createFooterString = () => faker.hacker.phrase();
 export const mockFooter = (): Tfooter =>
