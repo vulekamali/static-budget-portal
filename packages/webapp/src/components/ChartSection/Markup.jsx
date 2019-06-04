@@ -54,10 +54,10 @@ const callChart = (chart, onSelectedChange, loading, notices) => {
   );
 };
 
-const callButtonExplore = (url, color, verb, subject) => {
+const callButtonExplore = (url, color, verb, subject, loading) => {
   return (
-    <LinkWrapper href={url}>
-      <ButtonStyle disabled={!url} {...{ color }}>
+    <LinkWrapper href={loading ? null : url}>
+      <ButtonStyle disabled={!url || !!loading} {...{ color }}>
         <TextExploreButton>
           {verb} <SpanStyled>{subject}</SpanStyled>
         </TextExploreButton>
@@ -85,7 +85,7 @@ const callDetails = (itemPreview, verb, subject, loading) => {
           <Department>{name}</Department>
           {callAmount(value, loading)}
         </div>
-        {!!verb && callButtonExplore(url, color, verb, subject)}
+        {!!verb && callButtonExplore(url, color, verb, subject, loading)}
       </DetailsContainer>
     </DetailsWrapper>
   );

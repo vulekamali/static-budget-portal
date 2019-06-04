@@ -8,6 +8,7 @@ import StringAnchor from './stories/StringAnchor';
 import ButtonLoadingTrue from './stories/ButtonLoadingTrue';
 import ShowNotice from './stories/ShowNotice';
 import LoadingNumber from './stories/LoadingNumber';
+import ButtonUrlNull from './stories/ButtonUrlNull';
 
 storiesOf('components.ChartSection', module)
   .add('Randomized state', Random)
@@ -17,5 +18,6 @@ storiesOf('components.ChartSection', module)
   .add('Year filter locked', LockedYear)
   .add('Anchor is a string', StringAnchor)
   .add('Button where loading true', ButtonLoadingTrue)
+  .add('Button where url is null', ButtonUrlNull)
   .add('Show Notice', ShowNotice)
   .add('Loading is a number', LoadingNumber);
