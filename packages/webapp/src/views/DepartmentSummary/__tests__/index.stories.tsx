@@ -12,6 +12,8 @@ import NoRelatedFocusAreas from './stories/NoRelatedFocusAreas';
 import OnlyOneYear from './stories/OnlyOneYear';
 import OnlyOneSelection from './stories/OnlyOneSelection';
 
+storiesOf('views.DepartmentSummary', module).add('Demo', Demo);
+
 storiesOf('views.DepartmentSummary/tests', module)
   .add('Randomized', Random)
   .add('BarChartPresent', BarChartPresent)

@@ -1,5 +1,4 @@
 import React from 'react';
-
 import ContentFilterHeading from '../../components/ContentFilterHeading';
 import SectionHeading from '../../components/SectionHeading';
 import Introduction from './Introduction';
