@@ -19,7 +19,6 @@ const LayoutContainer = styled.div`
   justify-content: center;
   height: 285px;
   align-items: center;
-  border: 1px solid red;
 
   @media screen and (min-width: 600px) {
     height: 450px;
