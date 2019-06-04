@@ -9,6 +9,7 @@ import TreemapsLoading from './stories/TreemapsLoading';
 import ShowNoticeForProvincial from './stories/ShowNoticeForProvincial';
 import OnlyOneYear from './stories/OnlyOneYear';
 import OnlyOneSelection from './stories/OnlyOneSelection';
+import ErrorTrue from './stories/ErrorTrue';
 
 mockEndpoint();
 
@@ -21,4 +22,5 @@ storiesOf('views.FocusAreaSummary/tests', module)
   .add('TreemapsLoading', TreemapsLoading)
   .add('ShowNoticeForProvincial', ShowNoticeForProvincial)
   .add('OnlyOneYear', OnlyOneYear)
-  .add('OnlyOneSelection', OnlyOneSelection);
+  .add('OnlyOneSelection', OnlyOneSelection)
+  .add('ErrorTrue', ErrorTrue);

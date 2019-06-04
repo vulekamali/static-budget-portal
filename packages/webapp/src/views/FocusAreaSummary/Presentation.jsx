@@ -4,6 +4,7 @@ import ReactMarkdown from 'react-markdown';
 import ContentFilterHeading from '../../components/ContentFilterHeading';
 import ChartSection from '../../components/ChartSection';
 import Treemap from '../../components/Treemap';
+import ErrorMessage from './ErrorMessage';
 
 import { Wrapper, FooterDetails } from './styled';
 
@@ -46,13 +47,16 @@ const callProvincialChart = provincial => {
   );
 };
 
-const Presentation = props => {
-  const { heading, national, provincial } = props;
+const callCharts = props => {
+  const { error, heading, national, provincial } = props;
   const { chartLoading, chartData, intialSelectedValues, chartFooterData } = national;
 
+  if (error) {
+    return <ErrorMessage />;
+  }
+
   return (
-    <Wrapper>
-      <ContentFilterHeading {...heading} />
+    <React.Fragment>
       <div key={heading.selectionDropdown.initialSelected}>
         <ChartSection
           itemPreview={intialSelectedValues}
@@ -65,6 +69,18 @@ const Presentation = props => {
         />
       </div>
       {callProvincialChart(provincial)}
+    </React.Fragment>
+  );
+};
+
+const Presentation = props => {
+  const { error, heading, national, provincial } = props;
+  const { chartLoading, chartData, intialSelectedValues, chartFooterData } = national;
+
+  return (
+    <Wrapper>
+      <ContentFilterHeading {...heading} title="Focus-Areas" />
+      {callCharts(props)}
     </Wrapper>
   );
 };

@@ -54,10 +54,10 @@ const callChart = (chart, onSelectedChange, loading, notices) => {
   );
 };
 
-const callButtonExplore = (url, color, verb, subject, loading) => {
+const callButtonExplore = (url, color, verb, subject, loading, notices) => {
   return (
     <LinkWrapper href={loading ? null : url}>
-      <ButtonStyle disabled={!url || !!loading} {...{ color }}>
+      <ButtonStyle disabled={!url || !!loading || notices} {...{ color }}>
         <TextExploreButton>
           {verb} <SpanStyled>{subject}</SpanStyled>
         </TextExploreButton>
@@ -73,7 +73,7 @@ const callAmount = (value, loading) => (
   </Amount>
 );
 
-const callDetails = (itemPreview, verb, subject, loading) => {
+const callDetails = (itemPreview, verb, subject, loading, notices) => {
   const { name, value, url, color } = itemPreview;
   if (value === null) {
     return null;
@@ -85,7 +85,7 @@ const callDetails = (itemPreview, verb, subject, loading) => {
           <Department>{name}</Department>
           {callAmount(value, loading)}
         </div>
-        {!!verb && callButtonExplore(url, color, verb, subject, loading)}
+        {!!verb && callButtonExplore(url, color, verb, subject, loading, notices)}
       </DetailsContainer>
     </DetailsWrapper>
   );
@@ -117,7 +117,7 @@ const Markup = props => {
     <Wrapper>
       <CssBaseline />
       <SectionHeading {...{ title, years, phases }} share={anchor} />
-      {!!itemPreview && callDetails(itemPreview, verb, subject, loading)}
+      {!!itemPreview && callDetails(itemPreview, verb, subject, loading, notices)}
       {callChart(chart, onSelectedChange, loading, notices)}
       <FooterWrapper>
         <FooterContainer>{footer && callFooter(footer, loading)}</FooterContainer>
