@@ -14,7 +14,7 @@ const LayoutContainer = styled.div`
   max-width: 1200px;
   margin-right: 16px;
   margin-left: 16px;
-  background: rgba(0, 0, 0, 0.04);
+  background: #efefef;
   display: flex;
   justify-content: center;
   height: 285px;
