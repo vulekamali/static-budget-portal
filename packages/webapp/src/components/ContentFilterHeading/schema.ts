@@ -17,12 +17,26 @@ const conditionalValue = callback => (faker.random.boolean() ? callback() : null
 export type Ttitle = string;
 export const mockTitle = (): Ttitle => faker.commerce.productName();
 
+// Type: Turl
+/**
+ * The link that directs to a page with more details from the department preview pages. If null, the button will be disabled.
+ */
+
+export type Turl = string;
+export const mockUrl = (): Turl => faker.internet.url();
+
 // Type: Tbutton
 /**
- * The text that should be shown in the call-to-action button.
+ * Prop for the detailed analysis button. If null, no button will appear.
  */
-export type Tbutton = string;
-export const mockButton = (): Tbutton => faker.internet.url();
+
+export type Tbutton = {
+  url?: Turl;
+};
+
+export const mockButton = (): Tbutton => ({
+  url: mockUrl(),
+});
 
 // Type: TpresentationProps
 /**

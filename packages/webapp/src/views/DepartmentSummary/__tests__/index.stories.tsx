@@ -11,6 +11,8 @@ import Notices from './stories/Notices';
 import NoRelatedFocusAreas from './stories/NoRelatedFocusAreas';
 import OnlyOneYear from './stories/OnlyOneYear';
 import OnlyOneSelection from './stories/OnlyOneSelection';
+import DetailsButtonPresent from './stories/DetailsButtonPresent';
+import DetailsButtonDisabled from './stories/DetailsButtonDisabled';
 
 storiesOf('views.DepartmentSummary', module).add('Demo', Demo);
 
@@ -25,4 +27,6 @@ storiesOf('views.DepartmentSummary/tests', module)
   .add('Notices', Notices)
   .add('NoRelatedFocusAreas', NoRelatedFocusAreas)
   .add('OnlyOneYear', OnlyOneYear)
-  .add('OnlyOneSelection', OnlyOneSelection);
+  .add('OnlyOneSelection', OnlyOneSelection)
+  .add('DetailsButtonPresent', DetailsButtonPresent)
+  .add('DetailsButtonDisabled', DetailsButtonDisabled);

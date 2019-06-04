@@ -38,13 +38,13 @@ const callFocusAreas = focusAreas => (
 );
 
 const Presentation = props => {
-  const { heading, introduction, programmes, relatedFocusAreas } = props;
+  const { heading, introduction, programmes, relatedFocusAreas, button } = props;
 
   const { chartLoading, chartData, chartFooterData, chartNoticeData } = programmes;
 
   return (
     <Wrapper>
-      <ContentFilterHeading {...heading} title="National Budget" button="it-goes-somewhere" />
+      <ContentFilterHeading {...heading} {...{ button }} title="National Budget" />
       <Introduction {...introduction} />
       <div key={heading.selectionDropdown.initialSelected}>
         <ChartSection

@@ -5,6 +5,8 @@ import {
   mockDropdown,
   Tprops as TpropsView,
   mockProps as mockPropsView,
+  Tbutton,
+  mockButton as mockButtonDepartment,
 } from '../../components/ContentFilterHeading/schema';
 
 import {
@@ -24,11 +26,13 @@ import {
 import { Subtract } from 'utility-types';
 import { omit } from 'lodash';
 
-export { mockDropdown };
+export { mockDropdown, mockButtonDepartment };
 
-export type HeadingProps = { title?: string; button?: string };
+export type HeadingProps = { title?: string; button?: Tbutton };
 export type Theading = Subtract<TpropsView, HeadingProps>;
 export const mockHeading = () => omit(mockPropsView(), ['title', 'button']);
+
+const conditionalValue = callback => (faker.random.boolean() ? callback() : null);
 
 const createRandomLengthArray = (min, max, callback) =>
   new Array(faker.random.number({ min, max })).fill(true).map(callback);
@@ -72,7 +76,7 @@ export const mockTotal = (): Ttotal => faker.random.number({ min: 100000000, max
 /**
  *
  */
-export type Tsphere = string;
+// export type Tsphere = string;
 export const mockSphere = (): Tsphere => faker.commerce.department();
 
 // Type: Tpercentage
@@ -154,6 +158,7 @@ export type TpresentationProps = {
   introduction: Tintroduction;
   programmes: Tprogrammes;
   relatedFocusAreas: TfocusArea[];
+  button: Tbutton;
 };
 
 export const mockPresentationalProps = (): TpresentationProps => ({
@@ -161,6 +166,7 @@ export const mockPresentationalProps = (): TpresentationProps => ({
   introduction: mockIntroduction(),
   programmes: mockProgrammes(),
   relatedFocusAreas: createRandomLengthArray(0, 10, mockFocusArea) as TfocusArea[],
+  button: mockButtonDepartment(),
 });
 
 // Type: TlatestYear

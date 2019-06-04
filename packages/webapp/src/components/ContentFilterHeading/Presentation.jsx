@@ -24,7 +24,7 @@ const callDetailsButton = button => {
   }
   const { url } = button;
   return (
-    <Link href={button}>
+    <Link href={url}>
       <ButtonDetails disabled={!url} classes={{ disabled: 'disabled' }}>
         <ButtonText>
           <Details>Details</Details>
