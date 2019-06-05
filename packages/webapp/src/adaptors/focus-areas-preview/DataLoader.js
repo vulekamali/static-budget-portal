@@ -1,7 +1,7 @@
 import { Component, createElement } from 'react';
 import axios from 'axios';
 
-import FocusAreaPreview from '../../views/FocusArea';
+import NewFocusArea from '../../views/FocusAreaSummary';
 import transformData from './transformData';
 
 class DataLoader extends Component {
@@ -41,7 +41,7 @@ class DataLoader extends Component {
       year,
       updateUrl: true
     }
-    
+
     return createElement(FocusAreaPreview, passedProps);
   }
 }
