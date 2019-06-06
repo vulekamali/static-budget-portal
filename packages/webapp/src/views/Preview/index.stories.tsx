@@ -60,13 +60,26 @@ const item = value => ({
   ],
 });
 
+const government = 'south-africa';
+const governmentProvincial = 'kwazulu-natal';
+
 const items = [1, 2, 3, 4, 5].map(value => item(value));
 
 const props = {
   items,
+  government,
+  department: 2,
+};
+
+const propsProvincial = {
+  items,
+  government: governmentProvincial,
   department: 2,
 };
 
 const basic = () => <Preview {...props} />;
+const provincial = () => <Preview {...propsProvincial} />;
 
-storiesOf('views.Preview', module).add('Default', basic);
+storiesOf('views.Preview', module)
+  .add('Default', basic)
+  .add('Provincial', provincial);
