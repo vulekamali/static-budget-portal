@@ -82,4 +82,4 @@ const provincial = () => <Preview {...propsProvincial} />;
 
 storiesOf('views.Preview', module)
   .add('Default', basic)
-  .add('Provincial', provincial);
+  .add('Test KwaZulu-Natal presentation', provincial);
