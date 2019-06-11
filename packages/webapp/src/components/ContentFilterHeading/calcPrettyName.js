@@ -1,10 +1,20 @@
-import { titleCase } from 'change-case';
+const provincialName = {
+  'eastern-cape': 'Eastern Cape',
+  'free-state': 'Free State',
+  gauteng: 'Gauteng',
+  'kwazulu-natal': 'KwaZulu-Natal',
+  limpopo: 'Limpopo',
+  mpumalanga: 'Mpumalanga',
+  'north-west': 'North West',
+  'northern-cape': 'Northern Cape',
+  'western-cape': 'Western Cape',
+};
 
-const calcPrettyName = title => {
-  if (title === 'south-africa') {
+const calcPrettyName = governmentSlug => {
+  if (governmentSlug === 'south-africa') {
     return 'National Budget';
   }
-  return titleCase(title);
+  return provincialName[governmentSlug];
 };
 
 export default calcPrettyName;
