@@ -40,8 +40,9 @@ const callDescription = description => {
   );
 };
 
-const BudgetAmounts = props => {
+const Introduction = props => {
   const { total, percentage, sphere, description } = props;
+
   return (
     <React.Fragment>
       <Wrapper>
@@ -78,4 +79,4 @@ const BudgetAmounts = props => {
   );
 };
 
-export default BudgetAmounts;
+export default Introduction;

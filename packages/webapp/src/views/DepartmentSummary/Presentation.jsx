@@ -15,7 +15,19 @@ import {
   ButtonStyled,
   TextButton,
   ArrowStyled,
+  FooterDetails,
 } from './styled';
+
+const callFootNote = dynamicFootnotes => (
+  <div key={dynamicFootnotes}>
+    <FooterDetails>{dynamicFootnotes}</FooterDetails>
+    <FooterDetails>
+      Direct charges against the national revenue fund included here, while it is not normally
+      counted as part of the total budget of the department, as it is not part of the voted
+      appropriation.
+    </FooterDetails>
+  </div>
+);
 
 const callFocusButtons = ({ slug, title, url }) => (
   <ButtonContainer key={slug}>
@@ -39,20 +51,24 @@ const callFocusAreas = focusAreas => (
 
 const Presentation = props => {
   const { heading, introduction, programmes, relatedFocusAreas } = props;
+  const { chartLoading, chartData, chartFooterData } = programmes;
+  const {
+    selectionDropdown: { initialSelected: selectionKey },
+    yearDropdown: { initialSelected: yearKey },
+  } = heading;
 
-  const { chartLoading, chartData, chartFooterData, chartNoticeData } = programmes;
+  const chartKey = `${chartData.length > 0}-${yearKey}-${selectionKey}`;
 
   return (
     <Wrapper>
-      <ContentFilterHeading {...heading} title="National Budget" button="it-goes-somewhere" />
-      <Introduction {...introduction} />
-      <div key={heading.selectionDropdown.initialSelected}>
+      <ContentFilterHeading {...heading} />
+      {!!introduction && <Introduction {...introduction} />}
+      <div key={chartKey}>
         <ChartSection
           chart={() => <BarChart items={chartData} />}
-          footer={chartFooterData}
           loading={chartLoading}
           title="Department programmes"
-          notices={chartNoticeData}
+          footer={callFootNote(chartFooterData)}
         />
       </div>
       {relatedFocusAreas && callFocusAreas(relatedFocusAreas)}

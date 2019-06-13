@@ -1,9 +1,7 @@
 import React from 'react';
-import { mockProps, Tprops, mockPresentationalProps } from '../schema';
+import { defaultProps } from './mockData';
 import DepartmentSummary from '..';
 
-console.log(mockPresentationalProps());
-const passedProps: Tprops = mockProps();
-const Test = () => <DepartmentSummary {...passedProps} />;
+const Demo = (): JSX.Element => <DepartmentSummary {...defaultProps} />;
 
-export default Test;
+export default Demo;

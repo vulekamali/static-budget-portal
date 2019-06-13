@@ -1,57 +1,98 @@
 import React, { useEffect, useState } from 'react';
 import Presentation from './Presentation';
-import useUpdatePageData from './useUpdatePageData';
-import useUpdateYearsData from './useUpdateYearsData';
-import colorsList from './colorsList';
+import calcHeadingData from './calcHeadingData';
+import calcIntroduction from './calcIntroduction';
+import calcProgrammes from './calcProgrammes';
+import calcRelatedFocusAreas from './calcRelatedFocusAreas';
+import convertTitleToSlug from './convertTitleToSlug';
 
-const DepartmentSummary = ({
-  startingSelectedYear,
-  latestYear,
-  startingSelectedDepartment,
-  government,
-  onUrlChange,
-}) => {
-  const [year, changeYear] = useState(startingSelectedYear);
-  const [department, changeDepartment] = useState(startingSelectedDepartment, government);
-  const [pageData, setPageEndpoint] = useUpdatePageData(year, government);
-  const [validYears, { setUrl, setDepartment }] = useUpdateYearsData(latestYear, department);
+const DepartmentSummary = props => {
+  const {
+    latestYear,
+    startingSelectedYear,
+    startingSelectedDepartment,
+    onUrlChange,
+    constructGetFocusAreaData,
+    constructGetValidYearsFn,
+    sphere,
+    government,
+  } = props;
+
+  const [componentMounted, setComponentMounted] = useState(false);
+
+  const [selectedYear, changeSelectedYear] = useState(startingSelectedYear);
+  const [selectedDepartment, changeSelectedDepartment] = useState(startingSelectedDepartment);
+  const [isError, setError] = useState(false);
+
+  const [departments, setDepartments] = useState([]);
+  const [departmentsIsLoading, setDepartmentsLoading] = useState(false);
+
+  const [validYears, setValidYears] = useState([]);
+  const [validYearsIsLoading, setValidYearsLoading] = useState(false);
+
+  const getPageData = constructGetFocusAreaData({
+    setDepartments,
+    setDepartmentsLoading,
+    setError,
+  });
+
+  const getValidYears = constructGetValidYearsFn({
+    setValidYears,
+    setValidYearsLoading,
+    setError,
+    latestYear,
+  });
 
   useEffect(() => {
-    setPageEndpoint(year);
-  }, [year]);
+    getPageData({ selectedYear });
+  }, [selectedYear]);
 
-  const departmentArray = pageData.data && pageData.data[0].data.items;
+  useEffect(() => {
+    if (componentMounted) {
+      const slug = convertTitleToSlug({ selectedDepartment, departments });
+      onUrlChange({ selectedYear, slug, sphere, government });
+    } else {
+      setComponentMounted(true);
+    }
 
-  const selectionOptions = departmentArray
-    ? departmentArray.map(({ title }) => ({
-        value: title,
-      }))
-    : [];
+    getValidYears({ selectedYear, selectedDepartment });
+  }, [selectedYear, selectedDepartment]);
 
-  console.log(departmentArray, '3333333333333333');
+  const heading = calcHeadingData({
+    values: {
+      validYears,
+      departments,
+      selectedYear,
+      selectedDepartment,
+      latestYear,
+      government,
+    },
+    status: {
+      departmentsIsLoading,
+      validYearsIsLoading,
+    },
+    actions: {
+      changeSelectedDepartment,
+      changeSelectedYear,
+    },
+  });
 
-  const selectionDropdown = {
-    initialSelected: department,
-    loading: pageData.isLoading,
-    onSelectedChange: changeDepartment,
-    options: selectionOptions,
-  };
+  const introduction = calcIntroduction({ departments, selectedDepartment, sphere });
+  const relatedFocusAreas = calcRelatedFocusAreas({ departments, selectedDepartment });
 
-  const yearDropdown = {
-    initialSelected: year,
-    loading: validYears.isLoading,
-    onSelectedChange: changeYear,
-    options: validYears.data,
-  };
+  const programmes = calcProgrammes({
+    departmentsIsLoading,
+    selectedYear,
+    selectedDepartment,
+    departments,
+  });
 
   const passedProps = {
-    error: !!pageData.error || !!validYears.error,
-    heading: {
-      selectionDropdown,
-      yearDropdown,
-    },
-    // national,
-    // provincial,
+    error: isError,
+    heading,
+    introduction,
+    programmes,
+    relatedFocusAreas,
   };
 
   return <Presentation {...passedProps} />;

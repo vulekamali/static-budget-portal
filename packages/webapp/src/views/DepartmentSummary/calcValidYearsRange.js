@@ -1,10 +1,9 @@
 const calcNextYear = year => year + 1;
 
 const convertToFinancialYearRange = year => {
-  const yearRange = `${year}-${calcNextYear(year)
+  return `${year}-${calcNextYear(year)
     .toString()
     .substr(-2)}`;
-  return yearRange;
 };
 
 const createYearRange = latestYear => (value, index) => {
@@ -12,7 +11,6 @@ const createYearRange = latestYear => (value, index) => {
   return convertToFinancialYearRange(year);
 };
 
-const createYearsToCheckArray = latestYear =>
-  new Array(4).fill(true).map(createYearRange(latestYear));
+const calcValidYearsRange = latestYear => new Array(4).fill(true).map(createYearRange(latestYear));
 
-export default createYearsToCheckArray;
+export default calcValidYearsRange;
