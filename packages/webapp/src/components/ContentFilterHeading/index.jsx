@@ -7,7 +7,7 @@ const createCallbackFn = (callback, prop, didMount) => () => {
   }
 };
 
-const FilterDropdown = props => {
+const ContentFilterHeading = props => {
   const {
     selectionDropdown: {
       initialSelected: selectionSelected,
@@ -51,4 +51,4 @@ const FilterDropdown = props => {
   return <Presentation {...passedProps} />;
 };
 
-export default FilterDropdown;
+export default ContentFilterHeading;

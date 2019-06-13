@@ -1,5 +1,4 @@
 import React from 'react';
-import calcPrettyName from './calcPrettyName';
 import FilterDropdown from '../FilterDropdown';
 
 import {
@@ -55,7 +54,7 @@ const Presentation = ({ title = '', selectionDropdown, yearDropdown, button }) =
     <HeadingWrapper>
       <HeadingContainer>
         <HeadingText>
-          <Title>{title && calcPrettyName(title)}</Title>
+          <Title>{title}</Title>
         </HeadingText>
         <SelectsGroup>
           <PrimaryFilter>
