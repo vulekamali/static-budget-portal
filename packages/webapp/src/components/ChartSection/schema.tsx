@@ -43,7 +43,7 @@ const mockPreviewUrl = (): TpreviewUrl => faker.internet.url();
  * that coincides with that id. In terms of this component, the zoom is usually
  * prefixed infront of the preview name when present.
  */
-export type TpreviewZoom = String;
+export type TpreviewZoom = string;
 const mockPreviewZoom = (): TpreviewZoom => faker.commerce.department();
 
 // Type: TitemPreview
@@ -134,7 +134,7 @@ export const mockSelectObject = (createOptionCallback): TselectObject => {
  * chart, otherwise, show loading state of the ChartSection, i.e Greyed out
  * Chart and Spinner. If `loading` is a number, then it also dictates the height of greyed out Chart with its value.
  */
-export type Tloading = Boolean | number;
+export type Tloading = boolean | number;
 export const createLoadingBool = () => faker.random.boolean();
 export const createLoadingNumber = () => faker.random.number({ min: 300, max: 1000 });
 export const mockLoading = (): Tloading =>
@@ -187,7 +187,7 @@ export type Tfooter = string | JSX.Element;
 export const createFooterComponent = (): any => (
   <Fragment>
     {[1, 2, 3].map(() => (
-      <p>{faker.hacker.phrase()}</p>
+      <p key={faker.random.uuid()}>{faker.hacker.phrase()}</p>
     ))}
   </Fragment>
 );
