@@ -32,7 +32,7 @@ const callShareIcon = share => {
 const callBudgetPhaseSelect = phases => (
   <BudgetPhase>
     <SelectStyledPhase
-      value={phases.disabled}
+      value={phases.disabled || ''}
       disabled
       displayEmpty
       classes={{ selectMenu: 'selectMenu', disabled: 'disabled', icon: 'icon' }}
@@ -44,7 +44,7 @@ const callBudgetPhaseSelect = phases => (
 
 const callYearsSelect = years => (
   <SelectStyled
-    value={years.disabled}
+    value={years.disabled || ''}
     disabled
     displayEmpty
     classes={{ selectMenu: 'selectMenu', disabled: 'disabled', icon: 'icon' }}

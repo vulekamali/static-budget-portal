@@ -54,10 +54,10 @@ const callChart = (chart, onSelectedChange, loading, notices) => {
   );
 };
 
-const callButtonExplore = (url, color, verb, subject) => {
+const callButtonExplore = (url, color, verb, subject, loading, notices) => {
   return (
-    <LinkWrapper href={url}>
-      <ButtonStyle disabled={!url} {...{ color }}>
+    <LinkWrapper href={loading ? null : url}>
+      <ButtonStyle disabled={!url || !!loading || notices} {...{ color }}>
         <TextExploreButton>
           {verb} <SpanStyled>{subject}</SpanStyled>
         </TextExploreButton>
@@ -68,12 +68,12 @@ const callButtonExplore = (url, color, verb, subject) => {
 };
 
 const callAmount = (value, loading) => (
-  <Amount aria-hidden={loading} {...{ loading }}>
+  <Amount aria-hidden={loading} {...{ loading }} component="div">
     {loading ? '_'.repeat(13) : `R${trimValues(value)}`}
   </Amount>
 );
 
-const callDetails = (itemPreview, verb, subject, loading) => {
+const callDetails = (itemPreview, verb, subject, loading, notices) => {
   const { name, value, url, color } = itemPreview;
   if (value === null) {
     return null;
@@ -85,14 +85,14 @@ const callDetails = (itemPreview, verb, subject, loading) => {
           <Department>{name}</Department>
           {callAmount(value, loading)}
         </div>
-        {!!verb && callButtonExplore(url, color, verb, subject)}
+        {!!verb && callButtonExplore(url, color, verb, subject, loading, notices)}
       </DetailsContainer>
     </DetailsWrapper>
   );
 };
 
 const callFooter = (footer, loading) => (
-  <FooterDetails aria-hidden={loading} {...{ loading }}>
+  <FooterDetails aria-hidden={loading} {...{ loading }} component="div">
     {loading ? '_'.repeat(110) : footer}
   </FooterDetails>
 );
@@ -117,7 +117,7 @@ const Markup = props => {
     <Wrapper>
       <CssBaseline />
       <SectionHeading {...{ title, years, phases }} share={anchor} />
-      {!!itemPreview && callDetails(itemPreview, verb, subject, loading)}
+      {!!itemPreview && callDetails(itemPreview, verb, subject, loading, notices)}
       {callChart(chart, onSelectedChange, loading, notices)}
       <FooterWrapper>
         <FooterContainer>{footer && callFooter(footer, loading)}</FooterContainer>

@@ -4,6 +4,7 @@ import ReactMarkdown from 'react-markdown';
 import ContentFilterHeading from '../../components/ContentFilterHeading';
 import ChartSection from '../../components/ChartSection';
 import Treemap from '../../components/Treemap';
+import ErrorMessage from './ErrorMessage';
 
 import { Wrapper, FooterDetails } from './styled';
 
@@ -47,8 +48,12 @@ const callProvincialChart = provincial => {
 };
 
 const Presentation = props => {
-  const { heading, national, provincial } = props;
+  const { error, heading, national, provincial } = props;
   const { chartLoading, chartData, intialSelectedValues, chartFooterData } = national;
+
+  if (error) {
+    return <ErrorMessage />;
+  }
 
   const {
     selectionDropdown: { initialSelected: selectionKey },
@@ -68,7 +73,7 @@ const Presentation = props => {
           loading={chartLoading}
           verb="Explore"
           subject="this department"
-          title="Contributing provincial departments"
+          title="Contributing National departments"
         />
       </div>
       {callProvincialChart(provincial)}
