@@ -135,7 +135,7 @@ const FooterContainer = styled.div`
   }
 `;
 
-const FooterDetails = styled(removeProps({ component: Typography, blacklist: 'loading' }))`
+const FooterDetails = styled(removeProps({ component: 'div', blacklist: 'loading' }))`
   && {
     font-size: 10px;
     line-height: 140%;
