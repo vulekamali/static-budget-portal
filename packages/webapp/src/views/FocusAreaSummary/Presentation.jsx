@@ -9,7 +9,7 @@ import { Wrapper, FooterDetails } from './styled';
 
 const addDynamicFootnotes = dynamicFootnotes =>
   dynamicFootnotes.map(footer => (
-    <FooterDetails component="div">
+    <FooterDetails>
       <ReactMarkdown source={footer} />
     </FooterDetails>
   ));
@@ -50,10 +50,17 @@ const Presentation = props => {
   const { heading, national, provincial } = props;
   const { chartLoading, chartData, intialSelectedValues, chartFooterData } = national;
 
+  const {
+    selectionDropdown: { initialSelected: selectionKey },
+    yearDropdown: { initialSelected: yearKey },
+  } = heading;
+
+  const chartKey = `${chartData.length > 0}-${yearKey}-${selectionKey}`;
+
   return (
     <Wrapper>
-      <ContentFilterHeading {...heading} />
-      <div key={heading.selectionDropdown.initialSelected}>
+      <ContentFilterHeading {...{ ...heading, title: 'Focus Areas' }} />
+      <div key={chartKey}>
         <ChartSection
           itemPreview={intialSelectedValues}
           chart={onSelectedChange => <Treemap {...{ onSelectedChange }} items={chartData} />}

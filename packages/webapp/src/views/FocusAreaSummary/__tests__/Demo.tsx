@@ -1,8 +1,7 @@
 import React from 'react';
-import { mockProps, Tprops, mockPresentationalProps } from '../schema';
+import { defaultProps } from './mockData';
 import FocusAreaSummary from '..';
 
-const passedProps: Tprops = mockProps();
-const Test = () => <FocusAreaSummary {...passedProps} />;
+const Demo = (): JSX.Element => <FocusAreaSummary {...defaultProps} />;
 
-export default Test;
+export default Demo;
