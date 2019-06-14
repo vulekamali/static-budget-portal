@@ -26,8 +26,6 @@ const constructGetFocusAreaData = ({ setFocusAreas, setFocusAreasLoading, setErr
   setFocusAreasLoading(true);
   setFocusAreas([]);
 
-  console.log(selectedYear);
-
   axios
     .get(`/json/${selectedYear}/focus.json`)
     .then(completeRequest({ setFocusAreas, setFocusAreasLoading, setError }))
