@@ -211,7 +211,7 @@ const constructGetValidYearsFnMock: TconstructGetValidYearsFn = ({
 };
 
 // Helper: constructGetFocusAreaDataMock
-const constructGetFocusAreaDataMock: TconstructDepartmentsData = ({
+const constructGetDepartmentDataMock: TconstructDepartmentsData = ({
   setDepartments,
   setDepartmentsLoading,
 }: TconstructDepartmentsDataProps): TgetDepartmentData => (): void => {
@@ -234,7 +234,7 @@ export const defaultProps: Tprops = {
   onUrlChange: ({ selectedYear, slug, sphere, government }): void =>
     // eslint-disable-next-line no-console
     console.log(`Url changed to "/${selectedYear}/previews/${sphere}/${government}/${slug}`),
-  constructGetFocusAreaData: constructGetFocusAreaDataMock,
+  constructGetDepartmentData: constructGetDepartmentDataMock,
   constructGetValidYearsFn: constructGetValidYearsFnMock,
 };
 
