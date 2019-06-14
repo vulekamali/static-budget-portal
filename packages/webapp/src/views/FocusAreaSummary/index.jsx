@@ -47,7 +47,7 @@ const FocusAreaSummary = props => {
       setComponentMounted(true);
     }
 
-    getValidYears({ selectedYear, selectedFocusArea });
+    getValidYears({ selectedFocusArea });
   }, [selectedYear, selectedFocusArea]);
 
   const heading = calcHeadingData({

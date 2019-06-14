@@ -12,7 +12,7 @@ const DepartmentSummary = props => {
     startingSelectedYear,
     startingSelectedDepartment,
     onUrlChange,
-    constructGetFocusAreaData,
+    constructGetDepartmentData,
     constructGetValidYearsFn,
     sphere,
     government,
@@ -30,10 +30,12 @@ const DepartmentSummary = props => {
   const [validYears, setValidYears] = useState([]);
   const [validYearsIsLoading, setValidYearsLoading] = useState(false);
 
-  const getPageData = constructGetFocusAreaData({
+  const getPageData = constructGetDepartmentData({
     setDepartments,
     setDepartmentsLoading,
     setError,
+    sphere,
+    government,
   });
 
   const getValidYears = constructGetValidYearsFn({
@@ -41,6 +43,8 @@ const DepartmentSummary = props => {
     setValidYearsLoading,
     setError,
     latestYear,
+    sphere,
+    government,
   });
 
   useEffect(() => {
@@ -55,7 +59,7 @@ const DepartmentSummary = props => {
       setComponentMounted(true);
     }
 
-    getValidYears({ selectedYear, selectedDepartment });
+    getValidYears({ selectedDepartment });
   }, [selectedYear, selectedDepartment]);
 
   const heading = calcHeadingData({
