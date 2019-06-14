@@ -1,8 +1,9 @@
 ---
 ---
 
-{% if (site.data.2016-17.previews.provincial.limpopo.actual) %}
-  {{ site.data.2016-17.previews.provincial.limpopo.actual | jsonify }}
+
+{% if site["data"]["2016-17"]["previews"]["provincial"]["limpopo"]["actual"] %}
+  {{ site["data"]["2016-17"]["previews"]["provincial"]["limpopo"]["actual"] | jsonify }}
 {% else %}
   {}
 {% endif %}

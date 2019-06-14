@@ -1,8 +1,9 @@
 ---
 ---
 
-{% if (site.data.2017-18.previews.provincial.north-west.actual) %}
-  {{ site.data.2017-18.previews.provincial.north-west.actual | jsonify }}
+
+{% if site["data"]["2017-18"]["previews"]["provincial"]["north-west"]["actual"] %}
+  {{ site["data"]["2017-18"]["previews"]["provincial"]["north-west"]["actual"] | jsonify }}
 {% else %}
   {}
 {% endif %}

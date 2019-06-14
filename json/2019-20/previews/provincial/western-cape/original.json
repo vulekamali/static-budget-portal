@@ -1,8 +1,9 @@
 ---
 ---
 
-{% if (site.data.2019-20.previews.provincial.western-cape.original) %}
-  {{ site.data.2019-20.previews.provincial.western-cape.original | jsonify }}
+
+{% if site["data"]["2019-20"]["previews"]["provincial"]["western-cape"]["original"] %}
+  {{ site["data"]["2019-20"]["previews"]["provincial"]["western-cape"]["original"] | jsonify }}
 {% else %}
   {}
 {% endif %}

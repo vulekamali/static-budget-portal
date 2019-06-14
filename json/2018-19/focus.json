@@ -1,8 +1,9 @@
 ---
 ---
 
-{% if (site.data.2018-19.focus) %}
-  {{ site.data.2018-19.focus | jsonify }}
+
+{% if site["data"]["2018-19"]["focus"] %}
+  {{ site["data"]["2018-19"]["focus"] | jsonify }}
 {% else %}
   {}
 {% endif %}

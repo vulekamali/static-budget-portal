@@ -1,8 +1,9 @@
 ---
 ---
 
-{% if (site.data.2018-19.previews.provincial.eastern-cape.original) %}
-  {{ site.data.2018-19.previews.provincial.eastern-cape.original | jsonify }}
+
+{% if site["data"]["2018-19"]["previews"]["provincial"]["eastern-cape"]["original"] %}
+  {{ site["data"]["2018-19"]["previews"]["provincial"]["eastern-cape"]["original"] | jsonify }}
 {% else %}
   {}
 {% endif %}

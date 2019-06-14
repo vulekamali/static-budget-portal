@@ -1,8 +1,0 @@
----
----
-
-{% if (site.data.2014-15.previews.provincial.eastern-cape.adjusted) %}
-  {{ site.data.2014-15.previews.provincial.eastern-cape.adjusted | jsonify }}
-{% else %}
-  {}
-{% endif %}

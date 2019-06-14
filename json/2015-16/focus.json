@@ -1,8 +1,0 @@
----
----
-
-{% if (site.data.2015-16.focus) %}
-  {{ site.data.2015-16.focus | jsonify }}
-{% else %}
-  {}
-{% endif %}

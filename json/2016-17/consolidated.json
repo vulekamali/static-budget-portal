@@ -1,8 +1,9 @@
 ---
 ---
 
-{% if (site.data.2016-17.consolidated) %}
-  {{ site.data.2016-17.consolidated | jsonify }}
+
+{% if site["data"]["2016-17"]["consolidated"] %}
+  {{ site["data"]["2016-17"]["consolidated"] | jsonify }}
 {% else %}
   {}
 {% endif %}
