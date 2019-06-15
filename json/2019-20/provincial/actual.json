@@ -1,8 +1,8 @@
 ---
 ---
 
-{% if (site.data.homepage.2019-20.provincial.actual) %}
-  {{ site.data.homepage.2019-20.provincial.actual | jsonify }}
+{% if (site.data.homepage["2019-20"].provincial.actual) %}
+  {{ site.data.homepage["2019-20"].provincial.actual | jsonify }}
 {% else %}
   {}
 {% endif %}

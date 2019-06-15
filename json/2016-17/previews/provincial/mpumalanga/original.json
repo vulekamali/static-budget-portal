@@ -1,8 +1,8 @@
 ---
 ---
 
-{% if (site.data.2016-17.previews.provincial.mpumalanga.original) %}
-  {{ site.data.2016-17.previews.provincial.mpumalanga.original | jsonify }}
+{% if (site.data["2016-17"].previews.provincial.mpumalanga.original) %}
+  {{ site.data["2016-17"].previews.provincial.mpumalanga.original | jsonify }}
 {% else %}
   {}
 {% endif %}

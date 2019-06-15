@@ -1,8 +1,8 @@
 ---
 ---
 
-{% if (site.data.2018-19.previews.provincial.mpumalanga.actual) %}
-  {{ site.data.2018-19.previews.provincial.mpumalanga.actual | jsonify }}
+{% if (site.data["2018-19"].previews.provincial.mpumalanga.actual) %}
+  {{ site.data["2018-19"].previews.provincial.mpumalanga.actual | jsonify }}
 {% else %}
   {}
 {% endif %}
