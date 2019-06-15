@@ -21,6 +21,7 @@ gem "minima", "~> 2.0"
 group :jekyll_plugins do
   gem "jekyll-sitemap", "~> 1.1.1"
   gem "jekyll-redirect-from"
+  gem "jekyll-include-cache"
 end
 
 # Windows does not include zoneinfo files, so bundle the tzinfo-data gem
