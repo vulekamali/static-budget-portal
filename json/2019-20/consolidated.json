@@ -1,7 +1,7 @@
 ---
 ---
 
-{% if (site.data["2019-20"].consolidated) %}
+{% if site.data["2019-20"].consolidated %}
   {{ site.data["2019-20"].consolidated | jsonify }}
 {% else %}
   {}

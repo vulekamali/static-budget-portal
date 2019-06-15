@@ -1,7 +1,7 @@
 ---
 ---
 
-{% if (site.data["2016-17"].previews.provincial.kwazulu-natal.actual) %}
+{% if site.data["2016-17"].previews.provincial.kwazulu-natal.actual %}
   {{ site.data["2016-17"].previews.provincial.kwazulu-natal.actual | jsonify }}
 {% else %}
   {}

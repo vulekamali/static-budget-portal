@@ -1,7 +1,7 @@
 ---
 ---
 
-{% if (site.data["2017-18"].previews.provincial.gauteng.adjusted) %}
+{% if site.data["2017-18"].previews.provincial.gauteng.adjusted %}
   {{ site.data["2017-18"].previews.provincial.gauteng.adjusted | jsonify }}
 {% else %}
   {}

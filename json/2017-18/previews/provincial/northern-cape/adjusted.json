@@ -1,7 +1,7 @@
 ---
 ---
 
-{% if (site.data["2017-18"].previews.provincial.northern-cape.adjusted) %}
+{% if site.data["2017-18"].previews.provincial.northern-cape.adjusted %}
   {{ site.data["2017-18"].previews.provincial.northern-cape.adjusted | jsonify }}
 {% else %}
   {}

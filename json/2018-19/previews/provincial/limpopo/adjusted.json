@@ -1,7 +1,7 @@
 ---
 ---
 
-{% if (site.data["2018-19"].previews.provincial.limpopo.adjusted) %}
+{% if site.data["2018-19"].previews.provincial.limpopo.adjusted %}
   {{ site.data["2018-19"].previews.provincial.limpopo.adjusted | jsonify }}
 {% else %}
   {}
