@@ -1,8 +1,0 @@
----
----
-
-{% if (site.data.2015-16.previews.provincial.limpopo.adjusted) %}
-  {{ site.data.2015-16.previews.provincial.limpopo.adjusted | jsonify }}
-{% else %}
-  {}
-{% endif %}

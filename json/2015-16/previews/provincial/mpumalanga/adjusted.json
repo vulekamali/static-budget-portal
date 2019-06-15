@@ -1,8 +1,0 @@
----
----
-
-{% if (site.data.2015-16.previews.provincial.mpumalanga.adjusted) %}
-  {{ site.data.2015-16.previews.provincial.mpumalanga.adjusted | jsonify }}
-{% else %}
-  {}
-{% endif %}
