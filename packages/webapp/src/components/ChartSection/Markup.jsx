@@ -4,6 +4,7 @@ import Icon from '@material-ui/icons/ArrowForward';
 import CssBaseline from '@material-ui/core/CssBaseline';
 import trimValues from '../../helpers/trimValues';
 import SectionHeading from '../SectionHeading';
+import Notices from './Notices';
 
 import {
   Wrapper,
@@ -20,18 +21,43 @@ import {
   FooterWrapper,
   FooterContainer,
   FooterDetails,
+  LoadingChart,
+  CircularProgressStyled,
 } from './styled';
 
-const callChart = (chart, onSelectedChange) => (
-  <ChartWrapper>
-    <ChartContainer>{chart(onSelectedChange)}</ChartContainer>
-  </ChartWrapper>
-);
+const callChart = (chart, onSelectedChange, loading, notices) => {
+  if (loading) {
+    return (
+      <ChartWrapper>
+        <ChartContainer>
+          <LoadingChart {...{ loading }}>
+            <CircularProgressStyled size={100} thickness={2.5} />
+          </LoadingChart>
+        </ChartContainer>
+      </ChartWrapper>
+    );
+  }
 
-const callButtonExplore = (url, color, verb, subject) => {
+  if (notices) {
+    return (
+      <ChartWrapper>
+        <ChartContainer>
+          <Notices {...{ notices }} />
+        </ChartContainer>
+      </ChartWrapper>
+    );
+  }
   return (
-    <LinkWrapper href={url}>
-      <ButtonStyle disabled={!url} {...{ color }}>
+    <ChartWrapper>
+      <ChartContainer>{chart(onSelectedChange)}</ChartContainer>
+    </ChartWrapper>
+  );
+};
+
+const callButtonExplore = (url, color, verb, subject, loading, notices) => {
+  return (
+    <LinkWrapper href={loading ? null : url}>
+      <ButtonStyle disabled={!url || !!loading || notices} {...{ color }}>
         <TextExploreButton>
           {verb} <SpanStyled>{subject}</SpanStyled>
         </TextExploreButton>
@@ -41,7 +67,13 @@ const callButtonExplore = (url, color, verb, subject) => {
   );
 };
 
-const callDetails = (selected, verb, subject) => {
+const callAmount = (value, loading) => (
+  <Amount aria-hidden={loading} {...{ loading }} component="div">
+    {loading ? '_'.repeat(13) : `R${trimValues(value)}`}
+  </Amount>
+);
+
+const callDetails = (selected, verb, subject, loading, notices) => {
   const { name, value, url, color } = selected;
   if (value === null) {
     return null;
@@ -51,13 +83,19 @@ const callDetails = (selected, verb, subject) => {
       <DetailsContainer>
         <div>
           <Department>{name}</Department>
-          <Amount>R{trimValues(value)}</Amount>
+          {callAmount(value, loading)}
         </div>
-        {!!verb && callButtonExplore(url, color, verb, subject)}
+        {!!verb && callButtonExplore(url, color, verb, subject, loading, notices)}
       </DetailsContainer>
     </DetailsWrapper>
   );
 };
+
+const callFooter = (footer, loading) => (
+  <FooterDetails aria-hidden={loading} {...{ loading }} component="div">
+    {loading ? '_'.repeat(110) : footer}
+  </FooterDetails>
+);
 
 const Markup = props => {
   const {
@@ -71,16 +109,18 @@ const Markup = props => {
     phases,
     anchor,
     title,
+    loading,
+    notices,
   } = props;
 
   return (
     <Wrapper>
       <CssBaseline />
-      <SectionHeading title={title} share={anchor} years={years} phases={phases} />
-      {!!selected && callDetails(selected, verb, subject)}
-      {callChart(chart, onSelectedChange)}
+      <SectionHeading {...{ title, years, phases }} share={anchor} />
+      {!!selected && callDetails(selected, verb, subject, loading, notices)}
+      {callChart(chart, onSelectedChange, loading, notices)}
       <FooterWrapper>
-        <FooterContainer>{footer && <FooterDetails>{footer}</FooterDetails>}</FooterContainer>
+        <FooterContainer>{footer && callFooter(footer, loading)}</FooterContainer>
       </FooterWrapper>
     </Wrapper>
   );

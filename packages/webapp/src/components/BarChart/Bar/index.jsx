@@ -4,13 +4,12 @@ import Markup from './Markup';
 import ResizeWindowListener from '../../../helpers/ResizeWindowListener';
 import { colors } from './data';
 
-
 class Bar extends Component {
   constructor(props) {
     super(props);
     this.state = {
       labelOutside: null,
-    }
+    };
 
     this.values = {
       fills: colors,
@@ -19,17 +18,17 @@ class Bar extends Component {
     };
   }
 
-  componentDidMount () {
+  componentDidMount() {
     this.values = {
       ...this.values,
       resizeListener: new ResizeWindowListener(this.labelOutsideHandler.bind(this)),
-    }
+    };
     this.labelOutsideHandler();
   }
 
   labelOutsideHandler() {
     const { componentNode, textNode } = this.values;
-    const { clientWidth: ColorBarWidth} = componentNode.current;
+    const { clientWidth: ColorBarWidth } = componentNode.current;
     const { clientWidth: TextWidth } = textNode.current;
 
     if (TextWidth >= ColorBarWidth) {
@@ -61,7 +60,7 @@ class Bar extends Component {
       fills: values.fills,
     };
 
-    return <Markup {...passedProps } />
+    return <Markup {...passedProps} />;
   }
 }
 
