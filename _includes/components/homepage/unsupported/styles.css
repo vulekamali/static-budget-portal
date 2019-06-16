@@ -1,0 +1,10 @@
+.unsupported {
+  display: none;
+
+  /* https://paper-leaf.com/blog/2014/09/targeting-ie-10-11-browsers-css/ */
+  @media screen and (-ms-high-contrast: active), screen and (-ms-high-contrast: none) {
+    display: block;
+    text-align: center;
+    font-size: 20px;
+  }
+}

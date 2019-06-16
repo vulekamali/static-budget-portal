@@ -1,8 +1,8 @@
 ---
 ---
 
-{% if (site.data.2019-20.previews.provincial.northern-cape.original) %}
-  {{ site.data.2019-20.previews.provincial.northern-cape.original | jsonify }}
+{% if site.data["2019-20"].previews.provincial.northern-cape.original %}
+  {{ site.data["2019-20"].previews.provincial.northern-cape.original | jsonify }}
 {% else %}
   {}
 {% endif %}

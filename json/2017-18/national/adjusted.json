@@ -1,8 +1,8 @@
 ---
 ---
 
-{% if (site.data.homepage.2017-18.national.adjusted) %}
-  {{ site.data.homepage.2017-18.national.adjusted | jsonify }}
+{% if site.data.homepage["2017-18"].national.adjusted %}
+  {{ site.data.homepage["2017-18"].national.adjusted | jsonify }}
 {% else %}
   {}
 {% endif %}

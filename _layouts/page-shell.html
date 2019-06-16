@@ -9,7 +9,7 @@ layout: base
 <div class="Page">
   <header class="Page-head">
     {%
-      include components/header-and-footer/HeaderBar/index.html
+      include_cached components/header-and-footer/HeaderBar/index.html
       items=site.data.navbar.array
       selected_tab=page.selected_tab
       latest_year=site.latest_year
@@ -19,7 +19,7 @@ layout: base
 
     {% if page.selected_financial_year %}
       {%
-        include components/header-and-footer/YearSelect/index.html
+        include_cached components/header-and-footer/YearSelect/index.html
         years=page.financial_years
       %}
     {% endif %}
@@ -28,10 +28,10 @@ layout: base
     {{ content }}
   </div>
   <footer class="Page-footer">
-    {% include
+    {% include_cached
       components/header-and-footer/Footer/index.html
       year=page.selected_financial_year
     %}
-    {% include components/header-and-footer/ExtraFooter/index.html %}
+    {% include_cached components/header-and-footer/ExtraFooter/index.html %}
   </footer>
 </div>

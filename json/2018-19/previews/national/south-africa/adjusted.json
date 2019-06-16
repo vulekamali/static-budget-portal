@@ -1,8 +1,8 @@
 ---
 ---
 
-{% if (site.data.2018-19.previews.national.south-africa.adjusted) %}
-  {{ site.data.2018-19.previews.national.south-africa.adjusted | jsonify }}
+{% if site.data["2018-19"].previews.national.south-africa.adjusted %}
+  {{ site.data["2018-19"].previews.national.south-africa.adjusted | jsonify }}
 {% else %}
   {}
 {% endif %}

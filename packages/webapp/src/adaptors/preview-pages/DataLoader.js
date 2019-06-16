@@ -21,7 +21,8 @@ class DataLoader extends Component {
     const loadliveData = ({ data }) =>
       this.setState({ data: transformData(data, department), loading: false });
 
-    return axios.get(api)
+    return axios
+      .get(api)
       .then(({ data }) => data)
       .then(loadliveData);
   }
@@ -40,8 +41,8 @@ class DataLoader extends Component {
       sphere,
       department,
       government,
-      year
-    }
+      year,
+    };
     return createElement(Preview, passedProps);
   }
 }
