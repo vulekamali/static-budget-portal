@@ -1,8 +1,8 @@
 ---
 ---
 
-{% if site.data.2018-19.previews.national.south-africa.original %}
-  {{ site.data.2018-19.previews.national.south-africa.original | jsonify }}
+{% if site.data["2018-19"].previews.national.south-africa.original %}
+  {{ site.data["2018-19"].previews.national.south-africa.original | jsonify }}
 {% else %}
   {}
 {% endif %}
