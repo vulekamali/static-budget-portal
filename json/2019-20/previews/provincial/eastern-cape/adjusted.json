@@ -1,8 +1,8 @@
 ---
 ---
 
-{% if (site.data.2019-20.previews.provincial.eastern-cape.adjusted) %}
-  {{ site.data.2019-20.previews.provincial.eastern-cape.adjusted | jsonify }}
+{% if site.data["2019-20"].previews.provincial.eastern-cape.adjusted %}
+  {{ site.data["2019-20"].previews.provincial.eastern-cape.adjusted | jsonify }}
 {% else %}
   {}
 {% endif %}

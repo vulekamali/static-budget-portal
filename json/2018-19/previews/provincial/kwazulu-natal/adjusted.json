@@ -1,8 +1,8 @@
 ---
 ---
 
-{% if (site.data.2018-19.previews.provincial.kwazulu-natal.adjusted) %}
-  {{ site.data.2018-19.previews.provincial.kwazulu-natal.adjusted | jsonify }}
+{% if site.data["2018-19"].previews.provincial.kwazulu-natal.adjusted %}
+  {{ site.data["2018-19"].previews.provincial.kwazulu-natal.adjusted | jsonify }}
 {% else %}
   {}
 {% endif %}

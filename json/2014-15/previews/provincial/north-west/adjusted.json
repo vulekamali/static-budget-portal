@@ -1,8 +1,0 @@
----
----
-
-{% if (site.data.2014-15.previews.provincial.north-west.adjusted) %}
-  {{ site.data.2014-15.previews.provincial.north-west.adjusted | jsonify }}
-{% else %}
-  {}
-{% endif %}
