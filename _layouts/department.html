@@ -72,7 +72,7 @@ layout: page-shell
   {% assign parliament = "false" %}
 {% endif %}
 
-{% assign subtitle = department_location | append: " " | append: page.name | append: " Department Budget " | append: page.selected_financial_year %}
+{% assign subtitle = department_location | append: " " | append: page.item_name | append: " Department Budget " | append: page.selected_financial_year %}
 
 
 <div class="Page-content Page-content--dynamicYears">
@@ -95,7 +95,7 @@ layout: page-shell
     </nav>
 
     <h1 class="Page-mainHeading u-textAlignCenter u-marginBottom0 u-marginLeft0">
-      {{ page.name }}
+      {{ page.item_name }}
     </h1>
     <span class="Page-subHeading u-textAlignCenter">
       {{ department_location }} Department Budget for {{ page.selected_financial_year }}
@@ -405,7 +405,7 @@ layout: page-shell
       </div>
     {% endif %}
 
-    {% capture review_subtitle %}{{ department_location }} {{page.name }} Department{% endcapture %}
+    {% capture review_subtitle %}{{ department_location }} {{page.item_name }} Department{% endcapture %}
 
     {% if page.budget_actual %}
       <div class="u-marginBottom60 u-marginTop15">

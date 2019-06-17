@@ -8,10 +8,10 @@ layout: page-shell
       <a href="/">vulekamali</a>
       <span> / </span>
       <a href="/datasets">Data and Analysis</a>
-      <span> / {{ page.name }}</span>
+      <span> / {{ page.item_name }}</span>
     </div>
 
-    <h1 class="Page-mainHeading u-marginTop15 u-marginBottom0">{{ page.name }}</h1>
+    <h1 class="Page-mainHeading u-marginTop15 u-marginBottom0">{{ page.item_name }}</h1>
 
     <div class="Section is-invisible u-fontSize18">
       <div>
@@ -23,7 +23,7 @@ layout: page-shell
         {% assign guide_path = "guides/" |append: guide_slug %}
 
         <a href="/{{ guide_path }}" class="Button is-inline u-marginTop25 u-marginBottom10">
-          Learn more about {{ page.name }}
+          Learn more about {{ page.item_name }}
         </a>
       {% endif %}
 

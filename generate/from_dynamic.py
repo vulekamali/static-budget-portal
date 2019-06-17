@@ -105,6 +105,8 @@ def write_basic_page(page_url_path, page_yaml, layout=None):
     front_matter.update({
         'layout': layout or front_matter['slug'],
     })
+    if front_matter.get('name', None):
+        front_matter['item_name'] = front_matter.pop('name')
     with open(file_path, "wb") as outfile:
         front_matter_yaml = yaml.safe_dump(
             front_matter,
@@ -148,6 +150,8 @@ def write_department_page(department_url_path, department_yaml):
     front_matter.update({
         'layout': 'department',
     })
+    if front_matter.get('name', None):
+        front_matter['item_name'] = front_matter.pop('name')
     file_path = ".%s.html" % department_url_path
     ensure_file_dirs(file_path)
     with open(file_path, "wb") as outfile:
@@ -167,6 +171,8 @@ def write_contributed_dataset_page(dataset_url_path, dataset_yaml):
     front_matter.update({
         'layout': 'contributed_dataset',
     })
+    if front_matter.get('name', None):
+        front_matter['item_name'] = front_matter.pop('name')
     file_path = ".%s.html" % dataset_url_path
     ensure_file_dirs(file_path)
     with open(file_path, "wb") as outfile:
@@ -186,6 +192,8 @@ def write_categorised_dataset_page(dataset_url_path, dataset_yaml):
     front_matter.update({
         'layout': 'government_dataset',
     })
+    if front_matter.get('name', None):
+        front_matter['item_name'] = front_matter.pop('name')
     file_path = ".%s.html" % dataset_url_path
     ensure_file_dirs(file_path)
     with open(file_path, "wb") as outfile:
