@@ -647,8 +647,8 @@ datasets:
   url_path: /datasets/socio-economic-data/world-bank-open-data
 description: 'Socio-economic data resources that can be used for contextual and other
   analyses purposes. '
+item_name: Socio-economic Data
 layout: government_dataset_category
-name: Socio-economic Data
 selected_tab: datasets
 slug: socio-economic-data
 title: Socio-economic Data - vulekamali

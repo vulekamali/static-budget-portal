@@ -31,8 +31,8 @@ expenditure:
   budget_phase: MTEF
   year: '2021'
 infrastructure_type: Public transport
+item_name: Cape Town's metro Southeast (MyCiti phase 2A)
 layout: infrastructure_project
-name: Cape Town's metro Southeast (MyCiti phase 2A)
 nature_of_investment: Upgrades and additions
 projected_budget: 2832000000.0
 provinces:

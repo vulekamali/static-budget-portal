@@ -31,8 +31,8 @@ expenditure:
   budget_phase: MTEF
   year: '2021'
 infrastructure_type: District and regional hospitals
+item_name: 'Free State:  Dihlabeng hospital'
 layout: infrastructure_project
-name: 'Free State:  Dihlabeng hospital'
 nature_of_investment: Maintenance and Upgrades
 projected_budget: 121000000.0
 provinces:

@@ -251,8 +251,8 @@ description: "Adjustments to the expenditure plans.\r\n\r\nIn the middle of each
   \ Estimates of National Expenditure (AENE) publication contains detailed data on\
   \ these mid-year adjustments as well as the revised current year revenue and expenditure\
   \ estimates."
+item_name: Adjusted Estimates of National Expenditure
 layout: government_dataset_category
-name: Adjusted Estimates of National Expenditure
 selected_tab: datasets
 slug: adjusted-estimates-of-national-expenditure
 title: Adjusted Estimates of National Expenditure - vulekamali

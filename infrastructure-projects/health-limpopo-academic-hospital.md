@@ -31,8 +31,8 @@ expenditure:
   budget_phase: MTEF
   year: '2021'
 infrastructure_type: Tertiary hospital
+item_name: 'Limpopo:  Academic hospital'
 layout: infrastructure_project
-name: 'Limpopo:  Academic hospital'
 nature_of_investment: New infrastructure assets
 projected_budget: 1398000000.0
 provinces:

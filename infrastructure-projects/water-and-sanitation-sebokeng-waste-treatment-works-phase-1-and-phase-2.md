@@ -31,8 +31,8 @@ expenditure:
   budget_phase: MTEF
   year: '2021'
 infrastructure_type: Waste Water Services
+item_name: Sebokeng waste treatment works phase 1 and phase 2
 layout: infrastructure_project
-name: Sebokeng waste treatment works phase 1 and phase 2
 nature_of_investment: Upgrading and additions
 projected_budget: 541684000.0
 provinces:

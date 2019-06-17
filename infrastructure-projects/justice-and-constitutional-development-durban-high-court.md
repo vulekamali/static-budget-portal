@@ -31,8 +31,8 @@ expenditure:
   budget_phase: MTEF
   year: '2021'
 infrastructure_type: High Court
+item_name: Durban high court
 layout: infrastructure_project
-name: Durban high court
 nature_of_investment: New infrastructure assets
 projected_budget: 557228000.0
 provinces:

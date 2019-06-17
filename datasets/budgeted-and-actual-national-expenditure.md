@@ -48,8 +48,8 @@ description: "Expenditure data sourced from the Main Budget, Adjusted Budget and
   \ like the [ENE](https://vulekamali.gov.za/datasets/estimates-of-national-expenditure)\
   \ and [EPRE](https://vulekamali.gov.za/datasets/estimates-of-provincial-expenditure)\
   \ data is."
+item_name: Budgeted and Actual National Expenditure
 layout: government_dataset_category
-name: Budgeted and Actual National Expenditure
 selected_tab: datasets
 slug: budgeted-and-actual-national-expenditure
 title: Budgeted and Actual National Expenditure - vulekamali

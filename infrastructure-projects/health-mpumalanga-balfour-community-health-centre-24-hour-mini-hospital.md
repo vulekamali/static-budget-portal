@@ -31,8 +31,8 @@ expenditure:
   budget_phase: MTEF
   year: '2021'
 infrastructure_type: Community health Centre
+item_name: 'Mpumalanga: Balfour community health centre (24-hour mini-hospital)'
 layout: infrastructure_project
-name: 'Mpumalanga: Balfour community health centre (24-hour mini-hospital)'
 nature_of_investment: New infrastructure assets
 projected_budget: 111000000.0
 provinces:

@@ -29,8 +29,8 @@ expenditure:
   budget_phase: MTEF
   year: '2021'
 infrastructure_type: Water supply and sanitation
+item_name: North West region
 layout: infrastructure_project
-name: North West region
 nature_of_investment: Upgrading and additions
 projected_budget: 507556000.0
 provinces:

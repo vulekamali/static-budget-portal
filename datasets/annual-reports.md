@@ -150,8 +150,8 @@ datasets:
   url_path: /datasets/annual-reports/annual-report-expenditure-2017-18
 description: Annual Reports expenditure data for the end of a financial year, including
   Audited Outcome and Final Appropriation.
+item_name: Annual Report Expenditure Data
 layout: government_dataset_category
-name: Annual Report Expenditure Data
 selected_tab: datasets
 slug: annual-reports
 title: Annual Report Expenditure Data - vulekamali

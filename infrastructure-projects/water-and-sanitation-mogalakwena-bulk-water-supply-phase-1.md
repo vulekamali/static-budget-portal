@@ -31,8 +31,8 @@ expenditure:
   budget_phase: MTEF
   year: '2021'
 infrastructure_type: Bulk Water Supply
+item_name: Mogalakwena bulk water supply phase 1
 layout: infrastructure_project
-name: Mogalakwena bulk water supply phase 1
 nature_of_investment: Upgrading and additions
 projected_budget: 733558000.0
 provinces:

@@ -37,8 +37,8 @@ datasets:
   slug: consolidated-expenditure-2019-20
   url_path: /datasets/consolidated-expenditure-budget/consolidated-expenditure-2019-20
 description: Consolidated dataset consisting of national and provincial expenditure
+item_name: Consolidated Expenditure
 layout: government_dataset_category
-name: Consolidated Expenditure
 selected_tab: datasets
 slug: consolidated-expenditure-budget
 title: Consolidated Expenditure - vulekamali

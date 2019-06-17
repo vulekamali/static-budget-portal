@@ -360,8 +360,8 @@ description: "Budgeted expenditure for a given financial year.\r\n\r\nExpenditur
   \ government department) and by main economic classification. The ENE publications\
   \ also provide detailed data on how government institutions have spent their budgets\
   \ in previous years."
+item_name: Estimates of National Expenditure
 layout: government_dataset_category
-name: Estimates of National Expenditure
 selected_tab: datasets
 slug: estimates-of-national-expenditure
 title: Estimates of National Expenditure - vulekamali

@@ -31,8 +31,8 @@ expenditure:
   budget_phase: MTEF
   year: '2021'
 infrastructure_type: District Hospital
+item_name: 'Eastern Cape: Bambisana hospital'
 layout: infrastructure_project
-name: 'Eastern Cape: Bambisana hospital'
 nature_of_investment: Maintenance and Upgrades
 projected_budget: 172182000.0
 provinces:

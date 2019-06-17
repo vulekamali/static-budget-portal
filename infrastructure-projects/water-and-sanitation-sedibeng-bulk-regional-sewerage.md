@@ -31,8 +31,8 @@ expenditure:
   budget_phase: MTEF
   year: '2021'
 infrastructure_type: Waste Water Services
+item_name: Sedibeng bulk regional sewerage
 layout: infrastructure_project
-name: Sedibeng bulk regional sewerage
 nature_of_investment: New infrastructure assets
 projected_budget: 448800000.0
 provinces:

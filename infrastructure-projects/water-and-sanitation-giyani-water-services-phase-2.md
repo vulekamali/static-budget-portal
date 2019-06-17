@@ -32,8 +32,8 @@ expenditure:
   budget_phase: MTEF
   year: '2021'
 infrastructure_type: Bulk Water Supply
+item_name: Giyani water services phase 2
 layout: infrastructure_project
-name: Giyani water services phase 2
 nature_of_investment: Upgrading and additions
 projected_budget: 408285000.0
 provinces:

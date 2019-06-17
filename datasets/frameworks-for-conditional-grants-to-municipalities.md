@@ -1,8 +1,8 @@
 ---
 datasets:
 - author:
-    email: null
-    name: null
+    email: ''
+    name: ''
   category:
     description: "This annexure provides a brief description for each grant in schedules\
       \ of the Division of Revenue Bill. The\r\nfollowing are key areas considered\
@@ -27,7 +27,7 @@ datasets:
   created: '2018-10-26T17:57:21.033345'
   description: null
   intro_short: null
-  last_updated: '2018-10-26T18:01:30.251266'
+  last_updated: '2019-05-31T13:53:04.969316'
   license:
     name: Other (Public Domain)
     url: null
@@ -49,8 +49,8 @@ datasets:
   slug: 2018-19-energy-efficiency-and-demand-side-management-grant-framework
   url_path: /datasets/frameworks-for-conditional-grants-to-municipalities/2018-19-energy-efficiency-and-demand-side-management-grant-framework
 - author:
-    email: null
-    name: null
+    email: ''
+    name: ''
   category:
     description: "This annexure provides a brief description for each grant in schedules\
       \ of the Division of Revenue Bill. The\r\nfollowing are key areas considered\
@@ -75,7 +75,7 @@ datasets:
   created: '2018-10-26T17:57:22.331851'
   description: null
   intro_short: null
-  last_updated: '2018-10-26T18:01:27.370130'
+  last_updated: '2019-05-31T14:53:44.024214'
   license:
     name: Other (Public Domain)
     url: null
@@ -97,8 +97,8 @@ datasets:
   slug: 2018-19-expanded-public-works-programme-integrated-grant-framework-for-municipalities
   url_path: /datasets/frameworks-for-conditional-grants-to-municipalities/2018-19-expanded-public-works-programme-integrated-grant-framework-for-municipalities
 - author:
-    email: null
-    name: null
+    email: ''
+    name: ''
   category:
     description: "This annexure provides a brief description for each grant in schedules\
       \ of the Division of Revenue Bill. The\r\nfollowing are key areas considered\
@@ -123,7 +123,7 @@ datasets:
   created: '2018-10-26T17:57:23.532342'
   description: null
   intro_short: null
-  last_updated: '2018-10-26T18:01:24.600631'
+  last_updated: '2019-05-31T15:05:25.236624'
   license:
     name: Other (Public Domain)
     url: null
@@ -145,8 +145,8 @@ datasets:
   slug: 2018-19-infrastructure-skills-development-grant-framework
   url_path: /datasets/frameworks-for-conditional-grants-to-municipalities/2018-19-infrastructure-skills-development-grant-framework
 - author:
-    email: null
-    name: null
+    email: ''
+    name: ''
   category:
     description: "This annexure provides a brief description for each grant in schedules\
       \ of the Division of Revenue Bill. The\r\nfollowing are key areas considered\
@@ -171,7 +171,7 @@ datasets:
   created: '2018-10-26T17:57:24.752049'
   description: null
   intro_short: null
-  last_updated: '2018-10-26T18:01:21.702600'
+  last_updated: '2019-05-31T15:05:44.422012'
   license:
     name: Other (Public Domain)
     url: null
@@ -817,8 +817,8 @@ datasets:
   slug: 2018-19-urban-settlements-development-grant-framework
   url_path: /datasets/frameworks-for-conditional-grants-to-municipalities/2018-19-urban-settlements-development-grant-framework
 - author:
-    email: null
-    name: null
+    email: ''
+    name: ''
   category:
     description: "This annexure provides a brief description for each grant in schedules\
       \ of the Division of Revenue Bill. The\r\nfollowing are key areas considered\
@@ -843,7 +843,7 @@ datasets:
   created: '2018-10-26T17:57:42.263652'
   description: null
   intro_short: null
-  last_updated: '2018-10-26T18:00:35.397442'
+  last_updated: '2019-06-04T14:59:22.906245'
   license:
     name: Other (Public Domain)
     url: null
@@ -881,8 +881,8 @@ description: "This annexure provides a brief description for each grant in sched
   \ their schedules, and the grant\r\nframeworks as gazetted in terms of the Act.\
   \ Such reports must cover both financial and\r\nnon-financial performance, focusing\
   \ on the outputs achieved.\r\n"
+item_name: Frameworks for Conditional Grants to Municipalities
 layout: government_dataset_category
-name: Frameworks for Conditional Grants to Municipalities
 selected_tab: datasets
 slug: frameworks-for-conditional-grants-to-municipalities
 title: Frameworks for Conditional Grants to Municipalities - vulekamali

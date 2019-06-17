@@ -132,8 +132,8 @@ categories:
   name: Socio-economic Data
   slug: socio-economic-data
   url_path: /datasets/socio-economic-data
+item_name: Datasets and Analysis
 layout: dataset_landing_page
-name: Datasets and Analysis
 selected_tab: datasets
 slug: datasets
 title: Datasets and Analysis - vulekamali

@@ -31,8 +31,8 @@ expenditure:
   budget_phase: MTEF
   year: '2021'
 infrastructure_type: Waste Water Services
+item_name: Westonaria/Randfontein regional bulk wastewater treatment works (Zuurbekom)
 layout: infrastructure_project
-name: Westonaria/Randfontein regional bulk wastewater treatment works (Zuurbekom)
 nature_of_investment: New infrastructure assets
 projected_budget: 444214000.0
 provinces:

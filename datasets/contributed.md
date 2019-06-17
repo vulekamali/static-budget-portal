@@ -869,8 +869,8 @@ datasets:
   url_path: /datasets/contributed/the-transparency-of-public-funding-of-basic-education-in-south-africa
 description: 'Data and analysis contributed by other organisations on South African
   government budgets. '
+item_name: Contributed data and analysis
 layout: contributed-data
-name: Contributed data and analysis
 selected_tab: datasets
 slug: contributed
 title: Contributed data and analysis - vulekamali

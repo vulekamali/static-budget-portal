@@ -2085,8 +2085,8 @@ description: Performance Expenditure Reviews (PERs) either assess baseline expen
   involve the detailed scrutiny of programme performance and expenditure datasets
   to quantify, assess, and improve the cost effectiveness of public policy and public
   spending.
+item_name: Performance and Expenditure Reviews
 layout: government_dataset_category
-name: Performance and Expenditure Reviews
 selected_tab: datasets
 slug: performance-and-expenditure-reviews
 title: Performance and Expenditure Reviews - vulekamali

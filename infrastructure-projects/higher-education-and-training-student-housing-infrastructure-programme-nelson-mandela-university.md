@@ -31,8 +31,8 @@ expenditure:
   budget_phase: MTEF
   year: '2021'
 infrastructure_type: Student accommodation
+item_name: 'Student Housing Infrastructure Programme: Nelson Mandela University'
 layout: infrastructure_project
-name: 'Student Housing Infrastructure Programme: Nelson Mandela University'
 nature_of_investment: New infrastructure assets
 projected_budget: 33500000.0
 provinces:

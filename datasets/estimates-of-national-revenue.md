@@ -157,8 +157,8 @@ datasets:
   slug: estimates-of-national-revenue-2018-19
   url_path: /datasets/estimates-of-national-revenue/estimates-of-national-revenue-2018-19
 description: ''
+item_name: Estimates of National Revenue
 layout: government_dataset_category
-name: Estimates of National Revenue
 selected_tab: datasets
 slug: estimates-of-national-revenue
 title: Estimates of National Revenue - vulekamali

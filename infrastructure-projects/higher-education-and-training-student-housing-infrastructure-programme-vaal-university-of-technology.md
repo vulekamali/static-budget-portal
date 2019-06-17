@@ -31,8 +31,8 @@ expenditure:
   budget_phase: MTEF
   year: '2021'
 infrastructure_type: Student accommodation
+item_name: 'Student Housing Infrastructure Programme: Vaal University of Technology'
 layout: infrastructure_project
-name: 'Student Housing Infrastructure Programme: Vaal University of Technology'
 nature_of_investment: New infrastructure assets
 projected_budget: 40300000.0
 provinces:

@@ -31,8 +31,8 @@ expenditure:
   budget_phase: MTEF
   year: '2021'
 infrastructure_type: Office accommodation and living quarters
+item_name: Member and office accommodation
 layout: infrastructure_project
-name: Member and office accommodation
 nature_of_investment: Upgrading and additions
 projected_budget: 479891000.0
 provinces:

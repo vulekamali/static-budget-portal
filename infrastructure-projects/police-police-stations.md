@@ -31,8 +31,8 @@ expenditure:
   budget_phase: MTEF
   year: '2021'
 infrastructure_type: Police stations
+item_name: Police stations
 layout: infrastructure_project
-name: Police stations
 nature_of_investment: Upgrading and additions
 projected_budget: 1965373000.0
 provinces:

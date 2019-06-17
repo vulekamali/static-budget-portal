@@ -72,8 +72,8 @@ datasets:
   url_path: /datasets/cpi-inflation/annual-cpi-inflation-2019-20
 description: Consumer Price Index (CPI) Inflation data to calculate expenditure in
   real terms from amounts in nominal terms
+item_name: CPI Inflation
 layout: government_dataset_category
-name: CPI Inflation
 selected_tab: datasets
 slug: cpi-inflation
 title: CPI Inflation - vulekamali

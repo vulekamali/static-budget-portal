@@ -1320,8 +1320,8 @@ description: "These documents provide a brief description of the framework for t
   \n- Responsibilities of transferring national department and receiving provincial\
   \ departments\r\n- Process for approval of business plans for the next financial\
   \ year"
+item_name: Frameworks for Conditional Grants to Provinces
 layout: government_dataset_category
-name: Frameworks for Conditional Grants to Provinces
 selected_tab: datasets
 slug: frameworks-for-conditional-grants-to-provinces
 title: Frameworks for Conditional Grants to Provinces - vulekamali

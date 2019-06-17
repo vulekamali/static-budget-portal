@@ -31,8 +31,8 @@ expenditure:
   budget_phase: MTEF
   year: '2021'
 infrastructure_type: Radio Telescopes
+item_name: Square Kilometre Array
 layout: infrastructure_project
-name: Square Kilometre Array
 nature_of_investment: New other fixed structures
 projected_budget: 2355920000.0
 provinces:

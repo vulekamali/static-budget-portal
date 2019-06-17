@@ -32,8 +32,8 @@ expenditure:
   budget_phase: MTEF
   year: '2021'
 infrastructure_type: Bulk Water Supply
+item_name: Misgund bulk water supply
 layout: infrastructure_project
-name: Misgund bulk water supply
 nature_of_investment: New infrastructure assets
 projected_budget: 35000000.0
 provinces:

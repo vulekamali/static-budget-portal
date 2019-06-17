@@ -32,8 +32,8 @@ expenditure:
   year: '2021'
 infrastructure_type: Eradication of inappropriate school infrastructure and provision
   of basic services to schools
+item_name: School infrastructure backlogs grant
 layout: infrastructure_project
-name: School infrastructure backlogs grant
 nature_of_investment: New infrastructure assets
 projected_budget: 5688808000.0
 provinces: []

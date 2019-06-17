@@ -38,8 +38,8 @@ datasets:
   slug: budgeted-and-actual-provincial-expenditure
   url_path: /datasets/budgeted-and-actual-provincial-expenditure/budgeted-and-actual-provincial-expenditure
 description: ''
+item_name: Budgeted and Actual Provincial Expenditure
 layout: government_dataset_category
-name: Budgeted and Actual Provincial Expenditure
 selected_tab: datasets
 slug: budgeted-and-actual-provincial-expenditure
 title: Budgeted and Actual Provincial Expenditure - vulekamali

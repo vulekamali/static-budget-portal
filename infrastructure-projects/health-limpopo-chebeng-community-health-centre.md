@@ -31,8 +31,8 @@ expenditure:
   budget_phase: MTEF
   year: '2021'
 infrastructure_type: Community health Centre
+item_name: 'Limpopo: Chebeng community health centre'
 layout: infrastructure_project
-name: 'Limpopo: Chebeng community health centre'
 nature_of_investment: New infrastructure assets
 projected_budget: 104082000.0
 provinces:

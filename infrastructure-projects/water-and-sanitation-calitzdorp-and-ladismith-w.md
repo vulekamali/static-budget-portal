@@ -31,8 +31,8 @@ expenditure:
   budget_phase: MTEF
   year: '2021'
 infrastructure_type: Waste Water Services
+item_name: Calitzdorp and Ladismith W
 layout: infrastructure_project
-name: Calitzdorp and Ladismith W
 nature_of_investment: Upgrading and additions
 projected_budget: 75000000.0
 provinces:

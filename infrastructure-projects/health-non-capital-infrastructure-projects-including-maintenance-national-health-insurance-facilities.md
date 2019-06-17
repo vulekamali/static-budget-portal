@@ -32,9 +32,9 @@ expenditure:
   budget_phase: MTEF
   year: '2021'
 infrastructure_type: Various
-layout: infrastructure_project
-name: Non-capital infrastructure projects, including maintenance (national health
+item_name: Non-capital infrastructure projects, including maintenance (national health
   insurance facilities)
+layout: infrastructure_project
 nature_of_investment: Maintenance and repair
 projected_budget: 90000000.0
 provinces: []

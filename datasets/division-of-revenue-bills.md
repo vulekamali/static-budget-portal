@@ -221,8 +221,8 @@ description: "How money is allocated to provinces and municipalities for a given
   \ of that revenue.\r\n\r\nIt further determines the other allocations to provinces\
   \ and municipalities from the national government's share of that revenue, including\
   \ the conditions of those allocations.\r\n"
+item_name: Division of Revenue Bills
 layout: government_dataset_category
-name: Division of Revenue Bills
 selected_tab: datasets
 slug: division-of-revenue-bills
 title: Division of Revenue Bills - vulekamali

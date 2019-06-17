@@ -33,8 +33,8 @@ datasets:
   slug: major-infrastructure-projects-by-national-departments
   url_path: /datasets/infrastructure-projects/major-infrastructure-projects-by-national-departments
 description: ''
+item_name: Infrastructure Projects
 layout: government_dataset_category
-name: Infrastructure Projects
 selected_tab: datasets
 slug: infrastructure-projects
 title: Infrastructure Projects - vulekamali

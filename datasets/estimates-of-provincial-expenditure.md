@@ -420,8 +420,8 @@ description: "Expenditure data used to prepare the EPRE publications provide det
   \ is presented by vote (generally a provincial government department) and by main\
   \ economic classification. The\_EPRE publications also provide detailed data on\
   \ how provincial government institutions have spent their budgets in previous years."
+item_name: Estimates of Provincial Expenditure
 layout: government_dataset_category
-name: Estimates of Provincial Expenditure
 selected_tab: datasets
 slug: estimates-of-provincial-expenditure
 title: Estimates of Provincial Expenditure - vulekamali
