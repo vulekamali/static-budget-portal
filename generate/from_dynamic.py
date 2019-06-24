@@ -99,18 +99,14 @@ def ensure_file_dirs(file_path):
 
 
 def write_basic_page(page_url_path, page_yaml, layout=None):
-    page = yaml.load(page_yaml)
+    front_matter = yaml.load(page_yaml) or {}
     file_path = "%s.md" % page_url_path[1:]
     ensure_file_dirs(file_path)
-    front_matter = {
-        'data_key': page['slug'] if page else '',
-        'layout': layout or page['slug'],
-    }
-    financial_year = None
-    if page:
-        financial_year = page.get('selected_financial_year', None)
-    if financial_year:
-        front_matter['financial_year'] = financial_year
+    front_matter.update({
+        'layout': layout or front_matter['slug'],
+    })
+    if front_matter.get('name', None):
+        front_matter['item_name'] = front_matter.pop('name')
     with open(file_path, "wb") as outfile:
         front_matter_yaml = yaml.safe_dump(
             front_matter,
@@ -129,106 +125,87 @@ def write_financial_year(session, year_slug, static_path):
     url = portal_url + url_path[1:] + ".yaml"
     r = http_get(session, url)
     r.raise_for_status()
-    path = '_data%s/index.yaml' % static_path
 
-    ensure_file_dirs(path)
-    with open(path, 'wb') as file:
-        file.write(GENERATED_YAML_COMMENT)
-        file.write(r.text)
+    front_matter = yaml.load(r.text)
+    front_matter.update({
+        'layout': 'homepage',
+    })
 
-    years = []
-    page = yaml.load(r.text)
-    for year in page['financial_years']:
-        years.append([
-            year['id'],
-            year['closest_match']['url_path'],
-            'active' if year['is_selected'] else 'link'
-        ])
     file_path = ".%s/index.md" % static_path
     ensure_file_dirs(file_path)
     with open(file_path, "wb") as outfile:
-        outfile.write(
-            ("---\n"
-             "layout: homepage\n"
-             "financial_year: %s\n"
-             "data_key: index\n"
-             "---\n%s") % (
-                 year_slug,
-                 GENERATED_MARKDOWN_COMMENT,
-             ))
+        front_matter_yaml = yaml.safe_dump(
+            front_matter,
+            default_flow_style=False,
+            encoding='utf-8',
+        )
+        outfile.write("---\n%s---\n%s" % (
+            front_matter_yaml,
+            GENERATED_MARKDOWN_COMMENT
+        ))
 
 
 def write_department_page(department_url_path, department_yaml):
-    department = yaml.load(department_yaml)
+    front_matter = yaml.load(department_yaml)
+    front_matter.update({
+        'layout': 'department',
+    })
+    if front_matter.get('name', None):
+        front_matter['item_name'] = front_matter.pop('name')
     file_path = ".%s.html" % department_url_path
     ensure_file_dirs(file_path)
     with open(file_path, "wb") as outfile:
-        outfile.write(
-            ("---\n"
-             "financial_year: %s\n"
-             "sphere: %s\n"
-             "geographic_region_slug: %s\n"
-             "data_key: %s\n"
-             "layout: department\n"
-             "---\n%s") % (
-                 department['selected_financial_year'],
-                 department['sphere']['slug'],
-                 department['government']['slug'],
-                 department['slug'],
-                 GENERATED_MARKDOWN_COMMENT,
-             ))
-
-
-def write_infrastructure_project_page(department_url_path, department_yaml):
-    department = yaml.load(department_yaml)
-    file_path = ".%s.html" % department_url_path
-    ensure_file_dirs(file_path)
-    with open(file_path, "wb") as outfile:
-        outfile.write(
-            ("---\n"
-             "financial_year: %s\n"
-             "sphere: %s\n"
-             "geographic_region_slug: %s\n"
-             "data_key: %s\n"
-             "layout: department\n"
-             "---\n%s") % (
-                 department['selected_financial_year'],
-                 department['sphere']['slug'],
-                 department['government']['slug'],
-                 department['slug'],
-                 GENERATED_MARKDOWN_COMMENT,
-             ))
+        front_matter_yaml = yaml.safe_dump(
+            front_matter,
+            default_flow_style=False,
+            encoding='utf-8',
+        )
+        outfile.write("---\n%s---\n%s" % (
+            front_matter_yaml,
+            GENERATED_MARKDOWN_COMMENT
+        ))
 
 
 def write_contributed_dataset_page(dataset_url_path, dataset_yaml):
-    dataset = yaml.load(dataset_yaml)
+    front_matter = yaml.load(dataset_yaml)
+    front_matter.update({
+        'layout': 'contributed_dataset',
+    })
+    if front_matter.get('name', None):
+        front_matter['item_name'] = front_matter.pop('name')
     file_path = ".%s.html" % dataset_url_path
     ensure_file_dirs(file_path)
     with open(file_path, "wb") as outfile:
-        outfile.write(
-            ("---\n"
-             "data_key: %s\n"
-             "layout: contributed_dataset\n"
-             "---\n%s") % (
-                 dataset['slug'],
-                 GENERATED_MARKDOWN_COMMENT,
-             ))
+        front_matter_yaml = yaml.safe_dump(
+            front_matter,
+            default_flow_style=False,
+            encoding='utf-8',
+        )
+        outfile.write("---\n%s---\n%s" % (
+            front_matter_yaml,
+            GENERATED_MARKDOWN_COMMENT
+        ))
 
 
 def write_categorised_dataset_page(dataset_url_path, dataset_yaml):
-    dataset = yaml.load(dataset_yaml)
+    front_matter = yaml.load(dataset_yaml)
+    front_matter.update({
+        'layout': 'government_dataset',
+    })
+    if front_matter.get('name', None):
+        front_matter['item_name'] = front_matter.pop('name')
     file_path = ".%s.html" % dataset_url_path
     ensure_file_dirs(file_path)
     with open(file_path, "wb") as outfile:
-        outfile.write(
-            ("---\n"
-             "data_key: %s\n"
-             "category: %s\n"
-             "layout: government_dataset\n"
-             "---") % (
-                 dataset['slug'],
-                 dataset['category']['slug'],
-             ))
+        front_matter_yaml = yaml.safe_dump(
+            front_matter,
+            default_flow_style=False,
+            encoding='utf-8',
+        )
+        outfile.write("---\n%s---\n%s" % (
+            front_matter_yaml,
+            GENERATED_MARKDOWN_COMMENT
+        ))
 
 
 session = requests_session()
@@ -244,11 +221,6 @@ for year_slug in YEAR_SLUGS:
         url = portal_url + url_path[1:] + ".yaml"
         r = http_get(session, url)
         r.raise_for_status()
-        path = '_data%s.yaml' % url_path
-
-        with open(path, 'wb') as file:
-            file.write(GENERATED_YAML_COMMENT)
-            file.write(r.text)
 
         write_basic_page(url_path, r.text)
 
@@ -260,11 +232,6 @@ logger.info(listing_url_path)
 listing_url = portal_url + listing_url_path[1:] + '.yaml'
 r = http_get(session, listing_url)
 r.raise_for_status()
-listing_path = '_data%s/index.yaml' % listing_url_path
-
-with open(listing_path, 'wb') as listing_file:
-    listing_file.write(GENERATED_YAML_COMMENT)
-    listing_file.write(r.text)
 write_basic_page(listing_url_path, r.text, 'contributed-data')
 
 listing = yaml.load(r.text)
@@ -280,9 +247,6 @@ for dataset in listing['datasets']:
     r = http_get(session, dataset_url)
     r.raise_for_status()
     write_contributed_dataset_page(dataset['url_path'], r.text)
-    with open(dataset_context_path, 'wb') as dataset_file:
-        dataset_file.write(GENERATED_YAML_COMMENT)
-        dataset_file.write(r.text)
 
 
 # Category list page
@@ -293,10 +257,6 @@ category_list_url = portal_url + category_list_url_path[1:] + '.yaml'
 r = http_get(session, category_list_url)
 r.raise_for_status()
 
-category_list_path = '_data%s/index.yaml' % category_list_url_path
-ensure_file_dirs(category_list_path)
-with open(category_list_path, 'wb') as category_list_file:
-    category_list_file.write(r.text)
 write_basic_page(category_list_url_path, r.text, 'dataset_landing_page')
 
 dataset_categories = [c['slug'] for c in yaml.load(r.text)['categories']]
@@ -311,10 +271,6 @@ for category in dataset_categories:
     r = http_get(session, dataset_list_url)
     r.raise_for_status()
 
-    dataset_list_path = '_data%s/index.yaml' % dataset_list_url_path
-    ensure_file_dirs(dataset_list_path)
-    with open(dataset_list_path, 'wb') as dataset_list_file:
-        dataset_list_file.write(r.text)
     write_basic_page(dataset_list_url_path, r.text, 'government_dataset_category')
 
     dataset_list = yaml.load(r.text)
@@ -327,14 +283,9 @@ for category in dataset_categories:
         if dataset_path.startswith('/'):
             dataset_path = dataset_path[1:]
         dataset_url = portal_url + dataset_path
-        dataset_context_path = '_data/' + dataset_path
-        ensure_file_dirs(dataset_context_path)
-
         r = http_get(session, dataset_url)
         r.raise_for_status()
         write_categorised_dataset_page(dataset['url_path'], r.text)
-        with open(dataset_context_path, 'wb') as dataset_file:
-            dataset_file.write(r.text)
 
 # Departments
 
@@ -344,11 +295,6 @@ for year_slug in YEAR_SLUGS:
     listing_url = portal_url + listing_url_path[1:] + '.yaml'
     r = http_get(session, listing_url)
     r.raise_for_status()
-    listing_path = '_data%s.yaml' % listing_url_path
-
-    with open(listing_path, 'wb') as listing_file:
-        listing_file.write(GENERATED_YAML_COMMENT)
-        listing_file.write(r.text)
     write_basic_page(listing_url_path, r.text, 'department_list')
 
     listing = yaml.load(r.text)
@@ -359,15 +305,9 @@ for year_slug in YEAR_SLUGS:
 
                 department_path = department['url_path'] + '.yaml'
                 department_url = portal_url + department_path[1:]
-                department_context_path = '_data/' + department_path[1:]
-                ensure_file_dirs(department_context_path)
-
                 r = http_get(session, department_url)
                 r.raise_for_status()
                 write_department_page(department['url_path'], r.text)
-                with open(department_context_path, 'wb') as department_file:
-                    department_file.write(GENERATED_YAML_COMMENT)
-                    department_file.write(r.text)
 
 
 # Infrastructure projects
@@ -380,12 +320,6 @@ if r.status_code == 404:
     logger.info("No infrastructure project data.")
 else:
     r.raise_for_status()
-    listing_path = '_data%s.yaml' % listing_url_path
-
-    dataset_list_path = '_data%s/index.yaml' % listing_url_path
-    ensure_file_dirs(dataset_list_path)
-    with open(dataset_list_path, 'wb') as dataset_list_file:
-        dataset_list_file.write(r.text)
     write_basic_page(listing_url_path, r.text, 'infrastructure_project_list')
 
     listing = yaml.load(r.text)
@@ -394,15 +328,9 @@ else:
 
         project_path = project['detail'] + '.yaml'
         project_url = portal_url + project_path[1:]
-        project_context_path = '_data/' + project_path[1:]
-        ensure_file_dirs(project_context_path)
-
         r = http_get(session, project_url)
         r.raise_for_status()
         write_basic_page(project['detail'], r.text, 'infrastructure_project')
-        with open(project_context_path, 'wb') as project_file:
-            project_file.write(GENERATED_YAML_COMMENT)
-            project_file.write(r.text)
 
 # Treemaps
 

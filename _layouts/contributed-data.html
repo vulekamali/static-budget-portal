@@ -1,7 +1,6 @@
 ---
 layout: page-shell
 ---
-{% assign page_data = site.data.datasets.contributed.index %}
 
 <div class="Page-content">
   <main class="Page-contentInner">
@@ -23,7 +22,7 @@ layout: page-shell
         <div class="Grid has-rightSidebar">
           <div>
             <div class="BasicContent-title">How can I contribute?</div>
-            <div>Do you have data or analysis related to the budget that you would like to contribute?</div>      
+            <div>Do you have data or analysis related to the budget that you would like to contribute?</div>
           </div>
           <div class="u-paddingTop15">
             <a class="Button" target="_blank" href="https://data.vulekamali.gov.za/user/login?came_from=/dataset/new">Log in and submit your data</a>
@@ -33,7 +32,7 @@ layout: page-shell
     </div>
 
     <div class="Grid">
-      {% for dataset in page_data.datasets %}
+      {% for dataset in page.datasets %}
         {%
           include components/universal/ThumbPreview/index.html
           title=dataset.name

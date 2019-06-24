@@ -2,9 +2,9 @@
 layout: page-shell
 ---
 
-{% assign national = site.data[page.financial_year].departments.national[0] %}
-{% assign provincial = site.data[page.financial_year].departments.provincial %}
-{% assign epres = site.data[page.financial_year].epres %}
+{% assign national = page.national[0] %}
+{% assign provincial = page.provincial %}
+{% assign epres = site.data[page.selected_financial_year].epres %}
 
 <div class="Page-content Page-content--dynamicYears">
   <main class="Page-contentInner">

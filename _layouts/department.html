@@ -1,21 +1,15 @@
 ---
 layout: page-shell
 ---
-{% if page.sphere == "national" %}
-  {% assign page_data = site.data[page.financial_year][page.sphere].departments[page.data_key] %}
-{% else %}
-  {% assign page_data = site.data[page.financial_year][page.sphere][page.geographic_region_slug].departments[page.data_key] %}
-{% endif %}
 
-
-{% if page_data.government.slug == 'south-africa' %}
+{% if page.government.slug == 'south-africa' %}
   {% assign department_location = 'National' %}
 {% else %}
-  {% assign department_location = page_data.government.name %}
+  {% assign department_location = page.government.name %}
 {% endif %}
 
 
-{% if page_data.government.slug == 'south-africa' %}
+{% if page.government.slug == 'south-africa' %}
   {% assign source_type = 'Estimates of National Expenditure' %}
   {% assign source_type_revenue = 'Estimates of National Expenditure' %}
   {% assign source_type_revenue_short = 'ENE' %}
@@ -32,10 +26,10 @@ layout: page-shell
 {% endif %}
 
 
-{% if page_data.department_budget %}
-  {% assign chapter_name = page_data.department_budget.name %}
-  {% assign pdf_link = page_data.department_budget.document.url %}
-  {% assign excel_link = page_data.department_budget.tables.url %}
+{% if page.department_budget %}
+  {% assign chapter_name = page.department_budget.name %}
+  {% assign pdf_link = page.department_budget.document.url %}
+  {% assign excel_link = page.department_budget.tables.url %}
 {% else %}
   {% assign chapter_name = null %}
   {% assign pdf_link = null %}
@@ -43,17 +37,17 @@ layout: page-shell
 {% endif %}
 
 
-{% if page_data.department_adjusted_budget %}
-  {% assign pdf_link_adjusted = page_data.department_adjusted_budget.document.url %}
-  {% assign excel_link_adjusted = page_data.department_adjusted_budget.tables.url %}
+{% if page.department_adjusted_budget %}
+  {% assign pdf_link_adjusted = page.department_adjusted_budget.document.url %}
+  {% assign excel_link_adjusted = page.department_adjusted_budget.tables.url %}
 {% else %}
   {% assign pdf_link_adjusted = null %}
   {% assign excel_link_adjusted = null %}
 {% endif %}
 
 
-{% if page_data.treasury_datasets %}
-  {% for item in page_data.treasury_datasets %}
+{% if page.treasury_datasets %}
+  {% for item in page.treasury_datasets %}
     {% assign modified_formats = item[1].formats | sort: 'format' %}
     {% assign pdf = modified_formats[0].url %}
     {% assign excel = modified_formats[1].url %}
@@ -72,13 +66,13 @@ layout: page-shell
   link_3="#section-review"
 %}
 
-{% if page_data.sphere.slug == "national" and page_data.slug == "parliament" %}
+{% if page.sphere.slug == "national" and page.slug == "parliament" %}
   {% assign parliament = "true" %}
 {% else %}
   {% assign parliament = "false" %}
 {% endif %}
 
-{% assign subtitle = department_location | append: " " | append: page_data.name | append: " Department Budget " | append: page.financial_year %}
+{% assign subtitle = department_location | append: " " | append: page.item_name | append: " Department Budget " | append: page.selected_financial_year %}
 
 
 <div class="Page-content Page-content--dynamicYears">
@@ -101,20 +95,20 @@ layout: page-shell
     </nav>
 
     <h1 class="Page-mainHeading u-textAlignCenter u-marginBottom0 u-marginLeft0">
-      {{ page_data.name }}
+      {{ page.item_name }}
     </h1>
     <span class="Page-subHeading u-textAlignCenter">
-      {{ department_location }} Department Budget for {{ page.financial_year }}
+      {{ department_location }} Department Budget for {{ page.selected_financial_year }}
     </span>
-    {% if page_data.website_url %}
+    {% if page.website_url %}
     <span class="Page-subHeading-link u-textAlignCenter">
-        <a href="http://{{ page_data.website_url }}">{{ page_data.website_url }}</a>
+        <a href="http://{{ page.website_url }}">{{ page.website_url }}</a>
     </span>
     {% endif %}
     {%
       include components/department-budgets/IntroSection/index.html
-      description=page_data.intro
-      datasets=page_data.treasury_datasets
+      description=page.intro
+      datasets=page.treasury_datasets
       location=department_location
     %}
 
@@ -138,7 +132,7 @@ layout: page-shell
     </div>
 
     <div class="u-marginTop25 u-marginBottom60">
-      <h3 class="Title Title--section">{{ page.financial_year }} Budget</h3>
+      <h3 class="Title Title--section">{{ page.selected_financial_year }} Budget</h3>
       <p>
         The {{ source_type_revenue }} ({{ source_type_revenue_short }}) is a book published along with the tabling of the budget for the new financial year.
       </p>
@@ -165,21 +159,21 @@ layout: page-shell
       {% endif %}
     </div>
 
-    {% if page_data.programmes %}
+    {% if page.programmes %}
       <div class="u-marginBottom60">
         {%
           include scenes/department/ProgrammesSection/index.html
           type="programmes"
-          items=page_data.programmes.programme_budgets
+          items=page.programmes.programme_budgets
 
           source_type=source_type
-          year=page.financial_year
-          dataset=page_data.programmes.dataset_detail_page
+          year=page.selected_financial_year
+          dataset=page.programmes.dataset_detail_page
           pdf=pdf
           excel=excel
           title="Programme budgets"
           subtitle=subtitle
-          csv=page_data.programmes.department_data_csv
+          csv=page.programmes.department_data_csv
           guide=guide
 
           description="Activities of this department"
@@ -187,7 +181,7 @@ layout: page-shell
       </div>
     {% endif %}
 
-    {% if page_data.subprogramme_by_programme %}
+    {% if page.subprogramme_by_programme %}
       <div class="u-marginBottom60">
         {%
           include scenes/department/SmallMultiplesSection/index.html
@@ -195,14 +189,14 @@ layout: page-shell
 
           title="Budgeted spending by sub-programme for each programme"
           description="Each chart shows the budgeted spending by each sub-programme of that programme."
-          charts_list=page_data.subprogramme_by_programme.programmes
+          charts_list=page.subprogramme_by_programme.programmes
 
           source_type=source_type
-          year=page.financial_year
-          dataset=page_data.subprogramme_by_programme.dataset_detail_page
+          year=page.selected_financial_year
+          dataset=page.subprogramme_by_programme.dataset_detail_page
           pdf=pdf
           excel=excel
-          csv=page_data.subprogramme_by_programme.department_data_csv
+          csv=page.subprogramme_by_programme.department_data_csv
           guide=guide
 
           subtitle=subtitle
@@ -210,7 +204,7 @@ layout: page-shell
         </div>
     {% endif %}
 
-    {% if page_data.economic_classification_by_programme.programmes %}
+    {% if page.economic_classification_by_programme.programmes %}
       <div class="u-marginBottom60">
         {%
           include scenes/department/SmallMultiplesSection/index.html
@@ -218,14 +212,14 @@ layout: page-shell
 
           title="Budgeted spending by Economic Classification for each programme"
           description="Each chart shows the budgeted spending by economic classification under that Programme."
-          charts_list=page_data.economic_classification_by_programme.programmes
+          charts_list=page.economic_classification_by_programme.programmes
 
           source_type=source_type
-          year=page.financial_year
-          dataset=page_data.economic_classification_by_programme.dataset_detail_page
+          year=page.selected_financial_year
+          dataset=page.economic_classification_by_programme.dataset_detail_page
           pdf=pdf
           excel=excel
-          csv=page_data.economic_classification_by_programme.department_data_csv
+          csv=page.economic_classification_by_programme.department_data_csv
           guide=guide
 
           subtitle=subtitle
@@ -233,7 +227,7 @@ layout: page-shell
       </div>
     {% endif %}
 
-    {% if page_data.programme_by_economic_classification.econ_classes %}
+    {% if page.programme_by_economic_classification.econ_classes %}
       <div class="u-marginBottom60">
         {%
           include scenes/department/SmallMultiplesSection/index.html
@@ -241,14 +235,14 @@ layout: page-shell
 
           title="Budgeted spending by programme for Economic Classification items"
           description="Each chart shows the budgeted spending of each Programme under that Economic Classification."
-          charts_list=page_data.programme_by_economic_classification.econ_classes
+          charts_list=page.programme_by_economic_classification.econ_classes
 
           source_type=source_type
-          year=page.financial_year
-          dataset=page_data.programme_by_economic_classification.dataset_detail_page
+          year=page.selected_financial_year
+          dataset=page.programme_by_economic_classification.dataset_detail_page
           pdf=pdf
           excel=excel
-          csv=page_data.programme_by_economic_classification.department_data_csv
+          csv=page.programme_by_economic_classification.department_data_csv
           guide=guide
 
           subtitle=subtitle
@@ -257,7 +251,7 @@ layout: page-shell
     </div>
 
 
-    <h3 class="Title Title--section">{{ page.financial_year }} Adjusted Budget</h3>
+    <h3 class="Title Title--section">{{ page.selected_financial_year }} Adjusted Budget</h3>
     <p>
       The {{ source_type_adjusted }} ({{ source_type_adjusted_short }}) is a book published along with the tabling of the adjusted budget.
     </p>
@@ -332,24 +326,24 @@ layout: page-shell
     {% endif %}
 
 
-    {% if page_data.government.slug == 'south-africa' %}
+    {% if page.government.slug == 'south-africa' %}
       <div class="u-marginBottom60">
         {%
           include scenes/department/AdjustedSection/index.html
 
           type="adjusted"
-          items=page_data.adjusted_budget_summary
+          items=page.adjusted_budget_summary
 
           source_type=source_type
           source_type_adjusted=source_type_adjusted
-          year=page.financial_year
+          year=page.selected_financial_year
 
           pdf=pdf
           excel=excel
           pdf_adjusted=pdf_link_adjusted
           excel_adjusted=excel_link_adjusted
-          csv=page_data.adjusted_budget_summary.department_data_csv
-          dataset=page_data.adjusted_budget_summary.dataset_detail_page
+          csv=page.adjusted_budget_summary.department_data_csv
+          dataset=page.adjusted_budget_summary.dataset_detail_page
 
           parliament=parliament
           title="Programme budgets"
@@ -388,19 +382,19 @@ layout: page-shell
       </div>
     </div>
 
-    {% if page_data.expenditure_over_time %}
+    {% if page.expenditure_over_time %}
       <div class="u-marginBottom60 u-marginTop15">
         {%
           include scenes/department/ExpenditureSection/index.html
-          items=page_data.expenditure_over_time.expenditure
+          items=page.expenditure_over_time.expenditure
 
           cpi=site.data.global_values.cpi_dataset_url
           source_type=source_type
-          year=page.financial_year
-          dataset=page_data.expenditure_over_time.dataset_detail_page
+          year=page.selected_financial_year
+          dataset=page.expenditure_over_time.dataset_detail_page
           pdf=pdf_link
           excel=excel
-          csv=page_data.expenditure_over_time.department_data_csv
+          csv=page.expenditure_over_time.department_data_csv
           guide=guide
 
           color="purple"
@@ -411,47 +405,47 @@ layout: page-shell
       </div>
     {% endif %}
 
-    {% capture review_subtitle %}{{ department_location }} {{page_data.name }} Department{% endcapture %}
+    {% capture review_subtitle %}{{ department_location }} {{page.item_name }} Department{% endcapture %}
 
-    {% if page_data.budget_actual %}
+    {% if page.budget_actual %}
       <div class="u-marginBottom60 u-marginTop15">
         {%
           include scenes/department/ExpenditurePhaseSection/index.html
-          items=page_data.budget_actual.expenditure
+          items=page.budget_actual.expenditure
 
           cpi=site.data.global_values.cpi_dataset_url
           source_type="Expenditure Time Series"
-          year=page.financial_year
+          year=page.selected_financial_year
 
-          dataset=page_data.budget_actual.dataset_detail_page
-          csv=page_data.budget_actual.department_data_csv
+          dataset=page.budget_actual.dataset_detail_page
+          csv=page.budget_actual.department_data_csv
 
           color="purple"
           description="Budgeted and Actual Expenditure comparison"
           subtitle=review_subtitle
-          notices=page_data.budget_actual.notices
-          website_url=page_data.website_url
+          notices=page.budget_actual.notices
+          website_url=page.website_url
         %}
       </div>
     {% endif %}
 
-    {% if page_data.budget_actual_programmes %}
+    {% if page.budget_actual_programmes %}
       <div class="u-marginBottom60 u-marginTop15">
         {%
           include scenes/department/ExpenditureMultiplesSection/index.html
-          items=page_data.budget_actual_programmes.programmes
+          items=page.budget_actual_programmes.programmes
 
           cpi=site.data.global_values.cpi_dataset_url
           source_type="Expenditure Time Series"
-          year=page.financial_year
+          year=page.selected_financial_year
 
-          dataset=page_data.budget_actual_programmes.dataset_detail_page
-          csv=page_data.budget_actual_programmes.department_data_csv
+          dataset=page.budget_actual_programmes.dataset_detail_page
+          csv=page.budget_actual_programmes.department_data_csv
 
           color="purple"
           subtitle=review_subtitle
           description="Budgeted and Actual Expenditure comparison by Programme"
-          notices=page_data.budget_actual_programmes.notices
+          notices=page.budget_actual_programmes.notices
         %}
       </div>
     {% endif %}
@@ -461,7 +455,7 @@ layout: page-shell
         <div>
           {%
             include components/department-budgets/ContributedData/index.html
-            datasets=page_data.contributed_datasets
+            datasets=page.contributed_datasets
           %}
         </div>
 
