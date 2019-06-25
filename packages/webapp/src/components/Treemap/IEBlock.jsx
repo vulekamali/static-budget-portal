@@ -52,6 +52,7 @@ const IEBlock = props => {
           height={height}
           style={{
             fill: color,
+            cursor: "pointer",
           }}
           onClick={() => changeSelectedHandler({ id, name, color, value: amount, url, zoom })}
         />
@@ -62,6 +63,9 @@ const IEBlock = props => {
   }
 
   if (depth === 2) {
+    const { name: rootName } = root;
+    const fullName = `${rootName}: ${name}`;
+
     return (
       <g>
         <rect
@@ -74,6 +78,16 @@ const IEBlock = props => {
             stroke: lighten(0.1, color),
             strokeWidth: 1,
           }}
+          onClick={() =>
+                   changeSelectedHandler({
+                     id,
+                     name: fullName,
+                     color,
+                     value: amount,
+                     url,
+                     zoom: rootName,
+                   })
+                  }
         />
       </g>
     );
