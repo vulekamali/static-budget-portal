@@ -69,7 +69,7 @@ const IEBlock = props => {
           width={width}
           height={height}
           style={{
-            fill: color,
+            fill: 'none',
             stroke: lighten(0.1, color),
             strokeWidth: 1,
           }}
