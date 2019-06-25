@@ -12,10 +12,7 @@ function makeLabel(x, y, width, height, text, isBold) {
     if (estimatedFittingChars < 4)
       return null;
 
-    console.log("truncated", {width, text, estimatedWidth, chars: text.length, estimatedFittingChars});
     text = text.slice(0, estimatedFittingChars) + "...";
-  } else {
-    console.log("fine", {width, text, estimatedWidth});
   }
   const style = {fontSize, fontFamily: "Roboto, sans-serif", fontWeight: isBold ? "600" : '400'};
   return <text x={x + padding} y={y + fontSize + padding} style={style}>{text}</text>;
