@@ -28,7 +28,7 @@ const IEBlock = props => {
         width={width}
         height={height}
         style={{
-          fill: '#ddd',
+          fill: color,
           stroke: '#fff',
           strokeWidth: 2 / (depth + 1e-10),
           strokeOpacity: 1 / (depth + 1e-10),
