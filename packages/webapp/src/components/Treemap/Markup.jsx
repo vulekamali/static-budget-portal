@@ -3,13 +3,14 @@ import { Treemap, Tooltip } from 'recharts';
 import LeftIcon from '@material-ui/icons/ArrowBack';
 
 import Block from './Block';
+import IEBlock from './IEBlock';
 import TooltipContent from './TooltipContent';
 
 import { TreemapWrapper, TreemapButtonStyle, TreemapButtonText } from './styled';
 
 const createBlock = (fills, changeSelectedHandler, selected, zoom, icons) => props => {
   const passedProps = { ...props, fills, changeSelectedHandler, selected, zoom, icons };
-  return <Block {...passedProps} />;
+  return <IEBlock {...passedProps} />;
 };
 
 const Markup = ({
