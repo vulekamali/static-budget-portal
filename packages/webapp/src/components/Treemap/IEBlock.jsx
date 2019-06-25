@@ -53,6 +53,7 @@ const IEBlock = props => {
           style={{
             fill: color,
           }}
+          onClick={() => changeSelectedHandler({ id, name, color, value: amount, url, zoom })}
         />
         {makeLabel(x, y, width, height, name, true)}
         {makeLabel(x, y+19, width, height, `R${trimValues(amount, true)}`, false)}
