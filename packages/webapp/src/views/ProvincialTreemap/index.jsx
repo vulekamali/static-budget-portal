@@ -1,7 +1,6 @@
 import React from 'react';
 import MediaQuery from 'react-media';
 
-import calcIfForeignObjectIsSupported from './calcIfForeignObjectIsSupported';
 import ChartSection from '../../components/ChartSection';
 import Treemap from '../../components/Treemap';
 
@@ -50,7 +49,7 @@ const Markup = ({ items, initialSelected }) => {
 
 const ProvincialTreemap = props => (
   <MediaQuery query="(min-width: 600px)">
-    {matches => !!matches && calcIfForeignObjectIsSupported() && <Markup {...props} />}
+    {matches => !!matches && <Markup {...props} />}
   </MediaQuery>
 );
 
