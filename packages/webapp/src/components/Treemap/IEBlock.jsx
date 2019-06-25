@@ -1,4 +1,5 @@
 import React from 'react';
+import { lighten } from 'polished';
 
 const IEBlock = props => {
   const {
@@ -20,22 +21,41 @@ const IEBlock = props => {
     icon,
   } = props;
 
-  return (
-    <g>
-      <rect
-        x={x}
-        y={y}
-        width={width}
-        height={height}
-        style={{
-          fill: color,
-          stroke: '#fff',
-          strokeWidth: 2 / (depth + 1e-10),
-          strokeOpacity: 1 / (depth + 1e-10),
-        }}
-      />
-    </g>
-  );
+  if (depth < 1) return null;
+
+  if (depth === 1) {
+    return (
+      <g>
+        <rect
+          x={x}
+          y={y}
+          width={width}
+          height={height}
+          style={{
+            fill: color,
+          }}
+        />
+      </g>
+    );
+  }
+
+  if (depth === 2) {
+    return (
+      <g>
+        <rect
+          x={x}
+          y={y}
+          width={width}
+          height={height}
+          style={{
+            fill: color,
+            stroke: lighten(0.1, color),
+            strokeWidth: 1,
+          }}
+        />
+      </g>
+    );
+  }
 };
 
 export default IEBlock;
