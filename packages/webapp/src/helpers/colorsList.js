@@ -1,4 +1,5 @@
 import { flatten } from 'lodash';
+import polyfillArrayFill from './polyfillArrayFill';
 
 const colors = [
   '#FFD54F',
@@ -11,6 +12,8 @@ const colors = [
   '#64B5F6',
   '#FF8A65',
 ];
+
+polyfillArrayFill();
 
 const colorsList = flatten(new Array(50).fill(true).map(() => colors));
 

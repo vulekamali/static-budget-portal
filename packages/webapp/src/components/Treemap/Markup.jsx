@@ -3,13 +3,20 @@ import { Treemap, Tooltip } from 'recharts';
 import LeftIcon from '@material-ui/icons/ArrowBack';
 
 import Block from './Block';
+import IEBlock from './IEBlock';
 import TooltipContent from './TooltipContent';
+import calcIfForeignObjectIsSupported from './calcIfForeignObjectIsSupported';
 
 import { TreemapWrapper, TreemapButtonStyle, TreemapButtonText } from './styled';
 
 const createBlock = (fills, changeSelectedHandler, selected, zoom, icons) => props => {
   const passedProps = { ...props, fills, changeSelectedHandler, selected, zoom, icons };
-  return <Block {...passedProps} />;
+  if (calcIfForeignObjectIsSupported()) {
+    return <Block {...passedProps} />;
+  } else {
+    console.log("Using non-foreignObject treemap");
+    return <IEBlock {...passedProps} />;
+  }
 };
 
 const Markup = ({

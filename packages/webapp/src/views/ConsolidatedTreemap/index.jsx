@@ -1,10 +1,9 @@
 import React, { Fragment } from 'react';
 import MediaQuery from 'react-media';
 
-import calcIfForeignObjectIsSupported from './calcIfForeignObjectIsSupported';
 import ChartSection from '../../components/ChartSection';
 import Treemap from '../../components/Treemap';
-import colorsList from './colorsList';
+import colorsList from '../../helpers/colorsList';
 import mapFocusToIcon from './mapFocusToIcon';
 import sortItems from './sortItems';
 
@@ -50,7 +49,7 @@ const Markup = ({ items, initialSelected }) => {
 
 const NationalTreemap = props => (
   <MediaQuery query="(min-width: 600px)">
-    {matches => !!matches && calcIfForeignObjectIsSupported() && <Markup {...props} />}
+    {matches => !!matches && <Markup {...props} />}
   </MediaQuery>
 );
 
