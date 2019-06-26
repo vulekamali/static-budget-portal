@@ -6,8 +6,11 @@ import ChartSection from '../../components/ChartSection';
 import Treemap from '../../components/Treemap';
 import Notices from './Notices';
 import colorsList from '../../helpers/colorsList';
+import polyfillObjectEntries from '../../helpers/polyfillObjectEntries.js';
 
 import { Wrapper, FooterDetails } from './styled';
+
+polyfillObjectEntries();
 
 const addDynamicFootnotes = dynamicFootnotes =>
   dynamicFootnotes.map(footer => (
