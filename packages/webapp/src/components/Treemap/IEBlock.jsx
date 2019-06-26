@@ -65,6 +65,8 @@ const IEBlock = props => {
             fill: color,
             cursor: "pointer",
             pointerEvents: "fill",
+            stroke: lighten(0.1, color),
+            strokeWidth: 2,
           }}
           onClick={clickHandler}
         />
@@ -88,7 +90,7 @@ const IEBlock = props => {
           style={{
             fill: 'none',
             stroke: lighten(0.1, color),
-            strokeWidth: 1,
+            strokeWidth: 2,
             pointerEvents: "fill",
           }}
           onClick={() =>
