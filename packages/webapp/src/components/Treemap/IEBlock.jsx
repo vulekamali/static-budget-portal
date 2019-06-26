@@ -55,7 +55,7 @@ const IEBlock = props => {
     const clickHandler = () => changeSelectedHandler({ id, name, color, value: amount, url, zoom });
 
     return (
-      <g>
+      <g style={{ pointerEvents: "none" }}>
         <rect
           x={x}
           y={y}
@@ -64,6 +64,7 @@ const IEBlock = props => {
           style={{
             fill: color,
             cursor: "pointer",
+            pointerEvents: "fill",
           }}
           onClick={clickHandler}
         />
@@ -88,6 +89,7 @@ const IEBlock = props => {
             fill: 'none',
             stroke: lighten(0.1, color),
             strokeWidth: 1,
+            pointerEvents: "fill",
           }}
           onClick={() =>
                    changeSelectedHandler({
