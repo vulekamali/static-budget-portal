@@ -96,6 +96,7 @@ const IEBlock = props => {
             stroke: lighten(0.1, color),
             strokeWidth: 2,
             pointerEvents: "fill",
+            cursor: "pointer",
           }}
           onClick={() =>
                    changeSelectedHandler({
