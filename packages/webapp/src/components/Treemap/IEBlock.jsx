@@ -3,7 +3,7 @@ import { lighten } from 'polished';
 import trimValues from '../../helpers/trimValues';
 
 
-function makeLabel(x, y, width, height, text, isBold) {
+function makeLabel(x, y, width, height, text, isBold, clickHandler) {
   var fontSize = 14;
   var padding = 10;
   var estimatedWidth = text.length * (fontSize*0.6);
@@ -14,8 +14,20 @@ function makeLabel(x, y, width, height, text, isBold) {
 
     text = text.slice(0, estimatedFittingChars) + "...";
   }
-  const style = {fontSize, fontFamily: "Roboto, sans-serif", fontWeight: isBold ? "600" : '400'};
-  return <text x={x + padding} y={y + fontSize + padding} style={style}>{text}</text>;
+  const style = {
+    fontSize,
+    fontFamily: "Roboto, sans-serif",
+    fontWeight: isBold ? "600" : '400',
+    cursor: "pointer",
+  };
+  return <text
+           x={x + padding}
+           y={y + fontSize + padding}
+           style={style}
+           onClick={clickHandler}
+         >
+           {text}
+         </text>;
 }
 
 
@@ -40,6 +52,8 @@ const IEBlock = props => {
   } = props;
 
   if (depth === 1) {
+    const clickHandler = () => changeSelectedHandler({ id, name, color, value: amount, url, zoom });
+
     return (
       <g>
         <rect
@@ -51,10 +65,10 @@ const IEBlock = props => {
             fill: color,
             cursor: "pointer",
           }}
-          onClick={() => changeSelectedHandler({ id, name, color, value: amount, url, zoom })}
+          onClick={clickHandler}
         />
-        {makeLabel(x, y, width, height, name, true)}
-        {makeLabel(x, y+19, width, height, `R${trimValues(amount, true)}`, false)}
+        {makeLabel(x, y, width, height, name, true, clickHandler)}
+        {makeLabel(x, y+19, width, height, `R${trimValues(amount, true)}`, false, clickHandler)}
       </g>
     );
   }
