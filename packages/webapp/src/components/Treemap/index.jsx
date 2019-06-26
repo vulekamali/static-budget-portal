@@ -67,7 +67,7 @@ class Treemap extends Component {
     if (onSelectedChange) {
       onSelectedChange(selected);
     }
-    console.log("selected", selected.id);
+
     this.setState({
       selected: selected.id,
       zoom: selected.zoom || null,
