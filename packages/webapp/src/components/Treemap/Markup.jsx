@@ -11,10 +11,13 @@ import { TreemapWrapper, TreemapButtonStyle, TreemapButtonText } from './styled'
 
 const createBlock = (fills, changeSelectedHandler, selected, zoom, icons) => props => {
   const passedProps = { ...props, fills, changeSelectedHandler, selected, zoom, icons };
-  if (calcIfForeignObjectIsSupported())
+  if (calcIfForeignObjectIsSupported()) {
+    console.log("Using foreignObject treemap");
     return <Block {...passedProps} />;
-  else
+  } else {
+    console.log("Using IE treemap");
     return <IEBlock {...passedProps} />;
+  }
 };
 
 const Markup = ({

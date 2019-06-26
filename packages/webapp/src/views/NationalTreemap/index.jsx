@@ -5,7 +5,7 @@ import ChartSection from '../../components/ChartSection';
 import Treemap from '../../components/Treemap';
 import sortItems from './sortItems';
 
-import colorsList from './colorsList.js';
+import colorsList from '../../helpers/colorsList.js';
 
 const footer = (
   <Fragment>

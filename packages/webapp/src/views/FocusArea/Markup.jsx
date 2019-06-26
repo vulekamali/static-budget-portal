@@ -5,7 +5,7 @@ import Heading from './Heading';
 import ChartSection from '../../components/ChartSection';
 import Treemap from '../../components/Treemap';
 import Notices from './Notices';
-import colorsList from './colorsList';
+import colorsList from '../../helpers/colorsList';
 
 import { Wrapper, FooterDetails } from './styled';
 

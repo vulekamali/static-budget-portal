@@ -3,7 +3,7 @@ import MediaQuery from 'react-media';
 
 import ChartSection from '../../components/ChartSection';
 import Treemap from '../../components/Treemap';
-import colorsList from './colorsList';
+import colorsList from '../../helpers/colorsList';
 import mapFocusToIcon from './mapFocusToIcon';
 import sortItems from './sortItems';
 
