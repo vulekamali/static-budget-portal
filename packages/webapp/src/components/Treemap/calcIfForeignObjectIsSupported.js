@@ -1,3 +1,8 @@
+/**
+Borrow feature detection from Modernizr
+https://stackoverflow.com/a/24566105/1305080
+*/
+
 const calcIfForeignObjectIsSupported = () => {
   if (!document.createElementNS) {
     return false;
