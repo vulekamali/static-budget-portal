@@ -3,10 +3,9 @@ import { lighten } from 'polished';
 import trimValues from '../../helpers/trimValues';
 
 
-function makeLabel(x, y, width, height, text, isBold, clickHandler) {
-  var fontSize = 14;
-  var padding = 10;
+function makeLabel(x, y, width, height, text, isBold, clickHandler, fontSize, padding) {
   var estimatedWidth = text.length * (fontSize*0.6);
+
   if (estimatedWidth > width) {
     var estimatedFittingChars = Math.floor(width / fontSize);
     if (estimatedFittingChars < 4)
@@ -14,6 +13,7 @@ function makeLabel(x, y, width, height, text, isBold, clickHandler) {
 
     text = text.slice(0, estimatedFittingChars) + "...";
   }
+
   const style = {
     fontSize,
     fontFamily: "Roboto, sans-serif",
@@ -53,6 +53,10 @@ const IEBlock = props => {
 
   if (depth === 1) {
     const clickHandler = () => changeSelectedHandler({ id, name, color, value: amount, url, zoom });
+    const fontSize = 14;
+    const padding = 10;
+    const lineSpacing = 5;
+    const showLabels = (fontSize*2 + lineSpacing + padding*2) <= height;
 
     return (
       <g style={{ pointerEvents: "none" }}>
@@ -70,8 +74,8 @@ const IEBlock = props => {
           }}
           onClick={clickHandler}
         />
-        {makeLabel(x, y, width, height, name, true, clickHandler)}
-        {makeLabel(x, y+19, width, height, `R${trimValues(amount, true)}`, false, clickHandler)}
+        {showLabels && makeLabel(x, y, width, height, name, true, clickHandler, fontSize, padding)}
+        {showLabels && makeLabel(x, y+19, width, height, `R${trimValues(amount, true)}`, false, clickHandler, fontSize, padding)}
       </g>
     );
   }
