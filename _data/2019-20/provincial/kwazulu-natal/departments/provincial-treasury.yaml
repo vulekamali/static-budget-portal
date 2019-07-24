@@ -530,8 +530,142 @@ department_adjusted_budget: null
 department_budget: null
 description: 'KwaZulu-Natal department: Provincial Treasury budget data for the 2019-20
   financial year from National Treasury in partnership with IMALI YETHU.'
-economic_classification_by_programme: null
-expenditure_over_time: null
+economic_classification_by_programme:
+  dataset_detail_page: /datasets/estimates-of-provincial-expenditure/estimates-of-provincial-expenditure-of-south-africa-2019-20
+  department_data_csv: https://datamanager.vulekamali.gov.za/csv/?api_url=https%3A//openspending.org/api/3/cubes/b9d2af843f3a7ca223eea07fb608e62a%3Aestimates-of-provincial-expenditure-south-africa-2019-20-uploaded-2019-06-05-1615/aggregate/%3Fcut%3Dfinancialyear.financialyear%253A2019%257Cgovernment.government%253A%2522KwaZulu-Natal%2522%257Cvotenumber.department%253A%2522Provincial%2BTreasury%2522%26drilldown%3Dbudgetphase.budgetphase%257Ceconomicclassification1.economicclassification1%257Ceconomicclassification2.economicclassification2%257Ceconomicclassification3.economicclassification3%257Ceconomicclassification4.economicclassification4%257Ceconomicclassification5.economicclassification5%257Cfinancialyear.financialyear%257Cfunctiongroup1.functiongroup1%257Cfunctiongroup2.functiongroup2%257Cgovernment.government%257Cprognumber.prognumber%257Cprognumber.programme%257Csubprognumber.subprognumber%257Csubprognumber.subprogramme%257Cvotenumber.department%257Cvotenumber.votenumber%26pagesize%3D10000
+  programmes:
+  - items:
+    - items:
+      - name: Payments for capital assets
+        total_budget: 15862000
+        type: economic_classification_2
+      name: Capital
+      type: economic_classification_1
+    - items:
+      - name: Current payments
+        total_budget: 202456000
+        type: economic_classification_2
+      - name: Transfers and subsidies
+        total_budget: 1891000
+        type: economic_classification_2
+      name: Current
+      type: economic_classification_1
+    name: Administration
+    type: programme
+  - items:
+    - items:
+      - name: Payments for capital assets
+        total_budget: 850000
+        type: economic_classification_2
+      name: Capital
+      type: economic_classification_1
+    - items:
+      - name: Current payments
+        total_budget: 222493000
+        type: economic_classification_2
+      - name: Transfers and subsidies
+        total_budget: 198000
+        type: economic_classification_2
+      name: Current
+      type: economic_classification_1
+    name: Financial Governance
+    type: programme
+  - items:
+    - items:
+      - name: Payments for capital assets
+        total_budget: 1318000
+        type: economic_classification_2
+      name: Capital
+      type: economic_classification_1
+    - items:
+      - name: Current payments
+        total_budget: 164915000
+        type: economic_classification_2
+      - name: Transfers and subsidies
+        total_budget: 112000
+        type: economic_classification_2
+      name: Current
+      type: economic_classification_1
+    name: Internal Audit
+    type: programme
+  - items:
+    - items:
+      - name: Payments for capital assets
+        total_budget: 719000
+        type: economic_classification_2
+      name: Capital
+      type: economic_classification_1
+    - items:
+      - name: Current payments
+        total_budget: 63174000
+        type: economic_classification_2
+      name: Current
+      type: economic_classification_1
+    name: Municipal Finance Management
+    type: programme
+  - items:
+    - items:
+      - name: Payments for capital assets
+        total_budget: 316000
+        type: economic_classification_2
+      name: Capital
+      type: economic_classification_1
+    - items:
+      - name: Current payments
+        total_budget: 47325000
+        type: economic_classification_2
+      name: Current
+      type: economic_classification_1
+    name: Sustainable Resource Management
+    type: programme
+expenditure_over_time:
+  dataset_detail_page: /datasets/estimates-of-provincial-expenditure/estimates-of-provincial-expenditure-of-south-africa-2019-20
+  expenditure:
+    base_financial_year: 2018-19
+    nominal:
+    - amount: 604650000
+      financial_year: 2015-16
+      phase: Audited Outcome
+    - amount: 596115000
+      financial_year: 2016-17
+      phase: Audited Outcome
+    - amount: 588876000
+      financial_year: 2017-18
+      phase: Audited Outcome
+    - amount: 681900000
+      financial_year: 2018-19
+      phase: Adjusted appropriation
+    - amount: 721629000
+      financial_year: 2019-20
+      phase: Main appropriation
+    - amount: 725726000
+      financial_year: 2020-21
+      phase: Medium Term Estimates
+    - amount: 765393000
+      financial_year: 2021-22
+      phase: Medium Term Estimates
+    real:
+    - amount: 706073173
+      financial_year: 2015-16
+      phase: Audited Outcome
+    - amount: 654880854
+      financial_year: 2016-17
+      phase: Audited Outcome
+    - amount: 617802720
+      financial_year: 2017-18
+      phase: Audited Outcome
+    - amount: 681900000
+      financial_year: 2018-19
+      phase: Adjusted appropriation
+    - amount: 686232349
+      financial_year: 2019-20
+      phase: Main appropriation
+    - amount: 654282370
+      financial_year: 2020-21
+      phase: Medium Term Estimates
+    - amount: 654514022
+      financial_year: 2021-22
+      phase: Medium Term Estimates
 financial_years:
 - closest_match:
     is_exact_match: true
@@ -560,16 +694,163 @@ government_functions: []
 intro: ''
 is_vote_primary: true
 name: Provincial Treasury
-programme_by_economic_classification: null
+programme_by_economic_classification:
+  dataset_detail_page: /datasets/estimates-of-provincial-expenditure/estimates-of-provincial-expenditure-of-south-africa-2019-20
+  department_data_csv: https://datamanager.vulekamali.gov.za/csv/?api_url=https%3A//openspending.org/api/3/cubes/b9d2af843f3a7ca223eea07fb608e62a%3Aestimates-of-provincial-expenditure-south-africa-2019-20-uploaded-2019-06-05-1615/aggregate/%3Fcut%3Dfinancialyear.financialyear%253A2019%257Cgovernment.government%253A%2522KwaZulu-Natal%2522%257Cvotenumber.department%253A%2522Provincial%2BTreasury%2522%26drilldown%3Dbudgetphase.budgetphase%257Ceconomicclassification1.economicclassification1%257Ceconomicclassification2.economicclassification2%257Ceconomicclassification3.economicclassification3%257Ceconomicclassification4.economicclassification4%257Ceconomicclassification5.economicclassification5%257Cfinancialyear.financialyear%257Cfunctiongroup1.functiongroup1%257Cfunctiongroup2.functiongroup2%257Cgovernment.government%257Cprognumber.prognumber%257Cprognumber.programme%257Csubprognumber.subprognumber%257Csubprognumber.subprogramme%257Cvotenumber.department%257Cvotenumber.votenumber%26pagesize%3D10000
+  econ_classes:
+  - items:
+    - name: Administration
+      total_budget: 15862000
+      type: programme
+    - name: Internal Audit
+      total_budget: 1318000
+      type: programme
+    - name: Financial Governance
+      total_budget: 850000
+      type: programme
+    - name: Municipal Finance Management
+      total_budget: 719000
+      type: programme
+    - name: Sustainable Resource Management
+      total_budget: 316000
+      type: programme
+    name: Capital - Payments for capital assets
+    type: economic_classification_1_and_2
+  - items:
+    - name: Financial Governance
+      total_budget: 222493000
+      type: programme
+    - name: Administration
+      total_budget: 202456000
+      type: programme
+    - name: Internal Audit
+      total_budget: 164915000
+      type: programme
+    - name: Municipal Finance Management
+      total_budget: 63174000
+      type: programme
+    - name: Sustainable Resource Management
+      total_budget: 47325000
+      type: programme
+    name: Current - Current payments
+    type: economic_classification_1_and_2
+  - items:
+    - name: Administration
+      total_budget: 1891000
+      type: programme
+    - name: Financial Governance
+      total_budget: 198000
+      type: programme
+    - name: Internal Audit
+      total_budget: 112000
+      type: programme
+    name: Current - Transfers and subsidies
+    type: economic_classification_1_and_2
 programmes:
-  programme_budgets: []
+  dataset_detail_page: /datasets/estimates-of-provincial-expenditure/estimates-of-provincial-expenditure-of-south-africa-2019-20
+  department_data_csv: https://datamanager.vulekamali.gov.za/csv/?api_url=https%3A//openspending.org/api/3/cubes/b9d2af843f3a7ca223eea07fb608e62a%3Aestimates-of-provincial-expenditure-south-africa-2019-20-uploaded-2019-06-05-1615/aggregate/%3Fcut%3Dfinancialyear.financialyear%253A2019%257Cgovernment.government%253A%2522KwaZulu-Natal%2522%257Cvotenumber.department%253A%2522Provincial%2BTreasury%2522%26drilldown%3Dbudgetphase.budgetphase%257Ceconomicclassification1.economicclassification1%257Ceconomicclassification2.economicclassification2%257Ceconomicclassification3.economicclassification3%257Ceconomicclassification4.economicclassification4%257Ceconomicclassification5.economicclassification5%257Cfinancialyear.financialyear%257Cfunctiongroup1.functiongroup1%257Cfunctiongroup2.functiongroup2%257Cgovernment.government%257Cprognumber.prognumber%257Cprognumber.programme%257Csubprognumber.subprognumber%257Csubprognumber.subprogramme%257Cvotenumber.department%257Cvotenumber.votenumber%26pagesize%3D10000
+  programme_budgets:
+  - name: Administration
+    total_budget: 220209000
+  - name: Sustainable Resource Management
+    total_budget: 47641000
+  - name: Financial Governance
+    total_budget: 223541000
+  - name: Internal Audit
+    total_budget: 166345000
+  - name: Municipal Finance Management
+    total_budget: 63893000
 selected_financial_year: 2019-20
 selected_tab: departments
 slug: provincial-treasury
 sphere:
-  name: provincial
+  name: Provincial
   slug: provincial
-subprogramme_by_programme: null
+subprogramme_by_programme:
+  dataset_detail_page: /datasets/estimates-of-provincial-expenditure/estimates-of-provincial-expenditure-of-south-africa-2019-20
+  department_data_csv: https://datamanager.vulekamali.gov.za/csv/?api_url=https%3A//openspending.org/api/3/cubes/b9d2af843f3a7ca223eea07fb608e62a%3Aestimates-of-provincial-expenditure-south-africa-2019-20-uploaded-2019-06-05-1615/aggregate/%3Fcut%3Dfinancialyear.financialyear%253A2019%257Cgovernment.government%253A%2522KwaZulu-Natal%2522%257Cvotenumber.department%253A%2522Provincial%2BTreasury%2522%26drilldown%3Dbudgetphase.budgetphase%257Ceconomicclassification1.economicclassification1%257Ceconomicclassification2.economicclassification2%257Ceconomicclassification3.economicclassification3%257Ceconomicclassification4.economicclassification4%257Ceconomicclassification5.economicclassification5%257Cfinancialyear.financialyear%257Cfunctiongroup1.functiongroup1%257Cfunctiongroup2.functiongroup2%257Cgovernment.government%257Cprognumber.prognumber%257Cprognumber.programme%257Csubprognumber.subprognumber%257Csubprognumber.subprogramme%257Cvotenumber.department%257Cvotenumber.votenumber%26pagesize%3D10000
+  programmes:
+  - items:
+    - name: Corporate Services
+      total_budget: 102958000
+      type: subprogramme
+    - name: Management Services(Hod)
+      total_budget: 51963000
+      type: subprogramme
+    - name: Financial Management(Cfo)
+      total_budget: 34337000
+      type: subprogramme
+    - name: Office Of The Mec
+      total_budget: 30951000
+      type: subprogramme
+    name: Administration
+    type: programme
+  - items:
+    - name: Support And Interlinked Financial Systems
+      total_budget: 100198000
+      type: subprogramme
+    - name: Supply Chain Management
+      total_budget: 45735000
+      type: subprogramme
+    - name: Accounting Services
+      total_budget: 42497000
+      type: subprogramme
+    - name: Asset & Liabilities  Management
+      total_budget: 14969000
+      type: subprogramme
+    - name: Public, Private Partnerships
+      total_budget: 8785000
+      type: subprogramme
+    - name: Norms And Standards
+      total_budget: 7122000
+      type: subprogramme
+    - name: Programme Support
+      total_budget: 4235000
+      type: subprogramme
+    name: Financial Governance
+    type: programme
+  - items:
+    - name: Assurance Services
+      total_budget: 94583000
+      type: subprogramme
+    - name: Forensics Services
+      total_budget: 39478000
+      type: subprogramme
+    - name: Risk Management
+      total_budget: 28555000
+      type: subprogramme
+    - name: Programme Support
+      total_budget: 3729000
+      type: subprogramme
+    name: Internal Audit
+    type: programme
+  - items:
+    - name: Municipal Budget
+      total_budget: 27714000
+      type: subprogramme
+    - name: Municipal Support Programme
+      total_budget: 17973000
+      type: subprogramme
+    - name: Municipal Accounting & Reporting
+      total_budget: 14919000
+      type: subprogramme
+    - name: Programme Support
+      total_budget: 3287000
+      type: subprogramme
+    name: Municipal Finance Management
+    type: programme
+  - items:
+    - name: Economic Analysis
+      total_budget: 26685000
+      type: subprogramme
+    - name: Public Finance
+      total_budget: 17543000
+      type: subprogramme
+    - name: Programme Support
+      total_budget: 3413000
+      type: subprogramme
+    name: Sustainable Resource Management
+    type: programme
 title: Provincial Treasury budget 2019-20  - vulekamali
 vote_number: 6
 vote_primary:

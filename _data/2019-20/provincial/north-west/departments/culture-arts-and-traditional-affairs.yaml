@@ -382,8 +382,130 @@ department_budget: null
 description: 'North West department: Culture, Arts and Traditional Affairs budget
   data for the 2019-20 financial year from National Treasury in partnership with IMALI
   YETHU.'
-economic_classification_by_programme: null
-expenditure_over_time: null
+economic_classification_by_programme:
+  dataset_detail_page: /datasets/estimates-of-provincial-expenditure/estimates-of-provincial-expenditure-of-south-africa-2019-20
+  department_data_csv: https://datamanager.vulekamali.gov.za/csv/?api_url=https%3A//openspending.org/api/3/cubes/b9d2af843f3a7ca223eea07fb608e62a%3Aestimates-of-provincial-expenditure-south-africa-2019-20-uploaded-2019-06-05-1615/aggregate/%3Fcut%3Dfinancialyear.financialyear%253A2019%257Cgovernment.government%253A%2522North%2BWest%2522%257Cvotenumber.department%253A%2522Culture%252C%2BArts%2Band%2BTraditional%2BAffairs%2522%26drilldown%3Dbudgetphase.budgetphase%257Ceconomicclassification1.economicclassification1%257Ceconomicclassification2.economicclassification2%257Ceconomicclassification3.economicclassification3%257Ceconomicclassification4.economicclassification4%257Ceconomicclassification5.economicclassification5%257Cfinancialyear.financialyear%257Cfunctiongroup1.functiongroup1%257Cfunctiongroup2.functiongroup2%257Cgovernment.government%257Cprognumber.prognumber%257Cprognumber.programme%257Csubprognumber.subprognumber%257Csubprognumber.subprogramme%257Cvotenumber.department%257Cvotenumber.votenumber%26pagesize%3D10000
+  programmes:
+  - items:
+    - items:
+      - name: Payments for capital assets
+        total_budget: 1004000
+        type: economic_classification_2
+      name: Capital
+      type: economic_classification_1
+    - items:
+      - name: Current payments
+        total_budget: 115266000
+        type: economic_classification_2
+      - name: Transfers and subsidies
+        total_budget: 1203000
+        type: economic_classification_2
+      name: Current
+      type: economic_classification_1
+    name: Administration
+    type: programme
+  - items:
+    - items:
+      - name: Payments for capital assets
+        total_budget: 5936000
+        type: economic_classification_2
+      name: Capital
+      type: economic_classification_1
+    - items:
+      - name: Transfers and subsidies
+        total_budget: 158789000
+        type: economic_classification_2
+      - name: Current payments
+        total_budget: 153225000
+        type: economic_classification_2
+      name: Current
+      type: economic_classification_1
+    name: Cultural Affairs
+    type: programme
+  - items:
+    - items:
+      - name: Payments for capital assets
+        total_budget: 54409000
+        type: economic_classification_2
+      name: Capital
+      type: economic_classification_1
+    - items:
+      - name: Current payments
+        total_budget: 134902000
+        type: economic_classification_2
+      - name: Transfers and subsidies
+        total_budget: 21150000
+        type: economic_classification_2
+      name: Current
+      type: economic_classification_1
+    name: Library And Archive Services
+    type: programme
+  - items:
+    - items:
+      - name: Payments for capital assets
+        total_budget: 9898000
+        type: economic_classification_2
+      name: Capital
+      type: economic_classification_1
+    - items:
+      - name: Current payments
+        total_budget: 100142000
+        type: economic_classification_2
+      - name: Transfers and subsidies
+        total_budget: 26412000
+        type: economic_classification_2
+      name: Current
+      type: economic_classification_1
+    name: Traditional Affairs
+    type: programme
+expenditure_over_time:
+  dataset_detail_page: /datasets/estimates-of-provincial-expenditure/estimates-of-provincial-expenditure-of-south-africa-2019-20
+  expenditure:
+    base_financial_year: 2018-19
+    nominal:
+    - amount: 585294000
+      financial_year: 2015-16
+      phase: Audited Outcome
+    - amount: 642159000
+      financial_year: 2016-17
+      phase: Audited Outcome
+    - amount: 743535000
+      financial_year: 2017-18
+      phase: Audited Outcome
+    - amount: 761620000
+      financial_year: 2018-19
+      phase: Adjusted appropriation
+    - amount: 782336000
+      financial_year: 2019-20
+      phase: Main appropriation
+    - amount: 814825000
+      financial_year: 2020-21
+      phase: Medium Term Estimates
+    - amount: 860069000
+      financial_year: 2021-22
+      phase: Medium Term Estimates
+    real:
+    - amount: 683470424
+      financial_year: 2015-16
+      phase: Audited Outcome
+    - amount: 705463936
+      financial_year: 2016-17
+      phase: Audited Outcome
+    - amount: 780058867
+      financial_year: 2017-18
+      phase: Audited Outcome
+    - amount: 761620000
+      financial_year: 2018-19
+      phase: Adjusted appropriation
+    - amount: 743961608
+      financial_year: 2019-20
+      phase: Main appropriation
+    - amount: 734610076
+      financial_year: 2020-21
+      phase: Medium Term Estimates
+    - amount: 735474744
+      financial_year: 2021-22
+      phase: Medium Term Estimates
 financial_years:
 - closest_match:
     is_exact_match: true
@@ -412,16 +534,119 @@ government_functions: []
 intro: ''
 is_vote_primary: true
 name: Culture, Arts and Traditional Affairs
-programme_by_economic_classification: null
+programme_by_economic_classification:
+  dataset_detail_page: /datasets/estimates-of-provincial-expenditure/estimates-of-provincial-expenditure-of-south-africa-2019-20
+  department_data_csv: https://datamanager.vulekamali.gov.za/csv/?api_url=https%3A//openspending.org/api/3/cubes/b9d2af843f3a7ca223eea07fb608e62a%3Aestimates-of-provincial-expenditure-south-africa-2019-20-uploaded-2019-06-05-1615/aggregate/%3Fcut%3Dfinancialyear.financialyear%253A2019%257Cgovernment.government%253A%2522North%2BWest%2522%257Cvotenumber.department%253A%2522Culture%252C%2BArts%2Band%2BTraditional%2BAffairs%2522%26drilldown%3Dbudgetphase.budgetphase%257Ceconomicclassification1.economicclassification1%257Ceconomicclassification2.economicclassification2%257Ceconomicclassification3.economicclassification3%257Ceconomicclassification4.economicclassification4%257Ceconomicclassification5.economicclassification5%257Cfinancialyear.financialyear%257Cfunctiongroup1.functiongroup1%257Cfunctiongroup2.functiongroup2%257Cgovernment.government%257Cprognumber.prognumber%257Cprognumber.programme%257Csubprognumber.subprognumber%257Csubprognumber.subprogramme%257Cvotenumber.department%257Cvotenumber.votenumber%26pagesize%3D10000
+  econ_classes:
+  - items:
+    - name: Library And Archive Services
+      total_budget: 54409000
+      type: programme
+    - name: Traditional Affairs
+      total_budget: 9898000
+      type: programme
+    - name: Cultural Affairs
+      total_budget: 5936000
+      type: programme
+    - name: Administration
+      total_budget: 1004000
+      type: programme
+    name: Capital - Payments for capital assets
+    type: economic_classification_1_and_2
+  - items:
+    - name: Cultural Affairs
+      total_budget: 153225000
+      type: programme
+    - name: Library And Archive Services
+      total_budget: 134902000
+      type: programme
+    - name: Administration
+      total_budget: 115266000
+      type: programme
+    - name: Traditional Affairs
+      total_budget: 100142000
+      type: programme
+    name: Current - Current payments
+    type: economic_classification_1_and_2
+  - items:
+    - name: Cultural Affairs
+      total_budget: 158789000
+      type: programme
+    - name: Traditional Affairs
+      total_budget: 26412000
+      type: programme
+    - name: Library And Archive Services
+      total_budget: 21150000
+      type: programme
+    - name: Administration
+      total_budget: 1203000
+      type: programme
+    name: Current - Transfers and subsidies
+    type: economic_classification_1_and_2
 programmes:
-  programme_budgets: []
+  dataset_detail_page: /datasets/estimates-of-provincial-expenditure/estimates-of-provincial-expenditure-of-south-africa-2019-20
+  department_data_csv: https://datamanager.vulekamali.gov.za/csv/?api_url=https%3A//openspending.org/api/3/cubes/b9d2af843f3a7ca223eea07fb608e62a%3Aestimates-of-provincial-expenditure-south-africa-2019-20-uploaded-2019-06-05-1615/aggregate/%3Fcut%3Dfinancialyear.financialyear%253A2019%257Cgovernment.government%253A%2522North%2BWest%2522%257Cvotenumber.department%253A%2522Culture%252C%2BArts%2Band%2BTraditional%2BAffairs%2522%26drilldown%3Dbudgetphase.budgetphase%257Ceconomicclassification1.economicclassification1%257Ceconomicclassification2.economicclassification2%257Ceconomicclassification3.economicclassification3%257Ceconomicclassification4.economicclassification4%257Ceconomicclassification5.economicclassification5%257Cfinancialyear.financialyear%257Cfunctiongroup1.functiongroup1%257Cfunctiongroup2.functiongroup2%257Cgovernment.government%257Cprognumber.prognumber%257Cprognumber.programme%257Csubprognumber.subprognumber%257Csubprognumber.subprogramme%257Cvotenumber.department%257Cvotenumber.votenumber%26pagesize%3D10000
+  programme_budgets:
+  - name: Administration
+    total_budget: 117473000
+  - name: Cultural Affairs
+    total_budget: 317950000
+  - name: Library And Archive Services
+    total_budget: 210461000
+  - name: Traditional Affairs
+    total_budget: 136452000
 selected_financial_year: 2019-20
 selected_tab: departments
 slug: culture-arts-and-traditional-affairs
 sphere:
-  name: provincial
+  name: Provincial
   slug: provincial
-subprogramme_by_programme: null
+subprogramme_by_programme:
+  dataset_detail_page: /datasets/estimates-of-provincial-expenditure/estimates-of-provincial-expenditure-of-south-africa-2019-20
+  department_data_csv: https://datamanager.vulekamali.gov.za/csv/?api_url=https%3A//openspending.org/api/3/cubes/b9d2af843f3a7ca223eea07fb608e62a%3Aestimates-of-provincial-expenditure-south-africa-2019-20-uploaded-2019-06-05-1615/aggregate/%3Fcut%3Dfinancialyear.financialyear%253A2019%257Cgovernment.government%253A%2522North%2BWest%2522%257Cvotenumber.department%253A%2522Culture%252C%2BArts%2Band%2BTraditional%2BAffairs%2522%26drilldown%3Dbudgetphase.budgetphase%257Ceconomicclassification1.economicclassification1%257Ceconomicclassification2.economicclassification2%257Ceconomicclassification3.economicclassification3%257Ceconomicclassification4.economicclassification4%257Ceconomicclassification5.economicclassification5%257Cfinancialyear.financialyear%257Cfunctiongroup1.functiongroup1%257Cfunctiongroup2.functiongroup2%257Cgovernment.government%257Cprognumber.prognumber%257Cprognumber.programme%257Csubprognumber.subprognumber%257Csubprognumber.subprogramme%257Cvotenumber.department%257Cvotenumber.votenumber%26pagesize%3D10000
+  programmes:
+  - items:
+    - name: Corporate Services
+      total_budget: 106946000
+      type: subprogramme
+    - name: Office Of The Mec
+      total_budget: 10527000
+      type: subprogramme
+    name: Administration
+    type: programme
+  - items:
+    - name: Arts And Culture
+      total_budget: 204494000
+      type: subprogramme
+    - name: Management
+      total_budget: 71985000
+      type: subprogramme
+    - name: Museum  Services
+      total_budget: 28590000
+      type: subprogramme
+    - name: Language Services
+      total_budget: 12881000
+      type: subprogramme
+    name: Cultural Affairs
+    type: programme
+  - items:
+    - name: Library Services
+      total_budget: 186649000
+      type: subprogramme
+    - name: Management
+      total_budget: 13900000
+      type: subprogramme
+    - name: Archives
+      total_budget: 9912000
+      type: subprogramme
+    name: Library And Archive Services
+    type: programme
+  - items:
+    - name: Traditional Leadership Support
+      total_budget: 136452000
+      type: subprogramme
+    name: Traditional Affairs
+    type: programme
 title: Culture, Arts and Traditional Affairs budget 2019-20  - vulekamali
 vote_number: 4
 vote_primary:

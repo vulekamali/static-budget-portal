@@ -281,8 +281,109 @@ department_adjusted_budget: null
 department_budget: null
 description: 'Free State department: Public Works and Infrastructure budget data for
   the 2019-20 financial year from National Treasury in partnership with IMALI YETHU.'
-economic_classification_by_programme: null
-expenditure_over_time: null
+economic_classification_by_programme:
+  dataset_detail_page: /datasets/estimates-of-provincial-expenditure/estimates-of-provincial-expenditure-of-south-africa-2019-20
+  department_data_csv: https://datamanager.vulekamali.gov.za/csv/?api_url=https%3A//openspending.org/api/3/cubes/b9d2af843f3a7ca223eea07fb608e62a%3Aestimates-of-provincial-expenditure-south-africa-2019-20-uploaded-2019-06-05-1615/aggregate/%3Fcut%3Dfinancialyear.financialyear%253A2019%257Cgovernment.government%253A%2522Free%2BState%2522%257Cvotenumber.department%253A%2522Public%2BWorks%2Band%2BInfrastructure%2522%26drilldown%3Dbudgetphase.budgetphase%257Ceconomicclassification1.economicclassification1%257Ceconomicclassification2.economicclassification2%257Ceconomicclassification3.economicclassification3%257Ceconomicclassification4.economicclassification4%257Ceconomicclassification5.economicclassification5%257Cfinancialyear.financialyear%257Cfunctiongroup1.functiongroup1%257Cfunctiongroup2.functiongroup2%257Cgovernment.government%257Cprognumber.prognumber%257Cprognumber.programme%257Csubprognumber.subprognumber%257Csubprognumber.subprogramme%257Cvotenumber.department%257Cvotenumber.votenumber%26pagesize%3D10000
+  programmes:
+  - items:
+    - items:
+      - name: Payments for capital assets
+        total_budget: 5085000
+        type: economic_classification_2
+      name: Capital
+      type: economic_classification_1
+    - items:
+      - name: Current payments
+        total_budget: 138597000
+        type: economic_classification_2
+      - name: Transfers and subsidies
+        total_budget: 1075000
+        type: economic_classification_2
+      name: Current
+      type: economic_classification_1
+    name: Administration
+    type: programme
+  - items:
+    - items:
+      - name: Payments for capital assets
+        total_budget: 127387000
+        type: economic_classification_2
+      name: Capital
+      type: economic_classification_1
+    - items:
+      - name: Current payments
+        total_budget: 60792000
+        type: economic_classification_2
+      name: Current
+      type: economic_classification_1
+    name: Expanded Public Works Programme
+    type: programme
+  - items:
+    - items:
+      - name: Payments for capital assets
+        total_budget: 82249000
+        type: economic_classification_2
+      name: Capital
+      type: economic_classification_1
+    - items:
+      - name: Current payments
+        total_budget: 999661000
+        type: economic_classification_2
+      - name: Transfers and subsidies
+        total_budget: 388427000
+        type: economic_classification_2
+      name: Current
+      type: economic_classification_1
+    name: Public Works Infrastructure
+    type: programme
+expenditure_over_time:
+  dataset_detail_page: /datasets/estimates-of-provincial-expenditure/estimates-of-provincial-expenditure-of-south-africa-2019-20
+  expenditure:
+    base_financial_year: 2018-19
+    nominal:
+    - amount: 1503355000
+      financial_year: 2015-16
+      phase: Audited Outcome
+    - amount: 1486262000
+      financial_year: 2016-17
+      phase: Audited Outcome
+    - amount: 1532217000
+      financial_year: 2017-18
+      phase: Audited Outcome
+    - amount: 1701257000
+      financial_year: 2018-19
+      phase: Adjusted appropriation
+    - amount: 1803273000
+      financial_year: 2019-20
+      phase: Main appropriation
+    - amount: 1929997000
+      financial_year: 2020-21
+      phase: Medium Term Estimates
+    - amount: 2018009000
+      financial_year: 2021-22
+      phase: Medium Term Estimates
+    real:
+    - amount: 1755525735
+      financial_year: 2015-16
+      phase: Audited Outcome
+    - amount: 1632779797
+      financial_year: 2016-17
+      phase: Audited Outcome
+    - amount: 1607482442
+      financial_year: 2017-18
+      phase: Audited Outcome
+    - amount: 1701257000
+      financial_year: 2018-19
+      phase: Adjusted appropriation
+    - amount: 1714820589
+      financial_year: 2019-20
+      phase: Main appropriation
+    - amount: 1739999686
+      financial_year: 2020-21
+      phase: Medium Term Estimates
+    - amount: 1725669282
+      financial_year: 2021-22
+      phase: Medium Term Estimates
 financial_years:
 - closest_match:
     is_exact_match: true
@@ -311,16 +412,111 @@ government_functions: []
 intro: ''
 is_vote_primary: true
 name: Public Works and Infrastructure
-programme_by_economic_classification: null
+programme_by_economic_classification:
+  dataset_detail_page: /datasets/estimates-of-provincial-expenditure/estimates-of-provincial-expenditure-of-south-africa-2019-20
+  department_data_csv: https://datamanager.vulekamali.gov.za/csv/?api_url=https%3A//openspending.org/api/3/cubes/b9d2af843f3a7ca223eea07fb608e62a%3Aestimates-of-provincial-expenditure-south-africa-2019-20-uploaded-2019-06-05-1615/aggregate/%3Fcut%3Dfinancialyear.financialyear%253A2019%257Cgovernment.government%253A%2522Free%2BState%2522%257Cvotenumber.department%253A%2522Public%2BWorks%2Band%2BInfrastructure%2522%26drilldown%3Dbudgetphase.budgetphase%257Ceconomicclassification1.economicclassification1%257Ceconomicclassification2.economicclassification2%257Ceconomicclassification3.economicclassification3%257Ceconomicclassification4.economicclassification4%257Ceconomicclassification5.economicclassification5%257Cfinancialyear.financialyear%257Cfunctiongroup1.functiongroup1%257Cfunctiongroup2.functiongroup2%257Cgovernment.government%257Cprognumber.prognumber%257Cprognumber.programme%257Csubprognumber.subprognumber%257Csubprognumber.subprogramme%257Cvotenumber.department%257Cvotenumber.votenumber%26pagesize%3D10000
+  econ_classes:
+  - items:
+    - name: Expanded Public Works Programme
+      total_budget: 127387000
+      type: programme
+    - name: Public Works Infrastructure
+      total_budget: 82249000
+      type: programme
+    - name: Administration
+      total_budget: 5085000
+      type: programme
+    name: Capital - Payments for capital assets
+    type: economic_classification_1_and_2
+  - items:
+    - name: Public Works Infrastructure
+      total_budget: 999661000
+      type: programme
+    - name: Administration
+      total_budget: 138597000
+      type: programme
+    - name: Expanded Public Works Programme
+      total_budget: 60792000
+      type: programme
+    name: Current - Current payments
+    type: economic_classification_1_and_2
+  - items:
+    - name: Public Works Infrastructure
+      total_budget: 388427000
+      type: programme
+    - name: Administration
+      total_budget: 1075000
+      type: programme
+    name: Current - Transfers and subsidies
+    type: economic_classification_1_and_2
 programmes:
-  programme_budgets: []
+  dataset_detail_page: /datasets/estimates-of-provincial-expenditure/estimates-of-provincial-expenditure-of-south-africa-2019-20
+  department_data_csv: https://datamanager.vulekamali.gov.za/csv/?api_url=https%3A//openspending.org/api/3/cubes/b9d2af843f3a7ca223eea07fb608e62a%3Aestimates-of-provincial-expenditure-south-africa-2019-20-uploaded-2019-06-05-1615/aggregate/%3Fcut%3Dfinancialyear.financialyear%253A2019%257Cgovernment.government%253A%2522Free%2BState%2522%257Cvotenumber.department%253A%2522Public%2BWorks%2Band%2BInfrastructure%2522%26drilldown%3Dbudgetphase.budgetphase%257Ceconomicclassification1.economicclassification1%257Ceconomicclassification2.economicclassification2%257Ceconomicclassification3.economicclassification3%257Ceconomicclassification4.economicclassification4%257Ceconomicclassification5.economicclassification5%257Cfinancialyear.financialyear%257Cfunctiongroup1.functiongroup1%257Cfunctiongroup2.functiongroup2%257Cgovernment.government%257Cprognumber.prognumber%257Cprognumber.programme%257Csubprognumber.subprognumber%257Csubprognumber.subprogramme%257Cvotenumber.department%257Cvotenumber.votenumber%26pagesize%3D10000
+  programme_budgets:
+  - name: Administration
+    total_budget: 144757000
+  - name: Public Works Infrastructure
+    total_budget: 1470337000
+  - name: Expanded Public Works Programme
+    total_budget: 188179000
 selected_financial_year: 2019-20
 selected_tab: departments
 slug: public-works-and-infrastructure
 sphere:
-  name: provincial
+  name: Provincial
   slug: provincial
-subprogramme_by_programme: null
+subprogramme_by_programme:
+  dataset_detail_page: /datasets/estimates-of-provincial-expenditure/estimates-of-provincial-expenditure-of-south-africa-2019-20
+  department_data_csv: https://datamanager.vulekamali.gov.za/csv/?api_url=https%3A//openspending.org/api/3/cubes/b9d2af843f3a7ca223eea07fb608e62a%3Aestimates-of-provincial-expenditure-south-africa-2019-20-uploaded-2019-06-05-1615/aggregate/%3Fcut%3Dfinancialyear.financialyear%253A2019%257Cgovernment.government%253A%2522Free%2BState%2522%257Cvotenumber.department%253A%2522Public%2BWorks%2Band%2BInfrastructure%2522%26drilldown%3Dbudgetphase.budgetphase%257Ceconomicclassification1.economicclassification1%257Ceconomicclassification2.economicclassification2%257Ceconomicclassification3.economicclassification3%257Ceconomicclassification4.economicclassification4%257Ceconomicclassification5.economicclassification5%257Cfinancialyear.financialyear%257Cfunctiongroup1.functiongroup1%257Cfunctiongroup2.functiongroup2%257Cgovernment.government%257Cprognumber.prognumber%257Cprognumber.programme%257Csubprognumber.subprognumber%257Csubprognumber.subprogramme%257Cvotenumber.department%257Cvotenumber.votenumber%26pagesize%3D10000
+  programmes:
+  - items:
+    - name: Corporate Support
+      total_budget: 120039000
+      type: subprogramme
+    - name: Management Of The Department
+      total_budget: 14941000
+      type: subprogramme
+    - name: Office Of The Mec
+      total_budget: 9777000
+      type: subprogramme
+    name: Administration
+    type: programme
+  - items:
+    - name: Community Development
+      total_budget: 154415000
+      type: subprogramme
+    - name: Programme Support
+      total_budget: 21164000
+      type: subprogramme
+    - name: Innovation And Empowerment
+      total_budget: 12600000
+      type: subprogramme
+    name: Expanded Public Works Programme
+    type: programme
+  - items:
+    - name: Immovable Asset Management
+      total_budget: 979444000
+      type: subprogramme
+    - name: Facility Operations
+      total_budget: 187499000
+      type: subprogramme
+    - name: Maintenance
+      total_budget: 166159000
+      type: subprogramme
+    - name: Construction
+      total_budget: 70705000
+      type: subprogramme
+    - name: Planning
+      total_budget: 35039000
+      type: subprogramme
+    - name: Design
+      total_budget: 23464000
+      type: subprogramme
+    - name: Programme Support
+      total_budget: 8027000
+      type: subprogramme
+    name: Public Works Infrastructure
+    type: programme
 title: Public Works and Infrastructure budget 2019-20  - vulekamali
 vote_number: 9
 vote_primary:

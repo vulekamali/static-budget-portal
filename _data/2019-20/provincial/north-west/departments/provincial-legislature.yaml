@@ -279,8 +279,94 @@ department_adjusted_budget: null
 department_budget: null
 description: 'North West department: Provincial Legislature budget data for the 2019-20
   financial year from National Treasury in partnership with IMALI YETHU.'
-economic_classification_by_programme: null
-expenditure_over_time: null
+economic_classification_by_programme:
+  dataset_detail_page: /datasets/estimates-of-provincial-expenditure/estimates-of-provincial-expenditure-of-south-africa-2019-20
+  department_data_csv: https://datamanager.vulekamali.gov.za/csv/?api_url=https%3A//openspending.org/api/3/cubes/b9d2af843f3a7ca223eea07fb608e62a%3Aestimates-of-provincial-expenditure-south-africa-2019-20-uploaded-2019-06-05-1615/aggregate/%3Fcut%3Dfinancialyear.financialyear%253A2019%257Cgovernment.government%253A%2522North%2BWest%2522%257Cvotenumber.department%253A%2522Provincial%2BLegislature%2522%26drilldown%3Dbudgetphase.budgetphase%257Ceconomicclassification1.economicclassification1%257Ceconomicclassification2.economicclassification2%257Ceconomicclassification3.economicclassification3%257Ceconomicclassification4.economicclassification4%257Ceconomicclassification5.economicclassification5%257Cfinancialyear.financialyear%257Cfunctiongroup1.functiongroup1%257Cfunctiongroup2.functiongroup2%257Cgovernment.government%257Cprognumber.prognumber%257Cprognumber.programme%257Csubprognumber.subprognumber%257Csubprognumber.subprogramme%257Cvotenumber.department%257Cvotenumber.votenumber%26pagesize%3D10000
+  programmes:
+  - items:
+    - items:
+      - name: Payments for capital assets
+        total_budget: 78750000
+        type: economic_classification_2
+      name: Capital
+      type: economic_classification_1
+    - items:
+      - name: Current payments
+        total_budget: 206749000
+        type: economic_classification_2
+      name: Current
+      type: economic_classification_1
+    name: Administration
+    type: programme
+  - items:
+    - items:
+      - name: Current payments
+        total_budget: 127913000
+        type: economic_classification_2
+      - name: Transfers and subsidies
+        total_budget: 39615000
+        type: economic_classification_2
+      name: Current
+      type: economic_classification_1
+    name: Legislature Operations
+    type: programme
+  - items:
+    - items:
+      - name: Current payments
+        total_budget: 33837000
+        type: economic_classification_2
+      name: Current
+      type: economic_classification_1
+    name: Statutory Payments
+    type: programme
+expenditure_over_time:
+  dataset_detail_page: /datasets/estimates-of-provincial-expenditure/estimates-of-provincial-expenditure-of-south-africa-2019-20
+  expenditure:
+    base_financial_year: 2018-19
+    nominal:
+    - amount: 302263000
+      financial_year: 2015-16
+      phase: Audited Outcome
+    - amount: 394457000
+      financial_year: 2016-17
+      phase: Audited Outcome
+    - amount: 524995000
+      financial_year: 2017-18
+      phase: Audited Outcome
+    - amount: 563203000
+      financial_year: 2018-19
+      phase: Adjusted appropriation
+    - amount: 486864000
+      financial_year: 2019-20
+      phase: Main appropriation
+    - amount: 485486000
+      financial_year: 2020-21
+      phase: Medium Term Estimates
+    - amount: 511745000
+      financial_year: 2021-22
+      phase: Medium Term Estimates
+    real:
+    - amount: 352964186
+      financial_year: 2015-16
+      phase: Audited Outcome
+    - amount: 433343125
+      financial_year: 2016-17
+      phase: Audited Outcome
+    - amount: 550783762
+      financial_year: 2017-18
+      phase: Audited Outcome
+    - amount: 563203000
+      financial_year: 2018-19
+      phase: Adjusted appropriation
+    - amount: 462982816
+      financial_year: 2019-20
+      phase: Main appropriation
+    - amount: 437692642
+      financial_year: 2020-21
+      phase: Medium Term Estimates
+    - amount: 437610846
+      financial_year: 2021-22
+      phase: Medium Term Estimates
 financial_years:
 - closest_match:
     is_exact_match: true
@@ -309,16 +395,102 @@ government_functions: []
 intro: ''
 is_vote_primary: true
 name: Provincial Legislature
-programme_by_economic_classification: null
+programme_by_economic_classification:
+  dataset_detail_page: /datasets/estimates-of-provincial-expenditure/estimates-of-provincial-expenditure-of-south-africa-2019-20
+  department_data_csv: https://datamanager.vulekamali.gov.za/csv/?api_url=https%3A//openspending.org/api/3/cubes/b9d2af843f3a7ca223eea07fb608e62a%3Aestimates-of-provincial-expenditure-south-africa-2019-20-uploaded-2019-06-05-1615/aggregate/%3Fcut%3Dfinancialyear.financialyear%253A2019%257Cgovernment.government%253A%2522North%2BWest%2522%257Cvotenumber.department%253A%2522Provincial%2BLegislature%2522%26drilldown%3Dbudgetphase.budgetphase%257Ceconomicclassification1.economicclassification1%257Ceconomicclassification2.economicclassification2%257Ceconomicclassification3.economicclassification3%257Ceconomicclassification4.economicclassification4%257Ceconomicclassification5.economicclassification5%257Cfinancialyear.financialyear%257Cfunctiongroup1.functiongroup1%257Cfunctiongroup2.functiongroup2%257Cgovernment.government%257Cprognumber.prognumber%257Cprognumber.programme%257Csubprognumber.subprognumber%257Csubprognumber.subprogramme%257Cvotenumber.department%257Cvotenumber.votenumber%26pagesize%3D10000
+  econ_classes:
+  - items:
+    - name: Administration
+      total_budget: 78750000
+      type: programme
+    name: Capital - Payments for capital assets
+    type: economic_classification_1_and_2
+  - items:
+    - name: Administration
+      total_budget: 206749000
+      type: programme
+    - name: Legislature Operations
+      total_budget: 127913000
+      type: programme
+    - name: Statutory Payments
+      total_budget: 33837000
+      type: programme
+    name: Current - Current payments
+    type: economic_classification_1_and_2
+  - items:
+    - name: Legislature Operations
+      total_budget: 39615000
+      type: programme
+    name: Current - Transfers and subsidies
+    type: economic_classification_1_and_2
 programmes:
-  programme_budgets: []
+  dataset_detail_page: /datasets/estimates-of-provincial-expenditure/estimates-of-provincial-expenditure-of-south-africa-2019-20
+  department_data_csv: https://datamanager.vulekamali.gov.za/csv/?api_url=https%3A//openspending.org/api/3/cubes/b9d2af843f3a7ca223eea07fb608e62a%3Aestimates-of-provincial-expenditure-south-africa-2019-20-uploaded-2019-06-05-1615/aggregate/%3Fcut%3Dfinancialyear.financialyear%253A2019%257Cgovernment.government%253A%2522North%2BWest%2522%257Cvotenumber.department%253A%2522Provincial%2BLegislature%2522%26drilldown%3Dbudgetphase.budgetphase%257Ceconomicclassification1.economicclassification1%257Ceconomicclassification2.economicclassification2%257Ceconomicclassification3.economicclassification3%257Ceconomicclassification4.economicclassification4%257Ceconomicclassification5.economicclassification5%257Cfinancialyear.financialyear%257Cfunctiongroup1.functiongroup1%257Cfunctiongroup2.functiongroup2%257Cgovernment.government%257Cprognumber.prognumber%257Cprognumber.programme%257Csubprognumber.subprognumber%257Csubprognumber.subprogramme%257Cvotenumber.department%257Cvotenumber.votenumber%26pagesize%3D10000
+  programme_budgets:
+  - name: Administration
+    total_budget: 285499000
+  - name: Statutory Payments
+    total_budget: 33837000
+  - name: Legislature Operations
+    total_budget: 167528000
 selected_financial_year: 2019-20
 selected_tab: departments
 slug: provincial-legislature
 sphere:
-  name: provincial
+  name: Provincial
   slug: provincial
-subprogramme_by_programme: null
+subprogramme_by_programme:
+  dataset_detail_page: /datasets/estimates-of-provincial-expenditure/estimates-of-provincial-expenditure-of-south-africa-2019-20
+  department_data_csv: https://datamanager.vulekamali.gov.za/csv/?api_url=https%3A//openspending.org/api/3/cubes/b9d2af843f3a7ca223eea07fb608e62a%3Aestimates-of-provincial-expenditure-south-africa-2019-20-uploaded-2019-06-05-1615/aggregate/%3Fcut%3Dfinancialyear.financialyear%253A2019%257Cgovernment.government%253A%2522North%2BWest%2522%257Cvotenumber.department%253A%2522Provincial%2BLegislature%2522%26drilldown%3Dbudgetphase.budgetphase%257Ceconomicclassification1.economicclassification1%257Ceconomicclassification2.economicclassification2%257Ceconomicclassification3.economicclassification3%257Ceconomicclassification4.economicclassification4%257Ceconomicclassification5.economicclassification5%257Cfinancialyear.financialyear%257Cfunctiongroup1.functiongroup1%257Cfunctiongroup2.functiongroup2%257Cgovernment.government%257Cprognumber.prognumber%257Cprognumber.programme%257Csubprognumber.subprognumber%257Csubprognumber.subprogramme%257Cvotenumber.department%257Cvotenumber.votenumber%26pagesize%3D10000
+  programmes:
+  - items:
+    - name: Financial Management
+      total_budget: 145905000
+      type: subprogramme
+    - name: Corporate Services
+      total_budget: 64699000
+      type: subprogramme
+    - name: Office Of The Secretary
+      total_budget: 47543000
+      type: subprogramme
+    - name: Office Of The Speaker
+      total_budget: 20700000
+      type: subprogramme
+    - name: Internal Audit
+      total_budget: 6652000
+      type: subprogramme
+    name: Administration
+    type: programme
+  - items:
+    - name: Logistics Members
+      total_budget: 49903000
+      type: subprogramme
+    - name: Commitee Services
+      total_budget: 40907000
+      type: subprogramme
+    - name: Public Participation
+      total_budget: 31909000
+      type: subprogramme
+    - name: House Proceedings
+      total_budget: 19833000
+      type: subprogramme
+    - name: Library, Research & Information Services
+      total_budget: 13643000
+      type: subprogramme
+    - name: Exposure To Parliamentary Services
+      total_budget: 6689000
+      type: subprogramme
+    - name: Ncop Liaison Services
+      total_budget: 4644000
+      type: subprogramme
+    name: Legislature Operations
+    type: programme
+  - items:
+    - name: Members' Salaries
+      total_budget: 33837000
+      type: subprogramme
+    name: Statutory Payments
+    type: programme
 title: Provincial Legislature budget 2019-20  - vulekamali
 vote_number: 2
 vote_primary:

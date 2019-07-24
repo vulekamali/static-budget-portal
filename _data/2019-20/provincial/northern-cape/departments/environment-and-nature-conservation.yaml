@@ -432,8 +432,151 @@ department_budget: null
 description: 'Northern Cape department: Environment and Nature Conservation budget
   data for the 2019-20 financial year from National Treasury in partnership with IMALI
   YETHU.'
-economic_classification_by_programme: null
-expenditure_over_time: null
+economic_classification_by_programme:
+  dataset_detail_page: /datasets/estimates-of-provincial-expenditure/estimates-of-provincial-expenditure-of-south-africa-2019-20
+  department_data_csv: https://datamanager.vulekamali.gov.za/csv/?api_url=https%3A//openspending.org/api/3/cubes/b9d2af843f3a7ca223eea07fb608e62a%3Aestimates-of-provincial-expenditure-south-africa-2019-20-uploaded-2019-06-05-1615/aggregate/%3Fcut%3Dfinancialyear.financialyear%253A2019%257Cgovernment.government%253A%2522Northern%2BCape%2522%257Cvotenumber.department%253A%2522Environment%2Band%2BNature%2BConservation%2522%26drilldown%3Dbudgetphase.budgetphase%257Ceconomicclassification1.economicclassification1%257Ceconomicclassification2.economicclassification2%257Ceconomicclassification3.economicclassification3%257Ceconomicclassification4.economicclassification4%257Ceconomicclassification5.economicclassification5%257Cfinancialyear.financialyear%257Cfunctiongroup1.functiongroup1%257Cfunctiongroup2.functiongroup2%257Cgovernment.government%257Cprognumber.prognumber%257Cprognumber.programme%257Csubprognumber.subprognumber%257Csubprognumber.subprogramme%257Cvotenumber.department%257Cvotenumber.votenumber%26pagesize%3D10000
+  programmes:
+  - items:
+    - items:
+      - name: Payments for capital assets
+        total_budget: 4122000
+        type: economic_classification_2
+      name: Capital
+      type: economic_classification_1
+    - items:
+      - name: Current payments
+        total_budget: 77858000
+        type: economic_classification_2
+      - name: Transfers and subsidies
+        total_budget: 37000
+        type: economic_classification_2
+      name: Current
+      type: economic_classification_1
+    name: Administration
+    type: programme
+  - items:
+    - items:
+      - name: Payments for capital assets
+        total_budget: 140000
+        type: economic_classification_2
+      name: Capital
+      type: economic_classification_1
+    - items:
+      - name: Current payments
+        total_budget: 35953000
+        type: economic_classification_2
+      name: Current
+      type: economic_classification_1
+    name: Biodiversity Management
+    type: programme
+  - items:
+    - items:
+      - name: Payments for capital assets
+        total_budget: 100000
+        type: economic_classification_2
+      name: Capital
+      type: economic_classification_1
+    - items:
+      - name: Current payments
+        total_budget: 10405000
+        type: economic_classification_2
+      name: Current
+      type: economic_classification_1
+    name: Compliance And Enforcement
+    type: programme
+  - items:
+    - items:
+      - name: Payments for capital assets
+        total_budget: 48000
+        type: economic_classification_2
+      name: Capital
+      type: economic_classification_1
+    - items:
+      - name: Current payments
+        total_budget: 12513000
+        type: economic_classification_2
+      name: Current
+      type: economic_classification_1
+    name: Environmental Empowerment Services
+    type: programme
+  - items:
+    - items:
+      - name: Payments for capital assets
+        total_budget: 91000
+        type: economic_classification_2
+      name: Capital
+      type: economic_classification_1
+    - items:
+      - name: Current payments
+        total_budget: 12152000
+        type: economic_classification_2
+      name: Current
+      type: economic_classification_1
+    name: Environmental Policy,Planning And Coordination
+    type: programme
+  - items:
+    - items:
+      - name: Payments for capital assets
+        total_budget: 190000
+        type: economic_classification_2
+      name: Capital
+      type: economic_classification_1
+    - items:
+      - name: Current payments
+        total_budget: 13561000
+        type: economic_classification_2
+      name: Current
+      type: economic_classification_1
+    name: Environmental Quality Management
+    type: programme
+expenditure_over_time:
+  dataset_detail_page: /datasets/estimates-of-provincial-expenditure/estimates-of-provincial-expenditure-of-south-africa-2019-20
+  expenditure:
+    base_financial_year: 2018-19
+    nominal:
+    - amount: 133652000
+      financial_year: 2015-16
+      phase: Audited Outcome
+    - amount: 140676000
+      financial_year: 2016-17
+      phase: Audited Outcome
+    - amount: 145462000
+      financial_year: 2017-18
+      phase: Audited Outcome
+    - amount: 158015000
+      financial_year: 2018-19
+      phase: Adjusted appropriation
+    - amount: 167170000
+      financial_year: 2019-20
+      phase: Main appropriation
+    - amount: 176064000
+      financial_year: 2020-21
+      phase: Medium Term Estimates
+    - amount: 185571000
+      financial_year: 2021-22
+      phase: Medium Term Estimates
+    real:
+    - amount: 156070605
+      financial_year: 2015-16
+      phase: Audited Outcome
+    - amount: 154544037
+      financial_year: 2016-17
+      phase: Audited Outcome
+    - amount: 152607372
+      financial_year: 2017-18
+      phase: Audited Outcome
+    - amount: 158015000
+      financial_year: 2018-19
+      phase: Adjusted appropriation
+    - amount: 158970138
+      financial_year: 2019-20
+      phase: Main appropriation
+    - amount: 158731492
+      financial_year: 2020-21
+      phase: Medium Term Estimates
+    - amount: 158688179
+      financial_year: 2021-22
+      phase: Medium Term Estimates
 financial_years:
 - closest_match:
     is_exact_match: true
@@ -462,16 +605,156 @@ government_functions: []
 intro: ''
 is_vote_primary: true
 name: Environment and Nature Conservation
-programme_by_economic_classification: null
+programme_by_economic_classification:
+  dataset_detail_page: /datasets/estimates-of-provincial-expenditure/estimates-of-provincial-expenditure-of-south-africa-2019-20
+  department_data_csv: https://datamanager.vulekamali.gov.za/csv/?api_url=https%3A//openspending.org/api/3/cubes/b9d2af843f3a7ca223eea07fb608e62a%3Aestimates-of-provincial-expenditure-south-africa-2019-20-uploaded-2019-06-05-1615/aggregate/%3Fcut%3Dfinancialyear.financialyear%253A2019%257Cgovernment.government%253A%2522Northern%2BCape%2522%257Cvotenumber.department%253A%2522Environment%2Band%2BNature%2BConservation%2522%26drilldown%3Dbudgetphase.budgetphase%257Ceconomicclassification1.economicclassification1%257Ceconomicclassification2.economicclassification2%257Ceconomicclassification3.economicclassification3%257Ceconomicclassification4.economicclassification4%257Ceconomicclassification5.economicclassification5%257Cfinancialyear.financialyear%257Cfunctiongroup1.functiongroup1%257Cfunctiongroup2.functiongroup2%257Cgovernment.government%257Cprognumber.prognumber%257Cprognumber.programme%257Csubprognumber.subprognumber%257Csubprognumber.subprogramme%257Cvotenumber.department%257Cvotenumber.votenumber%26pagesize%3D10000
+  econ_classes:
+  - items:
+    - name: Administration
+      total_budget: 4122000
+      type: programme
+    - name: Environmental Quality Management
+      total_budget: 190000
+      type: programme
+    - name: Biodiversity Management
+      total_budget: 140000
+      type: programme
+    - name: Compliance And Enforcement
+      total_budget: 100000
+      type: programme
+    - name: Environmental Policy,Planning And Coordination
+      total_budget: 91000
+      type: programme
+    - name: Environmental Empowerment Services
+      total_budget: 48000
+      type: programme
+    name: Capital - Payments for capital assets
+    type: economic_classification_1_and_2
+  - items:
+    - name: Administration
+      total_budget: 77858000
+      type: programme
+    - name: Biodiversity Management
+      total_budget: 35953000
+      type: programme
+    - name: Environmental Quality Management
+      total_budget: 13561000
+      type: programme
+    - name: Environmental Empowerment Services
+      total_budget: 12513000
+      type: programme
+    - name: Environmental Policy,Planning And Coordination
+      total_budget: 12152000
+      type: programme
+    - name: Compliance And Enforcement
+      total_budget: 10405000
+      type: programme
+    name: Current - Current payments
+    type: economic_classification_1_and_2
+  - items:
+    - name: Administration
+      total_budget: 37000
+      type: programme
+    name: Current - Transfers and subsidies
+    type: economic_classification_1_and_2
 programmes:
-  programme_budgets: []
+  dataset_detail_page: /datasets/estimates-of-provincial-expenditure/estimates-of-provincial-expenditure-of-south-africa-2019-20
+  department_data_csv: https://datamanager.vulekamali.gov.za/csv/?api_url=https%3A//openspending.org/api/3/cubes/b9d2af843f3a7ca223eea07fb608e62a%3Aestimates-of-provincial-expenditure-south-africa-2019-20-uploaded-2019-06-05-1615/aggregate/%3Fcut%3Dfinancialyear.financialyear%253A2019%257Cgovernment.government%253A%2522Northern%2BCape%2522%257Cvotenumber.department%253A%2522Environment%2Band%2BNature%2BConservation%2522%26drilldown%3Dbudgetphase.budgetphase%257Ceconomicclassification1.economicclassification1%257Ceconomicclassification2.economicclassification2%257Ceconomicclassification3.economicclassification3%257Ceconomicclassification4.economicclassification4%257Ceconomicclassification5.economicclassification5%257Cfinancialyear.financialyear%257Cfunctiongroup1.functiongroup1%257Cfunctiongroup2.functiongroup2%257Cgovernment.government%257Cprognumber.prognumber%257Cprognumber.programme%257Csubprognumber.subprognumber%257Csubprognumber.subprogramme%257Cvotenumber.department%257Cvotenumber.votenumber%26pagesize%3D10000
+  programme_budgets:
+  - name: Administration
+    total_budget: 82017000
+  - name: Environmental Policy,Planning And Coordination
+    total_budget: 12243000
+  - name: Compliance And Enforcement
+    total_budget: 10505000
+  - name: Environmental Quality Management
+    total_budget: 13751000
+  - name: Biodiversity Management
+    total_budget: 36093000
+  - name: Environmental Empowerment Services
+    total_budget: 12561000
 selected_financial_year: 2019-20
 selected_tab: departments
 slug: environment-and-nature-conservation
 sphere:
-  name: provincial
+  name: Provincial
   slug: provincial
-subprogramme_by_programme: null
+subprogramme_by_programme:
+  dataset_detail_page: /datasets/estimates-of-provincial-expenditure/estimates-of-provincial-expenditure-of-south-africa-2019-20
+  department_data_csv: https://datamanager.vulekamali.gov.za/csv/?api_url=https%3A//openspending.org/api/3/cubes/b9d2af843f3a7ca223eea07fb608e62a%3Aestimates-of-provincial-expenditure-south-africa-2019-20-uploaded-2019-06-05-1615/aggregate/%3Fcut%3Dfinancialyear.financialyear%253A2019%257Cgovernment.government%253A%2522Northern%2BCape%2522%257Cvotenumber.department%253A%2522Environment%2Band%2BNature%2BConservation%2522%26drilldown%3Dbudgetphase.budgetphase%257Ceconomicclassification1.economicclassification1%257Ceconomicclassification2.economicclassification2%257Ceconomicclassification3.economicclassification3%257Ceconomicclassification4.economicclassification4%257Ceconomicclassification5.economicclassification5%257Cfinancialyear.financialyear%257Cfunctiongroup1.functiongroup1%257Cfunctiongroup2.functiongroup2%257Cgovernment.government%257Cprognumber.prognumber%257Cprognumber.programme%257Csubprognumber.subprognumber%257Csubprognumber.subprogramme%257Cvotenumber.department%257Cvotenumber.votenumber%26pagesize%3D10000
+  programmes:
+  - items:
+    - name: Corporate Services
+      total_budget: 53041000
+      type: subprogramme
+    - name: Financial Management
+      total_budget: 14710000
+      type: subprogramme
+    - name: Office Of The Mec
+      total_budget: 10520000
+      type: subprogramme
+    - name: Senior Management
+      total_budget: 3746000
+      type: subprogramme
+    name: Administration
+    type: programme
+  - items:
+    - name: Conservation Agency And Services
+      total_budget: 22587000
+      type: subprogramme
+    - name: Biodiversity Protected Area Planning And Management
+      total_budget: 11271000
+      type: subprogramme
+    - name: Coastal Management
+      total_budget: 2235000
+      type: subprogramme
+    name: Biodiversity Management
+    type: programme
+  - items:
+    - name: Environmental Quality Management Authorisation
+      total_budget: 5568000
+      type: subprogramme
+    - name: Biodiversity Management Authorisation,Compliance
+      total_budget: 4937000
+      type: subprogramme
+    name: Compliance And Enforcement
+    type: programme
+  - items:
+    - name: Environmental Capacity Developmental And Support
+      total_budget: 7616000
+      type: subprogramme
+    - name: Environmental Communication And Awareness Raising
+      total_budget: 4945000
+      type: subprogramme
+    name: Environmental Empowerment Services
+    type: programme
+  - items:
+    - name: Research And Development Support
+      total_budget: 6807000
+      type: subprogramme
+    - name: Intergovernmental Coord,Spartial And Development
+      total_budget: 4665000
+      type: subprogramme
+    - name: Environment Information Management
+      total_budget: 757000
+      type: subprogramme
+    - name: Legislative Development
+      total_budget: 14000
+      type: subprogramme
+    name: Environmental Policy,Planning And Coordination
+    type: programme
+  - items:
+    - name: Impact Management
+      total_budget: 5697000
+      type: subprogramme
+    - name: Pollution And Waste Management
+      total_budget: 4910000
+      type: subprogramme
+    - name: Air Quality Management
+      total_budget: 3144000
+      type: subprogramme
+    name: Environmental Quality Management
+    type: programme
 title: Environment and Nature Conservation budget 2019-20  - vulekamali
 vote_number: 13
 vote_primary:

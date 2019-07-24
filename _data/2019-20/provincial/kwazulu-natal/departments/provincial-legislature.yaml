@@ -280,8 +280,97 @@ department_adjusted_budget: null
 department_budget: null
 description: 'KwaZulu-Natal department: Provincial Legislature budget data for the
   2019-20 financial year from National Treasury in partnership with IMALI YETHU.'
-economic_classification_by_programme: null
-expenditure_over_time: null
+economic_classification_by_programme:
+  dataset_detail_page: /datasets/estimates-of-provincial-expenditure/estimates-of-provincial-expenditure-of-south-africa-2019-20
+  department_data_csv: https://datamanager.vulekamali.gov.za/csv/?api_url=https%3A//openspending.org/api/3/cubes/b9d2af843f3a7ca223eea07fb608e62a%3Aestimates-of-provincial-expenditure-south-africa-2019-20-uploaded-2019-06-05-1615/aggregate/%3Fcut%3Dfinancialyear.financialyear%253A2019%257Cgovernment.government%253A%2522KwaZulu-Natal%2522%257Cvotenumber.department%253A%2522Provincial%2BLegislature%2522%26drilldown%3Dbudgetphase.budgetphase%257Ceconomicclassification1.economicclassification1%257Ceconomicclassification2.economicclassification2%257Ceconomicclassification3.economicclassification3%257Ceconomicclassification4.economicclassification4%257Ceconomicclassification5.economicclassification5%257Cfinancialyear.financialyear%257Cfunctiongroup1.functiongroup1%257Cfunctiongroup2.functiongroup2%257Cgovernment.government%257Cprognumber.prognumber%257Cprognumber.programme%257Csubprognumber.subprognumber%257Csubprognumber.subprogramme%257Cvotenumber.department%257Cvotenumber.votenumber%26pagesize%3D10000
+  programmes:
+  - items:
+    - items:
+      - name: Payments for capital assets
+        total_budget: 10819000
+        type: economic_classification_2
+      name: Capital
+      type: economic_classification_1
+    - items:
+      - name: Current payments
+        total_budget: 199832000
+        type: economic_classification_2
+      - name: Transfers and subsidies
+        total_budget: 437000
+        type: economic_classification_2
+      name: Current
+      type: economic_classification_1
+    name: Administration
+    type: programme
+  - items:
+    - items:
+      - name: Current payments
+        total_budget: 91680000
+        type: economic_classification_2
+      name: Current
+      type: economic_classification_1
+    name: Direct Charge Against The Provincial Revenue Fund
+    type: programme
+  - items:
+    - items:
+      - name: Current payments
+        total_budget: 186361000
+        type: economic_classification_2
+      - name: Transfers and subsidies
+        total_budget: 109627000
+        type: economic_classification_2
+      name: Current
+      type: economic_classification_1
+    name: Parliamentary Business
+    type: programme
+expenditure_over_time:
+  dataset_detail_page: /datasets/estimates-of-provincial-expenditure/estimates-of-provincial-expenditure-of-south-africa-2019-20
+  expenditure:
+    base_financial_year: 2018-19
+    nominal:
+    - amount: 436137000
+      financial_year: 2015-16
+      phase: Audited Outcome
+    - amount: 475374000
+      financial_year: 2016-17
+      phase: Audited Outcome
+    - amount: 614934000
+      financial_year: 2017-18
+      phase: Audited Outcome
+    - amount: 591548000
+      financial_year: 2018-19
+      phase: Adjusted appropriation
+    - amount: 598756000
+      financial_year: 2019-20
+      phase: Main appropriation
+    - amount: 638926000
+      financial_year: 2020-21
+      phase: Medium Term Estimates
+    - amount: 674137000
+      financial_year: 2021-22
+      phase: Medium Term Estimates
+    real:
+    - amount: 509294030
+      financial_year: 2015-16
+      phase: Audited Outcome
+    - amount: 522237037
+      financial_year: 2016-17
+      phase: Audited Outcome
+    - amount: 645140739
+      financial_year: 2017-18
+      phase: Audited Outcome
+    - amount: 591548000
+      financial_year: 2018-19
+      phase: Adjusted appropriation
+    - amount: 569386397
+      financial_year: 2019-20
+      phase: Main appropriation
+    - amount: 576027340
+      financial_year: 2020-21
+      phase: Medium Term Estimates
+    - amount: 576477861
+      financial_year: 2021-22
+      phase: Medium Term Estimates
 financial_years:
 - closest_match:
     is_exact_match: true
@@ -310,16 +399,96 @@ government_functions: []
 intro: ''
 is_vote_primary: true
 name: Provincial Legislature
-programme_by_economic_classification: null
+programme_by_economic_classification:
+  dataset_detail_page: /datasets/estimates-of-provincial-expenditure/estimates-of-provincial-expenditure-of-south-africa-2019-20
+  department_data_csv: https://datamanager.vulekamali.gov.za/csv/?api_url=https%3A//openspending.org/api/3/cubes/b9d2af843f3a7ca223eea07fb608e62a%3Aestimates-of-provincial-expenditure-south-africa-2019-20-uploaded-2019-06-05-1615/aggregate/%3Fcut%3Dfinancialyear.financialyear%253A2019%257Cgovernment.government%253A%2522KwaZulu-Natal%2522%257Cvotenumber.department%253A%2522Provincial%2BLegislature%2522%26drilldown%3Dbudgetphase.budgetphase%257Ceconomicclassification1.economicclassification1%257Ceconomicclassification2.economicclassification2%257Ceconomicclassification3.economicclassification3%257Ceconomicclassification4.economicclassification4%257Ceconomicclassification5.economicclassification5%257Cfinancialyear.financialyear%257Cfunctiongroup1.functiongroup1%257Cfunctiongroup2.functiongroup2%257Cgovernment.government%257Cprognumber.prognumber%257Cprognumber.programme%257Csubprognumber.subprognumber%257Csubprognumber.subprogramme%257Cvotenumber.department%257Cvotenumber.votenumber%26pagesize%3D10000
+  econ_classes:
+  - items:
+    - name: Administration
+      total_budget: 10819000
+      type: programme
+    name: Capital - Payments for capital assets
+    type: economic_classification_1_and_2
+  - items:
+    - name: Administration
+      total_budget: 199832000
+      type: programme
+    - name: Parliamentary Business
+      total_budget: 186361000
+      type: programme
+    - name: Direct Charge Against The Provincial Revenue Fund
+      total_budget: 91680000
+      type: programme
+    name: Current - Current payments
+    type: economic_classification_1_and_2
+  - items:
+    - name: Parliamentary Business
+      total_budget: 109627000
+      type: programme
+    - name: Administration
+      total_budget: 437000
+      type: programme
+    name: Current - Transfers and subsidies
+    type: economic_classification_1_and_2
 programmes:
-  programme_budgets: []
+  dataset_detail_page: /datasets/estimates-of-provincial-expenditure/estimates-of-provincial-expenditure-of-south-africa-2019-20
+  department_data_csv: https://datamanager.vulekamali.gov.za/csv/?api_url=https%3A//openspending.org/api/3/cubes/b9d2af843f3a7ca223eea07fb608e62a%3Aestimates-of-provincial-expenditure-south-africa-2019-20-uploaded-2019-06-05-1615/aggregate/%3Fcut%3Dfinancialyear.financialyear%253A2019%257Cgovernment.government%253A%2522KwaZulu-Natal%2522%257Cvotenumber.department%253A%2522Provincial%2BLegislature%2522%26drilldown%3Dbudgetphase.budgetphase%257Ceconomicclassification1.economicclassification1%257Ceconomicclassification2.economicclassification2%257Ceconomicclassification3.economicclassification3%257Ceconomicclassification4.economicclassification4%257Ceconomicclassification5.economicclassification5%257Cfinancialyear.financialyear%257Cfunctiongroup1.functiongroup1%257Cfunctiongroup2.functiongroup2%257Cgovernment.government%257Cprognumber.prognumber%257Cprognumber.programme%257Csubprognumber.subprognumber%257Csubprognumber.subprogramme%257Cvotenumber.department%257Cvotenumber.votenumber%26pagesize%3D10000
+  programme_budgets:
+  - name: Administration
+    total_budget: 211088000
+  - name: Direct Charge Against The Provincial Revenue Fund
+    total_budget: 91680000
+  - name: Parliamentary Business
+    total_budget: 295988000
 selected_financial_year: 2019-20
 selected_tab: departments
 slug: provincial-legislature
 sphere:
-  name: provincial
+  name: Provincial
   slug: provincial
-subprogramme_by_programme: null
+subprogramme_by_programme:
+  dataset_detail_page: /datasets/estimates-of-provincial-expenditure/estimates-of-provincial-expenditure-of-south-africa-2019-20
+  department_data_csv: https://datamanager.vulekamali.gov.za/csv/?api_url=https%3A//openspending.org/api/3/cubes/b9d2af843f3a7ca223eea07fb608e62a%3Aestimates-of-provincial-expenditure-south-africa-2019-20-uploaded-2019-06-05-1615/aggregate/%3Fcut%3Dfinancialyear.financialyear%253A2019%257Cgovernment.government%253A%2522KwaZulu-Natal%2522%257Cvotenumber.department%253A%2522Provincial%2BLegislature%2522%26drilldown%3Dbudgetphase.budgetphase%257Ceconomicclassification1.economicclassification1%257Ceconomicclassification2.economicclassification2%257Ceconomicclassification3.economicclassification3%257Ceconomicclassification4.economicclassification4%257Ceconomicclassification5.economicclassification5%257Cfinancialyear.financialyear%257Cfunctiongroup1.functiongroup1%257Cfunctiongroup2.functiongroup2%257Cgovernment.government%257Cprognumber.prognumber%257Cprognumber.programme%257Csubprognumber.subprognumber%257Csubprognumber.subprogramme%257Cvotenumber.department%257Cvotenumber.votenumber%26pagesize%3D10000
+  programmes:
+  - items:
+    - name: Corporate Services
+      total_budget: 97789000
+      type: subprogramme
+    - name: Financial Management
+      total_budget: 51771000
+      type: subprogramme
+    - name: Office Of The Secretary
+      total_budget: 33855000
+      type: subprogramme
+    - name: Office Of The Speaker
+      total_budget: 27673000
+      type: subprogramme
+    name: Administration
+    type: programme
+  - items:
+    - name: Members`Remuneration
+      total_budget: 91680000
+      type: subprogramme
+    name: Direct Charge Against The Provincial Revenue Fund
+    type: programme
+  - items:
+    - name: Members' Facilities
+      total_budget: 116674000
+      type: subprogramme
+    - name: Oversight
+      total_budget: 96911000
+      type: subprogramme
+    - name: Law-Making
+      total_budget: 51245000
+      type: subprogramme
+    - name: Public Participation
+      total_budget: 30215000
+      type: subprogramme
+    - name: Ncop
+      total_budget: 943000
+      type: subprogramme
+    name: Parliamentary Business
+    type: programme
 title: Provincial Legislature budget 2019-20  - vulekamali
 vote_number: 2
 vote_primary:

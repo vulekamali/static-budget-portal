@@ -582,8 +582,178 @@ department_budget: null
 description: 'Mpumalanga department: Agriculture, Rural Development, Land and Environmental
   Affairs budget data for the 2019-20 financial year from National Treasury in partnership
   with IMALI YETHU.'
-economic_classification_by_programme: null
-expenditure_over_time: null
+economic_classification_by_programme:
+  dataset_detail_page: /datasets/estimates-of-provincial-expenditure/estimates-of-provincial-expenditure-of-south-africa-2019-20
+  department_data_csv: https://datamanager.vulekamali.gov.za/csv/?api_url=https%3A//openspending.org/api/3/cubes/b9d2af843f3a7ca223eea07fb608e62a%3Aestimates-of-provincial-expenditure-south-africa-2019-20-uploaded-2019-06-05-1615/aggregate/%3Fcut%3Dfinancialyear.financialyear%253A2019%257Cgovernment.government%253A%2522Mpumalanga%2522%257Cvotenumber.department%253A%2522Agriculture%252C%2BRural%2BDevelopment%252C%2BLand%2Band%2BEnvironmental%2BAffairs%2522%26drilldown%3Dbudgetphase.budgetphase%257Ceconomicclassification1.economicclassification1%257Ceconomicclassification2.economicclassification2%257Ceconomicclassification3.economicclassification3%257Ceconomicclassification4.economicclassification4%257Ceconomicclassification5.economicclassification5%257Cfinancialyear.financialyear%257Cfunctiongroup1.functiongroup1%257Cfunctiongroup2.functiongroup2%257Cgovernment.government%257Cprognumber.prognumber%257Cprognumber.programme%257Csubprognumber.subprognumber%257Csubprognumber.subprogramme%257Cvotenumber.department%257Cvotenumber.votenumber%26pagesize%3D10000
+  programmes:
+  - items:
+    - items:
+      - name: Payments for capital assets
+        total_budget: 5910000
+        type: economic_classification_2
+      name: Capital
+      type: economic_classification_1
+    - items:
+      - name: Current payments
+        total_budget: 186674000
+        type: economic_classification_2
+      - name: Transfers and subsidies
+        total_budget: 8429000
+        type: economic_classification_2
+      name: Current
+      type: economic_classification_1
+    name: Administration
+    type: programme
+  - items:
+    - items:
+      - name: Current payments
+        total_budget: 18049000
+        type: economic_classification_2
+      name: Current
+      type: economic_classification_1
+    name: Agricultural Economics Services
+    type: programme
+  - items:
+    - items:
+      - name: Payments for capital assets
+        total_budget: 9800000
+        type: economic_classification_2
+      name: Capital
+      type: economic_classification_1
+    - items:
+      - name: Current payments
+        total_budget: 116973000
+        type: economic_classification_2
+      name: Current
+      type: economic_classification_1
+    name: Environmental Affairs
+    type: programme
+  - items:
+    - items:
+      - name: Payments for capital assets
+        total_budget: 138684000
+        type: economic_classification_2
+      name: Capital
+      type: economic_classification_1
+    - items:
+      - name: Current payments
+        total_budget: 399566000
+        type: economic_classification_2
+      name: Current
+      type: economic_classification_1
+    name: Farmer Support And Development
+    type: programme
+  - items:
+    - items:
+      - name: Payments for capital assets
+        total_budget: 1500000
+        type: economic_classification_2
+      name: Capital
+      type: economic_classification_1
+    - items:
+      - name: Current payments
+        total_budget: 60111000
+        type: economic_classification_2
+      name: Current
+      type: economic_classification_1
+    name: Research And Technology Development Services
+    type: programme
+  - items:
+    - items:
+      - name: Current payments
+        total_budget: 26016000
+        type: economic_classification_2
+      name: Current
+      type: economic_classification_1
+    name: Rural Development Coordination
+    type: programme
+  - items:
+    - items:
+      - name: Current payments
+        total_budget: 28782000
+        type: economic_classification_2
+      name: Current
+      type: economic_classification_1
+    name: Structured Agricultural Education And Training
+    type: programme
+  - items:
+    - items:
+      - name: Payments for capital assets
+        total_budget: 13565000
+        type: economic_classification_2
+      name: Capital
+      type: economic_classification_1
+    - items:
+      - name: Current payments
+        total_budget: 63774000
+        type: economic_classification_2
+      name: Current
+      type: economic_classification_1
+    name: Sustainable Resource Management
+    type: programme
+  - items:
+    - items:
+      - name: Payments for capital assets
+        total_budget: 5477000
+        type: economic_classification_2
+      name: Capital
+      type: economic_classification_1
+    - items:
+      - name: Current payments
+        total_budget: 139163000
+        type: economic_classification_2
+      name: Current
+      type: economic_classification_1
+    name: Veterinary Services
+    type: programme
+expenditure_over_time:
+  dataset_detail_page: /datasets/estimates-of-provincial-expenditure/estimates-of-provincial-expenditure-of-south-africa-2019-20
+  expenditure:
+    base_financial_year: 2018-19
+    nominal:
+    - amount: 1005346000
+      financial_year: 2015-16
+      phase: Audited Outcome
+    - amount: 968719000
+      financial_year: 2016-17
+      phase: Audited Outcome
+    - amount: 1141223000
+      financial_year: 2017-18
+      phase: Audited Outcome
+    - amount: 1212417000
+      financial_year: 2018-19
+      phase: Adjusted appropriation
+    - amount: 1222473000
+      financial_year: 2019-20
+      phase: Main appropriation
+    - amount: 1290543000
+      financial_year: 2020-21
+      phase: Medium Term Estimates
+    - amount: 1366474000
+      financial_year: 2021-22
+      phase: Medium Term Estimates
+    real:
+    - amount: 1173981378
+      financial_year: 2015-16
+      phase: Audited Outcome
+    - amount: 1064216680
+      financial_year: 2016-17
+      phase: Audited Outcome
+    - amount: 1197282065
+      financial_year: 2017-18
+      phase: Audited Outcome
+    - amount: 1212417000
+      financial_year: 2018-19
+      phase: Adjusted appropriation
+    - amount: 1162509432
+      financial_year: 2019-20
+      phase: Main appropriation
+    - amount: 1163496324
+      financial_year: 2020-21
+      phase: Medium Term Estimates
+    - amount: 1168519172
+      financial_year: 2021-22
+      phase: Medium Term Estimates
 financial_years:
 - closest_match:
     is_exact_match: true
@@ -612,16 +782,210 @@ government_functions: []
 intro: ''
 is_vote_primary: true
 name: Agriculture, Rural Development, Land and Environmental Affairs
-programme_by_economic_classification: null
+programme_by_economic_classification:
+  dataset_detail_page: /datasets/estimates-of-provincial-expenditure/estimates-of-provincial-expenditure-of-south-africa-2019-20
+  department_data_csv: https://datamanager.vulekamali.gov.za/csv/?api_url=https%3A//openspending.org/api/3/cubes/b9d2af843f3a7ca223eea07fb608e62a%3Aestimates-of-provincial-expenditure-south-africa-2019-20-uploaded-2019-06-05-1615/aggregate/%3Fcut%3Dfinancialyear.financialyear%253A2019%257Cgovernment.government%253A%2522Mpumalanga%2522%257Cvotenumber.department%253A%2522Agriculture%252C%2BRural%2BDevelopment%252C%2BLand%2Band%2BEnvironmental%2BAffairs%2522%26drilldown%3Dbudgetphase.budgetphase%257Ceconomicclassification1.economicclassification1%257Ceconomicclassification2.economicclassification2%257Ceconomicclassification3.economicclassification3%257Ceconomicclassification4.economicclassification4%257Ceconomicclassification5.economicclassification5%257Cfinancialyear.financialyear%257Cfunctiongroup1.functiongroup1%257Cfunctiongroup2.functiongroup2%257Cgovernment.government%257Cprognumber.prognumber%257Cprognumber.programme%257Csubprognumber.subprognumber%257Csubprognumber.subprogramme%257Cvotenumber.department%257Cvotenumber.votenumber%26pagesize%3D10000
+  econ_classes:
+  - items:
+    - name: Farmer Support And Development
+      total_budget: 138684000
+      type: programme
+    - name: Sustainable Resource Management
+      total_budget: 13565000
+      type: programme
+    - name: Environmental Affairs
+      total_budget: 9800000
+      type: programme
+    - name: Administration
+      total_budget: 5910000
+      type: programme
+    - name: Veterinary Services
+      total_budget: 5477000
+      type: programme
+    - name: Research And Technology Development Services
+      total_budget: 1500000
+      type: programme
+    name: Capital - Payments for capital assets
+    type: economic_classification_1_and_2
+  - items:
+    - name: Farmer Support And Development
+      total_budget: 399566000
+      type: programme
+    - name: Administration
+      total_budget: 186674000
+      type: programme
+    - name: Veterinary Services
+      total_budget: 139163000
+      type: programme
+    - name: Environmental Affairs
+      total_budget: 116973000
+      type: programme
+    - name: Sustainable Resource Management
+      total_budget: 63774000
+      type: programme
+    - name: Research And Technology Development Services
+      total_budget: 60111000
+      type: programme
+    - name: Structured Agricultural Education And Training
+      total_budget: 28782000
+      type: programme
+    - name: Rural Development Coordination
+      total_budget: 26016000
+      type: programme
+    - name: Agricultural Economics Services
+      total_budget: 18049000
+      type: programme
+    name: Current - Current payments
+    type: economic_classification_1_and_2
+  - items:
+    - name: Administration
+      total_budget: 8429000
+      type: programme
+    name: Current - Transfers and subsidies
+    type: economic_classification_1_and_2
 programmes:
-  programme_budgets: []
+  dataset_detail_page: /datasets/estimates-of-provincial-expenditure/estimates-of-provincial-expenditure-of-south-africa-2019-20
+  department_data_csv: https://datamanager.vulekamali.gov.za/csv/?api_url=https%3A//openspending.org/api/3/cubes/b9d2af843f3a7ca223eea07fb608e62a%3Aestimates-of-provincial-expenditure-south-africa-2019-20-uploaded-2019-06-05-1615/aggregate/%3Fcut%3Dfinancialyear.financialyear%253A2019%257Cgovernment.government%253A%2522Mpumalanga%2522%257Cvotenumber.department%253A%2522Agriculture%252C%2BRural%2BDevelopment%252C%2BLand%2Band%2BEnvironmental%2BAffairs%2522%26drilldown%3Dbudgetphase.budgetphase%257Ceconomicclassification1.economicclassification1%257Ceconomicclassification2.economicclassification2%257Ceconomicclassification3.economicclassification3%257Ceconomicclassification4.economicclassification4%257Ceconomicclassification5.economicclassification5%257Cfinancialyear.financialyear%257Cfunctiongroup1.functiongroup1%257Cfunctiongroup2.functiongroup2%257Cgovernment.government%257Cprognumber.prognumber%257Cprognumber.programme%257Csubprognumber.subprognumber%257Csubprognumber.subprogramme%257Cvotenumber.department%257Cvotenumber.votenumber%26pagesize%3D10000
+  programme_budgets:
+  - name: Administration
+    total_budget: 201013000
+  - name: Sustainable Resource Management
+    total_budget: 77339000
+  - name: Farmer Support And Development
+    total_budget: 538250000
+  - name: Veterinary Services
+    total_budget: 144640000
+  - name: Research And Technology Development Services
+    total_budget: 61611000
+  - name: Agricultural Economics Services
+    total_budget: 18049000
+  - name: Structured Agricultural Education And Training
+    total_budget: 28782000
+  - name: Rural Development Coordination
+    total_budget: 26016000
+  - name: Environmental Affairs
+    total_budget: 126773000
 selected_financial_year: 2019-20
 selected_tab: departments
 slug: agriculture-rural-development-land-and-environmental-affairs
 sphere:
-  name: provincial
+  name: Provincial
   slug: provincial
-subprogramme_by_programme: null
+subprogramme_by_programme:
+  dataset_detail_page: /datasets/estimates-of-provincial-expenditure/estimates-of-provincial-expenditure-of-south-africa-2019-20
+  department_data_csv: https://datamanager.vulekamali.gov.za/csv/?api_url=https%3A//openspending.org/api/3/cubes/b9d2af843f3a7ca223eea07fb608e62a%3Aestimates-of-provincial-expenditure-south-africa-2019-20-uploaded-2019-06-05-1615/aggregate/%3Fcut%3Dfinancialyear.financialyear%253A2019%257Cgovernment.government%253A%2522Mpumalanga%2522%257Cvotenumber.department%253A%2522Agriculture%252C%2BRural%2BDevelopment%252C%2BLand%2Band%2BEnvironmental%2BAffairs%2522%26drilldown%3Dbudgetphase.budgetphase%257Ceconomicclassification1.economicclassification1%257Ceconomicclassification2.economicclassification2%257Ceconomicclassification3.economicclassification3%257Ceconomicclassification4.economicclassification4%257Ceconomicclassification5.economicclassification5%257Cfinancialyear.financialyear%257Cfunctiongroup1.functiongroup1%257Cfunctiongroup2.functiongroup2%257Cgovernment.government%257Cprognumber.prognumber%257Cprognumber.programme%257Csubprognumber.subprognumber%257Csubprognumber.subprogramme%257Cvotenumber.department%257Cvotenumber.votenumber%26pagesize%3D10000
+  programmes:
+  - items:
+    - name: Financial Management
+      total_budget: 90236000
+      type: subprogramme
+    - name: Corporate Services
+      total_budget: 69305000
+      type: subprogramme
+    - name: Senior Management
+      total_budget: 23694000
+      type: subprogramme
+    - name: Office Of The Mec
+      total_budget: 8928000
+      type: subprogramme
+    - name: Communication Services
+      total_budget: 8850000
+      type: subprogramme
+    name: Administration
+    type: programme
+  - items:
+    - name: Macroeconomics Support
+      total_budget: 14652000
+      type: subprogramme
+    - name: Production Economics And Marketing Support
+      total_budget: 3397000
+      type: subprogramme
+    name: Agricultural Economics Services
+    type: programme
+  - items:
+    - name: Environmental Empowerment Services
+      total_budget: 82954000
+      type: subprogramme
+    - name: Environmental Quality Management
+      total_budget: 24671000
+      type: subprogramme
+    - name: Compliance And Enforcement
+      total_budget: 11863000
+      type: subprogramme
+    - name: Environmental Policy, Planning And Coordination
+      total_budget: 4826000
+      type: subprogramme
+    - name: 'Cd: Office Support'
+      total_budget: 2459000
+      type: subprogramme
+    name: Environmental Affairs
+    type: programme
+  - items:
+    - name: Extension And Advisory Services
+      total_budget: 322680000
+      type: subprogramme
+    - name: Farmer-Settlement And Development
+      total_budget: 110001000
+      type: subprogramme
+    - name: Food Security
+      total_budget: 105569000
+      type: subprogramme
+    name: Farmer Support And Development
+    type: programme
+  - items:
+    - name: Research.
+      total_budget: 31343000
+      type: subprogramme
+    - name: Research Infrastructure Support
+      total_budget: 22455000
+      type: subprogramme
+    - name: Technology Transfer
+      total_budget: 7813000
+      type: subprogramme
+    name: Research And Technology Development Services
+    type: programme
+  - items:
+    - name: Rural Development Coordination
+      total_budget: 18850000
+      type: subprogramme
+    - name: Social Facilitation
+      total_budget: 7166000
+      type: subprogramme
+    name: Rural Development Coordination
+    type: programme
+  - items:
+    - name: Agricultural Skills Development
+      total_budget: 28782000
+      type: subprogramme
+    name: Structured Agricultural Education And Training
+    type: programme
+  - items:
+    - name: Land Use Management
+      total_budget: 26993000
+      type: subprogramme
+    - name: Engineering Services
+      total_budget: 24547000
+      type: subprogramme
+    - name: Land Care Services
+      total_budget: 14454000
+      type: subprogramme
+    - name: Disaster Risk Management
+      total_budget: 11345000
+      type: subprogramme
+    name: Sustainable Resource Management
+    type: programme
+  - items:
+    - name: Animal Health
+      total_budget: 103192000
+      type: subprogramme
+    - name: Veterinary Public Health
+      total_budget: 28337000
+      type: subprogramme
+    - name: Veterinary Laboratory Services
+      total_budget: 13111000
+      type: subprogramme
+    name: Veterinary Services
+    type: programme
 title: Agriculture, Rural Development, Land and Environmental Affairs budget 2019-20  -
   vulekamali
 vote_number: 5

@@ -379,8 +379,118 @@ department_adjusted_budget: null
 department_budget: null
 description: 'Gauteng department: Economic Development budget data for the 2019-20
   financial year from National Treasury in partnership with IMALI YETHU.'
-economic_classification_by_programme: null
-expenditure_over_time: null
+economic_classification_by_programme:
+  dataset_detail_page: /datasets/estimates-of-provincial-expenditure/estimates-of-provincial-expenditure-of-south-africa-2019-20
+  department_data_csv: https://datamanager.vulekamali.gov.za/csv/?api_url=https%3A//openspending.org/api/3/cubes/b9d2af843f3a7ca223eea07fb608e62a%3Aestimates-of-provincial-expenditure-south-africa-2019-20-uploaded-2019-06-05-1615/aggregate/%3Fcut%3Dfinancialyear.financialyear%253A2019%257Cgovernment.government%253A%2522Gauteng%2522%257Cvotenumber.department%253A%2522Economic%2BDevelopment%2522%26drilldown%3Dbudgetphase.budgetphase%257Ceconomicclassification1.economicclassification1%257Ceconomicclassification2.economicclassification2%257Ceconomicclassification3.economicclassification3%257Ceconomicclassification4.economicclassification4%257Ceconomicclassification5.economicclassification5%257Cfinancialyear.financialyear%257Cfunctiongroup1.functiongroup1%257Cfunctiongroup2.functiongroup2%257Cgovernment.government%257Cprognumber.prognumber%257Cprognumber.programme%257Csubprognumber.subprognumber%257Csubprognumber.subprogramme%257Cvotenumber.department%257Cvotenumber.votenumber%26pagesize%3D10000
+  programmes:
+  - items:
+    - items:
+      - name: Payments for capital assets
+        total_budget: 14515000
+        type: economic_classification_2
+      name: Capital
+      type: economic_classification_1
+    - items:
+      - name: Current payments
+        total_budget: 293189000
+        type: economic_classification_2
+      name: Current
+      type: economic_classification_1
+    name: Administration
+    type: programme
+  - items:
+    - items:
+      - name: Current payments
+        total_budget: 42054000
+        type: economic_classification_2
+      - name: Transfers and subsidies
+        total_budget: 26352000
+        type: economic_classification_2
+      name: Current
+      type: economic_classification_1
+    name: Business Regulation And Governance
+    type: programme
+  - items:
+    - items:
+      - name: Current payments
+        total_budget: 117323000
+        type: economic_classification_2
+      name: Current
+      type: economic_classification_1
+    name: Economic Planning
+    type: programme
+  - items:
+    - items:
+      - name: Transfers and subsidies
+        total_budget: 245771000
+        type: economic_classification_2
+      - name: Current payments
+        total_budget: 24021000
+        type: economic_classification_2
+      name: Current
+      type: economic_classification_1
+    name: Integrated Economic Development Services
+    type: programme
+  - items:
+    - items:
+      - name: Transfers and subsidies
+        total_budget: 811287000
+        type: economic_classification_2
+      - name: Current payments
+        total_budget: 6728000
+        type: economic_classification_2
+      name: Current
+      type: economic_classification_1
+    name: Trade And Sector Development
+    type: programme
+expenditure_over_time:
+  dataset_detail_page: /datasets/estimates-of-provincial-expenditure/estimates-of-provincial-expenditure-of-south-africa-2019-20
+  expenditure:
+    base_financial_year: 2018-19
+    nominal:
+    - amount: 1270844000
+      financial_year: 2015-16
+      phase: Audited Outcome
+    - amount: 1359269000
+      financial_year: 2016-17
+      phase: Audited Outcome
+    - amount: 1409820000
+      financial_year: 2017-18
+      phase: Audited Outcome
+    - amount: 1536399000
+      financial_year: 2018-19
+      phase: Adjusted appropriation
+    - amount: 1581240000
+      financial_year: 2019-20
+      phase: Main appropriation
+    - amount: 1674950000
+      financial_year: 2020-21
+      phase: Medium Term Estimates
+    - amount: 1774793000
+      financial_year: 2021-22
+      phase: Medium Term Estimates
+    real:
+    - amount: 1484013654
+      financial_year: 2015-16
+      phase: Audited Outcome
+    - amount: 1493267648
+      financial_year: 2016-17
+      phase: Audited Outcome
+    - amount: 1479073066
+      financial_year: 2017-18
+      phase: Audited Outcome
+    - amount: 1536399000
+      financial_year: 2018-19
+      phase: Adjusted appropriation
+    - amount: 1503678538
+      financial_year: 2019-20
+      phase: Main appropriation
+    - amount: 1510060624
+      financial_year: 2020-21
+      phase: Medium Term Estimates
+    - amount: 1517686869
+      financial_year: 2021-22
+      phase: Medium Term Estimates
 financial_years:
 - closest_match:
     is_exact_match: true
@@ -409,16 +519,145 @@ government_functions: []
 intro: ''
 is_vote_primary: true
 name: Economic Development
-programme_by_economic_classification: null
+programme_by_economic_classification:
+  dataset_detail_page: /datasets/estimates-of-provincial-expenditure/estimates-of-provincial-expenditure-of-south-africa-2019-20
+  department_data_csv: https://datamanager.vulekamali.gov.za/csv/?api_url=https%3A//openspending.org/api/3/cubes/b9d2af843f3a7ca223eea07fb608e62a%3Aestimates-of-provincial-expenditure-south-africa-2019-20-uploaded-2019-06-05-1615/aggregate/%3Fcut%3Dfinancialyear.financialyear%253A2019%257Cgovernment.government%253A%2522Gauteng%2522%257Cvotenumber.department%253A%2522Economic%2BDevelopment%2522%26drilldown%3Dbudgetphase.budgetphase%257Ceconomicclassification1.economicclassification1%257Ceconomicclassification2.economicclassification2%257Ceconomicclassification3.economicclassification3%257Ceconomicclassification4.economicclassification4%257Ceconomicclassification5.economicclassification5%257Cfinancialyear.financialyear%257Cfunctiongroup1.functiongroup1%257Cfunctiongroup2.functiongroup2%257Cgovernment.government%257Cprognumber.prognumber%257Cprognumber.programme%257Csubprognumber.subprognumber%257Csubprognumber.subprogramme%257Cvotenumber.department%257Cvotenumber.votenumber%26pagesize%3D10000
+  econ_classes:
+  - items:
+    - name: Administration
+      total_budget: 14515000
+      type: programme
+    name: Capital - Payments for capital assets
+    type: economic_classification_1_and_2
+  - items:
+    - name: Administration
+      total_budget: 293189000
+      type: programme
+    - name: Economic Planning
+      total_budget: 117323000
+      type: programme
+    - name: Business Regulation And Governance
+      total_budget: 42054000
+      type: programme
+    - name: Integrated Economic Development Services
+      total_budget: 24021000
+      type: programme
+    - name: Trade And Sector Development
+      total_budget: 6728000
+      type: programme
+    name: Current - Current payments
+    type: economic_classification_1_and_2
+  - items:
+    - name: Trade And Sector Development
+      total_budget: 811287000
+      type: programme
+    - name: Integrated Economic Development Services
+      total_budget: 245771000
+      type: programme
+    - name: Business Regulation And Governance
+      total_budget: 26352000
+      type: programme
+    name: Current - Transfers and subsidies
+    type: economic_classification_1_and_2
 programmes:
-  programme_budgets: []
+  dataset_detail_page: /datasets/estimates-of-provincial-expenditure/estimates-of-provincial-expenditure-of-south-africa-2019-20
+  department_data_csv: https://datamanager.vulekamali.gov.za/csv/?api_url=https%3A//openspending.org/api/3/cubes/b9d2af843f3a7ca223eea07fb608e62a%3Aestimates-of-provincial-expenditure-south-africa-2019-20-uploaded-2019-06-05-1615/aggregate/%3Fcut%3Dfinancialyear.financialyear%253A2019%257Cgovernment.government%253A%2522Gauteng%2522%257Cvotenumber.department%253A%2522Economic%2BDevelopment%2522%26drilldown%3Dbudgetphase.budgetphase%257Ceconomicclassification1.economicclassification1%257Ceconomicclassification2.economicclassification2%257Ceconomicclassification3.economicclassification3%257Ceconomicclassification4.economicclassification4%257Ceconomicclassification5.economicclassification5%257Cfinancialyear.financialyear%257Cfunctiongroup1.functiongroup1%257Cfunctiongroup2.functiongroup2%257Cgovernment.government%257Cprognumber.prognumber%257Cprognumber.programme%257Csubprognumber.subprognumber%257Csubprognumber.subprogramme%257Cvotenumber.department%257Cvotenumber.votenumber%26pagesize%3D10000
+  programme_budgets:
+  - name: Administration
+    total_budget: 307704000
+  - name: Integrated Economic Development Services
+    total_budget: 269792000
+  - name: Trade And Sector Development
+    total_budget: 818015000
+  - name: Business Regulation And Governance
+    total_budget: 68406000
+  - name: Economic Planning
+    total_budget: 117323000
 selected_financial_year: 2019-20
 selected_tab: departments
 slug: economic-development
 sphere:
-  name: provincial
+  name: Provincial
   slug: provincial
-subprogramme_by_programme: null
+subprogramme_by_programme:
+  dataset_detail_page: /datasets/estimates-of-provincial-expenditure/estimates-of-provincial-expenditure-of-south-africa-2019-20
+  department_data_csv: https://datamanager.vulekamali.gov.za/csv/?api_url=https%3A//openspending.org/api/3/cubes/b9d2af843f3a7ca223eea07fb608e62a%3Aestimates-of-provincial-expenditure-south-africa-2019-20-uploaded-2019-06-05-1615/aggregate/%3Fcut%3Dfinancialyear.financialyear%253A2019%257Cgovernment.government%253A%2522Gauteng%2522%257Cvotenumber.department%253A%2522Economic%2BDevelopment%2522%26drilldown%3Dbudgetphase.budgetphase%257Ceconomicclassification1.economicclassification1%257Ceconomicclassification2.economicclassification2%257Ceconomicclassification3.economicclassification3%257Ceconomicclassification4.economicclassification4%257Ceconomicclassification5.economicclassification5%257Cfinancialyear.financialyear%257Cfunctiongroup1.functiongroup1%257Cfunctiongroup2.functiongroup2%257Cgovernment.government%257Cprognumber.prognumber%257Cprognumber.programme%257Csubprognumber.subprognumber%257Csubprognumber.subprogramme%257Cvotenumber.department%257Cvotenumber.votenumber%26pagesize%3D10000
+  programmes:
+  - items:
+    - name: Corporate Services
+      total_budget: 209583000
+      type: subprogramme
+    - name: Financial Management
+      total_budget: 58327000
+      type: subprogramme
+    - name: Office Of The Hod
+      total_budget: 24038000
+      type: subprogramme
+    - name: Office Of The Mec
+      total_budget: 15756000
+      type: subprogramme
+    name: Administration
+    type: programme
+  - items:
+    - name: Liquor Regulation
+      total_budget: 26352000
+      type: subprogramme
+    - name: Consumer Protection
+      total_budget: 21807000
+      type: subprogramme
+    - name: Governance
+      total_budget: 10132000
+      type: subprogramme
+    - name: Igr And Strategic Partnerships
+      total_budget: 10115000
+      type: subprogramme
+    name: Business Regulation And Governance
+    type: programme
+  - items:
+    - name: Sector And Industry Development
+      total_budget: 59508000
+      type: subprogramme
+    - name: Policy And Planning
+      total_budget: 23358000
+      type: subprogramme
+    - name: Inclusive Economy
+      total_budget: 14508000
+      type: subprogramme
+    - name: Economic Infrastructure Development
+      total_budget: 11876000
+      type: subprogramme
+    - name: Research And Development
+      total_budget: 6073000
+      type: subprogramme
+    - name: Knowledge Management
+      total_budget: 2000000
+      type: subprogramme
+    name: Economic Planning
+    type: programme
+  - items:
+    - name: Enterprise Development
+      total_budget: 251017000
+      type: subprogramme
+    - name: Economic Empowerment
+      total_budget: 17550000
+      type: subprogramme
+    - name: Regional And Local Economic Development
+      total_budget: 1225000
+      type: subprogramme
+    name: Integrated Economic Development Services
+    type: programme
+  - items:
+    - name: Strategic Initiatives
+      total_budget: 598888000
+      type: subprogramme
+    - name: Sector Development
+      total_budget: 212399000
+      type: subprogramme
+    - name: Trade And Investment Promotion
+      total_budget: 6728000
+      type: subprogramme
+    name: Trade And Sector Development
+    type: programme
 title: Economic Development budget 2019-20  - vulekamali
 vote_number: 3
 vote_primary:

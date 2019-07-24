@@ -329,8 +329,118 @@ department_adjusted_budget: null
 department_budget: null
 description: 'Eastern Cape department: Human Settlements budget data for the 2019-20
   financial year from National Treasury in partnership with IMALI YETHU.'
-economic_classification_by_programme: null
-expenditure_over_time: null
+economic_classification_by_programme:
+  dataset_detail_page: /datasets/estimates-of-provincial-expenditure/estimates-of-provincial-expenditure-of-south-africa-2019-20
+  department_data_csv: https://datamanager.vulekamali.gov.za/csv/?api_url=https%3A//openspending.org/api/3/cubes/b9d2af843f3a7ca223eea07fb608e62a%3Aestimates-of-provincial-expenditure-south-africa-2019-20-uploaded-2019-06-05-1615/aggregate/%3Fcut%3Dfinancialyear.financialyear%253A2019%257Cgovernment.government%253A%2522Eastern%2BCape%2522%257Cvotenumber.department%253A%2522Human%2BSettlements%2522%26drilldown%3Dbudgetphase.budgetphase%257Ceconomicclassification1.economicclassification1%257Ceconomicclassification2.economicclassification2%257Ceconomicclassification3.economicclassification3%257Ceconomicclassification4.economicclassification4%257Ceconomicclassification5.economicclassification5%257Cfinancialyear.financialyear%257Cfunctiongroup1.functiongroup1%257Cfunctiongroup2.functiongroup2%257Cgovernment.government%257Cprognumber.prognumber%257Cprognumber.programme%257Csubprognumber.subprognumber%257Csubprognumber.subprogramme%257Cvotenumber.department%257Cvotenumber.votenumber%26pagesize%3D10000
+  programmes:
+  - items:
+    - items:
+      - name: Payments for capital assets
+        total_budget: 6992000
+        type: economic_classification_2
+      name: Capital
+      type: economic_classification_1
+    - items:
+      - name: Current payments
+        total_budget: 150234000
+        type: economic_classification_2
+      - name: Transfers and subsidies
+        total_budget: 168000
+        type: economic_classification_2
+      name: Current
+      type: economic_classification_1
+    name: Administration
+    type: programme
+  - items:
+    - items:
+      - name: Current payments
+        total_budget: 13912000
+        type: economic_classification_2
+      - name: Transfers and subsidies
+        total_budget: 100000
+        type: economic_classification_2
+      name: Current
+      type: economic_classification_1
+    name: Housing Asset Management
+    type: programme
+  - items:
+    - items:
+      - name: Transfers and subsidies
+        total_budget: 2021182000
+        type: economic_classification_2
+      name: Capital
+      type: economic_classification_1
+    - items:
+      - name: Current payments
+        total_budget: 225385000
+        type: economic_classification_2
+      - name: Transfers and subsidies
+        total_budget: 3962000
+        type: economic_classification_2
+      name: Current
+      type: economic_classification_1
+    name: Housing Development
+    type: programme
+  - items:
+    - items:
+      - name: Current payments
+        total_budget: 21334000
+        type: economic_classification_2
+      - name: Transfers and subsidies
+        total_budget: 112000
+        type: economic_classification_2
+      name: Current
+      type: economic_classification_1
+    name: Housing Needs, Research And Planning
+    type: programme
+expenditure_over_time:
+  dataset_detail_page: /datasets/estimates-of-provincial-expenditure/estimates-of-provincial-expenditure-of-south-africa-2019-20
+  expenditure:
+    base_financial_year: 2018-19
+    nominal:
+    - amount: 2799821000
+      financial_year: 2015-16
+      phase: Audited Outcome
+    - amount: 2362298000
+      financial_year: 2016-17
+      phase: Audited Outcome
+    - amount: 2747672000
+      financial_year: 2017-18
+      phase: Audited Outcome
+    - amount: 2414249000
+      financial_year: 2018-19
+      phase: Adjusted appropriation
+    - amount: 2443381000
+      financial_year: 2019-20
+      phase: Main appropriation
+    - amount: 2476482000
+      financial_year: 2020-21
+      phase: Medium Term Estimates
+    - amount: 2570229000
+      financial_year: 2021-22
+      phase: Medium Term Estimates
+    real:
+    - amount: 3269459188
+      financial_year: 2015-16
+      phase: Audited Outcome
+    - amount: 2595176657
+      financial_year: 2016-17
+      phase: Audited Outcome
+    - amount: 2882642926
+      financial_year: 2017-18
+      phase: Audited Outcome
+    - amount: 2414249000
+      financial_year: 2018-19
+      phase: Adjusted appropriation
+    - amount: 2323530628
+      financial_year: 2019-20
+      phase: Main appropriation
+    - amount: 2232686322
+      financial_year: 2020-21
+      phase: Medium Term Estimates
+    - amount: 2197891700
+      financial_year: 2021-22
+      phase: Medium Term Estimates
 financial_years:
 - closest_match:
     is_exact_match: true
@@ -359,16 +469,128 @@ government_functions: []
 intro: ''
 is_vote_primary: true
 name: Human Settlements
-programme_by_economic_classification: null
+programme_by_economic_classification:
+  dataset_detail_page: /datasets/estimates-of-provincial-expenditure/estimates-of-provincial-expenditure-of-south-africa-2019-20
+  department_data_csv: https://datamanager.vulekamali.gov.za/csv/?api_url=https%3A//openspending.org/api/3/cubes/b9d2af843f3a7ca223eea07fb608e62a%3Aestimates-of-provincial-expenditure-south-africa-2019-20-uploaded-2019-06-05-1615/aggregate/%3Fcut%3Dfinancialyear.financialyear%253A2019%257Cgovernment.government%253A%2522Eastern%2BCape%2522%257Cvotenumber.department%253A%2522Human%2BSettlements%2522%26drilldown%3Dbudgetphase.budgetphase%257Ceconomicclassification1.economicclassification1%257Ceconomicclassification2.economicclassification2%257Ceconomicclassification3.economicclassification3%257Ceconomicclassification4.economicclassification4%257Ceconomicclassification5.economicclassification5%257Cfinancialyear.financialyear%257Cfunctiongroup1.functiongroup1%257Cfunctiongroup2.functiongroup2%257Cgovernment.government%257Cprognumber.prognumber%257Cprognumber.programme%257Csubprognumber.subprognumber%257Csubprognumber.subprogramme%257Cvotenumber.department%257Cvotenumber.votenumber%26pagesize%3D10000
+  econ_classes:
+  - items:
+    - name: Administration
+      total_budget: 6992000
+      type: programme
+    name: Capital - Payments for capital assets
+    type: economic_classification_1_and_2
+  - items:
+    - name: Housing Development
+      total_budget: 2021182000
+      type: programme
+    name: Capital - Transfers and subsidies
+    type: economic_classification_1_and_2
+  - items:
+    - name: Housing Development
+      total_budget: 225385000
+      type: programme
+    - name: Administration
+      total_budget: 150234000
+      type: programme
+    - name: Housing Needs, Research And Planning
+      total_budget: 21334000
+      type: programme
+    - name: Housing Asset Management
+      total_budget: 13912000
+      type: programme
+    name: Current - Current payments
+    type: economic_classification_1_and_2
+  - items:
+    - name: Housing Development
+      total_budget: 3962000
+      type: programme
+    - name: Administration
+      total_budget: 168000
+      type: programme
+    - name: Housing Needs, Research And Planning
+      total_budget: 112000
+      type: programme
+    - name: Housing Asset Management
+      total_budget: 100000
+      type: programme
+    name: Current - Transfers and subsidies
+    type: economic_classification_1_and_2
 programmes:
-  programme_budgets: []
+  dataset_detail_page: /datasets/estimates-of-provincial-expenditure/estimates-of-provincial-expenditure-of-south-africa-2019-20
+  department_data_csv: https://datamanager.vulekamali.gov.za/csv/?api_url=https%3A//openspending.org/api/3/cubes/b9d2af843f3a7ca223eea07fb608e62a%3Aestimates-of-provincial-expenditure-south-africa-2019-20-uploaded-2019-06-05-1615/aggregate/%3Fcut%3Dfinancialyear.financialyear%253A2019%257Cgovernment.government%253A%2522Eastern%2BCape%2522%257Cvotenumber.department%253A%2522Human%2BSettlements%2522%26drilldown%3Dbudgetphase.budgetphase%257Ceconomicclassification1.economicclassification1%257Ceconomicclassification2.economicclassification2%257Ceconomicclassification3.economicclassification3%257Ceconomicclassification4.economicclassification4%257Ceconomicclassification5.economicclassification5%257Cfinancialyear.financialyear%257Cfunctiongroup1.functiongroup1%257Cfunctiongroup2.functiongroup2%257Cgovernment.government%257Cprognumber.prognumber%257Cprognumber.programme%257Csubprognumber.subprognumber%257Csubprognumber.subprogramme%257Cvotenumber.department%257Cvotenumber.votenumber%26pagesize%3D10000
+  programme_budgets:
+  - name: Administration
+    total_budget: 157394000
+  - name: Housing Needs, Research And Planning
+    total_budget: 21446000
+  - name: Housing Development
+    total_budget: 2250529000
+  - name: Housing Asset Management
+    total_budget: 14012000
 selected_financial_year: 2019-20
 selected_tab: departments
 slug: human-settlements
 sphere:
-  name: provincial
+  name: Provincial
   slug: provincial
-subprogramme_by_programme: null
+subprogramme_by_programme:
+  dataset_detail_page: /datasets/estimates-of-provincial-expenditure/estimates-of-provincial-expenditure-of-south-africa-2019-20
+  department_data_csv: https://datamanager.vulekamali.gov.za/csv/?api_url=https%3A//openspending.org/api/3/cubes/b9d2af843f3a7ca223eea07fb608e62a%3Aestimates-of-provincial-expenditure-south-africa-2019-20-uploaded-2019-06-05-1615/aggregate/%3Fcut%3Dfinancialyear.financialyear%253A2019%257Cgovernment.government%253A%2522Eastern%2BCape%2522%257Cvotenumber.department%253A%2522Human%2BSettlements%2522%26drilldown%3Dbudgetphase.budgetphase%257Ceconomicclassification1.economicclassification1%257Ceconomicclassification2.economicclassification2%257Ceconomicclassification3.economicclassification3%257Ceconomicclassification4.economicclassification4%257Ceconomicclassification5.economicclassification5%257Cfinancialyear.financialyear%257Cfunctiongroup1.functiongroup1%257Cfunctiongroup2.functiongroup2%257Cgovernment.government%257Cprognumber.prognumber%257Cprognumber.programme%257Csubprognumber.subprognumber%257Csubprognumber.subprogramme%257Cvotenumber.department%257Cvotenumber.votenumber%26pagesize%3D10000
+  programmes:
+  - items:
+    - name: Corporate Services
+      total_budget: 147422000
+      type: subprogramme
+    - name: Office Of The Mec
+      total_budget: 9972000
+      type: subprogramme
+    name: Administration
+    type: programme
+  - items:
+    - name: Devolution Of Housing Properties
+      total_budget: 5772000
+      type: subprogramme
+    - name: Sale And Transfer Of Housing Properties
+      total_budget: 5584000
+      type: subprogramme
+    - name: Administration
+      total_budget: 2656000
+      type: subprogramme
+    name: Housing Asset Management
+    type: programme
+  - items:
+    - name: Incremental Interventions
+      total_budget: 916031000
+      type: subprogramme
+    - name: Rural Intervention
+      total_budget: 889724000
+      type: subprogramme
+    - name: Financial Interventions
+      total_budget: 353726000
+      type: subprogramme
+    - name: Social And Rental Intervention
+      total_budget: 88222000
+      type: subprogramme
+    - name: Administration
+      total_budget: 2826000
+      type: subprogramme
+    name: Housing Development
+    type: programme
+  - items:
+    - name: Policy
+      total_budget: 7230000
+      type: subprogramme
+    - name: Planning
+      total_budget: 6082000
+      type: subprogramme
+    - name: Research
+      total_budget: 5724000
+      type: subprogramme
+    - name: Administration
+      total_budget: 2410000
+      type: subprogramme
+    name: Housing Needs, Research And Planning
+    type: programme
 title: Human Settlements budget 2019-20  - vulekamali
 vote_number: 11
 vote_primary:
