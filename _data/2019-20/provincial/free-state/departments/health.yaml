@@ -526,7 +526,14 @@ contributed_datasets:
   name: Budget Analysis for Advancing Socioeconomic Rights
   url_path: /datasets/contributed/budget-analysis-for-advancing-socioeconomic-rights
 department_adjusted_budget: null
-department_budget: null
+department_budget:
+  document:
+    description: ''
+    format: PDF
+    name: Free State EPRE 2019-20 - Vote 05 - Health
+    url: https://data.vulekamali.gov.za/dataset/2a3d98cc-12b0-4035-a2ea-ee9970d36b6d/resource/003ca81d-0f62-4d53-80b5-30f257b3cb7a/download/fs-vote-05-health.pdf
+  name: Free State EPRE 2019-20 - Vote 05 - Health
+  tables: null
 description: 'Free State department: Health budget data for the 2019-20 financial
   year from National Treasury in partnership with IMALI YETHU.'
 economic_classification_by_programme:

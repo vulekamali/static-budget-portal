@@ -827,7 +827,14 @@ contributed_datasets:
   name: Budget Analysis for Advancing Socioeconomic Rights
   url_path: /datasets/contributed/budget-analysis-for-advancing-socioeconomic-rights
 department_adjusted_budget: null
-department_budget: null
+department_budget:
+  document:
+    description: ''
+    format: PDF
+    name: Free State EPRE 2019-20 - Vote 06 - Education
+    url: https://data.vulekamali.gov.za/dataset/1727d046-5c98-4703-a1ca-fb0f23c95fe4/resource/b52c1ffa-c3b4-4eb3-affe-bcd70925a35e/download/fs-vote-06-education.pdf
+  name: Free State EPRE 2019-20 - Vote 06 - Education
+  tables: null
 description: 'Free State department: Education budget data for the 2019-20 financial
   year from National Treasury in partnership with IMALI YETHU.'
 economic_classification_by_programme:
