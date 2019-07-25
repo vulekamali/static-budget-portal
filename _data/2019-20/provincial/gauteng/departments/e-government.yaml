@@ -427,7 +427,14 @@ contributed_datasets:
   name: Budget Analysis for Advancing Socioeconomic Rights
   url_path: /datasets/contributed/budget-analysis-for-advancing-socioeconomic-rights
 department_adjusted_budget: null
-department_budget: null
+department_budget:
+  document:
+    description: ''
+    format: PDF
+    name: Gauteng EPRE 2019-20 - Vote 13 - E-Government
+    url: https://data.vulekamali.gov.za/dataset/be224a41-d436-46c4-a801-bbb85389e9f3/resource/7a290e57-c7da-4d08-b09c-ee34218343ca/download/gt-vote-13-e-government.pdf
+  name: Gauteng EPRE 2019-20 - Vote 13 - E-Government
+  tables: null
 description: 'Gauteng department: E-Government budget data for the 2019-20 financial
   year from National Treasury in partnership with IMALI YETHU.'
 economic_classification_by_programme:

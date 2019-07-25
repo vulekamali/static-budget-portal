@@ -526,7 +526,14 @@ contributed_datasets:
   name: Budget Analysis for Advancing Socioeconomic Rights
   url_path: /datasets/contributed/budget-analysis-for-advancing-socioeconomic-rights
 department_adjusted_budget: null
-department_budget: null
+department_budget:
+  document:
+    description: ''
+    format: PDF
+    name: Gauteng EPRE 2019-20 - Vote 04 - Health
+    url: https://data.vulekamali.gov.za/dataset/efcc43ac-59c6-40a9-99fe-6aaf428bd474/resource/53c834ff-0fa3-4986-96bd-1d42d5ea246b/download/gt-vote-04-health.pdf
+  name: Gauteng EPRE 2019-20 - Vote 04 - Health
+  tables: null
 description: 'Gauteng department: Health budget data for the 2019-20 financial year
   from National Treasury in partnership with IMALI YETHU.'
 economic_classification_by_programme:
