@@ -476,7 +476,14 @@ contributed_datasets:
   name: Budget Analysis for Advancing Socioeconomic Rights
   url_path: /datasets/contributed/budget-analysis-for-advancing-socioeconomic-rights
 department_adjusted_budget: null
-department_budget: null
+department_budget:
+  document:
+    description: ''
+    format: PDF
+    name: Eastern Cape EPRE 2019-20 - Vote 06 - Education
+    url: https://data.vulekamali.gov.za/dataset/3f22754b-6317-4b2a-be38-be9d7045251c/resource/7a174357-fa55-4e5a-8ccd-ae3b0fe644a9/download/ec-vote-06-education.pdf
+  name: Eastern Cape EPRE 2019-20 - Vote 06 - Education
+  tables: null
 description: 'Eastern Cape department: Education budget data for the 2019-20 financial
   year from National Treasury in partnership with IMALI YETHU.'
 economic_classification_by_programme:

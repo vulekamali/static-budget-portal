@@ -376,7 +376,14 @@ contributed_datasets:
   name: Budget Analysis for Advancing Socioeconomic Rights
   url_path: /datasets/contributed/budget-analysis-for-advancing-socioeconomic-rights
 department_adjusted_budget: null
-department_budget: null
+department_budget:
+  document:
+    description: ''
+    format: PDF
+    name: Eastern Cape EPRE 2019-20 - Vote 10 - Transport
+    url: https://data.vulekamali.gov.za/dataset/d8703c53-bc3d-44d1-9601-8dc735f1e6d8/resource/02b9d8b4-6e81-4f91-b83e-d5b399f26571/download/ec-vote-10-transport.pdf
+  name: Eastern Cape EPRE 2019-20 - Vote 10 - Transport
+  tables: null
 description: 'Eastern Cape department: Transport budget data for the 2019-20 financial
   year from National Treasury in partnership with IMALI YETHU.'
 economic_classification_by_programme:
