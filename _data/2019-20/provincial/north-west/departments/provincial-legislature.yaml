@@ -276,7 +276,14 @@ contributed_datasets:
   name: Budget Analysis for Advancing Socioeconomic Rights
   url_path: /datasets/contributed/budget-analysis-for-advancing-socioeconomic-rights
 department_adjusted_budget: null
-department_budget: null
+department_budget:
+  document:
+    description: ''
+    format: PDF
+    name: North West EPRE 2019-20 - Vote 02 - Provincial Legislature
+    url: https://data.vulekamali.gov.za/dataset/a0d08463-29eb-4273-9f1f-5e1b502af38e/resource/05889d93-a90c-49db-a562-ce14af200624/download/nw-vote-02-legislature.pdf
+  name: North West EPRE 2019-20 - Vote 02 - Provincial Legislature
+  tables: null
 description: 'North West department: Provincial Legislature budget data for the 2019-20
   financial year from National Treasury in partnership with IMALI YETHU.'
 economic_classification_by_programme:

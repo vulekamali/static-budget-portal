@@ -526,7 +526,14 @@ contributed_datasets:
   name: Budget Analysis for Advancing Socioeconomic Rights
   url_path: /datasets/contributed/budget-analysis-for-advancing-socioeconomic-rights
 department_adjusted_budget: null
-department_budget: null
+department_budget:
+  document:
+    description: ''
+    format: PDF
+    name: KwaZulu-Natal EPRE 2019-20 - Vote 07 - Health
+    url: https://data.vulekamali.gov.za/dataset/83784ea6-083c-422f-89d2-6da8cad8542c/resource/ba4f2078-1771-481e-97d1-6d070b60390a/download/kzn-vote-07-health.pdf
+  name: KwaZulu-Natal EPRE 2019-20 - Vote 07 - Health
+  tables: null
 description: 'KwaZulu-Natal department: Health budget data for the 2019-20 financial
   year from National Treasury in partnership with IMALI YETHU.'
 economic_classification_by_programme:

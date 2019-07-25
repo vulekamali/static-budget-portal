@@ -426,7 +426,14 @@ contributed_datasets:
   name: Budget Analysis for Advancing Socioeconomic Rights
   url_path: /datasets/contributed/budget-analysis-for-advancing-socioeconomic-rights
 department_adjusted_budget: null
-department_budget: null
+department_budget:
+  document:
+    description: ''
+    format: PDF
+    name: North West EPRE 2019-20 - Vote 12 - Social Development
+    url: https://data.vulekamali.gov.za/dataset/60d3b13b-b3ee-4248-a4b5-f6e60b38a030/resource/f9aacf0f-2651-4def-9c86-cacd052284ea/download/nw-vote-12-social-development.pdf
+  name: North West EPRE 2019-20 - Vote 12 - Social Development
+  tables: null
 description: 'North West department: Social Development budget data for the 2019-20
   financial year from National Treasury in partnership with IMALI YETHU.'
 economic_classification_by_programme:

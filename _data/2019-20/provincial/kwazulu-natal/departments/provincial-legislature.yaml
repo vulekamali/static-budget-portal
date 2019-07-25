@@ -277,7 +277,14 @@ contributed_datasets:
   name: Budget Analysis for Advancing Socioeconomic Rights
   url_path: /datasets/contributed/budget-analysis-for-advancing-socioeconomic-rights
 department_adjusted_budget: null
-department_budget: null
+department_budget:
+  document:
+    description: ''
+    format: PDF
+    name: KwaZulu-Natal EPRE 2019-20 - Vote 02 - Provincial Legislature
+    url: https://data.vulekamali.gov.za/dataset/3061b52b-69d5-4f1b-98be-7dde677fef35/resource/08721180-3c31-4a1b-a409-96843919af14/download/kzn-vote-02-legislature.pdf
+  name: KwaZulu-Natal EPRE 2019-20 - Vote 02 - Provincial Legislature
+  tables: null
 description: 'KwaZulu-Natal department: Provincial Legislature budget data for the
   2019-20 financial year from National Treasury in partnership with IMALI YETHU.'
 economic_classification_by_programme:

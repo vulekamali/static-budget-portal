@@ -427,7 +427,14 @@ contributed_datasets:
   name: Budget Analysis for Advancing Socioeconomic Rights
   url_path: /datasets/contributed/budget-analysis-for-advancing-socioeconomic-rights
 department_adjusted_budget: null
-department_budget: null
+department_budget:
+  document:
+    description: ''
+    format: PDF
+    name: KwaZulu-Natal EPRE 2019-20 - Vote 14 - Public Works
+    url: https://data.vulekamali.gov.za/dataset/d36ea7fc-72be-4a37-b070-d5ff821a50a4/resource/164875fb-1104-4f12-bb5c-d44c9fa3056c/download/kzn-vote-14-public-works.pdf
+  name: KwaZulu-Natal EPRE 2019-20 - Vote 14 - Public Works
+  tables: null
 description: 'KwaZulu-Natal department: Public Works budget data for the 2019-20 financial
   year from National Treasury in partnership with IMALI YETHU.'
 economic_classification_by_programme:

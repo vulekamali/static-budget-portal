@@ -526,7 +526,14 @@ contributed_datasets:
   name: Budget Analysis for Advancing Socioeconomic Rights
   url_path: /datasets/contributed/budget-analysis-for-advancing-socioeconomic-rights
 department_adjusted_budget: null
-department_budget: null
+department_budget:
+  document:
+    description: ''
+    format: PDF
+    name: North West EPRE 2019-20 - Vote 03 - Health
+    url: https://data.vulekamali.gov.za/dataset/24f506f4-0333-4e00-b6e6-1c21995f6fe3/resource/5d33118d-2e96-41e9-95fe-fef136147dc9/download/nw-vote-03-health.pdf
+  name: North West EPRE 2019-20 - Vote 03 - Health
+  tables: null
 description: 'North West department: Health budget data for the 2019-20 financial
   year from National Treasury in partnership with IMALI YETHU.'
 economic_classification_by_programme:

@@ -526,7 +526,14 @@ contributed_datasets:
   name: Budget Analysis for Advancing Socioeconomic Rights
   url_path: /datasets/contributed/budget-analysis-for-advancing-socioeconomic-rights
 department_adjusted_budget: null
-department_budget: null
+department_budget:
+  document:
+    description: ''
+    format: PDF
+    name: Northern Cape EPRE 2019-20 - Vote 10 - Health
+    url: https://data.vulekamali.gov.za/dataset/0eca0e47-bad1-4296-870e-a7229256171c/resource/ac2e0d28-ae0b-43d1-b7b0-7d5eef9a0fc4/download/nc-vote-10-health.pdf
+  name: Northern Cape EPRE 2019-20 - Vote 10 - Health
+  tables: null
 description: 'Northern Cape department: Health budget data for the 2019-20 financial
   year from National Treasury in partnership with IMALI YETHU.'
 economic_classification_by_programme:
