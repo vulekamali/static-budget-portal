@@ -326,7 +326,14 @@ contributed_datasets:
   name: Budget Analysis for Advancing Socioeconomic Rights
   url_path: /datasets/contributed/budget-analysis-for-advancing-socioeconomic-rights
 department_adjusted_budget: null
-department_budget: null
+department_budget:
+  document:
+    description: ''
+    format: PDF
+    name: Western Cape EPRE 2019-20 - Vote 04 - Community Safety
+    url: https://data.vulekamali.gov.za/dataset/92b31e8e-1cde-4148-a5f3-fda1062cebb2/resource/05f1078d-ec13-4dd0-89a6-c4161b3eca2f/download/wc-vote-04-community-safety.pdf
+  name: Western Cape EPRE 2019-20 - Vote 04 - Community Safety
+  tables: null
 description: 'Western Cape department: Community Safety budget data for the 2019-20
   financial year from National Treasury in partnership with IMALI YETHU.'
 economic_classification_by_programme:

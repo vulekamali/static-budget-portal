@@ -627,7 +627,14 @@ contributed_datasets:
   name: Budget Analysis for Advancing Socioeconomic Rights
   url_path: /datasets/contributed/budget-analysis-for-advancing-socioeconomic-rights
 department_adjusted_budget: null
-department_budget: null
+department_budget:
+  document:
+    description: ''
+    format: PDF
+    name: Western Cape EPRE 2019-20 - Vote 11 - Agriculture
+    url: https://data.vulekamali.gov.za/dataset/e44f59bd-39d8-4ecb-a464-f4b5e66561ed/resource/bbaab742-a7d6-4bf0-bfe2-67adc712dd7e/download/wc-vote-11-agriculture.pdf
+  name: Western Cape EPRE 2019-20 - Vote 11 - Agriculture
+  tables: null
 description: 'Western Cape department: Agriculture budget data for the 2019-20 financial
   year from National Treasury in partnership with IMALI YETHU.'
 economic_classification_by_programme:

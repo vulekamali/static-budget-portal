@@ -326,7 +326,14 @@ contributed_datasets:
   name: Budget Analysis for Advancing Socioeconomic Rights
   url_path: /datasets/contributed/budget-analysis-for-advancing-socioeconomic-rights
 department_adjusted_budget: null
-department_budget: null
+department_budget:
+  document:
+    description: ''
+    format: PDF
+    name: Western Cape EPRE 2019-20 - Vote 14 - Local Government
+    url: https://data.vulekamali.gov.za/dataset/31d96a05-8743-4e48-81f8-5bf8f0fe2ff7/resource/cf17717f-6afc-40f1-9c32-d57a6b1c74de/download/wc-vote-14-local-government.pdf
+  name: Western Cape EPRE 2019-20 - Vote 14 - Local Government
+  tables: null
 description: 'Western Cape department: Local Government budget data for the 2019-20
   financial year from National Treasury in partnership with IMALI YETHU.'
 economic_classification_by_programme:

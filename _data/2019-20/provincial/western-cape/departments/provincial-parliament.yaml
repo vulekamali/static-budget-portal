@@ -327,7 +327,14 @@ contributed_datasets:
   name: Budget Analysis for Advancing Socioeconomic Rights
   url_path: /datasets/contributed/budget-analysis-for-advancing-socioeconomic-rights
 department_adjusted_budget: null
-department_budget: null
+department_budget:
+  document:
+    description: ''
+    format: PDF
+    name: Western Cape EPRE 2019-20 - Vote 02 - Provincial Parliament
+    url: https://data.vulekamali.gov.za/dataset/a9044ce0-2c61-4125-9175-37319c32b583/resource/235a4e2a-449c-4cae-83e9-cd42f139db99/download/wc-vote-02-provincial-parliament.pdf
+  name: Western Cape EPRE 2019-20 - Vote 02 - Provincial Parliament
+  tables: null
 description: 'Western Cape department: Provincial Parliament budget data for the 2019-20
   financial year from National Treasury in partnership with IMALI YETHU.'
 economic_classification_by_programme:
