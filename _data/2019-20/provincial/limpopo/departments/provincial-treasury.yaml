@@ -477,8 +477,12 @@ contributed_datasets:
   url_path: /datasets/contributed/budget-analysis-for-advancing-socioeconomic-rights
 department_adjusted_budget: null
 department_budget:
-  document: null
-  name: Limpopo EPRE 2019-20 - Limpopo EPRE 2019-20 - Vote 05 - Provincial Treasury
+  document:
+    description: ''
+    format: PDF
+    name: Limpopo EPRE 2019-20 - Limpopo EPRE 2019-20 - Vote 05 - Provincial Treasury
+    url: https://data.vulekamali.gov.za/dataset/e7e5e20d-03aa-4bf2-99a8-fb324b1f53cb/resource/cd650bf9-d89b-49d5-9c79-abb7b02f8b7b/download/lim-vote-05-provincial-treasury.pdf
+  name: Limpopo EPRE 2019-20 - Vote 05 - Provincial Treasury
   tables: null
 description: 'Limpopo department: Provincial Treasury budget data for the 2019-20
   financial year from National Treasury in partnership with IMALI YETHU.'
