@@ -262,9 +262,6 @@ budget_actual_programmes:
       phase: Audit Outcome
     name: Public Works Infrastructure
 contributed_datasets:
-- contributor: Public Service Accountability Monitor
-  name: A People's Guide to the Adjusted Budget 2018/19
-  url_path: /datasets/contributed/people-s-guide-to-the-adjusted-budget-2018-19
 - contributor: International Budget Partnership
   name: How Does Civil Society Use Budget Information?
   url_path: /datasets/contributed/how-does-civil-society-use-budget-information
@@ -453,16 +450,33 @@ financial_years:
 government:
   name: Free State
   slug: free-state
-government_functions:
-- Economic affairs
-- General public services
-intro: "## Vision\n\nA prosperous Free State through facilitation of sustainable built\
-  \ infrastructure.\r\n\r\n\n\n## Mission\n\nCoordination, provision, promotion of\
-  \ built infrastructure and sound management of assets.\r\n\r\n\n\n## Core functions\n\
-  \n* Public Works and Infrastructure, maintenance and construction as well as property\
-  \ management including the provision of office accommodation, payment of municipal\
-  \ services and provisioning of security services;\r\n\r\n* Coordination and monitoring\
-  \ of the implementation of Expanded Public Works Programmes"
+government_functions: []
+intro: '## Vision
+
+
+  A prosperous Free State through facilitation of sustainable built infrastructure.
+
+
+
+
+  ## Mission
+
+
+  Coordination, provision, promotion of built infrastructure and sound management
+  of assets.
+
+
+
+
+  ## Core functions
+
+
+  * Public Works and Infrastructure, maintenance and construction as well as property
+  management including the provision of office accommodation, payment of municipal
+  services and provisioning of security services;
+
+
+  * Coordination and monitoring of the implementation of Expanded Public Works Programmes'
 is_vote_primary: true
 name: Public Works and Infrastructure
 programme_by_economic_classification:

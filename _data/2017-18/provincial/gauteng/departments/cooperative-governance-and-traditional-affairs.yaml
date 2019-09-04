@@ -312,21 +312,6 @@ budget_actual_programmes:
       phase: Audit Outcome
     name: Local Governance
 contributed_datasets:
-- contributor: Public Service Accountability Monitor
-  name: 'Budget Brief: Eastern Cape Department of Human Settlements 2016/17'
-  url_path: /datasets/contributed/budget-brief-eastern-cape-department-of-human-settlements-2016-17
-- contributor: Public Service Accountability Monitor
-  name: 'Budget Brief: Eastern Cape Department of Human Settlements 2014/15'
-  url_path: /datasets/contributed/budget-brief-eastern-cape-department-of-human-settlements-2014-15
-- contributor: Public Service Accountability Monitor
-  name: A People's Guide to the Adjusted Budget 2018/19
-  url_path: /datasets/contributed/people-s-guide-to-the-adjusted-budget-2018-19
-- contributor: Public Service Accountability Monitor
-  name: 'Budget Brief: Department of Human Settlements, 2016/17 and 2017/18'
-  url_path: /datasets/contributed/budget-brief-department-of-human-settlements
-- contributor: Studies in Poverty and Inequality Institute
-  name: Monitoring the right of access to adequate housing in South Africa
-  url_path: /datasets/contributed/monitoring-the-right-of-access-to-adequate-housing-in-south-africa
 - contributor: International Budget Partnership
   name: How Does Civil Society Use Budget Information?
   url_path: /datasets/contributed/how-does-civil-society-use-budget-information
@@ -515,24 +500,55 @@ financial_years:
 government:
   name: Gauteng
   slug: gauteng
-government_functions:
-- Human settlements and municipal infrastructure
-intro: "## Vision\n\nGlobally competitive Gauteng City Region,putting people first\
-  \ with service delivery and excellence and economic performance.\r\n\r\n\n\n## Mission\n\
-  \nTo facilitate and support cooperative governance across all spheres of government\
-  \ and associate institutions,and to promote the institution of traditional leadership\
-  \ Gauteng.\r\n\r\n\n\n## Core fubctions\n\nThe mandate of the Department highlights\
-  \ cooperative governance,and is essential for intergrated development.The department\
-  \ provides support to and monitors muncipalities and tribal authorities by:\r\n\r\
-  \n* Monitoring the muncipalities and traditional authoritiies' development and performance;\r\
-  \n\r\n* Supporting local authorities where there are capacity constraints;\r\n\r\
-  \n* Promoting capacity development in a systematic manner,toensure that municipalities\
-  \ are able to manage their own affairs\r\n* Advising,commenting on and approving\
-  \ INtergrated Development Plans (IDP's);\r\n\r\n* Providing key support services\
-  \ to municipalities in implementing te Municipal Finance Mnangement Act(No. 56 of\
-  \ 2003) (MFMA) and supporting Community Development Workders(CDW's);\r\n\r\n* Intervening\
-  \ whre local authorities fail to perform their designated functions and mandates;and\r\
-  \nStrengthening the functioning of Municipal Public Accounts Committees."
+government_functions: []
+intro: '## Vision
+
+
+  Globally competitive Gauteng City Region,putting people first with service delivery
+  and excellence and economic performance.
+
+
+
+
+  ## Mission
+
+
+  To facilitate and support cooperative governance across all spheres of government
+  and associate institutions,and to promote the institution of traditional leadership
+  Gauteng.
+
+
+
+
+  ## Core fubctions
+
+
+  The mandate of the Department highlights cooperative governance,and is essential
+  for intergrated development.The department provides support to and monitors muncipalities
+  and tribal authorities by:
+
+
+  * Monitoring the muncipalities and traditional authoritiies'' development and performance;
+
+
+  * Supporting local authorities where there are capacity constraints;
+
+
+  * Promoting capacity development in a systematic manner,toensure that municipalities
+  are able to manage their own affairs
+
+  * Advising,commenting on and approving INtergrated Development Plans (IDP''s);
+
+
+  * Providing key support services to municipalities in implementing te Municipal
+  Finance Mnangement Act(No. 56 of 2003) (MFMA) and supporting Community Development
+  Workders(CDW''s);
+
+
+  * Intervening whre local authorities fail to perform their designated functions
+  and mandates;and
+
+  Strengthening the functioning of Municipal Public Accounts Committees.'
 is_vote_primary: true
 name: Cooperative Governance and Traditional Affairs
 programme_by_economic_classification:

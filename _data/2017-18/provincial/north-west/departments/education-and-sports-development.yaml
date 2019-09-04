@@ -563,28 +563,6 @@ budget_actual_programmes:
       phase: Audit Outcome
     name: Public Ordinary School Education
 contributed_datasets:
-- contributor: Public Service Accountability Monitor
-  name: Education Budget Brief 2019/20
-  url_path: /datasets/contributed/education-budget-brief-2019-20
-- contributor: Public Service Accountability Monitor
-  name: 'Budget Brief: Eastern Cape Department of Education 2016/17'
-  url_path: /datasets/contributed/budget-brief-eastern-cape-department-of-education-2016-17
-- contributor: Public Service Accountability Monitor
-  name: 'Budget Brief: Eastern Cape Department of Education 2018/19'
-  url_path: /datasets/contributed/budget-brief-eastern-cape-department-of-education-2018-19
-- contributor: Centre for Child Law
-  name: 'Mud to bricks: A review of school infrastructure spending and delivery'
-  url_path: /datasets/contributed/mud-to-bricks-a-review-of-school-infrastructure-spending-and-delivery
-- contributor: Centre for Child Law
-  name: 'Budgets and Bricks: Progress with school infrastructure following the Rivonia
-    Primary School case'
-  url_path: /datasets/contributed/budgets-and-bricks-progress-with-school-infrastructure-following-the-rivonia-primary-school-case
-- contributor: Public Service Accountability Monitor
-  name: A People's Guide to the Adjusted Budget 2018/19
-  url_path: /datasets/contributed/people-s-guide-to-the-adjusted-budget-2018-19
-- contributor: International Budget Partnership
-  name: The transparency of public funding of Basic Education in South Africa
-  url_path: /datasets/contributed/the-transparency-of-public-funding-of-basic-education-in-south-africa
 - contributor: International Budget Partnership
   name: How Does Civil Society Use Budget Information?
   url_path: /datasets/contributed/how-does-civil-society-use-budget-information
@@ -882,47 +860,45 @@ financial_years:
 government:
   name: North West
   slug: north-west
-government_functions:
-- Basic education
-intro: "## Vision \n\nTowards Excellence in Education and Sport Development.\r\n\r\
-  \n\n\n## Mission\n\nWe provide quality basic education for high learner achievement\
+government_functions: []
+intro: "## Vision \n\nTowards Excellence in Education and Sport Development.\n\n\n\
+  \n## Mission\n\nWe provide quality basic education for high learner achievement\
   \ through educator excellence, as well as sport development, nation building and\
-  \ social cohesion.\r\n\r\n\n\n## Core functions\n\nThe core responsibility of the\
-  \ department is to provide quality education and training for all learners of school\
-  \ going age from Grade R to Grade 12, assisting them through proper guidance to\
-  \ achieve their full potential so that they can play a meaningful role in building\
-  \ the economy of the North West Province and the country at large.\r\n\r\nThe main\
-  \ core functions of the department are summarised below:\r\n\r\n* To provide education\
-  \ in public ordinary schools. This is the core function of the department which\
-  \ ensures that all children of school going age from ages of 7 to 17 have access\
-  \ to basic education and attain the highest possible educational outcomes. Learners\
-  \ and educators are provided with basic Learning and Teaching Support Materials\
-  \ (LTSM) in accordance with the curriculum needs;\r\n\r\nThe function also provides\
-  \ professional support to all educators in schools, and basic physical infrastructure\
-  \ in public ordinary schools, which includes the school building programme, sanitation\
-  \ and effective maintenance of existing structures. Learners are also provided with\
-  \ nutrition through the implementation of the School Nutrition Programme at all\
-  \ no-fee schools;\r\n\r\n* To support independent schools. This programme provides\
-  \ subsidies to learners in Independent schools in accordance with their needs as\
-  \ stipulated in the South African Schools Act;\r\n\r\n* To provide education in\
-  \ public special schools. The aim of this function is to provide public education\
-  \ in special schools in accordance with the South African Schools Act and White\
-  \ Paper 6 on Inclusive Education;\r\n\r\n* To provide early childhood education\
-  \ (ECD) in Grade R. This programme caters for pre-school education, for pre-Grade\
-  \ R and for Grade R in community Early Childhood Development centers. To improve\
-  \ the quality of education provided to all Grade R learners by gradually placing\
-  \ them in primary schools where they can be thoroughly prepared for the physical\
-  \ and academic demands of learning;\r\n\r\n* To provide human resource development\
+  \ social cohesion.\n\n\n\n## Core functions\n\nThe core responsibility of the department\
+  \ is to provide quality education and training for all learners of school going\
+  \ age from Grade R to Grade 12, assisting them through proper guidance to achieve\
+  \ their full potential so that they can play a meaningful role in building the economy\
+  \ of the North West Province and the country at large.\n\nThe main core functions\
+  \ of the department are summarised below:\n\n* To provide education in public ordinary\
+  \ schools. This is the core function of the department which ensures that all children\
+  \ of school going age from ages of 7 to 17 have access to basic education and attain\
+  \ the highest possible educational outcomes. Learners and educators are provided\
+  \ with basic Learning and Teaching Support Materials (LTSM) in accordance with the\
+  \ curriculum needs;\n\nThe function also provides professional support to all educators\
+  \ in schools, and basic physical infrastructure in public ordinary schools, which\
+  \ includes the school building programme, sanitation and effective maintenance of\
+  \ existing structures. Learners are also provided with nutrition through the implementation\
+  \ of the School Nutrition Programme at all no-fee schools;\n\n* To support independent\
+  \ schools. This programme provides subsidies to learners in Independent schools\
+  \ in accordance with their needs as stipulated in the South African Schools Act;\n\
+  \n* To provide education in public special schools. The aim of this function is\
+  \ to provide public education in special schools in accordance with the South African\
+  \ Schools Act and White Paper 6 on Inclusive Education;\n\n* To provide early childhood\
+  \ education (ECD) in Grade R. This programme caters for pre-school education, for\
+  \ pre-Grade R and for Grade R in community Early Childhood Development centers.\
+  \ To improve the quality of education provided to all Grade R learners by gradually\
+  \ placing them in primary schools where they can be thoroughly prepared for the\
+  \ physical and academic demands of learning;\n\n* To provide human resource development\
   \ for educators and non-educators. The purpose is to ensure well-managed and monitored\
-  \ continuous assessment (CASS) at school level to enhance teaching and learning;\r\
-  \n\r\n* Impact on social problems by extending HIV/AIDS awareness; and promoting\
-  \ a safe school environment. To implement life skills and HIV and AIDS programs\
-  \ and structures in schools in order to deal with the impact of HIV and AIDS in\
-  \ the school system;\r\n\r\n* Ensuring that Sport is accessible to all communities\
-  \ and to promote talent in the province.\r\n\r\n* Render Sport services to all citizens\
-  \ of the North West Province;\r\n\r\n* Ensure the existence of proper infrastructure\
-  \ and programmes for the development of talent and skills in Sport activities and\r\
-  \n\r\n* Promote social cohesion, moral regeneration and nation building"
+  \ continuous assessment (CASS) at school level to enhance teaching and learning;\n\
+  \n* Impact on social problems by extending HIV/AIDS awareness; and promoting a safe\
+  \ school environment. To implement life skills and HIV and AIDS programs and structures\
+  \ in schools in order to deal with the impact of HIV and AIDS in the school system;\n\
+  \n* Ensuring that Sport is accessible to all communities and to promote talent in\
+  \ the province.\n\n* Render Sport services to all citizens of the North West Province;\n\
+  \n* Ensure the existence of proper infrastructure and programmes for the development\
+  \ of talent and skills in Sport activities and\n\n* Promote social cohesion, moral\
+  \ regeneration and nation building"
 is_vote_primary: true
 name: Education and Sports Development
 programme_by_economic_classification:

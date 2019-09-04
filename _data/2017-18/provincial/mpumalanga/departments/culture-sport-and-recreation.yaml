@@ -312,28 +312,6 @@ budget_actual_programmes:
       phase: Audit Outcome
     name: Library and Archives Services
 contributed_datasets:
-- contributor: Public Service Accountability Monitor
-  name: Education Budget Brief 2019/20
-  url_path: /datasets/contributed/education-budget-brief-2019-20
-- contributor: Public Service Accountability Monitor
-  name: 'Budget Brief: Eastern Cape Department of Education 2016/17'
-  url_path: /datasets/contributed/budget-brief-eastern-cape-department-of-education-2016-17
-- contributor: Public Service Accountability Monitor
-  name: 'Budget Brief: Eastern Cape Department of Education 2018/19'
-  url_path: /datasets/contributed/budget-brief-eastern-cape-department-of-education-2018-19
-- contributor: Centre for Child Law
-  name: 'Mud to bricks: A review of school infrastructure spending and delivery'
-  url_path: /datasets/contributed/mud-to-bricks-a-review-of-school-infrastructure-spending-and-delivery
-- contributor: Centre for Child Law
-  name: 'Budgets and Bricks: Progress with school infrastructure following the Rivonia
-    Primary School case'
-  url_path: /datasets/contributed/budgets-and-bricks-progress-with-school-infrastructure-following-the-rivonia-primary-school-case
-- contributor: Public Service Accountability Monitor
-  name: A People's Guide to the Adjusted Budget 2018/19
-  url_path: /datasets/contributed/people-s-guide-to-the-adjusted-budget-2018-19
-- contributor: International Budget Partnership
-  name: The transparency of public funding of Basic Education in South Africa
-  url_path: /datasets/contributed/the-transparency-of-public-funding-of-basic-education-in-south-africa
 - contributor: International Budget Partnership
   name: How Does Civil Society Use Budget Information?
   url_path: /datasets/contributed/how-does-civil-society-use-budget-information
@@ -540,46 +518,117 @@ financial_years:
 government:
   name: Mpumalanga
   slug: mpumalanga
-government_functions:
-- Basic education
-intro: "## Vision\n\nA patriotic socially cohesive society\r\n\r\n\n\n## Mission\n\
-  \nTo promote social cohesion and nation building through culture, sport and information\
-  \ service\r\nto people of Mpumalanga\r\n\r\n\n\n## Core functions\n\nTo foster a\
-  \ new national identity, common citizenry and equal rights through conducting programmes\
-  \ such as multi-faith consultative forums, multilingualism awareness campaigns,\
-  \ workshops on national symbols to achieve improved knowledge and upheld\r\nvalues\
-  \ enshrined in RSA Constitutional values.\r\n\r\n* To promote a viable cultural\
-  \ industries and preserve the heritage through completion of\r\npre-construction\
-  \ of Cultural Hubs, Heritage sites and maintenance of Cultural Villages and\r\n\
-  museums.\r\n\r\n* To promote and develop arts and culture through craft exhibitions\
-  \ and capacity building\r\nprogramme, cultural tourism, museum displays and standardization\
-  \ of Geographic Names\r\nand features.\r\n\r\n* To promote the Province and the\
-  \ Country as a diverse socially cohesive nation through\r\nthe host of International\
-  \ events and tournaments.\r\n\r\n* To encourage active participation of community\
-  \ based structures through the support of arts culture, language, heritage structure\
-  \ museums structures that are in partnership with\r\ngovernment to promote culture.\r\
-  \n\r\nLibrary and Archive services\r\n\r\n* To increase access to information services\
-  \ through establishment and resourcing of new libraries facilities, monitor existing\
-  \ library facilities and repository record management.\r\n\r\n* To sustain access\
-  \ to information services through library and archival programmes such as provision\
-  \ of library materials (books etc.)\r\n\r\n* To increased and sustain job opportunities\
-  \ created through creative industry that account\r\nfor EPWP jobs created and cooperatives\r\
-  \n\r\n* To foster constitutional values though by promoting human rights, reconciliation,\
-  \ cultural diversity and nation building through the host of national commemorative\
-  \ / celebrative\r\ndays that contributes towards improved knowledge and upheld values\
-  \ enshrined in RSA Constitutional values.\r\n\r\nSport and Recreation\r\n* To develop\
-  \ Sport Infrastructure for excellence and sport development through the completion\
-  \ of pre-construction phase of High Altitude Training Center and Sport Combo Courts\r\
-  \n\r\n* Coordinate recreation events (indigenous games; golden games, big walk,\
-  \ recreation day, hub & club tournaments, cycling, fun runs, sport-specific events;\
-  \ sport for all projects, sport\r\nfor social change and development, modified sport,\
-  \ sport and recreation outreach, mass mobilization and rural sport events etc.)\
-  \ and school sport district tournaments that promote\r\nhealthy lifestyles\r\n\r\
-  \n* Provision of equipment and attire to schools, Hubs and clubs in an effort to\
-  \ enable participation in Sport and Recreation\r\n\r\n* To encourage active participation\
-  \ of community based structures through the support of sport institutions, sport\
-  \ academies and Sport Councils that are in partnership with government to promote\
-  \ Sport."
+government_functions: []
+intro: '## Vision
+
+
+  A patriotic socially cohesive society
+
+
+
+
+  ## Mission
+
+
+  To promote social cohesion and nation building through culture, sport and information
+  service
+
+  to people of Mpumalanga
+
+
+
+
+  ## Core functions
+
+
+  To foster a new national identity, common citizenry and equal rights through conducting
+  programmes such as multi-faith consultative forums, multilingualism awareness campaigns,
+  workshops on national symbols to achieve improved knowledge and upheld
+
+  values enshrined in RSA Constitutional values.
+
+
+  * To promote a viable cultural industries and preserve the heritage through completion
+  of
+
+  pre-construction of Cultural Hubs, Heritage sites and maintenance of Cultural Villages
+  and
+
+  museums.
+
+
+  * To promote and develop arts and culture through craft exhibitions and capacity
+  building
+
+  programme, cultural tourism, museum displays and standardization of Geographic Names
+
+  and features.
+
+
+  * To promote the Province and the Country as a diverse socially cohesive nation
+  through
+
+  the host of International events and tournaments.
+
+
+  * To encourage active participation of community based structures through the support
+  of arts culture, language, heritage structure museums structures that are in partnership
+  with
+
+  government to promote culture.
+
+
+  Library and Archive services
+
+
+  * To increase access to information services through establishment and resourcing
+  of new libraries facilities, monitor existing library facilities and repository
+  record management.
+
+
+  * To sustain access to information services through library and archival programmes
+  such as provision of library materials (books etc.)
+
+
+  * To increased and sustain job opportunities created through creative industry that
+  account
+
+  for EPWP jobs created and cooperatives
+
+
+  * To foster constitutional values though by promoting human rights, reconciliation,
+  cultural diversity and nation building through the host of national commemorative
+  / celebrative
+
+  days that contributes towards improved knowledge and upheld values enshrined in
+  RSA Constitutional values.
+
+
+  Sport and Recreation
+
+  * To develop Sport Infrastructure for excellence and sport development through the
+  completion of pre-construction phase of High Altitude Training Center and Sport
+  Combo Courts
+
+
+  * Coordinate recreation events (indigenous games; golden games, big walk, recreation
+  day, hub & club tournaments, cycling, fun runs, sport-specific events; sport for
+  all projects, sport
+
+  for social change and development, modified sport, sport and recreation outreach,
+  mass mobilization and rural sport events etc.) and school sport district tournaments
+  that promote
+
+  healthy lifestyles
+
+
+  * Provision of equipment and attire to schools, Hubs and clubs in an effort to enable
+  participation in Sport and Recreation
+
+
+  * To encourage active participation of community based structures through the support
+  of sport institutions, sport academies and Sport Councils that are in partnership
+  with government to promote Sport.'
 is_vote_primary: true
 name: Culture, Sport and Recreation
 programme_by_economic_classification:

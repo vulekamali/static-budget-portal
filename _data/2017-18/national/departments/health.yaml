@@ -480,18 +480,6 @@ budget_actual_programmes:
       phase: Audit Outcome
     name: Hospitals, Tertiary Health Services and Human Resource Development
 contributed_datasets:
-- contributor: Public Service Accountability Monitor
-  name: A People's Guide to the Adjusted Budget 2018/19
-  url_path: /datasets/contributed/people-s-guide-to-the-adjusted-budget-2018-19
-- contributor: CEGAA
-  name: CEGAA Occasional Paper on Government Health HIV and TB spending 2013/14-2020/21
-  url_path: /datasets/contributed/cegaa-occasional-paper-on-government-health-hiv-and-tb-spending-2013-14-2020-21
-- contributor: Public Service Accountability Monitor
-  name: 'Budget Brief: Eastern Cape Department of Health 2014/15'
-  url_path: /datasets/contributed/budget-brief-eastern-cape-department-of-health-2014-15
-- contributor: Public Service Accountability Monitor
-  name: "Emergency Medical Services in the Eastern Cape 2005 \u2013 2015"
-  url_path: /datasets/contributed/emergency-medical-services-in-the-eastern-cape-2005-2015
 - contributor: International Budget Partnership
   name: How Does Civil Society Use Budget Information?
   url_path: /datasets/contributed/how-does-civil-society-use-budget-information
@@ -763,9 +751,7 @@ financial_years:
 government:
   name: South Africa
   slug: south-africa
-government_functions:
-- Economic affairs
-- Health
+government_functions: []
 intro: "## Vote purpose\n\n_Provide leadership and coordination of health services\
   \ to promote the health\nof all people in South Africa through_ _an accessible,\
   \ caring and high quality\nhealth system, based on the primary health care approach._\n\

@@ -613,21 +613,6 @@ budget_actual_programmes:
       phase: Audit Outcome
     name: 2. Transport Infrastructure
 contributed_datasets:
-- contributor: Public Service Accountability Monitor
-  name: 'Budget Brief: Eastern Cape Department of Human Settlements 2016/17'
-  url_path: /datasets/contributed/budget-brief-eastern-cape-department-of-human-settlements-2016-17
-- contributor: Public Service Accountability Monitor
-  name: 'Budget Brief: Eastern Cape Department of Human Settlements 2014/15'
-  url_path: /datasets/contributed/budget-brief-eastern-cape-department-of-human-settlements-2014-15
-- contributor: Public Service Accountability Monitor
-  name: A People's Guide to the Adjusted Budget 2018/19
-  url_path: /datasets/contributed/people-s-guide-to-the-adjusted-budget-2018-19
-- contributor: Public Service Accountability Monitor
-  name: 'Budget Brief: Department of Human Settlements, 2016/17 and 2017/18'
-  url_path: /datasets/contributed/budget-brief-department-of-human-settlements
-- contributor: Studies in Poverty and Inequality Institute
-  name: Monitoring the right of access to adequate housing in South Africa
-  url_path: /datasets/contributed/monitoring-the-right-of-access-to-adequate-housing-in-south-africa
 - contributor: International Budget Partnership
   name: How Does Civil Society Use Budget Information?
   url_path: /datasets/contributed/how-does-civil-society-use-budget-information
@@ -882,30 +867,27 @@ financial_years:
 government:
   name: KwaZulu-Natal
   slug: kwazulu-natal
-government_functions:
-- Defence, public order and safety
-- Economic affairs
-- Human settlements and municipal infrastructure
-intro: "## Vision\n\nThe department\u2019s vision is: Prosperity through mobility.\r\
-  \n\r\n\n\n## Mission\n\nThe department\u2019s mission is: We will strive to provide\
+government_functions: []
+intro: "## Vision\n\nThe department\u2019s vision is: Prosperity through mobility.\n\
+  \n\n\n## Mission\n\nThe department\u2019s mission is: We will strive to provide\
   \ the public with mobility by an affordable transportation system that is safe,\
-  \ integrated, regulated and accessible to meet the developmental needs of our province.\r\
-  \n\r\n\n\n## Core functions\n\nTurning the vision of the department into reality\
-  \ can only be achieved by focusing the attention and energy of all employees and\
-  \ relevant stakeholders on the performance of its core functions, namely:\r\n\r\n\
-  Construct, maintain and repair the provincial road network\r\nThe department\u2019\
-  s mandate is to construct and maintain a balanced road network that meets the mobility\
-  \ needs of the citizens of KZN, and supports the national and provincial growth\
-  \ and development plans and strategies.\r\n\r\nPlan, regulate and provide an integrated\
-  \ transportation system\r\nThe department\u2019s mandate is to regulate public transport\
-  \ and ensure access to safe, efficient and affordable public transport. The department\
-  \ is further mandated to facilitate development in the freight transport industry\
-  \ and the minimisation of negative externalities resultant from the transport of\
-  \ freight.\r\n\r\nEstimates of Provincial Revenue and Expenditure\r\n\r\nManage\
-  \ road traffic\r\nThe department\u2019s mandate is to create a safe road environment,\
-  \ through the reduction of road accidents.\r\nThe main services rendered include\
-  \ road traffic enforcement, road safety education, the analysis and reengineering\
-  \ of hazardous locations and the registration and licensing of vehicles."
+  \ integrated, regulated and accessible to meet the developmental needs of our province.\n\
+  \n\n\n## Core functions\n\nTurning the vision of the department into reality can\
+  \ only be achieved by focusing the attention and energy of all employees and relevant\
+  \ stakeholders on the performance of its core functions, namely:\n\nConstruct, maintain\
+  \ and repair the provincial road network\nThe department\u2019s mandate is to construct\
+  \ and maintain a balanced road network that meets the mobility needs of the citizens\
+  \ of KZN, and supports the national and provincial growth and development plans\
+  \ and strategies.\n\nPlan, regulate and provide an integrated transportation system\n\
+  The department\u2019s mandate is to regulate public transport and ensure access\
+  \ to safe, efficient and affordable public transport. The department is further\
+  \ mandated to facilitate development in the freight transport industry and the minimisation\
+  \ of negative externalities resultant from the transport of freight.\n\nEstimates\
+  \ of Provincial Revenue and Expenditure\n\nManage road traffic\nThe department\u2019\
+  s mandate is to create a safe road environment, through the reduction of road accidents.\n\
+  The main services rendered include road traffic enforcement, road safety education,\
+  \ the analysis and reengineering of hazardous locations and the registration and\
+  \ licensing of vehicles."
 is_vote_primary: true
 name: Transport
 programme_by_economic_classification:

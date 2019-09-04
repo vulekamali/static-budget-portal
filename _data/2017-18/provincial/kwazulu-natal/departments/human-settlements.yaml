@@ -312,21 +312,6 @@ budget_actual_programmes:
       phase: Audit Outcome
     name: Housing Development
 contributed_datasets:
-- contributor: Public Service Accountability Monitor
-  name: 'Budget Brief: Eastern Cape Department of Human Settlements 2016/17'
-  url_path: /datasets/contributed/budget-brief-eastern-cape-department-of-human-settlements-2016-17
-- contributor: Public Service Accountability Monitor
-  name: 'Budget Brief: Eastern Cape Department of Human Settlements 2014/15'
-  url_path: /datasets/contributed/budget-brief-eastern-cape-department-of-human-settlements-2014-15
-- contributor: Public Service Accountability Monitor
-  name: A People's Guide to the Adjusted Budget 2018/19
-  url_path: /datasets/contributed/people-s-guide-to-the-adjusted-budget-2018-19
-- contributor: Public Service Accountability Monitor
-  name: 'Budget Brief: Department of Human Settlements, 2016/17 and 2017/18'
-  url_path: /datasets/contributed/budget-brief-department-of-human-settlements
-- contributor: Studies in Poverty and Inequality Institute
-  name: Monitoring the right of access to adequate housing in South Africa
-  url_path: /datasets/contributed/monitoring-the-right-of-access-to-adequate-housing-in-south-africa
 - contributor: International Budget Partnership
   name: How Does Civil Society Use Budget Information?
   url_path: /datasets/contributed/how-does-civil-society-use-budget-information
@@ -515,19 +500,44 @@ financial_years:
 government:
   name: KwaZulu-Natal
   slug: kwazulu-natal
-government_functions:
-- Human settlements and municipal infrastructure
-intro: "## Vision\n\nThe vision of the department is: Together breaking new ground\
-  \ to achieve decent, integrated and sustainable human settlement patterns.\r\n\r\
-  \n\n\n## Mission\n\nThe mission of the Department of Human Settlements (DOHS) is:\
-  \ To deliver suitably located housing opportunities and security of tenure over\
-  \ the next five years through collaborative partnership, legislative planning processes\
-  \ and empowerment of women in construction.\r\n\r\n\n\n## Core functions\n\nThe\
-  \ following core functions have been identified as key for the attainment of the\
-  \ strategic objectives:\r\n\r\n* To promote the provision of housing development.\r\
-  \n\r\n* To promote the provision of affordable housing and essential services.\r\
-  \n\r\n* To manage, control and maintain the immoveable assets of the department.\r\
-  \n\r\n* To administer and manage housing subsidies of targeted groups."
+government_functions: []
+intro: '## Vision
+
+
+  The vision of the department is: Together breaking new ground to achieve decent,
+  integrated and sustainable human settlement patterns.
+
+
+
+
+  ## Mission
+
+
+  The mission of the Department of Human Settlements (DOHS) is: To deliver suitably
+  located housing opportunities and security of tenure over the next five years through
+  collaborative partnership, legislative planning processes and empowerment of women
+  in construction.
+
+
+
+
+  ## Core functions
+
+
+  The following core functions have been identified as key for the attainment of the
+  strategic objectives:
+
+
+  * To promote the provision of housing development.
+
+
+  * To promote the provision of affordable housing and essential services.
+
+
+  * To manage, control and maintain the immoveable assets of the department.
+
+
+  * To administer and manage housing subsidies of targeted groups.'
 is_vote_primary: true
 name: Human Settlements
 programme_by_economic_classification:

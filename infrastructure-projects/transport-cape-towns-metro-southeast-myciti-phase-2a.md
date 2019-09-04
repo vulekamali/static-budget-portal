@@ -1,5 +1,5 @@
 ---
-data_key: /infrastructure-projects/transport-cape-towns-metro-southeast-myciti-phase-2a
+data_key: infrastructure-projects
 layout: infrastructure_project
 ---
 [//]: <> GENERATED FILE. Don't edit by hand.

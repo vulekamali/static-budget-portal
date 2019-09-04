@@ -512,18 +512,6 @@ budget_actual_programmes:
       phase: Audit Outcome
     name: District Health Services
 contributed_datasets:
-- contributor: Public Service Accountability Monitor
-  name: 'Budget Brief: Eastern Cape Department of Health 2014/15'
-  url_path: /datasets/contributed/budget-brief-eastern-cape-department-of-health-2014-15
-- contributor: Public Service Accountability Monitor
-  name: "Emergency Medical Services in the Eastern Cape 2005 \u2013 2015"
-  url_path: /datasets/contributed/emergency-medical-services-in-the-eastern-cape-2005-2015
-- contributor: Public Service Accountability Monitor
-  name: A People's Guide to the Adjusted Budget 2018/19
-  url_path: /datasets/contributed/people-s-guide-to-the-adjusted-budget-2018-19
-- contributor: CEGAA
-  name: CEGAA Occasional Paper on Government Health HIV and TB spending 2013/14-2020/21
-  url_path: /datasets/contributed/cegaa-occasional-paper-on-government-health-hiv-and-tb-spending-2013-14-2020-21
 - contributor: International Budget Partnership
   name: How Does Civil Society Use Budget Information?
   url_path: /datasets/contributed/how-does-civil-society-use-budget-information
@@ -844,17 +832,15 @@ financial_years:
 government:
   name: North West
   slug: north-west
-government_functions:
-- Health
-intro: "## Vision\n\nHealthy self-reliant communities in the North West Province\r\
-  \n\r\n\n\n## Mission\n\nTo render accessible, equitable and integrated quality health\
-  \ care services.\r\n\r\n\n\n## Core functions\n\nIn rendering such services, we\
-  \ shall observe values contained in the following:\r\n\r\n* Batho Pele Principles\r\
-  \n\r\n* Patients' Rights Charter\r\n\r\n* Victims\u2019 Rights Charter\r\n\r\n*\
-  \ Children\u2019s Rights Charter\r\n\r\n* Disability Rights Charter\r\n\r\n* Older\
-  \ Persons Pledge\r\n\r\n* Public Service Principles\r\n\r\n* Accountability and\
-  \ Transparency\r\n\r\n* Community participation\r\n\r\n* Excellence\r\n\r\n* Caring\r\
-  \n\r\n* Access, human dignity and respect"
+government_functions: []
+intro: "## Vision\n\nHealthy self-reliant communities in the North West Province\n\
+  \n\n\n## Mission\n\nTo render accessible, equitable and integrated quality health\
+  \ care services.\n\n\n\n## Core functions\n\nIn rendering such services, we shall\
+  \ observe values contained in the following:\n\n* Batho Pele Principles\n\n* Patients'\
+  \ Rights Charter\n\n* Victims\u2019 Rights Charter\n\n* Children\u2019s Rights Charter\n\
+  \n* Disability Rights Charter\n\n* Older Persons Pledge\n\n* Public Service Principles\n\
+  \n* Accountability and Transparency\n\n* Community participation\n\n* Excellence\n\
+  \n* Caring\n\n* Access, human dignity and respect"
 is_vote_primary: true
 name: Health
 programme_by_economic_classification:

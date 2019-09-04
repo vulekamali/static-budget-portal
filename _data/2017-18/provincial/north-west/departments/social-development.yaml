@@ -412,12 +412,6 @@ budget_actual_programmes:
       phase: Audit Outcome
     name: Children and Families
 contributed_datasets:
-- contributor: Heinrich Boell Foundation
-  name: 'Housing women who have experienced abuse: policy, funding & practice'
-  url_path: /datasets/contributed/housing-women-who-have-experienced-abuse-policy-funding-practice
-- contributor: Public Service Accountability Monitor
-  name: A People's Guide to the Adjusted Budget 2018/19
-  url_path: /datasets/contributed/people-s-guide-to-the-adjusted-budget-2018-19
 - contributor: International Budget Partnership
   name: How Does Civil Society Use Budget Information?
   url_path: /datasets/contributed/how-does-civil-society-use-budget-information
@@ -675,15 +669,33 @@ financial_years:
 government:
   name: North West
   slug: north-west
-government_functions:
-- Social protection
-intro: "## Vision\n\nA united, non-racial, non-sexist, democratic and prosperous society.\r\
-  \n\r\n\n\n## Mission\n\nTo create a caring and self-reliant society by building\
-  \ conscious and capable citizens through the provision of integrated social development\
-  \ services.\r\n\r\n\n\n## Core functions\n\nPromotion of Community Participation\r\
-  \n\r\nThe Department is committed to promote community participation through information\
-  \ dissemination, community planning, social mobilization, institution building and\
-  \ partnership development."
+government_functions: []
+intro: '## Vision
+
+
+  A united, non-racial, non-sexist, democratic and prosperous society.
+
+
+
+
+  ## Mission
+
+
+  To create a caring and self-reliant society by building conscious and capable citizens
+  through the provision of integrated social development services.
+
+
+
+
+  ## Core functions
+
+
+  Promotion of Community Participation
+
+
+  The Department is committed to promote community participation through information
+  dissemination, community planning, social mobilization, institution building and
+  partnership development.'
 is_vote_primary: true
 name: Social Development
 programme_by_economic_classification:

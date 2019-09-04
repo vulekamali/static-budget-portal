@@ -262,9 +262,6 @@ budget_actual_programmes:
       phase: Audit Outcome
     name: Public Works Infrastructure
 contributed_datasets:
-- contributor: Public Service Accountability Monitor
-  name: A People's Guide to the Adjusted Budget 2018/19
-  url_path: /datasets/contributed/people-s-guide-to-the-adjusted-budget-2018-19
 - contributor: International Budget Partnership
   name: How Does Civil Society Use Budget Information?
   url_path: /datasets/contributed/how-does-civil-society-use-budget-information
@@ -441,19 +438,48 @@ financial_years:
 government:
   name: Gauteng
   slug: gauteng
-government_functions:
-- Economic affairs
-- General public services
-intro: "## Vision\n\nTo be a leading sustainable infrastructure provider and facilitator\
-  \ that positions Gauteng as a globally competitive city region with inclusive economic\
-  \ growth and decent work for all.\r\n\r\n\n\n## Mission\n\nTo contribute towards\
-  \ radcal transformation,modernization and re-industrialisation of Gauteng by accelerating\
-  \ integrated service delivery,maintenance and manangement of public infrastructure\
-  \ and deploying build environment professionals while encouraging the active participation\
-  \ of an empowered citizenry.\r\n\r\n\r\n\n\n## Core functions\n\n* Implementation\
-  \ of social infrastructure;\r\n\r\n* Skills development;\r\n\r\n* Community participation;\r\
-  \n\r\n* Capital project management;\r\n\r\n* Maintenance services;and\r\n\r\n* Provincial\
-  \ property management;"
+government_functions: []
+intro: '## Vision
+
+
+  To be a leading sustainable infrastructure provider and facilitator that positions
+  Gauteng as a globally competitive city region with inclusive economic growth and
+  decent work for all.
+
+
+
+
+  ## Mission
+
+
+  To contribute towards radcal transformation,modernization and re-industrialisation
+  of Gauteng by accelerating integrated service delivery,maintenance and manangement
+  of public infrastructure and deploying build environment professionals while encouraging
+  the active participation of an empowered citizenry.
+
+
+
+
+
+  ## Core functions
+
+
+  * Implementation of social infrastructure;
+
+
+  * Skills development;
+
+
+  * Community participation;
+
+
+  * Capital project management;
+
+
+  * Maintenance services;and
+
+
+  * Provincial property management;'
 is_vote_primary: true
 name: Infrastructure Development
 programme_by_economic_classification:

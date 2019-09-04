@@ -512,18 +512,6 @@ budget_actual_programmes:
       phase: Audit Outcome
     name: District Health Services
 contributed_datasets:
-- contributor: Public Service Accountability Monitor
-  name: 'Budget Brief: Eastern Cape Department of Health 2014/15'
-  url_path: /datasets/contributed/budget-brief-eastern-cape-department-of-health-2014-15
-- contributor: Public Service Accountability Monitor
-  name: "Emergency Medical Services in the Eastern Cape 2005 \u2013 2015"
-  url_path: /datasets/contributed/emergency-medical-services-in-the-eastern-cape-2005-2015
-- contributor: Public Service Accountability Monitor
-  name: A People's Guide to the Adjusted Budget 2018/19
-  url_path: /datasets/contributed/people-s-guide-to-the-adjusted-budget-2018-19
-- contributor: CEGAA
-  name: CEGAA Occasional Paper on Government Health HIV and TB spending 2013/14-2020/21
-  url_path: /datasets/contributed/cegaa-occasional-paper-on-government-health-hiv-and-tb-spending-2013-14-2020-21
 - contributor: International Budget Partnership
   name: How Does Civil Society Use Budget Information?
   url_path: /datasets/contributed/how-does-civil-society-use-budget-information
@@ -838,36 +826,35 @@ financial_years:
 government:
   name: Mpumalanga
   slug: mpumalanga
-government_functions:
-- Health
-intro: "## Vision\n\n\u201CA Healthy Developed Society\u201D\r\n\r\n\n\n## Mission\n\
-  \nThe Mpumalanga Department of Health is committed to improve the quality of health\
-  \ and wellbeing\r\nof all people of Mpumalanga by providing needs based, people\
-  \ centered, equitable\r\nhealth care delivery system through an integrated network\
-  \ of health care services provided by\r\na cadre of dedicated and well skilled health\
-  \ workers.\r\n\r\n\n\n## Core functions\n\nThe Department of Health is mandated\
-  \ to provide quality health services that are preventative,promotive, curative and\
-  \ rehabilitative to the people of Mpumalanga. The departmental budget\r\nvote has\
-  \ eight main divisions which consist of Administration, District Health Services,Emergency\
-  \ Medical Services, Provincial Hospital Services, Central Hospitals, Health sciences\r\
-  \nand training, Health Care Support and Health Facilities Management.\r\n\r\nDistrict\
-  \ Health Services is bedrock of service functionality where comprehensive primary\
-  \ health care and district hospital services are engineered to the community using\
-  \ the district\r\nhealth system model. The department provides primary health care\
-  \ package which includes amongst others IMCI, these services are rendered to communities\
-  \ through clinics, CHC,\r\nHome-based care, mobile services, ward-based outreach\
-  \ teams and Integrated School Health Services in partnership with Non Profit Organisations\
-  \ (NPOs)\r\nEmergency Medical Services provides Pre-hospital medical services, Inter-hospital\
-  \ transfers, Rescue and Planned Patient Transport to all inhabitants of Mpumalanga\
-  \ Province within the\r\nnational norms of 15 minutes in urban areas and 40 minutes\
-  \ in rural areas.\r\n\r\nProvincial Hospital Services renders secondary health services\
-  \ in regional hospitals and provides TB in specialized hospital services. Central\
-  \ Hospitals render secondary and tertiary\r\nhealth care services and provides a\
-  \ platform for training of health care workers including research.\r\n\r\nHealth\
-  \ Care Support Service ensures the availability of pharmaceuticals and other ancillaries,\
-  \ rendering credible forensic health care which contributes meaningfully to the\
-  \ criminal justice\r\nsystem, the availability, use and upkeep of the appropriate\
-  \ health technologies and the provision of laundry services"
+government_functions: []
+intro: "## Vision\n\n\u201CA Healthy Developed Society\u201D\n\n\n\n## Mission\n\n\
+  The Mpumalanga Department of Health is committed to improve the quality of health\
+  \ and wellbeing\nof all people of Mpumalanga by providing needs based, people centered,\
+  \ equitable\nhealth care delivery system through an integrated network of health\
+  \ care services provided by\na cadre of dedicated and well skilled health workers.\n\
+  \n\n\n## Core functions\n\nThe Department of Health is mandated to provide quality\
+  \ health services that are preventative,promotive, curative and rehabilitative to\
+  \ the people of Mpumalanga. The departmental budget\nvote has eight main divisions\
+  \ which consist of Administration, District Health Services,Emergency Medical Services,\
+  \ Provincial Hospital Services, Central Hospitals, Health sciences\nand training,\
+  \ Health Care Support and Health Facilities Management.\n\nDistrict Health Services\
+  \ is bedrock of service functionality where comprehensive primary health care and\
+  \ district hospital services are engineered to the community using the district\n\
+  health system model. The department provides primary health care package which includes\
+  \ amongst others IMCI, these services are rendered to communities through clinics,\
+  \ CHC,\nHome-based care, mobile services, ward-based outreach teams and Integrated\
+  \ School Health Services in partnership with Non Profit Organisations (NPOs)\nEmergency\
+  \ Medical Services provides Pre-hospital medical services, Inter-hospital transfers,\
+  \ Rescue and Planned Patient Transport to all inhabitants of Mpumalanga Province\
+  \ within the\nnational norms of 15 minutes in urban areas and 40 minutes in rural\
+  \ areas.\n\nProvincial Hospital Services renders secondary health services in regional\
+  \ hospitals and provides TB in specialized hospital services. Central Hospitals\
+  \ render secondary and tertiary\nhealth care services and provides a platform for\
+  \ training of health care workers including research.\n\nHealth Care Support Service\
+  \ ensures the availability of pharmaceuticals and other ancillaries, rendering credible\
+  \ forensic health care which contributes meaningfully to the criminal justice\n\
+  system, the availability, use and upkeep of the appropriate health technologies\
+  \ and the provision of laundry services"
 is_vote_primary: true
 name: Health
 programme_by_economic_classification:

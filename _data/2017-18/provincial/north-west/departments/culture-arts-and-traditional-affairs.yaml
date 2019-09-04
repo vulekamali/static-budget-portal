@@ -362,40 +362,6 @@ budget_actual_programmes:
       phase: Audit Outcome
     name: Library and Archive Services
 contributed_datasets:
-- contributor: Public Service Accountability Monitor
-  name: Education Budget Brief 2019/20
-  url_path: /datasets/contributed/education-budget-brief-2019-20
-- contributor: Public Service Accountability Monitor
-  name: 'Budget Brief: Eastern Cape Department of Human Settlements 2016/17'
-  url_path: /datasets/contributed/budget-brief-eastern-cape-department-of-human-settlements-2016-17
-- contributor: Public Service Accountability Monitor
-  name: 'Budget Brief: Eastern Cape Department of Human Settlements 2014/15'
-  url_path: /datasets/contributed/budget-brief-eastern-cape-department-of-human-settlements-2014-15
-- contributor: Public Service Accountability Monitor
-  name: 'Budget Brief: Eastern Cape Department of Education 2016/17'
-  url_path: /datasets/contributed/budget-brief-eastern-cape-department-of-education-2016-17
-- contributor: Public Service Accountability Monitor
-  name: 'Budget Brief: Eastern Cape Department of Education 2018/19'
-  url_path: /datasets/contributed/budget-brief-eastern-cape-department-of-education-2018-19
-- contributor: Centre for Child Law
-  name: 'Mud to bricks: A review of school infrastructure spending and delivery'
-  url_path: /datasets/contributed/mud-to-bricks-a-review-of-school-infrastructure-spending-and-delivery
-- contributor: Centre for Child Law
-  name: 'Budgets and Bricks: Progress with school infrastructure following the Rivonia
-    Primary School case'
-  url_path: /datasets/contributed/budgets-and-bricks-progress-with-school-infrastructure-following-the-rivonia-primary-school-case
-- contributor: Public Service Accountability Monitor
-  name: A People's Guide to the Adjusted Budget 2018/19
-  url_path: /datasets/contributed/people-s-guide-to-the-adjusted-budget-2018-19
-- contributor: International Budget Partnership
-  name: The transparency of public funding of Basic Education in South Africa
-  url_path: /datasets/contributed/the-transparency-of-public-funding-of-basic-education-in-south-africa
-- contributor: Public Service Accountability Monitor
-  name: 'Budget Brief: Department of Human Settlements, 2016/17 and 2017/18'
-  url_path: /datasets/contributed/budget-brief-department-of-human-settlements
-- contributor: Studies in Poverty and Inequality Institute
-  name: Monitoring the right of access to adequate housing in South Africa
-  url_path: /datasets/contributed/monitoring-the-right-of-access-to-adequate-housing-in-south-africa
 - contributor: International Budget Partnership
   name: How Does Civil Society Use Budget Information?
   url_path: /datasets/contributed/how-does-civil-society-use-budget-information
@@ -636,27 +602,51 @@ financial_years:
 government:
   name: North West
   slug: north-west
-government_functions:
-- Basic education
-- Human settlements and municipal infrastructure
-intro: "## Vision\n\nA united, non-racial, non-sexist, democratic and prosperous Province\
-  \ of Bokone Bophirima as expressed in the Constitution of the Republic of South\
-  \ Africa and National Development Plan.\r\n\r\n\n\n## Mission\n\nTo enhance job\
-  \ creation by preserving, protecting and developing arts, culture, heritage and\
-  \ the institutions of traditional leadership to Rebrand, Reposition and Renew the\
-  \ Province of Bokone Bophirima through the five concretes.\r\n\r\n\n\n## Core functions\n\
-  \n* To render an effective, efficient, equitable corporate and management support\
-  \ service to internal and external stakeholders to ensure good, clean and value\
-  \ driven corporate governance through Human Resource, Finance, Communication and\
-  \ Strategic Management services.\r\n\r\n* The promotion, development and transformation\
-  \ of all cultural activities in Bokone Bophirima, in order to contribute towards\
-  \ nation-building, good governance, social and human capital development, and sustainable\
-  \ economic growth and opportunities\r\n\r\n* Provide library, information and archive\
-  \ services that will contribute to: Nation Building, Good governance, human capital\
-  \ development, and sustainable economic growth and opportunities\r\n\r\n* To provide\
-  \ support to the institutions of traditional leadership through workshops and grants\
-  \ so as to contribute to a transformed, functional, accountable and sustainable\
-  \ institution of traditional leadership\r\n"
+government_functions: []
+intro: '## Vision
+
+
+  A united, non-racial, non-sexist, democratic and prosperous Province of Bokone Bophirima
+  as expressed in the Constitution of the Republic of South Africa and National Development
+  Plan.
+
+
+
+
+  ## Mission
+
+
+  To enhance job creation by preserving, protecting and developing arts, culture,
+  heritage and the institutions of traditional leadership to Rebrand, Reposition and
+  Renew the Province of Bokone Bophirima through the five concretes.
+
+
+
+
+  ## Core functions
+
+
+  * To render an effective, efficient, equitable corporate and management support
+  service to internal and external stakeholders to ensure good, clean and value driven
+  corporate governance through Human Resource, Finance, Communication and Strategic
+  Management services.
+
+
+  * The promotion, development and transformation of all cultural activities in Bokone
+  Bophirima, in order to contribute towards nation-building, good governance, social
+  and human capital development, and sustainable economic growth and opportunities
+
+
+  * Provide library, information and archive services that will contribute to: Nation
+  Building, Good governance, human capital development, and sustainable economic growth
+  and opportunities
+
+
+  * To provide support to the institutions of traditional leadership through workshops
+  and grants so as to contribute to a transformed, functional, accountable and sustainable
+  institution of traditional leadership
+
+  '
 is_vote_primary: true
 name: Culture, Arts and Traditional Affairs
 programme_by_economic_classification:

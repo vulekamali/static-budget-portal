@@ -263,9 +263,6 @@ budget_actual_programmes:
       phase: Audit Outcome
     name: Administration
 contributed_datasets:
-- contributor: Public Service Accountability Monitor
-  name: A People's Guide to the Adjusted Budget 2018/19
-  url_path: /datasets/contributed/people-s-guide-to-the-adjusted-budget-2018-19
 - contributor: International Budget Partnership
   name: How Does Civil Society Use Budget Information?
   url_path: /datasets/contributed/how-does-civil-society-use-budget-information
@@ -415,18 +412,47 @@ financial_years:
 government:
   name: Limpopo
   slug: limpopo
-government_functions:
-- Defence, public order and safety
-intro: "## Vision\n\nA safe and secure Limpopo\r\n\r\n\n\n## Mission\n\nTo intensify\
-  \ the fight against crime and corruption through an integrated approach, partnerships\
-  \ and effective oversight on the South African Police Services\r\n\r\n\n\n## Core\
-  \ functions\n\nThe main services of the Department are,\r\n\r\n* Co-ordinating provincial\
-  \ government departmental initiatives related to the prevention of crime;\r\n\r\n\
-  * Co-ordinating local government crime prevention initiatives in the Province;\r\
-  \n\r\n* Co-ordinating community participation in crime prevention and policing initiatives;\r\
-  \n\r\n* Improving relations between communities and the police;\r\n\r\n* Conduct\
-  \ research on safety and security matters; and\r\n\r\n* Raise public awareness and\
-  \ enhance public education on safety and security."
+government_functions: []
+intro: '## Vision
+
+
+  A safe and secure Limpopo
+
+
+
+
+  ## Mission
+
+
+  To intensify the fight against crime and corruption through an integrated approach,
+  partnerships and effective oversight on the South African Police Services
+
+
+
+
+  ## Core functions
+
+
+  The main services of the Department are,
+
+
+  * Co-ordinating provincial government departmental initiatives related to the prevention
+  of crime;
+
+
+  * Co-ordinating local government crime prevention initiatives in the Province;
+
+
+  * Co-ordinating community participation in crime prevention and policing initiatives;
+
+
+  * Improving relations between communities and the police;
+
+
+  * Conduct research on safety and security matters; and
+
+
+  * Raise public awareness and enhance public education on safety and security.'
 is_vote_primary: true
 name: Safety, Security and Liaison
 programme_by_economic_classification:

@@ -362,21 +362,6 @@ budget_actual_programmes:
       phase: Audit Outcome
     name: Transport Infrastructure
 contributed_datasets:
-- contributor: Public Service Accountability Monitor
-  name: 'Budget Brief: Eastern Cape Department of Human Settlements 2016/17'
-  url_path: /datasets/contributed/budget-brief-eastern-cape-department-of-human-settlements-2016-17
-- contributor: Public Service Accountability Monitor
-  name: 'Budget Brief: Eastern Cape Department of Human Settlements 2014/15'
-  url_path: /datasets/contributed/budget-brief-eastern-cape-department-of-human-settlements-2014-15
-- contributor: Public Service Accountability Monitor
-  name: A People's Guide to the Adjusted Budget 2018/19
-  url_path: /datasets/contributed/people-s-guide-to-the-adjusted-budget-2018-19
-- contributor: Public Service Accountability Monitor
-  name: 'Budget Brief: Department of Human Settlements, 2016/17 and 2017/18'
-  url_path: /datasets/contributed/budget-brief-department-of-human-settlements
-- contributor: Studies in Poverty and Inequality Institute
-  name: Monitoring the right of access to adequate housing in South Africa
-  url_path: /datasets/contributed/monitoring-the-right-of-access-to-adequate-housing-in-south-africa
 - contributor: International Budget Partnership
   name: How Does Civil Society Use Budget Information?
   url_path: /datasets/contributed/how-does-civil-society-use-budget-information
@@ -612,27 +597,70 @@ financial_years:
 government:
   name: Gauteng
   slug: gauteng
-government_functions:
-- Defence, public order and safety
-- Economic affairs
-- Human settlements and municipal infrastructure
-intro: "## Vision\r\n\r\nA modern integrated,efficient and sustainable transport and\
-  \ roadsinfrastructure system in Gauteng.\r\n\r\n\r\n\r\n## Mission\r\n\r\nTo facilitate\
-  \ and provide an integrated transport system that:\r\n* Is reliable,accessible,safe\
-  \ and affordable;\r\n\r\n\r\n* Pormotes socio-economic development in Gauteng;\r\
-  \n*Is environmentally sustainable;and\r\n\r\n* Supports industrialised and radical\
-  \ socio-economic transformation\r\n\r\n\r\n\r\n## Core functions\r\n\r\n* To contribute\
-  \ to the achevement of departments outcomes;\r\n\r\n* To develop and mantain a sustainable\
-  \ road infrastructure that contributes to increased economic growth and enhances\
-  \ quality of life i Gauteng;\r\n\r\n* To develop a policy framework in support of\
-  \ a modern,integrated and intelligent transport system;\r\n\r\n* To contribute to\
-  \ the regulation of the transport-related carbon emissions;\r\n\r\n* Throught green\
-  \ transport,to contribute to environmental protection;\r\n\r\n*To provide public\
-  \ transport infrastructure that promotes integration and onter-modility of public\
-  \ transport;\r\n\r\n* To regulate public transport operations through issuing of\
-  \ operating licenses and permits;\r\n\r\n* To regulate public transport operations\
-  \ through the registration of associations;\r\n\r\n* To issue valid driver's licenses;and\r\
-  \n\r\n* To issue valid vehicle licenses"
+government_functions: []
+intro: '## Vision
+
+
+  A modern integrated,efficient and sustainable transport and roadsinfrastructure
+  system in Gauteng.
+
+
+
+
+  ## Mission
+
+
+  To facilitate and provide an integrated transport system that:
+
+  * Is reliable,accessible,safe and affordable;
+
+
+
+  * Pormotes socio-economic development in Gauteng;
+
+  *Is environmentally sustainable;and
+
+
+  * Supports industrialised and radical socio-economic transformation
+
+
+
+
+  ## Core functions
+
+
+  * To contribute to the achevement of departments outcomes;
+
+
+  * To develop and mantain a sustainable road infrastructure that contributes to increased
+  economic growth and enhances quality of life i Gauteng;
+
+
+  * To develop a policy framework in support of a modern,integrated and intelligent
+  transport system;
+
+
+  * To contribute to the regulation of the transport-related carbon emissions;
+
+
+  * Throught green transport,to contribute to environmental protection;
+
+
+  *To provide public transport infrastructure that promotes integration and onter-modility
+  of public transport;
+
+
+  * To regulate public transport operations through issuing of operating licenses
+  and permits;
+
+
+  * To regulate public transport operations through the registration of associations;
+
+
+  * To issue valid driver''s licenses;and
+
+
+  * To issue valid vehicle licenses'
 is_vote_primary: true
 name: Roads and Transport
 programme_by_economic_classification:

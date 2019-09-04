@@ -312,28 +312,6 @@ budget_actual_programmes:
       phase: Audit Outcome
     name: Library and Archives Services
 contributed_datasets:
-- contributor: Public Service Accountability Monitor
-  name: Education Budget Brief 2019/20
-  url_path: /datasets/contributed/education-budget-brief-2019-20
-- contributor: Public Service Accountability Monitor
-  name: 'Budget Brief: Eastern Cape Department of Education 2016/17'
-  url_path: /datasets/contributed/budget-brief-eastern-cape-department-of-education-2016-17
-- contributor: Public Service Accountability Monitor
-  name: 'Budget Brief: Eastern Cape Department of Education 2018/19'
-  url_path: /datasets/contributed/budget-brief-eastern-cape-department-of-education-2018-19
-- contributor: Centre for Child Law
-  name: 'Mud to bricks: A review of school infrastructure spending and delivery'
-  url_path: /datasets/contributed/mud-to-bricks-a-review-of-school-infrastructure-spending-and-delivery
-- contributor: Centre for Child Law
-  name: 'Budgets and Bricks: Progress with school infrastructure following the Rivonia
-    Primary School case'
-  url_path: /datasets/contributed/budgets-and-bricks-progress-with-school-infrastructure-following-the-rivonia-primary-school-case
-- contributor: Public Service Accountability Monitor
-  name: A People's Guide to the Adjusted Budget 2018/19
-  url_path: /datasets/contributed/people-s-guide-to-the-adjusted-budget-2018-19
-- contributor: International Budget Partnership
-  name: The transparency of public funding of Basic Education in South Africa
-  url_path: /datasets/contributed/the-transparency-of-public-funding-of-basic-education-in-south-africa
 - contributor: International Budget Partnership
   name: How Does Civil Society Use Budget Information?
   url_path: /datasets/contributed/how-does-civil-society-use-budget-information
@@ -579,34 +557,32 @@ financial_years:
 government:
   name: Northern Cape
   slug: northern-cape
-government_functions:
-- Basic education
+government_functions: []
 intro: "## Vision\n\nA department committed to creating a prosperous and empowered\
-  \ province united in the advancement of its sport, heritage, arts and culture.\r\
-  \n\r\n\n\n## Mission\n\nTo serve all the people of the Northern Cape by promoting,\
-  \ protecting and developing sport and the diverse cultures of our province and at\
-  \ the same time are the catalysts in the development programmes, economic empowerment\
-  \ and other activities, thereby entrenching national building and social cohesion.\r\
-  \n\r\n\n\n## Core functions\n\nTo promote, develop and transform arts and culture,\
-  \ museums heritage, language, library, information and archives services in order\
-  \ to contribute to sustainable economic growth and opportunities, nation building,\
-  \ good governance, social cohesion and human capital development.\r\n\r\nTo improve\
-  \ the quality of life of all the people of the Northern Cape through the development,\
-  \ transformation and promotion of sustainable sport and recreation programmes that\
-  \ will lead to increased participation and global competitiveness in sport.\r\n\r\
-  \nMain Services\r\n\r\n* To promote respect for cultural diversity and the advancement\
-  \ of artistic disciplines into viable industries.\r\n\r\n* To accelerate the transformation\
-  \ of the country\u2019s heritage landscape by establishing and managing museum and\
-  \ heritage services.\r\n\r\n* To promote multilingualism, redress past linguistic\
-  \ imbalances and develop the previously marginalised languages.\r\n\r\n* To provide\
-  \ library and information services.\r\n\r\n* To render archival and records management\
-  \ services.\r\n\r\n* To establish and support transformed institutional structures\
-  \ and identify, develop and nurture athletes to increase participation and excellence\
-  \ in sport.\r\n\r\n* To provide sustainable mass participation opportunities across\
-  \ the age spectrum to promote physically active lifestyles.\r\n\r\n* To ensure active\
-  \ participation, development and training of all learners and educators and the\
-  \ identification of talent in quality and sustainable sport and recreation programmes.\r\
-  \n"
+  \ province united in the advancement of its sport, heritage, arts and culture.\n\
+  \n\n\n## Mission\n\nTo serve all the people of the Northern Cape by promoting, protecting\
+  \ and developing sport and the diverse cultures of our province and at the same\
+  \ time are the catalysts in the development programmes, economic empowerment and\
+  \ other activities, thereby entrenching national building and social cohesion.\n\
+  \n\n\n## Core functions\n\nTo promote, develop and transform arts and culture, museums\
+  \ heritage, language, library, information and archives services in order to contribute\
+  \ to sustainable economic growth and opportunities, nation building, good governance,\
+  \ social cohesion and human capital development.\n\nTo improve the quality of life\
+  \ of all the people of the Northern Cape through the development, transformation\
+  \ and promotion of sustainable sport and recreation programmes that will lead to\
+  \ increased participation and global competitiveness in sport.\n\nMain Services\n\
+  \n* To promote respect for cultural diversity and the advancement of artistic disciplines\
+  \ into viable industries.\n\n* To accelerate the transformation of the country\u2019\
+  s heritage landscape by establishing and managing museum and heritage services.\n\
+  \n* To promote multilingualism, redress past linguistic imbalances and develop the\
+  \ previously marginalised languages.\n\n* To provide library and information services.\n\
+  \n* To render archival and records management services.\n\n* To establish and support\
+  \ transformed institutional structures and identify, develop and nurture athletes\
+  \ to increase participation and excellence in sport.\n\n* To provide sustainable\
+  \ mass participation opportunities across the age spectrum to promote physically\
+  \ active lifestyles.\n\n* To ensure active participation, development and training\
+  \ of all learners and educators and the identification of talent in quality and\
+  \ sustainable sport and recreation programmes.\n"
 is_vote_primary: true
 name: Sport, Arts and Culture
 programme_by_economic_classification:

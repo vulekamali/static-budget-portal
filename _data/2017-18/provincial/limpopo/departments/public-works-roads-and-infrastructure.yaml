@@ -312,21 +312,6 @@ budget_actual_programmes:
       phase: Audit Outcome
     name: Roads Infrastructure
 contributed_datasets:
-- contributor: Public Service Accountability Monitor
-  name: 'Budget Brief: Eastern Cape Department of Human Settlements 2016/17'
-  url_path: /datasets/contributed/budget-brief-eastern-cape-department-of-human-settlements-2016-17
-- contributor: Public Service Accountability Monitor
-  name: 'Budget Brief: Eastern Cape Department of Human Settlements 2014/15'
-  url_path: /datasets/contributed/budget-brief-eastern-cape-department-of-human-settlements-2014-15
-- contributor: Public Service Accountability Monitor
-  name: A People's Guide to the Adjusted Budget 2018/19
-  url_path: /datasets/contributed/people-s-guide-to-the-adjusted-budget-2018-19
-- contributor: Public Service Accountability Monitor
-  name: 'Budget Brief: Department of Human Settlements, 2016/17 and 2017/18'
-  url_path: /datasets/contributed/budget-brief-department-of-human-settlements
-- contributor: Studies in Poverty and Inequality Institute
-  name: Monitoring the right of access to adequate housing in South Africa
-  url_path: /datasets/contributed/monitoring-the-right-of-access-to-adequate-housing-in-south-africa
 - contributor: International Budget Partnership
   name: How Does Civil Society Use Budget Information?
   url_path: /datasets/contributed/how-does-civil-society-use-budget-information
@@ -537,19 +522,42 @@ financial_years:
 government:
   name: Limpopo
   slug: limpopo
-government_functions:
-- Economic affairs
-- General public services
-- Human settlements and municipal infrastructure
-intro: "## Vision\n\nA leader in the provision and management of provincial land,\
-  \ buildings and roads infrastructure.\r\n\r\n\n\n## Mission\n\nOptimal utilization\
-  \ of resources in the provision and management of sustainable social and economic\
-  \ infrastructure including implementation and coordination of Expanded Public Works\
-  \ Programme.\r\n\r\n\n\n## Core functions\n\n* Facilitate and co-ordinate the provision\
-  \ of provincial government building infrastructure;\r\n\r\n* Manage Provincial government\
-  \ land and buildings;\r\n\r\n* Coordinate and implement the Expanded Public Works\
-  \ Programme and\r\n\r\n* Comply with the requirements of Government Immovable Asset\
-  \ Management Act (GIAMA).\r\n\r\n* Plan, Design, upgrade and maintain roads infrastructure."
+government_functions: []
+intro: '## Vision
+
+
+  A leader in the provision and management of provincial land, buildings and roads
+  infrastructure.
+
+
+
+
+  ## Mission
+
+
+  Optimal utilization of resources in the provision and management of sustainable
+  social and economic infrastructure including implementation and coordination of
+  Expanded Public Works Programme.
+
+
+
+
+  ## Core functions
+
+
+  * Facilitate and co-ordinate the provision of provincial government building infrastructure;
+
+
+  * Manage Provincial government land and buildings;
+
+
+  * Coordinate and implement the Expanded Public Works Programme and
+
+
+  * Comply with the requirements of Government Immovable Asset Management Act (GIAMA).
+
+
+  * Plan, Design, upgrade and maintain roads infrastructure.'
 is_vote_primary: true
 name: Public Works, Roads and Infrastructure
 programme_by_economic_classification:

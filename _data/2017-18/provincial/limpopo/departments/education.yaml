@@ -963,28 +963,6 @@ budget_actual_programmes:
       phase: Audit Outcome
     name: PUBLIC ORDINARY SCHOOL EDUCATION
 contributed_datasets:
-- contributor: Public Service Accountability Monitor
-  name: Education Budget Brief 2019/20
-  url_path: /datasets/contributed/education-budget-brief-2019-20
-- contributor: Public Service Accountability Monitor
-  name: 'Budget Brief: Eastern Cape Department of Education 2016/17'
-  url_path: /datasets/contributed/budget-brief-eastern-cape-department-of-education-2016-17
-- contributor: Public Service Accountability Monitor
-  name: 'Budget Brief: Eastern Cape Department of Education 2018/19'
-  url_path: /datasets/contributed/budget-brief-eastern-cape-department-of-education-2018-19
-- contributor: Centre for Child Law
-  name: 'Mud to bricks: A review of school infrastructure spending and delivery'
-  url_path: /datasets/contributed/mud-to-bricks-a-review-of-school-infrastructure-spending-and-delivery
-- contributor: Centre for Child Law
-  name: 'Budgets and Bricks: Progress with school infrastructure following the Rivonia
-    Primary School case'
-  url_path: /datasets/contributed/budgets-and-bricks-progress-with-school-infrastructure-following-the-rivonia-primary-school-case
-- contributor: Public Service Accountability Monitor
-  name: A People's Guide to the Adjusted Budget 2018/19
-  url_path: /datasets/contributed/people-s-guide-to-the-adjusted-budget-2018-19
-- contributor: International Budget Partnership
-  name: The transparency of public funding of Basic Education in South Africa
-  url_path: /datasets/contributed/the-transparency-of-public-funding-of-basic-education-in-south-africa
 - contributor: International Budget Partnership
   name: How Does Civil Society Use Budget Information?
   url_path: /datasets/contributed/how-does-civil-society-use-budget-information
@@ -1248,27 +1226,65 @@ financial_years:
 government:
   name: Limpopo
   slug: limpopo
-government_functions:
-- Basic education
-intro: "## Vision\n\nExcellence in provisioning of innovative quality basic education.\r\
-  \n\r\n\n\n## Mission\n\nTo deliver quality education in an innovative, effective\
-  \ and efficient way by giving maximum monitoring and support to districts, circuits\
-  \ and schools, continuous development of educators and officials, maximizing accountability,\
-  \ fostering community participation and governance in education, ensuring equitable,\
-  \ efficient allocation and utilization of resources, striving for a competent and\
-  \ motivated workforce.\r\n\r\n\n\n## Core functions\n\n* Delivery of quality education\
-  \ by ensuring functionality of schools and reduction of under- performing schools.\r\
-  \n\r\n* Improve capacity of the department to support delivery of quality education\
-  \ by ensuring that management performance and compliance levels are rated from an\
-  \ average level of 2 to 4 on the MPAT Standards by 2019/20.\r\n\r\n* Provide education\
-  \ in public ordinary and special schools.\r\n\r\n* Support independent schools,\
-  \ promote a safe school environment.\r\n\r\n* Improve HIV and AIDS awareness, and\
-  \ make available.\r\n\r\n* Early Childhood Education (ECD) in Grade R.\r\n\r\n*\
-  \ Offer training and support to all public education institutions Human Resource\
-  \ Development (HRD) for educators and non-educators.\r\n\r\n* Departmentally managed\
-  \ examination services.\r\n\r\n* Overall management of the education system.\r\n\
-  \r\n* Provide minimum food needed to learn effectively in primary schools to identified\
-  \ poor and\r\nhungry learners."
+government_functions: []
+intro: '## Vision
+
+
+  Excellence in provisioning of innovative quality basic education.
+
+
+
+
+  ## Mission
+
+
+  To deliver quality education in an innovative, effective and efficient way by giving
+  maximum monitoring and support to districts, circuits and schools, continuous development
+  of educators and officials, maximizing accountability, fostering community participation
+  and governance in education, ensuring equitable, efficient allocation and utilization
+  of resources, striving for a competent and motivated workforce.
+
+
+
+
+  ## Core functions
+
+
+  * Delivery of quality education by ensuring functionality of schools and reduction
+  of under- performing schools.
+
+
+  * Improve capacity of the department to support delivery of quality education by
+  ensuring that management performance and compliance levels are rated from an average
+  level of 2 to 4 on the MPAT Standards by 2019/20.
+
+
+  * Provide education in public ordinary and special schools.
+
+
+  * Support independent schools, promote a safe school environment.
+
+
+  * Improve HIV and AIDS awareness, and make available.
+
+
+  * Early Childhood Education (ECD) in Grade R.
+
+
+  * Offer training and support to all public education institutions Human Resource
+  Development (HRD) for educators and non-educators.
+
+
+  * Departmentally managed examination services.
+
+
+  * Overall management of the education system.
+
+
+  * Provide minimum food needed to learn effectively in primary schools to identified
+  poor and
+
+  hungry learners.'
 is_vote_primary: true
 name: Education
 programme_by_economic_classification:

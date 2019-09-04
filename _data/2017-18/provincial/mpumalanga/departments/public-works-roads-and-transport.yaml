@@ -362,21 +362,6 @@ budget_actual_programmes:
       phase: Audit Outcome
     name: Transport Infrastructure
 contributed_datasets:
-- contributor: Public Service Accountability Monitor
-  name: 'Budget Brief: Eastern Cape Department of Human Settlements 2016/17'
-  url_path: /datasets/contributed/budget-brief-eastern-cape-department-of-human-settlements-2016-17
-- contributor: Public Service Accountability Monitor
-  name: 'Budget Brief: Eastern Cape Department of Human Settlements 2014/15'
-  url_path: /datasets/contributed/budget-brief-eastern-cape-department-of-human-settlements-2014-15
-- contributor: Public Service Accountability Monitor
-  name: A People's Guide to the Adjusted Budget 2018/19
-  url_path: /datasets/contributed/people-s-guide-to-the-adjusted-budget-2018-19
-- contributor: Public Service Accountability Monitor
-  name: 'Budget Brief: Department of Human Settlements, 2016/17 and 2017/18'
-  url_path: /datasets/contributed/budget-brief-department-of-human-settlements
-- contributor: Studies in Poverty and Inequality Institute
-  name: Monitoring the right of access to adequate housing in South Africa
-  url_path: /datasets/contributed/monitoring-the-right-of-access-to-adequate-housing-in-south-africa
 - contributor: International Budget Partnership
   name: How Does Civil Society Use Budget Information?
   url_path: /datasets/contributed/how-does-civil-society-use-budget-information
@@ -611,20 +596,54 @@ financial_years:
 government:
   name: Mpumalanga
   slug: mpumalanga
-government_functions:
-- Economic affairs
-- General public services
-- Human settlements and municipal infrastructure
-intro: "## Vision\n\nAn integrated transport system and infrastructure that promotes\
-  \ socio-economic\r\ndevelopment\r\n\r\n\n\n## Mission\n\nTo provide an integrated,\
-  \ reliable and cost-effective transport system that meets the\r\ndevelopment needs\
-  \ of the province.\r\nTo deliver infrastructure that promotes sustainable economic\
-  \ development and job creation.\r\n\r\n\n\n## Core functions\n\nImprove overall\
-  \ performance of the Department.\r\n\r\n* Enhance good governance and accountability.\r\
-  \n\r\n* Implementation of building infrastructure projects within the prescribed\
-  \ time and budget.\r\n\r\n* Enhance property management.\r\n\r\n* Improve the provincial\
-  \ road network.\r\n\r\n* Efficient and effective management of transport services.\r\
-  \n\r\n* Coordinate, monitor and evaluate implementation of EPWP III across the Province"
+government_functions: []
+intro: '## Vision
+
+
+  An integrated transport system and infrastructure that promotes socio-economic
+
+  development
+
+
+
+
+  ## Mission
+
+
+  To provide an integrated, reliable and cost-effective transport system that meets
+  the
+
+  development needs of the province.
+
+  To deliver infrastructure that promotes sustainable economic development and job
+  creation.
+
+
+
+
+  ## Core functions
+
+
+  Improve overall performance of the Department.
+
+
+  * Enhance good governance and accountability.
+
+
+  * Implementation of building infrastructure projects within the prescribed time
+  and budget.
+
+
+  * Enhance property management.
+
+
+  * Improve the provincial road network.
+
+
+  * Efficient and effective management of transport services.
+
+
+  * Coordinate, monitor and evaluate implementation of EPWP III across the Province'
 is_vote_primary: true
 name: Public Works, Roads and Transport
 programme_by_economic_classification:

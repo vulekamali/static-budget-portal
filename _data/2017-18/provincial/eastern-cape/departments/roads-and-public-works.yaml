@@ -312,21 +312,6 @@ budget_actual_programmes:
       phase: Audit Outcome
     name: Transport Infrastructure
 contributed_datasets:
-- contributor: Public Service Accountability Monitor
-  name: 'Budget Brief: Eastern Cape Department of Human Settlements 2016/17'
-  url_path: /datasets/contributed/budget-brief-eastern-cape-department-of-human-settlements-2016-17
-- contributor: Public Service Accountability Monitor
-  name: 'Budget Brief: Eastern Cape Department of Human Settlements 2014/15'
-  url_path: /datasets/contributed/budget-brief-eastern-cape-department-of-human-settlements-2014-15
-- contributor: Public Service Accountability Monitor
-  name: A People's Guide to the Adjusted Budget 2018/19
-  url_path: /datasets/contributed/people-s-guide-to-the-adjusted-budget-2018-19
-- contributor: Public Service Accountability Monitor
-  name: 'Budget Brief: Department of Human Settlements, 2016/17 and 2017/18'
-  url_path: /datasets/contributed/budget-brief-department-of-human-settlements
-- contributor: Studies in Poverty and Inequality Institute
-  name: Monitoring the right of access to adequate housing in South Africa
-  url_path: /datasets/contributed/monitoring-the-right-of-access-to-adequate-housing-in-south-africa
 - contributor: International Budget Partnership
   name: How Does Civil Society Use Budget Information?
   url_path: /datasets/contributed/how-does-civil-society-use-budget-information
@@ -539,25 +524,51 @@ financial_years:
 government:
   name: Eastern Cape
   slug: eastern-cape
-government_functions:
-- Economic affairs
-- General public services
-- Human settlements and municipal infrastructure
-intro: "## Vision\n\nLeader in the provision of high quality services in frastructure\
-  \ delivery.\r\n\r\n\n\n## Mission\n\nThe custodian of provincial governenment immovable\
-  \ assets and a provider of sustainable infrastructure resulting in socio-economic\
-  \ reforms,sector transformations and development.\r\n\r\n\n\n## Core functions\n\
-  \nThe core mandate of the department is to:\r\n\r\n* Provide and manage government's\
-  \ roads and buildin infrastructure,including small town revitalisation,provisionof\
-  \ accommodation, leadership to and regulation of the construction and property industries\
-  \ and related profession;\r\n\r\n* Regulate and manage the implementation of the\
-  \ Government Immovable Manangement Act, 2007(GIAMA);\r\n\r\n* Manangeand lead the\
-  \ implementation of the Expanded PUblic Works Programme (EPWP);\r\n\r\n* Implement\
-  \ the skills development initiatives such as the Accelerated Professional and Trade\
-  \ Competencies Development (APTCoD) programme,aimed at developing artisan and professional\
-  \ skills withing the province;and\r\n\r\n* Promote accessibility and safe, affrordabele\
-  \ movement of people, goods ans services through the delivery and maintenance of\
-  \ transport infrastructure.\r\n"
+government_functions: []
+intro: '## Vision
+
+
+  Leader in the provision of high quality services in frastructure delivery.
+
+
+
+
+  ## Mission
+
+
+  The custodian of provincial governenment immovable assets and a provider of sustainable
+  infrastructure resulting in socio-economic reforms,sector transformations and development.
+
+
+
+
+  ## Core functions
+
+
+  The core mandate of the department is to:
+
+
+  * Provide and manage government''s roads and buildin infrastructure,including small
+  town revitalisation,provisionof accommodation, leadership to and regulation of the
+  construction and property industries and related profession;
+
+
+  * Regulate and manage the implementation of the Government Immovable Manangement
+  Act, 2007(GIAMA);
+
+
+  * Manangeand lead the implementation of the Expanded PUblic Works Programme (EPWP);
+
+
+  * Implement the skills development initiatives such as the Accelerated Professional
+  and Trade Competencies Development (APTCoD) programme,aimed at developing artisan
+  and professional skills withing the province;and
+
+
+  * Promote accessibility and safe, affrordabele movement of people, goods ans services
+  through the delivery and maintenance of transport infrastructure.
+
+  '
 is_vote_primary: true
 name: Roads and Public Works
 programme_by_economic_classification:

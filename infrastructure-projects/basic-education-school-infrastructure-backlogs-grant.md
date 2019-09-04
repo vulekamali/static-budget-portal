@@ -1,5 +1,5 @@
 ---
-data_key: /infrastructure-projects/basic-education-school-infrastructure-backlogs-grant
+data_key: infrastructure-projects
 layout: infrastructure_project
 ---
 [//]: <> GENERATED FILE. Don't edit by hand.

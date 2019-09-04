@@ -178,24 +178,64 @@ government:
   name: Northern Cape
   slug: northern-cape
 government_functions: []
-intro: "## Vision\n\nPeople of the Northern Cape living in integrated human settlements,\
-  \ with responsive, accountable and highly effective municipalities and traditional\
-  \ institutions.\r\n\r\n\n\n## Mission\n\nTo facilitate and manage integrated sustainable\
-  \ human settlements and infrastructure development for effective service delivery.\r\
-  \n\r\n* To facilitate, monitor and support the consolidation and sustainability\
-  \ phases at municipalities for integrated, sustainable service delivery.\r\n\r\n\
-  * To promote and support inter-sphere engagement for integrated planning and coordination.\r\
-  \n\r\n* To facilitate, develop and support systems and structure to enhance traditional\
-  \ leadership.\r\n\r\n* To ensure the efficient, effective and economic utilization\
-  \ of departmental resources to maximise service delivery\r\n\r\n\n\n## Core functions\n\
-  \nTo promote and facilitate sustainable integrated human settlements and infrastructure\
-  \ development for effective housing delivery and planning.\r\n\r\n* Strengthening\
-  \ municipalities through capacity building and the accreditation process to fast\
-  \ track housing delivery;\r\n\r\n* Manage disaster management at provincial and\
-  \ local level;\r\n\r\n* Facilitate cooperative governance, with respect to the alignment\
-  \ of local and provincial development planning;\r\n\r\n* To promote, monitor and\
-  \ support integrated development and planning;\r\n\r\n* To facilitate, monitor and\
-  \ support sustainable governance and accountability\r\n\r\n"
+intro: '## Vision
+
+
+  People of the Northern Cape living in integrated human settlements, with responsive,
+  accountable and highly effective municipalities and traditional institutions.
+
+
+
+
+  ## Mission
+
+
+  To facilitate and manage integrated sustainable human settlements and infrastructure
+  development for effective service delivery.
+
+
+  * To facilitate, monitor and support the consolidation and sustainability phases
+  at municipalities for integrated, sustainable service delivery.
+
+
+  * To promote and support inter-sphere engagement for integrated planning and coordination.
+
+
+  * To facilitate, develop and support systems and structure to enhance traditional
+  leadership.
+
+
+  * To ensure the efficient, effective and economic utilization of departmental resources
+  to maximise service delivery
+
+
+
+
+  ## Core functions
+
+
+  To promote and facilitate sustainable integrated human settlements and infrastructure
+  development for effective housing delivery and planning.
+
+
+  * Strengthening municipalities through capacity building and the accreditation process
+  to fast track housing delivery;
+
+
+  * Manage disaster management at provincial and local level;
+
+
+  * Facilitate cooperative governance, with respect to the alignment of local and
+  provincial development planning;
+
+
+  * To promote, monitor and support integrated development and planning;
+
+
+  * To facilitate, monitor and support sustainable governance and accountability
+
+
+  '
 is_vote_primary: true
 name: Cooperative Governance, Human Settlement and Traditional Affairs
 programme_by_economic_classification:
@@ -205,15 +245,7 @@ programme_by_economic_classification:
 programmes:
   dataset_detail_page: /datasets/estimates-of-provincial-expenditure/estimates-of-provincial-expenditure-2017-18
   department_data_csv: https://datamanager.vulekamali.gov.za/csv/?api_url=https%3A//openspending.org/api/3/cubes/b9d2af843f3a7ca223eea07fb608e62a%3Aestimates-of-provincial-expenditure-south-africa-2017-18/aggregate/%3Fcut%3Dfinancial_year.financial_year%253A2017%257Cgovernment.government%253A%2522Northern%2BCape%2522%257Cdepartment.department%253A%2522Cooperative%2BGovernance%252C%2BHuman%2BSettlement%2Band%2BTraditional%2BAffairs%2522%26drilldown%3Dbudget_phase.budget_phase%257Cdepartment.department%257Ceconomic_classification_1.economic_classification_1%257Ceconomic_classification_2.economic_classification_2%257Ceconomic_classification_3.economic_classification_3%257Ceconomic_classification_4.economic_classification_4%257Cfinancial_year.financial_year%257Cgovernment.government%257Cprogramme_number.programme%257Cprogramme_number.programme_number%26pagesize%3D10000
-  programme_budgets:
-  - name: Administration
-    total_budget: null
-  - name: Human Settlement
-    total_budget: null
-  - name: Co-operative Governance
-    total_budget: null
-  - name: Traditional Institutional Management
-    total_budget: null
+  programme_budgets: []
 selected_financial_year: 2017-18
 selected_tab: departments
 slug: cooperative-governance-human-settlement-and-traditional-affairs

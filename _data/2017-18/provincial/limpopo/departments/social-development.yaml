@@ -613,12 +613,6 @@ budget_actual_programmes:
       phase: Audit Outcome
     name: CHILDREN AND FAMILIES
 contributed_datasets:
-- contributor: Heinrich Boell Foundation
-  name: 'Housing women who have experienced abuse: policy, funding & practice'
-  url_path: /datasets/contributed/housing-women-who-have-experienced-abuse-policy-funding-practice
-- contributor: Public Service Accountability Monitor
-  name: A People's Guide to the Adjusted Budget 2018/19
-  url_path: /datasets/contributed/people-s-guide-to-the-adjusted-budget-2018-19
 - contributor: International Budget Partnership
   name: How Does Civil Society Use Budget Information?
   url_path: /datasets/contributed/how-does-civil-society-use-budget-information
@@ -852,23 +846,53 @@ financial_years:
 government:
   name: Limpopo
   slug: limpopo
-government_functions:
-- Social protection
-intro: "## Vision\n\nA caring and self-reliant Society.\r\n\r\n\n\n## Mission\n\n\
-  To transform our society by building conscious and capable citizens through the\
-  \ provision of integrated social development services\r\n\r\n\n\n## Core functions\n\
-  \nIntegrated poverty alleviation programmes through sustainable development programmes\
-  \ in partnership with implementing agencies (such as Non-government organisation\
-  \ (NGOs), Community based organisations (CBOs) and Faith based organisations (FBOs).\r\
-  \n\r\n* Protection, care and support to older people.\r\n* Prevention, care and\
-  \ support services to people with disabilities.\r\n* Integrated services to individuals\
-  \ and families affected and infected by HIV and AIDS.\r\n* Social relief of distress.\r\
-  \n* Prevention, care and support services to families.\r\n* Protection and care\
-  \ services to children.\r\n* Social crime prevention and intervention services.\r\
-  \n* Victim empowerment services to victims of crime and violence.\r\n* Substance\
-  \ abuse, prevention, treatment and rehabilitation services.\r\n* These services\
-  \ are supported through financial management, human resource development and management\
-  \ and   other support services."
+government_functions: []
+intro: '## Vision
+
+
+  A caring and self-reliant Society.
+
+
+
+
+  ## Mission
+
+
+  To transform our society by building conscious and capable citizens through the
+  provision of integrated social development services
+
+
+
+
+  ## Core functions
+
+
+  Integrated poverty alleviation programmes through sustainable development programmes
+  in partnership with implementing agencies (such as Non-government organisation (NGOs),
+  Community based organisations (CBOs) and Faith based organisations (FBOs).
+
+
+  * Protection, care and support to older people.
+
+  * Prevention, care and support services to people with disabilities.
+
+  * Integrated services to individuals and families affected and infected by HIV and
+  AIDS.
+
+  * Social relief of distress.
+
+  * Prevention, care and support services to families.
+
+  * Protection and care services to children.
+
+  * Social crime prevention and intervention services.
+
+  * Victim empowerment services to victims of crime and violence.
+
+  * Substance abuse, prevention, treatment and rehabilitation services.
+
+  * These services are supported through financial management, human resource development
+  and management and   other support services.'
 is_vote_primary: true
 name: Social Development
 programme_by_economic_classification:

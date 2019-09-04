@@ -813,28 +813,6 @@ budget_actual_programmes:
       phase: Audit Outcome
     name: PUBLIC ORDINARY SCHOOL EDUCATION
 contributed_datasets:
-- contributor: Public Service Accountability Monitor
-  name: Education Budget Brief 2019/20
-  url_path: /datasets/contributed/education-budget-brief-2019-20
-- contributor: Public Service Accountability Monitor
-  name: 'Budget Brief: Eastern Cape Department of Education 2016/17'
-  url_path: /datasets/contributed/budget-brief-eastern-cape-department-of-education-2016-17
-- contributor: Public Service Accountability Monitor
-  name: 'Budget Brief: Eastern Cape Department of Education 2018/19'
-  url_path: /datasets/contributed/budget-brief-eastern-cape-department-of-education-2018-19
-- contributor: Centre for Child Law
-  name: 'Mud to bricks: A review of school infrastructure spending and delivery'
-  url_path: /datasets/contributed/mud-to-bricks-a-review-of-school-infrastructure-spending-and-delivery
-- contributor: Centre for Child Law
-  name: 'Budgets and Bricks: Progress with school infrastructure following the Rivonia
-    Primary School case'
-  url_path: /datasets/contributed/budgets-and-bricks-progress-with-school-infrastructure-following-the-rivonia-primary-school-case
-- contributor: Public Service Accountability Monitor
-  name: A People's Guide to the Adjusted Budget 2018/19
-  url_path: /datasets/contributed/people-s-guide-to-the-adjusted-budget-2018-19
-- contributor: International Budget Partnership
-  name: The transparency of public funding of Basic Education in South Africa
-  url_path: /datasets/contributed/the-transparency-of-public-funding-of-basic-education-in-south-africa
 - contributor: International Budget Partnership
   name: How Does Civil Society Use Budget Information?
   url_path: /datasets/contributed/how-does-civil-society-use-budget-information
@@ -1110,20 +1088,46 @@ financial_years:
 government:
   name: Free State
   slug: free-state
-government_functions:
-- Basic education
-intro: "## Vision\n\nTo be a Department that strives for quality, universal education\
-  \ that is internationally competitive.\r\n\r\n\n\n## Mission\n\nTo provide all children\
-  \ of the Free State province with quality education in a conductive school environment\
-  \ with qualified professional teachers, learning and teaching material of high quality\
-  \ and parents who are highly involved in school affairs.\r\n\r\n\n\n## Core functions\n\
-  \nThe core function and responsibilities for 2017/18 is to ensure the effective\
-  \ delivery of quality education programmes for the Free State Province by:\r\n\r\
-  \n* Managing and oversee Curriculum Management, Educational Development and the\
-  \ implementation thereof through District Management\r\n\r\n* Manage and oversee\
-  \ the provisioning of Corporate Services for the Department\r\n\r\n* Manage and\
-  \ oversee the provisioning of Internal Audit Services\r\n\r\n* Ensure and oversee\
-  \ the provisioning of effective Communication Services\r\n"
+government_functions: []
+intro: '## Vision
+
+
+  To be a Department that strives for quality, universal education that is internationally
+  competitive.
+
+
+
+
+  ## Mission
+
+
+  To provide all children of the Free State province with quality education in a conductive
+  school environment with qualified professional teachers, learning and teaching material
+  of high quality and parents who are highly involved in school affairs.
+
+
+
+
+  ## Core functions
+
+
+  The core function and responsibilities for 2017/18 is to ensure the effective delivery
+  of quality education programmes for the Free State Province by:
+
+
+  * Managing and oversee Curriculum Management, Educational Development and the implementation
+  thereof through District Management
+
+
+  * Manage and oversee the provisioning of Corporate Services for the Department
+
+
+  * Manage and oversee the provisioning of Internal Audit Services
+
+
+  * Ensure and oversee the provisioning of effective Communication Services
+
+  '
 is_vote_primary: true
 name: Education
 programme_by_economic_classification:

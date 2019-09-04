@@ -312,21 +312,6 @@ budget_actual_programmes:
       phase: Audit Outcome
     name: Housing Development
 contributed_datasets:
-- contributor: Public Service Accountability Monitor
-  name: 'Budget Brief: Eastern Cape Department of Human Settlements 2016/17'
-  url_path: /datasets/contributed/budget-brief-eastern-cape-department-of-human-settlements-2016-17
-- contributor: Public Service Accountability Monitor
-  name: 'Budget Brief: Eastern Cape Department of Human Settlements 2014/15'
-  url_path: /datasets/contributed/budget-brief-eastern-cape-department-of-human-settlements-2014-15
-- contributor: Public Service Accountability Monitor
-  name: A People's Guide to the Adjusted Budget 2018/19
-  url_path: /datasets/contributed/people-s-guide-to-the-adjusted-budget-2018-19
-- contributor: Public Service Accountability Monitor
-  name: 'Budget Brief: Department of Human Settlements, 2016/17 and 2017/18'
-  url_path: /datasets/contributed/budget-brief-department-of-human-settlements
-- contributor: Studies in Poverty and Inequality Institute
-  name: Monitoring the right of access to adequate housing in South Africa
-  url_path: /datasets/contributed/monitoring-the-right-of-access-to-adequate-housing-in-south-africa
 - contributor: International Budget Partnership
   name: How Does Civil Society Use Budget Information?
   url_path: /datasets/contributed/how-does-civil-society-use-budget-information
@@ -524,28 +509,74 @@ financial_years:
 government:
   name: Western Cape
   slug: western-cape
-government_functions:
-- Human settlements and municipal infrastructure
-intro: "## Vision\n\nResidents of the Western Cape have access to liveable, accessible,\
-  \ safe, resilient, multi-opportunity settlements.\r\n\r\n\n\n## Mission\n\nThe Department\
-  \ is committed to accelerating delivery, while promoting social cohesion through\
-  \ the development of integrated and sustainable human settlements in an open opportunity\
-  \ society. It aims to:\r\n\r\n* Provide settlements that offer good basic and socio-economic\
-  \ services;\r\n\r\n* Offer a range of rental and ownership options that respond\
-  \ to the varied needs and incomes of households; and\r\n\r\n* Consistently improve\
-  \ settlements through joint citizen and government effort supported by  private\
-  \ sector contributions.\r\n\r\n\n\n## Main Services and Core functions\n\nThe main\
-  \ services of the Department are to:\r\n\r\n* Provide overall management in the\
-  \ Department in accordance with all applicable acts and  policies;\r\n\r\n* To facilitate\
-  \ and undertake housing delivery and planning;\r\n\r\n* To provide individual subsidies\
-  \ and housing opportunities, including access to basic  services, to beneficiaries\
-  \ in accordance with the Housing Code; and\r\n\r\n* To provide strategic, effective\
-  \ and efficient management of housing assets.\r\n\r\nThe core functions and responsibilities\
-  \ of the Department are:\r\n\r\n* The planning, promotion and development of integrated\
-  \ and sustainable human settlements;\r\n\r\n* Administering housing subsidies and\
-  \ providing technical support for the development of  sustainable human settlements;\r\
-  \n\r\n* Sensitising the public to the importance of housing as an asset; and\r\n\
-  \r\n* Facilitating fair relationships in rental housing.\r\n\r\n"
+government_functions: []
+intro: '## Vision
+
+
+  Residents of the Western Cape have access to liveable, accessible, safe, resilient,
+  multi-opportunity settlements.
+
+
+
+
+  ## Mission
+
+
+  The Department is committed to accelerating delivery, while promoting social cohesion
+  through the development of integrated and sustainable human settlements in an open
+  opportunity society. It aims to:
+
+
+  * Provide settlements that offer good basic and socio-economic services;
+
+
+  * Offer a range of rental and ownership options that respond to the varied needs
+  and incomes of households; and
+
+
+  * Consistently improve settlements through joint citizen and government effort supported
+  by  private sector contributions.
+
+
+
+
+  ## Main Services and Core functions
+
+
+  The main services of the Department are to:
+
+
+  * Provide overall management in the Department in accordance with all applicable
+  acts and  policies;
+
+
+  * To facilitate and undertake housing delivery and planning;
+
+
+  * To provide individual subsidies and housing opportunities, including access to
+  basic  services, to beneficiaries in accordance with the Housing Code; and
+
+
+  * To provide strategic, effective and efficient management of housing assets.
+
+
+  The core functions and responsibilities of the Department are:
+
+
+  * The planning, promotion and development of integrated and sustainable human settlements;
+
+
+  * Administering housing subsidies and providing technical support for the development
+  of  sustainable human settlements;
+
+
+  * Sensitising the public to the importance of housing as an asset; and
+
+
+  * Facilitating fair relationships in rental housing.
+
+
+  '
 is_vote_primary: true
 name: Human Settlements
 programme_by_economic_classification:

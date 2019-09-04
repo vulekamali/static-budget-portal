@@ -362,21 +362,6 @@ budget_actual_programmes:
       phase: Audit Outcome
     name: Transport Operations
 contributed_datasets:
-- contributor: Public Service Accountability Monitor
-  name: 'Budget Brief: Eastern Cape Department of Human Settlements 2016/17'
-  url_path: /datasets/contributed/budget-brief-eastern-cape-department-of-human-settlements-2016-17
-- contributor: Public Service Accountability Monitor
-  name: 'Budget Brief: Eastern Cape Department of Human Settlements 2014/15'
-  url_path: /datasets/contributed/budget-brief-eastern-cape-department-of-human-settlements-2014-15
-- contributor: Public Service Accountability Monitor
-  name: A People's Guide to the Adjusted Budget 2018/19
-  url_path: /datasets/contributed/people-s-guide-to-the-adjusted-budget-2018-19
-- contributor: Public Service Accountability Monitor
-  name: 'Budget Brief: Department of Human Settlements, 2016/17 and 2017/18'
-  url_path: /datasets/contributed/budget-brief-department-of-human-settlements
-- contributor: Studies in Poverty and Inequality Institute
-  name: Monitoring the right of access to adequate housing in South Africa
-  url_path: /datasets/contributed/monitoring-the-right-of-access-to-adequate-housing-in-south-africa
 - contributor: International Budget Partnership
   name: How Does Civil Society Use Budget Information?
   url_path: /datasets/contributed/how-does-civil-society-use-budget-information
@@ -565,24 +550,53 @@ financial_years:
 government:
   name: Limpopo
   slug: limpopo
-government_functions:
-- Defence, public order and safety
-- Economic affairs
-- Human settlements and municipal infrastructure
-intro: "## Vision\n\nTo be a pioneer and leading department at the epi-centre of socio-economic\
-  \ development.\r\n\r\n\n\n## Mission\n\nTo provide safe, affordable, sustainable\
-  \ and integrated transport services.\r\n\r\n\n\n## Core functions\n\nThe department\
-  \ renders the following main services:\r\n\r\n* Provisioning of public transport\
-  \ and related infrastructure;\r\n\r\n* Administration of all aspects relating to\
-  \ motor vehicle licensing and registration fees, law administration, accident data\
-  \ & statistics and overload control;\r\n\r\n* Promoting investment in rural transport\
-  \ as a means to provide affordable and convenient access to markets, employment,\
-  \ economic activity and social services;\r\n\r\n* Co-ordinating development of transport\
-  \ multi-purpose centres, inter-modal transport facilities and freight logistic services\
-  \ as part of an integrated transport service network;\r\n\r\n* Advancing equity\
-  \ in the employment of youth and women in transport sectors by employing income\
-  \ generating and labour-intensive methodologies for all infrastructure projects;\
-  \ and\r\n\r\n* Developing and managing airports in the province.\r\n"
+government_functions: []
+intro: '## Vision
+
+
+  To be a pioneer and leading department at the epi-centre of socio-economic development.
+
+
+
+
+  ## Mission
+
+
+  To provide safe, affordable, sustainable and integrated transport services.
+
+
+
+
+  ## Core functions
+
+
+  The department renders the following main services:
+
+
+  * Provisioning of public transport and related infrastructure;
+
+
+  * Administration of all aspects relating to motor vehicle licensing and registration
+  fees, law administration, accident data & statistics and overload control;
+
+
+  * Promoting investment in rural transport as a means to provide affordable and convenient
+  access to markets, employment, economic activity and social services;
+
+
+  * Co-ordinating development of transport multi-purpose centres, inter-modal transport
+  facilities and freight logistic services as part of an integrated transport service
+  network;
+
+
+  * Advancing equity in the employment of youth and women in transport sectors by
+  employing income generating and labour-intensive methodologies for all infrastructure
+  projects; and
+
+
+  * Developing and managing airports in the province.
+
+  '
 is_vote_primary: true
 name: Transport
 programme_by_economic_classification:

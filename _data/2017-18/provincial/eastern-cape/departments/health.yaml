@@ -563,18 +563,6 @@ budget_actual_programmes:
       phase: Audit Outcome
     name: District Health Services
 contributed_datasets:
-- contributor: Public Service Accountability Monitor
-  name: 'Budget Brief: Eastern Cape Department of Health 2014/15'
-  url_path: /datasets/contributed/budget-brief-eastern-cape-department-of-health-2014-15
-- contributor: Public Service Accountability Monitor
-  name: "Emergency Medical Services in the Eastern Cape 2005 \u2013 2015"
-  url_path: /datasets/contributed/emergency-medical-services-in-the-eastern-cape-2005-2015
-- contributor: Public Service Accountability Monitor
-  name: A People's Guide to the Adjusted Budget 2018/19
-  url_path: /datasets/contributed/people-s-guide-to-the-adjusted-budget-2018-19
-- contributor: CEGAA
-  name: CEGAA Occasional Paper on Government Health HIV and TB spending 2013/14-2020/21
-  url_path: /datasets/contributed/cegaa-occasional-paper-on-government-health-hiv-and-tb-spending-2013-14-2020-21
 - contributor: International Budget Partnership
   name: How Does Civil Society Use Budget Information?
   url_path: /datasets/contributed/how-does-civil-society-use-budget-information
@@ -874,25 +862,47 @@ financial_years:
 government:
   name: Eastern Cape
   slug: eastern-cape
-government_functions:
-- Health
-intro: "## Vision\n\nA qualtiy health service to the people of the Eastern Cape Province\
-  \ promoting a better life for all\r\n\r\n\n\n## Mission\n\nTo provide and ensure\
-  \ accessible comprhensive intergrated services in the Eastern Cape, emphasising\
-  \ the primary health care apporach, optimally utilising all resources to enable\
-  \ all its present and future generations to enjoy health and quality of life.\r\n\
-  \r\n\r\n\n\n## Core functions\n\nThe core functions and responsibilities of the\
-  \ department are aligned to the national and provincial priorities including overhauling\
-  \ the provincial healthcare system by implementing and sustaining an evidence and\
-  \ results-based provincial health system which is aligned to the National Health\
-  \ System (NHS) 10-point plan, national and provincial legislative requirements and\
-  \ disease profiles; building the required capacity to oversee and manage health\
-  \ services in the province through:\r\n\r\n* Improving quality and continuum of\
-  \ primary healthcare (including community-based and hospital services) by implementing\
-  \ a resourced package of services and improving clinical governance systems and\
-  \ processes;and\r\n\r\n* Reducing morbidity andmortality due to communicable diseases\
-  \ and non-communicable illnesses and conditions by implementing high impact strategies\
-  \ to address prevention,detection,management and support at all levels of care."
+government_functions: []
+intro: '## Vision
+
+
+  A qualtiy health service to the people of the Eastern Cape Province promoting a
+  better life for all
+
+
+
+
+  ## Mission
+
+
+  To provide and ensure accessible comprhensive intergrated services in the Eastern
+  Cape, emphasising the primary health care apporach, optimally utilising all resources
+  to enable all its present and future generations to enjoy health and quality of
+  life.
+
+
+
+
+
+  ## Core functions
+
+
+  The core functions and responsibilities of the department are aligned to the national
+  and provincial priorities including overhauling the provincial healthcare system
+  by implementing and sustaining an evidence and results-based provincial health system
+  which is aligned to the National Health System (NHS) 10-point plan, national and
+  provincial legislative requirements and disease profiles; building the required
+  capacity to oversee and manage health services in the province through:
+
+
+  * Improving quality and continuum of primary healthcare (including community-based
+  and hospital services) by implementing a resourced package of services and improving
+  clinical governance systems and processes;and
+
+
+  * Reducing morbidity andmortality due to communicable diseases and non-communicable
+  illnesses and conditions by implementing high impact strategies to address prevention,detection,management
+  and support at all levels of care.'
 is_vote_primary: true
 name: Health
 programme_by_economic_classification:

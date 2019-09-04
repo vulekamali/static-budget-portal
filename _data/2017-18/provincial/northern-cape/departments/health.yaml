@@ -512,18 +512,6 @@ budget_actual_programmes:
       phase: Audit Outcome
     name: District Health Services
 contributed_datasets:
-- contributor: Public Service Accountability Monitor
-  name: 'Budget Brief: Eastern Cape Department of Health 2014/15'
-  url_path: /datasets/contributed/budget-brief-eastern-cape-department-of-health-2014-15
-- contributor: Public Service Accountability Monitor
-  name: "Emergency Medical Services in the Eastern Cape 2005 \u2013 2015"
-  url_path: /datasets/contributed/emergency-medical-services-in-the-eastern-cape-2005-2015
-- contributor: Public Service Accountability Monitor
-  name: A People's Guide to the Adjusted Budget 2018/19
-  url_path: /datasets/contributed/people-s-guide-to-the-adjusted-budget-2018-19
-- contributor: CEGAA
-  name: CEGAA Occasional Paper on Government Health HIV and TB spending 2013/14-2020/21
-  url_path: /datasets/contributed/cegaa-occasional-paper-on-government-health-hiv-and-tb-spending-2013-14-2020-21
 - contributor: International Budget Partnership
   name: How Does Civil Society Use Budget Information?
   url_path: /datasets/contributed/how-does-civil-society-use-budget-information
@@ -826,14 +814,13 @@ financial_years:
 government:
   name: Northern Cape
   slug: northern-cape
-government_functions:
-- Health
-intro: "## Vision\n\nHealth service excellence for all.\r\n\r\n\n\n## Mission\n\n\
-  Working together, we are committed to provide quality health care services and promote\
+government_functions: []
+intro: "## Vision\n\nHealth service excellence for all.\n\n\n\n## Mission\n\nWorking\
+  \ together, we are committed to provide quality health care services and promote\
   \ a healthy society. Our caring, multi- skilled professionals will integrate comprehensive\
   \ services using evidence-based strategies and partnerships to maximise efficiencies\
-  \ for the benefit of all.\r\n\r\n\n\n## Core functions\n\nThe department\u2019s\
-  \ core function is the provision of health care, which focuses mainly on the District\
+  \ for the benefit of all.\n\n\n\n## Core functions\n\nThe department\u2019s core\
+  \ function is the provision of health care, which focuses mainly on the District\
   \ Health System, based on the Primary Health Care approach. Health care services\
   \ are provided at a primary, secondary and tertiary level."
 is_vote_primary: true

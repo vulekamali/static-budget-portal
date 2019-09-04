@@ -362,12 +362,6 @@ budget_actual_programmes:
       phase: Audit Outcome
     name: Children and Families
 contributed_datasets:
-- contributor: Heinrich Boell Foundation
-  name: 'Housing women who have experienced abuse: policy, funding & practice'
-  url_path: /datasets/contributed/housing-women-who-have-experienced-abuse-policy-funding-practice
-- contributor: Public Service Accountability Monitor
-  name: A People's Guide to the Adjusted Budget 2018/19
-  url_path: /datasets/contributed/people-s-guide-to-the-adjusted-budget-2018-19
 - contributor: International Budget Partnership
   name: How Does Civil Society Use Budget Information?
   url_path: /datasets/contributed/how-does-civil-society-use-budget-information
@@ -592,28 +586,65 @@ financial_years:
 government:
   name: Gauteng
   slug: gauteng
-government_functions:
-- Social protection
-intro: "## Vision\n\nA caring and self reliat society.\r\n\r\n\n\n## Mission\n\nTo\
-  \ transform our society by building conscious and capable citizens through the provision\
-  \ of intergrated social development services\r\n\r\n\n\n## Core functions\n\n* Rendering\
-  \ management and administration to the network of social development services withing\
-  \ Gauteng.\r\n\r\n* Provision, in particular with relevant stakeholder, of prevention,early\
-  \ intervention,rehabilitation and after-care services to people abusing substances;\r\
-  \n\r\n* Provision of community and home-based cae,residential and all other protection\
-  \ services for the frail,vulnerable older persons at risk,and people withdisabilities;\r\
-  \n\r\n* Provision of secure care facilities,home-based services,and assesssment\
-  \ and referral services for childrenfound to be in conflict with the law;\r\n\r\n\
-  * Provision of servicesfor children through the constuction and funding of Early\
-  \ Childhood Development(ECD) facilities throughout the province;\r\n\r\n* Provision\
-  \ of child care and protection services and implementation of the Children's Act;\r\
-  \n\r\n* Provision of shelters and counselling services for women and children who\
-  \ are victims of domestic violence and abuse;\r\n\r\n* Provision, through home and\
-  \ community-based care (HCBC) centres,of psycho-social support services to people\
-  \ who are infected and affected by HIV and AIDS,especially orphans and vulnerable\
-  \ children;\r\n\r\n* Provision of reunification and preservation services for familie;and\r\
-  \n\r\n* Provision of youth development and sustainable livelihood services to poor\
-  \ households through the implementation of the War on Poverty (WoP) programme."
+government_functions: []
+intro: '## Vision
+
+
+  A caring and self reliat society.
+
+
+
+
+  ## Mission
+
+
+  To transform our society by building conscious and capable citizens through the
+  provision of intergrated social development services
+
+
+
+
+  ## Core functions
+
+
+  * Rendering management and administration to the network of social development services
+  withing Gauteng.
+
+
+  * Provision, in particular with relevant stakeholder, of prevention,early intervention,rehabilitation
+  and after-care services to people abusing substances;
+
+
+  * Provision of community and home-based cae,residential and all other protection
+  services for the frail,vulnerable older persons at risk,and people withdisabilities;
+
+
+  * Provision of secure care facilities,home-based services,and assesssment and referral
+  services for childrenfound to be in conflict with the law;
+
+
+  * Provision of servicesfor children through the constuction and funding of Early
+  Childhood Development(ECD) facilities throughout the province;
+
+
+  * Provision of child care and protection services and implementation of the Children''s
+  Act;
+
+
+  * Provision of shelters and counselling services for women and children who are
+  victims of domestic violence and abuse;
+
+
+  * Provision, through home and community-based care (HCBC) centres,of psycho-social
+  support services to people who are infected and affected by HIV and AIDS,especially
+  orphans and vulnerable children;
+
+
+  * Provision of reunification and preservation services for familie;and
+
+
+  * Provision of youth development and sustainable livelihood services to poor households
+  through the implementation of the War on Poverty (WoP) programme.'
 is_vote_primary: true
 name: Social Development
 programme_by_economic_classification:

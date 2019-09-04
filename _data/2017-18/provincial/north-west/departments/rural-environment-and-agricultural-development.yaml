@@ -564,9 +564,6 @@ budget_actual_programmes:
       phase: Audit Outcome
     name: Farmer Support and Development
 contributed_datasets:
-- contributor: Public Service Accountability Monitor
-  name: A People's Guide to the Adjusted Budget 2018/19
-  url_path: /datasets/contributed/people-s-guide-to-the-adjusted-budget-2018-19
 - contributor: International Budget Partnership
   name: How Does Civil Society Use Budget Information?
   url_path: /datasets/contributed/how-does-civil-society-use-budget-information
@@ -859,17 +856,37 @@ financial_years:
 government:
   name: North West
   slug: north-west
-government_functions:
-- Agriculture, rural development and land reform
-- Economic affairs
-intro: "## Vision\n\nVibrant and prosperous society in harmony with our natural resources.\r\
-  \n\r\n\n\n## Mission\n\nWorking together with our partners to provide a transformed\
-  \ sustainable, agricultural, environmental management and comprehensive integrated\
-  \ rural development.\r\n\r\n\n\n## Core functions\n\nThe Department focus primarily\
-  \ on the following mandated core functions:-\r\n\r\n* Rolling out the Comprehensive\
-  \ Rural Development Programme;\r\n\r\n* Creating decent employment through Inclusive\
-  \ Economic Growth; and\r\n\r\n* Protecting and Enhancing Environmental Assets and\
-  \ Natural Resources."
+government_functions: []
+intro: '## Vision
+
+
+  Vibrant and prosperous society in harmony with our natural resources.
+
+
+
+
+  ## Mission
+
+
+  Working together with our partners to provide a transformed sustainable, agricultural,
+  environmental management and comprehensive integrated rural development.
+
+
+
+
+  ## Core functions
+
+
+  The Department focus primarily on the following mandated core functions:-
+
+
+  * Rolling out the Comprehensive Rural Development Programme;
+
+
+  * Creating decent employment through Inclusive Economic Growth; and
+
+
+  * Protecting and Enhancing Environmental Assets and Natural Resources.'
 is_vote_primary: true
 name: Rural Environment and Agricultural Development
 programme_by_economic_classification:

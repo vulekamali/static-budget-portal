@@ -413,28 +413,6 @@ budget_actual_programmes:
       phase: Audit Outcome
     name: Library and Archive Services
 contributed_datasets:
-- contributor: Public Service Accountability Monitor
-  name: Education Budget Brief 2019/20
-  url_path: /datasets/contributed/education-budget-brief-2019-20
-- contributor: Public Service Accountability Monitor
-  name: 'Budget Brief: Eastern Cape Department of Education 2016/17'
-  url_path: /datasets/contributed/budget-brief-eastern-cape-department-of-education-2016-17
-- contributor: Public Service Accountability Monitor
-  name: 'Budget Brief: Eastern Cape Department of Education 2018/19'
-  url_path: /datasets/contributed/budget-brief-eastern-cape-department-of-education-2018-19
-- contributor: Centre for Child Law
-  name: 'Mud to bricks: A review of school infrastructure spending and delivery'
-  url_path: /datasets/contributed/mud-to-bricks-a-review-of-school-infrastructure-spending-and-delivery
-- contributor: Centre for Child Law
-  name: 'Budgets and Bricks: Progress with school infrastructure following the Rivonia
-    Primary School case'
-  url_path: /datasets/contributed/budgets-and-bricks-progress-with-school-infrastructure-following-the-rivonia-primary-school-case
-- contributor: Public Service Accountability Monitor
-  name: A People's Guide to the Adjusted Budget 2018/19
-  url_path: /datasets/contributed/people-s-guide-to-the-adjusted-budget-2018-19
-- contributor: International Budget Partnership
-  name: The transparency of public funding of Basic Education in South Africa
-  url_path: /datasets/contributed/the-transparency-of-public-funding-of-basic-education-in-south-africa
 - contributor: International Budget Partnership
   name: How Does Civil Society Use Budget Information?
   url_path: /datasets/contributed/how-does-civil-society-use-budget-information
@@ -635,15 +613,14 @@ financial_years:
 government:
   name: KwaZulu-Natal
   slug: kwazulu-natal
-government_functions:
-- Basic education
+government_functions: []
 intro: "## Vision\n\nThe vision of the department is: Prosperity and social cohesion\
-  \ through arts, culture and heritage.\r\n\r\n\n\n## Mission\n\nThe department\u2019\
+  \ through arts, culture and heritage.\n\n\n\n## Mission\n\nThe department\u2019\
   s mission is to Provide integrated arts and culture services for the people of KwaZulu-Natal\
   \ by developing and promoting arts and culture in the province and mainstreaming\
-  \ its role in socio-economic development.\r\n\r\n\n\n## Core functions\n\nThe core\
-  \ functions of the department encompass the development and promotion of arts, culture,\
-  \ museum, archive and library services."
+  \ its role in socio-economic development.\n\n\n\n## Core functions\n\nThe core functions\
+  \ of the department encompass the development and promotion of arts, culture, museum,\
+  \ archive and library services."
 is_vote_primary: true
 name: Arts and Culture
 programme_by_economic_classification:

@@ -512,18 +512,6 @@ budget_actual_programmes:
       phase: Audit Outcome
     name: District Health Services
 contributed_datasets:
-- contributor: Public Service Accountability Monitor
-  name: 'Budget Brief: Eastern Cape Department of Health 2014/15'
-  url_path: /datasets/contributed/budget-brief-eastern-cape-department-of-health-2014-15
-- contributor: Public Service Accountability Monitor
-  name: "Emergency Medical Services in the Eastern Cape 2005 \u2013 2015"
-  url_path: /datasets/contributed/emergency-medical-services-in-the-eastern-cape-2005-2015
-- contributor: Public Service Accountability Monitor
-  name: A People's Guide to the Adjusted Budget 2018/19
-  url_path: /datasets/contributed/people-s-guide-to-the-adjusted-budget-2018-19
-- contributor: CEGAA
-  name: CEGAA Occasional Paper on Government Health HIV and TB spending 2013/14-2020/21
-  url_path: /datasets/contributed/cegaa-occasional-paper-on-government-health-hiv-and-tb-spending-2013-14-2020-21
 - contributor: International Budget Partnership
   name: How Does Civil Society Use Budget Information?
   url_path: /datasets/contributed/how-does-civil-society-use-budget-information
@@ -865,25 +853,24 @@ financial_years:
 government:
   name: Free State
   slug: free-state
-government_functions:
-- Health
+government_functions: []
 intro: "## Vision\n\nIncreasing life expectancy through health system effectiveness,\
-  \ driving system change and ensuring sustainable quality services.\r\n\r\n\n\n##\
-  \ Mission\n\nBy creating a value driven institution that inculcates operational\
-  \ efficiency and accountability in delivering desired outcomes effectively.\r\n\r\
-  \n\n\n## Core functions\n\nThe Free State Department of Health provides comprehensive\
-  \ health care services, which include the prevention of disease, health promotion,\
-  \ curative and rehabilitative services to the community. The Department delivers\
-  \ an integrated comprehensive level I to IV health care service to the Free State\
-  \ population as well as persons visiting the province. In terms of co-operative\
-  \ agreement, certain level II, III and IV services are also delivered to Northern\
-  \ Cape residents and Lesotho citizens.\r\n\r\nThe services of the Department are\
-  \ geared at achieving Outcome 2, \u201CLong and healthy life for all South Africans\u201D\
-  , which constitutes the Negotiated Service Delivery Agreement (NSDA) for the health\
-  \ sector: For the health sector to achieve this outcome, key interventions to improve\
-  \ life expectancy will include, addressing the social determinants of health; promoting\
-  \ health; as well as reducing the burden of disease from both Communicable Diseases\
-  \ and Non-Communicable Diseases"
+  \ driving system change and ensuring sustainable quality services.\n\n\n\n## Mission\n\
+  \nBy creating a value driven institution that inculcates operational efficiency\
+  \ and accountability in delivering desired outcomes effectively.\n\n\n\n## Core\
+  \ functions\n\nThe Free State Department of Health provides comprehensive health\
+  \ care services, which include the prevention of disease, health promotion, curative\
+  \ and rehabilitative services to the community. The Department delivers an integrated\
+  \ comprehensive level I to IV health care service to the Free State population as\
+  \ well as persons visiting the province. In terms of co-operative agreement, certain\
+  \ level II, III and IV services are also delivered to Northern Cape residents and\
+  \ Lesotho citizens.\n\nThe services of the Department are geared at achieving Outcome\
+  \ 2, \u201CLong and healthy life for all South Africans\u201D, which constitutes\
+  \ the Negotiated Service Delivery Agreement (NSDA) for the health sector: For the\
+  \ health sector to achieve this outcome, key interventions to improve life expectancy\
+  \ will include, addressing the social determinants of health; promoting health;\
+  \ as well as reducing the burden of disease from both Communicable Diseases and\
+  \ Non-Communicable Diseases"
 is_vote_primary: true
 name: Health
 programme_by_economic_classification:

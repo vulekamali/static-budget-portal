@@ -513,9 +513,6 @@ budget_actual_programmes:
       phase: Audit Outcome
     name: ECONOMIC DEVELOPMENT
 contributed_datasets:
-- contributor: Public Service Accountability Monitor
-  name: A People's Guide to the Adjusted Budget 2018/19
-  url_path: /datasets/contributed/people-s-guide-to-the-adjusted-budget-2018-19
 - contributor: International Budget Partnership
   name: How Does Civil Society Use Budget Information?
   url_path: /datasets/contributed/how-does-civil-society-use-budget-information
@@ -740,24 +737,59 @@ financial_years:
 government:
   name: Limpopo
   slug: limpopo
-government_functions:
-- Economic affairs
-intro: "## Vision\r\n\r\nA competitive economy within a sustainable environment.\r\
-  \n\r\n\r\n\r\n## Mission\r\n\r\nTo create and facilitate the development of a competitive\
-  \ economy, sustainable environment and tourism growth.\r\n\r\n\r\n\r\n## Core functions\r\
-  \n\r\nThe mandate of the Department is to facilitate the provincial economy, promote\
-  \ and manage environmental and tourism activities. To carry out this mandate, the\
-  \ department pursues the following:\r\n\r\n* Ensuring the promotion of economic\
-  \ planning, conducting research and implementation and monitoring of economic development\
-  \ programs;\r\n\r\n* Creating an enabling environment for SMMEs and Co-operatives\
-  \ to succeed in order to improve the quality of life of the people of Limpopo Province;\r\
-  \n\r\n* Stimulating economic growth through industry development, trade and investment\
-  \ promotion;\r\n\r\n* Ensuring that businesses in all sectors are regulated and\
-  \ an environment created whereby consumers are effectively protected;\r\n\r\n* Ensuring\
-  \ sustainable environmental management, utilisation and regulation of natural resources;\r\
-  \n\r\n* Ensuring protection and sustainable natural resource management and utilisation;\r\
-  \n\r\n* Providing environmental empowerment support services; and\r\n\r\n* Ensure\
-  \ regulation, promotion and development of tourism in the province."
+government_functions: []
+intro: '## Vision
+
+
+  A competitive economy within a sustainable environment.
+
+
+
+
+  ## Mission
+
+
+  To create and facilitate the development of a competitive economy, sustainable environment
+  and tourism growth.
+
+
+
+
+  ## Core functions
+
+
+  The mandate of the Department is to facilitate the provincial economy, promote and
+  manage environmental and tourism activities. To carry out this mandate, the department
+  pursues the following:
+
+
+  * Ensuring the promotion of economic planning, conducting research and implementation
+  and monitoring of economic development programs;
+
+
+  * Creating an enabling environment for SMMEs and Co-operatives to succeed in order
+  to improve the quality of life of the people of Limpopo Province;
+
+
+  * Stimulating economic growth through industry development, trade and investment
+  promotion;
+
+
+  * Ensuring that businesses in all sectors are regulated and an environment created
+  whereby consumers are effectively protected;
+
+
+  * Ensuring sustainable environmental management, utilisation and regulation of natural
+  resources;
+
+
+  * Ensuring protection and sustainable natural resource management and utilisation;
+
+
+  * Providing environmental empowerment support services; and
+
+
+  * Ensure regulation, promotion and development of tourism in the province.'
 is_vote_primary: true
 name: Economic Development, Environment and Tourism
 programme_by_economic_classification:

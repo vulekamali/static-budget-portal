@@ -312,21 +312,6 @@ budget_actual_programmes:
       phase: Audit Outcome
     name: Housing Development
 contributed_datasets:
-- contributor: Public Service Accountability Monitor
-  name: 'Budget Brief: Eastern Cape Department of Human Settlements 2016/17'
-  url_path: /datasets/contributed/budget-brief-eastern-cape-department-of-human-settlements-2016-17
-- contributor: Public Service Accountability Monitor
-  name: 'Budget Brief: Eastern Cape Department of Human Settlements 2014/15'
-  url_path: /datasets/contributed/budget-brief-eastern-cape-department-of-human-settlements-2014-15
-- contributor: Public Service Accountability Monitor
-  name: A People's Guide to the Adjusted Budget 2018/19
-  url_path: /datasets/contributed/people-s-guide-to-the-adjusted-budget-2018-19
-- contributor: Public Service Accountability Monitor
-  name: 'Budget Brief: Department of Human Settlements, 2016/17 and 2017/18'
-  url_path: /datasets/contributed/budget-brief-department-of-human-settlements
-- contributor: Studies in Poverty and Inequality Institute
-  name: Monitoring the right of access to adequate housing in South Africa
-  url_path: /datasets/contributed/monitoring-the-right-of-access-to-adequate-housing-in-south-africa
 - contributor: International Budget Partnership
   name: How Does Civil Society Use Budget Information?
   url_path: /datasets/contributed/how-does-civil-society-use-budget-information
@@ -509,27 +494,62 @@ financial_years:
 government:
   name: Gauteng
   slug: gauteng
-government_functions:
-- Human settlements and municipal infrastructure
-intro: "## Vision\n\nIntegrated sustainable huma setllements withing a smart Gauteng\
-  \ City Region.\r\n\r\n\n\n## Misiion\n\nTo facilitate the delivery of sustainable\
-  \ integrated human settlements,newtowns and smart cities in partnership with relevant\
-  \ role-players form all sectors of society through:\r\n\r\n* Development of suitably\
-  \ located and affordable housing(shelter) and decent human settlememts;\r\n\r\n\
-  * Creating new post-apartheid towns and transforming current cities and towns in\
-  \ Gauteng,moving towards efficiency,inclusion and susuatainability;and\r\n\r\n*\
-  \ Building cohesive,sustainable and caring communitieswith improved access to work\
-  \ and social amenities,including sprots and recreation facilities,with community\
-  \ development and optimal access/inclusion.\r\n\r\n\n\n## Core functions\n\nThe\
-  \ mandate of the department is derived from the Constitution.Its primary roles are:\r\
-  \n\r\n* To promote and faciltate the provision of adequate housing in the province;\r\
-  \n\r\n* To develop provincial housing policies that will strengthen the ability\
-  \ to provide housing opportunities to qualifying beneficialries in order to buildsustainable\
-  \ comunities;\r\n\r\n* To develop and implement programmes and projects that give\
-  \ effect to the province's short,medium and long term housing plans;and\r\n\r\n\
-  * To manage the housing delivery process and transform informal settlements,especially\
-  \ in prioritytownships, into sustainable and vibrant communities;and provides services\
-  \ in rspect of sbsidies and rental housing.\r\n"
+government_functions: []
+intro: '## Vision
+
+
+  Integrated sustainable huma setllements withing a smart Gauteng City Region.
+
+
+
+
+  ## Misiion
+
+
+  To facilitate the delivery of sustainable integrated human settlements,newtowns
+  and smart cities in partnership with relevant role-players form all sectors of society
+  through:
+
+
+  * Development of suitably located and affordable housing(shelter) and decent human
+  settlememts;
+
+
+  * Creating new post-apartheid towns and transforming current cities and towns in
+  Gauteng,moving towards efficiency,inclusion and susuatainability;and
+
+
+  * Building cohesive,sustainable and caring communitieswith improved access to work
+  and social amenities,including sprots and recreation facilities,with community development
+  and optimal access/inclusion.
+
+
+
+
+  ## Core functions
+
+
+  The mandate of the department is derived from the Constitution.Its primary roles
+  are:
+
+
+  * To promote and faciltate the provision of adequate housing in the province;
+
+
+  * To develop provincial housing policies that will strengthen the ability to provide
+  housing opportunities to qualifying beneficialries in order to buildsustainable
+  comunities;
+
+
+  * To develop and implement programmes and projects that give effect to the province''s
+  short,medium and long term housing plans;and
+
+
+  * To manage the housing delivery process and transform informal settlements,especially
+  in prioritytownships, into sustainable and vibrant communities;and provides services
+  in rspect of sbsidies and rental housing.
+
+  '
 is_vote_primary: true
 name: Human Settlements
 programme_by_economic_classification:

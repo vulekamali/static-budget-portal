@@ -263,9 +263,6 @@ budget_actual_programmes:
       phase: Audit Outcome
     name: Provincial Secretariat for Police Service
 contributed_datasets:
-- contributor: Public Service Accountability Monitor
-  name: A People's Guide to the Adjusted Budget 2018/19
-  url_path: /datasets/contributed/people-s-guide-to-the-adjusted-budget-2018-19
 - contributor: International Budget Partnership
   name: How Does Civil Society Use Budget Information?
   url_path: /datasets/contributed/how-does-civil-society-use-budget-information
@@ -403,16 +400,42 @@ financial_years:
 government:
   name: Eastern Cape
   slug: eastern-cape
-government_functions:
-- Defence, public order and safety
-intro: "## Vision\n\nA crime free and safe Eastern Cape\r\n\r\n\n\n## Mission\n\n\
-  To build safer communities through civilian oversight of the police and communty\
-  \ participation.\r\n\r\n\n\n## Core functions\n\n* To monitor poloce conduct\r\n\
-  \r\n* To oversee the effectoveness and efficiency of the police service,including\
-  \ receiving reports on the polive service;\r\n\r\n* To promote good relations between\
-  \ the Police and the community\r\n\r\n* To assess the effectiveness of visible policing;\
-  \ and\r\n\r\n* To liaise with the Cabinet Minster responsible for policing with\
-  \ respect to crime and policing in the province"
+government_functions: []
+intro: '## Vision
+
+
+  A crime free and safe Eastern Cape
+
+
+
+
+  ## Mission
+
+
+  To build safer communities through civilian oversight of the police and communty
+  participation.
+
+
+
+
+  ## Core functions
+
+
+  * To monitor poloce conduct
+
+
+  * To oversee the effectoveness and efficiency of the police service,including receiving
+  reports on the polive service;
+
+
+  * To promote good relations between the Police and the community
+
+
+  * To assess the effectiveness of visible policing; and
+
+
+  * To liaise with the Cabinet Minster responsible for policing with respect to crime
+  and policing in the province'
 is_vote_primary: true
 name: Safety and Liaison
 programme_by_economic_classification:

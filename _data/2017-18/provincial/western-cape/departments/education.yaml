@@ -462,28 +462,6 @@ budget_actual_programmes:
       phase: Audit Outcome
     name: Public Ordinary School Education
 contributed_datasets:
-- contributor: Public Service Accountability Monitor
-  name: Education Budget Brief 2019/20
-  url_path: /datasets/contributed/education-budget-brief-2019-20
-- contributor: Public Service Accountability Monitor
-  name: 'Budget Brief: Eastern Cape Department of Education 2016/17'
-  url_path: /datasets/contributed/budget-brief-eastern-cape-department-of-education-2016-17
-- contributor: Public Service Accountability Monitor
-  name: 'Budget Brief: Eastern Cape Department of Education 2018/19'
-  url_path: /datasets/contributed/budget-brief-eastern-cape-department-of-education-2018-19
-- contributor: Centre for Child Law
-  name: 'Mud to bricks: A review of school infrastructure spending and delivery'
-  url_path: /datasets/contributed/mud-to-bricks-a-review-of-school-infrastructure-spending-and-delivery
-- contributor: Centre for Child Law
-  name: 'Budgets and Bricks: Progress with school infrastructure following the Rivonia
-    Primary School case'
-  url_path: /datasets/contributed/budgets-and-bricks-progress-with-school-infrastructure-following-the-rivonia-primary-school-case
-- contributor: Public Service Accountability Monitor
-  name: A People's Guide to the Adjusted Budget 2018/19
-  url_path: /datasets/contributed/people-s-guide-to-the-adjusted-budget-2018-19
-- contributor: International Budget Partnership
-  name: The transparency of public funding of Basic Education in South Africa
-  url_path: /datasets/contributed/the-transparency-of-public-funding-of-basic-education-in-south-africa
 - contributor: International Budget Partnership
   name: How Does Civil Society Use Budget Information?
   url_path: /datasets/contributed/how-does-civil-society-use-budget-information
@@ -762,24 +740,74 @@ financial_years:
 government:
   name: Western Cape
   slug: western-cape
-government_functions:
-- Basic education
-intro: "## Vision\n\nCreating opportunity for all through improved education outcomes.\r\
-  \n\r\nThis is given expression through the three over-arching goals:\r\n\r\n* An\
-  \ improvement in the level of language and mathematics in all schools\r\n\r\n* An\
-  \ increase in the number and quality of passes in the National Senior Certificate\r\
-  \n\r\n* An increase in the quality of education provision in poorer communities\r\
-  \n\r\n\n\n## Mission\n\nTo provide quality education to all learners in the province\
-  \ through the following:\r\n\r\n* Overall planning for, and management of, the education\
-  \ system;\r\n\r\n* Education in public ordinary schools;\r\n\r\n* Support to independent\
-  \ schools;\r\n\r\n* Education in public special schools;\r\n\r\n* Early Childhood\
-  \ Development (ECD) in Grade R;\r\n\r\n* Training opportunities for teachers;\r\n\
-  \r\n* A targeted feeding programme and other poverty alleviation and safety measures;\
-  \ and\r\n\r\n* Support to teachers through provision of basic conditions of service,\
-  \ incentives and an  employee wellness programme.\r\n\r\n\n\n## Main Services and\
-  \ Core functions\n\n*Curriculum and Assessment support.\r\n\r\n*Administrative and\
-  \ financial support systems.\r\n\r\n*Institutional development and support systems,\
-  \ structures and programmes\r\n\r\n"
+government_functions: []
+intro: '## Vision
+
+
+  Creating opportunity for all through improved education outcomes.
+
+
+  This is given expression through the three over-arching goals:
+
+
+  * An improvement in the level of language and mathematics in all schools
+
+
+  * An increase in the number and quality of passes in the National Senior Certificate
+
+
+  * An increase in the quality of education provision in poorer communities
+
+
+
+
+  ## Mission
+
+
+  To provide quality education to all learners in the province through the following:
+
+
+  * Overall planning for, and management of, the education system;
+
+
+  * Education in public ordinary schools;
+
+
+  * Support to independent schools;
+
+
+  * Education in public special schools;
+
+
+  * Early Childhood Development (ECD) in Grade R;
+
+
+  * Training opportunities for teachers;
+
+
+  * A targeted feeding programme and other poverty alleviation and safety measures;
+  and
+
+
+  * Support to teachers through provision of basic conditions of service, incentives
+  and an  employee wellness programme.
+
+
+
+
+  ## Main Services and Core functions
+
+
+  *Curriculum and Assessment support.
+
+
+  *Administrative and financial support systems.
+
+
+  *Institutional development and support systems, structures and programmes
+
+
+  '
 is_vote_primary: true
 name: Education
 programme_by_economic_classification:

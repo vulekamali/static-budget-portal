@@ -1,5 +1,5 @@
 ---
-data_key: /infrastructure-projects/health-limpopo-chebeng-community-health-centre
+data_key: infrastructure-projects
 layout: infrastructure_project
 ---
 [//]: <> GENERATED FILE. Don't edit by hand.

@@ -1,5 +1,5 @@
 ---
-data_key: /infrastructure-projects/health-limpopo-academic-hospital
+data_key: infrastructure-projects
 layout: infrastructure_project
 ---
 [//]: <> GENERATED FILE. Don't edit by hand.

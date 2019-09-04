@@ -312,21 +312,6 @@ budget_actual_programmes:
       phase: Audit Outcome
     name: Local Governance
 contributed_datasets:
-- contributor: Public Service Accountability Monitor
-  name: 'Budget Brief: Eastern Cape Department of Human Settlements 2016/17'
-  url_path: /datasets/contributed/budget-brief-eastern-cape-department-of-human-settlements-2016-17
-- contributor: Public Service Accountability Monitor
-  name: 'Budget Brief: Eastern Cape Department of Human Settlements 2014/15'
-  url_path: /datasets/contributed/budget-brief-eastern-cape-department-of-human-settlements-2014-15
-- contributor: Public Service Accountability Monitor
-  name: A People's Guide to the Adjusted Budget 2018/19
-  url_path: /datasets/contributed/people-s-guide-to-the-adjusted-budget-2018-19
-- contributor: Public Service Accountability Monitor
-  name: 'Budget Brief: Department of Human Settlements, 2016/17 and 2017/18'
-  url_path: /datasets/contributed/budget-brief-department-of-human-settlements
-- contributor: Studies in Poverty and Inequality Institute
-  name: Monitoring the right of access to adequate housing in South Africa
-  url_path: /datasets/contributed/monitoring-the-right-of-access-to-adequate-housing-in-south-africa
 - contributor: International Budget Partnership
   name: How Does Civil Society Use Budget Information?
   url_path: /datasets/contributed/how-does-civil-society-use-budget-information
@@ -527,33 +512,98 @@ financial_years:
 government:
   name: Western Cape
   slug: western-cape
-government_functions:
-- Human settlements and municipal infrastructure
-intro: "## Vision\n\nAn efficient and dynamic team that enables well governed municipalities\
-  \ to deliver services to communities in a responsive, sustainable and integrated\
-  \ manner.\r\n\r\n\n\n## Mission\n\nTo monitor, coordinate and support municipalities\
-  \ to be effective in fulfilling their developmental mandate, and facilitate service\
-  \ delivery and disaster resilience through engagement with government spheres and\
-  \ social partners.\r\n\r\n\n\n## Main services and core functions\n\n* To support\
-  \ municipalities with the development of legislation and legislative compliance;\r\
-  \n\r\n* To intervene where there is non-fulfilment of legislative, executive and\
-  \ or financial  obligation;\r\n\r\n* To support and strengthen the capacity of municipalities;\r\
-  \n\r\n* To monitor and support local government;\r\n\r\n* To regulate the performance\
-  \ of municipalities in terms of their functions listed in\r\n\r\n* Schedules 4 and\
-  \ 5 of the Constitution;\r\n\r\n* To increase the number of people with access to\
-  \ government services & opportunities;\r\n\r\n* To promote developmental local government;\
-  \ and\r\n\r\n* To coordinate effective disaster management in the Province.\r\n\r\
-  \nMain services\r\n\r\n* Guide, advise on the development and support local government\
-  \ legislation.\r\n\r\n* Formulate appropriate provincial legislation on local government.\r\
-  \n\r\n* Review and advise on all aspects of municipal Integrated Development Plans\
-  \ (IDPs).\r\n\r\n* Co-ordinate provincial disaster management.\r\n\r\n* Monitor\
-  \ and evaluate municipal performance.\r\n\r\n* Support municipalities to strengthen\
-  \ public participation through effective communication between municipalities and\
-  \ communities.\r\n\r\n* Support municipalities through capacity building and training\
-  \ initiatives.\r\n\r\n* Implement and maintain intergovernmental structures for\
-  \ good governance, co-operation and\r\nco-ordination.\r\n\r\n* Promote developmental\
-  \ local government.\r\n\r\n* Facilitate access to government services.\r\n\r\n*\
-  \ Facilitate and monitor infrastructure development.\r\n"
+government_functions: []
+intro: '## Vision
+
+
+  An efficient and dynamic team that enables well governed municipalities to deliver
+  services to communities in a responsive, sustainable and integrated manner.
+
+
+
+
+  ## Mission
+
+
+  To monitor, coordinate and support municipalities to be effective in fulfilling
+  their developmental mandate, and facilitate service delivery and disaster resilience
+  through engagement with government spheres and social partners.
+
+
+
+
+  ## Main services and core functions
+
+
+  * To support municipalities with the development of legislation and legislative
+  compliance;
+
+
+  * To intervene where there is non-fulfilment of legislative, executive and or financial  obligation;
+
+
+  * To support and strengthen the capacity of municipalities;
+
+
+  * To monitor and support local government;
+
+
+  * To regulate the performance of municipalities in terms of their functions listed
+  in
+
+
+  * Schedules 4 and 5 of the Constitution;
+
+
+  * To increase the number of people with access to government services & opportunities;
+
+
+  * To promote developmental local government; and
+
+
+  * To coordinate effective disaster management in the Province.
+
+
+  Main services
+
+
+  * Guide, advise on the development and support local government legislation.
+
+
+  * Formulate appropriate provincial legislation on local government.
+
+
+  * Review and advise on all aspects of municipal Integrated Development Plans (IDPs).
+
+
+  * Co-ordinate provincial disaster management.
+
+
+  * Monitor and evaluate municipal performance.
+
+
+  * Support municipalities to strengthen public participation through effective communication
+  between municipalities and communities.
+
+
+  * Support municipalities through capacity building and training initiatives.
+
+
+  * Implement and maintain intergovernmental structures for good governance, co-operation
+  and
+
+  co-ordination.
+
+
+  * Promote developmental local government.
+
+
+  * Facilitate access to government services.
+
+
+  * Facilitate and monitor infrastructure development.
+
+  '
 is_vote_primary: true
 name: Local Government
 programme_by_economic_classification:

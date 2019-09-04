@@ -512,18 +512,6 @@ budget_actual_programmes:
       phase: Audit Outcome
     name: Central Hospital Services
 contributed_datasets:
-- contributor: Public Service Accountability Monitor
-  name: 'Budget Brief: Eastern Cape Department of Health 2014/15'
-  url_path: /datasets/contributed/budget-brief-eastern-cape-department-of-health-2014-15
-- contributor: Public Service Accountability Monitor
-  name: "Emergency Medical Services in the Eastern Cape 2005 \u2013 2015"
-  url_path: /datasets/contributed/emergency-medical-services-in-the-eastern-cape-2005-2015
-- contributor: Public Service Accountability Monitor
-  name: A People's Guide to the Adjusted Budget 2018/19
-  url_path: /datasets/contributed/people-s-guide-to-the-adjusted-budget-2018-19
-- contributor: CEGAA
-  name: CEGAA Occasional Paper on Government Health HIV and TB spending 2013/14-2020/21
-  url_path: /datasets/contributed/cegaa-occasional-paper-on-government-health-hiv-and-tb-spending-2013-14-2020-21
 - contributor: International Budget Partnership
   name: How Does Civil Society Use Budget Information?
   url_path: /datasets/contributed/how-does-civil-society-use-budget-information
@@ -841,28 +829,60 @@ financial_years:
 government:
   name: Gauteng
   slug: gauteng
-government_functions:
-- Health
-intro: "## Vision\n\nDailt we provide high-quality,efficient and accessible healthcare\
-  \ to transform people's lives\r\n\r\n\r\n\n\n## Mission\n\nCreate an effective public\
-  \ health system in Gauteng by ensuring we have the right people,skills,systems and\
-  \ equipment to provide the care our patients need to live health,quality lives\r\
-  \n\r\n\n\n## Core functions\n\n* Provision of primary healtcare services through\
-  \ the district system by means of a network of provincial clinics and community\
-  \ health centres and district hospitals administered by doctors,nurses and other\
-  \ health prodessionals;\r\n\r\n\r\n* Provision of emergency Medical services and\
-  \ planned patient transport throughout the province;\r\n\r\n* Renderingsecondary\
-  \ healthcare services through regional hospitals providing out- and in-patient care\
-  \ at general specialist level\r\n\r\n* Provision of specialisedin-patient care for\
-  \ psychiatric and infectious diseases, and some tuberculosis (TB) and chronic psychiatric\
-  \ services on an outsourced basis;\r\n\r\n* Provision of in-patient and out-patient\
-  \ academic healthcareservices through the central,tertiary hospitals and dental\
-  \ ospitals, in addition to the teaching that takesplace at other service levels;training\
-  \ of future health care professionalsin health sciences faculties and nursing colleges;and\r\
-  \n\r\n* Delivering of forensic pathology services and clinical-medico legal services\r\
-  \n\r\nThese services are supported through human resource;developmentmanagement\
-  \ and support servicesuch as laundries,facilities management and cook-freeze; and\
-  \ through supplying medical and pharmaceutical materials"
+government_functions: []
+intro: '## Vision
+
+
+  Dailt we provide high-quality,efficient and accessible healthcare to transform people''s
+  lives
+
+
+
+
+
+  ## Mission
+
+
+  Create an effective public health system in Gauteng by ensuring we have the right
+  people,skills,systems and equipment to provide the care our patients need to live
+  health,quality lives
+
+
+
+
+  ## Core functions
+
+
+  * Provision of primary healtcare services through the district system by means of
+  a network of provincial clinics and community health centres and district hospitals
+  administered by doctors,nurses and other health prodessionals;
+
+
+
+  * Provision of emergency Medical services and planned patient transport throughout
+  the province;
+
+
+  * Renderingsecondary healthcare services through regional hospitals providing out-
+  and in-patient care at general specialist level
+
+
+  * Provision of specialisedin-patient care for psychiatric and infectious diseases,
+  and some tuberculosis (TB) and chronic psychiatric services on an outsourced basis;
+
+
+  * Provision of in-patient and out-patient academic healthcareservices through the
+  central,tertiary hospitals and dental ospitals, in addition to the teaching that
+  takesplace at other service levels;training of future health care professionalsin
+  health sciences faculties and nursing colleges;and
+
+
+  * Delivering of forensic pathology services and clinical-medico legal services
+
+
+  These services are supported through human resource;developmentmanagement and support
+  servicesuch as laundries,facilities management and cook-freeze; and through supplying
+  medical and pharmaceutical materials'
 is_vote_primary: true
 name: Health
 programme_by_economic_classification:

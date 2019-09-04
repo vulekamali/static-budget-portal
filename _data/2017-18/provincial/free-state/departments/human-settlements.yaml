@@ -513,21 +513,6 @@ budget_actual_programmes:
       phase: Audit Outcome
     name: HOUSING DEVELOPMENT
 contributed_datasets:
-- contributor: Public Service Accountability Monitor
-  name: 'Budget Brief: Eastern Cape Department of Human Settlements 2016/17'
-  url_path: /datasets/contributed/budget-brief-eastern-cape-department-of-human-settlements-2016-17
-- contributor: Public Service Accountability Monitor
-  name: 'Budget Brief: Eastern Cape Department of Human Settlements 2014/15'
-  url_path: /datasets/contributed/budget-brief-eastern-cape-department-of-human-settlements-2014-15
-- contributor: Public Service Accountability Monitor
-  name: A People's Guide to the Adjusted Budget 2018/19
-  url_path: /datasets/contributed/people-s-guide-to-the-adjusted-budget-2018-19
-- contributor: Public Service Accountability Monitor
-  name: 'Budget Brief: Department of Human Settlements, 2016/17 and 2017/18'
-  url_path: /datasets/contributed/budget-brief-department-of-human-settlements
-- contributor: Studies in Poverty and Inequality Institute
-  name: Monitoring the right of access to adequate housing in South Africa
-  url_path: /datasets/contributed/monitoring-the-right-of-access-to-adequate-housing-in-south-africa
 - contributor: International Budget Partnership
   name: How Does Civil Society Use Budget Information?
   url_path: /datasets/contributed/how-does-civil-society-use-budget-information
@@ -719,15 +704,40 @@ financial_years:
 government:
   name: Free State
   slug: free-state
-government_functions:
-- Human settlements and municipal infrastructure
-intro: "## Vision\n\nIntegrated and Sustainable Human Settlements\r\n\r\n\n\n## Mission\n\
-  \nThe department will develop cohesive, sustainable and integrated human settlements\
-  \ in the Free State through\r\n\r\n\n\n## Core functions\n\nSound administration\
-  \ and engagement of all spheres of government and social partners\r\n\r\n* Functional\
-  \ settlements that are spatially, socially and economically integrated\r\n\r\n*\
-  \ Provision of affordable housing\r\n\r\n* Increased access to basic services\r\n\
-  \r\n* Acceleration of land tenure rights"
+government_functions: []
+intro: '## Vision
+
+
+  Integrated and Sustainable Human Settlements
+
+
+
+
+  ## Mission
+
+
+  The department will develop cohesive, sustainable and integrated human settlements
+  in the Free State through
+
+
+
+
+  ## Core functions
+
+
+  Sound administration and engagement of all spheres of government and social partners
+
+
+  * Functional settlements that are spatially, socially and economically integrated
+
+
+  * Provision of affordable housing
+
+
+  * Increased access to basic services
+
+
+  * Acceleration of land tenure rights'
 is_vote_primary: true
 name: Human Settlements
 programme_by_economic_classification:
