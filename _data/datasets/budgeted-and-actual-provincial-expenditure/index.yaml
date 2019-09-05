@@ -11,7 +11,7 @@ datasets:
   description: null
   intro_short: Combined dataset consisting of EPRE and Annual Report expenditure data.
     Includes data from multiple fiscal years.
-  last_updated: '2019-08-11T23:42:37.516826'
+  last_updated: '2019-09-05T05:10:23.583187'
   license:
     name: License not specified
     url: null
@@ -29,11 +29,11 @@ datasets:
   - description: ''
     format: CSV
     name: Budgeted and Actual Provincial Expenditure
-    url: http://datastore.openspending.org/b9d2af843f3a7ca223eea07fb608e62a/budgeted-and-actual-provincial-expenditure-uploaded-2019-08-12t0101/final/data/budget-vs-actual-provincial.csv
+    url: http://datastore.openspending.org/b9d2af843f3a7ca223eea07fb608e62a/budgeted-and-actual-provincial-expenditure-uploaded-2019-09-04t2047/final/data/budget-vs-actual-provincial-2019-09-24t2012.csv
   - description: ''
     format: OpenSpending API
     name: Budgeted and Actual Provincial Expenditure
-    url: https://openspending.org/api/3/cubes/b9d2af843f3a7ca223eea07fb608e62a:budgeted-and-actual-provincial-expenditure-uploaded-2019-08-12t0101/model/
+    url: https://openspending.org/api/3/cubes/b9d2af843f3a7ca223eea07fb608e62a:budgeted-and-actual-provincial-expenditure-uploaded-2019-09-04t2047/model/
   slug: budgeted-and-actual-provincial-expenditure
   url_path: /datasets/budgeted-and-actual-provincial-expenditure/budgeted-and-actual-provincial-expenditure
 description: ''

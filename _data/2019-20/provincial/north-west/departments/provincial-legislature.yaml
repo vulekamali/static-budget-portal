@@ -8,10 +8,16 @@ budget_actual:
   expenditure:
     base_financial_year: 2018-19
     nominal:
-    - amount: 318960000
+    - amount: 349435000
       financial_year: 2016-17
       phase: Main appropriation
-    - amount: 417485000
+    - amount: 388672000
+      financial_year: 2016-17
+      phase: Final Appropriation
+    - amount: 394457000
+      financial_year: 2016-17
+      phase: Audit Outcome
+    - amount: 449484000
       financial_year: 2017-18
       phase: Main appropriation
     - amount: 473898000
@@ -23,12 +29,6 @@ budget_actual:
     - amount: null
       financial_year: 2016-17
       phase: Adjusted appropriation
-    - amount: null
-      financial_year: 2016-17
-      phase: Final Appropriation
-    - amount: null
-      financial_year: 2016-17
-      phase: Audit Outcome
     - amount: null
       financial_year: 2017-18
       phase: Adjusted appropriation
@@ -57,10 +57,16 @@ budget_actual:
       financial_year: 2019-20
       phase: Audit Outcome
     real:
-    - amount: 350403525
+    - amount: 383882793
       financial_year: 2016-17
       phase: Main appropriation
-    - amount: 437992665
+    - amount: 426987832
+      financial_year: 2016-17
+      phase: Final Appropriation
+    - amount: 433343125
+      financial_year: 2016-17
+      phase: Audit Outcome
+    - amount: 471563517
       financial_year: 2017-18
       phase: Main appropriation
     - amount: 473898000
@@ -72,12 +78,6 @@ budget_actual:
     - amount: null
       financial_year: 2016-17
       phase: Adjusted appropriation
-    - amount: null
-      financial_year: 2016-17
-      phase: Final Appropriation
-    - amount: null
-      financial_year: 2016-17
-      phase: Audit Outcome
     - amount: null
       financial_year: 2017-18
       phase: Adjusted appropriation
@@ -112,12 +112,12 @@ budget_actual_programmes:
   - One or more programmes did not exist for some years displayed.
   programmes:
   - items:
-    - amount: 0
+    - amount: 28045000
       financial_year: 2016-17
-      phase: Main appropriation
-    - amount: 0
-      financial_year: 2017-18
-      phase: Main appropriation
+      phase: Final Appropriation
+    - amount: 27911000
+      financial_year: 2016-17
+      phase: Audit Outcome
     - amount: 33855000
       financial_year: 2018-19
       phase: Main appropriation
@@ -126,13 +126,13 @@ budget_actual_programmes:
       phase: Main appropriation
     - amount: null
       financial_year: 2016-17
+      phase: Main appropriation
+    - amount: null
+      financial_year: 2016-17
       phase: Adjusted appropriation
     - amount: null
-      financial_year: 2016-17
-      phase: Final Appropriation
-    - amount: null
-      financial_year: 2016-17
-      phase: Audit Outcome
+      financial_year: 2017-18
+      phase: Main appropriation
     - amount: null
       financial_year: 2017-18
       phase: Adjusted appropriation
@@ -161,6 +161,56 @@ budget_actual_programmes:
       financial_year: 2019-20
       phase: Audit Outcome
     name: Statutory Payments
+  - items:
+    - amount: 30475000
+      financial_year: 2016-17
+      phase: Main appropriation
+    - amount: 31999000
+      financial_year: 2017-18
+      phase: Main appropriation
+    - amount: null
+      financial_year: 2016-17
+      phase: Adjusted appropriation
+    - amount: null
+      financial_year: 2016-17
+      phase: Final Appropriation
+    - amount: null
+      financial_year: 2016-17
+      phase: Audit Outcome
+    - amount: null
+      financial_year: 2017-18
+      phase: Adjusted appropriation
+    - amount: null
+      financial_year: 2017-18
+      phase: Final Appropriation
+    - amount: null
+      financial_year: 2017-18
+      phase: Audit Outcome
+    - amount: null
+      financial_year: 2018-19
+      phase: Main appropriation
+    - amount: null
+      financial_year: 2018-19
+      phase: Adjusted appropriation
+    - amount: null
+      financial_year: 2018-19
+      phase: Final Appropriation
+    - amount: null
+      financial_year: 2018-19
+      phase: Audit Outcome
+    - amount: null
+      financial_year: 2019-20
+      phase: Main appropriation
+    - amount: null
+      financial_year: 2019-20
+      phase: Adjusted appropriation
+    - amount: null
+      financial_year: 2019-20
+      phase: Final Appropriation
+    - amount: null
+      financial_year: 2019-20
+      phase: Audit Outcome
+    name: Direct charge against the Provincial Revenue Fund
   - items:
     - amount: 134718000
       financial_year: 2016-17
@@ -212,6 +262,12 @@ budget_actual_programmes:
       phase: Audit Outcome
     name: Legislature operations
   - items:
+    - amount: 140406000
+      financial_year: 2016-17
+      phase: Final Appropriation
+    - amount: 138884000
+      financial_year: 2016-17
+      phase: Audit Outcome
     - amount: 167528000
       financial_year: 2019-20
       phase: Main appropriation
@@ -221,12 +277,6 @@ budget_actual_programmes:
     - amount: null
       financial_year: 2016-17
       phase: Adjusted appropriation
-    - amount: null
-      financial_year: 2016-17
-      phase: Final Appropriation
-    - amount: null
-      financial_year: 2016-17
-      phase: Audit Outcome
     - amount: null
       financial_year: 2017-18
       phase: Main appropriation
@@ -265,6 +315,12 @@ budget_actual_programmes:
     - amount: 184242000
       financial_year: 2016-17
       phase: Main appropriation
+    - amount: 220221000
+      financial_year: 2016-17
+      phase: Final Appropriation
+    - amount: 227662000
+      financial_year: 2016-17
+      phase: Audit Outcome
     - amount: 329134000
       financial_year: 2017-18
       phase: Main appropriation
@@ -277,12 +333,6 @@ budget_actual_programmes:
     - amount: null
       financial_year: 2016-17
       phase: Adjusted appropriation
-    - amount: null
-      financial_year: 2016-17
-      phase: Final Appropriation
-    - amount: null
-      financial_year: 2016-17
-      phase: Audit Outcome
     - amount: null
       financial_year: 2017-18
       phase: Adjusted appropriation

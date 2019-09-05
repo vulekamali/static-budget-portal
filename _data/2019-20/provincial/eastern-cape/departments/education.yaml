@@ -8,10 +8,16 @@ budget_actual:
   expenditure:
     base_financial_year: 2018-19
     nominal:
-    - amount: 31002645000
+    - amount: 31002644476
       financial_year: 2016-17
       phase: Main appropriation
-    - amount: 32989051000
+    - amount: 30982636000
+      financial_year: 2016-17
+      phase: Final Appropriation
+    - amount: 30966951000
+      financial_year: 2016-17
+      phase: Audit Outcome
+    - amount: 32989054532
       financial_year: 2017-18
       phase: Main appropriation
     - amount: 34772125816
@@ -23,12 +29,6 @@ budget_actual:
     - amount: null
       financial_year: 2016-17
       phase: Adjusted appropriation
-    - amount: null
-      financial_year: 2016-17
-      phase: Final Appropriation
-    - amount: null
-      financial_year: 2016-17
-      phase: Audit Outcome
     - amount: null
       financial_year: 2017-18
       phase: Adjusted appropriation
@@ -57,10 +57,16 @@ budget_actual:
       financial_year: 2019-20
       phase: Audit Outcome
     real:
-    - amount: 34058929322
+    - amount: 34058928746
       financial_year: 2016-17
       phase: Main appropriation
-    - amount: 34609536548
+    - amount: 34036947806
+      financial_year: 2016-17
+      phase: Final Appropriation
+    - amount: 34019716557
+      financial_year: 2016-17
+      phase: Audit Outcome
+    - amount: 34609540253
       financial_year: 2017-18
       phase: Main appropriation
     - amount: 34772125816
@@ -72,12 +78,6 @@ budget_actual:
     - amount: null
       financial_year: 2016-17
       phase: Adjusted appropriation
-    - amount: null
-      financial_year: 2016-17
-      phase: Final Appropriation
-    - amount: null
-      financial_year: 2016-17
-      phase: Audit Outcome
     - amount: null
       financial_year: 2017-18
       phase: Adjusted appropriation
@@ -112,10 +112,16 @@ budget_actual_programmes:
   - One or more programmes did not exist for some years displayed.
   programmes:
   - items:
-    - amount: 120000000
+    - amount: 119999750
       financial_year: 2016-17
       phase: Main appropriation
-    - amount: 123042000
+    - amount: 120000000
+      financial_year: 2016-17
+      phase: Final Appropriation
+    - amount: 119985000
+      financial_year: 2016-17
+      phase: Audit Outcome
+    - amount: 123042438
       financial_year: 2017-18
       phase: Main appropriation
     - amount: 131008839
@@ -127,12 +133,6 @@ budget_actual_programmes:
     - amount: null
       financial_year: 2016-17
       phase: Adjusted appropriation
-    - amount: null
-      financial_year: 2016-17
-      phase: Final Appropriation
-    - amount: null
-      financial_year: 2016-17
-      phase: Audit Outcome
     - amount: null
       financial_year: 2017-18
       phase: Adjusted appropriation
@@ -165,7 +165,7 @@ budget_actual_programmes:
     - amount: 377053000
       financial_year: 2016-17
       phase: Main appropriation
-    - amount: 499388000
+    - amount: 499388800
       financial_year: 2017-18
       phase: Main appropriation
     - amount: 490367397
@@ -212,6 +212,12 @@ budget_actual_programmes:
       phase: Audit Outcome
     name: Examination and Education Related Services
   - items:
+    - amount: 451640000
+      financial_year: 2016-17
+      phase: Final Appropriation
+    - amount: 502863000
+      financial_year: 2016-17
+      phase: Audit Outcome
     - amount: 499787000
       financial_year: 2019-20
       phase: Main appropriation
@@ -221,12 +227,6 @@ budget_actual_programmes:
     - amount: null
       financial_year: 2016-17
       phase: Adjusted appropriation
-    - amount: null
-      financial_year: 2016-17
-      phase: Final Appropriation
-    - amount: null
-      financial_year: 2016-17
-      phase: Audit Outcome
     - amount: null
       financial_year: 2017-18
       phase: Main appropriation
@@ -265,7 +265,13 @@ budget_actual_programmes:
     - amount: 630961000
       financial_year: 2016-17
       phase: Main appropriation
-    - amount: 639630000
+    - amount: 580483500
+      financial_year: 2016-17
+      phase: Final Appropriation
+    - amount: 449985000
+      financial_year: 2016-17
+      phase: Audit Outcome
+    - amount: 639630085
       financial_year: 2017-18
       phase: Main appropriation
     - amount: 785499613
@@ -277,12 +283,6 @@ budget_actual_programmes:
     - amount: null
       financial_year: 2016-17
       phase: Adjusted appropriation
-    - amount: null
-      financial_year: 2016-17
-      phase: Final Appropriation
-    - amount: null
-      financial_year: 2016-17
-      phase: Audit Outcome
     - amount: null
       financial_year: 2017-18
       phase: Adjusted appropriation
@@ -315,7 +315,13 @@ budget_actual_programmes:
     - amount: 690280000
       financial_year: 2016-17
       phase: Main appropriation
-    - amount: 736016000
+    - amount: 649366000
+      financial_year: 2016-17
+      phase: Final Appropriation
+    - amount: 643705000
+      financial_year: 2016-17
+      phase: Audit Outcome
+    - amount: 736016900
       financial_year: 2017-18
       phase: Main appropriation
     - amount: 805811566
@@ -327,12 +333,6 @@ budget_actual_programmes:
     - amount: null
       financial_year: 2016-17
       phase: Adjusted appropriation
-    - amount: null
-      financial_year: 2016-17
-      phase: Final Appropriation
-    - amount: null
-      financial_year: 2016-17
-      phase: Audit Outcome
     - amount: null
       financial_year: 2017-18
       phase: Adjusted appropriation
@@ -362,9 +362,15 @@ budget_actual_programmes:
       phase: Audit Outcome
     name: Public Special School Education
   - items:
-    - amount: 1714492000
+    - amount: 1714493000
       financial_year: 2016-17
       phase: Main appropriation
+    - amount: 1679492500
+      financial_year: 2016-17
+      phase: Final Appropriation
+    - amount: 1629640000
+      financial_year: 2016-17
+      phase: Audit Outcome
     - amount: 1636750000
       financial_year: 2017-18
       phase: Main appropriation
@@ -377,12 +383,6 @@ budget_actual_programmes:
     - amount: null
       financial_year: 2016-17
       phase: Adjusted appropriation
-    - amount: null
-      financial_year: 2016-17
-      phase: Final Appropriation
-    - amount: null
-      financial_year: 2016-17
-      phase: Audit Outcome
     - amount: null
       financial_year: 2017-18
       phase: Adjusted appropriation
@@ -412,10 +412,16 @@ budget_actual_programmes:
       phase: Audit Outcome
     name: Infrastructure Development
   - items:
-    - amount: 2607598000
+    - amount: 2607596726
       financial_year: 2016-17
       phase: Main appropriation
-    - amount: 3133144000
+    - amount: 2612753000
+      financial_year: 2016-17
+      phase: Final Appropriation
+    - amount: 2608524000
+      financial_year: 2016-17
+      phase: Audit Outcome
+    - amount: 3133145309
       financial_year: 2017-18
       phase: Main appropriation
     - amount: 3012024033
@@ -427,12 +433,6 @@ budget_actual_programmes:
     - amount: null
       financial_year: 2016-17
       phase: Adjusted appropriation
-    - amount: null
-      financial_year: 2016-17
-      phase: Final Appropriation
-    - amount: null
-      financial_year: 2016-17
-      phase: Audit Outcome
     - amount: null
       financial_year: 2017-18
       phase: Adjusted appropriation
@@ -465,6 +465,12 @@ budget_actual_programmes:
     - amount: 24862261000
       financial_year: 2016-17
       phase: Main appropriation
+    - amount: 24888901000
+      financial_year: 2016-17
+      phase: Final Appropriation
+    - amount: 25012249000
+      financial_year: 2016-17
+      phase: Audit Outcome
     - amount: 26221081000
       financial_year: 2017-18
       phase: Main appropriation
@@ -477,12 +483,6 @@ budget_actual_programmes:
     - amount: null
       financial_year: 2016-17
       phase: Adjusted appropriation
-    - amount: null
-      financial_year: 2016-17
-      phase: Final Appropriation
-    - amount: null
-      financial_year: 2016-17
-      phase: Audit Outcome
     - amount: null
       financial_year: 2017-18
       phase: Adjusted appropriation

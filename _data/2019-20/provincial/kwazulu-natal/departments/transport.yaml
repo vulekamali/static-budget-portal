@@ -11,6 +11,12 @@ budget_actual:
     - amount: 9571940000
       financial_year: 2016-17
       phase: Main appropriation
+    - amount: 9577620000
+      financial_year: 2016-17
+      phase: Final Appropriation
+    - amount: 9549691000
+      financial_year: 2016-17
+      phase: Audit Outcome
     - amount: 9847024000
       financial_year: 2017-18
       phase: Main appropriation
@@ -23,12 +29,6 @@ budget_actual:
     - amount: null
       financial_year: 2016-17
       phase: Adjusted appropriation
-    - amount: null
-      financial_year: 2016-17
-      phase: Final Appropriation
-    - amount: null
-      financial_year: 2016-17
-      phase: Audit Outcome
     - amount: null
       financial_year: 2017-18
       phase: Adjusted appropriation
@@ -60,6 +60,12 @@ budget_actual:
     - amount: 10515555299
       financial_year: 2016-17
       phase: Main appropriation
+    - amount: 10521795242
+      financial_year: 2016-17
+      phase: Final Appropriation
+    - amount: 10491112962
+      financial_year: 2016-17
+      phase: Audit Outcome
     - amount: 10330728732
       financial_year: 2017-18
       phase: Main appropriation
@@ -72,12 +78,6 @@ budget_actual:
     - amount: null
       financial_year: 2016-17
       phase: Adjusted appropriation
-    - amount: null
-      financial_year: 2016-17
-      phase: Final Appropriation
-    - amount: null
-      financial_year: 2016-17
-      phase: Audit Outcome
     - amount: null
       financial_year: 2017-18
       phase: Adjusted appropriation
@@ -111,6 +111,56 @@ budget_actual_programmes:
   notices:
   - One or more programmes did not exist for some years displayed.
   programmes:
+  - items:
+    - amount: 32497000
+      financial_year: 2016-17
+      phase: Final Appropriation
+    - amount: 32497000
+      financial_year: 2016-17
+      phase: Audit Outcome
+    - amount: null
+      financial_year: 2016-17
+      phase: Main appropriation
+    - amount: null
+      financial_year: 2016-17
+      phase: Adjusted appropriation
+    - amount: null
+      financial_year: 2017-18
+      phase: Main appropriation
+    - amount: null
+      financial_year: 2017-18
+      phase: Adjusted appropriation
+    - amount: null
+      financial_year: 2017-18
+      phase: Final Appropriation
+    - amount: null
+      financial_year: 2017-18
+      phase: Audit Outcome
+    - amount: null
+      financial_year: 2018-19
+      phase: Main appropriation
+    - amount: null
+      financial_year: 2018-19
+      phase: Adjusted appropriation
+    - amount: null
+      financial_year: 2018-19
+      phase: Final Appropriation
+    - amount: null
+      financial_year: 2018-19
+      phase: Audit Outcome
+    - amount: null
+      financial_year: 2019-20
+      phase: Main appropriation
+    - amount: null
+      financial_year: 2019-20
+      phase: Adjusted appropriation
+    - amount: null
+      financial_year: 2019-20
+      phase: Final Appropriation
+    - amount: null
+      financial_year: 2019-20
+      phase: Audit Outcome
+    name: Community Based Programme
   - items:
     - amount: 39191000
       financial_year: 2019-20
@@ -262,6 +312,12 @@ budget_actual_programmes:
       phase: Audit Outcome
     name: 1. Administration
   - items:
+    - amount: 314310000
+      financial_year: 2016-17
+      phase: Final Appropriation
+    - amount: 314310000
+      financial_year: 2016-17
+      phase: Audit Outcome
     - amount: 412788000
       financial_year: 2019-20
       phase: Main appropriation
@@ -271,12 +327,6 @@ budget_actual_programmes:
     - amount: null
       financial_year: 2016-17
       phase: Adjusted appropriation
-    - amount: null
-      financial_year: 2016-17
-      phase: Final Appropriation
-    - amount: null
-      financial_year: 2016-17
-      phase: Audit Outcome
     - amount: null
       financial_year: 2017-18
       phase: Main appropriation
@@ -311,6 +361,56 @@ budget_actual_programmes:
       financial_year: 2019-20
       phase: Audit Outcome
     name: Administration
+  - items:
+    - amount: 778062000
+      financial_year: 2016-17
+      phase: Final Appropriation
+    - amount: 778062000
+      financial_year: 2016-17
+      phase: Audit Outcome
+    - amount: 987413000
+      financial_year: 2019-20
+      phase: Main appropriation
+    - amount: null
+      financial_year: 2016-17
+      phase: Main appropriation
+    - amount: null
+      financial_year: 2016-17
+      phase: Adjusted appropriation
+    - amount: null
+      financial_year: 2017-18
+      phase: Main appropriation
+    - amount: null
+      financial_year: 2017-18
+      phase: Adjusted appropriation
+    - amount: null
+      financial_year: 2017-18
+      phase: Final Appropriation
+    - amount: null
+      financial_year: 2017-18
+      phase: Audit Outcome
+    - amount: null
+      financial_year: 2018-19
+      phase: Main appropriation
+    - amount: null
+      financial_year: 2018-19
+      phase: Adjusted appropriation
+    - amount: null
+      financial_year: 2018-19
+      phase: Final Appropriation
+    - amount: null
+      financial_year: 2018-19
+      phase: Audit Outcome
+    - amount: null
+      financial_year: 2019-20
+      phase: Adjusted appropriation
+    - amount: null
+      financial_year: 2019-20
+      phase: Final Appropriation
+    - amount: null
+      financial_year: 2019-20
+      phase: Audit Outcome
+    name: Transport Regulation
   - items:
     - amount: 811743000
       financial_year: 2016-17
@@ -362,56 +462,6 @@ budget_actual_programmes:
       phase: Audit Outcome
     name: 4. Transport Regulation
   - items:
-    - amount: 987413000
-      financial_year: 2019-20
-      phase: Main appropriation
-    - amount: null
-      financial_year: 2016-17
-      phase: Main appropriation
-    - amount: null
-      financial_year: 2016-17
-      phase: Adjusted appropriation
-    - amount: null
-      financial_year: 2016-17
-      phase: Final Appropriation
-    - amount: null
-      financial_year: 2016-17
-      phase: Audit Outcome
-    - amount: null
-      financial_year: 2017-18
-      phase: Main appropriation
-    - amount: null
-      financial_year: 2017-18
-      phase: Adjusted appropriation
-    - amount: null
-      financial_year: 2017-18
-      phase: Final Appropriation
-    - amount: null
-      financial_year: 2017-18
-      phase: Audit Outcome
-    - amount: null
-      financial_year: 2018-19
-      phase: Main appropriation
-    - amount: null
-      financial_year: 2018-19
-      phase: Adjusted appropriation
-    - amount: null
-      financial_year: 2018-19
-      phase: Final Appropriation
-    - amount: null
-      financial_year: 2018-19
-      phase: Audit Outcome
-    - amount: null
-      financial_year: 2019-20
-      phase: Adjusted appropriation
-    - amount: null
-      financial_year: 2019-20
-      phase: Final Appropriation
-    - amount: null
-      financial_year: 2019-20
-      phase: Audit Outcome
-    name: Transport Regulation
-  - items:
     - amount: 1353591000
       financial_year: 2016-17
       phase: Main appropriation
@@ -462,6 +512,12 @@ budget_actual_programmes:
       phase: Audit Outcome
     name: 3. Transport Operations
   - items:
+    - amount: 1370460000
+      financial_year: 2016-17
+      phase: Final Appropriation
+    - amount: 1370460000
+      financial_year: 2016-17
+      phase: Audit Outcome
     - amount: 1572919000
       financial_year: 2019-20
       phase: Main appropriation
@@ -471,12 +527,6 @@ budget_actual_programmes:
     - amount: null
       financial_year: 2016-17
       phase: Adjusted appropriation
-    - amount: null
-      financial_year: 2016-17
-      phase: Final Appropriation
-    - amount: null
-      financial_year: 2016-17
-      phase: Audit Outcome
     - amount: null
       financial_year: 2017-18
       phase: Main appropriation
@@ -562,6 +612,12 @@ budget_actual_programmes:
       phase: Audit Outcome
     name: 2. Transport Infrastructure
   - items:
+    - amount: 7082291000
+      financial_year: 2016-17
+      phase: Final Appropriation
+    - amount: 7054362000
+      financial_year: 2016-17
+      phase: Audit Outcome
     - amount: 7824765000
       financial_year: 2019-20
       phase: Main appropriation
@@ -571,12 +627,6 @@ budget_actual_programmes:
     - amount: null
       financial_year: 2016-17
       phase: Adjusted appropriation
-    - amount: null
-      financial_year: 2016-17
-      phase: Final Appropriation
-    - amount: null
-      financial_year: 2016-17
-      phase: Audit Outcome
     - amount: null
       financial_year: 2017-18
       phase: Main appropriation

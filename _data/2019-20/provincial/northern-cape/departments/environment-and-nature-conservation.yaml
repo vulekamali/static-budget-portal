@@ -8,10 +8,16 @@ budget_actual:
   expenditure:
     base_financial_year: 2018-19
     nominal:
-    - amount: 140757000
+    - amount: 140757134
       financial_year: 2016-17
       phase: Main appropriation
-    - amount: 148991000
+    - amount: 141677000
+      financial_year: 2016-17
+      phase: Final Appropriation
+    - amount: 140676000
+      financial_year: 2016-17
+      phase: Audit Outcome
+    - amount: 148991493
       financial_year: 2017-18
       phase: Main appropriation
     - amount: 167170000
@@ -20,12 +26,6 @@ budget_actual:
     - amount: null
       financial_year: 2016-17
       phase: Adjusted appropriation
-    - amount: null
-      financial_year: 2016-17
-      phase: Final Appropriation
-    - amount: null
-      financial_year: 2016-17
-      phase: Audit Outcome
     - amount: null
       financial_year: 2017-18
       phase: Adjusted appropriation
@@ -57,10 +57,16 @@ budget_actual:
       financial_year: 2019-20
       phase: Audit Outcome
     real:
-    - amount: 154633022
+    - amount: 154633170
       financial_year: 2016-17
       phase: Main appropriation
-    - amount: 156309724
+    - amount: 155643717
+      financial_year: 2016-17
+      phase: Final Appropriation
+    - amount: 154544037
+      financial_year: 2016-17
+      phase: Audit Outcome
+    - amount: 156310241
       financial_year: 2017-18
       phase: Main appropriation
     - amount: 158970138
@@ -69,12 +75,6 @@ budget_actual:
     - amount: null
       financial_year: 2016-17
       phase: Adjusted appropriation
-    - amount: null
-      financial_year: 2016-17
-      phase: Final Appropriation
-    - amount: null
-      financial_year: 2016-17
-      phase: Audit Outcome
     - amount: null
       financial_year: 2017-18
       phase: Adjusted appropriation
@@ -113,10 +113,60 @@ budget_actual_programmes:
   - One or more programmes did not exist for some years displayed.
   programmes:
   - items:
-    - amount: 10411000
+    - amount: 10197000
+      financial_year: 2016-17
+      phase: Final Appropriation
+    - amount: 10197000
+      financial_year: 2016-17
+      phase: Audit Outcome
+    - amount: 12243000
+      financial_year: 2019-20
+      phase: Main appropriation
+    - amount: null
       financial_year: 2016-17
       phase: Main appropriation
-    - amount: 10773000
+    - amount: null
+      financial_year: 2016-17
+      phase: Adjusted appropriation
+    - amount: null
+      financial_year: 2017-18
+      phase: Main appropriation
+    - amount: null
+      financial_year: 2017-18
+      phase: Adjusted appropriation
+    - amount: null
+      financial_year: 2017-18
+      phase: Final Appropriation
+    - amount: null
+      financial_year: 2017-18
+      phase: Audit Outcome
+    - amount: null
+      financial_year: 2018-19
+      phase: Main appropriation
+    - amount: null
+      financial_year: 2018-19
+      phase: Adjusted appropriation
+    - amount: null
+      financial_year: 2018-19
+      phase: Final Appropriation
+    - amount: null
+      financial_year: 2018-19
+      phase: Audit Outcome
+    - amount: null
+      financial_year: 2019-20
+      phase: Adjusted appropriation
+    - amount: null
+      financial_year: 2019-20
+      phase: Final Appropriation
+    - amount: null
+      financial_year: 2019-20
+      phase: Audit Outcome
+    name: Environmental Policy,Planning And Coordination
+  - items:
+    - amount: 10411320
+      financial_year: 2016-17
+      phase: Main appropriation
+    - amount: 10772136
       financial_year: 2017-18
       phase: Main appropriation
     - amount: null
@@ -163,106 +213,12 @@ budget_actual_programmes:
       phase: Audit Outcome
     name: ENVIRONMENTAL POLICY,PLANNING AND COORDINATION
   - items:
-    - amount: 10505000
-      financial_year: 2019-20
-      phase: Main appropriation
-    - amount: null
-      financial_year: 2016-17
-      phase: Main appropriation
-    - amount: null
-      financial_year: 2016-17
-      phase: Adjusted appropriation
-    - amount: null
+    - amount: 11643000
       financial_year: 2016-17
       phase: Final Appropriation
-    - amount: null
+    - amount: 11643000
       financial_year: 2016-17
       phase: Audit Outcome
-    - amount: null
-      financial_year: 2017-18
-      phase: Main appropriation
-    - amount: null
-      financial_year: 2017-18
-      phase: Adjusted appropriation
-    - amount: null
-      financial_year: 2017-18
-      phase: Final Appropriation
-    - amount: null
-      financial_year: 2017-18
-      phase: Audit Outcome
-    - amount: null
-      financial_year: 2018-19
-      phase: Main appropriation
-    - amount: null
-      financial_year: 2018-19
-      phase: Adjusted appropriation
-    - amount: null
-      financial_year: 2018-19
-      phase: Final Appropriation
-    - amount: null
-      financial_year: 2018-19
-      phase: Audit Outcome
-    - amount: null
-      financial_year: 2019-20
-      phase: Adjusted appropriation
-    - amount: null
-      financial_year: 2019-20
-      phase: Final Appropriation
-    - amount: null
-      financial_year: 2019-20
-      phase: Audit Outcome
-    name: Compliance And Enforcement
-  - items:
-    - amount: 12243000
-      financial_year: 2019-20
-      phase: Main appropriation
-    - amount: null
-      financial_year: 2016-17
-      phase: Main appropriation
-    - amount: null
-      financial_year: 2016-17
-      phase: Adjusted appropriation
-    - amount: null
-      financial_year: 2016-17
-      phase: Final Appropriation
-    - amount: null
-      financial_year: 2016-17
-      phase: Audit Outcome
-    - amount: null
-      financial_year: 2017-18
-      phase: Main appropriation
-    - amount: null
-      financial_year: 2017-18
-      phase: Adjusted appropriation
-    - amount: null
-      financial_year: 2017-18
-      phase: Final Appropriation
-    - amount: null
-      financial_year: 2017-18
-      phase: Audit Outcome
-    - amount: null
-      financial_year: 2018-19
-      phase: Main appropriation
-    - amount: null
-      financial_year: 2018-19
-      phase: Adjusted appropriation
-    - amount: null
-      financial_year: 2018-19
-      phase: Final Appropriation
-    - amount: null
-      financial_year: 2018-19
-      phase: Audit Outcome
-    - amount: null
-      financial_year: 2019-20
-      phase: Adjusted appropriation
-    - amount: null
-      financial_year: 2019-20
-      phase: Final Appropriation
-    - amount: null
-      financial_year: 2019-20
-      phase: Audit Outcome
-    name: Environmental Policy,Planning And Coordination
-  - items:
     - amount: 12561000
       financial_year: 2019-20
       phase: Main appropriation
@@ -272,12 +228,6 @@ budget_actual_programmes:
     - amount: null
       financial_year: 2016-17
       phase: Adjusted appropriation
-    - amount: null
-      financial_year: 2016-17
-      phase: Final Appropriation
-    - amount: null
-      financial_year: 2016-17
-      phase: Audit Outcome
     - amount: null
       financial_year: 2017-18
       phase: Main appropriation
@@ -313,10 +263,60 @@ budget_actual_programmes:
       phase: Audit Outcome
     name: Environmental Empowerment Services
   - items:
-    - amount: 12669000
+    - amount: 12301000
+      financial_year: 2016-17
+      phase: Final Appropriation
+    - amount: 12301000
+      financial_year: 2016-17
+      phase: Audit Outcome
+    - amount: 13751000
+      financial_year: 2019-20
+      phase: Main appropriation
+    - amount: null
       financial_year: 2016-17
       phase: Main appropriation
-    - amount: 13543000
+    - amount: null
+      financial_year: 2016-17
+      phase: Adjusted appropriation
+    - amount: null
+      financial_year: 2017-18
+      phase: Main appropriation
+    - amount: null
+      financial_year: 2017-18
+      phase: Adjusted appropriation
+    - amount: null
+      financial_year: 2017-18
+      phase: Final Appropriation
+    - amount: null
+      financial_year: 2017-18
+      phase: Audit Outcome
+    - amount: null
+      financial_year: 2018-19
+      phase: Main appropriation
+    - amount: null
+      financial_year: 2018-19
+      phase: Adjusted appropriation
+    - amount: null
+      financial_year: 2018-19
+      phase: Final Appropriation
+    - amount: null
+      financial_year: 2018-19
+      phase: Audit Outcome
+    - amount: null
+      financial_year: 2019-20
+      phase: Adjusted appropriation
+    - amount: null
+      financial_year: 2019-20
+      phase: Final Appropriation
+    - amount: null
+      financial_year: 2019-20
+      phase: Audit Outcome
+    name: Environmental Quality Management
+  - items:
+    - amount: 12668289
+      financial_year: 2016-17
+      phase: Main appropriation
+    - amount: 13542031
       financial_year: 2017-18
       phase: Main appropriation
     - amount: null
@@ -363,7 +363,13 @@ budget_actual_programmes:
       phase: Audit Outcome
     name: ENVIRONMENTAL EMPOWERMENT SERVICES
   - items:
-    - amount: 13751000
+    - amount: 13239000
+      financial_year: 2016-17
+      phase: Final Appropriation
+    - amount: 12605000
+      financial_year: 2016-17
+      phase: Audit Outcome
+    - amount: 10505000
       financial_year: 2019-20
       phase: Main appropriation
     - amount: null
@@ -372,12 +378,6 @@ budget_actual_programmes:
     - amount: null
       financial_year: 2016-17
       phase: Adjusted appropriation
-    - amount: null
-      financial_year: 2016-17
-      phase: Final Appropriation
-    - amount: null
-      financial_year: 2016-17
-      phase: Audit Outcome
     - amount: null
       financial_year: 2017-18
       phase: Main appropriation
@@ -411,12 +411,12 @@ budget_actual_programmes:
     - amount: null
       financial_year: 2019-20
       phase: Audit Outcome
-    name: Environmental Quality Management
+    name: Compliance And Enforcement
   - items:
-    - amount: 14011000
+    - amount: 14010629
       financial_year: 2016-17
       phase: Main appropriation
-    - amount: 11176000
+    - amount: 11175209
       financial_year: 2017-18
       phase: Main appropriation
     - amount: null
@@ -463,10 +463,10 @@ budget_actual_programmes:
       phase: Audit Outcome
     name: COMPLIANCE AND ENFORCEMENT
   - items:
-    - amount: 14308000
+    - amount: 14307978
       financial_year: 2016-17
       phase: Main appropriation
-    - amount: 14251000
+    - amount: 14252002
       financial_year: 2017-18
       phase: Main appropriation
     - amount: null
@@ -513,10 +513,10 @@ budget_actual_programmes:
       phase: Audit Outcome
     name: ENVIRONMENTAL QUALITY MANAGEMENT
   - items:
-    - amount: 28050000
+    - amount: 28050498
       financial_year: 2016-17
       phase: Main appropriation
-    - amount: 34229000
+    - amount: 34230173
       financial_year: 2017-18
       phase: Main appropriation
     - amount: null
@@ -563,6 +563,12 @@ budget_actual_programmes:
       phase: Audit Outcome
     name: BIODIVERSITY MANAGEMENT
   - items:
+    - amount: 28613000
+      financial_year: 2016-17
+      phase: Final Appropriation
+    - amount: 28247000
+      financial_year: 2016-17
+      phase: Audit Outcome
     - amount: 36093000
       financial_year: 2019-20
       phase: Main appropriation
@@ -572,12 +578,6 @@ budget_actual_programmes:
     - amount: null
       financial_year: 2016-17
       phase: Adjusted appropriation
-    - amount: null
-      financial_year: 2016-17
-      phase: Final Appropriation
-    - amount: null
-      financial_year: 2016-17
-      phase: Audit Outcome
     - amount: null
       financial_year: 2017-18
       phase: Main appropriation
@@ -613,74 +613,24 @@ budget_actual_programmes:
       phase: Audit Outcome
     name: Biodiversity Management
   - items:
-    - amount: 61308000
+    - amount: 61308420
       financial_year: 2016-17
       phase: Main appropriation
-    - amount: 65019000
-      financial_year: 2017-18
-      phase: Main appropriation
-    - amount: null
-      financial_year: 2016-17
-      phase: Adjusted appropriation
-    - amount: null
+    - amount: 65684000
       financial_year: 2016-17
       phase: Final Appropriation
-    - amount: null
+    - amount: 65683000
       financial_year: 2016-17
       phase: Audit Outcome
-    - amount: null
+    - amount: 65019942
       financial_year: 2017-18
-      phase: Adjusted appropriation
-    - amount: null
-      financial_year: 2017-18
-      phase: Final Appropriation
-    - amount: null
-      financial_year: 2017-18
-      phase: Audit Outcome
-    - amount: null
-      financial_year: 2018-19
       phase: Main appropriation
-    - amount: null
-      financial_year: 2018-19
-      phase: Adjusted appropriation
-    - amount: null
-      financial_year: 2018-19
-      phase: Final Appropriation
-    - amount: null
-      financial_year: 2018-19
-      phase: Audit Outcome
-    - amount: null
-      financial_year: 2019-20
-      phase: Main appropriation
-    - amount: null
-      financial_year: 2019-20
-      phase: Adjusted appropriation
-    - amount: null
-      financial_year: 2019-20
-      phase: Final Appropriation
-    - amount: null
-      financial_year: 2019-20
-      phase: Audit Outcome
-    name: ADMINISTRATION
-  - items:
     - amount: 82017000
       financial_year: 2019-20
       phase: Main appropriation
     - amount: null
       financial_year: 2016-17
-      phase: Main appropriation
-    - amount: null
-      financial_year: 2016-17
       phase: Adjusted appropriation
-    - amount: null
-      financial_year: 2016-17
-      phase: Final Appropriation
-    - amount: null
-      financial_year: 2016-17
-      phase: Audit Outcome
-    - amount: null
-      financial_year: 2017-18
-      phase: Main appropriation
     - amount: null
       financial_year: 2017-18
       phase: Adjusted appropriation

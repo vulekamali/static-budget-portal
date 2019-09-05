@@ -8,10 +8,16 @@ budget_actual:
   expenditure:
     base_financial_year: 2018-19
     nominal:
-    - amount: 376284000
+    - amount: 376286000
       financial_year: 2016-17
       phase: Main appropriation
-    - amount: 395789000
+    - amount: 379766000
+      financial_year: 2016-17
+      phase: Final Appropriation
+    - amount: 371031000
+      financial_year: 2016-17
+      phase: Audit Outcome
+    - amount: 391388000
       financial_year: 2017-18
       phase: Main appropriation
     - amount: 443476000
@@ -20,12 +26,6 @@ budget_actual:
     - amount: null
       financial_year: 2016-17
       phase: Adjusted appropriation
-    - amount: null
-      financial_year: 2016-17
-      phase: Final Appropriation
-    - amount: null
-      financial_year: 2016-17
-      phase: Audit Outcome
     - amount: null
       financial_year: 2017-18
       phase: Adjusted appropriation
@@ -57,10 +57,16 @@ budget_actual:
       financial_year: 2019-20
       phase: Audit Outcome
     real:
-    - amount: 413378605
+    - amount: 413380802
       financial_year: 2016-17
       phase: Main appropriation
-    - amount: 415230915
+    - amount: 417203866
+      financial_year: 2016-17
+      phase: Final Appropriation
+    - amount: 407607757
+      financial_year: 2016-17
+      phase: Audit Outcome
+    - amount: 410613730
       financial_year: 2017-18
       phase: Main appropriation
     - amount: 421723042
@@ -69,12 +75,6 @@ budget_actual:
     - amount: null
       financial_year: 2016-17
       phase: Adjusted appropriation
-    - amount: null
-      financial_year: 2016-17
-      phase: Final Appropriation
-    - amount: null
-      financial_year: 2016-17
-      phase: Audit Outcome
     - amount: null
       financial_year: 2017-18
       phase: Adjusted appropriation
@@ -113,57 +113,16 @@ budget_actual_programmes:
   - One or more programmes did not exist for some years displayed.
   programmes:
   - items:
-    - amount: 90973000
+    - amount: 90975000
       financial_year: 2016-17
       phase: Main appropriation
-    - amount: null
-      financial_year: 2016-17
-      phase: Adjusted appropriation
-    - amount: null
+    - amount: 94345000
       financial_year: 2016-17
       phase: Final Appropriation
-    - amount: null
+    - amount: 89885000
       financial_year: 2016-17
       phase: Audit Outcome
-    - amount: null
-      financial_year: 2017-18
-      phase: Main appropriation
-    - amount: null
-      financial_year: 2017-18
-      phase: Adjusted appropriation
-    - amount: null
-      financial_year: 2017-18
-      phase: Final Appropriation
-    - amount: null
-      financial_year: 2017-18
-      phase: Audit Outcome
-    - amount: null
-      financial_year: 2018-19
-      phase: Main appropriation
-    - amount: null
-      financial_year: 2018-19
-      phase: Adjusted appropriation
-    - amount: null
-      financial_year: 2018-19
-      phase: Final Appropriation
-    - amount: null
-      financial_year: 2018-19
-      phase: Audit Outcome
-    - amount: null
-      financial_year: 2019-20
-      phase: Main appropriation
-    - amount: null
-      financial_year: 2019-20
-      phase: Adjusted appropriation
-    - amount: null
-      financial_year: 2019-20
-      phase: Final Appropriation
-    - amount: null
-      financial_year: 2019-20
-      phase: Audit Outcome
-    name: Policy and Governance
-  - items:
-    - amount: 96031000
+    - amount: 94525000
       financial_year: 2017-18
       phase: Main appropriation
     - amount: 106715000
@@ -171,16 +130,7 @@ budget_actual_programmes:
       phase: Main appropriation
     - amount: null
       financial_year: 2016-17
-      phase: Main appropriation
-    - amount: null
-      financial_year: 2016-17
       phase: Adjusted appropriation
-    - amount: null
-      financial_year: 2016-17
-      phase: Final Appropriation
-    - amount: null
-      financial_year: 2016-17
-      phase: Audit Outcome
     - amount: null
       financial_year: 2017-18
       phase: Adjusted appropriation
@@ -213,18 +163,18 @@ budget_actual_programmes:
       phase: Audit Outcome
     name: Policy & Governance
   - items:
-    - amount: 139518000
+    - amount: 138042000
+      financial_year: 2016-17
+      phase: Final Appropriation
+    - amount: 136053000
+      financial_year: 2016-17
+      phase: Audit Outcome
+    - amount: null
       financial_year: 2016-17
       phase: Main appropriation
     - amount: null
       financial_year: 2016-17
       phase: Adjusted appropriation
-    - amount: null
-      financial_year: 2016-17
-      phase: Final Appropriation
-    - amount: null
-      financial_year: 2016-17
-      phase: Audit Outcome
     - amount: null
       financial_year: 2017-18
       phase: Main appropriation
@@ -263,64 +213,14 @@ budget_actual_programmes:
       phase: Audit Outcome
     name: Institutional Development
   - items:
-    - amount: 145793000
+    - amount: 139518000
       financial_year: 2016-17
       phase: Main appropriation
-    - amount: 150425000
-      financial_year: 2017-18
-      phase: Main appropriation
-    - amount: 174943000
-      financial_year: 2019-20
-      phase: Main appropriation
-    - amount: null
-      financial_year: 2016-17
-      phase: Adjusted appropriation
-    - amount: null
-      financial_year: 2016-17
-      phase: Final Appropriation
-    - amount: null
-      financial_year: 2016-17
-      phase: Audit Outcome
-    - amount: null
-      financial_year: 2017-18
-      phase: Adjusted appropriation
-    - amount: null
-      financial_year: 2017-18
-      phase: Final Appropriation
-    - amount: null
-      financial_year: 2017-18
-      phase: Audit Outcome
-    - amount: null
-      financial_year: 2018-19
-      phase: Main appropriation
-    - amount: null
-      financial_year: 2018-19
-      phase: Adjusted appropriation
-    - amount: null
-      financial_year: 2018-19
-      phase: Final Appropriation
-    - amount: null
-      financial_year: 2018-19
-      phase: Audit Outcome
-    - amount: null
-      financial_year: 2019-20
-      phase: Adjusted appropriation
-    - amount: null
-      financial_year: 2019-20
-      phase: Final Appropriation
-    - amount: null
-      financial_year: 2019-20
-      phase: Audit Outcome
-    name: Administration
-  - items:
-    - amount: 149333000
+    - amount: 143611000
       financial_year: 2017-18
       phase: Main appropriation
     - amount: 161818000
       financial_year: 2019-20
-      phase: Main appropriation
-    - amount: null
-      financial_year: 2016-17
       phase: Main appropriation
     - amount: null
       financial_year: 2016-17
@@ -362,6 +262,56 @@ budget_actual_programmes:
       financial_year: 2019-20
       phase: Audit Outcome
     name: Institutional Support
+  - items:
+    - amount: 145793000
+      financial_year: 2016-17
+      phase: Main appropriation
+    - amount: 147379000
+      financial_year: 2016-17
+      phase: Final Appropriation
+    - amount: 145093000
+      financial_year: 2016-17
+      phase: Audit Outcome
+    - amount: 153252000
+      financial_year: 2017-18
+      phase: Main appropriation
+    - amount: 174943000
+      financial_year: 2019-20
+      phase: Main appropriation
+    - amount: null
+      financial_year: 2016-17
+      phase: Adjusted appropriation
+    - amount: null
+      financial_year: 2017-18
+      phase: Adjusted appropriation
+    - amount: null
+      financial_year: 2017-18
+      phase: Final Appropriation
+    - amount: null
+      financial_year: 2017-18
+      phase: Audit Outcome
+    - amount: null
+      financial_year: 2018-19
+      phase: Main appropriation
+    - amount: null
+      financial_year: 2018-19
+      phase: Adjusted appropriation
+    - amount: null
+      financial_year: 2018-19
+      phase: Final Appropriation
+    - amount: null
+      financial_year: 2018-19
+      phase: Audit Outcome
+    - amount: null
+      financial_year: 2019-20
+      phase: Adjusted appropriation
+    - amount: null
+      financial_year: 2019-20
+      phase: Final Appropriation
+    - amount: null
+      financial_year: 2019-20
+      phase: Audit Outcome
+    name: Administration
 contributed_datasets:
 - contributor: International Budget Partnership
   name: How Does Civil Society Use Budget Information?

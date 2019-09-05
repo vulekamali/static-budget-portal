@@ -11,6 +11,12 @@ budget_actual:
     - amount: 1961438000
       financial_year: 2016-17
       phase: Main appropriation
+    - amount: 1963864000
+      financial_year: 2016-17
+      phase: Final Appropriation
+    - amount: 1959993000
+      financial_year: 2016-17
+      phase: Audit Outcome
     - amount: 2106974000
       financial_year: 2017-18
       phase: Main appropriation
@@ -23,12 +29,6 @@ budget_actual:
     - amount: null
       financial_year: 2016-17
       phase: Adjusted appropriation
-    - amount: null
-      financial_year: 2016-17
-      phase: Final Appropriation
-    - amount: null
-      financial_year: 2016-17
-      phase: Audit Outcome
     - amount: null
       financial_year: 2017-18
       phase: Adjusted appropriation
@@ -60,6 +60,12 @@ budget_actual:
     - amount: 2154799315
       financial_year: 2016-17
       phase: Main appropriation
+    - amount: 2157464473
+      financial_year: 2016-17
+      phase: Final Appropriation
+    - amount: 2153211864
+      financial_year: 2016-17
+      phase: Audit Outcome
     - amount: 2210472609
       financial_year: 2017-18
       phase: Main appropriation
@@ -72,12 +78,6 @@ budget_actual:
     - amount: null
       financial_year: 2016-17
       phase: Adjusted appropriation
-    - amount: null
-      financial_year: 2016-17
-      phase: Final Appropriation
-    - amount: null
-      financial_year: 2016-17
-      phase: Audit Outcome
     - amount: null
       financial_year: 2017-18
       phase: Adjusted appropriation
@@ -162,6 +162,12 @@ budget_actual_programmes:
       phase: Audit Outcome
     name: Development and Research
   - items:
+    - amount: 50092000
+      financial_year: 2016-17
+      phase: Final Appropriation
+    - amount: 49771000
+      financial_year: 2016-17
+      phase: Audit Outcome
     - amount: 60612000
       financial_year: 2019-20
       phase: Main appropriation
@@ -171,12 +177,6 @@ budget_actual_programmes:
     - amount: null
       financial_year: 2016-17
       phase: Adjusted appropriation
-    - amount: null
-      financial_year: 2016-17
-      phase: Final Appropriation
-    - amount: null
-      financial_year: 2016-17
-      phase: Audit Outcome
     - amount: null
       financial_year: 2017-18
       phase: Main appropriation
@@ -215,6 +215,12 @@ budget_actual_programmes:
     - amount: 185806000
       financial_year: 2016-17
       phase: Main appropriation
+    - amount: 185987000
+      financial_year: 2016-17
+      phase: Final Appropriation
+    - amount: 185987000
+      financial_year: 2016-17
+      phase: Audit Outcome
     - amount: 199813000
       financial_year: 2017-18
       phase: Main appropriation
@@ -227,12 +233,6 @@ budget_actual_programmes:
     - amount: null
       financial_year: 2016-17
       phase: Adjusted appropriation
-    - amount: null
-      financial_year: 2016-17
-      phase: Final Appropriation
-    - amount: null
-      financial_year: 2016-17
-      phase: Audit Outcome
     - amount: null
       financial_year: 2017-18
       phase: Adjusted appropriation
@@ -265,6 +265,12 @@ budget_actual_programmes:
     - amount: 334315000
       financial_year: 2016-17
       phase: Main appropriation
+    - amount: 345823000
+      financial_year: 2016-17
+      phase: Final Appropriation
+    - amount: 344612000
+      financial_year: 2016-17
+      phase: Audit Outcome
     - amount: 348686000
       financial_year: 2017-18
       phase: Main appropriation
@@ -277,12 +283,6 @@ budget_actual_programmes:
     - amount: null
       financial_year: 2016-17
       phase: Adjusted appropriation
-    - amount: null
-      financial_year: 2016-17
-      phase: Final Appropriation
-    - amount: null
-      financial_year: 2016-17
-      phase: Audit Outcome
     - amount: null
       financial_year: 2017-18
       phase: Adjusted appropriation
@@ -311,6 +311,56 @@ budget_actual_programmes:
       financial_year: 2019-20
       phase: Audit Outcome
     name: Restorative Services
+  - items:
+    - amount: 611481000
+      financial_year: 2016-17
+      phase: Final Appropriation
+    - amount: 611241000
+      financial_year: 2016-17
+      phase: Audit Outcome
+    - amount: 753835000
+      financial_year: 2019-20
+      phase: Main appropriation
+    - amount: null
+      financial_year: 2016-17
+      phase: Main appropriation
+    - amount: null
+      financial_year: 2016-17
+      phase: Adjusted appropriation
+    - amount: null
+      financial_year: 2017-18
+      phase: Main appropriation
+    - amount: null
+      financial_year: 2017-18
+      phase: Adjusted appropriation
+    - amount: null
+      financial_year: 2017-18
+      phase: Final Appropriation
+    - amount: null
+      financial_year: 2017-18
+      phase: Audit Outcome
+    - amount: null
+      financial_year: 2018-19
+      phase: Main appropriation
+    - amount: null
+      financial_year: 2018-19
+      phase: Adjusted appropriation
+    - amount: null
+      financial_year: 2018-19
+      phase: Final Appropriation
+    - amount: null
+      financial_year: 2018-19
+      phase: Audit Outcome
+    - amount: null
+      financial_year: 2019-20
+      phase: Adjusted appropriation
+    - amount: null
+      financial_year: 2019-20
+      phase: Final Appropriation
+    - amount: null
+      financial_year: 2019-20
+      phase: Audit Outcome
+    name: Children And Families
   - items:
     - amount: 615102000
       financial_year: 2016-17
@@ -362,59 +412,15 @@ budget_actual_programmes:
       phase: Audit Outcome
     name: Children and Families
   - items:
-    - amount: 753835000
-      financial_year: 2019-20
-      phase: Main appropriation
-    - amount: null
-      financial_year: 2016-17
-      phase: Main appropriation
-    - amount: null
-      financial_year: 2016-17
-      phase: Adjusted appropriation
-    - amount: null
-      financial_year: 2016-17
-      phase: Final Appropriation
-    - amount: null
-      financial_year: 2016-17
-      phase: Audit Outcome
-    - amount: null
-      financial_year: 2017-18
-      phase: Main appropriation
-    - amount: null
-      financial_year: 2017-18
-      phase: Adjusted appropriation
-    - amount: null
-      financial_year: 2017-18
-      phase: Final Appropriation
-    - amount: null
-      financial_year: 2017-18
-      phase: Audit Outcome
-    - amount: null
-      financial_year: 2018-19
-      phase: Main appropriation
-    - amount: null
-      financial_year: 2018-19
-      phase: Adjusted appropriation
-    - amount: null
-      financial_year: 2018-19
-      phase: Final Appropriation
-    - amount: null
-      financial_year: 2018-19
-      phase: Audit Outcome
-    - amount: null
-      financial_year: 2019-20
-      phase: Adjusted appropriation
-    - amount: null
-      financial_year: 2019-20
-      phase: Final Appropriation
-    - amount: null
-      financial_year: 2019-20
-      phase: Audit Outcome
-    name: Children And Families
-  - items:
     - amount: 778385000
       financial_year: 2016-17
       phase: Main appropriation
+    - amount: 770481000
+      financial_year: 2016-17
+      phase: Final Appropriation
+    - amount: 768382000
+      financial_year: 2016-17
+      phase: Audit Outcome
     - amount: 850242000
       financial_year: 2017-18
       phase: Main appropriation
@@ -427,12 +433,6 @@ budget_actual_programmes:
     - amount: null
       financial_year: 2016-17
       phase: Adjusted appropriation
-    - amount: null
-      financial_year: 2016-17
-      phase: Final Appropriation
-    - amount: null
-      financial_year: 2016-17
-      phase: Audit Outcome
     - amount: null
       financial_year: 2017-18
       phase: Adjusted appropriation

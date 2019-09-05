@@ -11,6 +11,12 @@ budget_actual:
     - amount: 2349036000
       financial_year: 2016-17
       phase: Main appropriation
+    - amount: 2363222000
+      financial_year: 2016-17
+      phase: Final Appropriation
+    - amount: 2362298000
+      financial_year: 2016-17
+      phase: Audit Outcome
     - amount: 2631398000
       financial_year: 2017-18
       phase: Main appropriation
@@ -23,12 +29,6 @@ budget_actual:
     - amount: null
       financial_year: 2016-17
       phase: Adjusted appropriation
-    - amount: null
-      financial_year: 2016-17
-      phase: Final Appropriation
-    - amount: null
-      financial_year: 2016-17
-      phase: Audit Outcome
     - amount: null
       financial_year: 2017-18
       phase: Adjusted appropriation
@@ -60,6 +60,12 @@ budget_actual:
     - amount: 2580607270
       financial_year: 2016-17
       phase: Main appropriation
+    - amount: 2596191746
+      financial_year: 2016-17
+      phase: Final Appropriation
+    - amount: 2595176657
+      financial_year: 2016-17
+      phase: Audit Outcome
     - amount: 2760657323
       financial_year: 2017-18
       phase: Main appropriation
@@ -72,12 +78,6 @@ budget_actual:
     - amount: null
       financial_year: 2016-17
       phase: Adjusted appropriation
-    - amount: null
-      financial_year: 2016-17
-      phase: Final Appropriation
-    - amount: null
-      financial_year: 2016-17
-      phase: Audit Outcome
     - amount: null
       financial_year: 2017-18
       phase: Adjusted appropriation
@@ -115,6 +115,12 @@ budget_actual_programmes:
     - amount: 10529000
       financial_year: 2016-17
       phase: Main appropriation
+    - amount: 11237000
+      financial_year: 2016-17
+      phase: Final Appropriation
+    - amount: 11237000
+      financial_year: 2016-17
+      phase: Audit Outcome
     - amount: 13615000
       financial_year: 2017-18
       phase: Main appropriation
@@ -127,12 +133,6 @@ budget_actual_programmes:
     - amount: null
       financial_year: 2016-17
       phase: Adjusted appropriation
-    - amount: null
-      financial_year: 2016-17
-      phase: Final Appropriation
-    - amount: null
-      financial_year: 2016-17
-      phase: Audit Outcome
     - amount: null
       financial_year: 2017-18
       phase: Adjusted appropriation
@@ -161,6 +161,56 @@ budget_actual_programmes:
       financial_year: 2019-20
       phase: Audit Outcome
     name: Housing Asset Management
+  - items:
+    - amount: 16427000
+      financial_year: 2016-17
+      phase: Final Appropriation
+    - amount: 15704000
+      financial_year: 2016-17
+      phase: Audit Outcome
+    - amount: 21446000
+      financial_year: 2019-20
+      phase: Main appropriation
+    - amount: null
+      financial_year: 2016-17
+      phase: Main appropriation
+    - amount: null
+      financial_year: 2016-17
+      phase: Adjusted appropriation
+    - amount: null
+      financial_year: 2017-18
+      phase: Main appropriation
+    - amount: null
+      financial_year: 2017-18
+      phase: Adjusted appropriation
+    - amount: null
+      financial_year: 2017-18
+      phase: Final Appropriation
+    - amount: null
+      financial_year: 2017-18
+      phase: Audit Outcome
+    - amount: null
+      financial_year: 2018-19
+      phase: Main appropriation
+    - amount: null
+      financial_year: 2018-19
+      phase: Adjusted appropriation
+    - amount: null
+      financial_year: 2018-19
+      phase: Final Appropriation
+    - amount: null
+      financial_year: 2018-19
+      phase: Audit Outcome
+    - amount: null
+      financial_year: 2019-20
+      phase: Adjusted appropriation
+    - amount: null
+      financial_year: 2019-20
+      phase: Final Appropriation
+    - amount: null
+      financial_year: 2019-20
+      phase: Audit Outcome
+    name: Housing Needs, Research And Planning
   - items:
     - amount: 19270000
       financial_year: 2016-17
@@ -212,59 +262,15 @@ budget_actual_programmes:
       phase: Audit Outcome
     name: Housing Needs, Research and Planning
   - items:
-    - amount: 21446000
-      financial_year: 2019-20
-      phase: Main appropriation
-    - amount: null
-      financial_year: 2016-17
-      phase: Main appropriation
-    - amount: null
-      financial_year: 2016-17
-      phase: Adjusted appropriation
-    - amount: null
-      financial_year: 2016-17
-      phase: Final Appropriation
-    - amount: null
-      financial_year: 2016-17
-      phase: Audit Outcome
-    - amount: null
-      financial_year: 2017-18
-      phase: Main appropriation
-    - amount: null
-      financial_year: 2017-18
-      phase: Adjusted appropriation
-    - amount: null
-      financial_year: 2017-18
-      phase: Final Appropriation
-    - amount: null
-      financial_year: 2017-18
-      phase: Audit Outcome
-    - amount: null
-      financial_year: 2018-19
-      phase: Main appropriation
-    - amount: null
-      financial_year: 2018-19
-      phase: Adjusted appropriation
-    - amount: null
-      financial_year: 2018-19
-      phase: Final Appropriation
-    - amount: null
-      financial_year: 2018-19
-      phase: Audit Outcome
-    - amount: null
-      financial_year: 2019-20
-      phase: Adjusted appropriation
-    - amount: null
-      financial_year: 2019-20
-      phase: Final Appropriation
-    - amount: null
-      financial_year: 2019-20
-      phase: Audit Outcome
-    name: Housing Needs, Research And Planning
-  - items:
     - amount: 136743000
       financial_year: 2016-17
       phase: Main appropriation
+    - amount: 126288000
+      financial_year: 2016-17
+      phase: Final Appropriation
+    - amount: 126276000
+      financial_year: 2016-17
+      phase: Audit Outcome
     - amount: 148466000
       financial_year: 2017-18
       phase: Main appropriation
@@ -277,12 +283,6 @@ budget_actual_programmes:
     - amount: null
       financial_year: 2016-17
       phase: Adjusted appropriation
-    - amount: null
-      financial_year: 2016-17
-      phase: Final Appropriation
-    - amount: null
-      financial_year: 2016-17
-      phase: Audit Outcome
     - amount: null
       financial_year: 2017-18
       phase: Adjusted appropriation
@@ -315,6 +315,12 @@ budget_actual_programmes:
     - amount: 2182494000
       financial_year: 2016-17
       phase: Main appropriation
+    - amount: 2209270000
+      financial_year: 2016-17
+      phase: Final Appropriation
+    - amount: 2209081000
+      financial_year: 2016-17
+      phase: Audit Outcome
     - amount: 2449379000
       financial_year: 2017-18
       phase: Main appropriation
@@ -327,12 +333,6 @@ budget_actual_programmes:
     - amount: null
       financial_year: 2016-17
       phase: Adjusted appropriation
-    - amount: null
-      financial_year: 2016-17
-      phase: Final Appropriation
-    - amount: null
-      financial_year: 2016-17
-      phase: Audit Outcome
     - amount: null
       financial_year: 2017-18
       phase: Adjusted appropriation

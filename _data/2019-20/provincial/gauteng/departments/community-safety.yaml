@@ -8,10 +8,16 @@ budget_actual:
   expenditure:
     base_financial_year: 2018-19
     nominal:
-    - amount: 652880000
+    - amount: 652879794
       financial_year: 2016-17
       phase: Main appropriation
-    - amount: 678467000
+    - amount: 683580000
+      financial_year: 2016-17
+      phase: Final Appropriation
+    - amount: 632647000
+      financial_year: 2016-17
+      phase: Audit Outcome
+    - amount: 678466000
       financial_year: 2017-18
       phase: Main appropriation
     - amount: 719495000
@@ -23,12 +29,6 @@ budget_actual:
     - amount: null
       financial_year: 2016-17
       phase: Adjusted appropriation
-    - amount: null
-      financial_year: 2016-17
-      phase: Final Appropriation
-    - amount: null
-      financial_year: 2016-17
-      phase: Audit Outcome
     - amount: null
       financial_year: 2017-18
       phase: Adjusted appropriation
@@ -57,10 +57,16 @@ budget_actual:
       financial_year: 2019-20
       phase: Audit Outcome
     real:
-    - amount: 717241828
+    - amount: 717241601
       financial_year: 2016-17
       phase: Main appropriation
-    - amount: 711794602
+    - amount: 750968277
+      financial_year: 2016-17
+      phase: Final Appropriation
+    - amount: 695014230
+      financial_year: 2016-17
+      phase: Audit Outcome
+    - amount: 711793553
       financial_year: 2017-18
       phase: Main appropriation
     - amount: 719495000
@@ -72,12 +78,6 @@ budget_actual:
     - amount: null
       financial_year: 2016-17
       phase: Adjusted appropriation
-    - amount: null
-      financial_year: 2016-17
-      phase: Final Appropriation
-    - amount: null
-      financial_year: 2016-17
-      phase: Audit Outcome
     - amount: null
       financial_year: 2017-18
       phase: Adjusted appropriation
@@ -112,10 +112,16 @@ budget_actual_programmes:
   - One or more programmes did not exist for some years displayed.
   programmes:
   - items:
-    - amount: 95742000
+    - amount: 95742180
       financial_year: 2016-17
       phase: Main appropriation
-    - amount: 101050000
+    - amount: 100735000
+      financial_year: 2016-17
+      phase: Final Appropriation
+    - amount: 100735000
+      financial_year: 2016-17
+      phase: Audit Outcome
+    - amount: 101049000
       financial_year: 2017-18
       phase: Main appropriation
     - amount: 130615000
@@ -127,12 +133,6 @@ budget_actual_programmes:
     - amount: null
       financial_year: 2016-17
       phase: Adjusted appropriation
-    - amount: null
-      financial_year: 2016-17
-      phase: Final Appropriation
-    - amount: null
-      financial_year: 2016-17
-      phase: Audit Outcome
     - amount: null
       financial_year: 2017-18
       phase: Adjusted appropriation
@@ -262,21 +262,21 @@ budget_actual_programmes:
       phase: Audit Outcome
     name: Provincial Secretariat for Police Service
   - items:
-    - amount: 201351000
+    - amount: 201350590
       financial_year: 2016-17
       phase: Main appropriation
+    - amount: 190243000
+      financial_year: 2016-17
+      phase: Final Appropriation
+    - amount: 162113000
+      financial_year: 2016-17
+      phase: Audit Outcome
     - amount: 195080000
       financial_year: 2017-18
       phase: Main appropriation
     - amount: null
       financial_year: 2016-17
       phase: Adjusted appropriation
-    - amount: null
-      financial_year: 2016-17
-      phase: Final Appropriation
-    - amount: null
-      financial_year: 2016-17
-      phase: Audit Outcome
     - amount: null
       financial_year: 2017-18
       phase: Adjusted appropriation
@@ -312,9 +312,15 @@ budget_actual_programmes:
       phase: Audit Outcome
     name: Civilian Oversight
   - items:
-    - amount: 355787000
+    - amount: 355787024
       financial_year: 2016-17
       phase: Main appropriation
+    - amount: 392602000
+      financial_year: 2016-17
+      phase: Final Appropriation
+    - amount: 369799000
+      financial_year: 2016-17
+      phase: Audit Outcome
     - amount: 382337000
       financial_year: 2017-18
       phase: Main appropriation
@@ -327,12 +333,6 @@ budget_actual_programmes:
     - amount: null
       financial_year: 2016-17
       phase: Adjusted appropriation
-    - amount: null
-      financial_year: 2016-17
-      phase: Final Appropriation
-    - amount: null
-      financial_year: 2016-17
-      phase: Audit Outcome
     - amount: null
       financial_year: 2017-18
       phase: Adjusted appropriation
