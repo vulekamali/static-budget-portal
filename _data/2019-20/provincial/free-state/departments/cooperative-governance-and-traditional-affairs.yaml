@@ -8,12 +8,9 @@ budget_actual:
   expenditure:
     base_financial_year: 2018-19
     nominal:
-    - amount: 448275000
+    - amount: 407596000
       financial_year: 2016-17
-      phase: Final Appropriation
-    - amount: 445918000
-      financial_year: 2016-17
-      phase: Audit Outcome
+      phase: Main appropriation
     - amount: 407187000
       financial_year: 2017-18
       phase: Main appropriation
@@ -22,10 +19,13 @@ budget_actual:
       phase: Main appropriation
     - amount: null
       financial_year: 2016-17
-      phase: Main appropriation
+      phase: Adjusted appropriation
     - amount: null
       financial_year: 2016-17
-      phase: Adjusted appropriation
+      phase: Final Appropriation
+    - amount: null
+      financial_year: 2016-17
+      phase: Audit Outcome
     - amount: null
       financial_year: 2017-18
       phase: Adjusted appropriation
@@ -57,12 +57,9 @@ budget_actual:
       financial_year: 2019-20
       phase: Audit Outcome
     real:
-    - amount: 492466579
+    - amount: 447777386
       financial_year: 2016-17
-      phase: Final Appropriation
-    - amount: 489877223
-      financial_year: 2016-17
-      phase: Audit Outcome
+      phase: Main appropriation
     - amount: 427188807
       financial_year: 2017-18
       phase: Main appropriation
@@ -71,10 +68,13 @@ budget_actual:
       phase: Main appropriation
     - amount: null
       financial_year: 2016-17
-      phase: Main appropriation
+      phase: Adjusted appropriation
     - amount: null
       financial_year: 2016-17
-      phase: Adjusted appropriation
+      phase: Final Appropriation
+    - amount: null
+      financial_year: 2016-17
+      phase: Audit Outcome
     - amount: null
       financial_year: 2017-18
       phase: Adjusted appropriation
@@ -113,15 +113,56 @@ budget_actual_programmes:
   - One or more programmes did not exist for some years displayed.
   programmes:
   - items:
-    - amount: 8783000
+    - amount: 9668000
       financial_year: 2016-17
-      phase: Final Appropriation
-    - amount: 8469000
-      financial_year: 2016-17
-      phase: Audit Outcome
+      phase: Main appropriation
     - amount: 10307000
       financial_year: 2017-18
       phase: Main appropriation
+    - amount: null
+      financial_year: 2016-17
+      phase: Adjusted appropriation
+    - amount: null
+      financial_year: 2016-17
+      phase: Final Appropriation
+    - amount: null
+      financial_year: 2016-17
+      phase: Audit Outcome
+    - amount: null
+      financial_year: 2017-18
+      phase: Adjusted appropriation
+    - amount: null
+      financial_year: 2017-18
+      phase: Final Appropriation
+    - amount: null
+      financial_year: 2017-18
+      phase: Audit Outcome
+    - amount: null
+      financial_year: 2018-19
+      phase: Main appropriation
+    - amount: null
+      financial_year: 2018-19
+      phase: Adjusted appropriation
+    - amount: null
+      financial_year: 2018-19
+      phase: Final Appropriation
+    - amount: null
+      financial_year: 2018-19
+      phase: Audit Outcome
+    - amount: null
+      financial_year: 2019-20
+      phase: Main appropriation
+    - amount: null
+      financial_year: 2019-20
+      phase: Adjusted appropriation
+    - amount: null
+      financial_year: 2019-20
+      phase: Final Appropriation
+    - amount: null
+      financial_year: 2019-20
+      phase: Audit Outcome
+    name: House of Traditional Leaders
+  - items:
     - amount: 14530000
       financial_year: 2019-20
       phase: Main appropriation
@@ -131,6 +172,15 @@ budget_actual_programmes:
     - amount: null
       financial_year: 2016-17
       phase: Adjusted appropriation
+    - amount: null
+      financial_year: 2016-17
+      phase: Final Appropriation
+    - amount: null
+      financial_year: 2016-17
+      phase: Audit Outcome
+    - amount: null
+      financial_year: 2017-18
+      phase: Main appropriation
     - amount: null
       financial_year: 2017-18
       phase: Adjusted appropriation
@@ -163,12 +213,9 @@ budget_actual_programmes:
       phase: Audit Outcome
     name: House Of Traditional Leaders
   - items:
-    - amount: 42616000
+    - amount: 40115000
       financial_year: 2016-17
-      phase: Final Appropriation
-    - amount: 42421000
-      financial_year: 2016-17
-      phase: Audit Outcome
+      phase: Main appropriation
     - amount: 42818000
       financial_year: 2017-18
       phase: Main appropriation
@@ -177,10 +224,13 @@ budget_actual_programmes:
       phase: Main appropriation
     - amount: null
       financial_year: 2016-17
-      phase: Main appropriation
+      phase: Adjusted appropriation
     - amount: null
       financial_year: 2016-17
-      phase: Adjusted appropriation
+      phase: Final Appropriation
+    - amount: null
+      financial_year: 2016-17
+      phase: Audit Outcome
     - amount: null
       financial_year: 2017-18
       phase: Adjusted appropriation
@@ -213,15 +263,6 @@ budget_actual_programmes:
       phase: Audit Outcome
     name: Traditional Institutional Management
   - items:
-    - amount: 100036000
-      financial_year: 2016-17
-      phase: Final Appropriation
-    - amount: 99561000
-      financial_year: 2016-17
-      phase: Audit Outcome
-    - amount: 91706000
-      financial_year: 2017-18
-      phase: Main appropriation
     - amount: 86728000
       financial_year: 2019-20
       phase: Main appropriation
@@ -231,6 +272,15 @@ budget_actual_programmes:
     - amount: null
       financial_year: 2016-17
       phase: Adjusted appropriation
+    - amount: null
+      financial_year: 2016-17
+      phase: Final Appropriation
+    - amount: null
+      financial_year: 2016-17
+      phase: Audit Outcome
+    - amount: null
+      financial_year: 2017-18
+      phase: Main appropriation
     - amount: null
       financial_year: 2017-18
       phase: Adjusted appropriation
@@ -263,24 +313,21 @@ budget_actual_programmes:
       phase: Audit Outcome
     name: Development And Planning
   - items:
-    - amount: 129459000
+    - amount: 101696000
       financial_year: 2016-17
-      phase: Final Appropriation
-    - amount: 128619000
-      financial_year: 2016-17
-      phase: Audit Outcome
-    - amount: 139703000
+      phase: Main appropriation
+    - amount: 91706000
       financial_year: 2017-18
-      phase: Main appropriation
-    - amount: 149331000
-      financial_year: 2019-20
-      phase: Main appropriation
-    - amount: null
-      financial_year: 2016-17
       phase: Main appropriation
     - amount: null
       financial_year: 2016-17
       phase: Adjusted appropriation
+    - amount: null
+      financial_year: 2016-17
+      phase: Final Appropriation
+    - amount: null
+      financial_year: 2016-17
+      phase: Audit Outcome
     - amount: null
       financial_year: 2017-18
       phase: Adjusted appropriation
@@ -304,6 +351,9 @@ budget_actual_programmes:
       phase: Audit Outcome
     - amount: null
       financial_year: 2019-20
+      phase: Main appropriation
+    - amount: null
+      financial_year: 2019-20
       phase: Adjusted appropriation
     - amount: null
       financial_year: 2019-20
@@ -311,14 +361,11 @@ budget_actual_programmes:
     - amount: null
       financial_year: 2019-20
       phase: Audit Outcome
-    name: Administration
+    name: Development and Planning
   - items:
-    - amount: 167381000
+    - amount: 123111000
       financial_year: 2016-17
-      phase: Final Appropriation
-    - amount: 166848000
-      financial_year: 2016-17
-      phase: Audit Outcome
+      phase: Main appropriation
     - amount: 122653000
       financial_year: 2017-18
       phase: Main appropriation
@@ -327,10 +374,13 @@ budget_actual_programmes:
       phase: Main appropriation
     - amount: null
       financial_year: 2016-17
-      phase: Main appropriation
+      phase: Adjusted appropriation
     - amount: null
       financial_year: 2016-17
-      phase: Adjusted appropriation
+      phase: Final Appropriation
+    - amount: null
+      financial_year: 2016-17
+      phase: Audit Outcome
     - amount: null
       financial_year: 2017-18
       phase: Adjusted appropriation
@@ -362,6 +412,56 @@ budget_actual_programmes:
       financial_year: 2019-20
       phase: Audit Outcome
     name: Local Governance
+  - items:
+    - amount: 133006000
+      financial_year: 2016-17
+      phase: Main appropriation
+    - amount: 139703000
+      financial_year: 2017-18
+      phase: Main appropriation
+    - amount: 149331000
+      financial_year: 2019-20
+      phase: Main appropriation
+    - amount: null
+      financial_year: 2016-17
+      phase: Adjusted appropriation
+    - amount: null
+      financial_year: 2016-17
+      phase: Final Appropriation
+    - amount: null
+      financial_year: 2016-17
+      phase: Audit Outcome
+    - amount: null
+      financial_year: 2017-18
+      phase: Adjusted appropriation
+    - amount: null
+      financial_year: 2017-18
+      phase: Final Appropriation
+    - amount: null
+      financial_year: 2017-18
+      phase: Audit Outcome
+    - amount: null
+      financial_year: 2018-19
+      phase: Main appropriation
+    - amount: null
+      financial_year: 2018-19
+      phase: Adjusted appropriation
+    - amount: null
+      financial_year: 2018-19
+      phase: Final Appropriation
+    - amount: null
+      financial_year: 2018-19
+      phase: Audit Outcome
+    - amount: null
+      financial_year: 2019-20
+      phase: Adjusted appropriation
+    - amount: null
+      financial_year: 2019-20
+      phase: Final Appropriation
+    - amount: null
+      financial_year: 2019-20
+      phase: Audit Outcome
+    name: Administration
 contributed_datasets:
 - contributor: International Budget Partnership
   name: How Does Civil Society Use Budget Information?

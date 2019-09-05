@@ -11,12 +11,6 @@ budget_actual:
     - amount: 492243000
       financial_year: 2016-17
       phase: Main appropriation
-    - amount: 586538000
-      financial_year: 2016-17
-      phase: Final Appropriation
-    - amount: 569415000
-      financial_year: 2016-17
-      phase: Audit Outcome
     - amount: 648857000
       financial_year: 2017-18
       phase: Main appropriation
@@ -26,6 +20,12 @@ budget_actual:
     - amount: null
       financial_year: 2016-17
       phase: Adjusted appropriation
+    - amount: null
+      financial_year: 2016-17
+      phase: Final Appropriation
+    - amount: null
+      financial_year: 2016-17
+      phase: Audit Outcome
     - amount: null
       financial_year: 2017-18
       phase: Adjusted appropriation
@@ -60,12 +60,6 @@ budget_actual:
     - amount: 540769006
       financial_year: 2016-17
       phase: Main appropriation
-    - amount: 644359740
-      financial_year: 2016-17
-      phase: Final Appropriation
-    - amount: 625548731
-      financial_year: 2016-17
-      phase: Audit Outcome
     - amount: 680730102
       financial_year: 2017-18
       phase: Main appropriation
@@ -75,6 +69,12 @@ budget_actual:
     - amount: null
       financial_year: 2016-17
       phase: Adjusted appropriation
+    - amount: null
+      financial_year: 2016-17
+      phase: Final Appropriation
+    - amount: null
+      financial_year: 2016-17
+      phase: Audit Outcome
     - amount: null
       financial_year: 2017-18
       phase: Adjusted appropriation
@@ -116,12 +116,6 @@ budget_actual_programmes:
     - amount: 106216000
       financial_year: 2016-17
       phase: Main appropriation
-    - amount: 132716000
-      financial_year: 2016-17
-      phase: Final Appropriation
-    - amount: 125920000
-      financial_year: 2016-17
-      phase: Audit Outcome
     - amount: 127288000
       financial_year: 2017-18
       phase: Main appropriation
@@ -131,6 +125,12 @@ budget_actual_programmes:
     - amount: null
       financial_year: 2016-17
       phase: Adjusted appropriation
+    - amount: null
+      financial_year: 2016-17
+      phase: Final Appropriation
+    - amount: null
+      financial_year: 2016-17
+      phase: Audit Outcome
     - amount: null
       financial_year: 2017-18
       phase: Adjusted appropriation
@@ -162,56 +162,6 @@ budget_actual_programmes:
       financial_year: 2019-20
       phase: Audit Outcome
     name: Administration
-  - items:
-    - amount: 159717000
-      financial_year: 2016-17
-      phase: Final Appropriation
-    - amount: 151026000
-      financial_year: 2016-17
-      phase: Audit Outcome
-    - amount: 185780000
-      financial_year: 2019-20
-      phase: Main appropriation
-    - amount: null
-      financial_year: 2016-17
-      phase: Main appropriation
-    - amount: null
-      financial_year: 2016-17
-      phase: Adjusted appropriation
-    - amount: null
-      financial_year: 2017-18
-      phase: Main appropriation
-    - amount: null
-      financial_year: 2017-18
-      phase: Adjusted appropriation
-    - amount: null
-      financial_year: 2017-18
-      phase: Final Appropriation
-    - amount: null
-      financial_year: 2017-18
-      phase: Audit Outcome
-    - amount: null
-      financial_year: 2018-19
-      phase: Main appropriation
-    - amount: null
-      financial_year: 2018-19
-      phase: Adjusted appropriation
-    - amount: null
-      financial_year: 2018-19
-      phase: Final Appropriation
-    - amount: null
-      financial_year: 2018-19
-      phase: Audit Outcome
-    - amount: null
-      financial_year: 2019-20
-      phase: Adjusted appropriation
-    - amount: null
-      financial_year: 2019-20
-      phase: Final Appropriation
-    - amount: null
-      financial_year: 2019-20
-      phase: Audit Outcome
-    name: Policy And Governance
   - items:
     - amount: 172717000
       financial_year: 2016-17
@@ -263,15 +213,59 @@ budget_actual_programmes:
       phase: Audit Outcome
     name: Policy and Governance
   - items:
+    - amount: 185780000
+      financial_year: 2019-20
+      phase: Main appropriation
+    - amount: null
+      financial_year: 2016-17
+      phase: Main appropriation
+    - amount: null
+      financial_year: 2016-17
+      phase: Adjusted appropriation
+    - amount: null
+      financial_year: 2016-17
+      phase: Final Appropriation
+    - amount: null
+      financial_year: 2016-17
+      phase: Audit Outcome
+    - amount: null
+      financial_year: 2017-18
+      phase: Main appropriation
+    - amount: null
+      financial_year: 2017-18
+      phase: Adjusted appropriation
+    - amount: null
+      financial_year: 2017-18
+      phase: Final Appropriation
+    - amount: null
+      financial_year: 2017-18
+      phase: Audit Outcome
+    - amount: null
+      financial_year: 2018-19
+      phase: Main appropriation
+    - amount: null
+      financial_year: 2018-19
+      phase: Adjusted appropriation
+    - amount: null
+      financial_year: 2018-19
+      phase: Final Appropriation
+    - amount: null
+      financial_year: 2018-19
+      phase: Audit Outcome
+    - amount: null
+      financial_year: 2019-20
+      phase: Adjusted appropriation
+    - amount: null
+      financial_year: 2019-20
+      phase: Final Appropriation
+    - amount: null
+      financial_year: 2019-20
+      phase: Audit Outcome
+    name: Policy And Governance
+  - items:
     - amount: 213310000
       financial_year: 2016-17
       phase: Main appropriation
-    - amount: 294105000
-      financial_year: 2016-17
-      phase: Final Appropriation
-    - amount: 292469000
-      financial_year: 2016-17
-      phase: Audit Outcome
     - amount: 320034000
       financial_year: 2017-18
       phase: Main appropriation
@@ -281,6 +275,12 @@ budget_actual_programmes:
     - amount: null
       financial_year: 2016-17
       phase: Adjusted appropriation
+    - amount: null
+      financial_year: 2016-17
+      phase: Final Appropriation
+    - amount: null
+      financial_year: 2016-17
+      phase: Audit Outcome
     - amount: null
       financial_year: 2017-18
       phase: Adjusted appropriation

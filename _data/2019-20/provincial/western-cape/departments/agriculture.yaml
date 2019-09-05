@@ -11,12 +11,6 @@ budget_actual:
     - amount: 787855000
       financial_year: 2016-17
       phase: Main appropriation
-    - amount: 815871000
-      financial_year: 2016-17
-      phase: Final Appropriation
-    - amount: 807792000
-      financial_year: 2016-17
-      phase: Audit Outcome
     - amount: 795179000
       financial_year: 2017-18
       phase: Main appropriation
@@ -29,6 +23,12 @@ budget_actual:
     - amount: null
       financial_year: 2016-17
       phase: Adjusted appropriation
+    - amount: null
+      financial_year: 2016-17
+      phase: Final Appropriation
+    - amount: null
+      financial_year: 2016-17
+      phase: Audit Outcome
     - amount: null
       financial_year: 2017-18
       phase: Adjusted appropriation
@@ -60,12 +60,6 @@ budget_actual:
     - amount: 865522853
       financial_year: 2016-17
       phase: Main appropriation
-    - amount: 896300709
-      financial_year: 2016-17
-      phase: Final Appropriation
-    - amount: 887425270
-      financial_year: 2016-17
-      phase: Audit Outcome
     - amount: 834239719
       financial_year: 2017-18
       phase: Main appropriation
@@ -78,6 +72,12 @@ budget_actual:
     - amount: null
       financial_year: 2016-17
       phase: Adjusted appropriation
+    - amount: null
+      financial_year: 2016-17
+      phase: Final Appropriation
+    - amount: null
+      financial_year: 2016-17
+      phase: Audit Outcome
     - amount: null
       financial_year: 2017-18
       phase: Adjusted appropriation
@@ -112,24 +112,24 @@ budget_actual_programmes:
   - One or more programmes did not exist for some years displayed.
   programmes:
   - items:
-    - amount: 19425000
+    - amount: 21790000
       financial_year: 2016-17
-      phase: Final Appropriation
-    - amount: 19425000
-      financial_year: 2016-17
-      phase: Audit Outcome
+      phase: Main appropriation
+    - amount: 22589000
+      financial_year: 2017-18
+      phase: Main appropriation
     - amount: 27535000
       financial_year: 2019-20
       phase: Main appropriation
     - amount: null
       financial_year: 2016-17
-      phase: Main appropriation
-    - amount: null
-      financial_year: 2016-17
       phase: Adjusted appropriation
     - amount: null
-      financial_year: 2017-18
-      phase: Main appropriation
+      financial_year: 2016-17
+      phase: Final Appropriation
+    - amount: null
+      financial_year: 2016-17
+      phase: Audit Outcome
     - amount: null
       financial_year: 2017-18
       phase: Adjusted appropriation
@@ -162,14 +162,17 @@ budget_actual_programmes:
       phase: Audit Outcome
     name: Rural Development
   - items:
-    - amount: 21790000
+    - amount: 23448000
       financial_year: 2016-17
       phase: Main appropriation
-    - amount: 22589000
+    - amount: 24286000
       financial_year: 2017-18
       phase: Main appropriation
-    - amount: 24130000
+    - amount: 27923000
       financial_year: 2018-19
+      phase: Main appropriation
+    - amount: 36007000
+      financial_year: 2019-20
       phase: Main appropriation
     - amount: null
       financial_year: 2016-17
@@ -180,6 +183,53 @@ budget_actual_programmes:
     - amount: null
       financial_year: 2016-17
       phase: Audit Outcome
+    - amount: null
+      financial_year: 2017-18
+      phase: Adjusted appropriation
+    - amount: null
+      financial_year: 2017-18
+      phase: Final Appropriation
+    - amount: null
+      financial_year: 2017-18
+      phase: Audit Outcome
+    - amount: null
+      financial_year: 2018-19
+      phase: Adjusted appropriation
+    - amount: null
+      financial_year: 2018-19
+      phase: Final Appropriation
+    - amount: null
+      financial_year: 2018-19
+      phase: Audit Outcome
+    - amount: null
+      financial_year: 2019-20
+      phase: Adjusted appropriation
+    - amount: null
+      financial_year: 2019-20
+      phase: Final Appropriation
+    - amount: null
+      financial_year: 2019-20
+      phase: Audit Outcome
+    name: Agricultural Economics Services
+  - items:
+    - amount: 24130000
+      financial_year: 2018-19
+      phase: Main appropriation
+    - amount: null
+      financial_year: 2016-17
+      phase: Main appropriation
+    - amount: null
+      financial_year: 2016-17
+      phase: Adjusted appropriation
+    - amount: null
+      financial_year: 2016-17
+      phase: Final Appropriation
+    - amount: null
+      financial_year: 2016-17
+      phase: Audit Outcome
+    - amount: null
+      financial_year: 2017-18
+      phase: Main appropriation
     - amount: null
       financial_year: 2017-18
       phase: Adjusted appropriation
@@ -211,106 +261,6 @@ budget_actual_programmes:
       financial_year: 2019-20
       phase: Audit Outcome
     name: RURAL DEVELOPMENT
-  - items:
-    - amount: 23448000
-      financial_year: 2016-17
-      phase: Main appropriation
-    - amount: 22502000
-      financial_year: 2016-17
-      phase: Final Appropriation
-    - amount: 22502000
-      financial_year: 2016-17
-      phase: Audit Outcome
-    - amount: 24286000
-      financial_year: 2017-18
-      phase: Main appropriation
-    - amount: 27923000
-      financial_year: 2018-19
-      phase: Main appropriation
-    - amount: 36007000
-      financial_year: 2019-20
-      phase: Main appropriation
-    - amount: null
-      financial_year: 2016-17
-      phase: Adjusted appropriation
-    - amount: null
-      financial_year: 2017-18
-      phase: Adjusted appropriation
-    - amount: null
-      financial_year: 2017-18
-      phase: Final Appropriation
-    - amount: null
-      financial_year: 2017-18
-      phase: Audit Outcome
-    - amount: null
-      financial_year: 2018-19
-      phase: Adjusted appropriation
-    - amount: null
-      financial_year: 2018-19
-      phase: Final Appropriation
-    - amount: null
-      financial_year: 2018-19
-      phase: Audit Outcome
-    - amount: null
-      financial_year: 2019-20
-      phase: Adjusted appropriation
-    - amount: null
-      financial_year: 2019-20
-      phase: Final Appropriation
-    - amount: null
-      financial_year: 2019-20
-      phase: Audit Outcome
-    name: Agricultural Economics Services
-  - items:
-    - amount: 56678000
-      financial_year: 2016-17
-      phase: Final Appropriation
-    - amount: 56678000
-      financial_year: 2016-17
-      phase: Audit Outcome
-    - amount: 67336000
-      financial_year: 2019-20
-      phase: Main appropriation
-    - amount: null
-      financial_year: 2016-17
-      phase: Main appropriation
-    - amount: null
-      financial_year: 2016-17
-      phase: Adjusted appropriation
-    - amount: null
-      financial_year: 2017-18
-      phase: Main appropriation
-    - amount: null
-      financial_year: 2017-18
-      phase: Adjusted appropriation
-    - amount: null
-      financial_year: 2017-18
-      phase: Final Appropriation
-    - amount: null
-      financial_year: 2017-18
-      phase: Audit Outcome
-    - amount: null
-      financial_year: 2018-19
-      phase: Main appropriation
-    - amount: null
-      financial_year: 2018-19
-      phase: Adjusted appropriation
-    - amount: null
-      financial_year: 2018-19
-      phase: Final Appropriation
-    - amount: null
-      financial_year: 2018-19
-      phase: Audit Outcome
-    - amount: null
-      financial_year: 2019-20
-      phase: Adjusted appropriation
-    - amount: null
-      financial_year: 2019-20
-      phase: Final Appropriation
-    - amount: null
-      financial_year: 2019-20
-      phase: Audit Outcome
-    name: Structured Agricultural Education And Training
   - items:
     - amount: 58737000
       financial_year: 2016-17
@@ -362,74 +312,74 @@ budget_actual_programmes:
       phase: Audit Outcome
     name: Structured Agricultural Education and Training
   - items:
+    - amount: 67336000
+      financial_year: 2019-20
+      phase: Main appropriation
+    - amount: null
+      financial_year: 2016-17
+      phase: Main appropriation
+    - amount: null
+      financial_year: 2016-17
+      phase: Adjusted appropriation
+    - amount: null
+      financial_year: 2016-17
+      phase: Final Appropriation
+    - amount: null
+      financial_year: 2016-17
+      phase: Audit Outcome
+    - amount: null
+      financial_year: 2017-18
+      phase: Main appropriation
+    - amount: null
+      financial_year: 2017-18
+      phase: Adjusted appropriation
+    - amount: null
+      financial_year: 2017-18
+      phase: Final Appropriation
+    - amount: null
+      financial_year: 2017-18
+      phase: Audit Outcome
+    - amount: null
+      financial_year: 2018-19
+      phase: Main appropriation
+    - amount: null
+      financial_year: 2018-19
+      phase: Adjusted appropriation
+    - amount: null
+      financial_year: 2018-19
+      phase: Final Appropriation
+    - amount: null
+      financial_year: 2018-19
+      phase: Audit Outcome
+    - amount: null
+      financial_year: 2019-20
+      phase: Adjusted appropriation
+    - amount: null
+      financial_year: 2019-20
+      phase: Final Appropriation
+    - amount: null
+      financial_year: 2019-20
+      phase: Audit Outcome
+    name: Structured Agricultural Education And Training
+  - items:
     - amount: 86035000
       financial_year: 2016-17
       phase: Main appropriation
     - amount: 91141000
       financial_year: 2017-18
       phase: Main appropriation
-    - amount: 96853000
-      financial_year: 2018-19
-      phase: Main appropriation
-    - amount: null
-      financial_year: 2016-17
-      phase: Adjusted appropriation
-    - amount: null
-      financial_year: 2016-17
-      phase: Final Appropriation
-    - amount: null
-      financial_year: 2016-17
-      phase: Audit Outcome
-    - amount: null
-      financial_year: 2017-18
-      phase: Adjusted appropriation
-    - amount: null
-      financial_year: 2017-18
-      phase: Final Appropriation
-    - amount: null
-      financial_year: 2017-18
-      phase: Audit Outcome
-    - amount: null
-      financial_year: 2018-19
-      phase: Adjusted appropriation
-    - amount: null
-      financial_year: 2018-19
-      phase: Final Appropriation
-    - amount: null
-      financial_year: 2018-19
-      phase: Audit Outcome
-    - amount: null
-      financial_year: 2019-20
-      phase: Main appropriation
-    - amount: null
-      financial_year: 2019-20
-      phase: Adjusted appropriation
-    - amount: null
-      financial_year: 2019-20
-      phase: Final Appropriation
-    - amount: null
-      financial_year: 2019-20
-      phase: Audit Outcome
-    name: VETERINARY SERVICES
-  - items:
-    - amount: 89420000
-      financial_year: 2016-17
-      phase: Final Appropriation
-    - amount: 89420000
-      financial_year: 2016-17
-      phase: Audit Outcome
     - amount: 106381000
       financial_year: 2019-20
       phase: Main appropriation
     - amount: null
       financial_year: 2016-17
-      phase: Main appropriation
-    - amount: null
-      financial_year: 2016-17
       phase: Adjusted appropriation
     - amount: null
-      financial_year: 2017-18
-      phase: Main appropriation
+      financial_year: 2016-17
+      phase: Final Appropriation
+    - amount: null
+      financial_year: 2016-17
+      phase: Audit Outcome
     - amount: null
       financial_year: 2017-18
       phase: Adjusted appropriation
@@ -462,15 +412,59 @@ budget_actual_programmes:
       phase: Audit Outcome
     name: Veterinary Services
   - items:
+    - amount: 96853000
+      financial_year: 2018-19
+      phase: Main appropriation
+    - amount: null
+      financial_year: 2016-17
+      phase: Main appropriation
+    - amount: null
+      financial_year: 2016-17
+      phase: Adjusted appropriation
+    - amount: null
+      financial_year: 2016-17
+      phase: Final Appropriation
+    - amount: null
+      financial_year: 2016-17
+      phase: Audit Outcome
+    - amount: null
+      financial_year: 2017-18
+      phase: Main appropriation
+    - amount: null
+      financial_year: 2017-18
+      phase: Adjusted appropriation
+    - amount: null
+      financial_year: 2017-18
+      phase: Final Appropriation
+    - amount: null
+      financial_year: 2017-18
+      phase: Audit Outcome
+    - amount: null
+      financial_year: 2018-19
+      phase: Adjusted appropriation
+    - amount: null
+      financial_year: 2018-19
+      phase: Final Appropriation
+    - amount: null
+      financial_year: 2018-19
+      phase: Audit Outcome
+    - amount: null
+      financial_year: 2019-20
+      phase: Main appropriation
+    - amount: null
+      financial_year: 2019-20
+      phase: Adjusted appropriation
+    - amount: null
+      financial_year: 2019-20
+      phase: Final Appropriation
+    - amount: null
+      financial_year: 2019-20
+      phase: Audit Outcome
+    name: VETERINARY SERVICES
+  - items:
     - amount: 97710000
       financial_year: 2016-17
       phase: Main appropriation
-    - amount: 122329000
-      financial_year: 2016-17
-      phase: Final Appropriation
-    - amount: 116508000
-      financial_year: 2016-17
-      phase: Audit Outcome
     - amount: 86083000
       financial_year: 2017-18
       phase: Main appropriation
@@ -483,6 +477,12 @@ budget_actual_programmes:
     - amount: null
       financial_year: 2016-17
       phase: Adjusted appropriation
+    - amount: null
+      financial_year: 2016-17
+      phase: Final Appropriation
+    - amount: null
+      financial_year: 2016-17
+      phase: Audit Outcome
     - amount: null
       financial_year: 2017-18
       phase: Adjusted appropriation
@@ -562,12 +562,56 @@ budget_actual_programmes:
       phase: Audit Outcome
     name: Research and Technology Development Services
   - items:
-    - amount: 112444000
+    - amount: 130633000
+      financial_year: 2016-17
+      phase: Main appropriation
+    - amount: 130842000
+      financial_year: 2017-18
+      phase: Main appropriation
+    - amount: 124492000
+      financial_year: 2018-19
+      phase: Main appropriation
+    - amount: 132754000
+      financial_year: 2019-20
+      phase: Main appropriation
+    - amount: null
+      financial_year: 2016-17
+      phase: Adjusted appropriation
+    - amount: null
       financial_year: 2016-17
       phase: Final Appropriation
-    - amount: 112444000
+    - amount: null
       financial_year: 2016-17
       phase: Audit Outcome
+    - amount: null
+      financial_year: 2017-18
+      phase: Adjusted appropriation
+    - amount: null
+      financial_year: 2017-18
+      phase: Final Appropriation
+    - amount: null
+      financial_year: 2017-18
+      phase: Audit Outcome
+    - amount: null
+      financial_year: 2018-19
+      phase: Adjusted appropriation
+    - amount: null
+      financial_year: 2018-19
+      phase: Final Appropriation
+    - amount: null
+      financial_year: 2018-19
+      phase: Audit Outcome
+    - amount: null
+      financial_year: 2019-20
+      phase: Adjusted appropriation
+    - amount: null
+      financial_year: 2019-20
+      phase: Final Appropriation
+    - amount: null
+      financial_year: 2019-20
+      phase: Audit Outcome
+    name: Administration
+  - items:
     - amount: 140710000
       financial_year: 2019-20
       phase: Main appropriation
@@ -577,6 +621,12 @@ budget_actual_programmes:
     - amount: null
       financial_year: 2016-17
       phase: Adjusted appropriation
+    - amount: null
+      financial_year: 2016-17
+      phase: Final Appropriation
+    - amount: null
+      financial_year: 2016-17
+      phase: Audit Outcome
     - amount: null
       financial_year: 2017-18
       phase: Main appropriation
@@ -611,106 +661,6 @@ budget_actual_programmes:
       financial_year: 2019-20
       phase: Audit Outcome
     name: Research And Technology Development Services
-  - items:
-    - amount: 130633000
-      financial_year: 2016-17
-      phase: Main appropriation
-    - amount: 138197000
-      financial_year: 2016-17
-      phase: Final Appropriation
-    - amount: 135939000
-      financial_year: 2016-17
-      phase: Audit Outcome
-    - amount: 130842000
-      financial_year: 2017-18
-      phase: Main appropriation
-    - amount: 124492000
-      financial_year: 2018-19
-      phase: Main appropriation
-    - amount: 132754000
-      financial_year: 2019-20
-      phase: Main appropriation
-    - amount: null
-      financial_year: 2016-17
-      phase: Adjusted appropriation
-    - amount: null
-      financial_year: 2017-18
-      phase: Adjusted appropriation
-    - amount: null
-      financial_year: 2017-18
-      phase: Final Appropriation
-    - amount: null
-      financial_year: 2017-18
-      phase: Audit Outcome
-    - amount: null
-      financial_year: 2018-19
-      phase: Adjusted appropriation
-    - amount: null
-      financial_year: 2018-19
-      phase: Final Appropriation
-    - amount: null
-      financial_year: 2018-19
-      phase: Audit Outcome
-    - amount: null
-      financial_year: 2019-20
-      phase: Adjusted appropriation
-    - amount: null
-      financial_year: 2019-20
-      phase: Final Appropriation
-    - amount: null
-      financial_year: 2019-20
-      phase: Audit Outcome
-    name: Administration
-  - items:
-    - amount: 254876000
-      financial_year: 2016-17
-      phase: Final Appropriation
-    - amount: 254876000
-      financial_year: 2016-17
-      phase: Audit Outcome
-    - amount: 315655000
-      financial_year: 2019-20
-      phase: Main appropriation
-    - amount: null
-      financial_year: 2016-17
-      phase: Main appropriation
-    - amount: null
-      financial_year: 2016-17
-      phase: Adjusted appropriation
-    - amount: null
-      financial_year: 2017-18
-      phase: Main appropriation
-    - amount: null
-      financial_year: 2017-18
-      phase: Adjusted appropriation
-    - amount: null
-      financial_year: 2017-18
-      phase: Final Appropriation
-    - amount: null
-      financial_year: 2017-18
-      phase: Audit Outcome
-    - amount: null
-      financial_year: 2018-19
-      phase: Main appropriation
-    - amount: null
-      financial_year: 2018-19
-      phase: Adjusted appropriation
-    - amount: null
-      financial_year: 2018-19
-      phase: Final Appropriation
-    - amount: null
-      financial_year: 2018-19
-      phase: Audit Outcome
-    - amount: null
-      financial_year: 2019-20
-      phase: Adjusted appropriation
-    - amount: null
-      financial_year: 2019-20
-      phase: Final Appropriation
-    - amount: null
-      financial_year: 2019-20
-      phase: Audit Outcome
-    name: Farmer Support And Development
   - items:
     - amount: 259849000
       financial_year: 2016-17
@@ -761,6 +711,56 @@ budget_actual_programmes:
       financial_year: 2019-20
       phase: Audit Outcome
     name: Farmer Support and Development
+  - items:
+    - amount: 315655000
+      financial_year: 2019-20
+      phase: Main appropriation
+    - amount: null
+      financial_year: 2016-17
+      phase: Main appropriation
+    - amount: null
+      financial_year: 2016-17
+      phase: Adjusted appropriation
+    - amount: null
+      financial_year: 2016-17
+      phase: Final Appropriation
+    - amount: null
+      financial_year: 2016-17
+      phase: Audit Outcome
+    - amount: null
+      financial_year: 2017-18
+      phase: Main appropriation
+    - amount: null
+      financial_year: 2017-18
+      phase: Adjusted appropriation
+    - amount: null
+      financial_year: 2017-18
+      phase: Final Appropriation
+    - amount: null
+      financial_year: 2017-18
+      phase: Audit Outcome
+    - amount: null
+      financial_year: 2018-19
+      phase: Main appropriation
+    - amount: null
+      financial_year: 2018-19
+      phase: Adjusted appropriation
+    - amount: null
+      financial_year: 2018-19
+      phase: Final Appropriation
+    - amount: null
+      financial_year: 2018-19
+      phase: Audit Outcome
+    - amount: null
+      financial_year: 2019-20
+      phase: Adjusted appropriation
+    - amount: null
+      financial_year: 2019-20
+      phase: Final Appropriation
+    - amount: null
+      financial_year: 2019-20
+      phase: Audit Outcome
+    name: Farmer Support And Development
 contributed_datasets:
 - contributor: International Budget Partnership
   name: How Does Civil Society Use Budget Information?

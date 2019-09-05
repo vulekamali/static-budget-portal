@@ -8,24 +8,24 @@ budget_actual:
   expenditure:
     base_financial_year: 2018-19
     nominal:
-    - amount: 730472000
+    - amount: 736184000
       financial_year: 2016-17
-      phase: Final Appropriation
-    - amount: 723373000
-      financial_year: 2016-17
-      phase: Audit Outcome
+      phase: Main appropriation
+    - amount: 725049000
+      financial_year: 2017-18
+      phase: Main appropriation
     - amount: 820305000
       financial_year: 2019-20
       phase: Main appropriation
     - amount: null
       financial_year: 2016-17
-      phase: Main appropriation
-    - amount: null
-      financial_year: 2016-17
       phase: Adjusted appropriation
     - amount: null
-      financial_year: 2017-18
-      phase: Main appropriation
+      financial_year: 2016-17
+      phase: Final Appropriation
+    - amount: null
+      financial_year: 2016-17
+      phase: Audit Outcome
     - amount: null
       financial_year: 2017-18
       phase: Adjusted appropriation
@@ -57,24 +57,24 @@ budget_actual:
       financial_year: 2019-20
       phase: Audit Outcome
     real:
-    - amount: 802482956
+    - amount: 808758053
       financial_year: 2016-17
-      phase: Final Appropriation
-    - amount: 794684127
-      financial_year: 2016-17
-      phase: Audit Outcome
+      phase: Main appropriation
+    - amount: 760664799
+      financial_year: 2017-18
+      phase: Main appropriation
     - amount: 780068189
       financial_year: 2019-20
       phase: Main appropriation
     - amount: null
       financial_year: 2016-17
-      phase: Main appropriation
-    - amount: null
-      financial_year: 2016-17
       phase: Adjusted appropriation
     - amount: null
-      financial_year: 2017-18
-      phase: Main appropriation
+      financial_year: 2016-17
+      phase: Final Appropriation
+    - amount: null
+      financial_year: 2016-17
+      phase: Audit Outcome
     - amount: null
       financial_year: 2017-18
       phase: Adjusted appropriation
@@ -113,24 +113,24 @@ budget_actual_programmes:
   - One or more programmes did not exist for some years displayed.
   programmes:
   - items:
-    - amount: 59125000
+    - amount: 61450000
       financial_year: 2016-17
-      phase: Final Appropriation
-    - amount: 58962000
-      financial_year: 2016-17
-      phase: Audit Outcome
+      phase: Main appropriation
+    - amount: 63304000
+      financial_year: 2017-18
+      phase: Main appropriation
     - amount: 70928000
       financial_year: 2019-20
       phase: Main appropriation
     - amount: null
       financial_year: 2016-17
-      phase: Main appropriation
-    - amount: null
-      financial_year: 2016-17
       phase: Adjusted appropriation
     - amount: null
-      financial_year: 2017-18
-      phase: Main appropriation
+      financial_year: 2016-17
+      phase: Final Appropriation
+    - amount: null
+      financial_year: 2016-17
+      phase: Audit Outcome
     - amount: null
       financial_year: 2017-18
       phase: Adjusted appropriation
@@ -163,24 +163,24 @@ budget_actual_programmes:
       phase: Audit Outcome
     name: Administration
   - items:
-    - amount: 107761000
+    - amount: 109443000
       financial_year: 2016-17
-      phase: Final Appropriation
-    - amount: 106440000
-      financial_year: 2016-17
-      phase: Audit Outcome
+      phase: Main appropriation
+    - amount: 106145000
+      financial_year: 2017-18
+      phase: Main appropriation
     - amount: 119066000
       financial_year: 2019-20
       phase: Main appropriation
     - amount: null
       financial_year: 2016-17
-      phase: Main appropriation
-    - amount: null
-      financial_year: 2016-17
       phase: Adjusted appropriation
     - amount: null
-      financial_year: 2017-18
-      phase: Main appropriation
+      financial_year: 2016-17
+      phase: Final Appropriation
+    - amount: null
+      financial_year: 2016-17
+      phase: Audit Outcome
     - amount: null
       financial_year: 2017-18
       phase: Adjusted appropriation
@@ -213,12 +213,56 @@ budget_actual_programmes:
       phase: Audit Outcome
     name: Cultural Affairs
   - items:
-    - amount: 200761000
+    - amount: 205593000
+      financial_year: 2016-17
+      phase: Main appropriation
+    - amount: 180954000
+      financial_year: 2017-18
+      phase: Main appropriation
+    - amount: null
+      financial_year: 2016-17
+      phase: Adjusted appropriation
+    - amount: null
       financial_year: 2016-17
       phase: Final Appropriation
-    - amount: 198161000
+    - amount: null
       financial_year: 2016-17
       phase: Audit Outcome
+    - amount: null
+      financial_year: 2017-18
+      phase: Adjusted appropriation
+    - amount: null
+      financial_year: 2017-18
+      phase: Final Appropriation
+    - amount: null
+      financial_year: 2017-18
+      phase: Audit Outcome
+    - amount: null
+      financial_year: 2018-19
+      phase: Main appropriation
+    - amount: null
+      financial_year: 2018-19
+      phase: Adjusted appropriation
+    - amount: null
+      financial_year: 2018-19
+      phase: Final Appropriation
+    - amount: null
+      financial_year: 2018-19
+      phase: Audit Outcome
+    - amount: null
+      financial_year: 2019-20
+      phase: Main appropriation
+    - amount: null
+      financial_year: 2019-20
+      phase: Adjusted appropriation
+    - amount: null
+      financial_year: 2019-20
+      phase: Final Appropriation
+    - amount: null
+      financial_year: 2019-20
+      phase: Audit Outcome
+    name: Sport and Recreation
+  - items:
     - amount: 210637000
       financial_year: 2019-20
       phase: Main appropriation
@@ -228,6 +272,12 @@ budget_actual_programmes:
     - amount: null
       financial_year: 2016-17
       phase: Adjusted appropriation
+    - amount: null
+      financial_year: 2016-17
+      phase: Final Appropriation
+    - amount: null
+      financial_year: 2016-17
+      phase: Audit Outcome
     - amount: null
       financial_year: 2017-18
       phase: Main appropriation
@@ -263,12 +313,56 @@ budget_actual_programmes:
       phase: Audit Outcome
     name: Sport And Recreation
   - items:
-    - amount: 362825000
+    - amount: 359698000
+      financial_year: 2016-17
+      phase: Main appropriation
+    - amount: 374646000
+      financial_year: 2017-18
+      phase: Main appropriation
+    - amount: null
+      financial_year: 2016-17
+      phase: Adjusted appropriation
+    - amount: null
       financial_year: 2016-17
       phase: Final Appropriation
-    - amount: 359810000
+    - amount: null
       financial_year: 2016-17
       phase: Audit Outcome
+    - amount: null
+      financial_year: 2017-18
+      phase: Adjusted appropriation
+    - amount: null
+      financial_year: 2017-18
+      phase: Final Appropriation
+    - amount: null
+      financial_year: 2017-18
+      phase: Audit Outcome
+    - amount: null
+      financial_year: 2018-19
+      phase: Main appropriation
+    - amount: null
+      financial_year: 2018-19
+      phase: Adjusted appropriation
+    - amount: null
+      financial_year: 2018-19
+      phase: Final Appropriation
+    - amount: null
+      financial_year: 2018-19
+      phase: Audit Outcome
+    - amount: null
+      financial_year: 2019-20
+      phase: Main appropriation
+    - amount: null
+      financial_year: 2019-20
+      phase: Adjusted appropriation
+    - amount: null
+      financial_year: 2019-20
+      phase: Final Appropriation
+    - amount: null
+      financial_year: 2019-20
+      phase: Audit Outcome
+    name: Library and Archive Services
+  - items:
     - amount: 419674000
       financial_year: 2019-20
       phase: Main appropriation
@@ -278,6 +372,12 @@ budget_actual_programmes:
     - amount: null
       financial_year: 2016-17
       phase: Adjusted appropriation
+    - amount: null
+      financial_year: 2016-17
+      phase: Final Appropriation
+    - amount: null
+      financial_year: 2016-17
+      phase: Audit Outcome
     - amount: null
       financial_year: 2017-18
       phase: Main appropriation

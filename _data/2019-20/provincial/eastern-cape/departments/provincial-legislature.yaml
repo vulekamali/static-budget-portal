@@ -8,16 +8,10 @@ budget_actual:
   expenditure:
     base_financial_year: 2018-19
     nominal:
-    - amount: 481929758
+    - amount: 419370000
       financial_year: 2016-17
       phase: Main appropriation
-    - amount: 497354000
-      financial_year: 2016-17
-      phase: Final Appropriation
-    - amount: 483552000
-      financial_year: 2016-17
-      phase: Audit Outcome
-    - amount: 509217012
+    - amount: 443530000
       financial_year: 2017-18
       phase: Main appropriation
     - amount: 525999445
@@ -29,6 +23,12 @@ budget_actual:
     - amount: null
       financial_year: 2016-17
       phase: Adjusted appropriation
+    - amount: null
+      financial_year: 2016-17
+      phase: Final Appropriation
+    - amount: null
+      financial_year: 2016-17
+      phase: Audit Outcome
     - amount: null
       financial_year: 2017-18
       phase: Adjusted appropriation
@@ -57,16 +57,10 @@ budget_actual:
       financial_year: 2019-20
       phase: Audit Outcome
     real:
-    - amount: 529439070
+    - amount: 460712084
       financial_year: 2016-17
       phase: Main appropriation
-    - amount: 546383856
-      financial_year: 2016-17
-      phase: Final Appropriation
-    - amount: 531221235
-      financial_year: 2016-17
-      phase: Audit Outcome
-    - amount: 534230729
+    - amount: 465317045
       financial_year: 2017-18
       phase: Main appropriation
     - amount: 525999445
@@ -78,6 +72,12 @@ budget_actual:
     - amount: null
       financial_year: 2016-17
       phase: Adjusted appropriation
+    - amount: null
+      financial_year: 2016-17
+      phase: Final Appropriation
+    - amount: null
+      financial_year: 2016-17
+      phase: Audit Outcome
     - amount: null
       financial_year: 2017-18
       phase: Adjusted appropriation
@@ -162,14 +162,11 @@ budget_actual_programmes:
       phase: Audit Outcome
     name: Direct Charge Against The Provincial Revenue Fund
   - items:
-    - amount: 62560000
-      financial_year: 2016-17
-      phase: Main appropriation
-    - amount: 65687772
-      financial_year: 2017-18
-      phase: Main appropriation
     - amount: 64003000
       financial_year: 2018-19
+      phase: Main appropriation
+    - amount: null
+      financial_year: 2016-17
       phase: Main appropriation
     - amount: null
       financial_year: 2016-17
@@ -180,6 +177,9 @@ budget_actual_programmes:
     - amount: null
       financial_year: 2016-17
       phase: Audit Outcome
+    - amount: null
+      financial_year: 2017-18
+      phase: Main appropriation
     - amount: null
       financial_year: 2017-18
       phase: Adjusted appropriation
@@ -212,66 +212,10 @@ budget_actual_programmes:
       phase: Audit Outcome
     name: Direct charge against the Provincial Revenue Fund
   - items:
-    - amount: 66892000
-      financial_year: 2016-17
-      phase: Final Appropriation
-    - amount: 62667000
-      financial_year: 2016-17
-      phase: Audit Outcome
-    - amount: null
-      financial_year: 2016-17
-      phase: Main appropriation
-    - amount: null
-      financial_year: 2016-17
-      phase: Adjusted appropriation
-    - amount: null
-      financial_year: 2017-18
-      phase: Main appropriation
-    - amount: null
-      financial_year: 2017-18
-      phase: Adjusted appropriation
-    - amount: null
-      financial_year: 2017-18
-      phase: Final Appropriation
-    - amount: null
-      financial_year: 2017-18
-      phase: Audit Outcome
-    - amount: null
-      financial_year: 2018-19
-      phase: Main appropriation
-    - amount: null
-      financial_year: 2018-19
-      phase: Adjusted appropriation
-    - amount: null
-      financial_year: 2018-19
-      phase: Final Appropriation
-    - amount: null
-      financial_year: 2018-19
-      phase: Audit Outcome
-    - amount: null
-      financial_year: 2019-20
-      phase: Main appropriation
-    - amount: null
-      financial_year: 2019-20
-      phase: Adjusted appropriation
-    - amount: null
-      financial_year: 2019-20
-      phase: Final Appropriation
-    - amount: null
-      financial_year: 2019-20
-      phase: Audit Outcome
-    name: Direct Charges
-  - items:
-    - amount: 111227457
-      financial_year: 2016-17
-      phase: Main appropriation
     - amount: 111227000
       financial_year: 2016-17
-      phase: Final Appropriation
-    - amount: 108170000
-      financial_year: 2016-17
-      phase: Audit Outcome
-    - amount: 114501613
+      phase: Main appropriation
+    - amount: 114502000
       financial_year: 2017-18
       phase: Main appropriation
     - amount: 104187645
@@ -283,6 +227,12 @@ budget_actual_programmes:
     - amount: null
       financial_year: 2016-17
       phase: Adjusted appropriation
+    - amount: null
+      financial_year: 2016-17
+      phase: Final Appropriation
+    - amount: null
+      financial_year: 2016-17
+      phase: Audit Outcome
     - amount: null
       financial_year: 2017-18
       phase: Adjusted appropriation
@@ -312,7 +262,7 @@ budget_actual_programmes:
       phase: Audit Outcome
     name: Parliamentary Services
   - items:
-    - amount: 138541256
+    - amount: 138541000
       financial_year: 2016-17
       phase: Main appropriation
     - amount: 132305000
@@ -362,12 +312,6 @@ budget_actual_programmes:
       phase: Audit Outcome
     name: Facilities for Members and Political Parties
   - items:
-    - amount: 142541000
-      financial_year: 2016-17
-      phase: Final Appropriation
-    - amount: 141775000
-      financial_year: 2016-17
-      phase: Audit Outcome
     - amount: 147949000
       financial_year: 2019-20
       phase: Main appropriation
@@ -377,6 +321,12 @@ budget_actual_programmes:
     - amount: null
       financial_year: 2016-17
       phase: Adjusted appropriation
+    - amount: null
+      financial_year: 2016-17
+      phase: Final Appropriation
+    - amount: null
+      financial_year: 2016-17
+      phase: Audit Outcome
     - amount: null
       financial_year: 2017-18
       phase: Main appropriation
@@ -412,16 +362,10 @@ budget_actual_programmes:
       phase: Audit Outcome
     name: Facilities For Members And Political Parties
   - items:
-    - amount: 169601045
+    - amount: 169602000
       financial_year: 2016-17
       phase: Main appropriation
-    - amount: 176694000
-      financial_year: 2016-17
-      phase: Final Appropriation
-    - amount: 170940000
-      financial_year: 2016-17
-      phase: Audit Outcome
-    - amount: 196722627
+    - amount: 196723000
       financial_year: 2017-18
       phase: Main appropriation
     - amount: 205915800
@@ -433,6 +377,12 @@ budget_actual_programmes:
     - amount: null
       financial_year: 2016-17
       phase: Adjusted appropriation
+    - amount: null
+      financial_year: 2016-17
+      phase: Final Appropriation
+    - amount: null
+      financial_year: 2016-17
+      phase: Audit Outcome
     - amount: null
       financial_year: 2017-18
       phase: Adjusted appropriation

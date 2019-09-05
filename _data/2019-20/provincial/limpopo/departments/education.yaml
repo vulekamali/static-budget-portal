@@ -8,16 +8,10 @@ budget_actual:
   expenditure:
     base_financial_year: 2018-19
     nominal:
-    - amount: 27171729274
+    - amount: 27171746000
       financial_year: 2016-17
       phase: Main appropriation
-    - amount: 27391674000
-      financial_year: 2016-17
-      phase: Final Appropriation
-    - amount: 26826203000
-      financial_year: 2016-17
-      phase: Audit Outcome
-    - amount: 28783148738
+    - amount: 28783149000
       financial_year: 2017-18
       phase: Main appropriation
     - amount: 30607752898
@@ -29,6 +23,12 @@ budget_actual:
     - amount: null
       financial_year: 2016-17
       phase: Adjusted appropriation
+    - amount: null
+      financial_year: 2016-17
+      phase: Final Appropriation
+    - amount: null
+      financial_year: 2016-17
+      phase: Audit Outcome
     - amount: null
       financial_year: 2017-18
       phase: Adjusted appropriation
@@ -57,16 +57,10 @@ budget_actual:
       financial_year: 2019-20
       phase: Audit Outcome
     real:
-    - amount: 29850356539
+    - amount: 29850374913
       financial_year: 2016-17
       phase: Main appropriation
-    - amount: 30091983725
-      financial_year: 2016-17
-      phase: Final Appropriation
-    - amount: 29470767799
-      financial_year: 2016-17
-      phase: Audit Outcome
-    - amount: 30197032288
+    - amount: 30197032563
       financial_year: 2017-18
       phase: Main appropriation
     - amount: 30607752898
@@ -78,6 +72,12 @@ budget_actual:
     - amount: null
       financial_year: 2016-17
       phase: Adjusted appropriation
+    - amount: null
+      financial_year: 2016-17
+      phase: Final Appropriation
+    - amount: null
+      financial_year: 2016-17
+      phase: Audit Outcome
     - amount: null
       financial_year: 2017-18
       phase: Adjusted appropriation
@@ -112,17 +112,8 @@ budget_actual_programmes:
   - One or more programmes did not exist for some years displayed.
   programmes:
   - items:
-    - amount: 121736274
+    - amount: 121736000
       financial_year: 2016-17
-      phase: Main appropriation
-    - amount: 116736000
-      financial_year: 2016-17
-      phase: Final Appropriation
-    - amount: 115104000
-      financial_year: 2016-17
-      phase: Audit Outcome
-    - amount: 126973088
-      financial_year: 2017-18
       phase: Main appropriation
     - amount: 133569280
       financial_year: 2018-19
@@ -133,6 +124,15 @@ budget_actual_programmes:
     - amount: null
       financial_year: 2016-17
       phase: Adjusted appropriation
+    - amount: null
+      financial_year: 2016-17
+      phase: Final Appropriation
+    - amount: null
+      financial_year: 2016-17
+      phase: Audit Outcome
+    - amount: null
+      financial_year: 2017-18
+      phase: Main appropriation
     - amount: null
       financial_year: 2017-18
       phase: Adjusted appropriation
@@ -162,17 +162,58 @@ budget_actual_programmes:
       phase: Audit Outcome
     name: Independent School Subsidies
   - items:
-    - amount: 174218000
+    - amount: 126973000
+      financial_year: 2017-18
+      phase: Main appropriation
+    - amount: null
       financial_year: 2016-17
       phase: Main appropriation
-    - amount: 169195000
+    - amount: null
+      financial_year: 2016-17
+      phase: Adjusted appropriation
+    - amount: null
       financial_year: 2016-17
       phase: Final Appropriation
-    - amount: 144344000
+    - amount: null
       financial_year: 2016-17
       phase: Audit Outcome
-    - amount: 189775000
+    - amount: null
       financial_year: 2017-18
+      phase: Adjusted appropriation
+    - amount: null
+      financial_year: 2017-18
+      phase: Final Appropriation
+    - amount: null
+      financial_year: 2017-18
+      phase: Audit Outcome
+    - amount: null
+      financial_year: 2018-19
+      phase: Main appropriation
+    - amount: null
+      financial_year: 2018-19
+      phase: Adjusted appropriation
+    - amount: null
+      financial_year: 2018-19
+      phase: Final Appropriation
+    - amount: null
+      financial_year: 2018-19
+      phase: Audit Outcome
+    - amount: null
+      financial_year: 2019-20
+      phase: Main appropriation
+    - amount: null
+      financial_year: 2019-20
+      phase: Adjusted appropriation
+    - amount: null
+      financial_year: 2019-20
+      phase: Final Appropriation
+    - amount: null
+      financial_year: 2019-20
+      phase: Audit Outcome
+    name: INDEPENDENT SCHOOL SUBSIDIES
+  - items:
+    - amount: 174218000
+      financial_year: 2016-17
       phase: Main appropriation
     - amount: 211188000
       financial_year: 2018-19
@@ -183,6 +224,15 @@ budget_actual_programmes:
     - amount: null
       financial_year: 2016-17
       phase: Adjusted appropriation
+    - amount: null
+      financial_year: 2016-17
+      phase: Final Appropriation
+    - amount: null
+      financial_year: 2016-17
+      phase: Audit Outcome
+    - amount: null
+      financial_year: 2017-18
+      phase: Main appropriation
     - amount: null
       financial_year: 2017-18
       phase: Adjusted appropriation
@@ -212,14 +262,8 @@ budget_actual_programmes:
       phase: Audit Outcome
     name: Early Childhood Development
   - items:
-    - amount: 410387000
-      financial_year: 2016-17
-      phase: Final Appropriation
-    - amount: 369069000
-      financial_year: 2016-17
-      phase: Audit Outcome
-    - amount: 673086000
-      financial_year: 2019-20
+    - amount: 189775000
+      financial_year: 2017-18
       phase: Main appropriation
     - amount: null
       financial_year: 2016-17
@@ -227,6 +271,62 @@ budget_actual_programmes:
     - amount: null
       financial_year: 2016-17
       phase: Adjusted appropriation
+    - amount: null
+      financial_year: 2016-17
+      phase: Final Appropriation
+    - amount: null
+      financial_year: 2016-17
+      phase: Audit Outcome
+    - amount: null
+      financial_year: 2017-18
+      phase: Adjusted appropriation
+    - amount: null
+      financial_year: 2017-18
+      phase: Final Appropriation
+    - amount: null
+      financial_year: 2017-18
+      phase: Audit Outcome
+    - amount: null
+      financial_year: 2018-19
+      phase: Main appropriation
+    - amount: null
+      financial_year: 2018-19
+      phase: Adjusted appropriation
+    - amount: null
+      financial_year: 2018-19
+      phase: Final Appropriation
+    - amount: null
+      financial_year: 2018-19
+      phase: Audit Outcome
+    - amount: null
+      financial_year: 2019-20
+      phase: Main appropriation
+    - amount: null
+      financial_year: 2019-20
+      phase: Adjusted appropriation
+    - amount: null
+      financial_year: 2019-20
+      phase: Final Appropriation
+    - amount: null
+      financial_year: 2019-20
+      phase: Audit Outcome
+    name: EARLY CHILDHOOD DEVELOPMENT
+  - items:
+    - amount: 411387000
+      financial_year: 2016-17
+      phase: Main appropriation
+    - amount: 673086000
+      financial_year: 2019-20
+      phase: Main appropriation
+    - amount: null
+      financial_year: 2016-17
+      phase: Adjusted appropriation
+    - amount: null
+      financial_year: 2016-17
+      phase: Final Appropriation
+    - amount: null
+      financial_year: 2016-17
+      phase: Audit Outcome
     - amount: null
       financial_year: 2017-18
       phase: Main appropriation
@@ -262,14 +362,11 @@ budget_actual_programmes:
       phase: Audit Outcome
     name: Examination And Education Related Services
   - items:
-    - amount: 411387000
-      financial_year: 2016-17
-      phase: Main appropriation
     - amount: 423976000
       financial_year: 2017-18
       phase: Main appropriation
-    - amount: 516231618
-      financial_year: 2018-19
+    - amount: null
+      financial_year: 2016-17
       phase: Main appropriation
     - amount: null
       financial_year: 2016-17
@@ -280,6 +377,159 @@ budget_actual_programmes:
     - amount: null
       financial_year: 2016-17
       phase: Audit Outcome
+    - amount: null
+      financial_year: 2017-18
+      phase: Adjusted appropriation
+    - amount: null
+      financial_year: 2017-18
+      phase: Final Appropriation
+    - amount: null
+      financial_year: 2017-18
+      phase: Audit Outcome
+    - amount: null
+      financial_year: 2018-19
+      phase: Main appropriation
+    - amount: null
+      financial_year: 2018-19
+      phase: Adjusted appropriation
+    - amount: null
+      financial_year: 2018-19
+      phase: Final Appropriation
+    - amount: null
+      financial_year: 2018-19
+      phase: Audit Outcome
+    - amount: null
+      financial_year: 2019-20
+      phase: Main appropriation
+    - amount: null
+      financial_year: 2019-20
+      phase: Adjusted appropriation
+    - amount: null
+      financial_year: 2019-20
+      phase: Final Appropriation
+    - amount: null
+      financial_year: 2019-20
+      phase: Audit Outcome
+    name: EXAMINATION AND EDUCATION RELATED SERVICES
+  - items:
+    - amount: 448754000
+      financial_year: 2016-17
+      phase: Main appropriation
+    - amount: 532172000
+      financial_year: 2018-19
+      phase: Main appropriation
+    - amount: 569215000
+      financial_year: 2019-20
+      phase: Main appropriation
+    - amount: null
+      financial_year: 2016-17
+      phase: Adjusted appropriation
+    - amount: null
+      financial_year: 2016-17
+      phase: Final Appropriation
+    - amount: null
+      financial_year: 2016-17
+      phase: Audit Outcome
+    - amount: null
+      financial_year: 2017-18
+      phase: Main appropriation
+    - amount: null
+      financial_year: 2017-18
+      phase: Adjusted appropriation
+    - amount: null
+      financial_year: 2017-18
+      phase: Final Appropriation
+    - amount: null
+      financial_year: 2017-18
+      phase: Audit Outcome
+    - amount: null
+      financial_year: 2018-19
+      phase: Adjusted appropriation
+    - amount: null
+      financial_year: 2018-19
+      phase: Final Appropriation
+    - amount: null
+      financial_year: 2018-19
+      phase: Audit Outcome
+    - amount: null
+      financial_year: 2019-20
+      phase: Adjusted appropriation
+    - amount: null
+      financial_year: 2019-20
+      phase: Final Appropriation
+    - amount: null
+      financial_year: 2019-20
+      phase: Audit Outcome
+    name: Public Special School Education
+  - items:
+    - amount: 488368000
+      financial_year: 2017-18
+      phase: Main appropriation
+    - amount: null
+      financial_year: 2016-17
+      phase: Main appropriation
+    - amount: null
+      financial_year: 2016-17
+      phase: Adjusted appropriation
+    - amount: null
+      financial_year: 2016-17
+      phase: Final Appropriation
+    - amount: null
+      financial_year: 2016-17
+      phase: Audit Outcome
+    - amount: null
+      financial_year: 2017-18
+      phase: Adjusted appropriation
+    - amount: null
+      financial_year: 2017-18
+      phase: Final Appropriation
+    - amount: null
+      financial_year: 2017-18
+      phase: Audit Outcome
+    - amount: null
+      financial_year: 2018-19
+      phase: Main appropriation
+    - amount: null
+      financial_year: 2018-19
+      phase: Adjusted appropriation
+    - amount: null
+      financial_year: 2018-19
+      phase: Final Appropriation
+    - amount: null
+      financial_year: 2018-19
+      phase: Audit Outcome
+    - amount: null
+      financial_year: 2019-20
+      phase: Main appropriation
+    - amount: null
+      financial_year: 2019-20
+      phase: Adjusted appropriation
+    - amount: null
+      financial_year: 2019-20
+      phase: Final Appropriation
+    - amount: null
+      financial_year: 2019-20
+      phase: Audit Outcome
+    name: PUBLIC SPECIAL SCHOOL EDUCATION
+  - items:
+    - amount: 516231618
+      financial_year: 2018-19
+      phase: Main appropriation
+    - amount: null
+      financial_year: 2016-17
+      phase: Main appropriation
+    - amount: null
+      financial_year: 2016-17
+      phase: Adjusted appropriation
+    - amount: null
+      financial_year: 2016-17
+      phase: Final Appropriation
+    - amount: null
+      financial_year: 2016-17
+      phase: Audit Outcome
+    - amount: null
+      financial_year: 2017-18
+      phase: Main appropriation
     - amount: null
       financial_year: 2017-18
       phase: Adjusted appropriation
@@ -312,27 +562,21 @@ budget_actual_programmes:
       phase: Audit Outcome
     name: Examination and Education Related Services
   - items:
-    - amount: 448754000
-      financial_year: 2016-17
-      phase: Main appropriation
-    - amount: 448754000
-      financial_year: 2016-17
-      phase: Final Appropriation
-    - amount: 442543000
-      financial_year: 2016-17
-      phase: Audit Outcome
-    - amount: 488367900
+    - amount: 810523000
       financial_year: 2017-18
       phase: Main appropriation
-    - amount: 532172000
-      financial_year: 2018-19
-      phase: Main appropriation
-    - amount: 569215000
-      financial_year: 2019-20
+    - amount: null
+      financial_year: 2016-17
       phase: Main appropriation
     - amount: null
       financial_year: 2016-17
       phase: Adjusted appropriation
+    - amount: null
+      financial_year: 2016-17
+      phase: Final Appropriation
+    - amount: null
+      financial_year: 2016-17
+      phase: Audit Outcome
     - amount: null
       financial_year: 2017-18
       phase: Adjusted appropriation
@@ -344,6 +588,9 @@ budget_actual_programmes:
       phase: Audit Outcome
     - amount: null
       financial_year: 2018-19
+      phase: Main appropriation
+    - amount: null
+      financial_year: 2018-19
       phase: Adjusted appropriation
     - amount: null
       financial_year: 2018-19
@@ -353,6 +600,9 @@ budget_actual_programmes:
       phase: Audit Outcome
     - amount: null
       financial_year: 2019-20
+      phase: Main appropriation
+    - amount: null
+      financial_year: 2019-20
       phase: Adjusted appropriation
     - amount: null
       financial_year: 2019-20
@@ -360,19 +610,10 @@ budget_actual_programmes:
     - amount: null
       financial_year: 2019-20
       phase: Audit Outcome
-    name: Public Special School Education
+    name: INFRASTRUCTURE DEVELOPMENT
   - items:
     - amount: 946610000
       financial_year: 2016-17
-      phase: Main appropriation
-    - amount: 1113630000
-      financial_year: 2016-17
-      phase: Final Appropriation
-    - amount: 829216000
-      financial_year: 2016-17
-      phase: Audit Outcome
-    - amount: 810523000
-      financial_year: 2017-18
       phase: Main appropriation
     - amount: 1013426000
       financial_year: 2018-19
@@ -383,6 +624,15 @@ budget_actual_programmes:
     - amount: null
       financial_year: 2016-17
       phase: Adjusted appropriation
+    - amount: null
+      financial_year: 2016-17
+      phase: Final Appropriation
+    - amount: null
+      financial_year: 2016-17
+      phase: Audit Outcome
+    - amount: null
+      financial_year: 2017-18
+      phase: Main appropriation
     - amount: null
       financial_year: 2017-18
       phase: Adjusted appropriation
@@ -412,17 +662,8 @@ budget_actual_programmes:
       phase: Audit Outcome
     name: Infrastructure Development
   - items:
-    - amount: 1695862000
+    - amount: 1695879000
       financial_year: 2016-17
-      phase: Main appropriation
-    - amount: 1739207000
-      financial_year: 2016-17
-      phase: Final Appropriation
-    - amount: 1683490000
-      financial_year: 2016-17
-      phase: Audit Outcome
-    - amount: 1862399000
-      financial_year: 2017-18
       phase: Main appropriation
     - amount: 1963562000
       financial_year: 2018-19
@@ -433,6 +674,15 @@ budget_actual_programmes:
     - amount: null
       financial_year: 2016-17
       phase: Adjusted appropriation
+    - amount: null
+      financial_year: 2016-17
+      phase: Final Appropriation
+    - amount: null
+      financial_year: 2016-17
+      phase: Audit Outcome
+    - amount: null
+      financial_year: 2017-18
+      phase: Main appropriation
     - amount: null
       financial_year: 2017-18
       phase: Adjusted appropriation
@@ -462,14 +712,114 @@ budget_actual_programmes:
       phase: Audit Outcome
     name: Administration
   - items:
+    - amount: 1862399000
+      financial_year: 2017-18
+      phase: Main appropriation
+    - amount: null
+      financial_year: 2016-17
+      phase: Main appropriation
+    - amount: null
+      financial_year: 2016-17
+      phase: Adjusted appropriation
+    - amount: null
+      financial_year: 2016-17
+      phase: Final Appropriation
+    - amount: null
+      financial_year: 2016-17
+      phase: Audit Outcome
+    - amount: null
+      financial_year: 2017-18
+      phase: Adjusted appropriation
+    - amount: null
+      financial_year: 2017-18
+      phase: Final Appropriation
+    - amount: null
+      financial_year: 2017-18
+      phase: Audit Outcome
+    - amount: null
+      financial_year: 2018-19
+      phase: Main appropriation
+    - amount: null
+      financial_year: 2018-19
+      phase: Adjusted appropriation
+    - amount: null
+      financial_year: 2018-19
+      phase: Final Appropriation
+    - amount: null
+      financial_year: 2018-19
+      phase: Audit Outcome
+    - amount: null
+      financial_year: 2019-20
+      phase: Main appropriation
+    - amount: null
+      financial_year: 2019-20
+      phase: Adjusted appropriation
+    - amount: null
+      financial_year: 2019-20
+      phase: Final Appropriation
+    - amount: null
+      financial_year: 2019-20
+      phase: Audit Outcome
+    name: ADMINISTRATION
+  - items:
     - amount: 23373162000
       financial_year: 2016-17
       phase: Main appropriation
-    - amount: 24881134750
+    - amount: 27630878000
+      financial_year: 2019-20
+      phase: Main appropriation
+    - amount: null
+      financial_year: 2016-17
+      phase: Adjusted appropriation
+    - amount: null
+      financial_year: 2016-17
+      phase: Final Appropriation
+    - amount: null
+      financial_year: 2016-17
+      phase: Audit Outcome
+    - amount: null
+      financial_year: 2017-18
+      phase: Main appropriation
+    - amount: null
+      financial_year: 2017-18
+      phase: Adjusted appropriation
+    - amount: null
+      financial_year: 2017-18
+      phase: Final Appropriation
+    - amount: null
+      financial_year: 2017-18
+      phase: Audit Outcome
+    - amount: null
+      financial_year: 2018-19
+      phase: Main appropriation
+    - amount: null
+      financial_year: 2018-19
+      phase: Adjusted appropriation
+    - amount: null
+      financial_year: 2018-19
+      phase: Final Appropriation
+    - amount: null
+      financial_year: 2018-19
+      phase: Audit Outcome
+    - amount: null
+      financial_year: 2019-20
+      phase: Adjusted appropriation
+    - amount: null
+      financial_year: 2019-20
+      phase: Final Appropriation
+    - amount: null
+      financial_year: 2019-20
+      phase: Audit Outcome
+    name: Public Ordinary School Education
+  - items:
+    - amount: 24881135000
       financial_year: 2017-18
       phase: Main appropriation
     - amount: 26237604000
       financial_year: 2018-19
+      phase: Main appropriation
+    - amount: null
+      financial_year: 2016-17
       phase: Main appropriation
     - amount: null
       financial_year: 2016-17
@@ -511,56 +861,6 @@ budget_actual_programmes:
       financial_year: 2019-20
       phase: Audit Outcome
     name: PUBLIC ORDINARY SCHOOL EDUCATION
-  - items:
-    - amount: 23393765000
-      financial_year: 2016-17
-      phase: Final Appropriation
-    - amount: 23242437000
-      financial_year: 2016-17
-      phase: Audit Outcome
-    - amount: 27630878000
-      financial_year: 2019-20
-      phase: Main appropriation
-    - amount: null
-      financial_year: 2016-17
-      phase: Main appropriation
-    - amount: null
-      financial_year: 2016-17
-      phase: Adjusted appropriation
-    - amount: null
-      financial_year: 2017-18
-      phase: Main appropriation
-    - amount: null
-      financial_year: 2017-18
-      phase: Adjusted appropriation
-    - amount: null
-      financial_year: 2017-18
-      phase: Final Appropriation
-    - amount: null
-      financial_year: 2017-18
-      phase: Audit Outcome
-    - amount: null
-      financial_year: 2018-19
-      phase: Main appropriation
-    - amount: null
-      financial_year: 2018-19
-      phase: Adjusted appropriation
-    - amount: null
-      financial_year: 2018-19
-      phase: Final Appropriation
-    - amount: null
-      financial_year: 2018-19
-      phase: Audit Outcome
-    - amount: null
-      financial_year: 2019-20
-      phase: Adjusted appropriation
-    - amount: null
-      financial_year: 2019-20
-      phase: Final Appropriation
-    - amount: null
-      financial_year: 2019-20
-      phase: Audit Outcome
-    name: Public Ordinary School Education
 contributed_datasets:
 - contributor: International Budget Partnership
   name: How Does Civil Society Use Budget Information?
