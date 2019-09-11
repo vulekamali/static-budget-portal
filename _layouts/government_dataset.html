@@ -3,7 +3,9 @@ layout: page-shell
 ---
 
 {% assign page_data = site.data.datasets[page.category][page.data_key] %}
-
+{% if page_data.category.slug == "socio-economic-data" or page_data.category.slug == "performance-resources" or page_data.category.slug == "procurement-resources" %}
+  {% assign external_resource_page = true %}
+{% endif %}
 
 <div class="Page-content">
   <div class="Page-contentInner">
@@ -18,19 +20,19 @@ layout: page-shell
 
     <h1 class="Page-mainHeading u-marginTop15">{{ page_data.name }}</h1>
 
-    {% if page_data.category.slug != "socio-economic-data" %}
+    {% unless external_resource_page %}
       <main class="Page-main">
-    {% endif %}
+    {% endunless %}
 
       {% if page_data.intro %}
         <div class="BasicContent">
 
-          {% if page_data.category.slug == "socio-economic-data" %}
+          {% if external_resource_page %}
             <div class="Screenshots">
               {% for resource in page_data.resources %}
                 {% if resource.format == 'PNG' %}
                   <a href="{{ resource.url }}" target="_blank" class="Screenshots-imageWrap">
-                    <img src="{{ resource.url }}" class="Screenshots-image">
+                    <img src="{{ resource.url }}" alt="{{ resource.name }}" class="Screenshots-image">
                   </a>
                 {% endif %}
               {% endfor %}
@@ -45,12 +47,17 @@ layout: page-shell
             {{ page_data.key_points | strip_html | markdownify }}
           {% endif %}
 
-          {% if page_data.use_for %}
-            <div class="BasicContent-title u-marginTop20">What can it be used for?</div>
-            {{ page_data.use_for }}
+          {% if page_data.importance %}
+            <div class="BasicContent-title u-marginTop20">Why is it important??</div>
+            {{ page_data.importance | strip_html | markdownify }}
           {% endif %}
 
-          {% if page_data.category.slug == "socio-economic-data" %}
+          {% if page_data.use_for %}
+            <div class="BasicContent-title u-marginTop20">What can it be used for?</div>
+            {{ page_data.use_for | strip_html | markdownify }}
+          {% endif %}
+
+          {% if external_resource_page %}
             {% if page_data.resources %}
               <div>
                 {% for resource in page_data.resources %}
@@ -66,9 +73,9 @@ layout: page-shell
         </div>
       {% endif %}
 
-      {% if 
-        page_data.category.slug == "frameworks-for-conditional-grants-to-provinces" 
-        or page_data.category.slug == "frameworks-for-conditional-grants-to-municipalities" 
+      {% if
+        page_data.category.slug == "frameworks-for-conditional-grants-to-provinces"
+        or page_data.category.slug == "frameworks-for-conditional-grants-to-municipalities"
       %}
         {% assign source = page_data.resources[0].url %}
         {%
@@ -84,12 +91,12 @@ layout: page-shell
         </div>
       {% endif %}
 
-      {% if page_data.category.slug != "socio-economic-data" %}
+      {% unless external_resource_page %}
         {%
           include components/universal/Downloads/index.html resources=page_data.resources
           utils="u-marginTop20"
         %}
-      {% endif %}
+      {% endunless %}
 
       <div class="Section u-marginBottom20 u-marginTop20">
         <h2 class="Section-title">Discuss this dataset with others</h2>
@@ -98,7 +105,7 @@ layout: page-shell
         </div>
       </div>
 
-    {% if page_data.category.slug != "socio-economic-data" %}
+    {% unless external_resource_page %}
       </main>
       <aside class="Page-sidebar">
 
@@ -106,7 +113,7 @@ layout: page-shell
           <h2 class="Section-title">Share this page:</h2>
           <div data-component="Share"></div>
         </div>
-    {% endif %}
+    {% endunless %}
 
     {% if page_data.category.slug == "performance-and-expenditure-reviews" %}
       <div class="Section is-bevel">
@@ -163,8 +170,8 @@ layout: page-shell
           </a>
         </div>
       </div>
-    {% endif %} 
-      
+    {% endif %}
+
     {% if page_data.category.slug == "adjusted-estimates-of-national-expenditure" %}
       <div class="Section is-bevel">
         <div class="Section-card">
@@ -188,8 +195,8 @@ layout: page-shell
       </div>
     {% endif %}
 
-    {% if page_data.category.slug != "socio-economic-data" %}
+    {% unless external_resource_page %}
       </aside>
-    {% endif %}
+    {% endunless %}
   </div>
 </div>
