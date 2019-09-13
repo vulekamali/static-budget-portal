@@ -8,10 +8,11 @@ datasets:
     slug: procurement-portals-and-resources
     url_path: /datasets/procurement-portals-and-resources
   created: '2019-09-13T11:02:58.390389'
-  description: null
+  description: List of suppliers who are blacklisted from doing business with the
+    state.
   intro_short: List of suppliers who are blacklisted from doing business with the
     state.
-  last_updated: '2019-09-13T12:18:00.140152'
+  last_updated: '2019-09-13T13:15:55.829319'
   license:
     name: License not specified
     url: null
@@ -34,6 +35,14 @@ datasets:
     format: PNG
     name: Screenshot-2
     url: https://data.vulekamali.gov.za/dataset/81254bea-1d5b-4b80-ae05-f64dd19192cf/resource/73e0cf18-73a2-4e72-b356-a6b160a223c3/download/blacklisted-suppliers-2.png
+  - description: ''
+    format: PDF
+    name: Blacklisted Suppliers link to file
+    url: http://www.treasury.gov.za/publications/other/Database%20of%20Restricted%20Suppliers.pdf
+  - description: ''
+    format: ''
+    name: Blacklisted Suppliers link
+    url: http://www.treasury.gov.za/publications/other/default.aspx
   slug: blacklisted-suppliers
   url_path: /datasets/procurement-portals-and-resources/blacklisted-suppliers
 - author:
@@ -45,12 +54,15 @@ datasets:
     slug: procurement-portals-and-resources
     url_path: /datasets/procurement-portals-and-resources
   created: '2019-09-13T10:29:16.201230'
-  description: null
+  description: Requests from national departments, public entities, Constitutional
+    institutions and provincial treasuries to deviate from standard bidding processes
+    when procuring goods or services. Provincial institutions should direct their
+    requests to the relevant treasuries.
   intro_short: Requests from national departments, public entities, Constitutional
     institutions and provincial treasuries to deviate from standard bidding processes
     when procuring goods or services. Provincial institutions should direct their
     requests to the relevant treasuries.
-  last_updated: '2019-09-13T12:24:23.108150'
+  last_updated: '2019-09-13T13:08:37.585329'
   license:
     name: License not specified
     url: null
@@ -73,6 +85,10 @@ datasets:
     format: PNG
     name: Screenshot-2
     url: https://data.vulekamali.gov.za/dataset/c0bfdca4-72a6-42da-9ee6-41b7187a0cd6/resource/ef96272a-2198-487e-9cff-29d14c563eba/download/deviation-from-procurement-processes-2.png
+  - description: ''
+    format: ''
+    name: Deviations from procurement processes link
+    url: http://ocpo.treasury.gov.za/Suppliers_Area/Pages/Deviations-and-Exspansions.aspx
   slug: deviations-from-procurement-processes
   url_path: /datasets/procurement-portals-and-resources/deviations-from-procurement-processes
 - author:
@@ -84,11 +100,13 @@ datasets:
     slug: procurement-portals-and-resources
     url_path: /datasets/procurement-portals-and-resources
   created: '2019-09-13T10:58:31.740945'
-  description: null
+  description: Requests from national departments and public entities to expand and
+    extend existing contracts rather than request new bids from potential suppliers
+    to perform the work.
   intro_short: Requests from national departments and public entities to expand and
     extend existing contracts rather than request new bids from potential suppliers
     to perform the work.
-  last_updated: '2019-09-13T11:54:28.902443'
+  last_updated: '2019-09-13T13:09:53.969009'
   license:
     name: License not specified
     url: null
@@ -111,6 +129,10 @@ datasets:
     format: PNG
     name: Screenshot-2
     url: https://data.vulekamali.gov.za/dataset/d982f542-6f4a-42b4-b7a5-c45b15fedda0/resource/5cccca13-bb08-4470-88e8-c02f01ae15e0/download/expansions-and-extensions-of-contracts-2.png
+  - description: ''
+    format: ''
+    name: Expansions and extensions of contracts link
+    url: http://ocpo.treasury.gov.za/Suppliers_Area/Pages/Deviations-and-Exspansions.aspx
   slug: expansions-and-extensions-of-contracts
   url_path: /datasets/procurement-portals-and-resources/expansions-and-extensions-of-contracts
 - author:
@@ -122,10 +144,11 @@ datasets:
     slug: procurement-portals-and-resources
     url_path: /datasets/procurement-portals-and-resources
   created: '2019-09-13T11:01:01.362755'
-  description: null
+  description: Tender listings for all provincial departments and entities in the
+    Gauteng provincial government in South Africa.
   intro_short: Tender listings for all provincial departments and entities in the
     Gauteng provincial government in South Africa.
-  last_updated: '2019-09-13T11:59:18.584433'
+  last_updated: '2019-09-13T13:12:37.361826'
   license:
     name: License not specified
     url: null
@@ -148,6 +171,10 @@ datasets:
     format: PNG
     name: Screenshot-2
     url: https://data.vulekamali.gov.za/dataset/062ce11b-a9f5-44bb-8cd2-6615e5cc7c73/resource/df11e327-60ad-492c-8023-cbc8277cd869/download/gauteng-province-e-tenders-2.png
+  - description: ''
+    format: ''
+    name: Gauteng Province e-Tenders link
+    url: http://www.treasury.gpg.gov.za/e-tenders/pages/awarded-open-tenders.aspx
   slug: gauteng-province-e-tenders
   url_path: /datasets/procurement-portals-and-resources/gauteng-province-e-tenders
 - author:
@@ -159,10 +186,11 @@ datasets:
     slug: procurement-portals-and-resources
     url_path: /datasets/procurement-portals-and-resources
   created: '2019-09-13T11:00:02.647912'
-  description: null
+  description: Procurement plans per quarter consolidated for national departments
+    and public entities.
   intro_short: Procurement plans per quarter consolidated for national departments
     and public entities.
-  last_updated: '2019-09-13T11:56:34.427577'
+  last_updated: '2019-09-13T13:11:17.875750'
   license:
     name: License not specified
     url: null
@@ -185,6 +213,10 @@ datasets:
     format: PNG
     name: Screenshot-2
     url: https://data.vulekamali.gov.za/dataset/e5169b07-3160-45ad-bae5-17e387199470/resource/a3c734cb-6700-4d96-87a0-e418f7a9c69a/download/procurement-plans-2.png
+  - description: ''
+    format: ''
+    name: Procurement plans link
+    url: http://ocpo.treasury.gov.za/Suppliers_Area/Pages/Scheduled-Bids.aspx
   slug: procurement-plans
   url_path: /datasets/procurement-portals-and-resources/procurement-plans
 - author:
@@ -196,9 +228,9 @@ datasets:
     slug: procurement-portals-and-resources
     url_path: /datasets/procurement-portals-and-resources
   created: '2019-09-13T11:02:03.230785'
-  description: null
+  description: Tender advertisements for competitive process across South Africa.
   intro_short: Tender advertisements for competitive process across South Africa.
-  last_updated: '2019-09-13T12:01:55.478090'
+  last_updated: '2019-09-13T13:13:43.470338'
   license:
     name: License not specified
     url: null
@@ -221,6 +253,10 @@ datasets:
     format: PNG
     name: Screenshot-2
     url: https://data.vulekamali.gov.za/dataset/442e9de1-f773-4b95-8e83-3716138515c4/resource/3bca0fce-d2db-4627-aad9-1392045d6b00/download/etender-portal-2.png
+  - description: ''
+    format: ''
+    name: eTender Portal link
+    url: https://etenders.treasury.gov.za/
   slug: etender-portal
   url_path: /datasets/procurement-portals-and-resources/etender-portal
 description: ''
