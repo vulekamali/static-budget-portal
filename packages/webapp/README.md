@@ -26,7 +26,7 @@ If you've received a link to this specific README file it means that you are exp
 ### 💓 3. Contribute 
 
 1. Please familiarise yourself with **all** of the following before proceding:
-   - The [file and folder conventionsused in this project](#) 
+   - The [file and folder conventions used in this project](#) 
    - [This project's tech-stack](#) underpinning this project.
    - How to [sandbox changes you are making in this project](#).
 2. Implement desired changes
